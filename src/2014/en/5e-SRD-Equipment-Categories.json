@@ -325,6 +325,7 @@
       },
       {
         "index": "weapon-1",
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "name": "Weapon, +1",
         "url": "/api/2014/magic-items/weapon-1"
       },
@@ -337,6 +338,20 @@
         "index": "weapon-3",
         "name": "Weapon, +3",
         "url": "/api/2014/magic-items/weapon-3"
+=======
+        "name": "Enchant Weapon +1",
+        "url": "/api/magic-items/weapon-1"
+      },
+      {
+        "index": "weapon-2",
+        "name": "Enchant Weapon +2",
+        "url": "/api/magic-items/weapon-2"
+      },
+      {
+        "index": "weapon-3",
+        "name": "Enchant Weapon +3",
+        "url": "/api/magic-items/weapon-3"
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
       }
     ],
     "url": "/api/2014/equipment-categories/weapon"
@@ -492,6 +507,7 @@
       },
       {
         "index": "armor-1",
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "name": "Armor, +1",
         "url": "/api/2014/magic-items/armor-1"
       },
@@ -504,6 +520,20 @@
         "index": "armor-3",
         "name": "Armor, +3",
         "url": "/api/2014/magic-items/armor-3"
+=======
+        "name": "Enchant Armor +1",
+        "url": "/api/magic-items/armor-1"
+      },
+      {
+        "index": "armor-2",
+        "name": "Enchant Armor +2",
+        "url": "/api/magic-items/armor-2"
+      },
+      {
+        "index": "armor-3",
+        "name": "Enchant Armor +3",
+        "url": "/api/magic-items/armor-3"
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
       },
       {
         "index": "dragon-scale-mail-black",
@@ -563,11 +593,14 @@
     "name": "Adventuring Gear",
     "equipment": [
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "abacus",
         "name": "Abacus",
         "url": "/api/2014/equipment/abacus"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "acid-vial",
         "name": "Acid (vial)",
         "url": "/api/2014/equipment/acid-vial"
@@ -598,6 +631,7 @@
         "url": "/api/2014/equipment/sling-bullet"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "alms-box",
         "name": "Alms box",
         "url": "/api/2014/equipment/alms-box"
@@ -608,6 +642,8 @@
         "url": "/api/2014/equipment/amulet"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "antitoxin-vial",
         "name": "Antitoxin (vial)",
         "url": "/api/2014/equipment/antitoxin-vial"
@@ -618,6 +654,7 @@
         "url": "/api/2014/equipment/backpack"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "ball-bearings-bag-of-1000",
         "name": "Ball bearings (bag of 1,000)",
         "url": "/api/2014/equipment/ball-bearings-bag-of-1000"
@@ -773,11 +810,14 @@
         "url": "/api/2014/equipment/hammer-sledge"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "holy-water-flask",
         "name": "Holy water (flask)",
         "url": "/api/2014/equipment/holy-water-flask"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "hourglass",
         "name": "Hourglass",
         "url": "/api/2014/equipment/hourglass"
@@ -883,11 +923,14 @@
         "url": "/api/2014/equipment/mirror-steel"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "oil-flask",
         "name": "Oil (flask)",
         "url": "/api/2014/equipment/oil-flask"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "paper-one-sheet",
         "name": "Paper (one sheet)",
         "url": "/api/2014/equipment/paper-one-sheet"
@@ -913,11 +956,14 @@
         "url": "/api/2014/equipment/piton"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "poison-basic-vial",
         "name": "Poison, basic (vial)",
         "url": "/api/2014/equipment/poison-basic-vial"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "pole-10-foot",
         "name": "Pole (10-foot)",
         "url": "/api/2014/equipment/pole-10-foot"
@@ -1008,11 +1054,14 @@
         "url": "/api/2014/equipment/soap"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "spellbook",
         "name": "Spellbook",
         "url": "/api/2014/equipment/spellbook"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "spike-iron",
         "name": "Spike, iron",
         "url": "/api/2014/equipment/spike-iron"
@@ -1033,6 +1082,8 @@
         "url": "/api/2014/equipment/tent-two-person"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "tinderbox",
         "name": "Tinderbox",
         "url": "/api/2014/equipment/tinderbox"
@@ -1040,6 +1091,7 @@
       {
         "index": "torch",
         "name": "Torch",
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "url": "/api/2014/equipment/torch"
       },
       {
@@ -1141,6 +1193,9 @@
         "index": "yew-wand",
         "name": "Yew wand",
         "url": "/api/2014/equipment/yew-wand"
+=======
+        "url": "/api/equipment/torch"
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
       }
     ],
     "url": "/api/2014/equipment-categories/adventuring-gear"
@@ -1360,6 +1415,7 @@
     "url": "/api/2014/equipment-categories/tools"
   },
   {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
     "index": "mounts-and-vehicles",
     "name": "Mounts and Vehicles",
     "equipment": [
@@ -1682,6 +1738,8 @@
     "url": "/api/2014/equipment-categories/mounts-and-vehicles"
   },
   {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
     "index": "simple-weapons",
     "name": "Simple Weapons",
     "equipment": [
@@ -2390,11 +2448,14 @@
     "name": "Standard Gear",
     "equipment": [
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "abacus",
         "name": "Abacus",
         "url": "/api/2014/equipment/abacus"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "acid-vial",
         "name": "Acid (vial)",
         "url": "/api/2014/equipment/acid-vial"
@@ -2425,11 +2486,14 @@
         "url": "/api/2014/equipment/sling-bullet"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "alms-box",
         "name": "Alms box",
         "url": "/api/2014/equipment/alms-box"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "antitoxin-vial",
         "name": "Antitoxin (vial)",
         "url": "/api/2014/equipment/antitoxin-vial"
@@ -2445,6 +2509,7 @@
         "url": "/api/2014/equipment/ball-bearings-bag-of-1000"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "barrel",
         "name": "Barrel",
         "url": "/api/2014/equipment/barrel"
@@ -2500,6 +2565,8 @@
         "url": "/api/2014/equipment/caltrops"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "candle",
         "name": "Candle",
         "url": "/api/2014/equipment/candle"
@@ -2510,6 +2577,7 @@
         "url": "/api/2014/equipment/case-crossbow-bolt"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "case-map-or-scroll",
         "name": "Case, map or scroll",
         "url": "/api/2014/equipment/case-map-or-scroll"
@@ -2590,11 +2658,14 @@
         "url": "/api/2014/equipment/hammer-sledge"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "holy-water-flask",
         "name": "Holy water (flask)",
         "url": "/api/2014/equipment/holy-water-flask"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "hourglass",
         "name": "Hourglass",
         "url": "/api/2014/equipment/hourglass"
@@ -2705,6 +2776,8 @@
         "url": "/api/2014/equipment/perfume-vial"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "pick-miners",
         "name": "Pick, miner's",
         "url": "/api/2014/equipment/pick-miners"
@@ -3039,6 +3112,7 @@
     "url": "/api/2014/equipment-categories/artisans-tools"
   },
   {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
     "index": "gaming-sets",
     "name": "Gaming Sets",
     "equipment": [
@@ -3056,6 +3130,8 @@
     "url": "/api/2014/equipment-categories/gaming-sets"
   },
   {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
     "index": "musical-instruments",
     "name": "Musical Instruments",
     "equipment": [
@@ -3130,6 +3206,7 @@
     "url": "/api/2014/equipment-categories/other-tools"
   },
   {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
     "index": "mounts-and-other-animals",
     "name": "Mounts and Other Animals",
     "equipment": [
@@ -3373,6 +3450,8 @@
     "url": "/api/2014/equipment-categories/waterborne-vehicles"
   },
   {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
     "index": "arcane-foci",
     "name": "Arcane Foci",
     "equipment": [
@@ -3463,6 +3542,7 @@
         "url": "/api/2014/magic-items/amulet-of-health"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "amulet-of-proof-against-detection-and-location",
         "name": "Amulet of Proof against Detection and Location",
         "url": "/api/2014/magic-items/amulet-of-proof-against-detection-and-location"
@@ -3478,6 +3558,8 @@
         "url": "/api/2014/magic-items/apparatus-of-the-crab"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "bag-of-beans",
         "name": "Bag of Beans",
         "url": "/api/2014/magic-items/bag-of-beans"
@@ -3518,31 +3600,40 @@
         "url": "/api/2014/magic-items/boots-of-elvenkind"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "boots-of-levitation",
         "name": "Boots of Levitation",
         "url": "/api/2014/magic-items/boots-of-levitation"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "boots-of-speed",
         "name": "Boots of Speed",
         "url": "/api/2014/magic-items/boots-of-speed"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "boots-of-striding-and-springing",
         "name": "Boots of Striding and Springing",
         "url": "/api/2014/magic-items/boots-of-striding-and-springing"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "boots-of-the-winterlands",
         "name": "Boots of the Winterlands",
         "url": "/api/2014/magic-items/boots-of-the-winterlands"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "bowl-of-commanding-water-elementals",
         "name": "Bowl of Commanding Water Elementals",
         "url": "/api/2014/magic-items/bowl-of-commanding-water-elementals"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "bracers-of-archery",
         "name": "Bracers of Archery",
         "url": "/api/2014/magic-items/bracers-of-archery"
@@ -3553,26 +3644,33 @@
         "url": "/api/2014/magic-items/bracers-of-defense"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "brazier-of-commanding-fire-elementals",
         "name": "Brazier of Commanding Fire Elementals",
         "url": "/api/2014/magic-items/brazier-of-commanding-fire-elementals"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "brooch-of-shielding",
         "name": "Brooch of Shielding",
         "url": "/api/2014/magic-items/brooch-of-shielding"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "broom-of-flying",
         "name": "Broom of Flying",
         "url": "/api/2014/magic-items/broom-of-flying"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "candle-of-invocation",
         "name": "Candle of Invocation",
         "url": "/api/2014/magic-items/candle-of-invocation"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "cape-of-the-mountebank",
         "name": "Cape of the Mountebank",
         "url": "/api/2014/magic-items/cape-of-the-mountebank"
@@ -3593,6 +3691,8 @@
         "url": "/api/2014/magic-items/chime-of-opening"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "circlet-of-blasting",
         "name": "Circlet of Blasting",
         "url": "/api/2014/magic-items/circlet-of-blasting"
@@ -3618,6 +3718,7 @@
         "url": "/api/2014/magic-items/cloak-of-protection"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "cloak-of-the-bat",
         "name": "Cloak of the Bat",
         "url": "/api/2014/magic-items/cloak-of-the-bat"
@@ -3668,11 +3769,14 @@
         "url": "/api/2014/magic-items/dust-of-disappearance"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "dust-of-dryness",
         "name": "Dust of Dryness",
         "url": "/api/2014/magic-items/dust-of-dryness"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "dust-of-sneezing-and-choking",
         "name": "Dust of Sneezing and Choking",
         "url": "/api/2014/magic-items/dust-of-sneezing-and-choking"
@@ -3698,6 +3802,8 @@
         "url": "/api/2014/magic-items/eversmoking-bottle"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "eyes-of-charming",
         "name": "Eyes of Charming",
         "url": "/api/2014/magic-items/eyes-of-charming"
@@ -3713,6 +3819,7 @@
         "url": "/api/2014/magic-items/eyes-of-the-eagle"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "feather-token",
         "name": "Feather Token",
         "url": "/api/2014/magic-items/feather-token"
@@ -3728,11 +3835,14 @@
         "url": "/api/2014/magic-items/folding-boat"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "gauntlets-of-ogre-power",
         "name": "Gauntlets of Ogre Power",
         "url": "/api/2014/magic-items/gauntlets-of-ogre-power"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "gem-of-brightness",
         "name": "Gem of Brightness",
         "url": "/api/2014/magic-items/gem-of-brightness"
@@ -3743,6 +3853,8 @@
         "url": "/api/2014/magic-items/gem-of-seeing"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "gloves-of-missile-snaring",
         "name": "Gloves of Missile Snaring",
         "url": "/api/2014/magic-items/gloves-of-missile-snaring"
@@ -3813,6 +3925,7 @@
         "url": "/api/2014/magic-items/horseshoes-of-speed"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "instant-fortress",
         "name": "Instant Fortress",
         "url": "/api/2014/magic-items/instant-fortress"
@@ -3828,16 +3941,21 @@
         "url": "/api/2014/magic-items/iron-bands-of-binding"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "iron-flask",
         "name": "Iron Flask",
         "url": "/api/2014/magic-items/iron-flask"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "lantern-of-revealing",
         "name": "Lantern of Revealing",
         "url": "/api/2014/magic-items/lantern-of-revealing"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "mantle-of-spell-resistance",
         "name": "Mantle of Spell Resistance",
         "url": "/api/2014/magic-items/mantle-of-spell-resistance"
@@ -3988,16 +4106,20 @@
         "url": "/api/2014/magic-items/sphere-of-annihilation"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "stone-of-controlling-earth-elementals",
         "name": "Stone of Controlling Earth Elementals",
         "url": "/api/2014/magic-items/stone-of-controlling-earth-elementals"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "stone-of-good-luck-luckstone",
         "name": "Stone of Good Luck (Luckstone)",
         "url": "/api/2014/magic-items/stone-of-good-luck-luckstone"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "talisman-of-pure-good",
         "name": "Talisman of Pure Good",
         "url": "/api/2014/magic-items/talisman-of-pure-good"
@@ -4013,6 +4135,8 @@
         "url": "/api/2014/magic-items/talisman-of-ultimate-evil"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "tome-of-clear-thought",
         "name": "Tome of Clear Thought",
         "url": "/api/2014/magic-items/tome-of-clear-thought"
@@ -4033,6 +4157,7 @@
         "url": "/api/2014/magic-items/universal-solvent"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "well-of-many-worlds",
         "name": "Well of Many Worlds",
         "url": "/api/2014/magic-items/well-of-many-worlds"
@@ -4058,6 +4183,8 @@
         "url": "/api/2014/magic-items/orb-of-dragonkind"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "bag-of-tricks-gray",
         "name": "Gray Bag of Tricks",
         "url": "/api/2014/magic-items/bag-of-tricks-gray"
@@ -4103,6 +4230,7 @@
         "url": "/api/2014/magic-items/belt-of-giant-strength-storm"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "carpet-of-flying-3x5",
         "name": "Carpet of Flying (3 ft. × 5 ft.)",
         "url": "/api/2014/magic-items/carpet-of-flying-3x5"
@@ -4233,6 +4361,8 @@
         "url": "/api/2014/magic-items/figurine-of-wondrous-power-silver-raven"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "horn-of-valhalla-silver",
         "name": "Silver Horn of Valhalla",
         "url": "/api/2014/magic-items/horn-of-valhalla-silver"
@@ -4253,6 +4383,7 @@
         "url": "/api/2014/magic-items/horn-of-valhalla-iron"
       },
       {
+<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
         "index": "ioun-stone-of-absorption",
         "name": "Ioun Stone of Absorption",
         "url": "/api/2014/magic-items/ioun-stone-of-absorption"
@@ -4323,6 +4454,8 @@
         "url": "/api/2014/magic-items/ioun-stone-of-sustenance"
       },
       {
+=======
+>>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "manual-of-golems-clay",
         "name": "Manual of Clay Golems",
         "url": "/api/2014/magic-items/manual-of-golems-clay"
