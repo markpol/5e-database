@@ -115,14 +115,6 @@
     "starting_equipment": [
       {
         "equipment": {
-          "index": "explorers-pack",
-          "name": "Explorer's Pack",
-          "url": "/api/equipment/explorers-pack"
-        },
-        "quantity": 1
-      },
-      {
-        "equipment": {
           "index": "javelin",
           "name": "Javelin",
           "url": "/api/equipment/javelin"
