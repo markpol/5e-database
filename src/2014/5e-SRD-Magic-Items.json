@@ -20,98 +20,6 @@
     "url": "/api/magic-items/adamantine-armor"
   },
   {
-    "index": "ammunition",
-    "name": "Ammunition, +1, +2, or +3",
-    "equipment_category": {
-      "index": "ammunition",
-      "name": "Ammunition",
-      "url": "/api/equipment-categories/ammunition"
-    },
-    "rarity": {
-      "name": "Varies"
-    },
-    "variants": [
-      {
-        "index": "ammunition-1",
-        "name": "Ammunition, +1",
-        "url": "/api/magic-items/ammunition-1"
-      },
-      {
-        "index": "ammunition-2",
-        "name": "Ammunition, +2",
-        "url": "/api/magic-items/ammunition-2"
-      },
-      {
-        "index": "ammunition-3",
-        "name": "Ammunition, +3",
-        "url": "/api/magic-items/ammunition-3"
-      }
-    ],
-    "variant": false,
-    "desc": [
-      "Weapon (any ammunition), uncommon (+1), rare (+2), or very rare (+3)",
-      "You have a bonus to attack and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hits a target, the ammunition is no longer magical."
-    ],
-    "url": "/api/magic-items/ammunition"
-  },
-  {
-    "index": "ammunition-1",
-    "name": "Ammunition, +1",
-    "equipment_category": {
-      "index": "ammunition",
-      "name": "Ammunition",
-      "url": "/api/equipment-categories/ammunition"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Weapon (any ammunition), uncommon",
-      "You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
-    ],
-    "url": "/api/magic-items/ammunition-1"
-  },
-  {
-    "index": "ammunition-2",
-    "name": "Ammunition, +2",
-    "equipment_category": {
-      "index": "ammunition",
-      "name": "Ammunition",
-      "url": "/api/equipment-categories/ammunition"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Weapon (any ammunition), rare",
-      "You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
-    ],
-    "url": "/api/magic-items/ammunition-2"
-  },
-  {
-    "index": "ammunition-3",
-    "name": "Ammunition, +3",
-    "equipment_category": {
-      "index": "ammunition",
-      "name": "Ammunition",
-      "url": "/api/equipment-categories/ammunition"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Weapon (any ammunition), very rare",
-      "You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
-    ],
-    "url": "/api/magic-items/ammunition-3"
-  },
-  {
     "index": "amulet-of-health",
     "name": "Amulet of Health",
     "equipment_category": {
@@ -128,45 +36,23 @@
       "Wondrous item, rare (requires attunement)",
       "Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution is already 19 or higher"
     ],
-    "url": "/api/magic-items/amulet-of-health"
-  },
-  {
-    "index": "amulet-of-proof-against-detection-and-location",
-    "name": "Amulet of Proof against Detection and Location",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
+    "url": "/api/magic-items/amulet-of-health",
+    "cost": {
+      "quantity": 8000,
+      "unit": "gp"
     },
-    "rarity": {
-      "name": "Uncommon"
+    "effect": {
+      "ability-score-modifier": {
+        "ability": "con",
+        "amount": 19
+      },
+      "duration": {
+        "unit": "while attuned",
+        "length": 1
+      }
     },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon (requires attunement)",
-      "While wearing this amulet, you are hidden from divination magic. You can't be targeted by such magic or perceived through magical scrying sensors."
-    ],
-    "url": "/api/magic-items/amulet-of-proof-against-detection-and-location"
-  },
-  {
-    "index": "amulet-of-the-planes",
-    "name": "Amulet of the Planes",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, very rare (requires attunement)",
-      "While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the plane shift spell. On a failure, you and each creature and object within 15 feet of you travel to a random destination. Roll a d100. On a 1-60, you travel to a random location on the plane you named. On a 61-100, you travel to a randomly determined plane of existence."
-    ],
-    "url": "/api/magic-items/amulet-of-the-planes"
+    "requires-attunement": true,
+    "weight": 1
   },
   {
     "index": "animated-shield",
@@ -186,46 +72,6 @@
       "While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free."
     ],
     "url": "/api/magic-items/animated-shield"
-  },
-  {
-    "index": "apparatus-of-the-crab",
-    "name": "Apparatus of the Crab",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Legendary"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, legendary",
-      "This item first appears to be a Large sealed iron barrel weighing 500 pounds. The barrel has a hidden catch, which can be found with a successful DC 20 Intelligence (Investigation) check. Releasing the catch unlocks a hatch at one end of the barrel, allowing two Medium or smaller creatures to crawl inside. Ten levers are set in a row at the far end, each in a neutral position, able to move either up or down. When certain levers are used, the apparatus transforms to resemble a giant lobster.",
-      "The apparatus of the Crab is a Large object with the following statistics:",
-      "Armor Class: 20",
-      "Hit Points: 200",
-      "Speed: 30 ft., swim 30 ft. (or 0 ft. for both if the legs and tail aren't extended)",
-      "Damage Immunities: poison, psychic",
-      "To be used as a vehicle, the apparatus requires one pilot. While the apparatus's hatch is closed, the compartment is airtight and watertight. The compartment holds enough air for 10 hours of breathing, divided by the number of breathing creatures inside.",
-      "The apparatus floats on water. It can also go underwater to a depth of 900 feet. Below that, the vehicle takes 2d6 bludgeoning damage per minute from pressure.",
-      "A creature in the compartment can use an action to move as many as two of the apparatus's levers up or down. After each use, a lever goes back to its neutral position. Each lever, from left to right, functions as shown in the Apparatus of the Crab Levers table.",
-      "Apparatus of the Crab Levers",
-      "| Lever | Up | Down |",
-      "|---|---|---|",
-      "| 1 | Legs and tail extend, allowing the apparatus to walk and swim. | Legs and tail retract, reducing the apparatus's speed to 0 and making it unable to benefit from bonuses to speed. |",
-      "| 2 | Forward window shutter opens. | Forward window shutter closes. |",
-      "| 3 | Side window shutters open (two per side). | Side window shutters close (two per side). |",
-      "| 4 | Two claws extend from the front sides of the apparatus. | The claws retract. |",
-      "| 5 | Each extended claw makes the following melee weapon attack: +8 to hit, reach 5 ft., one target. Hit: 7 (2d6) bludgeoning damage. | Each extended claw makes the following melee weapon attack: +8 to hit, reach 5 ft., one target. Hit: The target is grappled (escape DC 15). |",
-      "| 6 | The apparatus walks or swims forward. | The apparatus walks or swims backward. |",
-      "| 7 | The apparatus turns 90 degrees left. | The apparatus turns 90 degrees right. |",
-      "| 8 | Eyelike fixtures emit bright light in a 30-foot radius and dim light for an additional 30 feet. | The light turns off. |",
-      "| 9 | The apparatus sinks as much as 20 feet in liquid. | The apparatus rises up to 20 feet in liquid. |",
-      "| 10 | The rear hatch unseals and opens. |  The rear hatch closes and seals. |"
-    ],
-    "url": "/api/magic-items/apparatus-of-the-crab"
   },
   {
     "index": "armor",
@@ -264,7 +110,7 @@
   },
   {
     "index": "armor-1",
-    "name": "Armor, +1",
+    "name": "Enchant Armor +1",
     "equipment_category": {
       "index": "armor",
       "name": "Armor",
@@ -279,11 +125,20 @@
       "Armor (light, medium, or heavy), rare",
       "You have a +1 bonus to AC while wearing this armor."
     ],
+    "cost": {
+      "quantity": 1500,
+      "unit": "gp"
+    },
+    "enchantment": {
+      "type": "applied to existing equipment",
+      "label-prefix": "+1 Magic",
+      "armor-class-bonus": 1
+    },
     "url": "/api/magic-items/armor-1"
   },
   {
     "index": "armor-2",
-    "name": "Armor, +2",
+    "name": "Enchant Armor +2",
     "equipment_category": {
       "index": "armor",
       "name": "Armor",
@@ -298,11 +153,20 @@
       "Armor (light, medium, or heavy), very rare",
       "You have a +2 bonus to AC while wearing this armor."
     ],
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "enchantment": {
+      "type": "applied to existing equipment",
+      "label-prefix": "+2 Magic",
+      "armor-class-bonus": 2
+    },
     "url": "/api/magic-items/armor-2"
   },
   {
     "index": "armor-3",
-    "name": "Armor, +3",
+    "name": "Enchant Armor +3",
     "equipment_category": {
       "index": "armor",
       "name": "Armor",
@@ -317,6 +181,15 @@
       "Armor (light, medium, or heavy), legendary",
       "You have a +3 bonus to AC while wearing this armor."
     ],
+    "cost": {
+      "quantity": 24000,
+      "unit": "gp"
+    },
+    "enchantment": {
+      "type": "applied to existing equipment",
+      "label-prefix": "+3 Magic",
+      "armor-class-bonus": 3
+    },
     "url": "/api/magic-items/armor-3"
   },
   {
@@ -798,7 +671,23 @@
       "Wondrous item, rare (requires attunement)",
       "While wearing this belt, your Strength score changes to a 21. If your Strength is already equal to or greater than the belt's score, the item has no Effect on you."
     ],
-    "url": "/api/magic-items/belt-of-giant-strength-hill"
+    "url": "/api/magic-items/belt-of-giant-strength-hill",
+    "cost": {
+      "quantity": 8000,
+      "unit": "gp"
+    },
+    "effect": {
+      "ability-score-modifier": {
+        "ability": "str",
+        "amount": 21
+      },
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "weight": 5
   },
   {
     "index": "belt-of-giant-strength-stone",
@@ -817,7 +706,23 @@
       "Wondrous item, very rare (requires attunement)",
       "While wearing this belt, your Strength score changes to a 23. If your Strength is already equal to or greater than the belt's score, the item has no Effect on you."
     ],
-    "url": "/api/magic-items/belt-of-giant-strength-stone"
+    "url": "/api/magic-items/belt-of-giant-strength-stone",
+    "cost": {
+      "quantity": 40000,
+      "unit": "gp"
+    },
+    "effect": {
+      "ability-score-modifier": {
+        "ability": "str",
+        "amount": 23
+      },
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "weight": 5
   },
   {
     "index": "belt-of-giant-strength-frost",
@@ -836,7 +741,23 @@
       "Wondrous item, very rare (requires attunement)",
       "While wearing this belt, your Strength score changes to 23. If your Strength is already equal to or greater than the belt's score, the item has no Effect on you."
     ],
-    "url": "/api/magic-items/belt-of-giant-strength-frost"
+    "url": "/api/magic-items/belt-of-giant-strength-frost",
+    "cost": {
+      "quantity": 40000,
+      "unit": "gp"
+    },
+    "effect": {
+      "ability-score-modifier": {
+        "ability": "str",
+        "amount": 23
+      },
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "weight": 5
   },
   {
     "index": "belt-of-giant-strength-fire",
@@ -855,7 +776,23 @@
       "Wondrous item, very rare (requires attunement)",
       "While wearing this belt, your Strength score changes to 25. If your Strength is already equal to or greater than the belt's score, the item has no Effect on you."
     ],
-    "url": "/api/magic-items/belt-of-giant-strength-fire"
+    "url": "/api/magic-items/belt-of-giant-strength-fire",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "effect": {
+      "ability-score-modifier": {
+        "ability": "str",
+        "amount": 25
+      },
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "weight": 5
   },
   {
     "index": "belt-of-giant-strength-cloud",
@@ -874,7 +811,23 @@
       "Wondrous item, legendary (requires attunement)",
       "While wearing this belt, your Strength score changes to 27. If your Strength is already equal to or greater than the belt's score, the item has no Effect on you."
     ],
-    "url": "/api/magic-items/belt-of-giant-strength-cloud"
+    "url": "/api/magic-items/belt-of-giant-strength-cloud",
+    "cost": {
+      "quantity": 120000,
+      "unit": "gp"
+    },
+    "effect": {
+      "ability-score-modifier": {
+        "ability": "str",
+        "amount": 27
+      },
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "weight": 5
   },
   {
     "index": "belt-of-giant-strength-storm",
@@ -893,7 +846,23 @@
       "Wondrous item, legendary (requires attunement)",
       "While wearing this belt, your Strength score changes to 29. If your Strength is already equal to or greater than the belt's score, the item has no Effect on you."
     ],
-    "url": "/api/magic-items/belt-of-giant-strength-storm"
+    "url": "/api/magic-items/belt-of-giant-strength-storm",
+    "cost": {
+      "quantity": 160000,
+      "unit": "gp"
+    },
+    "effect": {
+      "ability-score-modifier": {
+        "ability": "str",
+        "amount": 29
+      },
+      "duration": {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "weight": 5
   },
   {
     "index": "berserker-axe",
@@ -933,26 +902,23 @@
       "Wondrous item, uncommon",
       "While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently."
     ],
-    "url": "/api/magic-items/boots-of-elvenkind"
-  },
-  {
-    "index": "boots-of-levitation",
-    "name": "Boots of Levitation",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
+    "url": "/api/magic-items/boots-of-elvenkind",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
     },
-    "rarity": {
-      "name": "Rare"
+    "effect": {
+      "skill-check-modifier": {
+        "skill": "stealth",
+        "gives-advantage": true
+      },
+      "duration":  {
+        "unit": "while carried",
+        "length": 1
+      }
     },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare (requires attunement)",
-      "While you wear these boots, you can use an action to cast the levitate spell on yourself at will."
-    ],
-    "url": "/api/magic-items/boots-of-levitation"
+    "requires-attunement": false,
+    "weight": 2
   },
   {
     "index": "boots-of-speed",
@@ -975,25 +941,6 @@
     "url": "/api/magic-items/boots-of-speed"
   },
   {
-    "index": "boots-of-striding-and-springing",
-    "name": "Boots of Striding and Springing",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon (requires attunement)",
-      "While you wear these boots, your walking speed becomes 30 feet, unless your walking speed is higher, and your speed isn't reduced if you are encumbered or wearing heavy armor. In addition, you can jump three times the normal distance, though you can't jump farther than your remaining movement would allow."
-    ],
-    "url": "/api/magic-items/boots-of-striding-and-springing"
-  },
-  {
     "index": "boots-of-the-winterlands",
     "name": "Boots of the Winterlands",
     "equipment_category": {
@@ -1013,27 +960,21 @@
       "* You ignore difficult terrain created by ice or snow.",
       "* You can tolerate temperatures as low as -50 degrees Fahrenheit without any additional protection. If you wear heavy clothes, you can tolerate temperatures as low as -100 degrees Fahrenheit."
     ],
-    "url": "/api/magic-items/boots-of-the-winterlands"
-  },
-  {
-    "index": "bowl-of-commanding-water-elementals",
-    "name": "Bowl of Commanding Water Elementals",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
+    "url": "/api/magic-items/boots-of-the-winterlands",
+    "effect": {
+      "condition": "cold-resistance",
+      "damage-type-resistance": "cold",
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      }
     },
-    "rarity": {
-      "name": "Rare"
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 10000,
+      "unit": "gp"
     },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare",
-      "While this bowl is filled with water, you can use an action to speak the bowl's command word and summon a water elemental, as if you had cast the conjure elemental spell. The bowl can't be used this way again until the next dawn.",
-      "The bowl is about 1 foot in diameter and half as deep. It weighs 3 pounds and holds about 3 gallons."
-    ],
-    "url": "/api/magic-items/bowl-of-commanding-water-elementals"
+    "weight": 3
   },
   {
     "index": "bracers-of-archery",
@@ -1074,26 +1015,6 @@
     "url": "/api/magic-items/bracers-of-defense"
   },
   {
-    "index": "brazier-of-commanding-fire-elementals",
-    "name": "Brazier of Commanding Fire Elementals",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare",
-      "While a fire burns in this brass brazier, you can use an action to speak the brazier's command word and summon a fire elemental, as if you had cast the conjure elemental spell. The brazier can't be used this way again until the next dawn.",
-      "The brazier weighs 5 pounds."
-    ],
-    "url": "/api/magic-items/brazier-of-commanding-fire-elementals"
-  },
-  {
     "index": "brooch-of-shielding",
     "name": "Brooch of Shielding",
     "equipment_category": {
@@ -1110,27 +1031,21 @@
       "Wondrous item, uncommon (requires attunement)",
       "While wearing this brooch, you have resistance to force damage, and you have immunity to damage from the magic missile spell."
     ],
-    "url": "/api/magic-items/brooch-of-shielding"
-  },
-  {
-    "index": "broom-of-flying",
-    "name": "Broom of Flying",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
+    "url": "/api/magic-items/brooch-of-shielding",
+    "effect": {
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      },
+      "condition": "force-resistance",
+      "damage-type-resistance": "force"
     },
-    "rarity": {
-      "name": "Uncommon"
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 7500,
+      "unit": "gp"
     },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon",
-      "This wooden broom, which weighs 3 pounds, functions like a mundane broom until you stand astride it and speak its command word. It then hovers beneath you and can be ridden in the air. It has a flying speed of 50 feet. It can carry up to 400 pounds, but its flying speed becomes 30 feet while carrying over 200 pounds. The broom stops hovering when you land.",
-      "You can send the broom to travel alone to a destination within 1 mile of you if you speak the command word, name the location, and are familiar with that place. The broom comes back to you when you speak another command word, provided that the broom is still within 1 mile of you."
-    ],
-    "url": "/api/magic-items/broom-of-flying"
+    "weight": 1
   },
   {
     "index": "candle-of-invocation",
@@ -1164,194 +1079,6 @@
       "Alternatively, when you light the candle for the first time, you can cast the gate spell with it. Doing so destroys the candle."
     ],
     "url": "/api/magic-items/candle-of-invocation"
-  },
-  {
-    "index": "cape-of-the-mountebank",
-    "name": "Cape of the Mountebank",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare",
-      "This cape smells faintly of brimstone. While wearing it, you can use it to cast the dimension door spell as an action. This property of the cape can't be used again until the next dawn.",
-      "When you disappear, you leave behind a cloud of smoke, and you appear in a similar cloud of smoke at your destination. The smoke lightly obscures the space you left and the space you appear in, and it dissipates at the end of your next turn. A light or stronger wind disperses the smoke."
-    ],
-    "url": "/api/magic-items/cape-of-the-mountebank"
-  },
-  {
-    "index": "carpet-of-flying",
-    "name": "Carpet of Flying",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [
-      {
-        "index": "carpet-of-flying-3x5",
-        "name": "Carpet of Flying (3 ft. × 5 ft.)",
-        "url": "/api/magic-items/carpet-of-flying-3x5"
-      },
-      {
-        "index": "carpet-of-flying-4x6",
-        "name": "Carpet of Flying (4 ft. × 6 ft.)",
-        "url": "/api/magic-items/carpet-of-flying-4x6"
-      },
-      {
-        "index": "carpet-of-flying-5x7",
-        "name": "Carpet of Flying (5 ft. × 7 ft.)",
-        "url": "/api/magic-items/carpet-of-flying-5x7"
-      },
-      {
-        "index": "carpet-of-flying-6x9",
-        "name": "Carpet of Flying (6 ft. × 9 ft.)",
-        "url": "/api/magic-items/carpet-of-flying-6x9"
-      }
-    ],
-    "variant": false,
-    "desc": [
-      "Wondrous item, very rare",
-      "You can speak the carpet's command word as an  action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.",
-      "Four sizes of carpet of flying exist. The GM chooses the size of a given carpet or determines it randomly.",
-      "| d100 | Size | Capacity | Flying Speed |",
-      "|---|---|---|---|",
-      "| 01-20 | 3 ft. × 5 ft. | 200 lb. | 80 feet |",
-      "| 21-55 | 4 ft. × 6 ft. | 400 lb. | 60 feet |",
-      "| 56-80 | 5 ft. × 7 ft. | 600 lb. | 40 feet |",
-      "| 81-100 | 6 ft. × 9 ft. | 800 lb. | 30 feet |",
-      "A carpet can carry up to twice the weight shown on the table, but it flies at half speed if it carries more than its normal capacity."
-    ],
-    "url": "/api/magic-items/carpet-of-flying"
-  },
-  {
-    "index": "carpet-of-flying-3x5",
-    "name": "Carpet of Flying (3 ft. × 5 ft.)",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, very rare",
-      "You can speak the carpet's command word as an  action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.",
-      "This carpet is 3 feet by 5 feet and has a flying speed of 80 feet. It can carry up to 400 pounds, but its flying speed becomes 40 feet while carrying over 200 pounds."
-    ],
-    "url": "/api/magic-items/carpet-of-flying-3x5"
-  },
-  {
-    "index": "carpet-of-flying-4x6",
-    "name": "Carpet of Flying (4 ft. × 6 ft.)",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, very rare",
-      "You can speak the carpet's command word as an  action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.",
-      "This carpet is 4 feet by 6 feet and has a flying speed of 60 feet. It can carry up to 800 pounds, but its flying speed becomes 30 feet while carrying over 400 pounds."
-    ],
-    "url": "/api/magic-items/carpet-of-flying-4x6"
-  },
-  {
-    "index": "carpet-of-flying-5x7",
-    "name": "Carpet of Flying (5 ft. × 7 ft.)",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, very rare",
-      "You can speak the carpet's command word as an  action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.",
-      "This carpet is 5 feet by 7 feet and has a flying speed of 40 feet. It can carry up to 1200 pounds, but its flying speed becomes 20 feet while carrying over 600 pounds."
-    ],
-    "url": "/api/magic-items/carpet-of-flying-5x7"
-  },
-  {
-    "index": "carpet-of-flying-6x9",
-    "name": "Carpet of Flying (6 ft. × 9 ft.)",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, very rare",
-      "You can speak the carpet's command word as an  action to make the carpet hover and fly. It moves according to your spoken directions, provided that you are within 30 feet of it.",
-      "This carpet is 6 feet by 9 feet and has a flying speed of 30 feet. It can carry up to 1600 pounds, but its flying speed becomes 15 feet while carrying over 800 pounds."
-    ],
-    "url": "/api/magic-items/carpet-of-flying-6x9"
-  },
-  {
-    "index": "censer-of-controlling-air-elementals",
-    "name": "Censer of Controlling Air Elementals",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare",
-      "While incense is burning in this censer, you can use an action to speak the censer's command word and summon an air elemental, as if you had cast the conjure elemental spell. The censer can't be used this way again until the next dawn.",
-      "This 6-inch-wide, 1-foot-high vessel resembles a chalice with a decorated lid. It weighs 1 pound."
-    ],
-    "url": "/api/magic-items/censer-of-controlling-air-elementals"
-  },
-  {
-    "index": "chime-of-opening",
-    "name": "Chime of Opening",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare",
-      "This hollow metal tube measures about 1 foot long and weighs 1 pound. You can strike it as an action, pointing it at an object within 120 feet of you that can be opened, such as a door, lid, or lock. The chime issues a clear tone, and one lock or latch on the object opens unless the sound can't reach the object. If no locks or latches remain, the object itself opens.",
-      "The chime can be used ten times. After the tenth time, it cracks and becomes useless."
-    ],
-    "url": "/api/magic-items/chime-of-opening"
   },
   {
     "index": "circlet-of-blasting",
@@ -1451,204 +1178,31 @@
       "Wondrous item, uncommon (requires attunement)",
       "You gain a +1 bonus to AC and saving throws while you wear this cloak."
     ],
-    "url": "/api/magic-items/cloak-of-protection"
-  },
-  {
-    "index": "cloak-of-the-bat",
-    "name": "Cloak of the Bat",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare (requires attunement)",
-      "While wearing this cloak, you have advantage on Dexterity (Stealth) checks. In an area of dim light or darkness, you can grip the edges of the cloak with both hands and use it to fly at a speed of 40 feet. If you ever fail to grip the cloak's edges while flying in this way, or if you are no longer in dim light or darkness, you lose this flying speed.",
-      "While wearing the cloak in an area of dim light or darkness, you can use your action to cast polymorph on yourself, transforming into a bat. While you are in the form of the bat, you retain your Intelligence, Wisdom, and Charisma scores. The cloak can't be used this way again until the next dawn."
-    ],
-    "url": "/api/magic-items/cloak-of-the-bat"
-  },
-  {
-    "index": "cloak-of-the-manta-ray",
-    "name": "Cloak of the Manta Ray",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon",
-      "While wearing this cloak with its hood up, you can breathe underwater, and you have a swimming speed of 60 feet. Pulling the hood up or down requires an action."
-    ],
-    "url": "/api/magic-items/cloak-of-the-manta-ray"
-  },
-  {
-    "index": "crystal-ball",
-    "name": "Crystal Ball",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [
-      {
-        "index": "crystal-ball-of-mind-reading",
-        "name": "Crystal Ball of Mind Reading",
-        "url": "/api/magic-items/crystal-ball-of-mind-reading"
+    "url": "/api/magic-items/cloak-of-protection",
+    "effect": {
+      "armor-class-modifier": 1,
+      "saving-throw-modifier": {
+        "abilities": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ],
+        "bonus": 1
       },
-      {
-        "index": "crystal-ball-of-telepathy",
-        "name": "Crystal Ball of Telepathy",
-        "url": "/api/magic-items/crystal-ball-of-telepathy"
-      },
-      {
-        "index": "crystal-ball-of-true-seeing",
-        "name": "Crystal Ball of True Seeing",
-        "url": "/api/magic-items/crystal-ball-of-true-seeing"
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
       }
-    ],
-    "variant": false,
-    "desc": [
-      "Wondrous item, very rare or legendary (requires attunement)",
-      "The typical crystal ball, a very rare item, is about 6 inches in diameter. While touching it, you can cast the scrying spell (save DC 17) with it.",
-      "The following crystal ball variants are legendary items and have additional properties.",
-      "***Crystal Ball of Mind Reading.*** You can use an action to cast the detect thoughts spell (save DC 17) while you are scrying with the crystal ball, targeting creatures you can see within 30 feet of the spell's sensor. You don't need to concentrate on this detect thoughts to maintain it during its duration, but it ends if scrying ends.",
-      "***Crystal Ball of Telepathy.*** While scrying with the crystal ball, you can communicate telepathically with creatures you can see within 30 feet of the spell's sensor. You can also use an action to cast the suggestion spell (save DC 17) through the sensor on one of those creatures. You don't need to concentrate on this suggestion to maintain it during its duration, but it ends if scrying ends. Once used, the suggestion power of the crystal ball can't be used again until the next dawn.",
-      "***Crystal Ball of True Seeing.*** While scrying with the crystal ball, you have truesight with a radius of 120 feet centered on the spell's sensor."
-    ],
-    "url": "/api/magic-items/crystal-ball"
-  },
-  {
-    "index": "crystal-ball-of-mind-reading",
-    "name": "Crystal Ball of Mind Reading",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
     },
-    "rarity": {
-      "name": "Legendary"
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 3500,
+      "unit": "gp"
     },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, legendary (requires attunement)",
-      "The crystal ball is about 6 inches in diameter. While touching it, you can cast the scrying spell (save DC 17) with it.",
-      "***Crystal Ball of Mind Reading.*** You can use an action to cast the detect thoughts spell (save DC 17) while you are scrying with the crystal ball, targeting creatures you can see within 30 feet of the spell's sensor. You don't need to concentrate on this detect thoughts to maintain it during its duration, but it ends if scrying ends."
-    ],
-    "url": "/api/magic-items/crystal-ball-of-mind-reading"
-  },
-  {
-    "index": "crystal-ball-of-telepathy",
-    "name": "Crystal Ball of Telepathy",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Legendary"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, legendary (requires attunement)",
-      "The crystal ball is about 6 inches in diameter. While touching it, you can cast the scrying spell (save DC 17) with it.",
-      "***Crystal Ball of Telepathy.*** While scrying with the crystal ball, you can communicate telepathically with creatures you can see within 30 feet of the spell's sensor. You can also use an action to cast the suggestion spell (save DC 17) through the sensor on one of those creatures. You don't need to concentrate on this suggestion to maintain it during its duration, but it ends if scrying ends. Once used, the suggestion power of the crystal ball can't be used again until the next dawn."
-    ],
-    "url": "/api/magic-items/crystal-ball-of-telepathy"
-  },
-  {
-    "index": "crystal-ball-of-true-seeing",
-    "name": "Crystal Ball of True Seeing",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Legendary"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, legendary (requires attunement)",
-      "The crystal ball is about 6 inches in diameter. While touching it, you can cast the scrying spell (save DC 17) with it.",
-      "***Crystal Ball of True Seeing.*** While scrying with the crystal ball, you have truesight with a radius of 120 feet centered on the spell's sensor."
-    ],
-    "url": "/api/magic-items/crystal-ball-of-true-seeing"
-  },
-  {
-    "index": "cube-of-force",
-    "name": "Cube of Force",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare (requires attunement)",
-      "This cube is about an inch across. Each face has a distinct marking on it that can be pressed. The cube starts with 36 charges, and it regains 1d20 expended charges daily at dawn.",
-      "You can use an action to press one of the cube's faces, expending a number of charges based on the chosen face, as shown in the Cube of Force Faces table. Each face has a different effect. If the cube has insufficient charges remaining, nothing happens. Otherwise, a barrier of invisible force springs into existence, forming a cube 15 feet on a side. The barrier is centered on you, moves with you, and lasts for 1 minute, until you use an action to press the cube's sixth face, or the cube runs out of charges. You can change the barrier's effect by pressing a different face of the cube and expending the requisite number of charges, resetting the duration.",
-      "If your movement causes the barrier to come into contact with a solid object that can't pass through the cube, you can't move any closer to that object as long as the barrier remains.",
-      "Cube of Force Faces",
-      "| Face | Charges | Effect |",
-      "|---|---|---|",
-      "| 1 | 1 | Gases, wind, and fog can't pass through the barrier.",
-      "| 2 | 2 | Nonliving matter can't pass through the barrier. Walls, floors, and ceilings can pass through at your discretion.",
-      "| 3 | 3 | Living matter can't pass through the barrier.",
-      "| 4 | 4 | Spell effects can't pass through the barrier.",
-      "| 5 | 5 | Nothing can pass through the barrier. Walls, floors, and ceilings can pass through at your discretion.",
-      "| 6 | 0 | The barrier deactivates.",
-      "The cube loses charges when the barrier is targeted by certain spells or comes into contact with certain spell or magic item effects, as shown in the table below.",
-      "| Spell or Item | Charges Lost |",
-      "|---|---|",
-      "| Disintegrate | 1d12 |",
-      "| Horn of blasting | 1d10 |",
-      "| Passwall | 1d6 |",
-      "| Prismatic spray | 1d20 |",
-      "| Wall of fire | 1d4 |"
-    ],
-    "url": "/api/magic-items/cube-of-force"
-  },
-  {
-    "index": "cubic-gate",
-    "name": "Cubic Gate",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Legendary"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, legendary",
-      "This cube is 3 inches across and radiates palpable magical energy. The six sides of the cube are each keyed to a different plane of existence, one of which is the Material Plane. The other sides are linked to planes determined by the GM.",
-      "You can use an action to press one side of the cube to cast the gate spell with it, opening a portal to the plane keyed to that side. Alternatively, if you use an action to press one side twice, you can cast the plane shift spell (save DC 17) with the cube and transport the targets to the plane keyed to that side.",
-      "The cube has 3 charges. Each use of the cube expends 1 charge. The cube regains 1d3 expended charges daily at dawn."
-    ],
-    "url": "/api/magic-items/cubic-gate"
+    "weight": 3
   },
   {
     "index": "dagger-of-venom",
@@ -1692,148 +1246,6 @@
     "url": "/api/magic-items/dancing-sword"
   },
   {
-    "index": "decanter-of-endless-water",
-    "name": "Decanter of Endless Water",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon",
-      "This stoppered flask sloshes when shaken, as if it contains water. The decanter weighs 2 pounds.",
-      "You can use an action to remove the stopper and speak one of three command words, whereupon an amount of fresh water or salt water (your choice) pours out of the flask. The water stops pouring out at the start of your next turn. Choose from the following options:",
-      "\"Stream\" produces 1 gallon of water.",
-      "\"Fountain\" produces 5 gallons of water.",
-      "\"Geyser\" produces 30 gallons of water that gushes forth in a geyser 30 feet long and 1 foot wide. As a bonus action while holding the decanter, you can aim the geyser at a creature you can see within 30 feet of you. The target must succeed on a DC 13 Strength saving throw or take 1d4 bludgeoning damage and fall prone. Instead of a creature, you can target an object that isn't being worn or carried and that weighs no more than 200 pounds. The object is either knocked over or pushed up to 15 feet away from you."
-    ],
-    "url": "/api/magic-items/decanter-of-endless-water"
-  },
-  {
-    "index": "deck-of-illusions",
-    "name": "Deck of Illusions",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon",
-      "This box contains a set of parchment cards. A full deck has 34 cards. A deck found as treasure is usually missing 1d20 - 1 cards.",
-      "The magic of the deck functions only if cards are drawn at random (you can use an altered deck of playing cards to simulate the deck). You can use an action to draw a card at random from the deck and throw it to the ground at a point within 30 feet of you.",
-      "An illusion of one or more creatures forms over the thrown card and remains until dispelled. An illusory creature appears real, of the appropriate size, and behaves as if it were a real creature except that it can do no harm. While you are within 120 feet of the illusory creature and can see it, you can use an action to move it magically anywhere within 30 feet of its card. Any physical interaction with the illusory creature reveals it to be an illusion, because objects pass through it. Someone who uses an action to visually inspect the creature identifies it as illusory with a successful DC 15 Intelligence (Investigation) check. The creature then appears translucent.",
-      "The illusion lasts until its card is moved or the illusion is dispelled. When the illusion ends, the image on its card disappears, and that card can't be used again.",
-      "| Playing Card | Illusion |",
-      "|---|---|",
-      "| Ace of hearts | Red dragon |",
-      "| King of hearts | Knight and four guards |",
-      "| Queen of hearts | Succubus or incubus |",
-      "| Jack of hearts | Druid |",
-      "| Ten of hearts | Cloud giant |",
-      "| Nine of hearts | Ettin |",
-      "| Eight of hearts | Bugbear |",
-      "| Two of hearts | Goblin |",
-      "| Ace of diamonds | Beholder |",
-      "| King of diamonds | Archmage and mage apprentice |",
-      "| Queen of diamonds | Night hag |",
-      "| Jack of diamonds | Assassin |",
-      "| Ten of diamonds | Fire giant |",
-      "| Nine of diamonds | Ogre mage |",
-      "| Eight of diamonds | Gnoll |",
-      "| Two of diamonds | Kobold |",
-      "| Ace of spades | Lich |",
-      "| King of spades | Priest and two acolytes |",
-      "| Queen of spades | Medusa |",
-      "| Jack of spades | Veteran |",
-      "| Ten of spades | Frost giant |",
-      "| Nine of spades | Troll |",
-      "| Eight of spades | Hobgoblin |",
-      "| Two of spades | Goblin |",
-      "| Ace of clubs | Iron golem |",
-      "| King of clubs | Bandit captain and three bandits |",
-      "| Queen of clubs | Erinyes |",
-      "| Jack of clubs | Berserker |",
-      "| Ten of clubs | Hill giant |",
-      "| Nine of clubs | Ogre |",
-      "| Eight of clubs | Orc |",
-      "| Two of clubs | Kobold |",
-      "| Jokers (2) | You (the deck's owner) |"
-    ],
-    "url": "/api/magic-items/deck-of-illusions"
-  },
-  {
-    "index": "deck-of-many-things",
-    "name": "Deck of Many Things",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Legendary"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, legendary",
-      "Usually found in a box or pouch, this deck contains a number of cards made of ivory or vellum. Most (75 percent) of these decks have only thirteen cards, but the rest have twenty-two.",
-      "Before you draw a card, you must declare how many cards you intend to draw and then draw them randomly (you can use an altered deck of playing cards to simulate the deck). Any cards drawn in excess of this number have no effect. Otherwise, as soon as you draw a card from the deck, its magic takes effect. You must draw each card no more than 1 hour after the previous draw. If you fail to draw the chosen number, the remaining number of cards fly from the deck on their own and take effect all at once.",
-      "Once a card is drawn, it fades from existence. Unless the card is the Fool or the Jester, the card reappears in the deck, making it possible to draw the same card twice.",
-      "| Playing Card | Card |",
-      "|---|---|",
-      "| Ace of diamonds | Vizier* |",
-      "| King of diamonds | Sun |",
-      "| Queen of diamonds | Moon |",
-      "| Jack of diamonds | Star |",
-      "| Two of diamonds | Comet* |",
-      "| Ace of hearts | The Fates* |",
-      "| King of hearts | Throne |",
-      "| Queen of hearts | Key |",
-      "| Jack of hearts | Knight |",
-      "| Two of hearts | Gem* |",
-      "| Ace of clubs | Talons* |",
-      "| King of clubs | The Void |",
-      "| Queen of clubs | Flames |",
-      "| Jack of clubs | Skull |",
-      "| Two of clubs | Idiot* |",
-      "| Ace of spades | Donjon* |",
-      "| King of spades | Ruin |",
-      "| Queen of spades | Euryale |",
-      "| Jack of spades | Rogue |",
-      "| Two of spades | Balance* |",
-      "| Joker (with TM) | Fool* |",
-      "| Joker (without TM) | Jester |",
-      "* Found only in a deck with twenty-two cards",
-      "***Balance.*** Your mind suffers a wrenching alteration, causing your alignment to change. Lawful becomes chaotic, good becomes evil, and vice versa. If you are true neutral or unaligned, this card has no effect on you.",
-      "***Comet.*** If you single-handedly defeat the next hostile monster or group of monsters you encounter, you gain experience points enough to gain one level. Otherwise, this card has no effect.",
-      "***Donjon.*** You disappear and become entombed in a state of suspended animation in an extradimensional sphere. Everything you were wearing and carrying stays behind in the space you occupied when you disappeared. You remain imprisoned until you are found and removed from the sphere. You can't be located by any divination magic, but a wish spell can reveal the location of your prison. You draw no more cards.",
-      "***Euryale.*** The card's medusa-like visage curses you. You take a -2 penalty on saving throws while cursed in this way. Only a god or the magic of The Fates card can end this curse.",
-      "**The Fates.** Reality's fabric unravels and spins anew, allowing you to avoid or erase one event as if it never happened. You can use the card's magic as soon as you draw the card or at any other time before you die.",
-      "***Flames.*** A powerful devil becomes your enemy. The devil seeks your ruin and plagues your life, savoring your suffering before attempting to slay you. This enmity lasts until either you or the devil dies.",
-      "***Fool.*** You lose 10,000 XP, discard this card, and draw from the deck again, counting both draws as one of your declared draws. If losing that much XP would cause you to lose a level, you instead lose an amount that leaves you with just enough XP to keep your level.",
-      "***Gem.*** Twenty-five pieces of jewelry worth 2,000 gp each or fifty gems worth 1,000 gp each appear at your feet.",
-      "***Idiot.*** Permanently reduce your Intelligence by 1d4 + 1 (to a minimum score of 1). You can draw one additional card beyond your declared draws.",
-      "***Jester.*** You gain 10,000 XP, or you can draw two additional cards beyond your declared draws.",
-      "***Key.*** A rare or rarer magic weapon with which you are proficient appears in your hands. The GM chooses the weapon.",
-      "***Knight.*** You gain the service of a 4th-level fighter who appears in a space you choose within 30 feet of you. The fighter is of the same race as you and serves you loyally until death, believing the fates have drawn him or her to you. You control this character.",
-      "***Moon.*** You are granted the ability to cast the wish spell 1d3 times.",
-      "***Rogue.*** A nonplayer character of the GM's choice becomes hostile toward you. The identity of your new enemy isn't known until the NPC or someone else reveals it. Nothing less than a wish spell or divine intervention can end the NPC's hostility toward you.",
-      "***Ruin.*** All forms of wealth that you carry or own, other than magic items, are lost to you. Portable property vanishes. Businesses, buildings, and land you own are lost in a way that alters reality the least. Any documentation that proves you should own something lost to this card also disappears.",
-      "***Skull.*** You summon an avatar of death-a ghostly humanoid skeleton clad in a tattered black robe and carrying a spectral scythe. It appears in a space of the GM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone. The avatar fights until you die or it drops to 0 hit points, whereupon it disappears. If anyone tries to help you, the helper summons its own avatar of death. A creature slain by an avatar of death can't be restored to life."
-    ],
-    "url": "/api/magic-items/deck-of-many-things"
-  },
-  {
     "index": "defender",
     "name": "Defender",
     "equipment_category": {
@@ -1872,26 +1284,6 @@
       "***Curse.*** Once you don this cursed armor, you can't doff it unless you are targeted by the remove curse spell or similar magic. While wearing the armor, you have disadvantage on attack rolls against demons and on saving throws against their spells and special abilities."
     ],
     "url": "/api/magic-items/demon-armor"
-  },
-  {
-    "index": "dimensional-shackles",
-    "name": "Dimensional Shackles",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare",
-      "You can use an action to place these shackles on an incapacitated creature. The shackles adjust to fit a creature of Small to Large size. In addition to serving as mundane manacles, the shackles prevent a creature bound by them from using any method of extradimensional movement, including teleportation or travel to a different plane of existence. They don't prevent the creature from passing through an interdimensional portal.",
-      "You and any creature you designate when you use the shackles can use an action to remove them. Once every 30 days, the bound creature can make a DC 30 Strength (Athletics) check. On a success, the creature breaks free and destroys the shackles."
-    ],
-    "url": "/api/magic-items/dimensional-shackles"
   },
   {
     "index": "dragon-scale-mail",
@@ -2208,25 +1600,6 @@
     "url": "/api/magic-items/dragon-slayer"
   },
   {
-    "index": "dust-of-disappearance",
-    "name": "Dust of Disappearance",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon",
-      "Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you and each creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks or casts a spell, the invisibility ends for that creature."
-    ],
-    "url": "/api/magic-items/dust-of-disappearance"
-  },
-  {
     "index": "dust-of-dryness",
     "name": "Dust of Dryness",
     "equipment_category": {
@@ -2246,26 +1619,6 @@
       "An elemental composed mostly of water that is exposed to a pinch of the dust must make a DC 13 Constitution saving throw, taking 10d6 necrotic damage on a failed save, or half as much damage on a successful one."
     ],
     "url": "/api/magic-items/dust-of-dryness"
-  },
-  {
-    "index": "dust-of-sneezing-and-choking",
-    "name": "Dust of Sneezing and Choking",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon",
-      "Found in a small container, this powder resembles very fine sand. It appears to be dust of disappearance, and an identify spell reveals it to be such. There is enough of it for one use.",
-      "When you use an action to throw a handful of the dust into the air, you and each creature that needs to breathe within 30 feet of you must succeed on a DC 15 Constitution saving throw or become unable to breathe, while sneezing uncontrollably. A creature affected in this way is incapacitated and suffocating. As long as it is conscious, a creature can repeat the saving throw at the end of each of its turns, ending the effect on it on a success. The lesser restoration spell can also end the effect on a creature."
-    ],
-    "url": "/api/magic-items/dust-of-sneezing-and-choking"
   },
   {
     "index": "dwarven-plate",
@@ -2306,173 +1659,6 @@
     "url": "/api/magic-items/dwarven-thrower"
   },
   {
-    "index": "efficient-quiver",
-    "name": "Efficient Quiver",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon",
-      "Each of the quiver's three compartments connects to an extradimensional space that allows the quiver to hold numerous items while never weighing more than 2 pounds. The shortest compartment can hold up to sixty arrows, bolts, or similar objects. The midsize compartment holds up to eighteen javelins or similar objects. The longest compartment holds up to six long objects, such as bows, quarterstaffs, or spears.",
-      "You can draw any item the quiver contains as if doing so from a regular quiver or scabbard."
-    ],
-    "url": "/api/magic-items/efficient-quiver"
-  },
-  {
-    "index": "efreeti-bottle",
-    "name": "Efreeti Bottle",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, very rare",
-      "This painted brass bottle weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke flows out of the bottle. At the end of your turn, the smoke disappears with a flash of harmless fire, and an efreeti appears in an unoccupied space within 30 feet of you.",
-      "The first time the bottle is opened, the GM rolls to determine what happens.",
-      "| d100 | Effect |",
-      "|---|---|",
-      "| 01-10 | The efreeti attacks you. After fighting for 5 rounds, the efreeti disappears, and the bottle loses its magic. |",
-      "| 11-90 | The efreeti serves you for 1 hour, doing as you command. Then the efreeti returns to the bottle, and a new stopper contains it. The stopper can't be removed for 24 hours. The next two times the bottle is opened, the same effect occurs. If the bottle is opened a fourth time, the efreeti escapes and disappears, and the bottle loses its magic. |",
-      "| 91-100 | The efreeti can cast the wish spell three times for you. It disappears when it grants the final wish or after 1 hour, and the bottle loses its magic. |"
-    ],
-    "url": "/api/magic-items/efreeti-bottle"
-  },
-  {
-    "index": "elemental-gem",
-    "name": "Elemental Gem",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [
-      {
-        "index": "elemental-gem-air",
-        "name": "Air Elemental Gem",
-        "url": "/api/magic-items/elemental-gem-air"
-      },
-      {
-        "index": "elemental-gem-earth",
-        "name": "Earth Elemental Gem",
-        "url": "/api/magic-items/elemental-gem-earth"
-      },
-      {
-        "index": "elemental-gem-fire",
-        "name": "Fire Elemental Gem",
-        "url": "/api/magic-items/elemental-gem-fire"
-      },
-      {
-        "index": "elemental-gem-water",
-        "name": "Water Elemental Gem",
-        "url": "/api/magic-items/elemental-gem-water"
-      }
-    ],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon",
-      "This gem contains a mote of elemental energy. When you use an action to break the gem, an elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost. The type of gem determines the elemental summoned by the spell.",
-      "| Gem | Summoned Elemental |",
-      "|---|---|",
-      "| Blue sapphire | Air elemental |",
-      "| Yellow diamond | Earth elemental |",
-      "| Red corundum | Fire elemental |",
-      "| Emerald | Water elemental |"
-    ],
-    "url": "/api/magic-items/elemental-gem"
-  },
-  {
-    "index": "elemental-gem-air",
-    "name": "Air Elemental Gem",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, uncommon",
-      "This blue sapphire contains a mote of elemental energy. When you use an action to break the gem, an air elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost."
-    ],
-    "url": "/api/magic-items/elemental-gem-air"
-  },
-  {
-    "index": "elemental-gem-earth",
-    "name": "Earth Elemental Gem",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, uncommon",
-      "This yellow diamond contains a mote of elemental energy. When you use an action to break the gem, an earth elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost."
-    ],
-    "url": "/api/magic-items/elemental-gem-earth"
-  },
-  {
-    "index": "elemental-gem-fire",
-    "name": "Fire Elemental Gem",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, uncommon",
-      "This red corundum contains a mote of elemental energy. When you use an action to break the gem, a fire elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost."
-    ],
-    "url": "/api/magic-items/elemental-gem-fire"
-  },
-  {
-    "index": "elemental-gem-water",
-    "name": "Water Elemental Gem",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, uncommon",
-      "This emerald contains a mote of elemental energy. When you use an action to break the gem, a water elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost."
-    ],
-    "url": "/api/magic-items/elemental-gem-water"
-  },
-  {
     "index": "elven-chain",
     "name": "Elven Chain",
     "equipment_category": {
@@ -2490,26 +1676,6 @@
       "You gain a +1 bonus to AC while you wear this armor. You are considered proficient with this armor even if you lack proficiency with medium armor."
     ],
     "url": "/api/magic-items/elven-chain"
-  },
-  {
-    "index": "eversmoking-bottle",
-    "name": "Eversmoking Bottle",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon",
-      "Smoke leaks from the lead-stoppered mouth of this brass bottle, which weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke pours out in a 60-foot radius from the bottle. The cloud's area is heavily obscured. Each minute the bottle remains open and within the cloud, the radius increases by 10 feet until it reaches its maximum radius of 120 feet.",
-      "The cloud persists as long as the bottle is open. Closing the bottle requires you to speak its command word as an action. Once the bottle is closed, the cloud disperses after 10 minutes. A moderate wind (11 to 20 miles per hour) can also disperse the smoke after 1 minute, and a strong wind (21 or more miles per hour) can do so after 1 round."
-    ],
-    "url": "/api/magic-items/eversmoking-bottle"
   },
   {
     "index": "eyes-of-charming",
@@ -2569,494 +1735,6 @@
     "url": "/api/magic-items/eyes-of-the-eagle"
   },
   {
-    "index": "feather-token",
-    "name": "Feather Token",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [
-      {
-        "index": "feather-token-anchor",
-        "name": "Anchor Feather Token",
-        "url": "/api/magic-items/feather-token-anchor"
-      },
-      {
-        "index": "feather-token-bird",
-        "name": "Bird Feather Token",
-        "url": "/api/magic-items/feather-token-bird"
-      },
-      {
-        "index": "feather-token-fan",
-        "name": "Fan Feather Token",
-        "url": "/api/magic-items/feather-token-fan"
-      },
-      {
-        "index": "feather-token-swan-boat",
-        "name": "Swan Boat Feather Token",
-        "url": "/api/magic-items/feather-token-swan-boat"
-      },
-      {
-        "index": "feather-token-tree",
-        "name": "Tree Feather Token",
-        "url": "/api/magic-items/feather-token-tree"
-      },
-      {
-        "index": "feather-token-whip",
-        "name": "Whip Feather Token",
-        "url": "/api/magic-items/feather-token-whip"
-      }
-    ],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare",
-      "This tiny object looks like a feather. Different types of feather tokens exist, each with a different single use effect. The GM chooses the kind of token or determines it randomly.",
-      "| d100 | Feather Token |",
-      "|---|---|",
-      "| 01-20 | Anchor |",
-      "| 21-35 | Bird |",
-      "| 36-50 | Fan |",
-      "| 51-65 | Swan boat |",
-      "| 66-90 | Tree |",
-      "| 91-100 | Whip |",
-      "***Anchor.*** You can use an action to touch the token to a boat or ship. For the next 24 hours, the vessel can't be moved by any means. Touching the token to the vessel again ends the effect. When the effect ends, the token disappears.",
-      "***Bird.*** You can use an action to toss the token 5 feet into the air. The token disappears and an enormous, multicolored bird takes its place. The bird has the statistics of a roc, but it obeys your simple commands and can't attack. It can carry up to 500 pounds while flying at its maximum speed (16 miles an hour for a maximum of 144 miles per day, with a one-hour rest for every 3 hours of flying), or 1,000 pounds at half that speed. The bird disappears after flying its maximum distance for a day or if it drops to 0 hit points. You can dismiss the bird as an action.",
-      "***Fan.*** If you are on a boat or ship, you can use an action to toss the token up to 10 feet in the air. The token disappears, and a giant flapping fan takes its place. The fan floats and creates a wind strong enough to fill the sails of one ship, increasing its speed by 5 miles per hour for 8 hours. You can dismiss the fan as an action.",
-      "***Swan Boat.*** You can use an action to touch the token to a body of water at least 60 feet in diameter. The token disappears, and a 50-foot-long, 20-foot wide boat shaped like a swan takes its place. The boat is self-propelled and moves across water at a speed of 6 miles per hour. You can use an action while on the boat to command it to move or to turn up to 90 degrees. The boat can carry up to thirty-two Medium or smaller creatures. A Large creature counts as four Medium creatures, while a Huge creature counts as nine. The boat remains for 24 hours and then disappears. You can dismiss the boat as an action.",
-      "***Tree.*** You must be outdoors to use this token. You can use an action to touch it to an unoccupied space on the ground. The token disappears, and in its place a nonmagical oak tree springs into existence. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius.",
-      "***Whip.*** You can use an action to throw the token to a point within 10 feet of you. The token disappears, and a floating whip takes its place. You can then use a bonus action to make a melee spell attack against a creature within 10 feet of the whip, with an attack bonus of +9. On a hit, the target takes 1d6 + 5 force damage.",
-      "As a bonus action on your turn, you can direct the whip to fly up to 20 feet and repeat the attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are incapacitated or die."
-    ],
-    "url": "/api/magic-items/feather-token"
-  },
-  {
-    "index": "feather-token-anchor",
-    "name": "Anchor Feather Token",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare",
-      "This tiny object looks like a feather.",
-      "You can use an action to touch the token to a boat or ship. For the next 24 hours, the vessel can't be moved by any means. Touching the token to the vessel again ends the effect. When the effect ends, the token disappears."
-    ],
-    "url": "/api/magic-items/feather-token-anchor"
-  },
-  {
-    "index": "feather-token-bird",
-    "name": "Bird Feather Token",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare",
-      "This tiny object looks like a feather.",
-      "You can use an action to toss the token 5 feet into the air. The token disappears and an enormous, multicolored bird takes its place. The bird has the statistics of a roc, but it obeys your simple commands and can't attack. It can carry up to 500 pounds while flying at its maximum speed (16 miles an hour for a maximum of 144 miles per day, with a one-hour rest for every 3 hours of flying), or 1,000 pounds at half that speed. The bird disappears after flying its maximum distance for a day or if it drops to 0 hit points. You can dismiss the bird as an action."
-    ],
-    "url": "/api/magic-items/feather-token-bird"
-  },
-  {
-    "index": "feather-token-fan",
-    "name": "Fan Feather Token",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare",
-      "This tiny object looks like a feather.",
-      "If you are on a boat or ship, you can use an action to toss the token up to 10 feet in the air. The token disappears, and a giant flapping fan takes its place. The fan floats and creates a wind strong enough to fill the sails of one ship, increasing its speed by 5 miles per hour for 8 hours. You can dismiss the fan as an action."
-    ],
-    "url": "/api/magic-items/feather-token-fan"
-  },
-  {
-    "index": "feather-token-swan-boat",
-    "name": "Swan Boat Feather Token",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare",
-      "This tiny object looks like a feather.",
-      "You can use an action to touch the token to a body of water at least 60 feet in diameter. The token disappears, and a 50-foot-long, 20-foot wide boat shaped like a swan takes its place. The boat is self-propelled and moves across water at a speed of 6 miles per hour. You can use an action while on the boat to command it to move or to turn up to 90 degrees. The boat can carry up to thirty-two Medium or smaller creatures. A Large creature counts as four Medium creatures, while a Huge creature counts as nine. The boat remains for 24 hours and then disappears. You can dismiss the boat as an action."
-    ],
-    "url": "/api/magic-items/feather-token-swan-boat"
-  },
-  {
-    "index": "feather-token-tree",
-    "name": "Tree Feather Token",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare",
-      "This tiny object looks like a feather.",
-      "You must be outdoors to use this token. You can use an action to touch it to an unoccupied space on the ground. The token disappears, and in its place a nonmagical oak tree springs into existence. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius."
-    ],
-    "url": "/api/magic-items/feather-token-tree"
-  },
-  {
-    "index": "feather-token-whip",
-    "name": "Whip Feather Token",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare",
-      "This tiny object looks like a feather.",
-      "You can use an action to throw the token to a point within 10 feet of you. The token disappears, and a floating whip takes its place. You can then use a bonus action to make a melee spell attack against a creature within 10 feet of the whip, with an attack bonus of +9. On a hit, the target takes 1d6 + 5 force damage.",
-      "As a bonus action on your turn, you can direct the whip to fly up to 20 feet and repeat the attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are incapacitated or die."
-    ],
-    "url": "/api/magic-items/feather-token-whip"
-  },
-  {
-    "index": "figurine-of-wondrous-power",
-    "name": "Figurine of Wondrous Power",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Varies"
-    },
-    "variants": [
-      {
-        "index": "figurine-of-wondrous-power-bronze-griffon",
-        "name": "Bronze Griffon Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-bronze-griffon"
-      },
-      {
-        "index": "figurine-of-wondrous-power-ebony-fly",
-        "name": "Ebony Fly Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-ebony-fly"
-      },
-      {
-        "index": "figurine-of-wondrous-power-golden-lions",
-        "name": "Golden Lions Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-golden-lions"
-      },
-      {
-        "index": "figurine-of-wondrous-power-ivory-goats",
-        "name": "Ivory Goats Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-ivory-goats"
-      },
-      {
-        "index": "figurine-of-wondrous-power-marble-elephant",
-        "name": "Marble Elephant Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-marble-elephant"
-      },
-      {
-        "index": "figurine-of-wondrous-power-obsidian-steed",
-        "name": "Obsidian Steed Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-obsidian-steed"
-      },
-      {
-        "index": "figurine-of-wondrous-power-onyx-dog",
-        "name": "Onyx Dog Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-onyx-dog"
-      },
-      {
-        "index": "figurine-of-wondrous-power-serpentine-owl",
-        "name": "Serpentine Owl Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-serpentine-owl"
-      },
-      {
-        "index": "figurine-of-wondrous-power-silver-raven",
-        "name": "Silver Raven Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-silver-raven"
-      }
-    ],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rarity by figurine",
-      "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-      "The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-      "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-      "***Bronze Griffon (Rare).*** This bronze statuette is of a griffon rampant. It can become a griffon for up to 6 hours. Once it has been used, it can't be used again until 5 days have passed.",
-      "***Ebony Fly (Rare).*** This ebony statuette is carved in the likeness of a horsefly. It can become a giant fly for up to 12 hours and can be ridden as a mount. Once it has been used, it can't be used again until 2 days have passed.",
-      "Giant Fly",
-      "Large beast, unaligned",
-      "Armor Class 11",
-      "Hit Points 19 (3d10 + 3)",
-      "Speed 30 ft., fly 60 ft.",
-      "| STR | DEX | CON | INT | WIS | CHA |",
-      "|---|---|---|---|---|---|",
-      "| 14 (+2) | 13 (+1) | 13 (+1) | 2 (-4) | 10 (+0) | 3 (-4) |",
-      "Senses darkvision 60 ft., passive Perception 10",
-      "Languages -",
-      "***Golden Lions (Rare).*** These gold statuettes of lions are always created in pairs. You can use one figurine or both simultaneously. Each can become a lion for up to 1 hour. Once a lion has been used, it can't be used again until 7 days have passed.",
-      "***Ivory Goats (Rare).*** These ivory statuettes of goats are always created in sets of three. Each goat looks unique and functions differently from the others. Their properties are as follows:",
-      "The goat of traveling can become a Large goat with the same statistics as a riding horse. It has 24 charges, and each hour or portion thereof it spends in beast form costs 1 charge. While it has charges, you can use it as often as you wish. When it runs out of charges, it reverts to a figurine and can't be used again until 7 days have passed, when it regains all its charges.",
-      "The goat of travail becomes a giant goat for up to 3 hours. Once it has been used, it can't be used again until 30 days have passed.",
-      "The goat of terror becomes a giant goat for up to 3 hours. The goat can't attack, but you can remove its horns and use them as weapons. One horn becomes a +1 lance, and the other becomes a +2 longsword. Removing a horn requires an action, and the weapons disappear and the horns return when the goat reverts to figurine form. In addition, the goat radiates a 30-foot-radius aura of terror while you are riding it. Any creature hostile to you that starts its turn in the aura must succeed on a DC 15 Wisdom saving throw or be frightened of the goat for 1 minute, or until the goat reverts to figurine form. The frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once it successfully saves against the effect, a creature is immune to the goat's aura for the next 24 hours. Once the figurine has been used, it can't be used again until 15 days have passed.",
-      "***Marble Elephant (Rare).*** This marble statuette is about 4 inches high and long. It can become an elephant for up to 24 hours. Once it has been used, it can't be used again until 7 days have passed.",
-      "***Obsidian Steed (Very Rare).*** This polished obsidian horse can become a nightmare for up to 24 hours. The nightmare fights only to defend itself. Once it has been used, it can't be used again until 5 days have passed.",
-      "If you have a good alignment, the figurine has a 10 percent chance each time you use it to ignore your orders, including a command to revert to figurine form. If you mount the nightmare while it is ignoring your orders, you and the nightmare are instantly transported to a random location on the plane of Hades, where the nightmare reverts to figurine form.",
-      "***Onyx Dog (Rare).*** This onyx statuette of a dog can become a mastiff for up to 6 hours. The mastiff has an Intelligence of 8 and can speak Common. It also has darkvision out to a range of 60 feet and can see invisible creatures and objects within that range. Once it has been used, it can't be used again until 7 days have passed.",
-      "***Serpentine Owl (Rare).*** This serpentine statuette of an owl can become a giant owl for up to 8 hours. Once it has been used, it can't be used again until 2 days have passed. The owl can telepathically communicate with you at any range if you and it are on the same plane of existence.",
-      "***Silver Raven (Uncommon).*** This silver statuette of a raven can become a raven for up to 12 hours. Once it has been used, it can't be used again until 2 days have passed. While in raven form, the figurine allows you to cast the animal messenger spell on it at will."
-    ],
-    "url": "/api/magic-items/figurine-of-wondrous-power"
-  },
-  {
-    "index": "figurine-of-wondrous-power-bronze-griffon",
-    "name": "Bronze Griffon Figurine of Wondrous Power",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare",
-      "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-      "The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-      "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-      "***Bronze Griffon.*** This bronze statuette is of a griffon rampant. It can become a griffon for up to 6 hours. Once it has been used, it can't be used again until 5 days have passed."
-    ],
-    "url": "/api/magic-items/figurine-of-wondrous-power-bronze-griffon"
-  },
-  {
-    "index": "figurine-of-wondrous-power-ebony-fly",
-    "name": "Ebony Fly Figurine of Wondrous Power",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare",
-      "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-      "The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-      "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-      "***Ebony Fly.*** This ebony statuette is carved in the likeness of a horsefly. It can become a giant fly for up to 12 hours and can be ridden as a mount. Once it has been used, it can't be used again until 2 days have passed.",
-      "Giant Fly",
-      "Large beast, unaligned",
-      "Armor Class 11",
-      "Hit Points 19 (3d10 + 3)",
-      "Speed 30 ft., fly 60 ft.",
-      "| STR | DEX | CON | INT | WIS | CHA |",
-      "|---|---|---|---|---|---|",
-      "| 14 (+2) | 13 (+1) | 13 (+1) | 2 (-4) | 10 (+0) | 3 (-4) |",
-      "Senses darkvision 60 ft., passive Perception 10",
-      "Languages -"
-    ],
-    "url": "/api/magic-items/figurine-of-wondrous-power-ebony-fly"
-  },
-  {
-    "index": "figurine-of-wondrous-power-golden-lions",
-    "name": "Golden Lions Figurine of Wondrous Power",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare",
-      "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-      "The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-      "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-      "***Golden Lions.*** These gold statuettes of lions are always created in pairs. You can use one figurine or both simultaneously. Each can become a lion for up to 1 hour. Once a lion has been used, it can't be used again until 7 days have passed."
-    ],
-    "url": "/api/magic-items/figurine-of-wondrous-power-golden-lions"
-  },
-  {
-    "index": "figurine-of-wondrous-power-ivory-goats",
-    "name": "Ivory Goats Figurine of Wondrous Power",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare",
-      "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-      "The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-      "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-      "***Ivory Goats.*** These ivory statuettes of goats are always created in sets of three. Each goat looks unique and functions differently from the others. Their properties are as follows:",
-      "The goat of traveling can become a Large goat with the same statistics as a riding horse. It has 24 charges, and each hour or portion thereof it spends in beast form costs 1 charge. While it has charges, you can use it as often as you wish. When it runs out of charges, it reverts to a figurine and can't be used again until 7 days have passed, when it regains all its charges.",
-      "The goat of travail becomes a giant goat for up to 3 hours. Once it has been used, it can't be used again until 30 days have passed.",
-      "The goat of terror becomes a giant goat for up to 3 hours. The goat can't attack, but you can remove its horns and use them as weapons. One horn becomes a +1 lance, and the other becomes a +2 longsword. Removing a horn requires an action, and the weapons disappear and the horns return when the goat reverts to figurine form. In addition, the goat radiates a 30-foot-radius aura of terror while you are riding it. Any creature hostile to you that starts its turn in the aura must succeed on a DC 15 Wisdom saving throw or be frightened of the goat for 1 minute, or until the goat reverts to figurine form. The frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once it successfully saves against the effect, a creature is immune to the goat's aura for the next 24 hours. Once the figurine has been used, it can't be used again until 15 days have passed."
-    ],
-    "url": "/api/magic-items/figurine-of-wondrous-power-ivory-goats"
-  },
-  {
-    "index": "figurine-of-wondrous-power-marble-elephant",
-    "name": "Marble Elephant Figurine of Wondrous Power",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare",
-      "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-      "The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-      "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-      "***Marble Elephant.*** This marble statuette is about 4 inches high and long. It can become an elephant for up to 24 hours. Once it has been used, it can't be used again until 7 days have passed."
-    ],
-    "url": "/api/magic-items/figurine-of-wondrous-power-marble-elephant"
-  },
-  {
-    "index": "figurine-of-wondrous-power-obsidian-steed",
-    "name": "Obsidian Steed Figurine of Wondrous Power",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, very rare",
-      "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-      "The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-      "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-      "***Obsidian Steed.*** This polished obsidian horse can become a nightmare for up to 24 hours. The nightmare fights only to defend itself. Once it has been used, it can't be used again until 5 days have passed.",
-      "If you have a good alignment, the figurine has a 10 percent chance each time you use it to ignore your orders, including a command to revert to figurine form. If you mount the nightmare while it is ignoring your orders, you and the nightmare are instantly transported to a random location on the plane of Hades, where the nightmare reverts to figurine form."
-    ],
-    "url": "/api/magic-items/figurine-of-wondrous-power-obsidian-steed"
-  },
-  {
-    "index": "figurine-of-wondrous-power-onyx-dog",
-    "name": "Onyx Dog Figurine of Wondrous Power",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare",
-      "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-      "The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-      "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-      "***Onyx Dog.*** This onyx statuette of a dog can become a mastiff for up to 6 hours. The mastiff has an Intelligence of 8 and can speak Common. It also has darkvision out to a range of 60 feet and can see invisible creatures and objects within that range. Once it has been used, it can't be used again until 7 days have passed."
-    ],
-    "url": "/api/magic-items/figurine-of-wondrous-power-onyx-dog"
-  },
-  {
-    "index": "figurine-of-wondrous-power-serpentine-owl",
-    "name": "Serpentine Owl Figurine of Wondrous Power",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare",
-      "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-      "The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-      "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-      "***Serpentine Owl.*** This serpentine statuette of an owl can become a giant owl for up to 8 hours. Once it has been used, it can't be used again until 2 days have passed. The owl can telepathically communicate with you at any range if you and it are on the same plane of existence."
-    ],
-    "url": "/api/magic-items/figurine-of-wondrous-power-serpentine-owl"
-  },
-  {
-    "index": "figurine-of-wondrous-power-silver-raven",
-    "name": "Silver Raven Figurine of Wondrous Power",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, uncommon",
-      "A figurine of wondrous power is a statuette of a beast small enough to fit in a pocket. If you use an action to speak the command word and throw the figurine to a point on the ground within 60 feet of you, the figurine becomes a living creature. If the space where the creature would appear is occupied by other creatures or objects, or if there isn't enough space for the creature, the figurine doesn't become a creature.",
-      "The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.",
-      "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
-      "***Silver Raven.*** This silver statuette of a raven can become a raven for up to 12 hours. Once it has been used, it can't be used again until 2 days have passed. While in raven form, the figurine allows you to cast the animal messenger spell on it at will."
-    ],
-    "url": "/api/magic-items/figurine-of-wondrous-power-silver-raven"
-  },
-  {
     "index": "flame-tongue",
     "name": "Flame Tongue",
     "equipment_category": {
@@ -3067,36 +1745,43 @@
     "rarity": {
       "name": "Rare"
     },
-    "variants": [],
+    "variants": [
+      {
+        "index": "greatsword",
+        "name": "Greatsword",
+        "url": "/api/equipment/greatsword"
+      },
+      {
+        "index": "longsword",
+        "name": "Longsword",
+        "url": "/api/equipment/longsword"
+      },
+      {
+        "index": "rapier",
+        "name": "Rapier",
+        "url": "/api/equipment/rapier"
+      },
+      {
+        "index": "scimitar",
+        "name": "Scimitar",
+        "url": "/api/equipment/scimitar"
+      },
+      {
+        "index": "shortsword",
+        "name": "Shortsword",
+        "url": "/api/equipment/shortsword"
+      }
+    ],
     "variant": false,
     "desc": [
       "Weapon (any sword), rare (requires attunement)",
       "You can use a bonus action to speak this magic sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword."
     ],
+    "cost": {
+      "quantity": 2000,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/flame-tongue"
-  },
-  {
-    "index": "folding-boat",
-    "name": "Folding Boat",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare",
-      "This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weighs 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring you to use an action to speak it.",
-      "One command word causes the box to unfold into a boat 10 feet long, 4 feet wide, and 2 feet deep. The boat has one pair of oars, an anchor, a mast, and a lateen sail. The boat can hold up to four Medium creatures comfortably.",
-      "The second command word causes the box to unfold into a ship 24 feet long, 8 feet wide, and 6 feet deep. The ship has a deck, rowing seats, five sets of oars, a steering oar, an anchor, a deck cabin, and a mast with a square sail. The ship can hold fifteen Medium creatures comfortably.",
-      "When the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat.",
-      "The third command word causes the folding boat to fold back into a box, provided that no creatures are aboard. Any objects in the vessel that can't fit inside the box remain outside the box as it folds. Any objects in the vessel that can fit inside the box do so."
-    ],
-    "url": "/api/magic-items/folding-boat"
   },
   {
     "index": "frost-brand",
@@ -3109,7 +1794,33 @@
     "rarity": {
       "name": "Very Rare"
     },
-    "variants": [],
+    "variants": [
+      {
+        "index": "greatsword",
+        "name": "Greatsword",
+        "url": "/api/equipment/greatsword"
+      },
+      {
+        "index": "longsword",
+        "name": "Longsword",
+        "url": "/api/equipment/longsword"
+      },
+      {
+        "index": "rapier",
+        "name": "Rapier",
+        "url": "/api/equipment/rapier"
+      },
+      {
+        "index": "scimitar",
+        "name": "Scimitar",
+        "url": "/api/equipment/scimitar"
+      },
+      {
+        "index": "shortsword",
+        "name": "Shortsword",
+        "url": "/api/equipment/shortsword"
+      }
+    ],
     "variant": false,
     "desc": [
       "Weapon (any sword), very rare (requires attunement)",
@@ -3117,6 +1828,10 @@
       "In freezing temperatures, the blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.",
       "When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of you. This property can be used no more than once per hour."
     ],
+    "cost": {
+      "quantity": 2000,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/frost-brand"
   },
   {
@@ -3137,49 +1852,6 @@
       "Your Strength score is 19 while you wear these gauntlets. They have no effect on you if your Strength is already 19 or higher."
     ],
     "url": "/api/magic-items/gauntlets-of-ogre-power"
-  },
-  {
-    "index": "gem-of-brightness",
-    "name": "Gem of Brightness",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon",
-      "This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause one of the following effects:",
-      "The first command word causes the gem to shed bright light in a 30-foot radius and dim light for an additional 30 feet. This effect doesn't expend a charge. It lasts until you use a bonus action to repeat the command word or until you use another function of the gem.",
-      "The second command word expends 1 charge and causes the gem to fire a brilliant beam of light at one creature you can see within 60 feet of you. The creature must succeed on a DC 15 Constitution saving throw or become blinded for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-      "The third command word expends 5 charges and causes the gem to flare with blinding light in a 30 foot cone originating from it. Each creature in the cone must make a saving throw as if struck by the beam created with the second command word.",
-      "When all of the gem's charges are expended, the gem becomes a nonmagical jewel worth 50 gp."
-    ],
-    "url": "/api/magic-items/gem-of-brightness"
-  },
-  {
-    "index": "gem-of-seeing",
-    "name": "Gem of Seeing",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare (requires attunement)",
-      "This gem has 3 charges. As an action, you can speak the gem's command word and expend 1 charge. For the next 10 minutes, you have truesight out to 120 feet when you peer through the gem.",
-      "The gem regains 1d3 expended charges daily at dawn."
-    ],
-    "url": "/api/magic-items/gem-of-seeing"
   },
   {
     "index": "giant-slayer",
@@ -3668,473 +2340,6 @@
     "url": "/api/magic-items/immovable-rod"
   },
   {
-    "index": "instant-fortress",
-    "name": "Instant Fortress",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare",
-      "You can use an action to place this 1-inch metal cube on the ground and speak its command word. The cube rapidly grows into a fortress that remains until you use an action to speak the command word that dismisses it, which works only if the fortress is empty.",
-      "The fortress is a square tower, 20 feet on a side and 30 feet high, with arrow slits on all sides and a battlement atop it. Its interior is divided into two floors, with a ladder running along one wall to connect them. The ladder ends at a trapdoor leading to the roof. When activated, the tower has a small door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the knock spell and similar magic, such as that of a chime of opening.",
-      "Each creature in the area where the fortress appears must make a DC 15 Dexterity saving throw, taking 10d10 bludgeoning damage on a failed save, or half as much damage on a successful one. In either case, the creature is pushed to an unoccupied space outside but next to the fortress. Objects in the area that aren't being worn or carried take this damage and are pushed automatically.",
-      "The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points,",
-      "immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a wish spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points."
-    ],
-    "url": "/api/magic-items/instant-fortress"
-  },
-  {
-    "index": "ioun-stone",
-    "name": "Ioun Stone",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Varies"
-    },
-    "variants": [
-      {
-        "index": "ioun-stone-of-absorption",
-        "name": "Ioun Stone of Absorption",
-        "url": "/api/magic-items/ioun-stone-of-absorption"
-      },
-      {
-        "index": "ioun-stone-of-agility",
-        "name": "Ioun Stone of Agility",
-        "url": "/api/magic-items/ioun-stone-of-agility"
-      },
-      {
-        "index": "ioun-stone-of-awareness",
-        "name": "Ioun Stone of Awareness",
-        "url": "/api/magic-items/ioun-stone-of-awareness"
-      },
-      {
-        "index": "ioun-stone-of-fortitude",
-        "name": "Ioun Stone of Fortitude",
-        "url": "/api/magic-items/ioun-stone-of-fortitude"
-      },
-      {
-        "index": "ioun-stone-of-greater-absorption",
-        "name": "Ioun Stone of Greater Absorption",
-        "url": "/api/magic-items/ioun-stone-of-greater-absorption"
-      },
-      {
-        "index": "ioun-stone-of-insight",
-        "name": "Ioun Stone of Insight",
-        "url": "/api/magic-items/ioun-stone-of-insight"
-      },
-      {
-        "index": "ioun-stone-of-intellect",
-        "name": "Ioun Stone of Intellect",
-        "url": "/api/magic-items/ioun-stone-of-intellect"
-      },
-      {
-        "index": "ioun-stone-of-leadership",
-        "name": "Ioun Stone of Leadership",
-        "url": "/api/magic-items/ioun-stone-of-leadership"
-      },
-      {
-        "index": "ioun-stone-of-mastery",
-        "name": "Ioun Stone of Mastery",
-        "url": "/api/magic-items/ioun-stone-of-mastery"
-      },
-      {
-        "index": "ioun-stone-of-protection",
-        "name": "Ioun Stone of Protection",
-        "url": "/api/magic-items/ioun-stone-of-protection"
-      },
-      {
-        "index": "ioun-stone-of-regeneration",
-        "name": "Ioun Stone of Regeneration",
-        "url": "/api/magic-items/ioun-stone-of-regeneration"
-      },
-      {
-        "index": "ioun-stone-of-reserve",
-        "name": "Ioun Stone of Reserve",
-        "url": "/api/magic-items/ioun-stone-of-reserve"
-      },
-      {
-        "index": "ioun-stone-of-strength",
-        "name": "Ioun Stone of Strength",
-        "url": "/api/magic-items/ioun-stone-of-strength"
-      },
-      {
-        "index": "ioun-stone-of-sustenance",
-        "name": "Ioun Stone of Sustenance",
-        "url": "/api/magic-items/ioun-stone-of-sustenance"
-      }
-    ],
-    "variant": false,
-    "desc": [
-      "Wondrous item, varies (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Absorption (Very Rare).*** While this pale lavender ellipsoid orbits your head, you can use your reaction to cancel a spell of 4th level or lower cast by a creature you can see and targeting only you.",
-      "Once the stone has canceled 20 levels of spells, it burns out and turns dull gray, losing its magic. If you are targeted by a spell whose level is higher than the number of spell levels the stone has left, the stone can't cancel it.",
-      "***Agility (Very Rare).*** Your Dexterity score increases by 2, to a maximum of 20, while this deep red sphere orbits your head.",
-      "***Awareness (Rare).*** You can't be surprised while this dark blue rhomboid orbits your head.",
-      "***Fortitude (Very Rare).*** Your Constitution score increases by 2, to a maximum of 20, while this pink rhomboid orbits your head.",
-      "***Greater Absorption (Legendary).*** While this marbled lavender and green ellipsoid orbits your head, you can use your reaction to cancel a spell of 8th level or lower cast by a creature you can see and targeting only you.",
-      "Once the stone has canceled 50 levels of spells, it burns out and turns dull gray, losing its magic. If you are targeted by a spell whose level is higher than the number of spell levels the stone has left, the stone can't cancel it.",
-      "***Insight (Very Rare).*** Your Wisdom score increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head.",
-      "***Intellect (Very Rare).*** Your Intelligence score increases by 2, to a maximum of 20, while this marbled scarlet and blue sphere orbits your head.",
-      "***Leadership (Very Rare).*** Your Charisma score increases by 2, to a maximum of 20, while this marbled pink and green sphere orbits your head.",
-      "***Mastery (Legendary).*** Your proficiency bonus increases by 1 while this pale green prism orbits your head.",
-      "***Protection (Rare).*** You gain a +1 bonus to AC while this dusty rose prism orbits your head.",
-      "***Regeneration (Legendary).*** You regain 15 hit points at the end of each hour this pearly white spindle orbits your head, provided that you have at least 1 hit point.",
-      "***Reserve (Rare).*** This vibrant purple prism stores spells cast into it, holding them until you use them. The stone can store up to 3 levels worth of spells at a time. When found, it contains 1d4 - 1 levels of stored spells chosen by the GM.",
-      "Any creature can cast a spell of 1st through 3rd level into the stone by touching it as the spell is cast. The spell has no effect, other than to be stored in the stone. If the stone can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.",
-      "While this stone orbits your head, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the stone is no longer stored in it, freeing up space.",
-      "***Strength (Very Rare).*** Your Strength score increases by 2, to a maximum of 20, while this pale blue rhomboid orbits your head.",
-      "***Sustenance (Rare).*** You don't need to eat or drink while this clear spindle orbits your head."
-    ],
-    "url": "/api/magic-items/ioun-stone"
-  },
-  {
-    "index": "ioun-stone-of-absorption",
-    "name": "Ioun Stone of Absorption",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, very rare (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Absorption.*** While this pale lavender ellipsoid orbits your head, you can use your reaction to cancel a spell of 4th level or lower cast by a creature you can see and targeting only you.",
-      "Once the stone has canceled 20 levels of spells, it burns out and turns dull gray, losing its magic. If you are targeted by a spell whose level is higher than the number of spell levels the stone has left, the stone can't cancel it."
-    ],
-    "url": "/api/magic-items/ioun-stone-of-absorption"
-  },
-  {
-    "index": "ioun-stone-of-agility",
-    "name": "Ioun Stone of Agility",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, very rare (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Agility.*** Your Dexterity score increases by 2, to a maximum of 20, while this deep red sphere orbits your head."
-    ],
-    "url": "/api/magic-items/ioun-stone-of-agility"
-  },
-  {
-    "index": "ioun-stone-of-awareness",
-    "name": "Ioun Stone of Awareness",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Awareness.*** You can't be surprised while this dark blue rhomboid orbits your head."
-    ],
-    "url": "/api/magic-items/ioun-stone-of-awareness"
-  },
-  {
-    "index": "ioun-stone-of-fortitude",
-    "name": "Ioun Stone of Fortitude",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, very rare (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Fortitude.*** Your Constitution score increases by 2, to a maximum of 20, while this pink rhomboid orbits your head."
-    ],
-    "url": "/api/magic-items/ioun-stone-of-fortitude"
-  },
-  {
-    "index": "ioun-stone-of-greater-absorption",
-    "name": "Ioun Stone of Greater Absorption",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Legendary"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, legendary (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Greater Absorption.*** While this marbled lavender and green ellipsoid orbits your head, you can use your reaction to cancel a spell of 8th level or lower cast by a creature you can see and targeting only you.",
-      "Once the stone has canceled 50 levels of spells, it burns out and turns dull gray, losing its magic. If you are targeted by a spell whose level is higher than the number of spell levels the stone has left, the stone can't cancel it."
-    ],
-    "url": "/api/magic-items/ioun-stone-of-greater-absorption"
-  },
-  {
-    "index": "ioun-stone-of-insight",
-    "name": "Ioun Stone of Insight",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, very rare (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Insight.*** Your Wisdom score increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head."
-    ],
-    "url": "/api/magic-items/ioun-stone-of-insight"
-  },
-  {
-    "index": "ioun-stone-of-intellect",
-    "name": "Ioun Stone of Intellect",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, very rare (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Intellect.*** Your Intelligence score increases by 2, to a maximum of 20, while this marbled scarlet and blue sphere orbits your head."
-    ],
-    "url": "/api/magic-items/ioun-stone-of-intellect"
-  },
-  {
-    "index": "ioun-stone-of-leadership",
-    "name": "Ioun Stone of Leadership",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, very rare (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Leadership.*** Your Charisma score increases by 2, to a maximum of 20, while this marbled pink and green sphere orbits your head."
-    ],
-    "url": "/api/magic-items/ioun-stone-of-leadership"
-  },
-  {
-    "index": "ioun-stone-of-mastery",
-    "name": "Ioun Stone of Mastery",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Legendary"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, legendary (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Mastery.*** Your proficiency bonus increases by 1 while this pale green prism orbits your head."
-    ],
-    "url": "/api/magic-items/ioun-stone-of-mastery"
-  },
-  {
-    "index": "ioun-stone-of-protection",
-    "name": "Ioun Stone of Protection",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Protection.*** You gain a +1 bonus to AC while this dusty rose prism orbits your head."
-    ],
-    "url": "/api/magic-items/ioun-stone-of-protection"
-  },
-  {
-    "index": "ioun-stone-of-regeneration",
-    "name": "Ioun Stone of Regeneration",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Legendary"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, legendary (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Regeneration.*** You regain 15 hit points at the end of each hour this pearly white spindle orbits your head, provided that you have at least 1 hit point."
-    ],
-    "url": "/api/magic-items/ioun-stone-of-regeneration"
-  },
-  {
-    "index": "ioun-stone-of-reserve",
-    "name": "Ioun Stone of Reserve",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Reserve.*** This vibrant purple prism stores spells cast into it, holding them until you use them. The stone can store up to 3 levels worth of spells at a time. When found, it contains 1d4 - 1 levels of stored spells chosen by the GM.",
-      "Any creature can cast a spell of 1st through 3rd level into the stone by touching it as the spell is cast. The spell has no effect, other than to be stored in the stone. If the stone can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.",
-      "While this stone orbits your head, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the stone is no longer stored in it, freeing up space."
-    ],
-    "url": "/api/magic-items/ioun-stone-of-reserve"
-  },
-  {
-    "index": "ioun-stone-of-strength",
-    "name": "Ioun Stone of Strength",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Very Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, very rare (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Strength.*** Your Strength score increases by 2, to a maximum of 20, while this pale blue rhomboid orbits your head."
-    ],
-    "url": "/api/magic-items/ioun-stone-of-strength"
-  },
-  {
-    "index": "ioun-stone-of-sustenance",
-    "name": "Ioun Stone of Sustenance",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": true,
-    "desc": [
-      "Wondrous item, rare (requires attunement)",
-      "An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.",
-      "When you use an action to toss one of these stones into the air, the stone orbits your head at a distance of 1d3 feet and confers a benefit to you. Thereafter, another creature must use an action to grasp or net the stone to separate it from you, either by making a successful attack roll against AC 24 or a successful DC 24 Dexterity (Acrobatics) check. You can use an action to seize and stow the stone, ending its effect.",
-      "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
-      "***Sustenance.*** You don't need to eat or drink while this clear spindle orbits your head."
-    ],
-    "url": "/api/magic-items/ioun-stone-of-sustenance"
-  },
-  {
-    "index": "iron-bands-of-binding",
-    "name": "Iron Bands of Binding",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare",
-      "This rusty iron sphere measures 3 inches in diameter and weighs 1 pound. You can use an action to speak the command word and throw the sphere at a Huge or smaller creature you can see within 60 feet of you. As the sphere moves through the air, it opens into a tangle of metal bands.",
-      "Make a ranged attack roll with an attack bonus equal to your Dexterity modifier plus your proficiency bonus. On a hit, the target is restrained until you take a bonus action to speak the command word again to release it. Doing so, or missing with the attack, causes the bands to contract and become a sphere once more.",
-      "A creature, including the one restrained, can use an action to make a DC 20 Strength check to break the iron bands. On a success, the item is destroyed, and the restrained creature is freed. If the check fails, any further attempts made by that creature automatically fail until 24 hours have elapsed.",
-      "Once the bands are used, they can't be used again until the next dawn."
-    ],
-    "url": "/api/magic-items/iron-bands-of-binding"
-  },
-  {
     "index": "iron-flask",
     "name": "Iron Flask",
     "equipment_category": {
@@ -4196,46 +2401,6 @@
       "The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon."
     ],
     "url": "/api/magic-items/javelin-of-lightning"
-  },
-  {
-    "index": "lantern-of-revealing",
-    "name": "Lantern of Revealing",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon",
-      "While lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. Invisible creatures and objects are visible as long as they are in the lantern's bright light. You can use an action to lower the hood, reducing the light to dim light in a 5 foot radius."
-    ],
-    "url": "/api/magic-items/lantern-of-revealing"
-  },
-  {
-    "index": "luck-blade",
-    "name": "Luck Blade",
-    "equipment_category": {
-      "index": "weapon",
-      "name": "Weapon",
-      "url": "/api/equipment-categories/weapon"
-    },
-    "rarity": {
-      "name": "Legendary"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Weapon (any sword), legendary (requires attunement)",
-      "You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.",
-      "***Luck.*** If the sword is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. This property can't be used again until the next dawn.",
-      "***Wish.*** The sword has 1d4 - 1 charges. While holding it, you can use an action to expend 1 charge and cast the wish spell from it. This property can't be used again until the next dawn. The sword loses this property if it has no charges."
-    ],
-    "url": "/api/magic-items/luck-blade"
   },
   {
     "index": "mace-of-disruption",
@@ -5124,6 +3289,10 @@
       "When you drink this potion, your Strength score changes to 21 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.",
       "This potion's transparent liquid has floating in it a sliver of fingernail from a hill giant."
     ],
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/potion-of-giant-strength-hill"
   },
   {
@@ -5144,6 +3313,10 @@
       "When you drink this potion, your Strength score changes to 23 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.",
       "This potion's transparent liquid has floating in it a sliver of fingernail from a frost giant."
     ],
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/potion-of-giant-strength-frost"
   },
   {
@@ -5164,6 +3337,10 @@
       "When you drink this potion, your Strength score changes to 23 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.",
       "This potion's transparent liquid has floating in it a sliver of fingernail from a stone giant."
     ],
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/potion-of-giant-strength-stone"
   },
   {
@@ -5184,6 +3361,10 @@
       "When you drink this potion, your Strength score changes to 25 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.",
       "This potion's transparent liquid has floating in it a sliver of fingernail from a fire giant."
     ],
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/potion-of-giant-strength-fire"
   },
   {
@@ -5204,6 +3385,11 @@
       "When you drink this potion, your Strength score changes to 27 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.",
       "This potion's transparent liquid has floating in it a sliver of fingernail from a cloud giant."
     ],
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+
     "url": "/api/magic-items/potion-of-giant-strength-cloud"
   },
   {
@@ -5224,6 +3410,10 @@
       "When you drink this potion, your Strength score changes to 29 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.",
       "This potion's transparent liquid has floating in it a sliver of fingernail from a storm giant."
     ],
+    "cost": {
+      "quantity": 125000,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/potion-of-giant-strength-storm"
   },
   {
@@ -5309,6 +3499,14 @@
       "Potion, common",
       "You regain 2d4 + 2 hit points when you drink this potion. The potion's red liquid glimmers when agitated."
     ],
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "heal": "2d4+2"
+    },
     "url": "/api/magic-items/potion-of-healing-common"
   },
   {
@@ -5328,6 +3526,14 @@
       "Potion, uncommon",
       "You regain 4d4 + 4 hit points when you drink this potion. The potion's red liquid glimmers when agitated."
     ],
+    "cost": {
+      "quantity": 150,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "heal": "4d4+4"
+    },
     "url": "/api/magic-items/potion-of-healing-greater"
   },
   {
@@ -5347,6 +3553,14 @@
       "Potion, rare",
       "You regain 8d4 + 8 hit points when you drink this potion. The potion's red liquid glimmers when agitated."
     ],
+    "cost": {
+      "quantity": 450,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "heal": "8d4+8"
+    },
     "url": "/api/magic-items/potion-of-healing-superior"
   },
   {
@@ -5366,6 +3580,14 @@
       "Potion, very rare",
       "You regain 10d4 + 20 hit points when you drink this potion. The potion's red liquid glimmers when agitated."
     ],
+    "cost": {
+      "quantity": 1350,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "heal": "10d4+20"
+    },
     "url": "/api/magic-items/potion-of-healing-supreme"
   },
   {
@@ -5544,6 +3766,19 @@
       "Potion, uncommon",
       "When you drink this potion, you gain resistance to acid damage for 1 hour."
     ],
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "acid-resistance",
+      "damage-type-resistance": "acid",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-acid"
   },
   {
@@ -5563,6 +3798,19 @@
       "Potion, uncommon",
       "When you drink this potion, you gain resistance to cold damage for 1 hour."
     ],
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "cold-resistance",
+      "damage-type-resistance": "cold",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-cold"
   },
   {
@@ -5582,6 +3830,19 @@
       "Potion, uncommon",
       "When you drink this potion, you gain resistance to fire damage for 1 hour."
     ],
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "fire-resistance",
+      "damage-type-resistance": "fire",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-fire"
   },
   {
@@ -5601,6 +3862,19 @@
       "Potion, uncommon",
       "When you drink this potion, you gain resistance to force damage for 1 hour."
     ],
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "force-resistance",
+      "damage-type-resistance": "force",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-force"
   },
   {
@@ -5620,6 +3894,19 @@
       "Potion, uncommon",
       "When you drink this potion, you gain resistance to lightning damage for 1 hour."
     ],
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "lightning-resistance",
+      "damage-type-resistance": "lightning",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-lightning"
   },
   {
@@ -5639,6 +3926,19 @@
       "Potion, uncommon",
       "When you drink this potion, you gain resistance to necrotic damage for 1 hour."
     ],
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "necrotic-resistance",
+      "damage-type-resistance": "necrotic",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-necrotic"
   },
   {
@@ -5658,6 +3958,19 @@
       "Potion, uncommon",
       "When you drink this potion, you gain resistance to poison damage for 1 hour."
     ],
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "poison-resistance",
+      "damage-type-resistance": "poison",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-poison"
   },
   {
@@ -5677,6 +3990,19 @@
       "Potion, uncommon",
       "When you drink this potion, you gain resistance to psychic damage for 1 hour."
     ],
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "psychic-resistance",
+      "damage-type-resistance": "psychic",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-psychic"
   },
   {
@@ -5696,6 +4022,19 @@
       "Potion, uncommon",
       "When you drink this potion, you gain resistance to radiant damage for 1 hour."
     ],
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "radiant-resistance",
+      "damage-type-resistance": "radiant",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-radiant"
   },
   {
@@ -5715,6 +4054,19 @@
       "Potion, uncommon",
       "When you drink this potion, you gain resistance to thunder damage for 1 hour."
     ],
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "thunder-resistance",
+      "damage-type-resistance": "thunder",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-thunder"
   },
   {
@@ -5734,6 +4086,18 @@
       "Potion, very rare",
       "When you drink this potion, you gain the effect of the haste spell for 1 minute (no concentration required). The potion's yellow fluid is streaked with black and swirls on its own."
     ],
+    "cost": {
+      "quantity": 400,
+      "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "hasted",
+      "duration": {
+        "length": 10,
+        "unit": "round"
+      }
+    },
     "url": "/api/magic-items/potion-of-speed"
   },
   {
@@ -6113,7 +4477,31 @@
       "Ring, rare (requires attunement)",
       "You gain a +1 bonus to AC and saving throws while wearing this ring."
     ],
-    "url": "/api/magic-items/ring-of-protection"
+    "url": "/api/magic-items/ring-of-protection",
+    "effect": { 
+      "armor-class-modifier": 1,
+      "saving-throw-modifier": {
+        "abilities": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ],
+        "bonus": 1,
+        "gives-advantage": false
+      },
+      "duration": {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 3500,
+      "unit": "gp"
+    }
   },
   {
     "index": "ring-of-regeneration",
@@ -6233,7 +4621,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to acid damage while wearing this pearl ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-acid"
+    "url": "/api/magic-items/ring-of-resistance-acid",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "acid",
+      "condition": "acid-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-cold",
@@ -6252,7 +4653,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to cold damage while wearing this tourmaline ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-cold"
+    "url": "/api/magic-items/ring-of-resistance-cold",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "cold",
+      "condition": "cold-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-fire",
@@ -6271,7 +4685,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to fire damage while wearing this garnet ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-fire"
+    "url": "/api/magic-items/ring-of-resistance-fire",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "fire",
+      "condition": "fire-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-force",
@@ -6290,7 +4717,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to force damage while wearing this sapphire ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-force"
+    "url": "/api/magic-items/ring-of-resistance-force",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "force",
+      "condition": "force-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-lightning",
@@ -6309,7 +4749,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to lightning damage while wearing this citrine ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-lightning"
+    "url": "/api/magic-items/ring-of-resistance-lightning",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "lightning",
+      "condition": "lightning-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-necrotic",
@@ -6328,7 +4781,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to necrotic damage while wearing this jet ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-necrotic"
+    "url": "/api/magic-items/ring-of-resistance-necrotic",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "necrotic",
+      "condition": "necrotic-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-poison",
@@ -6347,7 +4813,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to poison damage while wearing this amethyst ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-poison"
+    "url": "/api/magic-items/ring-of-resistance-poison",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "poison",
+      "condition": "poison-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-psychic",
@@ -6366,7 +4845,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to psychic damage while wearing this jade ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-psychic"
+    "url": "/api/magic-items/ring-of-resistance-psychic",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "psychic",
+      "condition": "psychic-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-radiant",
@@ -6385,7 +4877,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to radiant damage while wearing this topaz ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-radiant"
+    "url": "/api/magic-items/ring-of-resistance-radiant",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "radiant",
+      "condition": "radiant-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-thunder",
@@ -6404,7 +4909,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to thunder damage while wearing this spinel ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-thunder"
+    "url": "/api/magic-items/ring-of-resistance-thunder",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "thunder",
+      "condition": "thunder-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-shooting-stars",
@@ -6852,6 +5370,10 @@
       "For each hour spent in the paradise, a visitor regains hit points as if it had spent 1 Hit Die. Also, creatures don't age while in the paradise, although time passes normally. Visitors can remain in the paradise for up to 200 days divided by the number of creatures present (round down).",
       "When the time runs out or you use an action to end it, all visitors reappear in the location they occupied when you activated the rod, or an unoccupied space nearest that location. The rod can't be used again until ten days have passed."
     ],
+    "cost": {
+      "quantity": 90000,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/rod-of-security"
   },
   {
@@ -6873,6 +5395,10 @@
       "If you tell the rope to knot, large knots appear at 1 foot intervals along the rope. While knotted, the rope shortens to a 50-foot length and grants advantage on checks made to climb it.",
       "The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed."
     ],
+    "cost": {
+      "quantity": 2000,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/rope-of-climbing"
   },
   {
@@ -6973,6 +5499,10 @@
       "Wondrous item, uncommon (requires attunement)",
       "While you wear these light shoes, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed. However, the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil."
     ],
+    "cost": {
+      "quantity": 5000,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/slippers-of-spider-climbing"
   },
   {
@@ -6993,6 +5523,10 @@
       "This viscous, milky-white substance can form a permanent adhesive bond between any two objects. It must be stored in a jar or flask that has been coated inside with oil of slipperiness. When found, a container contains 1d6 + 1 ounces.",
       "One ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of universal solvent or oil of etherealness, or with a wish spell."
     ],
+    "cost": {
+      "quantity": 400,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/sovereign-glue"
   },
   {
@@ -7619,25 +6153,6 @@
     "url": "/api/magic-items/staff-of-withering"
   },
   {
-    "index": "stone-of-controlling-earth-elementals",
-    "name": "Stone of Controlling Earth Elementals",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare",
-      "If the stone is touching the ground, you can use an action to speak its command word and summon an earth elemental, as if you had cast the conjure elemental spell. The stone can't be used this way again until the next dawn. The stone weighs 5 pounds."
-    ],
-    "url": "/api/magic-items/stone-of-controlling-earth-elementals"
-  },
-  {
     "index": "stone-of-good-luck-luckstone",
     "name": "Stone of Good Luck (Luckstone)",
     "equipment_category": {
@@ -7738,67 +6253,6 @@
     "url": "/api/magic-items/sword-of-wounding"
   },
   {
-    "index": "talisman-of-pure-good",
-    "name": "Talisman of Pure Good",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Legendary"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, legendary (requires attunement by a creature of good alignment)",
-      "This talisman is a mighty symbol of goodness. A creature that is neither good nor evil in alignment takes 6d6 radiant damage upon touching the talisman. An evil creature takes 8d6 radiant damage upon touching the talisman. Either sort of creature takes the damage again each time it ends its turn holding or carrying the talisman.",
-      "If you are a good cleric or paladin, you can use the talisman as a holy symbol, and you gain a +2 bonus to spell attack rolls while you wear or hold it.",
-      "The talisman has 7 charges. If you are wearing or holding it, you can use an action to expend 1 charge from it and choose one creature you can see on the ground within 120 feet of you. If the target is of evil alignment, a flaming fissure opens under it. The target must succeed on a DC 20 Dexterity saving throw or fall into the fissure and be destroyed, leaving no remains. The fissure then closes, leaving no trace of its existence. When you expend the last charge, the talisman disperses into motes of golden light and is destroyed."
-    ],
-    "url": "/api/magic-items/talisman-of-pure-good"
-  },
-  {
-    "index": "talisman-of-the-sphere",
-    "name": "Talisman of the Sphere",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Legendary"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, legendary (requires attunement)",
-      "When you make an Intelligence (Arcana) check to control a sphere of annihilation while you are holding this talisman, you double your proficiency bonus on the check. In addition, when you start your turn with control over a sphere of annihilation, you can use an action to levitate it 10 feet plus a number of additional feet equal to 10 × your Intelligence modifier."
-    ],
-    "url": "/api/magic-items/talisman-of-the-sphere"
-  },
-  {
-    "index": "talisman-of-ultimate-evil",
-    "name": "Talisman of Ultimate Evil",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Legendary"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, legendary (requires attunement by a creature of evil alignment)",
-      "This item symbolizes unrepentant evil. A creature that is neither good nor evil in alignment takes 6d6 necrotic damage upon touching the talisman. A good creature takes 8d6 necrotic damage upon touching the talisman. Either sort of creature takes the damage again each time it ends its turn holding or carrying the talisman.",
-      "If you are an evil cleric or paladin, you can use the talisman as a holy symbol, and you gain a +2 bonus to spell attack rolls while you wear or hold it.",
-      "The talisman has 6 charges. If you are wearing or holding it, you can use an action to expend 1 charge from the talisman and choose one creature you can see on the ground within 120 feet of you. If the target is of good alignment, a flaming fissure opens under it. The target must succeed on a DC 20 Dexterity saving throw or fall into the fissure and be destroyed, leaving no remains. The fissure then closes, leaving no trace of its existence. When you expend the last charge, the talisman dissolves into foul-smelling slime and is destroyed."
-    ],
-    "url": "/api/magic-items/talisman-of-ultimate-evil"
-  },
-  {
     "index": "tome-of-clear-thought",
     "name": "Tome of Clear Thought",
     "equipment_category": {
@@ -7891,6 +6345,10 @@
       "Wondrous item, legendary",
       "This tube holds milky liquid with a strong alcohol smell. You can use an action to pour the contents of the tube onto a surface within reach. The liquid instantly dissolves up to 1 square foot of adhesive it touches, including sovereign glue."
     ],
+    "cost": {
+      "quantity": 300,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/universal-solvent"
   },
   {
@@ -7910,7 +6368,11 @@
       "Weapon (any), rare",
       "When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type."
     ],
-    "url": "/api/magic-items/vicious-weapon"
+    "url": "/api/magic-items/vicious-weapon",
+    "cost": {
+      "quantity": 350,
+      "unit": "gp"
+    }
   },
   {
     "index": "vorpal-sword",
@@ -8326,7 +6788,7 @@
   },
   {
     "index": "weapon-1",
-    "name": "Weapon, +1",
+    "name": "Enchant Weapon +1",
     "equipment_category": {
       "index": "weapon",
       "name": "Weapon",
@@ -8341,11 +6803,21 @@
       "Weapon (any), uncommon",
       "You have a +1 bonus to attack and damage rolls made with this magic weapon."
     ],
+    "cost": {
+      "quantity": 1000,
+      "unit": "gp"
+    },
+    "enchantment": {
+      "type": "applied to existing equipment",
+      "label-prefix": "+1 Magic",
+      "damage-bonus": 1,
+      "to-hit-bonus": 1
+    },
     "url": "/api/magic-items/weapon-1"
   },
   {
     "index": "weapon-2",
-    "name": "Weapon, +2",
+    "name": "Enchant Weapon +2",
     "equipment_category": {
       "index": "weapon",
       "name": "Weapon",
@@ -8360,11 +6832,21 @@
       "Weapon (any), rare",
       "You have a +2 bonus to attack and damage rolls made with this magic weapon."
     ],
+    "cost": {
+      "quantity": 4000,
+      "unit": "gp"
+    },
+    "enchantment": {
+      "type": "applied to existing equipment",
+      "label-prefix": "+2 Magic",
+      "damage-bonus": 2,
+      "to-hit-bonus": 2
+    },
     "url": "/api/magic-items/weapon-2"
   },
   {
     "index": "weapon-3",
-    "name": "Weapon, +3",
+    "name": "Enchant Weapon +3",
     "equipment_category": {
       "index": "weapon",
       "name": "Weapon",
@@ -8379,116 +6861,16 @@
       "Weapon (any), very rare",
       "You have a +3 bonus to attack and damage rolls made with this magic weapon."
     ],
+    "cost": {
+      "quantity": 16000,
+      "unit": "gp"
+    },
+    "enchantment": {
+      "type": "applied to existing equipment",
+      "label-prefix": "+3 Magic",
+      "damage-bonus": 3,
+      "to-hit-bonus": 3
+    },
     "url": "/api/magic-items/weapon-3"
-  },
-  {
-    "index": "well-of-many-worlds",
-    "name": "Well of Many Worlds",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Legendary"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, legendary",
-      "This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.",
-      "You can use an action to unfold and place the well of many worlds on a solid surface, whereupon it creates a two-way portal to another world or plane of existence. Each time the item opens a portal, the GM decides where it leads. You can use an action to close an open portal by taking hold of the edges of the cloth and folding it up. Once well of many worlds has opened a portal, it can't do so again for 1d8 hours."
-    ],
-    "url": "/api/magic-items/well-of-many-worlds"
-  },
-  {
-    "index": "wind-fan",
-    "name": "Wind Fan",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon",
-      "While holding this fan, you can use an action to cast the gust of wind spell (save DC 13) from it. Once used, the fan shouldn't be used again until the next dawn. Each time it is used again before then, it has a cumulative 20 percent chance of not working and tearing into useless, nonmagical tatters."
-    ],
-    "url": "/api/magic-items/wind-fan"
-  },
-  {
-    "index": "winged-boots",
-    "name": "Winged Boots",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Uncommon"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, uncommon (requires attunement)",
-      "While you wear these boots, you have a flying speed equal to your walking speed. You can use the boots to fly for up to 4 hours, all at once or in several shorter flights, each one using a minimum of 1 minute from the duration. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land.",
-      "The boots regain 2 hours of flying capability for every 12 hours they aren't in use."
-    ],
-    "url": "/api/magic-items/winged-boots"
-  },
-  {
-    "index": "wings-of-flying",
-    "name": "Wings of Flying",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Rare"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, rare (requires attunement)",
-      "While wearing this cloak, you can use an action to speak its command word. This turns the cloak into a pair of bat wings or bird wings on your back for 1 hour or until you repeat the command word as an action. The wings give you a flying speed of 60 feet. When they disappear, you can't use them again for 1d12 hours."
-    ],
-    "url": "/api/magic-items/wings-of-flying"
-  },
-  {
-    "index": "orb-of-dragonkind",
-    "name": "Orb of Dragonkind",
-    "equipment_category": {
-      "index": "wondrous-items",
-      "name": "Wondrous Items",
-      "url": "/api/equipment-categories/wondrous-items"
-    },
-    "rarity": {
-      "name": "Artifact"
-    },
-    "variants": [],
-    "variant": false,
-    "desc": [
-      "Wondrous item, artifact (requires attunement)",
-      "Ages past, elves and humans waged a terrible war against evil dragons. When the world seemed doomed, powerful wizards came together and worked their greatest magic, forging five Orbs of Dragonkind (or Dragon Orbs) to help them defeat the dragons. One orb was taken to each of the five wizard towers, and there they were used to speed the war toward a victorious end. The wizards used the orbs to lure dragons to them, then destroyed the dragons with powerful magic.",
-      "As the wizard towers fell in later ages, the orbs were destroyed or faded into legend, and only three are thought to survive. Their magic has been warped and twisted over the centuries, so although their primary purpose of calling dragons still functions, they also allow some measure of control over dragons.",
-      "Each orb contains the essence of an evil dragon, a presence that resents any attempt to coax magic from it. Those lacking in force of personality might find themselves enslaved to an orb.",
-      "An orb is an etched crystal globe about 10 inches in diameter. When used, it grows to about 20 inches in diameter, and mist swirls inside it.",
-      "While attuned to an orb, you can use an action to peer into the orb's depths and speak its command word. You must then make a DC 15 Charisma check. On a successful check, you control the orb for as long as you remain attuned to it. On a failed check, you become charmed by the orb for as long as you remain attuned to it.",
-      "While you are charmed by the orb, you can't voluntarily end your attunement to it, and the orb casts suggestion on you at will (save DC 18), urging you to work toward the evil ends it desires. The dragon essence within the orb might want many things: the annihilation of a particular people, freedom from the orb, to spread suffering in the world, to advance the worship of Tiamat, or something else the GM decides.",
-      "***Random Properties.*** An Orb of Dragonkind has the following random properties:",
-      "2 minor beneficial properties",
-      "1 minor detrimental property",
-      "1 major detrimental property",
-      "***Spells.*** The orb has 7 charges and regains 1d4 + 3 expended charges daily at dawn. If you control the orb, you can use an action and expend 1 or more charges to cast one of the following spells (save DC 18) from it: cure wounds (5th-level version, 3 charges), daylight (1 charge), death ward (2 charges), or scrying (3 charges).",
-      "You can also use an action to cast the detect magic spell from the orb without using any charges.",
-      "***Call Dragons.*** While you control the orb, you can use an action to cause the artifact to issue a telepathic call that extends in all directions for 40 miles. Evil dragons in range feel compelled to come to the orb as soon as possible by the most direct route. Dragon deities such as Tiamat are unaffected by this call. Dragons drawn to the orb might be hostile toward you for compelling them against their will. Once you have used this property, it can't be used again for 1 hour.",
-      "***Destroying an Orb.*** An Orb of Dragonkind appears fragile but is impervious to most damage, including the attacks and breath weapons of dragons. A disintegrate spell or one good hit from a +3 magic weapon is sufficient to destroy an orb, however."
-    ],
-    "url": "/api/magic-items/orb-of-dragonkind"
   }
 ]
