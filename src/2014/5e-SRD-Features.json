@@ -96,7 +96,8 @@
     "level": 3,
     "prerequisites": [],
     "desc": [
-      "Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion (as described in appendix A)."
+      "Starting at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion."
+
     ],
     "url": "/api/features/frenzy"
   },
@@ -2959,8 +2960,7 @@
       "You gain the following benefits while you are unarmed or wielding only monk weapons and you aren't wearing armor or wielding a shield:",
       "- You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.",
       "- You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of Table: The Monk.",
-      "- When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.",
-      "Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon."
+      "- When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn."
     ],
     "url": "/api/features/martial-arts"
   },
@@ -4954,335 +4954,162 @@
     ],
     "feature_specific": {
       "expertise_options": {
-        "choose": 1,
+        "choose": 2,
         "type": "proficiency",
         "from": {
           "option_set_type": "options_array",
           "options": [
             {
-              "option_type": "choice",
-              "choice": {
-                "choose": 2,
-                "type": "proficiency",
-                "from": {
-                  "option_set_type": "options_array",
-                  "options": [
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-acrobatics",
-                        "name": "Skill: Acrobatics",
-                        "url": "/api/proficiencies/skill-acrobatics"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-animal-handling",
-                        "name": "Skill: Animal Handling",
-                        "url": "/api/proficiencies/skill-animal-handling"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-arcana",
-                        "name": "Skill: Arcana",
-                        "url": "/api/proficiencies/skill-arcana"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-athletics",
-                        "name": "Skill: Athletics",
-                        "url": "/api/proficiencies/skill-athletics"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-deception",
-                        "name": "Skill: Deception",
-                        "url": "/api/proficiencies/skill-deception"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-history",
-                        "name": "Skill: History",
-                        "url": "/api/proficiencies/skill-history"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-insight",
-                        "name": "Skill: Insight",
-                        "url": "/api/proficiencies/skill-insight"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-intimidation",
-                        "name": "Skill: Intimidation",
-                        "url": "/api/proficiencies/skill-intimidation"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-investigation",
-                        "name": "Skill: Investigation",
-                        "url": "/api/proficiencies/skill-investigation"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-medicine",
-                        "name": "Skill: Medicine",
-                        "url": "/api/proficiencies/skill-medicine"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-nature",
-                        "name": "Skill: Nature",
-                        "url": "/api/proficiencies/skill-nature"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-perception",
-                        "name": "Skill: Perception",
-                        "url": "/api/proficiencies/skill-perception"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-performance",
-                        "name": "Skill: Performance",
-                        "url": "/api/proficiencies/skill-performance"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-persuasion",
-                        "name": "Skill: Persuasion",
-                        "url": "/api/proficiencies/skill-persuasion"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-religion",
-                        "name": "Skill: Religion",
-                        "url": "/api/proficiencies/skill-religion"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-sleight-of-hand",
-                        "name": "Skill: Sleight of Hand",
-                        "url": "/api/proficiencies/skill-sleight-of-hand"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-stealth",
-                        "name": "Skill: Stealth",
-                        "url": "/api/proficiencies/skill-stealth"
-                      }
-                    },
-                    {
-                      "option_type": "reference",
-                      "item": {
-                        "index": "skill-survival",
-                        "name": "Skill: Survival",
-                        "url": "/api/proficiencies/skill-survival"
-                      }
-                    }
-                  ]
-                }
+              "option_type": "reference",
+              "item": {
+                "index": "skill-acrobatics",
+                "name": "Skill: Acrobatics",
+                "url": "/api/proficiencies/skill-acrobatics"
               }
             },
             {
-              "option_type": "multiple",
-              "items": [
-                {
-                  "option_type": "choice",
-                  "choice": {
-                    "choose": 1,
-                    "type": "proficiency",
-                    "from": {
-                      "option_set_type": "options_array",
-                      "options": [
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-acrobatics",
-                            "name": "Skill: Acrobatics",
-                            "url": "/api/proficiencies/skill-acrobatics"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-animal-handling",
-                            "name": "Skill: Animal Handling",
-                            "url": "/api/proficiencies/skill-animal-handling"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-arcana",
-                            "name": "Skill: Arcana",
-                            "url": "/api/proficiencies/skill-arcana"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-athletics",
-                            "name": "Skill: Athletics",
-                            "url": "/api/proficiencies/skill-athletics"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-deception",
-                            "name": "Skill: Deception",
-                            "url": "/api/proficiencies/skill-deception"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-history",
-                            "name": "Skill: History",
-                            "url": "/api/proficiencies/skill-history"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-insight",
-                            "name": "Skill: Insight",
-                            "url": "/api/proficiencies/skill-insight"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-intimidation",
-                            "name": "Skill: Intimidation",
-                            "url": "/api/proficiencies/skill-intimidation"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-investigation",
-                            "name": "Skill: Investigation",
-                            "url": "/api/proficiencies/skill-investigation"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-medicine",
-                            "name": "Skill: Medicine",
-                            "url": "/api/proficiencies/skill-medicine"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-nature",
-                            "name": "Skill: Nature",
-                            "url": "/api/proficiencies/skill-nature"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-perception",
-                            "name": "Skill: Perception",
-                            "url": "/api/proficiencies/skill-perception"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-performance",
-                            "name": "Skill: Performance",
-                            "url": "/api/proficiencies/skill-performance"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-persuasion",
-                            "name": "Skill: Persuasion",
-                            "url": "/api/proficiencies/skill-persuasion"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-religion",
-                            "name": "Skill: Religion",
-                            "url": "/api/proficiencies/skill-religion"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-sleight-of-hand",
-                            "name": "Skill: Sleight of Hand",
-                            "url": "/api/proficiencies/skill-sleight-of-hand"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-stealth",
-                            "name": "Skill: Stealth",
-                            "url": "/api/proficiencies/skill-stealth"
-                          }
-                        },
-                        {
-                          "option_type": "reference",
-                          "item": {
-                            "index": "skill-survival",
-                            "name": "Skill: Survival",
-                            "url": "/api/proficiencies/skill-survival"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                },
-                {
-                  "option_type": "reference",
-                  "item": {
-                    "index": "thieves-tools",
-                    "name": "Thieves' Tools",
-                    "url": "/api/proficiencies/thieves-tools"
-                  }
-                }
-              ]
+              "option_type": "reference",
+              "item": {
+                "index": "skill-animal-handling",
+                "name": "Skill: Animal Handling",
+                "url": "/api/proficiencies/skill-animal-handling"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-arcana",
+                "name": "Skill: Arcana",
+                "url": "/api/proficiencies/skill-arcana"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-athletics",
+                "name": "Skill: Athletics",
+                "url": "/api/proficiencies/skill-athletics"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-deception",
+                "name": "Skill: Deception",
+                "url": "/api/proficiencies/skill-deception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-history",
+                "name": "Skill: History",
+                "url": "/api/proficiencies/skill-history"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-insight",
+                "name": "Skill: Insight",
+                "url": "/api/proficiencies/skill-insight"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-intimidation",
+                "name": "Skill: Intimidation",
+                "url": "/api/proficiencies/skill-intimidation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-investigation",
+                "name": "Skill: Investigation",
+                "url": "/api/proficiencies/skill-investigation"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-medicine",
+                "name": "Skill: Medicine",
+                "url": "/api/proficiencies/skill-medicine"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-nature",
+                "name": "Skill: Nature",
+                "url": "/api/proficiencies/skill-nature"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-perception",
+                "name": "Skill: Perception",
+                "url": "/api/proficiencies/skill-perception"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-performance",
+                "name": "Skill: Performance",
+                "url": "/api/proficiencies/skill-performance"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-persuasion",
+                "name": "Skill: Persuasion",
+                "url": "/api/proficiencies/skill-persuasion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-religion",
+                "name": "Skill: Religion",
+                "url": "/api/proficiencies/skill-religion"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-sleight-of-hand",
+                "name": "Skill: Sleight of Hand",
+                "url": "/api/proficiencies/skill-sleight-of-hand"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-stealth",
+                "name": "Skill: Stealth",
+                "url": "/api/proficiencies/skill-stealth"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "skill-survival",
+                "name": "Skill: Survival",
+                "url": "/api/proficiencies/skill-survival"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "thieves-tools",
+                "name": "Thieves' Tools",
+                "url": "/api/proficiencies/thieves-tools"
+              }
             }
           ]
         }
