@@ -15,8 +15,8 @@
     "hit_dice": "18d10",
     "hit_points_roll": "18d10+36",
     "speed": {
-      "walk": "10 ft.",
-      "swim": "40 ft."
+      "walk": 10,
+      "swim": 40
     },
     "strength": 21,
     "dexterity": 9,
@@ -71,7 +71,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 20
     },
     "languages": "Deep Speech, telepathy 120 ft.",
@@ -225,7 +225,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 10,
     "dexterity": 10,
@@ -355,9 +355,9 @@
     "hit_dice": "17d12",
     "hit_points_roll": "17d12+85",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 23,
     "dexterity": 14,
@@ -422,8 +422,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 21
     },
     "languages": "Common, Draconic",
@@ -614,9 +614,9 @@
     "hit_dice": "18d12",
     "hit_points_roll": "18d12+108",
     "speed": {
-      "walk": "40 ft.",
-      "burrow": "30 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "burrow": 30,
+      "fly": 80
     },
     "strength": 25,
     "dexterity": 10,
@@ -681,8 +681,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 22
     },
     "languages": "Common, Draconic",
@@ -868,9 +868,9 @@
     "hit_dice": "15d12",
     "hit_points_roll": "15d12+75",
     "speed": {
-      "walk": "40 ft.",
-      "burrow": "40 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "burrow": 40,
+      "fly": 80
     },
     "strength": 23,
     "dexterity": 10,
@@ -951,8 +951,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 21
     },
     "languages": "Common, Draconic",
@@ -1156,9 +1156,9 @@
     "hit_dice": "17d12",
     "hit_points_roll": "17d12+102",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 25,
     "dexterity": 10,
@@ -1231,8 +1231,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 22
     },
     "languages": "Common, Draconic",
@@ -1440,9 +1440,9 @@
     "hit_dice": "16d12",
     "hit_points_roll": "16d12+80",
     "speed": {
-      "walk": "40 ft.",
-      "climb": "40 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "climb": 40,
+      "fly": 80
     },
     "strength": 23,
     "dexterity": 12,
@@ -1515,8 +1515,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 22
     },
     "languages": "Common, Draconic",
@@ -1720,9 +1720,9 @@
     "hit_dice": "19d12",
     "hit_points_roll": "19d12+133",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 27,
     "dexterity": 14,
@@ -1803,8 +1803,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 24
     },
     "languages": "Common, Draconic",
@@ -2012,9 +2012,9 @@
     "hit_dice": "18d12",
     "hit_points_roll": "18d12+90",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 23,
     "dexterity": 12,
@@ -2109,8 +2109,8 @@
       }
     ],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 22
     },
     "languages": "Common, Draconic",
@@ -2300,9 +2300,9 @@
     "hit_dice": "19d12",
     "hit_points_roll": "19d12+133",
     "speed": {
-      "walk": "40 ft.",
-      "climb": "40 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "climb": 40,
+      "fly": 80
     },
     "strength": 27,
     "dexterity": 10,
@@ -2367,8 +2367,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 23
     },
     "languages": "Common, Draconic",
@@ -2554,8 +2554,8 @@
     "hit_dice": "18d12",
     "hit_points_roll": "18d12+126",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "fly": 80
     },
     "strength": 27,
     "dexterity": 10,
@@ -2636,8 +2636,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 21
     },
     "languages": "Common, Draconic",
@@ -2841,10 +2841,10 @@
     "hit_dice": "16d12",
     "hit_points_roll": "16d12+96",
     "speed": {
-      "walk": "40 ft.",
-      "burrow": "30 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "burrow": 30,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 22,
     "dexterity": 10,
@@ -2909,8 +2909,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 21
     },
     "languages": "Common, Draconic",
@@ -3100,7 +3100,7 @@
     "hit_dice": "12d10",
     "hit_points_roll": "12d10+24",
     "speed": {
-      "fly": "90 ft.",
+      "fly": 90,
       "hover": true
     },
     "strength": 14,
@@ -3162,7 +3162,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Auran",
@@ -3232,9 +3232,9 @@
     "hit_dice": "21d20",
     "hit_points_roll": "21d20+147",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 27,
     "dexterity": 14,
@@ -3299,8 +3299,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 26
     },
     "languages": "Common, Draconic",
@@ -3491,9 +3491,9 @@
     "hit_dice": "26d20",
     "hit_points_roll": "26d20+208",
     "speed": {
-      "walk": "40 ft.",
-      "burrow": "40 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "burrow": 40,
+      "fly": 80
     },
     "strength": 29,
     "dexterity": 10,
@@ -3558,8 +3558,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 27
     },
     "languages": "Common, Draconic",
@@ -3745,9 +3745,9 @@
     "hit_dice": "17d20",
     "hit_points_roll": "17d20+119",
     "speed": {
-      "walk": "40 ft.",
-      "burrow": "40 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "burrow": 40,
+      "fly": 80
     },
     "strength": 27,
     "dexterity": 10,
@@ -3828,8 +3828,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 24
     },
     "languages": "Common, Draconic",
@@ -4037,9 +4037,9 @@
     "hit_dice": "24d20",
     "hit_points_roll": "24d20+192",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 29,
     "dexterity": 10,
@@ -4112,8 +4112,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 27
     },
     "languages": "Common, Draconic",
@@ -4325,9 +4325,9 @@
     "hit_dice": "20d20",
     "hit_points_roll": "20d20+140",
     "speed": {
-      "walk": "40 ft.",
-      "climb": "40 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "climb": 40,
+      "fly": 80
     },
     "strength": 27,
     "dexterity": 12,
@@ -4400,8 +4400,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 27
     },
     "languages": "Common, Draconic",
@@ -4609,9 +4609,9 @@
     "hit_dice": "28d20",
     "hit_points_roll": "28d20+252",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 30,
     "dexterity": 14,
@@ -4692,8 +4692,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 27
     },
     "languages": "Common, Draconic",
@@ -4905,9 +4905,9 @@
     "hit_dice": "22d20",
     "hit_points_roll": "22d20+154",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 27,
     "dexterity": 12,
@@ -5002,8 +5002,8 @@
       }
     ],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 27
     },
     "languages": "Common, Draconic",
@@ -5193,9 +5193,9 @@
     "hit_dice": "28d20",
     "hit_points_roll": "28d20+252",
     "speed": {
-      "walk": "40 ft.",
-      "climb": "40 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "climb": 40,
+      "fly": 80
     },
     "strength": 30,
     "dexterity": 10,
@@ -5260,8 +5260,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 26
     },
     "languages": "Common, Draconic",
@@ -5447,8 +5447,8 @@
     "hit_dice": "25d20",
     "hit_points_roll": "25d20+225",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "fly": 80
     },
     "strength": 30,
     "dexterity": 10,
@@ -5529,8 +5529,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 26
     },
     "languages": "Common, Draconic",
@@ -5738,10 +5738,10 @@
     "hit_dice": "18d20",
     "hit_points_roll": "18d20+144",
     "speed": {
-      "walk": "40 ft.",
-      "burrow": "40 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "burrow": 40,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 26,
     "dexterity": 10,
@@ -5806,8 +5806,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 23
     },
     "languages": "Common, Draconic",
@@ -5997,8 +5997,8 @@
     "hit_dice": "19d10",
     "hit_points_roll": "19d10+95",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "60 ft."
+      "walk": 40,
+      "fly": 60
     },
     "strength": 22,
     "dexterity": 10,
@@ -6083,7 +6083,7 @@
       }
     ],
     "senses": {
-      "truesight": "120 ft.",
+      "truesight": 120,
       "passive_perception": 20
     },
     "languages": "Common, Sphinx",
@@ -6321,7 +6321,7 @@
     "hit_dice": "6d8",
     "hit_points_roll": "6d8+6",
     "speed": {
-      "walk": "25 ft."
+      "walk": 25
     },
     "strength": 14,
     "dexterity": 11,
@@ -6453,8 +6453,8 @@
     "hit_dice": "6d10",
     "hit_points_roll": "6d10+6",
     "speed": {
-      "walk": "30 ft.",
-      "burrow": "10 ft."
+      "walk": 30,
+      "burrow": 10
     },
     "strength": 17,
     "dexterity": 11,
@@ -6468,8 +6468,8 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
-      "tremorsense": "60 ft.",
+      "darkvision": 60,
+      "tremorsense": 60,
       "passive_perception": 11
     },
     "languages": "",
@@ -6548,8 +6548,8 @@
     "hit_dice": "3d8",
     "hit_points_roll": "3d8+6",
     "speed": {
-      "walk": "30 ft.",
-      "climb": "30 ft."
+      "walk": 30,
+      "climb": 30
     },
     "strength": 16,
     "dexterity": 14,
@@ -6660,7 +6660,7 @@
     "hit_dice": "18d8",
     "hit_points_roll": "18d8+18",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 10,
     "dexterity": 14,
@@ -6944,7 +6944,7 @@
     "hit_dice": "12d8",
     "hit_points_roll": "12d8+24",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 11,
     "dexterity": 16,
@@ -7127,7 +7127,7 @@
     "hit_dice": "3d6",
     "hit_points_roll": "3d6",
     "speed": {
-      "walk": "20 ft."
+      "walk": 20
     },
     "strength": 3,
     "dexterity": 8,
@@ -7194,7 +7194,7 @@
     "hit_dice": "7d12",
     "hit_points_roll": "7d12+14",
     "speed": {
-      "walk": "20 ft."
+      "walk": 20
     },
     "strength": 19,
     "dexterity": 6,
@@ -7262,7 +7262,7 @@
     "hit_dice": "3d10",
     "hit_points_roll": "3d10+3",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 14,
     "dexterity": 12,
@@ -7329,7 +7329,7 @@
     "hit_dice": "6d8",
     "hit_points_roll": "6d8+12",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 17,
     "dexterity": 12,
@@ -7444,8 +7444,8 @@
     "hit_dice": "1d6",
     "hit_points_roll": "1d6",
     "speed": {
-      "walk": "30 ft.",
-      "climb": "30 ft."
+      "walk": 30,
+      "climb": 30
     },
     "strength": 8,
     "dexterity": 14,
@@ -7506,8 +7506,8 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4+1",
     "speed": {
-      "walk": "20 ft.",
-      "burrow": "5 ft."
+      "walk": 20,
+      "burrow": 5
     },
     "strength": 4,
     "dexterity": 11,
@@ -7521,7 +7521,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "30 ft.",
+      "darkvision": 30,
       "passive_perception": 11
     },
     "languages": "",
@@ -7570,8 +7570,8 @@
     "hit_dice": "21d12",
     "hit_points_roll": "21d12+126",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "fly": 80
     },
     "strength": 26,
     "dexterity": 15,
@@ -7631,7 +7631,7 @@
       }
     ],
     "senses": {
-      "truesight": "120 ft.",
+      "truesight": 120,
       "passive_perception": 13
     },
     "languages": "Abyssal, telepathy 120 ft.",
@@ -7781,7 +7781,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 11,
     "dexterity": 12,
@@ -7860,7 +7860,7 @@
     "hit_dice": "10d8",
     "hit_points_roll": "10d8+20",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 15,
     "dexterity": 16,
@@ -8015,7 +8015,7 @@
     "hit_dice": "13d8",
     "hit_points_roll": "13d8+52",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 16,
     "dexterity": 17,
@@ -8098,7 +8098,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 18
     },
     "languages": "Infernal, telepathy 120 ft.",
@@ -8232,7 +8232,7 @@
     "hit_dice": "8d8",
     "hit_points_roll": "8d8+16",
     "speed": {
-      "walk": "20 ft."
+      "walk": 20
     },
     "strength": 16,
     "dexterity": 8,
@@ -8246,7 +8246,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 9
     },
     "languages": "",
@@ -8311,8 +8311,8 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
     "speed": {
-      "walk": "5 ft.",
-      "fly": "30 ft."
+      "walk": 5,
+      "fly": 30
     },
     "strength": 2,
     "dexterity": 15,
@@ -8326,7 +8326,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
+      "blindsight": 60,
       "passive_perception": 11
     },
     "languages": "",
@@ -8379,7 +8379,7 @@
     "hit_dice": "8d8",
     "hit_points_roll": "8d8+16",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 16,
     "dexterity": 15,
@@ -8430,7 +8430,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 10
     },
     "languages": "Infernal, telepathy 120 ft.",
@@ -8518,8 +8518,8 @@
     "hit_dice": "16d12",
     "hit_points_roll": "16d12+64",
     "speed": {
-      "walk": "50 ft.",
-      "climb": "40 ft."
+      "walk": 50,
+      "climb": 40
     },
     "strength": 23,
     "dexterity": 16,
@@ -8552,7 +8552,7 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "90 ft.",
+      "darkvision": 90,
       "passive_perception": 16
     },
     "languages": "Draconic",
@@ -8684,7 +8684,7 @@
     "hit_dice": "9d8",
     "hit_points_roll": "9d8+27",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 16,
     "dexterity": 12,
@@ -8745,8 +8745,8 @@
     "hit_dice": "3d8",
     "hit_points_roll": "3d8+6",
     "speed": {
-      "walk": "40 ft.",
-      "climb": "30 ft."
+      "walk": 40,
+      "climb": 30
     },
     "strength": 15,
     "dexterity": 10,
@@ -8839,9 +8839,9 @@
     "hit_dice": "6d8",
     "hit_points_roll": "6d8+6",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "60 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "fly": 60,
+      "swim": 30
     },
     "strength": 15,
     "dexterity": 14,
@@ -8906,8 +8906,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Draconic",
@@ -8992,8 +8992,8 @@
     "hit_dice": "10d10",
     "hit_points_roll": "10d10+30",
     "speed": {
-      "walk": "20 ft.",
-      "climb": "20 ft."
+      "walk": 20,
+      "climb": 20
     },
     "strength": 16,
     "dexterity": 5,
@@ -9119,7 +9119,7 @@
     "hit_dice": "4d8",
     "hit_points_roll": "4d8+4",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 12,
     "dexterity": 17,
@@ -9207,8 +9207,8 @@
     "hit_dice": "2d6",
     "hit_points_roll": "2d6",
     "speed": {
-      "walk": "10 ft.",
-      "fly": "60 ft."
+      "walk": 10,
+      "fly": 60
     },
     "strength": 6,
     "dexterity": 14,
@@ -9282,9 +9282,9 @@
     "hit_dice": "8d8",
     "hit_points_roll": "8d8+16",
     "speed": {
-      "walk": "30 ft.",
-      "burrow": "15 ft.",
-      "fly": "60 ft."
+      "walk": 30,
+      "burrow": 15,
+      "fly": 60
     },
     "strength": 17,
     "dexterity": 10,
@@ -9349,8 +9349,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Draconic",
@@ -9428,7 +9428,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 13,
     "dexterity": 11,
@@ -9511,8 +9511,8 @@
     "hit_dice": "15d10",
     "hit_points_roll": "15d10+60",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "40 ft."
+      "walk": 40,
+      "fly": 40
     },
     "strength": 18,
     "dexterity": 16,
@@ -9579,7 +9579,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 12
     },
     "languages": "Infernal, telepathy 120 ft.",
@@ -9671,9 +9671,9 @@
     "hit_dice": "3d8",
     "hit_points_roll": "3d8+3",
     "speed": {
-      "walk": "30 ft.",
-      "burrow": "15 ft.",
-      "fly": "60 ft."
+      "walk": 30,
+      "burrow": 15,
+      "fly": 60
     },
     "strength": 15,
     "dexterity": 10,
@@ -9738,8 +9738,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Draconic",
@@ -9835,9 +9835,9 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8+10",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "60 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "fly": 60,
+      "swim": 30
     },
     "strength": 17,
     "dexterity": 10,
@@ -9902,8 +9902,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Draconic",
@@ -10005,8 +10005,8 @@
     "hit_dice": "4d10",
     "hit_points_roll": "4d10+12",
     "speed": {
-      "walk": "40 ft.",
-      "climb": "30 ft."
+      "walk": 40,
+      "climb": 30
     },
     "strength": 19,
     "dexterity": 10,
@@ -10121,7 +10121,7 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8+5",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 15,
     "dexterity": 14,
@@ -10152,7 +10152,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Common, Goblin",
@@ -10219,8 +10219,8 @@
     "hit_dice": "9d10",
     "hit_points_roll": "9d10+45",
     "speed": {
-      "walk": "40 ft.",
-      "burrow": "40 ft."
+      "walk": 40,
+      "burrow": 40
     },
     "strength": 19,
     "dexterity": 11,
@@ -10243,8 +10243,8 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
-      "tremorsense": "60 ft.",
+      "darkvision": 60,
+      "tremorsense": 60,
       "passive_perception": 16
     },
     "languages": "",
@@ -10296,7 +10296,7 @@
     "hit_dice": "2d10",
     "hit_points_roll": "2d10+4",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 16,
     "dexterity": 8,
@@ -10351,8 +10351,8 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4",
     "speed": {
-      "walk": "40 ft.",
-      "climb": "30 ft."
+      "walk": 40,
+      "climb": 30
     },
     "strength": 3,
     "dexterity": 15,
@@ -10430,7 +10430,7 @@
     "hit_dice": "6d10",
     "hit_points_roll": "6d10+12",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 18,
     "dexterity": 14,
@@ -10594,7 +10594,7 @@
     "hit_dice": "10d8",
     "hit_points_roll": "10d8+40",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 18,
     "dexterity": 15,
@@ -10645,7 +10645,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 11
     },
     "languages": "Infernal, telepathy 120 ft.",
@@ -10735,8 +10735,8 @@
     "hit_dice": "12d10",
     "hit_points_roll": "12d10+48",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "60 ft."
+      "walk": 30,
+      "fly": 60
     },
     "strength": 19,
     "dexterity": 11,
@@ -10759,7 +10759,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 18
     },
     "languages": "understands Draconic but can't speak",
@@ -10942,8 +10942,8 @@
     "hit_dice": "11d10",
     "hit_points_roll": "11d10+33",
     "speed": {
-      "walk": "30 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "swim": 30
     },
     "strength": 19,
     "dexterity": 10,
@@ -10974,7 +10974,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "understands Deep Speech but can't speak",
@@ -11076,7 +11076,7 @@
     "hit_dice": "14d10",
     "hit_points_roll": "14d10+56",
     "speed": {
-      "walk": "20 ft."
+      "walk": 20
     },
     "strength": 20,
     "dexterity": 9,
@@ -11126,7 +11126,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 9
     },
     "languages": "understands the languages of its creator but can't speak",
@@ -11211,8 +11211,8 @@
     "hit_dice": "12d10",
     "hit_points_roll": "12d10+12",
     "speed": {
-      "walk": "10 ft.",
-      "fly": "40 ft."
+      "walk": 10,
+      "fly": 40
     },
     "strength": 17,
     "dexterity": 15,
@@ -11235,7 +11235,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 11
     },
     "languages": "Deep Speech, Undercommon",
@@ -11347,7 +11347,7 @@
     "hit_dice": "16d12",
     "hit_points_roll": "16d12+96",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 27,
     "dexterity": 10,
@@ -11571,8 +11571,8 @@
     "hit_dice": "6d6",
     "hit_points_roll": "6d6+6",
     "speed": {
-      "walk": "20 ft.",
-      "fly": "40 ft."
+      "walk": 20,
+      "fly": 40
     },
     "strength": 6,
     "dexterity": 12,
@@ -11586,7 +11586,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 11
     },
     "languages": "",
@@ -11630,7 +11630,7 @@
     "hit_dice": "1d8",
     "hit_points_roll": "1d8",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 10,
     "dexterity": 10,
@@ -11685,8 +11685,8 @@
     "hit_dice": "2d10",
     "hit_points_roll": "2d10+2",
     "speed": {
-      "walk": "30 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "swim": 30
     },
     "strength": 15,
     "dexterity": 14,
@@ -11700,7 +11700,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
+      "blindsight": 10,
       "passive_perception": 10
     },
     "languages": "",
@@ -11757,9 +11757,9 @@
     "hit_dice": "4d8",
     "hit_points_roll": "4d8+4",
     "speed": {
-      "walk": "30 ft.",
-      "climb": "30 ft.",
-      "fly": "60 ft."
+      "walk": 30,
+      "climb": 30,
+      "fly": 60
     },
     "strength": 15,
     "dexterity": 12,
@@ -11824,8 +11824,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Draconic",
@@ -11921,8 +11921,8 @@
     "hit_dice": "13d8",
     "hit_points_roll": "13d8+39",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "90 ft."
+      "walk": 30,
+      "fly": 90
     },
     "strength": 16,
     "dexterity": 20,
@@ -11966,7 +11966,7 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "truesight": "120 ft.",
+      "truesight": 120,
       "passive_perception": 15
     },
     "languages": "all, telepathy 120 ft.",
@@ -12168,8 +12168,8 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4",
     "speed": {
-      "walk": "20 ft.",
-      "swim": "20 ft."
+      "walk": 20,
+      "swim": 20
     },
     "strength": 2,
     "dexterity": 11,
@@ -12192,7 +12192,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
+      "blindsight": 30,
       "passive_perception": 9
     },
     "languages": "",
@@ -12240,8 +12240,8 @@
     "hit_dice": "3d10",
     "hit_points_roll": "3d10+3",
     "speed": {
-      "walk": "20 ft.",
-      "swim": "20 ft."
+      "walk": 20,
+      "swim": 20
     },
     "strength": 15,
     "dexterity": 10,
@@ -12321,7 +12321,7 @@
     "hit_dice": "6d8",
     "hit_points_roll": "6d8-5",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 11,
     "dexterity": 14,
@@ -12494,7 +12494,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 11,
     "dexterity": 12,
@@ -12572,8 +12572,8 @@
     "hit_dice": "5d6",
     "hit_points_roll": "5d6+5",
     "speed": {
-      "walk": "10 ft.",
-      "fly": "30 ft."
+      "walk": 10,
+      "fly": 30
     },
     "strength": 16,
     "dexterity": 12,
@@ -12596,7 +12596,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
+      "blindsight": 60,
       "passive_perception": 10
     },
     "languages": "",
@@ -12657,7 +12657,7 @@
     "hit_dice": "6d8",
     "hit_points_roll": "6d8+12",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 15,
     "dexterity": 14,
@@ -12688,7 +12688,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 15
     },
     "languages": "",
@@ -12756,7 +12756,7 @@
     "hit_dice": "3d6",
     "hit_points_roll": "3d6+6",
     "speed": {
-      "walk": "20 ft."
+      "walk": 20
     },
     "strength": 15,
     "dexterity": 14,
@@ -12795,7 +12795,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 12
     },
     "languages": "Gnomish, Terran, Undercommon",
@@ -12916,7 +12916,7 @@
     "hit_dice": "1d8",
     "hit_points_roll": "1d8",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 11,
     "dexterity": 16,
@@ -12971,8 +12971,8 @@
     "hit_dice": "16d8",
     "hit_points_roll": "16d8+64",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "90 ft."
+      "walk": 30,
+      "fly": 90
     },
     "strength": 18,
     "dexterity": 18,
@@ -13038,7 +13038,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 19
     },
     "languages": "all, telepathy 120 ft.",
@@ -13165,7 +13165,7 @@
     "hit_dice": "5d10",
     "hit_points_roll": "5d10+10",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 17,
     "dexterity": 15,
@@ -13247,8 +13247,8 @@
     "hit_dice": "14d10",
     "hit_points_roll": "14d10+84",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "90 ft."
+      "walk": 30,
+      "fly": 90
     },
     "strength": 21,
     "dexterity": 15,
@@ -13290,7 +13290,7 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 13
     },
     "languages": "Auran",
@@ -13517,7 +13517,7 @@
     "hit_dice": "8d8",
     "hit_points_roll": "8d8+16",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 11,
     "dexterity": 18,
@@ -13554,7 +13554,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 11
     },
     "languages": "Common",
@@ -13626,7 +13626,7 @@
     "hit_dice": "3d10",
     "hit_points_roll": "3d10+3",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 18,
     "dexterity": 10,
@@ -13681,8 +13681,8 @@
     "hit_dice": "22d20",
     "hit_points_roll": "22d20+110",
     "speed": {
-      "walk": "20 ft.",
-      "swim": "40 ft."
+      "walk": 20,
+      "swim": 40
     },
     "strength": 25,
     "dexterity": 10,
@@ -13723,7 +13723,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 11
     },
     "languages": "Aquan, Draconic",
@@ -13878,7 +13878,7 @@
     "hit_dice": "4d6",
     "hit_points_roll": "4d6+4",
     "speed": {
-      "walk": "20 ft."
+      "walk": 20
     },
     "strength": 11,
     "dexterity": 11,
@@ -13904,7 +13904,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 9
     },
     "languages": "Abyssal, telepathy 60 ft. (works only with creatures that understand Abyssal)",
@@ -13995,8 +13995,8 @@
     "hit_dice": "13d10",
     "hit_points_roll": "13d10+52",
     "speed": {
-      "walk": "30 ft.",
-      "climb": "30 ft."
+      "walk": 30,
+      "climb": 30
     },
     "strength": 16,
     "dexterity": 16,
@@ -14027,7 +14027,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 15
     },
     "languages": "Elvish, Undercommon",
@@ -14266,7 +14266,7 @@
     "hit_dice": "3d8",
     "hit_points_roll": "3d8",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 10,
     "dexterity": 14,
@@ -14297,7 +14297,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 12
     },
     "languages": "Elvish, Undercommon",
@@ -14420,7 +14420,7 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8+5",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 10,
     "dexterity": 12,
@@ -14613,7 +14613,7 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 10,
     "dexterity": 12,
@@ -14644,7 +14644,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Elvish, Sylvan",
@@ -14798,7 +14798,7 @@
     "hit_dice": "4d8",
     "hit_points_roll": "4d8+8",
     "speed": {
-      "walk": "25 ft."
+      "walk": 25
     },
     "strength": 14,
     "dexterity": 11,
@@ -14814,7 +14814,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 10
     },
     "languages": "Dwarvish, Undercommon",
@@ -14903,8 +14903,8 @@
     "hit_dice": "5d6",
     "hit_points_roll": "5d6",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "30 ft."
+      "walk": 30,
+      "fly": 30
     },
     "strength": 5,
     "dexterity": 14,
@@ -14945,7 +14945,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 12
     },
     "languages": "Auran, Terran",
@@ -15047,8 +15047,8 @@
     "hit_dice": "1d6",
     "hit_points_roll": "1d6",
     "speed": {
-      "walk": "10 ft.",
-      "fly": "60 ft."
+      "walk": 10,
+      "fly": 60
     },
     "strength": 6,
     "dexterity": 15,
@@ -15118,8 +15118,8 @@
     "hit_dice": "12d10",
     "hit_points_roll": "12d10+60",
     "speed": {
-      "walk": "30 ft.",
-      "burrow": "30 ft."
+      "walk": 30,
+      "burrow": 30
     },
     "strength": 20,
     "dexterity": 8,
@@ -15165,8 +15165,8 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
-      "tremorsense": "60 ft.",
+      "darkvision": 60,
+      "tremorsense": 60,
       "passive_perception": 10
     },
     "languages": "Terran",
@@ -15231,8 +15231,8 @@
     "hit_dice": "16d10",
     "hit_points_roll": "16d10+112",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "60 ft."
+      "walk": 40,
+      "fly": 60
     },
     "strength": 22,
     "dexterity": 12,
@@ -15273,7 +15273,7 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 12
     },
     "languages": "Ignan",
@@ -15470,7 +15470,7 @@
     "hit_dice": "8d12",
     "hit_points_roll": "8d12+24",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 22,
     "dexterity": 9,
@@ -15546,7 +15546,7 @@
     "hit_dice": "2d10",
     "hit_points_roll": "2d10+2",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 16,
     "dexterity": 10,
@@ -15630,8 +15630,8 @@
     "hit_dice": "18d8",
     "hit_points_roll": "18d8+72",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "60 ft."
+      "walk": 30,
+      "fly": 60
     },
     "strength": 18,
     "dexterity": 16,
@@ -15690,7 +15690,7 @@
       }
     ],
     "senses": {
-      "truesight": "120 ft.",
+      "truesight": 120,
       "passive_perception": 12
     },
     "languages": "Infernal, telepathy 120 ft.",
@@ -15860,8 +15860,8 @@
     "hit_dice": "8d8",
     "hit_points_roll": "8d8+8",
     "speed": {
-      "walk": "30 ft.",
-      "climb": "30 ft."
+      "walk": 30,
+      "climb": 30
     },
     "strength": 14,
     "dexterity": 15,
@@ -15900,7 +15900,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 13
     },
     "languages": "",
@@ -16006,7 +16006,7 @@
     "hit_dice": "10d10",
     "hit_points_roll": "10d10+30",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 21,
     "dexterity": 8,
@@ -16029,7 +16029,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Giant, Orc",
@@ -16113,7 +16113,7 @@
     "hit_dice": "12d10",
     "hit_points_roll": "12d10+36",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 10,
     "dexterity": 17,
@@ -16173,7 +16173,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Ignan",
@@ -16258,7 +16258,7 @@
     "hit_dice": "13d12",
     "hit_points_roll": "13d12+78",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 25,
     "dexterity": 9,
@@ -16383,7 +16383,7 @@
     "hit_dice": "11d8",
     "hit_points_roll": "11d8+44",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 19,
     "dexterity": 9,
@@ -16432,7 +16432,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "understands the languages of its creator but can't speak",
@@ -16513,9 +16513,9 @@
     "hit_dice": "2d4",
     "hit_points_roll": "2d4",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "60 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "fly": 60,
+      "swim": 30
     },
     "strength": 4,
     "dexterity": 18,
@@ -16529,7 +16529,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
+      "blindsight": 10,
       "passive_perception": 11
     },
     "languages": "",
@@ -16585,8 +16585,8 @@
     "hit_dice": "5d6",
     "hit_points_roll": "5d6",
     "speed": {
-      "walk": "0 ft.",
-      "fly": "50 ft.",
+      "walk": 0,
+      "fly": 50,
       "hover": true
     },
     "strength": 12,
@@ -16702,8 +16702,8 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
     "speed": {
-      "walk": "20 ft.",
-      "swim": "20 ft."
+      "walk": 20,
+      "swim": 20
     },
     "strength": 1,
     "dexterity": 13,
@@ -16734,7 +16734,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "30 ft.",
+      "darkvision": 30,
       "passive_perception": 11
     },
     "languages": "",
@@ -16770,7 +16770,7 @@
     "hit_dice": "12d12",
     "hit_points_roll": "12d12+60",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 23,
     "dexterity": 9,
@@ -16895,8 +16895,8 @@
     "hit_dice": "7d8",
     "hit_points_roll": "7d8+21",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "60 ft."
+      "walk": 30,
+      "fly": 60
     },
     "strength": 15,
     "dexterity": 11,
@@ -16930,7 +16930,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Terran",
@@ -17010,7 +17010,7 @@
     "hit_dice": "8d10",
     "hit_points_roll": "8d10+40",
     "speed": {
-      "walk": "15 ft."
+      "walk": 15
     },
     "strength": 14,
     "dexterity": 3,
@@ -17130,7 +17130,7 @@
     "hit_dice": "8d8",
     "hit_points_roll": "8d8",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 16,
     "dexterity": 17,
@@ -17164,7 +17164,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Common",
@@ -17240,8 +17240,8 @@
     "hit_dice": "10d8",
     "hit_points_roll": "10d8",
     "speed": {
-      "walk": "0 ft.",
-      "fly": "40 ft.",
+      "walk": 0,
+      "fly": 40,
       "hover": true
     },
     "strength": 7,
@@ -17312,7 +17312,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 11
     },
     "languages": "any languages it knew in life",
@@ -17399,7 +17399,7 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 13,
     "dexterity": 15,
@@ -17431,7 +17431,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Common",
@@ -17488,8 +17488,8 @@
     "hit_dice": "15d12",
     "hit_points_roll": "15d12+60",
     "speed": {
-      "walk": "40 ft.",
-      "climb": "40 ft."
+      "walk": 40,
+      "climb": 40
     },
     "strength": 23,
     "dexterity": 14,
@@ -17588,8 +17588,8 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+4",
     "speed": {
-      "walk": "30 ft.",
-      "burrow": "10 ft."
+      "walk": 30,
+      "burrow": 10
     },
     "strength": 13,
     "dexterity": 10,
@@ -17603,7 +17603,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "30 ft.",
+      "darkvision": 30,
       "passive_perception": 11
     },
     "languages": "",
@@ -17683,8 +17683,8 @@
     "hit_dice": "4d10",
     "hit_points_roll": "4d10",
     "speed": {
-      "walk": "10 ft.",
-      "fly": "60 ft."
+      "walk": 10,
+      "fly": 60
     },
     "strength": 15,
     "dexterity": 16,
@@ -17698,7 +17698,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
+      "blindsight": 60,
       "passive_perception": 11
     },
     "languages": "",
@@ -17750,7 +17750,7 @@
     "hit_dice": "5d10",
     "hit_points_roll": "5d10+15",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 17,
     "dexterity": 10,
@@ -17822,8 +17822,8 @@
     "hit_dice": "1d6",
     "hit_points_roll": "1d6+1",
     "speed": {
-      "walk": "30 ft.",
-      "climb": "30 ft."
+      "walk": 30,
+      "climb": 30
     },
     "strength": 5,
     "dexterity": 14,
@@ -17837,7 +17837,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
+      "blindsight": 30,
       "passive_perception": 8
     },
     "languages": "",
@@ -17879,8 +17879,8 @@
     "hit_dice": "8d12",
     "hit_points_roll": "8d12+8",
     "speed": {
-      "walk": "30 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "swim": 30
     },
     "strength": 19,
     "dexterity": 14,
@@ -17903,7 +17903,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
+      "blindsight": 10,
       "passive_perception": 12
     },
     "languages": "",
@@ -17960,8 +17960,8 @@
     "hit_dice": "3d8",
     "hit_points_roll": "3d8",
     "speed": {
-      "walk": "30 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "swim": 30
     },
     "strength": 13,
     "dexterity": 15,
@@ -17984,7 +17984,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
+      "blindsight": 30,
       "passive_perception": 9
     },
     "languages": "",
@@ -18032,8 +18032,8 @@
     "hit_dice": "9d12",
     "hit_points_roll": "9d12+27",
     "speed": {
-      "walk": "30 ft.",
-      "swim": "50 ft."
+      "walk": 30,
+      "swim": 50
     },
     "strength": 21,
     "dexterity": 9,
@@ -18136,8 +18136,8 @@
     "hit_dice": "4d10",
     "hit_points_roll": "4d10+4",
     "speed": {
-      "walk": "10 ft.",
-      "fly": "80 ft."
+      "walk": 10,
+      "fly": 80
     },
     "strength": 16,
     "dexterity": 17,
@@ -18240,7 +18240,7 @@
     "hit_dice": "5d12",
     "hit_points_roll": "5d12+10",
     "speed": {
-      "walk": "60 ft."
+      "walk": 60
     },
     "strength": 19,
     "dexterity": 16,
@@ -18326,7 +18326,7 @@
     "hit_dice": "1d6",
     "hit_points_roll": "1d6+1",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 8,
     "dexterity": 10,
@@ -18340,7 +18340,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
+      "blindsight": 30,
       "passive_perception": 8
     },
     "languages": "",
@@ -18388,8 +18388,8 @@
     "hit_dice": "4d8",
     "hit_points_roll": "4d8",
     "speed": {
-      "walk": "30 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "swim": 30
     },
     "strength": 12,
     "dexterity": 13,
@@ -18420,7 +18420,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "30 ft.",
+      "darkvision": 30,
       "passive_perception": 12
     },
     "languages": "",
@@ -18476,7 +18476,7 @@
     "hit_dice": "3d10",
     "hit_points_roll": "3d10+3",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 17,
     "dexterity": 11,
@@ -18541,7 +18541,7 @@
     "hit_dice": "6d10",
     "hit_points_roll": "6d10+12",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 16,
     "dexterity": 14,
@@ -18612,8 +18612,8 @@
     "hit_dice": "3d10",
     "hit_points_roll": "3d10+3",
     "speed": {
-      "walk": "30 ft.",
-      "climb": "30 ft."
+      "walk": 30,
+      "climb": 30
     },
     "strength": 15,
     "dexterity": 12,
@@ -18627,7 +18627,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "30 ft.",
+      "darkvision": 30,
       "passive_perception": 10
     },
     "languages": "",
@@ -18669,8 +18669,8 @@
     "hit_dice": "8d10",
     "hit_points_roll": "8d10+8",
     "speed": {
-      "walk": "10 ft.",
-      "swim": "60 ft."
+      "walk": 10,
+      "swim": 60
     },
     "strength": 17,
     "dexterity": 13,
@@ -18701,7 +18701,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "",
@@ -18768,8 +18768,8 @@
     "hit_dice": "3d10",
     "hit_points_roll": "3d10+3",
     "speed": {
-      "walk": "5 ft.",
-      "fly": "60 ft."
+      "walk": 5,
+      "fly": 60
     },
     "strength": 13,
     "dexterity": 15,
@@ -18800,7 +18800,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 15
     },
     "languages": "Giant Owl, understands Common, Elvish, and Sylvan but can't speak",
@@ -18852,8 +18852,8 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
     "speed": {
-      "walk": "30 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "swim": 30
     },
     "strength": 10,
     "dexterity": 18,
@@ -18876,7 +18876,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
+      "blindsight": 10,
       "passive_perception": 12
     },
     "languages": "",
@@ -18918,7 +18918,7 @@
     "hit_dice": "2d6",
     "hit_points_roll": "2d6",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 7,
     "dexterity": 15,
@@ -18932,7 +18932,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "",
@@ -18984,7 +18984,7 @@
     "hit_dice": "2d6",
     "hit_points_roll": "2d6",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 7,
     "dexterity": 15,
@@ -18998,7 +18998,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "",
@@ -19050,7 +19050,7 @@
     "hit_dice": "7d10",
     "hit_points_roll": "7d10+14",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 15,
     "dexterity": 13,
@@ -19064,7 +19064,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
+      "blindsight": 60,
       "passive_perception": 9
     },
     "languages": "",
@@ -19139,8 +19139,8 @@
     "hit_dice": "3d10",
     "hit_points_roll": "3d10",
     "speed": {
-      "walk": "0 ft.",
-      "swim": "40 ft."
+      "walk": 0,
+      "swim": 40
     },
     "strength": 12,
     "dexterity": 15,
@@ -19206,7 +19206,7 @@
     "hit_dice": "11d12",
     "hit_points_roll": "11d12+55",
     "speed": {
-      "swim": "50 ft."
+      "swim": 50
     },
     "strength": 23,
     "dexterity": 11,
@@ -19229,7 +19229,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "60 ft.",
+      "blindsight": 60,
       "passive_perception": 13
     },
     "languages": "",
@@ -19282,8 +19282,8 @@
     "hit_dice": "4d10",
     "hit_points_roll": "4d10+4",
     "speed": {
-      "walk": "30 ft.",
-      "climb": "30 ft."
+      "walk": 30,
+      "climb": 30
     },
     "strength": 14,
     "dexterity": 16,
@@ -19306,8 +19306,8 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "",
@@ -19373,8 +19373,8 @@
     "hit_dice": "6d10",
     "hit_points_roll": "6d10+6",
     "speed": {
-      "walk": "20 ft.",
-      "swim": "40 ft."
+      "walk": 20,
+      "swim": 40
     },
     "strength": 15,
     "dexterity": 13,
@@ -19388,7 +19388,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "30 ft.",
+      "darkvision": 30,
       "passive_perception": 10
     },
     "languages": "",
@@ -19453,8 +19453,8 @@
     "hit_dice": "3d10",
     "hit_points_roll": "3d10+6",
     "speed": {
-      "walk": "10 ft.",
-      "fly": "60 ft."
+      "walk": 10,
+      "fly": 60
     },
     "strength": 15,
     "dexterity": 10,
@@ -19560,9 +19560,9 @@
     "hit_dice": "3d8",
     "hit_points_roll": "3d8",
     "speed": {
-      "walk": "10 ft.",
-      "fly": "50 ft.",
-      "swim": "50 ft."
+      "walk": 10,
+      "fly": 50,
+      "swim": 50
     },
     "strength": 10,
     "dexterity": 14,
@@ -19617,7 +19617,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 11,
     "dexterity": 16,
@@ -19648,7 +19648,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 13
     },
     "languages": "",
@@ -19697,8 +19697,8 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
     "speed": {
-      "walk": "40 ft.",
-      "climb": "40 ft."
+      "walk": 40,
+      "climb": 40
     },
     "strength": 12,
     "dexterity": 16,
@@ -19729,8 +19729,8 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 13
     },
     "languages": "",
@@ -19786,8 +19786,8 @@
     "hit_dice": "9d8",
     "hit_points_roll": "9d8+27",
     "speed": {
-      "walk": "10 ft.",
-      "swim": "10 ft."
+      "walk": 10,
+      "swim": 10
     },
     "strength": 10,
     "dexterity": 8,
@@ -19807,7 +19807,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "",
@@ -19904,7 +19904,7 @@
     "hit_dice": "15d10",
     "hit_points_roll": "15d10+75",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 20,
     "dexterity": 15,
@@ -19964,7 +19964,7 @@
       }
     ],
     "senses": {
-      "truesight": "120 ft.",
+      "truesight": 120,
       "passive_perception": 13
     },
     "languages": "Abyssal, telepathy 120 ft.",
@@ -20158,7 +20158,7 @@
     "hit_dice": "15d8",
     "hit_points_roll": "15d8+45",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 18,
     "dexterity": 15,
@@ -20385,7 +20385,7 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 14,
     "dexterity": 12,
@@ -20399,7 +20399,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Gnoll",
@@ -20498,7 +20498,7 @@
     "hit_dice": "1d8",
     "hit_points_roll": "1d8",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 12,
     "dexterity": 10,
@@ -20576,7 +20576,7 @@
     "hit_dice": "2d6",
     "hit_points_roll": "2d6",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 8,
     "dexterity": 14,
@@ -20599,7 +20599,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 9
     },
     "languages": "Common, Goblin",
@@ -20617,6 +20617,7 @@
         "name": "Scimitar",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -20632,6 +20633,7 @@
         "name": "Shortbow",
         "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Ranged",
         "damage": [
           {
             "damage_type": {
@@ -20644,6 +20646,7 @@
         ]
       }
     ],
+    "bonus_actions": ["disengage", "hide"],
     "image": "/api/images/monsters/goblin.png",
     "url": "/api/monsters/goblin"
   },
@@ -20663,9 +20666,9 @@
     "hit_dice": "8d8",
     "hit_points_roll": "8d8+24",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "60 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "fly": 60,
+      "swim": 30
     },
     "strength": 19,
     "dexterity": 14,
@@ -20730,8 +20733,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Draconic",
@@ -20833,7 +20836,7 @@
     "hit_dice": "12d10",
     "hit_points_roll": "12d10+48",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 20,
     "dexterity": 11,
@@ -20862,7 +20865,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "",
@@ -20943,8 +20946,8 @@
     "hit_dice": "3d8",
     "hit_points_roll": "3d8+9",
     "speed": {
-      "walk": "10 ft.",
-      "climb": "10 ft."
+      "walk": 10,
+      "climb": 10
     },
     "strength": 12,
     "dexterity": 6,
@@ -21066,9 +21069,9 @@
     "hit_dice": "7d8",
     "hit_points_roll": "7d8+7",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "60 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "fly": 60,
+      "swim": 30
     },
     "strength": 15,
     "dexterity": 12,
@@ -21139,8 +21142,8 @@
       }
     ],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Draconic",
@@ -21224,7 +21227,7 @@
     "hit_dice": "11d8",
     "hit_points_roll": "11d8+33",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 18,
     "dexterity": 12,
@@ -21271,7 +21274,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Common, Draconic, Sylvan",
@@ -21373,8 +21376,8 @@
     "hit_dice": "6d8",
     "hit_points_roll": "6d8",
     "speed": {
-      "walk": "30 ft.",
-      "climb": "30 ft."
+      "walk": 30,
+      "climb": 30
     },
     "strength": 14,
     "dexterity": 14,
@@ -21390,7 +21393,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 12
     },
     "languages": "",
@@ -21470,8 +21473,8 @@
     "hit_dice": "7d10",
     "hit_points_roll": "7d10+21",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "80 ft."
+      "walk": 30,
+      "fly": 80
     },
     "strength": 18,
     "dexterity": 15,
@@ -21494,7 +21497,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 15
     },
     "languages": "",
@@ -21575,7 +21578,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 16,
     "dexterity": 12,
@@ -21698,7 +21701,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 13,
     "dexterity": 12,
@@ -21783,7 +21786,7 @@
     "hit_dice": "15d10",
     "hit_points_roll": "15d10+45",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 19,
     "dexterity": 18,
@@ -21851,7 +21854,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Celestial, Common",
@@ -22007,8 +22010,8 @@
     "hit_dice": "16d10",
     "hit_points_roll": "16d10+48",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "60 ft."
+      "walk": 40,
+      "fly": 60
     },
     "strength": 18,
     "dexterity": 15,
@@ -22070,7 +22073,7 @@
       }
     ],
     "senses": {
-      "truesight": "120 ft.",
+      "truesight": 120,
       "passive_perception": 18
     },
     "languages": "Common, Sphinx",
@@ -22259,7 +22262,7 @@
     "hit_dice": "10d8",
     "hit_points_roll": "10d8+20",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 16,
     "dexterity": 13,
@@ -22275,8 +22278,8 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 12
     },
     "languages": "Common, Draconic",
@@ -22414,8 +22417,8 @@
     "hit_dice": "7d8",
     "hit_points_roll": "7d8+7",
     "speed": {
-      "walk": "20 ft.",
-      "fly": "40 ft."
+      "walk": 20,
+      "fly": 40
     },
     "strength": 12,
     "dexterity": 13,
@@ -22506,8 +22509,8 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
     "speed": {
-      "walk": "10 ft.",
-      "fly": "60 ft."
+      "walk": 10,
+      "fly": 60
     },
     "strength": 5,
     "dexterity": 16,
@@ -22577,7 +22580,7 @@
     "hit_dice": "7d8",
     "hit_points_roll": "7d8+14",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 17,
     "dexterity": 12,
@@ -22602,7 +22605,7 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 15
     },
     "languages": "understands Infernal but can't speak it",
@@ -22691,7 +22694,7 @@
     "hit_dice": "13d10",
     "hit_points_roll": "13d10+65",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 19,
     "dexterity": 17,
@@ -22743,7 +22746,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 11
     },
     "languages": "Abyssal, telepathy 120 ft.",
@@ -22836,7 +22839,7 @@
     "hit_dice": "10d12",
     "hit_points_roll": "10d12+40",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 21,
     "dexterity": 8,
@@ -22927,8 +22930,8 @@
     "hit_dice": "3d10",
     "hit_points_roll": "3d10+3",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "60 ft."
+      "walk": 40,
+      "fly": 60
     },
     "strength": 17,
     "dexterity": 13,
@@ -23043,7 +23046,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 13,
     "dexterity": 12,
@@ -23057,7 +23060,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Common, Goblin",
@@ -23141,8 +23144,8 @@
     "hit_dice": "2d4",
     "hit_points_roll": "2d4",
     "speed": {
-      "walk": "20 ft.",
-      "fly": "40 ft."
+      "walk": 20,
+      "fly": 40
     },
     "strength": 4,
     "dexterity": 15,
@@ -23169,7 +23172,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "understands the languages of its creator but can't speak",
@@ -23218,8 +23221,8 @@
     "hit_dice": "17d10",
     "hit_points_roll": "17d10+85",
     "speed": {
-      "walk": "20 ft.",
-      "fly": "60 ft."
+      "walk": 20,
+      "fly": 60
     },
     "strength": 22,
     "dexterity": 17,
@@ -23278,7 +23281,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 13
     },
     "languages": "Infernal, telepathy 120 ft.",
@@ -23432,7 +23435,7 @@
     "hit_dice": "6d10",
     "hit_points_roll": "6d10+12",
     "speed": {
-      "swim": "40 ft."
+      "swim": 40
     },
     "strength": 18,
     "dexterity": 13,
@@ -23455,7 +23458,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "30 ft.",
+      "darkvision": 30,
       "passive_perception": 12
     },
     "languages": "",
@@ -23507,8 +23510,8 @@
     "hit_dice": "15d12",
     "hit_points_roll": "15d12+75",
     "speed": {
-      "walk": "30 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "swim": 30
     },
     "strength": 20,
     "dexterity": 12,
@@ -23531,7 +23534,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 16
     },
     "languages": "",
@@ -23603,7 +23606,7 @@
     "hit_dice": "1d8",
     "hit_points_roll": "1d8+1",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 11,
     "dexterity": 13,
@@ -23674,7 +23677,7 @@
     "hit_dice": "19d10",
     "hit_points_roll": "19d10+76",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 21,
     "dexterity": 14,
@@ -23732,8 +23735,8 @@
       }
     ],
     "senses": {
-      "blindsight": "60 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 60,
+      "darkvision": 120,
       "passive_perception": 12
     },
     "languages": "Infernal, telepathy 120 ft.",
@@ -23865,8 +23868,8 @@
     "hit_dice": "6d6",
     "hit_points_roll": "6d6",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "30 ft."
+      "walk": 30,
+      "fly": 30
     },
     "strength": 7,
     "dexterity": 13,
@@ -23909,7 +23912,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 12
     },
     "languages": "Aquan, Auran",
@@ -24043,8 +24046,8 @@
     "hit_dice": "3d4",
     "hit_points_roll": "3d4+3",
     "speed": {
-      "walk": "20 ft.",
-      "fly": "40 ft."
+      "walk": 20,
+      "fly": 40
     },
     "strength": 6,
     "dexterity": 17,
@@ -24103,7 +24106,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 11
     },
     "languages": "Infernal, Common",
@@ -24163,8 +24166,8 @@
     "hit_dice": "16d8",
     "hit_points_roll": "16d8+32",
     "speed": {
-      "walk": "50 ft.",
-      "fly": "50 ft.",
+      "walk": 50,
+      "fly": 50,
       "hover": true
     },
     "strength": 16,
@@ -24241,7 +24244,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 18
     },
     "languages": "Auran, understands Common but doesn't speak it",
@@ -24305,7 +24308,7 @@
     "hit_dice": "20d10",
     "hit_points_roll": "20d10+100",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 24,
     "dexterity": 9,
@@ -24355,7 +24358,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 10
     },
     "languages": "understands the languages of its creator but can't speak",
@@ -24501,7 +24504,7 @@
     "hit_dice": "1d6",
     "hit_points_roll": "1d6",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 8,
     "dexterity": 15,
@@ -24575,7 +24578,7 @@
     "hit_dice": "12d12",
     "hit_points_roll": "12d12+12",
     "speed": {
-      "swim": "60 ft."
+      "swim": 60
     },
     "strength": 19,
     "dexterity": 10,
@@ -24598,7 +24601,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "120 ft.",
+      "blindsight": 120,
       "passive_perception": 13
     },
     "languages": "",
@@ -24663,7 +24666,7 @@
     "hit_dice": "8d8",
     "hit_points_roll": "8d8+16",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 16,
     "dexterity": 11,
@@ -24786,7 +24789,7 @@
     "hit_dice": "2d6",
     "hit_points_roll": "2d6-2",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 7,
     "dexterity": 15,
@@ -24800,7 +24803,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 8
     },
     "languages": "Common, Draconic",
@@ -24868,8 +24871,8 @@
     "hit_dice": "27d20",
     "hit_points_roll": "27d20+189",
     "speed": {
-      "walk": "20 ft.",
-      "swim": "60 ft."
+      "walk": 20,
+      "swim": 60
     },
     "strength": 30,
     "dexterity": 11,
@@ -24938,7 +24941,7 @@
       }
     ],
     "senses": {
-      "truesight": "120 ft.",
+      "truesight": 120,
       "passive_perception": 14
     },
     "languages": "understands Abyssal, Celestial, Infernal, and Primordial but can't speak, telepathy 120 ft.",
@@ -25132,7 +25135,7 @@
     "hit_dice": "13d10",
     "hit_points_roll": "13d10+26",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 16,
     "dexterity": 13,
@@ -25171,7 +25174,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 12
     },
     "languages": "Abyssal, Common",
@@ -25363,7 +25366,7 @@
     "hit_dice": "3d8",
     "hit_points_roll": "3d8",
     "speed": {
-      "walk": "15 ft."
+      "walk": 15
     },
     "strength": 10,
     "dexterity": 5,
@@ -25398,7 +25401,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 10
     },
     "languages": "understands infernal but can't speak",
@@ -25450,7 +25453,7 @@
     "hit_dice": "18d8",
     "hit_points_roll": "18d8+54",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 11,
     "dexterity": 16,
@@ -25554,7 +25557,7 @@
       }
     ],
     "senses": {
-      "truesight": "120 ft.",
+      "truesight": 120,
       "passive_perception": 19
     },
     "languages": "Common plus up to five other languages",
@@ -25823,7 +25826,7 @@
     "hit_dice": "4d10",
     "hit_points_roll": "4d10+4",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 17,
     "dexterity": 15,
@@ -25937,8 +25940,8 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4",
     "speed": {
-      "walk": "20 ft.",
-      "climb": "20 ft."
+      "walk": 20,
+      "climb": 20
     },
     "strength": 2,
     "dexterity": 11,
@@ -25952,7 +25955,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "30 ft.",
+      "darkvision": 30,
       "passive_perception": 9
     },
     "languages": "",
@@ -26006,8 +26009,8 @@
     "hit_dice": "4d8",
     "hit_points_roll": "4d8+4",
     "speed": {
-      "walk": "30 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "swim": 30
     },
     "strength": 15,
     "dexterity": 10,
@@ -26265,7 +26268,7 @@
     "hit_dice": "9d8",
     "hit_points_roll": "9d8",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 9,
     "dexterity": 14,
@@ -26464,8 +26467,8 @@
     "hit_dice": "5d6",
     "hit_points_roll": "5d6+5",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "30 ft."
+      "walk": 30,
+      "fly": 30
     },
     "strength": 8,
     "dexterity": 12,
@@ -26499,7 +26502,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Ignan, Terran",
@@ -26633,7 +26636,7 @@
     "hit_dice": "2d6",
     "hit_points_roll": "2d6+2",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 7,
     "dexterity": 15,
@@ -26651,7 +26654,7 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Ignan",
@@ -26723,7 +26726,7 @@
     "hit_dice": "11d12",
     "hit_points_roll": "11d12+55",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 24,
     "dexterity": 9,
@@ -26799,8 +26802,8 @@
     "hit_dice": "8d10",
     "hit_points_roll": "8d10+24",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "50 ft."
+      "walk": 30,
+      "fly": 50
     },
     "strength": 17,
     "dexterity": 16,
@@ -26814,7 +26817,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 11
     },
     "languages": "",
@@ -26930,7 +26933,7 @@
     "hit_dice": "18d10",
     "hit_points_roll": "18d10+90",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 18,
     "dexterity": 20,
@@ -26990,7 +26993,7 @@
       }
     ],
     "senses": {
-      "truesight": "120 ft.",
+      "truesight": 120,
       "passive_perception": 13
     },
     "languages": "Abyssal, telepathy 120 ft.",
@@ -27089,7 +27092,7 @@
     "hit_dice": "1d8",
     "hit_points_roll": "1d8+1",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 13,
     "dexterity": 14,
@@ -27159,7 +27162,7 @@
     "hit_dice": "17d8",
     "hit_points_roll": "17d8+51",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 10,
     "dexterity": 15,
@@ -27206,7 +27209,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Common",
@@ -27347,8 +27350,8 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
     "speed": {
-      "walk": "10 ft.",
-      "swim": "40 ft."
+      "walk": 10,
+      "swim": 40
     },
     "strength": 10,
     "dexterity": 13,
@@ -27439,8 +27442,8 @@
     "hit_dice": "6d10",
     "hit_points_roll": "6d10+12",
     "speed": {
-      "walk": "10 ft.",
-      "swim": "40 ft."
+      "walk": 10,
+      "swim": 40
     },
     "strength": 18,
     "dexterity": 10,
@@ -27454,7 +27457,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Abyssal, Aquan",
@@ -27598,7 +27601,7 @@
     "hit_dice": "9d8",
     "hit_points_roll": "9d8+18",
     "speed": {
-      "walk": "15 ft."
+      "walk": 15
     },
     "strength": 17,
     "dexterity": 12,
@@ -27629,7 +27632,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 11
     },
     "languages": "",
@@ -27713,7 +27716,7 @@
     "hit_dice": "9d10",
     "hit_points_roll": "9d10+27",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 18,
     "dexterity": 11,
@@ -27736,7 +27739,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 17
     },
     "languages": "Abyssal",
@@ -27807,7 +27810,7 @@
     "hit_dice": "9d10",
     "hit_points_roll": "9d10+18",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 18,
     "dexterity": 11,
@@ -27836,7 +27839,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 9
     },
     "languages": "understands Abyssal but can't speak",
@@ -27899,7 +27902,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 14,
     "dexterity": 10,
@@ -27964,7 +27967,7 @@
     "hit_dice": "9d8",
     "hit_points_roll": "9d8+18",
     "speed": {
-      "walk": "20 ft."
+      "walk": 20
     },
     "strength": 16,
     "dexterity": 8,
@@ -28020,7 +28023,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "the languages it knew in life",
@@ -28100,7 +28103,7 @@
     "hit_dice": "13d8",
     "hit_points_roll": "13d8+39",
     "speed": {
-      "walk": "20 ft."
+      "walk": 20
     },
     "strength": 18,
     "dexterity": 10,
@@ -28195,7 +28198,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "the languages it knew in life",
@@ -28431,8 +28434,8 @@
     "hit_dice": "16d10",
     "hit_points_roll": "16d10+96",
     "speed": {
-      "walk": "20 ft.",
-      "fly": "30 ft."
+      "walk": 20,
+      "fly": 30
     },
     "strength": 21,
     "dexterity": 10,
@@ -28492,7 +28495,7 @@
       }
     ],
     "senses": {
-      "truesight": "120 ft.",
+      "truesight": 120,
       "passive_perception": 11
     },
     "languages": "Abyssal, telepathy 120 ft.",
@@ -28599,7 +28602,7 @@
     "hit_dice": "15d8",
     "hit_points_roll": "15d8+45",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 18,
     "dexterity": 15,
@@ -28656,7 +28659,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 16
     },
     "languages": "Abyssal, Common, Infernal, Primordial",
@@ -28787,8 +28790,8 @@
     "hit_dice": "8d10",
     "hit_points_roll": "8d10+24",
     "speed": {
-      "walk": "60 ft.",
-      "fly": "90 ft."
+      "walk": 60,
+      "fly": 90
     },
     "strength": 18,
     "dexterity": 15,
@@ -28876,7 +28879,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 11,
     "dexterity": 12,
@@ -28962,8 +28965,8 @@
     "hit_dice": "6d10",
     "hit_points_roll": "6d10+12",
     "speed": {
-      "walk": "10 ft.",
-      "climb": "10 ft."
+      "walk": 10,
+      "climb": 10
     },
     "strength": 15,
     "dexterity": 6,
@@ -29079,8 +29082,8 @@
     "hit_dice": "1d6",
     "hit_points_roll": "1d6",
     "speed": {
-      "walk": "5 ft.",
-      "swim": "30 ft."
+      "walk": 5,
+      "swim": 30
     },
     "strength": 4,
     "dexterity": 15,
@@ -29111,7 +29114,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "30 ft.",
+      "darkvision": 30,
       "passive_perception": 12
     },
     "languages": "",
@@ -29186,7 +29189,7 @@
     "hit_dice": "7d10",
     "hit_points_roll": "7d10+21",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 19,
     "dexterity": 8,
@@ -29200,7 +29203,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 8
     },
     "languages": "Common, Giant",
@@ -29257,7 +29260,7 @@
     "hit_dice": "9d10",
     "hit_points_roll": "9d10+36",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 19,
     "dexterity": 6,
@@ -29288,7 +29291,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 8
     },
     "languages": "understands Common and Giant but can't speak",
@@ -29343,8 +29346,8 @@
     "hit_dice": "13d10",
     "hit_points_roll": "13d10+39",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "30 ft."
+      "walk": 30,
+      "fly": 30
     },
     "strength": 19,
     "dexterity": 11,
@@ -29415,7 +29418,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Common, Giant",
@@ -29609,7 +29612,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+6",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 16,
     "dexterity": 12,
@@ -29632,7 +29635,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Common, Orc",
@@ -29695,7 +29698,7 @@
     "hit_dice": "12d10",
     "hit_points_roll": "12d10+48",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 16,
     "dexterity": 11,
@@ -29718,7 +29721,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 11
     },
     "languages": "Otyugh",
@@ -29819,8 +29822,8 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
     "speed": {
-      "walk": "5 ft.",
-      "fly": "60 ft."
+      "walk": 5,
+      "fly": 60
     },
     "strength": 3,
     "dexterity": 13,
@@ -29851,7 +29854,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 13
     },
     "languages": "",
@@ -29903,7 +29906,7 @@
     "hit_dice": "7d10",
     "hit_points_roll": "7d10+21",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 20,
     "dexterity": 12,
@@ -29926,7 +29929,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 13
     },
     "languages": "",
@@ -30006,8 +30009,8 @@
     "hit_dice": "3d8",
     "hit_points_roll": "3d8",
     "speed": {
-      "walk": "50 ft.",
-      "climb": "40 ft."
+      "walk": 50,
+      "climb": 40
     },
     "strength": 14,
     "dexterity": 15,
@@ -30113,8 +30116,8 @@
     "hit_dice": "7d10",
     "hit_points_roll": "7d10+21",
     "speed": {
-      "walk": "60 ft.",
-      "fly": "90 ft."
+      "walk": 60,
+      "fly": 90
     },
     "strength": 18,
     "dexterity": 15,
@@ -30203,8 +30206,8 @@
     "hit_dice": "5d10",
     "hit_points_roll": "5d10+5",
     "speed": {
-      "walk": "30 ft.",
-      "climb": "30 ft."
+      "walk": 30,
+      "climb": 30
     },
     "strength": 15,
     "dexterity": 15,
@@ -30227,7 +30230,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "",
@@ -30284,8 +30287,8 @@
     "hit_dice": "24d10",
     "hit_points_roll": "24d10+168",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "60 ft."
+      "walk": 30,
+      "fly": 60
     },
     "strength": 26,
     "dexterity": 14,
@@ -30336,7 +30339,7 @@
       }
     ],
     "senses": {
-      "truesight": "120 ft.",
+      "truesight": 120,
       "passive_perception": 14
     },
     "languages": "Infernal, telepathy 120 ft.",
@@ -30525,8 +30528,8 @@
     "hit_dice": "16d10",
     "hit_points_roll": "16d10+112",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "120 ft."
+      "walk": 40,
+      "fly": 120
     },
     "strength": 24,
     "dexterity": 20,
@@ -30592,7 +30595,7 @@
       }
     ],
     "senses": {
-      "truesight": "120 ft.",
+      "truesight": 120,
       "passive_perception": 21
     },
     "languages": "all, telepathy 120 ft.",
@@ -30774,8 +30777,8 @@
     "hit_dice": "8d10",
     "hit_points_roll": "8d10+24",
     "speed": {
-      "walk": "20 ft.",
-      "swim": "40 ft."
+      "walk": 20,
+      "swim": 40
     },
     "strength": 18,
     "dexterity": 15,
@@ -30853,8 +30856,8 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4",
     "speed": {
-      "walk": "30 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "swim": 30
     },
     "strength": 2,
     "dexterity": 16,
@@ -30868,7 +30871,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
+      "blindsight": 10,
       "passive_perception": 10
     },
     "languages": "",
@@ -30910,8 +30913,8 @@
     "hit_dice": "5d10",
     "hit_points_roll": "5d10+15",
     "speed": {
-      "walk": "40 ft.",
-      "swim": "30 ft."
+      "walk": 40,
+      "swim": 30
     },
     "strength": 20,
     "dexterity": 10,
@@ -31013,7 +31016,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 15,
     "dexterity": 10,
@@ -31077,7 +31080,7 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8+5",
     "speed": {
-      "walk": "25 ft."
+      "walk": 25
     },
     "strength": 10,
     "dexterity": 10,
@@ -31240,8 +31243,8 @@
     "hit_dice": "2d4",
     "hit_points_roll": "2d4+2",
     "speed": {
-      "walk": "15 ft.",
-      "fly": "60 ft."
+      "walk": 15,
+      "fly": 60
     },
     "strength": 6,
     "dexterity": 15,
@@ -31272,8 +31275,8 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 13
     },
     "languages": "understands Common and Draconic but can't speak",
@@ -31344,8 +31347,8 @@
     "hit_dice": "15d20",
     "hit_points_roll": "15d20+90",
     "speed": {
-      "walk": "50 ft.",
-      "burrow": "30 ft."
+      "walk": 50,
+      "burrow": 30
     },
     "strength": 28,
     "dexterity": 7,
@@ -31376,8 +31379,8 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
-      "tremorsense": "60 ft.",
+      "blindsight": 30,
+      "tremorsense": 60,
       "passive_perception": 9
     },
     "languages": "",
@@ -31458,7 +31461,7 @@
     "hit_dice": "3d4",
     "hit_points_roll": "3d4",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 5,
     "dexterity": 17,
@@ -31494,7 +31497,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 10
     },
     "languages": "Abyssal, Common",
@@ -31568,7 +31571,7 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
     "speed": {
-      "swim": "40 ft."
+      "swim": 40
     },
     "strength": 2,
     "dexterity": 16,
@@ -31582,7 +31585,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 8
     },
     "languages": "",
@@ -31634,7 +31637,7 @@
     "hit_points": 110,
     "hit_points_roll": "13d8+52",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 14,
     "dexterity": 17,
@@ -31669,7 +31672,7 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 13
     },
     "languages": "Common, Infernal",
@@ -31861,7 +31864,7 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
     "speed": {
-      "walk": "20 ft."
+      "walk": 20
     },
     "strength": 2,
     "dexterity": 11,
@@ -31875,7 +31878,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "30 ft.",
+      "darkvision": 30,
       "passive_perception": 10
     },
     "languages": "",
@@ -31923,8 +31926,8 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
     "speed": {
-      "walk": "10 ft.",
-      "fly": "50 ft."
+      "walk": 10,
+      "fly": 50
     },
     "strength": 2,
     "dexterity": 14,
@@ -31994,9 +31997,9 @@
     "hit_dice": "10d8",
     "hit_points_roll": "10d8+30",
     "speed": {
-      "walk": "30 ft.",
-      "climb": "30 ft.",
-      "fly": "60 ft."
+      "walk": 30,
+      "climb": 30,
+      "fly": 60
     },
     "strength": 19,
     "dexterity": 10,
@@ -32061,8 +32064,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Draconic",
@@ -32141,7 +32144,7 @@
     "hit_dice": "4d8",
     "hit_points_roll": "4d8+4",
     "speed": {
-      "swim": "40 ft."
+      "swim": 40
     },
     "strength": 14,
     "dexterity": 13,
@@ -32164,7 +32167,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
+      "blindsight": 30,
       "passive_perception": 12
     },
     "languages": "",
@@ -32216,8 +32219,8 @@
     "hit_dice": "17d12",
     "hit_points_roll": "17d12+85",
     "speed": {
-      "walk": "30 ft.",
-      "burrow": "20 ft."
+      "walk": 30,
+      "burrow": 20
     },
     "strength": 24,
     "dexterity": 13,
@@ -32234,8 +32237,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
-      "tremorsense": "60 ft.",
+      "darkvision": 60,
+      "tremorsense": 60,
       "passive_perception": 10
     },
     "languages": "",
@@ -32305,7 +32308,7 @@
     "hit_dice": "6d10",
     "hit_points_roll": "6d10+12",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 21,
     "dexterity": 8,
@@ -32366,7 +32369,7 @@
     "hit_dice": "2d10",
     "hit_points_roll": "2d10+2",
     "speed": {
-      "walk": "60 ft."
+      "walk": 60
     },
     "strength": 16,
     "dexterity": 10,
@@ -32421,8 +32424,8 @@
     "hit_dice": "16d20",
     "hit_points_roll": "16d20+80",
     "speed": {
-      "walk": "20 ft.",
-      "fly": "120 ft."
+      "walk": 20,
+      "fly": 120
     },
     "strength": 28,
     "dexterity": 10,
@@ -32556,8 +32559,8 @@
     "hit_dice": "11d10",
     "hit_points_roll": "11d10+33",
     "speed": {
-      "walk": "10 ft.",
-      "climb": "10 ft."
+      "walk": 10,
+      "climb": 10
     },
     "strength": 18,
     "dexterity": 8,
@@ -32588,7 +32591,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 16
     },
     "languages": "",
@@ -32675,7 +32678,7 @@
     "hit_dice": "6d10",
     "hit_points_roll": "6d10",
     "speed": {
-      "walk": "10 ft."
+      "walk": 10
     },
     "strength": 17,
     "dexterity": 14,
@@ -32774,7 +32777,7 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8+5",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 13,
     "dexterity": 12,
@@ -32788,7 +32791,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 11
     },
     "languages": "",
@@ -32844,7 +32847,7 @@
     "hit_dice": "7d10",
     "hit_points_roll": "7d10+14",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 18,
     "dexterity": 14,
@@ -32951,8 +32954,8 @@
     "hit_dice": "4d8",
     "hit_points_roll": "4d8+4",
     "speed": {
-      "walk": "30 ft.",
-      "swim": "40 ft."
+      "walk": 30,
+      "swim": 40
     },
     "strength": 13,
     "dexterity": 11,
@@ -32975,7 +32978,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 15
     },
     "languages": "Sahuagin",
@@ -33130,7 +33133,7 @@
     "hit_dice": "12d10",
     "hit_points_roll": "12d10+24",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 18,
     "dexterity": 14,
@@ -33150,7 +33153,7 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Ignan",
@@ -33288,7 +33291,7 @@
     "hit_dice": "7d8",
     "hit_points_roll": "7d8",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 12,
     "dexterity": 16,
@@ -33404,7 +33407,7 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
     "speed": {
-      "walk": "10 ft."
+      "walk": 10
     },
     "strength": 2,
     "dexterity": 11,
@@ -33418,7 +33421,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
+      "blindsight": 10,
       "passive_perception": 9
     },
     "languages": "",
@@ -33469,7 +33472,7 @@
     "hit_dice": "3d8",
     "hit_points_roll": "3d8+3",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 11,
     "dexterity": 14,
@@ -33604,8 +33607,8 @@
     "hit_dice": "7d8",
     "hit_points_roll": "7d8+21",
     "speed": {
-      "walk": "30 ft.",
-      "swim": "40 ft."
+      "walk": 30,
+      "swim": 40
     },
     "strength": 16,
     "dexterity": 13,
@@ -33619,7 +33622,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 11
     },
     "languages": "Aquan, Common, Giant",
@@ -33688,7 +33691,7 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
     "speed": {
-      "swim": "20 ft."
+      "swim": 20
     },
     "strength": 1,
     "dexterity": 12,
@@ -33732,7 +33735,7 @@
     "hit_dice": "3d8",
     "hit_points_roll": "3d8+3",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 6,
     "dexterity": 14,
@@ -33808,7 +33811,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "",
@@ -33864,8 +33867,8 @@
     "hit_dice": "16d10",
     "hit_points_roll": "16d10+48",
     "speed": {
-      "walk": "20 ft.",
-      "swim": "20 ft."
+      "walk": 20,
+      "swim": 20
     },
     "strength": 18,
     "dexterity": 8,
@@ -33978,7 +33981,7 @@
     "hit_dice": "15d10",
     "hit_points_roll": "15d10+60",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 18,
     "dexterity": 8,
@@ -34020,8 +34023,8 @@
       }
     ],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "understands commands given in any language but can't speak",
@@ -34095,7 +34098,7 @@
     "hit_dice": "3d8",
     "hit_points_roll": "3d8",
     "speed": {
-      "walk": "0 ft."
+      "walk": 0
     },
     "strength": 1,
     "dexterity": 1,
@@ -34162,8 +34165,8 @@
     "hit_dice": "6d8",
     "hit_points_roll": "6d8+18",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "60 ft."
+      "walk": 30,
+      "fly": 60
     },
     "strength": 19,
     "dexterity": 10,
@@ -34228,8 +34231,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Draconic",
@@ -34326,7 +34329,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+4",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 10,
     "dexterity": 14,
@@ -34355,7 +34358,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 9
     },
     "languages": "understands all languages it spoke in life but can't speak",
@@ -34412,8 +34415,8 @@
     "hit_dice": "18d10",
     "hit_points_roll": "18d10+144",
     "speed": {
-      "walk": "50 ft.",
-      "fly": "150 ft."
+      "walk": 50,
+      "fly": 150
     },
     "strength": 26,
     "dexterity": 22,
@@ -34487,7 +34490,7 @@
       }
     ],
     "senses": {
-      "truesight": "120 ft.",
+      "truesight": 120,
       "passive_perception": 24
     },
     "languages": "all, telepathy 120 ft.",
@@ -34728,8 +34731,8 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
     "speed": {
-      "walk": "0 ft.",
-      "fly": "50 ft.",
+      "walk": 0,
+      "fly": 50,
       "hover": true
     },
     "strength": 1,
@@ -34800,7 +34803,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "understands all languages it knew in life but can't speak",
@@ -34852,8 +34855,8 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
     "speed": {
-      "walk": "20 ft.",
-      "climb": "20 ft."
+      "walk": 20,
+      "climb": 20
     },
     "strength": 2,
     "dexterity": 14,
@@ -34876,7 +34879,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "30 ft.",
+      "darkvision": 30,
       "passive_perception": 12
     },
     "languages": "",
@@ -34932,7 +34935,7 @@
     "hit_dice": "10d10",
     "hit_points_roll": "10d10+20",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 18,
     "dexterity": 17,
@@ -34992,7 +34995,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 12
     },
     "languages": "Abyssal, Common",
@@ -35139,8 +35142,8 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4",
     "speed": {
-      "walk": "10 ft.",
-      "fly": "40 ft."
+      "walk": 10,
+      "fly": 40
     },
     "strength": 3,
     "dexterity": 18,
@@ -35246,7 +35249,7 @@
     "hit_dice": "6d8",
     "hit_points_roll": "6d8",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 10,
     "dexterity": 15,
@@ -35387,8 +35390,8 @@
     "hit_dice": "6d6",
     "hit_points_roll": "6d6",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "30 ft."
+      "walk": 30,
+      "fly": 30
     },
     "strength": 5,
     "dexterity": 11,
@@ -35411,7 +35414,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Aquan, Ignan",
@@ -35541,8 +35544,8 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4",
     "speed": {
-      "walk": "10 ft.",
-      "fly": "40 ft."
+      "walk": 10,
+      "fly": 40
     },
     "strength": 4,
     "dexterity": 16,
@@ -35556,7 +35559,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 9
     },
     "languages": "",
@@ -35598,7 +35601,7 @@
     "hit_dice": "11d12",
     "hit_points_roll": "11d12+55",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 23,
     "dexterity": 15,
@@ -35653,7 +35656,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Giant",
@@ -35734,7 +35737,7 @@
     "hit_dice": "17d10",
     "hit_points_roll": "17d10+85",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 22,
     "dexterity": 9,
@@ -35783,7 +35786,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 10
     },
     "languages": "understands the languages of its creator but can't speak",
@@ -35876,8 +35879,8 @@
     "hit_dice": "20d12",
     "hit_points_roll": "20d12+100",
     "speed": {
-      "walk": "50 ft.",
-      "swim": "50 ft."
+      "walk": 50,
+      "swim": 50
     },
     "strength": 29,
     "dexterity": 14,
@@ -36132,8 +36135,8 @@
     "hit_dice": "12d8",
     "hit_points_roll": "12d8+12",
     "speed": {
-      "walk": "30 ft.",
-      "fly": "60 ft."
+      "walk": 30,
+      "fly": 60
     },
     "strength": 8,
     "dexterity": 17,
@@ -36194,7 +36197,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 15
     },
     "languages": "Abyssal, Common, Infernal, telepathy 60 ft.",
@@ -36278,8 +36281,8 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
     "speed": {
-      "walk": "0 ft.",
-      "fly": "30 ft."
+      "walk": 0,
+      "fly": 30
     },
     "strength": 5,
     "dexterity": 15,
@@ -36338,7 +36341,7 @@
       }
     ],
     "senses": {
-      "blindsight": "60 ft.",
+      "blindsight": 60,
       "passive_perception": 11
     },
     "languages": "",
@@ -36394,9 +36397,9 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
     "speed": {
-      "walk": "20 ft.",
-      "burrow": "5 ft.",
-      "climb": "20 ft."
+      "walk": 20,
+      "burrow": 5,
+      "climb": 20
     },
     "strength": 3,
     "dexterity": 13,
@@ -36455,7 +36458,7 @@
       }
     ],
     "senses": {
-      "blindsight": "10 ft.",
+      "blindsight": 10,
       "passive_perception": 8
     },
     "languages": "",
@@ -36503,8 +36506,8 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
     "speed": {
-      "walk": "20 ft.",
-      "climb": "20 ft."
+      "walk": 20,
+      "climb": 20
     },
     "strength": 3,
     "dexterity": 13,
@@ -36563,7 +36566,7 @@
       }
     ],
     "senses": {
-      "blindsight": "10 ft.",
+      "blindsight": 10,
       "passive_perception": 8
     },
     "languages": "",
@@ -36611,8 +36614,8 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
     "speed": {
-      "walk": "20 ft.",
-      "climb": "20 ft."
+      "walk": 20,
+      "climb": 20
     },
     "strength": 3,
     "dexterity": 13,
@@ -36671,7 +36674,7 @@
       }
     ],
     "senses": {
-      "blindsight": "10 ft.",
+      "blindsight": 10,
       "passive_perception": 8
     },
     "languages": "",
@@ -36719,8 +36722,8 @@
     "hit_dice": "8d8",
     "hit_points_roll": "8d8",
     "speed": {
-      "walk": "30 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "swim": 30
     },
     "strength": 8,
     "dexterity": 18,
@@ -36779,7 +36782,7 @@
       }
     ],
     "senses": {
-      "blindsight": "10 ft.",
+      "blindsight": 10,
       "passive_perception": 10
     },
     "languages": "",
@@ -36827,8 +36830,8 @@
     "hit_dice": "8d8",
     "hit_points_roll": "8d8-8",
     "speed": {
-      "walk": "0 ft.",
-      "swim": "40 ft."
+      "walk": 0,
+      "swim": 40
     },
     "strength": 13,
     "dexterity": 16,
@@ -36887,7 +36890,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 8
     },
     "languages": "",
@@ -36943,7 +36946,7 @@
     "hit_dice": "7d8",
     "hit_points_roll": "7d8-7",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 9,
     "dexterity": 11,
@@ -37002,7 +37005,7 @@
       }
     ],
     "senses": {
-      "darkvision": "30 ft.",
+      "darkvision": 30,
       "passive_perception": 10
     },
     "languages": "",
@@ -37054,8 +37057,8 @@
     "hit_dice": "7d8",
     "hit_points_roll": "7d8-7",
     "speed": {
-      "walk": "10 ft.",
-      "fly": "50 ft."
+      "walk": 10,
+      "fly": 50
     },
     "strength": 6,
     "dexterity": 14,
@@ -37161,8 +37164,8 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
     "speed": {
-      "walk": "20 ft.",
-      "climb": "20 ft."
+      "walk": 20,
+      "climb": 20
     },
     "strength": 3,
     "dexterity": 13,
@@ -37216,7 +37219,7 @@
       }
     ],
     "senses": {
-      "blindsight": "10 ft.",
+      "blindsight": 10,
       "passive_perception": 8
     },
     "languages": "",
@@ -37276,8 +37279,8 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8",
     "speed": {
-      "walk": "5 ft.",
-      "fly": "30 ft."
+      "walk": 5,
+      "fly": 30
     },
     "strength": 3,
     "dexterity": 13,
@@ -37336,7 +37339,7 @@
       }
     ],
     "senses": {
-      "blindsight": "10 ft.",
+      "blindsight": 10,
       "passive_perception": 8
     },
     "languages": "",
@@ -37385,7 +37388,7 @@
     "hit_dice": "33d20",
     "hit_points_roll": "33d20+330",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 30,
     "dexterity": 11,
@@ -37449,7 +37452,7 @@
       }
     ],
     "senses": {
-      "blindsight": "120 ft.",
+      "blindsight": 120,
       "passive_perception": 10
     },
     "languages": "",
@@ -37683,7 +37686,7 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8+10",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 15,
     "dexterity": 11,
@@ -37780,7 +37783,7 @@
     "hit_dice": "5d10",
     "hit_points_roll": "5d10+10",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 17,
     "dexterity": 15,
@@ -37811,7 +37814,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 13
     },
     "languages": "",
@@ -37887,7 +37890,7 @@
     "hit_dice": "12d12",
     "hit_points_roll": "12d12+60",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 23,
     "dexterity": 8,
@@ -38001,7 +38004,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 13,
     "dexterity": 11,
@@ -38083,7 +38086,7 @@
     "hit_dice": "10d12",
     "hit_points_roll": "10d12+30",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 22,
     "dexterity": 9,
@@ -38159,7 +38162,7 @@
     "hit_dice": "8d10",
     "hit_points_roll": "8d10+40",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 18,
     "dexterity": 13,
@@ -38182,7 +38185,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 12
     },
     "languages": "Giant",
@@ -38266,7 +38269,7 @@
     "hit_dice": "13d12",
     "hit_points_roll": "13d12+52",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 25,
     "dexterity": 10,
@@ -38362,7 +38365,7 @@
     "hit_dice": "9d10",
     "hit_points_roll": "9d10+18",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 18,
     "dexterity": 14,
@@ -38394,7 +38397,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 13
     },
     "languages": "Celestial, Elvish, Sylvan, telepathy 60 ft.",
@@ -38579,7 +38582,7 @@
     "hit_dice": "17d8",
     "hit_points_roll": "17d8+68",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "forms": [
       {
@@ -38649,7 +38652,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 17
     },
     "languages": "the languages it knew in life",
@@ -39153,7 +39156,7 @@
     "hit_dice": "11d8",
     "hit_points_roll": "11d8+33",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 16,
     "dexterity": 16,
@@ -39203,7 +39206,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 13
     },
     "languages": "the languages it knew in life",
@@ -39328,7 +39331,7 @@
     "hit_dice": "9d8",
     "hit_points_roll": "9d8+18",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 16,
     "dexterity": 13,
@@ -39468,7 +39471,7 @@
     "hit_dice": "4d8",
     "hit_points_roll": "4d8",
     "speed": {
-      "walk": "5 ft."
+      "walk": 5
     },
     "strength": 3,
     "dexterity": 1,
@@ -39559,8 +39562,8 @@
     "hit_dice": "11d10",
     "hit_points_roll": "11d10+44",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "60 ft."
+      "walk": 40,
+      "fly": 60
     },
     "strength": 17,
     "dexterity": 15,
@@ -39612,7 +39615,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 11
     },
     "languages": "Abyssal, telepathy 120 ft.",
@@ -39727,8 +39730,8 @@
     "hit_dice": "1d8",
     "hit_points_roll": "1d8+1",
     "speed": {
-      "walk": "10 ft.",
-      "fly": "50 ft."
+      "walk": 10,
+      "fly": 50
     },
     "strength": 7,
     "dexterity": 10,
@@ -39802,7 +39805,7 @@
     "hit_dice": "3d10",
     "hit_points_roll": "3d10+3",
     "speed": {
-      "walk": "60 ft."
+      "walk": 60
     },
     "strength": 18,
     "dexterity": 12,
@@ -39865,7 +39868,7 @@
     "hit_dice": "3d10",
     "hit_points_roll": "3d10+6",
     "speed": {
-      "walk": "60 ft."
+      "walk": 60
     },
     "strength": 18,
     "dexterity": 12,
@@ -39894,7 +39897,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 9
     },
     "languages": "",
@@ -39936,8 +39939,8 @@
     "hit_dice": "12d10",
     "hit_points_roll": "12d10+48",
     "speed": {
-      "walk": "30 ft.",
-      "swim": "90 ft."
+      "walk": 30,
+      "swim": 90
     },
     "strength": 18,
     "dexterity": 14,
@@ -39997,7 +40000,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 10
     },
     "languages": "Aquan",
@@ -40090,7 +40093,7 @@
     "hit_dice": "1d4",
     "hit_points_roll": "1d4-1",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 3,
     "dexterity": 16,
@@ -40182,8 +40185,8 @@
     ],
     "hit_points_roll": "18d8+54",
     "speed": {
-      "walk": "40 ft.",
-      "climb": "30 ft."
+      "walk": 40,
+      "climb": 30
     },
     "strength": 19,
     "dexterity": 10,
@@ -40299,7 +40302,7 @@
     ],
     "hit_points_roll": "18d8+54",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 19,
     "dexterity": 10,
@@ -40400,8 +40403,8 @@
     ],
     "hit_points_roll": "18d8+54",
     "speed": {
-      "walk": "40 ft.",
-      "climb": "30 ft."
+      "walk": 40,
+      "climb": 30
     },
     "strength": 19,
     "dexterity": 10,
@@ -40563,7 +40566,7 @@
     ],
     "hit_points_roll": "12d8+24",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 17,
     "dexterity": 10,
@@ -40663,7 +40666,7 @@
     ],
     "hit_points_roll": "12d8+24",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 17,
     "dexterity": 10,
@@ -40771,7 +40774,7 @@
     ],
     "hit_points_roll": "12d8+24",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 17,
     "dexterity": 10,
@@ -40923,7 +40926,7 @@
     ],
     "hit_points_roll": "6d8+6",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 10,
     "dexterity": 15,
@@ -41078,7 +41081,7 @@
     ],
     "hit_points_roll": "6d8+6",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 10,
     "dexterity": 15,
@@ -41282,7 +41285,7 @@
     ],
     "hit_points_roll": "6d8+6",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 10,
     "dexterity": 15,
@@ -41315,7 +41318,7 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 12
     },
     "languages": "",
@@ -41380,7 +41383,7 @@
     ],
     "hit_points_roll": "16d8+48",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 17,
     "dexterity": 15,
@@ -41413,7 +41416,7 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 15
     },
     "languages": "Common",
@@ -41519,7 +41522,7 @@
     ],
     "hit_points_roll": "16d8+48",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 17,
     "dexterity": 15,
@@ -41552,7 +41555,7 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 15
     },
     "languages": "Common",
@@ -41707,7 +41710,7 @@
     ],
     "hit_points_roll": "16d8+48",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 17,
     "dexterity": 15,
@@ -41740,7 +41743,7 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 15
     },
     "languages": "",
@@ -41833,7 +41836,7 @@
     ],
     "hit_points_roll": "9d8+18",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 15,
     "dexterity": 13,
@@ -41955,7 +41958,7 @@
     ],
     "hit_points_roll": "9d8+18",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 15,
     "dexterity": 13,
@@ -42076,7 +42079,7 @@
     ],
     "hit_points_roll": "9d8+18",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 15,
     "dexterity": 13,
@@ -42152,10 +42155,10 @@
     "hit_dice": "5d8",
     "hit_points_roll": "5d8+10",
     "speed": {
-      "walk": "30 ft.",
-      "burrow": "15 ft.",
-      "fly": "60 ft.",
-      "swim": "30 ft."
+      "walk": 30,
+      "burrow": 15,
+      "fly": 60,
+      "swim": 30
     },
     "strength": 14,
     "dexterity": 10,
@@ -42220,8 +42223,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "10 ft.",
-      "darkvision": "60 ft.",
+      "blindsight": 10,
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Draconic",
@@ -42306,7 +42309,7 @@
     "hit_dice": "6d8",
     "hit_points_roll": "6d8+18",
     "speed": {
-      "walk": "30 ft."
+      "walk": 30
     },
     "strength": 15,
     "dexterity": 14,
@@ -42353,7 +42356,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 13
     },
     "languages": "the languages it knew in life",
@@ -42496,8 +42499,8 @@
     "hit_dice": "9d4",
     "hit_points_roll": "9d4",
     "speed": {
-      "walk": "0 ft.",
-      "fly": "50 ft.",
+      "walk": 0,
+      "fly": 50,
       "hover": true
     },
     "strength": 1,
@@ -42558,7 +42561,7 @@
       }
     ],
     "senses": {
-      "darkvision": "120 ft.",
+      "darkvision": 120,
       "passive_perception": 12
     },
     "languages": "the languages it knew in life",
@@ -42633,7 +42636,7 @@
     "hit_dice": "10d10",
     "hit_points_roll": "10d10+20",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 18,
     "dexterity": 13,
@@ -42750,7 +42753,7 @@
     "hit_dice": "2d8",
     "hit_points_roll": "2d8+2",
     "speed": {
-      "walk": "40 ft."
+      "walk": 40
     },
     "strength": 12,
     "dexterity": 15,
@@ -42834,7 +42837,7 @@
     "hit_dice": "4d10",
     "hit_points_roll": "4d10+4",
     "speed": {
-      "walk": "50 ft."
+      "walk": 50
     },
     "strength": 16,
     "dexterity": 13,
@@ -42857,7 +42860,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "Goblin, Worg",
@@ -42906,8 +42909,8 @@
     "hit_dice": "9d8",
     "hit_points_roll": "9d8+27",
     "speed": {
-      "walk": "0 ft.",
-      "fly": "60 ft.",
+      "walk": 0,
+      "fly": 60,
       "hover": true
     },
     "strength": 6,
@@ -42973,7 +42976,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 12
     },
     "languages": "the languages it knew in life",
@@ -43030,8 +43033,8 @@
     "hit_dice": "13d10",
     "hit_points_roll": "13d10+39",
     "speed": {
-      "walk": "20 ft.",
-      "fly": "80 ft."
+      "walk": 20,
+      "fly": 80
     },
     "strength": 19,
     "dexterity": 10,
@@ -43054,7 +43057,7 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 14
     },
     "languages": "",
@@ -43191,8 +43194,8 @@
     "hit_dice": "7d8",
     "hit_points_roll": "7d8+42",
     "speed": {
-      "walk": "20 ft.",
-      "burrow": "20 ft."
+      "walk": 20,
+      "burrow": 20
     },
     "strength": 17,
     "dexterity": 10,
@@ -43225,8 +43228,8 @@
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "60 ft.",
-      "tremorsense": "60 ft.",
+      "darkvision": 60,
+      "tremorsense": 60,
       "passive_perception": 16
     },
     "languages": "Terran",
@@ -43315,9 +43318,9 @@
     "hit_dice": "15d10",
     "hit_points_roll": "15d10+45",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 19,
     "dexterity": 14,
@@ -43382,8 +43385,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 30,
+      "darkvision": 120,
       "passive_perception": 16
     },
     "languages": "Common, Draconic",
@@ -43500,9 +43503,9 @@
     "hit_dice": "16d10",
     "hit_points_roll": "16d10+64",
     "speed": {
-      "walk": "40 ft.",
-      "burrow": "40 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "burrow": 40,
+      "fly": 80
     },
     "strength": 21,
     "dexterity": 10,
@@ -43567,8 +43570,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 30,
+      "darkvision": 120,
       "passive_perception": 19
     },
     "languages": "Common, Draconic",
@@ -43678,9 +43681,9 @@
     "hit_dice": "13d10",
     "hit_points_roll": "13d10+39",
     "speed": {
-      "walk": "40 ft.",
-      "burrow": "20 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "burrow": 20,
+      "fly": 80
     },
     "strength": 19,
     "dexterity": 10,
@@ -43753,8 +43756,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 30,
+      "darkvision": 120,
       "passive_perception": 16
     },
     "languages": "Common, Draconic",
@@ -43882,9 +43885,9 @@
     "hit_dice": "15d10",
     "hit_points_roll": "15d10+60",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 21,
     "dexterity": 10,
@@ -43957,8 +43960,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 30,
+      "darkvision": 120,
       "passive_perception": 17
     },
     "languages": "Common, Draconic",
@@ -44092,9 +44095,9 @@
     "hit_dice": "14d10",
     "hit_points_roll": "14d10+42",
     "speed": {
-      "walk": "40 ft.",
-      "climb": "40 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "climb": 40,
+      "fly": 80
     },
     "strength": 19,
     "dexterity": 12,
@@ -44167,8 +44170,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 30,
+      "darkvision": 120,
       "passive_perception": 17
     },
     "languages": "Common, Draconic",
@@ -44296,9 +44299,9 @@
     "hit_dice": "17d10",
     "hit_points_roll": "17d10+85",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 23,
     "dexterity": 14,
@@ -44379,8 +44382,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 30,
+      "darkvision": 120,
       "passive_perception": 19
     },
     "languages": "Common, Draconic",
@@ -44514,9 +44517,9 @@
     "hit_dice": "16d10",
     "hit_points_roll": "16d10+48",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 19,
     "dexterity": 12,
@@ -44595,8 +44598,8 @@
       }
     ],
     "senses": {
-      "blindsight": "30 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 30,
+      "darkvision": 120,
       "passive_perception": 17
     },
     "languages": "Common, Draconic",
@@ -44712,9 +44715,9 @@
     "hit_dice": "17d10",
     "hit_points_roll": "17d10+85",
     "speed": {
-      "walk": "40 ft.",
-      "climb": "40 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "climb": 40,
+      "fly": 80
     },
     "strength": 23,
     "dexterity": 10,
@@ -44779,8 +44782,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 30,
+      "darkvision": 120,
       "passive_perception": 18
     },
     "languages": "Common, Draconic",
@@ -44890,8 +44893,8 @@
     "hit_dice": "16d10",
     "hit_points_roll": "16d10+80",
     "speed": {
-      "walk": "40 ft.",
-      "fly": "80 ft."
+      "walk": 40,
+      "fly": 80
     },
     "strength": 23,
     "dexterity": 10,
@@ -44972,8 +44975,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 30,
+      "darkvision": 120,
       "passive_perception": 18
     },
     "languages": "Common, Draconic",
@@ -45101,10 +45104,10 @@
     "hit_dice": "14d10",
     "hit_points_roll": "14d10+56",
     "speed": {
-      "walk": "40 ft.",
-      "burrow": "20 ft.",
-      "fly": "80 ft.",
-      "swim": "40 ft."
+      "walk": 40,
+      "burrow": 20,
+      "fly": 80,
+      "swim": 40
     },
     "strength": 18,
     "dexterity": 10,
@@ -45169,8 +45172,8 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "blindsight": "30 ft.",
-      "darkvision": "120 ft.",
+      "blindsight": 30,
+      "darkvision": 120,
       "passive_perception": 16
     },
     "languages": "Common, Draconic",
@@ -45286,7 +45289,7 @@
     "hit_dice": "3d8",
     "hit_points_roll": "3d8+9",
     "speed": {
-      "walk": "20 ft."
+      "walk": 20
     },
     "strength": 13,
     "dexterity": 6,
@@ -45317,7 +45320,7 @@
       }
     ],
     "senses": {
-      "darkvision": "60 ft.",
+      "darkvision": 60,
       "passive_perception": 8
     },
     "languages": "understands all languages it spoke in life but can't speak",
