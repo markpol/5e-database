@@ -324,6 +324,7 @@
         "name": "Club",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
         "attack_bonus": 2,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -7288,6 +7289,7 @@
         "name": "Beak",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -7809,6 +7811,7 @@
         "name": "Scimitar",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -7824,6 +7827,7 @@
         "name": "Light Crossbow",
         "desc": "Ranged Weapon Attack: +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
         "attack_bonus": 3,
+        "attack_type": "Ranged",
         "damage": [
           {
             "damage_type": {
@@ -9171,6 +9175,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -9256,6 +9261,7 @@
         "name": "Beak",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -9484,6 +9490,7 @@
         "name": "Tusk",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -10325,6 +10332,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
         "attack_bonus": 5,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -11718,6 +11726,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -11733,6 +11742,7 @@
         "name": "Constrict",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -12549,6 +12559,7 @@
         "name": "Scimitar",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) slashing damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -13659,6 +13670,7 @@
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage.",
         "attack_bonus": 6,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -13941,6 +13953,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) piercing damage.",
         "attack_bonus": 2,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -13956,6 +13969,7 @@
         "name": "Claws",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 5 (2d4) slashing damage.",
         "attack_bonus": 2,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -14372,6 +14386,7 @@
         "name": "Shortsword",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -14387,6 +14402,7 @@
         "name": "Hand Crossbow",
         "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is also unconscious while poisoned in this way. The target wakes up if it takes damage or if another creature takes an action to shake it awake.",
         "attack_bonus": 4,
+        "attack_type": "Ranged",
         "damage": [
           {
             "damage_type": {
@@ -15586,6 +15602,7 @@
         "name": "Ram",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
         "attack_bonus": 5,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -15601,6 +15618,7 @@
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one prone creature. Hit: 8 (2d4 + 3) bludgeoning damage.",
         "attack_bonus": 5,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -16556,6 +16574,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1 piercing damage plus 7 (3d4) poison damage.",
         "attack_bonus": 6,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -16680,6 +16699,7 @@
         "name": "Longsword",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -17647,6 +17667,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -17662,6 +17683,7 @@
         "name": "Claws",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -17729,6 +17751,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -17858,6 +17881,7 @@
         "name": "Bite",
         "desc": "Bite. Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 10 (3d6) poison damage. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -18011,6 +18035,7 @@
         "name": "Claw",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage, and the target is grappled (escape DC 11). The crab has two claws, each of which can grapple only one target.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -18452,6 +18477,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage, and the target is grappled (escape DC 11). Until this grapple ends, the target is restrained, and the frog can't bite another target.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -18649,6 +18675,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -18832,6 +18859,7 @@
         "name": "Talons",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) slashing damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -18898,6 +18926,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 6 (1d4 + 4) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.",
         "attack_bonus": 6,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -18964,6 +18993,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -19030,6 +19060,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 2) piercing damage. If the target is a creature, it must succeed on a DC 10 Constitution saving throw or contract a disease. Until the disease is cured, the target can't regain hit points except by magical means, and the target's hit point maximum decreases by 3 (1d6) every 24 hours. If the target's hit point maximum drops to 0 as a result of this disease, the target dies.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -19676,6 +19707,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
         "attack_bonus": 5,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -19766,6 +19798,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -21660,6 +21693,7 @@
         "name": "Spiked Bone Club",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage plus 2 (1d4) piercing damage.",
         "attack_bonus": 5,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -24840,6 +24874,7 @@
         "name": "Dagger",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -24855,6 +24890,7 @@
         "name": "Sling",
         "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.",
         "attack_bonus": 4,
+        "attack_type": "Ranged",
         "damage": [
           {
             "damage_type": {
@@ -27149,6 +27185,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -27408,6 +27445,7 @@
         "name": "Spear",
         "desc": "Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d6) piercing damage, or 4 (1d8) piercing damage if used with two hands to make a melee attack.",
         "attack_bonus": 2,
+        "attack_type": "Melee",
         "damage": [
           {
             "choose": 1,
@@ -27954,6 +27992,7 @@
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.",
         "attack_bonus": 2,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -28946,6 +28985,7 @@
         "name": "Rapier",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -30089,6 +30129,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -30104,6 +30145,7 @@
         "name": "Claw",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -30901,6 +30943,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one.",
         "attack_bonus": 5,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -31059,6 +31102,7 @@
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) bludgeoning damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -31320,6 +31364,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -31335,6 +31380,7 @@
         "name": "Sting",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour. If the saving throw fails by 5 or more, the target falls unconscious for the same duration, or until it takes damage or another creature uses an action to shake it awake.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -32414,6 +32460,7 @@
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.",
         "attack_bonus": 5,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -34391,6 +34438,7 @@
         "name": "Shortsword",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -34406,6 +34454,7 @@
         "name": "Shortbow",
         "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Ranged",
         "damage": [
           {
             "damage_type": {
@@ -35207,6 +35256,7 @@
         "name": "Longsword",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
         "attack_bonus": 2,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -35222,6 +35272,7 @@
         "name": "Shortbow",
         "desc": "Ranged Weapon Attack: +6 to hit, range 40/160 ft., one target. Hit: 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or become poisoned for 1 minute. If its saving throw result is 5 or lower, the poisoned target falls unconscious for the same duration, or until it takes damage or another creature takes an action to shake it awake.",
         "attack_bonus": 6,
+        "attack_type": "Ranged",
         "damage": [
           {
             "damage_type": {
@@ -35500,6 +35551,7 @@
         "name": "Claws",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 2 (1d4) slashing damage plus 2 (1d4) fire damage.",
         "attack_bonus": 2,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -35593,6 +35645,7 @@
         "name": "Blood Drain",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss.\nThe stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.",
         "attack_bonus": 5,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -36389,6 +36442,7 @@
         "name": "Bites",
         "desc": "Melee Weapon Attack: +4 to hit, reach 0 ft., one creature in the swarm's space. Hit: 5 (2d4) piercing damage, or 2 (1d4) piercing damage if the swarm has half of its hit points or fewer.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -37049,6 +37103,7 @@
         "name": "Bites",
         "desc": "Melee Weapon Attack: +2 to hit, reach 0 ft., one target in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.",
         "attack_bonus": 2,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -37156,6 +37211,7 @@
         "name": "Beaks",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -37271,6 +37327,7 @@
         "name": "Bites",
         "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -38057,6 +38114,7 @@
         "name": "Spear",
         "desc": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "choose": 1,
@@ -39553,6 +39611,7 @@
         "name": "Rotting Touch",
         "desc": "Melee Weapon Attack: +2 to hit, reach 10 ft., one creature. Hit: 4 (1d8) necrotic damage.",
         "attack_bonus": 2,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -42829,6 +42888,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -45362,6 +45422,7 @@
         "name": "Slam",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
