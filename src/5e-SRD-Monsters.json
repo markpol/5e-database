@@ -14411,6 +14411,28 @@
               "url": "/api/damage-types/piercing"
             },
             "damage_dice": "1d6+2"
+          },
+          {
+            "condition": {
+              "condition_type": {
+                "index": "poisoned",
+                "name": "Poisoned",
+                "url": "/api/conditions/poisoned"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "hour"
+              }
+            },
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 13,
+              "success_type": "none"
+            }
           }
         ]
       }
@@ -18935,6 +18957,23 @@
               "url": "/api/damage-types/piercing"
             },
             "damage_dice": "1d4+4"
+          },
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/damage-types/poison"
+            },
+            "damage_dice": "3d6",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 11,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -19807,6 +19846,23 @@
               "url": "/api/damage-types/piercing"
             },
             "damage_dice": "1d6+1"
+          },
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/damage-types/poison"
+            },
+            "damage_dice": "2d6",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 11,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -23245,6 +23301,28 @@
               "url": "/api/damage-types/piercing"
             },
             "damage_dice": "1"
+          },
+          {
+            "condition": {
+              "condition_type": {
+                "index": "poisoned",
+                "name": "Poisoned",
+                "url": "/api/conditions/poisoned"
+              },
+              "duration": {
+                "length": 10,
+                "unit": "round"
+              }
+            },
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 10,
+              "success_type": "none"
+            }
           }
         ]
       }
@@ -30952,6 +31030,23 @@
               "url": "/api/damage-types/piercing"
             },
             "damage_dice": "1"
+          },
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/damage-types/poison"
+            },
+            "damage_dice": "2d4",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 10,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -31389,6 +31484,28 @@
               "url": "/api/damage-types/piercing"
             },
             "damage_dice": "1d4+2"
+          },
+          {
+            "condition": {
+              "condition_type": {
+                "index": "poisoned",
+                "name": "Poisoned",
+                "url": "/api/conditions/poisoned"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "hour"
+              }
+            },
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 11,
+              "success_type": "none"
+            }
           }
         ]
       }
@@ -31591,6 +31708,34 @@
               "url": "/api/damage-types/piercing"
             },
             "damage_dice": "1d4+3"
+          },
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/damage-types/poison"
+            },
+            "damage_dice": "2d4",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 10,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "poisoned",
+                "name": "Poisoned",
+                "url": "/api/conditions/poisoned"
+              },
+              "duration": {
+                "length": 10,
+                "unit": "round"
+              }
+            }
           }
         ]
       },
@@ -33509,6 +33654,23 @@
               "url": "/api/damage-types/bludgeoning"
             },
             "damage_dice": "1"
+          },
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/damage-types/poison"
+            },
+            "damage_dice": "1d8",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 9,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -34984,6 +35146,23 @@
               "url": "/api/damage-types/piercing"
             },
             "damage_dice": "1"
+          },
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/damage-types/poison"
+            },
+            "damage_dice": "1d4",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 9,
+              "success_type": "none"
+            }
           }
         ]
       }
