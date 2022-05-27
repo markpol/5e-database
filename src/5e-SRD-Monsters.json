@@ -6604,6 +6604,7 @@
         "name": "Fist",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
         "attack_bonus": 5,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -6619,6 +6620,7 @@
         "name": "Rock",
         "desc": "Ranged Weapon Attack: +5 to hit, range 25/50 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
         "attack_bonus": 5,
+        "attack_type": "Ranged",
         "damage": [
           {
             "damage_type": {
@@ -9470,6 +9472,28 @@
               "url": "/api/damage-types/slashing"
             },
             "damage_dice": "1d6"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 11,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
         ]
       },
@@ -9482,7 +9506,8 @@
             "short",
             "long"
           ]
-        }
+        },
+        "relentless_max_damage": 7
       }
     ],
     "actions": [
@@ -15616,7 +15641,39 @@
     "special_abilities": [
       {
         "name": "Charge",
-        "desc": "If the elk moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+        "desc": "If the elk moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 13,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       }
     ],
     "actions": [
@@ -17827,7 +17884,39 @@
     "special_abilities": [
       {
         "name": "Charge",
-        "desc": "If the boar moves at least 20 ft. straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+        "desc": "If the boar moves at least 20 ft. straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "slashing",
+              "name": "Slashing",
+              "url": "/api/damage-types/slashing"
+            },
+            "damage_dice": "2d6"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 13,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Relentless",
@@ -17838,7 +17927,8 @@
             "short",
             "long"
           ]
-        }
+        },
+        "relentless_max_damage": 10
       }
     ],
     "actions": [
@@ -18328,7 +18418,39 @@
     "special_abilities": [
       {
         "name": "Charge",
-        "desc": "If the elk moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
+        "desc": "If the elk moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 14,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       }
     ],
     "actions": [
@@ -18557,7 +18679,39 @@
     "special_abilities": [
       {
         "name": "Charge",
-        "desc": "If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+        "desc": "If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d4"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 13,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Sure-Footed",
@@ -19243,7 +19397,39 @@
     "special_abilities": [
       {
         "name": "Charge",
-        "desc": "If the sea horse moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) bludgeoning damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone."
+        "desc": "If the sea horse moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 (2d6) bludgeoning damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 11,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Water Breathing",
@@ -20620,7 +20806,39 @@
     "special_abilities": [
       {
         "name": "Charge",
-        "desc": "If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 2 (1d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 10 Strength saving throw or be knocked prone."
+        "desc": "If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 2 (1d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 10 Strength saving throw or be knocked prone.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/damage-types/bludgeoning"
+            },
+            "damage_dice": "1d4"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 10,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Sure-Footed",
@@ -21836,6 +22054,7 @@
         "name": "Spear",
         "desc": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "choose": 1,
@@ -27882,7 +28101,39 @@
     "special_abilities": [
       {
         "name": "Charge",
-        "desc": "If the minotaur moves at least 10 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 ft. away and knocked prone."
+        "desc": "If the minotaur moves at least 10 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 ft. away and knocked prone.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/damage-types/piercing"
+            },
+            "damage_dice": "2d8"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 14,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Labyrinthine Recall",
@@ -27982,7 +28233,39 @@
     "special_abilities": [
       {
         "name": "Charge",
-        "desc": "If the skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone."
+        "desc": "If the minotaur skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/damage-types/piercing"
+            },
+            "damage_dice": "2d8"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 14,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       }
     ],
     "actions": [
@@ -32542,7 +32825,39 @@
     "special_abilities": [
       {
         "name": "Charge",
-        "desc": "If the rhinoceros moves at least 20 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+        "desc": "If the rhinoceros moves at least 20 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d9"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 15,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       }
     ],
     "actions": [
@@ -38666,7 +38981,39 @@
     "special_abilities": [
       {
         "name": "Charge",
-        "desc": "If the unicorn moves at least 20 ft. straight toward a target and then hits it with a horn attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+        "desc": "If the unicorn moves at least 20 ft. straight toward a target and then hits it with a horn attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/damage-types/piercing"
+            },
+            "damage_dice": "2d8"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 15,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Innate Spellcasting",
@@ -40877,7 +41224,8 @@
             "short",
             "long"
           ]
-        }
+        },
+        "relentless_max_damage": 14
       }
     ],
     "actions": [
@@ -40973,7 +41321,8 @@
             "short",
             "long"
           ]
-        }
+        },
+        "relentless_max_damage": 14
       }
     ],
     "actions": [
@@ -41085,7 +41434,8 @@
             "short",
             "long"
           ]
-        }
+        },
+        "relentless_max_damage": 14
       }
     ],
     "actions": [
