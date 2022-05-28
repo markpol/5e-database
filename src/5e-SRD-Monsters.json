@@ -8758,6 +8758,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -8773,6 +8774,7 @@
         "name": "Claws",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -19723,6 +19725,23 @@
               "url": "/api/damage-types/piercing"
             },
             "damage_dice": "1d6+2"
+          },
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/damage-types/poison"
+            },
+            "damage_dice": "3d6",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 11,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -26036,15 +26055,38 @@
       {
         "name": "Pounce",
         "desc": "If the lion moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the lion can make one bite attack against it as a bonus action.",
-        "dc": {
-          "dc_type": {
-            "index": "str",
-            "name": "STR",
-            "url": "/api/ability-scores/str"
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/damage-types/piercing"
+            },
+            "damage_dice": "1d8+3"
           },
-          "dc_value": 13,
-          "success_type": "none"
-        }
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 13,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Running Leap",
@@ -30253,15 +30295,38 @@
       {
         "name": "Pounce",
         "desc": "If the panther moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action.",
-        "dc": {
-          "dc_type": {
-            "index": "str",
-            "name": "STR",
-            "url": "/api/ability-scores/str"
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/damage-types/piercing"
+            },
+            "damage_dice": "1d6+2"
           },
-          "dc_value": 12,
-          "success_type": "none"
-        }
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 12,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       }
     ],
     "actions": [
@@ -33172,15 +33237,38 @@
       {
         "name": "Pounce",
         "desc": "If the tiger moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.",
-        "dc": {
-          "dc_type": {
-            "index": "str",
-            "name": "STR",
-            "url": "/api/ability-scores/str"
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/damage-types/piercing"
+            },
+            "damage_dice": "1d10+5"
           },
-          "dc_value": 14,
-          "success_type": "none"
-        }
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 14,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       }
     ],
     "actions": [
@@ -33624,6 +33712,7 @@
         "name": "Ram",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) bludgeoning damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -33639,6 +33728,7 @@
         "name": "Shortsword",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1 d6 + 3) piercing damage.",
         "attack_bonus": 5,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -33654,6 +33744,7 @@
         "name": "Shortbow",
         "desc": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
         "attack_bonus": 5,
+        "attack_type": "Ranged",
         "damage": [
           {
             "damage_type": {
@@ -33855,6 +33946,7 @@
         "name": "Shortsword",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -33870,6 +33962,7 @@
         "name": "Longbow",
         "desc": "Ranged Weapon Attack: +4 to hit, ranged 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Ranged",
         "damage": [
           {
             "damage_type": {
@@ -34127,6 +34220,7 @@
         "name": "Strength Drain",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) necrotic damage, and the target's Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.\nIf a non-evil humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -36772,6 +36866,7 @@
         "name": "Bites",
         "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -36879,6 +36974,7 @@
         "name": "Bites",
         "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.\nA creature reduced to 0 hit points by a swarm of centipedes is stable but poisoned for 1 hour, even after regaining hit points, and paralyzed while poisoned in this way.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -36986,6 +37082,7 @@
         "name": "Bites",
         "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -37648,6 +37745,7 @@
         "name": "Bites",
         "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm's space. Hit: 10 (4d4) piercing damage, or 5 (2d4) piercing damage if the swarm has half of its hit points or fewer.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -38027,6 +38125,7 @@
         "name": "Mace",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) bludgeoning damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -38042,6 +38141,7 @@
         "name": "Heavy Crossbow",
         "desc": "Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage.",
         "attack_bonus": 2,
+        "attack_type": "Ranged",
         "damage": [
           {
             "damage_type": {
@@ -38117,15 +38217,38 @@
       {
         "name": "Pounce",
         "desc": "If the tiger moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.",
-        "dc": {
-          "dc_type": {
-            "index": "str",
-            "name": "STR",
-            "url": "/api/ability-scores/str"
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/damage-types/piercing"
+            },
+            "damage_dice": "1d10+3"
           },
-          "dc_value": 13,
-          "success_type": "none"
-        }
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 13,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       }
     ],
     "actions": [
@@ -40136,7 +40259,37 @@
     "special_abilities": [
       {
         "name": "Trampling Charge",
-        "desc": "If the horse moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action."
+        "desc": "If the horse moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d8",
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 14,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       }
     ],
     "actions": [
@@ -40144,6 +40297,7 @@
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
         "attack_bonus": 6,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -40216,6 +40370,7 @@
         "name": "Hooves",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
         "attack_bonus": 6,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -41872,15 +42027,38 @@
       {
         "name": "Pounce",
         "desc": "If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action.",
-        "dc": {
-          "dc_type": {
-            "index": "str",
-            "name": "STR",
-            "url": "/api/ability-scores/str"
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/damage-types/piercing"
+            },
+            "damage_dice": "1d10+3"
           },
-          "dc_value": 14,
-          "success_type": "none"
-        }
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 14,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       }
     ],
     "actions": [
@@ -42059,15 +42237,38 @@
       {
         "name": "Pounce",
         "desc": "If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action.",
-        "dc": {
-          "dc_type": {
-            "index": "str",
-            "name": "STR",
-            "url": "/api/ability-scores/str"
+        "damage": [
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/damage-types/piercing"
+            },
+            "damage_dice": "1d10+3"
           },
-          "dc_value": 14,
-          "success_type": "none"
-        }
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 14,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       }
     ],
     "actions": [
@@ -43167,6 +43368,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
         "attack_bonus": 5,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
