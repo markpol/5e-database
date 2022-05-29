@@ -152,6 +152,69 @@
     "url": "/api/conditions/exhaustion"
   },
   {
+    "index": "exhaustion-1",
+    "name": "Exhaustion 1",
+    "desc": [
+      "1 - Disadvantage on ability checks, including initiative roll"
+    ],
+    "url": "/api/conditions/exhaustion-1"
+  },
+  {
+    "index": "exhaustion-2",
+    "name": "Exhaustion 2",
+    "desc": [
+      "1 - Disadvantage on ability checks, including initiative roll",
+      "2 - Speed halved"
+    ],
+    "url": "/api/conditions/exhaustion-2"
+  },
+  {
+    "index": "exhaustion-3",
+    "name": "Exhaustion 3",
+    "desc": [
+      "1 - Disadvantage on ability checks, including initiative roll",
+      "2 - Speed halved",
+      "3 - Disadvantage on attack rolls and saving throws"
+    ],
+    "url": "/api/conditions/exhaustion-3"
+  },
+  {
+    "index": "exhaustion-4",
+    "name": "Exhaustion 4",
+    "desc": [
+      "1 - Disadvantage on ability checks, including initiative roll",
+      "2 - Speed halved",
+      "3 - Disadvantage on attack rolls and saving throws",
+      "4 - Hit point maximum halved"
+    ],
+    "url": "/api/conditions/exhaustion-4"
+  },
+  {
+    "index": "exhaustion-5",
+    "name": "Exhaustion 5",
+    "desc": [
+      "1 - Disadvantage on ability checks, including initiative roll",
+      "2 - Speed halved",
+      "3 - Disadvantage on attack rolls and saving throws",
+      "4 - Hit point maximum halved",
+      "5 - Speed reduced to 0"
+    ],
+    "url": "/api/conditions/exhaustion-5"
+  },
+  {
+    "index": "exhaustion-6",
+    "name": "Exhaustion 6",
+    "desc": [
+      "1 - Disadvantage on ability checks, including initiative roll",
+      "2 - Speed halved",
+      "3 - Disadvantage on attack rolls and saving throws",
+      "4 - Hit point maximum halved",
+      "5 - Speed reduced to 0",
+      "6 - Death"
+    ],
+    "url": "/api/conditions/exhaustion-6"
+  },
+  {
     "index": "enraged",
     "name": "Enraged",
     "desc": [
