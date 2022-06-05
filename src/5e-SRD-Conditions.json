@@ -229,6 +229,22 @@
     "url": "/api/conditions/enraged"
   },
   {
+    "index": "frenzied",
+    "name": "Frenzied",
+    "desc": [
+      "For the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns. When your rage ends, you suffer one level of exhaustion."
+    ],
+    "url": "/api/features/frenzied"
+  },
+  {
+    "index": "reckless",
+    "name": "Reckless",
+    "desc": [
+      "You throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
+    ],
+    "url": "/api/features/reckless"
+  },
+  {
     "index": "dodging",
     "name": "Dodging",
     "desc": [
