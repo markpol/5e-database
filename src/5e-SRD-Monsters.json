@@ -6474,6 +6474,22 @@
               "url": "/api/damage-types/acid"
             },
             "damage_dice": "1d6"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 13,
+              "additional_condition": {
+                "condition_type": {
+                  "index": "restrained",
+                  "name": "Restrained",
+                  "url": "/api/conditions/restrained"
+                },
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ]
       },
@@ -11729,6 +11745,22 @@
               "url": "/api/damage-types/bludgeoning"
             },
             "damage_dice": "1d8+2"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 14,
+              "additional_condition": {
+                "condition_type": {
+                  "index": "restrained",
+                  "name": "Restrained",
+                  "url": "/api/conditions/restrained"
+                },
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ]
       }
@@ -12281,6 +12313,22 @@
               "url": "/api/damage-types/bludgeoning"
             },
             "damage_dice": "1d10+2"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 12,
+              "additional_condition": {
+                "condition_type": {
+                  "index": "restrained",
+                  "name": "Restrained",
+                  "url": "/api/conditions/restrained"
+                },
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ]
       }
@@ -18028,6 +18076,22 @@
               "url": "/api/damage-types/bludgeoning"
             },
             "damage_dice": "2d8+4"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 16,
+              "additional_condition": {
+                "condition_type": {
+                  "index": "restrained",
+                  "name": "Restrained",
+                  "url": "/api/conditions/restrained"
+                },
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ]
       }
@@ -18573,6 +18637,22 @@
               "url": "/api/damage-types/piercing"
             },
             "damage_dice": "1d6+1"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 11,
+              "additional_condition": {
+                "condition_type": {
+                  "index": "restrained",
+                  "name": "Restrained",
+                  "url": "/api/conditions/restrained"
+                },
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ]
       },
@@ -18889,6 +18969,22 @@
               "url": "/api/damage-types/bludgeoning"
             },
             "damage_dice": "2d6+3"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 16,
+              "additional_condition": {
+                "condition_type": {
+                  "index": "restrained",
+                  "name": "Restrained",
+                  "url": "/api/conditions/restrained"
+                },
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ]
       },
@@ -19643,6 +19739,22 @@
               "url": "/api/damage-types/poison"
             },
             "damage_dice": "1d10"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 13,
+              "additional_condition": {
+                "condition_type": {
+                  "index": "restrained",
+                  "name": "Restrained",
+                  "url": "/api/conditions/restrained"
+                },
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ]
       },
@@ -27984,6 +28096,11 @@
               "url": "/api/damage-types/bludgeoning"
             },
             "damage_dice": "1d8+3"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 13
+            }
           }
         ]
       },
@@ -31621,6 +31738,7 @@
         "name": "Mace",
         "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.",
         "attack_bonus": 2,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -33237,7 +33355,8 @@
       {
         "name": "Smother",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one Medium or smaller creature. Hit: The creature is grappled (escape DC 13). Until this grapple ends, the target is restrained, blinded, and at risk of suffocating, and the rug can't smother another target. In addition, at the start of each of the target's turns, the target takes 10 (2d6 + 3) bludgeoning damage.",
-        "attack_bonus": 5
+        "attack_bonus": 5,
+        "attack_type": "Melee"
       }
     ],
     "url": "/api/monsters/rug-of-smothering"
@@ -33410,6 +33529,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) piercing damage.",
         "attack_bonus": 6,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -33425,6 +33545,7 @@
         "name": "Claw",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
         "attack_bonus": 6,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -34163,6 +34284,7 @@
         "name": "Claws",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
         "attack_bonus": 5,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -34758,6 +34880,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage.",
         "attack_bonus": 6,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -37327,6 +37450,7 @@
         "name": "Bites",
         "desc": "Melee Weapon Attack: +6 to hit, reach 0 ft., one creature in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hit points or fewer. The target must make a DC 10 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one.",
         "attack_bonus": 6,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -37335,6 +37459,23 @@
               "url": "/api/damage-types/piercing"
             },
             "damage_dice": "2d6"
+          },
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/damage-types/poison"
+            },
+            "damage_dice": "4d6",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 10,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -41620,6 +41761,7 @@
         "name": "Shortsword",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -41635,6 +41777,7 @@
         "name": "Hand Crossbow",
         "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Ranged",
         "damage": [
           {
             "damage_type": {
@@ -41808,6 +41951,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. If the target is a humanoid, it must succeed on a DC 11 Constitution saving throw or be cursed with wererat lycanthropy.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -41823,6 +41967,7 @@
         "name": "Shortsword",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -41838,6 +41983,7 @@
         "name": "Hand Crossbow",
         "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
         "attack_bonus": 4,
+        "attack_type": "Ranged",
         "damage": [
           {
             "damage_type": {
@@ -41935,6 +42081,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage. If the target is a humanoid, it must succeed on a DC 11 Constitution saving throw or be cursed with wererat lycanthropy.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -42870,6 +43017,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) cold damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -43232,6 +43380,7 @@
         "name": "Shock",
         "desc": "Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d8) lightning damage.",
         "attack_bonus": 4,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
