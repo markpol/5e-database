@@ -4070,6 +4070,10 @@
       "quantity": 50,
       "unit": "gp"
     },
+    "is-consumable": true,
+    "effect": {
+      "heal": "2d4+2"
+    },
     "url": "/api/magic-items/potion-of-healing-common"
   },
   {
@@ -4092,6 +4096,10 @@
     "cost": {
       "quantity": 150,
       "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "heal": "4d4+4"
     },
     "url": "/api/magic-items/potion-of-healing-greater"
   },
@@ -4116,6 +4124,10 @@
       "quantity": 450,
       "unit": "gp"
     },
+    "is-consumable": true,
+    "effect": {
+      "heal": "8d4+8"
+    },
     "url": "/api/magic-items/potion-of-healing-superior"
   },
   {
@@ -4138,6 +4150,10 @@
     "cost": {
       "quantity": 1350,
       "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "heal": "10d4+20"
     },
     "url": "/api/magic-items/potion-of-healing-supreme"
   },
@@ -4321,6 +4337,14 @@
       "quantity": 250,
       "unit": "gp"
     },
+    "is-consumable": true,
+    "effect": {
+      "condition": "acid-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-acid"
   },
   {
@@ -4343,6 +4367,14 @@
     "cost": {
       "quantity": 250,
       "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "cold-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
     },
     "url": "/api/magic-items/potion-of-resistance-cold"
   },
@@ -4367,6 +4399,14 @@
       "quantity": 250,
       "unit": "gp"
     },
+    "is-consumable": true,
+    "effect": {
+      "condition": "fire-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-fire"
   },
   {
@@ -4389,6 +4429,14 @@
     "cost": {
       "quantity": 250,
       "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "force-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
     },
     "url": "/api/magic-items/potion-of-resistance-force"
   },
@@ -4413,6 +4461,14 @@
       "quantity": 250,
       "unit": "gp"
     },
+    "is-consumable": true,
+    "effect": {
+      "condition": "lightning-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-lightning"
   },
   {
@@ -4435,6 +4491,14 @@
     "cost": {
       "quantity": 250,
       "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "necrotic-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
     },
     "url": "/api/magic-items/potion-of-resistance-necrotic"
   },
@@ -4459,6 +4523,14 @@
       "quantity": 250,
       "unit": "gp"
     },
+    "is-consumable": true,
+    "effect": {
+      "condition": "poison-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-poison"
   },
   {
@@ -4481,6 +4553,14 @@
     "cost": {
       "quantity": 250,
       "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "psychic-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
     },
     "url": "/api/magic-items/potion-of-resistance-psychic"
   },
@@ -4505,6 +4585,14 @@
       "quantity": 250,
       "unit": "gp"
     },
+    "is-consumable": true,
+    "effect": {
+      "condition": "radiant-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-radiant"
   },
   {
@@ -4528,6 +4616,14 @@
       "quantity": 250,
       "unit": "gp"
     },
+    "is-consumable": true,
+    "effect": {
+      "condition": "thunder-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "hour"
+      }
+    },
     "url": "/api/magic-items/potion-of-resistance-thunder"
   },
   {
@@ -4550,6 +4646,14 @@
     "cost": {
       "quantity": 400,
       "unit": "gp"
+    },
+    "is-consumable": true,
+    "effect": {
+      "condition": "hasted",
+      "duration": {
+        "length": 10,
+        "unit": "round"
+      }
     },
     "url": "/api/magic-items/potion-of-speed"
   },
