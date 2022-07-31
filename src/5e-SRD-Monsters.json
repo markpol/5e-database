@@ -21804,7 +21804,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [
-      "bludgeoning, piercing, and slashing damage from nonmagical weapons"
+      "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
     "damage_immunities": [],
     "condition_immunities": [],
@@ -24522,7 +24522,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "cold",
-      "bludgeoning, piercing, and slashing from nonmagical/nonsilver weapons"
+      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
     "damage_immunities": [
       "fire",
@@ -32240,6 +32240,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
         "attack_bonus": 5,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -33732,6 +33733,7 @@
         "name": "Bite",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -33747,6 +33749,7 @@
         "name": "Claws",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "damage_type": {
@@ -33762,6 +33765,7 @@
         "name": "Spear",
         "desc": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.",
         "attack_bonus": 3,
+        "attack_type": "Melee",
         "damage": [
           {
             "choose": 1,
@@ -41010,7 +41014,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons"
+      "bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -41125,7 +41129,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons"
+      "bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -41226,7 +41230,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons"
+      "bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
