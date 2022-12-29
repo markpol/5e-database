@@ -14014,6 +14014,17 @@
           },
           "dc_value": 11,
           "success_type": "none"
+        },
+        "condition": {
+          "condition_type": {
+            "index": "poisoned",
+            "name": "Poisoned",
+            "url": "/api/conditions/poisoned"
+          },
+          "duration": {
+            "length": 10,
+            "unit": "round"
+          }
         }
       }
     ],
