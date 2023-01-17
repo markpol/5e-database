@@ -9443,9 +9443,9 @@
         "damage": [
           {
             "damage_type": {
-              "index": "bludgeoning",
-              "name": "Bludgeoning",
-              "url": "/api/damage-types/bludgeoning"
+              "index": "lightning",
+              "name": "Lightning",
+              "url": "/api/damage-types/lightning"
             },
             "damage_dice": "4d10"
           }
@@ -27283,7 +27283,12 @@
             },
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "usage": {
+          "type": "recharge on roll",
+          "dice": "1d6",
+          "min_value": 6
+        }
       }
     ],
     "url": "/api/monsters/magma-mephit"
@@ -28835,6 +28840,17 @@
           },
           "dc_value": 11,
           "success_type": "none"
+        },
+        "condition": {
+          "condition_type": {
+            "index": "frightened",
+            "name": "Frightened",
+            "url": "/api/conditions/frightened"
+          },
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
         }
       }
     ],
