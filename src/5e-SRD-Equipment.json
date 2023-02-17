@@ -38,6 +38,7 @@
         "url": "/api/weapon-properties/monk"
       }
     ],
+    "material": "wood",
     "url": "/api/equipment/club"
   },
   {
@@ -93,6 +94,7 @@
       "normal": 20,
       "long": 60
     },
+    "material": "metal",
     "url": "/api/equipment/dagger"
   },
   {
@@ -129,6 +131,7 @@
         "url": "/api/weapon-properties/two-handed"
       }
     ],
+    "material": "wood",
     "url": "/api/equipment/greatclub"
   },
   {
@@ -179,6 +182,7 @@
       "normal": 20,
       "long": 60
     },
+    "material": "metal",
     "url": "/api/equipment/handaxe"
   },
   {
@@ -224,6 +228,7 @@
       "normal": 30,
       "long": 120
     },
+    "material": "metal",
     "url": "/api/equipment/javelin"
   },
   {
@@ -274,6 +279,7 @@
       "normal": 20,
       "long": 60
     },
+    "material": "metal",
     "url": "/api/equipment/light-hammer"
   },
   {
@@ -310,6 +316,7 @@
         "url": "/api/weapon-properties/monk"
       }
     ],
+    "material": "metal",
     "url": "/api/equipment/mace"
   },
   {
@@ -359,6 +366,7 @@
         "url": "/api/damage-types/bludgeoning"
       }
     },
+    "material": "wood",
     "url": "/api/equipment/quarterstaff"
   },
   {
@@ -400,6 +408,7 @@
         "url": "/api/weapon-properties/monk"
       }
     ],
+    "material": "metal",
     "url": "/api/equipment/sickle"
   },
   {
@@ -458,6 +467,7 @@
         "url": "/api/damage-types/piercing"
       }
     },
+    "material": "wood",
     "url": "/api/equipment/spear"
   },
   {
@@ -505,6 +515,7 @@
         "url": "/api/weapon-properties/two-handed"
       }
     ],
+    "material": "wood",
     "url": "/api/equipment/crossbow-light"
   },
   {
@@ -551,6 +562,7 @@
       "normal": 20,
       "long": 60
     },
+    "material": "metal",
     "url": "/api/equipment/dart"
   },
   {
@@ -593,6 +605,7 @@
         "url": "/api/weapon-properties/two-handed"
       }
     ],
+    "material": "wood",
     "url": "/api/equipment/shortbow"
   },
   {
@@ -630,6 +643,7 @@
         "url": "/api/weapon-properties/ammunition"
       }
     ],
+    "material": "leather",
     "url": "/api/equipment/sling"
   },
   {
@@ -674,6 +688,7 @@
         "url": "/api/damage-types/slashing"
       }
     },
+    "material": "metal",
     "url": "/api/equipment/battleaxe"
   },
   {
@@ -704,6 +719,7 @@
     },
     "weight": 2,
     "properties": [],
+    "material": "metal",
     "url": "/api/equipment/flail"
   },
   {
@@ -750,6 +766,7 @@
         "url": "/api/weapon-properties/two-handed"
       }
     ],
+    "material": "metal",
     "url": "/api/equipment/glaive"
   },
   {
@@ -791,6 +808,7 @@
         "url": "/api/weapon-properties/two-handed"
       }
     ],
+    "material": "metal",
     "url": "/api/equipment/greataxe"
   },
   {
@@ -832,6 +850,7 @@
         "url": "/api/weapon-properties/two-handed"
       }
     ],
+    "material": "metal",
     "url": "/api/equipment/greatsword"
   },
   {
@@ -878,6 +897,7 @@
         "url": "/api/weapon-properties/two-handed"
       }
     ],
+    "material": "metal",
     "url": "/api/equipment/halberd"
   },
   {
@@ -922,6 +942,7 @@
     "special": [
       "You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted."
     ],
+    "material": "metal",
     "url": "/api/equipment/lance"
   },
   {
@@ -966,6 +987,7 @@
         "url": "/api/damage-types/slashing"
       }
     },
+    "material": "metal",
     "url": "/api/equipment/longsword"
   },
   {
@@ -1007,6 +1029,7 @@
         "url": "/api/weapon-properties/two-handed"
       }
     ],
+    "material": "wood",
     "url": "/api/equipment/maul"
   },
   {
@@ -1037,6 +1060,7 @@
     },
     "weight": 4,
     "properties": [],
+    "material": "metal",
     "url": "/api/equipment/morningstar"
   },
   {
@@ -1083,6 +1107,7 @@
         "url": "/api/weapon-properties/two-handed"
       }
     ],
+    "material": "metal",
     "url": "/api/equipment/pike"
   },
   {
@@ -1119,6 +1144,7 @@
         "url": "/api/weapon-properties/finesse"
       }
     ],
+    "material": "metal",
     "url": "/api/equipment/rapier"
   },
   {
@@ -1160,6 +1186,7 @@
         "url": "/api/weapon-properties/light"
       }
     ],
+    "material": "metal",
     "url": "/api/equipment/scimitar"
   },
   {
@@ -1206,6 +1233,7 @@
         "url": "/api/weapon-properties/monk"
       }
     ],
+    "material": "metal",
     "url": "/api/equipment/shortsword"
   },
   {
@@ -1259,6 +1287,7 @@
         "url": "/api/damage-types/piercing"
       }
     },
+    "material": "metal",
     "url": "/api/equipment/trident"
   },
   {
@@ -1289,6 +1318,7 @@
     },
     "weight": 2,
     "properties": [],
+    "material": "metal",
     "url": "/api/equipment/war-pick"
   },
   {
@@ -1333,6 +1363,7 @@
         "url": "/api/damage-types/bludgeoning"
       }
     },
+    "material": "metal",
     "url": "/api/equipment/warhammer"
   },
   {
@@ -1374,6 +1405,7 @@
         "url": "/api/weapon-properties/reach"
       }
     ],
+    "material": "leather",
     "url": "/api/equipment/whip"
   },
   {
@@ -1416,6 +1448,7 @@
         "url": "/api/weapon-properties/loading"
       }
     ],
+    "material": "wood",
     "url": "/api/equipment/blowgun"
   },
   {
@@ -1463,6 +1496,7 @@
         "url": "/api/weapon-properties/loading"
       }
     ],
+    "material": "wood",
     "url": "/api/equipment/crossbow-hand"
   },
   {
@@ -1515,6 +1549,7 @@
         "url": "/api/weapon-properties/two-handed"
       }
     ],
+    "material": "metal",
     "url": "/api/equipment/crossbow-heavy"
   },
   {
@@ -1562,6 +1597,7 @@
         "url": "/api/weapon-properties/two-handed"
       }
     ],
+    "material": "wood",
     "url": "/api/equipment/longbow"
   },
   {
@@ -1584,6 +1620,7 @@
       "quantity": 5,
       "unit": "gp"
     },
+    "material": "cloth",
     "url": "/api/equipment/padded-armor"
   },
   {
@@ -1606,6 +1643,7 @@
       "quantity": 10,
       "unit": "gp"
     },
+    "material": "leather",
     "url": "/api/equipment/leather-armor"
   },
   {
@@ -1628,6 +1666,7 @@
       "quantity": 45,
       "unit": "gp"
     },
+    "material": "leather",
     "url": "/api/equipment/studded-leather-armor"
   },
   {
@@ -1651,6 +1690,7 @@
       "quantity": 10,
       "unit": "gp"
     },
+    "material": "leather",
     "url": "/api/equipment/hide-armor"
   },
   {
@@ -1674,6 +1714,7 @@
       "quantity": 50,
       "unit": "gp"
     },
+    "material": "metal",
     "url": "/api/equipment/chain-shirt"
   },
   {
@@ -1697,6 +1738,7 @@
       "quantity": 50,
       "unit": "gp"
     },
+    "material": "metal",
     "url": "/api/equipment/scale-mail"
   },
   {
@@ -1720,6 +1762,7 @@
       "quantity": 400,
       "unit": "gp"
     },
+    "material": "metal",
     "url": "/api/equipment/breastplate"
   },
   {
@@ -1743,6 +1786,7 @@
       "quantity": 750,
       "unit": "gp"
     },
+    "material": "metal",
     "url": "/api/equipment/half-plate-armor"
   },
   {
@@ -1765,6 +1809,7 @@
       "quantity": 30,
       "unit": "gp"
     },
+    "material": "metal",
     "url": "/api/equipment/ring-mail"
   },
   {
@@ -1787,6 +1832,7 @@
       "quantity": 75,
       "unit": "gp"
     },
+    "material": "metal",
     "url": "/api/equipment/chain-mail"
   },
   {
@@ -1809,6 +1855,7 @@
       "quantity": 200,
       "unit": "gp"
     },
+    "material": "metal",
     "url": "/api/equipment/splint-armor"
   },
   {
@@ -1831,6 +1878,7 @@
       "quantity": 1500,
       "unit": "gp"
     },
+    "material": "metal",
     "url": "/api/equipment/plate-armor"
   },
   {
@@ -1853,6 +1901,7 @@
       "quantity": 10,
       "unit": "gp"
     },
+    "material": "wood",
     "url": "/api/equipment/shield"
   },
   {
