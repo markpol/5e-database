@@ -16806,73 +16806,6 @@
     "url": "/api/monsters/flying-sword"
   },
   {
-    "index": "frog",
-    "name": "Frog",
-    "desc": "A frog has no effective attacks. It feeds on small insects and typically dwells near water, in trees, or underground. The frog’s statistics can also be used to represent a toad.",
-    "size": "Tiny",
-    "type": "beast",
-    "alignment": "unaligned",
-    "armor_class": [
-      {
-        "type": "dex",
-        "value": 11
-      }
-    ],
-    "hit_points": 1,
-    "hit_dice": "1d4",
-    "hit_points_roll": "1d4-1",
-    "speed": {
-      "walk": 20,
-      "swim": 20
-    },
-    "strength": 1,
-    "dexterity": 13,
-    "constitution": 8,
-    "intelligence": 1,
-    "wisdom": 8,
-    "charisma": 3,
-    "proficiencies": [
-      {
-        "value": 1,
-        "proficiency": {
-          "index": "skill-perception",
-          "name": "Skill: Perception",
-          "url": "/api/proficiencies/skill-perception"
-        }
-      },
-      {
-        "value": 3,
-        "proficiency": {
-          "index": "skill-stealth",
-          "name": "Skill: Stealth",
-          "url": "/api/proficiencies/skill-stealth"
-        }
-      }
-    ],
-    "damage_vulnerabilities": [],
-    "damage_resistances": [],
-    "damage_immunities": [],
-    "condition_immunities": [],
-    "senses": {
-      "darkvision": 30,
-      "passive_perception": 11
-    },
-    "languages": "",
-    "challenge_rating": 0,
-    "xp": 0,
-    "special_abilities": [
-      {
-        "name": "Amphibious",
-        "desc": "The frog can breathe air and water"
-      },
-      {
-        "name": "Standing Leap",
-        "desc": "The frog's long jump is up to 10 ft. and its high jump is up to 5 ft., with or without a running start."
-      }
-    ],
-    "url": "/api/monsters/frog"
-  },
-  {
     "index": "frost-giant",
     "name": "Frost Giant",
     "size": "Huge",
@@ -34415,49 +34348,6 @@
     "url": "/api/monsters/sea-hag"
   },
   {
-    "index": "sea-horse",
-    "name": "Sea Horse",
-    "size": "Tiny",
-    "type": "beast",
-    "alignment": "unaligned",
-    "armor_class": [
-      {
-        "type": "dex",
-        "value": 11
-      }
-    ],
-    "hit_points": 1,
-    "hit_dice": "1d4",
-    "hit_points_roll": "1d4-1",
-    "speed": {
-      "swim": 20
-    },
-    "strength": 1,
-    "dexterity": 12,
-    "constitution": 8,
-    "intelligence": 1,
-    "wisdom": 10,
-    "charisma": 2,
-    "proficiencies": [],
-    "damage_vulnerabilities": [],
-    "damage_resistances": [],
-    "damage_immunities": [],
-    "condition_immunities": [],
-    "senses": {
-      "passive_perception": 10
-    },
-    "languages": "",
-    "challenge_rating": 0,
-    "xp": 0,
-    "special_abilities": [
-      {
-        "name": "Water Breathing",
-        "desc": "The sea horse can breathe only underwater."
-      }
-    ],
-    "url": "/api/monsters/sea-horse"
-  },
-  {
     "index": "shadow",
     "name": "Shadow",
     "size": "Medium",
@@ -34817,72 +34707,6 @@
       }
     ],
     "url": "/api/monsters/shield-guardian"
-  },
-  {
-    "index": "shrieker",
-    "name": "Shrieker",
-    "size": "Medium",
-    "type": "plant",
-    "alignment": "unaligned",
-    "armor_class": [
-      {
-        "type": "dex",
-        "value": 5
-      }
-    ],
-    "hit_points": 13,
-    "hit_dice": "3d8",
-    "hit_points_roll": "3d8",
-    "speed": {
-      "walk": 0
-    },
-    "strength": 1,
-    "dexterity": 1,
-    "constitution": 10,
-    "intelligence": 1,
-    "wisdom": 3,
-    "charisma": 1,
-    "proficiencies": [],
-    "damage_vulnerabilities": [],
-    "damage_resistances": [],
-    "damage_immunities": [],
-    "condition_immunities": [
-      {
-        "index": "blinded",
-        "name": "Blinded",
-        "url": "/api/conditions/blinded"
-      },
-      {
-        "index": "blinded",
-        "name": "Blinded",
-        "url": "/api/conditions/blinded"
-      },
-      {
-        "index": "frightened",
-        "name": "Frightened",
-        "url": "/api/conditions/frightened"
-      }
-    ],
-    "senses": {
-      "blindsight": "30 ft. (blind beyond this radius)",
-      "passive_perception": 6
-    },
-    "languages": "",
-    "challenge_rating": 0,
-    "xp": 10,
-    "special_abilities": [
-      {
-        "name": "False Appearance",
-        "desc": "While the shrieker remains motionless, it is indistinguishable from an ordinary fungus."
-      }
-    ],
-    "reactions": [
-      {
-        "name": "Shriek",
-        "desc": "When bright light or a creature is within 30 feet of the shrieker, it emits a shriek audible within 300 feet of it. The shrieker continues to shriek until the disturbance moves out of range and for 1d4 of the shrieker's turns afterward"
-      }
-    ],
-    "url": "/api/monsters/shrieker"
   },
   {
     "index": "silver-dragon-wyrmling",
