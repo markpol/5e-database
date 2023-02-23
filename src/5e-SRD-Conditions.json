@@ -333,5 +333,14 @@
       "When the condition ends, the target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it."
     ],
     "url": "/api/features/hasted"
+  },
+  {
+    "index": "infested",
+    "name": "Infested",
+    "desc": [
+      "A parasite has attached itself and consumes blood every turn.",
+      "An action can be used to detach the parasite."
+    ],
+    "url": "/api/features/infested"
   }
 ]
