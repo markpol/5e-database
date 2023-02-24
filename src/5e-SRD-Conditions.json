@@ -342,5 +342,14 @@
       "An action can be used to detach the parasite."
     ],
     "url": "/api/features/infested"
+  },
+  {
+    "index": "swallowed",
+    "name": "Swallowed",
+    "desc": [
+      "A creature swallowed by a larger host creature is blinded and restrained, and has total cover against attacks and other effects outside the host.",
+      "Acid damage is taken every turn while swallowed. If the host dies, a swallowed creature is no longer restrained by it and can escape."
+    ],
+    "url": "/api/features/infested"
   }
 ]
