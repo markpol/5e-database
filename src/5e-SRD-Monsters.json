@@ -18741,9 +18741,15 @@
           }
         },
         "condition": {
-          "index": "swallowed",
-          "name": "Swallowed",
-          "url": "/api/features/infested"
+          "conditionType": {
+            "index": "swallowed",
+            "name": "Swallowed",
+            "url": "/api/features/infested"
+          },
+          "duration": {
+            "length": 1,
+            "unit": "until killed"
+          }
         },
         "damage": [
           {
@@ -24586,7 +24592,7 @@
             "name": "DEX",
             "url": "/api/ability-scores/dex"
           },
-          "dc_value": 23,
+          "dc_value": 10,
           "success_type": "half"
         },
         "damage": [
