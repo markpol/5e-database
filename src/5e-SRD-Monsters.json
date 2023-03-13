@@ -14417,9 +14417,9 @@
         "damage": [
           {
             "damage_type": {
-              "index": "bludgeoning",
-              "name": "Bludgeoning",
-              "url": "/api/damage-types/bludgeoning"
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/damage-types/piercing"
             },
             "damage_dice": "1d6+2"
           }
@@ -14461,7 +14461,10 @@
               "success_type": "none"
             }
           }
-        ]
+        ],
+        "preference": {
+          "type": "always until first hit"
+        }
       }
     ],
     "url": "/api/monsters/drow"
@@ -15686,7 +15689,10 @@
             },
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "preference": {
+          "type": "always on first round"
+        }
       },
       {
         "name": "Hooves",
@@ -18113,6 +18119,22 @@
               "url": "/api/damage-types/bludgeoning"
             },
             "damage_dice": "1d6+1"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 11,
+              "additional_condition": {
+                "condition_type": {
+                  "index": "restrained",
+                  "name": "Restrained",
+                  "url": "/api/conditions/restrained"
+                },
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ]
       }
@@ -18424,7 +18446,10 @@
             },
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "preference": {
+          "type": "always on first round"
+        }
       },
       {
         "name": "Hooves",
@@ -26295,14 +26320,6 @@
         "desc": "If the lion moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the lion can make one bite attack against it as a bonus action.",
         "damage": [
           {
-            "damage_type": {
-              "index": "piercing",
-              "name": "Piercing",
-              "url": "/api/damage-types/piercing"
-            },
-            "damage_dice": "1d8+3"
-          },
-          {
             "dc": {
               "dc_type": {
                 "index": "str",
@@ -26324,7 +26341,19 @@
               }
             }
           }
-        ]
+        ],
+        "bonus-action": {
+          "action": "Bite",
+          "situation": {
+            "target": {
+              "condition": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              }
+            }
+          }
+        }
       },
       {
         "name": "Running Leap",
@@ -26362,7 +26391,10 @@
             },
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "preference": {
+          "type": "always on first round"
+        }
       }
     ],
     "url": "/api/monsters/lion"
@@ -28272,7 +28304,10 @@
             },
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "preference": {
+          "type": "always on first round"
+        }
       }
     ],
     "url": "/api/monsters/minotaur"
@@ -28397,7 +28432,10 @@
             },
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "preference": {
+          "type": "always on first round"
+        }
       }
     ],
     "url": "/api/monsters/minotaur-skeleton"
@@ -30574,14 +30612,6 @@
         "desc": "If the panther moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the panther can make one bite attack against it as a bonus action.",
         "damage": [
           {
-            "damage_type": {
-              "index": "piercing",
-              "name": "Piercing",
-              "url": "/api/damage-types/piercing"
-            },
-            "damage_dice": "1d6+2"
-          },
-          {
             "dc": {
               "dc_type": {
                 "index": "str",
@@ -30603,7 +30633,19 @@
               }
             }
           }
-        ]
+        ],
+        "bonus-action": {
+          "action": "Bite",
+          "situation": {
+            "target": {
+              "condition": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              }
+            }
+          }
+        }
       }
     ],
     "actions": [
@@ -30637,7 +30679,10 @@
             },
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "preference": {
+          "type": "always on first round"
+        }
       }
     ],
     "url": "/api/monsters/panther"
@@ -33551,14 +33596,6 @@
         "desc": "If the tiger moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.",
         "damage": [
           {
-            "damage_type": {
-              "index": "piercing",
-              "name": "Piercing",
-              "url": "/api/damage-types/piercing"
-            },
-            "damage_dice": "1d10+5"
-          },
-          {
             "dc": {
               "dc_type": {
                 "index": "str",
@@ -33580,7 +33617,19 @@
               }
             }
           }
-        ]
+        ],
+        "bonus-action": {
+          "action": "Bite",
+          "situation": {
+            "target": {
+              "condition": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              }
+            }
+          }
+        }
       }
     ],
     "actions": [
@@ -33614,7 +33663,10 @@
             },
             "damage_dice": "2d6+5"
           }
-        ]
+        ],
+        "preference": {
+          "type": "always on first round"
+        }
       }
     ],
     "url": "/api/monsters/saber-toothed-tiger"
@@ -38451,14 +38503,6 @@
         "desc": "If the tiger moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the tiger can make one bite attack against it as a bonus action.",
         "damage": [
           {
-            "damage_type": {
-              "index": "piercing",
-              "name": "Piercing",
-              "url": "/api/damage-types/piercing"
-            },
-            "damage_dice": "1d10+3"
-          },
-          {
             "dc": {
               "dc_type": {
                 "index": "str",
@@ -38480,7 +38524,19 @@
               }
             }
           }
-        ]
+        ],
+        "bonus-action": {
+          "action": "Bite",
+          "situation": {
+            "target": {
+              "condition": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              }
+            }
+          }
+        }
       }
     ],
     "actions": [
@@ -38514,7 +38570,10 @@
             },
             "damage_dice": "1d8+3"
           }
-        ]
+        ],
+        "preference": {
+          "type": "always on first round"
+        }
       }
     ],
     "url": "/api/monsters/tiger"
@@ -40499,12 +40558,6 @@
         "desc": "If the horse moves at least 20 ft. straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the horse can make another attack with its hooves against it as a bonus action.",
         "damage": [
           {
-            "damage_type": {
-              "index": "bludgeoning",
-              "name": "Bludgeoning",
-              "url": "/api/damage-types/bludgeoning"
-            },
-            "damage_dice": "2d8",
             "dc": {
               "dc_type": {
                 "index": "str",
@@ -40526,7 +40579,19 @@
               }
             }
           }
-        ]
+        ],
+        "bonus-action": {
+          "action": "Hooves",
+          "situation": {
+            "target": {
+              "condition": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              }
+            }
+          }
+        }
       }
     ],
     "actions": [
@@ -42272,23 +42337,6 @@
         "desc": "If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action.",
         "damage": [
           {
-            "damage_type": {
-              "index": "piercing",
-              "name": "Piercing",
-              "url": "/api/damage-types/piercing"
-            },
-            "damage_dice": "1d10+3"
-          },
-          {
-            "dc": {
-              "dc_type": {
-                "index": "str",
-                "name": "STR",
-                "url": "/api/ability-scores/str"
-              },
-              "dc_value": 14,
-              "success_type": "none"
-            },
             "condition": {
               "condition_type": {
                 "index": "prone",
@@ -42301,7 +42349,19 @@
               }
             }
           }
-        ]
+        ],
+        "bonus-action": {
+          "action": "Bite",
+          "situation": {
+            "target": {
+              "condition": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              }
+            }
+          }
+        }
       }
     ],
     "actions": [
@@ -42482,14 +42542,6 @@
         "desc": "If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action.",
         "damage": [
           {
-            "damage_type": {
-              "index": "piercing",
-              "name": "Piercing",
-              "url": "/api/damage-types/piercing"
-            },
-            "damage_dice": "1d10+3"
-          },
-          {
             "dc": {
               "dc_type": {
                 "index": "str",
@@ -42511,7 +42563,19 @@
               }
             }
           }
-        ]
+        ],
+        "bonus-action": {
+          "action": "Bite",
+          "situation": {
+            "target": {
+              "condition": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              }
+            }
+          }
+        }
       }
     ],
     "actions": [
@@ -42543,7 +42607,10 @@
             },
             "damage_dice": "1d8+3"
           }
-        ]
+        ],
+        "preference": {
+          "type": "always on first round"
+        }
       }
     ],
     "url": "/api/monsters/weretiger-tiger"
