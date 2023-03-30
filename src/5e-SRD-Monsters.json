@@ -43850,7 +43850,7 @@
             "url": "/api/ability-scores/dex"
           },
           "dc_value": 12,
-          "success_type": "none"
+          "success_type": "half"
         },
         "damage": [
           {
