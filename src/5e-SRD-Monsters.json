@@ -19789,7 +19789,38 @@
       },
       {
         "name": "Swallow",
-        "desc": "The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the toad, and it takes 10 (3d6) acid damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time.\nIf the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone."
+        "desc": "The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the toad, and it takes 10 (3d6) acid damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time.\nIf the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone.",
+        "situation": {
+          "target": {
+            "condition": {
+              "index": "grappled",
+              "name": "Grappled",
+              "url": "/api/conditions/grappled"
+            },
+            "max-size": "Medium"
+          }
+        },
+        "condition": {
+          "conditionType": {
+            "index": "swallowed",
+            "name": "Swallowed",
+            "url": "/api/features/infested"
+          },
+          "duration": {
+            "length": 1,
+            "unit": "until killed"
+          }
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "acid",
+              "name": "Acid",
+              "url": "/api/damage-types/acid"
+            },
+            "damage_dice": "3d6"
+          }
+        ]
       }
     ],
     "url": "/api/monsters/giant-toad"
@@ -32215,6 +32246,17 @@
           },
           "dc_value": 10,
           "success_type": "none"
+        },
+        "condition": {
+          "condition_type": {
+            "index": "frightened",
+            "name": "Frightened",
+            "url": "/api/conditions/frightened"
+          },
+          "duration": {
+            "length": 10,
+            "unit": "round"
+          }
         }
       },
       {
