@@ -351,5 +351,13 @@
       "Acid damage is taken every turn while swallowed. If the host dies, a swallowed creature is no longer restrained by it and can escape."
     ],
     "url": "/api/features/infested"
+  },
+  {
+    "index": "weakened",
+    "name": "Weakened",
+    "desc": [
+      "Your Strength score has been reduced. The reduction lasts until a short or long rest is taken."
+    ],
+    "url": "/api/features/weakened"
   }
 ]
