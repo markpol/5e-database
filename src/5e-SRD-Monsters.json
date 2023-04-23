@@ -34597,7 +34597,18 @@
               "name": "Necrotic",
               "url": "/api/damage-types/necrotic"
             },
-            "damage_dice": "2d6+2"
+            "damage_dice": "2d6+2",
+            "condition": {
+              "condition_type": {
+                "index": "weakened",
+                "name": "Weakened",
+                "url": "/api/conditions/weakened"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "hour"
+              }
+            }
           }
         ]
       }
