@@ -27309,12 +27309,7 @@
             },
             "damage_dice": "2d6"
           }
-        ],
-        "usage": {
-          "type": "recharge on roll",
-          "dice": "1d6",
-          "min_value": 6
-        }
+        ]
       }
     ],
     "url": "/api/monsters/magma-mephit"
