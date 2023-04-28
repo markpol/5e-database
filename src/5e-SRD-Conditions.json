@@ -353,11 +353,11 @@
     "url": "/api/features/infested"
   },
   {
-    "index": "weakened",
-    "name": "Weakened",
+    "index": "drained-of-strength",
+    "name": "Drained of strength",
     "desc": [
       "Your Strength score has been reduced. The reduction lasts until a short or long rest is taken."
     ],
-    "url": "/api/features/weakened"
+    "url": "/api/features/drained-of-strength"
   }
 ]
