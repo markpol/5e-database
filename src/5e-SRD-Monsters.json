@@ -35602,6 +35602,28 @@
               "url": "/api/damage-types/necrotic"
             },
             "damage_dice": "3d6"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 10,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "drained-of-life",
+                "name": "Drained of life",
+                "url": "/api/conditions/drained-of-life"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "day"
+              }
+            }
           }
         ]
       }
@@ -43361,6 +43383,28 @@
               "url": "/api/damage-types/necrotic"
             },
             "damage_dice": "1d6+2"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 13,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "drained-of-life",
+                "name": "Drained of life",
+                "url": "/api/conditions/drained-of-life"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "day"
+              }
+            }
           }
         ]
       },
@@ -43943,6 +43987,28 @@
               "url": "/api/damage-types/necrotic"
             },
             "damage_dice": "4d8+3"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 14,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "drained-of-life",
+                "name": "Drained of life",
+                "url": "/api/conditions/drained-of-life"
+              },
+              "duration": {
+                "length": 1,
+                "unit": "day"
+              }
+            }
           }
         ]
       },
