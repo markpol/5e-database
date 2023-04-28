@@ -359,5 +359,13 @@
       "Your Strength score has been reduced. The reduction lasts until a short or long rest is taken."
     ],
     "url": "/api/features/drained-of-strength"
+  },
+  {
+    "index": "weakened",
+    "name": "Weakened",
+    "desc": [
+      "A weakened creature has disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    ],
+    "url": "/api/features/weakened"
   }
 ]
