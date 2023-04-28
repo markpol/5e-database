@@ -9877,6 +9877,18 @@
                   },
                   "dc_value": 11,
                   "success_type": "none"
+                },
+                "condition": {
+                  "condition_type": {
+                    "index": "unconscious",
+                    "name": "Unconscious",
+                    "url": "/api/conditions/unconscious"
+                  },
+                  "duration": {
+                    "length": 10,
+                    "unit": "round",
+                    "interrupt": "takes damage"
+                  }
                 }
               }
             ]
@@ -21793,7 +21805,7 @@
             "url": "/api/ability-scores/con"
           },
           "dc_value": 11,
-          "success_type": "none"
+          "success_type": "half"
         },
         "damage": [
           {
@@ -26554,13 +26566,13 @@
                 "url": "/api/conditions/prone"
               },
               "duration": {
-                "length": 1,
+                "length": 2,
                 "unit": "round"
               }
             }
           }
         ],
-        "bonus-action": {
+        "bonus_action": {
           "action": "Bite",
           "situation": {
             "target": {
@@ -30874,13 +30886,13 @@
                 "url": "/api/conditions/prone"
               },
               "duration": {
-                "length": 1,
+                "length": 2,
                 "unit": "round"
               }
             }
           }
         ],
-        "bonus-action": {
+        "bonus_action": {
           "action": "Bite",
           "situation": {
             "target": {
@@ -33895,13 +33907,13 @@
                 "url": "/api/conditions/prone"
               },
               "duration": {
-                "length": 1,
+                "length": 2,
                 "unit": "round"
               }
             }
           }
         ],
-        "bonus-action": {
+        "bonus_action": {
           "action": "Bite",
           "situation": {
             "target": {
@@ -34848,9 +34860,9 @@
             "damage_dice": "2d6+2",
             "condition": {
               "condition_type": {
-                "index": "weakened",
-                "name": "Weakened",
-                "url": "/api/conditions/weakened"
+                "index": "drained-of-strength",
+                "name": "Drained of strength",
+                "url": "/api/conditions/drained-of-strength"
               },
               "duration": {
                 "length": 1,
@@ -38849,13 +38861,13 @@
                 "url": "/api/conditions/prone"
               },
               "duration": {
-                "length": 1,
+                "length": 2,
                 "unit": "round"
               }
             }
           }
         ],
-        "bonus-action": {
+        "bonus_action": {
           "action": "Bite",
           "situation": {
             "target": {
@@ -40919,13 +40931,13 @@
                 "url": "/api/conditions/prone"
               },
               "duration": {
-                "length": 1,
+                "length": 2,
                 "unit": "round"
               }
             }
           }
         ],
-        "bonus-action": {
+        "bonus_action": {
           "action": "Hooves",
           "situation": {
             "target": {
@@ -42703,13 +42715,13 @@
                 "url": "/api/conditions/prone"
               },
               "duration": {
-                "length": 1,
+                "length": 2,
                 "unit": "round"
               }
             }
           }
         ],
-        "bonus-action": {
+        "bonus_action": {
           "action": "Bite",
           "situation": {
             "target": {
@@ -42918,13 +42930,13 @@
                 "url": "/api/conditions/prone"
               },
               "duration": {
-                "length": 1,
+                "length": 2,
                 "unit": "round"
               }
             }
           }
         ],
-        "bonus-action": {
+        "bonus_action": {
           "action": "Bite",
           "situation": {
             "target": {
