@@ -9887,7 +9887,7 @@
                   "duration": {
                     "length": 10,
                     "unit": "round",
-                    "interrupt": "takes damage"
+                    "interrupt": "damage taken"
                   }
                 }
               }
@@ -21420,6 +21420,18 @@
                   },
                   "dc_value": 13,
                   "success_type": "none"
+                },
+                "condition": {
+                  "condition_type": {
+                    "index": "weakened",
+                    "name": "Weakened",
+                    "url": "/api/conditions/weakened"
+                  },
+                  "duration": {
+                    "length": 10,
+                    "unit": "round",
+                    "interrupt": "saving throw success"
+                  }
                 }
               }
             ]
