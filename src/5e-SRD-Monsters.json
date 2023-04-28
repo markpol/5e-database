@@ -12005,6 +12005,18 @@
                   },
                   "dc_value": 11,
                   "success_type": "none"
+                },
+                "condition": {
+                  "condition_type": {
+                    "index": "slowed",
+                    "name": "Slowed",
+                    "url": "/api/conditions/slowed"
+                  },
+                  "duration": {
+                    "length": 10,
+                    "unit": "round",
+                    "interrupt": "saving throw success"
+                  }
                 }
               }
             ]
@@ -17647,8 +17659,39 @@
               "url": "/api/damage-types/slashing"
             },
             "damage_dice": "2d4+2"
+          },
+          {
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/ability-scores/con"
+              },
+              "dc_value": 10,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "paralyzed",
+                "name": "Paralyzed",
+                "url": "/api/conditions/paralyzed"
+              },
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
           }
-        ]
+        ],
+        "preference": {
+          "type": "always unless target has condition",
+          "target_condition": {
+            "index": "paralyzed",
+            "name": "Paralyzed",
+            "url": "/api/conditions/paralyzed"
+          }
+        }
       }
     ],
     "url": "/api/monsters/ghoul"
@@ -35273,6 +35316,18 @@
                   },
                   "dc_value": 13,
                   "success_type": "none"
+                },
+                "condition": {
+                  "condition_type": {
+                    "index": "paralyzed",
+                    "name": "Paralyzed",
+                    "url": "/api/conditions/paralyzed"
+                  },
+                  "duration": {
+                    "length": 10,
+                    "unit": "round",
+                    "interrupt": "saving throw success"
+                  }
                 }
               }
             ]

@@ -367,5 +367,13 @@
       "A weakened creature has disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
     ],
     "url": "/api/features/weakened"
+  },
+  {
+    "index": "slowed",
+    "name": "Slowed",
+    "desc": [
+      "A slowed creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save."
+    ],
+    "url": "/api/features/slowed"
   }
 ]
