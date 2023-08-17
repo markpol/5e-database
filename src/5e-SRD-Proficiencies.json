@@ -1304,5 +1304,245 @@
       "name": "CHA",
       "url": "/api/ability-scores/cha"
     }
+  },
+  {
+    "index": "skill-acrobatics",
+    "type": "Skills",
+    "name": "Skill: Acrobatics",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-acrobatics",
+    "reference": {
+      "index": "acrobatics",
+      "name": "Acrobatics",
+      "url": "/api/skills/acrobatics"
+    }
+  },
+  {
+    "index": "skill-animal-handling",
+    "type": "Skills",
+    "name": "Skill: Animal Handling",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-animal-handling",
+    "reference": {
+      "index": "animal-handling",
+      "name": "Animal Handling",
+      "url": "/api/skills/animal-handling"
+    }
+  },
+  {
+    "index": "skill-arcana",
+    "type": "Skills",
+    "name": "Skill: Arcana",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-arcana",
+    "reference": {
+      "index": "arcana",
+      "name": "Arcana",
+      "url": "/api/skills/arcana"
+    }
+  },
+  {
+    "index": "skill-athletics",
+    "type": "Skills",
+    "name": "Skill: Athletics",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-athletics",
+    "reference": {
+      "index": "athletics",
+      "name": "Athletics",
+      "url": "/api/skills/athletics"
+    }
+  },
+  {
+    "index": "skill-deception",
+    "type": "Skills",
+    "name": "Skill: Deception",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-deception",
+    "reference": {
+      "index": "deception",
+      "name": "Deception",
+      "url": "/api/skills/deception"
+    }
+  },
+  {
+    "index": "skill-history",
+    "type": "Skills",
+    "name": "Skill: History",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-history",
+    "reference": {
+      "index": "history",
+      "name": "History",
+      "url": "/api/skills/history"
+    }
+  },
+  {
+    "index": "skill-insight",
+    "type": "Skills",
+    "name": "Skill: Insight",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-insight",
+    "reference": {
+      "index": "insight",
+      "name": "Insight",
+      "url": "/api/skills/insight"
+    }
+  },
+  {
+    "index": "skill-intimidation",
+    "type": "Skills",
+    "name": "Skill: Intimidation",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-intimidation",
+    "reference": {
+      "index": "intimidation",
+      "name": "Intimidation",
+      "url": "/api/skills/intimidation"
+    }
+  },
+  {
+    "index": "skill-investigation",
+    "type": "Skills",
+    "name": "Skill: Investigation",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-investigation",
+    "reference": {
+      "index": "investigation",
+      "name": "Investigation",
+      "url": "/api/skills/investigation"
+    }
+  },
+  {
+    "index": "skill-medicine",
+    "type": "Skills",
+    "name": "Skill: Medicine",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-medicine",
+    "reference": {
+      "index": "medicine",
+      "name": "Medicine",
+      "url": "/api/skills/medicine"
+    }
+  },
+  {
+    "index": "skill-nature",
+    "type": "Skills",
+    "name": "Skill: Nature",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-nature",
+    "reference": {
+      "index": "nature",
+      "name": "Nature",
+      "url": "/api/skills/nature"
+    }
+  },
+  {
+    "index": "skill-perception",
+    "type": "Skills",
+    "name": "Skill: Perception",
+    "classes": [],
+    "races": [
+      {
+        "index": "elf",
+        "name": "Elf",
+        "url": "/api/races/elf"
+      }
+    ],
+    "url": "/api/proficiencies/skill-perception",
+    "reference": {
+      "index": "perception",
+      "name": "Perception",
+      "url": "/api/skills/perception"
+    }
+  },
+  {
+    "index": "skill-performance",
+    "type": "Skills",
+    "name": "Skill: Performance",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-performance",
+    "reference": {
+      "index": "performance",
+      "name": "Performance",
+      "url": "/api/skills/performance"
+    }
+  },
+  {
+    "index": "skill-persuasion",
+    "type": "Skills",
+    "name": "Skill: Persuasion",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-persuasion",
+    "reference": {
+      "index": "persuasion",
+      "name": "Persuasion",
+      "url": "/api/skills/persuasion"
+    }
+  },
+  {
+    "index": "skill-religion",
+    "type": "Skills",
+    "name": "Skill: Religion",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-religion",
+    "reference": {
+      "index": "religion",
+      "name": "Religion",
+      "url": "/api/skills/religion"
+    }
+  },
+  {
+    "index": "skill-sleight-of-hand",
+    "type": "Skills",
+    "name": "Skill: Sleight of Hand",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-sleight-of-hand",
+    "reference": {
+      "index": "sleight-of-hand",
+      "name": "Sleight of Hand",
+      "url": "/api/skills/sleight-of-hand"
+    }
+  },
+  {
+    "index": "skill-stealth",
+    "type": "Skills",
+    "name": "Skill: Stealth",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-stealth",
+    "reference": {
+      "index": "stealth",
+      "name": "Stealth",
+      "url": "/api/skills/stealth"
+    }
+  },
+  {
+    "index": "skill-survival",
+    "type": "Skills",
+    "name": "Skill: Survival",
+    "classes": [],
+    "races": [],
+    "url": "/api/proficiencies/skill-survival",
+    "reference": {
+      "index": "survival",
+      "name": "Survival",
+      "url": "/api/skills/survival"
+    }
   }
 ]

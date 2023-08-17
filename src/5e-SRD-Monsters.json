@@ -204,7 +204,8 @@
       }
     ],
     "image": "/api/images/monsters/aboleth.png",
-    "url": "/api/monsters/aboleth"
+    "url": "/api/monsters/aboleth",
+    "environments": "Underdark"
   },
   {
     "index": "acolyte",
@@ -336,7 +337,8 @@
       }
     ],
     "image": "/api/images/monsters/acolyte.png",
-    "url": "/api/monsters/acolyte"
+    "url": "/api/monsters/acolyte",
+    "environments": "Underdark, Urban"
   },
   {
     "index": "adult-black-dragon",
@@ -594,7 +596,8 @@
       }
     ],
     "image": "/api/images/monsters/adult-black-dragon.png",
-    "url": "/api/monsters/adult-black-dragon"
+    "url": "/api/monsters/adult-black-dragon",
+    "environments": "Underdark, Urban, Swamp"
   },
   {
     "index": "adult-blue-dragon",
@@ -3198,11 +3201,42 @@
           "type": "recharge on roll",
           "dice": "1d6",
           "min_value": 4
+        },
+        "dc": {
+          "dc_type": {
+            "index": "str",
+            "name": "STR",
+            "url": "/api/ability-scores/str"
+          },
+          "dc_value": 13,
+          "success_type": "half"
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/damage-types/bludgeoning"
+            },
+            "damage_dice": "3d8+2"
+          }
+        ],
+        "condition": {
+          "condition_type": {
+            "index": "prone",
+            "name": "Prone",
+            "url": "/api/conditions/prone"
+          },
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
         }
       }
     ],
     "image": "/api/images/monsters/air-elemental.png",
-    "url": "/api/monsters/air-elemental"
+    "url": "/api/monsters/air-elemental",
+    "environments": "Desert, Mountain"
   },
   {
     "index": "ancient-black-dragon",
@@ -6403,7 +6437,8 @@
       }
     ],
     "image": "/api/images/monsters/animated-armor.png",
-    "url": "/api/monsters/animated-armor"
+    "url": "/api/monsters/animated-armor",
+    "environments": "Desert, Mountain"
   },
   {
     "index": "ankheg",
@@ -6523,7 +6558,8 @@
       }
     ],
     "image": "/api/images/monsters/ankheg.png",
-    "url": "/api/monsters/ankheg"
+    "url": "/api/monsters/ankheg",
+    "environments": "Forest, Grassland"
   },
   {
     "index": "ape",
@@ -6625,7 +6661,8 @@
       }
     ],
     "image": "/api/images/monsters/ape.png",
-    "url": "/api/monsters/ape"
+    "url": "/api/monsters/ape",
+    "environments": "Forest"
   },
   {
     "index": "archmage",
@@ -7166,7 +7203,8 @@
       }
     ],
     "image":"/api/images/monsters/awakened-shrub.png",
-    "url": "/api/monsters/awakened-shrub"
+    "url": "/api/monsters/awakened-shrub",
+    "environments": "Forest"
   },
   {
     "index": "awakened-tree",
@@ -7234,7 +7272,8 @@
       }
     ],
     "image":"/api/images/monsters/awakened-tree.png",
-    "url": "/api/monsters/awakened-tree"
+    "url": "/api/monsters/awakened-tree",
+    "environments": "Forest"
   },
   {
     "index": "axe-beak",
@@ -7291,7 +7330,8 @@
       }
     ],
     "image": "/api/images/monsters/axe-beak.png",
-    "url": "/api/monsters/axe-beak"
+    "url": "/api/monsters/axe-beak",
+    "environments": "Grassland, Hill"
   },
   {
     "index": "azer",
@@ -7417,7 +7457,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/azer"
+    "url": "/api/monsters/azer",
+    "environments": ""
   },
   {
     "index": "baboon",
@@ -7479,7 +7520,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/baboon"
+    "url": "/api/monsters/baboon",
+    "environments": "Forest, Hill"
   },
   {
     "index": "badger",
@@ -7542,7 +7584,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/badger"
+    "url": "/api/monsters/badger",
+    "environments": "Forest"
   },
   {
     "index": "balor",
@@ -7824,7 +7867,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/bandit"
+    "url": "/api/monsters/bandit",
+    "environments": "Arctic, Coastal, Desert, Forest, Hill, Urban"
   },
   {
     "index": "bandit-captain",
@@ -7988,7 +8032,8 @@
         "desc": "The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon."
       }
     ],
-    "url": "/api/monsters/bandit-captain"
+    "url": "/api/monsters/bandit-captain",
+    "environments": "Arctic, Coastal, Desert, Forest, Hill, Urban"
   },
   {
     "index": "barbed-devil",
@@ -8205,7 +8250,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/barbed-devil"
+    "url": "/api/monsters/barbed-devil",
+    "environments": ""
   },
   {
     "index": "basilisk",
@@ -8284,7 +8330,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/basilisk"
+    "url": "/api/monsters/basilisk",
+    "environments": "Mountain"
   },
   {
     "index": "bat",
@@ -8351,7 +8398,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/bat"
+    "url": "/api/monsters/bat",
+    "environments": ""
   },
   {
     "index": "bearded-devil",
@@ -8492,7 +8540,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/bearded-devil"
+    "url": "/api/monsters/bearded-devil",
+    "environments": ""
   },
   {
     "index": "behir",
@@ -8718,7 +8767,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/berserker"
+    "url": "/api/monsters/berserker",
+    "environments": "Arctic, Coastal, Desert, Forest, Hill, Mountain"
   },
   {
     "index": "black-bear",
@@ -8813,7 +8863,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/black-bear"
+    "url": "/api/monsters/black-bear",
+    "environments": "Forest"
   },
   {
     "index": "black-dragon-wyrmling",
@@ -8966,7 +9017,8 @@
       }
     ],
     "images": "/api/images/monsters/black-dragon-wyrmling.png",
-    "url": "/api/monsters/black-dragon-wyrmling"
+    "url": "/api/monsters/black-dragon-wyrmling",
+    "environments": ""
   },
   {
     "index": "black-pudding",
@@ -9096,7 +9148,8 @@
         "desc": "When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding."
       }
     ],
-    "url": "/api/monsters/black-pudding"
+    "url": "/api/monsters/black-pudding",
+    "environments": "Underdark"
   },
   {
     "index": "blink-dog",
@@ -9184,7 +9237,8 @@
         }
       }
     ],
-    "url": "/api/monsters/blink-dog"
+    "url": "/api/monsters/blink-dog",
+    "environments": "Forest"
   },
   {
     "index": "blood-hawk",
@@ -9260,7 +9314,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/blood-hawk"
+    "url": "/api/monsters/blood-hawk",
+    "environments": "Arctic, Coastal, Forest, Grassland, Hill, Mountain"
   },
   {
     "index": "blue-dragon-wyrmling",
@@ -9406,7 +9461,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/blue-dragon-wyrmling"
+    "url": "/api/monsters/blue-dragon-wyrmling",
+    "environments": ""
   },
   {
     "index": "boar",
@@ -9511,7 +9567,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/boar"
+    "url": "/api/monsters/boar",
+    "environments": "Forest, Grassland, Hill"
   },
   {
     "index": "bone-devil",
@@ -9847,7 +9904,8 @@
         }
       }
     ],
-    "url": "/api/monsters/brass-dragon-wyrmling"
+    "url": "/api/monsters/brass-dragon-wyrmling",
+    "environments": ""
   },
   {
     "index": "bronze-dragon-wyrmling",
@@ -10017,7 +10075,8 @@
         }
       }
     ],
-    "url": "/api/monsters/bronze-dragon-wyrmling"
+    "url": "/api/monsters/bronze-dragon-wyrmling",
+    "environments": ""
   },
   {
     "index": "brown-bear",
@@ -10121,7 +10180,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/brown-bear"
+    "url": "/api/monsters/brown-bear",
+    "environments": "Arctic, Forest, Hill"
   },
   {
     "index": "bugbear",
@@ -10232,7 +10292,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/bugbear"
+    "url": "/api/monsters/bugbear",
+    "environments": "Forest, Grassland, Underdark"
   },
   {
     "index": "bulette",
@@ -10308,7 +10369,8 @@
         "desc": "If the bulette jumps at least 15 ft. as part of its movement, it can then use this action to land on its ft. in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) bludgeoning damage plus 14 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 ft. out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the bulette's space."
       }
     ],
-    "url": "/api/monsters/bulette"
+    "url": "/api/monsters/bulette",
+    "environments": "Grassland, Hill, Mountain"
   },
   {
     "index": "camel",
@@ -10363,7 +10425,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/camel"
+    "url": "/api/monsters/camel",
+    "environments": "Grassland, Hill, Mountain"
   },
   {
     "index": "cat",
@@ -10442,7 +10505,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/cat"
+    "url": "/api/monsters/cat",
+    "environments": "Desert, Forest, Grassland, Urban"
   },
   {
     "index": "centaur",
@@ -10607,7 +10671,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/centaur"
+    "url": "/api/monsters/centaur",
+    "environments": "Forest, Grassland"
   },
   {
     "index": "chain-devil",
@@ -11087,7 +11152,8 @@
         }
       }
     ],
-    "url": "/api/monsters/chuul"
+    "url": "/api/monsters/chuul",
+    "environments": "Underdark"
   },
   {
     "index": "clay-golem",
@@ -11635,7 +11701,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/cockatrice"
+    "url": "/api/monsters/cockatrice",
+    "environments": "Grassland"
   },
   {
     "index": "commoner",
@@ -11692,7 +11759,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/commoner"
+    "url": "/api/monsters/commoner",
+    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Urban"
   },
   {
     "index": "constrictor-snake",
@@ -11781,7 +11849,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/constrictor-snake"
+    "url": "/api/monsters/constrictor-snake",
+    "environments": "Desert, Forest, Swamp, Underwater"
   },
   {
     "index": "copper-dragon-wyrmling",
@@ -11957,7 +12026,8 @@
         }
       }
     ],
-    "url": "/api/monsters/copper-dragon-wyrmling"
+    "url": "/api/monsters/copper-dragon-wyrmling",
+    "environments": ""
   },
   {
     "index": "couatl",
@@ -12203,7 +12273,8 @@
         "desc": "The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).\nIn a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form."
       }
     ],
-    "url": "/api/monsters/couatl"
+    "url": "/api/monsters/couatl",
+    "environments": "Desert, Forest, Grassland, Urban"
   },
   {
     "index": "crab",
@@ -12275,7 +12346,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/crab"
+    "url": "/api/monsters/crab",
+    "environments": "Coastal"
   },
   {
     "index": "crocodile",
@@ -12362,7 +12434,8 @@
       }
     ],
     "image": "/api/images/monsters/crocodile.png",
-    "url": "/api/monsters/crocodile"
+    "url": "/api/monsters/crocodile",
+    "environments": "Swamp, Urban"
   },
   {
     "index": "cult-fanatic",
@@ -12535,7 +12608,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/cult-fanatic"
+    "url": "/api/monsters/cult-fanatic",
+    "environments": "Urban"
   },
   {
     "index": "cultist",
@@ -12622,7 +12696,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/cultist"
+    "url": "/api/monsters/cultist",
+    "environments": "Urban"
   },
   {
     "index": "darkmantle",
@@ -12705,7 +12780,8 @@
         }
       }
     ],
-    "url": "/api/monsters/darkmantle"
+    "url": "/api/monsters/darkmantle",
+    "environments": "Underdark"
   },
   {
     "index": "death-dog",
@@ -12797,7 +12873,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/death-dog"
+    "url": "/api/monsters/death-dog",
+    "environments": "Desert"
   },
   {
     "index": "deep-gnome-svirfneblin",
@@ -12964,7 +13041,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/deep-gnome-svirfneblin"
+    "url": "/api/monsters/deep-gnome-svirfneblin",
+    "environments": "Underdark"
   },
   {
     "index": "deer",
@@ -13019,7 +13097,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/deer"
+    "url": "/api/monsters/deer",
+    "environments": "Forest, Grassland"
   },
   {
     "index": "deva",
@@ -13294,7 +13373,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/dire-wolf"
+    "url": "/api/monsters/dire-wolf",
+    "environments": "Forest, Hill"
   },
   {
     "index": "djinni",
@@ -13672,7 +13752,8 @@
         "desc": "The doppelganger magically reads the surface thoughts of one creature within 60 ft. of it. The effect can penetrate barriers, but 3 ft. of wood or dirt, 2 ft. of stone, 2 inches of metal, or a thin sheet of lead blocks it. While the target is in range, the doppelganger can continue reading its thoughts, as long as the doppelganger's concentration isn't broken (as if concentrating on a spell). While reading the target's mind, the doppelganger has advantage on Wisdom (Insight) and Charisma (Deception, Intimidation, and Persuasion) checks against the target."
       }
     ],
-    "url": "/api/monsters/doppelganger"
+    "url": "/api/monsters/doppelganger",
+    "environments": "Underdark, Urban"
   },
   {
     "index": "draft-horse",
@@ -13727,7 +13808,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/draft-horse"
+    "url": "/api/monsters/draft-horse",
+    "environments": "Urban"
   },
   {
     "index": "dragon-turtle",
@@ -14052,7 +14134,8 @@
         }
       }
     ],
-    "url": "/api/monsters/dretch"
+    "url": "/api/monsters/dretch",
+    "environments": ""
   },
   {
     "index": "drider",
@@ -14491,7 +14574,8 @@
         }
       }
     ],
-    "url": "/api/monsters/drow"
+    "url": "/api/monsters/drow",
+    "environments": "Underdark"
   },
   {
     "index": "druid",
@@ -14685,7 +14769,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/druid"
+    "url": "/api/monsters/druid",
+    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark"
   },
   {
     "index": "dryad",
@@ -14865,7 +14950,8 @@
       }
     ],
     "image": "/api/images/monsters/dryad.png",
-    "url": "/api/monsters/dryad"
+    "url": "/api/monsters/dryad",
+    "environments": "Forest"
   },
   {
     "index": "duergar",
@@ -14984,7 +15070,8 @@
         }
       }
     ],
-    "url": "/api/monsters/duergar"
+    "url": "/api/monsters/duergar",
+    "environments": "Underdark"
   },
   {
     "index": "dust-mephit",
@@ -15127,7 +15214,8 @@
         }
       }
     ],
-    "url": "/api/monsters/dust-mephit"
+    "url": "/api/monsters/dust-mephit",
+    "environments": "Desert"
   },
   {
     "index": "eagle",
@@ -15198,7 +15286,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/eagle"
+    "url": "/api/monsters/eagle",
+    "environments": "Coastal, Grassland, Hill, Mountain"
   },
   {
     "index": "earth-elemental",
@@ -15310,7 +15399,8 @@
       }
     ],
     "image": "/api/images/monsters/earth-elemental.png",
-    "url": "/api/monsters/earth-elemental"
+    "url": "/api/monsters/earth-elemental",
+    "environments": "Underdark"
   },
   {
     "index": "efreeti",
@@ -15588,7 +15678,43 @@
     "special_abilities": [
       {
         "name": "Trampling Charge",
-        "desc": "If the elephant moves at least 20 ft. straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the elephant can make one stomp attack against it as a bonus action."
+        "desc": "If the elephant moves at least 20 ft. straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 12 Strength saving throw or be knocked prone. If the target is prone, the elephant can make one stomp attack against it as a bonus action.",
+        "damage": [
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 12,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 2,
+                "unit": "round"
+              }
+            }
+          }
+        ],
+        "bonus_action": {
+          "action": "Stomp",
+          "situation": {
+            "target": {
+              "condition": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              }
+            }
+          }
+        }
       }
     ],
     "actions": [
@@ -15605,7 +15731,10 @@
             },
             "damage_dice": "3d8+6"
           }
-        ]
+        ],
+        "preference": {
+          "type": "always on first round"
+        }
       },
       {
         "name": "Stomp",
@@ -15623,7 +15752,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/elephant"
+    "url": "/api/monsters/elephant",
+    "environments": "Grassland"
   },
   {
     "index": "elk",
@@ -15735,7 +15865,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/elk"
+    "url": "/api/monsters/elk",
+    "environments": "Forest, Grassland, Hill"
   },
   {
     "index": "erinyes",
@@ -16142,7 +16273,8 @@
         "attack_type": "Ranged"
       }
     ],
-    "url": "/api/monsters/ettercap"
+    "url": "/api/monsters/ettercap",
+    "environments": "Forest"
   },
   {
     "index": "ettin",
@@ -16248,7 +16380,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/ettin"
+    "url": "/api/monsters/ettin",
+    "environments": "Hill, Mountain, Underdark"
   },
   {
     "index": "fire-elemental",
@@ -16343,7 +16476,7 @@
               "name": "Fire",
               "url": "/api/damage-types/fire"
             },
-            "damage_dice": "5d10"
+            "damage_dice": "1d10"
           }
         ]
       },
@@ -16385,7 +16518,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/fire-elemental"
+    "url": "/api/monsters/fire-elemental",
+    "environments": "Desert"
   },
   {
     "index": "fire-giant",
@@ -16644,7 +16778,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/flesh-golem"
+    "url": "/api/monsters/flesh-golem",
+    "environments": ""
   },
   {
     "index": "flying-snake",
@@ -16717,7 +16852,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/flying-snake"
+    "url": "/api/monsters/flying-snake",
+    "environments": "Desert, Forest, Grassland, Urban"
   },
   {
     "index": "flying-sword",
@@ -16833,7 +16969,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/flying-sword"
+    "url": "/api/monsters/flying-sword",
+    "environments": ""
   },
   {
     "index": "frost-giant",
@@ -17074,7 +17211,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/gargoyle"
+    "url": "/api/monsters/gargoyle",
+    "environments": "Underdark, Urban"
   },
   {
     "index": "gelatinous-cube",
@@ -17194,7 +17332,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/gelatinous-cube"
+    "url": "/api/monsters/gelatinous-cube",
+    "environments": "Underdark"
   },
   {
     "index": "ghast",
@@ -17305,7 +17444,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/ghast"
+    "url": "/api/monsters/ghast",
+    "environments": "Swamp, Underdark, Urban"
   },
   {
     "index": "ghost",
@@ -17463,7 +17603,8 @@
         }
       }
     ],
-    "url": "/api/monsters/ghost"
+    "url": "/api/monsters/ghost",
+    "environments": "Underdark, Urban"
   },
   {
     "index": "ghoul",
@@ -17584,7 +17725,8 @@
         }
       }
     ],
-    "url": "/api/monsters/ghoul"
+    "url": "/api/monsters/ghoul",
+    "environments": "Swamp, Underdark, Urban"
   },
   {
     "index": "giant-ape",
@@ -17779,7 +17921,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-badger"
+    "url": "/api/monsters/giant-badger",
+    "environments": "Forest"
   },
   {
     "index": "giant-bat",
@@ -17846,7 +17989,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-bat"
+    "url": "/api/monsters/giant-bat",
+    "environments": "Forest, Underdark"
   },
   {
     "index": "giant-boar",
@@ -17951,7 +18095,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-boar"
+    "url": "/api/monsters/giant-boar",
+    "environments": "Forest, Grassland, Hill"
   },
   {
     "index": "giant-centipede",
@@ -18008,7 +18153,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-centipede"
+    "url": "/api/monsters/giant-centipede",
+    "environments": "Underdark, Urban"
   },
   {
     "index": "giant-constrictor-snake",
@@ -18106,7 +18252,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-constrictor-snake"
+    "url": "/api/monsters/giant-constrictor-snake",
+    "environments": "Desert, Forest, Swamp, Underdark, Underwater"
   },
   {
     "index": "giant-crab",
@@ -18194,7 +18341,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-crab"
+    "url": "/api/monsters/giant-crab",
+    "environments": "Coastal"
   },
   {
     "index": "giant-crocodile",
@@ -18296,7 +18444,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-crocodile"
+    "url": "/api/monsters/giant-crocodile",
+    "environments": "Swamp"
   },
   {
     "index": "giant-eagle",
@@ -18401,7 +18550,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-eagle"
+    "url": "/api/monsters/giant-eagle",
+    "environments": "Coastal, Grassland, Hill, Mountain"
   },
   {
     "index": "giant-elk",
@@ -18523,7 +18673,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-elk"
+    "url": "/api/monsters/giant-elk",
+    "environments": "Forest, Grassland, Hill, Mountain"
   },
   {
     "index": "giant-fire-beetle",
@@ -18586,7 +18737,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-fire-beetle"
+    "url": "/api/monsters/giant-fire-beetle",
+    "environments": "Underdark"
   },
   {
     "index": "giant-frog",
@@ -18721,7 +18873,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-frog"
+    "url": "/api/monsters/giant-frog",
+    "environments": "Forest, Swamp"
   },
   {
     "index": "giant-goat",
@@ -18817,7 +18970,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-goat"
+    "url": "/api/monsters/giant-goat",
+    "environments": "Grassland, Hill, Mountain"
   },
   {
     "index": "giant-hyena",
@@ -18887,7 +19041,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-hyena"
+    "url": "/api/monsters/giant-hyena",
+    "environments": "Desert, Forest, Grassland, Hill"
   },
   {
     "index": "giant-lizard",
@@ -18945,7 +19100,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-lizard"
+    "url": "/api/monsters/giant-lizard",
+    "environments": "Coastal, Desert, Forest, Swamp, Underdark"
   },
   {
     "index": "giant-octopus",
@@ -19060,7 +19216,8 @@
         }
       }
     ],
-    "url": "/api/monsters/giant-octopus"
+    "url": "/api/monsters/giant-octopus",
+    "environments": "Underwater"
   },
   {
     "index": "giant-owl",
@@ -19144,7 +19301,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-owl"
+    "url": "/api/monsters/giant-owl",
+    "environments": "Arctic, Forest, Hill"
   },
   {
     "index": "giant-poisonous-snake",
@@ -19227,7 +19385,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-poisonous-snake"
+    "url": "/api/monsters/giant-poisonous-snake",
+    "environments": "Desert, Forest, Grassland, Swamp, Underdark, Urban"
   },
   {
     "index": "giant-rat",
@@ -19293,7 +19452,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-rat"
+    "url": "/api/monsters/giant-rat",
+    "environments": "Forest, Swamp, Underdark, Urban"
   },
   {
     "index": "giant-rat-diseased",
@@ -19470,7 +19630,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-scorpion"
+    "url": "/api/monsters/giant-scorpion",
+    "environments": "Desert"
   },
   {
     "index": "giant-sea-horse",
@@ -19568,7 +19729,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-sea-horse"
+    "url": "/api/monsters/giant-sea-horse",
+    "environments": "Underwater"
   },
   {
     "index": "giant-shark",
@@ -19643,7 +19805,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-shark"
+    "url": "/api/monsters/giant-shark",
+    "environments": "Underwater"
   },
   {
     "index": "giant-spider",
@@ -19752,7 +19915,8 @@
         "attack_bonus": 5
       }
     ],
-    "url": "/api/monsters/giant-spider"
+    "url": "/api/monsters/giant-spider",
+    "environments": "Desert, Forest, Swamp, Underdark, Urban"
   },
   {
     "index": "giant-toad",
@@ -19878,7 +20042,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-toad"
+    "url": "/api/monsters/giant-toad",
+    "environments": "Coastal, Desert, Forest, Swamp, Underdark"
   },
   {
     "index": "giant-vulture",
@@ -19987,7 +20152,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-vulture"
+    "url": "/api/monsters/giant-vulture",
+    "environments": "Desert, Grassland"
   },
   {
     "index": "giant-wasp",
@@ -20060,7 +20226,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-wasp"
+    "url": "/api/monsters/giant-wasp",
+    "environments": "Forest, Grassland, Urban"
   },
   {
     "index": "giant-weasel",
@@ -20139,7 +20306,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-weasel"
+    "url": "/api/monsters/giant-weasel",
+    "environments": "Forest, Grassland, Hill"
   },
   {
     "index": "giant-wolf-spider",
@@ -20246,7 +20414,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/giant-wolf-spider"
+    "url": "/api/monsters/giant-wolf-spider",
+    "environments": "Coastal, Desert, Forest, Grassland, Hill"
   },
   {
     "index": "gibbering-mouther",
@@ -20363,7 +20532,8 @@
         }
       }
     ],
-    "url": "/api/monsters/gibbering-mouther"
+    "url": "/api/monsters/gibbering-mouther",
+    "environments": "Underdark"
   },
   {
     "index": "glabrezu",
@@ -20829,7 +20999,8 @@
         "desc": "The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon."
       }
     ],
-    "url": "/api/monsters/gladiator"
+    "url": "/api/monsters/gladiator",
+    "environments": "Urban"
   },
   {
     "index": "gnoll",
@@ -20954,7 +21125,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/gnoll"
+    "url": "/api/monsters/gnoll",
+    "environments": "Desert, Forest, Grassland, Hill"
   },
   {
     "index": "goat",
@@ -21051,7 +21223,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/goat"
+    "url": "/api/monsters/goat",
+    "environments": "Grassland, Hill, Mountain, Urban"
   },
   {
     "index": "goblin",
@@ -21152,7 +21325,8 @@
     ],
     "bonus_actions": ["disengage", "hide"],
     "image": "/api/images/monsters/goblin.png",
-    "url": "/api/monsters/goblin"
+    "url": "/api/monsters/goblin",
+    "environments": "Forest, Grassland, Hill, Underdark"
   },
   {
     "index": "gold-dragon-wyrmling",
@@ -21334,7 +21508,8 @@
         }
       }
     ],
-    "url": "/api/monsters/gold-dragon-wyrmling"
+    "url": "/api/monsters/gold-dragon-wyrmling",
+    "environments": "Forest, Grassland"
   },
   {
     "index": "gorgon",
@@ -21390,7 +21565,43 @@
     "special_abilities": [
       {
         "name": "Trampling Charge",
-        "desc": "If the gorgon moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 16 Strength saving throw or be knocked prone. If the target is prone, the gorgon can make one attack with its hooves against it as a bonus action."
+        "desc": "If the gorgon moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 16 Strength saving throw or be knocked prone. If the target is prone, the gorgon can make one attack with its hooves against it as a bonus action.",
+        "damage": [
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 16,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 2,
+                "unit": "round"
+              }
+            }
+          }
+        ],
+        "bonus_action": {
+          "action": "Hooves",
+          "situation": {
+            "target": {
+              "condition": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              }
+            }
+          }
+        }
       }
     ],
     "actions": [
@@ -21407,7 +21618,10 @@
             },
             "damage_dice": "2d12+5"
           }
-        ]
+        ],
+        "preference": {
+          "type": "always on first round"
+        }
       },
       {
         "name": "Hooves",
@@ -21443,7 +21657,8 @@
         }
       }
     ],
-    "url": "/api/monsters/gorgon"
+    "url": "/api/monsters/gorgon",
+    "environments": "Forest, Grassland, Hill"
   },
   {
     "index": "gray-ooze",
@@ -21565,7 +21780,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/gray-ooze"
+    "url": "/api/monsters/gray-ooze",
+    "environments": "Underdark"
   },
   {
     "index": "green-dragon-wyrmling",
@@ -21723,7 +21939,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/green-dragon-wyrmling"
+    "url": "/api/monsters/green-dragon-wyrmling",
+    "environments": ""
   },
   {
     "index": "green-hag",
@@ -21872,7 +22089,8 @@
         "desc": "The hag magically turns invisible until she attacks or casts a spell, or until her concentration ends (as if concentrating on a spell). While invisible, she leaves no physical evidence of her passage, so she can be tracked only by magic. Any equipment she wears or carries is invisible with her."
       }
     ],
-    "url": "/api/monsters/green-hag"
+    "url": "/api/monsters/green-hag",
+    "environments": "Forest, Hill, Swamp"
   },
   {
     "index": "grick",
@@ -21970,7 +22188,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/grick"
+    "url": "/api/monsters/grick",
+    "environments": "Forest, Underdark"
   },
   {
     "index": "griffon",
@@ -22075,7 +22294,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/griffon"
+    "url": "/api/monsters/griffon",
+    "environments": "Arctic, Coastal, Grassland, Hill, Mountain"
   },
   {
     "index": "grimlock",
@@ -22185,7 +22405,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/grimlock"
+    "url": "/api/monsters/grimlock",
+    "environments": "Underdark"
   },
   {
     "index": "guard",
@@ -22283,7 +22504,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/guard"
+    "url": "/api/monsters/guard",
+    "environments": "Coastal, Desert, Forest, Grassland, Hill, Mountain, Urban"
   },
   {
     "index": "guardian-naga",
@@ -22911,7 +23133,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/half-red-dragon-veteran"
+    "url": "/api/monsters/half-red-dragon-veteran",
+    "environments": ""
   },
   {
     "index": "harpy",
@@ -23029,7 +23252,8 @@
         }
       }
     ],
-    "url": "/api/monsters/harpy"
+    "url": "/api/monsters/harpy",
+    "environments": "Coastal, Forest, Hill, Mountain"
   },
   {
     "index": "hawk",
@@ -23100,7 +23324,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/hawk"
+    "url": "/api/monsters/hawk",
+    "environments": ""
   },
   {
     "index": "hell-hound",
@@ -23213,7 +23438,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/hell-hound"
+    "url": "/api/monsters/hell-hound",
+    "environments": "Mountain, Underdark"
   },
   {
     "index": "hezrou",
@@ -23448,7 +23674,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/hill-giant"
+    "url": "/api/monsters/hill-giant",
+    "environments": "Hill"
   },
   {
     "index": "hippogriff",
@@ -23552,7 +23779,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/hippogriff"
+    "url": "/api/monsters/hippogriff",
+    "environments": "Grassland, Hill, Mountain"
   },
   {
     "index": "hobgoblin",
@@ -23661,7 +23889,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/hobgoblin"
+    "url": "/api/monsters/hobgoblin",
+    "environments": "Desert, Forest, Grassland, Hill, Underdark"
   },
   {
     "index": "homunculus",
@@ -23759,7 +23988,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/homunculus"
+    "url": "/api/monsters/homunculus",
+    "environments": ""
   },
   {
     "index": "horned-devil",
@@ -24048,7 +24278,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/hunter-shark"
+    "url": "/api/monsters/hunter-shark",
+    "environments": "Underwater"
   },
   {
     "index": "hydra",
@@ -24213,7 +24444,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/hyena"
+    "url": "/api/monsters/hyena",
+    "environments": "Desert, Forest, Grassland, Hill"
   },
   {
     "index": "ice-devil",
@@ -24580,7 +24812,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/ice-mephit"
+    "url": "/api/monsters/ice-mephit",
+    "environments": "Arctic"
   },
   {
     "index": "imp",
@@ -24718,7 +24951,8 @@
         "desc": "The imp magically turns invisible until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the imp wears or carries is invisible with it."
       }
     ],
-    "url": "/api/monsters/imp"
+    "url": "/api/monsters/imp",
+    "environments": ""
   },
   {
     "index": "invisible-stalker",
@@ -25128,7 +25362,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/jackal"
+    "url": "/api/monsters/jackal",
+    "environments": "Desert, Grassland"
   },
   {
     "index": "killer-whale",
@@ -25207,7 +25442,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/killer-whale"
+    "url": "/api/monsters/killer-whale",
+    "environments": "Underwater"
   },
   {
     "index": "knight",
@@ -25339,7 +25575,8 @@
         "desc": "The knight adds 2 to its AC against one melee attack that would hit it. To do so, the knight must see the attacker and be wielding a melee weapon."
       }
     ],
-    "url": "/api/monsters/knight"
+    "url": "/api/monsters/knight",
+    "environments": "Urban"
   },
   {
     "index": "kobold",
@@ -25422,7 +25659,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/kobold"
+    "url": "/api/monsters/kobold",
+    "environments": "Arctic, Coastal, Desert, Forest, Hill, Mountain, Swamp, Underdark, Urban"
   },
   {
     "index": "kraken",
@@ -25915,7 +26153,8 @@
         "desc": "Melee Spell Attack: +5 to hit, reach 5 ft., one creature. Hit: The target is magically cursed for 1 hour. Until the curse ends, the target has disadvantage on Wisdom saving throws and all ability checks."
       }
     ],
-    "url": "/api/monsters/lamia"
+    "url": "/api/monsters/lamia",
+    "environments": "Desert"
   },
   {
     "index": "lemure",
@@ -26003,7 +26242,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/lemure"
+    "url": "/api/monsters/lemure",
+    "environments": ""
   },
   {
     "index": "lich",
@@ -26520,7 +26760,8 @@
         }
       }
     ],
-    "url": "/api/monsters/lion"
+    "url": "/api/monsters/lion",
+    "environments": "Desert, Grassland, Hill, Mountain"
   },
   {
     "index": "lizard",
@@ -26577,7 +26818,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/lizard"
+    "url": "/api/monsters/lizard",
+    "environments": ""
   },
   {
     "index": "lizardfolk",
@@ -26836,7 +27078,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/lizardfolk"
+    "url": "/api/monsters/lizardfolk",
+    "environments": "Forest, Swamp"
   },
   {
     "index": "mage",
@@ -27212,7 +27455,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/magma-mephit"
+    "url": "/api/monsters/magma-mephit",
+    "environments": "Underdark"
   },
   {
     "index": "magmin",
@@ -27300,7 +27544,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/magmin"
+    "url": "/api/monsters/magmin",
+    "environments": ""
   },
   {
     "index": "mammoth",
@@ -27341,7 +27586,43 @@
     "special_abilities": [
       {
         "name": "Trampling Charge",
-        "desc": "If the mammoth moves at least 20 ft. straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 18 Strength saving throw or be knocked prone. If the target is prone, the mammoth can make one stomp attack against it as a bonus action."
+        "desc": "If the mammoth moves at least 20 ft. straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 18 Strength saving throw or be knocked prone. If the target is prone, the mammoth can make one stomp attack against it as a bonus action.",
+        "damage": [
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 18,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 2,
+                "unit": "round"
+              }
+            }
+          }
+        ],
+        "bonus_action": {
+          "action": "Stomp",
+          "situation": {
+            "target": {
+              "condition": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              }
+            }
+          }
+        }
       }
     ],
     "actions": [
@@ -27358,7 +27639,10 @@
             },
             "damage_dice": "4d8+7"
           }
-        ]
+        ],
+        "preference": {
+          "type": "always on first round"
+        }
       },
       {
         "name": "Stomp",
@@ -27508,7 +27792,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/manticore"
+    "url": "/api/monsters/manticore",
+    "environments": "Arctic, Coastal, Grassland, Hill, Mountain"
   },
   {
     "index": "marilith",
@@ -27737,7 +28022,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/mastiff"
+    "url": "/api/monsters/mastiff",
+    "environments": "Forest, Hill, Urban"
   },
   {
     "index": "medusa",
@@ -28016,7 +28302,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/merfolk"
+    "url": "/api/monsters/merfolk",
+    "environments": "Coastal, Underwater"
   },
   {
     "index": "merrow",
@@ -28176,7 +28463,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/merrow"
+    "url": "/api/monsters/merrow",
+    "environments": "Coastal, Underwater"
   },
   {
     "index": "mimic",
@@ -28298,7 +28586,8 @@
       }
     ],
     "image": "/api/images/monsters/mimic.png",
-    "url": "/api/monsters/mimic"
+    "url": "/api/monsters/mimic",
+    "environments": "Underdark, Urban"
   },
   {
     "index": "minotaur",
@@ -28428,7 +28717,8 @@
         }
       }
     ],
-    "url": "/api/monsters/minotaur"
+    "url": "/api/monsters/minotaur",
+    "environments": "Underdark"
   },
   {
     "index": "minotaur-skeleton",
@@ -28556,7 +28846,8 @@
         }
       }
     ],
-    "url": "/api/monsters/minotaur-skeleton"
+    "url": "/api/monsters/minotaur-skeleton",
+    "environments": "Underdark"
   },
   {
     "index": "mule",
@@ -28621,7 +28912,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/mule"
+    "url": "/api/monsters/mule",
+    "environments": "Desert, Hill, Urban"
   },
   {
     "index": "mummy",
@@ -28768,7 +29060,8 @@
         }
       }
     ],
-    "url": "/api/monsters/mummy"
+    "url": "/api/monsters/mummy",
+    "environments": "Desert"
   },
   {
     "index": "mummy-lord",
@@ -29452,7 +29745,8 @@
         }
       }
     ],
-    "url": "/api/monsters/night-hag"
+    "url": "/api/monsters/night-hag",
+    "environments": ""
   },
   {
     "index": "nightmare",
@@ -29528,7 +29822,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/nightmare"
+    "url": "/api/monsters/nightmare",
+    "environments": ""
   },
   {
     "index": "noble",
@@ -29623,7 +29918,8 @@
         "desc": "The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon."
       }
     ],
-    "url": "/api/monsters/noble"
+    "url": "/api/monsters/noble",
+    "environments": "Urban"
   },
   {
     "index": "ochre-jelly",
@@ -29740,7 +30036,8 @@
         "desc": "When a jelly that is Medium or larger is subjected to lightning or slashing damage, it splits into two new jellies if it has at least 10 hit points. Each new jelly has hit points equal to half the original jelly's, rounded down. New jellies are one size smaller than the original jelly."
       }
     ],
-    "url": "/api/monsters/ochre-jelly"
+    "url": "/api/monsters/ochre-jelly",
+    "environments": "Underdark"
   },
   {
     "index": "octopus",
@@ -29839,7 +30136,8 @@
         "attack_bonus": 0
       }
     ],
-    "url": "/api/monsters/octopus"
+    "url": "/api/monsters/octopus",
+    "environments": "Underwater"
   },
   {
     "index": "ogre",
@@ -29918,7 +30216,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/ogre"
+    "url": "/api/monsters/ogre",
+    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark"
   },
   {
     "index": "ogre-zombie",
@@ -29997,7 +30296,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/ogre-zombie"
+    "url": "/api/monsters/ogre-zombie",
+    "environments": ""
   },
   {
     "index": "oni",
@@ -30354,7 +30654,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/orc"
+    "url": "/api/monsters/orc",
+    "environments": "Arctic, Forest, Grassland, Hill, Mountain, Swamp, Underdark"
   },
   {
     "index": "otyugh",
@@ -30477,7 +30778,8 @@
         }
       }
     ],
-    "url": "/api/monsters/otyugh"
+    "url": "/api/monsters/otyugh",
+    "environments": "Underdark"
   },
   {
     "index": "owl",
@@ -30561,7 +30863,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/owl"
+    "url": "/api/monsters/owl",
+    "environments": "Arctic, Forest"
   },
   {
     "index": "owlbear",
@@ -30665,7 +30968,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/owlbear"
+    "url": "/api/monsters/owlbear",
+    "environments": "Forest"
   },
   {
     "index": "panther",
@@ -30803,7 +31107,8 @@
         }
       }
     ],
-    "url": "/api/monsters/panther"
+    "url": "/api/monsters/panther",
+    "environments": "Forest, Grassland, Hill"
   },
   {
     "index": "pegasus",
@@ -30892,7 +31197,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/pegasus"
+    "url": "/api/monsters/pegasus",
+    "environments": "Forest, Grassland, Hill"
   },
   {
     "index": "phase-spider",
@@ -30990,7 +31296,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/phase-spider"
+    "url": "/api/monsters/phase-spider",
+    "environments": "Desert, Forest, Grassland, Hill, Underdark, Urban"
   },
   {
     "index": "pit-fiend",
@@ -31558,7 +31865,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/plesiosaurus"
+    "url": "/api/monsters/plesiosaurus",
+    "environments": "Coastal, Underwater"
   },
   {
     "index": "poisonous-snake",
@@ -31632,7 +31940,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/poisonous-snake"
+    "url": "/api/monsters/poisonous-snake",
+    "environments": "Coastal, Desert, Forest, Grassland, Hill, Swamp"
   },
   {
     "index": "polar-bear",
@@ -31736,7 +32045,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/polar-bear"
+    "url": "/api/monsters/polar-bear",
+    "environments": "Arctic, Underdark"
   },
   {
     "index": "pony",
@@ -31791,7 +32101,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/pony"
+    "url": "/api/monsters/pony",
+    "environments": "Urban"
   },
   {
     "index": "priest",
@@ -31963,7 +32274,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/priest"
+    "url": "/api/monsters/priest",
+    "environments": "Urban"
   },
   {
     "index": "pseudodragon",
@@ -32090,7 +32402,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/pseudodragon"
+    "url": "/api/monsters/pseudodragon",
+    "environments": "Coastal, Desert, Forest, Hill, Mountain, Urban"
   },
   {
     "index": "purple-worm",
@@ -32314,7 +32627,7 @@
                 "length": 10,
                 "unit": "round",
                 "interrupt": "saving throw success",
-                "interrupt_modifier": "disadvantage",
+                "interrupt_modifier": "disadvantage"
               }
             }
           }
@@ -32355,7 +32668,8 @@
         "desc": "The quasit magically turns invisible until it attacks or uses Scare, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is invisible with it."
       }
     ],
-    "url": "/api/monsters/quasit"
+    "url": "/api/monsters/quasit",
+    "environments": ""
   },
   {
     "index": "quipper",
@@ -32422,7 +32736,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/quipper"
+    "url": "/api/monsters/quipper",
+    "environments": "Underwater"
   },
   {
     "index": "rakshasa",
@@ -32710,7 +33025,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/rat"
+    "url": "/api/monsters/rat",
+    "environments": "Swamp, Urban"
   },
   {
     "index": "raven",
@@ -32781,7 +33097,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/raven"
+    "url": "/api/monsters/raven",
+    "environments": "Hill, Swamp, Urban"
   },
   {
     "index": "red-dragon-wyrmling",
@@ -32926,7 +33243,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/red-dragon-wyrmling"
+    "url": "/api/monsters/red-dragon-wyrmling",
+    "environments": ""
   },
   {
     "index": "reef-shark",
@@ -33001,7 +33319,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/reef-shark"
+    "url": "/api/monsters/reef-shark",
+    "environments": "Underwater"
   },
   {
     "index": "remorhaz",
@@ -33181,7 +33500,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/rhinoceros"
+    "url": "/api/monsters/rhinoceros",
+    "environments": "Grassland"
   },
   {
     "index": "riding-horse",
@@ -33236,7 +33556,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/riding-horse"
+    "url": "/api/monsters/riding-horse",
+    "environments": "Grassland, Urban"
   },
   {
     "index": "roc",
@@ -33488,7 +33809,8 @@
         "desc": "The roper pulls each creature grappled by it up to 25 ft. straight toward it."
       }
     ],
-    "url": "/api/monsters/roper"
+    "url": "/api/monsters/roper",
+    "environments": "Underdark"
   },
   {
     "index": "rug-of-smothering",
@@ -33587,7 +33909,8 @@
         "attack_type": "Melee"
       }
     ],
-    "url": "/api/monsters/rug-of-smothering"
+    "url": "/api/monsters/rug-of-smothering",
+    "environments": ""
   },
   {
     "index": "rust-monster",
@@ -33665,7 +33988,8 @@
         }
       }
     ],
-    "url": "/api/monsters/rust-monster"
+    "url": "/api/monsters/rust-monster",
+    "environments": "Underdark"
   },
   {
     "index": "saber-toothed-tiger",
@@ -33802,7 +34126,8 @@
         }
       }
     ],
-    "url": "/api/monsters/saber-toothed-tiger"
+    "url": "/api/monsters/saber-toothed-tiger",
+    "environments": "Arctic, Mountain"
   },
   {
     "index": "sahuagin",
@@ -33984,7 +34309,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/sahuagin"
+    "url": "/api/monsters/sahuagin",
+    "environments": "Coastal, Underwater"
   },
   {
     "index": "salamander",
@@ -34134,7 +34460,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/salamander"
+    "url": "/api/monsters/salamander",
+    "environments": "Underdark"
   },
   {
     "index": "satyr",
@@ -34259,7 +34586,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/satyr"
+    "url": "/api/monsters/satyr",
+    "environments": "Forest"
   },
   {
     "index": "scorpion",
@@ -34332,7 +34660,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/scorpion"
+    "url": "/api/monsters/scorpion",
+    "environments": "Desert"
   },
   {
     "index": "scout",
@@ -34477,7 +34806,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/scout"
+    "url": "/api/monsters/scout",
+    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark"
   },
   {
     "index": "sea-hag",
@@ -34561,7 +34891,8 @@
         "desc": "The hag covers herself and anything she is wearing or carrying with a magical illusion that makes her look like an ugly creature of her general size and humanoid shape. The effect ends if the hag takes a bonus action to end it or if she dies.\nThe changes wrought by this effect fail to hold up to physical inspection. For example, the hag could appear to have no claws, but someone touching her hand might feel the claws. Otherwise, a creature must take an action to visually inspect the illusion and succeed on a DC 16 Intelligence (Investigation) check to discern that the hag is disguised."
       }
     ],
-    "url": "/api/monsters/sea-hag"
+    "url": "/api/monsters/sea-hag",
+    "environments": "Coastal, Underwater"
   },
   {
     "index": "shadow",
@@ -34704,7 +35035,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/shadow"
+    "url": "/api/monsters/shadow",
+    "environments": "Underdark, Urban"
   },
   {
     "index": "shambling-mound",
@@ -34817,7 +35149,8 @@
         "desc": "The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8 + 4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time."
       }
     ],
-    "url": "/api/monsters/shambling-mound"
+    "url": "/api/monsters/shambling-mound",
+    "environments": "Forest, Swamp"
   },
   {
     "index": "shield-guardian",
@@ -35108,7 +35441,8 @@
         }
       }
     ],
-    "url": "/api/monsters/silver-dragon-wyrmling"
+    "url": "/api/monsters/silver-dragon-wyrmling",
+    "environments": ""
   },
   {
     "index": "skeleton",
@@ -35196,7 +35530,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/skeleton"
+    "url": "/api/monsters/skeleton",
+    "environments": "Urban"
   },
   {
     "index": "solar",
@@ -35657,7 +35992,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/specter"
+    "url": "/api/monsters/specter",
+    "environments": "Underdark, Urban"
   },
   {
     "index": "spider",
@@ -35754,7 +36090,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/spider"
+    "url": "/api/monsters/spider",
+    "environments": ""
   },
   {
     "index": "spirit-naga",
@@ -36066,7 +36403,8 @@
         "desc": "The sprite magically turns invisible until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment the sprite wears or carries is invisible with it."
       }
     ],
-    "url": "/api/monsters/sprite"
+    "url": "/api/monsters/sprite",
+    "environments": "Forest"
   },
   {
     "index": "spy",
@@ -36210,7 +36548,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/spy"
+    "url": "/api/monsters/spy",
+    "environments": "Urban"
   },
   {
     "index": "steam-mephit",
@@ -36364,7 +36703,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/steam-mephit"
+    "url": "/api/monsters/steam-mephit",
+    "environments": "Underwater"
   },
   {
     "index": "stirge",
@@ -36421,7 +36761,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/stirge"
+    "url": "/api/monsters/stirge",
+    "environments": "Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark, Urban"
   },
   {
     "index": "stone-giant",
@@ -37109,7 +37450,8 @@
         "desc": "The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa."
       }
     ],
-    "url": "/api/monsters/succubus-incubus"
+    "url": "/api/monsters/succubus-incubus",
+    "environments": "Urban"
   },
   {
     "index": "swarm-of-bats",
@@ -37225,7 +37567,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/swarm-of-bats"
+    "url": "/api/monsters/swarm-of-bats",
+    "environments": "Hill, Mountain, Underdark, Urban"
   },
   {
     "index": "swarm-of-beetles",
@@ -37334,7 +37677,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/swarm-of-beetles"
+    "url": "/api/monsters/swarm-of-beetles",
+    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban"
   },
   {
     "index": "swarm-of-centipedes",
@@ -37442,7 +37786,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/swarm-of-centipedes"
+    "url": "/api/monsters/swarm-of-centipedes",
+    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban"
   },
   {
     "index": "swarm-of-insects",
@@ -37550,7 +37895,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/swarm-of-insects"
+    "url": "/api/monsters/swarm-of-insects",
+    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban"
   },
   {
     "index": "swarm-of-poisonous-snakes",
@@ -37675,7 +38021,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/swarm-of-poisonous-snakes"
+    "url": "/api/monsters/swarm-of-poisonous-snakes",
+    "environments": "Forest, Swamp"
   },
   {
     "index": "swarm-of-quippers",
@@ -37791,7 +38138,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/swarm-of-quippers"
+    "url": "/api/monsters/swarm-of-quippers",
+    "environments": "Underwater"
   },
   {
     "index": "swarm-of-rats",
@@ -37902,7 +38250,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/swarm-of-rats"
+    "url": "/api/monsters/swarm-of-rats",
+    "environments": "Swamp, Urban"
   },
   {
     "index": "swarm-of-ravens",
@@ -38009,7 +38358,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/swarm-of-ravens"
+    "url": "/api/monsters/swarm-of-ravens",
+    "environments": "Forest, Hill, Swamp, Urban"
   },
   {
     "index": "swarm-of-spiders",
@@ -38124,7 +38474,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/swarm-of-spiders"
+    "url": "/api/monsters/swarm-of-spiders",
+    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban"
   },
   {
     "index": "swarm-of-wasps",
@@ -38232,7 +38583,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/swarm-of-wasps"
+    "url": "/api/monsters/swarm-of-wasps",
+    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban"
   },
   {
     "index": "tarrasque",
@@ -38628,7 +38980,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/thug"
+    "url": "/api/monsters/thug",
+    "environments": "Urban"
   },
   {
     "index": "tiger",
@@ -38766,7 +39119,8 @@
         }
       }
     ],
-    "url": "/api/monsters/tiger"
+    "url": "/api/monsters/tiger",
+    "environments": "Forest, Grassland"
   },
   {
     "index": "treant",
@@ -38961,7 +39315,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/tribal-warrior"
+    "url": "/api/monsters/tribal-warrior",
+    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark"
   },
   {
     "index": "triceratops",
@@ -39001,7 +39356,43 @@
     "special_abilities": [
       {
         "name": "Trampling Charge",
-        "desc": "If the triceratops moves at least 20 ft. straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the triceratops can make one stomp attack against it as a bonus action."
+        "desc": "If the triceratops moves at least 20 ft. straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the triceratops can make one stomp attack against it as a bonus action.",
+        "damage": [
+          {
+            "dc": {
+              "dc_type": {
+                "index": "str",
+                "name": "STR",
+                "url": "/api/ability-scores/str"
+              },
+              "dc_value": 13,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              },
+              "duration": {
+                "length": 2,
+                "unit": "round"
+              }
+            }
+          }
+        ],
+        "bonus_action": {
+          "action": "Stomp",
+          "situation": {
+            "target": {
+              "condition": {
+                "index": "prone",
+                "name": "Prone",
+                "url": "/api/conditions/prone"
+              }
+            }
+          }
+        }
       }
     ],
     "actions": [
@@ -39018,7 +39409,10 @@
             },
             "damage_dice": "4d8+6"
           }
-        ]
+        ],
+        "preference": {
+          "type": "always on first round"
+        }
       },
       {
         "name": "Stomp",
@@ -39036,7 +39430,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/triceratops"
+    "url": "/api/monsters/triceratops",
+    "environments": "Grassland"
   },
   {
     "index": "troll",
@@ -39142,7 +39537,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/troll"
+    "url": "/api/monsters/troll",
+    "environments": "Arctic, Forest, Hill, Mountain, Swamp, Underdark"
   },
   {
     "index": "tyrannosaurus-rex",
@@ -39484,7 +39880,8 @@
         "desc": "The unicorn magically regains 11 (2d8 + 2) hit points."
       }
     ],
-    "url": "/api/monsters/unicorn"
+    "url": "/api/monsters/unicorn",
+    "environments": "Forest"
   },
   {
     "index": "vampire-vampire",
@@ -40221,7 +40618,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/vampire-spawn"
+    "url": "/api/monsters/vampire-spawn",
+    "environments": "Underdark, Urban"
   },
   {
     "index": "veteran",
@@ -40372,7 +40770,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/veteran"
+    "url": "/api/monsters/veteran",
+    "environments": "Arctic, Coastal, Forest, Grassland, Hill, Mountain, Underdark, Urban"
   },
   {
     "index": "violet-fungus",
@@ -40462,7 +40861,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/violet-fungus"
+    "url": "/api/monsters/violet-fungus",
+    "environments": "Underdark"
   },
   {
     "index": "vrock",
@@ -40705,7 +41105,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/vulture"
+    "url": "/api/monsters/vulture",
+    "environments": "Desert, Grassland, Hill"
   },
   {
     "index": "warhorse",
@@ -40803,7 +41204,8 @@
       }
     ],
     "image": "/api/images/monsters/warhorse.png",
-    "url": "/api/monsters/warhorse"
+    "url": "/api/monsters/warhorse",
+    "environments": "Urban"
   },
   {
     "index": "warhorse-skeleton",
@@ -40875,7 +41277,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/warhorse-skeleton"
+    "url": "/api/monsters/warhorse-skeleton",
+    "environments": ""
   },
   {
     "index": "water-elemental",
@@ -41023,12 +41426,39 @@
               "url": "/api/damage-types/bludgeoning"
             },
             "damage_dice": "2d8+4"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 14,
+              "additional_condition": {
+                "condition_type": {
+                  "index": "restrained",
+                  "name": "Restrained",
+                  "url": "/api/conditions/restrained"
+                },
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
-        ]
+        ],
+        "situation": {
+          "target": {
+            "condition": {
+              "index": "grappled",
+              "name": "Grappled",
+              "url": "/api/conditions/grappled"
+            },
+            "conditionExcludes": true
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/water-elemental.png",
-    "url": "/api/monsters/water-elemental"
+    "url": "/api/monsters/water-elemental",
+    "environments": "Coastal, Swamp, Underwater"
   },
   {
     "index": "weasel",
@@ -41107,7 +41537,8 @@
       }
     ],
     "image": "/api/images/monsters/weasel.png",
-    "url": "/api/monsters/weasel"
+    "url": "/api/monsters/weasel",
+    "environments": ""
   },
   {
     "index": "werebear-bear",
@@ -41223,7 +41654,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/werebear-bear"
+    "url": "/api/monsters/werebear-bear",
+    "environments": "Arctic, Forest, Hill"
   },
   {
     "index": "werebear-human",
@@ -41323,7 +41755,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/werebear-human"
+    "url": "/api/monsters/werebear-human",
+    "environments": "Arctic, Forest, Hill"
   },
   {
     "index": "werebear-hybrid",
@@ -41485,7 +41918,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/werebear-hybrid"
+    "url": "/api/monsters/werebear-hybrid",
+    "environments": "Arctic, Forest, Hill"
   },
   {
     "index": "wereboar-boar",
@@ -41585,7 +42019,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/wereboar-boar"
+    "url": "/api/monsters/wereboar-boar",
+    "environments": "Forest, Grassland, Hill"
   },
   {
     "index": "wereboar-human",
@@ -41693,7 +42128,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/wereboar-human"
+    "url": "/api/monsters/wereboar-human",
+    "environments": "Forest, Grassland, Hill"
   },
   {
     "index": "wereboar-hybrid",
@@ -41845,7 +42281,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/wereboar-hybrid"
+    "url": "/api/monsters/wereboar-hybrid",
+    "environments": "Forest, Grassland, Hill"
   },
   {
     "index": "wererat-human",
@@ -42001,7 +42438,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/wererat-human"
+    "url": "/api/monsters/wererat-human",
+    "environments": "Forest, Urban"
   },
   {
     "index": "wererat-hybrid",
@@ -42207,7 +42645,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/wererat-hybrid"
+    "url": "/api/monsters/wererat-hybrid",
+    "environments": "Forest, Urban"
   },
   {
     "index": "wererat-rat",
@@ -42305,7 +42744,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/wererat-rat"
+    "url": "/api/monsters/wererat-rat",
+    "environments": "Forest, Urban"
   },
   {
     "index": "weretiger-human",
@@ -42443,7 +42883,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/weretiger-human"
+    "url": "/api/monsters/weretiger-human",
+    "environments": "Desert, Forest, Grassland"
   },
   {
     "index": "weretiger-hybrid",
@@ -42615,7 +43056,10 @@
             },
             "damage_dice": "1d8+3"
           }
-        ]
+        ],
+        "preference": {
+          "type": "always on first round"
+        }
       },
       {
         "name": "Scimitar",
@@ -42648,7 +43092,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/weretiger-hybrid"
+    "url": "/api/monsters/weretiger-hybrid",
+    "environments": "Desert, Forest, Grassland"
   },
   {
     "index": "weretiger-tiger",
@@ -42803,7 +43248,8 @@
         }
       }
     ],
-    "url": "/api/monsters/weretiger-tiger"
+    "url": "/api/monsters/weretiger-tiger",
+    "environments": "Desert, Forest, Grassland"
   },
   {
     "index": "werewolf-human",
@@ -42925,7 +43371,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/werewolf-human"
+    "url": "/api/monsters/werewolf-human",
+    "environments": "Forest, Hill"
   },
   {
     "index": "werewolf-hybrid",
@@ -43047,7 +43494,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/werewolf-hybrid"
+    "url": "/api/monsters/werewolf-hybrid",
+    "environments": "Forest, Hill"
   },
   {
     "index": "werewolf-wolf",
@@ -43136,7 +43584,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/werewolf-wolf"
+    "url": "/api/monsters/werewolf-wolf",
+    "environments": "Forest, Hill"
   },
   {
     "index": "white-dragon-wyrmling",
@@ -43283,7 +43732,8 @@
         ]
       }
     ],
-    "url": "/api/monsters/white-dragon-wyrmling"
+    "url": "/api/monsters/white-dragon-wyrmling",
+    "environments": ""
   },
   {
     "index": "wight",
@@ -43504,7 +43954,8 @@
       }
     ],
     "image": "/api/images/monsters/wight.png",
-    "url": "/api/monsters/wight"
+    "url": "/api/monsters/wight",
+    "environments": "Desert, Swamp, Underdark, Urban"
   },
   {
     "index": "will-o-wisp",
@@ -43640,7 +44091,8 @@
       }
     ],
     "image": "/api/images/monsters/will-o-wisp.png",
-    "url": "/api/monsters/will-o-wisp"
+    "url": "/api/monsters/will-o-wisp",
+    "environments": "Forest, Swamp, Urban"
   },
   {
     "index": "winter-wolf",
@@ -43758,7 +44210,8 @@
       }
     ],
     "image": "/api/images/monsters/winter-wolf.png",
-    "url": "/api/monsters/winter-wolf"
+    "url": "/api/monsters/winter-wolf",
+    "environments": "Arctic"
   },
   {
     "index": "wolf",
@@ -43841,7 +44294,8 @@
       }
     ],
     "image": "/api/images/monsters/wolf.png",
-    "url": "/api/monsters/wolf"
+    "url": "/api/monsters/wolf",
+    "environments": "Forest, Grassland, Hill"
   },
   {
     "index": "worg",
@@ -43914,7 +44368,8 @@
       }
     ],
     "image": "/api/images/monsters/worg.png",
-    "url": "/api/monsters/worg"
+    "url": "/api/monsters/worg",
+    "environments": "Forest, Grassland, Hill"
   },
   {
     "index": "wraith",
@@ -44059,7 +44514,8 @@
       }
     ],
     "image": "/api/images/monsters/wraith.png",
-    "url": "/api/monsters/wraith"
+    "url": "/api/monsters/wraith",
+    "environments": "Underdark"
   },
   {
     "index": "wyvern",
@@ -44342,7 +44798,8 @@
       }
     ],
     "image": "/api/images/monsters/xorn.png",
-    "url": "/api/monsters/xorn"
+    "url": "/api/monsters/xorn",
+    "environments": "Underdark"
   },
   {
     "index": "young-black-dragon",
@@ -46383,6 +46840,7 @@
       }
     ],
     "image": "/api/images/monsters/zombie.png",
-    "url": "/api/monsters/zombie"
+    "url": "/api/monsters/zombie",
+    "environments": "Urban"
   }
 ]
