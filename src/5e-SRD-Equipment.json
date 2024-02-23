@@ -2907,6 +2907,7 @@
     "desc": [
       "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts."
     ],
+    "stackable": true,
     "url": "/api/equipment/rations-1-day"
   },
   {
