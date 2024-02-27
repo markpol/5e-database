@@ -5035,6 +5035,10 @@
       "For each hour spent in the paradise, a visitor regains hit points as if it had spent 1 Hit Die. Also, creatures don't age while in the paradise, although time passes normally. Visitors can remain in the paradise for up to 200 days divided by the number of creatures present (round down).",
       "When the time runs out or you use an action to end it, all visitors reappear in the location they occupied when you activated the rod, or an unoccupied space nearest that location. The rod can't be used again until ten days have passed."
     ],
+    "cost": {
+      "quantity": 90000,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/rod-of-security"
   },
   {
@@ -5056,6 +5060,10 @@
       "If you tell the rope to knot, large knots appear at 1 foot intervals along the rope. While knotted, the rope shortens to a 50-foot length and grants advantage on checks made to climb it.",
       "The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed."
     ],
+    "cost": {
+      "quantity": 2000,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/rope-of-climbing"
   },
   {
@@ -5156,6 +5164,10 @@
       "Wondrous item, uncommon (requires attunement)",
       "While you wear these light shoes, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed. However, the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil."
     ],
+    "cost": {
+      "quantity": 5000,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/slippers-of-spider-climbing"
   },
   {
@@ -5176,6 +5188,10 @@
       "This viscous, milky-white substance can form a permanent adhesive bond between any two objects. It must be stored in a jar or flask that has been coated inside with oil of slipperiness. When found, a container contains 1d6 + 1 ounces.",
       "One ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of universal solvent or oil of etherealness, or with a wish spell."
     ],
+    "cost": {
+      "quantity": 400,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/sovereign-glue"
   },
   {
@@ -5994,6 +6010,10 @@
       "Wondrous item, legendary",
       "This tube holds milky liquid with a strong alcohol smell. You can use an action to pour the contents of the tube onto a surface within reach. The liquid instantly dissolves up to 1 square foot of adhesive it touches, including sovereign glue."
     ],
+    "cost": {
+      "quantity": 300,
+      "unit": "gp"
+    },
     "url": "/api/magic-items/universal-solvent"
   },
   {
