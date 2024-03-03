@@ -383,5 +383,13 @@
       "Your hit point maximum has been reduced. This reduction lasts until a long rest has been taken."
     ],
     "url": "/api/features/drained-of-life"
+  },
+  {
+    "index": "disengaged",
+    "name": "Disengaged",
+    "desc": [
+      "When disengaged from combat, movement away from an adversary doesn’t provoke opportunity attacks for the rest of the turn."
+    ],
+    "url": "/api/features/disengaged"
   }
 ]
