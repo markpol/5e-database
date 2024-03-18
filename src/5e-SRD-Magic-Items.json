@@ -35,7 +35,23 @@
       "Wondrous item, rare (requires attunement)",
       "Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution is already 19 or higher"
     ],
-    "url": "/api/magic-items/amulet-of-health"
+    "url": "/api/magic-items/amulet-of-health",
+    "cost": {
+      "quantity": 8000,
+      "unit": "gp"
+    },
+    "effect": {
+      "ability-score-modifier": {
+        "ability": "con",
+        "amount": 19
+      },
+      "duration": {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "weight": 1
   },
   {
     "index": "animated-shield",
@@ -654,7 +670,23 @@
       "Wondrous item, rare (requires attunement)",
       "While wearing this belt, your Strength score changes to a 21. If your Strength is already equal to or greater than the belt's score, the item has no Effect on you."
     ],
-    "url": "/api/magic-items/belt-of-giant-strength-hill"
+    "url": "/api/magic-items/belt-of-giant-strength-hill",
+    "cost": {
+      "quantity": 8000,
+      "unit": "gp"
+    },
+    "effect": {
+      "ability-score-modifier": {
+        "ability": "str",
+        "amount": 21
+      },
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "weight": 5
   },
   {
     "index": "belt-of-giant-strength-stone",
@@ -673,7 +705,23 @@
       "Wondrous item, very rare (requires attunement)",
       "While wearing this belt, your Strength score changes to a 23. If your Strength is already equal to or greater than the belt's score, the item has no Effect on you."
     ],
-    "url": "/api/magic-items/belt-of-giant-strength-stone"
+    "url": "/api/magic-items/belt-of-giant-strength-stone",
+    "cost": {
+      "quantity": 40000,
+      "unit": "gp"
+    },
+    "effect": {
+      "ability-score-modifier": {
+        "ability": "str",
+        "amount": 23
+      },
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "weight": 5
   },
   {
     "index": "belt-of-giant-strength-frost",
@@ -692,7 +740,23 @@
       "Wondrous item, very rare (requires attunement)",
       "While wearing this belt, your Strength score changes to 23. If your Strength is already equal to or greater than the belt's score, the item has no Effect on you."
     ],
-    "url": "/api/magic-items/belt-of-giant-strength-frost"
+    "url": "/api/magic-items/belt-of-giant-strength-frost",
+    "cost": {
+      "quantity": 40000,
+      "unit": "gp"
+    },
+    "effect": {
+      "ability-score-modifier": {
+        "ability": "str",
+        "amount": 23
+      },
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "weight": 5
   },
   {
     "index": "belt-of-giant-strength-fire",
@@ -711,7 +775,23 @@
       "Wondrous item, very rare (requires attunement)",
       "While wearing this belt, your Strength score changes to 25. If your Strength is already equal to or greater than the belt's score, the item has no Effect on you."
     ],
-    "url": "/api/magic-items/belt-of-giant-strength-fire"
+    "url": "/api/magic-items/belt-of-giant-strength-fire",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "effect": {
+      "ability-score-modifier": {
+        "ability": "str",
+        "amount": 25
+      },
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "weight": 5
   },
   {
     "index": "belt-of-giant-strength-cloud",
@@ -730,7 +810,23 @@
       "Wondrous item, legendary (requires attunement)",
       "While wearing this belt, your Strength score changes to 27. If your Strength is already equal to or greater than the belt's score, the item has no Effect on you."
     ],
-    "url": "/api/magic-items/belt-of-giant-strength-cloud"
+    "url": "/api/magic-items/belt-of-giant-strength-cloud",
+    "cost": {
+      "quantity": 120000,
+      "unit": "gp"
+    },
+    "effect": {
+      "ability-score-modifier": {
+        "ability": "str",
+        "amount": 27
+      },
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "weight": 5
   },
   {
     "index": "belt-of-giant-strength-storm",
@@ -749,7 +845,23 @@
       "Wondrous item, legendary (requires attunement)",
       "While wearing this belt, your Strength score changes to 29. If your Strength is already equal to or greater than the belt's score, the item has no Effect on you."
     ],
-    "url": "/api/magic-items/belt-of-giant-strength-storm"
+    "url": "/api/magic-items/belt-of-giant-strength-storm",
+    "cost": {
+      "quantity": 160000,
+      "unit": "gp"
+    },
+    "effect": {
+      "ability-score-modifier": {
+        "ability": "str",
+        "amount": 29
+      },
+      "duration": {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "weight": 5
   },
   {
     "index": "berserker-axe",
@@ -789,7 +901,23 @@
       "Wondrous item, uncommon",
       "While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently."
     ],
-    "url": "/api/magic-items/boots-of-elvenkind"
+    "url": "/api/magic-items/boots-of-elvenkind",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "effect": {
+      "skill-check-modifier": {
+        "skill": "stealth",
+        "gives-advantage": true
+      },
+      "duration":  {
+        "unit": "while carried",
+        "length": 1
+      }
+    },
+    "requires-attunement": false,
+    "weight": 2
   },
   {
     "index": "boots-of-speed",
@@ -831,7 +959,21 @@
       "* You ignore difficult terrain created by ice or snow.",
       "* You can tolerate temperatures as low as -50 degrees Fahrenheit without any additional protection. If you wear heavy clothes, you can tolerate temperatures as low as -100 degrees Fahrenheit."
     ],
-    "url": "/api/magic-items/boots-of-the-winterlands"
+    "url": "/api/magic-items/boots-of-the-winterlands",
+    "effect": {
+      "condition": "cold-resistance",
+      "damage-type-resistance": "cold",
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 10000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "bracers-of-archery",
@@ -888,7 +1030,21 @@
       "Wondrous item, uncommon (requires attunement)",
       "While wearing this brooch, you have resistance to force damage, and you have immunity to damage from the magic missile spell."
     ],
-    "url": "/api/magic-items/brooch-of-shielding"
+    "url": "/api/magic-items/brooch-of-shielding",
+    "effect": {
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      },
+      "condition": "force-resistance",
+      "damage-type-resistance": "force"
+    },
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 7500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "candle-of-invocation",
@@ -1021,7 +1177,31 @@
       "Wondrous item, uncommon (requires attunement)",
       "You gain a +1 bonus to AC and saving throws while you wear this cloak."
     ],
-    "url": "/api/magic-items/cloak-of-protection"
+    "url": "/api/magic-items/cloak-of-protection",
+    "effect": {
+      "armor-class-modifier": 1,
+      "saving-throw-modifier": {
+        "abilities": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ],
+        "bonus": 1
+      },
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      }
+    },
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 3500,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "dagger-of-venom",
@@ -4296,7 +4476,33 @@
       "Ring, rare (requires attunement)",
       "You gain a +1 bonus to AC and saving throws while wearing this ring."
     ],
-    "url": "/api/magic-items/ring-of-protection"
+    "url": "/api/magic-items/ring-of-protection",
+    "effect": {
+      "bonus": {
+        "armor-class-modifier": 1,
+        "saving-throws-modifier": {
+          "abilities": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "bonus": 1,
+          "gives-advantage": false
+        },
+        "duration": {
+          "unit": "while attuned",
+          "length": 1
+        }
+      }
+    },
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 3500,
+      "unit": "gp"
+    }
   },
   {
     "index": "ring-of-regeneration",
@@ -4416,7 +4622,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to acid damage while wearing this pearl ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-acid"
+    "url": "/api/magic-items/ring-of-resistance-acid",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "acid",
+      "condition": "acid-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-cold",
@@ -4435,7 +4654,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to cold damage while wearing this tourmaline ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-cold"
+    "url": "/api/magic-items/ring-of-resistance-cold",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "cold",
+      "condition": "cold-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-fire",
@@ -4454,7 +4686,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to fire damage while wearing this garnet ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-fire"
+    "url": "/api/magic-items/ring-of-resistance-fire",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "fire",
+      "condition": "fire-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-force",
@@ -4473,7 +4718,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to force damage while wearing this sapphire ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-force"
+    "url": "/api/magic-items/ring-of-resistance-force",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "force",
+      "condition": "force-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-lightning",
@@ -4492,7 +4750,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to lightning damage while wearing this citrine ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-lightning"
+    "url": "/api/magic-items/ring-of-resistance-lightning",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "lightning",
+      "condition": "lightning-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-necrotic",
@@ -4511,7 +4782,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to necrotic damage while wearing this jet ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-necrotic"
+    "url": "/api/magic-items/ring-of-resistance-necrotic",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "necrotic",
+      "condition": "necrotic-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-poison",
@@ -4530,7 +4814,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to poison damage while wearing this amethyst ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-poison"
+    "url": "/api/magic-items/ring-of-resistance-poison",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "poison",
+      "condition": "poison-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-psychic",
@@ -4549,7 +4846,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to psychic damage while wearing this jade ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-psychic"
+    "url": "/api/magic-items/ring-of-resistance-psychic",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "psychic",
+      "condition": "psychic-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-radiant",
@@ -4568,7 +4878,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to radiant damage while wearing this topaz ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-radiant"
+    "url": "/api/magic-items/ring-of-resistance-radiant",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "radiant",
+      "condition": "radiant-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-resistance-thunder",
@@ -4587,7 +4910,20 @@
       "Ring, rare (requires attunement)",
       "You have resistance to thunder damage while wearing this spinel ring."
     ],
-    "url": "/api/magic-items/ring-of-resistance-thunder"
+    "url": "/api/magic-items/ring-of-resistance-thunder",
+    "requires-attunement": true,
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "effect": {
+      "damage-type-resistance": "thunder",
+      "condition": "thunder-resistance",
+      "duration": {
+        "length": 1,
+        "unit": "while attuned"
+      }
+    }
   },
   {
     "index": "ring-of-shooting-stars",
@@ -6033,7 +6369,11 @@
       "Weapon (any), rare",
       "When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type."
     ],
-    "url": "/api/magic-items/vicious-weapon"
+    "url": "/api/magic-items/vicious-weapon",
+    "cost": {
+      "quantity": 350,
+      "unit": "gp"
+    }
   },
   {
     "index": "vorpal-sword",
