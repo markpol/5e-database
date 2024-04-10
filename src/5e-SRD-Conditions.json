@@ -391,5 +391,13 @@
       "When disengaged from combat, movement away from an adversary doesn’t provoke opportunity attacks for the rest of the turn."
     ],
     "url": "/api/features/disengaged"
+  },
+  {
+    "index": "surprised",
+    "name": "Surprised",
+    "desc": [
+      "A surprised creature can't move or take an action on their first turn of the combat, and can't take a reaction until that turn ends. A member of a group can be surprised even if the other members aren't."
+    ],
+    "url": "/api/features/surprised"
   }
 ]
