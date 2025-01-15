@@ -4477,25 +4477,23 @@
       "You gain a +1 bonus to AC and saving throws while wearing this ring."
     ],
     "url": "/api/magic-items/ring-of-protection",
-    "effect": {
-      "bonus": {
-        "armor-class-modifier": 1,
-        "saving-throws-modifier": {
-          "abilities": [
-            "str",
-            "dex",
-            "con",
-            "int",
-            "wis",
-            "cha"
-          ],
-          "bonus": 1,
-          "gives-advantage": false
-        },
-        "duration": {
-          "unit": "while attuned",
-          "length": 1
-        }
+    "effect": { 
+      "armor-class-modifier": 1,
+      "saving-throw-modifier": {
+        "abilities": [
+          "str",
+          "dex",
+          "con",
+          "int",
+          "wis",
+          "cha"
+        ],
+        "bonus": 1,
+        "gives-advantage": false
+      },
+      "duration": {
+        "unit": "while attuned",
+        "length": 1
       }
     },
     "requires-attunement": true,
