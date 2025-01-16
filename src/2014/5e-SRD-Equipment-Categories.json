@@ -325,17 +325,17 @@
       },
       {
         "index": "weapon-1",
-        "name": "Weapon, +1",
+        "name": "Enchant Weapon +1",
         "url": "/api/magic-items/weapon-1"
       },
       {
         "index": "weapon-2",
-        "name": "Weapon, +2",
+        "name": "Enchant Weapon +2",
         "url": "/api/magic-items/weapon-2"
       },
       {
         "index": "weapon-3",
-        "name": "Weapon, +3",
+        "name": "Enchant Weapon +3",
         "url": "/api/magic-items/weapon-3"
       }
     ],
@@ -492,17 +492,17 @@
       },
       {
         "index": "armor-1",
-        "name": "Armor, +1",
+        "name": "Enchant Armor +1",
         "url": "/api/magic-items/armor-1"
       },
       {
         "index": "armor-2",
-        "name": "Armor, +2",
+        "name": "Enchant Armor +2",
         "url": "/api/magic-items/armor-2"
       },
       {
         "index": "armor-3",
-        "name": "Armor, +3",
+        "name": "Enchant Armor +3",
         "url": "/api/magic-items/armor-3"
       },
       {
@@ -686,6 +686,168 @@
       }
     ],
     "url": "/api/equipment-categories/ammunition"
+  },
+  {
+    "index": "tools",
+    "name": "Tools",
+    "equipment": [
+      {
+        "index": "alchemists-supplies",
+        "name": "Alchemist's Supplies",
+        "url": "/api/equipment/alchemists-supplies"
+      },
+      {
+        "index": "brewers-supplies",
+        "name": "Brewer's Supplies",
+        "url": "/api/equipment/brewers-supplies"
+      },
+      {
+        "index": "calligraphers-supplies",
+        "name": "Calligrapher's Supplies",
+        "url": "/api/equipment/calligraphers-supplies"
+      },
+      {
+        "index": "carpenters-tools",
+        "name": "Carpenter's Tools",
+        "url": "/api/equipment/carpenters-tools"
+      },
+      {
+        "index": "cartographers-tools",
+        "name": "Cartographer's Tools",
+        "url": "/api/equipment/cartographers-tools"
+      },
+      {
+        "index": "cobblers-tools",
+        "name": "Cobbler's Tools",
+        "url": "/api/equipment/cobblers-tools"
+      },
+      {
+        "index": "cooks-utensils",
+        "name": "Cook's utensils",
+        "url": "/api/equipment/cooks-utensils"
+      },
+      {
+        "index": "glassblowers-tools",
+        "name": "Glassblower's Tools",
+        "url": "/api/equipment/glassblowers-tools"
+      },
+      {
+        "index": "jewelers-tools",
+        "name": "Jeweler's Tools",
+        "url": "/api/equipment/jewelers-tools"
+      },
+      {
+        "index": "leatherworkers-tools",
+        "name": "Leatherworker's Tools",
+        "url": "/api/equipment/leatherworkers-tools"
+      },
+      {
+        "index": "masons-tools",
+        "name": "Mason's Tools",
+        "url": "/api/equipment/masons-tools"
+      },
+      {
+        "index": "painters-supplies",
+        "name": "Painter's Supplies",
+        "url": "/api/equipment/painters-supplies"
+      },
+      {
+        "index": "potters-tools",
+        "name": "Potter's Tools",
+        "url": "/api/equipment/potters-tools"
+      },
+      {
+        "index": "smiths-tools",
+        "name": "Smith's Tools",
+        "url": "/api/equipment/smiths-tools"
+      },
+      {
+        "index": "tinkers-tools",
+        "name": "Tinker's Tools",
+        "url": "/api/equipment/tinkers-tools"
+      },
+      {
+        "index": "weavers-tools",
+        "name": "Weaver's Tools",
+        "url": "/api/equipment/weavers-tools"
+      },
+      {
+        "index": "woodcarvers-tools",
+        "name": "Woodcarver's Tools",
+        "url": "/api/equipment/woodcarvers-tools"
+      },
+      {
+        "index": "dice-set",
+        "name": "Dice Set",
+        "url": "/api/equipment/dice-set"
+      },
+      {
+        "index": "playing-card-set",
+        "name": "Playing Card Set",
+        "url": "/api/equipment/playing-card-set"
+      },
+      {
+        "index": "bagpipes",
+        "name": "Bagpipes",
+        "url": "/api/equipment/bagpipes"
+      },
+      {
+        "index": "drum",
+        "name": "Drum",
+        "url": "/api/equipment/drum"
+      },
+      {
+        "index": "dulcimer",
+        "name": "Dulcimer",
+        "url": "/api/equipment/dulcimer"
+      },
+      {
+        "index": "flute",
+        "name": "Flute",
+        "url": "/api/equipment/flute"
+      },
+      {
+        "index": "lute",
+        "name": "Lute",
+        "url": "/api/equipment/lute"
+      },
+      {
+        "index": "lyre",
+        "name": "Lyre",
+        "url": "/api/equipment/lyre"
+      },
+      {
+        "index": "horn",
+        "name": "Horn",
+        "url": "/api/equipment/horn"
+      },
+      {
+        "index": "pan-flute",
+        "name": "Pan flute",
+        "url": "/api/equipment/pan-flute"
+      },
+      {
+        "index": "shawm",
+        "name": "Shawm",
+        "url": "/api/equipment/shawm"
+      },
+      {
+        "index": "viol",
+        "name": "Viol",
+        "url": "/api/equipment/viol"
+      },
+      {
+        "index": "navigators-tools",
+        "name": "Navigator's Tools",
+        "url": "/api/equipment/navigators-tools"
+      },
+      {
+        "index": "thieves-tools",
+        "name": "Thieves' Tools",
+        "url": "/api/equipment/thieves-tools"
+      }
+    ],
+    "url": "/api/equipment-categories/tools"
   },
   {
     "index": "simple-weapons",
@@ -1614,6 +1776,337 @@
     "url": "/api/equipment-categories/standard-gear"
   },
   {
+    "index": "kits",
+    "name": "Kits",
+    "equipment": [
+      {
+        "index": "climbers-kit",
+        "name": "Climber's Kit",
+        "url": "/api/equipment/climbers-kit"
+      },
+      {
+        "index": "disguise-kit",
+        "name": "Disguise Kit",
+        "url": "/api/equipment/disguise-kit"
+      },
+      {
+        "index": "forgery-kit",
+        "name": "Forgery Kit",
+        "url": "/api/equipment/forgery-kit"
+      },
+      {
+        "index": "herbalism-kit",
+        "name": "Herbalism Kit",
+        "url": "/api/equipment/herbalism-kit"
+      },
+      {
+        "index": "healers-kit",
+        "name": "Healer's Kit",
+        "url": "/api/equipment/healers-kit"
+      },
+      {
+        "index": "mess-kit",
+        "name": "Mess Kit",
+        "url": "/api/equipment/mess-kit"
+      },
+      {
+        "index": "poisoners-kit",
+        "name": "Poisoner's Kit",
+        "url": "/api/equipment/poisoners-kit"
+      }
+    ],
+    "url": "/api/equipment-categories/kits"
+  },
+  {
+    "index": "equipment-packs",
+    "name": "Equipment Packs",
+    "equipment": [
+      {
+        "index": "burglars-pack",
+        "name": "Burglar's Pack",
+        "url": "/api/equipment/burglars-pack"
+      },
+      {
+        "index": "diplomats-pack",
+        "name": "Diplomat's Pack",
+        "url": "/api/equipment/diplomats-pack"
+      },
+      {
+        "index": "dungeoneers-pack",
+        "name": "Dungeoneer's Pack",
+        "url": "/api/equipment/dungeoneers-pack"
+      },
+      {
+        "index": "entertainers-pack",
+        "name": "Entertainer's Pack",
+        "url": "/api/equipment/entertainers-pack"
+      },
+      {
+        "index": "explorers-pack",
+        "name": "Explorer's Pack",
+        "url": "/api/equipment/explorers-pack"
+      },
+      {
+        "index": "priests-pack",
+        "name": "Priest's Pack",
+        "url": "/api/equipment/priests-pack"
+      },
+      {
+        "index": "scholars-pack",
+        "name": "Scholar's Pack",
+        "url": "/api/equipment/scholars-pack"
+      }
+    ],
+    "url": "/api/equipment-categories/equipment-packs"
+  },
+  {
+    "index": "artisans-tools",
+    "name": "Artisan's Tools",
+    "equipment": [
+      {
+        "index": "alchemists-supplies",
+        "name": "Alchemist's Supplies",
+        "url": "/api/equipment/alchemists-supplies"
+      },
+      {
+        "index": "brewers-supplies",
+        "name": "Brewer's Supplies",
+        "url": "/api/equipment/brewers-supplies"
+      },
+      {
+        "index": "calligraphers-supplies",
+        "name": "Calligrapher's Supplies",
+        "url": "/api/equipment/calligraphers-supplies"
+      },
+      {
+        "index": "carpenters-tools",
+        "name": "Carpenter's Tools",
+        "url": "/api/equipment/carpenters-tools"
+      },
+      {
+        "index": "cartographers-tools",
+        "name": "Cartographer's Tools",
+        "url": "/api/equipment/cartographers-tools"
+      },
+      {
+        "index": "cobblers-tools",
+        "name": "Cobbler's Tools",
+        "url": "/api/equipment/cobblers-tools"
+      },
+      {
+        "index": "cooks-utensils",
+        "name": "Cook's utensils",
+        "url": "/api/equipment/cooks-utensils"
+      },
+      {
+        "index": "glassblowers-tools",
+        "name": "Glassblower's Tools",
+        "url": "/api/equipment/glassblowers-tools"
+      },
+      {
+        "index": "jewelers-tools",
+        "name": "Jeweler's Tools",
+        "url": "/api/equipment/jewelers-tools"
+      },
+      {
+        "index": "leatherworkers-tools",
+        "name": "Leatherworker's Tools",
+        "url": "/api/equipment/leatherworkers-tools"
+      },
+      {
+        "index": "masons-tools",
+        "name": "Mason's Tools",
+        "url": "/api/equipment/masons-tools"
+      },
+      {
+        "index": "painters-supplies",
+        "name": "Painter's Supplies",
+        "url": "/api/equipment/painters-supplies"
+      },
+      {
+        "index": "potters-tools",
+        "name": "Potter's Tools",
+        "url": "/api/equipment/potters-tools"
+      },
+      {
+        "index": "smiths-tools",
+        "name": "Smith's Tools",
+        "url": "/api/equipment/smiths-tools"
+      },
+      {
+        "index": "tinkers-tools",
+        "name": "Tinker's Tools",
+        "url": "/api/equipment/tinkers-tools"
+      },
+      {
+        "index": "weavers-tools",
+        "name": "Weaver's Tools",
+        "url": "/api/equipment/weavers-tools"
+      },
+      {
+        "index": "woodcarvers-tools",
+        "name": "Woodcarver's Tools",
+        "url": "/api/equipment/woodcarvers-tools"
+      }
+    ],
+    "url": "/api/equipment-categories/artisans-tools"
+  },
+  {
+    "index": "musical-instruments",
+    "name": "Musical Instruments",
+    "equipment": [
+      {
+        "index": "bagpipes",
+        "name": "Bagpipes",
+        "url": "/api/equipment/bagpipes"
+      },
+      {
+        "index": "drum",
+        "name": "Drum",
+        "url": "/api/equipment/drum"
+      },
+      {
+        "index": "dulcimer",
+        "name": "Dulcimer",
+        "url": "/api/equipment/dulcimer"
+      },
+      {
+        "index": "flute",
+        "name": "Flute",
+        "url": "/api/equipment/flute"
+      },
+      {
+        "index": "lute",
+        "name": "Lute",
+        "url": "/api/equipment/lute"
+      },
+      {
+        "index": "lyre",
+        "name": "Lyre",
+        "url": "/api/equipment/lyre"
+      },
+      {
+        "index": "horn",
+        "name": "Horn",
+        "url": "/api/equipment/horn"
+      },
+      {
+        "index": "pan-flute",
+        "name": "Pan flute",
+        "url": "/api/equipment/pan-flute"
+      },
+      {
+        "index": "shawm",
+        "name": "Shawm",
+        "url": "/api/equipment/shawm"
+      },
+      {
+        "index": "viol",
+        "name": "Viol",
+        "url": "/api/equipment/viol"
+      }
+    ],
+    "url": "/api/equipment-categories/musical-instruments"
+  },
+  {
+    "index": "other-tools",
+    "name": "Other Tools",
+    "equipment": [
+      {
+        "index": "navigators-tools",
+        "name": "Navigator's Tools",
+        "url": "/api/equipment/navigators-tools"
+      },
+      {
+        "index": "thieves-tools",
+        "name": "Thieves' Tools",
+        "url": "/api/equipment/thieves-tools"
+      }
+    ],
+    "url": "/api/equipment-categories/other-tools"
+  },
+  {
+    "index": "arcane-foci",
+    "name": "Arcane Foci",
+    "equipment": [
+      {
+        "index": "crystal",
+        "name": "Crystal",
+        "url": "/api/equipment/crystal"
+      },
+      {
+        "index": "orb",
+        "name": "Orb",
+        "url": "/api/equipment/orb"
+      },
+      {
+        "index": "rod",
+        "name": "Rod",
+        "url": "/api/equipment/rod"
+      },
+      {
+        "index": "staff",
+        "name": "Staff",
+        "url": "/api/equipment/staff"
+      },
+      {
+        "index": "wand",
+        "name": "Wand",
+        "url": "/api/equipment/wand"
+      }
+    ],
+    "url": "/api/equipment-categories/arcane-foci"
+  },
+  {
+    "index": "druidic-foci",
+    "name": "Druidic Foci",
+    "equipment": [
+      {
+        "index": "sprig-of-mistletoe",
+        "name": "Sprig of mistletoe",
+        "url": "/api/equipment/sprig-of-mistletoe"
+      },
+      {
+        "index": "totem",
+        "name": "Totem",
+        "url": "/api/equipment/totem"
+      },
+      {
+        "index": "wooden-staff",
+        "name": "Wooden staff",
+        "url": "/api/equipment/wooden-staff"
+      },
+      {
+        "index": "yew-wand",
+        "name": "Yew wand",
+        "url": "/api/equipment/yew-wand"
+      }
+    ],
+    "url": "/api/equipment-categories/druidic-foci"
+  },
+  {
+    "index": "holy-symbols",
+    "name": "Holy Symbols",
+    "equipment": [
+      {
+        "index": "amulet",
+        "name": "Amulet",
+        "url": "/api/equipment/amulet"
+      },
+      {
+        "index": "emblem",
+        "name": "Emblem",
+        "url": "/api/equipment/emblem"
+      },
+      {
+        "index": "reliquary",
+        "name": "Reliquary",
+        "url": "/api/equipment/reliquary"
+      }
+    ],
+    "url": "/api/equipment-categories/holy-symbols"
+  },
+  {
     "index": "wondrous-items",
     "name": "Wondrous Items",
     "equipment": [
@@ -1621,21 +2114,6 @@
         "index": "amulet-of-health",
         "name": "Amulet of Health",
         "url": "/api/magic-items/amulet-of-health"
-      },
-      {
-        "index": "amulet-of-proof-against-detection-and-location",
-        "name": "Amulet of Proof against Detection and Location",
-        "url": "/api/magic-items/amulet-of-proof-against-detection-and-location"
-      },
-      {
-        "index": "amulet-of-the-planes",
-        "name": "Amulet of the Planes",
-        "url": "/api/magic-items/amulet-of-the-planes"
-      },
-      {
-        "index": "apparatus-of-the-crab",
-        "name": "Apparatus of the Crab",
-        "url": "/api/magic-items/apparatus-of-the-crab"
       },
       {
         "index": "bag-of-beans",
@@ -1678,29 +2156,14 @@
         "url": "/api/magic-items/boots-of-elvenkind"
       },
       {
-        "index": "boots-of-levitation",
-        "name": "Boots of Levitation",
-        "url": "/api/magic-items/boots-of-levitation"
-      },
-      {
         "index": "boots-of-speed",
         "name": "Boots of Speed",
         "url": "/api/magic-items/boots-of-speed"
       },
       {
-        "index": "boots-of-striding-and-springing",
-        "name": "Boots of Striding and Springing",
-        "url": "/api/magic-items/boots-of-striding-and-springing"
-      },
-      {
         "index": "boots-of-the-winterlands",
         "name": "Boots of the Winterlands",
         "url": "/api/magic-items/boots-of-the-winterlands"
-      },
-      {
-        "index": "bowl-of-commanding-water-elementals",
-        "name": "Bowl of Commanding Water Elementals",
-        "url": "/api/magic-items/bowl-of-commanding-water-elementals"
       },
       {
         "index": "bracers-of-archery",
@@ -1713,44 +2176,14 @@
         "url": "/api/magic-items/bracers-of-defense"
       },
       {
-        "index": "brazier-of-commanding-fire-elementals",
-        "name": "Brazier of Commanding Fire Elementals",
-        "url": "/api/magic-items/brazier-of-commanding-fire-elementals"
-      },
-      {
         "index": "brooch-of-shielding",
         "name": "Brooch of Shielding",
         "url": "/api/magic-items/brooch-of-shielding"
       },
       {
-        "index": "broom-of-flying",
-        "name": "Broom of Flying",
-        "url": "/api/magic-items/broom-of-flying"
-      },
-      {
         "index": "candle-of-invocation",
         "name": "Candle of Invocation",
         "url": "/api/magic-items/candle-of-invocation"
-      },
-      {
-        "index": "cape-of-the-mountebank",
-        "name": "Cape of the Mountebank",
-        "url": "/api/magic-items/cape-of-the-mountebank"
-      },
-      {
-        "index": "carpet-of-flying",
-        "name": "Carpet of Flying",
-        "url": "/api/magic-items/carpet-of-flying"
-      },
-      {
-        "index": "censer-of-controlling-air-elementals",
-        "name": "Censer of Controlling Air Elementals",
-        "url": "/api/magic-items/censer-of-controlling-air-elementals"
-      },
-      {
-        "index": "chime-of-opening",
-        "name": "Chime of Opening",
-        "url": "/api/magic-items/chime-of-opening"
       },
       {
         "index": "circlet-of-blasting",
@@ -1778,84 +2211,9 @@
         "url": "/api/magic-items/cloak-of-protection"
       },
       {
-        "index": "cloak-of-the-bat",
-        "name": "Cloak of the Bat",
-        "url": "/api/magic-items/cloak-of-the-bat"
-      },
-      {
-        "index": "cloak-of-the-manta-ray",
-        "name": "Cloak of the Manta Ray",
-        "url": "/api/magic-items/cloak-of-the-manta-ray"
-      },
-      {
-        "index": "crystal-ball",
-        "name": "Crystal Ball",
-        "url": "/api/magic-items/crystal-ball"
-      },
-      {
-        "index": "cube-of-force",
-        "name": "Cube of Force",
-        "url": "/api/magic-items/cube-of-force"
-      },
-      {
-        "index": "cubic-gate",
-        "name": "Cubic Gate",
-        "url": "/api/magic-items/cubic-gate"
-      },
-      {
-        "index": "decanter-of-endless-water",
-        "name": "Decanter of Endless Water",
-        "url": "/api/magic-items/decanter-of-endless-water"
-      },
-      {
-        "index": "deck-of-illusions",
-        "name": "Deck of Illusions",
-        "url": "/api/magic-items/deck-of-illusions"
-      },
-      {
-        "index": "deck-of-many-things",
-        "name": "Deck of Many Things",
-        "url": "/api/magic-items/deck-of-many-things"
-      },
-      {
-        "index": "dimensional-shackles",
-        "name": "Dimensional Shackles",
-        "url": "/api/magic-items/dimensional-shackles"
-      },
-      {
-        "index": "dust-of-disappearance",
-        "name": "Dust of Disappearance",
-        "url": "/api/magic-items/dust-of-disappearance"
-      },
-      {
         "index": "dust-of-dryness",
         "name": "Dust of Dryness",
         "url": "/api/magic-items/dust-of-dryness"
-      },
-      {
-        "index": "dust-of-sneezing-and-choking",
-        "name": "Dust of Sneezing and Choking",
-        "url": "/api/magic-items/dust-of-sneezing-and-choking"
-      },
-      {
-        "index": "efficient-quiver",
-        "name": "Efficient Quiver",
-        "url": "/api/magic-items/efficient-quiver"
-      },
-      {
-        "index": "efreeti-bottle",
-        "name": "Efreeti Bottle",
-        "url": "/api/magic-items/efreeti-bottle"
-      },
-      {
-        "index": "elemental-gem",
-        "name": "Elemental Gem",
-        "url": "/api/magic-items/elemental-gem"
-      },
-      {
-        "index": "eversmoking-bottle",
-        "name": "Eversmoking Bottle",
-        "url": "/api/magic-items/eversmoking-bottle"
       },
       {
         "index": "eyes-of-charming",
@@ -1873,34 +2231,9 @@
         "url": "/api/magic-items/eyes-of-the-eagle"
       },
       {
-        "index": "feather-token",
-        "name": "Feather Token",
-        "url": "/api/magic-items/feather-token"
-      },
-      {
-        "index": "figurine-of-wondrous-power",
-        "name": "Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power"
-      },
-      {
-        "index": "folding-boat",
-        "name": "Folding Boat",
-        "url": "/api/magic-items/folding-boat"
-      },
-      {
         "index": "gauntlets-of-ogre-power",
         "name": "Gauntlets of Ogre Power",
         "url": "/api/magic-items/gauntlets-of-ogre-power"
-      },
-      {
-        "index": "gem-of-brightness",
-        "name": "Gem of Brightness",
-        "url": "/api/magic-items/gem-of-brightness"
-      },
-      {
-        "index": "gem-of-seeing",
-        "name": "Gem of Seeing",
-        "url": "/api/magic-items/gem-of-seeing"
       },
       {
         "index": "gloves-of-missile-snaring",
@@ -1973,29 +2306,9 @@
         "url": "/api/magic-items/horseshoes-of-speed"
       },
       {
-        "index": "instant-fortress",
-        "name": "Instant Fortress",
-        "url": "/api/magic-items/instant-fortress"
-      },
-      {
-        "index": "ioun-stone",
-        "name": "Ioun Stone",
-        "url": "/api/magic-items/ioun-stone"
-      },
-      {
-        "index": "iron-bands-of-binding",
-        "name": "Iron Bands of Binding",
-        "url": "/api/magic-items/iron-bands-of-binding"
-      },
-      {
         "index": "iron-flask",
         "name": "Iron Flask",
         "url": "/api/magic-items/iron-flask"
-      },
-      {
-        "index": "lantern-of-revealing",
-        "name": "Lantern of Revealing",
-        "url": "/api/magic-items/lantern-of-revealing"
       },
       {
         "index": "mantle-of-spell-resistance",
@@ -2148,29 +2461,9 @@
         "url": "/api/magic-items/sphere-of-annihilation"
       },
       {
-        "index": "stone-of-controlling-earth-elementals",
-        "name": "Stone of Controlling Earth Elementals",
-        "url": "/api/magic-items/stone-of-controlling-earth-elementals"
-      },
-      {
         "index": "stone-of-good-luck-luckstone",
         "name": "Stone of Good Luck (Luckstone)",
         "url": "/api/magic-items/stone-of-good-luck-luckstone"
-      },
-      {
-        "index": "talisman-of-pure-good",
-        "name": "Talisman of Pure Good",
-        "url": "/api/magic-items/talisman-of-pure-good"
-      },
-      {
-        "index": "talisman-of-the-sphere",
-        "name": "Talisman of the Sphere",
-        "url": "/api/magic-items/talisman-of-the-sphere"
-      },
-      {
-        "index": "talisman-of-ultimate-evil",
-        "name": "Talisman of Ultimate Evil",
-        "url": "/api/magic-items/talisman-of-ultimate-evil"
       },
       {
         "index": "tome-of-clear-thought",
@@ -2191,31 +2484,6 @@
         "index": "universal-solvent",
         "name": "Universal Solvent",
         "url": "/api/magic-items/universal-solvent"
-      },
-      {
-        "index": "well-of-many-worlds",
-        "name": "Well of Many Worlds",
-        "url": "/api/magic-items/well-of-many-worlds"
-      },
-      {
-        "index": "wind-fan",
-        "name": "Wind Fan",
-        "url": "/api/magic-items/wind-fan"
-      },
-      {
-        "index": "winged-boots",
-        "name": "Winged Boots",
-        "url": "/api/magic-items/winged-boots"
-      },
-      {
-        "index": "wings-of-flying",
-        "name": "Wings of Flying",
-        "url": "/api/magic-items/wings-of-flying"
-      },
-      {
-        "index": "orb-of-dragonkind",
-        "name": "Orb of Dragonkind",
-        "url": "/api/magic-items/orb-of-dragonkind"
       },
       {
         "index": "bag-of-tricks-gray",
@@ -2263,136 +2531,6 @@
         "url": "/api/magic-items/belt-of-giant-strength-storm"
       },
       {
-        "index": "carpet-of-flying-3x5",
-        "name": "Carpet of Flying (3 ft. × 5 ft.)",
-        "url": "/api/magic-items/carpet-of-flying-3x5"
-      },
-      {
-        "index": "carpet-of-flying-4x6",
-        "name": "Carpet of Flying (4 ft. × 6 ft.)",
-        "url": "/api/magic-items/carpet-of-flying-4x6"
-      },
-      {
-        "index": "carpet-of-flying-5x7",
-        "name": "Carpet of Flying (5 ft. × 7 ft.)",
-        "url": "/api/magic-items/carpet-of-flying-5x7"
-      },
-      {
-        "index": "carpet-of-flying-6x9",
-        "name": "Carpet of Flying (6 ft. × 9 ft.)",
-        "url": "/api/magic-items/carpet-of-flying-6x9"
-      },
-      {
-        "index": "crystal-ball-of-mind-reading",
-        "name": "Crystal Ball of Mind Reading",
-        "url": "/api/magic-items/crystal-ball-of-mind-reading"
-      },
-      {
-        "index": "crystal-ball-of-telepathy",
-        "name": "Crystal Ball of Telepathy",
-        "url": "/api/magic-items/crystal-ball-of-telepathy"
-      },
-      {
-        "index": "crystal-ball-of-true-seeing",
-        "name": "Crystal Ball of True Seeing",
-        "url": "/api/magic-items/crystal-ball-of-true-seeing"
-      },
-      {
-        "index": "elemental-gem-air",
-        "name": "Air Elemental Gem",
-        "url": "/api/magic-items/elemental-gem-air"
-      },
-      {
-        "index": "elemental-gem-earth",
-        "name": "Earth Elemental Gem",
-        "url": "/api/magic-items/elemental-gem-earth"
-      },
-      {
-        "index": "elemental-gem-fire",
-        "name": "Fire Elemental Gem",
-        "url": "/api/magic-items/elemental-gem-fire"
-      },
-      {
-        "index": "elemental-gem-water",
-        "name": "Water Elemental Gem",
-        "url": "/api/magic-items/elemental-gem-water"
-      },
-      {
-        "index": "feather-token-anchor",
-        "name": "Anchor Feather Token",
-        "url": "/api/magic-items/feather-token-anchor"
-      },
-      {
-        "index": "feather-token-bird",
-        "name": "Bird Feather Token",
-        "url": "/api/magic-items/feather-token-bird"
-      },
-      {
-        "index": "feather-token-fan",
-        "name": "Fan Feather Token",
-        "url": "/api/magic-items/feather-token-fan"
-      },
-      {
-        "index": "feather-token-swan-boat",
-        "name": "Swan Boat Feather Token",
-        "url": "/api/magic-items/feather-token-swan-boat"
-      },
-      {
-        "index": "feather-token-tree",
-        "name": "Tree Feather Token",
-        "url": "/api/magic-items/feather-token-tree"
-      },
-      {
-        "index": "feather-token-whip",
-        "name": "Whip Feather Token",
-        "url": "/api/magic-items/feather-token-whip"
-      },
-      {
-        "index": "figurine-of-wondrous-power-bronze-griffon",
-        "name": "Bronze Griffon Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-bronze-griffon"
-      },
-      {
-        "index": "figurine-of-wondrous-power-ebony-fly",
-        "name": "Ebony Fly Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-ebony-fly"
-      },
-      {
-        "index": "figurine-of-wondrous-power-golden-lions",
-        "name": "Golden Lions Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-golden-lions"
-      },
-      {
-        "index": "figurine-of-wondrous-power-ivory-goats",
-        "name": "Ivory Goats Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-ivory-goats"
-      },
-      {
-        "index": "figurine-of-wondrous-power-marble-elephant",
-        "name": "Marble Elephant Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-marble-elephant"
-      },
-      {
-        "index": "figurine-of-wondrous-power-obsidian-steed",
-        "name": "Obsidian Steed Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-obsidian-steed"
-      },
-      {
-        "index": "figurine-of-wondrous-power-onyx-dog",
-        "name": "Onyx Dog Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-onyx-dog"
-      },
-      {
-        "index": "figurine-of-wondrous-power-serpentine-owl",
-        "name": "Serpentine Owl Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-serpentine-owl"
-      },
-      {
-        "index": "figurine-of-wondrous-power-silver-raven",
-        "name": "Silver Raven Figurine of Wondrous Power",
-        "url": "/api/magic-items/figurine-of-wondrous-power-silver-raven"
-      },
-      {
         "index": "horn-of-valhalla-silver",
         "name": "Silver Horn of Valhalla",
         "url": "/api/magic-items/horn-of-valhalla-silver"
@@ -2411,76 +2549,6 @@
         "index": "horn-of-valhalla-iron",
         "name": "Iron Horn of Valhalla",
         "url": "/api/magic-items/horn-of-valhalla-iron"
-      },
-      {
-        "index": "ioun-stone-of-absorption",
-        "name": "Ioun Stone of Absorption",
-        "url": "/api/magic-items/ioun-stone-of-absorption"
-      },
-      {
-        "index": "ioun-stone-of-agility",
-        "name": "Ioun Stone of Agility",
-        "url": "/api/magic-items/ioun-stone-of-agility"
-      },
-      {
-        "index": "ioun-stone-of-awareness",
-        "name": "Ioun Stone of Awareness",
-        "url": "/api/magic-items/ioun-stone-of-awareness"
-      },
-      {
-        "index": "ioun-stone-of-fortitude",
-        "name": "Ioun Stone of Fortitude",
-        "url": "/api/magic-items/ioun-stone-of-fortitude"
-      },
-      {
-        "index": "ioun-stone-of-greater-absorption",
-        "name": "Ioun Stone of Greater Absorption",
-        "url": "/api/magic-items/ioun-stone-of-greater-absorption"
-      },
-      {
-        "index": "ioun-stone-of-insight",
-        "name": "Ioun Stone of Insight",
-        "url": "/api/magic-items/ioun-stone-of-insight"
-      },
-      {
-        "index": "ioun-stone-of-intellect",
-        "name": "Ioun Stone of Intellect",
-        "url": "/api/magic-items/ioun-stone-of-intellect"
-      },
-      {
-        "index": "ioun-stone-of-leadership",
-        "name": "Ioun Stone of Leadership",
-        "url": "/api/magic-items/ioun-stone-of-leadership"
-      },
-      {
-        "index": "ioun-stone-of-mastery",
-        "name": "Ioun Stone of Mastery",
-        "url": "/api/magic-items/ioun-stone-of-mastery"
-      },
-      {
-        "index": "ioun-stone-of-protection",
-        "name": "Ioun Stone of Protection",
-        "url": "/api/magic-items/ioun-stone-of-protection"
-      },
-      {
-        "index": "ioun-stone-of-regeneration",
-        "name": "Ioun Stone of Regeneration",
-        "url": "/api/magic-items/ioun-stone-of-regeneration"
-      },
-      {
-        "index": "ioun-stone-of-reserve",
-        "name": "Ioun Stone of Reserve",
-        "url": "/api/magic-items/ioun-stone-of-reserve"
-      },
-      {
-        "index": "ioun-stone-of-strength",
-        "name": "Ioun Stone of Strength",
-        "url": "/api/magic-items/ioun-stone-of-strength"
-      },
-      {
-        "index": "ioun-stone-of-sustenance",
-        "name": "Ioun Stone of Sustenance",
-        "url": "/api/magic-items/ioun-stone-of-sustenance"
       },
       {
         "index": "manual-of-golems-clay",

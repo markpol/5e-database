@@ -20,6 +20,98 @@
     "url": "/api/magic-items/adamantine-armor"
   },
   {
+    "index": "ammunition",
+    "name": "Ammunition, +1, +2, or +3",
+    "equipment_category": {
+      "index": "ammunition",
+      "name": "Ammunition",
+      "url": "/api/equipment-categories/ammunition"
+    },
+    "rarity": {
+      "name": "Varies"
+    },
+    "variants": [
+      {
+        "index": "ammunition-1",
+        "name": "Ammunition, +1",
+        "url": "/api/magic-items/ammunition-1"
+      },
+      {
+        "index": "ammunition-2",
+        "name": "Ammunition, +2",
+        "url": "/api/magic-items/ammunition-2"
+      },
+      {
+        "index": "ammunition-3",
+        "name": "Ammunition, +3",
+        "url": "/api/magic-items/ammunition-3"
+      }
+    ],
+    "variant": false,
+    "desc": [
+      "Weapon (any ammunition), uncommon (+1), rare (+2), or very rare (+3)",
+      "You have a bonus to attack and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hits a target, the ammunition is no longer magical."
+    ],
+    "url": "/api/magic-items/ammunition"
+  },
+  {
+    "index": "ammunition-1",
+    "name": "Ammunition, +1",
+    "equipment_category": {
+      "index": "ammunition",
+      "name": "Ammunition",
+      "url": "/api/equipment-categories/ammunition"
+    },
+    "rarity": {
+      "name": "Uncommon"
+    },
+    "variants": [],
+    "variant": true,
+    "desc": [
+      "Weapon (any ammunition), uncommon",
+      "You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
+    ],
+    "url": "/api/magic-items/ammunition-1"
+  },
+  {
+    "index": "ammunition-2",
+    "name": "Ammunition, +2",
+    "equipment_category": {
+      "index": "ammunition",
+      "name": "Ammunition",
+      "url": "/api/equipment-categories/ammunition"
+    },
+    "rarity": {
+      "name": "Rare"
+    },
+    "variants": [],
+    "variant": true,
+    "desc": [
+      "Weapon (any ammunition), rare",
+      "You have a +2 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
+    ],
+    "url": "/api/magic-items/ammunition-2"
+  },
+  {
+    "index": "ammunition-3",
+    "name": "Ammunition, +3",
+    "equipment_category": {
+      "index": "ammunition",
+      "name": "Ammunition",
+      "url": "/api/equipment-categories/ammunition"
+    },
+    "rarity": {
+      "name": "Very Rare"
+    },
+    "variants": [],
+    "variant": true,
+    "desc": [
+      "Weapon (any ammunition), very rare",
+      "You have a +3 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical."
+    ],
+    "url": "/api/magic-items/ammunition-3"
+  },
+  {
     "index": "amulet-of-health",
     "name": "Amulet of Health",
     "equipment_category": {
@@ -87,17 +179,17 @@
     "variants": [
       {
         "index": "armor-1",
-        "name": "Armor, +1",
+        "name": "Enchant Armor +1",
         "url": "/api/magic-items/armor-1"
       },
       {
         "index": "armor-2",
-        "name": "Armor, +2",
+        "name": "Enchant Armor +2",
         "url": "/api/magic-items/armor-2"
       },
       {
         "index": "armor-3",
-        "name": "Armor, +3",
+        "name": "Enchant Armor +3",
         "url": "/api/magic-items/armor-3"
       }
     ],
@@ -2401,6 +2493,27 @@
       "The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon."
     ],
     "url": "/api/magic-items/javelin-of-lightning"
+  },
+  {
+    "index": "luck-blade",
+    "name": "Luck Blade",
+    "equipment_category": {
+      "index": "weapon",
+      "name": "Weapon",
+      "url": "/api/equipment-categories/weapon"
+    },
+    "rarity": {
+      "name": "Legendary"
+    },
+    "variants": [],
+    "variant": false,
+    "desc": [
+      "Weapon (any sword), legendary (requires attunement)",
+      "You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.",
+      "***Luck.*** If the sword is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. This property can't be used again until the next dawn.",
+      "***Wish.*** The sword has 1d4 - 1 charges. While holding it, you can use an action to expend 1 charge and cast the wish spell from it. This property can't be used again until the next dawn. The sword loses this property if it has no charges."
+    ],
+    "url": "/api/magic-items/luck-blade"
   },
   {
     "index": "mace-of-disruption",
@@ -6765,17 +6878,17 @@
     "variants": [
       {
         "index": "weapon-1",
-        "name": "Weapon, +1",
+        "name": "Enchant Weapon +1",
         "url": "/api/magic-items/weapon-1"
       },
       {
         "index": "weapon-2",
-        "name": "Weapon, +2",
+        "name": "Enchant Weapon +2",
         "url": "/api/magic-items/weapon-2"
       },
       {
         "index": "weapon-3",
-        "name": "Weapon, +3",
+        "name": "Enchant Weapon +3",
         "url": "/api/magic-items/weapon-3"
       }
     ],

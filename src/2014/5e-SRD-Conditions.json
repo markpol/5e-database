@@ -234,7 +234,7 @@
     "desc": [
       "For the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns. When your rage ends, you suffer one level of exhaustion."
     ],
-    "url": "/api/features/frenzied"
+    "url": "/api/conditions/frenzied"
   },
   {
     "index": "reckless",
@@ -242,7 +242,7 @@
     "desc": [
       "You throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
     ],
-    "url": "/api/features/reckless"
+    "url": "/api/conditions/reckless"
   },
   {
     "index": "dodging",
@@ -250,7 +250,7 @@
     "desc": [
       "When you take the Dodge action, you focus entirely on avoiding attacks. Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0."
     ],
-    "url": "/api/features/dodging"
+    "url": "/api/conditions/dodging"
   },
   {
     "index": "acid-resistance",
@@ -258,7 +258,7 @@
     "desc": [
       "You are resistant to acid. Any damage of this type is halved."
     ],
-    "url": "/api/features/acid-resistance"
+    "url": "/api/conditions/acid-resistance"
   },
   {
     "index": "cold-resistance",
@@ -266,7 +266,7 @@
     "desc": [
       "You are resistant to cold. Any damage of this type is halved."
     ],
-    "url": "/api/features/cold-resistance"
+    "url": "/api/conditions/cold-resistance"
   },
   {
     "index": "force-resistance",
@@ -274,7 +274,7 @@
     "desc": [
       "You are resistant to magical force energy. Any damage of this type is halved."
     ],
-    "url": "/api/features/force-resistance"
+    "url": "/api/conditions/force-resistance"
   },
   {
     "index": "lightning-resistance",
@@ -282,7 +282,7 @@
     "desc": [
       "You are resistant to lightning. Any damage of this type is halved."
     ],
-    "url": "/api/features/lightning-resistance"
+    "url": "/api/conditions/lightning-resistance"
   },
   {
     "index": "necrotic-resistance",
@@ -290,7 +290,7 @@
     "desc": [
       "You are resistant to necrotic damage. Any damage of this type is halved."
     ],
-    "url": "/api/features/necrotic-resistance"
+    "url": "/api/conditions/necrotic-resistance"
   },
   {
     "index": "poison-resistance",
@@ -298,7 +298,7 @@
     "desc": [
       "You are resistant to poison. Any damage of this type is halved."
     ],
-    "url": "/api/features/poison-resistance"
+    "url": "/api/conditions/poison-resistance"
   },
   {
     "index": "psychic-resistance",
@@ -306,7 +306,7 @@
     "desc": [
       "You are resistant to psychic damage. Any damage of this type is halved."
     ],
-    "url": "/api/features/psychic-resistance"
+    "url": "/api/conditions/psychic-resistance"
   },
   {
     "index": "radiant-resistance",
@@ -314,7 +314,7 @@
     "desc": [
       "You are resistant to radiant damage. Any damage of this type is halved."
     ],
-    "url": "/api/features/radiant-resistance"
+    "url": "/api/conditions/radiant-resistance"
   },
   {
     "index": "thunder-resistance",
@@ -322,7 +322,7 @@
     "desc": [
       "You are resistant to thunder. Any damage of this type is halved."
     ],
-    "url": "/api/features/thunder-resistance"
+    "url": "/api/conditions/thunder-resistance"
   },
   {
     "index": "hasted",
@@ -332,7 +332,7 @@
       "That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.",
       "When the condition ends, the target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it."
     ],
-    "url": "/api/features/hasted"
+    "url": "/api/conditions/hasted"
   },
   {
     "index": "infested",
@@ -341,7 +341,7 @@
       "A parasite has attached itself and consumes blood every turn.",
       "An action can be used to detach the parasite."
     ],
-    "url": "/api/features/infested"
+    "url": "/api/conditions/infested"
   },
   {
     "index": "swallowed",
@@ -350,7 +350,7 @@
       "A creature swallowed by a larger host creature is blinded and restrained, and has total cover against attacks and other effects outside the host.",
       "Acid damage is taken every turn while swallowed. If the host dies, a swallowed creature is no longer restrained by it and can escape."
     ],
-    "url": "/api/features/infested"
+    "url": "/api/conditions/swallowed"
   },
   {
     "index": "drained-of-strength",
@@ -358,7 +358,7 @@
     "desc": [
       "Your Strength score has been reduced. The reduction lasts until a short or long rest is taken."
     ],
-    "url": "/api/features/drained-of-strength"
+    "url": "/api/conditions/drained-of-strength"
   },
   {
     "index": "weakened",
@@ -366,7 +366,7 @@
     "desc": [
       "A weakened creature has disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
     ],
-    "url": "/api/features/weakened"
+    "url": "/api/conditions/weakened"
   },
   {
     "index": "slowed",
@@ -374,7 +374,7 @@
     "desc": [
       "A slowed creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save."
     ],
-    "url": "/api/features/slowed"
+    "url": "/api/conditions/slowed"
   },
   {
     "index": "drained-of-life",
@@ -382,7 +382,7 @@
     "desc": [
       "Your hit point maximum has been reduced. This reduction lasts until a long rest has been taken."
     ],
-    "url": "/api/features/drained-of-life"
+    "url": "/api/conditions/drained-of-life"
   },
   {
     "index": "disengaged",
@@ -390,7 +390,7 @@
     "desc": [
       "When disengaged from combat, movement away from an adversary doesn’t provoke opportunity attacks for the rest of the turn."
     ],
-    "url": "/api/features/disengaged"
+    "url": "/api/conditions/disengaged"
   },
   {
     "index": "surprised",
@@ -398,6 +398,6 @@
     "desc": [
       "A surprised creature can't move or take an action on their first turn of the combat, and can't take a reaction until that turn ends. A member of a group can be surprised even if the other members aren't."
     ],
-    "url": "/api/features/surprised"
+    "url": "/api/conditions/surprised"
   }
 ]

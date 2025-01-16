@@ -1610,6 +1610,47 @@
     "url": "/api/equipment/longbow"
   },
   {
+    "index": "net",
+    "name": "Net",
+    "equipment_category": {
+      "index": "weapon",
+      "name": "Weapon",
+      "url": "/api/equipment-categories/weapon"
+    },
+    "weapon_category": "Martial",
+    "weapon_range": "Ranged",
+    "category_range": "Martial Ranged",
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "range": {
+      "normal": 5,
+      "long": 15
+    },
+    "weight": 3,
+    "properties": [
+      {
+        "index": "thrown",
+        "name": "Thrown",
+        "url": "/api/weapon-properties/thrown"
+      },
+      {
+        "index": "special",
+        "name": "Special",
+        "url": "/api/weapon-properties/special"
+      }
+    ],
+    "special": [
+      "A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."
+    ],
+    "throw_range": {
+      "normal": 5,
+      "long": 15
+    },
+    "url": "/api/equipment/net"
+  },
+  {
     "index": "padded-armor",
     "name": "Padded Armor",
     "equipment_category": {
@@ -1981,6 +2022,27 @@
     "url": "/api/equipment/alchemists-fire-flask"
   },
   {
+    "index": "alms-box",
+    "name": "Alms box",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 0,
+      "unit": "cp"
+    },
+    "weight": 0,
+    "desc": ["A small box for alms, typically found in a priest's pack."],
+    "url": "/api/equipment/alms-box"
+  },
+  {
     "index": "arrow",
     "name": "Arrow",
     "equipment_category": {
@@ -2003,6 +2065,27 @@
     "url": "/api/equipment/arrow"
   },
   {
+    "index": "block-of-incense",
+    "name": "Block of incense",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 0,
+      "unit": "cp"
+    },
+    "weight": 0,
+    "desc": ["A block of incense, typically found in a priest's pack."],
+    "url": "/api/equipment/block-of-incense"
+  },
+  {
     "index": "blowgun-needle",
     "name": "Blowgun needle",
     "equipment_category": {
@@ -2023,6 +2106,27 @@
     "weight": 1,
     "stackable": true,
     "url": "/api/equipment/blowgun-needle"
+  },
+  {
+    "index": "censer",
+    "name": "Censer",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 0,
+      "unit": "cp"
+    },
+    "weight": 0,
+    "desc": ["A censer, typically found in a priest's pack."],
+    "url": "/api/equipment/censer"
   },
   {
     "index": "crossbow-bolt",
@@ -2069,6 +2173,30 @@
     "url": "/api/equipment/sling-bullet"
   },
   {
+    "index": "amulet",
+    "name": "Amulet",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "holy-symbols",
+      "name": "Holy Symbols",
+      "url": "/api/equipment-categories/holy-symbols"
+    },
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "weight": 1,
+    "desc": [
+      "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic.",
+      "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
+    ],
+    "url": "/api/equipment/amulet"
+  },
+  {
     "index": "antitoxin-vial",
     "name": "Antitoxin (vial)",
     "equipment_category": {
@@ -2090,6 +2218,121 @@
       "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs."
     ],
     "url": "/api/equipment/antitoxin-vial"
+  },
+  {
+    "index": "crystal",
+    "name": "Crystal",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "arcane-foci",
+      "name": "Arcane Foci",
+      "url": "/api/equipment-categories/arcane-foci"
+    },
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    },
+    "weight": 1,
+    "desc": [
+      "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
+    ],
+    "url": "/api/equipment/crystal"
+  },
+  {
+    "index": "orb",
+    "name": "Orb",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "arcane-foci",
+      "name": "Arcane Foci",
+      "url": "/api/equipment-categories/arcane-foci"
+    },
+    "cost": {
+      "quantity": 20,
+      "unit": "gp"
+    },
+    "weight": 3,
+    "desc": [
+      "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
+    ],
+    "url": "/api/equipment/orb"
+  },
+  {
+    "index": "rod",
+    "name": "Rod",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "arcane-foci",
+      "name": "Arcane Foci",
+      "url": "/api/equipment-categories/arcane-foci"
+    },
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    },
+    "weight": 2,
+    "desc": [
+      "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
+    ],
+    "url": "/api/equipment/rod"
+  },
+  {
+    "index": "staff",
+    "name": "Staff",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "arcane-foci",
+      "name": "Arcane Foci",
+      "url": "/api/equipment-categories/arcane-foci"
+    },
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "weight": 4,
+    "desc": [
+      "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
+    ],
+    "url": "/api/equipment/staff"
+  },
+  {
+    "index": "wand",
+    "name": "Wand",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "arcane-foci",
+      "name": "Arcane Foci",
+      "url": "/api/equipment-categories/arcane-foci"
+    },
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    },
+    "weight": 1,
+    "desc": [
+      "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
+    ],
+    "url": "/api/equipment/wand"
   },
   {
     "index": "backpack",
@@ -2157,6 +2400,26 @@
     "url": "/api/equipment/bedroll"
   },
   {
+    "index": "bell",
+    "name": "Bell",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "weight": 0,
+    "url": "/api/equipment/bell"
+  },
+  {
     "index": "blanket",
     "name": "Blanket",
     "equipment_category": {
@@ -2175,6 +2438,29 @@
     },
     "weight": 3,
     "url": "/api/equipment/blanket"
+  },
+  {
+    "index": "book",
+    "name": "Book",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    },
+    "weight": 5,
+    "desc": [
+      "A book might contain poetry, historical accounts, information pertaining to a particular field of lore, diagrams and notes on gnomish contraptions, or just about anything else that can be represented using text or pictures. A book of spells is a spellbook (described later in this section)."
+    ],
+    "url": "/api/equipment/book"
   },
   {
     "index": "caltrops",
@@ -2224,6 +2510,27 @@
       "For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet."
     ],
     "url": "/api/equipment/candle"
+  },
+  {
+    "index": "case-crossbow-bolt",
+    "name": "Case, crossbow bolt",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "weight": 1,
+    "desc": ["This wooden case can hold up to twenty crossbow bolts."],
+    "url": "/api/equipment/case-crossbow-bolt"
   },
   {
     "index": "chest",
@@ -2370,6 +2677,122 @@
       "Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied."
     ],
     "url": "/api/equipment/crowbar"
+  },
+  {
+    "index": "sprig-of-mistletoe",
+    "name": "Sprig of mistletoe",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "druidic-foci",
+      "name": "Druidic Foci",
+      "url": "/api/equipment-categories/druidic-foci"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "weight": 0,
+    "desc": [
+      "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus."
+    ],
+    "url": "/api/equipment/sprig-of-mistletoe"
+  },
+  {
+    "index": "totem",
+    "name": "Totem",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "druidic-foci",
+      "name": "Druidic Foci",
+      "url": "/api/equipment-categories/druidic-foci"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "weight": 0,
+    "desc": [
+      "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus."
+    ],
+    "url": "/api/equipment/totem"
+  },
+  {
+    "index": "wooden-staff",
+    "name": "Wooden staff",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "druidic-foci",
+      "name": "Druidic Foci",
+      "url": "/api/equipment-categories/druidic-foci"
+    },
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "weight": 4,
+    "desc": [
+      "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus."
+    ],
+    "url": "/api/equipment/wooden-staff"
+  },
+  {
+    "index": "yew-wand",
+    "name": "Yew wand",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "druidic-foci",
+      "name": "Druidic Foci",
+      "url": "/api/equipment-categories/druidic-foci"
+    },
+    "cost": {
+      "quantity": 10,
+      "unit": "gp"
+    },
+    "weight": 1,
+    "desc": [
+      "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus."
+    ],
+    "url": "/api/equipment/yew-wand"
+  },
+  {
+    "index": "emblem",
+    "name": "Emblem",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "holy-symbols",
+      "name": "Holy Symbols",
+      "url": "/api/equipment-categories/holy-symbols"
+    },
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "weight": 0,
+    "desc": [
+      "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic.",
+      "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
+    ],
+    "url": "/api/equipment/emblem"
   },
   {
     "index": "grappling-hook",
@@ -2728,6 +3151,27 @@
     "url": "/api/equipment/lantern-hooded"
   },
   {
+    "index": "little-bag-of-sand",
+    "name": "Little bag of sand",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 0,
+      "unit": "cp"
+    },
+    "weight": 0,
+    "desc": ["A small bag of sand, typically found in a scholar's pack."],
+    "url": "/api/equipment/little-bag-of-sand"
+  },
+  {
     "index": "lock",
     "name": "Lock",
     "equipment_category": {
@@ -2838,6 +3282,26 @@
     "url": "/api/equipment/perfume-vial"
   },
   {
+    "index": "pick-miners",
+    "name": "Pick, miner's",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    },
+    "weight": 10,
+    "url": "/api/equipment/pick-miners"
+  },
+  {
     "index": "piton",
     "name": "Piton",
     "equipment_category": {
@@ -2882,6 +3346,46 @@
     "url": "/api/equipment/poison-basic-vial"
   },
   {
+    "index": "pole-10-foot",
+    "name": "Pole (10-foot)",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 5,
+      "unit": "cp"
+    },
+    "weight": 7,
+    "url": "/api/equipment/pole-10-foot"
+  },
+  {
+    "index": "pot-iron",
+    "name": "Pot, iron",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    },
+    "weight": 10,
+    "url": "/api/equipment/pot-iron"
+  },
+  {
     "index": "pouch",
     "name": "Pouch",
     "equipment_category": {
@@ -2903,6 +3407,50 @@
       "A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section)."
     ],
     "url": "/api/equipment/pouch"
+  },
+  {
+    "index": "quiver",
+    "name": "Quiver",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "weight": 1,
+    "desc": ["A quiver can hold up to 20 arrows."],
+    "url": "/api/equipment/quiver"
+  },
+  {
+    "index": "ram-portable",
+    "name": "Ram, portable",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 4,
+      "unit": "gp"
+    },
+    "weight": 35,
+    "desc": [
+      "You can use a portable ram to break down doors. When doing so, you gain a +4 bonus on the Strength check. One other character can help you use the ram, giving you advantage on this check."
+    ],
+    "url": "/api/equipment/ram-portable"
   },
   {
     "index": "rations-1-day",
@@ -2927,6 +3475,50 @@
     ],
     "stackable": true,
     "url": "/api/equipment/rations-1-day"
+  },
+  {
+    "index": "reliquary",
+    "name": "Reliquary",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "holy-symbols",
+      "name": "Holy Symbols",
+      "url": "/api/equipment-categories/holy-symbols"
+    },
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "weight": 2,
+    "desc": [
+      "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic.",
+      "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
+    ],
+    "url": "/api/equipment/reliquary"
+  },
+  {
+    "index": "robes",
+    "name": "Robes",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "gp"
+    },
+    "weight": 4,
+    "url": "/api/equipment/robes"
   },
   {
     "index": "rope-hempen-50-feet",
@@ -2975,6 +3567,49 @@
     "url": "/api/equipment/rope-silk-50-feet"
   },
   {
+    "index": "sack",
+    "name": "Sack",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "cp"
+    },
+    "weight": 0.5,
+    "url": "/api/equipment/sack"
+  },
+  {
+    "index": "scale-merchants",
+    "name": "Scale, merchant's",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "weight": 3,
+    "desc": [
+      "A scale includes a small balance, pans, and a suitable assortment of weights up to 2 pounds. With it, you can measure the exact weight of small objects, such as raw precious metals or trade goods, to help determine their worth."
+    ],
+    "url": "/api/equipment/scale-merchants"
+  },
+  {
     "index": "sealing-wax",
     "name": "Sealing wax",
     "equipment_category": {
@@ -2993,6 +3628,66 @@
     },
     "weight": 0,
     "url": "/api/equipment/sealing-wax"
+  },
+  {
+    "index": "shovel",
+    "name": "Shovel",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    },
+    "weight": 5,
+    "url": "/api/equipment/shovel"
+  },
+  {
+    "index": "signal-whistle",
+    "name": "Signal whistle",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 5,
+      "unit": "cp"
+    },
+    "weight": 0,
+    "url": "/api/equipment/signal-whistle"
+  },
+  {
+    "index": "signet-ring",
+    "name": "Signet ring",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 5,
+      "unit": "gp"
+    },
+    "weight": 0,
+    "url": "/api/equipment/signet-ring"
   },
   {
     "index": "small-knife",
@@ -3059,6 +3754,49 @@
     "url": "/api/equipment/spellbook"
   },
   {
+    "index": "spike-iron",
+    "name": "Spike, iron",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 1,
+      "unit": "sp"
+    },
+    "weight": 5,
+    "url": "/api/equipment/spike-iron"
+  },
+  {
+    "index": "spyglass",
+    "name": "Spyglass",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 1000,
+      "unit": "gp"
+    },
+    "weight": 1,
+    "desc": [
+      "Objects viewed through a spyglass are magnified to twice their size."
+    ],
+    "url": "/api/equipment/spyglass"
+  },
+  {
     "index": "string-10-feet",
     "name": "String (10 feet)",
     "equipment_category": {
@@ -3080,6 +3818,27 @@
       "A 10-foot length of string, typically found in a burglar's pack."
     ],
     "url": "/api/equipment/string-10-feet"
+  },
+  {
+    "index": "tent-two-person",
+    "name": "Tent, two-person",
+    "equipment_category": {
+      "index": "adventuring-gear",
+      "name": "Adventuring Gear",
+      "url": "/api/equipment-categories/adventuring-gear"
+    },
+    "gear_category": {
+      "index": "standard-gear",
+      "name": "Standard Gear",
+      "url": "/api/equipment-categories/standard-gear"
+    },
+    "cost": {
+      "quantity": 2,
+      "unit": "gp"
+    },
+    "weight": 20,
+    "desc": ["A simple and portable canvas shelter, a tent sleeps two."],
+    "url": "/api/equipment/tent-two-person"
   },
   {
     "index": "tinderbox",
@@ -3368,14 +4127,6 @@
           "url": "/api/equipment/chest"
         },
         "quantity": 1
-      },
-      {
-        "item": {
-          "index": "case-map-or-scroll",
-          "name": "Case, map or scroll",
-          "url": "/api/equipment/case-map-or-scroll"
-        },
-        "quantity": 2
       },
       {
         "item": {

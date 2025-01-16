@@ -7640,10 +7640,9 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/badger.png",
     "url": "/api/monsters/badger",
     "environments": "Forest"
-    "image": "/api/images/monsters/badger.png",
-    "url": "/api/monsters/badger"
   },
   {
     "index": "balor",
@@ -7928,10 +7927,9 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/bandit.png",
     "url": "/api/monsters/bandit",
     "environments": "Arctic, Coastal, Desert, Forest, Hill, Urban"
-    "image": "/api/images/monsters/bandit.png",
-    "url": "/api/monsters/bandit"
   },
   {
     "index": "bandit-captain",
@@ -8096,10 +8094,9 @@
         "desc": "The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon."
       }
     ],
+    "image": "/api/images/monsters/bandit-captain.png",
     "url": "/api/monsters/bandit-captain",
     "environments": "Arctic, Coastal, Desert, Forest, Hill, Urban"
-    "image": "/api/images/monsters/bandit-captain.png",
-    "url": "/api/monsters/bandit-captain"
   },
   {
     "index": "barbed-devil",
@@ -8317,10 +8314,9 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/barbed-devil.png",
     "url": "/api/monsters/barbed-devil",
     "environments": ""
-    "image": "/api/images/monsters/barbed-devil.png",
-    "url": "/api/monsters/barbed-devil"
   },
   {
     "index": "basilisk",
@@ -8938,10 +8934,9 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/black-bear.png",
     "url": "/api/monsters/black-bear",
     "environments": "Forest"
-    "image": "/api/images/monsters/black-bear.png",
-    "url": "/api/monsters/black-bear"
   },
   {
     "index": "black-dragon-wyrmling",
@@ -9222,10 +9217,9 @@
         "desc": "When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding."
       }
     ],
+    "image": "/api/images/monsters/black-pudding.png",
     "url": "/api/monsters/black-pudding",
     "environments": "Underdark"
-    "image": "/api/images/monsters/black-pudding.png",
-    "url": "/api/monsters/black-pudding"
   },
   {
     "index": "blink-dog",
@@ -9314,10 +9308,9 @@
         }
       }
     ],
+    "image": "/api/images/monsters/blink-dog.png",
     "url": "/api/monsters/blink-dog",
     "environments": "Forest"
-    "image": "/api/images/monsters/blink-dog.png",
-    "url": "/api/monsters/blink-dog"
   },
   {
     "index": "blood-hawk",
@@ -9394,10 +9387,9 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/blood-hawk.png",
     "url": "/api/monsters/blood-hawk",
     "environments": "Arctic, Coastal, Forest, Grassland, Hill, Mountain"
-    "image": "/api/images/monsters/blood-hawk.png",
-    "url": "/api/monsters/blood-hawk"
   },
   {
     "index": "blue-dragon-wyrmling",
@@ -9544,10 +9536,9 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/blue-dragon-wyrmling.png",
     "url": "/api/monsters/blue-dragon-wyrmling",
     "environments": ""
-    "image": "/api/images/monsters/blue-dragon-wyrmling.png",
-    "url": "/api/monsters/blue-dragon-wyrmling"
   },
   {
     "index": "boar",
@@ -9653,10 +9644,9 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/boar.png",
     "url": "/api/monsters/boar",
     "environments": "Forest, Grassland, Hill"
-    "image": "/api/images/monsters/boar.png",
-    "url": "/api/monsters/boar"
   },
   {
     "index": "bone-devil",
@@ -9995,10 +9985,9 @@
         }
       }
     ],
+    "image": "/api/images/monsters/brass-dragon-wyrmling.png",
     "url": "/api/monsters/brass-dragon-wyrmling",
     "environments": ""
-    "image": "/api/images/monsters/brass-dragon-wyrmling.png",
-    "url": "/api/monsters/brass-dragon-wyrmling"
   },
   {
     "index": "bronze-dragon-wyrmling",
@@ -10169,10 +10158,9 @@
         }
       }
     ],
+    "image": "/api/images/monsters/bronze-dragon-wyrmling.png",
     "url": "/api/monsters/bronze-dragon-wyrmling",
     "environments": ""
-    "image": "/api/images/monsters/bronze-dragon-wyrmling.png",
-    "url": "/api/monsters/bronze-dragon-wyrmling"
   },
   {
     "index": "brown-bear",
@@ -10277,10 +10265,9 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/brown-bear.png",
     "url": "/api/monsters/brown-bear",
     "environments": "Arctic, Forest, Hill"
-    "image": "/api/images/monsters/brown-bear.png",
-    "url": "/api/monsters/brown-bear"
   },
   {
     "index": "bugbear",
@@ -10393,10 +10380,9 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/bugbear.png",
     "url": "/api/monsters/bugbear",
     "environments": "Forest, Grassland, Underdark"
-    "image": "/api/images/monsters/bugbear.png",
-    "url": "/api/monsters/bugbear"
   },
   {
     "index": "bulette",
@@ -10530,10 +10516,9 @@
         ]
       }
     ],
-    "url": "/api/monsters/camel",
-    "environments": "Grassland, Hill, Mountain"
     "image": "/api/images/monsters/camel.png",
-    "url": "/api/monsters/camel"
+    "url": "/api/monsters/camel",
+    "environments": "Desert, Grassland, Hill, Mountain"
   },
   {
     "index": "cat",
@@ -11819,10 +11804,9 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/cockatrice.png",
     "url": "/api/monsters/cockatrice",
     "environments": "Grassland"
-    "image": "/api/images/monsters/cockatrice.png",
-    "url": "/api/monsters/cockatrice"
   },
   {
     "index": "commoner",
@@ -11880,10 +11864,9 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/commoner.png",
     "url": "/api/monsters/commoner",
     "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Urban"
-    "image": "/api/images/monsters/commoner.png",
-    "url": "/api/monsters/commoner"
   },
   {
     "index": "constrictor-snake",
@@ -11973,10 +11956,9 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/constrictor-snake.png",
     "url": "/api/monsters/constrictor-snake",
     "environments": "Desert, Forest, Swamp, Underwater"
-    "image": "/api/images/monsters/constrictor-snake.png",
-    "url": "/api/monsters/constrictor-snake"
   },
   {
     "index": "copper-dragon-wyrmling",
@@ -19036,7 +19018,7 @@
           "conditionType": {
             "index": "swallowed",
             "name": "Swallowed",
-            "url": "/api/features/infested"
+            "url": "/api/conditions/swallowed"
           },
           "duration": {
             "length": 1,
@@ -20218,7 +20200,7 @@
           "conditionType": {
             "index": "swallowed",
             "name": "Swallowed",
-            "url": "/api/features/infested"
+            "url": "/api/conditions/swallowed"
           },
           "duration": {
             "length": 1,
