@@ -150,5 +150,254 @@
       "Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink."
     ],
     "url": "/api/conditions/exhaustion"
+  },
+  {
+    "index": "exhaustion-1",
+    "name": "Exhaustion 1",
+    "desc": [
+      "1 - Disadvantage on ability checks, including initiative roll"
+    ],
+    "url": "/api/conditions/exhaustion-1"
+  },
+  {
+    "index": "exhaustion-2",
+    "name": "Exhaustion 2",
+    "desc": [
+      "1 - Disadvantage on ability checks, including initiative roll",
+      "2 - Speed halved"
+    ],
+    "url": "/api/conditions/exhaustion-2"
+  },
+  {
+    "index": "exhaustion-3",
+    "name": "Exhaustion 3",
+    "desc": [
+      "1 - Disadvantage on ability checks, including initiative roll",
+      "2 - Speed halved",
+      "3 - Disadvantage on attack rolls and saving throws"
+    ],
+    "url": "/api/conditions/exhaustion-3"
+  },
+  {
+    "index": "exhaustion-4",
+    "name": "Exhaustion 4",
+    "desc": [
+      "1 - Disadvantage on ability checks, including initiative roll",
+      "2 - Speed halved",
+      "3 - Disadvantage on attack rolls and saving throws",
+      "4 - Hit point maximum halved"
+    ],
+    "url": "/api/conditions/exhaustion-4"
+  },
+  {
+    "index": "exhaustion-5",
+    "name": "Exhaustion 5",
+    "desc": [
+      "1 - Disadvantage on ability checks, including initiative roll",
+      "2 - Speed halved",
+      "3 - Disadvantage on attack rolls and saving throws",
+      "4 - Hit point maximum halved",
+      "5 - Speed reduced to 0"
+    ],
+    "url": "/api/conditions/exhaustion-5"
+  },
+  {
+    "index": "exhaustion-6",
+    "name": "Exhaustion 6",
+    "desc": [
+      "1 - Disadvantage on ability checks, including initiative roll",
+      "2 - Speed halved",
+      "3 - Disadvantage on attack rolls and saving throws",
+      "4 - Hit point maximum halved",
+      "5 - Speed reduced to 0",
+      "6 - Death"
+    ],
+    "url": "/api/conditions/exhaustion-6"
+  },
+  {
+    "index": "enraged",
+    "name": "Enraged",
+    "desc": [
+      "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren't wearing heavy armor:",
+      "- You have advantage on Strength checks and Strength saving throws.",
+      "- When you make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll. This bonus increases as you level.",
+      "- You have Resistance to bludgeoning, piercing, and slashing damage.",
+      "If you are able to cast Spells, you can't cast them or concentrate on them while raging.",
+      "Your rage lasts for 1 minute. It ends early if you are knocked Unconscious or if Your Turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on Your Turn as a Bonus Action.",
+      "Once you have raged the maximum number of times for your barbarian level, you must finish a Long Rest before you can rage again. You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th."
+    ],
+    "url": "/api/conditions/enraged"
+  },
+  {
+    "index": "frenzied",
+    "name": "Frenzied",
+    "desc": [
+      "For the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns. When your rage ends, you suffer one level of exhaustion."
+    ],
+    "url": "/api/conditions/frenzied"
+  },
+  {
+    "index": "reckless",
+    "name": "Reckless",
+    "desc": [
+      "You throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
+    ],
+    "url": "/api/conditions/reckless"
+  },
+  {
+    "index": "dodging",
+    "name": "Dodging",
+    "desc": [
+      "When you take the Dodge action, you focus entirely on avoiding attacks. Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0."
+    ],
+    "url": "/api/conditions/dodging"
+  },
+  {
+    "index": "acid-resistance",
+    "name": "Acid resistance",
+    "desc": [
+      "You are resistant to acid. Any damage of this type is halved."
+    ],
+    "url": "/api/conditions/acid-resistance"
+  },
+  {
+    "index": "cold-resistance",
+    "name": "Cold resistance",
+    "desc": [
+      "You are resistant to cold. Any damage of this type is halved."
+    ],
+    "url": "/api/conditions/cold-resistance"
+  },
+  {
+    "index": "force-resistance",
+    "name": "Force resistance",
+    "desc": [
+      "You are resistant to magical force energy. Any damage of this type is halved."
+    ],
+    "url": "/api/conditions/force-resistance"
+  },
+  {
+    "index": "lightning-resistance",
+    "name": "Lightning resistance",
+    "desc": [
+      "You are resistant to lightning. Any damage of this type is halved."
+    ],
+    "url": "/api/conditions/lightning-resistance"
+  },
+  {
+    "index": "necrotic-resistance",
+    "name": "Necrotic resistance",
+    "desc": [
+      "You are resistant to necrotic damage. Any damage of this type is halved."
+    ],
+    "url": "/api/conditions/necrotic-resistance"
+  },
+  {
+    "index": "poison-resistance",
+    "name": "Poison resistance",
+    "desc": [
+      "You are resistant to poison. Any damage of this type is halved."
+    ],
+    "url": "/api/conditions/poison-resistance"
+  },
+  {
+    "index": "psychic-resistance",
+    "name": "Psychic resistance",
+    "desc": [
+      "You are resistant to psychic damage. Any damage of this type is halved."
+    ],
+    "url": "/api/conditions/psychic-resistance"
+  },
+  {
+    "index": "radiant-resistance",
+    "name": "Radiant resistance",
+    "desc": [
+      "You are resistant to radiant damage. Any damage of this type is halved."
+    ],
+    "url": "/api/conditions/radiant-resistance"
+  },
+  {
+    "index": "thunder-resistance",
+    "name": "Thunder resistance",
+    "desc": [
+      "You are resistant to thunder. Any damage of this type is halved."
+    ],
+    "url": "/api/conditions/thunder-resistance"
+  },
+  {
+    "index": "hasted",
+    "name": "Hasted",
+    "desc": [
+      "While under the effects of haste, a target's speed is doubled, it gains a +2 bonus to AC, it has advantage on dexterity saving throws, and it gains an additional action on each of its turns.",
+      "That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.",
+      "When the condition ends, the target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it."
+    ],
+    "url": "/api/conditions/hasted"
+  },
+  {
+    "index": "infested",
+    "name": "Infested",
+    "desc": [
+      "A parasite has attached itself and consumes blood every turn.",
+      "An action can be used to detach the parasite."
+    ],
+    "url": "/api/conditions/infested"
+  },
+  {
+    "index": "swallowed",
+    "name": "Swallowed",
+    "desc": [
+      "A creature swallowed by a larger host creature is blinded and restrained, and has total cover against attacks and other effects outside the host.",
+      "Acid damage is taken every turn while swallowed. If the host dies, a swallowed creature is no longer restrained by it and can escape."
+    ],
+    "url": "/api/conditions/swallowed"
+  },
+  {
+    "index": "drained-of-strength",
+    "name": "Drained of strength",
+    "desc": [
+      "Your Strength score has been reduced. The reduction lasts until a short or long rest is taken."
+    ],
+    "url": "/api/conditions/drained-of-strength"
+  },
+  {
+    "index": "weakened",
+    "name": "Weakened",
+    "desc": [
+      "A weakened creature has disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    ],
+    "url": "/api/conditions/weakened"
+  },
+  {
+    "index": "slowed",
+    "name": "Slowed",
+    "desc": [
+      "A slowed creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save."
+    ],
+    "url": "/api/conditions/slowed"
+  },
+  {
+    "index": "drained-of-life",
+    "name": "Drained of life",
+    "desc": [
+      "Your hit point maximum has been reduced. This reduction lasts until a long rest has been taken."
+    ],
+    "url": "/api/conditions/drained-of-life"
+  },
+  {
+    "index": "disengaged",
+    "name": "Disengaged",
+    "desc": [
+      "When disengaged from combat, movement away from an adversary doesn’t provoke opportunity attacks for the rest of the turn."
+    ],
+    "url": "/api/conditions/disengaged"
+  },
+  {
+    "index": "surprised",
+    "name": "Surprised",
+    "desc": [
+      "A surprised creature can't move or take an action on their first turn of the combat, and can't take a reaction until that turn ends. A member of a group can be surprised even if the other members aren't."
+    ],
+    "url": "/api/conditions/surprised"
   }
 ]
