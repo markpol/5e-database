@@ -2270,7 +2270,11 @@
     },
     "enchantment": {
       "extra_damage": {
-        "damage_type": "fire",
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/damage-types/fire"
+        },
         "damage_dice": "2d6"
       }
     },
@@ -2327,7 +2331,11 @@
     },
     "enchantment": {
       "extra_damage": {
-        "damage_type": "cold",
+        "damage_type": {
+          "index": "cold",
+          "name": "Cold",
+          "url": "/api/damage-types/cold"
+        },
         "damage_dice": "1d6"
       }
     },
