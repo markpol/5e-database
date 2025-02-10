@@ -2382,9 +2382,10 @@
     },
     "requires_attunement": true,
     "effect": {
-      "ability_score": {
-        "name": "strength",
-        "bonus": 19
+      "ability_score_modifier": 
+      {
+        "ability": "str",
+        "amount": 19
       },
       "duration":  {
         "unit": "while attuned",
