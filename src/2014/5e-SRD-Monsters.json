@@ -19011,11 +19011,11 @@
               "name": "Grappled",
               "url": "/api/conditions/grappled"
             },
-            "max-size": "Small"
+            "max_size": "Small"
           }
         },
         "condition": {
-          "conditionType": {
+          "condition_type": {
             "index": "swallowed",
             "name": "Swallowed",
             "url": "/api/conditions/swallowed"
@@ -20193,11 +20193,11 @@
               "name": "Grappled",
               "url": "/api/conditions/grappled"
             },
-            "max-size": "Medium"
+            "max_size": "Medium"
           }
         },
         "condition": {
-          "conditionType": {
+          "condition_type": {
             "index": "swallowed",
             "name": "Swallowed",
             "url": "/api/conditions/swallowed"
