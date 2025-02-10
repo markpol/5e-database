@@ -238,9 +238,9 @@
       "unit": "gp"
     },
     "enchantment": {
-      "type": "applied to existing equipment",
+      "type": "armor",
       "label_prefix": "+1 Magic",
-      "armour_class_bonus": 1
+      "armor_class_bonus": 1
     },
     "url": "/api/magic-items/armor-1"
   },
@@ -266,9 +266,9 @@
       "unit": "gp"
     },
     "enchantment": {
-      "type": "applied to existing equipment",
+      "type": "armor",
       "label_prefix": "+2 Magic",
-      "armour_class_bonus": 2
+      "armor_class_bonus": 2
     },
     "url": "/api/magic-items/armor-2"
   },
@@ -294,9 +294,9 @@
       "unit": "gp"
     },
     "enchantment": {
-      "type": "applied to existing equipment",
+      "type": "armor",
       "label_prefix": "+3 Magic",
-      "armour_class_bonus": 3
+      "armor_class_bonus": 3
     },
     "url": "/api/magic-items/armor-3"
   },
@@ -2079,8 +2079,10 @@
       "unit": "gp"
     },
     "weight": 65,
-    "effect": {
-      "armor_class_modifier": 2
+    "enchantment": {
+      "type": "armor",
+      "label_prefix": "Dwarven",
+      "armor_class_bonus": 2
     }
   },
   {
@@ -2151,8 +2153,12 @@
       "unit": "gp"
     },
     "weight": 20,
+    "enchantment": {
+      "type": "armor",
+      "label_prefix": "Elven",
+      "armor_class_bonus": 1
+    },
     "effect": {
-      "armor_class_modifier": 1,
       "proficiency_modifier": {
         "grants": [
           "medium-armor"
@@ -2269,6 +2275,8 @@
       "unit": "gp"
     },
     "enchantment": {
+      "type": "weapon",
+      "label_prefix": "Flame Tongue",
       "extra_damage": {
         "damage_type": {
           "index": "fire",
@@ -2330,6 +2338,8 @@
       "unit": "gp"
     },
     "enchantment": {
+      "type": "weapon",
+      "label_prefix": "Frost Brand",
       "extra_damage": {
         "damage_type": {
           "index": "cold",
@@ -7359,7 +7369,7 @@
       "unit": "gp"
     },
     "enchantment": {
-      "type": "applied to existing equipment",
+      "type": "weapon",
       "label_prefix": "+1 Magic",
       "damage_bonus": 1,
       "to_hit_bonus": 1
@@ -7388,7 +7398,7 @@
       "unit": "gp"
     },
     "enchantment": {
-      "type": "applied to existing equipment",
+      "type": "weapon",
       "label_prefix": "+2 Magic",
       "damage_bonus": 2,
       "to_hit_bonus": 2
@@ -7417,7 +7427,7 @@
       "unit": "gp"
     },
     "enchantment": {
-      "type": "applied to existing equipment",
+      "type": "weapon",
       "label_prefix": "+3 Magic",
       "damage_bonus": 3,
       "to_hit_bonus": 3
