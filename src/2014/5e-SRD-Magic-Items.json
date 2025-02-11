@@ -1334,6 +1334,7 @@
         "length": 1
       }
     },
+    "requires_attunement": true,
     "weight": 2
   },
   {
@@ -1636,6 +1637,7 @@
     },
     "requires_attunement": true,
     "effect": {
+      "condition": "acid-resistance",
       "damage_type_resistance": "acid",
       "duration":  {
         "unit": "while attuned",
@@ -1676,6 +1678,7 @@
     },
     "requires_attunement": true,
     "effect": {
+      "condition": "lightning-resistance",
       "damage_type_resistance": "lightning",
       "duration":  {
         "unit": "while attuned",
@@ -1716,6 +1719,7 @@
     },
     "requires_attunement": true,
     "effect": {
+      "condition": "fire-resistance",
       "damage_type_resistance": "fire",
       "duration":  {
         "unit": "while attuned",
@@ -1756,6 +1760,7 @@
     },
     "requires_attunement": true,
     "effect": {
+      "condition": "lightning-resistance",
       "damage_type_resistance": "lightning",
       "duration":  {
         "unit": "while attuned",
@@ -1796,6 +1801,7 @@
     },
     "requires_attunement": true,
     "effect": {
+      "condition": "acid-resistance",
       "damage_type_resistance": "acid",
       "duration":  {
         "unit": "while attuned",
@@ -1836,6 +1842,7 @@
     },
     "requires_attunement": true,
     "effect": {
+      "condition": "fire-resistance",
       "damage_type_resistance": "fire",
       "duration":  {
         "unit": "while attuned",
@@ -1876,6 +1883,7 @@
     },
     "requires_attunement": true,
     "effect": {
+      "condition": "poison-resistance",
       "damage_type_resistance": "poison",
       "duration":  {
         "unit": "while attuned",
@@ -1916,6 +1924,7 @@
     },
     "requires_attunement": true,
     "effect": {
+      "condition": "fire-resistance",
       "damage_type_resistance": "fire",
       "duration":  {
         "unit": "while attuned",
@@ -1956,6 +1965,7 @@
     },
     "requires_attunement": true,
     "effect": {
+      "condition": "cold-resistance",
       "damage_type_resistance": "cold",
       "duration":  {
         "unit": "while attuned",
@@ -1996,6 +2006,7 @@
     },
     "requires_attunement": true,
     "effect": {
+      "condition": "cold-resistance",
       "damage_type_resistance": "cold",
       "duration":  {
         "unit": "while attuned",
@@ -2350,6 +2361,7 @@
       }
     },
     "effect": {
+      "condition": "fire-resistance",
       "damage_type_resistance": "fire",
       "duration":  {
         "unit": "while equipped",
