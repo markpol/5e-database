@@ -269,6 +269,14 @@
     "url": "/api/conditions/cold-resistance"
   },
   {
+    "index": "fire-resistance",
+    "name": "Fire resistance",
+    "desc": [
+      "You are resistant to fire. Any damage of this type is halved."
+    ],
+    "url": "/api/conditions/fire-resistance"
+  },
+  {
     "index": "force-resistance",
     "name": "Force resistance",
     "desc": [

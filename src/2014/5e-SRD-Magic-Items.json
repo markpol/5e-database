@@ -730,6 +730,21 @@
     "cost": {
       "quantity": 6000,
       "unit": "gp"
+    },
+    "requires_attunement": true,
+    "weight": 2,
+    "effect": {
+      "ability_score_modifier": {
+        "ability": "con",
+        "increase": 2,
+        "max": 20
+      },
+      "damage_type_resistance": "poison",
+      "condition": "poison-resistance",
+      "duration": {
+        "unit": "while attuned",
+        "length": 1
+      }
     }
   },
   {
@@ -1643,7 +1658,11 @@
         "unit": "while attuned",
         "length": 1
       },
-      "armor_class_modifier": 1
+      "enchantment": {
+        "type": "armor",
+        "label_prefix": "Black Dragon",
+        "armor_class_bonus": 1
+      }
     }
   },
   {
@@ -1684,7 +1703,11 @@
         "unit": "while attuned",
         "length": 1
       },
-      "armor_class_modifier": 1
+      "enchantment": {
+        "type": "armor",
+        "label_prefix": "Blue Dragon",
+        "armor_class_bonus": 1
+      }
     }
   },
   {
@@ -1725,7 +1748,11 @@
         "unit": "while attuned",
         "length": 1
       },
-      "armor_class_modifier": 1
+      "enchantment": {
+        "type": "armor",
+        "label_prefix": "Brass Dragon",
+        "armor_class_bonus": 1
+      }
     }
   },
   {
@@ -1766,7 +1793,11 @@
         "unit": "while attuned",
         "length": 1
       },
-      "armor_class_modifier": 1
+      "enchantment": {
+        "type": "armor",
+        "label_prefix": "Bronze Dragon",
+        "armor_class_bonus": 1
+      }
     }
   },
   {
@@ -1807,7 +1838,11 @@
         "unit": "while attuned",
         "length": 1
       },
-      "armor_class_modifier": 1
+      "enchantment": {
+        "type": "armor",
+        "label_prefix": "Copper Dragon",
+        "armor_class_bonus": 1
+      }
     }
   },
   {
@@ -1848,7 +1883,11 @@
         "unit": "while attuned",
         "length": 1
       },
-      "armor_class_modifier": 1
+      "enchantment": {
+        "type": "armor",
+        "label_prefix": "Gold Dragon",
+        "armor_class_bonus": 1
+      }
     }
   },
   {
@@ -1889,7 +1928,11 @@
         "unit": "while attuned",
         "length": 1
       },
-      "armor_class_modifier": 1
+      "enchantment": {
+        "type": "armor",
+        "label_prefix": "Green Dragon",
+        "armor_class_bonus": 1
+      }
     }
   },
   {
@@ -1930,7 +1973,11 @@
         "unit": "while attuned",
         "length": 1
       },
-      "armor_class_modifier": 1
+      "enchantment": {
+        "type": "armor",
+        "label_prefix": "Red Dragon",
+        "armor_class_bonus": 1
+      }
     }
   },
   {
@@ -1971,7 +2018,11 @@
         "unit": "while attuned",
         "length": 1
       },
-      "armor_class_modifier": 1
+      "enchantment": {
+        "type": "armor",
+        "label_prefix": "Silver Dragon",
+        "armor_class_bonus": 1
+      }
     }
   },
   {
@@ -2005,14 +2056,18 @@
       "unit": "gp"
     },
     "requires_attunement": true,
+    "enchantment": {
+      "type": "armor",
+      "label_prefix": "White Dragon",
+      "armor_class_bonus": 1
+    },
     "effect": {
       "condition": "cold-resistance",
       "damage_type_resistance": "cold",
       "duration":  {
         "unit": "while attuned",
         "length": 1
-      },
-      "armor_class_modifier": 1
+      }
     }
   },
   {
@@ -2217,7 +2272,19 @@
       "Wondrous item, uncommon",
       "These crystal lenses fit over the eyes. While wearing them, you can see much better than normal out to a range of 1 foot. You have advantage on Intelligence (Investigation) checks that rely on sight while searching an area or studying an object within that range."
     ],
-    "url": "/api/magic-items/eyes-of-minute-seeing"
+    "url": "/api/magic-items/eyes-of-minute-seeing",
+    "weight": 0,
+    "requires_attunement": false,
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "effect": {
+      "skill_check_modifier": {
+        "skill": "investigation",
+        "gives_advantage": true
+      }
+    }
   },
   {
     "index": "eyes-of-the-eagle",
@@ -2236,7 +2303,19 @@
       "Wondrous item, uncommon (requires attunement)",
       "These crystal lenses fit over the eyes. While wearing them, you have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across."
     ],
-    "url": "/api/magic-items/eyes-of-the-eagle"
+    "url": "/api/magic-items/eyes-of-the-eagle",
+    "weight": 0,
+    "requires_attunement": false,
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "effect": {
+      "skill_check_modifier": {
+        "skill": "investigation",
+        "gives_advantage": true
+      }
+    }
   },
   {
     "index": "flame-tongue",
@@ -2481,7 +2560,22 @@
       "Wondrous item, uncommon (requires attunement)",
       "While wearing these gloves, climbing and swimming don't cost you extra movement, and you gain a +5 bonus to Strength (Athletics) checks made to climb or swim."
     ],
-    "url": "/api/magic-items/gloves-of-swimming-and-climbing"
+    "url": "/api/magic-items/gloves-of-swimming-and-climbing",
+    "cost": {
+      "quantity": 2000,
+      "unit": "gp"
+    },
+    "requires_attunement": true,
+    "effect": {
+      "skill_check_modifier": {
+        "skill": "athletics",
+        "bonus": 5
+      },
+      "duration":  {
+        "unit": "while attuned",
+        "length": 1
+      }
+    }
   },
   {
     "index": "goggles-of-night",
@@ -3072,7 +3166,23 @@
       "Wondrous item, very rare",
       "This book contains health and diet tips, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Constitution score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
     ],
-    "url": "/api/magic-items/manual-of-bodily-health"
+    "url": "/api/magic-items/manual-of-bodily-health",
+    "requires_attunement": false,
+    "is_consumable": true,
+    "effect": {
+      "ability_score_modifier": {
+        "ability": "con",
+        "increase": 2
+      },
+      "duration": {
+        "unit": "permanent",
+        "length": 1
+      }
+    },
+    "cost": {
+      "quantity": 50000,
+      "unit": "gp"
+    }
   },
   {
     "index": "manual-of-gainful-exercise",
@@ -3091,7 +3201,23 @@
       "Wondrous item, very rare",
       "This book describes fitness exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Strength score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
     ],
-    "url": "/api/magic-items/manual-of-gainful-exercise"
+    "url": "/api/magic-items/manual-of-gainful-exercise",
+    "requires_attunement": false,
+    "is_consumable": true,
+    "effect": {
+      "ability_score_modifier": {
+        "ability": "str",
+        "increase": 2
+      },
+      "duration": {
+        "unit": "permanent",
+        "length": 1
+      }
+    },
+    "cost": {
+      "quantity": 50000,
+      "unit": "gp"
+    }
   },
   {
     "index": "manual-of-golems",
@@ -3242,7 +3368,23 @@
       "Wondrous item, very rare",
       "This book contains coordination and balance exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Dexterity score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
     ],
-    "url": "/api/magic-items/manual-of-quickness-of-action"
+    "url": "/api/magic-items/manual-of-quickness-of-action",
+    "requires_attunement": false,
+    "is_consumable": true,
+    "effect": {
+      "ability_score_modifier": {
+        "ability": "dex",
+        "increase": 2
+      },
+      "duration": {
+        "unit": "permanent",
+        "length": 1
+      }
+    },
+    "cost": {
+      "quantity": 50000,
+      "unit": "gp"
+    }
   },
   {
     "index": "marvelous-pigments",
@@ -6843,7 +6985,23 @@
       "Wondrous item, very rare",
       "This book contains memory and logic exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Intelligence score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
     ],
-    "url": "/api/magic-items/tome-of-clear-thought"
+    "url": "/api/magic-items/tome-of-clear-thought",
+    "requires_attunement": false,
+    "is_consumable": true,
+    "effect": {
+      "ability_score_modifier": {
+        "ability": "int",
+        "increase": 2
+      },
+      "duration": {
+        "unit": "permanent",
+        "length": 1
+      }
+    },
+    "cost": {
+      "quantity": 50000,
+      "unit": "gp"
+    }
   },
   {
     "index": "tome-of-leadership-and-influence",
@@ -6862,7 +7020,23 @@
       "Wondrous item, very rare",
       "This book contains guidelines for influencing and charming others, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Charisma score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
     ],
-    "url": "/api/magic-items/tome-of-leadership-and-influence"
+    "url": "/api/magic-items/tome-of-leadership-and-influence",
+    "requires_attunement": false,
+    "is_consumable": true,
+    "effect": {
+      "ability_score_modifier": {
+        "ability": "cha",
+        "increase": 2
+      },
+      "duration": {
+        "unit": "permanent",
+        "length": 1
+      }
+    },
+    "cost": {
+      "quantity": 50000,
+      "unit": "gp"
+    }
   },
   {
     "index": "tome-of-understanding",
@@ -6881,7 +7055,23 @@
       "Wondrous item, very rare",
       "This book contains intuition and insight exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's contents and practicing its guidelines, your Wisdom score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century."
     ],
-    "url": "/api/magic-items/tome-of-understanding"
+    "url": "/api/magic-items/tome-of-understanding",
+    "requires_attunement": false,
+    "is_consumable": true,
+    "effect": {
+      "ability_score_modifier": {
+        "ability": "wis",
+        "increase": 2
+      },
+      "duration": {
+        "unit": "permanent",
+        "length": 1
+      }
+    },
+    "cost": {
+      "quantity": 50000,
+      "unit": "gp"
+    }
   },
   {
     "index": "trident-of-fish-command",
