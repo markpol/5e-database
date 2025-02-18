@@ -734,6 +734,11 @@
     "requires_attunement": true,
     "weight": 2,
     "effect": {
+      "trait_modifier": {
+        "grants": [
+          "dwarven-resistance"
+        ]
+      },
       "ability_score_modifier": {
         "ability": "con",
         "increase": 2,
@@ -1657,12 +1662,12 @@
       "duration":  {
         "unit": "while attuned",
         "length": 1
-      },
-      "enchantment": {
-        "type": "armor",
-        "label_prefix": "Black Dragon",
-        "armor_class_bonus": 1
       }
+    },
+    "enchantment": {
+      "type": "armor",
+      "label_prefix": "Black Dragon",
+      "armor_class_bonus": 1
     }
   },
   {
@@ -1702,12 +1707,12 @@
       "duration":  {
         "unit": "while attuned",
         "length": 1
-      },
-      "enchantment": {
-        "type": "armor",
-        "label_prefix": "Blue Dragon",
-        "armor_class_bonus": 1
       }
+    },
+    "enchantment": {
+      "type": "armor",
+      "label_prefix": "Blue Dragon",
+      "armor_class_bonus": 1
     }
   },
   {
@@ -1747,12 +1752,12 @@
       "duration":  {
         "unit": "while attuned",
         "length": 1
-      },
-      "enchantment": {
-        "type": "armor",
-        "label_prefix": "Brass Dragon",
-        "armor_class_bonus": 1
       }
+    },
+    "enchantment": {
+      "type": "armor",
+      "label_prefix": "Brass Dragon",
+      "armor_class_bonus": 1
     }
   },
   {
@@ -1792,12 +1797,12 @@
       "duration":  {
         "unit": "while attuned",
         "length": 1
-      },
-      "enchantment": {
-        "type": "armor",
-        "label_prefix": "Bronze Dragon",
-        "armor_class_bonus": 1
       }
+    },
+    "enchantment": {
+      "type": "armor",
+      "label_prefix": "Bronze Dragon",
+      "armor_class_bonus": 1
     }
   },
   {
@@ -1837,12 +1842,12 @@
       "duration":  {
         "unit": "while attuned",
         "length": 1
-      },
-      "enchantment": {
-        "type": "armor",
-        "label_prefix": "Copper Dragon",
-        "armor_class_bonus": 1
       }
+    },
+    "enchantment": {
+      "type": "armor",
+      "label_prefix": "Copper Dragon",
+      "armor_class_bonus": 1
     }
   },
   {
@@ -1882,12 +1887,12 @@
       "duration":  {
         "unit": "while attuned",
         "length": 1
-      },
-      "enchantment": {
-        "type": "armor",
-        "label_prefix": "Gold Dragon",
-        "armor_class_bonus": 1
       }
+    },
+    "enchantment": {
+      "type": "armor",
+      "label_prefix": "Gold Dragon",
+      "armor_class_bonus": 1
     }
   },
   {
@@ -1927,12 +1932,12 @@
       "duration":  {
         "unit": "while attuned",
         "length": 1
-      },
-      "enchantment": {
-        "type": "armor",
-        "label_prefix": "Green Dragon",
-        "armor_class_bonus": 1
       }
+    },
+    "enchantment": {
+      "type": "armor",
+      "label_prefix": "Green Dragon",
+      "armor_class_bonus": 1
     }
   },
   {
@@ -1972,12 +1977,12 @@
       "duration":  {
         "unit": "while attuned",
         "length": 1
-      },
-      "enchantment": {
-        "type": "armor",
-        "label_prefix": "Red Dragon",
-        "armor_class_bonus": 1
       }
+    },
+    "enchantment": {
+      "type": "armor",
+      "label_prefix": "Red Dragon",
+      "armor_class_bonus": 1
     }
   },
   {
@@ -2017,12 +2022,12 @@
       "duration":  {
         "unit": "while attuned",
         "length": 1
-      },
-      "enchantment": {
-        "type": "armor",
-        "label_prefix": "Silver Dragon",
-        "armor_class_bonus": 1
       }
+    },
+    "enchantment": {
+      "type": "armor",
+      "label_prefix": "Silver Dragon",
+      "armor_class_bonus": 1
     }
   },
   {
