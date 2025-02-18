@@ -736,7 +736,7 @@
     "effect": {
       "trait_modifier": {
         "grants": [
-          "dwarven-resistance"
+          "dwarven-resilience"
         ]
       },
       "ability_score_modifier": {
