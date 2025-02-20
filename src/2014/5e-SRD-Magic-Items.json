@@ -745,7 +745,6 @@
         "max": 20
       },
       "damage_type_resistance": "poison",
-      "condition": "poison-resistance",
       "duration": {
         "unit": "while attuned",
         "length": 1
@@ -1122,7 +1121,6 @@
     ],
     "url": "/api/magic-items/boots-of-the-winterlands",
     "effect": {
-      "condition": "cold-resistance",
       "damage_type_resistance": "cold",
       "duration":  {
         "unit": "while attuned",
@@ -1205,7 +1203,6 @@
         "unit": "while attuned",
         "length": 1
       },
-      "condition": "force-resistance",
       "damage_type_resistance": "force"
     },
     "requires_attunement": true,
@@ -1657,7 +1654,6 @@
     },
     "requires_attunement": true,
     "effect": {
-      "condition": "acid-resistance",
       "damage_type_resistance": "acid",
       "duration":  {
         "unit": "while attuned",
@@ -1702,7 +1698,6 @@
     },
     "requires_attunement": true,
     "effect": {
-      "condition": "lightning-resistance",
       "damage_type_resistance": "lightning",
       "duration":  {
         "unit": "while attuned",
@@ -1747,7 +1742,6 @@
     },
     "requires_attunement": true,
     "effect": {
-      "condition": "fire-resistance",
       "damage_type_resistance": "fire",
       "duration":  {
         "unit": "while attuned",
@@ -1792,7 +1786,6 @@
     },
     "requires_attunement": true,
     "effect": {
-      "condition": "lightning-resistance",
       "damage_type_resistance": "lightning",
       "duration":  {
         "unit": "while attuned",
@@ -1837,7 +1830,6 @@
     },
     "requires_attunement": true,
     "effect": {
-      "condition": "acid-resistance",
       "damage_type_resistance": "acid",
       "duration":  {
         "unit": "while attuned",
@@ -1882,7 +1874,6 @@
     },
     "requires_attunement": true,
     "effect": {
-      "condition": "fire-resistance",
       "damage_type_resistance": "fire",
       "duration":  {
         "unit": "while attuned",
@@ -1927,7 +1918,6 @@
     },
     "requires_attunement": true,
     "effect": {
-      "condition": "poison-resistance",
       "damage_type_resistance": "poison",
       "duration":  {
         "unit": "while attuned",
@@ -1972,7 +1962,6 @@
     },
     "requires_attunement": true,
     "effect": {
-      "condition": "fire-resistance",
       "damage_type_resistance": "fire",
       "duration":  {
         "unit": "while attuned",
@@ -2017,7 +2006,6 @@
     },
     "requires_attunement": true,
     "effect": {
-      "condition": "cold-resistance",
       "damage_type_resistance": "cold",
       "duration":  {
         "unit": "while attuned",
@@ -2067,7 +2055,6 @@
       "armor_class_bonus": 1
     },
     "effect": {
-      "condition": "cold-resistance",
       "damage_type_resistance": "cold",
       "duration":  {
         "unit": "while attuned",
@@ -2445,7 +2432,6 @@
       }
     },
     "effect": {
-      "condition": "fire-resistance",
       "damage_type_resistance": "fire",
       "duration":  {
         "unit": "while equipped",
@@ -4493,7 +4479,6 @@
     },
     "is_consumable": true,
     "effect": {
-      "condition": "acid-resistance",
       "damage_type_resistance": "acid",
       "duration": {
         "length": 1,
@@ -4525,7 +4510,6 @@
     },
     "is_consumable": true,
     "effect": {
-      "condition": "cold-resistance",
       "damage_type_resistance": "cold",
       "duration": {
         "length": 1,
@@ -4557,7 +4541,6 @@
     },
     "is_consumable": true,
     "effect": {
-      "condition": "fire-resistance",
       "damage_type_resistance": "fire",
       "duration": {
         "length": 1,
@@ -4589,7 +4572,6 @@
     },
     "is_consumable": true,
     "effect": {
-      "condition": "force-resistance",
       "damage_type_resistance": "force",
       "duration": {
         "length": 1,
@@ -4621,7 +4603,6 @@
     },
     "is_consumable": true,
     "effect": {
-      "condition": "lightning-resistance",
       "damage_type_resistance": "lightning",
       "duration": {
         "length": 1,
@@ -4653,7 +4634,6 @@
     },
     "is_consumable": true,
     "effect": {
-      "condition": "necrotic-resistance",
       "damage_type_resistance": "necrotic",
       "duration": {
         "length": 1,
@@ -4685,7 +4665,6 @@
     },
     "is_consumable": true,
     "effect": {
-      "condition": "poison-resistance",
       "damage_type_resistance": "poison",
       "duration": {
         "length": 1,
@@ -4717,7 +4696,6 @@
     },
     "is_consumable": true,
     "effect": {
-      "condition": "psychic-resistance",
       "damage_type_resistance": "psychic",
       "duration": {
         "length": 1,
@@ -4749,7 +4727,6 @@
     },
     "is_consumable": true,
     "effect": {
-      "condition": "radiant-resistance",
       "damage_type_resistance": "radiant",
       "duration": {
         "length": 1,
@@ -4781,7 +4758,6 @@
     },
     "is_consumable": true,
     "effect": {
-      "condition": "thunder-resistance",
       "damage_type_resistance": "thunder",
       "duration": {
         "length": 1,
@@ -5350,7 +5326,6 @@
     },
     "effect": {
       "damage_type_resistance": "acid",
-      "condition": "acid-resistance",
       "duration": {
         "length": 1,
         "unit": "while attuned"
@@ -5382,7 +5357,6 @@
     },
     "effect": {
       "damage_type_resistance": "cold",
-      "condition": "cold-resistance",
       "duration": {
         "length": 1,
         "unit": "while attuned"
@@ -5414,7 +5388,6 @@
     },
     "effect": {
       "damage_type_resistance": "fire",
-      "condition": "fire-resistance",
       "duration": {
         "length": 1,
         "unit": "while attuned"
@@ -5446,7 +5419,6 @@
     },
     "effect": {
       "damage_type_resistance": "force",
-      "condition": "force-resistance",
       "duration": {
         "length": 1,
         "unit": "while attuned"
@@ -5478,7 +5450,6 @@
     },
     "effect": {
       "damage_type_resistance": "lightning",
-      "condition": "lightning-resistance",
       "duration": {
         "length": 1,
         "unit": "while attuned"
@@ -5510,7 +5481,6 @@
     },
     "effect": {
       "damage_type_resistance": "necrotic",
-      "condition": "necrotic-resistance",
       "duration": {
         "length": 1,
         "unit": "while attuned"
@@ -5542,7 +5512,6 @@
     },
     "effect": {
       "damage_type_resistance": "poison",
-      "condition": "poison-resistance",
       "duration": {
         "length": 1,
         "unit": "while attuned"
@@ -5574,7 +5543,6 @@
     },
     "effect": {
       "damage_type_resistance": "psychic",
-      "condition": "psychic-resistance",
       "duration": {
         "length": 1,
         "unit": "while attuned"
@@ -5606,7 +5574,6 @@
     },
     "effect": {
       "damage_type_resistance": "radiant",
-      "condition": "radiant-resistance",
       "duration": {
         "length": 1,
         "unit": "while attuned"
@@ -5638,7 +5605,6 @@
     },
     "effect": {
       "damage_type_resistance": "thunder",
-      "condition": "thunder-resistance",
       "duration": {
         "length": 1,
         "unit": "while attuned"
