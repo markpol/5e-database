@@ -148,7 +148,9 @@
     "effect": {
       "ability_score_modifier": {
         "ability": "con",
-        "amount": 19
+        "amount": {
+          "total": 19
+        }
       },
       "duration": {
         "unit": "while attuned",
@@ -741,8 +743,10 @@
       },
       "ability_score_modifier": {
         "ability": "con",
-        "increase": 2,
-        "max": 20
+        "amount": {
+          "increase": 2,
+          "max": 20
+        }
       },
       "damage_type_resistance": "poison",
       "duration": {
@@ -834,7 +838,9 @@
     "effect": {
       "ability_score_modifier": {
         "ability": "str",
-        "amount": 21
+        "amount": {
+          "total": 21
+        }
       },
       "duration":  {
         "unit": "while attuned",
@@ -869,7 +875,9 @@
     "effect": {
       "ability_score_modifier": {
         "ability": "str",
-        "amount": 23
+        "amount": {
+          "total": 23
+        }
       },
       "duration":  {
         "unit": "while attuned",
@@ -904,7 +912,9 @@
     "effect": {
       "ability_score_modifier": {
         "ability": "str",
-        "amount": 23
+        "amount": {
+          "total": 23
+        }
       },
       "duration":  {
         "unit": "while attuned",
@@ -939,7 +949,9 @@
     "effect": {
       "ability_score_modifier": {
         "ability": "str",
-        "amount": 25
+        "amount": {
+          "total": 25
+        }
       },
       "duration":  {
         "unit": "while attuned",
@@ -974,7 +986,9 @@
     "effect": {
       "ability_score_modifier": {
         "ability": "str",
-        "amount": 27
+        "amount": {
+          "total": 27
+        }
       },
       "duration":  {
         "unit": "while attuned",
@@ -1009,7 +1023,9 @@
     "effect": {
       "ability_score_modifier": {
         "ability": "str",
-        "amount": 29
+        "amount": {
+          "total": 29
+        }
       },
       "duration": {
         "unit": "while attuned",
@@ -2467,7 +2483,9 @@
       "ability_score_modifier": 
       {
         "ability": "str",
-        "amount": 19
+        "amount": {
+          "total": 29
+        }
       },
       "duration":  {
         "unit": "while attuned",
@@ -3163,7 +3181,9 @@
     "effect": {
       "ability_score_modifier": {
         "ability": "con",
-        "increase": 2
+        "amount": {
+          "increase": 2
+        }
       },
       "duration": {
         "unit": "permanent",
@@ -3198,7 +3218,9 @@
     "effect": {
       "ability_score_modifier": {
         "ability": "str",
-        "increase": 2
+        "amount": {
+          "increase": 2
+        }
       },
       "duration": {
         "unit": "permanent",
@@ -3365,7 +3387,9 @@
     "effect": {
       "ability_score_modifier": {
         "ability": "dex",
-        "increase": 2
+        "amount": {
+          "increase": 2
+        }
       },
       "duration": {
         "unit": "permanent",
@@ -6962,7 +6986,9 @@
     "effect": {
       "ability_score_modifier": {
         "ability": "int",
-        "increase": 2
+        "amount": {
+          "increase": 2
+        }
       },
       "duration": {
         "unit": "permanent",
@@ -6997,7 +7023,9 @@
     "effect": {
       "ability_score_modifier": {
         "ability": "cha",
-        "increase": 2
+        "amount": {
+          "increase": 2
+        }
       },
       "duration": {
         "unit": "permanent",
@@ -7032,7 +7060,9 @@
     "effect": {
       "ability_score_modifier": {
         "ability": "wis",
-        "increase": 2
+        "amount": {
+          "increase": 2
+        }
       },
       "duration": {
         "unit": "permanent",
