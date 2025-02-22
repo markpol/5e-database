@@ -4812,13 +4812,6 @@
       "unit": "gp"
     },
     "is_consumable": true,
-    "effect": {
-      "condition": "hasted",
-      "duration": {
-        "length": 10,
-        "unit": "round"
-      }
-    },
     "url": "/api/magic-items/potion-of-speed"
   },
   {
