@@ -94,11 +94,6 @@
         "name": "Tentacle",
         "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.",
         "attack_bonus": 9,
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 14,
-          "success_type": "none"
-        },
         "damage": [
           {
             "damage_type": "bludgeoning",
@@ -106,7 +101,12 @@
           },
           {
             "damage_type": "acid",
-            "damage_dice": "1d12"
+            "damage_dice": "1d12",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 14,
+              "success_type": "none"
+            }
           }
         ]
       },
@@ -128,11 +128,23 @@
           "type": "per day",
           "times": 3
         },
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 14,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 14,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "charmed",
+              "duration": {
+                "length": 1,
+                "unit": "day",
+                "interrupt": "damage taken and saving throw success"
+              }
+            }
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -422,11 +434,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 16,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 16,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Acid Breath",
@@ -436,15 +460,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 18,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "acid",
-            "damage_dice": "12d8"
+            "damage_dice": "12d8",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 18,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -618,11 +642,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 ft. of the dragon and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 17,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 17,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Lightning Breath",
@@ -632,15 +668,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 19,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "lightning",
-            "damage_dice": "12d10"
+            "damage_dice": "12d10",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 19,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -817,11 +853,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours .",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 16,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 16,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Breath Weapons",
@@ -1038,11 +1086,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 17,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 17,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Breath Weapons",
@@ -1255,11 +1315,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 16,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 16,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Breath Weapons",
@@ -1480,11 +1552,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 21 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 21,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 21,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Breath Weapons",
@@ -1715,11 +1799,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours .",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 16,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 16,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Poison Breath",
@@ -1729,15 +1825,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 18,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "poison",
-            "damage_dice": "16d6"
+            "damage_dice": "16d6",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 18,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -1910,11 +2006,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 ft. of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 19,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 19,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Fire Breath",
@@ -1924,15 +2032,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 21,
-          "success_type": "none"
-        },
         "damage": [
           {
             "damage_type": "fire",
-            "damage_dice": "18d6"
+            "damage_dice": "18d6",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 21,
+              "success_type": "none"
+            }
           }
         ]
       }
@@ -2108,11 +2216,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 18,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 18,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Breath Weapons",
@@ -2330,11 +2450,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 ft. of the dragon and aware of it must succeed on a DC 14 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 14,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 14,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Cold Breath",
@@ -2344,15 +2476,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 19,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "cold",
-            "damage_dice": "12d8"
+            "damage_dice": "12d8",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 19,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -2476,24 +2608,24 @@
           "dice": "1d6",
           "min_value": 4
         },
-        "dc": {
-          "dc_type": "str",
-          "dc_value": 13,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "bludgeoning",
-            "damage_dice": "3d8+2"
+            "damage_dice": "3d8+2",
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 13,
+              "success_type": "half"
+            },
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
-        ],
-        "condition": {
-          "condition_type": "prone",
-          "duration": {
-            "length": 1,
-            "unit": "round"
-          }
-        }
+        ]
       }
     ],
     "image": "/api/images/monsters/air-elemental.png",
@@ -2644,11 +2776,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 19,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 19,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Acid Breath",
@@ -2658,15 +2802,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 22,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "acid",
-            "damage_dice": "15d8"
+            "damage_dice": "15d8",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 22,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -2839,11 +2983,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 20 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 20,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 20,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Lightning Breath",
@@ -2853,15 +3009,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 23,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "lightning",
-            "damage_dice": "16d10"
+            "damage_dice": "16d10",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 23,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -3038,11 +3194,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 18,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 18,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Breath Weapons",
@@ -3263,11 +3431,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 20 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 20,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 20,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Breath Weapons",
@@ -3484,11 +3664,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 19,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 19,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Breath Weapons",
@@ -3713,11 +3905,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 24 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 24,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 24,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Breath Weapons",
@@ -3952,11 +4156,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 19 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 19,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 19,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Poison Breath",
@@ -3966,15 +4182,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 22,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "poison",
-            "damage_dice": "22d6"
+            "damage_dice": "22d6",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 22,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -4147,11 +4363,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 21 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 21,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 21,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Fire Breath",
@@ -4161,15 +4389,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 24,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "fire",
-            "damage_dice": "26d6"
+            "damage_dice": "26d6",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 24,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -4345,11 +4573,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 21 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 21,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 21,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Breath Weapons",
@@ -4571,11 +4811,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours .",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 16,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 16,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Cold Breath",
@@ -4585,15 +4837,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 22,
-          "success_type": "none"
-        },
         "damage": [
           {
             "damage_type": "cold",
-            "damage_dice": "16d8"
+            "damage_dice": "16d8",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 22,
+              "success_type": "none"
+            }
           }
         ]
       }
@@ -4847,6 +5099,14 @@
               "dc_type": "wis",
               "dc_value": 18,
               "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
             }
           },
           {
@@ -4855,6 +5115,14 @@
               "dc_type": "wis",
               "dc_value": 18,
               "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "paralyzed",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "damage taken and saving throw success"
+              }
             }
           },
           {
@@ -5061,15 +5329,15 @@
           "dice": "1d6",
           "min_value": 6
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 13,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "acid",
-            "damage_dice": "3d6"
+            "damage_dice": "3d6",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 13,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -6860,15 +7128,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 16,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "lightning",
-            "damage_dice": "12d10"
+            "damage_dice": "12d10",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 16,
+              "success_type": "half"
+            }
           }
         ]
       },
@@ -7136,15 +7404,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 11,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "acid",
-            "damage_dice": "5d8"
+            "damage_dice": "5d8",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 11,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -7491,15 +7759,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 12,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "lightning",
-            "damage_dice": "4d10"
+            "damage_dice": "4d10",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 12,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -8625,6 +8893,13 @@
           "dc_type": "wis",
           "dc_value": 14,
           "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "frightened",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
         }
       }
     ],
@@ -8799,15 +9074,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 15,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "fire",
-            "damage_dice": "7d8"
+            "damage_dice": "7d8",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 15,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -8923,11 +9198,15 @@
       {
         "name": "Tentacles",
         "desc": "One creature grappled by the chuul must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 13,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 13,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "/api/monsters/chuul",
@@ -9141,11 +9420,22 @@
       {
         "name": "Moan",
         "desc": "Each creature within 60 feet of the cloaker that can hear its moan and that isn't an aberration must succeed on a DC 13 Wisdom saving throw or become frightened until the end of the cloaker's next turn. If a creature's saving throw is successful, the creature is immune to the cloaker's moan for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 13,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 13,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Phantasms",
@@ -11076,11 +11366,15 @@
       {
         "name": "Create Whirlwind",
         "desc": "A 5-foot-radius, 30-foot-tall cylinder of swirling air magically forms on a point the djinni can see within 120 feet of it. The whirlwind lasts as long as the djinni maintains concentration (as if concentrating on a spell). Any creature but the djinni that enters the whirlwind must succeed on a DC 18 Strength saving throw or be restrained by it. The djinni can move the whirlwind up to 60 feet as an action, and creatures restrained by the whirlwind move with it. The whirlwind ends if the djinni loses sight of it.\nA creature can use its action to free a creature restrained by the whirlwind, including itself, by succeeding on a DC 18 Strength check. If the check succeeds, the creature is no longer restrained and moves to the nearest space outside the whirlwind.",
-        "dc": {
-          "dc_type": "str",
-          "dc_value": 18,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 18,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "/api/monsters/djinni"
@@ -11383,15 +11677,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 18,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "fire",
-            "damage_dice": "15d6"
+            "damage_dice": "15d6",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 18,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -11493,18 +11787,22 @@
           "type": "per day",
           "times": 1
         },
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 11,
-          "success_type": "none"
-        },
-        "condition": {
-          "condition_type": "poisoned",
-          "duration": {
-            "length": 10,
-            "unit": "round"
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 11,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "poisoned",
+              "duration": {
+                "length": 10,
+                "unit": "round"
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "url": "/api/monsters/dretch",
@@ -12197,11 +12495,23 @@
       {
         "name": "Fey Charm",
         "desc": "The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can.\nEach time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.\nThe dryad can have no more than one humanoid and up to three beasts charmed at a time.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 14,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 14,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "charmed",
+              "duration": {
+                "length": 1,
+                "unit": "day",
+                "interrupt": "damage taken and saving throw success"
+              }
+            }
+          }
+        ]
       }
     ],
     "image": "/api/images/monsters/dryad.png",
@@ -12420,11 +12730,15 @@
           "dice": "1d6",
           "min_value": 6
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 10,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 10,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "/api/monsters/dust-mephit",
@@ -13284,7 +13598,7 @@
               "success_type": "none"
             },
             "condition": {
-              "condition_type":"poisoned",
+              "condition_type": "poisoned",
               "duration": {
                 "length": 10,
                 "unit": "round"
@@ -14132,15 +14446,15 @@
       {
         "name": "Engulf",
         "desc": "The cube moves up to its speed. While doing so, it can enter Large or smaller creatures' spaces. Whenever the cube enters a creature's space, the creature must make a DC 12 Dexterity saving throw.\nOn a successful save, the creature can choose to be pushed 5 feet back or to the side of the cube. A creature that chooses not to be pushed suffers the consequences of a failed saving throw.\nOn a failed save, the cube enters the creature's space, and the creature takes 10 (3d6) acid damage and is engulfed. The engulfed creature can't breathe, is restrained, and takes 21 (6d6) acid damage at the start of each of the cube's turns. When the cube moves, the engulfed creature moves with it.\nAn engulfed creature can try to escape by taking an action to make a DC 12 Strength check. On a success, the creature escapes and enters a space of its choice within 5 feet of the cube.",
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 12,
-          "success_type": "none"
-        },
         "damage": [
           {
             "damage_type": "acid",
-            "damage_dice": "3d6"
+            "damage_dice": "3d6",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 12,
+              "success_type": "none"
+            }
           }
         ]
       }
@@ -14325,11 +14639,23 @@
       {
         "name": "Horrifying Visage",
         "desc": "Each non-undead creature within 60 ft. of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 × 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 13,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 13,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Possession",
@@ -14339,11 +14665,15 @@
           "dice": "1d6",
           "min_value": 6
         },
-        "dc": {
-          "dc_type": "cha",
-          "dc_value": 13,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "cha",
+              "dc_value": 13,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "/api/monsters/ghost",
@@ -15426,17 +15756,17 @@
             "max_size": "Small"
           }
         },
-        "condition": {
-          "condition_type": "swallowed",
-          "duration": {
-            "length": 1,
-            "unit": "until killed"
-          }
-        },
         "damage": [
           {
             "damage_type": "acid",
-            "damage_dice": "2d4"
+            "damage_dice": "2d4",
+            "condition": {
+              "condition_type": "swallowed",
+              "duration": {
+                "length": 1,
+                "unit": "until killed"
+              }
+            }
           }
         ]
       }
@@ -16448,17 +16778,17 @@
             "max_size": "Medium"
           }
         },
-        "condition": {
-          "condition_type": "swallowed",
-          "duration": {
-            "length": 1,
-            "unit": "until killed"
-          }
-        },
         "damage": [
           {
             "damage_type": "acid",
-            "damage_dice": "3d6"
+            "damage_dice": "3d6",
+            "condition": {
+              "condition_type": "swallowed",
+              "duration": {
+                "length": 1,
+                "unit": "until killed"
+              }
+            }
           }
         ]
       }
@@ -16879,11 +17209,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 13,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 13,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "/api/monsters/gibbering-mouther",
@@ -17552,7 +17886,10 @@
         ]
       }
     ],
-    "bonus_actions": ["disengage", "hide"],
+    "bonus_actions": [
+      "disengage",
+      "hide"
+    ],
     "image": "/api/images/monsters/goblin.png",
     "url": "/api/monsters/goblin",
     "environments": "Forest, Grassland, Hill, Underdark"
@@ -17805,11 +18142,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 13,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 13,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "/api/monsters/gorgon",
@@ -18003,15 +18344,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 11,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "poison",
-            "damage_dice": "6d6"
+            "damage_dice": "6d6",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 11,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -19022,15 +19363,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 15,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "fire",
-            "damage_dice": "7d6"
+            "damage_dice": "7d6",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 15,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -19124,19 +19465,23 @@
           "type": "per day",
           "times": 1
         },
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 11,
-          "success_type": "none"
-        },
-        "condition": {
-          "condition_type": "charmed",
-          "duration": {
-            "length": 10,
-            "unit": "round",
-            "interrupt": "damage taken and saving throw success"
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 11,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "charmed",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "damage taken and saving throw success"
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "url": "/api/monsters/harpy",
@@ -19286,15 +19631,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 12,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "fire",
-            "damage_dice": "6d6"
+            "damage_dice": "6d6",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 12,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -20440,15 +20785,15 @@
           "dice": "1d6",
           "min_value": 6
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 10,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "cold",
-            "damage_dice": "2d4"
+            "damage_dice": "2d4",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 10,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -20803,15 +21148,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 19,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "poison",
-            "damage_dice": "10d8"
+            "damage_dice": "10d8",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 19,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -21320,15 +21665,15 @@
       {
         "name": "Lightning Storm",
         "desc": "The kraken magically creates three bolts of lightning, each of which can strike a target the kraken can see within 120 feet of it. A target must make a DC 23 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save, or half as much damage on a successful one.",
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 23,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "lightning",
-            "damage_dice": "4d10"
+            "damage_dice": "4d10",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 23,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -21930,6 +22275,14 @@
           "dc_type": "wis",
           "dc_value": 18,
           "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "frightened",
+          "duration": {
+            "length": 10,
+            "unit": "round",
+            "interrupt": "saving throw success"
+          }
         }
       },
       {
@@ -22653,15 +23006,15 @@
           "dice": "1d6",
           "min_value": 6
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 11,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "fire",
-            "damage_dice": "2d6"
+            "damage_dice": "2d6",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 11,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -24010,18 +24363,22 @@
       {
         "name": "Dreadful Glare",
         "desc": "The mummy targets one creature it can see within 60 ft. of it. If the target can see the mummy, it must succeed on a DC 11 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies (but not mummy lords) for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 11,
-          "success_type": "none"
-        },
-        "condition": {
-          "condition_type": "frightened",
-          "duration": {
-            "length": 1,
-            "unit": "round"
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 11,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "url": "/api/monsters/mummy",
@@ -24248,11 +24605,22 @@
       {
         "name": "Dreadful Glare",
         "desc": "The mummy lord targets one creature it can see within 60 feet of it. If the target can see the mummy lord, it must succeed on a DC 16 Wisdom saving throw against this magic or become frightened until the end of the mummy's next turn. If the target fails the saving throw by 5 or more, it is also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Dreadful Glare of all mummies and mummy lords for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 16,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 16,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -24413,11 +24781,23 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 15,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 15,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Teleport",
@@ -25443,11 +25823,15 @@
       {
         "name": "Tentacle Slam",
         "desc": "The otyugh slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 14 Constitution saving throw or take 10 (2d6 + 3) bludgeoning damage and be stunned until the end of the otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't stunned.",
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 14,
-          "success_type": "half"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 14,
+              "success_type": "half"
+            }
+          }
+        ]
       }
     ],
     "url": "/api/monsters/otyugh",
@@ -25956,6 +26340,13 @@
           "dc_type": "wis",
           "dc_value": 21,
           "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "frightened",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
         }
       },
       {
@@ -27017,8 +27408,7 @@
               "duration": {
                 "length": 10,
                 "unit": "round",
-                "interrupt": "saving throw success",
-                "interrupt_modifier": "disadvantage"
+                "interrupt": "saving throw success"
               }
             }
           }
@@ -27031,20 +27421,23 @@
           "type": "per day",
           "times": 1
         },
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 10,
-          "success_type": "none"
-        },
-        "condition": {
-          "condition_type": "frightened",
-          "duration": {
-            "length": 10,
-            "unit": "round",
-            "interrupt": "saving throw success",
-            "interrupt_modifier": "disadvantage"
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 10,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
           }
-        }
+        ]
       },
       {
         "name": "Invisibility",
@@ -27546,15 +27939,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 13,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "fire",
-            "damage_dice": "7d6"
+            "damage_dice": "7d6",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 13,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -28188,7 +28581,16 @@
       },
       {
         "name": "Antennae",
-        "desc": "The rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. If the object isn't being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, the creature can make a DC 11 Dexterity saving throw to avoid the rust monster's touch.\nIf the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in the Rust Metal trait."
+        "desc": "The rust monster corrodes a nonmagical ferrous metal object it can see within 5 feet of it. If the object isn't being worn or carried, the touch destroys a 1-foot cube of it. If the object is being worn or carried by a creature, the creature can make a DC 11 Dexterity saving throw to avoid the rust monster's touch.\nIf the object touched is either metal armor or a metal shield being worn or carried, its takes a permanent and cumulative -1 penalty to the AC it offers. Armor reduced to an AC of 10 or a shield that drops to a +0 bonus is destroyed. If the object touched is a held metal weapon, it rusts as described in the Rust Metal trait.",
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 11,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "/api/monsters/rust-monster",
@@ -28942,11 +29344,15 @@
       {
         "name": "Death Glare",
         "desc": "The hag targets one frightened creature she can see within 30 ft. of her. If the target can see the hag, it must succeed on a DC 11 Wisdom saving throw against this magic or drop to 0 hit points.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 11,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 11,
+              "success_type": "none"
+            }
+          }
+        ]
       },
       {
         "name": "Illusory Appearance",
@@ -30128,11 +30534,15 @@
       {
         "name": "Heart Sight",
         "desc": "The sprite touches a creature and magically knows the creature's current emotional state. If the target fails a DC 10 Charisma saving throw, the sprite also knows the creature's alignment. Celestials, fiends, and undead automatically fail the saving throw.",
-        "dc": {
-          "dc_type": "cha",
-          "dc_value": 10,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "cha",
+              "dc_value": 10,
+              "success_type": "none"
+            }
+          }
+        ]
       },
       {
         "name": "Invisibility",
@@ -30364,15 +30774,15 @@
           "dice": "1d6",
           "min_value": 6
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 10,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "fire",
-            "damage_dice": "1d8"
+            "damage_dice": "1d8",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 10,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -30644,19 +31054,23 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 17,
-          "success_type": "none"
-        },
-        "condition": {
-          "condition_type": "slowed",
-          "duration": {
-            "length": 10,
-            "unit": "round",
-            "interrupt": "saving throw success"
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 17,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "slowed",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "url": "/api/monsters/stone-golem"
@@ -30852,15 +31266,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 17,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "lightning",
-            "damage_dice": "12d8"
+            "damage_dice": "12d8",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 17,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -30958,11 +31372,23 @@
       {
         "name": "Charm",
         "desc": "One humanoid the fiend can see within 30 feet of it must succeed on a DC 15 Wisdom saving throw or be magically charmed for 1 day. The charmed target obeys the fiend's verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this fiend's Charm for the next 24 hours.\nThe fiend can have only one target charmed at a time. If it charms another, the effect on the previous target ends.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 15,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 15,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "charmed",
+              "duration": {
+                "length": 1,
+                "unit": "day",
+                "interrupt": "damage taken and saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Draining Kiss",
@@ -31977,11 +32403,23 @@
       {
         "name": "Frightful Presence",
         "desc": "Each creature of the tarrasque's choice within 120 feet of it and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the tarrasque is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the tarrasque's Frightful Presence for the next 24 hours.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 17,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 17,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "frightened",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Swallow",
@@ -33039,11 +33477,23 @@
       {
         "name": "Charm",
         "desc": "The vampire targets one humanoid it can see within 30 ft. of it. If the target can see the vampire, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bit attack.\nEach time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 17,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 17,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "charmed",
+              "duration": {
+                "length": 1,
+                "unit": "day",
+                "interrupt": "damage taken and saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Children of the Night",
@@ -33189,11 +33639,23 @@
       {
         "name": "Charm",
         "desc": "The vampire targets one humanoid it can see within 30 ft. of it. If the target can see the vampire, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bit attack.\nEach time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect.",
-        "dc": {
-          "dc_type": "wis",
-          "dc_value": 17,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "wis",
+              "dc_value": 17,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "charmed",
+              "duration": {
+                "length": 1,
+                "unit": "day",
+                "interrupt": "damage taken and saving throw success"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Children of the Night",
@@ -33794,11 +34256,15 @@
           "dice": "1d6",
           "min_value": 6
         },
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 14,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 14,
+              "success_type": "none"
+            }
+          }
+        ]
       },
       {
         "name": "Stunning Screech",
@@ -33807,11 +34273,15 @@
           "type": "per day",
           "times": 1
         },
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 14,
-          "success_type": "none"
-        }
+        "damage": [
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 14,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "/api/monsters/vrock"
@@ -34125,11 +34595,6 @@
           "dice": "1d6",
           "min_value": 4
         },
-        "dc": {
-          "dc_type": "str",
-          "dc_value": 15,
-          "success_type": "none"
-        },
         "damage": [
           {
             "damage_type": "bludgeoning",
@@ -34145,6 +34610,11 @@
                   "unit": "until escape"
                 }
               }
+            },
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 15,
+              "success_type": "none"
             }
           }
         ],
@@ -36044,15 +36514,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 12,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "cold",
-            "damage_dice": "5d8"
+            "damage_dice": "5d8",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 12,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -36424,15 +36894,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 12,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "cold",
-            "damage_dice": "4d8"
+            "damage_dice": "4d8",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 12,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -37063,15 +37533,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 14,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "acid",
-            "damage_dice": "11d8"
+            "damage_dice": "11d8",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 14,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -37198,15 +37668,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 16,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "lightning",
-            "damage_dice": "10d10"
+            "damage_dice": "10d10",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 16,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -37989,15 +38459,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 14,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "poison",
-            "damage_dice": "12d6"
+            "damage_dice": "12d6",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 14,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -38124,15 +38594,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "dex",
-          "dc_value": 17,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "fire",
-            "damage_dice": "16d6"
+            "damage_dice": "16d6",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 17,
+              "success_type": "half"
+            }
           }
         ]
       }
@@ -38426,15 +38896,15 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "dc": {
-          "dc_type": "con",
-          "dc_value": 15,
-          "success_type": "half"
-        },
         "damage": [
           {
             "damage_type": "cold",
-            "damage_dice": "10d8"
+            "damage_dice": "10d8",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 15,
+              "success_type": "half"
+            }
           }
         ]
       }
