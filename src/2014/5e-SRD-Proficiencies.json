@@ -1089,19 +1089,6 @@
     }
   },
   {
-    "index": "nets",
-    "type": "Weapons",
-    "name": "Nets",
-    "classes": [],
-    "races": [],
-    "url": "/api/proficiencies/nets",
-    "reference": {
-      "index": "net",
-      "name": "Net",
-      "url": "/api/equipment/net"
-    }
-  },
-  {
     "index": "alchemists-supplies",
     "type": "Artisan's Tools",
     "name": "Alchemist's Supplies",
@@ -1566,32 +1553,6 @@
       "index": "thieves-tools",
       "name": "Thieves' Tools",
       "url": "/api/equipment/thieves-tools"
-    }
-  },
-  {
-    "index": "land-vehicles",
-    "type": "Vehicles",
-    "name": "Land Vehicles",
-    "classes": [],
-    "races": [],
-    "url": "/api/proficiencies/land-vehicles",
-    "reference": {
-      "index": "land-vehicles",
-      "name": "Land Vehicles",
-      "url": "/api/equipment-categories/land-vehicles"
-    }
-  },
-  {
-    "index": "water-vehicles",
-    "type": "Vehicles",
-    "name": "Water Vehicles",
-    "classes": [],
-    "races": [],
-    "url": "/api/proficiencies/water-vehicles",
-    "reference": {
-      "index": "waterborne-vehicles",
-      "name": "Waterborne Vehicles",
-      "url": "/api/equipment-categories/waterborne-vehicles"
     }
   },
   {
