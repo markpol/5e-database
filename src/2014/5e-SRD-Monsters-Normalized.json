@@ -30427,7 +30427,14 @@
         "damage": [
           {
             "damage_type": "piercing",
-            "damage_dice": "1d4+3"
+            "damage_dice": "1d4+3",
+            "condition": {
+              "condition_type": "infested",
+              "duration": {
+                "length": 1,
+                "unit": "until detached"
+              }
+            }
           }
         ]
       }
