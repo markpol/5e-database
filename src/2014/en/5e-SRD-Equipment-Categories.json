@@ -325,20 +325,6 @@
       },
       {
         "index": "weapon-1",
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "name": "Weapon, +1",
-        "url": "/api/2014/magic-items/weapon-1"
-      },
-      {
-        "index": "weapon-2",
-        "name": "Weapon, +2",
-        "url": "/api/2014/magic-items/weapon-2"
-      },
-      {
-        "index": "weapon-3",
-        "name": "Weapon, +3",
-        "url": "/api/2014/magic-items/weapon-3"
-=======
         "name": "Enchant Weapon +1",
         "url": "/api/magic-items/weapon-1"
       },
@@ -351,7 +337,6 @@
         "index": "weapon-3",
         "name": "Enchant Weapon +3",
         "url": "/api/magic-items/weapon-3"
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
       }
     ],
     "url": "/api/2014/equipment-categories/weapon"
@@ -507,20 +492,6 @@
       },
       {
         "index": "armor-1",
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "name": "Armor, +1",
-        "url": "/api/2014/magic-items/armor-1"
-      },
-      {
-        "index": "armor-2",
-        "name": "Armor, +2",
-        "url": "/api/2014/magic-items/armor-2"
-      },
-      {
-        "index": "armor-3",
-        "name": "Armor, +3",
-        "url": "/api/2014/magic-items/armor-3"
-=======
         "name": "Enchant Armor +1",
         "url": "/api/magic-items/armor-1"
       },
@@ -533,7 +504,6 @@
         "index": "armor-3",
         "name": "Enchant Armor +3",
         "url": "/api/magic-items/armor-3"
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
       },
       {
         "index": "dragon-scale-mail-black",
@@ -593,14 +563,6 @@
     "name": "Adventuring Gear",
     "equipment": [
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "abacus",
-        "name": "Abacus",
-        "url": "/api/2014/equipment/abacus"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "acid-vial",
         "name": "Acid (vial)",
         "url": "/api/2014/equipment/acid-vial"
@@ -631,19 +593,6 @@
         "url": "/api/2014/equipment/sling-bullet"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "alms-box",
-        "name": "Alms box",
-        "url": "/api/2014/equipment/alms-box"
-      },
-      {
-        "index": "amulet",
-        "name": "Amulet",
-        "url": "/api/2014/equipment/amulet"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "antitoxin-vial",
         "name": "Antitoxin (vial)",
         "url": "/api/2014/equipment/antitoxin-vial"
@@ -654,436 +603,26 @@
         "url": "/api/2014/equipment/backpack"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "ball-bearings-bag-of-1000",
-        "name": "Ball bearings (bag of 1,000)",
-        "url": "/api/2014/equipment/ball-bearings-bag-of-1000"
-      },
-      {
-        "index": "barrel",
-        "name": "Barrel",
-        "url": "/api/2014/equipment/barrel"
-      },
-      {
-        "index": "basket",
-        "name": "Basket",
-        "url": "/api/2014/equipment/basket"
-      },
-      {
-        "index": "bedroll",
-        "name": "Bedroll",
-        "url": "/api/2014/equipment/bedroll"
-      },
-      {
-        "index": "bell",
-        "name": "Bell",
-        "url": "/api/2014/equipment/bell"
-      },
-      {
-        "index": "blanket",
-        "name": "Blanket",
-        "url": "/api/2014/equipment/blanket"
-      },
-      {
-        "index": "block-and-tackle",
-        "name": "Block and tackle",
-        "url": "/api/2014/equipment/block-and-tackle"
-      },
-      {
-        "index": "block-of-incense",
-        "name": "Block of incense",
-        "url": "/api/2014/equipment/block-of-incense"
-      },
-      {
-        "index": "book",
-        "name": "Book",
-        "url": "/api/2014/equipment/book"
-      },
-      {
-        "index": "bottle-glass",
-        "name": "Bottle, glass",
-        "url": "/api/2014/equipment/bottle-glass"
-      },
-      {
-        "index": "bucket",
-        "name": "Bucket",
-        "url": "/api/2014/equipment/bucket"
-      },
-      {
-        "index": "caltrops",
-        "name": "Caltrops",
-        "url": "/api/2014/equipment/caltrops"
-      },
-      {
-        "index": "candle",
-        "name": "Candle",
-        "url": "/api/2014/equipment/candle"
-      },
-      {
-        "index": "case-crossbow-bolt",
-        "name": "Case, crossbow bolt",
-        "url": "/api/2014/equipment/case-crossbow-bolt"
-      },
-      {
-        "index": "case-map-or-scroll",
-        "name": "Case, map or scroll",
-        "url": "/api/2014/equipment/case-map-or-scroll"
-      },
-      {
-        "index": "censer",
-        "name": "Censer",
-        "url": "/api/2014/equipment/censer"
-      },
-      {
-        "index": "chain-10-feet",
-        "name": "Chain (10 feet)",
-        "url": "/api/2014/equipment/chain-10-feet"
-      },
-      {
-        "index": "chalk-1-piece",
-        "name": "Chalk (1 piece)",
-        "url": "/api/2014/equipment/chalk-1-piece"
-      },
-      {
-        "index": "chest",
-        "name": "Chest",
-        "url": "/api/2014/equipment/chest"
-      },
-      {
-        "index": "clothes-common",
-        "name": "Clothes, common",
-        "url": "/api/2014/equipment/clothes-common"
-      },
-      {
-        "index": "clothes-costume",
-        "name": "Clothes, costume",
-        "url": "/api/2014/equipment/clothes-costume"
-      },
-      {
-        "index": "clothes-fine",
-        "name": "Clothes, fine",
-        "url": "/api/2014/equipment/clothes-fine"
-      },
-      {
-        "index": "clothes-travelers",
-        "name": "Clothes, traveler's",
-        "url": "/api/2014/equipment/clothes-travelers"
-      },
-      {
-        "index": "component-pouch",
-        "name": "Component pouch",
-        "url": "/api/2014/equipment/component-pouch"
-      },
-      {
-        "index": "crowbar",
-        "name": "Crowbar",
-        "url": "/api/2014/equipment/crowbar"
-      },
-      {
-        "index": "emblem",
-        "name": "Emblem",
-        "url": "/api/2014/equipment/emblem"
-      },
-      {
-        "index": "fishing-tackle",
-        "name": "Fishing tackle",
-        "url": "/api/2014/equipment/fishing-tackle"
-      },
-      {
-        "index": "flask-or-tankard",
-        "name": "Flask or tankard",
-        "url": "/api/2014/equipment/flask-or-tankard"
-      },
-      {
-        "index": "grappling-hook",
-        "name": "Grappling hook",
-        "url": "/api/2014/equipment/grappling-hook"
-      },
-      {
-        "index": "hammer",
-        "name": "Hammer",
-        "url": "/api/2014/equipment/hammer"
-      },
-      {
-        "index": "hammer-sledge",
-        "name": "Hammer, sledge",
-        "url": "/api/2014/equipment/hammer-sledge"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "holy-water-flask",
         "name": "Holy water (flask)",
         "url": "/api/2014/equipment/holy-water-flask"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "hourglass",
-        "name": "Hourglass",
-        "url": "/api/2014/equipment/hourglass"
-      },
-      {
-        "index": "hunting-trap",
-        "name": "Hunting trap",
-        "url": "/api/2014/equipment/hunting-trap"
-      },
-      {
-        "index": "ink-1-ounce-bottle",
-        "name": "Ink (1 ounce bottle)",
-        "url": "/api/2014/equipment/ink-1-ounce-bottle"
-      },
-      {
-        "index": "ink-pen",
-        "name": "Ink pen",
-        "url": "/api/2014/equipment/ink-pen"
-      },
-      {
-        "index": "jug-or-pitcher",
-        "name": "Jug or pitcher",
-        "url": "/api/2014/equipment/jug-or-pitcher"
-      },
-      {
-        "index": "climbers-kit",
-        "name": "Climber's Kit",
-        "url": "/api/2014/equipment/climbers-kit"
-      },
-      {
-        "index": "disguise-kit",
-        "name": "Disguise Kit",
-        "url": "/api/2014/equipment/disguise-kit"
-      },
-      {
-        "index": "forgery-kit",
-        "name": "Forgery Kit",
-        "url": "/api/2014/equipment/forgery-kit"
-      },
-      {
-        "index": "herbalism-kit",
-        "name": "Herbalism Kit",
-        "url": "/api/2014/equipment/herbalism-kit"
-      },
-      {
-        "index": "healers-kit",
-        "name": "Healer's Kit",
-        "url": "/api/2014/equipment/healers-kit"
-      },
-      {
-        "index": "mess-kit",
-        "name": "Mess Kit",
-        "url": "/api/2014/equipment/mess-kit"
-      },
-      {
-        "index": "poisoners-kit",
-        "name": "Poisoner's Kit",
-        "url": "/api/2014/equipment/poisoners-kit"
-      },
-      {
-        "index": "ladder-10-foot",
-        "name": "Ladder (10-foot)",
-        "url": "/api/2014/equipment/ladder-10-foot"
-      },
-      {
-        "index": "lamp",
-        "name": "Lamp",
-        "url": "/api/2014/equipment/lamp"
-      },
-      {
-        "index": "lantern-bullseye",
-        "name": "Lantern, bullseye",
-        "url": "/api/2014/equipment/lantern-bullseye"
-      },
-      {
-        "index": "lantern-hooded",
-        "name": "Lantern, hooded",
-        "url": "/api/2014/equipment/lantern-hooded"
-      },
-      {
-        "index": "little-bag-of-sand",
-        "name": "Little bag of sand",
-        "url": "/api/2014/equipment/little-bag-of-sand"
-      },
-      {
-        "index": "lock",
-        "name": "Lock",
-        "url": "/api/2014/equipment/lock"
-      },
-      {
-        "index": "magnifying-glass",
-        "name": "Magnifying glass",
-        "url": "/api/2014/equipment/magnifying-glass"
-      },
-      {
-        "index": "manacles",
-        "name": "Manacles",
-        "url": "/api/2014/equipment/manacles"
-      },
-      {
-        "index": "mirror-steel",
-        "name": "Mirror, steel",
-        "url": "/api/2014/equipment/mirror-steel"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "oil-flask",
         "name": "Oil (flask)",
         "url": "/api/2014/equipment/oil-flask"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "paper-one-sheet",
-        "name": "Paper (one sheet)",
-        "url": "/api/2014/equipment/paper-one-sheet"
-      },
-      {
-        "index": "parchment-one-sheet",
-        "name": "Parchment (one sheet)",
-        "url": "/api/2014/equipment/parchment-one-sheet"
-      },
-      {
-        "index": "perfume-vial",
-        "name": "Perfume (vial)",
-        "url": "/api/2014/equipment/perfume-vial"
-      },
-      {
-        "index": "pick-miners",
-        "name": "Pick, miner's",
-        "url": "/api/2014/equipment/pick-miners"
-      },
-      {
-        "index": "piton",
-        "name": "Piton",
-        "url": "/api/2014/equipment/piton"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "poison-basic-vial",
         "name": "Poison, basic (vial)",
         "url": "/api/2014/equipment/poison-basic-vial"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "pole-10-foot",
-        "name": "Pole (10-foot)",
-        "url": "/api/2014/equipment/pole-10-foot"
-      },
-      {
-        "index": "pot-iron",
-        "name": "Pot, iron",
-        "url": "/api/2014/equipment/pot-iron"
-      },
-      {
-        "index": "pouch",
-        "name": "Pouch",
-        "url": "/api/2014/equipment/pouch"
-      },
-      {
-        "index": "quiver",
-        "name": "Quiver",
-        "url": "/api/2014/equipment/quiver"
-      },
-      {
-        "index": "ram-portable",
-        "name": "Ram, portable",
-        "url": "/api/2014/equipment/ram-portable"
-      },
-      {
-        "index": "rations-1-day",
-        "name": "Rations (1 day)",
-        "url": "/api/2014/equipment/rations-1-day"
-      },
-      {
-        "index": "reliquary",
-        "name": "Reliquary",
-        "url": "/api/2014/equipment/reliquary"
-      },
-      {
-        "index": "robes",
-        "name": "Robes",
-        "url": "/api/2014/equipment/robes"
-      },
-      {
-        "index": "rope-hempen-50-feet",
-        "name": "Rope, hempen (50 feet)",
-        "url": "/api/2014/equipment/rope-hempen-50-feet"
-      },
-      {
-        "index": "rope-silk-50-feet",
-        "name": "Rope, silk (50 feet)",
-        "url": "/api/2014/equipment/rope-silk-50-feet"
-      },
-      {
-        "index": "sack",
-        "name": "Sack",
-        "url": "/api/2014/equipment/sack"
-      },
-      {
-        "index": "scale-merchants",
-        "name": "Scale, merchant's",
-        "url": "/api/2014/equipment/scale-merchants"
-      },
-      {
-        "index": "sealing-wax",
-        "name": "Sealing wax",
-        "url": "/api/2014/equipment/sealing-wax"
-      },
-      {
-        "index": "shovel",
-        "name": "Shovel",
-        "url": "/api/2014/equipment/shovel"
-      },
-      {
-        "index": "signal-whistle",
-        "name": "Signal whistle",
-        "url": "/api/2014/equipment/signal-whistle"
-      },
-      {
-        "index": "signet-ring",
-        "name": "Signet ring",
-        "url": "/api/2014/equipment/signet-ring"
-      },
-      {
-        "index": "small-knife",
-        "name": "Small knife",
-        "url": "/api/2014/equipment/small-knife"
-      },
-      {
-        "index": "soap",
-        "name": "Soap",
-        "url": "/api/2014/equipment/soap"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "spellbook",
         "name": "Spellbook",
         "url": "/api/2014/equipment/spellbook"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "spike-iron",
-        "name": "Spike, iron",
-        "url": "/api/2014/equipment/spike-iron"
-      },
-      {
-        "index": "spyglass",
-        "name": "Spyglass",
-        "url": "/api/2014/equipment/spyglass"
-      },
-      {
-        "index": "string-10-feet",
-        "name": "String (10 feet)",
-        "url": "/api/2014/equipment/string-10-feet"
-      },
-      {
-        "index": "tent-two-person",
-        "name": "Tent, two-person",
-        "url": "/api/2014/equipment/tent-two-person"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "tinderbox",
         "name": "Tinderbox",
         "url": "/api/2014/equipment/tinderbox"
@@ -1091,111 +630,7 @@
       {
         "index": "torch",
         "name": "Torch",
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "url": "/api/2014/equipment/torch"
-      },
-      {
-        "index": "vestments",
-        "name": "Vestments",
-        "url": "/api/2014/equipment/vestments"
-      },
-      {
-        "index": "vial",
-        "name": "Vial",
-        "url": "/api/2014/equipment/vial"
-      },
-      {
-        "index": "waterskin",
-        "name": "Waterskin",
-        "url": "/api/2014/equipment/waterskin"
-      },
-      {
-        "index": "whetstone",
-        "name": "Whetstone",
-        "url": "/api/2014/equipment/whetstone"
-      },
-      {
-        "index": "burglars-pack",
-        "name": "Burglar's Pack",
-        "url": "/api/2014/equipment/burglars-pack"
-      },
-      {
-        "index": "diplomats-pack",
-        "name": "Diplomat's Pack",
-        "url": "/api/2014/equipment/diplomats-pack"
-      },
-      {
-        "index": "dungeoneers-pack",
-        "name": "Dungeoneer's Pack",
-        "url": "/api/2014/equipment/dungeoneers-pack"
-      },
-      {
-        "index": "entertainers-pack",
-        "name": "Entertainer's Pack",
-        "url": "/api/2014/equipment/entertainers-pack"
-      },
-      {
-        "index": "explorers-pack",
-        "name": "Explorer's Pack",
-        "url": "/api/2014/equipment/explorers-pack"
-      },
-      {
-        "index": "priests-pack",
-        "name": "Priest's Pack",
-        "url": "/api/2014/equipment/priests-pack"
-      },
-      {
-        "index": "scholars-pack",
-        "name": "Scholar's Pack",
-        "url": "/api/2014/equipment/scholars-pack"
-      },
-      {
-        "index": "crystal",
-        "name": "Crystal",
-        "url": "/api/2014/equipment/crystal"
-      },
-      {
-        "index": "orb",
-        "name": "Orb",
-        "url": "/api/2014/equipment/orb"
-      },
-      {
-        "index": "rod",
-        "name": "Rod",
-        "url": "/api/2014/equipment/rod"
-      },
-      {
-        "index": "staff",
-        "name": "Staff",
-        "url": "/api/2014/equipment/staff"
-      },
-      {
-        "index": "wand",
-        "name": "Wand",
-        "url": "/api/2014/equipment/wand"
-      },
-      {
-        "index": "sprig-of-mistletoe",
-        "name": "Sprig of mistletoe",
-        "url": "/api/2014/equipment/sprig-of-mistletoe"
-      },
-      {
-        "index": "totem",
-        "name": "Totem",
-        "url": "/api/2014/equipment/totem"
-      },
-      {
-        "index": "wooden-staff",
-        "name": "Wooden staff",
-        "url": "/api/2014/equipment/wooden-staff"
-      },
-      {
-        "index": "yew-wand",
-        "name": "Yew wand",
-        "url": "/api/2014/equipment/yew-wand"
-=======
         "url": "/api/equipment/torch"
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
       }
     ],
     "url": "/api/2014/equipment-categories/adventuring-gear"
@@ -1415,331 +850,6 @@
     "url": "/api/2014/equipment-categories/tools"
   },
   {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-    "index": "mounts-and-vehicles",
-    "name": "Mounts and Vehicles",
-    "equipment": [
-      {
-        "index": "mule",
-        "name": "Mule",
-        "url": "/api/2014/equipment/mule"
-      },
-      {
-        "index": "elephant",
-        "name": "Elephant",
-        "url": "/api/2014/equipment/elephant"
-      },
-      {
-        "index": "horse-draft",
-        "name": "Horse, draft",
-        "url": "/api/2014/equipment/horse-draft"
-      },
-      {
-        "index": "horse-riding",
-        "name": "Horse, riding",
-        "url": "/api/2014/equipment/horse-riding"
-      },
-      {
-        "index": "mastiff",
-        "name": "Mastiff",
-        "url": "/api/2014/equipment/mastiff"
-      },
-      {
-        "index": "pony",
-        "name": "Pony",
-        "url": "/api/2014/equipment/pony"
-      },
-      {
-        "index": "warhorse",
-        "name": "Warhorse",
-        "url": "/api/2014/equipment/warhorse"
-      },
-      {
-        "index": "barding-padded",
-        "name": "Barding: Padded",
-        "url": "/api/2014/equipment/barding-padded"
-      },
-      {
-        "index": "barding-leather",
-        "name": "Barding: Leather",
-        "url": "/api/2014/equipment/barding-leather"
-      },
-      {
-        "index": "barding-studded-leather",
-        "name": "Barding: Studded Leather",
-        "url": "/api/2014/equipment/barding-studded-leather"
-      },
-      {
-        "index": "barding-hide",
-        "name": "Barding: Hide",
-        "url": "/api/2014/equipment/barding-hide"
-      },
-      {
-        "index": "barding-chain-shirt",
-        "name": "Barding: Chain shirt",
-        "url": "/api/2014/equipment/barding-chain-shirt"
-      },
-      {
-        "index": "barding-scale-mail",
-        "name": "Barding: Scale mail",
-        "url": "/api/2014/equipment/barding-scale-mail"
-      },
-      {
-        "index": "barding-breastplate",
-        "name": "Barding: Breastplate",
-        "url": "/api/2014/equipment/barding-breastplate"
-      },
-      {
-        "index": "barding-half-plate",
-        "name": "Barding: Half plate",
-        "url": "/api/2014/equipment/barding-half-plate"
-      },
-      {
-        "index": "barding-ring-mail",
-        "name": "Barding: Ring mail",
-        "url": "/api/2014/equipment/barding-ring-mail"
-      },
-      {
-        "index": "barding-chain-mail",
-        "name": "Barding: Chain mail",
-        "url": "/api/2014/equipment/barding-chain-mail"
-      },
-      {
-        "index": "barding-splint",
-        "name": "Barding: Splint",
-        "url": "/api/2014/equipment/barding-splint"
-      },
-      {
-        "index": "barding-plate",
-        "name": "Barding: Plate",
-        "url": "/api/2014/equipment/barding-plate"
-      },
-      {
-        "index": "bit-and-bridle",
-        "name": "Bit and bridle",
-        "url": "/api/2014/equipment/bit-and-bridle"
-      },
-      {
-        "index": "carriage",
-        "name": "Carriage",
-        "url": "/api/2014/equipment/carriage"
-      },
-      {
-        "index": "cart",
-        "name": "Cart",
-        "url": "/api/2014/equipment/cart"
-      },
-      {
-        "index": "chariot",
-        "name": "Chariot",
-        "url": "/api/2014/equipment/chariot"
-      },
-      {
-        "index": "animal-feed-1-day",
-        "name": "Animal Feed (1 day)",
-        "url": "/api/2014/equipment/animal-feed-1-day"
-      },
-      {
-        "index": "saddle-exotic",
-        "name": "Saddle, Exotic",
-        "url": "/api/2014/equipment/saddle-exotic"
-      },
-      {
-        "index": "saddle-military",
-        "name": "Saddle, Military",
-        "url": "/api/2014/equipment/saddle-military"
-      },
-      {
-        "index": "saddle-pack",
-        "name": "Saddle, Pack",
-        "url": "/api/2014/equipment/saddle-pack"
-      },
-      {
-        "index": "saddle-riding",
-        "name": "Saddle, Riding",
-        "url": "/api/2014/equipment/saddle-riding"
-      },
-      {
-        "index": "saddlebags",
-        "name": "Saddlebags",
-        "url": "/api/2014/equipment/saddlebags"
-      },
-      {
-        "index": "sled",
-        "name": "Sled",
-        "url": "/api/2014/equipment/sled"
-      },
-      {
-        "index": "stabling-1-day",
-        "name": "Stabling (1 day)",
-        "url": "/api/2014/equipment/stabling-1-day"
-      },
-      {
-        "index": "wagon",
-        "name": "Wagon",
-        "url": "/api/2014/equipment/wagon"
-      },
-      {
-        "index": "barding-padded",
-        "name": "Barding: Padded",
-        "url": "/api/2014/equipment/barding-padded"
-      },
-      {
-        "index": "barding-leather",
-        "name": "Barding: Leather",
-        "url": "/api/2014/equipment/barding-leather"
-      },
-      {
-        "index": "barding-studded-leather",
-        "name": "Barding: Studded Leather",
-        "url": "/api/2014/equipment/barding-studded-leather"
-      },
-      {
-        "index": "barding-hide",
-        "name": "Barding: Hide",
-        "url": "/api/2014/equipment/barding-hide"
-      },
-      {
-        "index": "barding-chain-shirt",
-        "name": "Barding: Chain shirt",
-        "url": "/api/2014/equipment/barding-chain-shirt"
-      },
-      {
-        "index": "barding-scale-mail",
-        "name": "Barding: Scale mail",
-        "url": "/api/2014/equipment/barding-scale-mail"
-      },
-      {
-        "index": "barding-breastplate",
-        "name": "Barding: Breastplate",
-        "url": "/api/2014/equipment/barding-breastplate"
-      },
-      {
-        "index": "barding-half-plate",
-        "name": "Barding: Half plate",
-        "url": "/api/2014/equipment/barding-half-plate"
-      },
-      {
-        "index": "barding-ring-mail",
-        "name": "Barding: Ring mail",
-        "url": "/api/2014/equipment/barding-ring-mail"
-      },
-      {
-        "index": "barding-chain-mail",
-        "name": "Barding: Chain mail",
-        "url": "/api/2014/equipment/barding-chain-mail"
-      },
-      {
-        "index": "barding-splint",
-        "name": "Barding: Splint",
-        "url": "/api/2014/equipment/barding-splint"
-      },
-      {
-        "index": "barding-plate",
-        "name": "Barding: Plate",
-        "url": "/api/2014/equipment/barding-plate"
-      },
-      {
-        "index": "bit-and-bridle",
-        "name": "Bit and bridle",
-        "url": "/api/2014/equipment/bit-and-bridle"
-      },
-      {
-        "index": "carriage",
-        "name": "Carriage",
-        "url": "/api/2014/equipment/carriage"
-      },
-      {
-        "index": "cart",
-        "name": "Cart",
-        "url": "/api/2014/equipment/cart"
-      },
-      {
-        "index": "chariot",
-        "name": "Chariot",
-        "url": "/api/2014/equipment/chariot"
-      },
-      {
-        "index": "animal-feed-1-day",
-        "name": "Animal Feed (1 day)",
-        "url": "/api/2014/equipment/animal-feed-1-day"
-      },
-      {
-        "index": "saddle-exotic",
-        "name": "Saddle, Exotic",
-        "url": "/api/2014/equipment/saddle-exotic"
-      },
-      {
-        "index": "saddle-military",
-        "name": "Saddle, Military",
-        "url": "/api/2014/equipment/saddle-military"
-      },
-      {
-        "index": "saddle-pack",
-        "name": "Saddle, Pack",
-        "url": "/api/2014/equipment/saddle-pack"
-      },
-      {
-        "index": "saddle-riding",
-        "name": "Saddle, Riding",
-        "url": "/api/2014/equipment/saddle-riding"
-      },
-      {
-        "index": "saddlebags",
-        "name": "Saddlebags",
-        "url": "/api/2014/equipment/saddlebags"
-      },
-      {
-        "index": "sled",
-        "name": "Sled",
-        "url": "/api/2014/equipment/sled"
-      },
-      {
-        "index": "stabling-1-day",
-        "name": "Stabling (1 day)",
-        "url": "/api/2014/equipment/stabling-1-day"
-      },
-      {
-        "index": "wagon",
-        "name": "Wagon",
-        "url": "/api/2014/equipment/wagon"
-      },
-      {
-        "index": "galley",
-        "name": "Galley",
-        "url": "/api/2014/equipment/galley"
-      },
-      {
-        "index": "keelboat",
-        "name": "Keelboat",
-        "url": "/api/2014/equipment/keelboat"
-      },
-      {
-        "index": "longship",
-        "name": "Longship",
-        "url": "/api/2014/equipment/longship"
-      },
-      {
-        "index": "rowboat",
-        "name": "Rowboat",
-        "url": "/api/2014/equipment/rowboat"
-      },
-      {
-        "index": "sailing-ship",
-        "name": "Sailing ship",
-        "url": "/api/2014/equipment/sailing-ship"
-      },
-      {
-        "index": "warship",
-        "name": "Warship",
-        "url": "/api/2014/equipment/warship"
-      }
-    ],
-    "url": "/api/2014/equipment-categories/mounts-and-vehicles"
-  },
-  {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
     "index": "simple-weapons",
     "name": "Simple Weapons",
     "equipment": [
@@ -2448,14 +1558,6 @@
     "name": "Standard Gear",
     "equipment": [
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "abacus",
-        "name": "Abacus",
-        "url": "/api/2014/equipment/abacus"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "acid-vial",
         "name": "Acid (vial)",
         "url": "/api/2014/equipment/acid-vial"
@@ -2486,14 +1588,6 @@
         "url": "/api/2014/equipment/sling-bullet"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "alms-box",
-        "name": "Alms box",
-        "url": "/api/2014/equipment/alms-box"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "antitoxin-vial",
         "name": "Antitoxin (vial)",
         "url": "/api/2014/equipment/antitoxin-vial"
@@ -2509,64 +1603,6 @@
         "url": "/api/2014/equipment/ball-bearings-bag-of-1000"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "barrel",
-        "name": "Barrel",
-        "url": "/api/2014/equipment/barrel"
-      },
-      {
-        "index": "basket",
-        "name": "Basket",
-        "url": "/api/2014/equipment/basket"
-      },
-      {
-        "index": "bedroll",
-        "name": "Bedroll",
-        "url": "/api/2014/equipment/bedroll"
-      },
-      {
-        "index": "bell",
-        "name": "Bell",
-        "url": "/api/2014/equipment/bell"
-      },
-      {
-        "index": "blanket",
-        "name": "Blanket",
-        "url": "/api/2014/equipment/blanket"
-      },
-      {
-        "index": "block-and-tackle",
-        "name": "Block and tackle",
-        "url": "/api/2014/equipment/block-and-tackle"
-      },
-      {
-        "index": "block-of-incense",
-        "name": "Block of incense",
-        "url": "/api/2014/equipment/block-of-incense"
-      },
-      {
-        "index": "book",
-        "name": "Book",
-        "url": "/api/2014/equipment/book"
-      },
-      {
-        "index": "bottle-glass",
-        "name": "Bottle, glass",
-        "url": "/api/2014/equipment/bottle-glass"
-      },
-      {
-        "index": "bucket",
-        "name": "Bucket",
-        "url": "/api/2014/equipment/bucket"
-      },
-      {
-        "index": "caltrops",
-        "name": "Caltrops",
-        "url": "/api/2014/equipment/caltrops"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "candle",
         "name": "Candle",
         "url": "/api/2014/equipment/candle"
@@ -2577,207 +1613,11 @@
         "url": "/api/2014/equipment/case-crossbow-bolt"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "case-map-or-scroll",
-        "name": "Case, map or scroll",
-        "url": "/api/2014/equipment/case-map-or-scroll"
-      },
-      {
-        "index": "censer",
-        "name": "Censer",
-        "url": "/api/2014/equipment/censer"
-      },
-      {
-        "index": "chain-10-feet",
-        "name": "Chain (10 feet)",
-        "url": "/api/2014/equipment/chain-10-feet"
-      },
-      {
-        "index": "chalk-1-piece",
-        "name": "Chalk (1 piece)",
-        "url": "/api/2014/equipment/chalk-1-piece"
-      },
-      {
-        "index": "chest",
-        "name": "Chest",
-        "url": "/api/2014/equipment/chest"
-      },
-      {
-        "index": "clothes-common",
-        "name": "Clothes, common",
-        "url": "/api/2014/equipment/clothes-common"
-      },
-      {
-        "index": "clothes-costume",
-        "name": "Clothes, costume",
-        "url": "/api/2014/equipment/clothes-costume"
-      },
-      {
-        "index": "clothes-fine",
-        "name": "Clothes, fine",
-        "url": "/api/2014/equipment/clothes-fine"
-      },
-      {
-        "index": "clothes-travelers",
-        "name": "Clothes, traveler's",
-        "url": "/api/2014/equipment/clothes-travelers"
-      },
-      {
-        "index": "component-pouch",
-        "name": "Component pouch",
-        "url": "/api/2014/equipment/component-pouch"
-      },
-      {
-        "index": "crowbar",
-        "name": "Crowbar",
-        "url": "/api/2014/equipment/crowbar"
-      },
-      {
-        "index": "fishing-tackle",
-        "name": "Fishing tackle",
-        "url": "/api/2014/equipment/fishing-tackle"
-      },
-      {
-        "index": "flask-or-tankard",
-        "name": "Flask or tankard",
-        "url": "/api/2014/equipment/flask-or-tankard"
-      },
-      {
-        "index": "grappling-hook",
-        "name": "Grappling hook",
-        "url": "/api/2014/equipment/grappling-hook"
-      },
-      {
-        "index": "hammer",
-        "name": "Hammer",
-        "url": "/api/2014/equipment/hammer"
-      },
-      {
-        "index": "hammer-sledge",
-        "name": "Hammer, sledge",
-        "url": "/api/2014/equipment/hammer-sledge"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "holy-water-flask",
         "name": "Holy water (flask)",
         "url": "/api/2014/equipment/holy-water-flask"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "hourglass",
-        "name": "Hourglass",
-        "url": "/api/2014/equipment/hourglass"
-      },
-      {
-        "index": "hunting-trap",
-        "name": "Hunting trap",
-        "url": "/api/2014/equipment/hunting-trap"
-      },
-      {
-        "index": "ink-1-ounce-bottle",
-        "name": "Ink (1 ounce bottle)",
-        "url": "/api/2014/equipment/ink-1-ounce-bottle"
-      },
-      {
-        "index": "ink-pen",
-        "name": "Ink pen",
-        "url": "/api/2014/equipment/ink-pen"
-      },
-      {
-        "index": "hourglass",
-        "name": "Hourglass",
-        "url": "/api/2014/equipment/hourglass"
-      },
-      {
-        "index": "hunting-trap",
-        "name": "Hunting trap",
-        "url": "/api/2014/equipment/hunting-trap"
-      },
-      {
-        "index": "ink-1-ounce-bottle",
-        "name": "Ink (1 ounce bottle)",
-        "url": "/api/2014/equipment/ink-1-ounce-bottle"
-      },
-      {
-        "index": "ink-pen",
-        "name": "Ink pen",
-        "url": "/api/2014/equipment/ink-pen"
-      },
-      {
-        "index": "jug-or-pitcher",
-        "name": "Jug or pitcher",
-        "url": "/api/2014/equipment/jug-or-pitcher"
-      },
-      {
-        "index": "ladder-10-foot",
-        "name": "Ladder (10-foot)",
-        "url": "/api/2014/equipment/ladder-10-foot"
-      },
-      {
-        "index": "lamp",
-        "name": "Lamp",
-        "url": "/api/2014/equipment/lamp"
-      },
-      {
-        "index": "lantern-bullseye",
-        "name": "Lantern, bullseye",
-        "url": "/api/2014/equipment/lantern-bullseye"
-      },
-      {
-        "index": "lantern-hooded",
-        "name": "Lantern, hooded",
-        "url": "/api/2014/equipment/lantern-hooded"
-      },
-      {
-        "index": "little-bag-of-sand",
-        "name": "Little bag of sand",
-        "url": "/api/2014/equipment/little-bag-of-sand"
-      },
-      {
-        "index": "lock",
-        "name": "Lock",
-        "url": "/api/2014/equipment/lock"
-      },
-      {
-        "index": "magnifying-glass",
-        "name": "Magnifying glass",
-        "url": "/api/2014/equipment/magnifying-glass"
-      },
-      {
-        "index": "manacles",
-        "name": "Manacles",
-        "url": "/api/2014/equipment/manacles"
-      },
-      {
-        "index": "mirror-steel",
-        "name": "Mirror, steel",
-        "url": "/api/2014/equipment/mirror-steel"
-      },
-      {
-        "index": "oil-flask",
-        "name": "Oil (flask)",
-        "url": "/api/2014/equipment/oil-flask"
-      },
-      {
-        "index": "paper-one-sheet",
-        "name": "Paper (one sheet)",
-        "url": "/api/2014/equipment/paper-one-sheet"
-      },
-      {
-        "index": "parchment-one-sheet",
-        "name": "Parchment (one sheet)",
-        "url": "/api/2014/equipment/parchment-one-sheet"
-      },
-      {
-        "index": "perfume-vial",
-        "name": "Perfume (vial)",
-        "url": "/api/2014/equipment/perfume-vial"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "pick-miners",
         "name": "Pick, miner's",
         "url": "/api/2014/equipment/pick-miners"
@@ -3112,26 +1952,6 @@
     "url": "/api/2014/equipment-categories/artisans-tools"
   },
   {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-    "index": "gaming-sets",
-    "name": "Gaming Sets",
-    "equipment": [
-      {
-        "index": "dice-set",
-        "name": "Dice Set",
-        "url": "/api/2014/equipment/dice-set"
-      },
-      {
-        "index": "playing-card-set",
-        "name": "Playing Card Set",
-        "url": "/api/2014/equipment/playing-card-set"
-      }
-    ],
-    "url": "/api/2014/equipment-categories/gaming-sets"
-  },
-  {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
     "index": "musical-instruments",
     "name": "Musical Instruments",
     "equipment": [
@@ -3206,252 +2026,6 @@
     "url": "/api/2014/equipment-categories/other-tools"
   },
   {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-    "index": "mounts-and-other-animals",
-    "name": "Mounts and Other Animals",
-    "equipment": [
-      {
-        "index": "mule",
-        "name": "Mule",
-        "url": "/api/2014/equipment/mule"
-      },
-      {
-        "index": "elephant",
-        "name": "Elephant",
-        "url": "/api/2014/equipment/elephant"
-      },
-      {
-        "index": "horse-draft",
-        "name": "Horse, draft",
-        "url": "/api/2014/equipment/horse-draft"
-      },
-      {
-        "index": "horse-riding",
-        "name": "Horse, riding",
-        "url": "/api/2014/equipment/horse-riding"
-      },
-      {
-        "index": "mastiff",
-        "name": "Mastiff",
-        "url": "/api/2014/equipment/mastiff"
-      },
-      {
-        "index": "pony",
-        "name": "Pony",
-        "url": "/api/2014/equipment/pony"
-      },
-      {
-        "index": "warhorse",
-        "name": "Warhorse",
-        "url": "/api/2014/equipment/warhorse"
-      }
-    ],
-    "url": "/api/2014/equipment-categories/mounts-and-other-animals"
-  },
-  {
-    "index": "tack-harness-and-drawn-vehicles",
-    "name": "Tack, Harness, and Drawn Vehicles",
-    "equipment": [
-      {
-        "index": "barding-padded",
-        "name": "Barding: Padded",
-        "url": "/api/2014/equipment/barding-padded"
-      },
-      {
-        "index": "barding-leather",
-        "name": "Barding: Leather",
-        "url": "/api/2014/equipment/barding-leather"
-      },
-      {
-        "index": "barding-studded-leather",
-        "name": "Barding: Studded Leather",
-        "url": "/api/2014/equipment/barding-studded-leather"
-      },
-      {
-        "index": "barding-hide",
-        "name": "Barding: Hide",
-        "url": "/api/2014/equipment/barding-hide"
-      },
-      {
-        "index": "barding-chain-shirt",
-        "name": "Barding: Chain shirt",
-        "url": "/api/2014/equipment/barding-chain-shirt"
-      },
-      {
-        "index": "barding-scale-mail",
-        "name": "Barding: Scale mail",
-        "url": "/api/2014/equipment/barding-scale-mail"
-      },
-      {
-        "index": "barding-breastplate",
-        "name": "Barding: Breastplate",
-        "url": "/api/2014/equipment/barding-breastplate"
-      },
-      {
-        "index": "barding-half-plate",
-        "name": "Barding: Half plate",
-        "url": "/api/2014/equipment/barding-half-plate"
-      },
-      {
-        "index": "barding-ring-mail",
-        "name": "Barding: Ring mail",
-        "url": "/api/2014/equipment/barding-ring-mail"
-      },
-      {
-        "index": "barding-chain-mail",
-        "name": "Barding: Chain mail",
-        "url": "/api/2014/equipment/barding-chain-mail"
-      },
-      {
-        "index": "barding-splint",
-        "name": "Barding: Splint",
-        "url": "/api/2014/equipment/barding-splint"
-      },
-      {
-        "index": "barding-plate",
-        "name": "Barding: Plate",
-        "url": "/api/2014/equipment/barding-plate"
-      },
-      {
-        "index": "bit-and-bridle",
-        "name": "Bit and bridle",
-        "url": "/api/2014/equipment/bit-and-bridle"
-      },
-      {
-        "index": "carriage",
-        "name": "Carriage",
-        "url": "/api/2014/equipment/carriage"
-      },
-      {
-        "index": "cart",
-        "name": "Cart",
-        "url": "/api/2014/equipment/cart"
-      },
-      {
-        "index": "chariot",
-        "name": "Chariot",
-        "url": "/api/2014/equipment/chariot"
-      },
-      {
-        "index": "animal-feed-1-day",
-        "name": "Animal Feed (1 day)",
-        "url": "/api/2014/equipment/animal-feed-1-day"
-      },
-      {
-        "index": "saddle-exotic",
-        "name": "Saddle, Exotic",
-        "url": "/api/2014/equipment/saddle-exotic"
-      },
-      {
-        "index": "saddle-military",
-        "name": "Saddle, Military",
-        "url": "/api/2014/equipment/saddle-military"
-      },
-      {
-        "index": "saddle-pack",
-        "name": "Saddle, Pack",
-        "url": "/api/2014/equipment/saddle-pack"
-      },
-      {
-        "index": "saddle-riding",
-        "name": "Saddle, Riding",
-        "url": "/api/2014/equipment/saddle-riding"
-      },
-      {
-        "index": "saddlebags",
-        "name": "Saddlebags",
-        "url": "/api/2014/equipment/saddlebags"
-      },
-      {
-        "index": "sled",
-        "name": "Sled",
-        "url": "/api/2014/equipment/sled"
-      },
-      {
-        "index": "stabling-1-day",
-        "name": "Stabling (1 day)",
-        "url": "/api/2014/equipment/stabling-1-day"
-      },
-      {
-        "index": "wagon",
-        "name": "Wagon",
-        "url": "/api/2014/equipment/wagon"
-      }
-    ],
-    "url": "/api/2014/equipment-categories/tack-harness-and-drawn-vehicles"
-  },
-  {
-    "index": "land-vehicles",
-    "name": "Land Vehicles",
-    "equipment": [
-      {
-        "index": "carriage",
-        "name": "Carriage",
-        "url": "/api/2014/equipment/carriage"
-      },
-      {
-        "index": "cart",
-        "name": "Cart",
-        "url": "/api/2014/equipment/cart"
-      },
-      {
-        "index": "chariot",
-        "name": "Chariot",
-        "url": "/api/2014/equipment/chariot"
-      },
-      {
-        "index": "sled",
-        "name": "Sled",
-        "url": "/api/2014/equipment/sled"
-      },
-      {
-        "index": "wagon",
-        "name": "Wagon",
-        "url": "/api/2014/equipment/wagon"
-      }
-    ],
-    "url": "/api/2014/equipment-categories/land-vehicles"
-  },
-  {
-    "index": "waterborne-vehicles",
-    "name": "Waterborne Vehicles",
-    "equipment": [
-      {
-        "index": "galley",
-        "name": "Galley",
-        "url": "/api/2014/equipment/galley"
-      },
-      {
-        "index": "keelboat",
-        "name": "Keelboat",
-        "url": "/api/2014/equipment/keelboat"
-      },
-      {
-        "index": "longship",
-        "name": "Longship",
-        "url": "/api/2014/equipment/longship"
-      },
-      {
-        "index": "rowboat",
-        "name": "Rowboat",
-        "url": "/api/2014/equipment/rowboat"
-      },
-      {
-        "index": "sailing-ship",
-        "name": "Sailing ship",
-        "url": "/api/2014/equipment/sailing-ship"
-      },
-      {
-        "index": "warship",
-        "name": "Warship",
-        "url": "/api/2014/equipment/warship"
-      }
-    ],
-    "url": "/api/2014/equipment-categories/waterborne-vehicles"
-  },
-  {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
     "index": "arcane-foci",
     "name": "Arcane Foci",
     "equipment": [
@@ -3542,24 +2116,6 @@
         "url": "/api/2014/magic-items/amulet-of-health"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "amulet-of-proof-against-detection-and-location",
-        "name": "Amulet of Proof against Detection and Location",
-        "url": "/api/2014/magic-items/amulet-of-proof-against-detection-and-location"
-      },
-      {
-        "index": "amulet-of-the-planes",
-        "name": "Amulet of the Planes",
-        "url": "/api/2014/magic-items/amulet-of-the-planes"
-      },
-      {
-        "index": "apparatus-of-the-crab",
-        "name": "Apparatus of the Crab",
-        "url": "/api/2014/magic-items/apparatus-of-the-crab"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "bag-of-beans",
         "name": "Bag of Beans",
         "url": "/api/2014/magic-items/bag-of-beans"
@@ -3600,40 +2156,16 @@
         "url": "/api/2014/magic-items/boots-of-elvenkind"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "boots-of-levitation",
-        "name": "Boots of Levitation",
-        "url": "/api/2014/magic-items/boots-of-levitation"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "boots-of-speed",
         "name": "Boots of Speed",
         "url": "/api/2014/magic-items/boots-of-speed"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "boots-of-striding-and-springing",
-        "name": "Boots of Striding and Springing",
-        "url": "/api/2014/magic-items/boots-of-striding-and-springing"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "boots-of-the-winterlands",
         "name": "Boots of the Winterlands",
         "url": "/api/2014/magic-items/boots-of-the-winterlands"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "bowl-of-commanding-water-elementals",
-        "name": "Bowl of Commanding Water Elementals",
-        "url": "/api/2014/magic-items/bowl-of-commanding-water-elementals"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "bracers-of-archery",
         "name": "Bracers of Archery",
         "url": "/api/2014/magic-items/bracers-of-archery"
@@ -3644,55 +2176,16 @@
         "url": "/api/2014/magic-items/bracers-of-defense"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "brazier-of-commanding-fire-elementals",
-        "name": "Brazier of Commanding Fire Elementals",
-        "url": "/api/2014/magic-items/brazier-of-commanding-fire-elementals"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "brooch-of-shielding",
         "name": "Brooch of Shielding",
         "url": "/api/2014/magic-items/brooch-of-shielding"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "broom-of-flying",
-        "name": "Broom of Flying",
-        "url": "/api/2014/magic-items/broom-of-flying"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "candle-of-invocation",
         "name": "Candle of Invocation",
         "url": "/api/2014/magic-items/candle-of-invocation"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "cape-of-the-mountebank",
-        "name": "Cape of the Mountebank",
-        "url": "/api/2014/magic-items/cape-of-the-mountebank"
-      },
-      {
-        "index": "carpet-of-flying",
-        "name": "Carpet of Flying",
-        "url": "/api/2014/magic-items/carpet-of-flying"
-      },
-      {
-        "index": "censer-of-controlling-air-elementals",
-        "name": "Censer of Controlling Air Elementals",
-        "url": "/api/2014/magic-items/censer-of-controlling-air-elementals"
-      },
-      {
-        "index": "chime-of-opening",
-        "name": "Chime of Opening",
-        "url": "/api/2014/magic-items/chime-of-opening"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "circlet-of-blasting",
         "name": "Circlet of Blasting",
         "url": "/api/2014/magic-items/circlet-of-blasting"
@@ -3718,92 +2211,11 @@
         "url": "/api/2014/magic-items/cloak-of-protection"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "cloak-of-the-bat",
-        "name": "Cloak of the Bat",
-        "url": "/api/2014/magic-items/cloak-of-the-bat"
-      },
-      {
-        "index": "cloak-of-the-manta-ray",
-        "name": "Cloak of the Manta Ray",
-        "url": "/api/2014/magic-items/cloak-of-the-manta-ray"
-      },
-      {
-        "index": "crystal-ball",
-        "name": "Crystal Ball",
-        "url": "/api/2014/magic-items/crystal-ball"
-      },
-      {
-        "index": "cube-of-force",
-        "name": "Cube of Force",
-        "url": "/api/2014/magic-items/cube-of-force"
-      },
-      {
-        "index": "cubic-gate",
-        "name": "Cubic Gate",
-        "url": "/api/2014/magic-items/cubic-gate"
-      },
-      {
-        "index": "decanter-of-endless-water",
-        "name": "Decanter of Endless Water",
-        "url": "/api/2014/magic-items/decanter-of-endless-water"
-      },
-      {
-        "index": "deck-of-illusions",
-        "name": "Deck of Illusions",
-        "url": "/api/2014/magic-items/deck-of-illusions"
-      },
-      {
-        "index": "deck-of-many-things",
-        "name": "Deck of Many Things",
-        "url": "/api/2014/magic-items/deck-of-many-things"
-      },
-      {
-        "index": "dimensional-shackles",
-        "name": "Dimensional Shackles",
-        "url": "/api/2014/magic-items/dimensional-shackles"
-      },
-      {
-        "index": "dust-of-disappearance",
-        "name": "Dust of Disappearance",
-        "url": "/api/2014/magic-items/dust-of-disappearance"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "dust-of-dryness",
         "name": "Dust of Dryness",
         "url": "/api/2014/magic-items/dust-of-dryness"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "dust-of-sneezing-and-choking",
-        "name": "Dust of Sneezing and Choking",
-        "url": "/api/2014/magic-items/dust-of-sneezing-and-choking"
-      },
-      {
-        "index": "efficient-quiver",
-        "name": "Efficient Quiver",
-        "url": "/api/2014/magic-items/efficient-quiver"
-      },
-      {
-        "index": "efreeti-bottle",
-        "name": "Efreeti Bottle",
-        "url": "/api/2014/magic-items/efreeti-bottle"
-      },
-      {
-        "index": "elemental-gem",
-        "name": "Elemental Gem",
-        "url": "/api/2014/magic-items/elemental-gem"
-      },
-      {
-        "index": "eversmoking-bottle",
-        "name": "Eversmoking Bottle",
-        "url": "/api/2014/magic-items/eversmoking-bottle"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "eyes-of-charming",
         "name": "Eyes of Charming",
         "url": "/api/2014/magic-items/eyes-of-charming"
@@ -3819,42 +2231,11 @@
         "url": "/api/2014/magic-items/eyes-of-the-eagle"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "feather-token",
-        "name": "Feather Token",
-        "url": "/api/2014/magic-items/feather-token"
-      },
-      {
-        "index": "figurine-of-wondrous-power",
-        "name": "Figurine of Wondrous Power",
-        "url": "/api/2014/magic-items/figurine-of-wondrous-power"
-      },
-      {
-        "index": "folding-boat",
-        "name": "Folding Boat",
-        "url": "/api/2014/magic-items/folding-boat"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "gauntlets-of-ogre-power",
         "name": "Gauntlets of Ogre Power",
         "url": "/api/2014/magic-items/gauntlets-of-ogre-power"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "gem-of-brightness",
-        "name": "Gem of Brightness",
-        "url": "/api/2014/magic-items/gem-of-brightness"
-      },
-      {
-        "index": "gem-of-seeing",
-        "name": "Gem of Seeing",
-        "url": "/api/2014/magic-items/gem-of-seeing"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "gloves-of-missile-snaring",
         "name": "Gloves of Missile Snaring",
         "url": "/api/2014/magic-items/gloves-of-missile-snaring"
@@ -3925,37 +2306,11 @@
         "url": "/api/2014/magic-items/horseshoes-of-speed"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "instant-fortress",
-        "name": "Instant Fortress",
-        "url": "/api/2014/magic-items/instant-fortress"
-      },
-      {
-        "index": "ioun-stone",
-        "name": "Ioun Stone",
-        "url": "/api/2014/magic-items/ioun-stone"
-      },
-      {
-        "index": "iron-bands-of-binding",
-        "name": "Iron Bands of Binding",
-        "url": "/api/2014/magic-items/iron-bands-of-binding"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "iron-flask",
         "name": "Iron Flask",
         "url": "/api/2014/magic-items/iron-flask"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "lantern-of-revealing",
-        "name": "Lantern of Revealing",
-        "url": "/api/2014/magic-items/lantern-of-revealing"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "mantle-of-spell-resistance",
         "name": "Mantle of Spell Resistance",
         "url": "/api/2014/magic-items/mantle-of-spell-resistance"
@@ -4106,37 +2461,11 @@
         "url": "/api/2014/magic-items/sphere-of-annihilation"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "stone-of-controlling-earth-elementals",
-        "name": "Stone of Controlling Earth Elementals",
-        "url": "/api/2014/magic-items/stone-of-controlling-earth-elementals"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "stone-of-good-luck-luckstone",
         "name": "Stone of Good Luck (Luckstone)",
         "url": "/api/2014/magic-items/stone-of-good-luck-luckstone"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "talisman-of-pure-good",
-        "name": "Talisman of Pure Good",
-        "url": "/api/2014/magic-items/talisman-of-pure-good"
-      },
-      {
-        "index": "talisman-of-the-sphere",
-        "name": "Talisman of the Sphere",
-        "url": "/api/2014/magic-items/talisman-of-the-sphere"
-      },
-      {
-        "index": "talisman-of-ultimate-evil",
-        "name": "Talisman of Ultimate Evil",
-        "url": "/api/2014/magic-items/talisman-of-ultimate-evil"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "tome-of-clear-thought",
         "name": "Tome of Clear Thought",
         "url": "/api/2014/magic-items/tome-of-clear-thought"
@@ -4157,34 +2486,6 @@
         "url": "/api/2014/magic-items/universal-solvent"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "well-of-many-worlds",
-        "name": "Well of Many Worlds",
-        "url": "/api/2014/magic-items/well-of-many-worlds"
-      },
-      {
-        "index": "wind-fan",
-        "name": "Wind Fan",
-        "url": "/api/2014/magic-items/wind-fan"
-      },
-      {
-        "index": "winged-boots",
-        "name": "Winged Boots",
-        "url": "/api/2014/magic-items/winged-boots"
-      },
-      {
-        "index": "wings-of-flying",
-        "name": "Wings of Flying",
-        "url": "/api/2014/magic-items/wings-of-flying"
-      },
-      {
-        "index": "orb-of-dragonkind",
-        "name": "Orb of Dragonkind",
-        "url": "/api/2014/magic-items/orb-of-dragonkind"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "bag-of-tricks-gray",
         "name": "Gray Bag of Tricks",
         "url": "/api/2014/magic-items/bag-of-tricks-gray"
@@ -4230,139 +2531,6 @@
         "url": "/api/2014/magic-items/belt-of-giant-strength-storm"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "carpet-of-flying-3x5",
-        "name": "Carpet of Flying (3 ft. × 5 ft.)",
-        "url": "/api/2014/magic-items/carpet-of-flying-3x5"
-      },
-      {
-        "index": "carpet-of-flying-4x6",
-        "name": "Carpet of Flying (4 ft. × 6 ft.)",
-        "url": "/api/2014/magic-items/carpet-of-flying-4x6"
-      },
-      {
-        "index": "carpet-of-flying-5x7",
-        "name": "Carpet of Flying (5 ft. × 7 ft.)",
-        "url": "/api/2014/magic-items/carpet-of-flying-5x7"
-      },
-      {
-        "index": "carpet-of-flying-6x9",
-        "name": "Carpet of Flying (6 ft. × 9 ft.)",
-        "url": "/api/2014/magic-items/carpet-of-flying-6x9"
-      },
-      {
-        "index": "crystal-ball-of-mind-reading",
-        "name": "Crystal Ball of Mind Reading",
-        "url": "/api/2014/magic-items/crystal-ball-of-mind-reading"
-      },
-      {
-        "index": "crystal-ball-of-telepathy",
-        "name": "Crystal Ball of Telepathy",
-        "url": "/api/2014/magic-items/crystal-ball-of-telepathy"
-      },
-      {
-        "index": "crystal-ball-of-true-seeing",
-        "name": "Crystal Ball of True Seeing",
-        "url": "/api/2014/magic-items/crystal-ball-of-true-seeing"
-      },
-      {
-        "index": "elemental-gem-air",
-        "name": "Air Elemental Gem",
-        "url": "/api/2014/magic-items/elemental-gem-air"
-      },
-      {
-        "index": "elemental-gem-earth",
-        "name": "Earth Elemental Gem",
-        "url": "/api/2014/magic-items/elemental-gem-earth"
-      },
-      {
-        "index": "elemental-gem-fire",
-        "name": "Fire Elemental Gem",
-        "url": "/api/2014/magic-items/elemental-gem-fire"
-      },
-      {
-        "index": "elemental-gem-water",
-        "name": "Water Elemental Gem",
-        "url": "/api/2014/magic-items/elemental-gem-water"
-      },
-      {
-        "index": "feather-token-anchor",
-        "name": "Anchor Feather Token",
-        "url": "/api/2014/magic-items/feather-token-anchor"
-      },
-      {
-        "index": "feather-token-bird",
-        "name": "Bird Feather Token",
-        "url": "/api/2014/magic-items/feather-token-bird"
-      },
-      {
-        "index": "feather-token-fan",
-        "name": "Fan Feather Token",
-        "url": "/api/2014/magic-items/feather-token-fan"
-      },
-      {
-        "index": "feather-token-swan-boat",
-        "name": "Swan Boat Feather Token",
-        "url": "/api/2014/magic-items/feather-token-swan-boat"
-      },
-      {
-        "index": "feather-token-tree",
-        "name": "Tree Feather Token",
-        "url": "/api/2014/magic-items/feather-token-tree"
-      },
-      {
-        "index": "feather-token-whip",
-        "name": "Whip Feather Token",
-        "url": "/api/2014/magic-items/feather-token-whip"
-      },
-      {
-        "index": "figurine-of-wondrous-power-bronze-griffon",
-        "name": "Bronze Griffon Figurine of Wondrous Power",
-        "url": "/api/2014/magic-items/figurine-of-wondrous-power-bronze-griffon"
-      },
-      {
-        "index": "figurine-of-wondrous-power-ebony-fly",
-        "name": "Ebony Fly Figurine of Wondrous Power",
-        "url": "/api/2014/magic-items/figurine-of-wondrous-power-ebony-fly"
-      },
-      {
-        "index": "figurine-of-wondrous-power-golden-lions",
-        "name": "Golden Lions Figurine of Wondrous Power",
-        "url": "/api/2014/magic-items/figurine-of-wondrous-power-golden-lions"
-      },
-      {
-        "index": "figurine-of-wondrous-power-ivory-goats",
-        "name": "Ivory Goats Figurine of Wondrous Power",
-        "url": "/api/2014/magic-items/figurine-of-wondrous-power-ivory-goats"
-      },
-      {
-        "index": "figurine-of-wondrous-power-marble-elephant",
-        "name": "Marble Elephant Figurine of Wondrous Power",
-        "url": "/api/2014/magic-items/figurine-of-wondrous-power-marble-elephant"
-      },
-      {
-        "index": "figurine-of-wondrous-power-obsidian-steed",
-        "name": "Obsidian Steed Figurine of Wondrous Power",
-        "url": "/api/2014/magic-items/figurine-of-wondrous-power-obsidian-steed"
-      },
-      {
-        "index": "figurine-of-wondrous-power-onyx-dog",
-        "name": "Onyx Dog Figurine of Wondrous Power",
-        "url": "/api/2014/magic-items/figurine-of-wondrous-power-onyx-dog"
-      },
-      {
-        "index": "figurine-of-wondrous-power-serpentine-owl",
-        "name": "Serpentine Owl Figurine of Wondrous Power",
-        "url": "/api/2014/magic-items/figurine-of-wondrous-power-serpentine-owl"
-      },
-      {
-        "index": "figurine-of-wondrous-power-silver-raven",
-        "name": "Silver Raven Figurine of Wondrous Power",
-        "url": "/api/2014/magic-items/figurine-of-wondrous-power-silver-raven"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "horn-of-valhalla-silver",
         "name": "Silver Horn of Valhalla",
         "url": "/api/2014/magic-items/horn-of-valhalla-silver"
@@ -4383,79 +2551,6 @@
         "url": "/api/2014/magic-items/horn-of-valhalla-iron"
       },
       {
-<<<<<<< HEAD:src/2014/en/5e-SRD-Equipment-Categories.json
-        "index": "ioun-stone-of-absorption",
-        "name": "Ioun Stone of Absorption",
-        "url": "/api/2014/magic-items/ioun-stone-of-absorption"
-      },
-      {
-        "index": "ioun-stone-of-agility",
-        "name": "Ioun Stone of Agility",
-        "url": "/api/2014/magic-items/ioun-stone-of-agility"
-      },
-      {
-        "index": "ioun-stone-of-awareness",
-        "name": "Ioun Stone of Awareness",
-        "url": "/api/2014/magic-items/ioun-stone-of-awareness"
-      },
-      {
-        "index": "ioun-stone-of-fortitude",
-        "name": "Ioun Stone of Fortitude",
-        "url": "/api/2014/magic-items/ioun-stone-of-fortitude"
-      },
-      {
-        "index": "ioun-stone-of-greater-absorption",
-        "name": "Ioun Stone of Greater Absorption",
-        "url": "/api/2014/magic-items/ioun-stone-of-greater-absorption"
-      },
-      {
-        "index": "ioun-stone-of-insight",
-        "name": "Ioun Stone of Insight",
-        "url": "/api/2014/magic-items/ioun-stone-of-insight"
-      },
-      {
-        "index": "ioun-stone-of-intellect",
-        "name": "Ioun Stone of Intellect",
-        "url": "/api/2014/magic-items/ioun-stone-of-intellect"
-      },
-      {
-        "index": "ioun-stone-of-leadership",
-        "name": "Ioun Stone of Leadership",
-        "url": "/api/2014/magic-items/ioun-stone-of-leadership"
-      },
-      {
-        "index": "ioun-stone-of-mastery",
-        "name": "Ioun Stone of Mastery",
-        "url": "/api/2014/magic-items/ioun-stone-of-mastery"
-      },
-      {
-        "index": "ioun-stone-of-protection",
-        "name": "Ioun Stone of Protection",
-        "url": "/api/2014/magic-items/ioun-stone-of-protection"
-      },
-      {
-        "index": "ioun-stone-of-regeneration",
-        "name": "Ioun Stone of Regeneration",
-        "url": "/api/2014/magic-items/ioun-stone-of-regeneration"
-      },
-      {
-        "index": "ioun-stone-of-reserve",
-        "name": "Ioun Stone of Reserve",
-        "url": "/api/2014/magic-items/ioun-stone-of-reserve"
-      },
-      {
-        "index": "ioun-stone-of-strength",
-        "name": "Ioun Stone of Strength",
-        "url": "/api/2014/magic-items/ioun-stone-of-strength"
-      },
-      {
-        "index": "ioun-stone-of-sustenance",
-        "name": "Ioun Stone of Sustenance",
-        "url": "/api/2014/magic-items/ioun-stone-of-sustenance"
-      },
-      {
-=======
->>>>>>> fd40859 (- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies):src/2014/5e-SRD-Equipment-Categories.json
         "index": "manual-of-golems-clay",
         "name": "Manual of Clay Golems",
         "url": "/api/2014/magic-items/manual-of-golems-clay"
