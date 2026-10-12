@@ -58,6 +58,7 @@ const MonsterAttackSchema = z.strictObject({
 });
 
 const MonsterActionSchema = z.strictObject({
+  // Engine annotations: these fields are not SRD text. Supply counts are engine defaults and are not in the book.
   name: z.string(),
   desc: z.string(),
   attack_bonus: z.number().optional(),
@@ -69,6 +70,9 @@ const MonsterActionSchema = z.strictObject({
   attacks: z.array(MonsterAttackSchema).optional(),
   options: ChoiceSchema.optional(),
   damage: z.array(z.union([DamageSchema, ChoiceSchema])).optional(),
+  weapon: z.string().optional(),
+  weapon_kind: z.enum(['natural', 'manufactured', 'spell']).optional(),
+  supply: z.strictObject({ item: z.string(), count: z.number() }).optional(),
 });
 
 const LegendaryActionSchema = z.strictObject({

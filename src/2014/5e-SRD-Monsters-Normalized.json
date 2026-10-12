@@ -108,7 +108,8 @@
               "success_type": "none"
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -119,7 +120,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d6+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Enslave",
@@ -283,7 +285,9 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d4"
           }
-        ]
+        ],
+        "weapon": "club",
+        "weapon_kind": "manufactured"
       }
     ],
     "image": "/api/images/monsters/acolyte.png",
@@ -407,7 +411,8 @@
             "damage_type": "acid",
             "damage_dice": "1d8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -418,7 +423,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -429,7 +435,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -615,7 +622,8 @@
             "damage_type": "lightning",
             "damage_dice": "1d10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -626,7 +634,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+7"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -637,7 +646,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+7"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -826,7 +836,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -837,7 +848,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -848,7 +860,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -1059,7 +1072,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+7"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -1070,7 +1084,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+7"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -1081,7 +1096,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+7"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -1288,7 +1304,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -1299,7 +1316,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -1310,7 +1328,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -1525,7 +1544,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -1536,7 +1556,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -1547,7 +1568,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -1772,7 +1794,8 @@
             "damage_type": "poison",
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -1783,7 +1806,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -1794,7 +1818,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -1979,7 +2004,8 @@
             "damage_type": "fire",
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -1990,7 +2016,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -2001,7 +2028,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -2189,7 +2217,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -2200,7 +2229,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -2211,7 +2241,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -2423,7 +2454,8 @@
             "damage_type": "cold",
             "damage_dice": "1d8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -2434,7 +2466,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -2445,7 +2478,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -2598,7 +2632,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Whirlwind",
@@ -2749,7 +2784,8 @@
             "damage_type": "acid",
             "damage_dice": "2d8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -2760,7 +2796,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -2771,7 +2808,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -2956,7 +2994,8 @@
             "damage_type": "lightning",
             "damage_dice": "2d10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -2967,7 +3006,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+9"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -2978,7 +3018,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+9"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -3167,7 +3208,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -3178,7 +3220,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -3189,7 +3232,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -3404,7 +3448,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+9"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -3415,7 +3460,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+9"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -3426,7 +3472,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+9"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -3637,7 +3684,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -3648,7 +3696,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -3659,7 +3708,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -3878,7 +3928,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -3889,7 +3940,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -3900,7 +3952,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -4129,7 +4182,8 @@
             "damage_type": "poison",
             "damage_dice": "3d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -4140,7 +4194,8 @@
             "damage_type": "slashing",
             "damage_dice": "4d6+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -4151,7 +4206,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -4336,7 +4392,8 @@
             "damage_type": "fire",
             "damage_dice": "4d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -4347,7 +4404,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -4358,7 +4416,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -4546,7 +4605,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -4557,7 +4617,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -4568,7 +4629,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -4784,7 +4846,8 @@
             "damage_type": "cold",
             "damage_dice": "2d8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -4795,7 +4858,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -4806,7 +4870,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -5083,7 +5148,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d10+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Roar",
@@ -5241,7 +5307,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/animated-armor.png",
@@ -5319,7 +5386,8 @@
               }
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Acid Spray",
@@ -5415,7 +5483,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Rock",
@@ -5427,7 +5496,12 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural",
+        "supply": {
+          "item": "rock",
+          "count": 3
+        }
       }
     ],
     "image": "/api/images/monsters/ape.png",
@@ -5437,7 +5511,7 @@
   {
     "index": "archmage",
     "name": "Archmage",
-    "desc": "Archmages are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption. \n\nAn archmage typically has one or more apprentice mages, and an archmage’s abode has numerous magical wards and guardians to discourage interlopers.",
+    "desc": "Archmages are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption. \n\nAn archmage typically has one or more apprentice mages, and an archmage\u2019s abode has numerous magical wards and guardians to discourage interlopers.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -5686,7 +5760,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon": "dagger",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "dagger",
+          "count": 4
+        }
       }
     ],
     "image": "/api/images/monsters/archmage.png",
@@ -5805,7 +5885,9 @@
             "damage_type": "poison",
             "damage_dice": "7d6"
           }
-        ]
+        ],
+        "weapon": "shortsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Light Crossbow",
@@ -5825,7 +5907,13 @@
             "damage_type": "poison",
             "damage_dice": "7d6"
           }
-        ]
+        ],
+        "weapon": "crossbow-light",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "crossbow-bolt",
+          "count": 20
+        }
       }
     ],
     "image": "/api/images/monsters/assassin.png",
@@ -5889,7 +5977,8 @@
             "damage_type": "slashing",
             "damage_dice": "1d4-1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/awakened-shrub.png",
@@ -5955,7 +6044,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/awakened-tree.png",
@@ -6010,7 +6100,8 @@
             "damage_type": "slashing",
             "damage_dice": "1d8+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/axe-beak.png",
@@ -6111,7 +6202,9 @@
             "damage_type": "fire",
             "damage_dice": "1d6"
           }
-        ]
+        ],
+        "weapon": "warhammer",
+        "weapon_kind": "manufactured"
       }
     ],
     "url": "/api/monsters/azer",
@@ -6171,7 +6264,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4-1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/baboon.png",
@@ -6233,7 +6327,8 @@
             "damage_type": "piercing",
             "damage_dice": "1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/badger.png",
@@ -6371,7 +6466,9 @@
             "damage_type": "lightning",
             "damage_dice": "3d8"
           }
-        ]
+        ],
+        "weapon": "longsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Whip",
@@ -6386,7 +6483,9 @@
             "damage_type": "fire",
             "damage_dice": "3d6"
           }
-        ]
+        ],
+        "weapon": "whip",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Teleport",
@@ -6399,7 +6498,7 @@
   {
     "index": "bandit",
     "name": "Bandit",
-    "desc": "**Bandits** rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.\n\n**Pirates** are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation’s vessels.",
+    "desc": "**Bandits** rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.\n\n**Pirates** are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation\u2019s vessels.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -6448,7 +6547,9 @@
             "damage_type": "slashing",
             "damage_dice": "1d6+1"
           }
-        ]
+        ],
+        "weapon": "scimitar",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Light Crossbow",
@@ -6460,7 +6561,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+1"
           }
-        ]
+        ],
+        "weapon": "crossbow-light",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "crossbow-bolt",
+          "count": 20
+        }
       }
     ],
     "image": "/api/images/monsters/bandit.png",
@@ -6470,7 +6577,7 @@
   {
     "index": "bandit-captain",
     "name": "Bandit Captain",
-    "desc": "It takes a strong personality, ruthless cunning, and a silver tongue to keep a gang of bandits in line. The **bandit captain** has these qualities in spades.\n\nIn addition to managing a crew of selfish malcontents, the **pirate captain** is a variation of the bandit captain, with a ship to protect and command. To keep the crew in line, the captain must mete out rewards and punishment on a regular basis.\n\nMore than treasure, a bandit captain or pirate captain craves infamy. A prisoner who appeals to the captain’s vanity or ego is more likely to be treated fairly than a prisoner who does not or claims not to know anything of the captain’s colorful reputation.",
+    "desc": "It takes a strong personality, ruthless cunning, and a silver tongue to keep a gang of bandits in line. The **bandit captain** has these qualities in spades.\n\nIn addition to managing a crew of selfish malcontents, the **pirate captain** is a variation of the bandit captain, with a ship to protect and command. To keep the crew in line, the captain must mete out rewards and punishment on a regular basis.\n\nMore than treasure, a bandit captain or pirate captain craves infamy. A prisoner who appeals to the captain\u2019s vanity or ego is more likely to be treated fairly than a prisoner who does not or claims not to know anything of the captain\u2019s colorful reputation.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -6577,7 +6684,9 @@
             "damage_type": "slashing",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon": "scimitar",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Dagger",
@@ -6589,7 +6698,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+3"
           }
-        ]
+        ],
+        "weapon": "dagger",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "dagger",
+          "count": 4
+        }
       }
     ],
     "reactions": [
@@ -6745,7 +6860,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -6756,7 +6872,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Hurl Flame",
@@ -6767,7 +6884,8 @@
             "damage_type": "fire",
             "damage_dice": "3d6"
           }
-        ]
+        ],
+        "weapon_kind": "spell"
       }
     ],
     "image": "/api/images/monsters/barbed-devil.png",
@@ -6837,7 +6955,8 @@
             "damage_type": "poison",
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/basilisk",
@@ -6902,7 +7021,8 @@
             "damage_type": "piercing",
             "damage_dice": "1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/bat",
@@ -7009,7 +7129,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Glaive",
@@ -7021,7 +7142,9 @@
             "damage_type": "slashing",
             "damage_dice": "1d10+3"
           }
-        ]
+        ],
+        "weapon": "glaive",
+        "weapon_kind": "manufactured"
       }
     ],
     "url": "/api/monsters/bearded-devil",
@@ -7103,7 +7226,8 @@
             "damage_type": "piercing",
             "damage_dice": "3d10+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Constrict",
@@ -7118,7 +7242,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d10+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Lightning Breath",
@@ -7210,7 +7335,9 @@
             "damage_type": "slashing",
             "damage_dice": "1d12+3"
           }
-        ]
+        ],
+        "weapon": "greataxe",
+        "weapon_kind": "manufactured"
       }
     ],
     "url": "/api/monsters/berserker",
@@ -7287,7 +7414,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -7299,7 +7427,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/black-bear.png",
@@ -7394,7 +7523,8 @@
             "damage_type": "acid",
             "damage_dice": "1d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Acid Breath",
@@ -7504,7 +7634,8 @@
             "damage_type": "acid",
             "damage_dice": "4d8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "reactions": [
@@ -7580,7 +7711,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Teleport",
@@ -7660,7 +7792,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/blood-hawk.png",
@@ -7749,7 +7882,8 @@
             "damage_type": "lightning",
             "damage_dice": "1d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Lightning Breath",
@@ -7861,7 +7995,8 @@
             "damage_type": "slashing",
             "damage_dice": "1d6+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/boar.png",
@@ -7973,7 +8108,8 @@
             "damage_type": "slashing",
             "damage_dice": "1d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Sting",
@@ -7988,7 +8124,8 @@
             "damage_type": "poison",
             "damage_dice": "5d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/bone-devil.png",
@@ -8072,7 +8209,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Breath Weapons",
@@ -8213,7 +8351,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Breath Weapons",
@@ -8338,7 +8477,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -8350,7 +8490,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/brown-bear.png",
@@ -8429,7 +8570,9 @@
             "damage_type": "piercing",
             "damage_dice": "2d8+2"
           }
-        ]
+        ],
+        "weapon": "morningstar",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Javelin",
@@ -8441,7 +8584,13 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+2"
           }
-        ]
+        ],
+        "weapon": "javelin",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "javelin",
+          "count": 4
+        }
       }
     ],
     "image": "/api/images/monsters/bugbear.png",
@@ -8508,7 +8657,8 @@
             "damage_type": "piercing",
             "damage_dice": "4d12+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Deadly Leap",
@@ -8565,7 +8715,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/camel.png",
@@ -8635,7 +8786,8 @@
             "damage_type": "slashing",
             "damage_dice": "1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/cat",
@@ -8750,7 +8902,9 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+4"
           }
-        ]
+        ],
+        "weapon": "pike",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Hooves",
@@ -8762,7 +8916,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Longbow",
@@ -8774,7 +8929,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+2"
           }
-        ]
+        ],
+        "weapon": "longbow",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/centaur",
@@ -8871,7 +9032,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Animate Chains",
@@ -9042,7 +9204,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Horns",
@@ -9053,7 +9216,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d12+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -9064,7 +9228,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Fire Breath",
@@ -9193,7 +9358,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tentacles",
@@ -9305,7 +9471,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d10+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Haste",
@@ -9404,7 +9571,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -9415,7 +9583,8 @@
             "damage_type": "slashing",
             "damage_dice": "1d8+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Moan",
@@ -9627,7 +9796,9 @@
             "damage_type": "piercing",
             "damage_dice": "3d8+8"
           }
-        ]
+        ],
+        "weapon": "morningstar",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Rock",
@@ -9638,7 +9809,12 @@
             "damage_type": "bludgeoning",
             "damage_dice": "4d10+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural",
+        "supply": {
+          "item": "rock",
+          "count": 3
+        }
       }
     ],
     "url": "/api/monsters/cloud-giant"
@@ -9691,7 +9867,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/cockatrice.png",
@@ -9747,7 +9924,9 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d4"
           }
-        ]
+        ],
+        "weapon": "club",
+        "weapon_kind": "manufactured"
       }
     ],
     "image": "/api/images/monsters/commoner.png",
@@ -9803,7 +9982,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Constrict",
@@ -9827,7 +10007,8 @@
               }
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/constrictor-snake.png",
@@ -9912,7 +10093,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Breath Weapons",
@@ -10171,7 +10353,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Constrict",
@@ -10182,7 +10365,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Change Shape",
@@ -10252,7 +10436,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/crab",
@@ -10328,7 +10513,8 @@
               }
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/crocodile.png",
@@ -10338,7 +10524,7 @@
   {
     "index": "cult-fanatic",
     "name": "Cult Fanatic",
-    "desc": "Fanatics are often part of a cult’s leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.",
+    "desc": "Fanatics are often part of a cult\u2019s leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -10480,7 +10666,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon": "dagger",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "dagger",
+          "count": 4
+        }
       }
     ],
     "url": "/api/monsters/cult-fanatic",
@@ -10553,7 +10745,9 @@
             "damage_type": "slashing",
             "damage_dice": "1d6+1"
           }
-        ]
+        ],
+        "weapon": "scimitar",
+        "weapon_kind": "manufactured"
       }
     ],
     "url": "/api/monsters/cultist",
@@ -10639,7 +10833,7 @@
   {
     "index": "death-dog",
     "name": "Death Dog",
-    "desc": "A death dog is an ugly two-headed hound that roams plains, and deserts. Hate burns in a death dog’s heart, and a taste for humanoid flesh drives it to attack travelers and explorers. Death dog saliva carries a foul disease that causes a victim’s flesh to slowly rot off the bone.",
+    "desc": "A death dog is an ugly two-headed hound that roams plains, and deserts. Hate burns in a death dog\u2019s heart, and a taste for humanoid flesh drives it to attack travelers and explorers. Death dog saliva carries a foul disease that causes a victim\u2019s flesh to slowly rot off the bone.",
     "size": "Medium",
     "type": "monstrosity",
     "alignment": "neutral evil",
@@ -10712,7 +10906,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/death-dog",
@@ -10842,7 +11037,9 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+2"
           }
-        ]
+        ],
+        "weapon": "war-pick",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Poisoned Dart",
@@ -10853,7 +11050,12 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "poisoned-dart",
+          "count": 4
+        }
       }
     ],
     "url": "/api/monsters/deep-gnome-svirfneblin",
@@ -10906,7 +11108,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/deer",
@@ -11049,7 +11252,9 @@
             "damage_type": "radiant",
             "damage_dice": "4d8"
           }
-        ]
+        ],
+        "weapon": "mace",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Healing Touch",
@@ -11132,7 +11337,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/dire-wolf",
@@ -11361,7 +11567,9 @@
               ]
             }
           }
-        ]
+        ],
+        "weapon": "scimitar",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Create Whirlwind",
@@ -11465,7 +11673,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Read Thoughts",
@@ -11522,7 +11731,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d4+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/draft-horse",
@@ -11645,7 +11855,8 @@
             "damage_type": "piercing",
             "damage_dice": "3d12+7"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -11656,7 +11867,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d8+7"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -11667,7 +11879,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d12+7"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Steam Breath",
@@ -11766,7 +11979,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -11778,7 +11992,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Fetid Cloud",
@@ -11987,7 +12202,8 @@
             "damage_type": "poison",
             "damage_dice": "2d8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Longsword",
@@ -12015,7 +12231,9 @@
               ]
             }
           }
-        ]
+        ],
+        "weapon": "longsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Longbow",
@@ -12030,7 +12248,13 @@
             "damage_type": "poison",
             "damage_dice": "1d8"
           }
-        ]
+        ],
+        "weapon": "longbow",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/drider"
@@ -12147,7 +12371,9 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "shortsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Hand Crossbow",
@@ -12176,6 +12402,12 @@
         ],
         "preference": {
           "type": "always until first hit"
+        },
+        "weapon": "crossbow-hand",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "crossbow-bolt",
+          "count": 20
         }
       }
     ],
@@ -12341,7 +12573,9 @@
               ]
             }
           }
-        ]
+        ],
+        "weapon": "quarterstaff",
+        "weapon_kind": "manufactured"
       }
     ],
     "url": "/api/monsters/druid",
@@ -12490,7 +12724,9 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d4"
           }
-        ]
+        ],
+        "weapon": "club",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Fey Charm",
@@ -12594,7 +12830,9 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+2"
           }
-        ]
+        ],
+        "weapon": "war-pick",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Javelin",
@@ -12606,7 +12844,13 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "javelin",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "javelin",
+          "count": 4
+        }
       },
       {
         "name": "Invisibility",
@@ -12720,7 +12964,8 @@
             "damage_type": "slashing",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Blinding Breath",
@@ -12803,7 +13048,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/eagle",
@@ -12892,7 +13138,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/earth-elemental.png",
@@ -13094,7 +13341,9 @@
             "damage_type": "fire",
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "weapon": "scimitar",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Hurl Flame",
@@ -13105,7 +13354,8 @@
             "damage_type": "fire",
             "damage_dice": "5d6"
           }
-        ]
+        ],
+        "weapon_kind": "spell"
       }
     ],
     "url": "/api/monsters/efreeti"
@@ -13189,7 +13439,8 @@
         ],
         "preference": {
           "type": "always on first round"
-        }
+        },
+        "weapon_kind": "natural"
       },
       {
         "name": "Stomp",
@@ -13200,7 +13451,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d10+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/elephant",
@@ -13282,7 +13534,8 @@
         ],
         "preference": {
           "type": "always on first round"
-        }
+        },
+        "weapon_kind": "natural"
       },
       {
         "name": "Hooves",
@@ -13294,7 +13547,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d4+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/elk",
@@ -13468,7 +13722,9 @@
             "damage_type": "poison",
             "damage_dice": "3d8"
           }
-        ]
+        ],
+        "weapon": "longsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Longbow",
@@ -13483,7 +13739,13 @@
             "damage_type": "poison",
             "damage_dice": "3d8"
           }
-        ]
+        ],
+        "weapon": "longbow",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       }
     ],
     "reactions": [
@@ -13605,7 +13867,8 @@
               }
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -13617,7 +13880,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Web",
@@ -13713,7 +13977,9 @@
             "damage_type": "slashing",
             "damage_dice": "2d8+5"
           }
-        ]
+        ],
+        "weapon": "battleaxe",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Morningstar",
@@ -13724,7 +13990,9 @@
             "damage_type": "piercing",
             "damage_dice": "2d8+5"
           }
-        ]
+        ],
+        "weapon": "morningstar",
+        "weapon_kind": "manufactured"
       }
     ],
     "url": "/api/monsters/ettin",
@@ -13913,7 +14181,9 @@
             "damage_type": "slashing",
             "damage_dice": "6d6+7"
           }
-        ]
+        ],
+        "weapon": "greatsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Rock",
@@ -13924,7 +14194,12 @@
             "damage_type": "bludgeoning",
             "damage_dice": "4d10+7"
           }
-        ]
+        ],
+        "weapon_kind": "natural",
+        "supply": {
+          "item": "rock",
+          "count": 3
+        }
       }
     ],
     "url": "/api/monsters/fire-giant"
@@ -14025,7 +14300,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/flesh-golem",
@@ -14092,7 +14368,8 @@
             "damage_type": "poison",
             "damage_dice": "3d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/flying-snake",
@@ -14174,7 +14451,9 @@
             "damage_type": "slashing",
             "damage_dice": "1d8+1"
           }
-        ]
+        ],
+        "weapon": "longsword",
+        "weapon_kind": "manufactured"
       }
     ],
     "url": "/api/monsters/flying-sword",
@@ -14262,7 +14541,9 @@
             "damage_type": "slashing",
             "damage_dice": "3d12+6"
           }
-        ]
+        ],
+        "weapon": "greataxe",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Rock",
@@ -14273,7 +14554,12 @@
             "damage_type": "bludgeoning",
             "damage_dice": "4d10+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural",
+        "supply": {
+          "item": "rock",
+          "count": 3
+        }
       }
     ],
     "url": "/api/monsters/frost-giant"
@@ -14358,7 +14644,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -14370,7 +14657,8 @@
             "damage_type": "slashing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/gargoyle",
@@ -14441,7 +14729,8 @@
             "damage_type": "acid",
             "damage_dice": "3d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Engulf",
@@ -14533,7 +14822,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d8+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -14545,7 +14835,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/ghast",
@@ -14630,7 +14921,8 @@
             "damage_type": "necrotic",
             "damage_dice": "4d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Etherealness",
@@ -14638,7 +14930,7 @@
       },
       {
         "name": "Horrifying Visage",
-        "desc": "Each non-undead creature within 60 ft. of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 × 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.",
+        "desc": "Each non-undead creature within 60 ft. of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 \u00d7 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.",
         "damage": [
           {
             "dc": {
@@ -14733,7 +15025,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -14764,7 +15057,8 @@
         "preference": {
           "type": "always unless target has condition",
           "target_condition": "paralyzed"
-        }
+        },
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/ghoul",
@@ -14838,7 +15132,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d10+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Rock",
@@ -14849,7 +15144,12 @@
             "damage_type": "bludgeoning",
             "damage_dice": "7d6+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural",
+        "supply": {
+          "item": "rock",
+          "count": 3
+        }
       }
     ],
     "url": "/api/monsters/giant-ape"
@@ -14926,7 +15226,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -14938,7 +15239,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d4+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-badger",
@@ -15003,7 +15305,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-bat",
@@ -15094,7 +15397,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-boar",
@@ -15149,7 +15453,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-centipede",
@@ -15209,7 +15514,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Constrict",
@@ -15233,7 +15539,8 @@
               }
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-constrictor-snake",
@@ -15311,7 +15618,8 @@
               }
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-crab",
@@ -15392,7 +15700,8 @@
             "damage_type": "piercing",
             "damage_dice": "3d10+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -15403,7 +15712,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-crocodile",
@@ -15486,7 +15796,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Talons",
@@ -15498,7 +15809,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-eagle",
@@ -15586,7 +15898,8 @@
         ],
         "preference": {
           "type": "always on first round"
-        }
+        },
+        "weapon_kind": "natural"
       },
       {
         "name": "Hooves",
@@ -15598,7 +15911,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "4d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-elk",
@@ -15607,7 +15921,7 @@
   {
     "index": "giant-fire-beetle",
     "name": "Giant Fire Beetle",
-    "desc": "A giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle’s glands continue to shed light for 1d6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.",
+    "desc": "A giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle\u2019s glands continue to shed light for 1d6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.",
     "size": "Small",
     "type": "beast",
     "alignment": "unaligned",
@@ -15659,7 +15973,8 @@
             "damage_type": "slashing",
             "damage_dice": "1d6-1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-fire-beetle",
@@ -15745,7 +16060,8 @@
               }
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Swallow",
@@ -15850,7 +16166,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d4+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-goat",
@@ -15914,7 +16231,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-hyena",
@@ -15970,7 +16288,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-lizard",
@@ -16060,7 +16379,8 @@
               }
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Ink Cloud",
@@ -16145,7 +16465,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-owl",
@@ -16214,7 +16535,8 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-poisonous-snake",
@@ -16278,7 +16600,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-rat",
@@ -16342,7 +16665,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-rat-diseased"
@@ -16400,7 +16724,8 @@
               "escape_dc_value": 12
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Multiattack",
@@ -16438,7 +16763,8 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-scorpion",
@@ -16522,7 +16848,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d6+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-sea-horse",
@@ -16591,7 +16918,8 @@
             "damage_type": "piercing",
             "damage_dice": "3d10+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-shark",
@@ -16676,7 +17004,8 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Web",
@@ -16767,7 +17096,8 @@
               }
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Swallow",
@@ -16877,7 +17207,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Talons",
@@ -16889,7 +17220,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-vulture",
@@ -16952,7 +17284,8 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-wasp",
@@ -17021,7 +17354,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-weasel",
@@ -17110,7 +17444,8 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/giant-wolf-spider",
@@ -17199,7 +17534,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "5d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Blinding Spittle",
@@ -17416,7 +17752,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d10+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Fist",
@@ -17427,7 +17764,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/glabrezu"
@@ -17598,7 +17936,13 @@
               ]
             }
           }
-        ]
+        ],
+        "weapon": "spear",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "spear",
+          "count": 4
+        }
       },
       {
         "name": "Shield Bash",
@@ -17609,7 +17953,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d4+4"
           }
-        ]
+        ],
+        "weapon_kind": "manufactured"
       }
     ],
     "reactions": [
@@ -17679,7 +18024,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Spear",
@@ -17707,7 +18053,13 @@
               ]
             }
           }
-        ]
+        ],
+        "weapon": "spear",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "spear",
+          "count": 4
+        }
       },
       {
         "name": "Longbow",
@@ -17718,7 +18070,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+1"
           }
-        ]
+        ],
+        "weapon": "longbow",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/gnoll",
@@ -17801,7 +18159,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d4+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/goat",
@@ -17871,7 +18230,9 @@
             "damage_type": "slashing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "scimitar",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Shortbow",
@@ -17883,7 +18244,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "shortbow",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       }
     ],
     "bonus_actions": [
@@ -17978,7 +18345,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Breath Weapons",
@@ -18121,7 +18489,8 @@
         ],
         "preference": {
           "type": "always on first round"
-        }
+        },
+        "weapon_kind": "natural"
       },
       {
         "name": "Hooves",
@@ -18132,7 +18501,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d10+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Petrifying Breath",
@@ -18238,7 +18608,8 @@
             "damage_type": "acid",
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/gray-ooze",
@@ -18334,7 +18705,8 @@
             "damage_type": "poison",
             "damage_dice": "1d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Poison Breath",
@@ -18473,7 +18845,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Illusory Appearance",
@@ -18561,7 +18934,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Beak",
@@ -18573,7 +18947,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/grick",
@@ -18656,7 +19031,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -18668,7 +19044,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/griffon",
@@ -18756,7 +19133,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4"
           }
-        ]
+        ],
+        "weapon_kind": "manufactured"
       }
     ],
     "url": "/api/monsters/grimlock",
@@ -18837,7 +19215,13 @@
               ]
             }
           }
-        ]
+        ],
+        "weapon": "spear",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "spear",
+          "count": 4
+        }
       }
     ],
     "url": "/api/monsters/guard",
@@ -19021,7 +19405,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Spit Poison",
@@ -19224,7 +19609,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "legendary_actions": [
@@ -19331,7 +19717,9 @@
               ]
             }
           }
-        ]
+        ],
+        "weapon": "longsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Shortsword",
@@ -19342,7 +19730,9 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon": "shortsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Heavy Crossbow",
@@ -19353,7 +19743,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+1"
           }
-        ]
+        ],
+        "weapon": "crossbow-heavy",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "crossbow-bolt",
+          "count": 20
+        }
       },
       {
         "name": "Fire Breath",
@@ -19444,7 +19840,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d4+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Club",
@@ -19456,7 +19853,9 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d4+1"
           }
-        ]
+        ],
+        "weapon": "club",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Luring Song",
@@ -19546,7 +19945,8 @@
             "damage_type": "slashing",
             "damage_dice": "1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/hawk",
@@ -19621,7 +20021,8 @@
             "damage_type": "fire",
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Fire Breath",
@@ -19749,7 +20150,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -19760,7 +20162,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/hezrou"
@@ -19828,7 +20231,9 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d8+5"
           }
-        ]
+        ],
+        "weapon": "greatclub",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Rock",
@@ -19839,7 +20244,12 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d10+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural",
+        "supply": {
+          "item": "rock",
+          "count": 3
+        }
       }
     ],
     "url": "/api/monsters/hill-giant",
@@ -19921,7 +20331,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -19933,7 +20344,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/hippogriff",
@@ -20014,7 +20426,9 @@
               ]
             }
           }
-        ]
+        ],
+        "weapon": "longsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Longbow",
@@ -20025,7 +20439,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+1"
           }
-        ]
+        ],
+        "weapon": "longbow",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/hobgoblin",
@@ -20105,7 +20525,8 @@
               "success_type": "none"
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/homunculus",
@@ -20266,7 +20687,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d8+6"
           }
-        ]
+        ],
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Tail",
@@ -20277,7 +20699,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Hurl Flame",
@@ -20288,7 +20711,8 @@
             "damage_type": "fire",
             "damage_dice": "4d6"
           }
-        ]
+        ],
+        "weapon_kind": "spell"
       }
     ],
     "url": "/api/monsters/horned-devil"
@@ -20357,7 +20781,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/hunter-shark",
@@ -20446,7 +20871,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/hydra"
@@ -20509,7 +20935,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/hyena",
@@ -20624,7 +21051,8 @@
             "damage_type": "cold",
             "damage_dice": "3d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -20639,7 +21067,8 @@
             "damage_type": "cold",
             "damage_dice": "3d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -20654,7 +21083,8 @@
             "damage_type": "cold",
             "damage_dice": "3d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Wall of Ice",
@@ -20775,7 +21205,8 @@
             "damage_type": "cold",
             "damage_dice": "1d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frost Breath",
@@ -20899,7 +21330,8 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Invisibility",
@@ -21002,7 +21434,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/invisible-stalker"
@@ -21127,7 +21560,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d8+7"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Sword",
@@ -21138,7 +21572,8 @@
             "damage_type": "slashing",
             "damage_dice": "3d10+7"
           }
-        ]
+        ],
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Poison Breath",
@@ -21225,7 +21660,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4-1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/jackal",
@@ -21298,7 +21734,8 @@
             "damage_type": "piercing",
             "damage_dice": "5d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/killer-whale",
@@ -21307,7 +21744,7 @@
   {
     "index": "knight",
     "name": "Knight",
-    "desc": "Knights are warriors who pledge service to rulers, religious orders, and noble causes. A knight’s alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm, a knight often travels with an entourage that includes squires and hirelings who are commoners.",
+    "desc": "Knights are warriors who pledge service to rulers, religious orders, and noble causes. A knight\u2019s alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm, a knight often travels with an entourage that includes squires and hirelings who are commoners.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -21383,7 +21820,9 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon": "greatsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Heavy Crossbow",
@@ -21395,7 +21834,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d10"
           }
-        ]
+        ],
+        "weapon": "crossbow-heavy",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "crossbow-bolt",
+          "count": 20
+        }
       },
       {
         "name": "Leadership",
@@ -21477,7 +21922,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon": "dagger",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "dagger",
+          "count": 4
+        }
       },
       {
         "name": "Sling",
@@ -21489,7 +21940,13 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon": "sling",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "sling-bullet",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/kobold",
@@ -21645,7 +22102,8 @@
             "damage_type": "piercing",
             "damage_dice": "3d8+10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tentacle",
@@ -21656,7 +22114,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d6+10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Fling",
@@ -21894,7 +22353,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d10+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Dagger",
@@ -21905,7 +22365,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+3"
           }
-        ]
+        ],
+        "weapon": "dagger",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "dagger",
+          "count": 4
+        }
       },
       {
         "name": "Intoxicating Touch",
@@ -21984,7 +22450,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/lemure",
@@ -22401,7 +22868,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -22416,7 +22884,8 @@
         ],
         "preference": {
           "type": "always on first round"
-        }
+        },
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/lion",
@@ -22471,7 +22940,8 @@
             "damage_type": "piercing",
             "damage_dice": "1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/lizard",
@@ -22667,7 +23137,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Heavy Club",
@@ -22678,7 +23149,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Javelin",
@@ -22689,7 +23161,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "javelin",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "javelin",
+          "count": 4
+        }
       },
       {
         "name": "Spiked Shield",
@@ -22700,7 +23178,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "manufactured"
       }
     ],
     "url": "/api/monsters/lizardfolk",
@@ -22883,7 +23362,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon": "dagger",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "dagger",
+          "count": 4
+        }
       }
     ],
     "url": "/api/monsters/mage"
@@ -22996,7 +23481,8 @@
             "damage_type": "fire",
             "damage_dice": "1d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Fire Breath",
@@ -23180,7 +23666,8 @@
         ],
         "preference": {
           "type": "always on first round"
-        }
+        },
+        "weapon_kind": "natural"
       },
       {
         "name": "Stomp",
@@ -23191,7 +23678,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "4d10+7"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/mammoth"
@@ -23288,7 +23776,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -23300,7 +23789,8 @@
             "damage_type": "slashing",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail Spike",
@@ -23312,7 +23802,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/manticore",
@@ -23423,7 +23914,9 @@
             "damage_type": "slashing",
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "weapon": "longsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Tail",
@@ -23434,7 +23927,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d10+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Teleport",
@@ -23508,7 +24002,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/mastiff",
@@ -23630,7 +24125,8 @@
             "damage_type": "poison",
             "damage_dice": "4d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Shortsword",
@@ -23641,7 +24137,9 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "shortsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Longbow",
@@ -23656,7 +24154,13 @@
             "damage_type": "poison",
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "weapon": "longbow",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/medusa"
@@ -23738,7 +24242,13 @@
               ]
             }
           }
-        ]
+        ],
+        "weapon": "spear",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "spear",
+          "count": 4
+        }
       }
     ],
     "url": "/api/monsters/merfolk",
@@ -23864,7 +24374,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -23876,7 +24387,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d4+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Harpoon",
@@ -23888,7 +24400,12 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "harpoon",
+          "count": 4
+        }
       }
     ],
     "url": "/api/monsters/merrow",
@@ -23975,7 +24492,8 @@
               "escape_dc_value": 13
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Bite",
@@ -23991,7 +24509,8 @@
             "damage_type": "acid",
             "damage_dice": "1d8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/mimic.png",
@@ -24085,7 +24604,9 @@
             "damage_type": "slashing",
             "damage_dice": "2d12+4"
           }
-        ]
+        ],
+        "weapon": "greataxe",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Gore",
@@ -24100,7 +24621,8 @@
         ],
         "preference": {
           "type": "always on first round"
-        }
+        },
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/minotaur",
@@ -24187,7 +24709,9 @@
             "damage_type": "slashing",
             "damage_dice": "2d12+4"
           }
-        ]
+        ],
+        "weapon": "greataxe",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Gore",
@@ -24202,7 +24726,8 @@
         ],
         "preference": {
           "type": "always on first round"
-        }
+        },
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/minotaur-skeleton",
@@ -24265,7 +24790,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/mule",
@@ -24358,7 +24884,8 @@
             "damage_type": "necrotic",
             "damage_dice": "3d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Dreadful Glare",
@@ -24600,7 +25127,8 @@
             "damage_type": "necrotic",
             "damage_dice": "6d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Dreadful Glare",
@@ -24760,7 +25288,8 @@
             "damage_type": "piercing",
             "damage_dice": "5d10+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -24771,7 +25300,8 @@
             "damage_type": "slashing",
             "damage_dice": "3d6+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Horror Nimbus",
@@ -24945,7 +25475,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Change Shape",
@@ -25031,7 +25562,8 @@
             "damage_type": "fire",
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/nightmare",
@@ -25040,7 +25572,7 @@
   {
     "index": "noble",
     "name": "Noble",
-    "desc": "**Nobles** wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.\n\nThe noble’s statistics can also be used to represent **courtiers** who aren’t of noble birth.",
+    "desc": "**Nobles** wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.\n\nThe noble\u2019s statistics can also be used to represent **courtiers** who aren\u2019t of noble birth.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -25102,7 +25634,9 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d8+1"
           }
-        ]
+        ],
+        "weapon": "rapier",
+        "weapon_kind": "manufactured"
       }
     ],
     "reactions": [
@@ -25189,7 +25723,8 @@
             "damage_type": "acid",
             "damage_dice": "1d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "reactions": [
@@ -25272,7 +25807,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Ink Cloud",
@@ -25341,7 +25877,9 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "weapon": "greatclub",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Javelin",
@@ -25353,7 +25891,13 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon": "javelin",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "javelin",
+          "count": 4
+        }
       }
     ],
     "url": "/api/monsters/ogre",
@@ -25422,7 +25966,9 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "weapon": "morningstar",
+        "weapon_kind": "manufactured"
       }
     ],
     "url": "/api/monsters/ogre-zombie",
@@ -25629,7 +26175,8 @@
             "damage_type": "slashing",
             "damage_dice": "1d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Glaive",
@@ -25640,7 +26187,9 @@
             "damage_type": "slashing",
             "damage_dice": "2d10+4"
           }
-        ]
+        ],
+        "weapon": "glaive",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Change Shape",
@@ -25711,7 +26260,9 @@
             "damage_type": "slashing",
             "damage_dice": "1d12+3"
           }
-        ]
+        ],
+        "weapon": "greataxe",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Javelin",
@@ -25722,7 +26273,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon": "javelin",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "javelin",
+          "count": 4
+        }
       }
     ],
     "url": "/api/monsters/orc",
@@ -25803,7 +26360,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d8+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tentacle",
@@ -25818,7 +26376,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tentacle Slam",
@@ -25905,7 +26464,8 @@
             "damage_type": "slashing",
             "damage_dice": "1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/owl",
@@ -25987,7 +26547,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -25999,7 +26560,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d8+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/owlbear",
@@ -26096,7 +26658,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -26111,7 +26674,8 @@
         ],
         "preference": {
           "type": "always on first round"
-        }
+        },
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/panther",
@@ -26182,7 +26746,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/pegasus",
@@ -26266,7 +26831,8 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/phase-spider",
@@ -26443,7 +27009,8 @@
             "damage_type": "piercing",
             "damage_dice": "4d6+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -26454,7 +27021,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d8+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Mace",
@@ -26465,7 +27033,9 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "weapon": "mace",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Tail",
@@ -26476,7 +27046,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d10+8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/pit-fiend"
@@ -26677,7 +27248,9 @@
             "damage_type": "radiant",
             "damage_dice": "5d8"
           }
-        ]
+        ],
+        "weapon": "greatsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Healing Touch",
@@ -26753,7 +27326,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/plesiosaurus",
@@ -26817,7 +27391,8 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/poisonous-snake",
@@ -26899,7 +27474,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -26911,7 +27487,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/polar-bear",
@@ -26964,7 +27541,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/pony",
@@ -27114,7 +27692,9 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d6"
           }
-        ]
+        ],
+        "weapon": "mace",
+        "weapon_kind": "manufactured"
       }
     ],
     "url": "/api/monsters/priest",
@@ -27193,7 +27773,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Sting",
@@ -27219,7 +27800,8 @@
               "success_type": "none"
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/pseudodragon",
@@ -27306,7 +27888,8 @@
             "damage_type": "piercing",
             "damage_dice": "3d8+9"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail Stinger",
@@ -27317,7 +27900,8 @@
             "damage_type": "piercing",
             "damage_dice": "3d6+9"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/purple-worm"
@@ -27412,7 +27996,8 @@
               }
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Scare",
@@ -27506,7 +28091,8 @@
             "damage_type": "piercing",
             "damage_dice": "1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/quipper",
@@ -27718,7 +28304,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/rakshasa"
@@ -27777,7 +28364,8 @@
             "damage_type": "piercing",
             "damage_dice": "1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/rat",
@@ -27842,7 +28430,8 @@
             "damage_type": "piercing",
             "damage_dice": "1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/raven",
@@ -27929,7 +28518,8 @@
             "damage_type": "fire",
             "damage_dice": "1d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Fire Breath",
@@ -28018,7 +28608,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/reef-shark",
@@ -28092,7 +28683,8 @@
             "damage_type": "fire",
             "damage_dice": "3d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Swallow",
@@ -28173,7 +28765,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/rhinoceros",
@@ -28226,7 +28819,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d4+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/riding-horse",
@@ -28323,7 +28917,8 @@
             "damage_type": "piercing",
             "damage_dice": "4d8+9"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Talons",
@@ -28334,7 +28929,8 @@
             "damage_type": "slashing",
             "damage_dice": "4d6+9"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/roc"
@@ -28432,7 +29028,8 @@
             "damage_type": "piercing",
             "damage_dice": "4d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tendril",
@@ -28514,7 +29111,8 @@
         "name": "Smother",
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one Medium or smaller creature. Hit: The creature is grappled (escape DC 13). Until this grapple ends, the target is restrained, blinded, and at risk of suffocating, and the rug can't smother another target. In addition, at the start of each of the target's turns, the target takes 10 (2d6 + 3) bludgeoning damage.",
         "attack_bonus": 5,
-        "attack_type": "Melee"
+        "attack_type": "Melee",
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/rug-of-smothering",
@@ -28577,7 +29175,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Antennae",
@@ -28686,7 +29285,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -28701,7 +29301,8 @@
         ],
         "preference": {
           "type": "always on first round"
-        }
+        },
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/saber-toothed-tiger",
@@ -28824,7 +29425,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -28836,7 +29438,8 @@
             "damage_type": "slashing",
             "damage_dice": "1d4+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Spear",
@@ -28865,7 +29468,13 @@
               ]
             }
           }
-        ]
+        ],
+        "weapon": "spear",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "spear",
+          "count": 4
+        }
       }
     ],
     "url": "/api/monsters/sahuagin",
@@ -28978,7 +29587,13 @@
             "damage_type": "fire",
             "damage_dice": "1d6"
           }
-        ]
+        ],
+        "weapon": "spear",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "spear",
+          "count": 4
+        }
       },
       {
         "name": "Tail",
@@ -28993,7 +29608,8 @@
             "damage_type": "fire",
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/salamander",
@@ -29068,7 +29684,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d4+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Shortsword",
@@ -29080,7 +29697,9 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon": "shortsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Shortbow",
@@ -29092,7 +29711,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon": "shortbow",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/satyr",
@@ -29155,7 +29780,8 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/scorpion",
@@ -29262,7 +29888,9 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "shortsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Longbow",
@@ -29274,7 +29902,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+2"
           }
-        ]
+        ],
+        "weapon": "longbow",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/scout",
@@ -29339,7 +29973,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Death Glare",
@@ -29548,7 +30183,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Engulf",
@@ -29640,7 +30276,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "reactions": [
@@ -29728,7 +30365,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Breath Weapons",
@@ -29840,7 +30478,9 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "shortsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Shortbow",
@@ -29852,7 +30492,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "shortbow",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/skeleton",
@@ -30040,7 +30686,9 @@
             "damage_type": "radiant",
             "damage_dice": "6d8"
           }
-        ]
+        ],
+        "weapon": "greatsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Slaying Longbow",
@@ -30283,7 +30931,8 @@
               "success_type": "none"
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/spider",
@@ -30452,7 +31101,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/spirit-naga"
@@ -30517,7 +31167,9 @@
             "damage_type": "slashing",
             "damage_dice": "1"
           }
-        ]
+        ],
+        "weapon": "longsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Shortbow",
@@ -30529,7 +31181,13 @@
             "damage_type": "piercing",
             "damage_dice": "1"
           }
-        ]
+        ],
+        "weapon": "shortbow",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       },
       {
         "name": "Heart Sight",
@@ -30648,7 +31306,9 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "shortsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Hand Crossbow",
@@ -30660,7 +31320,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "crossbow-hand",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "crossbow-bolt",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/spy",
@@ -30764,7 +31430,8 @@
             "damage_type": "fire",
             "damage_dice": "1d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Steam Breath",
@@ -30846,7 +31513,8 @@
               }
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/stirge",
@@ -30938,7 +31606,9 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d8+6"
           }
-        ]
+        ],
+        "weapon": "greatclub",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Rock",
@@ -30949,7 +31619,12 @@
             "damage_type": "bludgeoning",
             "damage_dice": "4d10+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural",
+        "supply": {
+          "item": "rock",
+          "count": 3
+        }
       }
     ],
     "reactions": [
@@ -31044,7 +31719,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d8+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Slow",
@@ -31245,7 +31921,9 @@
             "damage_type": "slashing",
             "damage_dice": "6d6+9"
           }
-        ]
+        ],
+        "weapon": "greatsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Rock",
@@ -31256,7 +31934,12 @@
             "damage_type": "bludgeoning",
             "damage_dice": "4d12+9"
           }
-        ]
+        ],
+        "weapon_kind": "natural",
+        "supply": {
+          "item": "rock",
+          "count": 3
+        }
       },
       {
         "name": "Lightning Strike",
@@ -31367,7 +32050,8 @@
             "damage_type": "slashing",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Charm",
@@ -31485,7 +32169,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/swarm-of-bats",
@@ -31560,7 +32245,8 @@
             "damage_type": "piercing",
             "damage_dice": "4d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/swarm-of-beetles",
@@ -31634,7 +32320,8 @@
             "damage_type": "piercing",
             "damage_dice": "4d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/swarm-of-centipedes",
@@ -31708,7 +32395,8 @@
             "damage_type": "piercing",
             "damage_dice": "4d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/swarm-of-insects",
@@ -31791,7 +32479,8 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/swarm-of-poisonous-snakes",
@@ -31873,7 +32562,8 @@
             "damage_type": "piercing",
             "damage_dice": "4d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/swarm-of-quippers",
@@ -31950,7 +32640,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/swarm-of-rats",
@@ -32023,7 +32714,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/swarm-of-ravens",
@@ -32108,7 +32800,8 @@
             "damage_type": "piercing",
             "damage_dice": "4d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/swarm-of-spiders",
@@ -32182,7 +32875,8 @@
             "damage_type": "piercing",
             "damage_dice": "4d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/swarm-of-wasps",
@@ -32365,7 +33059,8 @@
             "damage_type": "piercing",
             "damage_dice": "4d12+10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -32376,7 +33071,8 @@
             "damage_type": "slashing",
             "damage_dice": "4d8+10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Horns",
@@ -32387,7 +33083,8 @@
             "damage_type": "piercing",
             "damage_dice": "4d10+10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -32398,7 +33095,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "4d6+10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Frightful Presence",
@@ -32517,7 +33215,9 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "mace",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Heavy Crossbow",
@@ -32529,7 +33229,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d10"
           }
-        ]
+        ],
+        "weapon": "crossbow-heavy",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "crossbow-bolt",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/thug",
@@ -32626,7 +33332,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -32641,7 +33348,8 @@
         ],
         "preference": {
           "type": "always on first round"
-        }
+        },
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/tiger",
@@ -32720,7 +33428,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d6+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Rock",
@@ -32731,7 +33440,12 @@
             "damage_type": "bludgeoning",
             "damage_dice": "4d10+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural",
+        "supply": {
+          "item": "rock",
+          "count": 3
+        }
       },
       {
         "name": "Animate Trees",
@@ -32819,7 +33533,13 @@
               ]
             }
           }
-        ]
+        ],
+        "weapon": "spear",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "spear",
+          "count": 4
+        }
       }
     ],
     "url": "/api/monsters/tribal-warrior",
@@ -32904,7 +33624,8 @@
         ],
         "preference": {
           "type": "always on first round"
-        }
+        },
+        "weapon_kind": "natural"
       },
       {
         "name": "Stomp",
@@ -32915,7 +33636,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d10+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/triceratops",
@@ -33000,7 +33722,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -33011,7 +33734,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/troll",
@@ -33085,7 +33809,8 @@
             "damage_type": "piercing",
             "damage_dice": "4d12+7"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Tail",
@@ -33096,7 +33821,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "3d8+7"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/tyrannosaurus-rex"
@@ -33267,7 +33993,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Horn",
@@ -33278,7 +34005,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Healing Touch",
@@ -33457,7 +34185,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Bite",
@@ -33472,7 +34201,8 @@
             "damage_type": "necrotic",
             "damage_dice": "3d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Charm",
@@ -33634,7 +34364,8 @@
             "damage_type": "necrotic",
             "damage_dice": "3d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Charm",
@@ -33923,7 +34654,8 @@
             "damage_type": "necrotic",
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -33934,7 +34666,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d4+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/vampire-spawn",
@@ -34035,7 +34768,9 @@
               ]
             }
           }
-        ]
+        ],
+        "weapon": "longsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Shortsword",
@@ -34047,7 +34782,9 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon": "shortsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Heavy Crossbow",
@@ -34059,7 +34796,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+1"
           }
-        ]
+        ],
+        "weapon": "crossbow-heavy",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "crossbow-bolt",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/veteran",
@@ -34135,7 +34878,8 @@
             "damage_type": "necrotic",
             "damage_dice": "1d8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/violet-fungus",
@@ -34235,7 +34979,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Talons",
@@ -34246,7 +34991,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d10+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Spores",
@@ -34349,7 +35095,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/vulture",
@@ -34432,7 +35179,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/warhorse.png",
@@ -34495,7 +35243,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/warhorse-skeleton",
@@ -34585,7 +35334,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Whelm",
@@ -34692,7 +35442,8 @@
             "damage_type": "piercing",
             "damage_dice": "1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/weasel.png",
@@ -34780,7 +35531,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -34791,7 +35543,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/werebear-bear",
@@ -34877,7 +35630,9 @@
             "damage_type": "slashing",
             "damage_dice": "1d12+4"
           }
-        ]
+        ],
+        "weapon": "greataxe",
+        "weapon_kind": "manufactured"
       }
     ],
     "url": "/api/monsters/werebear-human",
@@ -34995,7 +35750,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -35006,7 +35762,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Greataxe",
@@ -35017,7 +35774,9 @@
             "damage_type": "slashing",
             "damage_dice": "1d12+4"
           }
-        ]
+        ],
+        "weapon": "greataxe",
+        "weapon_kind": "manufactured"
       }
     ],
     "url": "/api/monsters/werebear-hybrid",
@@ -35103,7 +35862,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/wereboar-boar",
@@ -35197,7 +35957,9 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon": "maul",
+        "weapon_kind": "manufactured"
       }
     ],
     "url": "/api/monsters/wereboar-human",
@@ -35320,7 +36082,9 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon": "maul",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Tusks",
@@ -35331,7 +36095,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/wereboar-hybrid",
@@ -35453,7 +36218,9 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "shortsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Hand Crossbow",
@@ -35465,7 +36232,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "crossbow-hand",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "crossbow-bolt",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/wererat-human",
@@ -35621,7 +36394,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Shortsword",
@@ -35633,7 +36407,9 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "shortsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Hand Crossbow",
@@ -35645,7 +36421,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
-        ]
+        ],
+        "weapon": "crossbow-hand",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "crossbow-bolt",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/wererat-hybrid",
@@ -35725,7 +36507,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/wererat-rat",
@@ -35830,7 +36613,9 @@
             "damage_type": "slashing",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon": "scimitar",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Longbow",
@@ -35841,7 +36626,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+2"
           }
-        ]
+        ],
+        "weapon": "longbow",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/weretiger-human",
@@ -35975,7 +36766,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -35989,7 +36781,8 @@
         ],
         "preference": {
           "type": "always on first round"
-        }
+        },
+        "weapon_kind": "natural"
       },
       {
         "name": "Scimitar",
@@ -36000,7 +36793,9 @@
             "damage_type": "slashing",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon": "scimitar",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Longbow",
@@ -36011,7 +36806,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+2"
           }
-        ]
+        ],
+        "weapon": "longbow",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       }
     ],
     "url": "/api/monsters/weretiger-hybrid",
@@ -36118,7 +36919,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d10+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -36132,7 +36934,8 @@
         ],
         "preference": {
           "type": "always on first round"
-        }
+        },
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/weretiger-tiger",
@@ -36236,7 +37039,13 @@
               ]
             }
           }
-        ]
+        ],
+        "weapon": "spear",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "spear",
+          "count": 4
+        }
       }
     ],
     "url": "/api/monsters/werewolf-human",
@@ -36328,7 +37137,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -36340,7 +37150,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/werewolf-hybrid",
@@ -36415,7 +37226,8 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/werewolf-wolf",
@@ -36504,7 +37316,8 @@
             "damage_type": "cold",
             "damage_dice": "1d4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Cold Breath",
@@ -36690,7 +37503,9 @@
               ]
             }
           }
-        ]
+        ],
+        "weapon": "longsword",
+        "weapon_kind": "manufactured"
       },
       {
         "name": "Longbow",
@@ -36702,7 +37517,13 @@
             "damage_type": "piercing",
             "damage_dice": "1d8+2"
           }
-        ]
+        ],
+        "weapon": "longbow",
+        "weapon_kind": "manufactured",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       }
     ],
     "image": "/api/images/monsters/wight.png",
@@ -36814,7 +37635,7 @@
   {
     "index": "winter-wolf",
     "name": "Winter Wolf",
-    "desc": "The arctic-dwelling winter wolf is as large as a dire wolf but has snow-white fur and pale blue eyes. Frost giants use these evil creatures as guards and hunting companions, putting the wolves’ deadly breath weapon to use against their foes. Winter wolves communicate with one another using growls and barks, but they speak Common and Giant well enough to follow simple conversations.",
+    "desc": "The arctic-dwelling winter wolf is as large as a dire wolf but has snow-white fur and pale blue eyes. Frost giants use these evil creatures as guards and hunting companions, putting the wolves\u2019 deadly breath weapon to use against their foes. Winter wolves communicate with one another using growls and barks, but they speak Common and Giant well enough to follow simple conversations.",
     "size": "Large",
     "type": "monstrosity",
     "alignment": "neutral evil",
@@ -36884,7 +37705,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Cold Breath",
@@ -36977,7 +37799,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d4+2"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/wolf.png",
@@ -37044,7 +37867,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/worg.png",
@@ -37272,7 +38096,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claws",
@@ -37283,7 +38108,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d8+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Stinger",
@@ -37294,7 +38120,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/monsters/wyvern"
@@ -37390,7 +38217,8 @@
             "damage_type": "piercing",
             "damage_dice": "3d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -37401,7 +38229,8 @@
             "damage_type": "slashing",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/xorn.png",
@@ -37512,7 +38341,8 @@
             "damage_type": "acid",
             "damage_dice": "1d8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -37523,7 +38353,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Acid Breath",
@@ -37647,7 +38478,8 @@
             "damage_type": "lightning",
             "damage_dice": "1d10"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -37658,7 +38490,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Lightning Breath",
@@ -37782,7 +38615,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -37793,7 +38627,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Breath Weapons",
@@ -37945,7 +38780,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -37956,7 +38792,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+5"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Breath Weapons",
@@ -38102,7 +38939,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -38113,7 +38951,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Breath Weapons",
@@ -38269,7 +39108,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -38280,7 +39120,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Breath Weapons",
@@ -38438,7 +39279,8 @@
             "damage_type": "poison",
             "damage_dice": "2d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -38449,7 +39291,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Poison Breath",
@@ -38573,7 +39416,8 @@
             "damage_type": "fire",
             "damage_dice": "1d6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -38584,7 +39428,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Fire Breath",
@@ -38711,7 +39556,8 @@
             "damage_type": "piercing",
             "damage_dice": "2d10+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -38722,7 +39568,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+6"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Breath Weapons",
@@ -38875,7 +39722,8 @@
             "damage_type": "cold",
             "damage_dice": "1d8"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Claw",
@@ -38886,7 +39734,8 @@
             "damage_type": "slashing",
             "damage_dice": "2d6+4"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       },
       {
         "name": "Cold Breath",
@@ -38975,7 +39824,8 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d6+1"
           }
-        ]
+        ],
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/zombie.png",
