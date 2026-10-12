@@ -1,8 +1,8 @@
 import fs from "fs";
-import srcMonsters from './5e-SRD-Monsters.json';
+import srcMonsters from './en/5e-SRD-Monsters.json';
 console.log(`Loaded ${srcMonsters.length} monsters to normalize from 5e-SRD-Monsters.json`);
 
-const outputFilePath = "./5e-SRD-Monsters-Normalized-6.json";
+const outputFilePath = "./src/2014/5e-SRD-Monsters-Normalized.json";
 type Monster = Partial<typeof srcMonsters[number]>
 
 function normalizeDamage(damage: any) {
@@ -29,7 +29,7 @@ function normalizeDamage(damage: any) {
   return {...damage};
 }
 
-function normalizeAction(action: any) {
+export function normalizeAction(action: any) {
   console.log(`        Normalizing action: ${action.name}`);
   if (action.dc) {
     if (action.damage?.length) {
@@ -195,4 +195,6 @@ async function writeMonstersToFile() {
   await fs.promises.writeFile(outputFilePath, JSON.stringify(normalizedMonsters, null, 2));
 }
 
-writeMonstersToFile();
+if (process.argv[1]?.endsWith('/normalize-monsters.ts')) {
+  writeMonstersToFile();
+}

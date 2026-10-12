@@ -22,7 +22,7 @@ marked **Unconfirmed** below.
 
 | Area | File(s) | What changed |
 | --- | --- | --- |
-| Monster actions | `5e-SRD-Monsters.json` | Added `attack_type` ("Melee"/"Ranged") to actions; added `bonus_actions` (parsed list of bonus-action ids); added `environments` (habitat string); `speed.*` and `senses.{darkvision,blindsight,truesight}` changed from strings (`"40 ft."`) to plain integers (`40`) |
+| Monster actions | `5e-SRD-Monsters.json` | Added `attack_type` ("Melee"/"Ranged") to actions; added `bonus_actions` (parsed list of bonus-action ids); added `environments` (habitat string); `speed.*` and `senses.{darkvision,blindsight,truesight}` changed from strings (`"40 ft."`) to plain integers (`40`); added `weapon`, `weapon_kind`, and `supply` (equipment-linked weapon/ammunition annotations) |
 | Monster normalization | `5e-SRD-Monsters-Normalized.json` (new file), `normalize-monsters.ts` (new script), `verify-normalize.sh` (new script) | Adds a pre-flattened copy of the monster data that collapses nested reference objects (`dc_type`, `damage_type`, `condition_type`, spellcasting `ability`, etc.) down to their plain string `index`, and normalizes where `dc`/`condition` sit on an action |
 | Conditions | `5e-SRD-Conditions.json` | Added 17 new condition entries: 6 numbered exhaustion levels (`exhaustion-1`…`exhaustion-6`) plus `enraged`, `frenzied`, `reckless`, `dodging`, `infested`, `swallowed`, `drained-of-strength`, `weakened`, `slowed`, `drained-of-life`, `disengaged`, `surprised` |
 | Equipment | `5e-SRD-Equipment.json` | Added `material`, `stackable`, `is_consumable`, `effect` (damage-on-use) to select items; removed 40 non-combat items (mounts, vehicles, barding, tack/harness, stabling/feed) |
@@ -32,10 +32,11 @@ marked **Unconfirmed** below.
 | Magic items | `5e-SRD-Magic-Items.json` | Added a structured `effect` object (ability-score modifiers, damage-type resistance, healing, trait grants, duration) and an `enchantment` object (armor/weapon bonus, extra damage, to-hit bonus) to many items, so items can be applied mechanically instead of only read as prose; removed a handful of unusable/non-combat items |
 | Package/tooling | `package.json` | `engines.node` widened from `"22.x"` to `"22.x \|\| 24.x"` |
 
-Two commits carry all of this on top of the previous fork `main`:
+Three commits carry all of this on top of the previous fork `main`:
 
 - `- removed non combat related equipment, equipment categories, character starting equipment and race proficiencies\n- started removal of non combat related spells` (the bulk of the data changes, squashed from a long line-by-line history — see [History note](#history-note-about-the-squashed-commit))
 - `Allowing node v24 engine` (the `package.json` engines change)
+- `feat(monsters): annotate weapon supplies for game engine` (the `weapon`/`weapon_kind`/`supply` action annotations — see [Monster actions: `weapon`, `weapon_kind`, `supply`](#monster-actions-weapon-weapon_kind-supply) below)
 
 ## Why: game-engine data needs
 
@@ -72,6 +73,24 @@ travel, roleplay skills).
   this documentation; it may be intended for future encounter/spawn-table
   work rather than something currently consumed.
 
+### Monster actions: `weapon`, `weapon_kind`, `supply`
+
+Monster actions gained three optional engine annotations, none of which are
+SRD text — `weapon` and `supply.item` link an action to an equipment index
+(or, for `supply.item`, one of three non-equipment tokens: `rock`,
+`harpoon`, `poisoned-dart`); `weapon_kind` is `natural`, `manufactured`, or
+`spell`. `supply.count` is an engine-chosen default ammunition/consumable
+count (e.g. 20 for arrows/bolts/bullets, 4 for thrown weapons, harpoons, and
+poisoned darts, 3 for rocks) — not a book value. These let the turn engine
+resolve what a monster is attacking with and how much ammunition it has
+left without parsing `desc` prose. The schema
+(`MonsterActionSchema` in `schemas/5e-SRD-Monsters.ts`) carries a comment
+noting these fields and counts are engine annotations, not SRD text.
+`src/2014/tests/monster-weapons.test.ts` checks that every `weapon`/`supply`
+index resolves against `5e-SRD-Equipment.json`, that ammunition weapons'
+`supply.item` matches that weapon's `ammunition` field, and that the
+normalized copy carries the same annotations.
+
 ### Speed and senses as integers
 
 `speed.{walk,fly,swim,climb,burrow}` and
@@ -101,20 +120,15 @@ consumers always find `dc`/`condition` in the same place. Draconian
 Dungeons' `models/srd/monster.ts` imports the *output* file
 (`5e-SRD-Monsters-Normalized.json`) directly — the script itself is
 effectively one-shot tooling that produced that file, not a build step the
-game runs.
+game runs. Within this repo, `normalizeAction` is exported and imported
+directly by `src/2014/tests/monster-weapons.test.ts`; the script guards its
+own `writeMonstersToFile()` call behind a direct-invocation check so
+importing it for that test doesn't also regenerate the output file.
 
 `verify-normalize.sh` is a small `jq`-based sanity check over the normalized
 file (lists actions with a `condition`, a `dc`, no damage, or a damage `dc`)
 used to eyeball the output after regenerating it; it makes no changes and
 has no exit-code assertions.
-
-**Note for whoever regenerates this file:** the script's own
-`outputFilePath` constant is `./5e-SRD-Monsters-Normalized-6.json` (with a
-`-6` suffix), but the file actually committed to the repo is
-`5e-SRD-Monsters-Normalized.json` (no suffix). Either the script was edited
-after the last real run, or the output was renamed by hand before
-committing — re-running the script as-is today will **not** overwrite the
-committed file. Fix the constant (or rename the output) before regenerating.
 
 ### New conditions
 
@@ -223,8 +237,6 @@ can be installed under Node 24 toolchains, with no other change.
   real divergence from upstream's current URL scheme in every record this
   branch has touched. Worth fixing if the branch is ever squashed and
   reworked from scratch.
-- **`normalize-monsters.ts` output path mismatch** — see the note above
-  under [Monster normalization](#monster-normalization-5e-srd-monsters-normalizedjson-normalize-monstersts-verify-normalizesh).
 
 ## History note about the squashed commit
 
@@ -242,8 +254,6 @@ used to write this document. This document describes only the net effect of
 ## Out of scope / follow-up ideas
 
 - Reconciling the `/api/2014/...` vs `/api/...` URL drift noted above.
-- Fixing the `normalize-monsters.ts` output filename so re-running it
-  actually regenerates the committed file.
 - Deciding whether `environments` is meant to be consumed yet, and by what.
 - Confirming (or removing) any remaining reference to a `fire-resistance`
   condition.
