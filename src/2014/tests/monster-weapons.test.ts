@@ -1,9 +1,29 @@
 import { describe, expect, it } from 'vitest';
-import Monsters from '../en/5e-SRD-Monsters.json' with { type: 'json' };
-import NormalizedMonsters from '../5e-SRD-Monsters-Normalized.json' with { type: 'json' };
-import Equipment from '../en/5e-SRD-Equipment.json' with { type: 'json' };
+import MonsterData from '../en/5e-SRD-Monsters.json' with { type: 'json' };
+import NormalizedMonsterData from '../5e-SRD-Monsters-Normalized.json' with { type: 'json' };
+import EquipmentData from '../en/5e-SRD-Equipment.json' with { type: 'json' };
 import { normalizeAction } from '../normalize-monsters';
 
+type MonsterActionAnnotations = {
+  name: string;
+  weapon?: string;
+  weapon_kind?: 'natural' | 'manufactured' | 'spell';
+  supply?: { item: string; count: number };
+};
+
+type MonsterAnnotations = {
+  index: string;
+  actions?: MonsterActionAnnotations[];
+};
+
+type EquipmentAnnotations = {
+  index: string;
+  ammunition?: string;
+};
+
+const Monsters = MonsterData as unknown as MonsterAnnotations[];
+const NormalizedMonsters = NormalizedMonsterData as unknown as MonsterAnnotations[];
+const Equipment = EquipmentData as unknown as EquipmentAnnotations[];
 const equipmentByIndex = new Map(Equipment.map((item) => [item.index, item]));
 const nonEquipmentSupplies = new Set(['rock', 'harpoon', 'poisoned-dart']);
 

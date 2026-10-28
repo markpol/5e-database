@@ -326,17 +326,17 @@
       {
         "index": "weapon-1",
         "name": "Enchant Weapon +1",
-        "url": "/api/magic-items/weapon-1"
+        "url": "/api/2014/magic-items/weapon-1"
       },
       {
         "index": "weapon-2",
         "name": "Enchant Weapon +2",
-        "url": "/api/magic-items/weapon-2"
+        "url": "/api/2014/magic-items/weapon-2"
       },
       {
         "index": "weapon-3",
         "name": "Enchant Weapon +3",
-        "url": "/api/magic-items/weapon-3"
+        "url": "/api/2014/magic-items/weapon-3"
       }
     ],
     "url": "/api/2014/equipment-categories/weapon"
@@ -493,17 +493,17 @@
       {
         "index": "armor-1",
         "name": "Enchant Armor +1",
-        "url": "/api/magic-items/armor-1"
+        "url": "/api/2014/magic-items/armor-1"
       },
       {
         "index": "armor-2",
         "name": "Enchant Armor +2",
-        "url": "/api/magic-items/armor-2"
+        "url": "/api/2014/magic-items/armor-2"
       },
       {
         "index": "armor-3",
         "name": "Enchant Armor +3",
-        "url": "/api/magic-items/armor-3"
+        "url": "/api/2014/magic-items/armor-3"
       },
       {
         "index": "dragon-scale-mail-black",
@@ -630,7 +630,7 @@
       {
         "index": "torch",
         "name": "Torch",
-        "url": "/api/equipment/torch"
+        "url": "/api/2014/equipment/torch"
       }
     ],
     "url": "/api/2014/equipment-categories/adventuring-gear"
@@ -2570,7 +2570,407 @@
         "name": "Manual of Stone Golems",
         "url": "/api/2014/magic-items/manual-of-golems-stone"
       }
-    ],
+,
+      {
+        "index": "amulet-of-proof-against-detection-and-location",
+        "name": "Amulet of Proof against Detection and Location",
+        "url": "/api/2014/magic-items/amulet-of-proof-against-detection-and-location"
+      },
+      {
+        "index": "amulet-of-the-planes",
+        "name": "Amulet of the Planes",
+        "url": "/api/2014/magic-items/amulet-of-the-planes"
+      },
+      {
+        "index": "apparatus-of-the-crab",
+        "name": "Apparatus of the Crab",
+        "url": "/api/2014/magic-items/apparatus-of-the-crab"
+      },
+      {
+        "index": "boots-of-levitation",
+        "name": "Boots of Levitation",
+        "url": "/api/2014/magic-items/boots-of-levitation"
+      },
+      {
+        "index": "boots-of-striding-and-springing",
+        "name": "Boots of Striding and Springing",
+        "url": "/api/2014/magic-items/boots-of-striding-and-springing"
+      },
+      {
+        "index": "bowl-of-commanding-water-elementals",
+        "name": "Bowl of Commanding Water Elementals",
+        "url": "/api/2014/magic-items/bowl-of-commanding-water-elementals"
+      },
+      {
+        "index": "brazier-of-commanding-fire-elementals",
+        "name": "Brazier of Commanding Fire Elementals",
+        "url": "/api/2014/magic-items/brazier-of-commanding-fire-elementals"
+      },
+      {
+        "index": "broom-of-flying",
+        "name": "Broom of Flying",
+        "url": "/api/2014/magic-items/broom-of-flying"
+      },
+      {
+        "index": "cape-of-the-mountebank",
+        "name": "Cape of the Mountebank",
+        "url": "/api/2014/magic-items/cape-of-the-mountebank"
+      },
+      {
+        "index": "carpet-of-flying",
+        "name": "Carpet of Flying",
+        "url": "/api/2014/magic-items/carpet-of-flying"
+      },
+      {
+        "index": "censer-of-controlling-air-elementals",
+        "name": "Censer of Controlling Air Elementals",
+        "url": "/api/2014/magic-items/censer-of-controlling-air-elementals"
+      },
+      {
+        "index": "chime-of-opening",
+        "name": "Chime of Opening",
+        "url": "/api/2014/magic-items/chime-of-opening"
+      },
+      {
+        "index": "cloak-of-the-bat",
+        "name": "Cloak of the Bat",
+        "url": "/api/2014/magic-items/cloak-of-the-bat"
+      },
+      {
+        "index": "cloak-of-the-manta-ray",
+        "name": "Cloak of the Manta Ray",
+        "url": "/api/2014/magic-items/cloak-of-the-manta-ray"
+      },
+      {
+        "index": "crystal-ball",
+        "name": "Crystal Ball",
+        "url": "/api/2014/magic-items/crystal-ball"
+      },
+      {
+        "index": "cube-of-force",
+        "name": "Cube of Force",
+        "url": "/api/2014/magic-items/cube-of-force"
+      },
+      {
+        "index": "cubic-gate",
+        "name": "Cubic Gate",
+        "url": "/api/2014/magic-items/cubic-gate"
+      },
+      {
+        "index": "decanter-of-endless-water",
+        "name": "Decanter of Endless Water",
+        "url": "/api/2014/magic-items/decanter-of-endless-water"
+      },
+      {
+        "index": "deck-of-illusions",
+        "name": "Deck of Illusions",
+        "url": "/api/2014/magic-items/deck-of-illusions"
+      },
+      {
+        "index": "deck-of-many-things",
+        "name": "Deck of Many Things",
+        "url": "/api/2014/magic-items/deck-of-many-things"
+      },
+      {
+        "index": "dimensional-shackles",
+        "name": "Dimensional Shackles",
+        "url": "/api/2014/magic-items/dimensional-shackles"
+      },
+      {
+        "index": "dust-of-disappearance",
+        "name": "Dust of Disappearance",
+        "url": "/api/2014/magic-items/dust-of-disappearance"
+      },
+      {
+        "index": "dust-of-sneezing-and-choking",
+        "name": "Dust of Sneezing and Choking",
+        "url": "/api/2014/magic-items/dust-of-sneezing-and-choking"
+      },
+      {
+        "index": "efreeti-bottle",
+        "name": "Efreeti Bottle",
+        "url": "/api/2014/magic-items/efreeti-bottle"
+      },
+      {
+        "index": "elemental-gem",
+        "name": "Elemental Gem",
+        "url": "/api/2014/magic-items/elemental-gem"
+      },
+      {
+        "index": "eversmoking-bottle",
+        "name": "Eversmoking Bottle",
+        "url": "/api/2014/magic-items/eversmoking-bottle"
+      },
+      {
+        "index": "feather-token",
+        "name": "Feather Token",
+        "url": "/api/2014/magic-items/feather-token"
+      },
+      {
+        "index": "figurine-of-wondrous-power",
+        "name": "Figurine of Wondrous Power",
+        "url": "/api/2014/magic-items/figurine-of-wondrous-power"
+      },
+      {
+        "index": "folding-boat",
+        "name": "Folding Boat",
+        "url": "/api/2014/magic-items/folding-boat"
+      },
+      {
+        "index": "gem-of-brightness",
+        "name": "Gem of Brightness",
+        "url": "/api/2014/magic-items/gem-of-brightness"
+      },
+      {
+        "index": "gem-of-seeing",
+        "name": "Gem of Seeing",
+        "url": "/api/2014/magic-items/gem-of-seeing"
+      },
+      {
+        "index": "instant-fortress",
+        "name": "Instant Fortress",
+        "url": "/api/2014/magic-items/instant-fortress"
+      },
+      {
+        "index": "ioun-stone",
+        "name": "Ioun Stone",
+        "url": "/api/2014/magic-items/ioun-stone"
+      },
+      {
+        "index": "iron-bands-of-binding",
+        "name": "Iron Bands of Binding",
+        "url": "/api/2014/magic-items/iron-bands-of-binding"
+      },
+      {
+        "index": "lantern-of-revealing",
+        "name": "Lantern of Revealing",
+        "url": "/api/2014/magic-items/lantern-of-revealing"
+      },
+      {
+        "index": "well-of-many-worlds",
+        "name": "Well of Many Worlds",
+        "url": "/api/2014/magic-items/well-of-many-worlds"
+      },
+      {
+        "index": "wind-fan",
+        "name": "Wind Fan",
+        "url": "/api/2014/magic-items/wind-fan"
+      },
+      {
+        "index": "winged-boots",
+        "name": "Winged Boots",
+        "url": "/api/2014/magic-items/winged-boots"
+      },
+      {
+        "index": "wings-of-flying",
+        "name": "Wings of Flying",
+        "url": "/api/2014/magic-items/wings-of-flying"
+      },
+      {
+        "index": "orb-of-dragonkind",
+        "name": "Orb of Dragonkind",
+        "url": "/api/2014/magic-items/orb-of-dragonkind"
+      },
+      {
+        "index": "carpet-of-flying-3x5",
+        "name": "Carpet of Flying (3 ft. × 5 ft.)",
+        "url": "/api/2014/magic-items/carpet-of-flying-3x5"
+      },
+      {
+        "index": "carpet-of-flying-4x6",
+        "name": "Carpet of Flying (4 ft. × 6 ft.)",
+        "url": "/api/2014/magic-items/carpet-of-flying-4x6"
+      },
+      {
+        "index": "carpet-of-flying-5x7",
+        "name": "Carpet of Flying (5 ft. × 7 ft.)",
+        "url": "/api/2014/magic-items/carpet-of-flying-5x7"
+      },
+      {
+        "index": "carpet-of-flying-6x9",
+        "name": "Carpet of Flying (6 ft. × 9 ft.)",
+        "url": "/api/2014/magic-items/carpet-of-flying-6x9"
+      },
+      {
+        "index": "crystal-ball-of-mind-reading",
+        "name": "Crystal Ball of Mind Reading",
+        "url": "/api/2014/magic-items/crystal-ball-of-mind-reading"
+      },
+      {
+        "index": "crystal-ball-of-telepathy",
+        "name": "Crystal Ball of Telepathy",
+        "url": "/api/2014/magic-items/crystal-ball-of-telepathy"
+      },
+      {
+        "index": "crystal-ball-of-true-seeing",
+        "name": "Crystal Ball of True Seeing",
+        "url": "/api/2014/magic-items/crystal-ball-of-true-seeing"
+      },
+      {
+        "index": "elemental-gem-air",
+        "name": "Air Elemental Gem",
+        "url": "/api/2014/magic-items/elemental-gem-air"
+      },
+      {
+        "index": "elemental-gem-earth",
+        "name": "Earth Elemental Gem",
+        "url": "/api/2014/magic-items/elemental-gem-earth"
+      },
+      {
+        "index": "elemental-gem-fire",
+        "name": "Fire Elemental Gem",
+        "url": "/api/2014/magic-items/elemental-gem-fire"
+      },
+      {
+        "index": "elemental-gem-water",
+        "name": "Water Elemental Gem",
+        "url": "/api/2014/magic-items/elemental-gem-water"
+      },
+      {
+        "index": "feather-token-anchor",
+        "name": "Anchor Feather Token",
+        "url": "/api/2014/magic-items/feather-token-anchor"
+      },
+      {
+        "index": "feather-token-bird",
+        "name": "Bird Feather Token",
+        "url": "/api/2014/magic-items/feather-token-bird"
+      },
+      {
+        "index": "feather-token-fan",
+        "name": "Fan Feather Token",
+        "url": "/api/2014/magic-items/feather-token-fan"
+      },
+      {
+        "index": "feather-token-swan-boat",
+        "name": "Swan Boat Feather Token",
+        "url": "/api/2014/magic-items/feather-token-swan-boat"
+      },
+      {
+        "index": "feather-token-tree",
+        "name": "Tree Feather Token",
+        "url": "/api/2014/magic-items/feather-token-tree"
+      },
+      {
+        "index": "feather-token-whip",
+        "name": "Whip Feather Token",
+        "url": "/api/2014/magic-items/feather-token-whip"
+      },
+      {
+        "index": "figurine-of-wondrous-power-bronze-griffon",
+        "name": "Bronze Griffon Figurine of Wondrous Power",
+        "url": "/api/2014/magic-items/figurine-of-wondrous-power-bronze-griffon"
+      },
+      {
+        "index": "figurine-of-wondrous-power-ebony-fly",
+        "name": "Ebony Fly Figurine of Wondrous Power",
+        "url": "/api/2014/magic-items/figurine-of-wondrous-power-ebony-fly"
+      },
+      {
+        "index": "figurine-of-wondrous-power-golden-lions",
+        "name": "Golden Lions Figurine of Wondrous Power",
+        "url": "/api/2014/magic-items/figurine-of-wondrous-power-golden-lions"
+      },
+      {
+        "index": "figurine-of-wondrous-power-ivory-goats",
+        "name": "Ivory Goats Figurine of Wondrous Power",
+        "url": "/api/2014/magic-items/figurine-of-wondrous-power-ivory-goats"
+      },
+      {
+        "index": "figurine-of-wondrous-power-marble-elephant",
+        "name": "Marble Elephant Figurine of Wondrous Power",
+        "url": "/api/2014/magic-items/figurine-of-wondrous-power-marble-elephant"
+      },
+      {
+        "index": "figurine-of-wondrous-power-obsidian-steed",
+        "name": "Obsidian Steed Figurine of Wondrous Power",
+        "url": "/api/2014/magic-items/figurine-of-wondrous-power-obsidian-steed"
+      },
+      {
+        "index": "figurine-of-wondrous-power-onyx-dog",
+        "name": "Onyx Dog Figurine of Wondrous Power",
+        "url": "/api/2014/magic-items/figurine-of-wondrous-power-onyx-dog"
+      },
+      {
+        "index": "figurine-of-wondrous-power-serpentine-owl",
+        "name": "Serpentine Owl Figurine of Wondrous Power",
+        "url": "/api/2014/magic-items/figurine-of-wondrous-power-serpentine-owl"
+      },
+      {
+        "index": "figurine-of-wondrous-power-silver-raven",
+        "name": "Silver Raven Figurine of Wondrous Power",
+        "url": "/api/2014/magic-items/figurine-of-wondrous-power-silver-raven"
+      },
+      {
+        "index": "ioun-stone-of-absorption",
+        "name": "Ioun Stone of Absorption",
+        "url": "/api/2014/magic-items/ioun-stone-of-absorption"
+      },
+      {
+        "index": "ioun-stone-of-agility",
+        "name": "Ioun Stone of Agility",
+        "url": "/api/2014/magic-items/ioun-stone-of-agility"
+      },
+      {
+        "index": "ioun-stone-of-awareness",
+        "name": "Ioun Stone of Awareness",
+        "url": "/api/2014/magic-items/ioun-stone-of-awareness"
+      },
+      {
+        "index": "ioun-stone-of-fortitude",
+        "name": "Ioun Stone of Fortitude",
+        "url": "/api/2014/magic-items/ioun-stone-of-fortitude"
+      },
+      {
+        "index": "ioun-stone-of-greater-absorption",
+        "name": "Ioun Stone of Greater Absorption",
+        "url": "/api/2014/magic-items/ioun-stone-of-greater-absorption"
+      },
+      {
+        "index": "ioun-stone-of-insight",
+        "name": "Ioun Stone of Insight",
+        "url": "/api/2014/magic-items/ioun-stone-of-insight"
+      },
+      {
+        "index": "ioun-stone-of-intellect",
+        "name": "Ioun Stone of Intellect",
+        "url": "/api/2014/magic-items/ioun-stone-of-intellect"
+      },
+      {
+        "index": "ioun-stone-of-leadership",
+        "name": "Ioun Stone of Leadership",
+        "url": "/api/2014/magic-items/ioun-stone-of-leadership"
+      },
+      {
+        "index": "ioun-stone-of-mastery",
+        "name": "Ioun Stone of Mastery",
+        "url": "/api/2014/magic-items/ioun-stone-of-mastery"
+      },
+      {
+        "index": "ioun-stone-of-protection",
+        "name": "Ioun Stone of Protection",
+        "url": "/api/2014/magic-items/ioun-stone-of-protection"
+      },
+      {
+        "index": "ioun-stone-of-regeneration",
+        "name": "Ioun Stone of Regeneration",
+        "url": "/api/2014/magic-items/ioun-stone-of-regeneration"
+      },
+      {
+        "index": "ioun-stone-of-reserve",
+        "name": "Ioun Stone of Reserve",
+        "url": "/api/2014/magic-items/ioun-stone-of-reserve"
+      },
+      {
+        "index": "ioun-stone-of-strength",
+        "name": "Ioun Stone of Strength",
+        "url": "/api/2014/magic-items/ioun-stone-of-strength"
+      },
+      {
+        "index": "ioun-stone-of-sustenance",
+        "name": "Ioun Stone of Sustenance",
+        "url": "/api/2014/magic-items/ioun-stone-of-sustenance"
+      }    ],
     "url": "/api/2014/equipment-categories/wondrous-items"
   },
   {

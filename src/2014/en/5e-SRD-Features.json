@@ -5481,7 +5481,7 @@
               "item": {
                 "index": "skill-acrobatics",
                 "name": "Skill: Acrobatics",
-                "url": "/api/proficiencies/skill-acrobatics"
+                "url": "/api/2014/proficiencies/skill-acrobatics"
               }
             },
             {
@@ -5489,7 +5489,7 @@
               "item": {
                 "index": "skill-animal-handling",
                 "name": "Skill: Animal Handling",
-                "url": "/api/proficiencies/skill-animal-handling"
+                "url": "/api/2014/proficiencies/skill-animal-handling"
               }
             },
             {
@@ -5497,7 +5497,7 @@
               "item": {
                 "index": "skill-arcana",
                 "name": "Skill: Arcana",
-                "url": "/api/proficiencies/skill-arcana"
+                "url": "/api/2014/proficiencies/skill-arcana"
               }
             },
             {
@@ -5505,7 +5505,7 @@
               "item": {
                 "index": "skill-athletics",
                 "name": "Skill: Athletics",
-                "url": "/api/proficiencies/skill-athletics"
+                "url": "/api/2014/proficiencies/skill-athletics"
               }
             },
             {
@@ -5513,7 +5513,7 @@
               "item": {
                 "index": "skill-deception",
                 "name": "Skill: Deception",
-                "url": "/api/proficiencies/skill-deception"
+                "url": "/api/2014/proficiencies/skill-deception"
               }
             },
             {
@@ -5521,7 +5521,7 @@
               "item": {
                 "index": "skill-history",
                 "name": "Skill: History",
-                "url": "/api/proficiencies/skill-history"
+                "url": "/api/2014/proficiencies/skill-history"
               }
             },
             {
@@ -5529,7 +5529,7 @@
               "item": {
                 "index": "skill-insight",
                 "name": "Skill: Insight",
-                "url": "/api/proficiencies/skill-insight"
+                "url": "/api/2014/proficiencies/skill-insight"
               }
             },
             {
@@ -5537,7 +5537,7 @@
               "item": {
                 "index": "skill-intimidation",
                 "name": "Skill: Intimidation",
-                "url": "/api/proficiencies/skill-intimidation"
+                "url": "/api/2014/proficiencies/skill-intimidation"
               }
             },
             {
@@ -5545,7 +5545,7 @@
               "item": {
                 "index": "skill-investigation",
                 "name": "Skill: Investigation",
-                "url": "/api/proficiencies/skill-investigation"
+                "url": "/api/2014/proficiencies/skill-investigation"
               }
             },
             {
@@ -5553,7 +5553,7 @@
               "item": {
                 "index": "skill-medicine",
                 "name": "Skill: Medicine",
-                "url": "/api/proficiencies/skill-medicine"
+                "url": "/api/2014/proficiencies/skill-medicine"
               }
             },
             {
@@ -5561,7 +5561,7 @@
               "item": {
                 "index": "skill-nature",
                 "name": "Skill: Nature",
-                "url": "/api/proficiencies/skill-nature"
+                "url": "/api/2014/proficiencies/skill-nature"
               }
             },
             {
@@ -5569,7 +5569,7 @@
               "item": {
                 "index": "skill-perception",
                 "name": "Skill: Perception",
-                "url": "/api/proficiencies/skill-perception"
+                "url": "/api/2014/proficiencies/skill-perception"
               }
             },
             {
@@ -5577,7 +5577,7 @@
               "item": {
                 "index": "skill-performance",
                 "name": "Skill: Performance",
-                "url": "/api/proficiencies/skill-performance"
+                "url": "/api/2014/proficiencies/skill-performance"
               }
             },
             {
@@ -5585,7 +5585,7 @@
               "item": {
                 "index": "skill-persuasion",
                 "name": "Skill: Persuasion",
-                "url": "/api/proficiencies/skill-persuasion"
+                "url": "/api/2014/proficiencies/skill-persuasion"
               }
             },
             {
@@ -5593,7 +5593,7 @@
               "item": {
                 "index": "skill-religion",
                 "name": "Skill: Religion",
-                "url": "/api/proficiencies/skill-religion"
+                "url": "/api/2014/proficiencies/skill-religion"
               }
             },
             {
@@ -5601,7 +5601,7 @@
               "item": {
                 "index": "skill-sleight-of-hand",
                 "name": "Skill: Sleight of Hand",
-                "url": "/api/proficiencies/skill-sleight-of-hand"
+                "url": "/api/2014/proficiencies/skill-sleight-of-hand"
               }
             },
             {
@@ -5609,7 +5609,7 @@
               "item": {
                 "index": "skill-stealth",
                 "name": "Skill: Stealth",
-                "url": "/api/proficiencies/skill-stealth"
+                "url": "/api/2014/proficiencies/skill-stealth"
               }
             },
             {
@@ -5617,7 +5617,7 @@
               "item": {
                 "index": "skill-survival",
                 "name": "Skill: Survival",
-                "url": "/api/proficiencies/skill-survival"
+                "url": "/api/2014/proficiencies/skill-survival"
               }
             },
             {
@@ -5625,7 +5625,7 @@
               "item": {
                 "index": "thieves-tools",
                 "name": "Thieves' Tools",
-                "url": "/api/proficiencies/thieves-tools"
+                "url": "/api/2014/proficiencies/thieves-tools"
               }
             }
           ]
