@@ -97,7 +97,6 @@
     "prerequisites": [],
     "desc": [
       "Starting at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion."
-
     ],
     "url": "/api/2014/features/frenzy"
   },
@@ -1245,7 +1244,9 @@
     "name": "Spellcasting: Cleric",
     "level": 1,
     "prerequisites": [],
-    "desc": ["As a conduit for divine power, you can cast cleric spells."],
+    "desc": [
+      "As a conduit for divine power, you can cast cleric spells."
+    ],
     "reference": "/api/2014/classes/cleric/spellcasting",
     "url": "/api/2014/features/spellcasting-cleric"
   },
@@ -2610,7 +2611,9 @@
     "name": "Fighting Style: Defense",
     "level": 1,
     "prerequisites": [],
-    "desc": ["While you are wearing armor, you gain a +1 bonus to AC."],
+    "desc": [
+      "While you are wearing armor, you gain a +1 bonus to AC."
+    ],
     "parent": {
       "index": "fighter-fighting-style",
       "name": "Fighting Style",
@@ -3823,7 +3826,9 @@
     "name": "Fighting Style: Defense",
     "level": 2,
     "prerequisites": [],
-    "desc": ["While you are wearing armor, you gain a +1 bonus to AC."],
+    "desc": [
+      "While you are wearing armor, you gain a +1 bonus to AC."
+    ],
     "parent": {
       "index": "paladin-fighting-style",
       "name": "Fighting Style",
@@ -4249,7 +4254,9 @@
     "name": "Aura improvements",
     "level": 18,
     "prerequisites": [],
-    "desc": ["At 18th level, the range of your auras increase to 30 feet."],
+    "desc": [
+      "At 18th level, the range of your auras increase to 30 feet."
+    ],
     "url": "/api/2014/features/aura-improvements"
   },
   {
@@ -4330,18 +4337,18 @@
         "from": {
           "option_set_type": "options_array",
           "options": [
-            "aberrations", 
-            "beasts", 
-            "celestials", 
-            "constructs", 
-            "dragons", 
-            "elementals", 
-            "fey", 
-            "fiends", 
-            "giants", 
-            "monstrosities", 
-            "oozes", 
-            "plants", 
+            "aberrations",
+            "beasts",
+            "celestials",
+            "constructs",
+            "dragons",
+            "elementals",
+            "fey",
+            "fiends",
+            "giants",
+            "monstrosities",
+            "oozes",
+            "plants",
             "undead",
             "humanoids"
           ]
@@ -4379,12 +4386,12 @@
         "from": {
           "option_set_type": "options_array",
           "options": [
-            "arctic", 
-            "coast", 
-            "desert", 
-            "forest", 
-            "grassland", 
-            "mountain", 
+            "arctic",
+            "coast",
+            "desert",
+            "forest",
+            "grassland",
+            "mountain",
             "swamp"
           ]
         }
@@ -4480,7 +4487,9 @@
     "name": "Fighting Style: Defense",
     "level": 2,
     "prerequisites": [],
-    "desc": ["While you are wearing armor, you gain a +1 bonus to AC."],
+    "desc": [
+      "While you are wearing armor, you gain a +1 bonus to AC."
+    ],
     "parent": {
       "index": "ranger-fighting-style",
       "name": "Fighting Style",
@@ -4762,18 +4771,18 @@
         "from": {
           "option_set_type": "options_array",
           "options": [
-            "aberrations", 
-            "beasts", 
-            "celestials", 
-            "constructs", 
-            "dragons", 
-            "elementals", 
-            "fey", 
-            "fiends", 
-            "giants", 
-            "monstrosities", 
-            "oozes", 
-            "plants", 
+            "aberrations",
+            "beasts",
+            "celestials",
+            "constructs",
+            "dragons",
+            "elementals",
+            "fey",
+            "fiends",
+            "giants",
+            "monstrosities",
+            "oozes",
+            "plants",
             "undead",
             "humanoids"
           ]
@@ -4811,12 +4820,12 @@
         "from": {
           "option_set_type": "options_array",
           "options": [
-            "arctic", 
-            "coast", 
-            "desert", 
-            "forest", 
-            "grassland", 
-            "mountain", 
+            "arctic",
+            "coast",
+            "desert",
+            "forest",
+            "grassland",
+            "mountain",
             "swamp"
           ]
         }
@@ -4912,7 +4921,9 @@
     "name": "Defensive Tactics: Escape the Horde",
     "level": 7,
     "prerequisites": [],
-    "desc": ["Opportunity attacks against you are made with disadvantage."],
+    "desc": [
+      "Opportunity attacks against you are made with disadvantage."
+    ],
     "parent": {
       "index": "defensive-tactics",
       "name": "Defensive Tactics",
@@ -4960,7 +4971,9 @@
     "name": "Defensive Tactics: Steel Will",
     "level": 7,
     "prerequisites": [],
-    "desc": ["You have advantage on saving throws against being frightened."],
+    "desc": [
+      "You have advantage on saving throws against being frightened."
+    ],
     "parent": {
       "index": "defensive-tactics",
       "name": "Defensive Tactics",
@@ -5028,12 +5041,12 @@
         "from": {
           "option_set_type": "options_array",
           "options": [
-            "arctic", 
-            "coast", 
-            "desert", 
-            "forest", 
-            "grassland", 
-            "mountain", 
+            "arctic",
+            "coast",
+            "desert",
+            "forest",
+            "grassland",
+            "mountain",
             "swamp"
           ]
         }
@@ -5211,18 +5224,18 @@
         "from": {
           "option_set_type": "options_array",
           "options": [
-            "aberrations", 
-            "beasts", 
-            "celestials", 
-            "constructs", 
-            "dragons", 
-            "elementals", 
-            "fey", 
-            "fiends", 
-            "giants", 
-            "monstrosities", 
-            "oozes", 
-            "plants", 
+            "aberrations",
+            "beasts",
+            "celestials",
+            "constructs",
+            "dragons",
+            "elementals",
+            "fey",
+            "fiends",
+            "giants",
+            "monstrosities",
+            "oozes",
+            "plants",
             "undead",
             "humanoids"
           ]
@@ -5481,7 +5494,7 @@
               "item": {
                 "index": "skill-acrobatics",
                 "name": "Skill: Acrobatics",
-                "url": "/api/proficiencies/skill-acrobatics"
+                "url": "/api/2014/proficiencies/skill-acrobatics"
               }
             },
             {
@@ -5489,7 +5502,7 @@
               "item": {
                 "index": "skill-animal-handling",
                 "name": "Skill: Animal Handling",
-                "url": "/api/proficiencies/skill-animal-handling"
+                "url": "/api/2014/proficiencies/skill-animal-handling"
               }
             },
             {
@@ -5497,7 +5510,7 @@
               "item": {
                 "index": "skill-arcana",
                 "name": "Skill: Arcana",
-                "url": "/api/proficiencies/skill-arcana"
+                "url": "/api/2014/proficiencies/skill-arcana"
               }
             },
             {
@@ -5505,7 +5518,7 @@
               "item": {
                 "index": "skill-athletics",
                 "name": "Skill: Athletics",
-                "url": "/api/proficiencies/skill-athletics"
+                "url": "/api/2014/proficiencies/skill-athletics"
               }
             },
             {
@@ -5513,7 +5526,7 @@
               "item": {
                 "index": "skill-deception",
                 "name": "Skill: Deception",
-                "url": "/api/proficiencies/skill-deception"
+                "url": "/api/2014/proficiencies/skill-deception"
               }
             },
             {
@@ -5521,7 +5534,7 @@
               "item": {
                 "index": "skill-history",
                 "name": "Skill: History",
-                "url": "/api/proficiencies/skill-history"
+                "url": "/api/2014/proficiencies/skill-history"
               }
             },
             {
@@ -5529,7 +5542,7 @@
               "item": {
                 "index": "skill-insight",
                 "name": "Skill: Insight",
-                "url": "/api/proficiencies/skill-insight"
+                "url": "/api/2014/proficiencies/skill-insight"
               }
             },
             {
@@ -5537,7 +5550,7 @@
               "item": {
                 "index": "skill-intimidation",
                 "name": "Skill: Intimidation",
-                "url": "/api/proficiencies/skill-intimidation"
+                "url": "/api/2014/proficiencies/skill-intimidation"
               }
             },
             {
@@ -5545,7 +5558,7 @@
               "item": {
                 "index": "skill-investigation",
                 "name": "Skill: Investigation",
-                "url": "/api/proficiencies/skill-investigation"
+                "url": "/api/2014/proficiencies/skill-investigation"
               }
             },
             {
@@ -5553,7 +5566,7 @@
               "item": {
                 "index": "skill-medicine",
                 "name": "Skill: Medicine",
-                "url": "/api/proficiencies/skill-medicine"
+                "url": "/api/2014/proficiencies/skill-medicine"
               }
             },
             {
@@ -5561,7 +5574,7 @@
               "item": {
                 "index": "skill-nature",
                 "name": "Skill: Nature",
-                "url": "/api/proficiencies/skill-nature"
+                "url": "/api/2014/proficiencies/skill-nature"
               }
             },
             {
@@ -5569,7 +5582,7 @@
               "item": {
                 "index": "skill-perception",
                 "name": "Skill: Perception",
-                "url": "/api/proficiencies/skill-perception"
+                "url": "/api/2014/proficiencies/skill-perception"
               }
             },
             {
@@ -5577,7 +5590,7 @@
               "item": {
                 "index": "skill-performance",
                 "name": "Skill: Performance",
-                "url": "/api/proficiencies/skill-performance"
+                "url": "/api/2014/proficiencies/skill-performance"
               }
             },
             {
@@ -5585,7 +5598,7 @@
               "item": {
                 "index": "skill-persuasion",
                 "name": "Skill: Persuasion",
-                "url": "/api/proficiencies/skill-persuasion"
+                "url": "/api/2014/proficiencies/skill-persuasion"
               }
             },
             {
@@ -5593,7 +5606,7 @@
               "item": {
                 "index": "skill-religion",
                 "name": "Skill: Religion",
-                "url": "/api/proficiencies/skill-religion"
+                "url": "/api/2014/proficiencies/skill-religion"
               }
             },
             {
@@ -5601,7 +5614,7 @@
               "item": {
                 "index": "skill-sleight-of-hand",
                 "name": "Skill: Sleight of Hand",
-                "url": "/api/proficiencies/skill-sleight-of-hand"
+                "url": "/api/2014/proficiencies/skill-sleight-of-hand"
               }
             },
             {
@@ -5609,7 +5622,7 @@
               "item": {
                 "index": "skill-stealth",
                 "name": "Skill: Stealth",
-                "url": "/api/proficiencies/skill-stealth"
+                "url": "/api/2014/proficiencies/skill-stealth"
               }
             },
             {
@@ -5617,7 +5630,7 @@
               "item": {
                 "index": "skill-survival",
                 "name": "Skill: Survival",
-                "url": "/api/proficiencies/skill-survival"
+                "url": "/api/2014/proficiencies/skill-survival"
               }
             },
             {
@@ -5625,7 +5638,7 @@
               "item": {
                 "index": "thieves-tools",
                 "name": "Thieves' Tools",
-                "url": "/api/proficiencies/thieves-tools"
+                "url": "/api/2014/proficiencies/thieves-tools"
               }
             }
           ]
@@ -7629,7 +7642,9 @@
     "name": "Eldritch Invocation: Beguiling Influence",
     "level": 2,
     "prerequisites": [],
-    "desc": ["You gain proficiency in the Deception and Persuasion skills."],
+    "desc": [
+      "You gain proficiency in the Deception and Persuasion skills."
+    ],
     "parent": {
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
@@ -7718,7 +7733,9 @@
         "spell": "/api/2014/spells/eldritch-blast"
       }
     ],
-    "desc": ["When you cast eldritch blast, its range is 300 feet."],
+    "desc": [
+      "When you cast eldritch blast, its range is 300 feet."
+    ],
     "parent": {
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
@@ -7736,7 +7753,9 @@
     "name": "Eldritch Invocation: Eyes of the Rune Keeper",
     "level": 2,
     "prerequisites": [],
-    "desc": ["You can read all writing."],
+    "desc": [
+      "You can read all writing."
+    ],
     "parent": {
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",

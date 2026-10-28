@@ -3169,7 +3169,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "grappled",
@@ -3262,7 +3262,7 @@
           "dc_type": {
             "index": "str",
             "name": "STR",
-            "url": "/api/ability-scores/str"
+            "url": "/api/2014/ability-scores/str"
           },
           "dc_value": 13,
           "success_type": "half"
@@ -3272,7 +3272,7 @@
             "damage_type": {
               "index": "bludgeoning",
               "name": "Bludgeoning",
-              "url": "/api/damage-types/bludgeoning"
+              "url": "/api/2014/damage-types/bludgeoning"
             },
             "damage_dice": "3d8+2"
           }
@@ -3281,7 +3281,7 @@
           "condition_type": {
             "index": "prone",
             "name": "Prone",
-            "url": "/api/conditions/prone"
+            "url": "/api/2014/conditions/prone"
           },
           "duration": {
             "length": 1,
@@ -6474,7 +6474,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -6628,7 +6628,7 @@
                 "condition_type": {
                   "index": "restrained",
                   "name": "Restrained",
-                  "url": "/api/conditions/restrained"
+                  "url": "/api/2014/conditions/restrained"
                 },
                 "duration": {
                   "length": 1,
@@ -6786,7 +6786,7 @@
   {
     "index": "archmage",
     "name": "Archmage",
-    "desc": "Archmages are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption. \n\nAn archmage typically has one or more apprentice mages, and an archmage\u2019s abode has numerous magical wards and guardians to discourage interlopers.",
+    "desc": "Archmages are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption. \n\nAn archmage typically has one or more apprentice mages, and an archmage’s abode has numerous magical wards and guardians to discourage interlopers.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -7091,7 +7091,7 @@
           {
             "index": "studded-leather-armor",
             "name": "Studded Leather Armor",
-            "url": "/api/2014/equipment/studded-leather-armor"
+            "url": "/api/equipment/studded-leather-armor"
           }
         ]
       }
@@ -7493,7 +7493,7 @@
           {
             "index": "shield",
             "name": "Shield",
-            "url": "/api/2014/equipment/shield"
+            "url": "/api/equipment/shield"
           }
         ]
       }
@@ -7949,7 +7949,7 @@
   {
     "index": "bandit",
     "name": "Bandit",
-    "desc": "**Bandits** rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.\n\n**Pirates** are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation\u2019s vessels.",
+    "desc": "**Bandits** rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.\n\n**Pirates** are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation’s vessels.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -7962,7 +7962,7 @@
           {
             "index": "leather-armor",
             "name": "Leather Armor",
-            "url": "/api/2014/equipment/leather-armor"
+            "url": "/api/equipment/leather-armor"
           }
         ]
       }
@@ -8040,7 +8040,7 @@
   {
     "index": "bandit-captain",
     "name": "Bandit Captain",
-    "desc": "It takes a strong personality, ruthless cunning, and a silver tongue to keep a gang of bandits in line. The **bandit captain** has these qualities in spades.\n\nIn addition to managing a crew of selfish malcontents, the **pirate captain** is a variation of the bandit captain, with a ship to protect and command. To keep the crew in line, the captain must mete out rewards and punishment on a regular basis.\n\nMore than treasure, a bandit captain or pirate captain craves infamy. A prisoner who appeals to the captain\u2019s vanity or ego is more likely to be treated fairly than a prisoner who does not or claims not to know anything of the captain\u2019s colorful reputation.",
+    "desc": "It takes a strong personality, ruthless cunning, and a silver tongue to keep a gang of bandits in line. The **bandit captain** has these qualities in spades.\n\nIn addition to managing a crew of selfish malcontents, the **pirate captain** is a variation of the bandit captain, with a ship to protect and command. To keep the crew in line, the captain must mete out rewards and punishment on a regular basis.\n\nMore than treasure, a bandit captain or pirate captain craves infamy. A prisoner who appeals to the captain’s vanity or ego is more likely to be treated fairly than a prisoner who does not or claims not to know anything of the captain’s colorful reputation.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -8053,7 +8053,7 @@
           {
             "index": "studded-leather-armor",
             "name": "Studded Leather Armor",
-            "url": "/api/2014/equipment/studded-leather-armor"
+            "url": "/api/equipment/studded-leather-armor"
           }
         ]
       }
@@ -8908,7 +8908,7 @@
           {
             "index": "hide-armor",
             "name": "Hide Armor",
-            "url": "/api/2014/equipment/hide-armor"
+            "url": "/api/equipment/hide-armor"
           }
         ]
       }
@@ -9270,7 +9270,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -9662,7 +9662,7 @@
             "damage_type": {
               "index": "lightning",
               "name": "Lightning",
-              "url": "/api/damage-types/lightning"
+              "url": "/api/2014/damage-types/lightning"
             },
             "damage_dice": "4d10"
           }
@@ -9727,7 +9727,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 11,
               "success_type": "none"
@@ -9736,7 +9736,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 1,
@@ -10108,7 +10108,7 @@
                   "condition_type": {
                     "index": "unconscious",
                     "name": "Unconscious",
-                    "url": "/api/conditions/unconscious"
+                    "url": "/api/2014/conditions/unconscious"
                   },
                   "duration": {
                     "length": 10,
@@ -10424,12 +10424,12 @@
           {
             "index": "shield",
             "name": "Shield",
-            "url": "/api/2014/equipment/shield"
+            "url": "/api/equipment/shield"
           },
           {
             "index": "hide-armor",
             "name": "Hide Armor",
-            "url": "/api/2014/equipment/hide-armor"
+            "url": "/api/equipment/hide-armor"
           }
         ]
       }
@@ -11461,7 +11461,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -12126,7 +12126,7 @@
                 "condition_type": {
                   "index": "restrained",
                   "name": "Restrained",
-                  "url": "/api/conditions/restrained"
+                  "url": "/api/2014/conditions/restrained"
                 },
                 "duration": {
                   "length": 1,
@@ -12720,7 +12720,7 @@
                 "condition_type": {
                   "index": "restrained",
                   "name": "Restrained",
-                  "url": "/api/conditions/restrained"
+                  "url": "/api/2014/conditions/restrained"
                 },
                 "duration": {
                   "length": 1,
@@ -12740,7 +12740,7 @@
   {
     "index": "cult-fanatic",
     "name": "Cult Fanatic",
-    "desc": "Fanatics are often part of a cult\u2019s leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.",
+    "desc": "Fanatics are often part of a cult’s leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -12753,7 +12753,7 @@
           {
             "index": "leather-armor",
             "name": "Leather Armor",
-            "url": "/api/2014/equipment/leather-armor"
+            "url": "/api/equipment/leather-armor"
           }
         ]
       }
@@ -12934,7 +12934,7 @@
           {
             "index": "leather-armor",
             "name": "Leather Armor",
-            "url": "/api/2014/equipment/leather-armor"
+            "url": "/api/equipment/leather-armor"
           }
         ]
       }
@@ -13097,7 +13097,7 @@
   {
     "index": "death-dog",
     "name": "Death Dog",
-    "desc": "A death dog is an ugly two-headed hound that roams plains, and deserts. Hate burns in a death dog\u2019s heart, and a taste for humanoid flesh drives it to attack travelers and explorers. Death dog saliva carries a foul disease that causes a victim\u2019s flesh to slowly rot off the bone.",
+    "desc": "A death dog is an ugly two-headed hound that roams plains, and deserts. Hate burns in a death dog’s heart, and a taste for humanoid flesh drives it to attack travelers and explorers. Death dog saliva carries a foul disease that causes a victim’s flesh to slowly rot off the bone.",
     "size": "Medium",
     "type": "monstrosity",
     "alignment": "neutral evil",
@@ -13178,7 +13178,7 @@
             "damage_type": {
               "index": "piercing",
               "name": "Piercing",
-              "url": "/api/damage-types/piercing"
+              "url": "/api/2014/damage-types/piercing"
             },
             "damage_dice": "1d6+2"
           }
@@ -13204,7 +13204,7 @@
           {
             "index": "chain-shirt",
             "name": "Chain Shirt",
-            "url": "/api/2014/equipment/chain-shirt"
+            "url": "/api/equipment/chain-shirt"
           }
         ]
       }
@@ -13497,7 +13497,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -14470,7 +14470,7 @@
           "condition_type": {
             "index": "poisoned",
             "name": "Poisoned",
-            "url": "/api/conditions/poisoned"
+            "url": "/api/2014/conditions/poisoned"
           },
           "duration": {
             "length": 10,
@@ -14770,7 +14770,7 @@
           {
             "index": "chain-shirt",
             "name": "Chain Shirt",
-            "url": "/api/2014/equipment/chain-shirt"
+            "url": "/api/equipment/chain-shirt"
           }
         ]
       }
@@ -14883,7 +14883,7 @@
             "damage_type": {
               "index": "piercing",
               "name": "Piercing",
-              "url": "/api/damage-types/piercing"
+              "url": "/api/2014/damage-types/piercing"
             },
             "damage_dice": "1d6+2"
           }
@@ -14910,7 +14910,7 @@
               "condition_type": {
                 "index": "poisoned",
                 "name": "Poisoned",
-                "url": "/api/conditions/poisoned"
+                "url": "/api/2014/conditions/poisoned"
               },
               "duration": {
                 "length": 1,
@@ -14921,7 +14921,7 @@
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 13,
               "success_type": "none"
@@ -15341,12 +15341,12 @@
           {
             "index": "scale-mail",
             "name": "Scale Mail",
-            "url": "/api/2014/equipment/scale-mail"
+            "url": "/api/equipment/scale-mail"
           },
           {
             "index": "shield",
             "name": "Shield",
-            "url": "/api/2014/equipment/shield"
+            "url": "/api/equipment/shield"
           }
         ]
       }
@@ -15714,7 +15714,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "paralyzed",
@@ -16079,7 +16079,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 12,
               "success_type": "none"
@@ -16088,7 +16088,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 2,
@@ -16104,7 +16104,7 @@
               "condition": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               }
             }
           }
@@ -16196,7 +16196,7 @@
             "damage_type": {
               "index": "bludgeoning",
               "name": "Bludgeoning",
-              "url": "/api/damage-types/bludgeoning"
+              "url": "/api/2014/damage-types/bludgeoning"
             },
             "damage_dice": "2d6"
           },
@@ -16205,7 +16205,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 13,
               "success_type": "none"
@@ -16214,7 +16214,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 1,
@@ -16282,7 +16282,7 @@
           {
             "index": "plate-armor",
             "name": "Plate Armor",
-            "url": "/api/2014/equipment/plate-armor"
+            "url": "/api/equipment/plate-armor"
           }
         ]
       }
@@ -16636,7 +16636,7 @@
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 11,
               "success_type": "none"
@@ -16645,7 +16645,7 @@
               "condition_type": {
                 "index": "poisoned",
                 "name": "Poisoned",
-                "url": "/api/conditions/poisoned"
+                "url": "/api/2014/conditions/poisoned"
               },
               "duration": {
                 "length": 10,
@@ -16837,7 +16837,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "grappled",
@@ -16953,7 +16953,7 @@
           {
             "index": "plate-armor",
             "name": "Plate Armor",
-            "url": "/api/2014/equipment/plate-armor"
+            "url": "/api/equipment/plate-armor"
           }
         ]
       }
@@ -17120,7 +17120,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -17577,7 +17577,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "petrified",
@@ -17707,7 +17707,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -17829,7 +17829,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       }
     ],
     "senses": {
@@ -17947,7 +17947,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -18026,7 +18026,7 @@
       },
       {
         "name": "Horrifying Visage",
-        "desc": "Each non-undead creature within 60 ft. of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 \u00d7 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.",
+        "desc": "Each non-undead creature within 60 ft. of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 × 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.",
         "dc": {
           "dc_type": {
             "index": "wis",
@@ -18103,7 +18103,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       }
     ],
     "senses": {
@@ -18151,7 +18151,7 @@
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 10,
               "success_type": "none"
@@ -18160,7 +18160,7 @@
               "condition_type": {
                 "index": "paralyzed",
                 "name": "Paralyzed",
-                "url": "/api/conditions/paralyzed"
+                "url": "/api/2014/conditions/paralyzed"
               },
               "duration": {
                 "length": 10,
@@ -18175,7 +18175,7 @@
           "target_condition": {
             "index": "paralyzed",
             "name": "Paralyzed",
-            "url": "/api/conditions/paralyzed"
+            "url": "/api/2014/conditions/paralyzed"
           }
         },
         "weapon_kind": "natural"
@@ -18506,7 +18506,7 @@
             "damage_type": {
               "index": "slashing",
               "name": "Slashing",
-              "url": "/api/damage-types/slashing"
+              "url": "/api/2014/damage-types/slashing"
             },
             "damage_dice": "2d6"
           },
@@ -18515,7 +18515,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 13,
               "success_type": "none"
@@ -18524,7 +18524,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 1,
@@ -18715,7 +18715,7 @@
                 "condition_type": {
                   "index": "restrained",
                   "name": "Restrained",
-                  "url": "/api/conditions/restrained"
+                  "url": "/api/2014/conditions/restrained"
                 },
                 "duration": {
                   "length": 1,
@@ -18806,7 +18806,7 @@
                 "condition_type": {
                   "index": "restrained",
                   "name": "Restrained",
-                  "url": "/api/conditions/restrained"
+                  "url": "/api/2014/conditions/restrained"
                 },
                 "duration": {
                   "length": 1,
@@ -19092,7 +19092,7 @@
             "damage_type": {
               "index": "bludgeoning",
               "name": "Bludgeoning",
-              "url": "/api/damage-types/bludgeoning"
+              "url": "/api/2014/damage-types/bludgeoning"
             },
             "damage_dice": "2d6"
           },
@@ -19101,7 +19101,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 14,
               "success_type": "none"
@@ -19110,7 +19110,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 1,
@@ -19166,7 +19166,7 @@
   {
     "index": "giant-fire-beetle",
     "name": "Giant Fire Beetle",
-    "desc": "A giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle\u2019s glands continue to shed light for 1d6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.",
+    "desc": "A giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle’s glands continue to shed light for 1d6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.",
     "size": "Small",
     "type": "beast",
     "alignment": "unaligned",
@@ -19316,7 +19316,7 @@
                 "condition_type": {
                   "index": "restrained",
                   "name": "Restrained",
-                  "url": "/api/conditions/restrained"
+                  "url": "/api/2014/conditions/restrained"
                 },
                 "duration": {
                   "length": 1,
@@ -19336,7 +19336,7 @@
             "condition": {
               "index": "grappled",
               "name": "Grappled",
-              "url": "/api/conditions/grappled"
+              "url": "/api/2014/conditions/grappled"
             },
             "max_size": "Small"
           }
@@ -19357,7 +19357,7 @@
             "damage_type": {
               "index": "acid",
               "name": "Acid",
-              "url": "/api/damage-types/acid"
+              "url": "/api/2014/damage-types/acid"
             },
             "damage_dice": "2d4"
           }
@@ -19412,7 +19412,7 @@
             "damage_type": {
               "index": "bludgeoning",
               "name": "Bludgeoning",
-              "url": "/api/damage-types/bludgeoning"
+              "url": "/api/2014/damage-types/bludgeoning"
             },
             "damage_dice": "2d4"
           },
@@ -19421,7 +19421,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 13,
               "success_type": "none"
@@ -19430,7 +19430,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 1,
@@ -19691,7 +19691,7 @@
                 "condition_type": {
                   "index": "restrained",
                   "name": "Restrained",
-                  "url": "/api/conditions/restrained"
+                  "url": "/api/2014/conditions/restrained"
                 },
                 "duration": {
                   "length": 1,
@@ -19871,14 +19871,14 @@
             "damage_type": {
               "index": "poison",
               "name": "Poison",
-              "url": "/api/damage-types/poison"
+              "url": "/api/2014/damage-types/poison"
             },
             "damage_dice": "3d6",
             "dc": {
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 11,
               "success_type": "half"
@@ -20124,14 +20124,14 @@
             "damage_type": {
               "index": "poison",
               "name": "Poison",
-              "url": "/api/damage-types/poison"
+              "url": "/api/2014/damage-types/poison"
             },
             "damage_dice": "4d10",
             "dc": {
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 12,
               "success_type": "half"
@@ -20191,7 +20191,7 @@
             "damage_type": {
               "index": "bludgeoning",
               "name": "Bludgeoning",
-              "url": "/api/damage-types/bludgeoning"
+              "url": "/api/2014/damage-types/bludgeoning"
             },
             "damage_dice": "2d6"
           },
@@ -20200,7 +20200,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 11,
               "success_type": "none"
@@ -20209,7 +20209,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 1,
@@ -20405,14 +20405,14 @@
             "damage_type": {
               "index": "poison",
               "name": "Poison",
-              "url": "/api/damage-types/poison"
+              "url": "/api/2014/damage-types/poison"
             },
             "damage_dice": "2d8",
             "dc": {
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 11,
               "success_type": "half"
@@ -20513,7 +20513,7 @@
                 "condition_type": {
                   "index": "restrained",
                   "name": "Restrained",
-                  "url": "/api/conditions/restrained"
+                  "url": "/api/2014/conditions/restrained"
                 },
                 "duration": {
                   "length": 1,
@@ -20533,7 +20533,7 @@
             "condition": {
               "index": "grappled",
               "name": "Grappled",
-              "url": "/api/conditions/grappled"
+              "url": "/api/2014/conditions/grappled"
             },
             "max_size": "Medium"
           }
@@ -20554,7 +20554,7 @@
             "damage_type": {
               "index": "acid",
               "name": "Acid",
-              "url": "/api/damage-types/acid"
+              "url": "/api/2014/damage-types/acid"
             },
             "damage_dice": "3d6"
           }
@@ -20733,14 +20733,14 @@
             "damage_type": {
               "index": "poison",
               "name": "Poison",
-              "url": "/api/damage-types/poison"
+              "url": "/api/2014/damage-types/poison"
             },
             "damage_dice": "3d6",
             "dc": {
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 11,
               "success_type": "half"
@@ -20925,14 +20925,14 @@
             "damage_type": {
               "index": "poison",
               "name": "Poison",
-              "url": "/api/damage-types/poison"
+              "url": "/api/2014/damage-types/poison"
             },
             "damage_dice": "2d6",
             "dc": {
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 11,
               "success_type": "half"
@@ -21325,12 +21325,12 @@
           {
             "index": "studded-leather-armor",
             "name": "Studded Leather Armor",
-            "url": "/api/2014/equipment/studded-leather-armor"
+            "url": "/api/equipment/studded-leather-armor"
           },
           {
             "index": "shield",
             "name": "Shield",
-            "url": "/api/2014/equipment/shield"
+            "url": "/api/equipment/shield"
           }
         ]
       }
@@ -21560,12 +21560,12 @@
           {
             "index": "hide-armor",
             "name": "Hide Armor",
-            "url": "/api/2014/equipment/hide-armor"
+            "url": "/api/equipment/hide-armor"
           },
           {
             "index": "shield",
             "name": "Shield",
-            "url": "/api/2014/equipment/shield"
+            "url": "/api/equipment/shield"
           }
         ]
       }
@@ -21730,7 +21730,7 @@
             "damage_type": {
               "index": "bludgeoning",
               "name": "Bludgeoning",
-              "url": "/api/damage-types/bludgeoning"
+              "url": "/api/2014/damage-types/bludgeoning"
             },
             "damage_dice": "1d4"
           },
@@ -21739,7 +21739,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 10,
               "success_type": "none"
@@ -21748,7 +21748,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 1,
@@ -21800,12 +21800,12 @@
           {
             "index": "leather-armor",
             "name": "Leather Armor",
-            "url": "/api/2014/equipment/leather-armor"
+            "url": "/api/equipment/leather-armor"
           },
           {
             "index": "shield",
             "name": "Shield",
-            "url": "/api/2014/equipment/shield"
+            "url": "/api/equipment/shield"
           }
         ]
       }
@@ -22147,7 +22147,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 16,
               "success_type": "none"
@@ -22156,7 +22156,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 2,
@@ -22172,7 +22172,7 @@
               "condition": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               }
             }
           }
@@ -22298,7 +22298,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -23015,12 +23015,12 @@
           {
             "index": "chain-shirt",
             "name": "Chain Shirt",
-            "url": "/api/2014/equipment/chain-shirt"
+            "url": "/api/equipment/chain-shirt"
           },
           {
             "index": "shield",
             "name": "Shield",
-            "url": "/api/2014/equipment/shield"
+            "url": "/api/equipment/shield"
           }
         ]
       }
@@ -23593,7 +23593,7 @@
           {
             "index": "plate-armor",
             "name": "Plate Armor",
-            "url": "/api/2014/equipment/plate-armor"
+            "url": "/api/equipment/plate-armor"
           }
         ]
       }
@@ -23853,7 +23853,7 @@
           "dc_type": {
             "index": "wis",
             "name": "WIS",
-            "url": "/api/ability-scores/wis"
+            "url": "/api/2014/ability-scores/wis"
           },
           "dc_value": 11,
           "success_type": "none"
@@ -23862,7 +23862,7 @@
           "condition_type": {
             "index": "charmed",
             "name": "Charmed",
-            "url": "/api/conditions/charmed"
+            "url": "/api/2014/conditions/charmed"
           },
           "duration": {
             "length": 10,
@@ -24436,12 +24436,12 @@
           {
             "index": "chain-mail",
             "name": "Chain Mail",
-            "url": "/api/2014/equipment/chain-mail"
+            "url": "/api/equipment/chain-mail"
           },
           {
             "index": "shield",
             "name": "Shield",
-            "url": "/api/2014/equipment/shield"
+            "url": "/api/equipment/shield"
           }
         ]
       }
@@ -24618,7 +24618,7 @@
               "condition_type": {
                 "index": "poisoned",
                 "name": "Poisoned",
-                "url": "/api/conditions/poisoned"
+                "url": "/api/2014/conditions/poisoned"
               },
               "duration": {
                 "length": 10,
@@ -24629,7 +24629,7 @@
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 10,
               "success_type": "none"
@@ -25602,14 +25602,14 @@
             "damage_type": {
               "index": "poison",
               "name": "Poison",
-              "url": "/api/damage-types/poison"
+              "url": "/api/2014/damage-types/poison"
             },
             "damage_dice": "3d6",
             "dc": {
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 11,
               "success_type": "half"
@@ -25681,7 +25681,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "grappled",
@@ -25812,7 +25812,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -26131,7 +26131,7 @@
   {
     "index": "knight",
     "name": "Knight",
-    "desc": "Knights are warriors who pledge service to rulers, religious orders, and noble causes. A knight\u2019s alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm, a knight often travels with an entourage that includes squires and hirelings who are commoners.",
+    "desc": "Knights are warriors who pledge service to rulers, religious orders, and noble causes. A knight’s alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm, a knight often travels with an entourage that includes squires and hirelings who are commoners.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -26144,7 +26144,7 @@
           {
             "index": "plate-armor",
             "name": "Plate Armor",
-            "url": "/api/2014/equipment/plate-armor"
+            "url": "/api/equipment/plate-armor"
           }
         ]
       }
@@ -27065,7 +27065,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -27409,7 +27409,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 13,
               "success_type": "none"
@@ -27418,7 +27418,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 2,
@@ -27434,7 +27434,7 @@
               "condition": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               }
             }
           }
@@ -27566,7 +27566,7 @@
           {
             "index": "shield",
             "name": "Shield",
-            "url": "/api/2014/equipment/shield"
+            "url": "/api/equipment/shield"
           }
         ]
       }
@@ -28342,7 +28342,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 18,
               "success_type": "none"
@@ -28351,7 +28351,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 2,
@@ -28367,7 +28367,7 @@
               "condition": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               }
             }
           }
@@ -29436,7 +29436,7 @@
             "damage_type": {
               "index": "piercing",
               "name": "Piercing",
-              "url": "/api/damage-types/piercing"
+              "url": "/api/2014/damage-types/piercing"
             },
             "damage_dice": "2d8"
           },
@@ -29445,7 +29445,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 14,
               "success_type": "none"
@@ -29454,7 +29454,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 1,
@@ -29552,7 +29552,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "poisoned",
@@ -29577,7 +29577,7 @@
             "damage_type": {
               "index": "piercing",
               "name": "Piercing",
-              "url": "/api/damage-types/piercing"
+              "url": "/api/2014/damage-types/piercing"
             },
             "damage_dice": "2d8"
           },
@@ -29586,7 +29586,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 14,
               "success_type": "none"
@@ -29595,7 +29595,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 1,
@@ -29770,7 +29770,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -29855,7 +29855,7 @@
           "condition_type": {
             "index": "frightened",
             "name": "Frightened",
-            "url": "/api/conditions/frightened"
+            "url": "/api/2014/conditions/frightened"
           },
           "duration": {
             "length": 1,
@@ -29959,7 +29959,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -30643,7 +30643,7 @@
   {
     "index": "noble",
     "name": "Noble",
-    "desc": "**Nobles** wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.\n\nThe noble\u2019s statistics can also be used to represent **courtiers** who aren\u2019t of noble birth.",
+    "desc": "**Nobles** wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.\n\nThe noble’s statistics can also be used to represent **courtiers** who aren’t of noble birth.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -30656,7 +30656,7 @@
           {
             "index": "breastplate",
             "name": "Breastplate",
-            "url": "/api/2014/equipment/breastplate"
+            "url": "/api/equipment/breastplate"
           }
         ]
       }
@@ -30792,7 +30792,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -30975,7 +30975,7 @@
           {
             "index": "hide-armor",
             "name": "Hide Armor",
-            "url": "/api/2014/equipment/hide-armor"
+            "url": "/api/equipment/hide-armor"
           }
         ]
       }
@@ -31147,7 +31147,7 @@
           {
             "index": "chain-mail",
             "name": "Chain Mail",
-            "url": "/api/2014/equipment/chain-mail"
+            "url": "/api/equipment/chain-mail"
           }
         ]
       }
@@ -31417,7 +31417,7 @@
           {
             "index": "hide-armor",
             "name": "Hide Armor",
-            "url": "/api/2014/equipment/hide-armor"
+            "url": "/api/equipment/hide-armor"
           }
         ]
       }
@@ -31895,7 +31895,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 12,
               "success_type": "none"
@@ -31904,7 +31904,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 2,
@@ -31920,7 +31920,7 @@
               "condition": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               }
             }
           }
@@ -32142,14 +32142,14 @@
             "damage_type": {
               "index": "poison",
               "name": "Poison",
-              "url": "/api/damage-types/poison"
+              "url": "/api/2014/damage-types/poison"
             },
             "damage_dice": "4d8",
             "dc": {
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 11,
               "success_type": "half"
@@ -32484,7 +32484,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -32801,14 +32801,14 @@
             "damage_type": {
               "index": "poison",
               "name": "Poison",
-              "url": "/api/damage-types/poison"
+              "url": "/api/2014/damage-types/poison"
             },
             "damage_dice": "2d4",
             "dc": {
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 10,
               "success_type": "half"
@@ -33003,7 +33003,7 @@
           {
             "index": "chain-shirt",
             "name": "Chain Shirt",
-            "url": "/api/2014/equipment/chain-shirt"
+            "url": "/api/equipment/chain-shirt"
           }
         ]
       }
@@ -33270,7 +33270,7 @@
               "condition_type": {
                 "index": "poisoned",
                 "name": "Poisoned",
-                "url": "/api/conditions/poisoned"
+                "url": "/api/2014/conditions/poisoned"
               },
               "duration": {
                 "length": 1,
@@ -33281,7 +33281,7 @@
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 11,
               "success_type": "none"
@@ -33499,14 +33499,14 @@
             "damage_type": {
               "index": "poison",
               "name": "Poison",
-              "url": "/api/damage-types/poison"
+              "url": "/api/2014/damage-types/poison"
             },
             "damage_dice": "2d4",
             "dc": {
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 10,
               "success_type": "none"
@@ -33515,7 +33515,7 @@
               "condition_type": {
                 "index": "poisoned",
                 "name": "Poisoned",
-                "url": "/api/conditions/poisoned"
+                "url": "/api/2014/conditions/poisoned"
               },
               "duration": {
                 "length": 10,
@@ -33548,7 +33548,7 @@
           "condition_type": {
             "index": "frightened",
             "name": "Frightened",
-            "url": "/api/conditions/frightened"
+            "url": "/api/2014/conditions/frightened"
           },
           "duration": {
             "length": 10,
@@ -34366,7 +34366,7 @@
             "damage_type": {
               "index": "bludgeoning",
               "name": "Bludgeoning",
-              "url": "/api/damage-types/bludgeoning"
+              "url": "/api/2014/damage-types/bludgeoning"
             },
             "damage_dice": "2d9"
           },
@@ -34375,7 +34375,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 15,
               "success_type": "none"
@@ -34384,7 +34384,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 1,
@@ -34974,7 +34974,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 14,
               "success_type": "none"
@@ -34983,7 +34983,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 2,
@@ -34999,7 +34999,7 @@
               "condition": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               }
             }
           }
@@ -35413,7 +35413,7 @@
           {
             "index": "leather-armor",
             "name": "Leather Armor",
-            "url": "/api/2014/equipment/leather-armor"
+            "url": "/api/equipment/leather-armor"
           }
         ]
       }
@@ -35591,14 +35591,14 @@
             "damage_type": {
               "index": "poison",
               "name": "Poison",
-              "url": "/api/damage-types/poison"
+              "url": "/api/2014/damage-types/poison"
             },
             "damage_dice": "1d8",
             "dc": {
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 9,
               "success_type": "half"
@@ -35627,7 +35627,7 @@
           {
             "index": "leather-armor",
             "name": "Leather Armor",
-            "url": "/api/2014/equipment/leather-armor"
+            "url": "/api/equipment/leather-armor"
           }
         ]
       }
@@ -35906,7 +35906,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -36055,7 +36055,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       }
     ],
     "senses": {
@@ -36153,7 +36153,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -36394,7 +36394,7 @@
                   "condition_type": {
                     "index": "paralyzed",
                     "name": "Paralyzed",
-                    "url": "/api/conditions/paralyzed"
+                    "url": "/api/2014/conditions/paralyzed"
                   },
                   "duration": {
                     "length": 10,
@@ -36453,7 +36453,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       }
     ],
     "senses": {
@@ -36586,7 +36586,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -36877,7 +36877,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "grappled",
@@ -36953,7 +36953,7 @@
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 10,
               "success_type": "none"
@@ -37056,14 +37056,14 @@
             "damage_type": {
               "index": "poison",
               "name": "Poison",
-              "url": "/api/damage-types/poison"
+              "url": "/api/2014/damage-types/poison"
             },
             "damage_dice": "1d4",
             "dc": {
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 9,
               "success_type": "none"
@@ -37292,7 +37292,7 @@
           {
             "index": "leather-armor",
             "name": "Leather Armor",
-            "url": "/api/2014/equipment/leather-armor"
+            "url": "/api/equipment/leather-armor"
           }
         ]
       }
@@ -37957,7 +37957,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "frightened",
@@ -38079,7 +38079,7 @@
           {
             "index": "scale-mail",
             "name": "Scale Mail",
-            "url": "/api/2014/equipment/scale-mail"
+            "url": "/api/equipment/scale-mail"
           }
         ]
       }
@@ -39044,14 +39044,14 @@
             "damage_type": {
               "index": "poison",
               "name": "Poison",
-              "url": "/api/damage-types/poison"
+              "url": "/api/2014/damage-types/poison"
             },
             "damage_dice": "4d6",
             "dc": {
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 10,
               "success_type": "half"
@@ -39947,7 +39947,7 @@
           {
             "index": "leather-armor",
             "name": "Leather Armor",
-            "url": "/api/2014/equipment/leather-armor"
+            "url": "/api/equipment/leather-armor"
           }
         ]
       }
@@ -40116,7 +40116,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 13,
               "success_type": "none"
@@ -40125,7 +40125,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 2,
@@ -40141,7 +40141,7 @@
               "condition": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               }
             }
           }
@@ -40318,7 +40318,7 @@
           {
             "index": "hide-armor",
             "name": "Hide Armor",
-            "url": "/api/2014/equipment/hide-armor"
+            "url": "/api/equipment/hide-armor"
           }
         ]
       }
@@ -40447,7 +40447,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 13,
               "success_type": "none"
@@ -40456,7 +40456,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 2,
@@ -40472,7 +40472,7 @@
               "condition": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               }
             }
           }
@@ -40792,7 +40792,7 @@
             "damage_type": {
               "index": "piercing",
               "name": "Piercing",
-              "url": "/api/damage-types/piercing"
+              "url": "/api/2014/damage-types/piercing"
             },
             "damage_dice": "2d8"
           },
@@ -40801,7 +40801,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 15,
               "success_type": "none"
@@ -40810,7 +40810,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 1,
@@ -41745,7 +41745,7 @@
           {
             "index": "splint-armor",
             "name": "Splint Armor",
-            "url": "/api/2014/equipment/splint-armor"
+            "url": "/api/equipment/splint-armor"
           }
         ]
       }
@@ -42281,7 +42281,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 14,
               "success_type": "none"
@@ -42290,7 +42290,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 2,
@@ -42306,7 +42306,7 @@
               "condition": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               }
             }
           }
@@ -42373,7 +42373,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "poisoned",
@@ -42449,7 +42449,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "grappled",
@@ -42567,7 +42567,7 @@
                 "condition_type": {
                   "index": "restrained",
                   "name": "Restrained",
-                  "url": "/api/conditions/restrained"
+                  "url": "/api/2014/conditions/restrained"
                 },
                 "duration": {
                   "length": 1,
@@ -42582,7 +42582,7 @@
             "condition": {
               "index": "grappled",
               "name": "Grappled",
-              "url": "/api/conditions/grappled"
+              "url": "/api/2014/conditions/grappled"
             },
             "conditionExcludes": true
           }
@@ -42694,12 +42694,12 @@
       {
         "index": "werebear-human",
         "name": "Werebear, Human Form",
-        "url": "/api/2014/monsters/werebear-human"
+        "url": "/api/monsters/werebear-human"
       },
       {
         "index": "werebear-hybrid",
         "name": "Werebear, Hybrid Form",
-        "url": "/api/2014/monsters/werebear-hybrid"
+        "url": "/api/monsters/werebear-hybrid"
       }
     ],
     "hit_points_roll": "18d8+54",
@@ -42814,12 +42814,12 @@
       {
         "index": "werebear-bear",
         "name": "Werebear, Bear Form",
-        "url": "/api/2014/monsters/werebear-bear"
+        "url": "/api/monsters/werebear-bear"
       },
       {
         "index": "werebear-hybrid",
         "name": "Werebear, Hybrid Form",
-        "url": "/api/2014/monsters/werebear-hybrid"
+        "url": "/api/monsters/werebear-hybrid"
       }
     ],
     "hit_points_roll": "18d8+54",
@@ -42918,12 +42918,12 @@
       {
         "index": "werebear-bear",
         "name": "Werebear, Bear Form",
-        "url": "/api/2014/monsters/werebear-bear"
+        "url": "/api/monsters/werebear-bear"
       },
       {
         "index": "werebear-human",
         "name": "Werebear, Human Form",
-        "url": "/api/2014/monsters/werebear-human"
+        "url": "/api/monsters/werebear-human"
       }
     ],
     "hit_points_roll": "18d8+54",
@@ -43086,12 +43086,12 @@
       {
         "index": "wereboar-human",
         "name": "Wereboar, Human Form",
-        "url": "/api/2014/monsters/wereboar-human"
+        "url": "/api/monsters/wereboar-human"
       },
       {
         "index": "wereboar-hybrid",
         "name": "Wereboar, Hybrid Form",
-        "url": "/api/2014/monsters/wereboar-hybrid"
+        "url": "/api/monsters/wereboar-hybrid"
       }
     ],
     "hit_points_roll": "12d8+24",
@@ -43189,12 +43189,12 @@
       {
         "index": "wereboar-boar",
         "name": "Wereboar, Boar Form",
-        "url": "/api/2014/monsters/wereboar-boar"
+        "url": "/api/monsters/wereboar-boar"
       },
       {
         "index": "wereboar-hybrid",
         "name": "Wereboar, Hybrid Form",
-        "url": "/api/2014/monsters/wereboar-hybrid"
+        "url": "/api/monsters/wereboar-hybrid"
       }
     ],
     "hit_points_roll": "12d8+24",
@@ -43301,12 +43301,12 @@
       {
         "index": "wereboar-boar",
         "name": "Wereboar, Boar Form",
-        "url": "/api/2014/monsters/wereboar-boar"
+        "url": "/api/monsters/wereboar-boar"
       },
       {
         "index": "wereboar-human",
         "name": "Wereboar, Human Form",
-        "url": "/api/2014/monsters/wereboar-human"
+        "url": "/api/monsters/wereboar-human"
       }
     ],
     "hit_points_roll": "12d8+24",
@@ -43458,12 +43458,12 @@
       {
         "index": "wererat-hybrid",
         "name": "Wererat, Hybrid Form",
-        "url": "/api/2014/monsters/wererat-hybrid"
+        "url": "/api/monsters/wererat-hybrid"
       },
       {
         "index": "wererat-rat",
         "name": "Wererat, Rat Form",
-        "url": "/api/2014/monsters/wererat-rat"
+        "url": "/api/monsters/wererat-rat"
       }
     ],
     "hit_points_roll": "6d8+6",
@@ -43624,12 +43624,12 @@
       {
         "index": "wererat-human",
         "name": "Wererat, Human Form",
-        "url": "/api/2014/monsters/wererat-human"
+        "url": "/api/monsters/wererat-human"
       },
       {
         "index": "wererat-rat",
         "name": "Wererat, Rat Form",
-        "url": "/api/2014/monsters/wererat-rat"
+        "url": "/api/monsters/wererat-rat"
       }
     ],
     "hit_points_roll": "6d8+6",
@@ -43841,12 +43841,12 @@
       {
         "index": "wererat-human",
         "name": "Wererat, Human Form",
-        "url": "/api/2014/monsters/wererat-human"
+        "url": "/api/monsters/wererat-human"
       },
       {
         "index": "wererat-hybrid",
         "name": "Wererat, Hybrid Form",
-        "url": "/api/2014/monsters/wererat-hybrid"
+        "url": "/api/monsters/wererat-hybrid"
       }
     ],
     "hit_points_roll": "6d8+6",
@@ -43942,12 +43942,12 @@
       {
         "index": "weretiger-hybrid",
         "name": "Weretiger, Hybrid Form",
-        "url": "/api/2014/monsters/weretiger-hybrid"
+        "url": "/api/monsters/weretiger-hybrid"
       },
       {
         "index": "weretiger-tiger",
         "name": "Weretiger, Tiger Form",
-        "url": "/api/2014/monsters/weretiger-tiger"
+        "url": "/api/monsters/weretiger-tiger"
       }
     ],
     "hit_points_roll": "16d8+48",
@@ -44090,12 +44090,12 @@
       {
         "index": "weretiger-human",
         "name": "Weretiger, Human Form",
-        "url": "/api/2014/monsters/weretiger-human"
+        "url": "/api/monsters/weretiger-human"
       },
       {
         "index": "weretiger-tiger",
         "name": "Weretiger, Tiger Form",
-        "url": "/api/2014/monsters/weretiger-tiger"
+        "url": "/api/monsters/weretiger-tiger"
       }
     ],
     "hit_points_roll": "16d8+48",
@@ -44158,7 +44158,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 2,
@@ -44174,7 +44174,7 @@
               "condition": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               }
             }
           }
@@ -44310,12 +44310,12 @@
       {
         "index": "weretiger-human",
         "name": "Weretiger, Human Form",
-        "url": "/api/2014/monsters/weretiger-human"
+        "url": "/api/monsters/weretiger-human"
       },
       {
         "index": "weretiger-hybrid",
         "name": "Weretiger, Hybrid Form",
-        "url": "/api/2014/monsters/weretiger-hybrid"
+        "url": "/api/monsters/weretiger-hybrid"
       }
     ],
     "hit_points_roll": "16d8+48",
@@ -44378,7 +44378,7 @@
               "dc_type": {
                 "index": "str",
                 "name": "STR",
-                "url": "/api/ability-scores/str"
+                "url": "/api/2014/ability-scores/str"
               },
               "dc_value": 14,
               "success_type": "none"
@@ -44387,7 +44387,7 @@
               "condition_type": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               },
               "duration": {
                 "length": 2,
@@ -44403,7 +44403,7 @@
               "condition": {
                 "index": "prone",
                 "name": "Prone",
-                "url": "/api/conditions/prone"
+                "url": "/api/2014/conditions/prone"
               }
             }
           }
@@ -44469,12 +44469,12 @@
       {
         "index": "werewolf-hybrid",
         "name": "Werewolf, Hybrid Form",
-        "url": "/api/2014/monsters/werewolf-hybrid"
+        "url": "/api/monsters/werewolf-hybrid"
       },
       {
         "index": "werewolf-wolf",
         "name": "Werewolf, Wolf Form",
-        "url": "/api/2014/monsters/werewolf-wolf"
+        "url": "/api/monsters/werewolf-wolf"
       }
     ],
     "hit_points_roll": "9d8+18",
@@ -44599,12 +44599,12 @@
       {
         "index": "werewolf-human",
         "name": "Werewolf, Human Form",
-        "url": "/api/2014/monsters/werewolf-human"
+        "url": "/api/monsters/werewolf-human"
       },
       {
         "index": "werewolf-wolf",
         "name": "Werewolf, Wolf Form",
-        "url": "/api/2014/monsters/werewolf-wolf"
+        "url": "/api/monsters/werewolf-wolf"
       }
     ],
     "hit_points_roll": "9d8+18",
@@ -44725,12 +44725,12 @@
       {
         "index": "werewolf-human",
         "name": "Werewolf, Human Form",
-        "url": "/api/2014/monsters/werewolf-human"
+        "url": "/api/monsters/werewolf-human"
       },
       {
         "index": "werewolf-hybrid",
         "name": "Werewolf, Hybrid Form",
-        "url": "/api/2014/monsters/werewolf-hybrid"
+        "url": "/api/monsters/werewolf-hybrid"
       }
     ],
     "hit_points_roll": "9d8+18",
@@ -44962,7 +44962,7 @@
           {
             "index": "studded-leather-armor",
             "name": "Studded Leather Armor",
-            "url": "/api/2014/equipment/studded-leather-armor"
+            "url": "/api/equipment/studded-leather-armor"
           }
         ]
       }
@@ -45009,7 +45009,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "poisoned",
@@ -45094,7 +45094,7 @@
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 13,
               "success_type": "none"
@@ -45223,7 +45223,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "grappled",
@@ -45320,7 +45320,7 @@
   {
     "index": "winter-wolf",
     "name": "Winter Wolf",
-    "desc": "The arctic-dwelling winter wolf is as large as a dire wolf but has snow-white fur and pale blue eyes. Frost giants use these evil creatures as guards and hunting companions, putting the wolves\u2019 deadly breath weapon to use against their foes. Winter wolves communicate with one another using growls and barks, but they speak Common and Giant well enough to follow simple conversations.",
+    "desc": "The arctic-dwelling winter wolf is as large as a dire wolf but has snow-white fur and pale blue eyes. Frost giants use these evil creatures as guards and hunting companions, putting the wolves’ deadly breath weapon to use against their foes. Winter wolves communicate with one another using growls and barks, but they speak Common and Giant well enough to follow simple conversations.",
     "size": "Large",
     "type": "monstrosity",
     "alignment": "neutral evil",
@@ -45649,7 +45649,7 @@
       {
         "index": "exhaustion",
         "name": "Exhaustion",
-        "url": "/api/2014/conditions/exhaustion"
+        "url": "/api/conditions/exhaustion"
       },
       {
         "index": "grappled",
@@ -45719,7 +45719,7 @@
               "dc_type": {
                 "index": "con",
                 "name": "CON",
-                "url": "/api/ability-scores/con"
+                "url": "/api/2014/ability-scores/con"
               },
               "dc_value": 14,
               "success_type": "none"

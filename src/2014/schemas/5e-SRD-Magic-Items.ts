@@ -15,4 +15,10 @@ export const MagicItemSchema = z.strictObject({
   desc: z.array(z.string()).optional(),
   image: z.string().optional(),
   url: z.string(),
+  cost: z.strictObject({ quantity: z.number(), unit: z.string() }).optional(),
+  effect: z.record(z.string(), z.unknown()).optional(),
+  enchantment: z.record(z.string(), z.unknown()).optional(),
+  is_consumable: z.boolean().optional(),
+  requires_attunement: z.boolean().optional(),
+  weight: z.number().optional(),
 });

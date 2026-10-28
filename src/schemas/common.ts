@@ -60,6 +60,7 @@ const OptionSchema: z.ZodType<any> = z.lazy(() =>
       name: z.string(),
       dc: DifficultyClassSchema,
       damage: z.array(DamageSchema).optional(),
+      condition: z.record(z.string(), z.unknown()).optional(),
     }),
     z.strictObject({
       option_type: z.literal('counted_reference'),

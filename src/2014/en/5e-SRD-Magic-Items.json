@@ -34,17 +34,17 @@
       {
         "index": "ammunition-1",
         "name": "Ammunition, +1",
-        "url": "/api/2014/magic-items/ammunition-1"
+        "url": "/api/magic-items/ammunition-1"
       },
       {
         "index": "ammunition-2",
         "name": "Ammunition, +2",
-        "url": "/api/2014/magic-items/ammunition-2"
+        "url": "/api/magic-items/ammunition-2"
       },
       {
         "index": "ammunition-3",
         "name": "Ammunition, +3",
-        "url": "/api/2014/magic-items/ammunition-3"
+        "url": "/api/magic-items/ammunition-3"
       }
     ],
     "variant": false,
@@ -779,32 +779,32 @@
       {
         "index": "belt-of-giant-strength-hill",
         "name": "Belt of Hill Giant Strength",
-        "url": "/api/2014/magic-items/belt-of-giant-strength-hill"
+        "url": "/api/magic-items/belt-of-giant-strength-hill"
       },
       {
         "index": "belt-of-giant-strength-stone",
         "name": "Belt of Stone Giant Strength",
-        "url": "/api/2014/magic-items/belt-of-giant-strength-stone"
+        "url": "/api/magic-items/belt-of-giant-strength-stone"
       },
       {
         "index": "belt-of-giant-strength-frost",
         "name": "Belt of Frost Giant Strength",
-        "url": "/api/2014/magic-items/belt-of-giant-strength-frost"
+        "url": "/api/magic-items/belt-of-giant-strength-frost"
       },
       {
         "index": "belt-of-giant-strength-fire",
         "name": "Belt of Fire Giant Strength",
-        "url": "/api/2014/magic-items/belt-of-giant-strength-fire"
+        "url": "/api/magic-items/belt-of-giant-strength-fire"
       },
       {
         "index": "belt-of-giant-strength-cloud",
         "name": "Belt of Cloud Giant Strength",
-        "url": "/api/2014/magic-items/belt-of-giant-strength-cloud"
+        "url": "/api/magic-items/belt-of-giant-strength-cloud"
       },
       {
         "index": "belt-of-giant-strength-storm",
         "name": "Belt of Storm Giant Strength",
-        "url": "/api/2014/magic-items/belt-of-giant-strength-storm"
+        "url": "/api/magic-items/belt-of-giant-strength-storm"
       }
     ],
     "variant": false,
@@ -852,7 +852,7 @@
           "total": 21
         }
       },
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -889,7 +889,7 @@
           "total": 23
         }
       },
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -926,7 +926,7 @@
           "total": 23
         }
       },
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -963,7 +963,7 @@
           "total": 25
         }
       },
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -1000,7 +1000,7 @@
           "total": 27
         }
       },
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -1094,7 +1094,7 @@
         "skill": "stealth",
         "gives_advantage": true
       },
-      "duration":  {
+      "duration": {
         "unit": "while carried",
         "length": 1
       }
@@ -1149,7 +1149,7 @@
     "url": "/api/magic-items/boots-of-the-winterlands",
     "effect": {
       "damage_type_resistance": "cold",
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -1226,7 +1226,7 @@
     ],
     "url": "/api/magic-items/brooch-of-shielding",
     "effect": {
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       },
@@ -1374,7 +1374,7 @@
         "skill": "stealth",
         "gives_advantage": true
       },
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -1413,7 +1413,7 @@
         ],
         "bonus": 1
       },
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -1583,52 +1583,52 @@
       {
         "index": "dragon-scale-mail-black",
         "name": "Black Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-black"
+        "url": "/api/magic-items/dragon-scale-mail-black"
       },
       {
         "index": "dragon-scale-mail-blue",
         "name": "Blue Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-blue"
+        "url": "/api/magic-items/dragon-scale-mail-blue"
       },
       {
         "index": "dragon-scale-mail-brass",
         "name": "Brass Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-brass"
+        "url": "/api/magic-items/dragon-scale-mail-brass"
       },
       {
         "index": "dragon-scale-mail-bronze",
         "name": "Bronze Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-bronze"
+        "url": "/api/magic-items/dragon-scale-mail-bronze"
       },
       {
         "index": "dragon-scale-mail-copper",
         "name": "Copper Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-copper"
+        "url": "/api/magic-items/dragon-scale-mail-copper"
       },
       {
         "index": "dragon-scale-mail-gold",
         "name": "Gold Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-gold"
+        "url": "/api/magic-items/dragon-scale-mail-gold"
       },
       {
         "index": "dragon-scale-mail-green",
         "name": "Green Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-green"
+        "url": "/api/magic-items/dragon-scale-mail-green"
       },
       {
         "index": "dragon-scale-mail-red",
         "name": "Red Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-red"
+        "url": "/api/magic-items/dragon-scale-mail-red"
       },
       {
         "index": "dragon-scale-mail-silver",
         "name": "Silver Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-silver"
+        "url": "/api/magic-items/dragon-scale-mail-silver"
       },
       {
         "index": "dragon-scale-mail-white",
         "name": "White Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-white"
+        "url": "/api/magic-items/dragon-scale-mail-white"
       }
     ],
     "variant": false,
@@ -1686,7 +1686,7 @@
     "requires_attunement": true,
     "effect": {
       "damage_type_resistance": "acid",
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -1730,7 +1730,7 @@
     "requires_attunement": true,
     "effect": {
       "damage_type_resistance": "lightning",
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -1774,7 +1774,7 @@
     "requires_attunement": true,
     "effect": {
       "damage_type_resistance": "fire",
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -1818,7 +1818,7 @@
     "requires_attunement": true,
     "effect": {
       "damage_type_resistance": "lightning",
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -1862,7 +1862,7 @@
     "requires_attunement": true,
     "effect": {
       "damage_type_resistance": "acid",
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -1906,7 +1906,7 @@
     "requires_attunement": true,
     "effect": {
       "damage_type_resistance": "fire",
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -1950,7 +1950,7 @@
     "requires_attunement": true,
     "effect": {
       "damage_type_resistance": "poison",
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -1994,7 +1994,7 @@
     "requires_attunement": true,
     "effect": {
       "damage_type_resistance": "fire",
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -2038,7 +2038,7 @@
     "requires_attunement": true,
     "effect": {
       "damage_type_resistance": "cold",
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -2087,7 +2087,7 @@
     },
     "effect": {
       "damage_type_resistance": "cold",
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -2257,7 +2257,7 @@
           "medium-armor"
         ]
       },
-      "duration":  {
+      "duration": {
         "unit": "while carried",
         "length": 1
       }
@@ -2350,7 +2350,7 @@
     "equipment_category": {
       "index": "weapon",
       "name": "Weapon",
-      "url": "/api/equipment-categories/weapon"
+      "url": "/api/2014/equipment-categories/weapon"
     },
     "rarity": {
       "name": "Rare"
@@ -2398,7 +2398,7 @@
         "damage_type": {
           "index": "fire",
           "name": "Fire",
-          "url": "/api/damage-types/fire"
+          "url": "/api/2014/damage-types/fire"
         },
         "damage_dice": "2d6"
       }
@@ -2411,7 +2411,7 @@
     "equipment_category": {
       "index": "weapon",
       "name": "Weapon",
-      "url": "/api/equipment-categories/weapon"
+      "url": "/api/2014/equipment-categories/weapon"
     },
     "rarity": {
       "name": "Very Rare"
@@ -2461,14 +2461,14 @@
         "damage_type": {
           "index": "cold",
           "name": "Cold",
-          "url": "/api/damage-types/cold"
+          "url": "/api/2014/damage-types/cold"
         },
         "damage_dice": "1d6"
       }
     },
     "effect": {
       "damage_type_resistance": "fire",
-      "duration":  {
+      "duration": {
         "unit": "while equipped",
         "length": 1
       }
@@ -2499,14 +2499,13 @@
     },
     "requires_attunement": true,
     "effect": {
-      "ability_score_modifier": 
-      {
+      "ability_score_modifier": {
         "ability": "str",
         "amount": {
           "total": 29
         }
       },
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -2599,7 +2598,7 @@
         "skill": "athletics",
         "bonus": 5
       },
-      "duration":  {
+      "duration": {
         "unit": "while attuned",
         "length": 1
       }
@@ -3978,32 +3977,32 @@
       {
         "index": "potion-of-giant-strength-hill",
         "name": "Potion of Hill Giant Strength",
-        "url": "/api/2014/magic-items/potion-of-giant-strength-hill"
+        "url": "/api/magic-items/potion-of-giant-strength-hill"
       },
       {
         "index": "potion-of-giant-strength-frost",
         "name": "Potion of Frost Giant Strength",
-        "url": "/api/2014/magic-items/potion-of-giant-strength-frost"
+        "url": "/api/magic-items/potion-of-giant-strength-frost"
       },
       {
         "index": "potion-of-giant-strength-stone",
         "name": "Potion of Stone Giant Strength",
-        "url": "/api/2014/magic-items/potion-of-giant-strength-stone"
+        "url": "/api/magic-items/potion-of-giant-strength-stone"
       },
       {
         "index": "potion-of-giant-strength-fire",
         "name": "Potion of Fire Giant Strength",
-        "url": "/api/2014/magic-items/potion-of-giant-strength-fire"
+        "url": "/api/magic-items/potion-of-giant-strength-fire"
       },
       {
         "index": "potion-of-giant-strength-cloud",
         "name": "Potion of Cloud Giant Strength",
-        "url": "/api/2014/magic-items/potion-of-giant-strength-cloud"
+        "url": "/api/magic-items/potion-of-giant-strength-cloud"
       },
       {
         "index": "potion-of-giant-strength-storm",
         "name": "Potion of Storm Giant Strength",
-        "url": "/api/2014/magic-items/potion-of-giant-strength-storm"
+        "url": "/api/magic-items/potion-of-giant-strength-storm"
       }
     ],
     "variant": false,
@@ -4139,7 +4138,6 @@
       "quantity": 25000,
       "unit": "gp"
     },
-
     "url": "/api/magic-items/potion-of-giant-strength-cloud"
   },
   {
@@ -4200,22 +4198,22 @@
       {
         "index": "potion-of-healing-common",
         "name": "Potion of Healing",
-        "url": "/api/2014/magic-items/potion-of-healing-common"
+        "url": "/api/magic-items/potion-of-healing-common"
       },
       {
         "index": "potion-of-healing-greater",
         "name": "Potion of Greater Healing",
-        "url": "/api/2014/magic-items/potion-of-healing-greater"
+        "url": "/api/magic-items/potion-of-healing-greater"
       },
       {
         "index": "potion-of-healing-superior",
         "name": "Potion of Superior Healing",
-        "url": "/api/2014/magic-items/potion-of-healing-superior"
+        "url": "/api/magic-items/potion-of-healing-superior"
       },
       {
         "index": "potion-of-healing-supreme",
         "name": "Potion of Supreme Healing",
-        "url": "/api/2014/magic-items/potion-of-healing-supreme"
+        "url": "/api/magic-items/potion-of-healing-supreme"
       }
     ],
     "variant": false,
@@ -4432,52 +4430,52 @@
       {
         "index": "potion-of-resistance-acid",
         "name": "Potion of Acid Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-acid"
+        "url": "/api/magic-items/potion-of-resistance-acid"
       },
       {
         "index": "potion-of-resistance-cold",
         "name": "Potion of Cold Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-cold"
+        "url": "/api/magic-items/potion-of-resistance-cold"
       },
       {
         "index": "potion-of-resistance-fire",
         "name": "Potion of Fire Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-fire"
+        "url": "/api/magic-items/potion-of-resistance-fire"
       },
       {
         "index": "potion-of-resistance-force",
         "name": "Potion of Force Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-force"
+        "url": "/api/magic-items/potion-of-resistance-force"
       },
       {
         "index": "potion-of-resistance-lightning",
         "name": "Potion of Lightning Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-lightning"
+        "url": "/api/magic-items/potion-of-resistance-lightning"
       },
       {
         "index": "potion-of-resistance-necrotic",
         "name": "Potion of Necrotic Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-necrotic"
+        "url": "/api/magic-items/potion-of-resistance-necrotic"
       },
       {
         "index": "potion-of-resistance-poison",
         "name": "Potion of Poison Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-poison"
+        "url": "/api/magic-items/potion-of-resistance-poison"
       },
       {
         "index": "potion-of-resistance-psychic",
         "name": "Potion of Psychic Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-psychic"
+        "url": "/api/magic-items/potion-of-resistance-psychic"
       },
       {
         "index": "potion-of-resistance-radiant",
         "name": "Potion of Radiant Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-radiant"
+        "url": "/api/magic-items/potion-of-resistance-radiant"
       },
       {
         "index": "potion-of-resistance-thunder",
         "name": "Potion of Thunder Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-thunder"
+        "url": "/api/magic-items/potion-of-resistance-thunder"
       }
     ],
     "variant": false,
@@ -5211,7 +5209,7 @@
       "You gain a +1 bonus to AC and saving throws while wearing this ring."
     ],
     "url": "/api/magic-items/ring-of-protection",
-    "effect": { 
+    "effect": {
       "armor_class_modifier": 1,
       "saving_throw_modifier": {
         "abilities": [
@@ -5270,52 +5268,52 @@
       {
         "index": "ring-of-resistance-acid",
         "name": "Ring of Acid Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-acid"
+        "url": "/api/magic-items/ring-of-resistance-acid"
       },
       {
         "index": "ring-of-resistance-cold",
         "name": "Ring of Cold Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-cold"
+        "url": "/api/magic-items/ring-of-resistance-cold"
       },
       {
         "index": "ring-of-resistance-fire",
         "name": "Ring of Fire Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-fire"
+        "url": "/api/magic-items/ring-of-resistance-fire"
       },
       {
         "index": "ring-of-resistance-force",
         "name": "Ring of Force Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-force"
+        "url": "/api/magic-items/ring-of-resistance-force"
       },
       {
         "index": "ring-of-resistance-lightning",
         "name": "Ring of Lightning Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-lightning"
+        "url": "/api/magic-items/ring-of-resistance-lightning"
       },
       {
         "index": "ring-of-resistance-necrotic",
         "name": "Ring of Necrotic Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-necrotic"
+        "url": "/api/magic-items/ring-of-resistance-necrotic"
       },
       {
         "index": "ring-of-resistance-poison",
         "name": "Ring of Poison Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-poison"
+        "url": "/api/magic-items/ring-of-resistance-poison"
       },
       {
         "index": "ring-of-resistance-psychic",
         "name": "Ring of Psychic Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-psychic"
+        "url": "/api/magic-items/ring-of-resistance-psychic"
       },
       {
         "index": "ring-of-resistance-radiant",
         "name": "Ring of Radiant Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-radiant"
+        "url": "/api/magic-items/ring-of-resistance-radiant"
       },
       {
         "index": "ring-of-resistance-thunder",
         "name": "Ring of Thunder Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-thunder"
+        "url": "/api/magic-items/ring-of-resistance-thunder"
       }
     ],
     "variant": false,

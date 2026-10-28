@@ -125,7 +125,7 @@
         "equipment": {
           "index": "javelin",
           "name": "Javelin",
-          "url": "/api/2014/equipment/javelin"
+          "url": "/api/equipment/javelin"
         },
         "quantity": 4
       }
@@ -144,7 +144,7 @@
               "of": {
                 "index": "greataxe",
                 "name": "Greataxe",
-                "url": "/api/2014/equipment/greataxe"
+                "url": "/api/equipment/greataxe"
               }
             },
             {
@@ -179,7 +179,7 @@
               "of": {
                 "index": "handaxe",
                 "name": "Handaxe",
-                "url": "/api/2014/equipment/handaxe"
+                "url": "/api/equipment/handaxe"
               }
             },
             {
@@ -550,7 +550,7 @@
         "equipment": {
           "index": "leather-armor",
           "name": "Leather Armor",
-          "url": "/api/2014/equipment/leather-armor"
+          "url": "/api/equipment/leather-armor"
         },
         "quantity": 1
       },
@@ -558,7 +558,7 @@
         "equipment": {
           "index": "dagger",
           "name": "Dagger",
-          "url": "/api/2014/equipment/dagger"
+          "url": "/api/equipment/dagger"
         },
         "quantity": 1
       }
@@ -577,7 +577,7 @@
               "of": {
                 "index": "rapier",
                 "name": "Rapier",
-                "url": "/api/2014/equipment/rapier"
+                "url": "/api/equipment/rapier"
               }
             },
             {
@@ -586,7 +586,7 @@
               "of": {
                 "index": "longsword",
                 "name": "Longsword",
-                "url": "/api/2014/equipment/longsword"
+                "url": "/api/equipment/longsword"
               }
             },
             {
@@ -1105,7 +1105,7 @@
         "equipment": {
           "index": "shield",
           "name": "Shield",
-          "url": "/api/2014/equipment/shield"
+          "url": "/api/equipment/shield"
         },
         "quantity": 1
       }
@@ -1124,7 +1124,7 @@
               "of": {
                 "index": "mace",
                 "name": "Mace",
-                "url": "/api/2014/equipment/mace"
+                "url": "/api/equipment/mace"
               }
             },
             {
@@ -1133,7 +1133,7 @@
               "of": {
                 "index": "warhammer",
                 "name": "Warhammer",
-                "url": "/api/2014/equipment/warhammer"
+                "url": "/api/equipment/warhammer"
               },
               "prerequisites": [
                 {
@@ -1162,7 +1162,7 @@
               "of": {
                 "index": "scale-mail",
                 "name": "Scale Mail",
-                "url": "/api/2014/equipment/scale-mail"
+                "url": "/api/equipment/scale-mail"
               }
             },
             {
@@ -1171,7 +1171,7 @@
               "of": {
                 "index": "leather-armor",
                 "name": "Leather Armor",
-                "url": "/api/2014/equipment/leather-armor"
+                "url": "/api/equipment/leather-armor"
               }
             },
             {
@@ -1180,7 +1180,7 @@
               "of": {
                 "index": "chain-mail",
                 "name": "Chain Mail",
-                "url": "/api/2014/equipment/chain-mail"
+                "url": "/api/equipment/chain-mail"
               },
               "prerequisites": [
                 {
@@ -1212,7 +1212,7 @@
                   "of": {
                     "index": "crossbow-light",
                     "name": "Crossbow, light",
-                    "url": "/api/2014/equipment/crossbow-light"
+                    "url": "/api/equipment/crossbow-light"
                   }
                 },
                 {
@@ -1221,7 +1221,7 @@
                   "of": {
                     "index": "crossbow-bolt",
                     "name": "Crossbow bolt",
-                    "url": "/api/2014/equipment/crossbow-bolt"
+                    "url": "/api/equipment/crossbow-bolt"
                   }
                 }
               ]
@@ -1551,7 +1551,7 @@
         "equipment": {
           "index": "leather-armor",
           "name": "Leather Armor",
-          "url": "/api/2014/equipment/leather-armor"
+          "url": "/api/equipment/leather-armor"
         },
         "quantity": 1
       },
@@ -1578,7 +1578,7 @@
               "of": {
                 "index": "shield",
                 "name": "Shield",
-                "url": "/api/2014/equipment/shield"
+                "url": "/api/equipment/shield"
               }
             },
             {
@@ -1613,7 +1613,7 @@
               "of": {
                 "index": "scimitar",
                 "name": "Scimitar",
-                "url": "/api/2014/equipment/scimitar"
+                "url": "/api/equipment/scimitar"
               }
             },
             {
@@ -1873,7 +1873,7 @@
               "of": {
                 "index": "chain-mail",
                 "name": "Chain Mail",
-                "url": "/api/2014/equipment/chain-mail"
+                "url": "/api/equipment/chain-mail"
               }
             },
             {
@@ -1885,7 +1885,7 @@
                   "of": {
                     "index": "leather-armor",
                     "name": "Leather Armor",
-                    "url": "/api/2014/equipment/leather-armor"
+                    "url": "/api/equipment/leather-armor"
                   }
                 },
                 {
@@ -1894,7 +1894,7 @@
                   "of": {
                     "index": "longbow",
                     "name": "Longbow",
-                    "url": "/api/2014/equipment/longbow"
+                    "url": "/api/equipment/longbow"
                   }
                 },
                 {
@@ -1903,7 +1903,7 @@
                   "of": {
                     "index": "arrow",
                     "name": "Arrow",
-                    "url": "/api/2014/equipment/arrow"
+                    "url": "/api/equipment/arrow"
                   }
                 }
               ]
@@ -1943,7 +1943,7 @@
                   "of": {
                     "index": "shield",
                     "name": "Shield",
-                    "url": "/api/2014/equipment/shield"
+                    "url": "/api/equipment/shield"
                   }
                 }
               ]
@@ -1983,7 +1983,7 @@
                   "of": {
                     "index": "crossbow-light",
                     "name": "Crossbow, light",
-                    "url": "/api/2014/equipment/crossbow-light"
+                    "url": "/api/equipment/crossbow-light"
                   }
                 },
                 {
@@ -1992,7 +1992,7 @@
                   "of": {
                     "index": "crossbow-bolt",
                     "name": "Crossbow bolt",
-                    "url": "/api/2014/equipment/crossbow-bolt"
+                    "url": "/api/equipment/crossbow-bolt"
                   }
                 }
               ]
@@ -2003,7 +2003,7 @@
               "of": {
                 "index": "handaxe",
                 "name": "Handaxe",
-                "url": "/api/2014/equipment/handaxe"
+                "url": "/api/equipment/handaxe"
               }
             }
           ]
@@ -2475,7 +2475,7 @@
         "equipment": {
           "index": "dart",
           "name": "Dart",
-          "url": "/api/2014/equipment/dart"
+          "url": "/api/equipment/dart"
         },
         "quantity": 10
       }
@@ -2494,7 +2494,7 @@
               "of": {
                 "index": "shortsword",
                 "name": "Shortsword",
-                "url": "/api/2014/equipment/shortsword"
+                "url": "/api/equipment/shortsword"
               }
             },
             {
@@ -2700,7 +2700,7 @@
         "equipment": {
           "index": "chain-mail",
           "name": "Chain Mail",
-          "url": "/api/2014/equipment/chain-mail"
+          "url": "/api/equipment/chain-mail"
         },
         "quantity": 1
       }
@@ -2738,7 +2738,7 @@
                   "of": {
                     "index": "shield",
                     "name": "Shield",
-                    "url": "/api/2014/equipment/shield"
+                    "url": "/api/equipment/shield"
                   }
                 }
               ]
@@ -2775,7 +2775,7 @@
               "of": {
                 "index": "javelin",
                 "name": "Javelin",
-                "url": "/api/2014/equipment/javelin"
+                "url": "/api/equipment/javelin"
               }
             },
             {
@@ -3064,7 +3064,7 @@
         "equipment": {
           "index": "longbow",
           "name": "Longbow",
-          "url": "/api/2014/equipment/longbow"
+          "url": "/api/equipment/longbow"
         },
         "quantity": 1
       },
@@ -3072,7 +3072,7 @@
         "equipment": {
           "index": "arrow",
           "name": "Arrow",
-          "url": "/api/2014/equipment/arrow"
+          "url": "/api/equipment/arrow"
         },
         "quantity": 20
       }
@@ -3091,7 +3091,7 @@
               "of": {
                 "index": "scale-mail",
                 "name": "Scale Mail",
-                "url": "/api/2014/equipment/scale-mail"
+                "url": "/api/equipment/scale-mail"
               }
             },
             {
@@ -3100,7 +3100,7 @@
               "of": {
                 "index": "leather-armor",
                 "name": "Leather Armor",
-                "url": "/api/2014/equipment/leather-armor"
+                "url": "/api/equipment/leather-armor"
               }
             }
           ]
@@ -3119,7 +3119,7 @@
               "of": {
                 "index": "shortsword",
                 "name": "Shortsword",
-                "url": "/api/2014/equipment/shortsword"
+                "url": "/api/equipment/shortsword"
               }
             },
             {
@@ -3504,7 +3504,7 @@
         "equipment": {
           "index": "leather-armor",
           "name": "Leather Armor",
-          "url": "/api/2014/equipment/leather-armor"
+          "url": "/api/equipment/leather-armor"
         },
         "quantity": 1
       },
@@ -3512,7 +3512,7 @@
         "equipment": {
           "index": "dagger",
           "name": "Dagger",
-          "url": "/api/2014/equipment/dagger"
+          "url": "/api/equipment/dagger"
         },
         "quantity": 2
       },
@@ -3520,7 +3520,7 @@
         "equipment": {
           "index": "thieves-tools",
           "name": "Thieves' Tools",
-          "url": "/api/2014/equipment/thieves-tools"
+          "url": "/api/equipment/thieves-tools"
         },
         "quantity": 1
       }
@@ -3539,7 +3539,7 @@
               "of": {
                 "index": "rapier",
                 "name": "Rapier",
-                "url": "/api/2014/equipment/rapier"
+                "url": "/api/equipment/rapier"
               }
             },
             {
@@ -3548,7 +3548,7 @@
               "of": {
                 "index": "shortsword",
                 "name": "Shortsword",
-                "url": "/api/2014/equipment/shortsword"
+                "url": "/api/equipment/shortsword"
               }
             }
           ]
@@ -3570,7 +3570,7 @@
                   "of": {
                     "index": "shortbow",
                     "name": "Shortbow",
-                    "url": "/api/2014/equipment/shortbow"
+                    "url": "/api/equipment/shortbow"
                   }
                 },
                 {
@@ -3579,7 +3579,7 @@
                   "of": {
                     "index": "arrow",
                     "name": "Arrow",
-                    "url": "/api/2014/equipment/arrow"
+                    "url": "/api/equipment/arrow"
                   }
                 }
               ]
@@ -3590,7 +3590,7 @@
               "of": {
                 "index": "shortsword",
                 "name": "Shortsword",
-                "url": "/api/2014/equipment/shortsword"
+                "url": "/api/equipment/shortsword"
               }
             }
           ]
@@ -3885,7 +3885,7 @@
         "equipment": {
           "index": "dagger",
           "name": "Dagger",
-          "url": "/api/2014/equipment/dagger"
+          "url": "/api/equipment/dagger"
         },
         "quantity": 2
       }
@@ -3907,7 +3907,7 @@
                   "of": {
                     "index": "crossbow-light",
                     "name": "Crossbow, light",
-                    "url": "/api/2014/equipment/crossbow-light"
+                    "url": "/api/equipment/crossbow-light"
                   }
                 },
                 {
@@ -3916,7 +3916,7 @@
                   "of": {
                     "index": "crossbow-bolt",
                     "name": "Crossbow bolt",
-                    "url": "/api/2014/equipment/crossbow-bolt"
+                    "url": "/api/equipment/crossbow-bolt"
                   }
                 }
               ]
@@ -4184,7 +4184,7 @@
         "equipment": {
           "index": "dagger",
           "name": "Dagger",
-          "url": "/api/2014/equipment/dagger"
+          "url": "/api/equipment/dagger"
         },
         "quantity": 2
       },
@@ -4192,7 +4192,7 @@
         "equipment": {
           "index": "leather-armor",
           "name": "Leather Armor",
-          "url": "/api/2014/equipment/leather-armor"
+          "url": "/api/equipment/leather-armor"
         },
         "quantity": 1
       }
@@ -4214,7 +4214,7 @@
                   "of": {
                     "index": "crossbow-light",
                     "name": "Crossbow, light",
-                    "url": "/api/2014/equipment/crossbow-light"
+                    "url": "/api/equipment/crossbow-light"
                   }
                 },
                 {
@@ -4223,7 +4223,7 @@
                   "of": {
                     "index": "crossbow-bolt",
                     "name": "Crossbow bolt",
-                    "url": "/api/2014/equipment/crossbow-bolt"
+                    "url": "/api/equipment/crossbow-bolt"
                   }
                 }
               ]
@@ -4542,7 +4542,7 @@
               "of": {
                 "index": "quarterstaff",
                 "name": "Quarterstaff",
-                "url": "/api/2014/equipment/quarterstaff"
+                "url": "/api/equipment/quarterstaff"
               }
             },
             {
@@ -4551,7 +4551,7 @@
               "of": {
                 "index": "dagger",
                 "name": "Dagger",
-                "url": "/api/2014/equipment/dagger"
+                "url": "/api/equipment/dagger"
               }
             }
           ]

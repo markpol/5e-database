@@ -129,7 +129,7 @@
     "reference": {
       "index": "padded-armor",
       "name": "Padded Armor",
-      "url": "/api/2014/equipment/padded-armor"
+      "url": "/api/equipment/padded-armor"
     }
   },
   {
@@ -142,7 +142,7 @@
     "reference": {
       "index": "leather-armor",
       "name": "Leather Armor",
-      "url": "/api/2014/equipment/leather-armor"
+      "url": "/api/equipment/leather-armor"
     }
   },
   {
@@ -155,7 +155,7 @@
     "reference": {
       "index": "studded-leather-armor",
       "name": "Studded Leather Armor",
-      "url": "/api/2014/equipment/studded-leather-armor"
+      "url": "/api/equipment/studded-leather-armor"
     }
   },
   {
@@ -168,7 +168,7 @@
     "reference": {
       "index": "hide-armor",
       "name": "Hide Armor",
-      "url": "/api/2014/equipment/hide-armor"
+      "url": "/api/equipment/hide-armor"
     }
   },
   {
@@ -181,7 +181,7 @@
     "reference": {
       "index": "chain-shirt",
       "name": "Chain Shirt",
-      "url": "/api/2014/equipment/chain-shirt"
+      "url": "/api/equipment/chain-shirt"
     }
   },
   {
@@ -194,7 +194,7 @@
     "reference": {
       "index": "scale-mail",
       "name": "Scale Mail",
-      "url": "/api/2014/equipment/scale-mail"
+      "url": "/api/equipment/scale-mail"
     }
   },
   {
@@ -207,7 +207,7 @@
     "reference": {
       "index": "breastplate",
       "name": "Breastplate",
-      "url": "/api/2014/equipment/breastplate"
+      "url": "/api/equipment/breastplate"
     }
   },
   {
@@ -220,7 +220,7 @@
     "reference": {
       "index": "half-plate-armor",
       "name": "Half Plate Armor",
-      "url": "/api/2014/equipment/half-plate-armor"
+      "url": "/api/equipment/half-plate-armor"
     }
   },
   {
@@ -233,7 +233,7 @@
     "reference": {
       "index": "ring-mail",
       "name": "Ring Mail",
-      "url": "/api/2014/equipment/ring-mail"
+      "url": "/api/equipment/ring-mail"
     }
   },
   {
@@ -246,7 +246,7 @@
     "reference": {
       "index": "chain-mail",
       "name": "Chain Mail",
-      "url": "/api/2014/equipment/chain-mail"
+      "url": "/api/equipment/chain-mail"
     }
   },
   {
@@ -259,7 +259,7 @@
     "reference": {
       "index": "splint-armor",
       "name": "Splint Armor",
-      "url": "/api/2014/equipment/splint-armor"
+      "url": "/api/equipment/splint-armor"
     }
   },
   {
@@ -272,7 +272,7 @@
     "reference": {
       "index": "plate-armor",
       "name": "Plate Armor",
-      "url": "/api/2014/equipment/plate-armor"
+      "url": "/api/equipment/plate-armor"
     }
   },
   {
@@ -316,7 +316,7 @@
     "reference": {
       "index": "shield",
       "name": "Shield",
-      "url": "/api/2014/equipment/shield"
+      "url": "/api/equipment/shield"
     }
   },
   {
@@ -428,7 +428,7 @@
     "reference": {
       "index": "club",
       "name": "Club",
-      "url": "/api/2014/equipment/club"
+      "url": "/api/equipment/club"
     }
   },
   {
@@ -457,7 +457,7 @@
     "reference": {
       "index": "dagger",
       "name": "Dagger",
-      "url": "/api/2014/equipment/dagger"
+      "url": "/api/equipment/dagger"
     }
   },
   {
@@ -470,7 +470,7 @@
     "reference": {
       "index": "greatclub",
       "name": "Greatclub",
-      "url": "/api/2014/equipment/greatclub"
+      "url": "/api/equipment/greatclub"
     }
   },
   {
@@ -489,7 +489,7 @@
     "reference": {
       "index": "handaxe",
       "name": "Handaxe",
-      "url": "/api/2014/equipment/handaxe"
+      "url": "/api/equipment/handaxe"
     }
   },
   {
@@ -508,7 +508,7 @@
     "reference": {
       "index": "javelin",
       "name": "Javelin",
-      "url": "/api/2014/equipment/javelin"
+      "url": "/api/equipment/javelin"
     }
   },
   {
@@ -527,7 +527,7 @@
     "reference": {
       "index": "light-hammer",
       "name": "Light hammer",
-      "url": "/api/2014/equipment/light-hammer"
+      "url": "/api/equipment/light-hammer"
     }
   },
   {
@@ -546,7 +546,7 @@
     "reference": {
       "index": "mace",
       "name": "Mace",
-      "url": "/api/2014/equipment/mace"
+      "url": "/api/equipment/mace"
     }
   },
   {
@@ -575,7 +575,7 @@
     "reference": {
       "index": "quarterstaff",
       "name": "Quarterstaff",
-      "url": "/api/2014/equipment/quarterstaff"
+      "url": "/api/equipment/quarterstaff"
     }
   },
   {
@@ -594,7 +594,7 @@
     "reference": {
       "index": "sickle",
       "name": "Sickle",
-      "url": "/api/2014/equipment/sickle"
+      "url": "/api/equipment/sickle"
     }
   },
   {
@@ -613,7 +613,7 @@
     "reference": {
       "index": "spear",
       "name": "Spear",
-      "url": "/api/2014/equipment/spear"
+      "url": "/api/equipment/spear"
     }
   },
   {
@@ -637,7 +637,7 @@
     "reference": {
       "index": "crossbow-light",
       "name": "Crossbow, light",
-      "url": "/api/2014/equipment/crossbow-light"
+      "url": "/api/equipment/crossbow-light"
     }
   },
   {
@@ -666,7 +666,7 @@
     "reference": {
       "index": "dart",
       "name": "Dart",
-      "url": "/api/2014/equipment/dart"
+      "url": "/api/equipment/dart"
     }
   },
   {
@@ -685,7 +685,7 @@
     "reference": {
       "index": "shortbow",
       "name": "Shortbow",
-      "url": "/api/2014/equipment/shortbow"
+      "url": "/api/equipment/shortbow"
     }
   },
   {
@@ -714,7 +714,7 @@
     "reference": {
       "index": "sling",
       "name": "Sling",
-      "url": "/api/2014/equipment/sling"
+      "url": "/api/equipment/sling"
     }
   },
   {
@@ -733,7 +733,7 @@
     "reference": {
       "index": "battleaxe",
       "name": "Battleaxe",
-      "url": "/api/2014/equipment/battleaxe"
+      "url": "/api/equipment/battleaxe"
     }
   },
   {
@@ -746,7 +746,7 @@
     "reference": {
       "index": "flail",
       "name": "Flail",
-      "url": "/api/2014/equipment/flail"
+      "url": "/api/equipment/flail"
     }
   },
   {
@@ -759,7 +759,7 @@
     "reference": {
       "index": "glaive",
       "name": "Glaive",
-      "url": "/api/2014/equipment/glaive"
+      "url": "/api/equipment/glaive"
     }
   },
   {
@@ -772,7 +772,7 @@
     "reference": {
       "index": "greataxe",
       "name": "Greataxe",
-      "url": "/api/2014/equipment/greataxe"
+      "url": "/api/equipment/greataxe"
     }
   },
   {
@@ -785,7 +785,7 @@
     "reference": {
       "index": "greatsword",
       "name": "Greatsword",
-      "url": "/api/2014/equipment/greatsword"
+      "url": "/api/equipment/greatsword"
     }
   },
   {
@@ -798,7 +798,7 @@
     "reference": {
       "index": "halberd",
       "name": "Halberd",
-      "url": "/api/2014/equipment/halberd"
+      "url": "/api/equipment/halberd"
     }
   },
   {
@@ -841,7 +841,7 @@
     "reference": {
       "index": "longsword",
       "name": "Longsword",
-      "url": "/api/2014/equipment/longsword"
+      "url": "/api/equipment/longsword"
     }
   },
   {
@@ -854,7 +854,7 @@
     "reference": {
       "index": "maul",
       "name": "Maul",
-      "url": "/api/2014/equipment/maul"
+      "url": "/api/equipment/maul"
     }
   },
   {
@@ -867,7 +867,7 @@
     "reference": {
       "index": "morningstar",
       "name": "Morningstar",
-      "url": "/api/2014/equipment/morningstar"
+      "url": "/api/equipment/morningstar"
     }
   },
   {
@@ -880,7 +880,7 @@
     "reference": {
       "index": "pike",
       "name": "Pike",
-      "url": "/api/2014/equipment/pike"
+      "url": "/api/equipment/pike"
     }
   },
   {
@@ -904,7 +904,7 @@
     "reference": {
       "index": "rapier",
       "name": "Rapier",
-      "url": "/api/2014/equipment/rapier"
+      "url": "/api/equipment/rapier"
     }
   },
   {
@@ -923,7 +923,7 @@
     "reference": {
       "index": "scimitar",
       "name": "Scimitar",
-      "url": "/api/2014/equipment/scimitar"
+      "url": "/api/equipment/scimitar"
     }
   },
   {
@@ -958,7 +958,7 @@
     "reference": {
       "index": "shortsword",
       "name": "Shortsword",
-      "url": "/api/2014/equipment/shortsword"
+      "url": "/api/equipment/shortsword"
     }
   },
   {
@@ -971,7 +971,7 @@
     "reference": {
       "index": "trident",
       "name": "Trident",
-      "url": "/api/2014/equipment/trident"
+      "url": "/api/equipment/trident"
     }
   },
   {
@@ -984,7 +984,7 @@
     "reference": {
       "index": "war-pick",
       "name": "War pick",
-      "url": "/api/2014/equipment/war-pick"
+      "url": "/api/equipment/war-pick"
     }
   },
   {
@@ -1003,7 +1003,7 @@
     "reference": {
       "index": "warhammer",
       "name": "Warhammer",
-      "url": "/api/2014/equipment/warhammer"
+      "url": "/api/equipment/warhammer"
     }
   },
   {
@@ -1016,7 +1016,7 @@
     "reference": {
       "index": "whip",
       "name": "Whip",
-      "url": "/api/2014/equipment/whip"
+      "url": "/api/equipment/whip"
     }
   },
   {
@@ -1029,7 +1029,7 @@
     "reference": {
       "index": "blowgun",
       "name": "Blowgun",
-      "url": "/api/2014/equipment/blowgun"
+      "url": "/api/equipment/blowgun"
     }
   },
   {
@@ -1053,7 +1053,7 @@
     "reference": {
       "index": "crossbow-hand",
       "name": "Crossbow, hand",
-      "url": "/api/2014/equipment/crossbow-hand"
+      "url": "/api/equipment/crossbow-hand"
     }
   },
   {
@@ -1066,7 +1066,7 @@
     "reference": {
       "index": "crossbow-heavy",
       "name": "Crossbow, heavy",
-      "url": "/api/2014/equipment/crossbow-heavy"
+      "url": "/api/equipment/crossbow-heavy"
     }
   },
   {
@@ -1085,7 +1085,7 @@
     "reference": {
       "index": "longbow",
       "name": "Longbow",
-      "url": "/api/2014/equipment/longbow"
+      "url": "/api/equipment/longbow"
     }
   },
   {
@@ -1552,7 +1552,7 @@
     "reference": {
       "index": "thieves-tools",
       "name": "Thieves' Tools",
-      "url": "/api/2014/equipment/thieves-tools"
+      "url": "/api/equipment/thieves-tools"
     }
   },
   {

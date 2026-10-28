@@ -6,102 +6,102 @@
       {
         "index": "club",
         "name": "Club",
-        "url": "/api/2014/equipment/club"
+        "url": "/api/equipment/club"
       },
       {
         "index": "dagger",
         "name": "Dagger",
-        "url": "/api/2014/equipment/dagger"
+        "url": "/api/equipment/dagger"
       },
       {
         "index": "greatclub",
         "name": "Greatclub",
-        "url": "/api/2014/equipment/greatclub"
+        "url": "/api/equipment/greatclub"
       },
       {
         "index": "handaxe",
         "name": "Handaxe",
-        "url": "/api/2014/equipment/handaxe"
+        "url": "/api/equipment/handaxe"
       },
       {
         "index": "javelin",
         "name": "Javelin",
-        "url": "/api/2014/equipment/javelin"
+        "url": "/api/equipment/javelin"
       },
       {
         "index": "light-hammer",
         "name": "Light hammer",
-        "url": "/api/2014/equipment/light-hammer"
+        "url": "/api/equipment/light-hammer"
       },
       {
         "index": "mace",
         "name": "Mace",
-        "url": "/api/2014/equipment/mace"
+        "url": "/api/equipment/mace"
       },
       {
         "index": "quarterstaff",
         "name": "Quarterstaff",
-        "url": "/api/2014/equipment/quarterstaff"
+        "url": "/api/equipment/quarterstaff"
       },
       {
         "index": "sickle",
         "name": "Sickle",
-        "url": "/api/2014/equipment/sickle"
+        "url": "/api/equipment/sickle"
       },
       {
         "index": "spear",
         "name": "Spear",
-        "url": "/api/2014/equipment/spear"
+        "url": "/api/equipment/spear"
       },
       {
         "index": "crossbow-light",
         "name": "Crossbow, light",
-        "url": "/api/2014/equipment/crossbow-light"
+        "url": "/api/equipment/crossbow-light"
       },
       {
         "index": "dart",
         "name": "Dart",
-        "url": "/api/2014/equipment/dart"
+        "url": "/api/equipment/dart"
       },
       {
         "index": "shortbow",
         "name": "Shortbow",
-        "url": "/api/2014/equipment/shortbow"
+        "url": "/api/equipment/shortbow"
       },
       {
         "index": "sling",
         "name": "Sling",
-        "url": "/api/2014/equipment/sling"
+        "url": "/api/equipment/sling"
       },
       {
         "index": "battleaxe",
         "name": "Battleaxe",
-        "url": "/api/2014/equipment/battleaxe"
+        "url": "/api/equipment/battleaxe"
       },
       {
         "index": "flail",
         "name": "Flail",
-        "url": "/api/2014/equipment/flail"
+        "url": "/api/equipment/flail"
       },
       {
         "index": "glaive",
         "name": "Glaive",
-        "url": "/api/2014/equipment/glaive"
+        "url": "/api/equipment/glaive"
       },
       {
         "index": "greataxe",
         "name": "Greataxe",
-        "url": "/api/2014/equipment/greataxe"
+        "url": "/api/equipment/greataxe"
       },
       {
         "index": "greatsword",
         "name": "Greatsword",
-        "url": "/api/2014/equipment/greatsword"
+        "url": "/api/equipment/greatsword"
       },
       {
         "index": "halberd",
         "name": "Halberd",
-        "url": "/api/2014/equipment/halberd"
+        "url": "/api/equipment/halberd"
       },
       {
         "index": "lance",
@@ -111,77 +111,77 @@
       {
         "index": "longsword",
         "name": "Longsword",
-        "url": "/api/2014/equipment/longsword"
+        "url": "/api/equipment/longsword"
       },
       {
         "index": "maul",
         "name": "Maul",
-        "url": "/api/2014/equipment/maul"
+        "url": "/api/equipment/maul"
       },
       {
         "index": "morningstar",
         "name": "Morningstar",
-        "url": "/api/2014/equipment/morningstar"
+        "url": "/api/equipment/morningstar"
       },
       {
         "index": "pike",
         "name": "Pike",
-        "url": "/api/2014/equipment/pike"
+        "url": "/api/equipment/pike"
       },
       {
         "index": "rapier",
         "name": "Rapier",
-        "url": "/api/2014/equipment/rapier"
+        "url": "/api/equipment/rapier"
       },
       {
         "index": "scimitar",
         "name": "Scimitar",
-        "url": "/api/2014/equipment/scimitar"
+        "url": "/api/equipment/scimitar"
       },
       {
         "index": "shortsword",
         "name": "Shortsword",
-        "url": "/api/2014/equipment/shortsword"
+        "url": "/api/equipment/shortsword"
       },
       {
         "index": "trident",
         "name": "Trident",
-        "url": "/api/2014/equipment/trident"
+        "url": "/api/equipment/trident"
       },
       {
         "index": "war-pick",
         "name": "War pick",
-        "url": "/api/2014/equipment/war-pick"
+        "url": "/api/equipment/war-pick"
       },
       {
         "index": "warhammer",
         "name": "Warhammer",
-        "url": "/api/2014/equipment/warhammer"
+        "url": "/api/equipment/warhammer"
       },
       {
         "index": "whip",
         "name": "Whip",
-        "url": "/api/2014/equipment/whip"
+        "url": "/api/equipment/whip"
       },
       {
         "index": "blowgun",
         "name": "Blowgun",
-        "url": "/api/2014/equipment/blowgun"
+        "url": "/api/equipment/blowgun"
       },
       {
         "index": "crossbow-hand",
         "name": "Crossbow, hand",
-        "url": "/api/2014/equipment/crossbow-hand"
+        "url": "/api/equipment/crossbow-hand"
       },
       {
         "index": "crossbow-heavy",
         "name": "Crossbow, heavy",
-        "url": "/api/2014/equipment/crossbow-heavy"
+        "url": "/api/equipment/crossbow-heavy"
       },
       {
         "index": "longbow",
         "name": "Longbow",
-        "url": "/api/2014/equipment/longbow"
+        "url": "/api/equipment/longbow"
       },
       {
         "index": "net",
@@ -201,12 +201,12 @@
       {
         "index": "dancing-sword",
         "name": "Dancing Sword",
-        "url": "/api/2014/magic-items/dancing-sword"
+        "url": "/api/magic-items/dancing-sword"
       },
       {
         "index": "defender",
         "name": "Defender",
-        "url": "/api/2014/magic-items/defender"
+        "url": "/api/magic-items/defender"
       },
       {
         "index": "dragon-slayer",
@@ -221,12 +221,12 @@
       {
         "index": "flame-tongue",
         "name": "Flame Tongue",
-        "url": "/api/2014/magic-items/flame-tongue"
+        "url": "/api/magic-items/flame-tongue"
       },
       {
         "index": "frost-brand",
         "name": "Frost Brand",
-        "url": "/api/2014/magic-items/frost-brand"
+        "url": "/api/magic-items/frost-brand"
       },
       {
         "index": "giant-slayer",
@@ -311,7 +311,7 @@
       {
         "index": "vicious-weapon",
         "name": "Vicious Weapon",
-        "url": "/api/2014/magic-items/vicious-weapon"
+        "url": "/api/magic-items/vicious-weapon"
       },
       {
         "index": "vorpal-sword",
@@ -348,67 +348,67 @@
       {
         "index": "padded-armor",
         "name": "Padded Armor",
-        "url": "/api/2014/equipment/padded-armor"
+        "url": "/api/equipment/padded-armor"
       },
       {
         "index": "leather-armor",
         "name": "Leather Armor",
-        "url": "/api/2014/equipment/leather-armor"
+        "url": "/api/equipment/leather-armor"
       },
       {
         "index": "studded-leather-armor",
         "name": "Studded Leather Armor",
-        "url": "/api/2014/equipment/studded-leather-armor"
+        "url": "/api/equipment/studded-leather-armor"
       },
       {
         "index": "hide-armor",
         "name": "Hide Armor",
-        "url": "/api/2014/equipment/hide-armor"
+        "url": "/api/equipment/hide-armor"
       },
       {
         "index": "chain-shirt",
         "name": "Chain Shirt",
-        "url": "/api/2014/equipment/chain-shirt"
+        "url": "/api/equipment/chain-shirt"
       },
       {
         "index": "scale-mail",
         "name": "Scale Mail",
-        "url": "/api/2014/equipment/scale-mail"
+        "url": "/api/equipment/scale-mail"
       },
       {
         "index": "breastplate",
         "name": "Breastplate",
-        "url": "/api/2014/equipment/breastplate"
+        "url": "/api/equipment/breastplate"
       },
       {
         "index": "half-plate-armor",
         "name": "Half Plate Armor",
-        "url": "/api/2014/equipment/half-plate-armor"
+        "url": "/api/equipment/half-plate-armor"
       },
       {
         "index": "ring-mail",
         "name": "Ring Mail",
-        "url": "/api/2014/equipment/ring-mail"
+        "url": "/api/equipment/ring-mail"
       },
       {
         "index": "chain-mail",
         "name": "Chain Mail",
-        "url": "/api/2014/equipment/chain-mail"
+        "url": "/api/equipment/chain-mail"
       },
       {
         "index": "splint-armor",
         "name": "Splint Armor",
-        "url": "/api/2014/equipment/splint-armor"
+        "url": "/api/equipment/splint-armor"
       },
       {
         "index": "plate-armor",
         "name": "Plate Armor",
-        "url": "/api/2014/equipment/plate-armor"
+        "url": "/api/equipment/plate-armor"
       },
       {
         "index": "shield",
         "name": "Shield",
-        "url": "/api/2014/equipment/shield"
+        "url": "/api/equipment/shield"
       },
       {
         "index": "adamantine-armor",
@@ -418,7 +418,7 @@
       {
         "index": "animated-shield",
         "name": "Animated Shield",
-        "url": "/api/2014/magic-items/animated-shield"
+        "url": "/api/magic-items/animated-shield"
       },
       {
         "index": "armor",
@@ -428,12 +428,12 @@
       {
         "index": "armor-of-invulnerability",
         "name": "Armor of Invulnerability",
-        "url": "/api/2014/magic-items/armor-of-invulnerability"
+        "url": "/api/magic-items/armor-of-invulnerability"
       },
       {
         "index": "armor-of-resistance",
         "name": "Armor of Resistance",
-        "url": "/api/2014/magic-items/armor-of-resistance"
+        "url": "/api/magic-items/armor-of-resistance"
       },
       {
         "index": "armor-of-vulnerability",
@@ -443,7 +443,7 @@
       {
         "index": "arrow-catching-shield",
         "name": "Arrow-Catching Shield",
-        "url": "/api/2014/magic-items/arrow-catching-shield"
+        "url": "/api/magic-items/arrow-catching-shield"
       },
       {
         "index": "demon-armor",
@@ -458,12 +458,12 @@
       {
         "index": "dwarven-plate",
         "name": "Dwarven Plate",
-        "url": "/api/2014/magic-items/dwarven-plate"
+        "url": "/api/magic-items/dwarven-plate"
       },
       {
         "index": "elven-chain",
         "name": "Elven Chain",
-        "url": "/api/2014/magic-items/elven-chain"
+        "url": "/api/magic-items/elven-chain"
       },
       {
         "index": "glamoured-studded-leather-armor",
@@ -508,52 +508,52 @@
       {
         "index": "dragon-scale-mail-black",
         "name": "Black Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-black"
+        "url": "/api/magic-items/dragon-scale-mail-black"
       },
       {
         "index": "dragon-scale-mail-blue",
         "name": "Blue Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-blue"
+        "url": "/api/magic-items/dragon-scale-mail-blue"
       },
       {
         "index": "dragon-scale-mail-brass",
         "name": "Brass Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-brass"
+        "url": "/api/magic-items/dragon-scale-mail-brass"
       },
       {
         "index": "dragon-scale-mail-bronze",
         "name": "Bronze Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-bronze"
+        "url": "/api/magic-items/dragon-scale-mail-bronze"
       },
       {
         "index": "dragon-scale-mail-copper",
         "name": "Copper Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-copper"
+        "url": "/api/magic-items/dragon-scale-mail-copper"
       },
       {
         "index": "dragon-scale-mail-gold",
         "name": "Gold Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-gold"
+        "url": "/api/magic-items/dragon-scale-mail-gold"
       },
       {
         "index": "dragon-scale-mail-green",
         "name": "Green Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-green"
+        "url": "/api/magic-items/dragon-scale-mail-green"
       },
       {
         "index": "dragon-scale-mail-red",
         "name": "Red Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-red"
+        "url": "/api/magic-items/dragon-scale-mail-red"
       },
       {
         "index": "dragon-scale-mail-silver",
         "name": "Silver Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-silver"
+        "url": "/api/magic-items/dragon-scale-mail-silver"
       },
       {
         "index": "dragon-scale-mail-white",
         "name": "White Dragon Scale Mail",
-        "url": "/api/2014/magic-items/dragon-scale-mail-white"
+        "url": "/api/magic-items/dragon-scale-mail-white"
       }
     ],
     "url": "/api/2014/equipment-categories/armor"
@@ -565,32 +565,32 @@
       {
         "index": "acid-vial",
         "name": "Acid (vial)",
-        "url": "/api/2014/equipment/acid-vial"
+        "url": "/api/equipment/acid-vial"
       },
       {
         "index": "alchemists-fire-flask",
         "name": "Alchemist's fire (flask)",
-        "url": "/api/2014/equipment/alchemists-fire-flask"
+        "url": "/api/equipment/alchemists-fire-flask"
       },
       {
         "index": "arrow",
         "name": "Arrow",
-        "url": "/api/2014/equipment/arrow"
+        "url": "/api/equipment/arrow"
       },
       {
         "index": "blowgun-needle",
         "name": "Blowgun needle",
-        "url": "/api/2014/equipment/blowgun-needle"
+        "url": "/api/equipment/blowgun-needle"
       },
       {
         "index": "crossbow-bolt",
         "name": "Crossbow bolt",
-        "url": "/api/2014/equipment/crossbow-bolt"
+        "url": "/api/equipment/crossbow-bolt"
       },
       {
         "index": "sling-bullet",
         "name": "Sling bullet",
-        "url": "/api/2014/equipment/sling-bullet"
+        "url": "/api/equipment/sling-bullet"
       },
       {
         "index": "antitoxin-vial",
@@ -630,7 +630,7 @@
       {
         "index": "torch",
         "name": "Torch",
-        "url": "/api/equipment/torch"
+        "url": "/api/2014/equipment/torch"
       }
     ],
     "url": "/api/2014/equipment-categories/adventuring-gear"
@@ -642,21 +642,21 @@
       {
         "index": "arrow",
         "name": "Arrow",
-        "url": "/api/2014/equipment/arrow"
+        "url": "/api/equipment/arrow"
       },
       {
         "index": "blowgun-needle",
         "name": "Blowgun needle",
-        "url": "/api/2014/equipment/blowgun-needle"
+        "url": "/api/equipment/blowgun-needle"
       },
       {
         "index": "crossbow-bolt",
         "name": "Crossbow bolt",
-        "url": "/api/2014/equipment/crossbow-bolt"
+        "url": "/api/equipment/crossbow-bolt"
       },
       {
         "index": "sling-bullet",
-        "url": "/api/2014/equipment/sling-bullet",
+        "url": "/api/equipment/sling-bullet",
         "name": "Sling bullet"
       },
       {
@@ -667,22 +667,22 @@
       {
         "index": "arrow-of-slaying",
         "name": "Arrow of Slaying",
-        "url": "/api/2014/magic-items/arrow-of-slaying"
+        "url": "/api/magic-items/arrow-of-slaying"
       },
       {
         "index": "ammunition-1",
         "name": "Ammunition, +1",
-        "url": "/api/2014/magic-items/ammunition-1"
+        "url": "/api/magic-items/ammunition-1"
       },
       {
         "index": "ammunition-2",
         "name": "Ammunition, +2",
-        "url": "/api/2014/magic-items/ammunition-2"
+        "url": "/api/magic-items/ammunition-2"
       },
       {
         "index": "ammunition-3",
         "name": "Ammunition, +3",
-        "url": "/api/2014/magic-items/ammunition-3"
+        "url": "/api/magic-items/ammunition-3"
       }
     ],
     "url": "/api/2014/equipment-categories/ammunition"
@@ -844,7 +844,7 @@
       {
         "index": "thieves-tools",
         "name": "Thieves' Tools",
-        "url": "/api/2014/equipment/thieves-tools"
+        "url": "/api/equipment/thieves-tools"
       }
     ],
     "url": "/api/2014/equipment-categories/tools"
@@ -856,72 +856,72 @@
       {
         "index": "club",
         "name": "Club",
-        "url": "/api/2014/equipment/club"
+        "url": "/api/equipment/club"
       },
       {
         "index": "dagger",
         "name": "Dagger",
-        "url": "/api/2014/equipment/dagger"
+        "url": "/api/equipment/dagger"
       },
       {
         "index": "greatclub",
         "name": "Greatclub",
-        "url": "/api/2014/equipment/greatclub"
+        "url": "/api/equipment/greatclub"
       },
       {
         "index": "handaxe",
         "name": "Handaxe",
-        "url": "/api/2014/equipment/handaxe"
+        "url": "/api/equipment/handaxe"
       },
       {
         "index": "javelin",
         "name": "Javelin",
-        "url": "/api/2014/equipment/javelin"
+        "url": "/api/equipment/javelin"
       },
       {
         "index": "light-hammer",
         "name": "Light hammer",
-        "url": "/api/2014/equipment/light-hammer"
+        "url": "/api/equipment/light-hammer"
       },
       {
         "index": "mace",
         "name": "Mace",
-        "url": "/api/2014/equipment/mace"
+        "url": "/api/equipment/mace"
       },
       {
         "index": "quarterstaff",
         "name": "Quarterstaff",
-        "url": "/api/2014/equipment/quarterstaff"
+        "url": "/api/equipment/quarterstaff"
       },
       {
         "index": "sickle",
         "name": "Sickle",
-        "url": "/api/2014/equipment/sickle"
+        "url": "/api/equipment/sickle"
       },
       {
         "index": "spear",
         "name": "Spear",
-        "url": "/api/2014/equipment/spear"
+        "url": "/api/equipment/spear"
       },
       {
         "index": "crossbow-light",
         "name": "Crossbow, light",
-        "url": "/api/2014/equipment/crossbow-light"
+        "url": "/api/equipment/crossbow-light"
       },
       {
         "index": "dart",
         "name": "Dart",
-        "url": "/api/2014/equipment/dart"
+        "url": "/api/equipment/dart"
       },
       {
         "index": "shortbow",
         "name": "Shortbow",
-        "url": "/api/2014/equipment/shortbow"
+        "url": "/api/equipment/shortbow"
       },
       {
         "index": "sling",
         "name": "Sling",
-        "url": "/api/2014/equipment/sling"
+        "url": "/api/equipment/sling"
       }
     ],
     "url": "/api/2014/equipment-categories/simple-weapons"
@@ -933,32 +933,32 @@
       {
         "index": "battleaxe",
         "name": "Battleaxe",
-        "url": "/api/2014/equipment/battleaxe"
+        "url": "/api/equipment/battleaxe"
       },
       {
         "index": "flail",
         "name": "Flail",
-        "url": "/api/2014/equipment/flail"
+        "url": "/api/equipment/flail"
       },
       {
         "index": "glaive",
         "name": "Glaive",
-        "url": "/api/2014/equipment/glaive"
+        "url": "/api/equipment/glaive"
       },
       {
         "index": "greataxe",
         "name": "Greataxe",
-        "url": "/api/2014/equipment/greataxe"
+        "url": "/api/equipment/greataxe"
       },
       {
         "index": "greatsword",
         "name": "Greatsword",
-        "url": "/api/2014/equipment/greatsword"
+        "url": "/api/equipment/greatsword"
       },
       {
         "index": "halberd",
         "name": "Halberd",
-        "url": "/api/2014/equipment/halberd"
+        "url": "/api/equipment/halberd"
       },
       {
         "index": "lance",
@@ -968,77 +968,77 @@
       {
         "index": "longsword",
         "name": "Longsword",
-        "url": "/api/2014/equipment/longsword"
+        "url": "/api/equipment/longsword"
       },
       {
         "index": "maul",
         "name": "Maul",
-        "url": "/api/2014/equipment/maul"
+        "url": "/api/equipment/maul"
       },
       {
         "index": "morningstar",
         "name": "Morningstar",
-        "url": "/api/2014/equipment/morningstar"
+        "url": "/api/equipment/morningstar"
       },
       {
         "index": "pike",
         "name": "Pike",
-        "url": "/api/2014/equipment/pike"
+        "url": "/api/equipment/pike"
       },
       {
         "index": "rapier",
         "name": "Rapier",
-        "url": "/api/2014/equipment/rapier"
+        "url": "/api/equipment/rapier"
       },
       {
         "index": "scimitar",
         "name": "Scimitar",
-        "url": "/api/2014/equipment/scimitar"
+        "url": "/api/equipment/scimitar"
       },
       {
         "index": "shortsword",
         "name": "Shortsword",
-        "url": "/api/2014/equipment/shortsword"
+        "url": "/api/equipment/shortsword"
       },
       {
         "index": "trident",
         "name": "Trident",
-        "url": "/api/2014/equipment/trident"
+        "url": "/api/equipment/trident"
       },
       {
         "index": "war-pick",
         "name": "War pick",
-        "url": "/api/2014/equipment/war-pick"
+        "url": "/api/equipment/war-pick"
       },
       {
         "index": "warhammer",
         "name": "Warhammer",
-        "url": "/api/2014/equipment/warhammer"
+        "url": "/api/equipment/warhammer"
       },
       {
         "index": "whip",
         "name": "Whip",
-        "url": "/api/2014/equipment/whip"
+        "url": "/api/equipment/whip"
       },
       {
         "index": "blowgun",
         "name": "Blowgun",
-        "url": "/api/2014/equipment/blowgun"
+        "url": "/api/equipment/blowgun"
       },
       {
         "index": "crossbow-hand",
         "name": "Crossbow, hand",
-        "url": "/api/2014/equipment/crossbow-hand"
+        "url": "/api/equipment/crossbow-hand"
       },
       {
         "index": "crossbow-heavy",
         "name": "Crossbow, heavy",
-        "url": "/api/2014/equipment/crossbow-heavy"
+        "url": "/api/equipment/crossbow-heavy"
       },
       {
         "index": "longbow",
         "name": "Longbow",
-        "url": "/api/2014/equipment/longbow"
+        "url": "/api/equipment/longbow"
       },
       {
         "index": "net",
@@ -1055,57 +1055,57 @@
       {
         "index": "battleaxe",
         "name": "Battleaxe",
-        "url": "/api/2014/equipment/battleaxe"
+        "url": "/api/equipment/battleaxe"
       },
       {
         "index": "club",
         "name": "Club",
-        "url": "/api/2014/equipment/club"
+        "url": "/api/equipment/club"
       },
       {
         "index": "dagger",
         "name": "Dagger",
-        "url": "/api/2014/equipment/dagger"
+        "url": "/api/equipment/dagger"
       },
       {
         "index": "flail",
         "name": "Flail",
-        "url": "/api/2014/equipment/flail"
+        "url": "/api/equipment/flail"
       },
       {
         "index": "glaive",
         "name": "Glaive",
-        "url": "/api/2014/equipment/glaive"
+        "url": "/api/equipment/glaive"
       },
       {
         "index": "greataxe",
         "name": "Greataxe",
-        "url": "/api/2014/equipment/greataxe"
+        "url": "/api/equipment/greataxe"
       },
       {
         "index": "greatclub",
         "name": "Greatclub",
-        "url": "/api/2014/equipment/greatclub"
+        "url": "/api/equipment/greatclub"
       },
       {
         "index": "greatsword",
         "name": "Greatsword",
-        "url": "/api/2014/equipment/greatsword"
+        "url": "/api/equipment/greatsword"
       },
       {
         "index": "halberd",
         "name": "Halberd",
-        "url": "/api/2014/equipment/halberd"
+        "url": "/api/equipment/halberd"
       },
       {
         "index": "handaxe",
         "name": "Handaxe",
-        "url": "/api/2014/equipment/handaxe"
+        "url": "/api/equipment/handaxe"
       },
       {
         "index": "javelin",
         "name": "Javelin",
-        "url": "/api/2014/equipment/javelin"
+        "url": "/api/equipment/javelin"
       },
       {
         "index": "lance",
@@ -1115,82 +1115,82 @@
       {
         "index": "light-hammer",
         "name": "Light hammer",
-        "url": "/api/2014/equipment/light-hammer"
+        "url": "/api/equipment/light-hammer"
       },
       {
         "index": "longsword",
         "name": "Longsword",
-        "url": "/api/2014/equipment/longsword"
+        "url": "/api/equipment/longsword"
       },
       {
         "index": "mace",
         "name": "Mace",
-        "url": "/api/2014/equipment/mace"
+        "url": "/api/equipment/mace"
       },
       {
         "index": "maul",
         "name": "Maul",
-        "url": "/api/2014/equipment/maul"
+        "url": "/api/equipment/maul"
       },
       {
         "index": "morningstar",
         "name": "Morningstar",
-        "url": "/api/2014/equipment/morningstar"
+        "url": "/api/equipment/morningstar"
       },
       {
         "index": "pike",
         "name": "Pike",
-        "url": "/api/2014/equipment/pike"
+        "url": "/api/equipment/pike"
       },
       {
         "index": "quarterstaff",
         "name": "Quarterstaff",
-        "url": "/api/2014/equipment/quarterstaff"
+        "url": "/api/equipment/quarterstaff"
       },
       {
         "index": "rapier",
         "name": "Rapier",
-        "url": "/api/2014/equipment/rapier"
+        "url": "/api/equipment/rapier"
       },
       {
         "index": "scimitar",
         "name": "Scimitar",
-        "url": "/api/2014/equipment/scimitar"
+        "url": "/api/equipment/scimitar"
       },
       {
         "index": "shortsword",
         "name": "Shortsword",
-        "url": "/api/2014/equipment/shortsword"
+        "url": "/api/equipment/shortsword"
       },
       {
         "index": "sickle",
         "name": "Sickle",
-        "url": "/api/2014/equipment/sickle"
+        "url": "/api/equipment/sickle"
       },
       {
         "index": "spear",
         "name": "Spear",
-        "url": "/api/2014/equipment/spear"
+        "url": "/api/equipment/spear"
       },
       {
         "index": "trident",
         "name": "Trident",
-        "url": "/api/2014/equipment/trident"
+        "url": "/api/equipment/trident"
       },
       {
         "index": "war-pick",
         "name": "War pick",
-        "url": "/api/2014/equipment/war-pick"
+        "url": "/api/equipment/war-pick"
       },
       {
         "index": "warhammer",
         "name": "Warhammer",
-        "url": "/api/2014/equipment/warhammer"
+        "url": "/api/equipment/warhammer"
       },
       {
         "index": "whip",
         "name": "Whip",
-        "url": "/api/2014/equipment/whip"
+        "url": "/api/equipment/whip"
       }
     ],
     "url": "/api/2014/equipment-categories/melee-weapons"
@@ -1202,32 +1202,32 @@
       {
         "index": "blowgun",
         "name": "Blowgun",
-        "url": "/api/2014/equipment/blowgun"
+        "url": "/api/equipment/blowgun"
       },
       {
         "index": "crossbow-hand",
         "name": "Crossbow, hand",
-        "url": "/api/2014/equipment/crossbow-hand"
+        "url": "/api/equipment/crossbow-hand"
       },
       {
         "index": "crossbow-heavy",
         "name": "Crossbow, heavy",
-        "url": "/api/2014/equipment/crossbow-heavy"
+        "url": "/api/equipment/crossbow-heavy"
       },
       {
         "index": "crossbow-light",
         "name": "Crossbow, light",
-        "url": "/api/2014/equipment/crossbow-light"
+        "url": "/api/equipment/crossbow-light"
       },
       {
         "index": "dart",
         "name": "Dart",
-        "url": "/api/2014/equipment/dart"
+        "url": "/api/equipment/dart"
       },
       {
         "index": "longbow",
         "name": "Longbow",
-        "url": "/api/2014/equipment/longbow"
+        "url": "/api/equipment/longbow"
       },
       {
         "index": "net",
@@ -1237,12 +1237,12 @@
       {
         "index": "shortbow",
         "name": "Shortbow",
-        "url": "/api/2014/equipment/shortbow"
+        "url": "/api/equipment/shortbow"
       },
       {
         "index": "sling",
         "name": "Sling",
-        "url": "/api/2014/equipment/sling"
+        "url": "/api/equipment/sling"
       }
     ],
     "url": "/api/2014/equipment-categories/ranged-weapons"
@@ -1254,52 +1254,52 @@
       {
         "index": "club",
         "name": "Club",
-        "url": "/api/2014/equipment/club"
+        "url": "/api/equipment/club"
       },
       {
         "index": "dagger",
         "name": "Dagger",
-        "url": "/api/2014/equipment/dagger"
+        "url": "/api/equipment/dagger"
       },
       {
         "index": "greatclub",
         "name": "Greatclub",
-        "url": "/api/2014/equipment/greatclub"
+        "url": "/api/equipment/greatclub"
       },
       {
         "index": "handaxe",
         "name": "Handaxe",
-        "url": "/api/2014/equipment/handaxe"
+        "url": "/api/equipment/handaxe"
       },
       {
         "index": "javelin",
         "name": "Javelin",
-        "url": "/api/2014/equipment/javelin"
+        "url": "/api/equipment/javelin"
       },
       {
         "index": "light-hammer",
         "name": "Light hammer",
-        "url": "/api/2014/equipment/light-hammer"
+        "url": "/api/equipment/light-hammer"
       },
       {
         "index": "mace",
         "name": "Mace",
-        "url": "/api/2014/equipment/mace"
+        "url": "/api/equipment/mace"
       },
       {
         "index": "quarterstaff",
         "name": "Quarterstaff",
-        "url": "/api/2014/equipment/quarterstaff"
+        "url": "/api/equipment/quarterstaff"
       },
       {
         "index": "sickle",
         "name": "Sickle",
-        "url": "/api/2014/equipment/sickle"
+        "url": "/api/equipment/sickle"
       },
       {
         "index": "spear",
         "name": "Spear",
-        "url": "/api/2014/equipment/spear"
+        "url": "/api/equipment/spear"
       }
     ],
     "url": "/api/2014/equipment-categories/simple-melee-weapons"
@@ -1311,22 +1311,22 @@
       {
         "index": "crossbow-light",
         "name": "Crossbow, light",
-        "url": "/api/2014/equipment/crossbow-light"
+        "url": "/api/equipment/crossbow-light"
       },
       {
         "index": "dart",
         "name": "Dart",
-        "url": "/api/2014/equipment/dart"
+        "url": "/api/equipment/dart"
       },
       {
         "index": "shortbow",
         "name": "Shortbow",
-        "url": "/api/2014/equipment/shortbow"
+        "url": "/api/equipment/shortbow"
       },
       {
         "index": "sling",
         "name": "Sling",
-        "url": "/api/2014/equipment/sling"
+        "url": "/api/equipment/sling"
       }
     ],
     "url": "/api/2014/equipment-categories/simple-ranged-weapons"
@@ -1338,32 +1338,32 @@
       {
         "index": "battleaxe",
         "name": "Battleaxe",
-        "url": "/api/2014/equipment/battleaxe"
+        "url": "/api/equipment/battleaxe"
       },
       {
         "index": "flail",
         "name": "Flail",
-        "url": "/api/2014/equipment/flail"
+        "url": "/api/equipment/flail"
       },
       {
         "index": "glaive",
         "name": "Glaive",
-        "url": "/api/2014/equipment/glaive"
+        "url": "/api/equipment/glaive"
       },
       {
         "index": "greataxe",
         "name": "Greataxe",
-        "url": "/api/2014/equipment/greataxe"
+        "url": "/api/equipment/greataxe"
       },
       {
         "index": "greatsword",
         "name": "Greatsword",
-        "url": "/api/2014/equipment/greatsword"
+        "url": "/api/equipment/greatsword"
       },
       {
         "index": "halberd",
         "name": "Halberd",
-        "url": "/api/2014/equipment/halberd"
+        "url": "/api/equipment/halberd"
       },
       {
         "index": "lance",
@@ -1373,57 +1373,57 @@
       {
         "index": "longsword",
         "name": "Longsword",
-        "url": "/api/2014/equipment/longsword"
+        "url": "/api/equipment/longsword"
       },
       {
         "index": "maul",
         "name": "Maul",
-        "url": "/api/2014/equipment/maul"
+        "url": "/api/equipment/maul"
       },
       {
         "index": "morningstar",
         "name": "Morningstar",
-        "url": "/api/2014/equipment/morningstar"
+        "url": "/api/equipment/morningstar"
       },
       {
         "index": "pike",
         "name": "Pike",
-        "url": "/api/2014/equipment/pike"
+        "url": "/api/equipment/pike"
       },
       {
         "index": "rapier",
         "name": "Rapier",
-        "url": "/api/2014/equipment/rapier"
+        "url": "/api/equipment/rapier"
       },
       {
         "index": "scimitar",
         "name": "Scimitar",
-        "url": "/api/2014/equipment/scimitar"
+        "url": "/api/equipment/scimitar"
       },
       {
         "index": "shortsword",
         "name": "Shortsword",
-        "url": "/api/2014/equipment/shortsword"
+        "url": "/api/equipment/shortsword"
       },
       {
         "index": "trident",
         "name": "Trident",
-        "url": "/api/2014/equipment/trident"
+        "url": "/api/equipment/trident"
       },
       {
         "index": "war-pick",
         "name": "War pick",
-        "url": "/api/2014/equipment/war-pick"
+        "url": "/api/equipment/war-pick"
       },
       {
         "index": "warhammer",
         "name": "Warhammer",
-        "url": "/api/2014/equipment/warhammer"
+        "url": "/api/equipment/warhammer"
       },
       {
         "index": "whip",
         "name": "Whip",
-        "url": "/api/2014/equipment/whip"
+        "url": "/api/equipment/whip"
       }
     ],
     "url": "/api/2014/equipment-categories/martial-melee-weapons"
@@ -1435,22 +1435,22 @@
       {
         "index": "blowgun",
         "name": "Blowgun",
-        "url": "/api/2014/equipment/blowgun"
+        "url": "/api/equipment/blowgun"
       },
       {
         "index": "crossbow-hand",
         "name": "Crossbow, hand",
-        "url": "/api/2014/equipment/crossbow-hand"
+        "url": "/api/equipment/crossbow-hand"
       },
       {
         "index": "crossbow-heavy",
         "name": "Crossbow, heavy",
-        "url": "/api/2014/equipment/crossbow-heavy"
+        "url": "/api/equipment/crossbow-heavy"
       },
       {
         "index": "longbow",
         "name": "Longbow",
-        "url": "/api/2014/equipment/longbow"
+        "url": "/api/equipment/longbow"
       },
       {
         "index": "net",
@@ -1467,17 +1467,17 @@
       {
         "index": "padded-armor",
         "name": "Padded Armor",
-        "url": "/api/2014/equipment/padded-armor"
+        "url": "/api/equipment/padded-armor"
       },
       {
         "index": "leather-armor",
         "name": "Leather Armor",
-        "url": "/api/2014/equipment/leather-armor"
+        "url": "/api/equipment/leather-armor"
       },
       {
         "index": "studded-leather-armor",
         "name": "Studded Leather Armor",
-        "url": "/api/2014/equipment/studded-leather-armor"
+        "url": "/api/equipment/studded-leather-armor"
       }
     ],
     "url": "/api/2014/equipment-categories/light-armor"
@@ -1489,27 +1489,27 @@
       {
         "index": "hide-armor",
         "name": "Hide Armor",
-        "url": "/api/2014/equipment/hide-armor"
+        "url": "/api/equipment/hide-armor"
       },
       {
         "index": "chain-shirt",
         "name": "Chain Shirt",
-        "url": "/api/2014/equipment/chain-shirt"
+        "url": "/api/equipment/chain-shirt"
       },
       {
         "index": "scale-mail",
         "name": "Scale Mail",
-        "url": "/api/2014/equipment/scale-mail"
+        "url": "/api/equipment/scale-mail"
       },
       {
         "index": "breastplate",
         "name": "Breastplate",
-        "url": "/api/2014/equipment/breastplate"
+        "url": "/api/equipment/breastplate"
       },
       {
         "index": "half-plate-armor",
         "name": "Half Plate Armor",
-        "url": "/api/2014/equipment/half-plate-armor"
+        "url": "/api/equipment/half-plate-armor"
       }
     ],
     "url": "/api/2014/equipment-categories/medium-armor"
@@ -1521,22 +1521,22 @@
       {
         "index": "ring-mail",
         "name": "Ring Mail",
-        "url": "/api/2014/equipment/ring-mail"
+        "url": "/api/equipment/ring-mail"
       },
       {
         "index": "chain-mail",
         "name": "Chain Mail",
-        "url": "/api/2014/equipment/chain-mail"
+        "url": "/api/equipment/chain-mail"
       },
       {
         "index": "splint-armor",
         "name": "Splint Armor",
-        "url": "/api/2014/equipment/splint-armor"
+        "url": "/api/equipment/splint-armor"
       },
       {
         "index": "plate-armor",
         "name": "Plate Armor",
-        "url": "/api/2014/equipment/plate-armor"
+        "url": "/api/equipment/plate-armor"
       }
     ],
     "url": "/api/2014/equipment-categories/heavy-armor"
@@ -1548,7 +1548,7 @@
       {
         "index": "shield",
         "name": "Shield",
-        "url": "/api/2014/equipment/shield"
+        "url": "/api/equipment/shield"
       }
     ],
     "url": "/api/2014/equipment-categories/shields"
@@ -1560,32 +1560,32 @@
       {
         "index": "acid-vial",
         "name": "Acid (vial)",
-        "url": "/api/2014/equipment/acid-vial"
+        "url": "/api/equipment/acid-vial"
       },
       {
         "index": "alchemists-fire-flask",
         "name": "Alchemist's fire (flask)",
-        "url": "/api/2014/equipment/alchemists-fire-flask"
+        "url": "/api/equipment/alchemists-fire-flask"
       },
       {
         "index": "arrow",
         "name": "Arrow",
-        "url": "/api/2014/equipment/arrow"
+        "url": "/api/equipment/arrow"
       },
       {
         "index": "blowgun-needle",
         "name": "Blowgun needle",
-        "url": "/api/2014/equipment/blowgun-needle"
+        "url": "/api/equipment/blowgun-needle"
       },
       {
         "index": "crossbow-bolt",
         "name": "Crossbow bolt",
-        "url": "/api/2014/equipment/crossbow-bolt"
+        "url": "/api/equipment/crossbow-bolt"
       },
       {
         "index": "sling-bullet",
         "name": "Sling bullet",
-        "url": "/api/2014/equipment/sling-bullet"
+        "url": "/api/equipment/sling-bullet"
       },
       {
         "index": "antitoxin-vial",
@@ -1625,7 +1625,7 @@
       {
         "index": "piton",
         "name": "Piton",
-        "url": "/api/2014/equipment/piton"
+        "url": "/api/equipment/piton"
       },
       {
         "index": "poison-basic-vial",
@@ -1660,7 +1660,7 @@
       {
         "index": "rations-1-day",
         "name": "Rations (1 day)",
-        "url": "/api/2014/equipment/rations-1-day"
+        "url": "/api/equipment/rations-1-day"
       },
       {
         "index": "robes",
@@ -2020,7 +2020,7 @@
       {
         "index": "thieves-tools",
         "name": "Thieves' Tools",
-        "url": "/api/2014/equipment/thieves-tools"
+        "url": "/api/equipment/thieves-tools"
       }
     ],
     "url": "/api/2014/equipment-categories/other-tools"
@@ -2113,7 +2113,7 @@
       {
         "index": "amulet-of-health",
         "name": "Amulet of Health",
-        "url": "/api/2014/magic-items/amulet-of-health"
+        "url": "/api/magic-items/amulet-of-health"
       },
       {
         "index": "bag-of-beans",
@@ -2128,7 +2128,7 @@
       {
         "index": "bag-of-holding",
         "name": "Bag of Holding",
-        "url": "/api/2014/magic-items/bag-of-holding"
+        "url": "/api/magic-items/bag-of-holding"
       },
       {
         "index": "bag-of-tricks",
@@ -2138,12 +2138,12 @@
       {
         "index": "bead-of-force",
         "name": "Bead of Force",
-        "url": "/api/2014/magic-items/bead-of-force"
+        "url": "/api/magic-items/bead-of-force"
       },
       {
         "index": "belt-of-dwarvenkind",
         "name": "Belt of Dwarvenkind",
-        "url": "/api/2014/magic-items/belt-of-dwarvenkind"
+        "url": "/api/magic-items/belt-of-dwarvenkind"
       },
       {
         "index": "belt-of-giant-strength",
@@ -2153,32 +2153,32 @@
       {
         "index": "boots-of-elvenkind",
         "name": "Boots of Elvenkind",
-        "url": "/api/2014/magic-items/boots-of-elvenkind"
+        "url": "/api/magic-items/boots-of-elvenkind"
       },
       {
         "index": "boots-of-speed",
         "name": "Boots of Speed",
-        "url": "/api/2014/magic-items/boots-of-speed"
+        "url": "/api/magic-items/boots-of-speed"
       },
       {
         "index": "boots-of-the-winterlands",
         "name": "Boots of the Winterlands",
-        "url": "/api/2014/magic-items/boots-of-the-winterlands"
+        "url": "/api/magic-items/boots-of-the-winterlands"
       },
       {
         "index": "bracers-of-archery",
         "name": "Bracers of Archery",
-        "url": "/api/2014/magic-items/bracers-of-archery"
+        "url": "/api/magic-items/bracers-of-archery"
       },
       {
         "index": "bracers-of-defense",
         "name": "Bracers of Defense",
-        "url": "/api/2014/magic-items/bracers-of-defense"
+        "url": "/api/magic-items/bracers-of-defense"
       },
       {
         "index": "brooch-of-shielding",
         "name": "Brooch of Shielding",
-        "url": "/api/2014/magic-items/brooch-of-shielding"
+        "url": "/api/magic-items/brooch-of-shielding"
       },
       {
         "index": "candle-of-invocation",
@@ -2188,27 +2188,27 @@
       {
         "index": "circlet-of-blasting",
         "name": "Circlet of Blasting",
-        "url": "/api/2014/magic-items/circlet-of-blasting"
+        "url": "/api/magic-items/circlet-of-blasting"
       },
       {
         "index": "cloak-of-arachnida",
         "name": "Cloak of Arachnida",
-        "url": "/api/2014/magic-items/cloak-of-arachnida"
+        "url": "/api/magic-items/cloak-of-arachnida"
       },
       {
         "index": "cloak-of-displacement",
         "name": "Cloak of Displacement",
-        "url": "/api/2014/magic-items/cloak-of-displacement"
+        "url": "/api/magic-items/cloak-of-displacement"
       },
       {
         "index": "cloak-of-elvenkind",
         "name": "Cloak of Elvenkind",
-        "url": "/api/2014/magic-items/cloak-of-elvenkind"
+        "url": "/api/magic-items/cloak-of-elvenkind"
       },
       {
         "index": "cloak-of-protection",
         "name": "Cloak of Protection",
-        "url": "/api/2014/magic-items/cloak-of-protection"
+        "url": "/api/magic-items/cloak-of-protection"
       },
       {
         "index": "dust-of-dryness",
@@ -2223,17 +2223,17 @@
       {
         "index": "eyes-of-minute-seeing",
         "name": "Eyes of Minute Seeing",
-        "url": "/api/2014/magic-items/eyes-of-minute-seeing"
+        "url": "/api/magic-items/eyes-of-minute-seeing"
       },
       {
         "index": "eyes-of-the-eagle",
         "name": "Eyes of the Eagle",
-        "url": "/api/2014/magic-items/eyes-of-the-eagle"
+        "url": "/api/magic-items/eyes-of-the-eagle"
       },
       {
         "index": "gauntlets-of-ogre-power",
         "name": "Gauntlets of Ogre Power",
-        "url": "/api/2014/magic-items/gauntlets-of-ogre-power"
+        "url": "/api/magic-items/gauntlets-of-ogre-power"
       },
       {
         "index": "gloves-of-missile-snaring",
@@ -2243,7 +2243,7 @@
       {
         "index": "gloves-of-swimming-and-climbing",
         "name": "Gloves of Swimming and Climbing",
-        "url": "/api/2014/magic-items/gloves-of-swimming-and-climbing"
+        "url": "/api/magic-items/gloves-of-swimming-and-climbing"
       },
       {
         "index": "goggles-of-night",
@@ -2318,12 +2318,12 @@
       {
         "index": "manual-of-bodily-health",
         "name": "Manual of Bodily Health",
-        "url": "/api/2014/magic-items/manual-of-bodily-health"
+        "url": "/api/magic-items/manual-of-bodily-health"
       },
       {
         "index": "manual-of-gainful-exercise",
         "name": "Manual of Gainful Exercise",
-        "url": "/api/2014/magic-items/manual-of-gainful-exercise"
+        "url": "/api/magic-items/manual-of-gainful-exercise"
       },
       {
         "index": "manual-of-golems",
@@ -2333,7 +2333,7 @@
       {
         "index": "manual-of-quickness-of-action",
         "name": "Manual of Quickness of Action",
-        "url": "/api/2014/magic-items/manual-of-quickness-of-action"
+        "url": "/api/magic-items/manual-of-quickness-of-action"
       },
       {
         "index": "marvelous-pigments",
@@ -2433,7 +2433,7 @@
       {
         "index": "rope-of-climbing",
         "name": "Rope of Climbing",
-        "url": "/api/2014/magic-items/rope-of-climbing"
+        "url": "/api/magic-items/rope-of-climbing"
       },
       {
         "index": "rope-of-entanglement",
@@ -2448,12 +2448,12 @@
       {
         "index": "slippers-of-spider-climbing",
         "name": "Slippers of Spider Climbing",
-        "url": "/api/2014/magic-items/slippers-of-spider-climbing"
+        "url": "/api/magic-items/slippers-of-spider-climbing"
       },
       {
         "index": "sovereign-glue",
         "name": "Sovereign Glue",
-        "url": "/api/2014/magic-items/sovereign-glue"
+        "url": "/api/magic-items/sovereign-glue"
       },
       {
         "index": "sphere-of-annihilation",
@@ -2468,22 +2468,22 @@
       {
         "index": "tome-of-clear-thought",
         "name": "Tome of Clear Thought",
-        "url": "/api/2014/magic-items/tome-of-clear-thought"
+        "url": "/api/magic-items/tome-of-clear-thought"
       },
       {
         "index": "tome-of-leadership-and-influence",
         "name": "Tome of Leadership and Influence",
-        "url": "/api/2014/magic-items/tome-of-leadership-and-influence"
+        "url": "/api/magic-items/tome-of-leadership-and-influence"
       },
       {
         "index": "tome-of-understanding",
         "name": "Tome of Understanding",
-        "url": "/api/2014/magic-items/tome-of-understanding"
+        "url": "/api/magic-items/tome-of-understanding"
       },
       {
         "index": "universal-solvent",
         "name": "Universal Solvent",
-        "url": "/api/2014/magic-items/universal-solvent"
+        "url": "/api/magic-items/universal-solvent"
       },
       {
         "index": "bag-of-tricks-gray",
@@ -2503,32 +2503,32 @@
       {
         "index": "belt-of-giant-strength-hill",
         "name": "Belt of Hill Giant Strength",
-        "url": "/api/2014/magic-items/belt-of-giant-strength-hill"
+        "url": "/api/magic-items/belt-of-giant-strength-hill"
       },
       {
         "index": "belt-of-giant-strength-stone",
         "name": "Belt of Stone Giant Strength",
-        "url": "/api/2014/magic-items/belt-of-giant-strength-stone"
+        "url": "/api/magic-items/belt-of-giant-strength-stone"
       },
       {
         "index": "belt-of-giant-strength-frost",
         "name": "Belt of Frost Giant Strength",
-        "url": "/api/2014/magic-items/belt-of-giant-strength-frost"
+        "url": "/api/magic-items/belt-of-giant-strength-frost"
       },
       {
         "index": "belt-of-giant-strength-fire",
         "name": "Belt of Fire Giant Strength",
-        "url": "/api/2014/magic-items/belt-of-giant-strength-fire"
+        "url": "/api/magic-items/belt-of-giant-strength-fire"
       },
       {
         "index": "belt-of-giant-strength-cloud",
         "name": "Belt of Cloud Giant Strength",
-        "url": "/api/2014/magic-items/belt-of-giant-strength-cloud"
+        "url": "/api/magic-items/belt-of-giant-strength-cloud"
       },
       {
         "index": "belt-of-giant-strength-storm",
         "name": "Belt of Storm Giant Strength",
-        "url": "/api/2014/magic-items/belt-of-giant-strength-storm"
+        "url": "/api/magic-items/belt-of-giant-strength-storm"
       },
       {
         "index": "horn-of-valhalla-silver",
@@ -2605,7 +2605,7 @@
       {
         "index": "rod-of-security",
         "name": "Rod of Security",
-        "url": "/api/2014/magic-items/rod-of-security"
+        "url": "/api/magic-items/rod-of-security"
       }
     ],
     "url": "/api/2014/equipment-categories/rod"
@@ -2707,7 +2707,7 @@
       {
         "index": "potion-of-speed",
         "name": "Potion of Speed",
-        "url": "/api/2014/magic-items/potion-of-speed"
+        "url": "/api/magic-items/potion-of-speed"
       },
       {
         "index": "potion-of-water-breathing",
@@ -2717,102 +2717,102 @@
       {
         "index": "potion-of-giant-strength-hill",
         "name": "Potion of Hill Giant Strength",
-        "url": "/api/2014/magic-items/potion-of-giant-strength-hill"
+        "url": "/api/magic-items/potion-of-giant-strength-hill"
       },
       {
         "index": "potion-of-giant-strength-frost",
         "name": "Potion of Frost Giant Strength",
-        "url": "/api/2014/magic-items/potion-of-giant-strength-frost"
+        "url": "/api/magic-items/potion-of-giant-strength-frost"
       },
       {
         "index": "potion-of-giant-strength-stone",
         "name": "Potion of Stone Giant Strength",
-        "url": "/api/2014/magic-items/potion-of-giant-strength-stone"
+        "url": "/api/magic-items/potion-of-giant-strength-stone"
       },
       {
         "index": "potion-of-giant-strength-fire",
         "name": "Potion of Fire Giant Strength",
-        "url": "/api/2014/magic-items/potion-of-giant-strength-fire"
+        "url": "/api/magic-items/potion-of-giant-strength-fire"
       },
       {
         "index": "potion-of-giant-strength-cloud",
         "name": "Potion of Cloud Giant Strength",
-        "url": "/api/2014/magic-items/potion-of-giant-strength-cloud"
+        "url": "/api/magic-items/potion-of-giant-strength-cloud"
       },
       {
         "index": "potion-of-giant-strength-storm",
         "name": "Potion of Storm Giant Strength",
-        "url": "/api/2014/magic-items/potion-of-giant-strength-storm"
+        "url": "/api/magic-items/potion-of-giant-strength-storm"
       },
       {
         "index": "potion-of-healing-common",
         "name": "Potion of Healing",
-        "url": "/api/2014/magic-items/potion-of-healing-common"
+        "url": "/api/magic-items/potion-of-healing-common"
       },
       {
         "index": "potion-of-healing-greater",
         "name": "Potion of Greater Healing",
-        "url": "/api/2014/magic-items/potion-of-healing-greater"
+        "url": "/api/magic-items/potion-of-healing-greater"
       },
       {
         "index": "potion-of-healing-superior",
         "name": "Potion of Superior Healing",
-        "url": "/api/2014/magic-items/potion-of-healing-superior"
+        "url": "/api/magic-items/potion-of-healing-superior"
       },
       {
         "index": "potion-of-healing-supreme",
         "name": "Potion of Supreme Healing",
-        "url": "/api/2014/magic-items/potion-of-healing-supreme"
+        "url": "/api/magic-items/potion-of-healing-supreme"
       },
       {
         "index": "potion-of-resistance-acid",
         "name": "Potion of Acid Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-acid"
+        "url": "/api/magic-items/potion-of-resistance-acid"
       },
       {
         "index": "potion-of-resistance-cold",
         "name": "Potion of Cold Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-cold"
+        "url": "/api/magic-items/potion-of-resistance-cold"
       },
       {
         "index": "potion-of-resistance-fire",
         "name": "Potion of Fire Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-fire"
+        "url": "/api/magic-items/potion-of-resistance-fire"
       },
       {
         "index": "potion-of-resistance-force",
         "name": "Potion of Force Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-force"
+        "url": "/api/magic-items/potion-of-resistance-force"
       },
       {
         "index": "potion-of-resistance-lightning",
         "name": "Potion of Lightning Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-lightning"
+        "url": "/api/magic-items/potion-of-resistance-lightning"
       },
       {
         "index": "potion-of-resistance-necrotic",
         "name": "Potion of Necrotic Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-necrotic"
+        "url": "/api/magic-items/potion-of-resistance-necrotic"
       },
       {
         "index": "potion-of-resistance-poison",
         "name": "Potion of Poison Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-poison"
+        "url": "/api/magic-items/potion-of-resistance-poison"
       },
       {
         "index": "potion-of-resistance-psychic",
         "name": "Potion of Psychic Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-psychic"
+        "url": "/api/magic-items/potion-of-resistance-psychic"
       },
       {
         "index": "potion-of-resistance-radiant",
         "name": "Potion of Radiant Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-radiant"
+        "url": "/api/magic-items/potion-of-resistance-radiant"
       },
       {
         "index": "potion-of-resistance-thunder",
         "name": "Potion of Thunder Resistance",
-        "url": "/api/2014/magic-items/potion-of-resistance-thunder"
+        "url": "/api/magic-items/potion-of-resistance-thunder"
       }
     ],
     "url": "/api/2014/equipment-categories/potion"
@@ -2869,7 +2869,7 @@
       {
         "index": "ring-of-protection",
         "name": "Ring of Protection",
-        "url": "/api/2014/magic-items/ring-of-protection"
+        "url": "/api/magic-items/ring-of-protection"
       },
       {
         "index": "ring-of-regeneration",
@@ -2954,52 +2954,52 @@
       {
         "index": "ring-of-resistance-acid",
         "name": "Ring of Acid Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-acid"
+        "url": "/api/magic-items/ring-of-resistance-acid"
       },
       {
         "index": "ring-of-resistance-cold",
         "name": "Ring of Cold Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-cold"
+        "url": "/api/magic-items/ring-of-resistance-cold"
       },
       {
         "index": "ring-of-resistance-fire",
         "name": "Ring of Fire Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-fire"
+        "url": "/api/magic-items/ring-of-resistance-fire"
       },
       {
         "index": "ring-of-resistance-force",
         "name": "Ring of Force Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-force"
+        "url": "/api/magic-items/ring-of-resistance-force"
       },
       {
         "index": "ring-of-resistance-lightning",
         "name": "Ring of Lightning Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-lightning"
+        "url": "/api/magic-items/ring-of-resistance-lightning"
       },
       {
         "index": "ring-of-resistance-necrotic",
         "name": "Ring of Necrotic Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-necrotic"
+        "url": "/api/magic-items/ring-of-resistance-necrotic"
       },
       {
         "index": "ring-of-resistance-poison",
         "name": "Ring of Poison Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-poison"
+        "url": "/api/magic-items/ring-of-resistance-poison"
       },
       {
         "index": "ring-of-resistance-psychic",
         "name": "Ring of Psychic Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-psychic"
+        "url": "/api/magic-items/ring-of-resistance-psychic"
       },
       {
         "index": "ring-of-resistance-radiant",
         "name": "Ring of Radiant Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-radiant"
+        "url": "/api/magic-items/ring-of-resistance-radiant"
       },
       {
         "index": "ring-of-resistance-thunder",
         "name": "Ring of Thunder Resistance",
-        "url": "/api/2014/magic-items/ring-of-resistance-thunder"
+        "url": "/api/magic-items/ring-of-resistance-thunder"
       }
     ],
     "url": "/api/2014/equipment-categories/ring"

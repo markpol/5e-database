@@ -2,25 +2,24 @@ import { z } from 'zod';
 import {
   APIReferenceSchema,
   ChoiceSchema,
-  DamageSchema,
   DifficultyClassSchema,
 } from '../../schemas/common';
 
 const MonsterSpeedSchema = z.strictObject({
-  walk: z.string().optional(),
-  burrow: z.string().optional(),
-  climb: z.string().optional(),
-  fly: z.string().optional(),
-  swim: z.string().optional(),
+  walk: z.union([z.string(), z.number()]).optional(),
+  burrow: z.union([z.string(), z.number()]).optional(),
+  climb: z.union([z.string(), z.number()]).optional(),
+  fly: z.union([z.string(), z.number()]).optional(),
+  swim: z.union([z.string(), z.number()]).optional(),
   hover: z.boolean().optional(),
 });
 
 const SenseSchema = z.strictObject({
   passive_perception: z.number(),
-  blindsight: z.string().optional(),
-  darkvision: z.string().optional(),
-  tremorsense: z.string().optional(),
-  truesight: z.string().optional(),
+  blindsight: z.union([z.string(), z.number()]).optional(),
+  darkvision: z.union([z.string(), z.number()]).optional(),
+  tremorsense: z.union([z.string(), z.number()]).optional(),
+  truesight: z.union([z.string(), z.number()]).optional(),
 });
 
 const MonsterProficiencySchema = z.strictObject({
@@ -51,10 +50,18 @@ const MonsterActionItemSchema = z.strictObject({
   type: z.string(),
 });
 
+const MonsterDamageSchema = z.strictObject({
+  damage_type: APIReferenceSchema.optional(),
+  damage_dice: z.string().optional(),
+  dc: DifficultyClassSchema.optional(),
+  condition: z.record(z.string(), z.unknown()).optional(),
+  grapple: z.record(z.string(), z.unknown()).optional(),
+});
+
 const MonsterAttackSchema = z.strictObject({
   name: z.string(),
   dc: DifficultyClassSchema,
-  damage: z.array(DamageSchema).optional(),
+  damage: z.array(MonsterDamageSchema).optional(),
 });
 
 const MonsterActionSchema = z.strictObject({
@@ -63,23 +70,27 @@ const MonsterActionSchema = z.strictObject({
   desc: z.string(),
   attack_bonus: z.number().optional(),
   dc: DifficultyClassSchema.optional(),
+  condition: z.record(z.string(), z.unknown()).optional(),
   usage: ActionUsageSchema.optional(),
   multiattack_type: z.string().optional(),
   actions: z.array(MonsterActionItemSchema).optional(),
   action_options: ChoiceSchema.optional(),
   attacks: z.array(MonsterAttackSchema).optional(),
   options: ChoiceSchema.optional(),
-  damage: z.array(z.union([DamageSchema, ChoiceSchema])).optional(),
+  damage: z.array(z.union([MonsterDamageSchema, ChoiceSchema])).optional(),
   weapon: z.string().optional(),
+  attack_type: z.string().optional(),
   weapon_kind: z.enum(['natural', 'manufactured', 'spell']).optional(),
   supply: z.strictObject({ item: z.string(), count: z.number() }).optional(),
+  preference: z.record(z.string(), z.unknown()).optional(),
+  situation: z.record(z.string(), z.unknown()).optional(),
 });
 
 const LegendaryActionSchema = z.strictObject({
   name: z.string(),
   desc: z.string(),
   attack_bonus: z.number().optional(),
-  damage: z.array(DamageSchema).optional(),
+  damage: z.array(MonsterDamageSchema).optional(),
   dc: DifficultyClassSchema.optional(),
 });
 
@@ -123,10 +134,12 @@ const SpecialAbilitySchema = z.strictObject({
   name: z.string(),
   desc: z.string(),
   attack_bonus: z.number().optional(),
-  damage: z.array(DamageSchema).optional(),
+  damage: z.array(MonsterDamageSchema).optional(),
   dc: DifficultyClassSchema.optional(),
   usage: SpecialAbilityUsageSchema.optional(),
   spellcasting: SpellcastingSchema.optional(),
+  relentless_max_damage: z.number().optional(),
+  bonus_action: z.record(z.string(), z.unknown()).optional(),
 });
 
 export const MonsterSchema = z.strictObject({
@@ -165,4 +178,6 @@ export const MonsterSchema = z.strictObject({
   forms: z.array(APIReferenceSchema).optional(),
   image: z.string().optional(),
   url: z.string(),
+  environments: z.string().optional(),
+  bonus_actions: z.array(z.string()).optional(),
 });
