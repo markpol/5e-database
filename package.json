@@ -18,6 +18,7 @@
     "NOTICE.md"
   ],
   "scripts": {
+    "normalize:monsters": "node --experimental-strip-types --no-warnings src/2014/normalize-monsters.ts",
     "lint": "eslint . --config eslint.config.mjs",
     "test": "vitest run",
     "coverage": "vitest run --coverage"

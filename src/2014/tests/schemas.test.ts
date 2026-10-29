@@ -16,6 +16,7 @@ import Levels from '../en/5e-SRD-Levels.json' with { type: 'json' };
 import MagicItems from '../en/5e-SRD-Magic-Items.json' with { type: 'json' };
 import MagicSchools from '../en/5e-SRD-Magic-Schools.json' with { type: 'json' };
 import Monsters from '../en/5e-SRD-Monsters.json' with { type: 'json' };
+import NormalizedMonsters from '../5e-SRD-Monsters-Normalized.json' with { type: 'json' };
 import Proficiencies from '../en/5e-SRD-Proficiencies.json' with { type: 'json' };
 import Races from '../en/5e-SRD-Races.json' with { type: 'json' };
 import RuleSections from '../en/5e-SRD-Rule-Sections.json' with { type: 'json' };
@@ -42,6 +43,7 @@ import { LevelSchema } from '../schemas/5e-SRD-Levels';
 import { MagicItemSchema } from '../schemas/5e-SRD-Magic-Items';
 import { MagicSchoolSchema } from '../schemas/5e-SRD-Magic-Schools';
 import { MonsterSchema } from '../schemas/5e-SRD-Monsters';
+import { NormalizedMonsterSchema } from '../schemas/5e-SRD-Monsters-Normalized';
 import { ProficiencySchema } from '../schemas/5e-SRD-Proficiencies';
 import { RaceSchema } from '../schemas/5e-SRD-Races';
 import { RuleSectionSchema } from '../schemas/5e-SRD-Rule-Sections';
@@ -76,6 +78,7 @@ describe('2014 schemas', () => {
   it('magic items', () => testAll(MagicItems, MagicItemSchema));
   it('magic schools', () => testAll(MagicSchools, MagicSchoolSchema));
   it('monsters', () => testAll(Monsters, MonsterSchema));
+  it('normalized monsters', () => testAll(NormalizedMonsters, NormalizedMonsterSchema));
   it('proficiencies', () => testAll(Proficiencies, ProficiencySchema));
   it('races', () => testAll(Races, RaceSchema));
   it('rule sections', () => testAll(RuleSections, RuleSectionSchema));
@@ -86,4 +89,12 @@ describe('2014 schemas', () => {
   it('subraces', () => testAll(Subraces, SubraceSchema));
   it('traits', () => testAll(Traits, TraitSchema));
   it('weapon properties', () => testAll(WeaponProperties, WeaponPropertySchema));
+
+  it('rejects a malformed normalized monster', () => {
+    const [monster] = NormalizedMonsters as Record<string, any>[];
+    // A reference left uncollapsed, a stray field and a missing required field must each fail.
+    expect(NormalizedMonsterSchema.safeParse({ ...monster, condition_immunities: [{ index: 'charmed' }] }).success).toBe(false);
+    expect(NormalizedMonsterSchema.safeParse({ ...monster, unexpected: true }).success).toBe(false);
+    expect(NormalizedMonsterSchema.safeParse({ ...monster, hit_points: undefined }).success).toBe(false);
+  });
 });

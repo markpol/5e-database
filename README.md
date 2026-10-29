@@ -16,7 +16,7 @@ src/
     schemas/                         One Zod schema per collection
     tests/                           Schema, duplicate-index, table and translation tests
     5e-SRD-Monsters-Normalized.json  Generated from en/5e-SRD-Monsters.json
-    normalize-monsters.ts            Generator for the file above
+    normalize-monsters.ts            Generator for the file above (`pnpm normalize:monsters`)
     monster-engine-annotations.json  Engine-only monster annotations merged in by the generator
   2024/                              Same layout for the 2024 SRD (no normalized monsters)
   i18n/                              Locale pattern and translation helpers
@@ -59,7 +59,7 @@ means:
 | Magic Items           | `src/2014/en/5e-SRD-Magic-Items.json`          |     362 | Imported by the magic item model and item catalog                                                                 | engine-used     |
 | Magic Schools         | `src/2014/en/5e-SRD-Magic-Schools.json`        |       8 | No app import found; the app derives spell schools from Spells                                                    | reference       |
 | Monsters              | `src/2014/en/5e-SRD-Monsters.json`             |     331 | English monster data read by the functions catalog; the app itself uses the normalized file                       | engine-used     |
-| Monsters (normalized) | `src/2014/5e-SRD-Monsters-Normalized.json`     |     331 | Generated from the English monsters by `normalize-monsters.ts`; the monster model and functions catalog import it | engine-used     |
+| Monsters (normalized) | `src/2014/5e-SRD-Monsters-Normalized.json`     |     331 | Generated from the English monsters and `monster-engine-annotations.json` by `pnpm normalize:monsters`, validated by `schemas/5e-SRD-Monsters-Normalized.ts`; the game reads this file | engine-used     |
 | Proficiencies         | `src/2014/en/5e-SRD-Proficiencies.json`        |     114 | Imported by the proficiency model                                                                                 | engine-used     |
 | Races                 | `src/2014/en/5e-SRD-Races.json`                |       9 | Imported by the race model and provisional character                                                              | engine-used     |
 | Rule Sections         | `src/2014/en/5e-SRD-Rule-Sections.json`        |      33 | Planned in-game manual and help guide. Extensible: more entries and fields will be added                          | planned feature |
