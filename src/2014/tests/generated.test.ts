@@ -45,6 +45,8 @@ describe('generated schema/ and types/', () => {
     expect(paths).toContain('types/5e-SRD-Monsters-Normalized.d.ts');
     expect(paths).toContain('ids/conditions.json');
     expect(paths).toContain('ids/monsters.json');
+    expect(paths).toContain('ids/published.json');
+    expect(paths).toContain('ids/removed.json');
     expect(fs.existsSync(path.join(root, 'schema'))).toBe(true);
   });
 });

@@ -1,0 +1,316 @@
+{
+  "removed": [
+    {
+      "collection": "equipment-categories",
+      "index": "mounts-and-vehicles",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat category, removed with its members; the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment-categories",
+      "index": "gaming-sets",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat category, removed with its members; the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment-categories",
+      "index": "mounts-and-other-animals",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat category, removed with its members; the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment-categories",
+      "index": "tack-harness-and-drawn-vehicles",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat category, removed with its members; the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment-categories",
+      "index": "land-vehicles",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat category, removed with its members; the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment-categories",
+      "index": "waterborne-vehicles",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat category, removed with its members; the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "camel",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "donkey",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "mule",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "elephant",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "horse-draft",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "horse-riding",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "mastiff",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "pony",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "warhorse",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "barding-padded",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "barding-leather",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "barding-studded-leather",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "barding-hide",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "barding-chain-shirt",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "barding-scale-mail",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "barding-breastplate",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "barding-half-plate",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "barding-ring-mail",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "barding-chain-mail",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "barding-splint",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "barding-plate",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "bit-and-bridle",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "carriage",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "cart",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "chariot",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "animal-feed-1-day",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "saddle-exotic",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "saddle-military",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "saddle-pack",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "saddle-riding",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "saddlebags",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "sled",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "stabling-1-day",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "wagon",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "galley",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "keelboat",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "longship",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "rowboat",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "sailing-ship",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "equipment",
+      "index": "warship",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat item (mount, barding, tack, vehicle, stabling or feed); the game has no travel, mount or shopping systems."
+    },
+    {
+      "collection": "monsters",
+      "index": "frog",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat creature (challenge 0 beast or plant) not used by the game."
+    },
+    {
+      "collection": "monsters",
+      "index": "sea-horse",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat creature (challenge 0 beast or plant) not used by the game."
+    },
+    {
+      "collection": "monsters",
+      "index": "shrieker",
+      "removedIn": "0c4e837",
+      "reason": "Non-combat creature (challenge 0 beast or plant) not used by the game."
+    },
+    {
+      "collection": "proficiencies",
+      "index": "nets",
+      "removedIn": "0c4e837",
+      "reason": "Proficiency tied to removed non-combat equipment."
+    },
+    {
+      "collection": "proficiencies",
+      "index": "land-vehicles",
+      "removedIn": "0c4e837",
+      "reason": "Proficiency tied to removed non-combat equipment."
+    },
+    {
+      "collection": "proficiencies",
+      "index": "water-vehicles",
+      "removedIn": "0c4e837",
+      "reason": "Proficiency tied to removed non-combat equipment."
+    }
+  ]
+}

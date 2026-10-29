@@ -64,6 +64,28 @@ with the indices sorted. They are produced by `pnpm run generate` together with 
 the same `generate:check` job; they ship in the npm package, so a consumer can
 `import conditions from '5e-database/ids/conditions.json' with { type: 'json' }` and compare `conditions.indices`.
 
+## Id stability contract
+
+A published id (a collection's `index`) is never renamed or removed by default: saves and backend documents store ids
+directly, and a missing one can only be hidden. If a change is unavoidable, record it instead of letting the id vanish
+(decision D7): keep the old id as an alias where one fits, let the app's save-upgrade step migrate it, and add a
+tombstone to `ids/removed.json`.
+
+- `ids/published.json` is `{ "collections": { "<collection>": ["<index>", ...] } }`: every id ever published, sorted.
+  It started as upstream `5e-bits/5e-database` release **v5.12.0**, the last release this fork took, and only grows;
+  `pnpm run generate` adds new ids and never drops one, and `generate:check` fails if it is behind the data.
+- `ids/removed.json` is `{ "removed": [ ... ] }`, hand-written (the generator leaves it alone). Each tombstone is
+  `{ "collection", "index", "removedIn", "reason", "replacement"? }`: `removedIn` is the release or commit that removed
+  the id, `reason` says why, and the optional `replacement` is an id in the same collection that stands in for it.
+- `src/2014/tests/id-stability.test.ts` fails if a published id is neither in the data nor tombstoned, if a tombstone
+  names an id that was never published or exists again (delete it when you restore an id), or if its `replacement`
+  does not exist.
+
+To remove an id on purpose, delete it from the data, add its tombstone to `ids/removed.json`, run
+`pnpm run generate` and `pnpm test`. The 52 ids removed before the contract existed (40 equipment, 6 equipment
+categories, 3 monsters, 3 proficiencies, all in commit `0c4e837`) are tombstoned; the 80 magic items removed and later
+restored are still in the data and need none.
+
 ## Generated schema and types
 
 `schema/*.schema.json` (JSON Schema) and `types/*.d.ts` (from `z.infer`) are generated from the Zod schemas, which stay
