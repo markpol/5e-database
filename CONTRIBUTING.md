@@ -23,6 +23,7 @@ changes with a `BREAKING CHANGE:` footer. These messages are what a release summ
 | `src/{year}/tests/`                         | Tests that run the schemas and checks over the data |
 | `src/{year}/{locale}/`                      | Translation overlays                                |
 | `src/2014/5e-SRD-Monsters-Normalized.json`  | Generated; do not edit by hand                      |
+| `src/provenance/source-markers.json`        | Source of each data file and its non-SRD fields     |
 
 `{year}` is `2014` or `2024`.
 
@@ -37,6 +38,9 @@ changes with a `BREAKING CHANGE:` footer. These messages are what a release summ
 - **Reference checks** (`tables.test.ts`). Every `url` reference to another entry must resolve to an existing
   entry, and the reference's `name` and `index` must match that entry.
 - **Translation checks** (`translations.test.ts`). See [Translations](#translations).
+- **Source markers** (`src/provenance/source-markers.test.ts`). Every field and entry in a data file must either be
+  in the upstream SRD data (`src/provenance/srd-baseline.json`) or be marked in `src/provenance/source-markers.json`.
+  See [NOTICE.md](NOTICE.md).
 - **Monster extras** (2014 only). `normalized-monsters.test.ts` regenerates the normalized file from the English
   monsters and requires it to match the committed file exactly; `monster-weapons.test.ts` checks the weapon
   annotations against the equipment data.
@@ -64,8 +68,11 @@ Because the schemas are strict, a new field is added in the schema and the data 
    does not work because of its JSON imports), so a script is planned. `normalized-monsters.test.ts` fails if the
    committed file is stale and shows the expected differences. Engine-only monster data goes in
    `src/2014/monster-engine-annotations.json`, not in the English file.
-5. Run `pnpm test` and `pnpm lint`.
-6. Describe the field in the PR. If it changes the shape that the game reads, use a `feat` type and add a
+5. Mark the field in `src/provenance/source-markers.json` under its file's `fields`, with `"source": "dd"` and a
+   `note` saying what it holds. A new entry (for example a condition the SRD does not have) goes under `records`,
+   keyed by its `index`. A new data file needs its own entry. Update the table in [NOTICE.md](NOTICE.md) to match.
+6. Run `pnpm test` and `pnpm lint`.
+7. Describe the field in the PR. If it changes the shape that the game reads, use a `feat` type and add a
    `BREAKING CHANGE:` footer when existing consumers would break.
 
 The changes this fork has already made relative to upstream are recorded in

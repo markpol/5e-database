@@ -1,0 +1,375 @@
+{
+  "files": {
+    "src/2014/5e-SRD-Monsters-Normalized.json": {
+      "source": "srd",
+      "derived_from": "src/2014/en/5e-SRD-Monsters.json",
+      "fields": {
+        "actions[].attacks[].condition": {
+          "source": "dd",
+          "note": "Merged in from monster-engine-annotations.json."
+        },
+        "legendary_actions[].condition": {
+          "source": "dd",
+          "note": "Merged in from monster-engine-annotations.json."
+        },
+        "reactions[].condition": {
+          "source": "dd",
+          "note": "Merged in from monster-engine-annotations.json."
+        },
+        "special_abilities[].condition": {
+          "source": "dd",
+          "note": "Merged in from monster-engine-annotations.json."
+        }
+      }
+    },
+    "src/2014/en/5e-SRD-Ability-Scores.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Alignments.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Backgrounds.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Classes.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Conditions.json": {
+      "source": "srd",
+      "records": {
+        "exhaustion-1": {
+          "source": "dd",
+          "note": "One record per exhaustion level, split from the SRD Exhaustion condition."
+        },
+        "exhaustion-2": {
+          "source": "dd",
+          "note": "One record per exhaustion level, split from the SRD Exhaustion condition."
+        },
+        "exhaustion-3": {
+          "source": "dd",
+          "note": "One record per exhaustion level, split from the SRD Exhaustion condition."
+        },
+        "exhaustion-4": {
+          "source": "dd",
+          "note": "One record per exhaustion level, split from the SRD Exhaustion condition."
+        },
+        "exhaustion-5": {
+          "source": "dd",
+          "note": "One record per exhaustion level, split from the SRD Exhaustion condition."
+        },
+        "exhaustion-6": {
+          "source": "dd",
+          "note": "One record per exhaustion level, split from the SRD Exhaustion condition."
+        },
+        "enraged": {
+          "source": "dd",
+          "note": "Barbarian Rage recast as a condition; text adapted from the SRD class feature."
+        },
+        "frenzied": {
+          "source": "dd",
+          "note": "Berserker Frenzy recast as a condition; text adapted from the SRD subclass feature."
+        },
+        "reckless": {
+          "source": "dd",
+          "note": "Reckless Attack recast as a condition; text adapted from the SRD class feature."
+        },
+        "dodging": {
+          "source": "dd",
+          "note": "The Dodge action recast as a condition; text adapted from the SRD combat rules."
+        },
+        "infested": {
+          "source": "dd",
+          "note": "Engine condition for monster damage over time (e.g. parasite attachment)."
+        },
+        "swallowed": {
+          "source": "dd",
+          "note": "Engine condition for being swallowed by a larger creature."
+        },
+        "drained-of-strength": {
+          "source": "dd",
+          "note": "Engine condition for monster Strength drain."
+        },
+        "weakened": {
+          "source": "dd",
+          "note": "Engine debuff condition for monster and magic-item effects."
+        },
+        "slowed": {
+          "source": "dd",
+          "note": "Engine debuff condition for monster and magic-item effects."
+        },
+        "drained-of-life": {
+          "source": "dd",
+          "note": "Engine condition for monster life drain."
+        },
+        "disengaged": {
+          "source": "dd",
+          "note": "The Disengage action recast as a condition; text adapted from the SRD combat rules."
+        },
+        "surprised": {
+          "source": "dd",
+          "note": "The surprise rule recast as a condition; text adapted from the SRD combat rules."
+        }
+      }
+    },
+    "src/2014/en/5e-SRD-Damage-Types.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Equipment-Categories.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Equipment.json": {
+      "source": "srd",
+      "fields": {
+        "ammunition": {
+          "source": "dd",
+          "note": "Links a ranged weapon to the equipment index of its ammunition."
+        },
+        "effect": {
+          "source": "dd",
+          "note": "Damage applied when a consumable (e.g. Acid Vial) is used."
+        },
+        "is_consumable": {
+          "source": "dd",
+          "note": "Marks an item as expended on use."
+        },
+        "material": {
+          "source": "dd",
+          "note": "Item material (e.g. metal) for engine interaction rules."
+        },
+        "stackable": {
+          "source": "dd",
+          "note": "Marks ammunition and consumables as stackable in the inventory."
+        }
+      }
+    },
+    "src/2014/en/5e-SRD-Feats.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Features.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Languages.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Levels.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Magic-Items.json": {
+      "source": "srd",
+      "fields": {
+        "cost": {
+          "source": "dd",
+          "note": "Item price. Not SRD text; origin unverified."
+        },
+        "effect": {
+          "source": "dd",
+          "note": "Structured mechanics (ability, resistance, healing, save and skill modifiers, duration) read from the item prose."
+        },
+        "enchantment": {
+          "source": "dd",
+          "note": "Structured +N armor and weapon bonuses read from the item prose."
+        },
+        "is_consumable": {
+          "source": "dd",
+          "note": "Marks an item as expended on use."
+        },
+        "requires_attunement": {
+          "source": "dd",
+          "note": "Attunement as a boolean, read from the item prose."
+        },
+        "weight": {
+          "source": "dd",
+          "note": "Item weight. Not SRD text; origin unverified."
+        }
+      }
+    },
+    "src/2014/en/5e-SRD-Magic-Schools.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Monsters.json": {
+      "source": "srd",
+      "fields": {
+        "actions[].attack_type": {
+          "source": "dd",
+          "note": "Melee or Ranged, read from the action prose."
+        },
+        "actions[].condition": {
+          "source": "dd",
+          "note": "Condition applied by the action, read from the action prose."
+        },
+        "actions[].damage[].condition": {
+          "source": "dd",
+          "note": "Condition applied with the damage, read from the action prose."
+        },
+        "actions[].damage[].grapple": {
+          "source": "dd",
+          "note": "Grapple escape DC and extra condition, read from the action prose."
+        },
+        "actions[].options.from.options[].condition": {
+          "source": "dd",
+          "note": "Condition applied by an action option, read from the action prose."
+        },
+        "actions[].preference": {
+          "source": "dd",
+          "note": "Engine AI preference for when to use the action."
+        },
+        "actions[].situation": {
+          "source": "dd",
+          "note": "Engine AI precondition on the target for using the action."
+        },
+        "actions[].supply": {
+          "source": "dd",
+          "note": "Ammunition or thrown item and an engine-chosen count (not a book value)."
+        },
+        "actions[].weapon": {
+          "source": "dd",
+          "note": "Equipment index of the weapon the action uses."
+        },
+        "actions[].weapon_kind": {
+          "source": "dd",
+          "note": "natural, manufactured or spell."
+        },
+        "bonus_actions": {
+          "source": "dd",
+          "note": "Bonus actions the monster can take, read from its prose."
+        },
+        "environments": {
+          "source": "dd",
+          "note": "Habitats. Not SRD 5.1 text; origin unverified."
+        },
+        "senses.blindsight_blind_beyond": {
+          "source": "dd",
+          "note": "Blindsight \"blind beyond this radius\" as a boolean, read from the senses prose."
+        },
+        "senses.blindsight_deafened": {
+          "source": "dd",
+          "note": "Grimlock blindsight range while deafened, read from the senses prose."
+        },
+        "special_abilities[].bonus_action": {
+          "source": "dd",
+          "note": "Bonus action granted by the ability, read from its prose."
+        },
+        "special_abilities[].damage[].condition": {
+          "source": "dd",
+          "note": "Condition applied by the ability, read from its prose."
+        },
+        "special_abilities[].damage[].dc": {
+          "source": "dd",
+          "note": "Saving throw for the ability, read from its prose."
+        },
+        "special_abilities[].relentless_max_damage": {
+          "source": "dd",
+          "note": "Relentless damage threshold, read from the ability prose."
+        }
+      }
+    },
+    "src/2014/en/5e-SRD-Proficiencies.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Races.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Rule-Sections.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Rules.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Skills.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Spells.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Subclasses.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Subraces.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Traits.json": {
+      "source": "srd"
+    },
+    "src/2014/en/5e-SRD-Weapon-Properties.json": {
+      "source": "srd"
+    },
+    "src/2014/monster-engine-annotations.json": {
+      "source": "dd"
+    },
+    "src/2024/en/5e-SRD-Ability-Scores.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Alignments.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Backgrounds.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Classes.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Conditions.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Damage-Types.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Equipment-Categories.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Equipment.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Feats.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Features.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Languages.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Levels.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Magic-Items.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Magic-Schools.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Monsters.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Poisons.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Proficiencies.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Skills.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Species.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Spells.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Subclasses.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Subspecies.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Traits.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Weapon-Mastery-Properties.json": {
+      "source": "srd-5.2"
+    },
+    "src/2024/en/5e-SRD-Weapon-Properties.json": {
+      "source": "srd-5.2"
+    }
+  }
+}
