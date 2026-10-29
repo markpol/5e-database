@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "index": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "race": {
+      "type": "object",
+      "properties": {
+        "index": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "index",
+        "name",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "desc": {
+      "type": "string"
+    },
+    "ability_bonuses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ability_score": {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "index",
+              "name",
+              "url"
+            ],
+            "additionalProperties": false
+          },
+          "bonus": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "ability_score",
+          "bonus"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "racial_traits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "index",
+          "name",
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "index",
+    "name",
+    "race",
+    "desc",
+    "ability_bonuses",
+    "url"
+  ],
+  "additionalProperties": false
+}

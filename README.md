@@ -26,6 +26,8 @@ src/
 docs/
   game-engine-changes.md             What this fork changes relative to upstream, and why
   upstream-changelog.md              Upstream's release history, kept for reference and no longer generated
+schema/                              Generated JSON Schema, one per collection (see CONTRIBUTING.md)
+types/                               Generated .d.ts types, one per collection (see CONTRIBUTING.md)
 ```
 
 ## Collections
@@ -111,7 +113,8 @@ pnpm test       # schema, uniqueness, table and translation checks
 pnpm lint       # ESLint, including JSON and Prettier rules
 ```
 
-CI (`.github/workflows/ci.yml`) runs `pnpm lint`, `pnpm test` and `tsc --noEmit` on Node 22 and 24 on every pull request and on pushes to `main`.
+CI (`.github/workflows/ci.yml`) runs `pnpm lint`, `pnpm test`, `tsc --noEmit` and a check that `schema/` and `types/`
+are up to date with the Zod schemas, on Node 22 and 24 on every pull request and on pushes to `main`.
 
 ## Contributing
 

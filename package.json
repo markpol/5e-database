@@ -14,11 +14,15 @@
     "src/2014/ru/*.json",
     "src/2014/5e-SRD-Monsters-Normalized.json",
     "src/provenance/source-markers.json",
+    "schema/*.json",
+    "types/*.d.ts",
     "LICENSE.md",
     "NOTICE.md"
   ],
   "scripts": {
     "normalize:monsters": "node --experimental-strip-types --no-warnings src/2014/normalize-monsters.ts",
+    "generate": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs scripts/generate-schemas.ts",
+    "generate:check": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs scripts/generate-schemas.ts --check",
     "lint": "eslint . --config eslint.config.mjs",
     "test": "vitest run",
     "coverage": "vitest run --coverage"

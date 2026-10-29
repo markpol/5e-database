@@ -1,0 +1,302 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "index": {
+      "type": "string"
+    },
+    "level": {
+      "type": "number"
+    },
+    "ability_score_bonuses": {
+      "type": "number"
+    },
+    "prof_bonus": {
+      "type": "number"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "index",
+          "name",
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "class": {
+      "type": "object",
+      "properties": {
+        "index": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "index",
+        "name",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "class_specific": {
+      "type": "object",
+      "properties": {
+        "action_surges": {
+          "type": "number"
+        },
+        "arcane_recovery_levels": {
+          "type": "number"
+        },
+        "aura_range": {
+          "type": "number"
+        },
+        "bardic_inspiration_die": {
+          "type": "number"
+        },
+        "brutal_critical_dice": {
+          "type": "number"
+        },
+        "channel_divinity_charges": {
+          "type": "number"
+        },
+        "creating_spell_slots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sorcery_point_cost": {
+                "type": "number"
+              },
+              "spell_slot_level": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "sorcery_point_cost",
+              "spell_slot_level"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "destroy_undead_cr": {
+          "type": "number"
+        },
+        "extra_attacks": {
+          "type": "number"
+        },
+        "favored_enemies": {
+          "type": "number"
+        },
+        "favored_terrain": {
+          "type": "number"
+        },
+        "indomitable_uses": {
+          "type": "number"
+        },
+        "invocations_known": {
+          "type": "number"
+        },
+        "ki_points": {
+          "type": "number"
+        },
+        "magical_secrets_max_5": {
+          "type": "number"
+        },
+        "magical_secrets_max_7": {
+          "type": "number"
+        },
+        "magical_secrets_max_9": {
+          "type": "number"
+        },
+        "martial_arts": {
+          "type": "object",
+          "properties": {
+            "dice_count": {
+              "type": "number"
+            },
+            "dice_value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "dice_count",
+            "dice_value"
+          ],
+          "additionalProperties": false
+        },
+        "metamagic_known": {
+          "type": "number"
+        },
+        "mystic_arcanum_level_6": {
+          "type": "number"
+        },
+        "mystic_arcanum_level_7": {
+          "type": "number"
+        },
+        "mystic_arcanum_level_8": {
+          "type": "number"
+        },
+        "mystic_arcanum_level_9": {
+          "type": "number"
+        },
+        "rage_count": {
+          "type": "number"
+        },
+        "rage_damage_bonus": {
+          "type": "number"
+        },
+        "sneak_attack": {
+          "type": "object",
+          "properties": {
+            "dice_count": {
+              "type": "number"
+            },
+            "dice_value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "dice_count",
+            "dice_value"
+          ],
+          "additionalProperties": false
+        },
+        "song_of_rest_die": {
+          "type": "number"
+        },
+        "sorcery_points": {
+          "type": "number"
+        },
+        "unarmored_movement": {
+          "type": "number"
+        },
+        "wild_shape_fly": {
+          "type": "boolean"
+        },
+        "wild_shape_max_cr": {
+          "type": "number"
+        },
+        "wild_shape_swim": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "spellcasting": {
+      "type": "object",
+      "properties": {
+        "cantrips_known": {
+          "type": "number"
+        },
+        "spell_slots_level_1": {
+          "type": "number"
+        },
+        "spell_slots_level_2": {
+          "type": "number"
+        },
+        "spell_slots_level_3": {
+          "type": "number"
+        },
+        "spell_slots_level_4": {
+          "type": "number"
+        },
+        "spell_slots_level_5": {
+          "type": "number"
+        },
+        "spell_slots_level_6": {
+          "type": "number"
+        },
+        "spell_slots_level_7": {
+          "type": "number"
+        },
+        "spell_slots_level_8": {
+          "type": "number"
+        },
+        "spell_slots_level_9": {
+          "type": "number"
+        },
+        "spells_known": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "spell_slots_level_1",
+        "spell_slots_level_2",
+        "spell_slots_level_3",
+        "spell_slots_level_4",
+        "spell_slots_level_5"
+      ],
+      "additionalProperties": false
+    },
+    "subclass": {
+      "type": "object",
+      "properties": {
+        "index": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "index",
+        "name",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "subclass_specific": {
+      "type": "object",
+      "properties": {
+        "additional_magical_secrets_max_lvl": {
+          "type": "number"
+        },
+        "aura_range": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "index",
+    "level",
+    "class",
+    "url"
+  ],
+  "additionalProperties": false
+}

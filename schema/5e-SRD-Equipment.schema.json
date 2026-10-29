@@ -1,0 +1,461 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "index": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "equipment_category": {
+      "type": "object",
+      "properties": {
+        "index": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "index",
+        "name",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "cost": {
+      "type": "object",
+      "properties": {
+        "quantity": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "quantity",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "url": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "material": {
+      "type": "string"
+    },
+    "stackable": {
+      "type": "boolean"
+    },
+    "ammunition": {
+      "type": "string"
+    },
+    "is_consumable": {
+      "type": "boolean"
+    },
+    "effect": {
+      "type": "object",
+      "properties": {
+        "damage": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "damage_type": {
+                "type": "string"
+              },
+              "damage_dice": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "damage_type",
+              "damage_dice"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "weight": {
+      "type": "number"
+    },
+    "gear_category": {
+      "type": "object",
+      "properties": {
+        "index": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "index",
+        "name",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "armor_category": {
+      "type": "string"
+    },
+    "armor_class": {
+      "type": "object",
+      "properties": {
+        "base": {
+          "type": "number"
+        },
+        "dex_bonus": {
+          "type": "boolean"
+        },
+        "max_bonus": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "base",
+        "dex_bonus"
+      ],
+      "additionalProperties": false
+    },
+    "capacity": {
+      "type": "string"
+    },
+    "category_range": {
+      "type": "string"
+    },
+    "contents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "item": {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "index",
+              "name",
+              "url"
+            ],
+            "additionalProperties": false
+          },
+          "quantity": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "item",
+          "quantity"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "damage": {
+      "type": "object",
+      "properties": {
+        "damage_type": {
+          "type": "object",
+          "properties": {
+            "index": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "note": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "index",
+            "name",
+            "url"
+          ],
+          "additionalProperties": false
+        },
+        "damage_dice": {
+          "type": "string"
+        },
+        "dc": {
+          "type": "object",
+          "properties": {
+            "dc_type": {
+              "type": "object",
+              "properties": {
+                "index": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "index",
+                "name",
+                "url"
+              ],
+              "additionalProperties": false
+            },
+            "dc_value": {
+              "type": "number"
+            },
+            "success_type": {
+              "type": "string",
+              "enum": [
+                "none",
+                "half",
+                "other"
+              ]
+            }
+          },
+          "required": [
+            "dc_type",
+            "success_type"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "damage_type",
+        "damage_dice"
+      ],
+      "additionalProperties": false
+    },
+    "image": {
+      "type": "string"
+    },
+    "properties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "index",
+          "name",
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "range": {
+      "type": "object",
+      "properties": {
+        "normal": {
+          "type": "number"
+        },
+        "long": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "normal"
+      ],
+      "additionalProperties": false
+    },
+    "special": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "speed": {
+      "type": "object",
+      "properties": {
+        "quantity": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "quantity",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "stealth_disadvantage": {
+      "type": "boolean"
+    },
+    "str_minimum": {
+      "type": "number"
+    },
+    "throw_range": {
+      "type": "object",
+      "properties": {
+        "normal": {
+          "type": "number"
+        },
+        "long": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "normal",
+        "long"
+      ],
+      "additionalProperties": false
+    },
+    "tool_category": {
+      "type": "string"
+    },
+    "two_handed_damage": {
+      "type": "object",
+      "properties": {
+        "damage_type": {
+          "type": "object",
+          "properties": {
+            "index": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "note": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "index",
+            "name",
+            "url"
+          ],
+          "additionalProperties": false
+        },
+        "damage_dice": {
+          "type": "string"
+        },
+        "dc": {
+          "type": "object",
+          "properties": {
+            "dc_type": {
+              "type": "object",
+              "properties": {
+                "index": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "index",
+                "name",
+                "url"
+              ],
+              "additionalProperties": false
+            },
+            "dc_value": {
+              "type": "number"
+            },
+            "success_type": {
+              "type": "string",
+              "enum": [
+                "none",
+                "half",
+                "other"
+              ]
+            }
+          },
+          "required": [
+            "dc_type",
+            "success_type"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "damage_type",
+        "damage_dice"
+      ],
+      "additionalProperties": false
+    },
+    "vehicle_category": {
+      "type": "string"
+    },
+    "weapon_category": {
+      "type": "string"
+    },
+    "weapon_range": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "index",
+    "name",
+    "equipment_category",
+    "cost",
+    "url"
+  ],
+  "additionalProperties": false
+}
