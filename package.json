@@ -17,6 +17,7 @@
     "schema/*.json",
     "types/*.d.ts",
     "ids/*.json",
+    "src/i18n/localize.ts",
     "LICENSE.md",
     "NOTICE.md"
   ],
@@ -24,6 +25,7 @@
     "normalize:monsters": "node --experimental-strip-types --no-warnings src/2014/normalize-monsters.ts",
     "generate": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs scripts/generate-schemas.ts",
     "generate:check": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs scripts/generate-schemas.ts --check",
+    "i18n:coverage": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs scripts/i18n-coverage.ts",
     "lint": "eslint . --config eslint.config.mjs",
     "test": "vitest run",
     "coverage": "vitest run --coverage"
