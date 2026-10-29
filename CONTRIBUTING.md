@@ -25,7 +25,8 @@ changes with a `BREAKING CHANGE:` footer. These messages are what a release summ
 | `src/2014/5e-SRD-Monsters-Normalized.json`  | Generated; do not edit by hand                      |
 | `src/provenance/source-markers.json`        | Source of each data file and its non-SRD fields     |
 
-`{year}` is `2014` or `2024`.
+`{year}` is `2014` or `2024`. `src/2024` is dormant and frozen: changes to it are not accepted except bug fixes to the
+data itself.
 
 ## How the schema gates work
 
