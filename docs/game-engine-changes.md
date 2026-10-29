@@ -99,6 +99,11 @@ normalized copy carries the same annotations.
 unit-parsing in game code that does arithmetic on these values (e.g. movement
 budgets, vision range checks).
 
+The Grimlock's conditional range is stored as `blindsight: 30` (base range),
+`blindsight_deafened: 10` (range while deafened) and `blindsight_blind_beyond: true`.
+Multiattack `actions[].count` stays a number except for `hydra` ("Number of Heads")
+and `violet-fungus` ("1d4"), which are not fixed counts.
+
 ### Monster normalization (`5e-SRD-Monsters-Normalized.json`, `normalize-monsters.ts`, `verify-normalize.sh`)
 
 `normalize-monsters.ts` is a standalone script (not part of the package's
