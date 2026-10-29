@@ -24,7 +24,7 @@ changes with a `BREAKING CHANGE:` footer. These messages are what a release summ
 | `src/{year}/{locale}/`                      | Translation overlays                                |
 | `src/2014/5e-SRD-Monsters-Normalized.json`  | Generated; do not edit by hand                      |
 | `src/provenance/source-markers.json`        | Source of each data file and its non-SRD fields     |
-| `schema/`, `types/`                         | Generated JSON Schema and `.d.ts`; do not edit      |
+| `schema/`, `types/`, `ids/`                 | Generated JSON Schema, `.d.ts` and id lists; do not edit |
 
 `{year}` is `2014` or `2024`. `src/2024` is dormant and frozen: changes to it are not accepted except bug fixes to the
 data itself.
@@ -37,8 +37,10 @@ data itself.
   collection's Zod schema. The schemas are `z.strictObject`, so an unknown field fails the test just as a wrong type
   or a missing required field does.
 - **Unique indices** (`tables.test.ts`). Every `index` must be unique within its file.
-- **Reference checks** (`tables.test.ts`). Every `url` reference to another entry must resolve to an existing
-  entry, and the reference's `name` and `index` must match that entry.
+- **Reference checks** (`tables.test.ts`). Every `url` reference must resolve by (collection, index) to an existing
+  entry, and the reference's `url`, `name` and `index` must match that entry. Every monster `weapon` and
+  `supply.item` must be an equipment index (three ammunition supplies without equipment entries are allowed), and every
+  condition id in a monster's `situation` and `bonus_action` must exist in conditions.
 - **Translation checks** (`translations.test.ts`). See [Translations](#translations).
 - **Source markers** (`src/provenance/source-markers.test.ts`). Every field and entry in a data file must either be
   in the upstream SRD data (`src/provenance/srd-baseline.json`) or be marked in `src/provenance/source-markers.json`.
@@ -53,6 +55,14 @@ data itself.
 
 Edit the entry in `src/{year}/en/5e-SRD-{Collection}.json` and run `pnpm test`. If you change a 2014 monster, also
 regenerate the normalized file with `pnpm normalize:monsters` (below).
+
+## Generated id lists
+
+`ids/<collection>.json` lists the ids (`index` values) of each 2014 English collection, so the game's parity tests can
+check their own registries against the data. Each file is `{ "collection": "conditions", "indices": ["blinded", ...] }`
+with the indices sorted. They are produced by `pnpm run generate` together with `schema/` and `types/` and checked by
+the same `generate:check` job; they ship in the npm package, so a consumer can
+`import conditions from '5e-database/ids/conditions.json' with { type: 'json' }` and compare `conditions.indices`.
 
 ## Generated schema and types
 

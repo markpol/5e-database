@@ -16,6 +16,7 @@
     "src/provenance/source-markers.json",
     "schema/*.json",
     "types/*.d.ts",
+    "ids/*.json",
     "LICENSE.md",
     "NOTICE.md"
   ],

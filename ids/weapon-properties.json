@@ -1,0 +1,16 @@
+{
+  "collection": "weapon-properties",
+  "indices": [
+    "ammunition",
+    "finesse",
+    "heavy",
+    "light",
+    "loading",
+    "monk",
+    "reach",
+    "special",
+    "thrown",
+    "two-handed",
+    "versatile"
+  ]
+}

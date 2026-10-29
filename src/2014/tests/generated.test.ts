@@ -33,7 +33,7 @@ describe('generated schema/ and types/', () => {
     expect(diff(withoutFirst)).toEqual([`orphaned: ${name}`]);
   });
 
-  it('ships schema/ and types/ in the npm package', () => {
+  it('ships schema/, types/ and ids/ in the npm package', () => {
     const out = execFileSync('npm', ['pack', '--dry-run', '--json', '--ignore-scripts'], {
       cwd: root,
       encoding: 'utf8',
@@ -43,6 +43,8 @@ describe('generated schema/ and types/', () => {
     expect(paths).toContain('schema/5e-SRD-Monsters-Normalized.schema.json');
     expect(paths).toContain('types/5e-SRD-Alignments.d.ts');
     expect(paths).toContain('types/5e-SRD-Monsters-Normalized.d.ts');
+    expect(paths).toContain('ids/conditions.json');
+    expect(paths).toContain('ids/monsters.json');
     expect(fs.existsSync(path.join(root, 'schema'))).toBe(true);
   });
 });
