@@ -55,7 +55,8 @@ describe('package exports map', () => {
       );
       for (const p of paths.filter((p) => p !== 'package.json')) {
         const shipped = pkg.files.some((pattern) => {
-          const re = new RegExp(`^${pattern.replace(/[.]/g, '\\.').replace(/\*/g, '[^/]*')}$`);
+          const escaped = pattern.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\\\*/g, '[^/]*');
+          const re = new RegExp(`^${escaped}$`);
           return re.test(p.replace(/\*/g, 'x'));
         });
         expect(shipped, `${p} is not covered by "files"`).toBe(true);
