@@ -1,6 +1,6 @@
 ---
-name: Engine issue
-about: Bug or improvement in the game engine
+name: Tooling issue
+about: Bug or improvement in the tooling or schemas
 labels: ''
 ---
 

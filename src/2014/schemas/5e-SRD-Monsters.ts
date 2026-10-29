@@ -103,7 +103,7 @@ const MonsterAttackSchema = z.strictObject({
 });
 
 const MonsterActionSchema = z.strictObject({
-  // Engine annotations: these fields are not SRD text. Supply counts are engine defaults and are not in the book.
+  // Added fields: these are not SRD text. Supply counts are chosen defaults and are not in the book.
   name: translatable(z.string()),
   desc: translatable(z.string()),
   attack_type: z.enum(['Melee', 'Ranged']).optional(),

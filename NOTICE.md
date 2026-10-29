@@ -4,7 +4,7 @@ The code and data layout in this repository are under the MIT licence in [LICENS
 in the data files comes from the Dungeons & Dragons System Reference Documents, which Wizards of the Coast publishes
 under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/legalcode)
 (CC-BY-4.0). This file carries the attribution that licence requires and says which data is SRD material and which
-was written for the Draconian Dungeons game engine.
+was written for the Draconian Dungeons game.
 
 This notice has not had a legal review.
 
@@ -35,36 +35,36 @@ against SRD 5.2.1, use that statement instead.
 
 The SRD text has been converted to JSON and changed: values have been restructured and reformatted (for example,
 monster speeds and senses are stored as numbers of feet), some entries have been removed, and fields and entries
-written for the game engine have been added. [docs/game-engine-changes.md](docs/game-engine-changes.md) describes
+written for the game have been added. [docs/game-engine-changes.md](docs/game-engine-changes.md) describes
 these changes.
 
 ## Which data comes from the SRD
 
 | Data | Source |
 | --- | --- |
-| `src/2014/en/*.json` | SRD 5.1, plus the engine-authored fields and entries listed below |
+| `src/2014/en/*.json` | SRD 5.1, plus the game-specific fields and entries listed below |
 | `src/2014/5e-SRD-Monsters-Normalized.json` | Generated from `src/2014/en/5e-SRD-Monsters.json` and `src/2014/monster-engine-annotations.json` |
-| `src/2014/monster-engine-annotations.json` | Engine-authored |
+| `src/2014/monster-engine-annotations.json` | Written for the game |
 | `src/2024/en/*.json` | SRD 5.2 |
 | `src/{year}/{locale}/*.json` | Translations of the English SRD text for that year; in the repository, not published in the package, pending a provenance check |
 
-## Engine-authored data
+## Data written for the game
 
 [src/provenance/source-markers.json](src/provenance/source-markers.json) is the full list. It gives every data file a
 `source` of `srd` (SRD 5.1), `srd-5.2` (SRD 5.2) or `dd` (written for Draconian Dungeons), and marks each field and
 entry in an SRD file that is `dd`. A marked field covers everything nested under it. At the time of writing these are
 marked `dd`:
 
-| File | Engine-authored fields and entries |
+| File | Fields and entries written for the game |
 | --- | --- |
-| `src/2014/en/5e-SRD-Monsters.json` | `environments`, `bonus_actions`, `senses.blindsight_blind_beyond`, `senses.blindsight_deafened`; on actions `attack_type`, `weapon`, `weapon_kind`, `supply` (its `count` is an engine-chosen default), `condition`, `damage[].condition`, `damage[].grapple`, `options.from.options[].condition`, `preference`, `situation`; on special abilities `bonus_action`, `damage[].condition`, `damage[].dc`, `relentless_max_damage` |
+| `src/2014/en/5e-SRD-Monsters.json` | `environments`, `bonus_actions`, `senses.blindsight_blind_beyond`, `senses.blindsight_deafened`; on actions `attack_type`, `weapon`, `weapon_kind`, `supply` (its `count` is a chosen default), `condition`, `damage[].condition`, `damage[].grapple`, `options.from.options[].condition`, `preference`, `situation`; on special abilities `bonus_action`, `damage[].condition`, `damage[].dc`, `relentless_max_damage` |
 | `src/2014/en/5e-SRD-Magic-Items.json` | `cost`, `weight`, `effect`, `enchantment`, `is_consumable`, `requires_attunement` |
 | `src/2014/en/5e-SRD-Equipment.json` | `ammunition`, `effect`, `is_consumable`, `material`, `stackable` |
 | `src/2014/en/5e-SRD-Conditions.json` | Entries `exhaustion-1` to `exhaustion-6`, `enraged`, `frenzied`, `reckless`, `dodging`, `infested`, `swallowed`, `drained-of-strength`, `weakened`, `slowed`, `drained-of-life`, `disengaged`, `surprised` |
 | `src/2014/5e-SRD-Monsters-Normalized.json` | The fields above, plus `condition` on `actions[].attacks[]`, `legendary_actions[]`, `reactions[]` and `special_abilities[]` merged in from the annotations file |
 | `src/2014/monster-engine-annotations.json` | The whole file |
 
-Many engine-authored fields restate a rule from the SRD prose next to them in structured form. Monster `environments`
+Many of these fields restate a rule from the SRD prose next to them in structured form. Monster `environments`
 and magic-item `cost` and `weight` are not SRD 5.1 text, and their origin has not been verified.
 
 An SRD field is one that the upstream [5e-bits/5e-database](https://github.com/5e-bits/5e-database) data had at

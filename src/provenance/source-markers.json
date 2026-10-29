@@ -79,27 +79,27 @@
         },
         "infested": {
           "source": "dd",
-          "note": "Engine condition for monster damage over time (e.g. parasite attachment)."
+          "note": "Condition for monster damage over time (e.g. parasite attachment)."
         },
         "swallowed": {
           "source": "dd",
-          "note": "Engine condition for being swallowed by a larger creature."
+          "note": "Condition for being swallowed by a larger creature."
         },
         "drained-of-strength": {
           "source": "dd",
-          "note": "Engine condition for monster Strength drain."
+          "note": "Condition for monster Strength drain."
         },
         "weakened": {
           "source": "dd",
-          "note": "Engine debuff condition for monster and magic-item effects."
+          "note": "Debuff condition for monster and magic-item effects."
         },
         "slowed": {
           "source": "dd",
-          "note": "Engine debuff condition for monster and magic-item effects."
+          "note": "Debuff condition for monster and magic-item effects."
         },
         "drained-of-life": {
           "source": "dd",
-          "note": "Engine condition for monster life drain."
+          "note": "Condition for monster life drain."
         },
         "disengaged": {
           "source": "dd",
@@ -134,11 +134,11 @@
         },
         "material": {
           "source": "dd",
-          "note": "Item material (e.g. metal) for engine interaction rules."
+          "note": "Item material (e.g. metal) for rules that depend on the material."
         },
         "stackable": {
           "source": "dd",
-          "note": "Marks ammunition and consumables as stackable in the inventory."
+          "note": "Marks ammunition and consumables as stackable."
         }
       }
     },
@@ -211,15 +211,15 @@
         },
         "actions[].preference": {
           "source": "dd",
-          "note": "Engine AI preference for when to use the action."
+          "note": "Preference for when to use the action."
         },
         "actions[].situation": {
           "source": "dd",
-          "note": "Engine AI precondition on the target for using the action."
+          "note": "Precondition on the target for using the action."
         },
         "actions[].supply": {
           "source": "dd",
-          "note": "Ammunition or thrown item and an engine-chosen count (not a book value)."
+          "note": "Ammunition or thrown item and a chosen default count (not a book value)."
         },
         "actions[].weapon": {
           "source": "dd",

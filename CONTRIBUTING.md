@@ -59,8 +59,8 @@ regenerate the normalized file with `pnpm normalize:monsters` (below).
 
 ## Generated id lists
 
-`ids/<collection>.json` lists the ids (`index` values) of each 2014 English collection, so the game's parity tests can
-check their own registries against the data. Each file is `{ "collection": "conditions", "indices": ["blinded", ...] }`
+`ids/<collection>.json` lists the ids (`index` values) of each 2014 English collection, so a consumer can check its own
+registries against the data. Each file is `{ "collection": "conditions", "indices": ["blinded", ...] }`
 with the indices sorted. They are produced by `pnpm run generate` together with `schema/` and `types/` and checked by
 the same `generate:check` job; they ship in the npm package, so a consumer can
 `import conditions from '@markpol/dd-srd/ids/conditions.json' with { type: 'json' }` and compare `conditions.indices`.
@@ -90,9 +90,9 @@ type-checks them with `tsc`.
 
 ## Id stability contract
 
-A published id (a collection's `index`) is never renamed or removed by default: saves and backend documents store ids
+A published id (a collection's `index`) is never renamed or removed by default: stored data may refer to ids
 directly, and a missing one can only be hidden. If a change is unavoidable, record it instead of letting the id vanish
-(decision D7): keep the old id as an alias where one fits, let the app's save-upgrade step migrate it, and add a
+(decision D7): keep the old id as an alias where one fits and add a
 tombstone to `ids/removed.json`.
 
 - `ids/published.json` is `{ "collections": { "<collection>": ["<index>", ...] } }`: every id ever published, sorted.
@@ -129,16 +129,16 @@ Because the schemas are strict, a new field is added in the schema and the data 
    `pnpm run generate`. Leave structural fields (ids, urls, numbers, booleans, dice, references) unmarked; they are
    never translated. See [Translations](#translations).
 4. If you changed `src/2014/en/5e-SRD-Monsters.json` or `src/2014/monster-engine-annotations.json`, regenerate the
-   committed `src/2014/5e-SRD-Monsters-Normalized.json` with `pnpm normalize:monsters`. The normalized file is the
-   generated monster source the game reads; never edit it by hand. `normalized-monsters.test.ts` fails if the
+   committed `src/2014/5e-SRD-Monsters-Normalized.json` with `pnpm normalize:monsters`. The normalized file is
+   generated; never edit it by hand. `normalized-monsters.test.ts` fails if the
    committed file is stale and shows the expected differences, and `schemas.test.ts` validates it against
-   `src/2014/schemas/5e-SRD-Monsters-Normalized.ts`, so a shape change goes in that schema too. Engine-only monster
-   data goes in `src/2014/monster-engine-annotations.json`, not in the English file.
+   `src/2014/schemas/5e-SRD-Monsters-Normalized.ts`, so a shape change goes in that schema too. Extra monster
+   annotations go in `src/2014/monster-engine-annotations.json`, not in the English file.
 5. Mark the field in `src/provenance/source-markers.json` under its file's `fields`, with `"source": "dd"` and a
    `note` saying what it holds. A new entry (for example a condition the SRD does not have) goes under `records`,
    keyed by its `index`. A new data file needs its own entry. Update the table in [NOTICE.md](NOTICE.md) to match.
 6. Run `pnpm test` and `pnpm lint`.
-7. Describe the field in the PR. If it changes the shape that the game reads, use a `feat` type and add a
+7. Describe the field in the PR. If it changes the data shape, use a `feat` type and add a
    `BREAKING CHANGE:` footer when existing consumers would break.
 
 The changes this fork has already made relative to upstream are recorded in

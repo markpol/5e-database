@@ -87,4 +87,4 @@ English:
 
 `url`, `level`, `components`, `ritual`, `concentration`, `prof_bonus`, `class_specific` and `ability_score_bonuses`
 copies already matched English, so removing them changed no value. The pt-BR speeds were a unit conversion, not a
-stale copy; displaying converted units is left to the app.
+stale copy; displaying converted units is left to the consumer.

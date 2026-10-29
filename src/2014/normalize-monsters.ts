@@ -135,7 +135,7 @@ type EngineAnnotation = {
   set: Record<string, unknown>;
 };
 
-// Engine annotations that are not part of the SRD text (conditions applied on a failed save, implied DCs).
+// Annotations that are not part of the SRD text (conditions applied on a failed save, implied DCs).
 // They live in monster-engine-annotations.json and are merged onto the normalized output, so the
 // committed file stays exactly what this generator produces.
 function applyEngineAnnotations(monster: { index: string } & Record<string, any>) {
@@ -148,7 +148,7 @@ function applyEngineAnnotations(monster: { index: string } & Record<string, any>
       target = target.damage?.[annotation.damage];
     }
     if (!target) {
-      throw new Error(`Engine annotation target not found: ${JSON.stringify(annotation)}`);
+      throw new Error(`Annotation target not found: ${JSON.stringify(annotation)}`);
     }
     Object.assign(target, structuredClone(annotation.set));
   }
