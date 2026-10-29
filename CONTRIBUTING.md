@@ -10,14 +10,6 @@ Thanks for helping improve the 5e SRD database! This guide covers the two main w
 2. Create a branch for your changes
 3. Open a pull request — incomplete work is welcome, we can help get it ready
 
-We use [Semantic Release](https://semantic-release.gitbook.io/semantic-release/), so please follow conventional commit message conventions for your PR title:
-
-| PR title prefix                       | Effect        |
-| ------------------------------------- | ------------- |
-| `fix(...)`                            | Patch release |
-| `feat(...)`                           | Minor release |
-| `feat(...) + BREAKING CHANGE:` footer | Major release |
-
 ---
 
 ## Correcting English data
@@ -41,6 +33,7 @@ src/{year}/{lang}/5e-SRD-{Collection}.json
 where `{lang}` is a [BCP 47](https://www.rfc-editor.org/rfc/rfc5646) language tag (e.g. `de`, `fr`, `pt-BR`, `es-419`, `zh-Hans`).
 
 **Examples:**
+
 ```
 src/2014/de/5e-SRD-Spells.json
 src/2024/fr/5e-SRD-Equipment.json
@@ -56,9 +49,7 @@ A translation file is a JSON array. Each entry must include `index` (to identify
   {
     "index": "acid-arrow",
     "name": "Säurepfeil",
-    "desc": [
-      "Ein glitzernder grüner Pfeil schießt auf ein Ziel..."
-    ],
+    "desc": ["Ein glitzernder grüner Pfeil schießt auf ein Ziel..."],
     "higher_level": [
       "Wenn du diesen Zauber mit einem Zauberplatz der 3. Stufe oder höher wirkst..."
     ]
