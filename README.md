@@ -1,40 +1,50 @@
 # 5e-database
 
-![Build Status](https://github.com/5e-bits/5e-database/workflows/5e%20Database%20CI/badge.svg?branch=main)
-[![Discord](https://img.shields.io/discord/656547667601653787)](https://discord.gg/TQuYTv7)
+![CI](https://github.com/markpol/5e-database/actions/workflows/ci.yml/badge.svg?branch=main)
 
-Holds the database for the D&D 5th Edition API at http://dnd5eapi.co/
+JSON game data for the D&D 5th Edition SRD, used by the Draconian Dungeons game. This is a fork of
+[5e-bits/5e-database](https://github.com/5e-bits/5e-database). The data is edited as plain JSON files and checked
+by Zod schemas and Vitest tests; there is no database or build step.
 
-Talk to us [on Discord!](https://discord.gg/TQuYTv7)
+## Layout
 
-## API Issues
+```
+src/
+  2014/
+    en/                              English source data, one 5e-SRD-{Collection}.json per collection
+    {locale}/                        Translation overlays (for example fr-FR, pt-BR, ru)
+    schemas/                         One Zod schema per collection
+    tests/                           Schema, duplicate-index, table and translation tests
+    5e-SRD-Monsters-Normalized.json  Generated from en/5e-SRD-Monsters.json
+    normalize-monsters.ts            Generator for the file above
+    monster-engine-annotations.json  Engine-only monster annotations merged in by the generator
+  2024/                              Same layout for the 2024 SRD (no normalized monsters)
+  i18n/                              Locale pattern and translation helpers
+  schemas/common.ts                  Schema pieces shared by both years
+  tests/translationTestUtils.ts      Shared translation test suite
+docs/
+  game-engine-changes.md             What this fork changes relative to upstream, and why
+  upstream-changelog.md              Upstream's release history, kept for reference and no longer generated
+```
 
-If you see anything wrong with the API and not the data, please open an issue or PR over [here](https://github.com/5e-bits/5e-srd-api).
+## Setup
+
+You need Node 22 or 24 (see `.nvmrc`) and [pnpm](https://pnpm.io/).
+
+```sh
+pnpm install
+pnpm test       # schema, uniqueness, table and translation checks
+pnpm lint       # ESLint, including JSON and Prettier rules
+```
+
+CI (`.github/workflows/ci.yml`) runs `pnpm lint` and `pnpm test` on every pull request and on pushes to `main`.
 
 ## Contributing
 
-* Fork this repository
-* Create a new branch for your work
-* Push up any changes to your branch, and open a pull request. Don't feel it needs to be perfect — incomplete work is totally fine. We'd love to help get it ready for merging.
-* We use Semantic Release so here are the PR naming convetions:
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to change data, add a field, add a translation and cut a release.
+Game data problems can be reported with the "Game data issue" issue template.
 
-| Commit message                                                                                                                                                                             | Release type                                                                                             |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
-| fix(pencil): stop graphite breaking when too much pressure applied                                                                                                                         | Patch Fix Release                                                                                        |
-| feat(pencil): add 'graphiteWidth' option                                                                                                                                                   | Minor Feature Release                                                                                    |
-| perf(pencil): remove graphiteWidth option<br><br>BREAKING CHANGE: The graphiteWidth option has been removed.<br>The default graphite width of 10mm is always used for performance reasons. | Major Breaking Release<br><br>(Note that the BREAKING CHANGE: token must be in the footer of the commit) |
+## Licence
 
-## Code of Conduct
-
-The Code of Conduct can be found [here.](https://github.com/5e-bits/5e-database/wiki/Code-of-Conduct)
-
-## License
-
-This project is licensed under the terms of the MIT license. The underlying material
-is released using the [Open Gaming License Version 1.0a](https://www.wizards.com/default.asp?x=d20/oglfaq/20040123f)
-
-## Contributors
-
-<a href="https://github.com/5e-bits/5e-database/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=5e-bits/5e-database" />
-</a>
+This project is licensed under the terms of the MIT licence. See [LICENSE.md](LICENSE.md). Attribution for the
+underlying SRD material is being rewritten separately.

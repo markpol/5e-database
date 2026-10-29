@@ -1,38 +1,88 @@
 # Contributing to 5e-database
 
-Thanks for helping improve the 5e SRD database! This guide covers the two main ways to contribute: **data corrections** and **translations**.
+This repository holds the game data as JSON. Changes are made by editing those files and the schemas that describe
+them. There is nothing to build or deploy.
 
----
+## Workflow
 
-## General workflow
+1. Fork the repository and create a branch.
+2. Make your change, then run `pnpm test` and `pnpm lint`.
+3. Open a pull request against `main`. Incomplete work is fine; say what is left.
 
-1. Fork this repository
-2. Create a branch for your changes
-3. Open a pull request — incomplete work is welcome, we can help get it ready
+Use [Conventional Commits](https://www.conventionalcommits.org/) for commit and PR titles, for example
+`fix(monsters): correct goblin hit points` or `feat(spells): add concentration field`. Mark breaking data or schema
+changes with a `BREAKING CHANGE:` footer. These messages are what a release summary is written from (see
+[Cutting a release](#cutting-a-release)).
 
----
+## Where things live
 
-## Correcting English data
+| Path                                        | Contents                                            |
+| ------------------------------------------- | --------------------------------------------------- |
+| `src/{year}/en/5e-SRD-{Collection}.json`    | English source data for a collection                |
+| `src/{year}/schemas/5e-SRD-{Collection}.ts` | Zod schema for that collection                      |
+| `src/{year}/tests/`                         | Tests that run the schemas and checks over the data |
+| `src/{year}/{locale}/`                      | Translation overlays                                |
+| `src/2014/5e-SRD-Monsters-Normalized.json`  | Generated; do not edit by hand                      |
 
-English source files live in `src/{year}/en/`. Edit the appropriate `5e-SRD-{Collection}.json` file and open a PR. CI will validate your changes automatically.
+`{year}` is `2014` or `2024`.
 
----
+## How the schema gates work
 
-## Contributing translations
+`pnpm test` (run by CI on every PR) is the gate. A change cannot merge if any of these fail:
 
-Translations are entirely community-driven. Adding a translation requires no database access or special tooling — only a text editor and a fork.
+- **Schema validation** (`src/{year}/tests/schemas.test.ts`). Every entry in every English file is parsed with its
+  collection's Zod schema. The schemas are `z.strictObject`, so an unknown field fails the test just as a wrong type
+  or a missing required field does.
+- **Unique indices** (`tables.test.ts`). Every `index` must be unique within its file.
+- **Reference checks** (`tables.test.ts`). Every `url` reference to another entry must resolve to an existing
+  entry, and the reference's `name` and `index` must match that entry.
+- **Translation checks** (`translations.test.ts`). See [Translations](#translations).
+- **Monster extras** (2014 only). `normalized-monsters.test.ts` regenerates the normalized file from the English
+  monsters and requires it to match the committed file exactly; `monster-weapons.test.ts` checks the weapon
+  annotations against the equipment data.
+
+`pnpm lint` runs ESLint over the repo (JSON files included) and must also pass.
+
+## Changing English data
+
+Edit the entry in `src/{year}/en/5e-SRD-{Collection}.json` and run `pnpm test`. If you change a 2014 monster, also
+regenerate the normalized file (below).
+
+## Adding a field
+
+Because the schemas are strict, a new field is added in the schema and the data together.
+
+1. Add the field to the collection's schema in `src/{year}/schemas/5e-SRD-{Collection}.ts`. Make it `.optional()` if
+   not every entry will have it. Reuse the pieces in `src/schemas/common.ts` where one fits.
+2. Add the field to the entries in `src/{year}/en/5e-SRD-{Collection}.json`.
+3. If the field holds text that translators should be able to overlay, nothing more is needed: translations may use
+   any field that exists in the English entry. If it is structural (an id, a number, a reference), it is never
+   translated.
+4. If you changed `src/2014/en/5e-SRD-Monsters.json`, the committed
+   `src/2014/5e-SRD-Monsters-Normalized.json` must be regenerated with `normalizeMonsters` and `serializeMonsters` from
+   `src/2014/normalize-monsters.ts`. There is no `pnpm` script for this yet (running the file directly with `node`
+   does not work because of its JSON imports), so a script is planned. `normalized-monsters.test.ts` fails if the
+   committed file is stale and shows the expected differences. Engine-only monster data goes in
+   `src/2014/monster-engine-annotations.json`, not in the English file.
+5. Run `pnpm test` and `pnpm lint`.
+6. Describe the field in the PR. If it changes the shape that the game reads, use a `feat` type and add a
+   `BREAKING CHANGE:` footer when existing consumers would break.
+
+The changes this fork has already made relative to upstream are recorded in
+[docs/game-engine-changes.md](docs/game-engine-changes.md).
+
+## Translations
+
+Translations are overlays on the English data. They need only a text editor and a fork.
 
 ### File location
-
-Create a file at:
 
 ```
 src/{year}/{lang}/5e-SRD-{Collection}.json
 ```
 
-where `{lang}` is a [BCP 47](https://www.rfc-editor.org/rfc/rfc5646) language tag (e.g. `de`, `fr`, `pt-BR`, `es-419`, `zh-Hans`).
-
-**Examples:**
+`{lang}` is a [BCP 47](https://www.rfc-editor.org/rfc/rfc5646) language tag, for example `de`, `fr`, `pt-BR`,
+`es-419` or `zh-Hans`. The file name must match an English file.
 
 ```
 src/2014/de/5e-SRD-Spells.json
@@ -42,7 +92,8 @@ src/2024/pt-BR/5e-SRD-Conditions.json
 
 ### File format
 
-A translation file is a JSON array. Each entry must include `index` (to identify the source record) plus **only the fields you are translating**. You do not need to include every entry or every field — partial translations are fully supported.
+A translation file is a JSON array. Each entry has an `index` that identifies the English record, plus only the fields
+you are translating.
 
 ```json
 [
@@ -57,41 +108,41 @@ A translation file is a JSON array. Each entry must include `index` (to identify
 ]
 ```
 
-### Translatable fields
+### Partial overlays
 
-Only text fields may be translated. Structural fields (`url`, numeric values, and API references) must be omitted. `index` is required for matching but must not be translated — its value must be identical to the English source. The exact set of translatable fields depends on the collection — any text field present in the English entry for that `index` is allowed.
+You do not have to translate every entry or every field. Anything missing from the overlay falls back to the English
+value, field by field. A file with a handful of entries is a useful contribution.
 
-The table below shows common examples from the Spells collection:
+### Text-only fields
 
-| Field                 | Translatable                                                |
-| --------------------- | ----------------------------------------------------------- |
-| `name`                | Yes                                                         |
-| `desc`                | Yes                                                         |
-| `higher_level`        | Yes                                                         |
-| `index`               | No — include it for matching, but don't translate its value |
-| `url`                 | No                                                          |
-| Numeric values        | No                                                          |
-| API reference objects | No                                                          |
+Translate text only. Leave out `url`, numbers and reference objects. `index` is required so the entry can be matched,
+but its value must be identical to the English `index`. Which text fields exist depends on the collection (for example
+`name`, `desc`, `higher_level`, and `summary` on subclasses); any text field present in the English entry for that
+`index` may be translated.
 
-Other collections expose different text fields (e.g. `summary` on subclasses, `description` on some entries). Include any text field that appears in the English source — CI will reject fields that don't exist there.
+### What the tests check
 
-### Validation rules
+`translations.test.ts` fails if a translation file:
 
-The test suite (`pnpm test`, also run by CI on every PR) will fail if your translation file:
+- has no matching English file,
+- contains an `index` that is not in the English file,
+- contains a field that is not in the English entry for that `index`,
+- contains duplicate `index` values, or
+- produces an invalid document when merged over the English entry (checked with the collection's Zod schema).
 
-- Contains an `index` that does not exist in the corresponding English file
-- Contains a field that does not exist in the English entry for that `index`
-- Contains duplicate `index` values
-- Produces an invalid document when translation fields are merged with the English entry (Zod schema validation)
+Run `pnpm test` before opening a PR.
 
-Run `pnpm test` locally before opening a PR to catch these issues early.
+## Cutting a release
 
-### Partial translations are fine
+There is no release automation in this repository yet. Semantic Release has been removed, and `CHANGELOG.md` is no
+longer generated; upstream's history is kept in [docs/upstream-changelog.md](docs/upstream-changelog.md) and is not
+updated. A release workflow and any generated release files are planned. Until then, a release is made by hand:
 
-You do not need to translate every entry or every field. The API will fall back to English on a per-field basis for anything not covered by a translation. A file covering even a handful of entries is a useful contribution.
+1. Confirm `main` is green in CI.
+2. Update `version` in `package.json` following semver: a patch for data fixes, a minor for new fields or collections
+   that do not break consumers, and a major for removed or changed fields.
+3. Commit the version change on a branch, open a PR and merge it.
+4. Tag the merge commit (`git tag vX.Y.Z`) and push the tag.
+5. Create a GitHub release for the tag, with notes written from the Conventional Commit messages since the last tag.
 
----
-
-## Code of Conduct
-
-See the [Code of Conduct](https://github.com/5e-bits/5e-database/wiki/Code-of-Conduct).
+The game consumes this repository as a git dependency, so it picks up a release by updating its pinned ref.
