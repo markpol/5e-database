@@ -106,10 +106,9 @@ and `violet-fungus` ("1d4"), which are not fixed counts.
 
 ### Monster normalization (`5e-SRD-Monsters-Normalized.json`, `normalize-monsters.ts`, `monster-engine-annotations.json`, `verify-normalize.sh`)
 
-`normalize-monsters.ts` is a standalone script (not part of the package's
-`build:ts`/`lint`/`test` scripts, and not invoked by Draconian Dungeons —
-confirmed absent from that project's own scripts/CI) that reads
-`5e-SRD-Monsters.json` and writes a flattened copy where nested reference
+`normalize-monsters.ts` is a standalone script, run via `pnpm normalize:monsters`
+(not invoked by Draconian Dungeons — confirmed absent from that project's own
+scripts/CI) that reads `5e-SRD-Monsters.json` and writes a flattened copy where nested reference
 objects are collapsed to their `index` string, for example:
 
 ```jsonc
