@@ -36,7 +36,9 @@ means:
 - **engine-used**: the Draconian Dungeons app imports the file.
 - **planned feature**: no importer yet; kept for a planned feature and open to extension.
 - **reference**: kept as SRD reference data; no import was found in the app, so its use is unconfirmed.
-- **dormant**: the 2024 data, not imported by the app.
+- **dormant**: the 2024 data, not imported by the app. The 2024 (SRD 5.2) set is frozen: it is kept as the in-repo
+  source of more backgrounds and feats, is not reshaped, and is excluded from the published package. Its schema tests
+  stay.
 
 ### 2014 SRD (`src/2014`)
 
