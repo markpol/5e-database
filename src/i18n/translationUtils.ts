@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { LOCALE_PATTERN, YEAR_DIR_PATTERN } from './dbUtils';
+import { LOCALE_PATTERN, YEAR_DIR_PATTERN } from './constants';
 
 export const TranslationDocumentSchema = z.object({
   source_index: z.string(),

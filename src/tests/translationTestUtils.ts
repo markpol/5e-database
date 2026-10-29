@@ -3,7 +3,7 @@ import path from 'path';
 import { describe, it, expect } from 'vitest';
 import { globSync } from 'glob';
 import { z } from 'zod';
-import { LOCALE_PATTERN, TRANSLATION_SKIP_DIRS, getIndexName } from '../../scripts/dbUtils';
+import { LOCALE_PATTERN, TRANSLATION_SKIP_DIRS, getIndexName } from '../i18n/constants';
 
 type Entry = Record<string, unknown>;
 
