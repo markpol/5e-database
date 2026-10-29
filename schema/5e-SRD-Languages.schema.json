@@ -6,22 +6,27 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "type": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "typical_speakers": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "translatable": true
     },
     "desc": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "script": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "url": {
       "type": "string"

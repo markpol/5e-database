@@ -37,7 +37,9 @@
   {
     "index": "lightning",
     "name": "Foudre",
-    "desc": ["Le sort éclair et le souffle d’un dragon bleu infligent des dégâts de foudre."]
+    "desc": [
+      "Le sort éclair et le souffle d’un dragon bleu infligent des dégâts de foudre."
+    ]
   },
   {
     "index": "necrotic",
@@ -77,7 +79,9 @@
   {
     "index": "slashing",
     "name": "Tranchant",
-    "desc": ["Les épées, les haches et les griffes des monstres infligent des dégâts tranchants."]
+    "desc": [
+      "Les épées, les haches et les griffes des monstres infligent des dégâts tranchants."
+    ]
   },
   {
     "index": "thunder",

@@ -4,6 +4,7 @@ import {
   ChoiceSchema,
   DamageSchema,
   DifficultyClassSchema,
+  translatable,
 } from '../../schemas/common';
 
 const MonsterSpeedSchema = z.strictObject({
@@ -37,7 +38,7 @@ const MonsterArmorClassSchema = z.strictObject({
   armor: z.array(APIReferenceSchema).optional(),
   condition: APIReferenceSchema.optional(),
   spell: APIReferenceSchema.optional(),
-  desc: z.string().optional(),
+  desc: translatable(z.string()).optional(),
 });
 
 const ActionUsageSchema = z.strictObject({
@@ -96,15 +97,15 @@ const MonsterActionSituationSchema = z.strictObject({
 });
 
 const MonsterAttackSchema = z.strictObject({
-  name: z.string(),
+  name: translatable(z.string()),
   dc: DifficultyClassSchema,
   damage: z.array(MonsterDamageSchema).optional(),
 });
 
 const MonsterActionSchema = z.strictObject({
   // Engine annotations: these fields are not SRD text. Supply counts are engine defaults and are not in the book.
-  name: z.string(),
-  desc: z.string(),
+  name: translatable(z.string()),
+  desc: translatable(z.string()),
   attack_type: z.enum(['Melee', 'Ranged']).optional(),
   preference: z
     .strictObject({
@@ -131,16 +132,16 @@ const MonsterActionSchema = z.strictObject({
 });
 
 const LegendaryActionSchema = z.strictObject({
-  name: z.string(),
-  desc: z.string(),
+  name: translatable(z.string()),
+  desc: translatable(z.string()),
   attack_bonus: z.number().optional(),
   damage: z.array(MonsterDamageSchema).optional(),
   dc: DifficultyClassSchema.optional(),
 });
 
 const ReactionSchema = z.strictObject({
-  name: z.string(),
-  desc: z.string(),
+  name: translatable(z.string()),
+  desc: translatable(z.string()),
   dc: DifficultyClassSchema.optional(),
 });
 
@@ -175,8 +176,8 @@ const SpellcastingSchema = z.strictObject({
 });
 
 const SpecialAbilitySchema = z.strictObject({
-  name: z.string(),
-  desc: z.string(),
+  name: translatable(z.string()),
+  desc: translatable(z.string()),
   attack_bonus: z.number().optional(),
   damage: z.array(MonsterDamageSchema).optional(),
   dc: DifficultyClassSchema.optional(),
@@ -193,12 +194,12 @@ const SpecialAbilitySchema = z.strictObject({
 
 export const MonsterSchema = z.strictObject({
   index: z.string(),
-  name: z.string(),
-  desc: z.string().optional(),
-  size: z.string(),
-  type: z.string(),
-  subtype: z.string().optional(),
-  alignment: z.string(),
+  name: translatable(z.string()),
+  desc: translatable(z.string()).optional(),
+  size: translatable(z.string()),
+  type: translatable(z.string()),
+  subtype: translatable(z.string()).optional(),
+  alignment: translatable(z.string()),
   armor_class: z.array(MonsterArmorClassSchema),
   hit_points: z.number(),
   hit_dice: z.string(),
@@ -216,7 +217,7 @@ export const MonsterSchema = z.strictObject({
   damage_immunities: z.array(z.string()),
   condition_immunities: z.array(APIReferenceSchema),
   senses: SenseSchema,
-  languages: z.string(),
+  languages: translatable(z.string()),
   challenge_rating: z.number(),
   proficiency_bonus: z.number().optional(),
   xp: z.number(),

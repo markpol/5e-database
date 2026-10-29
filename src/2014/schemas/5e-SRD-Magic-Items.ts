@@ -1,8 +1,8 @@
 import { z } from 'zod';
-import { APIReferenceSchema } from '../../schemas/common';
+import { APIReferenceSchema, translatable } from '../../schemas/common';
 
 const RaritySchema = z.strictObject({
-  name: z.string(),
+  name: translatable(z.string()),
 });
 
 const CostSchema = z.strictObject({
@@ -52,7 +52,7 @@ const EnchantmentSchema = z.strictObject({
 
 export const MagicItemSchema = z.strictObject({
   index: z.string(),
-  name: z.string(),
+  name: translatable(z.string()),
   equipment_category: APIReferenceSchema,
   rarity: RaritySchema,
   variants: z.array(APIReferenceSchema),
@@ -63,7 +63,7 @@ export const MagicItemSchema = z.strictObject({
   requires_attunement: z.boolean().optional(),
   is_consumable: z.boolean().optional(),
   weight: z.number().optional(),
-  desc: z.array(z.string()).optional(),
+  desc: translatable(z.array(z.string())).optional(),
   image: z.string().optional(),
   url: z.string(),
 });

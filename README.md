@@ -19,12 +19,13 @@ src/
     normalize-monsters.ts            Generator for the file above (`pnpm normalize:monsters`)
     monster-engine-annotations.json  Engine-only monster annotations merged in by the generator
   2024/                              Same layout for the 2024 SRD (no normalized monsters)
-  i18n/                              Locale pattern and translation helpers
+  i18n/                              localize(), overlay validator and coverage report (see CONTRIBUTING.md)
   provenance/                        SRD baseline and source markers for engine-authored data (see NOTICE.md)
   schemas/common.ts                  Schema pieces shared by both years
   tests/translationTestUtils.ts      Shared translation test suite
 docs/
   game-engine-changes.md             What this fork changes relative to upstream, and why
+  i18n-overlay-migration.md          What the move to text-only translation overlays (#31) changed
   upstream-changelog.md              Upstream's release history, kept for reference and no longer generated
 schema/                              Generated JSON Schema, one per collection (see CONTRIBUTING.md)
 ids/                                 Generated id lists, published ids and removed-id tombstones (see CONTRIBUTING.md)
@@ -115,7 +116,8 @@ pnpm lint       # ESLint, including JSON and Prettier rules
 ```
 
 CI (`.github/workflows/ci.yml`) runs `pnpm lint`, `pnpm test`, `tsc --noEmit` and a check that `schema/`, `types/` and `ids/`
-are up to date with the Zod schemas and data, on Node 22 and 24 on every pull request and on pushes to `main`.
+are up to date with the Zod schemas and data, on Node 22 and 24 on every pull request and on pushes to `main`. It also
+prints a per-locale translation coverage report (`pnpm run i18n:coverage`), which never fails the build.
 
 ## Id stability contract
 

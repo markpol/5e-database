@@ -6,7 +6,8 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "equipment": {
       "type": "array",

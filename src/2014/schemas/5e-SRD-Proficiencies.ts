@@ -1,10 +1,10 @@
 import { z } from 'zod';
-import { APIReferenceSchema } from '../../schemas/common';
+import { APIReferenceSchema, translatable } from '../../schemas/common';
 
 export const ProficiencySchema = z.strictObject({
   index: z.string(),
-  name: z.string(),
-  type: z.string(),
+  name: translatable(z.string()),
+  type: translatable(z.string()),
   classes: z.array(APIReferenceSchema).optional(),
   races: z.array(APIReferenceSchema).optional(),
   reference: APIReferenceSchema,

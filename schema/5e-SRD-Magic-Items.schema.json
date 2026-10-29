@@ -6,7 +6,8 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "equipment_category": {
       "type": "object",
@@ -35,7 +36,8 @@
       "type": "object",
       "properties": {
         "name": {
-          "type": "string"
+          "type": "string",
+          "translatable": true
         }
       },
       "required": [
@@ -288,7 +290,8 @@
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "translatable": true
     },
     "image": {
       "type": "string"

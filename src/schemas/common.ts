@@ -1,5 +1,15 @@
 import { z } from 'zod';
 
+/**
+ * Marks a field as translatable text: a translation overlay (`src/{year}/{locale}/`) may replace it, and nothing
+ * else in a record may be overlaid. The mark is Zod metadata, emitted into the JSON Schema as `"translatable": true`,
+ * which is what `localize()` and the overlay validator in `src/i18n` read. Mark prose and display labels; never mark
+ * ids, urls, numbers, dice, booleans or reference objects.
+ */
+export function translatable<T extends z.ZodType>(schema: T): T {
+  return schema.meta({ translatable: true });
+}
+
 export const APIReferenceSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
@@ -41,7 +51,7 @@ const ConditionEffectSchema = z.strictObject({
  */
 export const ChoiceSchema: z.ZodType<any> = z.lazy(() =>
   z.strictObject({
-    desc: z.string().optional(),
+    desc: translatable(z.string()).optional(),
     choose: z.number(),
     type: z.string().optional(),
     from: OptionSetSchema,
@@ -52,7 +62,7 @@ const OptionSchema: z.ZodType<any> = z.lazy(() =>
   z.union([
     z.strictObject({ option_type: z.literal('reference'), item: APIReferenceSchema }),
     z.strictObject({ option_type: z.literal('choice'), choice: ChoiceSchema }),
-    z.strictObject({ option_type: z.literal('string'), string: z.string() }),
+    z.strictObject({ option_type: z.literal('string'), string: translatable(z.string()) }),
     z.strictObject({
       option_type: z.literal('ability_bonus'),
       ability_score: APIReferenceSchema,
@@ -63,11 +73,11 @@ const OptionSchema: z.ZodType<any> = z.lazy(() =>
       action_name: z.string(),
       count: z.number(),
       type: z.string(),
-      desc: z.string().optional(),
+      desc: translatable(z.string()).optional(),
     }),
     z.strictObject({
       option_type: z.literal('breath'),
-      name: z.string(),
+      name: translatable(z.string()),
       dc: DifficultyClassSchema,
       damage: z.array(DamageSchema).optional(),
       condition: ConditionEffectSchema.optional(),
@@ -84,18 +94,18 @@ const OptionSchema: z.ZodType<any> = z.lazy(() =>
       option_type: z.literal('damage'),
       damage_dice: z.string(),
       damage_type: APIReferenceSchema,
-      notes: z.string().optional(),
+      notes: translatable(z.string()).optional(),
     }),
     z.strictObject({
       option_type: z.literal('ideal'),
       alignments: z.array(APIReferenceSchema),
-      desc: z.string(),
+      desc: translatable(z.string()),
     }),
     z.strictObject({ option_type: z.literal('money'), count: z.number(), unit: z.string() }),
     z.strictObject({
       option_type: z.literal('multiple'),
       items: z.array(OptionSchema),
-      desc: z.string().optional(),
+      desc: translatable(z.string()).optional(),
     }),
     z.strictObject({
       option_type: z.literal('score_prerequisite'),
@@ -117,6 +127,6 @@ const OptionSetSchema = z.union([
   }),
   z.strictObject({
     option_set_type: z.literal('options_array'),
-    options: z.array(z.union([OptionSchema, z.string()])),
+    options: z.array(z.union([OptionSchema, translatable(z.string())])),
   }),
 ]);

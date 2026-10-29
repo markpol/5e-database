@@ -6,10 +6,12 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "type": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "classes": {
       "type": "array",

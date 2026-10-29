@@ -6,22 +6,28 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "desc": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "size": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "type": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "subtype": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "alignment": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "armor_class": {
       "type": "array",
@@ -107,7 +113,8 @@
             "additionalProperties": false
           },
           "desc": {
-            "type": "string"
+            "type": "string",
+            "translatable": true
           }
         },
         "required": [
@@ -282,7 +289,8 @@
       "additionalProperties": false
     },
     "languages": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "challenge_rating": {
       "type": "number"
@@ -299,10 +307,12 @@
         "type": "object",
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "translatable": true
           },
           "desc": {
-            "type": "string"
+            "type": "string",
+            "translatable": true
           },
           "attack_bonus": {
             "type": "number"
@@ -938,10 +948,12 @@
         "type": "object",
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "translatable": true
           },
           "desc": {
-            "type": "string"
+            "type": "string",
+            "translatable": true
           },
           "attack_type": {
             "type": "string",
@@ -1235,7 +1247,8 @@
               "type": "object",
               "properties": {
                 "name": {
-                  "type": "string"
+                  "type": "string",
+                  "translatable": true
                 },
                 "dc": {
                   "type": "object",
@@ -2099,10 +2112,12 @@
         "type": "object",
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "translatable": true
           },
           "desc": {
-            "type": "string"
+            "type": "string",
+            "translatable": true
           },
           "attack_bonus": {
             "type": "number"
@@ -2558,10 +2573,12 @@
         "type": "object",
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "translatable": true
           },
           "desc": {
-            "type": "string"
+            "type": "string",
+            "translatable": true
           },
           "dc": {
             "type": "object",
@@ -2691,7 +2708,8 @@
       "type": "object",
       "properties": {
         "desc": {
-          "type": "string"
+          "type": "string",
+          "translatable": true
         },
         "choose": {
           "type": "number"
@@ -2770,7 +2788,8 @@
                         "$ref": "#/$defs/__schema1"
                       },
                       {
-                        "type": "string"
+                        "type": "string",
+                        "translatable": true
                       }
                     ]
                   }
@@ -2855,7 +2874,8 @@
               "const": "string"
             },
             "string": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [
@@ -2922,7 +2942,8 @@
               "type": "string"
             },
             "desc": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [
@@ -2941,7 +2962,8 @@
               "const": "breath"
             },
             "name": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             },
             "dc": {
               "type": "object",
@@ -3246,7 +3268,8 @@
               "additionalProperties": false
             },
             "notes": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [
@@ -3290,7 +3313,8 @@
               }
             },
             "desc": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [
@@ -3335,7 +3359,8 @@
               }
             },
             "desc": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [

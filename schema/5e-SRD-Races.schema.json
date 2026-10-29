@@ -6,7 +6,8 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "speed": {
       "type": "number"
@@ -54,16 +55,20 @@
       "$ref": "#/$defs/__schema0"
     },
     "alignment": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "age": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "size": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "size_description": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "starting_proficiencies": {
       "type": "array",
@@ -121,7 +126,8 @@
       }
     },
     "language_desc": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "language_options": {
       "$ref": "#/$defs/__schema0"
@@ -201,7 +207,8 @@
       "type": "object",
       "properties": {
         "desc": {
-          "type": "string"
+          "type": "string",
+          "translatable": true
         },
         "choose": {
           "type": "number"
@@ -280,7 +287,8 @@
                         "$ref": "#/$defs/__schema1"
                       },
                       {
-                        "type": "string"
+                        "type": "string",
+                        "translatable": true
                       }
                     ]
                   }
@@ -365,7 +373,8 @@
               "const": "string"
             },
             "string": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [
@@ -432,7 +441,8 @@
               "type": "string"
             },
             "desc": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [
@@ -451,7 +461,8 @@
               "const": "breath"
             },
             "name": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             },
             "dc": {
               "type": "object",
@@ -756,7 +767,8 @@
               "additionalProperties": false
             },
             "notes": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [
@@ -800,7 +812,8 @@
               }
             },
             "desc": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [
@@ -845,7 +858,8 @@
               }
             },
             "desc": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [

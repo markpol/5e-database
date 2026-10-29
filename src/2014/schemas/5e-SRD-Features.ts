@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { APIReferenceSchema, ChoiceSchema } from '../../schemas/common';
+import { APIReferenceSchema, ChoiceSchema, translatable } from '../../schemas/common';
 
 const FeatureSpecificSchema = z.strictObject({
   invocations: z.array(APIReferenceSchema).optional(),
@@ -18,11 +18,11 @@ const FeaturePrerequisiteSchema = z.strictObject({
 
 export const FeatureSchema = z.strictObject({
   index: z.string(),
-  name: z.string(),
+  name: translatable(z.string()),
   level: z.number(),
   class: APIReferenceSchema.optional(),
   subclass: APIReferenceSchema.optional(),
-  desc: z.array(z.string()),
+  desc: translatable(z.array(z.string())),
   prerequisites: z.array(FeaturePrerequisiteSchema),
   parent: APIReferenceSchema.optional(),
   reference: z.string().optional(),

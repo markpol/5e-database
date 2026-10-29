@@ -1,0 +1,18 @@
+[
+  {
+    "index": "dwarf",
+    "name": "Дварф"
+  },
+  {
+    "index": "elf",
+    "name": "Эльф"
+  },
+  {
+    "index": "halfling",
+    "name": "Полурослик"
+  },
+  {
+    "index": "gnome",
+    "name": "Гном"
+  }
+]

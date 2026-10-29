@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { APIReferenceSchema, DamageSchema } from '../../schemas/common';
+import { APIReferenceSchema, DamageSchema, translatable } from '../../schemas/common';
 
 const CostSchema = z.strictObject({
   quantity: z.number(),
@@ -45,11 +45,11 @@ const EquipmentEffectSchema = z.strictObject({
 
 export const EquipmentSchema = z.strictObject({
   index: z.string(),
-  name: z.string(),
+  name: translatable(z.string()),
   equipment_category: APIReferenceSchema,
   cost: CostSchema,
   url: z.string(),
-  desc: z.array(z.string()).optional(),
+  desc: translatable(z.array(z.string())).optional(),
   material: z.string().optional(),
   stackable: z.boolean().optional(),
   ammunition: z.string().optional(),
@@ -57,24 +57,24 @@ export const EquipmentSchema = z.strictObject({
   effect: EquipmentEffectSchema.optional(),
   weight: z.number().optional(),
   gear_category: APIReferenceSchema.optional(),
-  armor_category: z.string().optional(),
+  armor_category: translatable(z.string()).optional(),
   armor_class: ArmorClassSchema.optional(),
-  capacity: z.string().optional(),
-  category_range: z.string().optional(),
+  capacity: translatable(z.string()).optional(),
+  category_range: translatable(z.string()).optional(),
   contents: z.array(ContentSchema).optional(),
   damage: DamageSchema.optional(),
   image: z.string().optional(),
   properties: z.array(APIReferenceSchema).optional(),
   quantity: z.number().optional(),
   range: RangeSchema.optional(),
-  special: z.array(z.string()).optional(),
+  special: translatable(z.array(z.string())).optional(),
   speed: SpeedSchema.optional(),
   stealth_disadvantage: z.boolean().optional(),
   str_minimum: z.number().optional(),
   throw_range: ThrowRangeSchema.optional(),
-  tool_category: z.string().optional(),
+  tool_category: translatable(z.string()).optional(),
   two_handed_damage: DamageSchema.optional(),
-  vehicle_category: z.string().optional(),
-  weapon_category: z.string().optional(),
-  weapon_range: z.string().optional(),
+  vehicle_category: translatable(z.string()).optional(),
+  weapon_category: translatable(z.string()).optional(),
+  weapon_range: translatable(z.string()).optional(),
 });

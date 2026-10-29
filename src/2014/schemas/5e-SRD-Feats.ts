@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { APIReferenceSchema } from '../../schemas/common';
+import { APIReferenceSchema, translatable } from '../../schemas/common';
 
 const PrerequisiteSchema = z.strictObject({
   ability_score: APIReferenceSchema.optional(),
@@ -8,8 +8,8 @@ const PrerequisiteSchema = z.strictObject({
 
 export const FeatSchema = z.strictObject({
   index: z.string(),
-  name: z.string(),
+  name: translatable(z.string()),
   prerequisites: z.array(PrerequisiteSchema).optional(),
-  desc: z.array(z.string()),
+  desc: translatable(z.array(z.string())),
   url: z.string(),
 });
