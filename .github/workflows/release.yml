@@ -1,0 +1,132 @@
+# Release: bump the package.json version, tag vX.Y.Z and create a GitHub release with generated notes.
+# Run it by hand from main (Actions > Release > Run workflow). dry_run defaults to true and does everything except
+# commit, tag, push and create the release, printing what it would do instead.
+
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release, as X.Y.Z without the v (for example 6.0.0)'
+        required: true
+        type: string
+      dry_run:
+        description: 'Dry run: run the checks and print what would happen, but do not commit, tag or release'
+        required: true
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Validate and check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Refuse to run outside main
+        env:
+          REF: ${{ github.ref }}
+        run: |
+          if [ "$REF" != "refs/heads/main" ]; then
+            echo "::error::Releases are cut from main only; this run is on $REF."
+            exit 1
+          fi
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Check the version
+        env:
+          VERSION: ${{ inputs.version }}
+        run: |
+          if ! [[ "$VERSION" =~ ^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$ ]]; then
+            echo "::error::Version '$VERSION' is not a plain semver X.Y.Z (no v prefix, no pre-release suffix)."
+            exit 1
+          fi
+          if git rev-parse -q --verify "refs/tags/v$VERSION" >/dev/null; then
+            echo "::error::Tag v$VERSION already exists."
+            exit 1
+          fi
+          current=$(node -p "require('./package.json').version")
+          latest_tag=$(git tag --list 'v[0-9]*.[0-9]*.[0-9]*' | sed 's/^v//' | grep -E '^[0-9]+\.[0-9]+\.[0-9]+$' | sort -V | tail -n 1 || true)
+          echo "package.json version: $current"
+          echo "Latest tag:           ${latest_tag:+v$latest_tag}${latest_tag:-none}"
+          for floor in "$current" "$latest_tag"; do
+            [ -n "$floor" ] || continue
+            top=$(printf '%s\n%s\n' "$floor" "$VERSION" | sort -V | tail -n 1)
+            if [ "$VERSION" = "$floor" ] || [ "$top" != "$VERSION" ]; then
+              echo "::error::Version $VERSION must be greater than $floor."
+              exit 1
+            fi
+          done
+          echo "Version $VERSION is valid."
+      - name: Set up pnpm
+        uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+      - name: Set up Node.js 24.x
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24.x
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Lint
+        run: pnpm run lint
+      - name: Test
+        run: pnpm run test
+      - name: Check generated files are current
+        run: pnpm run generate:check
+      - name: Pack, install the tarball and import every entry with types
+        run: pnpm run test:package
+
+  release:
+    name: Tag and release${{ inputs.dry_run && ' (dry run)' || '' }}
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - name: Bump the version and commit
+        env:
+          VERSION: ${{ inputs.version }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "Dry run: would set package.json version to $VERSION and commit 'chore(release): v$VERSION' on main."
+            echo "Dry run: would tag that commit v$VERSION and push main and the tag together."
+            echo "Dry run: would create the GitHub release v$VERSION with generated notes."
+            exit 0
+          fi
+          # pnpm-lock.yaml does not record the root package version, so package.json is the only file that changes.
+          node -e "
+            const fs = require('fs');
+            const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+            pkg.version = process.env.VERSION;
+            fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2) + '\n');
+          "
+          git diff --stat -- package.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(release): v$VERSION" -- package.json
+          git tag -a "v$VERSION" -m "v$VERSION"
+      - name: Push the commit and tag
+        if: ${{ !inputs.dry_run }}
+        env:
+          VERSION: ${{ inputs.version }}
+        run: git push --atomic origin HEAD:refs/heads/main "refs/tags/v$VERSION"
+      - name: Create the GitHub release
+        if: ${{ !inputs.dry_run }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ inputs.version }}
+        run: gh release create "v$VERSION" --verify-tag --generate-notes --title "v$VERSION"
