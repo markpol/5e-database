@@ -1,0 +1,30 @@
+[
+  {
+    "index": "dwarven-toughness",
+    "name": "Дварфская стойкость"
+  },
+  {
+    "index": "elf-weapon-training",
+    "name": "Эльфийская боевая подготовка"
+  },
+  {
+    "index": "high-elf-cantrip",
+    "name": "Заговор высшего эльфа"
+  },
+  {
+    "index": "extra-language",
+    "name": "Дополнительный язык"
+  },
+  {
+    "index": "naturally-stealthy",
+    "name": "Природная скрытность"
+  },
+  {
+    "index": "artificers-lore",
+    "name": "Знания изобретателя"
+  },
+  {
+    "index": "tinker",
+    "name": "Жестянщик"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "index": "vicious-weapon",
+    "name": "Vicious Arme"
+  },
+  {
+    "index": "weapon",
+    "name": "Arme, +1, +2, or +3"
+  },
+  {
+    "index": "weapon-1",
+    "name": "Arme, +1"
+  },
+  {
+    "index": "weapon-2",
+    "name": "Arme, +2"
+  },
+  {
+    "index": "weapon-3",
+    "name": "Arme, +3"
+  }
+]

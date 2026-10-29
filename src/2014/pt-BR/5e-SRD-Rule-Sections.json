@@ -1,0 +1,134 @@
+[
+  {
+    "name": "A Ordem do Combate",
+    "index": "the-order-of-combat"
+  },
+  {
+    "name": "Movimento e Posição",
+    "index": "movement-and-position"
+  },
+  {
+    "name": "Ações em Combate",
+    "index": "actions-in-combat"
+  },
+  {
+    "name": "Realizando um Ataque",
+    "index": "making-an-attack"
+  },
+  {
+    "name": "Cobertura",
+    "index": "cover"
+  },
+  {
+    "name": "Dano e Cura",
+    "index": "damage-and-healing"
+  },
+  {
+    "name": "Combate Montado",
+    "index": "mounted-combat"
+  },
+  {
+    "name": "Combate Submerso",
+    "index": "underwater-combat"
+  },
+  {
+    "name": "Valores e Modificadores de Habilidade",
+    "index": "ability-scores-and-modifiers"
+  },
+  {
+    "name": "Vantagem e Desvantagem",
+    "index": "advantage-and-disadvantage"
+  },
+  {
+    "name": "Bônus de Proficiência",
+    "index": "proficiency-bonus"
+  },
+  {
+    "name": "Testes de Habilidade",
+    "index": "ability-checks"
+  },
+  {
+    "name": "Usando Cada Habilidade",
+    "index": "using-each-ability"
+  },
+  {
+    "name": "Testes de Resistência",
+    "index": "saving-throws"
+  },
+  {
+    "name": "Tempo",
+    "index": "time"
+  },
+  {
+    "name": "Movimento",
+    "index": "movement"
+  },
+  {
+    "name": "O Ambiente",
+    "index": "the-environment"
+  },
+  {
+    "name": "Descanso",
+    "index": "resting"
+  },
+  {
+    "name": "Entre Aventuras",
+    "index": "between-adventures"
+  },
+  {
+    "name": "O Que É uma Magia?",
+    "index": "what-is-a-spell"
+  },
+  {
+    "name": "Conjurando uma Magia",
+    "index": "casting-a-spell"
+  },
+  {
+    "name": "Taxas de Câmbio Padrão",
+    "index": "standard-exchange-rates"
+  },
+  {
+    "name": "Objetos",
+    "index": "objects"
+  },
+  {
+    "name": "Venenos",
+    "index": "poisons"
+  },
+  {
+    "name": "Sintonia",
+    "index": "attunement"
+  },
+  {
+    "name": "Vestindo e Manuseando Itens",
+    "index": "wearing-and-wielding-items"
+  },
+  {
+    "name": "Ativando um Item",
+    "index": "activating-an-item"
+  },
+  {
+    "name": "Objetos Mágicos Sencientes",
+    "index": "sentient-magic-items"
+  },
+  {
+    "name": "Panteões da Mitologia",
+    "index": "fantasy-historical-pantheons"
+  },
+  {
+    "name": "Os Planos da Existência",
+    "index": "the-planes-of-existence"
+  },
+  {
+    "name": "Armadilhas",
+    "index": "traps"
+  },
+  {
+    "name": "Doenças",
+    "index": "diseases"
+  },
+  {
+    "name": "Loucura",
+    "index": "madness"
+  }
+]

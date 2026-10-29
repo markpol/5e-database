@@ -21,10 +21,19 @@ export function getLangDirs(yearDir: string): string[] {
     .map((e) => e.name);
 }
 
+/**
+ * Merges a translation entry over its English entry. The default is the plain field-by-field merge; the 2014 data
+ * passes a `localize()`-based merge, since its overlays hold only translatable text at nested positions.
+ */
+export type MergeEntry = (collection: string, lang: string, english: Entry, entry: Entry) => Entry;
+
+const shallowMerge: MergeEntry = (_collection, _lang, english, entry) => ({ ...english, ...entry });
+
 export function runTranslationTestSuite(
   suiteName: string,
   yearDir: string,
-  collectionSchemas: Record<string, z.ZodTypeAny>
+  collectionSchemas: Record<string, z.ZodTypeAny>,
+  merge: MergeEntry = shallowMerge
 ): void {
   const enDir = `${yearDir}/en`;
 
@@ -131,7 +140,7 @@ export function runTranslationTestSuite(
             const enEntry = enMap.get(idx);
             if (!enEntry) continue;
 
-            const merged = { ...enEntry, ...entry };
+            const merged = merge(collectionName, lang, enEntry, entry);
             const result = schema.safeParse(merged);
             if (!result.success) {
               errors.push(`${transFile}['${idx}']: ${result.error.message}`);

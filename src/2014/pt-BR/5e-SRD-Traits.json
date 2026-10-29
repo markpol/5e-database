@@ -1,0 +1,86 @@
+[
+  {
+    "index": "darkvision",
+    "name": "Visão no Escuro"
+  },
+  {
+    "index": "dwarven-resilience",
+    "name": "Resiliência Anã"
+  },
+  {
+    "index": "dwarven-combat-training",
+    "name": "Treinamento Anão em Combate"
+  },
+  {
+    "index": "tool-proficiency",
+    "name": "Proficiência com Ferramentas"
+  },
+  {
+    "index": "stonecunning",
+    "name": "Especialização em Rochas"
+  },
+  {
+    "index": "keen-senses",
+    "name": "Sentidos Aguçados"
+  },
+  {
+    "index": "fey-ancestry",
+    "name": "Ancestral Feérico"
+  },
+  {
+    "index": "trance",
+    "name": "Transe"
+  },
+  {
+    "index": "lucky",
+    "name": "Sortudo"
+  },
+  {
+    "index": "brave",
+    "name": "Bravura"
+  },
+  {
+    "index": "halfling-nimbleness",
+    "name": "Agilidade Halfling"
+  },
+  {
+    "index": "draconic-ancestry",
+    "name": "Ancestral Dracônico"
+  },
+  {
+    "index": "breath-weapon",
+    "name": "Arma de Sopro"
+  },
+  {
+    "index": "damage-resistance",
+    "name": "Resistência a Dano"
+  },
+  {
+    "index": "gnome-cunning",
+    "name": "Esperteza Gnômica"
+  },
+  {
+    "index": "skill-versatility",
+    "name": "Versatilidade em Perícia"
+  },
+  {
+    "index": "menacing",
+    "name": "Ameaçador"
+  },
+  {
+    "index": "relentless-endurance",
+    "name": "Resistência Implacável"
+  },
+  {
+    "index": "savage-attacks",
+    "name": "Ataques Selvagens"
+  },
+  {
+    "index": "hellish-resistance",
+    "name": "Resistência Infernal"
+  },
+  {
+    "index": "infernal-legacy",
+    "name": "Legado Infernal"
+  }
+]

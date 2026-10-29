@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 import { z } from 'zod';
 
 import { AbilityScoreSchema } from '../schemas/5e-SRD-Ability-Scores';
@@ -26,7 +27,10 @@ import { SubraceSchema } from '../schemas/5e-SRD-Subraces';
 import { TraitSchema } from '../schemas/5e-SRD-Traits';
 import { WeaponPropertySchema } from '../schemas/5e-SRD-Weapon-Properties';
 
-import { runTranslationTestSuite } from '../../tests/translationTestUtils';
+import { fileSource, localize, overlayLocales } from '../../i18n/files';
+import { COLLECTIONS, isCollection, type DataRecord } from '../../i18n/localize';
+import { validateOverlay } from '../../i18n/overlays';
+import { runTranslationTestSuite, type MergeEntry } from '../../tests/translationTestUtils';
 
 const YEAR_DIR = 'src/2014';
 
@@ -59,4 +63,36 @@ const COLLECTION_SCHEMAS: Record<string, z.ZodTypeAny> = {
   'weapon-properties': WeaponPropertySchema,
 };
 
-runTranslationTestSuite('2014 translation files', YEAR_DIR, COLLECTION_SCHEMAS);
+const localizedByIndex = new Map<string, Map<string, DataRecord>>();
+
+// The 2014 overlays hold only translatable text, so they are merged with localize(), not field by field.
+const localizeEntry: MergeEntry = (collection, lang, english) => {
+  if (!isCollection(collection)) throw new Error(`Unknown collection ${collection}`);
+  const key = `${lang}/${collection}`;
+  if (!localizedByIndex.has(key)) {
+    const records = localize(collection, lang) as unknown as DataRecord[];
+    localizedByIndex.set(key, new Map(records.map((r) => [r.index as string, r])));
+  }
+  return localizedByIndex.get(key)!.get(english.index as string)!;
+};
+
+runTranslationTestSuite('2014 translation files', YEAR_DIR, COLLECTION_SCHEMAS, localizeEntry);
+
+describe('2014 translation overlays', () => {
+  const source = fileSource();
+
+  it('hold only translatable text at positions the English records have', () => {
+    const problems: string[] = [];
+    for (const lang of overlayLocales()) {
+      for (const collection of COLLECTIONS) {
+        const overlay = source.overlay(collection, lang);
+        if (!overlay) continue;
+        const english = source.english(collection);
+        for (const p of validateOverlay(source.schema(collection), english, overlay)) {
+          problems.push(`${lang}/${collection}${p}`);
+        }
+      }
+    }
+    expect(problems).toEqual([]);
+  });
+});

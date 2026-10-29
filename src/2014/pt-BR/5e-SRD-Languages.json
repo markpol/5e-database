@@ -3,133 +3,152 @@
     "index": "common",
     "name": "Comum",
     "type": "Standard",
-    "typical_speakers": ["Humanos"],
-    "script": "Comum",
-    "url": "/api/2014/languages/common"
+    "typical_speakers": [
+      "Humanos"
+    ],
+    "script": "Comum"
   },
   {
     "index": "dwarvish",
     "name": "Anão",
     "desc": "Anão é repleto de consoantes fortes e sons guturais.",
     "type": "Standard",
-    "typical_speakers": ["Anões"],
-    "script": "Anão",
-    "url": "/api/2014/languages/dwarvish"
+    "typical_speakers": [
+      "Anões"
+    ],
+    "script": "Anão"
   },
   {
     "index": "elvish",
     "name": "Élfico",
     "desc": "Élfico é uma língua fluida, com entonações sutis e gramática complexa. A literatura élfica é rica e variada, e suas canções e poemas são famosos entre outras raças. Muitos bardos aprendem o idioma para poderem adicionar baladas élficas aos seus repertórios.",
     "type": "Standard",
-    "typical_speakers": ["Elfos"],
-    "script": "Élfico",
-    "url": "/api/2014/languages/elvish"
+    "typical_speakers": [
+      "Elfos"
+    ],
+    "script": "Élfico"
   },
   {
     "index": "giant",
     "name": "Gigante",
     "type": "Standard",
-    "typical_speakers": ["Ogros", "Gigantes"],
-    "script": "Anão",
-    "url": "/api/2014/languages/giant"
+    "typical_speakers": [
+      "Ogros",
+      "Gigantes"
+    ],
+    "script": "Anão"
   },
   {
     "index": "gnomish",
     "name": "Gnômico",
     "desc": "A língua gnômica, que utiliza a escrita anã, é renomada por seus tratados técnicos e seus catálogos de conhecimento sobre o mundo natural.",
     "type": "Standard",
-    "typical_speakers": ["Gnomos"],
-    "script": "Anão",
-    "url": "/api/2014/languages/gnomish"
+    "typical_speakers": [
+      "Gnomos"
+    ],
+    "script": "Anão"
   },
   {
     "index": "goblin",
     "name": "Goblin",
     "type": "Standard",
-    "typical_speakers": ["Goblinoides"],
-    "script": "Anão",
-    "url": "/api/2014/languages/goblin"
+    "typical_speakers": [
+      "Goblinoides"
+    ],
+    "script": "Anão"
   },
   {
     "index": "halfling",
     "name": "Halfling",
     "desc": "A língua dos halflings não é secreta, mas eles relutam em compartilhá-la com os outros. Eles escrevem muito pouco, então não possuem uma rica literatura. Sua tradição oral, no entanto, é muito forte.",
     "type": "Standard",
-    "typical_speakers": ["Halflings"],
-    "script": "Comum",
-    "url": "/api/2014/languages/halfling"
+    "typical_speakers": [
+      "Halflings"
+    ],
+    "script": "Comum"
   },
   {
     "index": "orc",
     "name": "Orc",
     "desc": "Orc é uma língua áspera e irritante, com consoantes duras. Não possui escrita própria, sendo escrita com a escrita anã.",
     "type": "Standard",
-    "typical_speakers": ["Orcs"],
-    "script": "Anão",
-    "url": "/api/2014/languages/orc"
+    "typical_speakers": [
+      "Orcs"
+    ],
+    "script": "Anão"
   },
   {
     "index": "abyssal",
     "name": "Abissal",
     "type": "Exotic",
-    "typical_speakers": ["Demônios"],
-    "script": "Infernal",
-    "url": "/api/2014/languages/abyssal"
+    "typical_speakers": [
+      "Demônios"
+    ],
+    "script": "Infernal"
   },
   {
     "index": "celestial",
     "name": "Celestial",
     "type": "Exotic",
-    "typical_speakers": ["Celestiais"],
-    "script": "Celestial",
-    "url": "/api/2014/languages/celestial"
+    "typical_speakers": [
+      "Celestiais"
+    ],
+    "script": "Celestial"
   },
   {
     "index": "draconic",
     "name": "Dracônico",
     "desc": "Acredita-se que o dracônico seja uma das línguas mais antigas e é frequentemente usado no estudo da magia. A língua soa áspera para a maioria das outras criaturas e inclui numerosas consoantes duras e sibilantes.",
     "type": "Exotic",
-    "typical_speakers": ["Dragões", "Draconatos"],
-    "script": "Dracônico",
-    "url": "/api/2014/languages/draconic"
+    "typical_speakers": [
+      "Dragões",
+      "Draconatos"
+    ],
+    "script": "Dracônico"
   },
   {
     "index": "deep-speech",
     "name": "Dialeto Subterrâneo",
     "type": "Exotic",
-    "typical_speakers": ["Devoradores de mente", "Observadores"],
-    "url": "/api/2014/languages/deep-speech"
+    "typical_speakers": [
+      "Devoradores de mente",
+      "Observadores"
+    ]
   },
   {
     "index": "infernal",
     "name": "Infernal",
     "type": "Exotic",
-    "typical_speakers": ["Diabos"],
-    "script": "Infernal",
-    "url": "/api/2014/languages/infernal"
+    "typical_speakers": [
+      "Diabos"
+    ],
+    "script": "Infernal"
   },
   {
     "index": "primordial",
     "name": "Primordial",
     "type": "Exotic",
-    "typical_speakers": ["Elementais"],
-    "script": "Anão",
-    "url": "/api/2014/languages/primordial"
+    "typical_speakers": [
+      "Elementais"
+    ],
+    "script": "Anão"
   },
   {
     "index": "sylvan",
     "name": "Silvestre",
     "type": "Exotic",
-    "typical_speakers": ["Criaturas feéricas"],
-    "script": "Élfico",
-    "url": "/api/2014/languages/sylvan"
+    "typical_speakers": [
+      "Criaturas feéricas"
+    ],
+    "script": "Élfico"
   },
   {
     "index": "undercommon",
     "name": "Subcomum",
     "type": "Exotic",
-    "typical_speakers": ["Comerciantes do Subterrâneo"],
-    "script": "Élfico",
-    "url": "/api/2014/languages/undercommon"
+    "typical_speakers": [
+      "Comerciantes do Subterrâneo"
+    ],
+    "script": "Élfico"
   }
 ]

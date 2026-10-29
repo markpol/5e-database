@@ -100,9 +100,10 @@ Because the schemas are strict, a new field is added in the schema and the data 
 1. Add the field to the collection's schema in `src/{year}/schemas/5e-SRD-{Collection}.ts`. Make it `.optional()` if
    not every entry will have it. Reuse the pieces in `src/schemas/common.ts` where one fits.
 2. Add the field to the entries in `src/{year}/en/5e-SRD-{Collection}.json`.
-3. If the field holds text that translators should be able to overlay, nothing more is needed: translations may use
-   any field that exists in the English entry. If it is structural (an id, a number, a reference), it is never
-   translated.
+3. If the field holds text that translators should be able to overlay (prose or a display label), wrap it in
+   `translatable()` from `src/schemas/common.ts`, for example `desc: translatable(z.array(z.string()))`, and run
+   `pnpm run generate`. Leave structural fields (ids, urls, numbers, booleans, dice, references) unmarked; they are
+   never translated. See [Translations](#translations).
 4. If you changed `src/2014/en/5e-SRD-Monsters.json` or `src/2014/monster-engine-annotations.json`, regenerate the
    committed `src/2014/5e-SRD-Monsters-Normalized.json` with `pnpm normalize:monsters`. The normalized file is the
    generated monster source the game reads; never edit it by hand. `normalized-monsters.test.ts` fails if the
@@ -121,27 +122,27 @@ The changes this fork has already made relative to upstream are recorded in
 
 ## Translations
 
-Translations are overlays on the English data. They need only a text editor and a fork.
+Translations are overlays on the English data. They need only a text editor and a fork. The rules below are for the
+2014 data; `src/2024` is frozen.
 
 ### File location
 
 ```
-src/{year}/{lang}/5e-SRD-{Collection}.json
+src/2014/{lang}/5e-SRD-{Collection}.json
 ```
 
-`{lang}` is a [BCP 47](https://www.rfc-editor.org/rfc/rfc5646) language tag, for example `de`, `fr`, `pt-BR`,
-`es-419` or `zh-Hans`. The file name must match an English file.
+`{lang}` is a [BCP 47](https://www.rfc-editor.org/rfc/rfc5646) language tag, for example `de`, `fr-FR`, `pt-BR`,
+`es-419` or `zh-Hans`. The file name must match an English file in `src/2014/en/`.
 
 ```
 src/2014/de/5e-SRD-Spells.json
-src/2024/fr/5e-SRD-Equipment.json
-src/2024/pt-BR/5e-SRD-Conditions.json
+src/2014/pt-BR/5e-SRD-Conditions.json
 ```
 
 ### File format
 
-A translation file is a JSON array. Each entry has an `index` that identifies the English record, plus only the fields
-you are translating.
+A translation file is a JSON array. Each entry has an `index` that identifies the English record, plus only the
+translatable text you are translating.
 
 ```json
 [
@@ -156,29 +157,100 @@ you are translating.
 ]
 ```
 
+### Text-only fields
+
+An overlay may contain only translatable fields. They are marked in the Zod schemas with `translatable()` and appear
+as `"translatable": true` in `schema/5e-SRD-{Collection}.schema.json`, which is where to look them up. They are prose
+and display labels such as `name`, `desc`, `higher_level`, `range`, `duration`, `subclass_flavor` and the `desc` of a
+choice.
+
+Everything else comes from English and cannot be overridden: `index` values, `url`, numbers, booleans, dice and other
+structural fields. Leave them out; the tests reject them.
+
+Never copy a reference object (`{ "index", "name", "url" }`) into an overlay. A reference's `name` is taken from the
+translation of the record it points at, so a spell's `school.name` shows the translated `name` of that magic school.
+To translate the name shown in references, translate the referenced record's `name`. Where the referenced record has
+no translation, the English name is shown.
+
+Text nested in objects and arrays keeps the English nesting, so it lands on the same element. Give only the text
+leaves; put `null` at an array position you leave untranslated, and end the array after the last translated
+position:
+
+```json
+{
+  "index": "barbarian",
+  "starting_equipment_options": [
+    {
+      "desc": "(a) une hache à deux mains ou (b) une arme de guerre de corps à corps au choix",
+      "from": { "options": [null, { "choice": { "desc": "n'importe quelle arme de guerre de corps à corps" } }] }
+    }
+  ]
+}
+```
+
 ### Partial overlays
 
 You do not have to translate every entry or every field. Anything missing from the overlay falls back to the English
-value, field by field. A file with a handful of entries is a useful contribution.
+value, field by field and array position by array position. A file with a handful of entries is a useful
+contribution. An entry must translate at least one field.
 
-### Text-only fields
+### Reading translated data: `localize()`
 
-Translate text only. Leave out `url`, numbers and reference objects. `index` is required so the entry can be matched,
-but its value must be identical to the English `index`. Which text fields exist depends on the collection (for example
-`name`, `desc`, `higher_level`, and `summary` on subclasses); any text field present in the English entry for that
-`index` may be translated.
+`localize(collection, lang)` returns every English record of a collection with the `lang` overlay merged in, typed
+with the collection's generated type. `src/i18n/localize.ts` ships in the package and has no runtime dependencies:
+`createLocalizer` takes the English records, overlays and JSON Schemas from the caller, for example as static JSON
+imports.
+
+```ts
+import { createLocalizer, type DataRecord, type JsonSchema } from '5e-database/src/i18n/localize';
+import enSpells from '5e-database/src/2014/en/5e-SRD-Spells.json';
+import spellSchema from '5e-database/schema/5e-SRD-Spells.schema.json';
+import frSpells from '5e-database/src/2014/fr-FR/5e-SRD-Spells.json';
+import frSchools from '5e-database/src/2014/fr-FR/5e-SRD-Magic-Schools.json';
+import frClasses from '5e-database/src/2014/fr-FR/5e-SRD-Classes.json';
+
+const english: Record<string, DataRecord[]> = { spells: enSpells };
+const schemas: Record<string, JsonSchema> = { spells: spellSchema };
+const overlays: Record<string, Record<string, DataRecord[]>> = {
+  'fr-FR': { spells: frSpells, 'magic-schools': frSchools, classes: frClasses },
+};
+
+const localize = createLocalizer({
+  english: (collection) => english[collection],
+  overlay: (collection, lang) => overlays[lang]?.[collection],
+  schema: (collection) => schemas[collection],
+});
+
+const spells = localize('spells', 'fr-FR'); // Spell[], with French text and French school and class names
+```
+
+`english` and `schema` are read for the collection being localized; `overlay` is also read for the collections its
+references point at, to resolve their names. A missing overlay falls back to English.
+
+Inside this repository (Node), `src/i18n/files.ts` exports a `localize` already bound to the files here.
 
 ### What the tests check
 
 `translations.test.ts` fails if a translation file:
 
 - has no matching English file,
-- contains an `index` that is not in the English file,
-- contains a field that is not in the English entry for that `index`,
-- contains duplicate `index` values, or
-- produces an invalid document when merged over the English entry (checked with the collection's Zod schema).
+- contains an `index` that is not in the English file, or contains duplicate `index` values,
+- contains a field that is not in the English entry, is not translatable, is a reference object, has more array
+  entries than English, or has the wrong type (`src/i18n/overlays.ts`), or
+- produces an invalid document when localized (checked with the collection's Zod schema).
+
+`src/i18n/tests/overlay-migration.test.ts` pins the one-shot migration that reduced the overlays to text (#31): a
+record whose English data and overlay inputs are unchanged since then must localize to the same text as before, apart
+from the reference names listed in `src/i18n/tests/fixtures/overlay-migration.json`. Editing a translation does not
+break it; it skips records whose inputs changed.
 
 Run `pnpm test` before opening a PR.
+
+### Coverage report
+
+`pnpm run i18n:coverage` prints, per locale and collection, how many English records an overlay covers and how many
+translatable fields it translates. CI prints the same report in the "Translation coverage" job log and summary. It is
+informational and never fails a build.
 
 ## Cutting a release
 

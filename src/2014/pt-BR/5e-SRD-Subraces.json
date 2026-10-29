@@ -1,0 +1,18 @@
+[
+  {
+    "index": "hill-dwarf",
+    "name": "Anão da Colina"
+  },
+  {
+    "index": "high-elf",
+    "name": "Alto Elfo"
+  },
+  {
+    "index": "lightfoot-halfling",
+    "name": "Pés Leves"
+  },
+  {
+    "index": "rock-gnome",
+    "name": "Gnomo das Rochas"
+  }
+]
