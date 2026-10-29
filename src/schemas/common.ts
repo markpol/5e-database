@@ -24,6 +24,16 @@ export const AreaOfEffectSchema = z.strictObject({
   type: z.enum(['sphere', 'cube', 'cylinder', 'line', 'cone']),
 });
 
+const ConditionEffectSchema = z.strictObject({
+  condition_type: APIReferenceSchema,
+  duration: z.strictObject({
+    length: z.number(),
+    unit: z.string(),
+    interrupt: z.string().optional(),
+    interrupt_modifier: z.string().optional(),
+  }),
+});
+
 /**
  * `choose` picks from `from`. An `action` option's `count` is the most times that action can be
  * picked in the choice. Monster attacks "in any combination" use `choose: N` with each option at
@@ -60,6 +70,7 @@ const OptionSchema: z.ZodType<any> = z.lazy(() =>
       name: z.string(),
       dc: DifficultyClassSchema,
       damage: z.array(DamageSchema).optional(),
+      condition: ConditionEffectSchema.optional(),
     }),
     z.strictObject({
       option_type: z.literal('counted_reference'),

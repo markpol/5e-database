@@ -1089,19 +1089,6 @@
     }
   },
   {
-    "index": "nets",
-    "type": "Armes",
-    "name": "Filets",
-    "classes": [],
-    "races": [],
-    "url": "/api/2014/proficiencies/nets",
-    "reference": {
-      "index": "net",
-      "name": "Filet",
-      "url": "/api/2014/equipment/net"
-    }
-  },
-  {
     "index": "alchemists-supplies",
     "type": "Outils d'artisan",
     "name": "Matériel d'alchimiste",
@@ -1566,32 +1553,6 @@
       "index": "thieves-tools",
       "name": "Outils de voleur",
       "url": "/api/2014/equipment/thieves-tools"
-    }
-  },
-  {
-    "index": "land-vehicles",
-    "type": "Véhicules",
-    "name": "Véhicules terrestres",
-    "classes": [],
-    "races": [],
-    "url": "/api/2014/proficiencies/land-vehicles",
-    "reference": {
-      "index": "land-vehicles",
-      "name": "Véhicules terrestres",
-      "url": "/api/2014/equipment-categories/land-vehicles"
-    }
-  },
-  {
-    "index": "water-vehicles",
-    "type": "Véhicules",
-    "name": "Véhicules maritimes",
-    "classes": [],
-    "races": [],
-    "url": "/api/2014/proficiencies/water-vehicles",
-    "reference": {
-      "index": "waterborne-vehicles",
-      "name": "Véhicules maritimes",
-      "url": "/api/2014/equipment-categories/waterborne-vehicles"
     }
   },
   {
