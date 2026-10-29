@@ -23,7 +23,7 @@ marked **Unconfirmed** below.
 | Area | File(s) | What changed |
 | --- | --- | --- |
 | Monster actions | `5e-SRD-Monsters.json` | Added `attack_type` ("Melee"/"Ranged") to actions; added `bonus_actions` (parsed list of bonus-action ids); added `environments` (habitat string); `speed.*` and `senses.{darkvision,blindsight,truesight}` changed from strings (`"40 ft."`) to plain integers (`40`); added `weapon`, `weapon_kind`, and `supply` (equipment-linked weapon/ammunition annotations) |
-| Monster normalization | `5e-SRD-Monsters-Normalized.json` (new file), `normalize-monsters.ts` (new script), `verify-normalize.sh` (new script) | Adds a pre-flattened copy of the monster data that collapses nested reference objects (`dc_type`, `damage_type`, `condition_type`, spellcasting `ability`, etc.) down to their plain string `index`, and normalizes where `dc`/`condition` sit on an action |
+| Monster normalization | `5e-SRD-Monsters-Normalized.json` (new file), `normalize-monsters.ts` (new script), `monster-engine-annotations.json` (new file), `verify-normalize.sh` (new script) | Adds a pre-flattened copy of the monster data that collapses nested reference objects (`dc_type`, `damage_type`, `condition_type`, spellcasting `ability`, etc.) down to their plain string `index`, normalizes where `dc`/`condition` sit on an action, and merges in engine-only annotations (e.g. conditions applied on a failed save) from `monster-engine-annotations.json`; `src/2014/tests/normalized-monsters.test.ts` regenerates from the English source and asserts it matches the committed normalized file byte-for-byte |
 | Conditions | `5e-SRD-Conditions.json` | Added 17 new condition entries: 6 numbered exhaustion levels (`exhaustion-1`…`exhaustion-6`) plus `enraged`, `frenzied`, `reckless`, `dodging`, `infested`, `swallowed`, `drained-of-strength`, `weakened`, `slowed`, `drained-of-life`, `disengaged`, `surprised` |
 | Equipment | `5e-SRD-Equipment.json` | Added `material`, `stackable`, `is_consumable`, `effect` (damage-on-use) to select items; removed 40 non-combat items (mounts, vehicles, barding, tack/harness, stabling/feed) |
 | Equipment categories | `5e-SRD-Equipment-Categories.json` | Removed 6 non-combat categories (`gaming-sets`, `land-vehicles`, `mounts-and-other-animals`, `mounts-and-vehicles`, `tack-harness-and-drawn-vehicles`, `waterborne-vehicles`) and their members |
@@ -104,7 +104,7 @@ The Grimlock's conditional range is stored as `blindsight: 30` (base range),
 Multiattack `actions[].count` stays a number except for `hydra` ("Number of Heads")
 and `violet-fungus` ("1d4"), which are not fixed counts.
 
-### Monster normalization (`5e-SRD-Monsters-Normalized.json`, `normalize-monsters.ts`, `verify-normalize.sh`)
+### Monster normalization (`5e-SRD-Monsters-Normalized.json`, `normalize-monsters.ts`, `monster-engine-annotations.json`, `verify-normalize.sh`)
 
 `normalize-monsters.ts` is a standalone script (not part of the package's
 `build:ts`/`lint`/`test` scripts, and not invoked by Draconian Dungeons —
@@ -121,14 +121,26 @@ objects are collapsed to their `index` string, for example:
 
 It also relocates a `dc`/`condition` that upstream sometimes attaches
 directly to an `action` down onto that action's last `damage` entry, so
-consumers always find `dc`/`condition` in the same place. Draconian
-Dungeons' `models/srd/monster.ts` imports the *output* file
-(`5e-SRD-Monsters-Normalized.json`) directly — the script itself is
-effectively one-shot tooling that produced that file, not a build step the
-game runs. Within this repo, `normalizeAction` is exported and imported
-directly by `src/2014/tests/monster-weapons.test.ts`; the script guards its
-own `writeMonstersToFile()` call behind a direct-invocation check so
-importing it for that test doesn't also regenerate the output file.
+consumers always find `dc`/`condition` in the same place, and then merges in
+engine-only annotations from `monster-engine-annotations.json` — facts that
+have no English-source representation at all (e.g. the `condition` a failed
+save against a monster's Frightful Presence applies), keyed by monster
+`index`, section, and action/attack/damage-entry name. Draconian Dungeons'
+`models/srd/monster.ts` imports the *output* file
+(`5e-SRD-Monsters-Normalized.json`) directly — the script itself is not a
+build step the game runs. The committed normalized file is required to be
+exactly what the generator produces from the current English source plus
+the current annotations file:
+`src/2014/tests/normalized-monsters.test.ts` regenerates it and asserts a
+byte-for-byte match, so `normalizeMonsters`/`serializeMonsters` (and
+`normalizeAction`, used by `src/2014/tests/monster-weapons.test.ts`) are
+exported and imported directly rather than re-implemented in tests. The
+script guards its own `writeMonstersToFile()` call behind a
+direct-invocation check so importing it for these tests doesn't also
+regenerate the output file. Whenever either `5e-SRD-Monsters.json` or
+`monster-engine-annotations.json` changes, `5e-SRD-Monsters-Normalized.json`
+must be regenerated by running `normalize-monsters.ts` directly and
+committed together with that change, or the regeneration test fails.
 
 `verify-normalize.sh` is a small `jq`-based sanity check over the normalized
 file (lists actions with a `condition`, a `dc`, no damage, or a damage `dc`)
@@ -301,8 +313,9 @@ git push --force-with-lease=game-engine-rebase-next:<old-sha> origin game-engine
 
 As of this document, rebasing onto a `main` that has not touched
 `src/2014/en/*.json`, `src/2014/5e-SRD-Monsters-Normalized.json`,
-`src/2014/normalize-monsters.ts`, `src/2014/verify-normalize.sh`, or the
-`engines.node` line of `package.json` produces no conflicts at all — the
+`src/2014/normalize-monsters.ts`, `src/2014/monster-engine-annotations.json`,
+`src/2014/verify-normalize.sh`, or the `engines.node` line of `package.json`
+produces no conflicts at all — the
 only shared file historically touched by both sides is `package.json`,
 where git auto-merges the unrelated line changes. A future rebase may not be
 this clean if upstream starts editing the same collections; resolve those
