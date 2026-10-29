@@ -27,7 +27,7 @@ docs/
   game-engine-changes.md             What this fork changes relative to upstream, and why
   upstream-changelog.md              Upstream's release history, kept for reference and no longer generated
 schema/                              Generated JSON Schema, one per collection (see CONTRIBUTING.md)
-ids/                                 Generated id lists, one per collection (see CONTRIBUTING.md)
+ids/                                 Generated id lists, published ids and removed-id tombstones (see CONTRIBUTING.md)
 types/                               Generated .d.ts types, one per collection (see CONTRIBUTING.md)
 ```
 
@@ -116,6 +116,13 @@ pnpm lint       # ESLint, including JSON and Prettier rules
 
 CI (`.github/workflows/ci.yml`) runs `pnpm lint`, `pnpm test`, `tsc --noEmit` and a check that `schema/`, `types/` and `ids/`
 are up to date with the Zod schemas and data, on Node 22 and 24 on every pull request and on pushes to `main`.
+
+## Id stability contract
+
+A published id is never renamed or removed by default, because saves and backend documents store ids directly. When a
+removal is unavoidable it gets a tombstone in `ids/removed.json` (and an alias plus an app save-upgrade step where one
+fits), and a test fails on any published id that is gone without one. Published ids are tracked from upstream release
+v5.12.0 in `ids/published.json`; see [CONTRIBUTING.md](CONTRIBUTING.md#id-stability-contract).
 
 ## Contributing
 

@@ -7,8 +7,11 @@ import { collectionOfUrl, loadCollections, sortedIndices, type Entry } from '../
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
 const collections = loadCollections();
-const indicesByCollection = new Map(collections.map((c) => [c.name, new Map(c.entries.map((e) => [e.index as string, e]))]));
-const has = (collection: string, index: unknown) => indicesByCollection.get(collection)?.has(index as string) ?? false;
+const indicesByCollection = new Map(
+  collections.map((c) => [c.name, new Map(c.entries.map((e) => [e.index as string, e]))])
+);
+const has = (collection: string, index: unknown) =>
+  indicesByCollection.get(collection)?.has(index as string) ?? false;
 
 const normalizedMonsters = JSON.parse(
   fs.readFileSync(path.join(root, 'src/2014/5e-SRD-Monsters-Normalized.json'), 'utf8')
@@ -53,8 +56,12 @@ describe('ids', () => {
     for (const c of collections) {
       for (const entry of c.entries) {
         const url = entry.url as string;
-        if (collectionOfUrl(url) !== c.name) errors.push(`${c.file}: '${entry.index}' has url '${url}'`);
-        if (!url.startsWith('/api/2014/') || (c.name !== 'levels' && url !== `/api/2014/${c.name}/${entry.index}`)) {
+        if (collectionOfUrl(url) !== c.name)
+          errors.push(`${c.file}: '${entry.index}' has url '${url}'`);
+        if (
+          !url.startsWith('/api/2014/') ||
+          (c.name !== 'levels' && url !== `/api/2014/${c.name}/${entry.index}`)
+        ) {
           errors.push(`${c.file}: url '${url}' does not match index '${entry.index}'`);
         }
       }
@@ -97,7 +104,9 @@ describe('monster references', () => {
   const supplyWithoutEquipment = new Set(['rock', 'harpoon', 'poisoned-dart']);
 
   const actionsOf = (monsters: Entry[]) =>
-    monsters.flatMap((m) => ((m.actions ?? []) as Entry[]).map((a) => ({ at: `${m.index}: ${a.name}`, action: a })));
+    monsters.flatMap((m) =>
+      ((m.actions ?? []) as Entry[]).map((a) => ({ at: `${m.index}: ${a.name}`, action: a }))
+    );
 
   for (const [label, monsters] of [
     ['english', englishMonsters],
@@ -110,7 +119,11 @@ describe('monster references', () => {
           errors.push(`${at}: weapon '${action.weapon}' is not in equipment`);
         }
         const item = (action.supply as Entry | undefined)?.item;
-        if (item !== undefined && !has('equipment', item) && !supplyWithoutEquipment.has(item as string)) {
+        if (
+          item !== undefined &&
+          !has('equipment', item) &&
+          !supplyWithoutEquipment.has(item as string)
+        ) {
           errors.push(`${at}: supply item '${item}' is not in equipment`);
         }
       }
@@ -120,14 +133,17 @@ describe('monster references', () => {
     it(`resolve every condition id in situation and bonus_action (${label})`, () => {
       const errors: string[] = [];
       let count = 0;
-      const conditionId = (value: unknown) => (typeof value === 'string' ? value : (value as Entry | undefined)?.index);
+      const conditionId = (value: unknown) =>
+        typeof value === 'string' ? value : (value as Entry | undefined)?.index;
       const check = (at: string, value: unknown) => {
         count++;
-        if (!has('conditions', conditionId(value))) errors.push(`${at}: condition '${conditionId(value)}' does not exist`);
+        if (!has('conditions', conditionId(value)))
+          errors.push(`${at}: condition '${conditionId(value)}' does not exist`);
       };
       for (const monster of monsters) {
         walk(monster, String(monster.index), (object, at) => {
-          const condition = (object.situation as { target?: { condition?: unknown } } | undefined)?.target?.condition;
+          const condition = (object.situation as { target?: { condition?: unknown } } | undefined)
+            ?.target?.condition;
           if (condition !== undefined) check(`${at}.situation`, condition);
         });
       }
@@ -139,7 +155,10 @@ describe('monster references', () => {
 
 describe('ids/', () => {
   it('has one list per collection', () => {
-    const files = fs.readdirSync(path.join(root, 'ids')).sort();
+    const files = fs
+      .readdirSync(path.join(root, 'ids'))
+      .filter((f) => f !== 'published.json' && f !== 'removed.json')
+      .sort();
     expect(files).toEqual(collections.map((c) => `${c.name}.json`).sort());
     for (const c of collections) {
       const list = JSON.parse(fs.readFileSync(path.join(root, 'ids', `${c.name}.json`), 'utf8'));
