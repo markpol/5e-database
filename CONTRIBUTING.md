@@ -51,7 +51,7 @@ data itself.
 ## Changing English data
 
 Edit the entry in `src/{year}/en/5e-SRD-{Collection}.json` and run `pnpm test`. If you change a 2014 monster, also
-regenerate the normalized file (below).
+regenerate the normalized file with `pnpm normalize:monsters` (below).
 
 ## Adding a field
 
@@ -63,12 +63,12 @@ Because the schemas are strict, a new field is added in the schema and the data 
 3. If the field holds text that translators should be able to overlay, nothing more is needed: translations may use
    any field that exists in the English entry. If it is structural (an id, a number, a reference), it is never
    translated.
-4. If you changed `src/2014/en/5e-SRD-Monsters.json`, the committed
-   `src/2014/5e-SRD-Monsters-Normalized.json` must be regenerated with `normalizeMonsters` and `serializeMonsters` from
-   `src/2014/normalize-monsters.ts`. There is no `pnpm` script for this yet (running the file directly with `node`
-   does not work because of its JSON imports), so a script is planned. `normalized-monsters.test.ts` fails if the
-   committed file is stale and shows the expected differences. Engine-only monster data goes in
-   `src/2014/monster-engine-annotations.json`, not in the English file.
+4. If you changed `src/2014/en/5e-SRD-Monsters.json` or `src/2014/monster-engine-annotations.json`, regenerate the
+   committed `src/2014/5e-SRD-Monsters-Normalized.json` with `pnpm normalize:monsters`. The normalized file is the
+   generated monster source the game reads; never edit it by hand. `normalized-monsters.test.ts` fails if the
+   committed file is stale and shows the expected differences, and `schemas.test.ts` validates it against
+   `src/2014/schemas/5e-SRD-Monsters-Normalized.ts`, so a shape change goes in that schema too. Engine-only monster
+   data goes in `src/2014/monster-engine-annotations.json`, not in the English file.
 5. Mark the field in `src/provenance/source-markers.json` under its file's `fields`, with `"source": "dd"` and a
    `note` saying what it holds. A new entry (for example a condition the SRD does not have) goes under `records`,
    keyed by its `index`. A new data file needs its own entry. Update the table in [NOTICE.md](NOTICE.md) to match.

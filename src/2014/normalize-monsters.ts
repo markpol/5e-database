@@ -1,8 +1,8 @@
 import fs from "fs";
-import srcMonsters from './en/5e-SRD-Monsters.json';
-import { z } from 'zod';
-import { MonsterSchema } from './schemas/5e-SRD-Monsters';
-import engineAnnotations from './monster-engine-annotations.json';
+import srcMonsters from './en/5e-SRD-Monsters.json' with { type: 'json' };
+import type { z } from 'zod';
+import type { MonsterSchema } from './schemas/5e-SRD-Monsters';
+import engineAnnotations from './monster-engine-annotations.json' with { type: 'json' };
 console.log(`Loaded ${srcMonsters.length} monsters to normalize from 5e-SRD-Monsters.json`);
 
 const outputFilePath = "./src/2014/5e-SRD-Monsters-Normalized.json";
