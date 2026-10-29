@@ -1,0 +1,586 @@
+[
+  {
+    "monster": "aboleth",
+    "section": "actions",
+    "name": "Enslave",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "charmed",
+        "duration": {
+          "length": 1,
+          "unit": "day",
+          "interrupt": "damage taken and saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-black-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-blue-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-brass-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-bronze-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-copper-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-gold-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-green-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-red-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-silver-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-white-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-black-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-blue-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-brass-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-bronze-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-copper-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-gold-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-green-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-red-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-silver-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-white-dragon",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "androsphinx",
+    "section": "actions",
+    "name": "Roar",
+    "attack": "First Roar",
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "androsphinx",
+    "section": "actions",
+    "name": "Roar",
+    "attack": "Second Roar",
+    "set": {
+      "condition": {
+        "condition_type": "paralyzed",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "damage taken and saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "chain-devil",
+    "section": "reactions",
+    "name": "Unnerving Mask",
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "cloaker",
+    "section": "actions",
+    "name": "Moan",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "dryad",
+    "section": "actions",
+    "name": "Fey Charm",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "charmed",
+        "duration": {
+          "length": 1,
+          "unit": "day",
+          "interrupt": "damage taken and saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ghost",
+    "section": "actions",
+    "name": "Horrifying Visage",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "lich",
+    "section": "legendary_actions",
+    "name": "Frightening Gaze (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "mummy-lord",
+    "section": "actions",
+    "name": "Dreadful Glare",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "nalfeshnee",
+    "section": "actions",
+    "name": "Horror Nimbus",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "pit-fiend",
+    "section": "special_abilities",
+    "name": "Fear Aura",
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "rust-monster",
+    "section": "actions",
+    "name": "Antennae",
+    "set": {
+      "damage": [
+        {
+          "dc": {
+            "dc_type": "dex",
+            "dc_value": 11,
+            "success_type": "none"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "monster": "stirge",
+    "section": "actions",
+    "name": "Blood Drain",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "infested",
+        "duration": {
+          "length": 1,
+          "unit": "until detached"
+        }
+      }
+    }
+  },
+  {
+    "monster": "succubus-incubus",
+    "section": "actions",
+    "name": "Charm",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "charmed",
+        "duration": {
+          "length": 1,
+          "unit": "day",
+          "interrupt": "damage taken and saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "tarrasque",
+    "section": "actions",
+    "name": "Frightful Presence",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "vampire-vampire",
+    "section": "actions",
+    "name": "Charm",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "charmed",
+        "duration": {
+          "length": 1,
+          "unit": "day",
+          "interrupt": "damage taken and saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "vampire-bat",
+    "section": "actions",
+    "name": "Charm",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "charmed",
+        "duration": {
+          "length": 1,
+          "unit": "day",
+          "interrupt": "damage taken and saving throw success"
+        }
+      }
+    }
+  }
+]

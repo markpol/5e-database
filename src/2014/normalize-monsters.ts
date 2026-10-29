@@ -2,6 +2,7 @@ import fs from "fs";
 import srcMonsters from './en/5e-SRD-Monsters.json';
 import { z } from 'zod';
 import { MonsterSchema } from './schemas/5e-SRD-Monsters';
+import engineAnnotations from './monster-engine-annotations.json';
 console.log(`Loaded ${srcMonsters.length} monsters to normalize from 5e-SRD-Monsters.json`);
 
 const outputFilePath = "./src/2014/5e-SRD-Monsters-Normalized.json";
@@ -125,7 +126,35 @@ function normalizeSpecialAbility(specialAbility: any) {
   return normalizedSpecialAbility;
 } 
 
-function normalizeMonster(monster: Monster) {
+type EngineAnnotation = {
+  monster: string;
+  section: 'actions' | 'legendary_actions' | 'special_abilities' | 'reactions';
+  name: string;
+  attack?: string;
+  damage?: number;
+  set: Record<string, unknown>;
+};
+
+// Engine annotations that are not part of the SRD text (conditions applied on a failed save, implied DCs).
+// They live in monster-engine-annotations.json and are merged onto the normalized output, so the
+// committed file stays exactly what this generator produces.
+function applyEngineAnnotations(monster: { index: string } & Record<string, any>) {
+  for (const annotation of (engineAnnotations as EngineAnnotation[]).filter((a) => a.monster === monster.index)) {
+    let target = monster[annotation.section]?.find((item: any) => item.name === annotation.name);
+    if (target && annotation.attack) {
+      target = target.attacks?.find((attack: any) => attack.name === annotation.attack);
+    }
+    if (target && annotation.damage !== undefined) {
+      target = target.damage?.[annotation.damage];
+    }
+    if (!target) {
+      throw new Error(`Engine annotation target not found: ${JSON.stringify(annotation)}`);
+    }
+    Object.assign(target, structuredClone(annotation.set));
+  }
+}
+
+export function normalizeMonster(monster: Monster) {
   console.log(`    Normalizing monster: ${monster.name}`);
 
   if (monster.proficiencies?.length) {
@@ -186,15 +215,24 @@ function normalizeMonster(monster: Monster) {
     ...monster,
     actions: monster.actions?.map(normalizeAction),
   };
+  applyEngineAnnotations(normalizedMonster);
 
   return normalizedMonster;
 }
 
+export function normalizeMonsters(monsters: unknown[]) {
+  return (structuredClone(monsters) as Monster[]).map(normalizeMonster);
+}
+
+export function serializeMonsters(monsters: unknown[]) {
+  return `${JSON.stringify(monsters, null, 2)}\n`;
+}
+
 async function writeMonstersToFile() {
-  const normalizedMonsters = (srcMonsters as unknown as Monster[]).map(normalizeMonster);
+  const normalizedMonsters = normalizeMonsters(srcMonsters);
 
   console.log(`Writing ${normalizedMonsters.length} normalized monsters to ${outputFilePath}`);
-  await fs.promises.writeFile(outputFilePath, JSON.stringify(normalizedMonsters, null, 2));
+  await fs.promises.writeFile(outputFilePath, serializeMonsters(normalizedMonsters));
 }
 
 if (process.argv[1]?.endsWith('/normalize-monsters.ts')) {
