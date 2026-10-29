@@ -21,7 +21,6 @@ export default defineConfig({
         // Add any other paths you want to ignore
         '*.config.js',
         '*.config.ts',
-        'scripts/dbUtils.ts', // Example: ignoring utility scripts if not tested directly
       ],
       // Optional: Specify reporters (e.g., text, html, json)
       reporter: ['text', 'json', 'html'],

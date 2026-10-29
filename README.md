@@ -7,35 +7,6 @@ Holds the database for the D&D 5th Edition API at http://dnd5eapi.co/
 
 Talk to us [on Discord!](https://discord.gg/TQuYTv7)
 
-## How to run
-
-### With Docker
-
-You should be able to build locally and then run the local Docker image. This can be done one of two ways:
-
-1. If you just need an image and you aren't running an M1:
-
-```bash
-docker run ghcr.io/5e-bits/5e-database:latest
-```
-
-2. If you're running an M1 or you want to test changes that you've made to the Database:
-
-```bash
-docker build -t 5e-database .
-docker run -i -t 5e-database:latest
-```
-
-### Without Docker
-
-First you need to make sure you have [MongoDB installed locally.](https://docs.mongodb.com/manual/installation/)
-
-You can load this data locally by running:
-
-```bash
-MONGODB_URI=mongodb://localhost/5e-database pnpm run db:refresh
-```
-
 ## API Issues
 
 If you see anything wrong with the API and not the data, please open an issue or PR over [here](https://github.com/5e-bits/5e-srd-api).

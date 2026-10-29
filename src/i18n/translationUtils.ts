@@ -1,24 +1,10 @@
-import { z } from 'zod';
-import { LOCALE_PATTERN, YEAR_DIR_PATTERN } from './dbUtils';
+import { LOCALE_PATTERN, YEAR_DIR_PATTERN } from './constants';
 
-export const TranslationDocumentSchema = z.object({
-  source_index: z.string(),
-  source_collection: z.string(),
-  lang: z.string().regex(LOCALE_PATTERN, 'Must be a BCP 47 language tag'),
-  fields: z.record(z.string(), z.unknown()),
-  updated_at: z.date(),
-});
-
-export interface LocaleDocument {
+export interface TranslatedEntry {
+  source_index: string;
+  source_collection: string;
   lang: string;
-  updated_at: Date;
-}
-
-export type TranslationDocument = z.infer<typeof TranslationDocumentSchema>;
-
-export function computeLocaleDocuments(translationDocs: TranslationDocument[]): LocaleDocument[] {
-  const langs = new Set(translationDocs.map((d) => d.lang));
-  return Array.from(langs).map((lang) => ({ lang, updated_at: new Date() }));
+  fields: Record<string, unknown>;
 }
 
 export function buildIndexMap(
@@ -53,7 +39,7 @@ export function buildTranslationDoc(
   enMap: Map<string, Record<string, unknown>>,
   sourceCollection: string,
   lang: string
-): TranslationDocument | null {
+): TranslatedEntry | null {
   const sourceIndex = (transEntry as { index?: string }).index;
   if (typeof sourceIndex !== 'string') {
     console.warn(`  Translation entry in ${lang}/${sourceCollection} missing index. Skipping.`);
@@ -85,7 +71,6 @@ export function buildTranslationDoc(
     source_collection: sourceCollection,
     lang,
     fields: translatedFields,
-    updated_at: new Date(),
   };
 }
 
@@ -104,8 +89,8 @@ export function processTranslationEntries(
   indexName: string,
   lang: string,
   filename: string
-): TranslationDocument[] {
-  const docs: TranslationDocument[] = [];
+): TranslatedEntry[] {
+  const docs: TranslatedEntry[] = [];
   const seen = new Set<string>();
 
   for (const transEntry of transData) {
