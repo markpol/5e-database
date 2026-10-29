@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "index": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "class": {
+      "type": "object",
+      "properties": {
+        "index": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "index",
+        "name",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "subclass_flavor": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "subclass_levels": {
+      "type": "string"
+    },
+    "spells": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "prerequisites": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "index": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "index",
+                "type",
+                "name",
+                "url"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "spell": {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "index",
+              "name",
+              "url"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "prerequisites",
+          "spell"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "index",
+    "name",
+    "class",
+    "subclass_flavor",
+    "desc",
+    "subclass_levels",
+    "url"
+  ],
+  "additionalProperties": false
+}

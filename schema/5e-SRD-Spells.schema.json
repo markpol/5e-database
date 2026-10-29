@@ -1,0 +1,269 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "index": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "higher_level": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "range": {
+      "type": "string"
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "material": {
+      "type": "string"
+    },
+    "ritual": {
+      "type": "boolean"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "concentration": {
+      "type": "boolean"
+    },
+    "casting_time": {
+      "type": "string"
+    },
+    "level": {
+      "type": "number"
+    },
+    "attack_type": {
+      "type": "string"
+    },
+    "damage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "damage_type": {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "index",
+              "name",
+              "url"
+            ],
+            "additionalProperties": false
+          },
+          "damage_at_slot_level": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "damage_at_character_level": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "dc": {
+      "type": "object",
+      "properties": {
+        "dc_type": {
+          "type": "object",
+          "properties": {
+            "index": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "note": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "index",
+            "name",
+            "url"
+          ],
+          "additionalProperties": false
+        },
+        "dc_success": {
+          "type": "string"
+        },
+        "desc": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "dc_type",
+        "dc_success"
+      ],
+      "additionalProperties": false
+    },
+    "area_of_effect": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "type": "number"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "sphere",
+            "cube",
+            "cylinder",
+            "line",
+            "cone"
+          ]
+        }
+      },
+      "required": [
+        "size",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "heal_at_slot_level": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "school": {
+      "type": "object",
+      "properties": {
+        "index": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "index",
+        "name",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "classes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "index",
+          "name",
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "subclasses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "index",
+          "name",
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "index",
+    "name",
+    "desc",
+    "range",
+    "components",
+    "ritual",
+    "duration",
+    "concentration",
+    "casting_time",
+    "level",
+    "school",
+    "classes",
+    "url"
+  ],
+  "additionalProperties": false
+}

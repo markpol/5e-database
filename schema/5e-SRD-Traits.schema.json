@@ -1,0 +1,1039 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "index": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "races": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "index",
+          "name",
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "subraces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "index",
+          "name",
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "proficiencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "index",
+          "name",
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "proficiency_choices": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "language_options": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "parent": {
+      "type": "object",
+      "properties": {
+        "index": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "index",
+        "name",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "trait_specific": {
+      "type": "object",
+      "properties": {
+        "damage_type": {
+          "type": "object",
+          "properties": {
+            "index": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "note": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "index",
+            "name",
+            "url"
+          ],
+          "additionalProperties": false
+        },
+        "breath_weapon": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "desc": {
+              "type": "string"
+            },
+            "area_of_effect": {
+              "type": "object",
+              "properties": {
+                "size": {
+                  "type": "number"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "sphere",
+                    "cube",
+                    "cylinder",
+                    "line",
+                    "cone"
+                  ]
+                }
+              },
+              "required": [
+                "size",
+                "type"
+              ],
+              "additionalProperties": false
+            },
+            "usage": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "times": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "type",
+                "times"
+              ],
+              "additionalProperties": false
+            },
+            "dc": {
+              "type": "object",
+              "properties": {
+                "dc_type": {
+                  "type": "object",
+                  "properties": {
+                    "index": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "note": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "index",
+                    "name",
+                    "url"
+                  ],
+                  "additionalProperties": false
+                },
+                "dc_value": {
+                  "type": "number"
+                },
+                "success_type": {
+                  "type": "string",
+                  "enum": [
+                    "none",
+                    "half",
+                    "other"
+                  ]
+                }
+              },
+              "required": [
+                "dc_type",
+                "success_type"
+              ],
+              "additionalProperties": false
+            },
+            "damage": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "damage_type": {
+                    "type": "object",
+                    "properties": {
+                      "index": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "url": {
+                        "type": "string"
+                      },
+                      "note": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "index",
+                      "name",
+                      "url"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "damage_at_character_level": {
+                    "type": "object",
+                    "propertyNames": {
+                      "type": "string"
+                    },
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "damage_type",
+                  "damage_at_character_level"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "name",
+            "desc",
+            "area_of_effect",
+            "usage",
+            "dc",
+            "damage"
+          ],
+          "additionalProperties": false
+        },
+        "spell_options": {
+          "$ref": "#/$defs/__schema0"
+        },
+        "subtrait_options": {
+          "$ref": "#/$defs/__schema0"
+        }
+      },
+      "additionalProperties": false
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "index",
+    "name",
+    "desc",
+    "races",
+    "subraces",
+    "url"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "__schema0": {
+      "type": "object",
+      "properties": {
+        "desc": {
+          "type": "string"
+        },
+        "choose": {
+          "type": "number"
+        },
+        "type": {
+          "type": "string"
+        },
+        "from": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "option_set_type": {
+                  "type": "string",
+                  "const": "equipment_category"
+                },
+                "equipment_category": {
+                  "type": "object",
+                  "properties": {
+                    "index": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "note": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "index",
+                    "name",
+                    "url"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "option_set_type",
+                "equipment_category"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "option_set_type": {
+                  "type": "string",
+                  "const": "resource_list"
+                },
+                "resource_list_url": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "option_set_type",
+                "resource_list_url"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "option_set_type": {
+                  "type": "string",
+                  "const": "options_array"
+                },
+                "options": {
+                  "type": "array",
+                  "items": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/__schema1"
+                      },
+                      {
+                        "type": "string"
+                      }
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "option_set_type",
+                "options"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        }
+      },
+      "required": [
+        "choose",
+        "from"
+      ],
+      "additionalProperties": false
+    },
+    "__schema1": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "option_type": {
+              "type": "string",
+              "const": "reference"
+            },
+            "item": {
+              "type": "object",
+              "properties": {
+                "index": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "index",
+                "name",
+                "url"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "option_type",
+            "item"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "option_type": {
+              "type": "string",
+              "const": "choice"
+            },
+            "choice": {
+              "$ref": "#/$defs/__schema0"
+            }
+          },
+          "required": [
+            "option_type",
+            "choice"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "option_type": {
+              "type": "string",
+              "const": "string"
+            },
+            "string": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "option_type",
+            "string"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "option_type": {
+              "type": "string",
+              "const": "ability_bonus"
+            },
+            "ability_score": {
+              "type": "object",
+              "properties": {
+                "index": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "index",
+                "name",
+                "url"
+              ],
+              "additionalProperties": false
+            },
+            "bonus": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "option_type",
+            "ability_score",
+            "bonus"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "option_type": {
+              "type": "string",
+              "const": "action"
+            },
+            "action_name": {
+              "type": "string"
+            },
+            "count": {
+              "type": "number"
+            },
+            "type": {
+              "type": "string"
+            },
+            "desc": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "option_type",
+            "action_name",
+            "count",
+            "type"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "option_type": {
+              "type": "string",
+              "const": "breath"
+            },
+            "name": {
+              "type": "string"
+            },
+            "dc": {
+              "type": "object",
+              "properties": {
+                "dc_type": {
+                  "type": "object",
+                  "properties": {
+                    "index": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "note": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "index",
+                    "name",
+                    "url"
+                  ],
+                  "additionalProperties": false
+                },
+                "dc_value": {
+                  "type": "number"
+                },
+                "success_type": {
+                  "type": "string",
+                  "enum": [
+                    "none",
+                    "half",
+                    "other"
+                  ]
+                }
+              },
+              "required": [
+                "dc_type",
+                "success_type"
+              ],
+              "additionalProperties": false
+            },
+            "damage": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "damage_type": {
+                    "type": "object",
+                    "properties": {
+                      "index": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "url": {
+                        "type": "string"
+                      },
+                      "note": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "index",
+                      "name",
+                      "url"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "damage_dice": {
+                    "type": "string"
+                  },
+                  "dc": {
+                    "type": "object",
+                    "properties": {
+                      "dc_type": {
+                        "type": "object",
+                        "properties": {
+                          "index": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "note": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "index",
+                          "name",
+                          "url"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "dc_value": {
+                        "type": "number"
+                      },
+                      "success_type": {
+                        "type": "string",
+                        "enum": [
+                          "none",
+                          "half",
+                          "other"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "dc_type",
+                      "success_type"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "damage_type",
+                  "damage_dice"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "condition": {
+              "type": "object",
+              "properties": {
+                "condition_type": {
+                  "type": "object",
+                  "properties": {
+                    "index": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "note": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "index",
+                    "name",
+                    "url"
+                  ],
+                  "additionalProperties": false
+                },
+                "duration": {
+                  "type": "object",
+                  "properties": {
+                    "length": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    },
+                    "interrupt": {
+                      "type": "string"
+                    },
+                    "interrupt_modifier": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "length",
+                    "unit"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "condition_type",
+                "duration"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "option_type",
+            "name",
+            "dc"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "option_type": {
+              "type": "string",
+              "const": "counted_reference"
+            },
+            "count": {
+              "type": "number"
+            },
+            "of": {
+              "type": "object",
+              "properties": {
+                "index": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "index",
+                "name",
+                "url"
+              ],
+              "additionalProperties": false
+            },
+            "prerequisites": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string"
+                  },
+                  "proficiency": {
+                    "type": "object",
+                    "properties": {
+                      "index": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "url": {
+                        "type": "string"
+                      },
+                      "note": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "index",
+                      "name",
+                      "url"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "type"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "option_type",
+            "count",
+            "of"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "option_type": {
+              "type": "string",
+              "const": "damage"
+            },
+            "damage_dice": {
+              "type": "string"
+            },
+            "damage_type": {
+              "type": "object",
+              "properties": {
+                "index": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "index",
+                "name",
+                "url"
+              ],
+              "additionalProperties": false
+            },
+            "notes": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "option_type",
+            "damage_dice",
+            "damage_type"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "option_type": {
+              "type": "string",
+              "const": "ideal"
+            },
+            "alignments": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "index": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "index",
+                  "name",
+                  "url"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "desc": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "option_type",
+            "alignments",
+            "desc"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "option_type": {
+              "type": "string",
+              "const": "money"
+            },
+            "count": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "option_type",
+            "count",
+            "unit"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "option_type": {
+              "type": "string",
+              "const": "multiple"
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/__schema1"
+              }
+            },
+            "desc": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "option_type",
+            "items"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "option_type": {
+              "type": "string",
+              "const": "score_prerequisite"
+            },
+            "ability_score": {
+              "type": "object",
+              "properties": {
+                "index": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "index",
+                "name",
+                "url"
+              ],
+              "additionalProperties": false
+            },
+            "minimum_score": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "option_type",
+            "ability_score",
+            "minimum_score"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "option_type": {
+              "type": "string",
+              "const": "size"
+            },
+            "size": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "option_type",
+            "size"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}

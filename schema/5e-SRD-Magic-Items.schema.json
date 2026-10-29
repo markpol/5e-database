@@ -1,0 +1,310 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "index": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "equipment_category": {
+      "type": "object",
+      "properties": {
+        "index": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "index",
+        "name",
+        "url"
+      ],
+      "additionalProperties": false
+    },
+    "rarity": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "index",
+          "name",
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "variant": {
+      "type": "boolean"
+    },
+    "cost": {
+      "type": "object",
+      "properties": {
+        "quantity": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "quantity",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "effect": {
+      "type": "object",
+      "properties": {
+        "ability_score_modifier": {
+          "type": "object",
+          "properties": {
+            "ability": {
+              "type": "string"
+            },
+            "amount": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "number"
+                },
+                "increase": {
+                  "type": "number"
+                },
+                "max": {
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "ability",
+            "amount"
+          ],
+          "additionalProperties": false
+        },
+        "armor_class_modifier": {
+          "type": "number"
+        },
+        "damage_type_resistance": {
+          "type": "string"
+        },
+        "duration": {
+          "type": "object",
+          "properties": {
+            "unit": {
+              "type": "string"
+            },
+            "length": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "unit",
+            "length"
+          ],
+          "additionalProperties": false
+        },
+        "heal": {
+          "type": "string"
+        },
+        "proficiency_modifier": {
+          "type": "object",
+          "properties": {
+            "grants": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "grants"
+          ],
+          "additionalProperties": false
+        },
+        "saving_throw_modifier": {
+          "type": "object",
+          "properties": {
+            "abilities": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "gives_advantage": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "abilities",
+            "bonus"
+          ],
+          "additionalProperties": false
+        },
+        "skill_check_modifier": {
+          "type": "object",
+          "properties": {
+            "skill": {
+              "type": "string"
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "gives_advantage": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "skill"
+          ],
+          "additionalProperties": false
+        },
+        "trait_modifier": {
+          "type": "object",
+          "properties": {
+            "grants": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "grants"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "enchantment": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "label_prefix": {
+          "type": "string"
+        },
+        "armor_class_bonus": {
+          "type": "number"
+        },
+        "damage_bonus": {
+          "type": "number"
+        },
+        "to_hit_bonus": {
+          "type": "number"
+        },
+        "extra_damage": {
+          "type": "object",
+          "properties": {
+            "damage_type": {
+              "type": "object",
+              "properties": {
+                "index": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "index",
+                "name",
+                "url"
+              ],
+              "additionalProperties": false
+            },
+            "damage_dice": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "damage_type",
+            "damage_dice"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "type",
+        "label_prefix"
+      ],
+      "additionalProperties": false
+    },
+    "requires_attunement": {
+      "type": "boolean"
+    },
+    "is_consumable": {
+      "type": "boolean"
+    },
+    "weight": {
+      "type": "number"
+    },
+    "desc": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "image": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "index",
+    "name",
+    "equipment_category",
+    "rarity",
+    "variants",
+    "variant",
+    "url"
+  ],
+  "additionalProperties": false
+}

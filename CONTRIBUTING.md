@@ -24,6 +24,7 @@ changes with a `BREAKING CHANGE:` footer. These messages are what a release summ
 | `src/{year}/{locale}/`                      | Translation overlays                                |
 | `src/2014/5e-SRD-Monsters-Normalized.json`  | Generated; do not edit by hand                      |
 | `src/provenance/source-markers.json`        | Source of each data file and its non-SRD fields     |
+| `schema/`, `types/`                         | Generated JSON Schema and `.d.ts`; do not edit      |
 
 `{year}` is `2014` or `2024`. `src/2024` is dormant and frozen: changes to it are not accepted except bug fixes to the
 data itself.
@@ -52,6 +53,13 @@ data itself.
 
 Edit the entry in `src/{year}/en/5e-SRD-{Collection}.json` and run `pnpm test`. If you change a 2014 monster, also
 regenerate the normalized file with `pnpm normalize:monsters` (below).
+
+## Generated schema and types
+
+`schema/*.schema.json` (JSON Schema) and `types/*.d.ts` (from `z.infer`) are generated from the Zod schemas, which stay
+the source of truth. After changing a schema, run `pnpm run generate` and commit the result; CI runs
+`pnpm run generate:check` and fails if any generated file is stale. The recursive `ChoiceSchema` is typed `any`, so
+fields that use it are `any` in the emitted types (its JSON Schema is complete).
 
 ## Adding a field
 

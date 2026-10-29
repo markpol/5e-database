@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "index": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "typical_speakers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "desc": {
+      "type": "string"
+    },
+    "script": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "index",
+    "name",
+    "type",
+    "typical_speakers",
+    "url"
+  ],
+  "additionalProperties": false
+}

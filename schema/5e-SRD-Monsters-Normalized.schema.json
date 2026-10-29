@@ -1,0 +1,2706 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "index": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "subtype": {
+      "type": "string"
+    },
+    "alignment": {
+      "type": "string"
+    },
+    "armor_class": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          },
+          "armor": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "condition": {
+            "type": "string"
+          },
+          "spell": {
+            "type": "string"
+          },
+          "desc": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "value"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "hit_points": {
+      "type": "number"
+    },
+    "hit_dice": {
+      "type": "string"
+    },
+    "hit_points_roll": {
+      "type": "string"
+    },
+    "speed": {
+      "type": "object",
+      "properties": {
+        "walk": {
+          "type": "number"
+        },
+        "burrow": {
+          "type": "number"
+        },
+        "climb": {
+          "type": "number"
+        },
+        "fly": {
+          "type": "number"
+        },
+        "swim": {
+          "type": "number"
+        },
+        "hover": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "strength": {
+      "type": "number"
+    },
+    "dexterity": {
+      "type": "number"
+    },
+    "constitution": {
+      "type": "number"
+    },
+    "intelligence": {
+      "type": "number"
+    },
+    "wisdom": {
+      "type": "number"
+    },
+    "charisma": {
+      "type": "number"
+    },
+    "proficiencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "number"
+          },
+          "proficiency": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "value",
+          "proficiency"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "damage_vulnerabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "damage_resistances": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "damage_immunities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "condition_immunities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "senses": {
+      "type": "object",
+      "properties": {
+        "passive_perception": {
+          "type": "number"
+        },
+        "blindsight": {
+          "type": "number"
+        },
+        "blindsight_deafened": {
+          "type": "number"
+        },
+        "darkvision": {
+          "type": "number"
+        },
+        "tremorsense": {
+          "type": "number"
+        },
+        "truesight": {
+          "type": "number"
+        },
+        "blindsight_blind_beyond": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "passive_perception"
+      ],
+      "additionalProperties": false
+    },
+    "languages": {
+      "type": "string"
+    },
+    "challenge_rating": {
+      "type": "number"
+    },
+    "proficiency_bonus": {
+      "type": "number"
+    },
+    "xp": {
+      "type": "number"
+    },
+    "special_abilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "desc": {
+            "type": "string"
+          },
+          "attack_bonus": {
+            "type": "number"
+          },
+          "damage": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "damage_type": {
+                      "type": "string"
+                    },
+                    "damage_dice": {
+                      "type": "string"
+                    },
+                    "grapple": {
+                      "type": "object",
+                      "properties": {
+                        "escape_dc_value": {
+                          "type": "number"
+                        },
+                        "additional_condition": {
+                          "type": "object",
+                          "properties": {
+                            "condition_type": {
+                              "type": "string"
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "length": {
+                                  "type": "number"
+                                },
+                                "unit": {
+                                  "type": "string"
+                                },
+                                "interrupt": {
+                                  "type": "string"
+                                },
+                                "interrupt_modifier": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "length",
+                                "unit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "condition_type",
+                            "duration"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "escape_dc_value"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "dc": {
+                      "type": "object",
+                      "properties": {
+                        "dc_type": {
+                          "type": "string"
+                        },
+                        "dc_value": {
+                          "type": "number"
+                        },
+                        "success_type": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "half",
+                            "other"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dc_type",
+                        "success_type"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "condition": {
+                      "type": "object",
+                      "properties": {
+                        "condition_type": {
+                          "type": "string"
+                        },
+                        "duration": {
+                          "type": "object",
+                          "properties": {
+                            "length": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interrupt": {
+                              "type": "string"
+                            },
+                            "interrupt_modifier": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "length",
+                            "unit"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "condition_type",
+                        "duration"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "damage_type",
+                    "damage_dice"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "grapple": {
+                      "type": "object",
+                      "properties": {
+                        "escape_dc_value": {
+                          "type": "number"
+                        },
+                        "additional_condition": {
+                          "type": "object",
+                          "properties": {
+                            "condition_type": {
+                              "type": "string"
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "length": {
+                                  "type": "number"
+                                },
+                                "unit": {
+                                  "type": "string"
+                                },
+                                "interrupt": {
+                                  "type": "string"
+                                },
+                                "interrupt_modifier": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "length",
+                                "unit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "condition_type",
+                            "duration"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "escape_dc_value"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "dc": {
+                      "type": "object",
+                      "properties": {
+                        "dc_type": {
+                          "type": "string"
+                        },
+                        "dc_value": {
+                          "type": "number"
+                        },
+                        "success_type": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "half",
+                            "other"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dc_type",
+                        "success_type"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "grapple"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "dc": {
+                      "type": "object",
+                      "properties": {
+                        "dc_type": {
+                          "type": "string"
+                        },
+                        "dc_value": {
+                          "type": "number"
+                        },
+                        "success_type": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "half",
+                            "other"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dc_type",
+                        "success_type"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "condition": {
+                      "type": "object",
+                      "properties": {
+                        "condition_type": {
+                          "type": "string"
+                        },
+                        "duration": {
+                          "type": "object",
+                          "properties": {
+                            "length": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interrupt": {
+                              "type": "string"
+                            },
+                            "interrupt_modifier": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "length",
+                            "unit"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "condition_type",
+                        "duration"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "condition"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "dc": {
+                      "type": "object",
+                      "properties": {
+                        "dc_type": {
+                          "type": "string"
+                        },
+                        "dc_value": {
+                          "type": "number"
+                        },
+                        "success_type": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "half",
+                            "other"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dc_type",
+                        "success_type"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "dc"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "dc": {
+            "type": "object",
+            "properties": {
+              "dc_type": {
+                "type": "string"
+              },
+              "dc_value": {
+                "type": "number"
+              },
+              "success_type": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "half",
+                  "other"
+                ]
+              }
+            },
+            "required": [
+              "dc_type",
+              "success_type"
+            ],
+            "additionalProperties": false
+          },
+          "condition": {
+            "type": "object",
+            "properties": {
+              "condition_type": {
+                "type": "string"
+              },
+              "duration": {
+                "type": "object",
+                "properties": {
+                  "length": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interrupt": {
+                    "type": "string"
+                  },
+                  "interrupt_modifier": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "length",
+                  "unit"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "condition_type",
+              "duration"
+            ],
+            "additionalProperties": false
+          },
+          "usage": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "times": {
+                "type": "number"
+              },
+              "rest_types": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "additionalProperties": false
+          },
+          "spellcasting": {
+            "type": "object",
+            "properties": {
+              "ability": {
+                "type": "string"
+              },
+              "components_required": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "spells": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "level": {
+                      "type": "number"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "usage": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "times": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "type"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "notes": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "level",
+                    "url"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "level": {
+                "type": "number"
+              },
+              "dc": {
+                "type": "number"
+              },
+              "modifier": {
+                "type": "number"
+              },
+              "school": {
+                "type": "string"
+              },
+              "slots": {
+                "type": "object",
+                "propertyNames": {
+                  "type": "string"
+                },
+                "additionalProperties": {
+                  "type": "number"
+                }
+              }
+            },
+            "required": [
+              "ability",
+              "components_required",
+              "spells"
+            ],
+            "additionalProperties": false
+          },
+          "bonus_action": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "type": "string"
+              },
+              "situation": {
+                "type": "object",
+                "properties": {
+                  "target": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "condition"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "target"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "action",
+              "situation"
+            ],
+            "additionalProperties": false
+          },
+          "relentless_max_damage": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "name",
+          "desc"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "desc": {
+            "type": "string"
+          },
+          "attack_type": {
+            "type": "string",
+            "enum": [
+              "Melee",
+              "Ranged"
+            ]
+          },
+          "preference": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "always until first hit",
+                  "always on first round",
+                  "always unless target has condition"
+                ]
+              },
+              "target_condition": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "additionalProperties": false
+          },
+          "situation": {
+            "type": "object",
+            "properties": {
+              "target": {
+                "type": "object",
+                "properties": {
+                  "condition": {
+                    "type": "string"
+                  },
+                  "max_size": {
+                    "type": "string",
+                    "enum": [
+                      "Small",
+                      "Medium"
+                    ]
+                  },
+                  "conditionExcludes": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "condition"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "target"
+            ],
+            "additionalProperties": false
+          },
+          "attack_bonus": {
+            "type": "number"
+          },
+          "weapon": {
+            "type": "string"
+          },
+          "weapon_kind": {
+            "type": "string",
+            "enum": [
+              "natural",
+              "manufactured",
+              "spell"
+            ]
+          },
+          "supply": {
+            "type": "object",
+            "properties": {
+              "item": {
+                "type": "string"
+              },
+              "count": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "item",
+              "count"
+            ],
+            "additionalProperties": false
+          },
+          "usage": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "dice": {
+                "type": "string"
+              },
+              "min_value": {
+                "type": "number"
+              },
+              "times": {
+                "type": "number"
+              },
+              "rest_types": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "type"
+            ],
+            "additionalProperties": false
+          },
+          "multiattack_type": {
+            "type": "string"
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "action_name": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": [
+                    "number",
+                    "string"
+                  ]
+                },
+                "type": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "action_name",
+                "count",
+                "type"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "action_options": {
+            "type": "object",
+            "properties": {
+              "choose": {
+                "type": "number"
+              },
+              "type": {
+                "type": "string"
+              },
+              "desc": {
+                "type": "string"
+              },
+              "from": {
+                "type": "object",
+                "properties": {
+                  "option_set_type": {
+                    "type": "string",
+                    "const": "options_array"
+                  },
+                  "options": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "option_type": {
+                              "type": "string",
+                              "const": "action"
+                            },
+                            "action_name": {
+                              "type": "string"
+                            },
+                            "count": {
+                              "type": "number"
+                            },
+                            "type": {
+                              "type": "string"
+                            },
+                            "desc": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "option_type",
+                            "action_name",
+                            "count",
+                            "type"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "option_type": {
+                              "type": "string",
+                              "const": "multiple"
+                            },
+                            "items": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "option_type": {
+                                    "type": "string",
+                                    "const": "action"
+                                  },
+                                  "action_name": {
+                                    "type": "string"
+                                  },
+                                  "count": {
+                                    "type": "number"
+                                  },
+                                  "type": {
+                                    "type": "string"
+                                  },
+                                  "desc": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "option_type",
+                                  "action_name",
+                                  "count",
+                                  "type"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "desc": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "option_type",
+                            "items"
+                          ],
+                          "additionalProperties": false
+                        }
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "option_set_type",
+                  "options"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "choose",
+              "from"
+            ],
+            "additionalProperties": false
+          },
+          "attacks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "dc": {
+                  "type": "object",
+                  "properties": {
+                    "dc_type": {
+                      "type": "string"
+                    },
+                    "dc_value": {
+                      "type": "number"
+                    },
+                    "success_type": {
+                      "type": "string",
+                      "enum": [
+                        "none",
+                        "half",
+                        "other"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "dc_type",
+                    "success_type"
+                  ],
+                  "additionalProperties": false
+                },
+                "condition": {
+                  "type": "object",
+                  "properties": {
+                    "condition_type": {
+                      "type": "string"
+                    },
+                    "duration": {
+                      "type": "object",
+                      "properties": {
+                        "length": {
+                          "type": "number"
+                        },
+                        "unit": {
+                          "type": "string"
+                        },
+                        "interrupt": {
+                          "type": "string"
+                        },
+                        "interrupt_modifier": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "length",
+                        "unit"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "condition_type",
+                    "duration"
+                  ],
+                  "additionalProperties": false
+                },
+                "damage": {
+                  "type": "array",
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "damage_type": {
+                            "type": "string"
+                          },
+                          "damage_dice": {
+                            "type": "string"
+                          },
+                          "grapple": {
+                            "type": "object",
+                            "properties": {
+                              "escape_dc_value": {
+                                "type": "number"
+                              },
+                              "additional_condition": {
+                                "type": "object",
+                                "properties": {
+                                  "condition_type": {
+                                    "type": "string"
+                                  },
+                                  "duration": {
+                                    "type": "object",
+                                    "properties": {
+                                      "length": {
+                                        "type": "number"
+                                      },
+                                      "unit": {
+                                        "type": "string"
+                                      },
+                                      "interrupt": {
+                                        "type": "string"
+                                      },
+                                      "interrupt_modifier": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "length",
+                                      "unit"
+                                    ],
+                                    "additionalProperties": false
+                                  }
+                                },
+                                "required": [
+                                  "condition_type",
+                                  "duration"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "required": [
+                              "escape_dc_value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "dc": {
+                            "type": "object",
+                            "properties": {
+                              "dc_type": {
+                                "type": "string"
+                              },
+                              "dc_value": {
+                                "type": "number"
+                              },
+                              "success_type": {
+                                "type": "string",
+                                "enum": [
+                                  "none",
+                                  "half",
+                                  "other"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "dc_type",
+                              "success_type"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "condition": {
+                            "type": "object",
+                            "properties": {
+                              "condition_type": {
+                                "type": "string"
+                              },
+                              "duration": {
+                                "type": "object",
+                                "properties": {
+                                  "length": {
+                                    "type": "number"
+                                  },
+                                  "unit": {
+                                    "type": "string"
+                                  },
+                                  "interrupt": {
+                                    "type": "string"
+                                  },
+                                  "interrupt_modifier": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "length",
+                                  "unit"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "required": [
+                              "condition_type",
+                              "duration"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": [
+                          "damage_type",
+                          "damage_dice"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "grapple": {
+                            "type": "object",
+                            "properties": {
+                              "escape_dc_value": {
+                                "type": "number"
+                              },
+                              "additional_condition": {
+                                "type": "object",
+                                "properties": {
+                                  "condition_type": {
+                                    "type": "string"
+                                  },
+                                  "duration": {
+                                    "type": "object",
+                                    "properties": {
+                                      "length": {
+                                        "type": "number"
+                                      },
+                                      "unit": {
+                                        "type": "string"
+                                      },
+                                      "interrupt": {
+                                        "type": "string"
+                                      },
+                                      "interrupt_modifier": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "length",
+                                      "unit"
+                                    ],
+                                    "additionalProperties": false
+                                  }
+                                },
+                                "required": [
+                                  "condition_type",
+                                  "duration"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "required": [
+                              "escape_dc_value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "dc": {
+                            "type": "object",
+                            "properties": {
+                              "dc_type": {
+                                "type": "string"
+                              },
+                              "dc_value": {
+                                "type": "number"
+                              },
+                              "success_type": {
+                                "type": "string",
+                                "enum": [
+                                  "none",
+                                  "half",
+                                  "other"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "dc_type",
+                              "success_type"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": [
+                          "grapple"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "dc": {
+                            "type": "object",
+                            "properties": {
+                              "dc_type": {
+                                "type": "string"
+                              },
+                              "dc_value": {
+                                "type": "number"
+                              },
+                              "success_type": {
+                                "type": "string",
+                                "enum": [
+                                  "none",
+                                  "half",
+                                  "other"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "dc_type",
+                              "success_type"
+                            ],
+                            "additionalProperties": false
+                          },
+                          "condition": {
+                            "type": "object",
+                            "properties": {
+                              "condition_type": {
+                                "type": "string"
+                              },
+                              "duration": {
+                                "type": "object",
+                                "properties": {
+                                  "length": {
+                                    "type": "number"
+                                  },
+                                  "unit": {
+                                    "type": "string"
+                                  },
+                                  "interrupt": {
+                                    "type": "string"
+                                  },
+                                  "interrupt_modifier": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "length",
+                                  "unit"
+                                ],
+                                "additionalProperties": false
+                              }
+                            },
+                            "required": [
+                              "condition_type",
+                              "duration"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": [
+                          "condition"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "dc": {
+                            "type": "object",
+                            "properties": {
+                              "dc_type": {
+                                "type": "string"
+                              },
+                              "dc_value": {
+                                "type": "number"
+                              },
+                              "success_type": {
+                                "type": "string",
+                                "enum": [
+                                  "none",
+                                  "half",
+                                  "other"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "dc_type",
+                              "success_type"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": [
+                          "dc"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "name"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "options": {
+            "type": "object",
+            "properties": {
+              "choose": {
+                "type": "number"
+              },
+              "type": {
+                "type": "string"
+              },
+              "desc": {
+                "type": "string"
+              },
+              "from": {
+                "type": "object",
+                "properties": {
+                  "option_set_type": {
+                    "type": "string",
+                    "const": "options_array"
+                  },
+                  "options": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "option_type": {
+                          "type": "string",
+                          "const": "breath"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "dc": {
+                          "type": "object",
+                          "properties": {
+                            "dc_type": {
+                              "type": "string"
+                            },
+                            "dc_value": {
+                              "type": "number"
+                            },
+                            "success_type": {
+                              "type": "string",
+                              "enum": [
+                                "none",
+                                "half",
+                                "other"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "dc_type",
+                            "success_type"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "damage": {
+                          "type": "array",
+                          "items": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "damage_type": {
+                                    "type": "string"
+                                  },
+                                  "damage_dice": {
+                                    "type": "string"
+                                  },
+                                  "grapple": {
+                                    "type": "object",
+                                    "properties": {
+                                      "escape_dc_value": {
+                                        "type": "number"
+                                      },
+                                      "additional_condition": {
+                                        "type": "object",
+                                        "properties": {
+                                          "condition_type": {
+                                            "type": "string"
+                                          },
+                                          "duration": {
+                                            "type": "object",
+                                            "properties": {
+                                              "length": {
+                                                "type": "number"
+                                              },
+                                              "unit": {
+                                                "type": "string"
+                                              },
+                                              "interrupt": {
+                                                "type": "string"
+                                              },
+                                              "interrupt_modifier": {
+                                                "type": "string"
+                                              }
+                                            },
+                                            "required": [
+                                              "length",
+                                              "unit"
+                                            ],
+                                            "additionalProperties": false
+                                          }
+                                        },
+                                        "required": [
+                                          "condition_type",
+                                          "duration"
+                                        ],
+                                        "additionalProperties": false
+                                      }
+                                    },
+                                    "required": [
+                                      "escape_dc_value"
+                                    ],
+                                    "additionalProperties": false
+                                  },
+                                  "dc": {
+                                    "type": "object",
+                                    "properties": {
+                                      "dc_type": {
+                                        "type": "string"
+                                      },
+                                      "dc_value": {
+                                        "type": "number"
+                                      },
+                                      "success_type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "none",
+                                          "half",
+                                          "other"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "dc_type",
+                                      "success_type"
+                                    ],
+                                    "additionalProperties": false
+                                  },
+                                  "condition": {
+                                    "type": "object",
+                                    "properties": {
+                                      "condition_type": {
+                                        "type": "string"
+                                      },
+                                      "duration": {
+                                        "type": "object",
+                                        "properties": {
+                                          "length": {
+                                            "type": "number"
+                                          },
+                                          "unit": {
+                                            "type": "string"
+                                          },
+                                          "interrupt": {
+                                            "type": "string"
+                                          },
+                                          "interrupt_modifier": {
+                                            "type": "string"
+                                          }
+                                        },
+                                        "required": [
+                                          "length",
+                                          "unit"
+                                        ],
+                                        "additionalProperties": false
+                                      }
+                                    },
+                                    "required": [
+                                      "condition_type",
+                                      "duration"
+                                    ],
+                                    "additionalProperties": false
+                                  }
+                                },
+                                "required": [
+                                  "damage_type",
+                                  "damage_dice"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "grapple": {
+                                    "type": "object",
+                                    "properties": {
+                                      "escape_dc_value": {
+                                        "type": "number"
+                                      },
+                                      "additional_condition": {
+                                        "type": "object",
+                                        "properties": {
+                                          "condition_type": {
+                                            "type": "string"
+                                          },
+                                          "duration": {
+                                            "type": "object",
+                                            "properties": {
+                                              "length": {
+                                                "type": "number"
+                                              },
+                                              "unit": {
+                                                "type": "string"
+                                              },
+                                              "interrupt": {
+                                                "type": "string"
+                                              },
+                                              "interrupt_modifier": {
+                                                "type": "string"
+                                              }
+                                            },
+                                            "required": [
+                                              "length",
+                                              "unit"
+                                            ],
+                                            "additionalProperties": false
+                                          }
+                                        },
+                                        "required": [
+                                          "condition_type",
+                                          "duration"
+                                        ],
+                                        "additionalProperties": false
+                                      }
+                                    },
+                                    "required": [
+                                      "escape_dc_value"
+                                    ],
+                                    "additionalProperties": false
+                                  },
+                                  "dc": {
+                                    "type": "object",
+                                    "properties": {
+                                      "dc_type": {
+                                        "type": "string"
+                                      },
+                                      "dc_value": {
+                                        "type": "number"
+                                      },
+                                      "success_type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "none",
+                                          "half",
+                                          "other"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "dc_type",
+                                      "success_type"
+                                    ],
+                                    "additionalProperties": false
+                                  }
+                                },
+                                "required": [
+                                  "grapple"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "dc": {
+                                    "type": "object",
+                                    "properties": {
+                                      "dc_type": {
+                                        "type": "string"
+                                      },
+                                      "dc_value": {
+                                        "type": "number"
+                                      },
+                                      "success_type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "none",
+                                          "half",
+                                          "other"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "dc_type",
+                                      "success_type"
+                                    ],
+                                    "additionalProperties": false
+                                  },
+                                  "condition": {
+                                    "type": "object",
+                                    "properties": {
+                                      "condition_type": {
+                                        "type": "string"
+                                      },
+                                      "duration": {
+                                        "type": "object",
+                                        "properties": {
+                                          "length": {
+                                            "type": "number"
+                                          },
+                                          "unit": {
+                                            "type": "string"
+                                          },
+                                          "interrupt": {
+                                            "type": "string"
+                                          },
+                                          "interrupt_modifier": {
+                                            "type": "string"
+                                          }
+                                        },
+                                        "required": [
+                                          "length",
+                                          "unit"
+                                        ],
+                                        "additionalProperties": false
+                                      }
+                                    },
+                                    "required": [
+                                      "condition_type",
+                                      "duration"
+                                    ],
+                                    "additionalProperties": false
+                                  }
+                                },
+                                "required": [
+                                  "condition"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "dc": {
+                                    "type": "object",
+                                    "properties": {
+                                      "dc_type": {
+                                        "type": "string"
+                                      },
+                                      "dc_value": {
+                                        "type": "number"
+                                      },
+                                      "success_type": {
+                                        "type": "string",
+                                        "enum": [
+                                          "none",
+                                          "half",
+                                          "other"
+                                        ]
+                                      }
+                                    },
+                                    "required": [
+                                      "dc_type",
+                                      "success_type"
+                                    ],
+                                    "additionalProperties": false
+                                  }
+                                },
+                                "required": [
+                                  "dc"
+                                ],
+                                "additionalProperties": false
+                              }
+                            ]
+                          }
+                        },
+                        "condition": {
+                          "type": "object",
+                          "properties": {
+                            "condition_type": {
+                              "type": "string"
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "length": {
+                                  "type": "number"
+                                },
+                                "unit": {
+                                  "type": "string"
+                                },
+                                "interrupt": {
+                                  "type": "string"
+                                },
+                                "interrupt_modifier": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "length",
+                                "unit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "condition_type",
+                            "duration"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "option_type",
+                        "name",
+                        "dc"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "option_set_type",
+                  "options"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "choose",
+              "from"
+            ],
+            "additionalProperties": false
+          },
+          "damage": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "damage_type": {
+                          "type": "string"
+                        },
+                        "damage_dice": {
+                          "type": "string"
+                        },
+                        "grapple": {
+                          "type": "object",
+                          "properties": {
+                            "escape_dc_value": {
+                              "type": "number"
+                            },
+                            "additional_condition": {
+                              "type": "object",
+                              "properties": {
+                                "condition_type": {
+                                  "type": "string"
+                                },
+                                "duration": {
+                                  "type": "object",
+                                  "properties": {
+                                    "length": {
+                                      "type": "number"
+                                    },
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "interrupt": {
+                                      "type": "string"
+                                    },
+                                    "interrupt_modifier": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "length",
+                                    "unit"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              },
+                              "required": [
+                                "condition_type",
+                                "duration"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "escape_dc_value"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "dc": {
+                          "type": "object",
+                          "properties": {
+                            "dc_type": {
+                              "type": "string"
+                            },
+                            "dc_value": {
+                              "type": "number"
+                            },
+                            "success_type": {
+                              "type": "string",
+                              "enum": [
+                                "none",
+                                "half",
+                                "other"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "dc_type",
+                            "success_type"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "condition": {
+                          "type": "object",
+                          "properties": {
+                            "condition_type": {
+                              "type": "string"
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "length": {
+                                  "type": "number"
+                                },
+                                "unit": {
+                                  "type": "string"
+                                },
+                                "interrupt": {
+                                  "type": "string"
+                                },
+                                "interrupt_modifier": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "length",
+                                "unit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "condition_type",
+                            "duration"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "damage_type",
+                        "damage_dice"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "grapple": {
+                          "type": "object",
+                          "properties": {
+                            "escape_dc_value": {
+                              "type": "number"
+                            },
+                            "additional_condition": {
+                              "type": "object",
+                              "properties": {
+                                "condition_type": {
+                                  "type": "string"
+                                },
+                                "duration": {
+                                  "type": "object",
+                                  "properties": {
+                                    "length": {
+                                      "type": "number"
+                                    },
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "interrupt": {
+                                      "type": "string"
+                                    },
+                                    "interrupt_modifier": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "length",
+                                    "unit"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              },
+                              "required": [
+                                "condition_type",
+                                "duration"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "escape_dc_value"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "dc": {
+                          "type": "object",
+                          "properties": {
+                            "dc_type": {
+                              "type": "string"
+                            },
+                            "dc_value": {
+                              "type": "number"
+                            },
+                            "success_type": {
+                              "type": "string",
+                              "enum": [
+                                "none",
+                                "half",
+                                "other"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "dc_type",
+                            "success_type"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "grapple"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dc": {
+                          "type": "object",
+                          "properties": {
+                            "dc_type": {
+                              "type": "string"
+                            },
+                            "dc_value": {
+                              "type": "number"
+                            },
+                            "success_type": {
+                              "type": "string",
+                              "enum": [
+                                "none",
+                                "half",
+                                "other"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "dc_type",
+                            "success_type"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "condition": {
+                          "type": "object",
+                          "properties": {
+                            "condition_type": {
+                              "type": "string"
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "length": {
+                                  "type": "number"
+                                },
+                                "unit": {
+                                  "type": "string"
+                                },
+                                "interrupt": {
+                                  "type": "string"
+                                },
+                                "interrupt_modifier": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "length",
+                                "unit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "condition_type",
+                            "duration"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "condition"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dc": {
+                          "type": "object",
+                          "properties": {
+                            "dc_type": {
+                              "type": "string"
+                            },
+                            "dc_value": {
+                              "type": "number"
+                            },
+                            "success_type": {
+                              "type": "string",
+                              "enum": [
+                                "none",
+                                "half",
+                                "other"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "dc_type",
+                            "success_type"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "dc"
+                      ],
+                      "additionalProperties": false
+                    }
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "choose": {
+                      "type": "number"
+                    },
+                    "type": {
+                      "type": "string",
+                      "const": "damage"
+                    },
+                    "from": {
+                      "type": "object",
+                      "properties": {
+                        "option_set_type": {
+                          "type": "string",
+                          "const": "options_array"
+                        },
+                        "options": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "option_type": {
+                                "type": "string",
+                                "const": "damage"
+                              },
+                              "damage_type": {
+                                "type": "string"
+                              },
+                              "damage_dice": {
+                                "type": "string"
+                              },
+                              "notes": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "option_type",
+                              "damage_type",
+                              "damage_dice"
+                            ],
+                            "additionalProperties": false
+                          }
+                        }
+                      },
+                      "required": [
+                        "option_set_type",
+                        "options"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "choose",
+                    "type",
+                    "from"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "name",
+          "desc"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "legendary_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "desc": {
+            "type": "string"
+          },
+          "attack_bonus": {
+            "type": "number"
+          },
+          "damage": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "damage_type": {
+                      "type": "string"
+                    },
+                    "damage_dice": {
+                      "type": "string"
+                    },
+                    "grapple": {
+                      "type": "object",
+                      "properties": {
+                        "escape_dc_value": {
+                          "type": "number"
+                        },
+                        "additional_condition": {
+                          "type": "object",
+                          "properties": {
+                            "condition_type": {
+                              "type": "string"
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "length": {
+                                  "type": "number"
+                                },
+                                "unit": {
+                                  "type": "string"
+                                },
+                                "interrupt": {
+                                  "type": "string"
+                                },
+                                "interrupt_modifier": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "length",
+                                "unit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "condition_type",
+                            "duration"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "escape_dc_value"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "dc": {
+                      "type": "object",
+                      "properties": {
+                        "dc_type": {
+                          "type": "string"
+                        },
+                        "dc_value": {
+                          "type": "number"
+                        },
+                        "success_type": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "half",
+                            "other"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dc_type",
+                        "success_type"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "condition": {
+                      "type": "object",
+                      "properties": {
+                        "condition_type": {
+                          "type": "string"
+                        },
+                        "duration": {
+                          "type": "object",
+                          "properties": {
+                            "length": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interrupt": {
+                              "type": "string"
+                            },
+                            "interrupt_modifier": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "length",
+                            "unit"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "condition_type",
+                        "duration"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "damage_type",
+                    "damage_dice"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "grapple": {
+                      "type": "object",
+                      "properties": {
+                        "escape_dc_value": {
+                          "type": "number"
+                        },
+                        "additional_condition": {
+                          "type": "object",
+                          "properties": {
+                            "condition_type": {
+                              "type": "string"
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "length": {
+                                  "type": "number"
+                                },
+                                "unit": {
+                                  "type": "string"
+                                },
+                                "interrupt": {
+                                  "type": "string"
+                                },
+                                "interrupt_modifier": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "length",
+                                "unit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "condition_type",
+                            "duration"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "escape_dc_value"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "dc": {
+                      "type": "object",
+                      "properties": {
+                        "dc_type": {
+                          "type": "string"
+                        },
+                        "dc_value": {
+                          "type": "number"
+                        },
+                        "success_type": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "half",
+                            "other"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dc_type",
+                        "success_type"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "grapple"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "dc": {
+                      "type": "object",
+                      "properties": {
+                        "dc_type": {
+                          "type": "string"
+                        },
+                        "dc_value": {
+                          "type": "number"
+                        },
+                        "success_type": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "half",
+                            "other"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dc_type",
+                        "success_type"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "condition": {
+                      "type": "object",
+                      "properties": {
+                        "condition_type": {
+                          "type": "string"
+                        },
+                        "duration": {
+                          "type": "object",
+                          "properties": {
+                            "length": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interrupt": {
+                              "type": "string"
+                            },
+                            "interrupt_modifier": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "length",
+                            "unit"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "condition_type",
+                        "duration"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "condition"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "dc": {
+                      "type": "object",
+                      "properties": {
+                        "dc_type": {
+                          "type": "string"
+                        },
+                        "dc_value": {
+                          "type": "number"
+                        },
+                        "success_type": {
+                          "type": "string",
+                          "enum": [
+                            "none",
+                            "half",
+                            "other"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dc_type",
+                        "success_type"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "dc"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "dc": {
+            "type": "object",
+            "properties": {
+              "dc_type": {
+                "type": "string"
+              },
+              "dc_value": {
+                "type": "number"
+              },
+              "success_type": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "half",
+                  "other"
+                ]
+              }
+            },
+            "required": [
+              "dc_type",
+              "success_type"
+            ],
+            "additionalProperties": false
+          },
+          "condition": {
+            "type": "object",
+            "properties": {
+              "condition_type": {
+                "type": "string"
+              },
+              "duration": {
+                "type": "object",
+                "properties": {
+                  "length": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interrupt": {
+                    "type": "string"
+                  },
+                  "interrupt_modifier": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "length",
+                  "unit"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "condition_type",
+              "duration"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "name",
+          "desc"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "reactions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "desc": {
+            "type": "string"
+          },
+          "dc": {
+            "type": "object",
+            "properties": {
+              "dc_type": {
+                "type": "string"
+              },
+              "dc_value": {
+                "type": "number"
+              },
+              "success_type": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "half",
+                  "other"
+                ]
+              }
+            },
+            "required": [
+              "dc_type",
+              "success_type"
+            ],
+            "additionalProperties": false
+          },
+          "condition": {
+            "type": "object",
+            "properties": {
+              "condition_type": {
+                "type": "string"
+              },
+              "duration": {
+                "type": "object",
+                "properties": {
+                  "length": {
+                    "type": "number"
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "interrupt": {
+                    "type": "string"
+                  },
+                  "interrupt_modifier": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "length",
+                  "unit"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "condition_type",
+              "duration"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "name",
+          "desc"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "environments": {
+      "type": "string"
+    },
+    "bonus_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "forms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "image": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "index",
+    "name",
+    "size",
+    "type",
+    "alignment",
+    "armor_class",
+    "hit_points",
+    "hit_dice",
+    "hit_points_roll",
+    "speed",
+    "strength",
+    "dexterity",
+    "constitution",
+    "intelligence",
+    "wisdom",
+    "charisma",
+    "proficiencies",
+    "damage_vulnerabilities",
+    "damage_resistances",
+    "damage_immunities",
+    "condition_immunities",
+    "senses",
+    "languages",
+    "challenge_rating",
+    "xp",
+    "url"
+  ],
+  "additionalProperties": false
+}
