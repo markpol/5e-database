@@ -1,0 +1,11 @@
+{
+  "collection": "rules",
+  "indices": [
+    "adventuring",
+    "appendix",
+    "combat",
+    "equipment",
+    "spellcasting",
+    "using-ability-scores"
+  ]
+}

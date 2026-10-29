@@ -1,0 +1,9 @@
+{
+  "collection": "subraces",
+  "indices": [
+    "high-elf",
+    "hill-dwarf",
+    "lightfoot-halfling",
+    "rock-gnome"
+  ]
+}

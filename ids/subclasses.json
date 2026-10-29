@@ -1,0 +1,17 @@
+{
+  "collection": "subclasses",
+  "indices": [
+    "berserker",
+    "champion",
+    "devotion",
+    "draconic",
+    "evocation",
+    "fiend",
+    "hunter",
+    "land",
+    "life",
+    "lore",
+    "open-hand",
+    "thief"
+  ]
+}

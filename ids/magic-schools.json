@@ -1,0 +1,13 @@
+{
+  "collection": "magic-schools",
+  "indices": [
+    "abjuration",
+    "conjuration",
+    "divination",
+    "enchantment",
+    "evocation",
+    "illusion",
+    "necromancy",
+    "transmutation"
+  ]
+}

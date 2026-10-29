@@ -97,5 +97,5 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      - name: Check generated schema/ and types/ are current
+      - name: Check generated schema/, types/ and ids/ are current
         run: pnpm run generate:check

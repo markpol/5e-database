@@ -1,0 +1,11 @@
+{
+  "collection": "ability-scores",
+  "indices": [
+    "cha",
+    "con",
+    "dex",
+    "int",
+    "str",
+    "wis"
+  ]
+}

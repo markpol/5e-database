@@ -1,87 +1,149 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { describe, it, expect } from 'vitest';
-import fs from 'fs';
-import { globSync } from 'glob';
 
-type Entry = Record<string, unknown>;
+import { collectionOfUrl, loadCollections, sortedIndices, type Entry } from '../../../scripts/ids';
 
-describe('duplicate indices', () => {
-  it('should contain unique indices', () => {
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
+const collections = loadCollections();
+const indicesByCollection = new Map(collections.map((c) => [c.name, new Map(c.entries.map((e) => [e.index as string, e]))]));
+const has = (collection: string, index: unknown) => indicesByCollection.get(collection)?.has(index as string) ?? false;
+
+const normalizedMonsters = JSON.parse(
+  fs.readFileSync(path.join(root, 'src/2014/5e-SRD-Monsters-Normalized.json'), 'utf8')
+) as Entry[];
+const englishMonsters = collections.find((c) => c.name === 'monsters')!.entries;
+
+/** The index a url names: `/api/2014/spells/fireball` -> `fireball`, `.../classes/cleric/levels/1` -> `cleric-1`. */
+function urlIndex(url: string): string {
+  const parts = url.split('/');
+  return parts[5] === 'levels' ? `${parts[4]}-${parts[6]}` : parts[4];
+}
+
+/** Calls back for every object nested anywhere inside `value`, with the path to it. */
+function walk(value: unknown, at: string, callback: (object: Entry, at: string) => void): void {
+  if (Array.isArray(value)) {
+    value.forEach((v, i) => walk(v, `${at}[${i}]`, callback));
+  } else if (typeof value === 'object' && value !== null) {
+    callback(value as Entry, at);
+    for (const [key, v] of Object.entries(value)) walk(v, `${at}.${key}`, callback);
+  }
+}
+
+describe('ids', () => {
+  it('are strings, unique within a collection, and lowercase url-safe', () => {
     const errors: string[] = [];
-    const fileIndices: Record<string, Set<unknown>> = {};
-
-    forEachFileEntry((filename, entry) => {
-      if (filename in fileIndices === false) {
-        fileIndices[filename] = new Set();
-      }
-
-      if (fileIndices[filename].has(entry.index)) {
-        errors.push(`${filename}: Index '${entry.index}' already exists.`);
-      }
-
-      fileIndices[filename].add(entry.index);
-    });
-
-    expect(errors).toEqual([]);
-  });
-});
-
-describe('api references', () => {
-  it('should not contain broken links', () => {
-    const errors: string[] = [];
-    const resources: Record<string, { index?: unknown; name?: unknown }> = {};
-
-    forEachFileEntry((filename, entry) => {
-      if (entry.url === undefined) return;
-
-      if (entry.index === undefined) {
-        errors.push(`${filename}: Entry with URL '${entry.url}' should have an index.`);
-      }
-
-      resources[entry.url as string] = { index: entry.index, name: entry.name };
-    });
-
-    forEachFileEntry((filename, topLevelEntry) => {
-      recurseIntoObject(topLevelEntry, (subEntry) => {
-        if (!Object.prototype.hasOwnProperty.call(subEntry, 'url')) return;
-
-        if (resources[subEntry.url as string] === undefined) {
-          errors.push(`${filename}: URL '${subEntry.url}' not found.`);
-        } else {
-          const resource = resources[subEntry.url as string];
-          if (resource.name !== undefined && resource.name !== subEntry.name) {
-            errors.push(
-              `${filename}: Name mismatch for reference to '${subEntry.url}', '${subEntry.name}' should be '${resource.name}'`
-            );
-          }
-
-          if (subEntry.index !== undefined && resource.index !== subEntry.index) {
-            errors.push(
-              `${filename}: Index mismatch for reference to '${subEntry.url}', '${subEntry.index}' should be '${resource.index}'`
-            );
-          }
+    for (const c of collections) {
+      const seen = new Set<unknown>();
+      for (const entry of c.entries) {
+        if (typeof entry.index !== 'string' || !/^[a-z0-9-]+$/.test(entry.index)) {
+          errors.push(`${c.file}: invalid index ${JSON.stringify(entry.index)}`);
+        } else if (seen.has(entry.index)) {
+          errors.push(`${c.file}: index '${entry.index}' already exists`);
         }
-      });
-    });
+        seen.add(entry.index);
+      }
+    }
+    expect(errors).toEqual([]);
+  });
 
+  it('match the url of the entry', () => {
+    const errors: string[] = [];
+    for (const c of collections) {
+      for (const entry of c.entries) {
+        const url = entry.url as string;
+        if (collectionOfUrl(url) !== c.name) errors.push(`${c.file}: '${entry.index}' has url '${url}'`);
+        if (!url.startsWith('/api/2014/') || (c.name !== 'levels' && url !== `/api/2014/${c.name}/${entry.index}`)) {
+          errors.push(`${c.file}: url '${url}' does not match index '${entry.index}'`);
+        }
+      }
+    }
     expect(errors).toEqual([]);
   });
 });
 
-const forEachFileEntry = (callback: (filename: string, entry: Entry) => void) => {
-  const filenames = globSync('src/2014/en/*.json');
-
-  for (const filename of filenames) {
-    const fileText = fs.readFileSync(filename, 'utf8');
-    const fileJSON = JSON.parse(fileText) as Entry[];
-    fileJSON.forEach((entry) => callback(filename, entry));
-  }
-};
-
-const recurseIntoObject = (object: Entry, callback: (subEntry: Entry) => void) => {
-  for (const property in object) {
-    if (typeof object[property] === 'object' && object[property] !== null) {
-      callback(object[property] as Entry);
-      recurseIntoObject(object[property] as Entry, callback);
+describe('references', () => {
+  it('resolve by (collection, index) and agree with the entry they point at', () => {
+    const errors: string[] = [];
+    let count = 0;
+    for (const c of collections) {
+      for (const entry of c.entries) {
+        walk(entry, `${c.file}:${entry.index}`, (object, at) => {
+          if (typeof object.url !== 'string') return;
+          if (object === entry) return;
+          count++;
+          const collection = collectionOfUrl(object.url);
+          // Some references (spells in spellcasting, level prerequisites) carry no index; the url names it.
+          const index = object.index ?? urlIndex(object.url);
+          const target = indicesByCollection.get(collection)?.get(index as string);
+          if (!target) {
+            errors.push(`${at}: no ${collection} entry with index '${index}'`);
+          } else if (target.url !== object.url) {
+            errors.push(`${at}: url '${object.url}' should be '${target.url}'`);
+          } else if (target.name !== undefined && object.name !== target.name) {
+            errors.push(`${at}: name '${object.name}' should be '${target.name}'`);
+          }
+        });
+      }
     }
+    expect(count).toBeGreaterThan(0);
+    expect(errors).toEqual([]);
+  });
+});
+
+describe('monster references', () => {
+  // Allowance: these supplies are ammunition the monsters carry that the SRD has no equipment entry for.
+  const supplyWithoutEquipment = new Set(['rock', 'harpoon', 'poisoned-dart']);
+
+  const actionsOf = (monsters: Entry[]) =>
+    monsters.flatMap((m) => ((m.actions ?? []) as Entry[]).map((a) => ({ at: `${m.index}: ${a.name}`, action: a })));
+
+  for (const [label, monsters] of [
+    ['english', englishMonsters],
+    ['normalized', normalizedMonsters],
+  ] as const) {
+    it(`resolve every weapon and supply.item (${label})`, () => {
+      const errors: string[] = [];
+      for (const { at, action } of actionsOf(monsters)) {
+        if (action.weapon !== undefined && !has('equipment', action.weapon)) {
+          errors.push(`${at}: weapon '${action.weapon}' is not in equipment`);
+        }
+        const item = (action.supply as Entry | undefined)?.item;
+        if (item !== undefined && !has('equipment', item) && !supplyWithoutEquipment.has(item as string)) {
+          errors.push(`${at}: supply item '${item}' is not in equipment`);
+        }
+      }
+      expect(errors).toEqual([]);
+    });
+
+    it(`resolve every condition id in situation and bonus_action (${label})`, () => {
+      const errors: string[] = [];
+      let count = 0;
+      const conditionId = (value: unknown) => (typeof value === 'string' ? value : (value as Entry | undefined)?.index);
+      const check = (at: string, value: unknown) => {
+        count++;
+        if (!has('conditions', conditionId(value))) errors.push(`${at}: condition '${conditionId(value)}' does not exist`);
+      };
+      for (const monster of monsters) {
+        walk(monster, String(monster.index), (object, at) => {
+          const condition = (object.situation as { target?: { condition?: unknown } } | undefined)?.target?.condition;
+          if (condition !== undefined) check(`${at}.situation`, condition);
+        });
+      }
+      expect(count).toBeGreaterThan(0);
+      expect(errors).toEqual([]);
+    });
   }
-};
+});
+
+describe('ids/', () => {
+  it('has one list per collection', () => {
+    const files = fs.readdirSync(path.join(root, 'ids')).sort();
+    expect(files).toEqual(collections.map((c) => `${c.name}.json`).sort());
+    for (const c of collections) {
+      const list = JSON.parse(fs.readFileSync(path.join(root, 'ids', `${c.name}.json`), 'utf8'));
+      expect(list).toEqual({ collection: c.name, indices: sortedIndices(c) });
+    }
+  });
+});
