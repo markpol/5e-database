@@ -6,3 +6,6 @@ export type Condition = {
     desc: string[];
     url: string;
 };
+
+declare const data: Condition[];
+export default data;

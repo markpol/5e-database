@@ -542,3 +542,6 @@ export type Monster = {
     }[] | undefined;
     image?: string | undefined;
 };
+
+declare const data: Monster[];
+export default data;

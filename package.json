@@ -1,11 +1,127 @@
 {
-  "name": "5e-database",
+  "name": "@markpol/dd-srd",
   "version": "5.12.0",
   "description": "Dungeons & Dragons 5th Edition SRD game data (JSON) in English, French, Portuguese and Russian",
   "private": true,
   "packageManager": "pnpm@10.34.5",
   "engines": {
     "node": "22.x || 24.x"
+  },
+  "exports": {
+    "./ability-scores": {
+      "types": "./types/5e-SRD-Ability-Scores.d.ts",
+      "default": "./src/2014/en/5e-SRD-Ability-Scores.json"
+    },
+    "./alignments": {
+      "types": "./types/5e-SRD-Alignments.d.ts",
+      "default": "./src/2014/en/5e-SRD-Alignments.json"
+    },
+    "./backgrounds": {
+      "types": "./types/5e-SRD-Backgrounds.d.ts",
+      "default": "./src/2014/en/5e-SRD-Backgrounds.json"
+    },
+    "./classes": {
+      "types": "./types/5e-SRD-Classes.d.ts",
+      "default": "./src/2014/en/5e-SRD-Classes.json"
+    },
+    "./conditions": {
+      "types": "./types/5e-SRD-Conditions.d.ts",
+      "default": "./src/2014/en/5e-SRD-Conditions.json"
+    },
+    "./damage-types": {
+      "types": "./types/5e-SRD-Damage-Types.d.ts",
+      "default": "./src/2014/en/5e-SRD-Damage-Types.json"
+    },
+    "./equipment-categories": {
+      "types": "./types/5e-SRD-Equipment-Categories.d.ts",
+      "default": "./src/2014/en/5e-SRD-Equipment-Categories.json"
+    },
+    "./equipment": {
+      "types": "./types/5e-SRD-Equipment.d.ts",
+      "default": "./src/2014/en/5e-SRD-Equipment.json"
+    },
+    "./feats": {
+      "types": "./types/5e-SRD-Feats.d.ts",
+      "default": "./src/2014/en/5e-SRD-Feats.json"
+    },
+    "./features": {
+      "types": "./types/5e-SRD-Features.d.ts",
+      "default": "./src/2014/en/5e-SRD-Features.json"
+    },
+    "./languages": {
+      "types": "./types/5e-SRD-Languages.d.ts",
+      "default": "./src/2014/en/5e-SRD-Languages.json"
+    },
+    "./levels": {
+      "types": "./types/5e-SRD-Levels.d.ts",
+      "default": "./src/2014/en/5e-SRD-Levels.json"
+    },
+    "./magic-items": {
+      "types": "./types/5e-SRD-Magic-Items.d.ts",
+      "default": "./src/2014/en/5e-SRD-Magic-Items.json"
+    },
+    "./magic-schools": {
+      "types": "./types/5e-SRD-Magic-Schools.d.ts",
+      "default": "./src/2014/en/5e-SRD-Magic-Schools.json"
+    },
+    "./monsters-normalized": {
+      "types": "./types/5e-SRD-Monsters-Normalized.d.ts",
+      "default": "./src/2014/5e-SRD-Monsters-Normalized.json"
+    },
+    "./monsters": {
+      "types": "./types/5e-SRD-Monsters.d.ts",
+      "default": "./src/2014/en/5e-SRD-Monsters.json"
+    },
+    "./proficiencies": {
+      "types": "./types/5e-SRD-Proficiencies.d.ts",
+      "default": "./src/2014/en/5e-SRD-Proficiencies.json"
+    },
+    "./races": {
+      "types": "./types/5e-SRD-Races.d.ts",
+      "default": "./src/2014/en/5e-SRD-Races.json"
+    },
+    "./rule-sections": {
+      "types": "./types/5e-SRD-Rule-Sections.d.ts",
+      "default": "./src/2014/en/5e-SRD-Rule-Sections.json"
+    },
+    "./rules": {
+      "types": "./types/5e-SRD-Rules.d.ts",
+      "default": "./src/2014/en/5e-SRD-Rules.json"
+    },
+    "./skills": {
+      "types": "./types/5e-SRD-Skills.d.ts",
+      "default": "./src/2014/en/5e-SRD-Skills.json"
+    },
+    "./spells": {
+      "types": "./types/5e-SRD-Spells.d.ts",
+      "default": "./src/2014/en/5e-SRD-Spells.json"
+    },
+    "./subclasses": {
+      "types": "./types/5e-SRD-Subclasses.d.ts",
+      "default": "./src/2014/en/5e-SRD-Subclasses.json"
+    },
+    "./subraces": {
+      "types": "./types/5e-SRD-Subraces.d.ts",
+      "default": "./src/2014/en/5e-SRD-Subraces.json"
+    },
+    "./traits": {
+      "types": "./types/5e-SRD-Traits.d.ts",
+      "default": "./src/2014/en/5e-SRD-Traits.json"
+    },
+    "./weapon-properties": {
+      "types": "./types/5e-SRD-Weapon-Properties.d.ts",
+      "default": "./src/2014/en/5e-SRD-Weapon-Properties.json"
+    },
+    "./src/2014/en/*.json": "./src/2014/en/*.json",
+    "./src/2014/5e-SRD-Monsters-Normalized.json": "./src/2014/5e-SRD-Monsters-Normalized.json",
+    "./src/provenance/source-markers.json": "./src/provenance/source-markers.json",
+    "./src/i18n/localize": "./src/i18n/localize.ts",
+    "./src/i18n/localize.ts": "./src/i18n/localize.ts",
+    "./schema/*.json": "./schema/*.json",
+    "./ids/*.json": "./ids/*.json",
+    "./types/*.d.ts": "./types/*.d.ts",
+    "./types/*": "./types/*.d.ts",
+    "./package.json": "./package.json"
   },
   "files": [
     "src/2014/en/*.json",
@@ -28,7 +144,9 @@
     "i18n:coverage": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs scripts/i18n-coverage.ts",
     "lint": "eslint . --config eslint.config.mjs",
     "test": "vitest run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "exports:write": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs scripts/package-exports.ts",
+    "test:package": "node --experimental-strip-types --no-warnings scripts/smoke-pack.ts"
   },
   "repository": {
     "type": "git",

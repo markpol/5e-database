@@ -6,3 +6,6 @@ export type DamageType = {
     desc: string[];
     url: string;
 };
+
+declare const data: DamageType[];
+export default data;

@@ -610,3 +610,6 @@ export type NormalizedMonster = {
     forms?: string[] | undefined;
     image?: string | undefined;
 };
+
+declare const data: NormalizedMonster[];
+export default data;

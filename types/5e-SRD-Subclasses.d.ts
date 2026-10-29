@@ -28,3 +28,6 @@ export type Subclass = {
         };
     }[] | undefined;
 };
+
+declare const data: Subclass[];
+export default data;

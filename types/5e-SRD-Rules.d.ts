@@ -12,3 +12,6 @@ export type Rule = {
     }[];
     url: string;
 };
+
+declare const data: Rule[];
+export default data;

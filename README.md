@@ -105,6 +105,19 @@ means:
 | Weapon Mastery Properties | `src/2024/en/5e-SRD-Weapon-Mastery-Properties.json` |       8 | 2024 SRD 5.2 data, not imported by the app yet | dormant |
 | Weapon Properties         | `src/2024/en/5e-SRD-Weapon-Properties.json`         |      10 | 2024 SRD 5.2 data, not imported by the app yet | dormant |
 
+## Using the package
+
+The npm package is named `@markpol/dd-srd`; the repository keeps the name `5e-database`. Every 2014 collection has a typed
+entry:
+
+```ts
+import monsters from '@markpol/dd-srd/monsters'; // Monster[], types from types/5e-SRD-Monsters.d.ts
+import spells from '@markpol/dd-srd/spells';
+```
+
+The older deep paths (`@markpol/dd-srd/src/2014/en/5e-SRD-Spells.json`, `.../schema/...`, `.../ids/...`) keep resolving
+for one major version. See [CONTRIBUTING.md](CONTRIBUTING.md#package-entries).
+
 ## Setup
 
 You need Node 22 or 24 (see `.nvmrc`) and [pnpm](https://pnpm.io/).
@@ -115,8 +128,9 @@ pnpm test       # schema, uniqueness, table and translation checks
 pnpm lint       # ESLint, including JSON and Prettier rules
 ```
 
-CI (`.github/workflows/ci.yml`) runs `pnpm lint`, `pnpm test`, `tsc --noEmit` and a check that `schema/`, `types/` and `ids/`
-are up to date with the Zod schemas and data, on Node 22 and 24 on every pull request and on pushes to `main`. It also
+CI (`.github/workflows/ci.yml`) runs `pnpm lint`, `pnpm test`, `tsc --noEmit`, a check that `schema/`, `types/` and `ids/`
+are up to date with the Zod schemas and data, and a smoke test that packs the package and imports every entry from the
+tarball, on Node 22 and 24 on every pull request and on pushes to `main`. It also
 prints a per-locale translation coverage report (`pnpm run i18n:coverage`), which never fails the build.
 
 ## Id stability contract

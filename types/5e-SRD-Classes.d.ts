@@ -69,3 +69,6 @@ export type Class = {
     } | undefined;
     spells?: string | undefined;
 };
+
+declare const data: Class[];
+export default data;

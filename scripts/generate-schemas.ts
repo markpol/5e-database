@@ -130,7 +130,12 @@ export async function generate(): Promise<GeneratedFiles> {
     const base = baseName(file);
     const jsonSchema = z.toJSONSchema(schema);
     files.set(`schema/${base}.schema.json`, `${JSON.stringify(jsonSchema, null, 2)}\n`);
-    files.set(`types/${base}.d.ts`, `// ${HEADER}\n\n${types.get(typeName(exportName))}\n`);
+    // The default export types the data file that the package's `exports` entry for this collection serves.
+    const name = typeName(exportName);
+    files.set(
+      `types/${base}.d.ts`,
+      `// ${HEADER}\n\n${types.get(name)}\n\ndeclare const data: ${name}[];\nexport default data;\n`
+    );
   }
   for (const collection of loadCollections()) {
     const list = { collection: collection.name, indices: sortedIndices(collection) };

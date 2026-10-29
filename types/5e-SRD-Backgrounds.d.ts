@@ -34,3 +34,6 @@ export type Background = {
     bonds?: any;
     flaws?: any;
 };
+
+declare const data: Background[];
+export default data;

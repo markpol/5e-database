@@ -7,3 +7,6 @@ export type Alignment = {
     desc: string;
     url: string;
 };
+
+declare const data: Alignment[];
+export default data;

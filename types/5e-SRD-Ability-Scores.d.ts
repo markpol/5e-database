@@ -13,3 +13,6 @@ export type AbilityScore = {
     }[];
     url: string;
 };
+
+declare const data: AbilityScore[];
+export default data;

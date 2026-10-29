@@ -47,3 +47,6 @@ export type Race = {
         note?: string | undefined;
     }[] | undefined;
 };
+
+declare const data: Race[];
+export default data;

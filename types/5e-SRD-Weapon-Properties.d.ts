@@ -6,3 +6,6 @@ export type WeaponProperty = {
     desc: string[];
     url: string;
 };
+
+declare const data: WeaponProperty[];
+export default data;

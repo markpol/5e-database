@@ -11,3 +11,6 @@ export type EquipmentCategory = {
     }[];
     url: string;
 };
+
+declare const data: EquipmentCategory[];
+export default data;
