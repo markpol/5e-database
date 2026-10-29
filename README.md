@@ -109,7 +109,7 @@ pnpm test       # schema, uniqueness, table and translation checks
 pnpm lint       # ESLint, including JSON and Prettier rules
 ```
 
-CI (`.github/workflows/ci.yml`) runs `pnpm lint` and `pnpm test` on every pull request and on pushes to `main`.
+CI (`.github/workflows/ci.yml`) runs `pnpm lint`, `pnpm test` and `tsc --noEmit` on Node 22 and 24 on every pull request and on pushes to `main`.
 
 ## Contributing
 
