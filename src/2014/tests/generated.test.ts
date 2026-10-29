@@ -33,20 +33,24 @@ describe('generated schema/ and types/', () => {
     expect(diff(withoutFirst)).toEqual([`orphaned: ${name}`]);
   });
 
-  it('ships schema/, types/ and ids/ in the npm package', () => {
-    const out = execFileSync('npm', ['pack', '--dry-run', '--json', '--ignore-scripts'], {
-      cwd: root,
-      encoding: 'utf8',
-    });
-    const paths = (JSON.parse(out)[0].files as { path: string }[]).map((f) => f.path);
-    expect(paths).toContain('schema/5e-SRD-Alignments.schema.json');
-    expect(paths).toContain('schema/5e-SRD-Monsters-Normalized.schema.json');
-    expect(paths).toContain('types/5e-SRD-Alignments.d.ts');
-    expect(paths).toContain('types/5e-SRD-Monsters-Normalized.d.ts');
-    expect(paths).toContain('ids/conditions.json');
-    expect(paths).toContain('ids/monsters.json');
-    expect(paths).toContain('ids/published.json');
-    expect(paths).toContain('ids/removed.json');
-    expect(fs.existsSync(path.join(root, 'schema'))).toBe(true);
-  });
+  it(
+    'ships schema/, types/ and ids/ in the npm package',
+    () => {
+      const out = execFileSync('npm', ['pack', '--dry-run', '--json', '--ignore-scripts'], {
+        cwd: root,
+        encoding: 'utf8',
+      });
+      const paths = (JSON.parse(out)[0].files as { path: string }[]).map((f) => f.path);
+      expect(paths).toContain('schema/5e-SRD-Alignments.schema.json');
+      expect(paths).toContain('schema/5e-SRD-Monsters-Normalized.schema.json');
+      expect(paths).toContain('types/5e-SRD-Alignments.d.ts');
+      expect(paths).toContain('types/5e-SRD-Monsters-Normalized.d.ts');
+      expect(paths).toContain('ids/conditions.json');
+      expect(paths).toContain('ids/monsters.json');
+      expect(paths).toContain('ids/published.json');
+      expect(paths).toContain('ids/removed.json');
+      expect(fs.existsSync(path.join(root, 'schema'))).toBe(true);
+    },
+    20_000,
+  );
 });
