@@ -29,6 +29,9 @@ jobs:
   analyze:
     name: Analyze
     runs-on: ubuntu-latest
+    # security-events: write is required here because the repo's default workflow
+    # token permission is read-only; without it, SARIF upload fails on push runs
+    # with "Resource not accessible by integration".
     permissions:
       contents: read
       security-events: write
