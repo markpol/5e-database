@@ -39,7 +39,7 @@
       }
     ],
     "material": "wood",
-    "url": "/api/equipment/club"
+    "url": "/api/2014/equipment/club"
   },
   {
     "index": "dagger",
@@ -95,7 +95,7 @@
       "long": 60
     },
     "material": "metal",
-    "url": "/api/equipment/dagger"
+    "url": "/api/2014/equipment/dagger"
   },
   {
     "index": "greatclub",
@@ -132,7 +132,7 @@
       }
     ],
     "material": "wood",
-    "url": "/api/equipment/greatclub"
+    "url": "/api/2014/equipment/greatclub"
   },
   {
     "index": "handaxe",
@@ -183,7 +183,7 @@
       "long": 60
     },
     "material": "metal",
-    "url": "/api/equipment/handaxe"
+    "url": "/api/2014/equipment/handaxe"
   },
   {
     "index": "javelin",
@@ -230,7 +230,7 @@
     },
     "material": "metal",
     "stackable": true,
-    "url": "/api/equipment/javelin"
+    "url": "/api/2014/equipment/javelin"
   },
   {
     "index": "light-hammer",
@@ -281,7 +281,7 @@
       "long": 60
     },
     "material": "metal",
-    "url": "/api/equipment/light-hammer"
+    "url": "/api/2014/equipment/light-hammer"
   },
   {
     "index": "mace",
@@ -318,7 +318,7 @@
       }
     ],
     "material": "metal",
-    "url": "/api/equipment/mace"
+    "url": "/api/2014/equipment/mace"
   },
   {
     "index": "quarterstaff",
@@ -368,7 +368,7 @@
       }
     },
     "material": "wood",
-    "url": "/api/equipment/quarterstaff"
+    "url": "/api/2014/equipment/quarterstaff"
   },
   {
     "index": "sickle",
@@ -410,7 +410,7 @@
       }
     ],
     "material": "metal",
-    "url": "/api/equipment/sickle"
+    "url": "/api/2014/equipment/sickle"
   },
   {
     "index": "spear",
@@ -469,7 +469,7 @@
       }
     },
     "material": "wood",
-    "url": "/api/equipment/spear"
+    "url": "/api/2014/equipment/spear"
   },
   {
     "index": "crossbow-light",
@@ -518,7 +518,7 @@
       }
     ],
     "material": "wood",
-    "url": "/api/equipment/crossbow-light"
+    "url": "/api/2014/equipment/crossbow-light"
   },
   {
     "index": "dart",
@@ -566,7 +566,7 @@
     },
     "material": "metal",
     "stackable": true,
-    "url": "/api/equipment/dart"
+    "url": "/api/2014/equipment/dart"
   },
   {
     "index": "shortbow",
@@ -610,7 +610,7 @@
       }
     ],
     "material": "wood",
-    "url": "/api/equipment/shortbow"
+    "url": "/api/2014/equipment/shortbow"
   },
   {
     "index": "sling",
@@ -649,7 +649,7 @@
       }
     ],
     "material": "leather",
-    "url": "/api/equipment/sling"
+    "url": "/api/2014/equipment/sling"
   },
   {
     "index": "battleaxe",
@@ -694,7 +694,7 @@
       }
     },
     "material": "metal",
-    "url": "/api/equipment/battleaxe"
+    "url": "/api/2014/equipment/battleaxe"
   },
   {
     "index": "flail",
@@ -725,7 +725,7 @@
     "weight": 2,
     "properties": [],
     "material": "metal",
-    "url": "/api/equipment/flail"
+    "url": "/api/2014/equipment/flail"
   },
   {
     "index": "glaive",
@@ -772,7 +772,7 @@
       }
     ],
     "material": "metal",
-    "url": "/api/equipment/glaive"
+    "url": "/api/2014/equipment/glaive"
   },
   {
     "index": "greataxe",
@@ -814,7 +814,7 @@
       }
     ],
     "material": "metal",
-    "url": "/api/equipment/greataxe"
+    "url": "/api/2014/equipment/greataxe"
   },
   {
     "index": "greatsword",
@@ -856,7 +856,7 @@
       }
     ],
     "material": "metal",
-    "url": "/api/equipment/greatsword"
+    "url": "/api/2014/equipment/greatsword"
   },
   {
     "index": "halberd",
@@ -903,7 +903,7 @@
       }
     ],
     "material": "metal",
-    "url": "/api/equipment/halberd"
+    "url": "/api/2014/equipment/halberd"
   },
   {
     "index": "lance",
@@ -993,7 +993,7 @@
       }
     },
     "material": "metal",
-    "url": "/api/equipment/longsword"
+    "url": "/api/2014/equipment/longsword"
   },
   {
     "index": "maul",
@@ -1035,7 +1035,7 @@
       }
     ],
     "material": "wood",
-    "url": "/api/equipment/maul"
+    "url": "/api/2014/equipment/maul"
   },
   {
     "index": "morningstar",
@@ -1066,7 +1066,7 @@
     "weight": 4,
     "properties": [],
     "material": "metal",
-    "url": "/api/equipment/morningstar"
+    "url": "/api/2014/equipment/morningstar"
   },
   {
     "index": "pike",
@@ -1113,7 +1113,7 @@
       }
     ],
     "material": "metal",
-    "url": "/api/equipment/pike"
+    "url": "/api/2014/equipment/pike"
   },
   {
     "index": "rapier",
@@ -1150,7 +1150,7 @@
       }
     ],
     "material": "metal",
-    "url": "/api/equipment/rapier"
+    "url": "/api/2014/equipment/rapier"
   },
   {
     "index": "scimitar",
@@ -1192,7 +1192,7 @@
       }
     ],
     "material": "metal",
-    "url": "/api/equipment/scimitar"
+    "url": "/api/2014/equipment/scimitar"
   },
   {
     "index": "shortsword",
@@ -1239,7 +1239,7 @@
       }
     ],
     "material": "metal",
-    "url": "/api/equipment/shortsword"
+    "url": "/api/2014/equipment/shortsword"
   },
   {
     "index": "trident",
@@ -1293,7 +1293,7 @@
       }
     },
     "material": "metal",
-    "url": "/api/equipment/trident"
+    "url": "/api/2014/equipment/trident"
   },
   {
     "index": "war-pick",
@@ -1324,7 +1324,7 @@
     "weight": 2,
     "properties": [],
     "material": "metal",
-    "url": "/api/equipment/war-pick"
+    "url": "/api/2014/equipment/war-pick"
   },
   {
     "index": "warhammer",
@@ -1369,7 +1369,7 @@
       }
     },
     "material": "metal",
-    "url": "/api/equipment/warhammer"
+    "url": "/api/2014/equipment/warhammer"
   },
   {
     "index": "whip",
@@ -1411,7 +1411,7 @@
       }
     ],
     "material": "leather",
-    "url": "/api/equipment/whip"
+    "url": "/api/2014/equipment/whip"
   },
   {
     "index": "blowgun",
@@ -1455,7 +1455,7 @@
       }
     ],
     "material": "wood",
-    "url": "/api/equipment/blowgun"
+    "url": "/api/2014/equipment/blowgun"
   },
   {
     "index": "crossbow-hand",
@@ -1504,7 +1504,7 @@
       }
     ],
     "material": "wood",
-    "url": "/api/equipment/crossbow-hand"
+    "url": "/api/2014/equipment/crossbow-hand"
   },
   {
     "index": "crossbow-heavy",
@@ -1558,7 +1558,7 @@
       }
     ],
     "material": "metal",
-    "url": "/api/equipment/crossbow-heavy"
+    "url": "/api/2014/equipment/crossbow-heavy"
   },
   {
     "index": "longbow",
@@ -1607,7 +1607,7 @@
       }
     ],
     "material": "wood",
-    "url": "/api/equipment/longbow"
+    "url": "/api/2014/equipment/longbow"
   },
   {
     "index": "net",
@@ -1671,7 +1671,7 @@
       "unit": "gp"
     },
     "material": "cloth",
-    "url": "/api/equipment/padded-armor"
+    "url": "/api/2014/equipment/padded-armor"
   },
   {
     "index": "leather-armor",
@@ -1694,7 +1694,7 @@
       "unit": "gp"
     },
     "material": "leather",
-    "url": "/api/equipment/leather-armor"
+    "url": "/api/2014/equipment/leather-armor"
   },
   {
     "index": "studded-leather-armor",
@@ -1717,7 +1717,7 @@
       "unit": "gp"
     },
     "material": "leather",
-    "url": "/api/equipment/studded-leather-armor"
+    "url": "/api/2014/equipment/studded-leather-armor"
   },
   {
     "index": "hide-armor",
@@ -1741,7 +1741,7 @@
       "unit": "gp"
     },
     "material": "leather",
-    "url": "/api/equipment/hide-armor"
+    "url": "/api/2014/equipment/hide-armor"
   },
   {
     "index": "chain-shirt",
@@ -1765,7 +1765,7 @@
       "unit": "gp"
     },
     "material": "metal",
-    "url": "/api/equipment/chain-shirt"
+    "url": "/api/2014/equipment/chain-shirt"
   },
   {
     "index": "scale-mail",
@@ -1789,7 +1789,7 @@
       "unit": "gp"
     },
     "material": "metal",
-    "url": "/api/equipment/scale-mail"
+    "url": "/api/2014/equipment/scale-mail"
   },
   {
     "index": "breastplate",
@@ -1813,7 +1813,7 @@
       "unit": "gp"
     },
     "material": "metal",
-    "url": "/api/equipment/breastplate"
+    "url": "/api/2014/equipment/breastplate"
   },
   {
     "index": "half-plate-armor",
@@ -1837,7 +1837,7 @@
       "unit": "gp"
     },
     "material": "metal",
-    "url": "/api/equipment/half-plate-armor"
+    "url": "/api/2014/equipment/half-plate-armor"
   },
   {
     "index": "ring-mail",
@@ -1860,7 +1860,7 @@
       "unit": "gp"
     },
     "material": "metal",
-    "url": "/api/equipment/ring-mail"
+    "url": "/api/2014/equipment/ring-mail"
   },
   {
     "index": "chain-mail",
@@ -1883,7 +1883,7 @@
       "unit": "gp"
     },
     "material": "metal",
-    "url": "/api/equipment/chain-mail"
+    "url": "/api/2014/equipment/chain-mail"
   },
   {
     "index": "splint-armor",
@@ -1906,7 +1906,7 @@
       "unit": "gp"
     },
     "material": "metal",
-    "url": "/api/equipment/splint-armor"
+    "url": "/api/2014/equipment/splint-armor"
   },
   {
     "index": "plate-armor",
@@ -1929,7 +1929,7 @@
       "unit": "gp"
     },
     "material": "metal",
-    "url": "/api/equipment/plate-armor"
+    "url": "/api/2014/equipment/plate-armor"
   },
   {
     "index": "shield",
@@ -1952,7 +1952,7 @@
       "unit": "gp"
     },
     "material": "wood",
-    "url": "/api/equipment/shield"
+    "url": "/api/2014/equipment/shield"
   },
   {
     "index": "abacus",
@@ -2005,7 +2005,7 @@
         }
       ]
     },
-    "url": "/api/equipment/acid-vial"
+    "url": "/api/2014/equipment/acid-vial"
   },
   {
     "index": "alchemists-fire-flask",
@@ -2039,7 +2039,7 @@
         }
       ]
     },
-    "url": "/api/equipment/alchemists-fire-flask"
+    "url": "/api/2014/equipment/alchemists-fire-flask"
   },
   {
     "index": "alms-box",
@@ -2082,7 +2082,7 @@
     },
     "weight": 1,
     "stackable": true,
-    "url": "/api/equipment/arrow"
+    "url": "/api/2014/equipment/arrow"
   },
   {
     "index": "block-of-incense",
@@ -2125,7 +2125,7 @@
     },
     "weight": 1,
     "stackable": true,
-    "url": "/api/equipment/blowgun-needle"
+    "url": "/api/2014/equipment/blowgun-needle"
   },
   {
     "index": "censer",
@@ -2168,7 +2168,7 @@
     },
     "weight": 1.5,
     "stackable": true,
-    "url": "/api/equipment/crossbow-bolt"
+    "url": "/api/2014/equipment/crossbow-bolt"
   },
   {
     "index": "sling-bullet",
@@ -2190,7 +2190,7 @@
     },
     "weight": 1.5,
     "stackable": true,
-    "url": "/api/equipment/sling-bullet"
+    "url": "/api/2014/equipment/sling-bullet"
   },
   {
     "index": "amulet",
@@ -3706,7 +3706,7 @@
     },
     "weight": 0.25,
     "stackable": true,
-    "url": "/api/equipment/piton"
+    "url": "/api/2014/equipment/piton"
   },
   {
     "index": "poison-basic-vial",
@@ -3860,7 +3860,7 @@
       "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts."
     ],
     "stackable": true,
-    "url": "/api/equipment/rations-1-day"
+    "url": "/api/2014/equipment/rations-1-day"
   },
   {
     "index": "reliquary",
@@ -5611,6 +5611,6 @@
     "desc": [
       "This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks."
     ],
-    "url": "/api/equipment/thieves-tools"
+    "url": "/api/2014/equipment/thieves-tools"
   }
 ]

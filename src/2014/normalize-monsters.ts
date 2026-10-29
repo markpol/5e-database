@@ -1,9 +1,11 @@
 import fs from "fs";
 import srcMonsters from './en/5e-SRD-Monsters.json';
+import { z } from 'zod';
+import { MonsterSchema } from './schemas/5e-SRD-Monsters';
 console.log(`Loaded ${srcMonsters.length} monsters to normalize from 5e-SRD-Monsters.json`);
 
 const outputFilePath = "./src/2014/5e-SRD-Monsters-Normalized.json";
-type Monster = Partial<typeof srcMonsters[number]>
+type Monster = z.infer<typeof MonsterSchema>;
 
 function normalizeDamage(damage: any) {
   console.log(`            Normalizing damage: ${damage.damage_dice}`);
@@ -74,7 +76,7 @@ export function normalizeAction(action: any) {
     });
   }
   if (action.attacks?.length) {
-    action.attacks = action.attacks.map((attack) => {
+    action.attacks = action.attacks.map((attack: any) => {
       if (attack.damage?.length) {
         attack.damage = attack.damage.map(normalizeDamage);
       }
@@ -135,19 +137,19 @@ function normalizeMonster(monster: Monster) {
         ...p,
         proficiency: index,
       };
-    });
+    }) as unknown as Monster['proficiencies'];
   }
   if (monster.condition_immunities?.length) {
     monster.condition_immunities = monster.condition_immunities.map((condition) => {
       console.log(`        Normalizing condition immunity: ${condition.name}`);
       return condition.index;
-    });
+    }) as unknown as Monster['condition_immunities'];
   }
   if (monster.forms?.length) {
     monster.forms = monster.forms.map((form) => {
       console.log(`        Normalizing form: ${form.name}`);
       return form.index as any;
-    });
+    }) as unknown as Monster['forms'];
   }
   if (monster.special_abilities) {
     monster.special_abilities = monster.special_abilities.map(normalizeSpecialAbility);
@@ -159,7 +161,7 @@ function normalizeMonster(monster: Monster) {
     monster.armor_class = monster.armor_class.map((ac) => {
       if (ac.condition?.index) {
         console.log(`        Replacing condition object ${ac.condition.index} to simple index`);
-        ac.condition = ac.condition.index;
+        ac.condition = ac.condition.index as unknown as typeof ac.condition;
       }
       if (ac.armor?.length) {
         ac.armor = ac.armor.map((armor) => {
@@ -168,14 +170,14 @@ function normalizeMonster(monster: Monster) {
             return armor.index;
           }
           return armor;
-        });
+        }) as unknown as typeof ac.armor;
       }
       if (ac.spell?.index) {
         console.log(`        Replacing spell object ${ac.spell.index} to simple index`);
-        ac.spell = ac.spell.index;
+        ac.spell = ac.spell.index as unknown as typeof ac.spell;
       }
       return ac;
-    });  
+    }) as unknown as Monster['armor_class'];
   }
   if (monster.reactions?.length) {
     monster.reactions = monster.reactions.map(normalizeDamage);
@@ -189,7 +191,7 @@ function normalizeMonster(monster: Monster) {
 }
 
 async function writeMonstersToFile() {
-  const normalizedMonsters = (srcMonsters as Monster[]).map(normalizeMonster);
+  const normalizedMonsters = (srcMonsters as unknown as Monster[]).map(normalizeMonster);
 
   console.log(`Writing ${normalizedMonsters.length} normalized monsters to ${outputFilePath}`);
   await fs.promises.writeFile(outputFilePath, JSON.stringify(normalizedMonsters, null, 2));

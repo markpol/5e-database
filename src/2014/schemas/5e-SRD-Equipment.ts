@@ -32,6 +32,17 @@ const SpeedSchema = z.strictObject({
   unit: z.string(),
 });
 
+const EquipmentEffectSchema = z.strictObject({
+  damage: z
+    .array(
+      z.strictObject({
+        damage_type: z.string(),
+        damage_dice: z.string(),
+      })
+    )
+    .optional(),
+});
+
 export const EquipmentSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
@@ -39,6 +50,11 @@ export const EquipmentSchema = z.strictObject({
   cost: CostSchema,
   url: z.string(),
   desc: z.array(z.string()).optional(),
+  material: z.string().optional(),
+  stackable: z.boolean().optional(),
+  ammunition: z.string().optional(),
+  is_consumable: z.boolean().optional(),
+  effect: EquipmentEffectSchema.optional(),
   weight: z.number().optional(),
   gear_category: APIReferenceSchema.optional(),
   armor_category: z.string().optional(),
