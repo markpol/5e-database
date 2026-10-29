@@ -6,13 +6,16 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "abbreviation": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "desc": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "url": {
       "type": "string"

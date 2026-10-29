@@ -6,13 +6,15 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "desc": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "translatable": true
     },
     "races": {
       "type": "array",
@@ -151,10 +153,12 @@
           "type": "object",
           "properties": {
             "name": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             },
             "desc": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             },
             "area_of_effect": {
               "type": "object",
@@ -183,7 +187,8 @@
               "type": "object",
               "properties": {
                 "type": {
-                  "type": "string"
+                  "type": "string",
+                  "translatable": true
                 },
                 "times": {
                   "type": "number"
@@ -322,7 +327,8 @@
       "type": "object",
       "properties": {
         "desc": {
-          "type": "string"
+          "type": "string",
+          "translatable": true
         },
         "choose": {
           "type": "number"
@@ -401,7 +407,8 @@
                         "$ref": "#/$defs/__schema1"
                       },
                       {
-                        "type": "string"
+                        "type": "string",
+                        "translatable": true
                       }
                     ]
                   }
@@ -486,7 +493,8 @@
               "const": "string"
             },
             "string": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [
@@ -553,7 +561,8 @@
               "type": "string"
             },
             "desc": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [
@@ -572,7 +581,8 @@
               "const": "breath"
             },
             "name": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             },
             "dc": {
               "type": "object",
@@ -877,7 +887,8 @@
               "additionalProperties": false
             },
             "notes": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [
@@ -921,7 +932,8 @@
               }
             },
             "desc": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [
@@ -966,7 +978,8 @@
               }
             },
             "desc": {
-              "type": "string"
+              "type": "string",
+              "translatable": true
             }
           },
           "required": [

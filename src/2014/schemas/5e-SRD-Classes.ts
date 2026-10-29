@@ -1,9 +1,9 @@
 import { z } from 'zod';
-import { APIReferenceSchema, ChoiceSchema } from '../../schemas/common';
+import { APIReferenceSchema, ChoiceSchema, translatable } from '../../schemas/common';
 
 const SpellcastingInfoSchema = z.strictObject({
-  name: z.string(),
-  desc: z.array(z.string()),
+  name: translatable(z.string()),
+  desc: translatable(z.array(z.string())),
 });
 
 const SpellcastingSchema = z.strictObject({
@@ -31,7 +31,7 @@ const MultiClassingSchema = z.strictObject({
 
 export const ClassSchema = z.strictObject({
   index: z.string(),
-  name: z.string(),
+  name: translatable(z.string()),
   hit_die: z.number(),
   class_levels: z.string(),
   multi_classing: MultiClassingSchema.optional(),

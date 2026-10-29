@@ -6,22 +6,26 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "desc": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "translatable": true
     },
     "higher_level": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "translatable": true
     },
     "range": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "components": {
       "type": "array",
@@ -30,25 +34,29 @@
       }
     },
     "material": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "ritual": {
       "type": "boolean"
     },
     "duration": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "concentration": {
       "type": "boolean"
     },
     "casting_time": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "level": {
       "type": "number"
     },
     "attack_type": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "damage": {
       "type": "array",
@@ -130,7 +138,8 @@
           "type": "string"
         },
         "desc": {
-          "type": "string"
+          "type": "string",
+          "translatable": true
         }
       },
       "required": [

@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { APIReferenceSchema } from '../../schemas/common';
+import { APIReferenceSchema, translatable } from '../../schemas/common';
 
 const SubclassSpellPrerequisiteSchema = z.strictObject({
   index: z.string(),
@@ -15,10 +15,10 @@ const SubclassSpellSchema = z.strictObject({
 
 export const SubclassSchema = z.strictObject({
   index: z.string(),
-  name: z.string(),
+  name: translatable(z.string()),
   class: APIReferenceSchema,
-  subclass_flavor: z.string(),
-  desc: z.array(z.string()),
+  subclass_flavor: translatable(z.string()),
+  desc: translatable(z.array(z.string())),
   subclass_levels: z.string(),
   spells: z.array(SubclassSpellSchema).optional(),
   url: z.string(),

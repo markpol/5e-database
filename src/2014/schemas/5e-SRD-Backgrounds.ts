@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { APIReferenceSchema, ChoiceSchema } from '../../schemas/common';
+import { APIReferenceSchema, ChoiceSchema, translatable } from '../../schemas/common';
 
 const CostSchema = z.strictObject({
   quantity: z.number(),
@@ -7,8 +7,8 @@ const CostSchema = z.strictObject({
 });
 
 const BackgroundFeatureSchema = z.strictObject({
-  name: z.string(),
-  desc: z.array(z.string()),
+  name: translatable(z.string()),
+  desc: translatable(z.array(z.string())),
 });
 
 const StartingEquipmentSchema = z.strictObject({
@@ -18,7 +18,7 @@ const StartingEquipmentSchema = z.strictObject({
 
 export const BackgroundSchema = z.strictObject({
   index: z.string(),
-  name: z.string(),
+  name: translatable(z.string()),
   starting_proficiencies: z.array(APIReferenceSchema),
   language_options: ChoiceSchema.optional(),
   starting_equipment: z.array(StartingEquipmentSchema).optional(),

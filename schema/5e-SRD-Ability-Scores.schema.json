@@ -6,16 +6,19 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "full_name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "desc": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "translatable": true
     },
     "skills": {
       "type": "array",

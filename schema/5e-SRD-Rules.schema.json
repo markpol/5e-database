@@ -6,10 +6,12 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "desc": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "subsections": {
       "type": "array",

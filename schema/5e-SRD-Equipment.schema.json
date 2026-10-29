@@ -6,7 +6,8 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "equipment_category": {
       "type": "object",
@@ -54,7 +55,8 @@
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "translatable": true
     },
     "material": {
       "type": "string"
@@ -120,7 +122,8 @@
       "additionalProperties": false
     },
     "armor_category": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "armor_class": {
       "type": "object",
@@ -142,10 +145,12 @@
       "additionalProperties": false
     },
     "capacity": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "category_range": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "contents": {
       "type": "array",
@@ -317,7 +322,8 @@
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "translatable": true
     },
     "speed": {
       "type": "object",
@@ -358,7 +364,8 @@
       "additionalProperties": false
     },
     "tool_category": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "two_handed_damage": {
       "type": "object",
@@ -441,13 +448,16 @@
       "additionalProperties": false
     },
     "vehicle_category": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "weapon_category": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "weapon_range": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     }
   },
   "required": [

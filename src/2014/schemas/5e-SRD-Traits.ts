@@ -4,10 +4,11 @@ import {
   AreaOfEffectSchema,
   ChoiceSchema,
   DifficultyClassSchema,
+  translatable,
 } from '../../schemas/common';
 
 const BreathWeaponUsageSchema = z.strictObject({
-  type: z.string(),
+  type: translatable(z.string()),
   times: z.number(),
 });
 
@@ -17,8 +18,8 @@ const BreathWeaponDamageSchema = z.strictObject({
 });
 
 const BreathWeaponSchema = z.strictObject({
-  name: z.string(),
-  desc: z.string(),
+  name: translatable(z.string()),
+  desc: translatable(z.string()),
   area_of_effect: AreaOfEffectSchema,
   usage: BreathWeaponUsageSchema,
   dc: DifficultyClassSchema,
@@ -34,8 +35,8 @@ const TraitSpecificSchema = z.strictObject({
 
 export const TraitSchema = z.strictObject({
   index: z.string(),
-  name: z.string(),
-  desc: z.array(z.string()),
+  name: translatable(z.string()),
+  desc: translatable(z.array(z.string())),
   races: z.array(APIReferenceSchema),
   subraces: z.array(APIReferenceSchema),
   proficiencies: z.array(APIReferenceSchema).optional(),

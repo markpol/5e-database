@@ -6,13 +6,15 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "desc": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "translatable": true
     },
     "ability_score": {
       "type": "object",

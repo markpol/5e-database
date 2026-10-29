@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { APIReferenceSchema, AreaOfEffectSchema } from '../../schemas/common';
+import { APIReferenceSchema, AreaOfEffectSchema, translatable } from '../../schemas/common';
 
 const SpellDamageSchema = z.strictObject({
   damage_type: APIReferenceSchema.optional(),
@@ -10,23 +10,23 @@ const SpellDamageSchema = z.strictObject({
 const SpellDCSchema = z.strictObject({
   dc_type: APIReferenceSchema,
   dc_success: z.string(),
-  desc: z.string().optional(),
+  desc: translatable(z.string()).optional(),
 });
 
 export const SpellSchema = z.strictObject({
   index: z.string(),
-  name: z.string(),
-  desc: z.array(z.string()),
-  higher_level: z.array(z.string()).optional(),
-  range: z.string(),
+  name: translatable(z.string()),
+  desc: translatable(z.array(z.string())),
+  higher_level: translatable(z.array(z.string())).optional(),
+  range: translatable(z.string()),
   components: z.array(z.string()),
-  material: z.string().optional(),
+  material: translatable(z.string()).optional(),
   ritual: z.boolean(),
-  duration: z.string(),
+  duration: translatable(z.string()),
   concentration: z.boolean(),
-  casting_time: z.string(),
+  casting_time: translatable(z.string()),
   level: z.number(),
-  attack_type: z.string().optional(),
+  attack_type: translatable(z.string()).optional(),
   damage: z.array(SpellDamageSchema).optional(),
   dc: SpellDCSchema.optional(),
   area_of_effect: AreaOfEffectSchema.optional(),

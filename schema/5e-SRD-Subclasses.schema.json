@@ -6,7 +6,8 @@
       "type": "string"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "class": {
       "type": "object",
@@ -32,13 +33,15 @@
       "additionalProperties": false
     },
     "subclass_flavor": {
-      "type": "string"
+      "type": "string",
+      "translatable": true
     },
     "desc": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "translatable": true
     },
     "subclass_levels": {
       "type": "string"
