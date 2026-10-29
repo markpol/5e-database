@@ -22953,7 +22953,9 @@
       }
     ],
     "senses": {
-      "blindsight": "30 ft. or 10 ft. while deafened (blind beyond this radius)",
+      "blindsight": 30,
+      "blindsight_deafened": 10,
+      "blindsight_blind_beyond": true,
       "passive_perception": 13
     },
     "languages": "Undercommon",

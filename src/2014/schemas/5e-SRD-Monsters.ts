@@ -17,7 +17,9 @@ const MonsterSpeedSchema = z.strictObject({
 
 const SenseSchema = z.strictObject({
   passive_perception: z.number(),
-  blindsight: z.union([z.number(), z.string()]).optional(),
+  blindsight: z.number().optional(),
+  // Reduced blindsight range while the creature is deafened (Grimlock).
+  blindsight_deafened: z.number().optional(),
   darkvision: z.number().optional(),
   tremorsense: z.number().optional(),
   truesight: z.number().optional(),
@@ -80,7 +82,7 @@ const MonsterDamageSchema = z.union([
 
 const MonsterActionItemSchema = z.strictObject({
   action_name: z.string(),
-  // Current monster action counts include numeric counts and the labels "Number of Heads" and "1d4".
+  // Counts are numeric except hydra ("Number of Heads") and violet-fungus ("1d4"), which are not fixed counts.
   count: z.union([z.number(), z.string()]),
   type: z.string(),
 });
