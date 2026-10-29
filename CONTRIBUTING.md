@@ -21,7 +21,7 @@ changes with a `BREAKING CHANGE:` footer. They keep the history readable when a 
 | `src/{year}/en/5e-SRD-{Collection}.json`    | English source data for a collection                |
 | `src/{year}/schemas/5e-SRD-{Collection}.ts` | Zod schema for that collection                      |
 | `src/{year}/tests/`                         | Tests that run the schemas and checks over the data |
-| `src/{year}/{locale}/`                      | Translation overlays                                |
+| `src/{year}/{locale}/`                      | Translation overlays (not published)                |
 | `src/2014/5e-SRD-Monsters-Normalized.json`  | Generated; do not edit by hand                      |
 | `src/provenance/source-markers.json`        | Source of each data file and its non-SRD fields     |
 | `schema/`, `types/`, `ids/`                 | Generated JSON Schema, `.d.ts` and id lists; do not edit |
@@ -80,7 +80,8 @@ import normalizedMonsters from '@markpol/dd-srd/monsters-normalized'; // Normali
 The entries resolve with bundler-style module resolution (`"moduleResolution": "Bundler"`). The deep paths used before
 the map keep working for one major version: `src/2014/en/*.json`, `src/2014/5e-SRD-Monsters-Normalized.json`,
 `src/provenance/source-markers.json`, `src/i18n/localize`, `schema/*.json`, `ids/*.json` and `types/*`. Translation
-overlay folders have no entry.
+overlay folders have no entry and are not published: they stay in the repository, pending a provenance check of
+the translated text.
 
 After adding a collection, run `pnpm run generate` (which also emits the entry's typed default export) and
 `pnpm run exports:write`; a test fails when the map is stale. `pnpm run test:package` (a CI job on Node 22 and 24)
@@ -147,6 +148,9 @@ The changes this fork has already made relative to upstream are recorded in
 
 Translations are overlays on the English data. They need only a text editor and a fork. The rules below are for the
 2014 data; `src/2024` is frozen.
+
+The overlay folders stay in the repository, but they are not published in the package (`files` in `package.json` lists
+only English data), pending a provenance check of the translated text.
 
 ### File location
 
@@ -228,7 +232,7 @@ imports.
 import { createLocalizer, type DataRecord, type JsonSchema } from '@markpol/dd-srd/src/i18n/localize';
 import enSpells from '@markpol/dd-srd/spells';
 import spellSchema from '@markpol/dd-srd/schema/5e-SRD-Spells.schema.json';
-// Overlays are not package entries: the caller brings its own overlay files.
+// Overlays are not published in the package: the caller brings its own overlay files.
 import frSpells from './overlays/fr-FR/5e-SRD-Spells.json';
 import frSchools from './overlays/fr-FR/5e-SRD-Magic-Schools.json';
 import frClasses from './overlays/fr-FR/5e-SRD-Classes.json';
@@ -249,7 +253,8 @@ const spells = localize('spells', 'fr-FR'); // Spell[], with French text and Fre
 ```
 
 `english` and `schema` are read for the collection being localized; `overlay` is also read for the collections its
-references point at, to resolve their names. A missing overlay falls back to English.
+references point at, to resolve their names. A missing overlay, including a locale whose folder is absent because overlays are not published, falls back to English:
+`localize()` then returns the English records unchanged.
 
 Inside this repository (Node), `src/i18n/files.ts` exports a `localize` already bound to the files here.
 

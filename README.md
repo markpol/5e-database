@@ -12,7 +12,7 @@ by Zod schemas and Vitest tests; there is no database or build step.
 src/
   2014/
     en/                              English source data, one 5e-SRD-{Collection}.json per collection
-    {locale}/                        Translation overlays (for example fr-FR, pt-BR, ru)
+    {locale}/                        Translation overlays (fr-FR, pt-BR, ru); not published
     schemas/                         One Zod schema per collection
     tests/                           Schema, duplicate-index, table and translation tests
     5e-SRD-Monsters-Normalized.json  Generated from en/5e-SRD-Monsters.json
@@ -116,7 +116,8 @@ import spells from '@markpol/dd-srd/spells';
 ```
 
 The older deep paths (`@markpol/dd-srd/src/2014/en/5e-SRD-Spells.json`, `.../schema/...`, `.../ids/...`) keep resolving
-for one major version. See [CONTRIBUTING.md](CONTRIBUTING.md#package-entries).
+for one major version. The package contains the English data only; the translation overlays are in the repository but
+not published, pending a provenance check. See [CONTRIBUTING.md](CONTRIBUTING.md#package-entries).
 
 ## Setup
 

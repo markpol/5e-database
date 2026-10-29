@@ -3,7 +3,7 @@
  * tarball into a temporary project, then
  *   - imports every typed entry and several old deep paths at runtime (Node resolves them through `exports`),
  *   - type-checks a consumer file that uses every entry (tsc, `moduleResolution: Bundler`),
- *   - checks that translation overlay folders are not exported.
+ *   - checks that translation overlay folders are neither in the tarball nor exported.
  */
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
@@ -50,6 +50,10 @@ try {
   for (const required of ['LICENSE.md', 'NOTICE.md', 'package.json', 'src/i18n/localize.ts']) {
     if (!shipped.has(required)) throw new Error(`${required} is missing from the tarball`);
   }
+  // Translation overlays stay in the repository but are not published.
+  const overlayFiles = [...shipped].filter((f) => /^src\/\d{4}\/(?!en\/)[^/]+\/.+\.json$/.test(f));
+  if (overlayFiles.length)
+    throw new Error(`overlay files in the tarball: ${overlayFiles.join(', ')}`);
 
   const project = path.join(work, 'consumer');
   fs.mkdirSync(project);

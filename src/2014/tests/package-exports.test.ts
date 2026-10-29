@@ -47,6 +47,21 @@ describe('package exports map', () => {
     }
   });
 
+  it('does not publish translation overlay folders', () => {
+    for (const locale of ['fr-FR', 'pt-BR', 'ru']) {
+      expect(pkg.files.filter((f) => f.split('/').includes(locale))).toEqual([]);
+    }
+    // Only the English folder of a year is published.
+    expect(
+      pkg.files.filter(
+        (f) =>
+          /^src\/\d{4}\//.test(f) &&
+          !f.startsWith('src/2014/en/') &&
+          f !== 'src/2014/5e-SRD-Monsters-Normalized.json'
+      )
+    ).toEqual([]);
+  });
+
   it('only exports files the package ships', () => {
     // Every exported directory must be covered by a `files` pattern, or the entry would not resolve after install.
     for (const target of Object.values(pkg.exports)) {

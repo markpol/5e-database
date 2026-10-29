@@ -46,7 +46,7 @@ these changes.
 | `src/2014/5e-SRD-Monsters-Normalized.json` | Generated from `src/2014/en/5e-SRD-Monsters.json` and `src/2014/monster-engine-annotations.json` |
 | `src/2014/monster-engine-annotations.json` | Engine-authored |
 | `src/2024/en/*.json` | SRD 5.2 |
-| `src/{year}/{locale}/*.json` | Translations of the English SRD text for that year |
+| `src/{year}/{locale}/*.json` | Translations of the English SRD text for that year; in the repository, not published in the package, pending a provenance check |
 
 ## Engine-authored data
 
