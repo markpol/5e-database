@@ -1,12 +1,22 @@
 {
   "name": "5e-database",
   "version": "5.12.0",
-  "description": "Database for 5e-srd-api",
+  "description": "Dungeons & Dragons 5th Edition SRD game data (JSON) in English, French, Portuguese and Russian",
   "private": true,
   "packageManager": "pnpm@10.34.5",
   "engines": {
     "node": "22.x || 24.x"
   },
+  "files": [
+    "src/2014/en/*.json",
+    "src/2014/fr-FR/*.json",
+    "src/2014/pt-BR/*.json",
+    "src/2014/ru/*.json",
+    "src/2014/5e-SRD-Monsters-Normalized.json",
+    "src/provenance/source-markers.json",
+    "LICENSE.md",
+    "NOTICE.md"
+  ],
   "scripts": {
     "lint": "eslint . --config eslint.config.mjs",
     "test": "vitest run",
@@ -14,14 +24,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/5e-bits/5e-database.git"
+    "url": "git+https://github.com/markpol/5e-database.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/5e-bits/5e-database/issues"
+    "url": "https://github.com/markpol/5e-database/issues"
   },
-  "homepage": "https://github.com/5e-bits/5e-database#readme",
+  "homepage": "https://github.com/markpol/5e-database#readme",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@eslint/json": "^2.1.0",
