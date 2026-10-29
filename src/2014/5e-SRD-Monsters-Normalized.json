@@ -161,7 +161,6 @@
       {
         "name": "Psychic Drain (Costs 2 Actions)",
         "desc": "One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.",
-        "attack_bonus": 0,
         "damage": [
           {
             "damage_type": "psychic",
@@ -711,7 +710,7 @@
         "damage": [
           {
             "damage_type": "bludgeoning",
-            "damage_dice": "2d6+6"
+            "damage_dice": "2d6+7"
           }
         ]
       }
@@ -1415,7 +1414,7 @@
         "damage": [
           {
             "damage_type": "bludgeoning",
-            "damage_dice": "13d6+6"
+            "damage_dice": "2d6+6"
           }
         ]
       }
@@ -2407,7 +2406,7 @@
     "special_abilities": [
       {
         "name": "Ice Walk",
-        "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment."
+        "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement."
       },
       {
         "name": "Legendary Resistance",
@@ -2773,7 +2772,7 @@
       },
       {
         "name": "Bite",
-        "desc": "Melee Weapon Attack:+ 15 to hit, reach 15 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 9 (2d8) acid damage.",
+        "desc": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 9 (2d8) acid damage.",
         "attack_bonus": 15,
         "damage": [
           {
@@ -4385,7 +4384,7 @@
         "attack_bonus": 17,
         "damage": [
           {
-            "damage_type": "bludgeoning",
+            "damage_type": "piercing",
             "damage_dice": "2d10+10"
           },
           {
@@ -4655,7 +4654,7 @@
       },
       {
         "name": "Breath Weapons",
-        "desc": "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 24 Constitution saving throw, taking 67 (15d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 90- foot cone. Each creature in that area must succeed on a DC 24 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "desc": "The dragon uses one of the following breath weapons.\nCold Breath. The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 24 Constitution saving throw, taking 67 (15d8) cold damage on a failed save, or half as much damage on a successful one.\nParalyzing Breath. The dragon exhales paralyzing gas in a 90-foot cone. Each creature in that area must succeed on a DC 24 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
         "usage": {
           "type": "recharge on roll",
           "dice": "1d6",
@@ -4799,7 +4798,7 @@
     "special_abilities": [
       {
         "name": "Ice Walk",
-        "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment."
+        "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement."
       },
       {
         "name": "Legendary Resistance",
@@ -4896,7 +4895,7 @@
       },
       {
         "name": "Cold Breath",
-        "desc": "The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 22 Constitution saving throw, taking 72 (l6d8) cold damage on a failed save, or half as much damage on a successful one.",
+        "desc": "The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a DC 22 Constitution saving throw, taking 72 (16d8) cold damage on a failed save, or half as much damage on a successful one.",
         "usage": {
           "type": "recharge on roll",
           "dice": "1d6",
@@ -5512,7 +5511,7 @@
   {
     "index": "archmage",
     "name": "Archmage",
-    "desc": "Archmages are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption. \n\nAn archmage typically has one or more apprentice mages, and an archmage\u2019s abode has numerous magical wards and guardians to discourage interlopers.",
+    "desc": "Archmages are powerful (and usually quite old) spellcasters dedicated to the study of the arcane arts. Benevolent ones counsel kings and queens, while evil ones rule as tyrants and pursue lichdom. Those who are neither good nor evil sequester themselves in remote towers to practice their magic without interruption. \n\nAn archmage typically has one or more apprentice mages, and an archmage’s abode has numerous magical wards and guardians to discourage interlopers.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -6499,7 +6498,7 @@
   {
     "index": "bandit",
     "name": "Bandit",
-    "desc": "**Bandits** rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.\n\n**Pirates** are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation\u2019s vessels.",
+    "desc": "**Bandits** rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.\n\n**Pirates** are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation’s vessels.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -6554,7 +6553,7 @@
       },
       {
         "name": "Light Crossbow",
-        "desc": "Ranged Weapon Attack: +3 to hit, range 80 ft./320 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
+        "desc": "Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
         "attack_bonus": 3,
         "attack_type": "Ranged",
         "damage": [
@@ -6578,7 +6577,7 @@
   {
     "index": "bandit-captain",
     "name": "Bandit Captain",
-    "desc": "It takes a strong personality, ruthless cunning, and a silver tongue to keep a gang of bandits in line. The **bandit captain** has these qualities in spades.\n\nIn addition to managing a crew of selfish malcontents, the **pirate captain** is a variation of the bandit captain, with a ship to protect and command. To keep the crew in line, the captain must mete out rewards and punishment on a regular basis.\n\nMore than treasure, a bandit captain or pirate captain craves infamy. A prisoner who appeals to the captain\u2019s vanity or ego is more likely to be treated fairly than a prisoner who does not or claims not to know anything of the captain\u2019s colorful reputation.",
+    "desc": "It takes a strong personality, ruthless cunning, and a silver tongue to keep a gang of bandits in line. The **bandit captain** has these qualities in spades.\n\nIn addition to managing a crew of selfish malcontents, the **pirate captain** is a variation of the bandit captain, with a ship to protect and command. To keep the crew in line, the captain must mete out rewards and punishment on a regular basis.\n\nMore than treasure, a bandit captain or pirate captain craves infamy. A prisoner who appeals to the captain’s vanity or ego is more likely to be treated fairly than a prisoner who does not or claims not to know anything of the captain’s colorful reputation.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -6797,7 +6796,6 @@
       {
         "name": "Barbed Hide",
         "desc": "At the start of each of its turns, the barbed devil deals 5 (1d10) piercing damage to any creature grappling it.",
-        "attack_bonus": 0,
         "damage": [
           {
             "damage_type": "piercing",
@@ -7277,6 +7275,7 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/behir.png",
     "url": "/api/2014/monsters/behir"
   },
   {
@@ -7529,7 +7528,7 @@
       },
       {
         "name": "Acid Breath",
-        "desc": "The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 22 (Sd8) acid damage on a failed save, or half as much damage on a successful one.",
+        "desc": "The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 22 (5d8) acid damage on a failed save, or half as much damage on a successful one.",
         "usage": {
           "type": "recharge on roll",
           "dice": "1d6",
@@ -7613,7 +7612,7 @@
         "damage": [
           {
             "damage_type": "acid",
-            "damage_dice": "1d8+8"
+            "damage_dice": "1d8"
           }
         ]
       },
@@ -9254,6 +9253,7 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/chimera.png",
     "url": "/api/2014/monsters/chimera"
   },
   {
@@ -9620,6 +9620,7 @@
         }
       }
     ],
+    "image": "/api/images/monsters/cloaker.png",
     "url": "/api/2014/monsters/cloaker"
   },
   {
@@ -9819,6 +9820,7 @@
         }
       }
     ],
+    "image": "/api/images/monsters/cloud-giant.png",
     "url": "/api/2014/monsters/cloud-giant"
   },
   {
@@ -10500,7 +10502,7 @@
         "attack_bonus": 4,
         "damage": [
           {
-            "damage_type": "bludgeoning",
+            "damage_type": "piercing",
             "damage_dice": "1d10+2"
           },
           {
@@ -10526,7 +10528,7 @@
   {
     "index": "cult-fanatic",
     "name": "Cult Fanatic",
-    "desc": "Fanatics are often part of a cult\u2019s leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.",
+    "desc": "Fanatics are often part of a cult’s leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -10835,7 +10837,7 @@
   {
     "index": "death-dog",
     "name": "Death Dog",
-    "desc": "A death dog is an ugly two-headed hound that roams plains, and deserts. Hate burns in a death dog\u2019s heart, and a taste for humanoid flesh drives it to attack travelers and explorers. Death dog saliva carries a foul disease that causes a victim\u2019s flesh to slowly rot off the bone.",
+    "desc": "A death dog is an ugly two-headed hound that roams plains, and deserts. Hate burns in a death dog’s heart, and a taste for humanoid flesh drives it to attack travelers and explorers. Death dog saliva carries a foul disease that causes a victim’s flesh to slowly rot off the bone.",
     "size": "Medium",
     "type": "monstrosity",
     "alignment": "neutral evil",
@@ -11271,6 +11273,7 @@
         "desc": "The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice).\nIn a new form, the deva retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks."
       }
     ],
+    "image": "/api/images/monsters/deva.png",
     "url": "/api/2014/monsters/deva"
   },
   {
@@ -11587,6 +11590,7 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/djinni.png",
     "url": "/api/2014/monsters/djinni"
   },
   {
@@ -11866,7 +11870,7 @@
         "attack_bonus": 13,
         "damage": [
           {
-            "damage_type": "piercing",
+            "damage_type": "slashing",
             "damage_dice": "2d8+7"
           }
         ],
@@ -11905,6 +11909,7 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/dragon-turtle.png",
     "url": "/api/2014/monsters/dragon-turtle"
   },
   {
@@ -12259,6 +12264,7 @@
         }
       }
     ],
+    "image": "/api/images/monsters/drider.png",
     "url": "/api/2014/monsters/drider"
   },
   {
@@ -12718,7 +12724,7 @@
     "actions": [
       {
         "name": "Club",
-        "desc": "Melee Weapon Attack: +2 to hit (+6 to hit with shillelagh), reach 5 ft., one target. Hit: 2 (1 d4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage with shillelagh.",
+        "desc": "Melee Weapon Attack: +2 to hit (+6 to hit with shillelagh), reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage with shillelagh.",
         "attack_bonus": 2,
         "attack_type": "Melee",
         "damage": [
@@ -12843,7 +12849,7 @@
         "attack_type": "Ranged",
         "damage": [
           {
-            "damage_type": "bludgeoning",
+            "damage_type": "piercing",
             "damage_dice": "1d6+2"
           }
         ],
@@ -13047,7 +13053,7 @@
         "attack_type": "Melee",
         "damage": [
           {
-            "damage_type": "bludgeoning",
+            "damage_type": "slashing",
             "damage_dice": "1d4+2"
           }
         ],
@@ -13360,6 +13366,7 @@
         "weapon_kind": "spell"
       }
     ],
+    "image": "/api/images/monsters/efreeti.png",
     "url": "/api/2014/monsters/efreeti"
   },
   {
@@ -13756,6 +13763,7 @@
         "desc": "The erinyes adds 4 to its AC against one melee attack that would hit it. To do so, the erinyes must see the attacker and be wielding a melee weapon."
       }
     ],
+    "image": "/api/images/monsters/erinyes.png",
     "url": "/api/2014/monsters/erinyes"
   },
   {
@@ -13849,7 +13857,7 @@
         "damage": [
           {
             "damage_type": "piercing",
-            "damage_dice": "2d6+2"
+            "damage_dice": "1d8+2"
           },
           {
             "damage_type": "poison",
@@ -13879,7 +13887,7 @@
         "attack_type": "Melee",
         "damage": [
           {
-            "damage_type": "bludgeoning",
+            "damage_type": "slashing",
             "damage_dice": "2d4+2"
           }
         ],
@@ -14204,6 +14212,7 @@
         }
       }
     ],
+    "image": "/api/images/monsters/fire-giant.png",
     "url": "/api/2014/monsters/fire-giant"
   },
   {
@@ -14363,7 +14372,7 @@
         "attack_type": "Melee",
         "damage": [
           {
-            "damage_type": "bludgeoning",
+            "damage_type": "piercing",
             "damage_dice": "1"
           },
           {
@@ -14565,6 +14574,7 @@
         }
       }
     ],
+    "image": "/api/images/monsters/frost-giant.png",
     "url": "/api/2014/monsters/frost-giant"
   },
   {
@@ -14934,7 +14944,7 @@
       },
       {
         "name": "Horrifying Visage",
-        "desc": "Each non-undead creature within 60 ft. of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 \u00d7 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.",
+        "desc": "Each non-undead creature within 60 ft. of the ghost that can see it must succeed on a DC 13 Wisdom saving throw or be frightened for 1 minute. If the save fails by 5 or more, the target also ages 1d4 × 10 years. A frightened target can repeat the saving throw at the end of each of its turns, ending the frightened condition on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to this ghost's Horrifying Visage for the next 24 hours. The aging effect can be reversed with a greater restoration spell, but only within 24 hours of it occurring.",
         "damage": [
           {
             "dc": {
@@ -15156,6 +15166,7 @@
         }
       }
     ],
+    "image": "/api/images/monsters/giant-ape.png",
     "url": "/api/2014/monsters/giant-ape"
   },
   {
@@ -15925,7 +15936,7 @@
   {
     "index": "giant-fire-beetle",
     "name": "Giant Fire Beetle",
-    "desc": "A giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle\u2019s glands continue to shed light for 1d6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.",
+    "desc": "A giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle’s glands continue to shed light for 1d6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.",
     "size": "Small",
     "type": "beast",
     "alignment": "unaligned",
@@ -16673,6 +16684,7 @@
         "weapon_kind": "natural"
       }
     ],
+    "image": "/api/images/monsters/giant-rat-diseased.png",
     "url": "/api/2014/monsters/giant-rat-diseased"
   },
   {
@@ -17535,7 +17547,7 @@
         "attack_type": "Melee",
         "damage": [
           {
-            "damage_type": "bludgeoning",
+            "damage_type": "piercing",
             "damage_dice": "5d6"
           }
         ],
@@ -17772,6 +17784,7 @@
         "weapon_kind": "natural"
       }
     ],
+    "image": "/api/images/monsters/glabrezu.png",
     "url": "/api/2014/monsters/glabrezu"
   },
   {
@@ -17916,7 +17929,7 @@
       },
       {
         "name": "Spear",
-        "desc": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. and range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage, or 13 (2d8 + 4) piercing damage if used with two hands to make a melee attack.",
+        "desc": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage, or 13 (2d8 + 4) piercing damage if used with two hands to make a melee attack.",
         "attack_bonus": 7,
         "damage": [
           {
@@ -19421,6 +19434,7 @@
         "attack_bonus": 8
       }
     ],
+    "image": "/api/images/monsters/guardian-naga.png",
     "url": "/api/2014/monsters/guardian-naga"
   },
   {
@@ -19634,6 +19648,7 @@
         "desc": "The sphinx casts a spell from its list of prepared spells, using a spell slot as normal."
       }
     ],
+    "image": "/api/images/monsters/gynosphinx.png",
     "url": "/api/2014/monsters/gynosphinx"
   },
   {
@@ -20173,6 +20188,7 @@
         "weapon_kind": "natural"
       }
     ],
+    "image": "/api/images/monsters/hezrou.png",
     "url": "/api/2014/monsters/hezrou"
   },
   {
@@ -20722,6 +20738,7 @@
         "weapon_kind": "spell"
       }
     ],
+    "image": "/api/images/monsters/horned-devil.png",
     "url": "/api/2014/monsters/horned-devil"
   },
   {
@@ -20785,7 +20802,7 @@
         "attack_type": "Melee",
         "damage": [
           {
-            "damage_type": "bludgeoning",
+            "damage_type": "piercing",
             "damage_dice": "2d8+4"
           }
         ],
@@ -20882,6 +20899,7 @@
         "weapon_kind": "natural"
       }
     ],
+    "image": "/api/images/monsters/hydra.png",
     "url": "/api/2014/monsters/hydra"
   },
   {
@@ -21098,6 +21116,7 @@
         "desc": "The devil magically forms an opaque wall of ice on a solid surface it can see within 60 feet of it. The wall is 1 foot thick and up to 30 feet long and 10 feet high, or it's a hemispherical dome up to 20 feet in diameter.\nWhen the wall appears, each creature in its space is pushed out of it by the shortest route. The creature chooses which side of the wall to end up on, unless the creature is incapacitated. The creature then makes a DC 17 Dexterity saving throw, taking 35 (10d6) cold damage on a failed save, or half as much damage on a successful one.\nThe wall lasts for 1 minute or until the devil is incapacitated or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 17 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes."
       }
     ],
+    "image": "/api/images/monsters/ice-devil.png",
     "url": "/api/2014/monsters/ice-devil"
   },
   {
@@ -21445,6 +21464,7 @@
         "weapon_kind": "natural"
       }
     ],
+    "image": "/api/images/monsters/invisible-stalker.png",
     "url": "/api/2014/monsters/invisible-stalker"
   },
   {
@@ -21603,6 +21623,7 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/iron-golem.png",
     "url": "/api/2014/monsters/iron-golem"
   },
   {
@@ -21751,7 +21772,7 @@
   {
     "index": "knight",
     "name": "Knight",
-    "desc": "Knights are warriors who pledge service to rulers, religious orders, and noble causes. A knight\u2019s alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm, a knight often travels with an entourage that includes squires and hirelings who are commoners.",
+    "desc": "Knights are warriors who pledge service to rulers, religious orders, and noble causes. A knight’s alignment determines the extent to which a pledge is honored. Whether undertaking a quest or patrolling a realm, a knight often travels with an entourage that includes squires and hirelings who are commoners.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -22158,7 +22179,6 @@
       {
         "name": "Ink Cloud (Costs 3 Actions)",
         "desc": "While underwater, the kraken expels an ink cloud in a 60-foot radius. The cloud spreads around corners, and that area is heavily obscured to creatures other than the kraken. Each creature other than the kraken that ends its turn there must succeed on a DC 23 Constitution saving throw, taking 16 (3d10) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears at the end of the kraken's next turn.",
-        "attack_bonus": 0,
         "dc": {
           "dc_type": "con",
           "dc_value": 23,
@@ -22172,6 +22192,7 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/kraken.png",
     "url": "/api/2014/monsters/kraken"
   },
   {
@@ -22775,6 +22796,7 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/lich.png",
     "url": "/api/2014/monsters/lich"
   },
   {
@@ -23378,6 +23400,7 @@
         }
       }
     ],
+    "image": "/api/images/monsters/mage.png",
     "url": "/api/2014/monsters/mage"
   },
   {
@@ -23689,6 +23712,7 @@
         "weapon_kind": "natural"
       }
     ],
+    "image": "/api/images/monsters/mammoth.png",
     "url": "/api/2014/monsters/mammoth"
   },
   {
@@ -23948,6 +23972,7 @@
         "desc": "The marilith adds 5 to its AC against one melee attack that would hit it. To do so, the marilith must see the attacker and be wielding a melee weapon."
       }
     ],
+    "image": "/api/images/monsters/marilith.png",
     "url": "/api/2014/monsters/marilith"
   },
   {
@@ -24170,6 +24195,7 @@
         }
       }
     ],
+    "image": "/api/images/monsters/medusa.png",
     "url": "/api/2014/monsters/medusa"
   },
   {
@@ -25190,6 +25216,7 @@
         "desc": "The mummy lord magically transforms into a whirlwind of sand, moves up to 60 feet, and reverts to its normal form. While in whirlwind form, the mummy lord is immune to all damage, and it can't be grappled, petrified, knocked prone, restrained, or stunned. Equipment worn or carried by the mummy lord remain in its possession."
       }
     ],
+    "image": "/api/images/monsters/mummy-lord.png",
     "url": "/api/2014/monsters/mummy-lord"
   },
   {
@@ -25341,6 +25368,7 @@
         "desc": "The nalfeshnee magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
       }
     ],
+    "image": "/api/images/monsters/nalfeshnee.png",
     "url": "/api/2014/monsters/nalfeshnee"
   },
   {
@@ -25579,7 +25607,7 @@
   {
     "index": "noble",
     "name": "Noble",
-    "desc": "**Nobles** wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.\n\nThe noble\u2019s statistics can also be used to represent **courtiers** who aren\u2019t of noble birth.",
+    "desc": "**Nobles** wield great authority and influence as members of the upper class, possessing wealth and connections that can make them as powerful as monarchs and generals. A noble often travels in the company of guards, as well as servants who are commoners.\n\nThe noble’s statistics can also be used to represent **courtiers** who aren’t of noble birth.",
     "size": "Medium",
     "type": "humanoid",
     "subtype": "any race",
@@ -25638,7 +25666,7 @@
         "attack_type": "Melee",
         "damage": [
           {
-            "damage_type": "bludgeoning",
+            "damage_type": "piercing",
             "damage_dice": "1d8+1"
           }
         ],
@@ -26204,6 +26232,7 @@
         "desc": "The oni magically polymorphs into a Small or Medium humanoid, into a Large giant, or back into its true form. Other than its size, its statistics are the same in each form. The only equipment that is transformed is its glaive, which shrinks so that it can be wielded in humanoid form. If the oni dies, it reverts to its true form, and its glaive reverts to its normal size."
       }
     ],
+    "image": "/api/images/monsters/oni.png",
     "url": "/api/2014/monsters/oni"
   },
   {
@@ -27022,7 +27051,7 @@
       },
       {
         "name": "Claw",
-        "desc": "Melee Weapon Attack: +14 to hit, reach 10 ft. , one target. Hit: 17 (2d8 + 8) slashing damage.",
+        "desc": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 17 (2d8 + 8) slashing damage.",
         "attack_bonus": 14,
         "damage": [
           {
@@ -27034,7 +27063,7 @@
       },
       {
         "name": "Mace",
-        "desc": "Melee Weapon Attack: +14 to hit, reach 10ft., one target. Hit: 15 (2d6 + 8) bludgeoning damage plus 21 (6d6) fire damage.",
+        "desc": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 15 (2d6 + 8) bludgeoning damage plus 21 (6d6) fire damage.",
         "attack_bonus": 14,
         "damage": [
           {
@@ -27047,7 +27076,7 @@
       },
       {
         "name": "Tail",
-        "desc": "Melee Weapon Attack: +14 to hit, reach 10ft., one target. Hit: 24 (3d10 + 8) bludgeoning damage.",
+        "desc": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 24 (3d10 + 8) bludgeoning damage.",
         "attack_bonus": 14,
         "damage": [
           {
@@ -27058,6 +27087,7 @@
         "weapon_kind": "natural"
       }
     ],
+    "image": "/api/images/monsters/pit-fiend.png",
     "url": "/api/2014/monsters/pit-fiend"
   },
   {
@@ -27269,6 +27299,7 @@
         }
       }
     ],
+    "image": "/api/images/monsters/planetar.png",
     "url": "/api/2014/monsters/planetar"
   },
   {
@@ -27331,7 +27362,7 @@
         "attack_type": "Melee",
         "damage": [
           {
-            "damage_type": "bludgeoning",
+            "damage_type": "piercing",
             "damage_dice": "3d6+4"
           }
         ],
@@ -27912,6 +27943,7 @@
         "weapon_kind": "natural"
       }
     ],
+    "image": "/api/images/monsters/purple-worm.png",
     "url": "/api/2014/monsters/purple-worm"
   },
   {
@@ -28000,7 +28032,8 @@
               "duration": {
                 "length": 10,
                 "unit": "round",
-                "interrupt": "saving throw success"
+                "interrupt": "saving throw success",
+                "interrupt_modifier": "disadvantage"
               }
             }
           }
@@ -28026,7 +28059,8 @@
               "duration": {
                 "length": 10,
                 "unit": "round",
-                "interrupt": "saving throw success"
+                "interrupt": "saving throw success",
+                "interrupt_modifier": "disadvantage"
               }
             }
           }
@@ -28316,6 +28350,7 @@
         "weapon_kind": "natural"
       }
     ],
+    "image": "/api/images/monsters/rakshasa.png",
     "url": "/api/2014/monsters/rakshasa"
   },
   {
@@ -28531,7 +28566,7 @@
       },
       {
         "name": "Fire Breath",
-        "desc": "The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC l3 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.",
+        "desc": "The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.",
         "usage": {
           "type": "recharge on roll",
           "dice": "1d6",
@@ -28699,6 +28734,7 @@
         "desc": "The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 (6d6) acid damage at the start of each of the remorhaz's turns.\nIf the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone."
       }
     ],
+    "image": "/api/images/monsters/remorhaz.png",
     "url": "/api/2014/monsters/remorhaz"
   },
   {
@@ -28941,6 +28977,7 @@
         "weapon_kind": "natural"
       }
     ],
+    "image": "/api/images/monsters/roc.png",
     "url": "/api/2014/monsters/roc"
   },
   {
@@ -29568,7 +29605,7 @@
       },
       {
         "name": "Spear",
-        "desc": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20 ft./60 ft., one target. Hit: 11 (2d6 + 4) piercing damage, or 13 (2d8 + 4) piercing damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage.",
+        "desc": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage, or 13 (2d8 + 4) piercing damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage.",
         "attack_bonus": 7,
         "damage": [
           {
@@ -29698,7 +29735,7 @@
       },
       {
         "name": "Shortsword",
-        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1 d6 + 3) piercing damage.",
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
         "attack_bonus": 5,
         "attack_type": "Melee",
         "damage": [
@@ -29777,7 +29814,7 @@
         "attack_type": "Melee",
         "damage": [
           {
-            "damage_type": "bludgeoning",
+            "damage_type": "piercing",
             "damage_dice": "1"
           },
           {
@@ -29903,7 +29940,7 @@
       },
       {
         "name": "Longbow",
-        "desc": "Ranged Weapon Attack: +4 to hit, ranged 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+        "desc": "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
         "attack_bonus": 4,
         "attack_type": "Ranged",
         "damage": [
@@ -30296,6 +30333,7 @@
         "desc": "When a creature makes an attack against the wearer of the guardian's amulet, the guardian grants a +2 bonus to the wearer's AC if the guardian is within 5 feet of the wearer."
       }
     ],
+    "image": "/api/images/monsters/shield-guardian.png",
     "url": "/api/2014/monsters/shield-guardian"
   },
   {
@@ -30689,7 +30727,7 @@
         "attack_bonus": 15,
         "damage": [
           {
-            "damage_type": "radiant",
+            "damage_type": "slashing",
             "damage_dice": "4d6+8"
           },
           {
@@ -30735,7 +30773,7 @@
       },
       {
         "name": "Searing Burst (Costs 2 Actions)",
-        "desc": "The solar emits magical, divine energy. Each creature of its choice in a 10 -foot radius must make a DC 23 Dexterity saving throw, taking 14 (4d6) fire damage plus 14 (4d6) radiant damage on a failed save, or half as much damage on a successful one.",
+        "desc": "The solar emits magical, divine energy. Each creature of its choice in a 10-foot radius must make a DC 23 Dexterity saving throw, taking 14 (4d6) fire damage plus 14 (4d6) radiant damage on a failed save, or half as much damage on a successful one.",
         "dc": {
           "dc_type": "dex",
           "dc_value": 23,
@@ -30762,6 +30800,7 @@
         }
       }
     ],
+    "image": "/api/images/monsters/solar.png",
     "url": "/api/2014/monsters/solar"
   },
   {
@@ -31115,6 +31154,7 @@
         "weapon_kind": "natural"
       }
     ],
+    "image": "/api/images/monsters/spirit-naga.png",
     "url": "/api/2014/monsters/spirit-naga"
   },
   {
@@ -31643,6 +31683,7 @@
         "desc": "If a rock or similar object is hurled at the giant, the giant can, with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it."
       }
     ],
+    "image": "/api/images/monsters/stone-giant.png",
     "url": "/api/2014/monsters/stone-giant"
   },
   {
@@ -31759,6 +31800,7 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/stone-golem.png",
     "url": "/api/2014/monsters/stone-golem"
   },
   {
@@ -31972,6 +32014,7 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/storm-giant.png",
     "url": "/api/2014/monsters/storm-giant"
   },
   {
@@ -32087,7 +32130,6 @@
       {
         "name": "Draining Kiss",
         "desc": "The fiend kisses a creature charmed by it or a willing creature. The target must make a DC 15 Constitution saving throw against this magic, taking 32 (5d10 + 5) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
-        "attack_bonus": 0,
         "damage": [
           {
             "damage_type": "psychic",
@@ -33148,6 +33190,7 @@
         "desc": "The tarrasque makes one bite attack or uses its Swallow."
       }
     ],
+    "image": "/api/images/monsters/tarrasque.png",
     "url": "/api/2014/monsters/tarrasque"
   },
   {
@@ -33466,6 +33509,7 @@
         }
       }
     ],
+    "image": "/api/images/monsters/treant.png",
     "url": "/api/2014/monsters/treant"
   },
   {
@@ -33835,6 +33879,7 @@
         "weapon_kind": "natural"
       }
     ],
+    "image": "/api/images/monsters/tyrannosaurus-rex.png",
     "url": "/api/2014/monsters/tyrannosaurus-rex"
   },
   {
@@ -34261,6 +34306,7 @@
         "attack_bonus": 0
       }
     ],
+    "image": "/api/images/monsters/vampire-vampire.png",
     "url": "/api/2014/monsters/vampire-vampire"
   },
   {
@@ -34424,6 +34470,7 @@
         "attack_bonus": 0
       }
     ],
+    "image": "/api/images/monsters/vampire-bat.png",
     "url": "/api/2014/monsters/vampire-bat"
   },
   {
@@ -34540,6 +34587,7 @@
         "attack_bonus": 0
       }
     ],
+    "image": "/api/images/monsters/vampire-mist.png",
     "url": "/api/2014/monsters/vampire-mist"
   },
   {
@@ -35041,6 +35089,7 @@
         ]
       }
     ],
+    "image": "/api/images/monsters/vrock.png",
     "url": "/api/2014/monsters/vrock"
   },
   {
@@ -37646,7 +37695,7 @@
   {
     "index": "winter-wolf",
     "name": "Winter Wolf",
-    "desc": "The arctic-dwelling winter wolf is as large as a dire wolf but has snow-white fur and pale blue eyes. Frost giants use these evil creatures as guards and hunting companions, putting the wolves\u2019 deadly breath weapon to use against their foes. Winter wolves communicate with one another using growls and barks, but they speak Common and Giant well enough to follow simple conversations.",
+    "desc": "The arctic-dwelling winter wolf is as large as a dire wolf but has snow-white fur and pale blue eyes. Frost giants use these evil creatures as guards and hunting companions, putting the wolves’ deadly breath weapon to use against their foes. Winter wolves communicate with one another using growls and barks, but they speak Common and Giant well enough to follow simple conversations.",
     "size": "Large",
     "type": "monstrosity",
     "alignment": "neutral evil",
@@ -38135,6 +38184,7 @@
         "weapon_kind": "natural"
       }
     ],
+    "image": "/api/images/monsters/wyvern.png",
     "url": "/api/2014/monsters/wyvern"
   },
   {
@@ -38506,7 +38556,7 @@
       },
       {
         "name": "Lightning Breath",
-        "desc": "The dragon exhales lightning in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.",
+        "desc": "The dragon exhales lightning in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.",
         "usage": {
           "type": "recharge on roll",
           "dice": "1d6",
@@ -39699,7 +39749,7 @@
     "special_abilities": [
       {
         "name": "Ice Walk",
-        "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment."
+        "desc": "The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement."
       }
     ],
     "actions": [
