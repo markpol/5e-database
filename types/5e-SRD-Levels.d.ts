@@ -85,3 +85,6 @@ export type Level = {
         aura_range?: number | undefined;
     } | undefined;
 };
+
+declare const data: Level[];
+export default data;

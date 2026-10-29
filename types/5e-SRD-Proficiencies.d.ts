@@ -24,3 +24,6 @@ export type Proficiency = {
         note?: string | undefined;
     }[] | undefined;
 };
+
+declare const data: Proficiency[];
+export default data;

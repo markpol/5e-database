@@ -27,3 +27,6 @@ export type Subrace = {
         note?: string | undefined;
     }[] | undefined;
 };
+
+declare const data: Subrace[];
+export default data;

@@ -44,3 +44,6 @@ export type Feature = {
         enemy_type_options?: any;
     } | undefined;
 };
+
+declare const data: Feature[];
+export default data;

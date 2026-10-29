@@ -12,3 +12,6 @@ export type Skill = {
     };
     url: string;
 };
+
+declare const data: Skill[];
+export default data;

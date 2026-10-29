@@ -6,3 +6,6 @@ export type MagicSchool = {
     url: string;
     desc?: string | undefined;
 };
+
+declare const data: MagicSchool[];
+export default data;

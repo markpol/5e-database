@@ -73,3 +73,6 @@ export type Trait = {
         subtrait_options?: any;
     } | undefined;
 };
+
+declare const data: Trait[];
+export default data;

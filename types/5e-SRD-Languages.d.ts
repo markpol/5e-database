@@ -9,3 +9,6 @@ export type Language = {
     desc?: string | undefined;
     script?: string | undefined;
 };
+
+declare const data: Language[];
+export default data;

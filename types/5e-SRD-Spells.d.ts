@@ -59,3 +59,6 @@ export type Spell = {
         note?: string | undefined;
     }[] | undefined;
 };
+
+declare const data: Spell[];
+export default data;

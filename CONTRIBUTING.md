@@ -25,6 +25,7 @@ changes with a `BREAKING CHANGE:` footer. These messages are what a release summ
 | `src/2014/5e-SRD-Monsters-Normalized.json`  | Generated; do not edit by hand                      |
 | `src/provenance/source-markers.json`        | Source of each data file and its non-SRD fields     |
 | `schema/`, `types/`, `ids/`                 | Generated JSON Schema, `.d.ts` and id lists; do not edit |
+| `scripts/package-exports.ts`                | The `exports` map of `package.json` (`pnpm run exports:write`) |
 
 `{year}` is `2014` or `2024`. `src/2024` is dormant and frozen: changes to it are not accepted except bug fixes to the
 data itself.
@@ -62,7 +63,29 @@ regenerate the normalized file with `pnpm normalize:monsters` (below).
 check their own registries against the data. Each file is `{ "collection": "conditions", "indices": ["blinded", ...] }`
 with the indices sorted. They are produced by `pnpm run generate` together with `schema/` and `types/` and checked by
 the same `generate:check` job; they ship in the npm package, so a consumer can
-`import conditions from '5e-database/ids/conditions.json' with { type: 'json' }` and compare `conditions.indices`.
+`import conditions from '@markpol/dd-srd/ids/conditions.json' with { type: 'json' }` and compare `conditions.indices`.
+
+## Package entries
+
+The package is `@markpol/dd-srd` (the GitHub repository keeps the name `5e-database`, so existing git install URLs
+and lockfile entries still resolve). `package.json` has an `exports` map with a typed entry per 2014 collection,
+named like its `ids/` file. Each entry is the English data, typed by the generated `types/` file:
+
+```ts
+import monsters from '@markpol/dd-srd/monsters'; // Monster[]
+import damageTypes from '@markpol/dd-srd/damage-types'; // DamageType[]
+import normalizedMonsters from '@markpol/dd-srd/monsters-normalized'; // NormalizedMonster[]
+```
+
+The entries resolve with bundler-style module resolution (`"moduleResolution": "Bundler"`). The deep paths used before
+the map keep working for one major version: `src/2014/en/*.json`, `src/2014/5e-SRD-Monsters-Normalized.json`,
+`src/provenance/source-markers.json`, `src/i18n/localize`, `schema/*.json`, `ids/*.json` and `types/*`. Translation
+overlay folders have no entry.
+
+After adding a collection, run `pnpm run generate` (which also emits the entry's typed default export) and
+`pnpm run exports:write`; a test fails when the map is stale. `pnpm run test:package` (a CI job on Node 22 and 24)
+packs the package, installs the tarball into a temporary project, imports every entry and several old deep paths, and
+type-checks them with `tsc`.
 
 ## Id stability contract
 
@@ -202,12 +225,13 @@ with the collection's generated type. `src/i18n/localize.ts` ships in the packag
 imports.
 
 ```ts
-import { createLocalizer, type DataRecord, type JsonSchema } from '5e-database/src/i18n/localize';
-import enSpells from '5e-database/src/2014/en/5e-SRD-Spells.json';
-import spellSchema from '5e-database/schema/5e-SRD-Spells.schema.json';
-import frSpells from '5e-database/src/2014/fr-FR/5e-SRD-Spells.json';
-import frSchools from '5e-database/src/2014/fr-FR/5e-SRD-Magic-Schools.json';
-import frClasses from '5e-database/src/2014/fr-FR/5e-SRD-Classes.json';
+import { createLocalizer, type DataRecord, type JsonSchema } from '@markpol/dd-srd/src/i18n/localize';
+import enSpells from '@markpol/dd-srd/spells';
+import spellSchema from '@markpol/dd-srd/schema/5e-SRD-Spells.schema.json';
+// Overlays are not package entries: the caller brings its own overlay files.
+import frSpells from './overlays/fr-FR/5e-SRD-Spells.json';
+import frSchools from './overlays/fr-FR/5e-SRD-Magic-Schools.json';
+import frClasses from './overlays/fr-FR/5e-SRD-Classes.json';
 
 const english: Record<string, DataRecord[]> = { spells: enSpells };
 const schemas: Record<string, JsonSchema> = { spells: spellSchema };

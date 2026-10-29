@@ -6,3 +6,6 @@ export type RuleSection = {
     desc: string;
     url: string;
 };
+
+declare const data: RuleSection[];
+export default data;

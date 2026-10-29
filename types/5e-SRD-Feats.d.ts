@@ -15,3 +15,6 @@ export type Feat = {
         } | undefined;
     }[] | undefined;
 };
+
+declare const data: Feat[];
+export default data;

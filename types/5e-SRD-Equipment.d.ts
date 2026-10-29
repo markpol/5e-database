@@ -115,3 +115,6 @@ export type Equipment = {
     weapon_category?: string | undefined;
     weapon_range?: string | undefined;
 };
+
+declare const data: Equipment[];
+export default data;

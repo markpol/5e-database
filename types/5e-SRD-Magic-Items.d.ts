@@ -78,3 +78,6 @@ export type MagicItem = {
     desc?: string[] | undefined;
     image?: string | undefined;
 };
+
+declare const data: MagicItem[];
+export default data;
