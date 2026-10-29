@@ -9,6 +9,9 @@
  * This module has no runtime dependencies: the caller supplies the English records, overlays and JSON Schemas (for
  * example as static JSON imports), so it runs in an app bundle as well as in Node. `src/i18n/files.ts` binds it to
  * the files in this repository.
+ *
+ * Translation overlays are not published in the package. With no overlay supplied for a locale (`overlay` returns
+ * undefined), `localize()` returns the English records unchanged.
  */
 import type { AbilityScore } from '../../types/5e-SRD-Ability-Scores';
 import type { Alignment } from '../../types/5e-SRD-Alignments';
