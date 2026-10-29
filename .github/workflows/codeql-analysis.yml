@@ -29,6 +29,9 @@ jobs:
   analyze:
     name: Analyze
     runs-on: ubuntu-latest
+    # security-events: write is required here because the repo's default workflow
+    # token permission is read-only; without it, SARIF upload fails on push runs
+    # with "Resource not accessible by integration".
     permissions:
       contents: read
       security-events: write
@@ -44,6 +47,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      with:
+        persist-credentials: false
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
