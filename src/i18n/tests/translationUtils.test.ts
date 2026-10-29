@@ -1,11 +1,10 @@
 import { describe, it, expect, vi } from 'vitest';
 import {
   buildTranslationDoc,
-  computeLocaleDocuments,
   getEnglishSourcePath,
   processTranslationEntries,
-  TranslationDocumentSchema,
 } from '../translationUtils';
+import { LOCALE_PATTERN } from '../constants';
 
 const enMap = new Map([
   ['acid-arrow', { index: 'acid-arrow', name: 'Acid Arrow', desc: ['A spell.'], level: 2 }],
@@ -40,7 +39,7 @@ describe('buildTranslationDoc', () => {
     expect(result!.fields).toHaveProperty('name', 'Säurepfeil');
   });
 
-  it('returns a valid TranslationDocument for a correct entry', () => {
+  it('returns a valid TranslatedEntry for a correct entry', () => {
     const result = buildTranslationDoc(
       { index: 'acid-arrow', name: 'Säurepfeil', desc: ['Ein Zauber.'] },
       enMap,
@@ -52,7 +51,6 @@ describe('buildTranslationDoc', () => {
       source_collection: 'spells',
       lang: 'de',
       fields: { name: 'Säurepfeil', desc: ['Ein Zauber.'] },
-      updated_at: expect.any(Date),
     });
   });
 
@@ -66,74 +64,52 @@ describe('buildTranslationDoc', () => {
     expect(result!.fields).not.toHaveProperty('index');
   });
 
-  it('output satisfies TranslationDocumentSchema', () => {
-    const result = buildTranslationDoc(
-      { index: 'acid-arrow', name: 'Säurepfeil' },
-      enMap,
-      'spells',
-      'de'
-    );
-    expect(TranslationDocumentSchema.safeParse(result).success).toBe(true);
-  });
-
-  it('TranslationDocumentSchema accepts script-subtag locales like zh-Hans', () => {
+  it('accepts script-subtag locales like zh-Hans', () => {
     const result = buildTranslationDoc(
       { index: 'acid-arrow', name: '酸箭' },
       enMap,
       'spells',
       'zh-Hans'
     );
-    expect(TranslationDocumentSchema.safeParse(result).success).toBe(true);
+    expect(result).not.toBeNull();
+    expect(result!.lang).toBe('zh-Hans');
   });
 });
 
-describe('computeLocaleDocuments', () => {
-  it('returns empty array for no documents', () => {
-    expect(computeLocaleDocuments([])).toEqual([]);
+describe('LOCALE_PATTERN', () => {
+  it('matches standard 2-letter language codes', () => {
+    expect(LOCALE_PATTERN.test('de')).toBe(true);
   });
 
-  it('returns one document per unique language', () => {
-    const docs = [
-      {
-        source_index: 'a',
-        source_collection: 'spells',
-        lang: 'de',
-        fields: {},
-        updated_at: new Date(),
-      },
-      {
-        source_index: 'b',
-        source_collection: 'spells',
-        lang: 'de',
-        fields: {},
-        updated_at: new Date(),
-      },
-      {
-        source_index: 'a',
-        source_collection: 'spells',
-        lang: 'fr',
-        fields: {},
-        updated_at: new Date(),
-      },
-    ];
-    const result = computeLocaleDocuments(docs);
-    expect(result).toHaveLength(2);
-    expect(result.map((d) => d.lang).sort()).toEqual(['de', 'fr']);
+  it('matches language with uppercase region subtag', () => {
+    expect(LOCALE_PATTERN.test('pt-BR')).toBe(true);
   });
 
-  it('each result has lang and updated_at', () => {
-    const docs = [
-      {
-        source_index: 'a',
-        source_collection: 'spells',
-        lang: 'de',
-        fields: {},
-        updated_at: new Date(),
-      },
-    ];
-    const [result] = computeLocaleDocuments(docs);
-    expect(result.lang).toBe('de');
-    expect(result.updated_at).toBeInstanceOf(Date);
+  it('matches language with numeric region subtag', () => {
+    expect(LOCALE_PATTERN.test('es-419')).toBe(true);
+  });
+
+  it('matches language with script subtag', () => {
+    expect(LOCALE_PATTERN.test('zh-Hans')).toBe(true);
+  });
+
+  it('matches language with script and region subtags', () => {
+    expect(LOCALE_PATTERN.test('zh-Hans-CN')).toBe(true);
+  });
+
+  it('rejects strings that cannot be BCP 47 language tags', () => {
+    expect(LOCALE_PATTERN.test('2014')).toBe(false); // pure numeric (year dir)
+    expect(LOCALE_PATTERN.test('a')).toBe(false); // single letter
+    expect(LOCALE_PATTERN.test('translations')).toBe(false); // >8 letters
+  });
+
+  it('accepts short words that happen to fit BCP 47 language subtag syntax', () => {
+    // The full RFC 5646 regex allows 2–8 letter primary language subtags, so common
+    // directory names like 'docs', 'tests', 'schemas' pass the pattern.
+    // Directory discovery code must exclude known non-locale dirs explicitly.
+    expect(LOCALE_PATTERN.test('docs')).toBe(true);
+    expect(LOCALE_PATTERN.test('tests')).toBe(true);
+    expect(LOCALE_PATTERN.test('schemas')).toBe(true);
   });
 });
 
