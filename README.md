@@ -20,6 +20,7 @@ src/
     monster-engine-annotations.json  Engine-only monster annotations merged in by the generator
   2024/                              Same layout for the 2024 SRD (no normalized monsters)
   i18n/                              Locale pattern and translation helpers
+  provenance/                        SRD baseline and source markers for engine-authored data (see NOTICE.md)
   schemas/common.ts                  Schema pieces shared by both years
   tests/translationTestUtils.ts      Shared translation test suite
 docs/
@@ -46,5 +47,6 @@ Game data problems can be reported with the "Game data issue" issue template.
 
 ## Licence
 
-This project is licensed under the terms of the MIT licence. See [LICENSE.md](LICENSE.md). Attribution for the
-underlying SRD material is being rewritten separately.
+This project is licensed under the terms of the MIT licence. See [LICENSE.md](LICENSE.md). The game content comes
+from the SRD 5.1 (2014 data) and SRD 5.2 (2024 data) under CC-BY-4.0; [NOTICE.md](NOTICE.md) has the attribution and
+lists the data written for the game engine rather than taken from the SRD.
