@@ -268,7 +268,45 @@
       "source": "srd"
     },
     "src/2014/en/5e-SRD-Features.json": {
-      "source": "srd"
+      "source": "srd",
+      "fields": {
+        "feature_specific.engine": {
+          "source": "dd",
+          "note": "Mechanics of a class feature of levels 1 to 5 (action cost, recharge, uses, modifiers), written by hand in feature-engine-annotations.json and merged in by derive-feature-engine.ts."
+        },
+        "feature_specific.granted_proficiencies": {
+          "source": "dd",
+          "note": "Proficiencies the feature gives, from its text, written in feature-engine-annotations.json and merged in by derive-feature-engine.ts."
+        },
+        "feature_specific.granted_proficiencies[].choose": {
+          "source": "dd",
+          "note": "Number of skill proficiencies of the owner's choice that the feature gives."
+        },
+        "feature_specific.granted_proficiencies[].from": {
+          "source": "dd",
+          "note": "What the chosen proficiencies are taken from: skills."
+        },
+        "feature_specific.granted_proficiencies[].index": {
+          "source": "dd",
+          "note": "The index of a proficiency the feature gives, a reference into 5e-SRD-Proficiencies."
+        },
+        "feature_specific.granted_proficiencies[].name": {
+          "source": "dd",
+          "note": "The name of a proficiency the feature gives, a reference into 5e-SRD-Proficiencies."
+        },
+        "feature_specific.granted_proficiencies[].url": {
+          "source": "dd",
+          "note": "The url of a proficiency the feature gives, a reference into 5e-SRD-Proficiencies."
+        },
+        "feature_specific.grants_asi": {
+          "source": "dd",
+          "note": "Set on every Ability Score Improvement feature by derive-feature-engine.ts."
+        },
+        "feature_specific.heal": {
+          "source": "dd",
+          "note": "Hit points the feature restores (dice, bonus, class level), from its text, written in feature-engine-annotations.json and merged in by derive-feature-engine.ts."
+        }
+      }
     },
     "src/2014/en/5e-SRD-Languages.json": {
       "source": "srd"
@@ -448,6 +486,9 @@
     },
     "src/2014/en/5e-SRD-Weapon-Properties.json": {
       "source": "srd"
+    },
+    "src/2014/feature-engine-annotations.json": {
+      "source": "dd"
     },
     "src/2014/monster-engine-annotations.json": {
       "source": "dd"

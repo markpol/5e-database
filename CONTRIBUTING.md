@@ -55,7 +55,9 @@ data itself.
 ## Changing English data
 
 Edit the entry in `src/{year}/en/5e-SRD-{Collection}.json` and run `pnpm test`. If you change a 2014 monster, also
-regenerate the normalized file with `pnpm normalize:monsters` (below).
+regenerate the normalized file with `pnpm normalize:monsters` (below). The structured mechanics of class features are
+written in `src/2014/feature-engine-annotations.json` and merged into the features with `pnpm run derive:features`
+([docs/feature-mechanics.md](docs/feature-mechanics.md)).
 
 ## Generated id lists
 

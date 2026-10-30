@@ -42,6 +42,288 @@ export type Feature = {
         subfeature_options?: any;
         terrain_type_options?: any;
         enemy_type_options?: any;
+        engine?: {
+            action_cost: "action" | "bonus_action" | "reaction" | "free" | "passive" | "rest";
+            recharge?: "turn" | "short_rest" | "long_rest" | "day" | undefined;
+            uses?: {
+                count?: number | undefined;
+                class_specific?: string | undefined;
+                ability_modifier?: "int" | "str" | "dex" | "con" | "wis" | "cha" | undefined;
+                per_class_level?: number | undefined;
+                minimum?: number | undefined;
+                unit?: "use" | "point" | "hit_point" | undefined;
+            } | {
+                pool: string;
+                cost?: number | "spell_level" | undefined;
+                cost_class_specific?: string | undefined;
+            } | {
+                spell_slot: true;
+            } | undefined;
+            modifiers?: ({
+                condition: string;
+                target: "target" | "self";
+                type: "condition";
+                save?: {
+                    ability: "int" | "str" | "dex" | "con" | "wis" | "cha";
+                    dc: "spell" | "ki";
+                } | undefined;
+                duration?: {
+                    unit: "round" | "minute" | "end_of_next_turn";
+                    length?: number | undefined;
+                } | undefined;
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                roll: "attack" | "ability_check" | "saving_throw" | "death_saving_throw";
+                mode: "advantage" | "disadvantage" | "auto_fail";
+                type: "roll";
+                abilities?: ("int" | "str" | "dex" | "con" | "wis" | "cha")[] | undefined;
+                attack_kind?: "melee_weapon" | "weapon" | "bound_weapon" | "ranged_weapon" | "unarmed_strike" | "monk_weapon" | "finesse_or_ranged_weapon" | "off_hand" | "spell" | undefined;
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                to: "ability_check" | "saving_throw" | "attack_roll" | "damage_roll" | "armor_class" | "healing";
+                type: "bonus";
+                flat?: number | undefined;
+                dice?: string | undefined;
+                dice_at_slot_level?: Record<string, string> | undefined;
+                ability_modifier?: "int" | "str" | "dex" | "con" | "wis" | "cha" | undefined;
+                attack_ability_modifier?: true | undefined;
+                class_specific?: string | undefined;
+                proficiency_multiplier?: number | undefined;
+                round?: "down" | "up" | undefined;
+                add_spell_level?: true | undefined;
+                abilities?: ("int" | "str" | "dex" | "con" | "wis" | "cha")[] | undefined;
+                attack_kind?: "melee_weapon" | "weapon" | "bound_weapon" | "ranged_weapon" | "unarmed_strike" | "monk_weapon" | "finesse_or_ranged_weapon" | "off_hand" | "spell" | undefined;
+                damage_type?: string | undefined;
+                spell?: string | undefined;
+                min_spell_level?: number | undefined;
+                minimum?: number | undefined;
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                op: "add";
+                type: "speed";
+                value?: number | undefined;
+                class_specific?: string | undefined;
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                base: number;
+                ability_modifiers: ("int" | "str" | "dex" | "con" | "wis" | "cha")[];
+                type: "armor_class";
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                per_class_level: number;
+                type: "hit_point_maximum";
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                count: number;
+                type: "extra_attack";
+                attack_kind?: "melee_weapon" | "weapon" | "bound_weapon" | "ranged_weapon" | "unarmed_strike" | "monk_weapon" | "finesse_or_ranged_weapon" | "off_hand" | "spell" | undefined;
+                action_cost?: "bonus_action" | "reaction" | undefined;
+                requires_attack_action?: true | undefined;
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                ability: "int" | "str" | "dex" | "con" | "wis" | "cha";
+                instead_of: "int" | "str" | "dex" | "con" | "wis" | "cha";
+                attack_kind: "melee_weapon" | "weapon" | "bound_weapon" | "ranged_weapon" | "unarmed_strike" | "monk_weapon" | "finesse_or_ranged_weapon" | "off_hand" | "spell";
+                type: "attack_ability";
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                class_specific: string;
+                attack_kind: "melee_weapon" | "weapon" | "bound_weapon" | "ranged_weapon" | "unarmed_strike" | "monk_weapon" | "finesse_or_ranged_weapon" | "off_hand" | "spell";
+                type: "damage_die";
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                min_roll: number;
+                attack_kind: "melee_weapon" | "weapon" | "bound_weapon" | "ranged_weapon" | "unarmed_strike" | "monk_weapon" | "finesse_or_ranged_weapon" | "off_hand" | "spell";
+                type: "critical_range";
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                faces: number[];
+                attack_kind: "melee_weapon" | "weapon" | "bound_weapon" | "ranged_weapon" | "unarmed_strike" | "monk_weapon" | "finesse_or_ranged_weapon" | "off_hand" | "spell";
+                type: "reroll_damage";
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                type: "reduce_damage";
+                op?: "halve" | undefined;
+                dice?: string | undefined;
+                ability_modifier?: "int" | "str" | "dex" | "con" | "wis" | "cha" | undefined;
+                add_class_level?: true | undefined;
+                class_level_multiplier?: number | undefined;
+                attack_kind?: "melee_weapon" | "weapon" | "bound_weapon" | "ranged_weapon" | "unarmed_strike" | "monk_weapon" | "finesse_or_ranged_weapon" | "off_hand" | "spell" | undefined;
+                source?: "falling" | undefined;
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                roll: "attack";
+                mode: "advantage" | "disadvantage";
+                within_ft: number;
+                type: "rolls_against_others";
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                class_specific: string;
+                effect: "add" | "subtract";
+                rolls: ("damage" | "attack" | "ability_check" | "saving_throw")[];
+                range_ft: number;
+                type: "die";
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                actions: ("dash" | "disengage" | "dodge" | "hide" | "use_an_object" | "sleight_of_hand_check" | "thieves_tools")[];
+                type: "actions";
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                creature_types: string[];
+                range_ft: number;
+                save: {
+                    ability: "int" | "str" | "dex" | "con" | "wis" | "cha";
+                    dc: "spell" | "ki";
+                };
+                duration: {
+                    unit: "round" | "minute" | "end_of_next_turn";
+                    length?: number | undefined;
+                };
+                type: "turn";
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                creature_types: string[];
+                class_specific: string;
+                type: "destroy";
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                distance_ft: number;
+                type: "push";
+                save?: {
+                    ability: "int" | "str" | "dex" | "con" | "wis" | "cha";
+                    dc: "spell" | "ki";
+                } | undefined;
+                spell?: string | undefined;
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                type: "temp_hp";
+                ability_modifier?: "int" | "str" | "dex" | "con" | "wis" | "cha" | undefined;
+                add_class_level?: true | undefined;
+                minimum?: number | undefined;
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                conditions: string[];
+                type: "immune_to";
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                spell: string;
+                slot: "none" | "spell_slot";
+                type: "spell";
+                at_level?: number | undefined;
+                self_only?: true | undefined;
+                ritual_only?: true | undefined;
+                no_material?: true | undefined;
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                change: "range" | "double_range" | "touch_range_30_ft" | "double_duration" | "bonus_action_casting_time" | "no_verbal_or_somatic" | "second_target" | "reroll_damage_dice" | "save_disadvantage";
+                type: "spell_change";
+                spell?: string | undefined;
+                range_ft?: number | undefined;
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                type: "protect_from_spell";
+                ability_modifier?: "int" | "str" | "dex" | "con" | "wis" | "cha" | undefined;
+                minimum?: number | undefined;
+                base?: number | undefined;
+                add_spell_level?: true | undefined;
+                no_half_damage?: true | undefined;
+                school?: string | undefined;
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                features: string[];
+                recharge: "short_rest" | "long_rest";
+                type: "recharge";
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                max_slot_level: number;
+                type: "recover_spell_slots";
+                class_specific?: string | undefined;
+                class_level_multiplier?: number | undefined;
+                round?: "down" | "up" | undefined;
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                direction: "points_to_slot" | "slot_to_points";
+                type: "spell_slot_conversion";
+                class_specific?: string | undefined;
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            } | {
+                class_specific: string[];
+                type: "wild_shape";
+                while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
+                while_condition?: string | undefined;
+                option?: string | undefined;
+            })[] | undefined;
+        } | undefined;
+        grants_asi?: true | undefined;
+        heal?: {
+            dice?: string | undefined;
+            bonus?: number | undefined;
+            ability_modifier?: "int" | "str" | "dex" | "con" | "wis" | "cha" | undefined;
+            add_class_level?: true | undefined;
+            class_level_multiplier?: number | undefined;
+            from_uses?: true | undefined;
+        } | undefined;
+        granted_proficiencies?: ({
+            index: string;
+            name: string;
+            url: string;
+            note?: string | undefined;
+        } | {
+            choose: number;
+            from: "skills";
+        })[] | undefined;
     } | undefined;
 };
 

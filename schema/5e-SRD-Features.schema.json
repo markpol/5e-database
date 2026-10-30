@@ -155,6 +155,2220 @@
         },
         "enemy_type_options": {
           "$ref": "#/$defs/__schema0"
+        },
+        "engine": {
+          "type": "object",
+          "properties": {
+            "action_cost": {
+              "type": "string",
+              "enum": [
+                "action",
+                "bonus_action",
+                "reaction",
+                "free",
+                "passive",
+                "rest"
+              ]
+            },
+            "recharge": {
+              "type": "string",
+              "enum": [
+                "short_rest",
+                "long_rest",
+                "day",
+                "turn"
+              ]
+            },
+            "uses": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "count": {
+                      "type": "number"
+                    },
+                    "class_specific": {
+                      "type": "string"
+                    },
+                    "ability_modifier": {
+                      "type": "string",
+                      "enum": [
+                        "str",
+                        "dex",
+                        "con",
+                        "int",
+                        "wis",
+                        "cha"
+                      ]
+                    },
+                    "per_class_level": {
+                      "type": "number"
+                    },
+                    "minimum": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string",
+                      "enum": [
+                        "use",
+                        "point",
+                        "hit_point"
+                      ]
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "pool": {
+                      "type": "string"
+                    },
+                    "cost": {
+                      "anyOf": [
+                        {
+                          "type": "number"
+                        },
+                        {
+                          "type": "string",
+                          "const": "spell_level"
+                        }
+                      ]
+                    },
+                    "cost_class_specific": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "pool"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "spell_slot": {
+                      "type": "boolean",
+                      "const": true
+                    }
+                  },
+                  "required": [
+                    "spell_slot"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "modifiers": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "condition"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "condition": {
+                        "type": "string"
+                      },
+                      "target": {
+                        "type": "string",
+                        "enum": [
+                          "self",
+                          "target"
+                        ]
+                      },
+                      "save": {
+                        "type": "object",
+                        "properties": {
+                          "ability": {
+                            "type": "string",
+                            "enum": [
+                              "str",
+                              "dex",
+                              "con",
+                              "int",
+                              "wis",
+                              "cha"
+                            ]
+                          },
+                          "dc": {
+                            "type": "string",
+                            "enum": [
+                              "spell",
+                              "ki"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "ability",
+                          "dc"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "duration": {
+                        "type": "object",
+                        "properties": {
+                          "unit": {
+                            "type": "string",
+                            "enum": [
+                              "round",
+                              "minute",
+                              "end_of_next_turn"
+                            ]
+                          },
+                          "length": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "unit"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "condition",
+                      "target"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "roll"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "roll": {
+                        "type": "string",
+                        "enum": [
+                          "attack",
+                          "ability_check",
+                          "saving_throw",
+                          "death_saving_throw"
+                        ]
+                      },
+                      "mode": {
+                        "type": "string",
+                        "enum": [
+                          "advantage",
+                          "disadvantage",
+                          "auto_fail"
+                        ]
+                      },
+                      "abilities": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "str",
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                          ]
+                        }
+                      },
+                      "attack_kind": {
+                        "type": "string",
+                        "enum": [
+                          "melee_weapon",
+                          "weapon",
+                          "bound_weapon",
+                          "ranged_weapon",
+                          "unarmed_strike",
+                          "monk_weapon",
+                          "finesse_or_ranged_weapon",
+                          "off_hand",
+                          "spell"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "roll",
+                      "mode"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "bonus"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "to": {
+                        "type": "string",
+                        "enum": [
+                          "attack_roll",
+                          "damage_roll",
+                          "saving_throw",
+                          "armor_class",
+                          "ability_check",
+                          "healing"
+                        ]
+                      },
+                      "flat": {
+                        "type": "number"
+                      },
+                      "dice": {
+                        "type": "string"
+                      },
+                      "dice_at_slot_level": {
+                        "type": "object",
+                        "propertyNames": {
+                          "type": "string"
+                        },
+                        "additionalProperties": {
+                          "type": "string"
+                        }
+                      },
+                      "ability_modifier": {
+                        "type": "string",
+                        "enum": [
+                          "str",
+                          "dex",
+                          "con",
+                          "int",
+                          "wis",
+                          "cha"
+                        ]
+                      },
+                      "attack_ability_modifier": {
+                        "type": "boolean",
+                        "const": true
+                      },
+                      "class_specific": {
+                        "type": "string"
+                      },
+                      "proficiency_multiplier": {
+                        "type": "number"
+                      },
+                      "round": {
+                        "type": "string",
+                        "enum": [
+                          "down",
+                          "up"
+                        ]
+                      },
+                      "add_spell_level": {
+                        "type": "boolean",
+                        "const": true
+                      },
+                      "abilities": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "str",
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                          ]
+                        }
+                      },
+                      "attack_kind": {
+                        "type": "string",
+                        "enum": [
+                          "melee_weapon",
+                          "weapon",
+                          "bound_weapon",
+                          "ranged_weapon",
+                          "unarmed_strike",
+                          "monk_weapon",
+                          "finesse_or_ranged_weapon",
+                          "off_hand",
+                          "spell"
+                        ]
+                      },
+                      "damage_type": {
+                        "type": "string"
+                      },
+                      "spell": {
+                        "type": "string"
+                      },
+                      "min_spell_level": {
+                        "type": "number"
+                      },
+                      "minimum": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "to"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "speed"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "op": {
+                        "type": "string",
+                        "const": "add"
+                      },
+                      "value": {
+                        "type": "number"
+                      },
+                      "class_specific": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "op"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "armor_class"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "base": {
+                        "type": "number"
+                      },
+                      "ability_modifiers": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "str",
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "base",
+                      "ability_modifiers"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "hit_point_maximum"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "per_class_level": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "per_class_level"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "extra_attack"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "count": {
+                        "type": "number"
+                      },
+                      "attack_kind": {
+                        "type": "string",
+                        "enum": [
+                          "melee_weapon",
+                          "weapon",
+                          "bound_weapon",
+                          "ranged_weapon",
+                          "unarmed_strike",
+                          "monk_weapon",
+                          "finesse_or_ranged_weapon",
+                          "off_hand",
+                          "spell"
+                        ]
+                      },
+                      "action_cost": {
+                        "type": "string",
+                        "enum": [
+                          "bonus_action",
+                          "reaction"
+                        ]
+                      },
+                      "requires_attack_action": {
+                        "type": "boolean",
+                        "const": true
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "count"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "attack_ability"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "ability": {
+                        "type": "string",
+                        "enum": [
+                          "str",
+                          "dex",
+                          "con",
+                          "int",
+                          "wis",
+                          "cha"
+                        ]
+                      },
+                      "instead_of": {
+                        "type": "string",
+                        "enum": [
+                          "str",
+                          "dex",
+                          "con",
+                          "int",
+                          "wis",
+                          "cha"
+                        ]
+                      },
+                      "attack_kind": {
+                        "type": "string",
+                        "enum": [
+                          "melee_weapon",
+                          "weapon",
+                          "bound_weapon",
+                          "ranged_weapon",
+                          "unarmed_strike",
+                          "monk_weapon",
+                          "finesse_or_ranged_weapon",
+                          "off_hand",
+                          "spell"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "ability",
+                      "instead_of",
+                      "attack_kind"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "damage_die"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "class_specific": {
+                        "type": "string"
+                      },
+                      "attack_kind": {
+                        "type": "string",
+                        "enum": [
+                          "melee_weapon",
+                          "weapon",
+                          "bound_weapon",
+                          "ranged_weapon",
+                          "unarmed_strike",
+                          "monk_weapon",
+                          "finesse_or_ranged_weapon",
+                          "off_hand",
+                          "spell"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "class_specific",
+                      "attack_kind"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "critical_range"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "min_roll": {
+                        "type": "number"
+                      },
+                      "attack_kind": {
+                        "type": "string",
+                        "enum": [
+                          "melee_weapon",
+                          "weapon",
+                          "bound_weapon",
+                          "ranged_weapon",
+                          "unarmed_strike",
+                          "monk_weapon",
+                          "finesse_or_ranged_weapon",
+                          "off_hand",
+                          "spell"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "min_roll",
+                      "attack_kind"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "reroll_damage"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "faces": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "number"
+                        }
+                      },
+                      "attack_kind": {
+                        "type": "string",
+                        "enum": [
+                          "melee_weapon",
+                          "weapon",
+                          "bound_weapon",
+                          "ranged_weapon",
+                          "unarmed_strike",
+                          "monk_weapon",
+                          "finesse_or_ranged_weapon",
+                          "off_hand",
+                          "spell"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "faces",
+                      "attack_kind"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "reduce_damage"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "op": {
+                        "type": "string",
+                        "const": "halve"
+                      },
+                      "dice": {
+                        "type": "string"
+                      },
+                      "ability_modifier": {
+                        "type": "string",
+                        "enum": [
+                          "str",
+                          "dex",
+                          "con",
+                          "int",
+                          "wis",
+                          "cha"
+                        ]
+                      },
+                      "add_class_level": {
+                        "type": "boolean",
+                        "const": true
+                      },
+                      "class_level_multiplier": {
+                        "type": "number"
+                      },
+                      "attack_kind": {
+                        "type": "string",
+                        "enum": [
+                          "melee_weapon",
+                          "weapon",
+                          "bound_weapon",
+                          "ranged_weapon",
+                          "unarmed_strike",
+                          "monk_weapon",
+                          "finesse_or_ranged_weapon",
+                          "off_hand",
+                          "spell"
+                        ]
+                      },
+                      "source": {
+                        "type": "string",
+                        "const": "falling"
+                      }
+                    },
+                    "required": [
+                      "type"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "rolls_against_others"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "roll": {
+                        "type": "string",
+                        "const": "attack"
+                      },
+                      "mode": {
+                        "type": "string",
+                        "enum": [
+                          "advantage",
+                          "disadvantage"
+                        ]
+                      },
+                      "within_ft": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "roll",
+                      "mode",
+                      "within_ft"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "die"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "class_specific": {
+                        "type": "string"
+                      },
+                      "effect": {
+                        "type": "string",
+                        "enum": [
+                          "add",
+                          "subtract"
+                        ]
+                      },
+                      "rolls": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "attack",
+                            "ability_check",
+                            "saving_throw",
+                            "damage"
+                          ]
+                        }
+                      },
+                      "range_ft": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "class_specific",
+                      "effect",
+                      "rolls",
+                      "range_ft"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "actions"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "actions": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "dash",
+                            "disengage",
+                            "dodge",
+                            "hide",
+                            "use_an_object",
+                            "sleight_of_hand_check",
+                            "thieves_tools"
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "actions"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "turn"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "creature_types": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "range_ft": {
+                        "type": "number"
+                      },
+                      "save": {
+                        "type": "object",
+                        "properties": {
+                          "ability": {
+                            "type": "string",
+                            "enum": [
+                              "str",
+                              "dex",
+                              "con",
+                              "int",
+                              "wis",
+                              "cha"
+                            ]
+                          },
+                          "dc": {
+                            "type": "string",
+                            "enum": [
+                              "spell",
+                              "ki"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "ability",
+                          "dc"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "duration": {
+                        "type": "object",
+                        "properties": {
+                          "unit": {
+                            "type": "string",
+                            "enum": [
+                              "round",
+                              "minute",
+                              "end_of_next_turn"
+                            ]
+                          },
+                          "length": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "unit"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "creature_types",
+                      "range_ft",
+                      "save",
+                      "duration"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "destroy"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "creature_types": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "class_specific": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "creature_types",
+                      "class_specific"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "push"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "distance_ft": {
+                        "type": "number"
+                      },
+                      "save": {
+                        "type": "object",
+                        "properties": {
+                          "ability": {
+                            "type": "string",
+                            "enum": [
+                              "str",
+                              "dex",
+                              "con",
+                              "int",
+                              "wis",
+                              "cha"
+                            ]
+                          },
+                          "dc": {
+                            "type": "string",
+                            "enum": [
+                              "spell",
+                              "ki"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "ability",
+                          "dc"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "spell": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "distance_ft"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "temp_hp"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "ability_modifier": {
+                        "type": "string",
+                        "enum": [
+                          "str",
+                          "dex",
+                          "con",
+                          "int",
+                          "wis",
+                          "cha"
+                        ]
+                      },
+                      "add_class_level": {
+                        "type": "boolean",
+                        "const": true
+                      },
+                      "minimum": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "type"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "immune_to"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "conditions": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "conditions"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "spell"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "spell": {
+                        "type": "string"
+                      },
+                      "slot": {
+                        "type": "string",
+                        "enum": [
+                          "none",
+                          "spell_slot"
+                        ]
+                      },
+                      "at_level": {
+                        "type": "number"
+                      },
+                      "self_only": {
+                        "type": "boolean",
+                        "const": true
+                      },
+                      "ritual_only": {
+                        "type": "boolean",
+                        "const": true
+                      },
+                      "no_material": {
+                        "type": "boolean",
+                        "const": true
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "spell",
+                      "slot"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "spell_change"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "change": {
+                        "type": "string",
+                        "enum": [
+                          "double_range",
+                          "touch_range_30_ft",
+                          "range",
+                          "double_duration",
+                          "bonus_action_casting_time",
+                          "no_verbal_or_somatic",
+                          "second_target",
+                          "reroll_damage_dice",
+                          "save_disadvantage"
+                        ]
+                      },
+                      "spell": {
+                        "type": "string"
+                      },
+                      "range_ft": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "change"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "protect_from_spell"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "ability_modifier": {
+                        "type": "string",
+                        "enum": [
+                          "str",
+                          "dex",
+                          "con",
+                          "int",
+                          "wis",
+                          "cha"
+                        ]
+                      },
+                      "minimum": {
+                        "type": "number"
+                      },
+                      "base": {
+                        "type": "number"
+                      },
+                      "add_spell_level": {
+                        "type": "boolean",
+                        "const": true
+                      },
+                      "no_half_damage": {
+                        "type": "boolean",
+                        "const": true
+                      },
+                      "school": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "recharge"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "features": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "recharge": {
+                        "type": "string",
+                        "enum": [
+                          "short_rest",
+                          "long_rest"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "features",
+                      "recharge"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "recover_spell_slots"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "class_specific": {
+                        "type": "string"
+                      },
+                      "class_level_multiplier": {
+                        "type": "number"
+                      },
+                      "round": {
+                        "type": "string",
+                        "enum": [
+                          "down",
+                          "up"
+                        ]
+                      },
+                      "max_slot_level": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "max_slot_level"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "spell_slot_conversion"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "direction": {
+                        "type": "string",
+                        "enum": [
+                          "points_to_slot",
+                          "slot_to_points"
+                        ]
+                      },
+                      "class_specific": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "direction"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "wild_shape"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "class_specific": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "class_specific"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          },
+          "required": [
+            "action_cost"
+          ],
+          "additionalProperties": false
+        },
+        "grants_asi": {
+          "type": "boolean",
+          "const": true
+        },
+        "heal": {
+          "type": "object",
+          "properties": {
+            "dice": {
+              "type": "string"
+            },
+            "bonus": {
+              "type": "number"
+            },
+            "ability_modifier": {
+              "type": "string",
+              "enum": [
+                "str",
+                "dex",
+                "con",
+                "int",
+                "wis",
+                "cha"
+              ]
+            },
+            "add_class_level": {
+              "type": "boolean",
+              "const": true
+            },
+            "class_level_multiplier": {
+              "type": "number"
+            },
+            "from_uses": {
+              "type": "boolean",
+              "const": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "granted_proficiencies": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "index": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "index",
+                  "name",
+                  "url"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "choose": {
+                    "type": "number"
+                  },
+                  "from": {
+                    "type": "string",
+                    "const": "skills"
+                  }
+                },
+                "required": [
+                  "choose",
+                  "from"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
         }
       },
       "additionalProperties": false

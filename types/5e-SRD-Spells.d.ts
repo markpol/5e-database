@@ -28,12 +28,12 @@ export type Spell = {
     range_ft?: number | "sight" | "special" | "self" | "touch" | "unlimited" | undefined;
     material?: string | undefined;
     duration_data?: {
-        unit: "special" | "minute" | "hour" | "instantaneous" | "round" | "day" | "until_dispelled";
+        unit: "special" | "round" | "minute" | "day" | "hour" | "instantaneous" | "until_dispelled";
         length?: number | undefined;
     } | undefined;
     casting_time_data?: {
         amount: number;
-        unit: "action" | "bonus_action" | "reaction" | "minute" | "hour";
+        unit: "action" | "minute" | "bonus_action" | "reaction" | "hour";
     } | undefined;
     attack_type?: string | undefined;
     damage?: {

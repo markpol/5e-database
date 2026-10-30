@@ -1,5 +1,13 @@
 import { z } from 'zod';
 import { translatable } from '../../schemas/common';
+import {
+  AbilitySchema,
+  CONDITION_ATTACK_KINDS,
+  CONDITION_WHILE,
+  DAMAGE_RELATIONS,
+  ROLL_MODES,
+  ROLLS,
+} from '../../schemas/effects';
 
 /**
  * The structured `effects` of a condition, and the links between conditions (`removes`, `adds`, `on_remove`,
@@ -9,29 +17,17 @@ import { translatable } from '../../schemas/common';
  * describes each field, its allowed values and its units.
  */
 
-// The `index` of an ability score.
-const AbilitySchema = z.enum(['str', 'dex', 'con', 'int', 'wis', 'cha']);
-
 // A circumstance in which an effect applies. All the listed circumstances must hold.
-const WhileSchema = z.array(
-  z.enum([
-    'source_in_line_of_sight',
-    'can_see_attacker',
-    'not_incapacitated',
-    'speed_above_0',
-    'not_wearing_armor',
-    'not_wearing_heavy_armor',
-  ])
-);
+const WhileSchema = z.array(z.enum(CONDITION_WHILE));
 
 // The kind of attack a roll or bonus is limited to. `bound_weapon` is the one weapon the condition is tied to.
-const AttackKindSchema = z.enum(['melee_weapon', 'weapon', 'bound_weapon']);
+const AttackKindSchema = z.enum(CONDITION_ATTACK_KINDS);
 
 // A change to a roll the creature itself makes. No `abilities` means every ability. For an attack roll,
 // `abilities` is the ability the attack uses.
 const RollModifierSchema = z.strictObject({
-  roll: z.enum(['attack', 'ability_check', 'saving_throw', 'death_saving_throw']),
-  mode: z.enum(['advantage', 'disadvantage', 'auto_fail']),
+  roll: z.enum(ROLLS),
+  mode: z.enum(ROLL_MODES),
   abilities: z.array(AbilitySchema).min(1).optional(),
   attack_kind: AttackKindSchema.optional(),
   // Only the checks that need this sense are affected.
@@ -101,7 +97,7 @@ const BonusSchema = z.union([
 ]);
 
 const DamageModifierSchema = z.strictObject({
-  relation: z.enum(['resistance', 'immunity', 'vulnerability']),
+  relation: z.enum(DAMAGE_RELATIONS),
   // Damage type indexes, or `all`.
   types: z.array(z.string()).min(1),
   while: WhileSchema.optional(),
