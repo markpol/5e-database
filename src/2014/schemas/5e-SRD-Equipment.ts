@@ -10,6 +10,8 @@ const CostSchema = z.strictObject({
 const ArmorClassSchema = z.strictObject({
   base: z.number(),
   dex_bonus: z.boolean(),
+  // The most Dexterity modifier the armor adds to armor class: 2 for medium armor, 0 for heavy armor and the shield
+  // (`dex_bonus` false). Absent for light armor, which adds the whole modifier and has no cap.
   max_bonus: z.number().optional(),
 });
 
@@ -51,6 +53,12 @@ export const EquipmentSchema = z.strictObject({
   cost: CostSchema,
   // The price in copper pieces, from `cost`; for an item sold in a bundle it is the price of the bundle.
   cost_cp: z.number().optional(),
+  // The same name in the natural order for the names written as "Noun, adjective" ("Crossbow, light" is "Light
+  // crossbow"). English search aliases, not translatable text.
+  aliases: z.array(z.string()).optional(),
+  // The `index` values of the 5e-SRD-Proficiencies that cover a weapon, armor or tool: its own proficiency (when there
+  // is one) and then its category's (simple or martial weapons, light, medium or heavy armor).
+  proficiency_ids: z.array(z.string()).optional(),
   url: z.string(),
   desc: translatable(z.array(z.string())).optional(),
   material: z.string().optional(),

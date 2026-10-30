@@ -33,6 +33,12 @@ type Equipment = {
   quantity?: number;
   bundle_size?: number;
   reach_ft?: number;
+  aliases?: string[];
+  proficiency_ids?: string[];
+  armor_category?: string;
+  armor_class?: { base: number; dex_bonus: boolean; max_bonus?: number };
+  weapon_category?: string;
+  tool_category?: string;
   weapon_range?: string;
   properties?: { index: string }[];
   effect?: { damage?: Damage[] };
@@ -46,6 +52,8 @@ type MagicItem = {
   cost_cp?: number;
   requires_attunement?: boolean;
   is_consumable?: boolean;
+  variants: { index: string }[];
+  proficiency_ids?: string[];
   effect?: {
     ability_score_modifier?: {
       ability: string;
@@ -369,6 +377,213 @@ describe('effects', () => {
       expect(item.effects, item.index).toEqual([
         { activation: 'use', damage: item.effect!.damage },
       ]);
+    }
+  });
+});
+
+describe('armor_class.max_bonus', () => {
+  const armor = equipment.filter((i) => i.armor_class);
+
+  it('is set on every armor that caps the Dexterity bonus, and not on light armor', () => {
+    expect(armor).toHaveLength(13);
+    for (const item of armor) {
+      const { dex_bonus, max_bonus } = item.armor_class!;
+      if (item.armor_category === 'Light') {
+        expect(dex_bonus, item.index).toBe(true);
+        expect(max_bonus, item.index).toBeUndefined();
+      } else if (item.armor_category === 'Medium') {
+        expect(max_bonus, item.index).toBe(2);
+      } else {
+        expect(dex_bonus, item.index).toBe(false);
+        expect(max_bonus, item.index).toBe(0);
+      }
+    }
+  });
+
+  it('counts the armor of each kind', () => {
+    const counts: Record<string, number> = {};
+    for (const item of armor) {
+      const key = `${item.armor_category}:${item.armor_class!.max_bonus}`;
+      counts[key] = (counts[key] ?? 0) + 1;
+    }
+    expect(counts).toEqual({ 'Light:undefined': 3, 'Medium:2': 5, 'Heavy:0': 4, 'Shield:0': 1 });
+  });
+});
+
+// The proficiency of each piece of equipment, written out by name and not read from the derivation: the plural
+// proficiency index of the weapon or armor, and the irregular ones.
+const weaponProficiency: Record<string, string> = {
+  'crossbow-light': 'crossbows-light',
+  'crossbow-hand': 'hand-crossbows',
+  'crossbow-heavy': 'crossbows-heavy',
+};
+const armorProficiency: Record<string, string> = { shield: 'shields' };
+const categoryProficiency: Record<string, string> = {
+  Simple: 'simple-weapons',
+  Martial: 'martial-weapons',
+  Light: 'light-armor',
+  Medium: 'medium-armor',
+  Heavy: 'heavy-armor',
+};
+const plural = (index: string) => `${index}s`;
+
+describe('proficiency_ids', () => {
+  const covered = equipment.filter((i) => i.weapon_category || i.armor_category || i.tool_category);
+
+  it('is set on the 37 weapons, 13 armor and 31 tools, and on no other equipment', () => {
+    expect(covered).toHaveLength(81);
+    expect(equipment.filter((i) => i.proficiency_ids).map((i) => i.index)).toEqual(
+      covered.map((i) => i.index)
+    );
+    expect(covered.filter((i) => i.weapon_category)).toHaveLength(37);
+    expect(covered.filter((i) => i.armor_category)).toHaveLength(13);
+    expect(covered.filter((i) => i.tool_category)).toHaveLength(31);
+  });
+
+  it('names only proficiencies that exist, without duplicates', () => {
+    for (const item of [...equipment, ...magicItems]) {
+      expect(new Set(item.proficiency_ids).size, item.index).toBe(
+        item.proficiency_ids?.length ?? 0
+      );
+      for (const id of item.proficiency_ids ?? []) {
+        expect(proficiencies.has(id), `${item.index}: ${id}`).toBe(true);
+      }
+    }
+  });
+
+  it('gives a weapon its own proficiency and its category', () => {
+    for (const item of covered.filter((i) => i.weapon_category)) {
+      const own = weaponProficiency[item.index] ?? plural(item.index);
+      const expected = [own, categoryProficiency[item.weapon_category!]];
+      // The net has no proficiency of its own.
+      expect(item.proficiency_ids, item.index).toEqual(
+        item.index === 'net' ? [expected[1]] : expected
+      );
+    }
+  });
+
+  it('gives an armor its own proficiency and its category', () => {
+    for (const item of covered.filter((i) => i.armor_category)) {
+      expect(item.proficiency_ids, item.index).toEqual(
+        item.index === 'shield'
+          ? ['shields']
+          : [item.index, categoryProficiency[item.armor_category!]]
+      );
+    }
+    for (const [index, id] of Object.entries(armorProficiency)) {
+      expect(equipment.find((i) => i.index === index)!.proficiency_ids).toEqual([id]);
+    }
+  });
+
+  it('gives a tool its own proficiency only', () => {
+    for (const item of covered.filter((i) => i.tool_category)) {
+      expect(item.proficiency_ids, item.index).toEqual([item.index]);
+    }
+  });
+
+  it('is the proficiency whose reference is the equipment, for every weapon, armor and tool', () => {
+    const references = new Map(
+      (ProficiencyData as unknown as { index: string; reference?: { index: string } }[])
+        .filter((p) => p.reference)
+        .map((p) => [p.reference!.index, p.index])
+    );
+    for (const item of covered) {
+      const own = references.get(item.index);
+      expect(item.proficiency_ids![0] === own || own === undefined, item.index).toBe(true);
+    }
+  });
+
+  it('follows the variants of the magic weapons and armor that name a kind', () => {
+    const byIndex = new Map(equipment.map((i) => [i.index, i]));
+    const withProficiencies = magicItems.filter((i) => i.proficiency_ids);
+    expect(withProficiencies.map((i) => i.index)).toEqual([
+      'dancing-sword',
+      'defender',
+      'dragon-scale-mail',
+      ...[
+        'black',
+        'blue',
+        'brass',
+        'bronze',
+        'copper',
+        'gold',
+        'green',
+        'red',
+        'silver',
+        'white',
+      ].map((colour) => `dragon-scale-mail-${colour}`),
+      'dwarven-plate',
+      'elven-chain',
+      'flame-tongue',
+      'frost-brand',
+    ]);
+    const swords = ['greatsword', 'longsword', 'rapier', 'scimitar', 'shortsword'];
+    for (const index of ['dancing-sword', 'defender', 'flame-tongue', 'frost-brand']) {
+      const item = magicItems.find((i) => i.index === index)!;
+      expect(
+        item.variants.map((v) => v.index),
+        index
+      ).toEqual(swords);
+      expect(new Set(item.proficiency_ids), index).toEqual(
+        new Set(['martial-weapons', ...swords.map((s) => byIndex.get(s)!.proficiency_ids![0])])
+      );
+    }
+    for (const item of magicItems.filter((i) => i.index.startsWith('dragon-scale-mail'))) {
+      expect(item.proficiency_ids, item.index).toEqual(['scale-mail', 'medium-armor']);
+    }
+    expect(magicItems.find((i) => i.index === 'elven-chain')!.proficiency_ids).toEqual([
+      'chain-shirt',
+      'medium-armor',
+    ]);
+    // The data gives the dwarven plate a half plate and a plate variant.
+    expect(magicItems.find((i) => i.index === 'dwarven-plate')!.proficiency_ids).toEqual([
+      'half-plate-armor',
+      'medium-armor',
+      'plate-armor',
+      'heavy-armor',
+    ]);
+  });
+});
+
+describe('aliases', () => {
+  it('is the natural-order name of every "Noun, adjective" equipment name', () => {
+    const aliased = equipment.filter((i) => i.aliases);
+    expect(aliased).toHaveLength(23);
+    for (const item of equipment) {
+      const outsideParentheses = item.name.replace(/ \(.*\)$/, '');
+      expect(item.aliases !== undefined, item.index).toBe(outsideParentheses.includes(','));
+    }
+    expect(aliased.map((i) => [i.name, ...i.aliases!])).toEqual([
+      ['Crossbow, light', 'Light crossbow'],
+      ['Crossbow, hand', 'Hand crossbow'],
+      ['Crossbow, heavy', 'Heavy crossbow'],
+      ['Bottle, glass', 'Glass bottle'],
+      ['Case, crossbow bolt', 'Crossbow bolt case'],
+      ['Case, map or scroll', 'Map or scroll case'],
+      ['Clothes, common', 'Common clothes'],
+      ['Clothes, costume', 'Costume clothes'],
+      ['Clothes, fine', 'Fine clothes'],
+      ["Clothes, traveler's", "Traveler's clothes"],
+      ['Hammer, sledge', 'Sledge hammer'],
+      ['Lantern, bullseye', 'Bullseye lantern'],
+      ['Lantern, hooded', 'Hooded lantern'],
+      ['Mirror, steel', 'Steel mirror'],
+      ["Pick, miner's", "Miner's pick"],
+      ['Poison, basic (vial)', 'Basic poison (vial)'],
+      ['Pot, iron', 'Iron pot'],
+      ['Ram, portable', 'Portable ram'],
+      ['Rope, hempen (50 feet)', 'Hempen rope (50 feet)'],
+      ['Rope, silk (50 feet)', 'Silk rope (50 feet)'],
+      ["Scale, merchant's", "Merchant's scale"],
+      ['Spike, iron', 'Iron spike'],
+      ['Tent, two-person', 'Two-person tent'],
+    ]);
+  });
+
+  it('differs from the name and is not repeated', () => {
+    for (const item of equipment.filter((i) => i.aliases)) {
+      expect(new Set(item.aliases).size, item.index).toBe(item.aliases!.length);
+      expect(item.aliases, item.index).not.toContain(item.name);
     }
   });
 });

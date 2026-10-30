@@ -1,9 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import equipmentData from './en/5e-SRD-Equipment.json' with { type: 'json' };
+import proficiencyData from './en/5e-SRD-Proficiencies.json' with { type: 'json' };
 
 // The structured scalar fields and the unified `effects` of the items in src/2014/en/5e-SRD-Equipment.json and
-// src/2014/en/5e-SRD-Magic-Items.json: `cost_cp`, `bundle_size`, `reach_ft`, `rarity.rank`, `rarity.min_level` and
-// `effects`. They are read from the existing `cost`, `quantity`, `name`, `properties`, `rarity`, `effect`,
+// src/2014/en/5e-SRD-Magic-Items.json: `cost_cp`, `bundle_size`, `reach_ft`, `rarity.rank`, `rarity.min_level`,
+// `effects`, `armor_class.max_bonus`, `proficiency_ids` and `aliases`. They are read from the existing `cost`, `quantity`, `name`, `properties`, `rarity`, `effect`,
 // `enchantment` and `requires_attunement` fields and from the item text; docs/item-data.md describes the rules and
 // src/2014/tests/item-data.test.ts audits the result against the text and the other fields with rules that do not
 // share code with the derivation.
@@ -15,6 +17,11 @@ type Effect = Record<string, unknown> & { activation: string };
 type Item = Record<string, unknown> & { index: string };
 type Equipment = Item & {
   name: string;
+  equipment_category: { index: string };
+  armor_category?: string;
+  armor_class?: { base: number; dex_bonus: boolean; max_bonus?: number };
+  weapon_category?: string;
+  tool_category?: string;
   cost: Cost;
   quantity?: number;
   weapon_range?: string;
@@ -27,6 +34,7 @@ type MagicItem = Item & {
   cost?: Cost;
   requires_attunement?: boolean;
   is_consumable?: boolean;
+  variants?: { index: string }[];
   effect?: OldMagicEffect;
   enchantment?: OldEnchantment;
 };
@@ -241,13 +249,102 @@ export function equipmentEffects(item: Equipment): Effect[] | undefined {
   return damage ? [{ activation: 'use', damage }] : undefined;
 }
 
+/**
+ * `armor_class.max_bonus`: the most Dexterity modifier the armor adds. Armor that adds none (`dex_bonus` false: heavy
+ * armor and the shield) gets 0 and medium armor keeps the 2 it has. Light armor adds the whole modifier, which a number
+ * cannot say, so it stays unset.
+ */
+export function armorMaxBonus(item: Equipment): number | undefined {
+  const armorClass = item.armor_class;
+  if (!armorClass) return undefined;
+  if (armorClass.max_bonus !== undefined) return armorClass.max_bonus;
+  return armorClass.dex_bonus ? undefined : 0;
+}
+
+// The proficiency that covers a whole category of equipment, by the `weapon_category` or `armor_category`. The shield
+// has no category proficiency, only its own, and the tools have none.
+export const CATEGORY_PROFICIENCY: Record<string, string> = {
+  Simple: 'simple-weapons',
+  Martial: 'martial-weapons',
+  Light: 'light-armor',
+  Medium: 'medium-armor',
+  Heavy: 'heavy-armor',
+};
+
+// The proficiency of one piece of equipment is the one whose `reference` is that equipment's index (`longswords`
+// for `longsword`, `crossbows-light` for `crossbow-light`, `smiths-tools` for `smiths-tools`).
+const specificProficiency = new Map(
+  (proficiencyData as { index: string; type: string; reference?: { index: string } }[])
+    .filter((p) => p.reference)
+    .map((p) => [p.reference!.index, p.index])
+);
+
+/** `proficiency_ids` of a weapon, armor or tool: its own proficiency, when there is one, then its category's. */
+export function proficiencyIds(item: Equipment): string[] | undefined {
+  const category = item.weapon_category ?? item.armor_category;
+  const isTool = item.tool_category !== undefined;
+  if (category === undefined && !isTool) return undefined;
+  const ids: string[] = [];
+  const own = specificProficiency.get(item.index);
+  if (own) ids.push(own);
+  if (category !== undefined) {
+    const shared = CATEGORY_PROFICIENCY[category];
+    if (shared) ids.push(shared);
+  }
+  return ids.length ? ids : undefined;
+}
+
+/**
+ * `aliases` of an item named "Noun, adjective" (with an optional parenthesis at the end): the same name in the natural
+ * order, "Adjective noun". Names with no comma outside the parenthesis have none.
+ */
+export function aliasesOf(item: Equipment): string[] | undefined {
+  const match = item.name.match(/^([^,(]+), ([^(]+?)( \(.*\))?$/);
+  if (!match) return undefined;
+  const [, noun, adjective, suffix = ''] = match;
+  const words = `${adjective} ${noun.toLowerCase()}`;
+  return [`${words[0].toUpperCase()}${words.slice(1)}${suffix}`];
+}
+
+/**
+ * `proficiency_ids` of a magic item that is a kind of weapon or armor through its `variants` ("Weapon (any sword)",
+ * "Armor (scale mail)"): the proficiencies of the equipment the variants name, in the order they first appear, followed
+ * through the variants that are themselves magic items. A magic item with no such variant (`weapon`, `armor` and
+ * the items that name no kind of weapon in their data) has none.
+ */
+export function magicItemProficiencyIds(
+  item: MagicItem,
+  items: Map<string, MagicItem>,
+  equipment: Map<string, Equipment>
+): string[] | undefined {
+  const ids = new Set<string>();
+  const visit = (current: MagicItem, seen: Set<string>) => {
+    for (const variant of current.variants ?? []) {
+      const base = equipment.get(variant.index);
+      if (base) {
+        for (const id of proficiencyIds(base) ?? []) ids.add(id);
+        continue;
+      }
+      const next = items.get(variant.index);
+      if (next && !seen.has(next.index)) visit(next, new Set([...seen, next.index]));
+    }
+  };
+  visit(item, new Set([item.index]));
+  return ids.size ? [...ids] : undefined;
+}
+
 const defined = (entries: Record<string, unknown>) =>
   Object.fromEntries(Object.entries(entries).filter(([, value]) => value !== undefined));
 
 export function deriveEquipment(items: Equipment[]): Equipment[] {
   return items.map((item) => ({
     ...item,
+    ...(item.armor_class
+      ? { armor_class: { ...item.armor_class, ...defined({ max_bonus: armorMaxBonus(item) }) } }
+      : {}),
     ...defined({
+      proficiency_ids: proficiencyIds(item),
+      aliases: aliasesOf(item),
       cost_cp: costInCopper(item),
       bundle_size: bundleSize(item),
       reach_ft: reachFeet(item),
@@ -256,7 +353,12 @@ export function deriveEquipment(items: Equipment[]): Equipment[] {
   }));
 }
 
-export function deriveMagicItems(items: MagicItem[]): MagicItem[] {
+export function deriveMagicItems(
+  items: MagicItem[],
+  equipment: Equipment[] = equipmentData as unknown as Equipment[]
+): MagicItem[] {
+  const magicItemsByIndex = new Map(items.map((item) => [item.index, item]));
+  const equipmentByIndex = new Map(equipment.map((item) => [item.index, item]));
   return items.map((item) => ({
     ...item,
     rarity: {
@@ -266,7 +368,11 @@ export function deriveMagicItems(items: MagicItem[]): MagicItem[] {
         min_level: RARITY_MIN_LEVEL[item.rarity.name],
       }),
     },
-    ...defined({ cost_cp: costInCopper(item), effects: magicItemEffects(item) }),
+    ...defined({
+      cost_cp: costInCopper(item),
+      effects: magicItemEffects(item),
+      proficiency_ids: magicItemProficiencyIds(item, magicItemsByIndex, equipmentByIndex),
+    }),
   }));
 }
 

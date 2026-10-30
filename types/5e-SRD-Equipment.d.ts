@@ -15,6 +15,8 @@ export type Equipment = {
     };
     url: string;
     cost_cp?: number | undefined;
+    aliases?: string[] | undefined;
+    proficiency_ids?: string[] | undefined;
     desc?: string[] | undefined;
     material?: string | undefined;
     stackable?: boolean | undefined;

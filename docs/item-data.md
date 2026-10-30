@@ -11,14 +11,17 @@ in `src/2014/schemas/5e-SRD-Equipment.ts`, `src/2014/schemas/5e-SRD-Magic-Items.
 `src/schemas/item-effects.ts` fix the vocabulary. `src/2014/tests/item-data.test.ts` checks the values against the text
 and the older fields with rules that do not share code with the derivation.
 
-| Field | On | What it says | Items |
-| --- | --- | --- | --- |
-| `cost_cp` | equipment, magic items | `cost` in copper pieces | 197 equipment, 361 magic items |
-| `bundle_size` | equipment | How many pieces `cost` buys | 5 |
-| `reach_ft` | equipment | Reach of a melee weapon in feet | 28 weapons |
-| `rarity.rank` | magic items | The ordinal of the rarity name | 351 |
-| `rarity.min_level` | magic items | The character level from which the item is a fitting reward | 350 |
-| `effects` | equipment, magic items | The unified effects (below) | 2 equipment, 68 magic items |
+| Field                   | On                     | What it says                                                             | Items                          |
+| ----------------------- | ---------------------- | ------------------------------------------------------------------------ | ------------------------------ |
+| `cost_cp`               | equipment, magic items | `cost` in copper pieces                                                  | 197 equipment, 361 magic items |
+| `bundle_size`           | equipment              | How many pieces `cost` buys                                              | 5                              |
+| `reach_ft`              | equipment              | Reach of a melee weapon in feet                                          | 28 weapons                     |
+| `rarity.rank`           | magic items            | The ordinal of the rarity name                                           | 351                            |
+| `rarity.min_level`      | magic items            | The character level from which the item is a fitting reward              | 350                            |
+| `effects`               | equipment, magic items | The unified effects (below)                                              | 2 equipment, 68 magic items    |
+| `armor_class.max_bonus` | equipment              | The most Dexterity modifier an armor adds, now on every armor with a cap | 10 of 13 armor entries          |
+| `proficiency_ids`       | equipment, magic items | The proficiencies that cover a weapon, armor or tool                     | 81 equipment, 17 magic items   |
+| `aliases`               | equipment              | The natural-order name of a "Noun, adjective" name                       | 23                             |
 
 ## `cost_cp`
 
@@ -44,21 +47,60 @@ as in the upstream data, so `reach_ft` is the field to read.
 
 `rarity` keeps its `name` and gains two numbers.
 
-| `name` | `rank` | `min_level` |
-| --- | --- | --- |
-| Common | 1 | 1 |
-| Uncommon | 2 | 1 |
-| Rare | 3 | 5 |
-| Very Rare | 4 | 11 |
-| Legendary | 5 | 17 |
-| Artifact | 6 | none |
-| Varies | none | none |
+| `name`    | `rank` | `min_level` |
+| --------- | ------ | ----------- |
+| Common    | 1      | 1           |
+| Uncommon  | 2      | 1           |
+| Rare      | 3      | 5           |
+| Very Rare | 4      | 11          |
+| Legendary | 5      | 17          |
+| Artifact  | 6      | none        |
+| Varies    | none   | none        |
 
 `rank` is the order of the names. `min_level` is game-authored: the character level at which an item of that rarity
 becomes a fitting reward, following the tiers of play (levels 1 to 4, 5 to 10, 11 to 16, 17 to 20); a common item
 belongs to the first tier like an uncommon one. The SRD does not give it. An artifact has no `min_level`, and an item
 whose rarity `Varies` has neither number: the rarity of its variants (11 items, such as `spell-scroll` and `ioun-stone`)
 is in their own records.
+
+## `armor_class.max_bonus`
+
+The cap on the Dexterity modifier added to armor class, for the 13 armor entries (`armor_class.dex_bonus` says whether
+Dexterity counts at all):
+
+| Armor                    | `dex_bonus` | `max_bonus`                                               |
+| ------------------------ | ----------- | --------------------------------------------------------- |
+| Light (3)                | `true`      | absent: the whole modifier is added, which no number says |
+| Medium (5)               | `true`      | 2, as in the upstream data                                |
+| Heavy (4) and the shield | `false`     | 0: no Dexterity modifier is added                         |
+
+Light armor is the one case with no `max_bonus`. Absent means "no cap"; a present value is always the cap, so 0 is
+"adds nothing". The value is never `null`.
+
+## `proficiency_ids`
+
+An array of `index` values of 5e-SRD-Proficiencies, on the 37 weapons, 13 armor entries and 31 tools of the equipment.
+The first is the proficiency of the item itself: the one whose `reference` is that equipment (`longsword` has
+`longswords`, `crossbow-light` has `crossbows-light`, `crossbow-hand` has `hand-crossbows`, `shield` has `shields`,
+`chain-mail` has `chain-mail`, `smiths-tools` has `smiths-tools`). The second, for weapons and armor, is the proficiency
+of its category: `simple-weapons` or `martial-weapons` by `weapon_category`, and `light-armor`, `medium-armor` or
+`heavy-armor` by `armor_category`. The shield has no category proficiency. The tools (artisan's tools, gaming sets,
+instruments and the other tools) have only their own, since the data has no category proficiency for them. The `net` is
+a martial weapon with no proficiency of its own, so it has only `martial-weapons`.
+
+A magic weapon or armor is a kind of equipment through its `variants`. A magic item whose variants name equipment (the
+four "any sword" weapons `dancing-sword`, `defender`, `flame-tongue` and `frost-brand`; `elven-chain`; `dwarven-plate`,
+whose data names a half plate and a plate; `dragon-scale-mail` and its ten colours, through scale mail) gets the
+proficiencies of those equipment entries, without repeats. The generic `weapon` and `armor` items and the magic weapons
+and armor that name no kind of weapon in the data (such as `sun-blade` and `mithral-armor`) have none.
+
+## `aliases`
+
+For an equipment name written "Noun, adjective", with an optional parenthesis at the end, the name in the natural order:
+`Crossbow, light` is `Light crossbow`, `Rope, hempen (50 feet)` is `Hempen rope (50 feet)`. They are the three crossbows
+and 20 adventuring-gear names, 23 in all. The aliases are English search aliases, not translatable text: a translation
+overlay does not replace them. Names with a comma only inside the parenthesis (`Ball bearings (bag of 1,000)`) have
+none.
 
 ## `effects`
 
@@ -75,30 +117,30 @@ those two, and one entry for each activation.
 
 ### `activation`
 
-| Value | The effect applies |
-| --- | --- |
-| `equipped` | while the item is worn or wielded |
-| `attuned` | while the owner is attuned to the item |
-| `carried` | while the owner carries the item |
-| `use` | when the item is used up: a potion drunk, a manual read, a vial thrown |
+| Value      | The effect applies                                                     |
+| ---------- | ---------------------------------------------------------------------- |
+| `equipped` | while the item is worn or wielded                                      |
+| `attuned`  | while the owner is attuned to the item                                 |
+| `carried`  | while the owner carries the item                                       |
+| `use`      | when the item is used up: a potion drunk, a manual read, a vial thrown |
 
 `duration` is set only on `use` effects that last: `{ "unit": "hour", "length": 1 }` for a potion of resistance, and
 `{ "unit": "permanent" }` for a manual or tome.
 
 ### The members
 
-| Member | Shape | Meaning |
-| --- | --- | --- |
-| `armor_class` | `{ bonus }` | The one form of an armor class bonus |
-| `ability` | `{ ability, op, value, cap? }` | `ability` is `str`, `dex`, `con`, `int`, `wis` or `cha`. `op: "set"`: the score becomes `value` unless it is already that high. `op: "add"`: the score rises by `value`, to at most `cap` when there is one |
-| `resistances` | `string[]` | Damage types the owner has resistance to |
-| `attack` | `{ to_hit_bonus?, damage_bonus?, extra_damage? }` | Bonuses to attacks with the item; `extra_damage` is a list of damage |
-| `damage` | `{ damage_type, damage_dice }[]` | Damage dealt when the item is used |
-| `heal` | dice string | Hit points restored when the item is used |
-| `saving_throws` | `{ abilities, bonus?, advantage? }` | A bonus, or advantage, on saving throws |
-| `skill_check` | `{ skill, bonus?, advantage? }` | A bonus, or advantage, on checks with a skill |
-| `proficiencies` | `string[]` | Indexes of proficiencies the owner gains |
-| `traits` | `string[]` | Indexes of traits the owner gains |
+| Member          | Shape                                             | Meaning                                                                                                                                                                                                     |
+| --------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `armor_class`   | `{ bonus }`                                       | The one form of an armor class bonus                                                                                                                                                                        |
+| `ability`       | `{ ability, op, value, cap? }`                    | `ability` is `str`, `dex`, `con`, `int`, `wis` or `cha`. `op: "set"`: the score becomes `value` unless it is already that high. `op: "add"`: the score rises by `value`, to at most `cap` when there is one |
+| `resistances`   | `string[]`                                        | Damage types the owner has resistance to                                                                                                                                                                    |
+| `attack`        | `{ to_hit_bonus?, damage_bonus?, extra_damage? }` | Bonuses to attacks with the item; `extra_damage` is a list of damage                                                                                                                                        |
+| `damage`        | `{ damage_type, damage_dice }[]`                  | Damage dealt when the item is used                                                                                                                                                                          |
+| `heal`          | dice string                                       | Hit points restored when the item is used                                                                                                                                                                   |
+| `saving_throws` | `{ abilities, bonus?, advantage? }`               | A bonus, or advantage, on saving throws                                                                                                                                                                     |
+| `skill_check`   | `{ skill, bonus?, advantage? }`                   | A bonus, or advantage, on checks with a skill                                                                                                                                                               |
+| `proficiencies` | `string[]`                                        | Indexes of proficiencies the owner gains                                                                                                                                                                    |
+| `traits`        | `string[]`                                        | Indexes of traits the owner gains                                                                                                                                                                           |
 
 A damage type is always the plain `index` of 5e-SRD-Damage-Types (`"fire"`), in `resistances`, `damage` and
 `attack.extra_damage`. `ability`, the abilities of `saving_throws` and the `skill` use the words of the other
@@ -106,23 +148,23 @@ structured data (the same ability `index` as in conditions and features).
 
 ### Mapping from `effect` and `enchantment`
 
-| Old field | `effects` |
-| --- | --- |
-| Equipment `effect.damage[]` | `damage[]`, with `activation: "use"` |
-| `effect.armor_class_modifier` | `armor_class.bonus` |
-| `enchantment.armor_class_bonus` | `armor_class.bonus` |
-| `effect.ability_score_modifier.amount.total` | `ability: { op: "set", value }` |
-| `effect.ability_score_modifier.amount.increase` and `.max` | `ability: { op: "add", value, cap }` |
-| `effect.damage_type_resistance` | `resistances: [<type>]` |
-| `effect.heal` | `heal` |
-| `effect.saving_throw_modifier` | `saving_throws`; `gives_advantage: true` becomes `advantage: true`, `false` is dropped |
-| `effect.skill_check_modifier` | `skill_check`; `gives_advantage: true` becomes `advantage: true` |
-| `effect.proficiency_modifier.grants` | `proficiencies` |
-| `effect.trait_modifier.grants` | `traits` |
-| `enchantment.to_hit_bonus`, `.damage_bonus` | `attack.to_hit_bonus`, `attack.damage_bonus` |
-| `enchantment.extra_damage` | `attack.extra_damage[]`, with the damage type as its `index` and not as a reference |
-| `effect.duration.unit` | `activation`, and `duration` for `hour` and `permanent` |
-| `enchantment.type`, `enchantment.label_prefix` | not carried: the display prefix stays in `enchantment`, and whether a bonus is for armor or a weapon follows from `armor_class` or `attack` |
+| Old field                                                  | `effects`                                                                                                                                   |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Equipment `effect.damage[]`                                | `damage[]`, with `activation: "use"`                                                                                                        |
+| `effect.armor_class_modifier`                              | `armor_class.bonus`                                                                                                                         |
+| `enchantment.armor_class_bonus`                            | `armor_class.bonus`                                                                                                                         |
+| `effect.ability_score_modifier.amount.total`               | `ability: { op: "set", value }`                                                                                                             |
+| `effect.ability_score_modifier.amount.increase` and `.max` | `ability: { op: "add", value, cap }`                                                                                                        |
+| `effect.damage_type_resistance`                            | `resistances: [<type>]`                                                                                                                     |
+| `effect.heal`                                              | `heal`                                                                                                                                      |
+| `effect.saving_throw_modifier`                             | `saving_throws`; `gives_advantage: true` becomes `advantage: true`, `false` is dropped                                                      |
+| `effect.skill_check_modifier`                              | `skill_check`; `gives_advantage: true` becomes `advantage: true`                                                                            |
+| `effect.proficiency_modifier.grants`                       | `proficiencies`                                                                                                                             |
+| `effect.trait_modifier.grants`                             | `traits`                                                                                                                                    |
+| `enchantment.to_hit_bonus`, `.damage_bonus`                | `attack.to_hit_bonus`, `attack.damage_bonus`                                                                                                |
+| `enchantment.extra_damage`                                 | `attack.extra_damage[]`, with the damage type as its `index` and not as a reference                                                         |
+| `effect.duration.unit`                                     | `activation`, and `duration` for `hour` and `permanent`                                                                                     |
+| `enchantment.type`, `enchantment.label_prefix`             | not carried: the display prefix stays in `enchantment`, and whether a bonus is for armor or a weapon follows from `armor_class` or `attack` |
 
 `effect.duration.unit` gives the activation: `while attuned` is `attuned`, `while carried` is `carried`, `while
 equipped` is `equipped`, `permanent` and `hour` are `use`. An `effect` without a duration is `use` for a consumable, and

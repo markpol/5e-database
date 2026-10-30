@@ -76,6 +76,9 @@ export const MagicItemSchema = z.strictObject({
   enchantment: EnchantmentSchema.optional(),
   // The unified form of `effect` and `enchantment`.
   effects: ItemEffectsSchema.optional(),
+  // The `index` values of the 5e-SRD-Proficiencies that cover the weapon or armor the item is a kind of, from the
+  // equipment its `variants` name (see 5e-SRD-Equipment `proficiency_ids`).
+  proficiency_ids: z.array(z.string()).optional(),
   requires_attunement: z.boolean().optional(),
   is_consumable: z.boolean().optional(),
   weight: z.number().optional(),

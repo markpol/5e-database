@@ -51,6 +51,18 @@
     "cost_cp": {
       "type": "number"
     },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "proficiency_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "url": {
       "type": "string"
     },
