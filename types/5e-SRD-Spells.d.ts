@@ -77,6 +77,12 @@ export type Spell = {
         add_spellcasting_mod?: boolean | undefined;
     }> | undefined;
     targets_at_slot_level?: Record<string, number> | undefined;
+    engine?: {
+        kind: "heal" | "mass-heal" | "stabilize" | "spell-attack" | "save-damage" | "auto-hit" | "area-damage" | "buff" | "aura" | "save-condition" | "cure-condition" | "command" | "summon-weapon" | "summon";
+        target: "area" | "ally" | "enemy";
+        campaign: boolean;
+        npc: boolean;
+    } | undefined;
     subclasses?: {
         index: string;
         name: string;

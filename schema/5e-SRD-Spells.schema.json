@@ -325,6 +325,51 @@
         "type": "number"
       }
     },
+    "engine": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "heal",
+            "mass-heal",
+            "stabilize",
+            "spell-attack",
+            "save-damage",
+            "auto-hit",
+            "area-damage",
+            "buff",
+            "aura",
+            "save-condition",
+            "cure-condition",
+            "command",
+            "summon-weapon",
+            "summon"
+          ]
+        },
+        "target": {
+          "type": "string",
+          "enum": [
+            "ally",
+            "enemy",
+            "area"
+          ]
+        },
+        "campaign": {
+          "type": "boolean"
+        },
+        "npc": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "kind",
+        "target",
+        "campaign",
+        "npc"
+      ],
+      "additionalProperties": false
+    },
     "school": {
       "type": "object",
       "properties": {

@@ -415,6 +415,10 @@
           "source": "dd",
           "note": "duration as a unit and a length, derived from the duration text by derive-spell-mechanics.ts."
         },
+        "engine": {
+          "source": "dd",
+          "note": "Classification of a combat spell (kind, target, campaign, npc), written by hand in spell-engine-annotations.json and merged in by derive-spell-engine.ts."
+        },
         "heal_at_slot_level_data": {
           "source": "dd",
           "note": "heal_at_slot_level as dice, a flat bonus and whether the spellcasting ability modifier is added, derived from the heal_at_slot_level strings by derive-spell-combat.ts."
@@ -446,6 +450,9 @@
       "source": "srd"
     },
     "src/2014/monster-engine-annotations.json": {
+      "source": "dd"
+    },
+    "src/2014/spell-engine-annotations.json": {
       "source": "dd"
     },
     "src/2024/en/5e-SRD-Ability-Scores.json": {

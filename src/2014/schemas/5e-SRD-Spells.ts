@@ -37,6 +37,31 @@ const SpellCastingTimeDataSchema = z.strictObject({
 });
 
 /** `duration` as a length of a unit; `length` is absent for the units that are not a length of time. */
+/**
+ * Classification of a combat spell, written by hand (see docs/spell-mechanics.md for what each value means).
+ */
+const SpellEngineSchema = z.strictObject({
+  kind: z.enum([
+    'heal',
+    'mass-heal',
+    'stabilize',
+    'spell-attack',
+    'save-damage',
+    'auto-hit',
+    'area-damage',
+    'buff',
+    'aura',
+    'save-condition',
+    'cure-condition',
+    'command',
+    'summon-weapon',
+    'summon',
+  ]),
+  target: z.enum(['ally', 'enemy', 'area']),
+  campaign: z.boolean(),
+  npc: z.boolean(),
+});
+
 const SpellDurationDataSchema = z.strictObject({
   unit: z.enum(['instantaneous', 'round', 'minute', 'hour', 'day', 'until_dispelled', 'special']),
   length: z.number().optional(),
@@ -66,6 +91,7 @@ export const SpellSchema = z.strictObject({
   heal_at_slot_level_data: z.record(z.string(), SpellDiceAmountSchema).optional(),
   temp_hp_at_slot_level: z.record(z.string(), SpellDiceAmountSchema).optional(),
   targets_at_slot_level: z.record(z.string(), z.number()).optional(),
+  engine: SpellEngineSchema.optional(),
   school: APIReferenceSchema,
   classes: z.array(APIReferenceSchema),
   subclasses: z.array(APIReferenceSchema).optional(),

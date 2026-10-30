@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { deriveSpellCombat, type CombatSpell } from './derive-spell-combat';
+import { deriveSpellEngine } from './derive-spell-engine';
 
 // Structured range, casting time and duration of a spell, read from the spell's own text fields (`range`,
 // `casting_time` and `duration`). Those fields are the only text read, and a value the vocabulary has no word for
@@ -100,7 +101,8 @@ export function deriveSpellMechanics(spells: Spell[]): Spell[] {
       deriveCastingTime(spell.casting_time)
     );
   });
-  return deriveSpellCombat(timed as unknown as CombatSpell[]) as unknown as Spell[];
+  const combat = deriveSpellCombat(timed as unknown as CombatSpell[]);
+  return deriveSpellEngine(combat) as unknown as Spell[];
 }
 
 const repoRoot = path.resolve(import.meta.dirname, '../..');
