@@ -1643,5 +1643,148 @@
         }
       ]
     }
+  },
+  {
+    "feature": "druidic",
+    "granted_languages": [
+      {
+        "secret_language": "druidic"
+      }
+    ]
+  },
+  {
+    "feature": "thieves-cant",
+    "granted_languages": [
+      {
+        "secret_language": "thieves-cant"
+      }
+    ]
+  },
+  {
+    "feature": "dragon-ancestor-black---acid-damage",
+    "granted_languages": [
+      {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/2014/languages/draconic"
+      }
+    ]
+  },
+  {
+    "feature": "dragon-ancestor-blue---lightning-damage",
+    "granted_languages": [
+      {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/2014/languages/draconic"
+      }
+    ]
+  },
+  {
+    "feature": "dragon-ancestor-brass---fire-damage",
+    "granted_languages": [
+      {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/2014/languages/draconic"
+      }
+    ]
+  },
+  {
+    "feature": "dragon-ancestor-bronze---lightning-damage",
+    "granted_languages": [
+      {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/2014/languages/draconic"
+      }
+    ]
+  },
+  {
+    "feature": "dragon-ancestor-copper---acid-damage",
+    "granted_languages": [
+      {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/2014/languages/draconic"
+      }
+    ]
+  },
+  {
+    "feature": "dragon-ancestor-gold---fire-damage",
+    "granted_languages": [
+      {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/2014/languages/draconic"
+      }
+    ]
+  },
+  {
+    "feature": "dragon-ancestor-green---poison-damage",
+    "granted_languages": [
+      {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/2014/languages/draconic"
+      }
+    ]
+  },
+  {
+    "feature": "dragon-ancestor-red---fire-damage",
+    "granted_languages": [
+      {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/2014/languages/draconic"
+      }
+    ]
+  },
+  {
+    "feature": "dragon-ancestor-silver---cold-damage",
+    "granted_languages": [
+      {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/2014/languages/draconic"
+      }
+    ]
+  },
+  {
+    "feature": "dragon-ancestor-white---cold-damage",
+    "granted_languages": [
+      {
+        "index": "draconic",
+        "name": "Draconic",
+        "url": "/api/2014/languages/draconic"
+      }
+    ]
+  },
+  {
+    "feature": "favored-enemy-1-type",
+    "granted_languages": [
+      {
+        "choose": 1,
+        "from": "favored_enemy_languages"
+      }
+    ]
+  },
+  {
+    "feature": "favored-enemy-2-types",
+    "granted_languages": [
+      {
+        "choose": 1,
+        "from": "favored_enemy_languages"
+      }
+    ]
+  },
+  {
+    "feature": "favored-enemy-3-enemies",
+    "granted_languages": [
+      {
+        "choose": 1,
+        "from": "favored_enemy_languages"
+      }
+    ]
   }
 ]

@@ -275,6 +275,81 @@
             ],
             "additionalProperties": false
           }
+        },
+        "caster_kind": {
+          "type": "string",
+          "enum": [
+            "full",
+            "half",
+            "pact"
+          ]
+        },
+        "prepared_formula": {
+          "type": "object",
+          "properties": {
+            "class_levels": {
+              "type": "string",
+              "enum": [
+                "full",
+                "half_rounded_down"
+              ]
+            },
+            "minimum": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "class_levels",
+            "minimum"
+          ],
+          "additionalProperties": false
+        },
+        "spellbook_size": {
+          "type": "object",
+          "properties": {
+            "initial": {
+              "type": "number"
+            },
+            "per_level": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "initial",
+            "per_level"
+          ],
+          "additionalProperties": false
+        },
+        "subclass_spells": {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "type": "string",
+              "enum": [
+                "always_prepared",
+                "expanded_list",
+                "none"
+              ]
+            },
+            "with_spells": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "without_spells": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "mode",
+            "with_spells",
+            "without_spells"
+          ],
+          "additionalProperties": false
         }
       },
       "required": [

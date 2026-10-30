@@ -2609,6 +2609,73 @@
               }
             ]
           }
+        },
+        "granted_languages": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "index": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "index",
+                  "name",
+                  "url"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "secret_language": {
+                    "type": "string",
+                    "enum": [
+                      "druidic",
+                      "thieves-cant"
+                    ]
+                  }
+                },
+                "required": [
+                  "secret_language"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "choose": {
+                    "type": "number"
+                  },
+                  "from": {
+                    "type": "string",
+                    "const": "favored_enemy_languages"
+                  }
+                },
+                "required": [
+                  "choose",
+                  "from"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "damage_type": {
+          "type": "string"
         }
       },
       "additionalProperties": false

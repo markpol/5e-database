@@ -369,6 +369,18 @@ export type Feature = {
             choose: number;
             from: "skills";
         })[] | undefined;
+        granted_languages?: ({
+            index: string;
+            name: string;
+            url: string;
+            note?: string | undefined;
+        } | {
+            secret_language: "druidic" | "thieves-cant";
+        } | {
+            choose: number;
+            from: "favored_enemy_languages";
+        })[] | undefined;
+        damage_type?: string | undefined;
     } | undefined;
 };
 

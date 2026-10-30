@@ -387,6 +387,15 @@ const GrantedProficiencySchema = z.union([
   z.strictObject({ choose: z.number(), from: z.literal('skills') }),
 ]);
 
+// A language the feature gives. Languages are not proficiencies in this data. A reference into 5e-SRD-Languages; the
+// secret language of a class, which has no record there; or a number of languages of the owner's choice, taken from
+// the languages the favored enemies speak.
+const GrantedLanguageSchema = z.union([
+  APIReferenceSchema,
+  z.strictObject({ secret_language: z.enum(['druidic', 'thieves-cant']) }),
+  z.strictObject({ choose: z.number(), from: z.literal('favored_enemy_languages') }),
+]);
+
 const FeatureSpecificSchema = z.strictObject({
   invocations: z.array(APIReferenceSchema).optional(),
   expertise_options: ChoiceSchema.optional(),
@@ -398,6 +407,9 @@ const FeatureSpecificSchema = z.strictObject({
   grants_asi: z.literal(true).optional(),
   heal: HealSchema.optional(),
   granted_proficiencies: z.array(GrantedProficiencySchema).min(1).optional(),
+  granted_languages: z.array(GrantedLanguageSchema).min(1).optional(),
+  // The `index` of the damage type of a dragon ancestor (5e-SRD-Damage-Types).
+  damage_type: z.string().optional(),
 });
 
 const FeaturePrerequisiteSchema = z.strictObject({

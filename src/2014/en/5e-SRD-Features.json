@@ -2201,6 +2201,13 @@
     "desc": [
       "You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic."
     ],
+    "feature_specific": {
+      "granted_languages": [
+        {
+          "secret_language": "druidic"
+        }
+      ]
+    },
     "url": "/api/2014/features/druidic"
   },
   {
@@ -5558,7 +5565,13 @@
             "humanoids"
           ]
         }
-      }
+      },
+      "granted_languages": [
+        {
+          "choose": 1,
+          "from": "favored_enemy_languages"
+        }
+      ]
     },
     "url": "/api/2014/features/favored-enemy-1-type"
   },
@@ -6102,7 +6115,13 @@
             "humanoids"
           ]
         }
-      }
+      },
+      "granted_languages": [
+        {
+          "choose": 1,
+          "from": "favored_enemy_languages"
+        }
+      ]
     },
     "url": "/api/2014/features/favored-enemy-2-types"
   },
@@ -6541,7 +6560,13 @@
             "humanoids"
           ]
         }
-      }
+      },
+      "granted_languages": [
+        {
+          "choose": 1,
+          "from": "favored_enemy_languages"
+        }
+      ]
     },
     "url": "/api/2014/features/favored-enemy-3-enemies"
   },
@@ -7055,6 +7080,13 @@
       "During your rogue training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.",
       "In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run."
     ],
+    "feature_specific": {
+      "granted_languages": [
+        {
+          "secret_language": "thieves-cant"
+        }
+      ]
+    },
     "url": "/api/2014/features/thieves-cant"
   },
   {
@@ -7836,6 +7868,16 @@
       "name": "Dragon Ancestor",
       "url": "/api/2014/features/dragon-ancestor"
     },
+    "feature_specific": {
+      "granted_languages": [
+        {
+          "index": "draconic",
+          "name": "Draconic",
+          "url": "/api/2014/languages/draconic"
+        }
+      ],
+      "damage_type": "acid"
+    },
     "url": "/api/2014/features/dragon-ancestor-black---acid-damage"
   },
   {
@@ -7861,6 +7903,16 @@
       "index": "dragon-ancestor",
       "name": "Dragon Ancestor",
       "url": "/api/2014/features/dragon-ancestor"
+    },
+    "feature_specific": {
+      "granted_languages": [
+        {
+          "index": "draconic",
+          "name": "Draconic",
+          "url": "/api/2014/languages/draconic"
+        }
+      ],
+      "damage_type": "lightning"
     },
     "url": "/api/2014/features/dragon-ancestor-blue---lightning-damage"
   },
@@ -7888,6 +7940,16 @@
       "name": "Dragon Ancestor",
       "url": "/api/2014/features/dragon-ancestor"
     },
+    "feature_specific": {
+      "granted_languages": [
+        {
+          "index": "draconic",
+          "name": "Draconic",
+          "url": "/api/2014/languages/draconic"
+        }
+      ],
+      "damage_type": "fire"
+    },
     "url": "/api/2014/features/dragon-ancestor-brass---fire-damage"
   },
   {
@@ -7913,6 +7975,16 @@
       "index": "dragon-ancestor",
       "name": "Dragon Ancestor",
       "url": "/api/2014/features/dragon-ancestor"
+    },
+    "feature_specific": {
+      "granted_languages": [
+        {
+          "index": "draconic",
+          "name": "Draconic",
+          "url": "/api/2014/languages/draconic"
+        }
+      ],
+      "damage_type": "lightning"
     },
     "url": "/api/2014/features/dragon-ancestor-bronze---lightning-damage"
   },
@@ -7940,6 +8012,16 @@
       "name": "Dragon Ancestor",
       "url": "/api/2014/features/dragon-ancestor"
     },
+    "feature_specific": {
+      "granted_languages": [
+        {
+          "index": "draconic",
+          "name": "Draconic",
+          "url": "/api/2014/languages/draconic"
+        }
+      ],
+      "damage_type": "acid"
+    },
     "url": "/api/2014/features/dragon-ancestor-copper---acid-damage"
   },
   {
@@ -7965,6 +8047,16 @@
       "index": "dragon-ancestor",
       "name": "Dragon Ancestor",
       "url": "/api/2014/features/dragon-ancestor"
+    },
+    "feature_specific": {
+      "granted_languages": [
+        {
+          "index": "draconic",
+          "name": "Draconic",
+          "url": "/api/2014/languages/draconic"
+        }
+      ],
+      "damage_type": "fire"
     },
     "url": "/api/2014/features/dragon-ancestor-gold---fire-damage"
   },
@@ -7992,6 +8084,16 @@
       "name": "Dragon Ancestor",
       "url": "/api/2014/features/dragon-ancestor"
     },
+    "feature_specific": {
+      "granted_languages": [
+        {
+          "index": "draconic",
+          "name": "Draconic",
+          "url": "/api/2014/languages/draconic"
+        }
+      ],
+      "damage_type": "poison"
+    },
     "url": "/api/2014/features/dragon-ancestor-green---poison-damage"
   },
   {
@@ -8017,6 +8119,16 @@
       "index": "dragon-ancestor",
       "name": "Dragon Ancestor",
       "url": "/api/2014/features/dragon-ancestor"
+    },
+    "feature_specific": {
+      "granted_languages": [
+        {
+          "index": "draconic",
+          "name": "Draconic",
+          "url": "/api/2014/languages/draconic"
+        }
+      ],
+      "damage_type": "fire"
     },
     "url": "/api/2014/features/dragon-ancestor-red---fire-damage"
   },
@@ -8044,6 +8156,16 @@
       "name": "Dragon Ancestor",
       "url": "/api/2014/features/dragon-ancestor"
     },
+    "feature_specific": {
+      "granted_languages": [
+        {
+          "index": "draconic",
+          "name": "Draconic",
+          "url": "/api/2014/languages/draconic"
+        }
+      ],
+      "damage_type": "cold"
+    },
     "url": "/api/2014/features/dragon-ancestor-silver---cold-damage"
   },
   {
@@ -8069,6 +8191,16 @@
       "index": "dragon-ancestor",
       "name": "Dragon Ancestor",
       "url": "/api/2014/features/dragon-ancestor"
+    },
+    "feature_specific": {
+      "granted_languages": [
+        {
+          "index": "draconic",
+          "name": "Draconic",
+          "url": "/api/2014/languages/draconic"
+        }
+      ],
+      "damage_type": "cold"
     },
     "url": "/api/2014/features/dragon-ancestor-white---cold-damage"
   },
