@@ -14,7 +14,13 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import ts from 'typescript';
 import { z } from 'zod';
-import { loadCollections, publishedIds, sortedIndices, HAND_WRITTEN_IDS_FILES } from './ids';
+import {
+  loadCollections,
+  loadDerivedCollections,
+  publishedIds,
+  sortedIndices,
+  HAND_WRITTEN_IDS_FILES,
+} from './ids';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const schemasDir = path.join(root, 'src/2014/schemas');
@@ -137,11 +143,12 @@ export async function generate(): Promise<GeneratedFiles> {
       `// ${HEADER}\n\n${types.get(name)}\n\ndeclare const data: ${name}[];\nexport default data;\n`
     );
   }
-  for (const collection of loadCollections()) {
+  const idCollections = [...loadCollections(), ...loadDerivedCollections()];
+  for (const collection of idCollections) {
     const list = { collection: collection.name, indices: sortedIndices(collection) };
     files.set(`ids/${collection.name}.json`, `${JSON.stringify(list, null, 2)}\n`);
   }
-  files.set('ids/published.json', `${JSON.stringify(publishedIds(loadCollections()), null, 2)}\n`);
+  files.set('ids/published.json', `${JSON.stringify(publishedIds(idCollections), null, 2)}\n`);
   return files;
 }
 

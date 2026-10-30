@@ -98,7 +98,7 @@ One of three shapes.
 
 | Shape                                                                               | Meaning                                                                                                                                                                                                                  | Features |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
-| `{ count?, class_specific?, ability_modifier?, per_class_level?, minimum?, unit? }` | The feature's own uses: `count` plus the `class_specific` number plus the ability modifier plus `per_class_level` times the class level, and at least `minimum`. `unit` is `use` (when absent), `point` or `hit_point`   | 21       |
+| `{ count?, class_specific?, by_level?, ability_modifier?, per_class_level?, minimum?, unit? }` | The feature's own uses: `count` plus the `class_specific` number plus the ability modifier plus `per_class_level` times the class level, and at least `minimum`. `unit` is `use` (when absent), `point` or `hit_point`   | 21       |
 | `{ pool, cost?, cost_class_specific? }`                                             | Each use spends `cost` from the uses of the feature `pool` (an index). `cost` is a number, or `spell_level` (the spell's level, 1 for a cantrip). `cost_class_specific` names a table of costs in the Levels row instead | 18       |
 | `{ spell_slot: true }`                                                              | Each use expends one of the owner's spell slots                                                                                                                                                                          | 3        |
 
@@ -199,6 +199,46 @@ disadvantage) and `in_dim_light_or_darkness`.
 
 The words shared with conditions are defined once, in `src/schemas/effects.ts`, which both schemas import; the
 condition schema is unchanged.
+
+## Counts
+
+A feature whose count or size grows with the level, and that has a single record, names its `class_specific` key and
+also lists the steps of that number, each with an id: `by_level`. It sits in the same object as the `class_specific` key
+(in `uses`, or in the `bonus`, `speed`, `damage_die` or `recover_spell_slots` modifier that reads it):
+
+```json
+{ "class_specific": "rage_count", "by_level": [{ "id": "rage-2-uses", "level": 1, "count": 2 }, ...] }
+```
+
+A step is `{ id, level, count }` for a number or `{ id, level, dice }` for dice (`"3d6"`). `level` is the class level
+at which the step starts and it holds until the next step; a step is listed only where the value changes, and not
+where it is 0 (the feature has no count yet). `by_level` is derived from the Levels rows by `derive-feature-counts.ts`
+(`pnpm run derive:features`), and `src/2014/tests/feature-counts.test.ts` checks it against them at every level.
+
+The id is `<stem>-<count>-<unit>` (`<stem>-<dice>` for dice). Rage's 9999 rages at 20th level (no limit) is `count:
+9999` with the id `rage-unlimited-uses`.
+
+| Feature                                      | `class_specific` key      | Ids                                                       | Steps |
+| -------------------------------------------- | ------------------------- | --------------------------------------------------------- | ----- |
+| Rage `uses`                                  | `rage_count`              | `rage-2-uses`, `rage-3-uses` ... `rage-unlimited-uses`    | 6     |
+| Rage `bonus`                                 | `rage_damage_bonus`       | `rage-2-damage`, `rage-3-damage`, `rage-4-damage`         | 3     |
+| Ki `uses`                                    | `ki_points`               | `ki-2-points` ... `ki-20-points`                          | 19    |
+| Font of Magic `uses`                         | `sorcery_points`          | `sorcery-2-points` ... `sorcery-20-points`                | 19    |
+| Sneak Attack `bonus`                         | `sneak_attack`            | `sneak-attack-1d6` ... `sneak-attack-10d6`                | 10    |
+| Martial Arts `damage_die`                    | `martial_arts`            | `martial-arts-1d4`, `-1d6`, `-1d8`, `-1d10`               | 4     |
+| Unarmored Movement `speed`                   | `unarmored_movement`      | `unarmored-movement-10-ft` ... `unarmored-movement-30-ft` | 5     |
+| Arcane Recovery `recover_spell_slots`        | `arcane_recovery_levels`  | `arcane-recovery-1-level` ... `arcane-recovery-10-levels` | 10    |
+
+The other `class_specific` numbers that grow with the level are not counted here, because their counts already have a
+record each, each with its own id (`COUNT_EXCLUDED` in `derive-feature-counts.ts`, checked by the test): Bardic
+Inspiration's die (`bardic-inspiration-d6` to `-d12`), cleric Channel Divinity (`channel-divinity-1-rest`,
+`-2-rest`, `-3-rest`), Action Surge, Destroy Undead, Wild Shape; the table of Flexible Casting costs is not a count.
+Bardic Inspiration's uses are the Charisma modifier, not a number in the Levels rows. The paladin's Channel Divinity
+has one use at every level (see Judgement calls) and so no steps. Those ids are never renamed, and a split of an id
+keeps the old one.
+
+An id of `by_level` is published in `ids/feature-counts.json` and follows the id stability contract in
+[CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## `heal`
 

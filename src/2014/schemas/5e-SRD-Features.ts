@@ -20,6 +20,15 @@ import {
 // the owner's level in that class.
 const ClassSpecificKeySchema = z.string();
 
+// One count of a feature whose count or size grows with the level: the level at which it starts, as the Levels rows
+// of the class say, and an id for it. `count` is a number, `dice` is dice. A step holds until the next step's level.
+const CountStepSchema = z.union([
+  z.strictObject({ id: z.string(), level: z.number(), count: z.number() }),
+  z.strictObject({ id: z.string(), level: z.number(), dice: z.string() }),
+]);
+// Next to a `class_specific` key: the steps of the number or dice it holds in the Levels rows.
+const ByLevelSchema = z.array(CountStepSchema).min(1);
+
 const WhileSchema = z.array(z.enum(FEATURE_WHILE)).min(1);
 const AttackKindSchema = z.enum(FEATURE_ATTACK_KINDS);
 
@@ -84,6 +93,7 @@ const ModifierSchema = z.discriminatedUnion('type', [
     ability_modifier: AbilitySchema.optional(),
     attack_ability_modifier: z.literal(true).optional(),
     class_specific: ClassSpecificKeySchema.optional(),
+    by_level: ByLevelSchema.optional(),
     proficiency_multiplier: z.number().optional(),
     round: z.enum(['down', 'up']).optional(),
     add_spell_level: z.literal(true).optional(),
@@ -105,6 +115,7 @@ const ModifierSchema = z.discriminatedUnion('type', [
     op: z.literal('add'),
     value: z.number().optional(),
     class_specific: ClassSpecificKeySchema.optional(),
+    by_level: ByLevelSchema.optional(),
   }),
   // The armor class becomes `base` plus the modifiers of these abilities.
   z.strictObject({
@@ -142,6 +153,7 @@ const ModifierSchema = z.discriminatedUnion('type', [
     type: z.literal('damage_die'),
     ...ModifierBase,
     class_specific: ClassSpecificKeySchema,
+    by_level: ByLevelSchema.optional(),
     attack_kind: AttackKindSchema,
   }),
   // A hit is a critical hit on an attack roll of `min_roll` or more.
@@ -305,6 +317,7 @@ const ModifierSchema = z.discriminatedUnion('type', [
     type: z.literal('recover_spell_slots'),
     ...ModifierBase,
     class_specific: ClassSpecificKeySchema.optional(),
+    by_level: ByLevelSchema.optional(),
     class_level_multiplier: z.number().optional(),
     round: z.enum(['down', 'up']).optional(),
     max_slot_level: z.number(),
@@ -331,6 +344,7 @@ const ModifierSchema = z.discriminatedUnion('type', [
 const OwnUsesSchema = z.strictObject({
   count: z.number().optional(),
   class_specific: ClassSpecificKeySchema.optional(),
+  by_level: ByLevelSchema.optional(),
   ability_modifier: AbilitySchema.optional(),
   per_class_level: z.number().optional(),
   minimum: z.number().optional(),

@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import annotations from './feature-engine-annotations.json' with { type: 'json' };
+import { deriveFeatureCounts } from './derive-feature-counts';
 
 // The structured mechanics of class features, in `feature_specific`: `engine` (what using the feature costs, how it
 // recharges, how many uses it has, what it changes), `heal`, `granted_proficiencies` and `grants_asi`. The first
@@ -121,7 +122,7 @@ function deriveFeature(feature: Feature): Feature {
   const existing = { ...((feature.feature_specific as Record<string, unknown>) ?? {}) };
   for (const key of DERIVED_KEYS) delete existing[key];
   const derived: Record<string, unknown> = {
-    engine: annotation.engine,
+    engine: deriveFeatureCounts(feature, annotation.engine as Record<string, unknown> | undefined),
     grants_asi: feature.name === ASI_NAME ? true : undefined,
     heal: annotation.heal,
     granted_proficiencies: annotation.granted_proficiencies,

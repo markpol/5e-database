@@ -47,10 +47,12 @@ const ConditionEffectSchema = z.strictObject({
 /**
  * `choose` picks from `from`. An `action` option's `count` is the most times that action can be
  * picked in the choice. Monster attacks "in any combination" use `choose: N` with each option at
- * `count: N`, and an option at `count: 1` can be picked once.
+ * `count: N`, and an option at `count: 1` can be picked once. `id` is a stable id for the choice (the class
+ * proficiency and starting-equipment choices have one), never translated.
  */
 export const ChoiceSchema: z.ZodType<any> = z.lazy(() =>
   z.strictObject({
+    id: z.string().optional(),
     desc: translatable(z.string()).optional(),
     choose: z.number(),
     type: z.string().optional(),

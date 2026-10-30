@@ -5,6 +5,7 @@
     "hit_die": 12,
     "proficiency_choices": [
       {
+        "id": "barbarian-proficiency-skills",
         "desc": "Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival",
         "choose": 2,
         "type": "proficiencies",
@@ -132,6 +133,7 @@
     ],
     "starting_equipment_options": [
       {
+        "id": "barbarian-equipment-1",
         "desc": "(a) a greataxe or (b) any martial melee weapon",
         "choose": 1,
         "type": "equipment",
@@ -150,6 +152,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "barbarian-equipment-1-option-2",
                 "desc": "any martial melee weapon",
                 "choose": 1,
                 "type": "equipment",
@@ -167,6 +170,7 @@
         }
       },
       {
+        "id": "barbarian-equipment-2",
         "desc": "(a) two handaxes or (b) any simple weapon",
         "choose": 1,
         "type": "equipment",
@@ -185,6 +189,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "barbarian-equipment-2-option-2",
                 "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
@@ -247,6 +252,7 @@
     "hit_die": 8,
     "proficiency_choices": [
       {
+        "id": "bard-proficiency-skills",
         "desc": "Choose any three",
         "choose": 3,
         "type": "proficiencies",
@@ -401,6 +407,7 @@
         }
       },
       {
+        "id": "bard-proficiency-instruments",
         "desc": "Three musical instruments of your choice",
         "choose": 3,
         "type": "proficiencies",
@@ -565,6 +572,7 @@
     ],
     "starting_equipment_options": [
       {
+        "id": "bard-equipment-1",
         "desc": "(a) a rapier, (b) a longsword, or (c) any simple weapon",
         "choose": 1,
         "type": "equipment",
@@ -592,6 +600,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "bard-equipment-1-option-3",
                 "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
@@ -609,6 +618,7 @@
         }
       },
       {
+        "id": "bard-equipment-2",
         "desc": "(a) a diplomat’s pack or (b) an entertainer’s pack",
         "choose": 1,
         "type": "equipment",
@@ -637,6 +647,7 @@
         }
       },
       {
+        "id": "bard-equipment-3",
         "desc": "(a) a lute or (b) any other musical instrument",
         "choose": 1,
         "type": "equipment",
@@ -655,6 +666,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "bard-equipment-3-option-2",
                 "desc": "any other musical instrument",
                 "choose": 1,
                 "type": "equipment",
@@ -693,6 +705,7 @@
       ],
       "proficiency_choices": [
         {
+          "id": "bard-multiclass-proficiency-skills",
           "desc": "skill",
           "choose": 1,
           "type": "proficiencies",
@@ -847,6 +860,7 @@
           }
         },
         {
+          "id": "bard-multiclass-proficiency-instruments",
           "desc": "musical instrument",
           "choose": 1,
           "type": "proficiencies",
@@ -1006,6 +1020,7 @@
     "hit_die": 8,
     "proficiency_choices": [
       {
+        "id": "cleric-proficiency-skills",
         "desc": "Choose two from History, Insight, Medicine, Persuasion, and Religion",
         "choose": 2,
         "type": "proficiencies",
@@ -1112,6 +1127,7 @@
     ],
     "starting_equipment_options": [
       {
+        "id": "cleric-equipment-1",
         "desc": "(a) a mace or (b) a warhammer (if proficient)",
         "choose": 1,
         "type": "equipment",
@@ -1150,6 +1166,7 @@
         }
       },
       {
+        "id": "cleric-equipment-2",
         "desc": "(a) scale mail, (b) leather armor, or (c) chain mail (if proficient)",
         "choose": 1,
         "type": "equipment",
@@ -1197,6 +1214,7 @@
         }
       },
       {
+        "id": "cleric-equipment-3",
         "desc": "(a) a light crossbow and 20 bolts or (b) any simple weapon",
         "choose": 1,
         "type": "equipment",
@@ -1229,6 +1247,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "cleric-equipment-3-option-2",
                 "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
@@ -1246,6 +1265,7 @@
         }
       },
       {
+        "id": "cleric-equipment-4",
         "desc": "(a) a priest’s pack or (b) an explorer’s pack",
         "choose": 1,
         "type": "equipment",
@@ -1274,6 +1294,7 @@
         }
       },
       {
+        "id": "cleric-equipment-5",
         "desc": "holy symbol",
         "choose": 1,
         "type": "equipment",
@@ -1378,6 +1399,7 @@
     "hit_die": 8,
     "proficiency_choices": [
       {
+        "id": "druid-proficiency-skills",
         "desc": "Choose two from Arcana, Animal Handling, Insight, Medicine, Nature, Perception, Religion, and Survival",
         "choose": 2,
         "type": "proficiencies",
@@ -1566,6 +1588,7 @@
     ],
     "starting_equipment_options": [
       {
+        "id": "druid-equipment-1",
         "desc": "(a) a wooden shield or (b) any simple weapon",
         "choose": 1,
         "type": "equipment",
@@ -1584,6 +1607,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "druid-equipment-1-option-2",
                 "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
@@ -1601,6 +1625,7 @@
         }
       },
       {
+        "id": "druid-equipment-2",
         "desc": "(a) a scimitar or (b) any simple melee weapon",
         "choose": 1,
         "type": "equipment",
@@ -1619,6 +1644,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "druid-equipment-2-option-2",
                 "desc": "any simple melee weapon",
                 "choose": 1,
                 "type": "equipment",
@@ -1636,6 +1662,7 @@
         }
       },
       {
+        "id": "druid-equipment-3",
         "desc": "druidic focus",
         "choose": 1,
         "type": "equipment",
@@ -1740,6 +1767,7 @@
     "hit_die": 10,
     "proficiency_choices": [
       {
+        "id": "fighter-proficiency-skills",
         "desc": "Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival",
         "choose": 2,
         "type": "proficiencies",
@@ -1861,6 +1889,7 @@
     "starting_equipment": [],
     "starting_equipment_options": [
       {
+        "id": "fighter-equipment-1",
         "desc": "(a) chain mail or (b) leather armor, longbow, and 20 arrows",
         "choose": 1,
         "type": "equipment",
@@ -1912,6 +1941,7 @@
         }
       },
       {
+        "id": "fighter-equipment-2",
         "desc": "(a) a martial weapon and a shield or (b) two martial weapons",
         "choose": 1,
         "type": "equipment",
@@ -1924,6 +1954,7 @@
                 {
                   "option_type": "choice",
                   "choice": {
+                    "id": "fighter-equipment-2-option-1-item-1",
                     "desc": "a martial weapon",
                     "choose": 1,
                     "type": "equipment",
@@ -1951,6 +1982,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "fighter-equipment-2-option-2",
                 "desc": "two martial weapons",
                 "choose": 2,
                 "type": "equipment",
@@ -1968,6 +2000,7 @@
         }
       },
       {
+        "id": "fighter-equipment-3",
         "desc": "(a) a light crossbow and 20 bolts or (b) two handaxes",
         "choose": 1,
         "type": "equipment",
@@ -2010,6 +2043,7 @@
         }
       },
       {
+        "id": "fighter-equipment-4",
         "desc": "(a) a dungeoneer’s pack or (b) an explorer’s pack",
         "choose": 1,
         "type": "equipment",
@@ -2110,6 +2144,7 @@
     "hit_die": 8,
     "proficiency_choices": [
       {
+        "id": "monk-proficiency-skills",
         "desc": "Choose two from Acrobatics, Athletics, History, Insight, Religion, and Stealth",
         "choose": 2,
         "type": "proficiencies",
@@ -2168,6 +2203,7 @@
         }
       },
       {
+        "id": "monk-proficiency-tool-or-instrument",
         "desc": "Choose one type of artisan’s tools or one musical instrument",
         "type": "proficiencies",
         "choose": 1,
@@ -2177,6 +2213,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "monk-proficiency-tool-or-instrument-option-1",
                 "desc": "artisan's tools",
                 "type": "proficiencies",
                 "choose": 1,
@@ -2342,6 +2379,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "monk-proficiency-tool-or-instrument-option-2",
                 "desc": "musical instrument",
                 "type": "proficiencies",
                 "choose": 1,
@@ -2482,6 +2520,7 @@
     ],
     "starting_equipment_options": [
       {
+        "id": "monk-equipment-1",
         "desc": "(a) a shortsword or (b) any simple weapon",
         "choose": 1,
         "type": "equipment",
@@ -2500,6 +2539,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "monk-equipment-1-option-2",
                 "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
@@ -2517,6 +2557,7 @@
         }
       },
       {
+        "id": "monk-equipment-2",
         "desc": "(a) a dungeoneer’s pack or (b) an explorer’s pack",
         "choose": 1,
         "type": "equipment",
@@ -2593,6 +2634,7 @@
     "hit_die": 10,
     "proficiency_choices": [
       {
+        "id": "paladin-proficiency-skills",
         "desc": "Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion",
         "choose": 2,
         "type": "proficiencies",
@@ -2707,6 +2749,7 @@
     ],
     "starting_equipment_options": [
       {
+        "id": "paladin-equipment-1",
         "desc": "(a) a martial weapon and a shield or (b) two martial weapons",
         "choose": 1,
         "type": "equipment",
@@ -2719,6 +2762,7 @@
                 {
                   "option_type": "choice",
                   "choice": {
+                    "id": "paladin-equipment-1-option-1-item-1",
                     "desc": "a martial weapon",
                     "choose": 1,
                     "type": "equipment",
@@ -2746,6 +2790,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "paladin-equipment-1-option-2",
                 "desc": "two martial weapons",
                 "choose": 2,
                 "type": "equipment",
@@ -2763,6 +2808,7 @@
         }
       },
       {
+        "id": "paladin-equipment-2",
         "desc": "(a) five javelins or (b) any simple melee weapon",
         "choose": 1,
         "type": "equipment",
@@ -2781,6 +2827,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "paladin-equipment-2-option-2",
                 "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
@@ -2798,6 +2845,7 @@
         }
       },
       {
+        "id": "paladin-equipment-3",
         "desc": "(a) a priest’s pack or (b) an explorer’s pack",
         "choose": 1,
         "type": "equipment",
@@ -2826,6 +2874,7 @@
         }
       },
       {
+        "id": "paladin-equipment-4",
         "desc": "holy symbol",
         "choose": 1,
         "type": "equipment",
@@ -2936,6 +2985,7 @@
     "hit_die": 10,
     "proficiency_choices": [
       {
+        "id": "ranger-proficiency-skills",
         "desc": "Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival",
         "choose": 3,
         "type": "proficiencies",
@@ -3079,6 +3129,7 @@
     ],
     "starting_equipment_options": [
       {
+        "id": "ranger-equipment-1",
         "desc": "(a) scale mail or (b) leather armor",
         "choose": 1,
         "type": "equipment",
@@ -3107,6 +3158,7 @@
         }
       },
       {
+        "id": "ranger-equipment-2",
         "desc": "(a) two shortswords or (b) two simple melee weapons",
         "choose": 1,
         "type": "equipment",
@@ -3125,6 +3177,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "ranger-equipment-2-option-2",
                 "desc": "two simple melee weapons",
                 "choose": 2,
                 "type": "equipment",
@@ -3142,6 +3195,7 @@
         }
       },
       {
+        "id": "ranger-equipment-3",
         "desc": "(a) a dungeoneer’s pack or (b) an explorer’s pack",
         "choose": 1,
         "type": "equipment",
@@ -3219,6 +3273,7 @@
       ],
       "proficiency_choices": [
         {
+          "id": "ranger-multiclass-proficiency-skills",
           "choose": 1,
           "type": "proficiencies",
           "from": {
@@ -3342,6 +3397,7 @@
     "hit_die": 8,
     "proficiency_choices": [
       {
+        "id": "rogue-proficiency-skills",
         "desc": "Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth",
         "choose": 4,
         "type": "proficiencies",
@@ -3527,6 +3583,7 @@
     ],
     "starting_equipment_options": [
       {
+        "id": "rogue-equipment-1",
         "desc": "(a) a rapier or (b) a shortsword",
         "choose": 1,
         "type": "equipment",
@@ -3555,6 +3612,7 @@
         }
       },
       {
+        "id": "rogue-equipment-2",
         "desc": "(a) a shortbow and quiver of 20 arrows or (b) a shortsword",
         "choose": 1,
         "type": "equipment",
@@ -3597,6 +3655,7 @@
         }
       },
       {
+        "id": "rogue-equipment-3",
         "desc": "(a) a burglar’s pack, (b) a dungeoneer’s pack, or (c) an explorer’s pack",
         "choose": 1,
         "type": "equipment",
@@ -3660,6 +3719,7 @@
       ],
       "proficiency_choices": [
         {
+          "id": "rogue-multiclass-proficiency-skills",
           "choose": 1,
           "type": "proficiencies",
           "from": {
@@ -3773,6 +3833,7 @@
     "hit_die": 6,
     "proficiency_choices": [
       {
+        "id": "sorcerer-proficiency-skills",
         "desc": "Choose two from Arcana, Deception, Insight, Intimidation, Persuasion, and Religion",
         "choose": 2,
         "type": "proficiencies",
@@ -3892,6 +3953,7 @@
     ],
     "starting_equipment_options": [
       {
+        "id": "sorcerer-equipment-1",
         "desc": "(a) a light crossbow and 20 bolts or (b) any simple weapon",
         "choose": 1,
         "type": "equipment",
@@ -3924,6 +3986,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "sorcerer-equipment-1-option-2",
                 "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
@@ -3941,6 +4004,7 @@
         }
       },
       {
+        "id": "sorcerer-equipment-2",
         "desc": "(a) a component pouch or (b) an arcane focus",
         "choose": 1,
         "type": "equipment",
@@ -3959,6 +4023,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "sorcerer-equipment-2-option-2",
                 "desc": "arcane focus",
                 "choose": 1,
                 "type": "equipment",
@@ -3976,6 +4041,7 @@
         }
       },
       {
+        "id": "sorcerer-equipment-3",
         "desc": "(a) a dungeoneer’s pack or (b) an explorer’s pack",
         "choose": 1,
         "type": "equipment",
@@ -4079,6 +4145,7 @@
     "hit_die": 8,
     "proficiency_choices": [
       {
+        "id": "warlock-proficiency-skills",
         "desc": "Choose two skills from Arcana, Deception, History, Intimidation, Investigation, Nature, and Religion",
         "choose": 2,
         "type": "proficiencies",
@@ -4199,6 +4266,7 @@
     ],
     "starting_equipment_options": [
       {
+        "id": "warlock-equipment-1",
         "desc": "(a) a light crossbow and 20 bolts or (b) any simple weapon",
         "choose": 1,
         "type": "equipment",
@@ -4231,6 +4299,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "warlock-equipment-1-option-2",
                 "desc": "any simple weapon",
                 "choose": 1,
                 "type": "equipment",
@@ -4248,6 +4317,7 @@
         }
       },
       {
+        "id": "warlock-equipment-2",
         "desc": "(a) a component pouch or (b) an arcane focus",
         "choose": 1,
         "type": "equipment",
@@ -4266,6 +4336,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "warlock-equipment-2-option-2",
                 "desc": "arcane focus",
                 "choose": 1,
                 "type": "equipment",
@@ -4283,6 +4354,7 @@
         }
       },
       {
+        "id": "warlock-equipment-3",
         "desc": "(a) a scholar’s pack or (b) a dungeoneer’s pack",
         "choose": 1,
         "type": "equipment",
@@ -4311,6 +4383,7 @@
         }
       },
       {
+        "id": "warlock-equipment-4",
         "desc": "any simple weapon",
         "choose": 1,
         "type": "equipment",
@@ -4411,6 +4484,7 @@
     "hit_die": 6,
     "proficiency_choices": [
       {
+        "id": "wizard-proficiency-skills",
         "desc": "Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion",
         "choose": 2,
         "type": "proficiencies",
@@ -4530,6 +4604,7 @@
     ],
     "starting_equipment_options": [
       {
+        "id": "wizard-equipment-1",
         "desc": "(a) a quarterstaff or (b) a dagger",
         "choose": 1,
         "type": "equipment",
@@ -4558,6 +4633,7 @@
         }
       },
       {
+        "id": "wizard-equipment-2",
         "desc": "(a) a component pouch or (b) an arcane focus",
         "choose": 1,
         "type": "equipment",
@@ -4576,6 +4652,7 @@
             {
               "option_type": "choice",
               "choice": {
+                "id": "wizard-equipment-2-option-2",
                 "desc": "arcane focus",
                 "choose": 1,
                 "type": "equipment",
@@ -4593,6 +4670,7 @@
         }
       },
       {
+        "id": "wizard-equipment-3",
         "desc": "(a) a scholar’s pack or (b) an explorer’s pack",
         "choose": 1,
         "type": "equipment",

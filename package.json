@@ -137,6 +137,7 @@
   "scripts": {
     "normalize:monsters": "node --experimental-strip-types --no-warnings src/2014/normalize-monsters.ts",
     "derive:spells": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs src/2014/derive-spell-mechanics.ts",
+    "derive:classes": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs src/2014/derive-class-choices.ts",
     "derive:features": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs src/2014/derive-feature-engine.ts",
     "generate": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs scripts/generate-schemas.ts",
     "generate:check": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs scripts/generate-schemas.ts --check",

@@ -2,12 +2,13 @@ import { describe, it, expect } from 'vitest';
 
 import {
   loadCollections,
+  loadDerivedCollections,
   loadPublished,
   loadTombstones,
   stabilityProblems,
 } from '../../../scripts/ids';
 
-const collections = loadCollections();
+const collections = [...loadCollections(), ...loadDerivedCollections()];
 const published = loadPublished();
 const tombstones = loadTombstones();
 

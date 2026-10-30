@@ -23,7 +23,39 @@
         "action_cost": "bonus_action",
         "recharge": "long_rest",
         "uses": {
-          "class_specific": "rage_count"
+          "class_specific": "rage_count",
+          "by_level": [
+            {
+              "id": "rage-2-uses",
+              "level": 1,
+              "count": 2
+            },
+            {
+              "id": "rage-3-uses",
+              "level": 3,
+              "count": 3
+            },
+            {
+              "id": "rage-4-uses",
+              "level": 6,
+              "count": 4
+            },
+            {
+              "id": "rage-5-uses",
+              "level": 12,
+              "count": 5
+            },
+            {
+              "id": "rage-6-uses",
+              "level": 17,
+              "count": 6
+            },
+            {
+              "id": "rage-unlimited-uses",
+              "level": 20,
+              "count": 9999
+            }
+          ]
         },
         "modifiers": [
           {
@@ -42,7 +74,24 @@
             "abilities": ["str"],
             "attack_kind": "melee_weapon",
             "while": ["not_wearing_heavy_armor"],
-            "while_condition": "enraged"
+            "while_condition": "enraged",
+            "by_level": [
+              {
+                "id": "rage-2-damage",
+                "level": 1,
+                "count": 2
+              },
+              {
+                "id": "rage-3-damage",
+                "level": 9,
+                "count": 3
+              },
+              {
+                "id": "rage-4-damage",
+                "level": 16,
+                "count": 4
+              }
+            ]
           }
         ]
       }
@@ -3796,7 +3845,29 @@
             "type": "damage_die",
             "class_specific": "martial_arts",
             "attack_kind": "monk_weapon",
-            "while": ["not_wearing_armor", "not_wielding_shield"]
+            "while": ["not_wearing_armor", "not_wielding_shield"],
+            "by_level": [
+              {
+                "id": "martial-arts-1d4",
+                "level": 1,
+                "dice": "1d4"
+              },
+              {
+                "id": "martial-arts-1d6",
+                "level": 5,
+                "dice": "1d6"
+              },
+              {
+                "id": "martial-arts-1d8",
+                "level": 11,
+                "dice": "1d8"
+              },
+              {
+                "id": "martial-arts-1d10",
+                "level": 17,
+                "dice": "1d10"
+              }
+            ]
           },
           {
             "type": "extra_attack",
@@ -3834,7 +3905,104 @@
         "recharge": "short_rest",
         "uses": {
           "class_specific": "ki_points",
-          "unit": "point"
+          "unit": "point",
+          "by_level": [
+            {
+              "id": "ki-2-points",
+              "level": 2,
+              "count": 2
+            },
+            {
+              "id": "ki-3-points",
+              "level": 3,
+              "count": 3
+            },
+            {
+              "id": "ki-4-points",
+              "level": 4,
+              "count": 4
+            },
+            {
+              "id": "ki-5-points",
+              "level": 5,
+              "count": 5
+            },
+            {
+              "id": "ki-6-points",
+              "level": 6,
+              "count": 6
+            },
+            {
+              "id": "ki-7-points",
+              "level": 7,
+              "count": 7
+            },
+            {
+              "id": "ki-8-points",
+              "level": 8,
+              "count": 8
+            },
+            {
+              "id": "ki-9-points",
+              "level": 9,
+              "count": 9
+            },
+            {
+              "id": "ki-10-points",
+              "level": 10,
+              "count": 10
+            },
+            {
+              "id": "ki-11-points",
+              "level": 11,
+              "count": 11
+            },
+            {
+              "id": "ki-12-points",
+              "level": 12,
+              "count": 12
+            },
+            {
+              "id": "ki-13-points",
+              "level": 13,
+              "count": 13
+            },
+            {
+              "id": "ki-14-points",
+              "level": 14,
+              "count": 14
+            },
+            {
+              "id": "ki-15-points",
+              "level": 15,
+              "count": 15
+            },
+            {
+              "id": "ki-16-points",
+              "level": 16,
+              "count": 16
+            },
+            {
+              "id": "ki-17-points",
+              "level": 17,
+              "count": 17
+            },
+            {
+              "id": "ki-18-points",
+              "level": 18,
+              "count": 18
+            },
+            {
+              "id": "ki-19-points",
+              "level": 19,
+              "count": 19
+            },
+            {
+              "id": "ki-20-points",
+              "level": 20,
+              "count": 20
+            }
+          ]
         }
       }
     },
@@ -3953,7 +4121,34 @@
             "type": "speed",
             "op": "add",
             "class_specific": "unarmored_movement",
-            "while": ["not_wearing_armor", "not_wielding_shield"]
+            "while": ["not_wearing_armor", "not_wielding_shield"],
+            "by_level": [
+              {
+                "id": "unarmored-movement-10-ft",
+                "level": 2,
+                "count": 10
+              },
+              {
+                "id": "unarmored-movement-15-ft",
+                "level": 6,
+                "count": 15
+              },
+              {
+                "id": "unarmored-movement-20-ft",
+                "level": 10,
+                "count": 20
+              },
+              {
+                "id": "unarmored-movement-25-ft",
+                "level": 14,
+                "count": 25
+              },
+              {
+                "id": "unarmored-movement-30-ft",
+                "level": 18,
+                "count": 30
+              }
+            ]
           }
         ]
       }
@@ -6787,7 +6982,59 @@
             "to": "damage_roll",
             "class_specific": "sneak_attack",
             "attack_kind": "finesse_or_ranged_weapon",
-            "while": ["sneak_attack_eligible"]
+            "while": ["sneak_attack_eligible"],
+            "by_level": [
+              {
+                "id": "sneak-attack-1d6",
+                "level": 1,
+                "dice": "1d6"
+              },
+              {
+                "id": "sneak-attack-2d6",
+                "level": 3,
+                "dice": "2d6"
+              },
+              {
+                "id": "sneak-attack-3d6",
+                "level": 5,
+                "dice": "3d6"
+              },
+              {
+                "id": "sneak-attack-4d6",
+                "level": 7,
+                "dice": "4d6"
+              },
+              {
+                "id": "sneak-attack-5d6",
+                "level": 9,
+                "dice": "5d6"
+              },
+              {
+                "id": "sneak-attack-6d6",
+                "level": 11,
+                "dice": "6d6"
+              },
+              {
+                "id": "sneak-attack-7d6",
+                "level": 13,
+                "dice": "7d6"
+              },
+              {
+                "id": "sneak-attack-8d6",
+                "level": 15,
+                "dice": "8d6"
+              },
+              {
+                "id": "sneak-attack-9d6",
+                "level": 17,
+                "dice": "9d6"
+              },
+              {
+                "id": "sneak-attack-10d6",
+                "level": 19,
+                "dice": "10d6"
+              }
+            ]
           }
         ]
       }
@@ -7884,7 +8131,104 @@
         "recharge": "long_rest",
         "uses": {
           "class_specific": "sorcery_points",
-          "unit": "point"
+          "unit": "point",
+          "by_level": [
+            {
+              "id": "sorcery-2-points",
+              "level": 2,
+              "count": 2
+            },
+            {
+              "id": "sorcery-3-points",
+              "level": 3,
+              "count": 3
+            },
+            {
+              "id": "sorcery-4-points",
+              "level": 4,
+              "count": 4
+            },
+            {
+              "id": "sorcery-5-points",
+              "level": 5,
+              "count": 5
+            },
+            {
+              "id": "sorcery-6-points",
+              "level": 6,
+              "count": 6
+            },
+            {
+              "id": "sorcery-7-points",
+              "level": 7,
+              "count": 7
+            },
+            {
+              "id": "sorcery-8-points",
+              "level": 8,
+              "count": 8
+            },
+            {
+              "id": "sorcery-9-points",
+              "level": 9,
+              "count": 9
+            },
+            {
+              "id": "sorcery-10-points",
+              "level": 10,
+              "count": 10
+            },
+            {
+              "id": "sorcery-11-points",
+              "level": 11,
+              "count": 11
+            },
+            {
+              "id": "sorcery-12-points",
+              "level": 12,
+              "count": 12
+            },
+            {
+              "id": "sorcery-13-points",
+              "level": 13,
+              "count": 13
+            },
+            {
+              "id": "sorcery-14-points",
+              "level": 14,
+              "count": 14
+            },
+            {
+              "id": "sorcery-15-points",
+              "level": 15,
+              "count": 15
+            },
+            {
+              "id": "sorcery-16-points",
+              "level": 16,
+              "count": 16
+            },
+            {
+              "id": "sorcery-17-points",
+              "level": 17,
+              "count": 17
+            },
+            {
+              "id": "sorcery-18-points",
+              "level": 18,
+              "count": 18
+            },
+            {
+              "id": "sorcery-19-points",
+              "level": 19,
+              "count": 19
+            },
+            {
+              "id": "sorcery-20-points",
+              "level": 20,
+              "count": 20
+            }
+          ]
         }
       }
     },
@@ -10364,7 +10708,59 @@
           {
             "type": "recover_spell_slots",
             "class_specific": "arcane_recovery_levels",
-            "max_slot_level": 5
+            "max_slot_level": 5,
+            "by_level": [
+              {
+                "id": "arcane-recovery-1-level",
+                "level": 1,
+                "count": 1
+              },
+              {
+                "id": "arcane-recovery-2-levels",
+                "level": 3,
+                "count": 2
+              },
+              {
+                "id": "arcane-recovery-3-levels",
+                "level": 5,
+                "count": 3
+              },
+              {
+                "id": "arcane-recovery-4-levels",
+                "level": 7,
+                "count": 4
+              },
+              {
+                "id": "arcane-recovery-5-levels",
+                "level": 9,
+                "count": 5
+              },
+              {
+                "id": "arcane-recovery-6-levels",
+                "level": 11,
+                "count": 6
+              },
+              {
+                "id": "arcane-recovery-7-levels",
+                "level": 13,
+                "count": 7
+              },
+              {
+                "id": "arcane-recovery-8-levels",
+                "level": 15,
+                "count": 8
+              },
+              {
+                "id": "arcane-recovery-9-levels",
+                "level": 17,
+                "count": 9
+              },
+              {
+                "id": "arcane-recovery-10-levels",
+                "level": 19,
+                "count": 10
+              }
+            ]
           }
         ]
       }

@@ -147,6 +147,9 @@
     "__schema0": {
       "type": "object",
       "properties": {
+        "id": {
+          "type": "string"
+        },
         "desc": {
           "type": "string",
           "translatable": true
