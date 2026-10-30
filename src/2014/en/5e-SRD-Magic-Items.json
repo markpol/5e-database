@@ -414,7 +414,12 @@
       "unit": "gp"
     },
     "weight": 65,
-    "cost_cp": 1800000
+    "cost_cp": 1800000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "armor-of-resistance",
@@ -722,7 +727,12 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 3,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "bag-of-tricks-gray",
@@ -764,7 +774,12 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 3,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "bag-of-tricks-rust",
@@ -806,7 +821,12 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 3,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "bag-of-tricks-tan",
@@ -848,7 +868,12 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 3,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "bead-of-force",
@@ -1629,7 +1654,12 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 150000
+    "cost_cp": 150000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "cloak-of-arachnida",
@@ -1661,7 +1691,12 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 500000
+    "cost_cp": 500000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "cloak-of-displacement",
@@ -1829,7 +1864,12 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 400000
+    "cost_cp": 400000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "dancing-sword",
@@ -2080,7 +2120,12 @@
     "proficiency_ids": [
       "scale-mail",
       "medium-armor"
-    ]
+    ],
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "dragon-scale-mail-black",
@@ -2143,7 +2188,12 @@
     "proficiency_ids": [
       "scale-mail",
       "medium-armor"
-    ]
+    ],
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "dragon-scale-mail-blue",
@@ -2206,7 +2256,12 @@
     "proficiency_ids": [
       "scale-mail",
       "medium-armor"
-    ]
+    ],
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "dragon-scale-mail-brass",
@@ -2269,7 +2324,12 @@
     "proficiency_ids": [
       "scale-mail",
       "medium-armor"
-    ]
+    ],
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "dragon-scale-mail-bronze",
@@ -2332,7 +2392,12 @@
     "proficiency_ids": [
       "scale-mail",
       "medium-armor"
-    ]
+    ],
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "dragon-scale-mail-copper",
@@ -2395,7 +2460,12 @@
     "proficiency_ids": [
       "scale-mail",
       "medium-armor"
-    ]
+    ],
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "dragon-scale-mail-gold",
@@ -2458,7 +2528,12 @@
     "proficiency_ids": [
       "scale-mail",
       "medium-armor"
-    ]
+    ],
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "dragon-scale-mail-green",
@@ -2521,7 +2596,12 @@
     "proficiency_ids": [
       "scale-mail",
       "medium-armor"
-    ]
+    ],
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "dragon-scale-mail-red",
@@ -2584,7 +2664,12 @@
     "proficiency_ids": [
       "scale-mail",
       "medium-armor"
-    ]
+    ],
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "dragon-scale-mail-silver",
@@ -2647,7 +2732,12 @@
     "proficiency_ids": [
       "scale-mail",
       "medium-armor"
-    ]
+    ],
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "dragon-scale-mail-white",
@@ -2710,7 +2800,12 @@
     "proficiency_ids": [
       "scale-mail",
       "medium-armor"
-    ]
+    ],
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "dragon-slayer",
@@ -2977,7 +3072,12 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "eyes-of-minute-seeing",
@@ -3482,7 +3582,13 @@
       "unit": "gp"
     },
     "weight": 10,
-    "cost_cp": 2400000
+    "cost_cp": 2400000,
+    "uses": {
+      "count": 5,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d4+1"
+    }
   },
   {
     "index": "handy-haversack",
@@ -3654,7 +3760,12 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "helm-of-teleportation",
@@ -3682,7 +3793,13 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "holy-avenger",
@@ -4064,7 +4181,12 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 100000
+    "cost_cp": 100000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "luck-blade",
@@ -4177,7 +4299,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 400000
+    "cost_cp": 400000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "mantle-of-spell-resistance",
@@ -4596,7 +4724,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "mirror-of-life-trapping",
@@ -4913,7 +5047,12 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "periapt-of-health",
@@ -5048,7 +5187,13 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "pipes-of-the-sewers",
@@ -5077,7 +5222,13 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "plate-armor-of-etherealness",
@@ -5104,7 +5255,12 @@
       "unit": "gp"
     },
     "weight": 65,
-    "cost_cp": 2400000
+    "cost_cp": 2400000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "portable-hole",
@@ -6539,7 +6695,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "ring-of-djinni-summoning",
@@ -6636,7 +6798,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "uses": {
+      "count": 5,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d4+1"
+    }
   },
   {
     "index": "ring-of-elemental-command-air",
@@ -6670,7 +6838,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "uses": {
+      "count": 5,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d4+1"
+    }
   },
   {
     "index": "ring-of-elemental-command-earth",
@@ -6704,7 +6878,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "uses": {
+      "count": 5,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d4+1"
+    }
   },
   {
     "index": "ring-of-elemental-command-fire",
@@ -6737,7 +6917,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "uses": {
+      "count": 5,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d4+1"
+    }
   },
   {
     "index": "ring-of-elemental-command-water",
@@ -6770,7 +6956,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "uses": {
+      "count": 5,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d4+1"
+    }
   },
   {
     "index": "ring-of-evasion",
@@ -6797,7 +6989,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "ring-of-feather-falling",
@@ -7586,7 +7784,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "uses": {
+      "count": 6,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6"
+    }
   },
   {
     "index": "ring-of-spell-storing",
@@ -7724,7 +7928,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "ring-of-three-wishes",
@@ -7751,7 +7961,11 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "uses": {
+      "count": 3,
+      "unit": "charge"
+    }
   },
   {
     "index": "ring-of-warmth",
@@ -7892,7 +8106,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "robe-of-stars",
@@ -8062,7 +8282,12 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "rod-of-lordly-might",
@@ -8126,7 +8351,12 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "rod-of-security",
@@ -8242,7 +8472,11 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "uses": {
+      "count": 12,
+      "unit": "charge"
+    }
   },
   {
     "index": "scimitar-of-speed",
@@ -8864,7 +9098,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "uses": {
+      "count": 10,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+4"
+    }
   },
   {
     "index": "staff-of-frost",
@@ -8893,7 +9133,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "uses": {
+      "count": 10,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+4"
+    }
   },
   {
     "index": "staff-of-healing",
@@ -8921,7 +9167,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 10,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+4"
+    }
   },
   {
     "index": "staff-of-power",
@@ -8958,7 +9210,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "uses": {
+      "count": 20,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "2d8+4"
+    }
   },
   {
     "index": "staff-of-striking",
@@ -8986,7 +9244,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "uses": {
+      "count": 10,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+4"
+    }
   },
   {
     "index": "staff-of-swarming-insects",
@@ -9015,7 +9279,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "uses": {
+      "count": 10,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+4"
+    }
   },
   {
     "index": "staff-of-the-magi",
@@ -9053,7 +9323,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "uses": {
+      "count": 50,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "4d6+2"
+    }
   },
   {
     "index": "staff-of-the-python",
@@ -9113,7 +9389,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 10,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+4"
+    }
   },
   {
     "index": "staff-of-thunder-and-lightning",
@@ -9173,7 +9455,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "stone-of-controlling-earth-elementals",
@@ -9200,7 +9488,12 @@
       "unit": "gp"
     },
     "weight": 5,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "stone-of-good-luck-luckstone",
@@ -9369,7 +9662,11 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "uses": {
+      "count": 7,
+      "unit": "charge"
+    }
   },
   {
     "index": "talisman-of-the-sphere",
@@ -9425,7 +9722,11 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "uses": {
+      "count": 6,
+      "unit": "charge"
+    }
   },
   {
     "index": "tome-of-clear-thought",
@@ -9614,7 +9915,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 100000
+    "cost_cp": 100000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "universal-solvent",
@@ -9725,7 +10032,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
   },
   {
     "index": "wand-of-enemy-detection",
@@ -9753,7 +10066,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
   },
   {
     "index": "wand-of-fear",
@@ -9782,7 +10101,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
   },
   {
     "index": "wand-of-fireballs",
@@ -9810,7 +10135,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
   },
   {
     "index": "wand-of-lightning-bolts",
@@ -9838,7 +10169,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
   },
   {
     "index": "wand-of-magic-detection",
@@ -9865,7 +10202,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "wand-of-magic-missiles",
@@ -9893,7 +10236,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
   },
   {
     "index": "wand-of-paralysis",
@@ -9921,7 +10270,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
   },
   {
     "index": "wand-of-polymorph",
@@ -9949,7 +10304,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
   },
   {
     "index": "wand-of-secrets",
@@ -9976,7 +10337,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "wand-of-the-war-mage",
@@ -10126,7 +10493,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
   },
   {
     "index": "wand-of-wonder",
@@ -10179,7 +10552,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
   },
   {
     "index": "weapon",
@@ -10535,7 +10914,12 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "brazier-of-commanding-fire-elementals",
@@ -10564,7 +10948,12 @@
       "unit": "gp"
     },
     "weight": 5,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "broom-of-flying",
@@ -10622,7 +11011,12 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "carpet-of-flying",
@@ -10824,7 +11218,12 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "chime-of-opening",
@@ -10882,7 +11281,12 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "cloak-of-the-manta-ray",
@@ -11016,7 +11420,12 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "crystal-ball-of-true-seeing",
@@ -11092,7 +11501,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 36,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d20"
+    }
   },
   {
     "index": "cubic-gate",
@@ -11122,7 +11537,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "decanter-of-endless-water",
@@ -12290,7 +12711,11 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "uses": {
+      "count": 50,
+      "unit": "charge"
+    }
   },
   {
     "index": "gem-of-seeing",
@@ -12318,7 +12743,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
   },
   {
     "index": "instant-fortress",
@@ -12919,7 +13350,12 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
   },
   {
     "index": "lantern-of-revealing",
@@ -13090,6 +13526,12 @@
       "***Destroying an Orb.*** An Orb of Dragonkind appears fragile but is impervious to most damage, including the attacks and breath weapons of dragons. A disintegrate spell or one good hit from a +3 magic weapon is sufficient to destroy an orb, however."
     ],
     "url": "/api/2014/magic-items/orb-of-dragonkind",
-    "weight": 3
+    "weight": 3,
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d4+3"
+    }
   }
 ]

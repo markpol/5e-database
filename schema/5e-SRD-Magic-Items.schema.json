@@ -500,6 +500,38 @@
         "additionalProperties": false
       }
     },
+    "uses": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "charge",
+            "use"
+          ]
+        },
+        "recharge": {
+          "type": "string",
+          "enum": [
+            "dawn"
+          ]
+        },
+        "regain": {
+          "type": "string",
+          "pattern": "^\\d+d\\d+(\\+\\d+)?$"
+        }
+      },
+      "required": [
+        "count",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
     "proficiency_ids": {
       "type": "array",
       "items": {

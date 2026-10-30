@@ -61,7 +61,8 @@ written in `src/2014/feature-engine-annotations.json` and merged into the featur
 count-bearing features from the Levels rows. The ids of the class choices are derived with `pnpm run derive:classes`
 ([Id stability contract](#id-stability-contract)), and the structured `spellcasting` fields of the classes with
 `pnpm run derive:spellcasting` ([docs/class-spellcasting.md](docs/class-spellcasting.md)), and the `cost_cp`, `bundle_size`, `reach_ft`, `rarity.rank`, `rarity.min_level` and `effects` of the equipment and
-magic items with `pnpm run derive:items` ([docs/item-data.md](docs/item-data.md)).
+magic items, and the `uses` that `src/2014/item-engine-annotations.json` writes by hand, with `pnpm run derive:items`
+([docs/item-data.md](docs/item-data.md)).
 
 ## Generated id lists
 

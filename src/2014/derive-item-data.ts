@@ -2,14 +2,18 @@ import fs from 'node:fs';
 import path from 'node:path';
 import equipmentData from './en/5e-SRD-Equipment.json' with { type: 'json' };
 import proficiencyData from './en/5e-SRD-Proficiencies.json' with { type: 'json' };
+import itemAnnotations from './item-engine-annotations.json' with { type: 'json' };
 
 // The structured scalar fields and the unified `effects` of the items in src/2014/en/5e-SRD-Equipment.json and
 // src/2014/en/5e-SRD-Magic-Items.json: `cost_cp`, `bundle_size`, `reach_ft`, `rarity.rank`, `rarity.min_level`,
-// `effects`, `armor_class.max_bonus`, `proficiency_ids` and `aliases`. They are read from the existing `cost`, `quantity`, `name`, `properties`, `rarity`, `effect`,
+// `effects`, `uses`, `armor_class.max_bonus`, `proficiency_ids` and `aliases`. They are read from the existing `cost`, `quantity`, `name`, `properties`, `rarity`, `effect`,
 // `enchantment` and `requires_attunement` fields and from the item text; docs/item-data.md describes the rules and
 // src/2014/tests/item-data.test.ts audits the result against the text and the other fields with rules that do not
 // share code with the derivation.
 
+// `uses` of a magic item with limited charges or uses, written by hand in item-engine-annotations.json (the text that
+// limits them has no fixed wording) and merged into the items here.
+type Uses = { count: number; unit: string; recharge?: string; regain?: string };
 type Cost = { quantity: number; unit: string };
 type Damage = { damage_type: string; damage_dice: string };
 type Duration = { unit: string; length?: number };
@@ -333,6 +337,62 @@ export function magicItemProficiencyIds(
   return ids.size ? [...ids] : undefined;
 }
 
+export const ITEM_USES: Record<string, Uses> = Object.fromEntries(
+  (itemAnnotations as { item: string; uses: Uses }[]).map(({ item, uses }) => [item, uses])
+);
+
+const DICE_COUNT =
+  'a number of charges that is rolled when the item is found, so it has no fixed count';
+const TWO_LIMITS =
+  'two limits at once (charges and a separate property that can be used once until the next dawn), which one uses object cannot state';
+const SEVERAL_PROPERTIES =
+  'several properties that each can be used once until the next dawn, which one uses object cannot state';
+const DAYS_RECHARGE =
+  'a property that can be used again only after a number of days, which is not a recharge at dawn';
+
+// The magic items whose text names charges or a recharge schedule and that have no `uses`, and why. The audit in
+// src/2014/tests/item-data.test.ts fails for an item that mentions either and is neither annotated nor listed here.
+export const ITEM_USES_EXCLUDED: Record<string, string> = {
+  'bag-of-devouring': 'a daily event that the bag does by itself, and not uses of the owner',
+  'belt-of-dwarvenkind':
+    'a chance of growing a beard each day at dawn, which is not a limited property',
+  'boots-of-speed':
+    'a property that works for a total of 10 minutes and then until a long rest, which is a duration and not a number of uses',
+  'frost-brand': 'a property that can be used once per hour, which is not a recharge at dawn',
+  'horn-of-valhalla': DAYS_RECHARGE,
+  'horn-of-valhalla-silver': DAYS_RECHARGE,
+  'horn-of-valhalla-brass': DAYS_RECHARGE,
+  'horn-of-valhalla-bronze': DAYS_RECHARGE,
+  'horn-of-valhalla-iron': DAYS_RECHARGE,
+  'luck-blade': `${TWO_LIMITS}, and ${DICE_COUNT}`,
+  'necklace-of-prayer-beads':
+    'one use for each magic bead (the number of beads is rolled), which one uses object cannot state',
+  'nine-lives-stealer': DICE_COUNT,
+  oathbow: 'a sworn enemy that lasts until dawn seven days later, which is a duration and not uses',
+  'ring-of-x-ray-vision':
+    'a property that can be used again before a long rest at the price of a saving throw, which is not a count of uses',
+  'robe-of-stars':
+    'six stars that are removed from the robe and come back by 1d6 at dusk, which is not charges or uses at dawn',
+  'rod-of-lordly-might': SEVERAL_PROPERTIES,
+  'staff-of-charming': TWO_LIMITS,
+  'staff-of-thunder-and-lightning': SEVERAL_PROPERTIES,
+  'crystal-ball':
+    'a property that belongs to the telepathy variant alone; `crystal-ball-of-telepathy` has the uses',
+  'figurine-of-wondrous-power': DAYS_RECHARGE,
+  'figurine-of-wondrous-power-bronze-griffon': DAYS_RECHARGE,
+  'figurine-of-wondrous-power-ebony-fly': DAYS_RECHARGE,
+  'figurine-of-wondrous-power-golden-lions': DAYS_RECHARGE,
+  'figurine-of-wondrous-power-ivory-goats':
+    'charges that come back all at once after 7 days, which is not a recharge at dawn',
+  'figurine-of-wondrous-power-marble-elephant': DAYS_RECHARGE,
+  'figurine-of-wondrous-power-obsidian-steed': DAYS_RECHARGE,
+  'figurine-of-wondrous-power-onyx-dog': DAYS_RECHARGE,
+  'figurine-of-wondrous-power-serpentine-owl': DAYS_RECHARGE,
+  'figurine-of-wondrous-power-silver-raven': DAYS_RECHARGE,
+  'wind-fan':
+    'a property that can be used again before dawn at the price of a growing chance of destroying the fan, which is not a limit on uses',
+};
+
 const defined = (entries: Record<string, unknown>) =>
   Object.fromEntries(Object.entries(entries).filter(([, value]) => value !== undefined));
 
@@ -359,6 +419,9 @@ export function deriveMagicItems(
 ): MagicItem[] {
   const magicItemsByIndex = new Map(items.map((item) => [item.index, item]));
   const equipmentByIndex = new Map(equipment.map((item) => [item.index, item]));
+  for (const index of [...Object.keys(ITEM_USES), ...Object.keys(ITEM_USES_EXCLUDED)]) {
+    if (!magicItemsByIndex.has(index)) throw new Error(`${index}: no such magic item`);
+  }
   return items.map((item) => ({
     ...item,
     rarity: {
@@ -371,6 +434,7 @@ export function deriveMagicItems(
     ...defined({
       cost_cp: costInCopper(item),
       effects: magicItemEffects(item),
+      uses: ITEM_USES[item.index],
       proficiency_ids: magicItemProficiencyIds(item, magicItemsByIndex, equipmentByIndex),
     }),
   }));

@@ -117,6 +117,12 @@ export type MagicItem = {
         proficiencies?: string[] | undefined;
         traits?: string[] | undefined;
     }[] | undefined;
+    uses?: {
+        count: number;
+        unit: "use" | "charge";
+        recharge?: "dawn" | undefined;
+        regain?: string | undefined;
+    } | undefined;
     proficiency_ids?: string[] | undefined;
     requires_attunement?: boolean | undefined;
     is_consumable?: boolean | undefined;

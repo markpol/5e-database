@@ -79,3 +79,27 @@ export const ItemEffectSchema = z.strictObject({
 });
 
 export const ItemEffectsSchema = z.array(ItemEffectSchema).min(1);
+
+// What an item's `uses` counts: `charge` for the charges an item holds and spends, `use` for how many times its
+// limited property can be used. The words follow `feature_specific.engine.uses` of the class features.
+export const ITEM_USES_UNITS = ['charge', 'use'] as const;
+
+// When spent uses come back: `dawn` is "daily at dawn" and "until the next dawn". The feature `recharge` values for
+// rests and turns do not occur in item text.
+export const ITEM_USES_RECHARGES = ['dawn'] as const;
+
+/**
+ * How many times the limited property of a magic item can be used before it recharges, or how many charges it holds.
+ * It restates item text that has no fixed wording, so it is written by hand in item-engine-annotations.json.
+ */
+export const ItemUsesSchema = z.strictObject({
+  count: z.number().int().positive(),
+  unit: z.enum(ITEM_USES_UNITS),
+  // Absent when spent uses never come back.
+  recharge: z.enum(ITEM_USES_RECHARGES).optional(),
+  // The dice of the charges regained at each recharge (`1d6+1`); absent when all the spent uses come back.
+  regain: z
+    .string()
+    .regex(/^\d+d\d+(\+\d+)?$/)
+    .optional(),
+});
