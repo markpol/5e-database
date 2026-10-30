@@ -18,6 +18,35 @@
       "Your rage lasts for 1 minute. It ends early if you are knocked Unconscious or if Your Turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on Your Turn as a Bonus Action.",
       "Once you have raged the maximum number of times for your barbarian level, you must finish a Long Rest before you can rage again. You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "recharge": "long_rest",
+        "uses": {
+          "class_specific": "rage_count"
+        },
+        "modifiers": [
+          {
+            "type": "condition",
+            "condition": "enraged",
+            "target": "self",
+            "duration": {
+              "unit": "minute",
+              "length": 1
+            }
+          },
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "class_specific": "rage_damage_bonus",
+            "abilities": ["str"],
+            "attack_kind": "melee_weapon",
+            "while": ["not_wearing_heavy_armor"],
+            "while_condition": "enraged"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/rage"
   },
   {
@@ -33,6 +62,19 @@
     "desc": [
       "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "armor_class",
+            "base": 10,
+            "ability_modifiers": ["dex", "con"],
+            "while": ["not_wearing_armor"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/barbarian-unarmored-defense"
   },
   {
@@ -48,6 +90,18 @@
     "desc": [
       "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "modifiers": [
+          {
+            "type": "condition",
+            "condition": "reckless",
+            "target": "self"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/reckless-attack"
   },
   {
@@ -63,6 +117,20 @@
     "desc": [
       "At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "roll",
+            "roll": "saving_throw",
+            "mode": "advantage",
+            "abilities": ["dex"],
+            "while": ["can_see_effect", "not_blinded", "not_deafened", "not_incapacitated"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/danger-sense"
   },
   {
@@ -97,8 +165,27 @@
     "prerequisites": [],
     "desc": [
       "Starting at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion."
-
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "modifiers": [
+          {
+            "type": "condition",
+            "condition": "frenzied",
+            "target": "self",
+            "while_condition": "enraged"
+          },
+          {
+            "type": "extra_attack",
+            "count": 1,
+            "attack_kind": "melee_weapon",
+            "action_cost": "bonus_action",
+            "while_condition": "frenzied"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/frenzy"
   },
   {
@@ -114,6 +201,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/barbarian-ability-score-improvement-1"
   },
   {
@@ -129,6 +219,17 @@
     "desc": [
       "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "extra_attack",
+            "count": 1
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/barbarian-extra-attack"
   },
   {
@@ -144,6 +245,19 @@
     "desc": [
       "Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "speed",
+            "op": "add",
+            "value": 10,
+            "while": ["not_wearing_heavy_armor"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/fast-movement"
   },
   {
@@ -210,6 +324,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/barbarian-ability-score-improvement-2"
   },
   {
@@ -292,6 +409,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/barbarian-ability-score-improvement-3"
   },
   {
@@ -372,6 +492,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/barbarian-ability-score-improvement-4"
   },
   {
@@ -417,6 +540,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/barbarian-ability-score-improvement-5"
   },
   {
@@ -465,6 +591,25 @@
       "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. ",
       "Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "recharge": "long_rest",
+        "uses": {
+          "ability_modifier": "cha",
+          "minimum": 1
+        },
+        "modifiers": [
+          {
+            "type": "die",
+            "class_specific": "bardic_inspiration_die",
+            "effect": "add",
+            "rolls": ["ability_check", "attack", "saving_throw"],
+            "range_ft": 60
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/bardic-inspiration-d6"
   },
   {
@@ -480,6 +625,20 @@
     "desc": [
       "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "ability_check",
+            "proficiency_multiplier": 0.5,
+            "round": "down",
+            "while": ["not_proficient"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/jack-of-all-trades"
   },
   {
@@ -496,6 +655,14 @@
       "Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points. ",
       "The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "rest"
+      },
+      "heal": {
+        "dice": "1d6"
+      }
+    },
     "url": "/api/2014/features/song-of-rest-d6"
   },
   {
@@ -531,6 +698,14 @@
     "desc": [
       "When you join the College of Lore at 3rd level, you gain proficiency with three skills of your choice."
     ],
+    "feature_specific": {
+      "granted_proficiencies": [
+        {
+          "choose": 3,
+          "from": "skills"
+        }
+      ]
+    },
     "url": "/api/2014/features/bonus-proficiencies"
   },
   {
@@ -553,6 +728,24 @@
       "When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll.",
       "You can choose to use this feature after the creature makes its roll, but before the GM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can't hear you or if it's immune to being charmed."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "reaction",
+        "uses": {
+          "pool": "bardic-inspiration-d6",
+          "cost": 1
+        },
+        "modifiers": [
+          {
+            "type": "die",
+            "class_specific": "bardic_inspiration_die",
+            "effect": "subtract",
+            "rolls": ["attack", "ability_check", "damage"],
+            "range_ft": 60
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/cutting-words"
   },
   {
@@ -738,6 +931,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/bard-ability-score-improvement-1"
   },
   {
@@ -755,6 +951,25 @@
       "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. ",
       "Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "recharge": "long_rest",
+        "uses": {
+          "ability_modifier": "cha",
+          "minimum": 1
+        },
+        "modifiers": [
+          {
+            "type": "die",
+            "class_specific": "bardic_inspiration_die",
+            "effect": "add",
+            "rolls": ["ability_check", "attack", "saving_throw"],
+            "range_ft": 60
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/bardic-inspiration-d8"
   },
   {
@@ -770,6 +985,23 @@
     "desc": [
       "Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "recharge",
+            "features": [
+              "bardic-inspiration-d6",
+              "bardic-inspiration-d8",
+              "bardic-inspiration-d10",
+              "bardic-inspiration-d12"
+            ],
+            "recharge": "short_rest"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/font-of-inspiration"
   },
   {
@@ -835,6 +1067,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/bard-ability-score-improvement-2"
   },
   {
@@ -851,6 +1086,11 @@
       "Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points. ",
       "The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level."
     ],
+    "feature_specific": {
+      "heal": {
+        "dice": "1d8"
+      }
+    },
     "url": "/api/2014/features/song-of-rest-d8"
   },
   {
@@ -1070,6 +1310,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/bard-ability-score-improvement-3"
   },
   {
@@ -1086,6 +1329,11 @@
       "Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points. ",
       "The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level."
     ],
+    "feature_specific": {
+      "heal": {
+        "dice": "1d10"
+      }
+    },
     "url": "/api/2014/features/song-of-rest-d10"
   },
   {
@@ -1170,6 +1418,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/bard-ability-score-improvement-4"
   },
   {
@@ -1186,6 +1437,11 @@
       "Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points. ",
       "The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level."
     ],
+    "feature_specific": {
+      "heal": {
+        "dice": "1d12"
+      }
+    },
     "url": "/api/2014/features/song-of-rest-d12"
   },
   {
@@ -1218,6 +1474,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/bard-ability-score-improvement-5"
   },
   {
@@ -1296,9 +1555,16 @@
     "name": "Bonus Proficiency",
     "level": 1,
     "prerequisites": [],
-    "desc": [
-      "When you choose this domain at 1st level, you gain proficiency with heavy armor."
-    ],
+    "desc": ["When you choose this domain at 1st level, you gain proficiency with heavy armor."],
+    "feature_specific": {
+      "granted_proficiencies": [
+        {
+          "index": "heavy-armor",
+          "name": "Heavy Armor",
+          "url": "/api/2014/proficiencies/heavy-armor"
+        }
+      ]
+    },
     "url": "/api/2014/features/bonus-proficiency"
   },
   {
@@ -1319,6 +1585,20 @@
     "desc": [
       "Also starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "healing",
+            "flat": 2,
+            "add_spell_level": true,
+            "min_spell_level": 1
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/disciple-of-life"
   },
   {
@@ -1337,6 +1617,15 @@
       "Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.",
       "Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "recharge": "short_rest",
+        "uses": {
+          "class_specific": "channel_divinity_charges"
+        }
+      }
+    },
     "url": "/api/2014/features/channel-divinity-1-rest"
   },
   {
@@ -1353,6 +1642,30 @@
       "As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
       "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "uses": {
+          "pool": "channel-divinity-1-rest",
+          "cost": 1
+        },
+        "modifiers": [
+          {
+            "type": "turn",
+            "creature_types": ["undead"],
+            "range_ft": 30,
+            "save": {
+              "ability": "wis",
+              "dc": "spell"
+            },
+            "duration": {
+              "unit": "minute",
+              "length": 1
+            }
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/channel-divinity-turn-undead"
   },
   {
@@ -1391,6 +1704,18 @@
       "As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level.",
       "Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an undead or a construct."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "uses": {
+          "pool": "channel-divinity-1-rest",
+          "cost": 1
+        }
+      },
+      "heal": {
+        "class_level_multiplier": 5
+      }
+    },
     "url": "/api/2014/features/channel-divinity-preserve-life"
   },
   {
@@ -1422,6 +1747,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/cleric-ability-score-improvement-1"
   },
   {
@@ -1453,6 +1781,18 @@
     "desc": [
       "Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "destroy",
+            "creature_types": ["undead"],
+            "class_specific": "destroy_undead_cr"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/destroy-undead-cr-1-2-or-below"
   },
   {
@@ -1535,6 +1875,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/cleric-ability-score-improvement-2"
   },
   {
@@ -1650,6 +1993,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/cleric-ability-score-improvement-3"
   },
   {
@@ -1680,6 +2026,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/cleric-ability-score-improvement-4"
   },
   {
@@ -1756,6 +2105,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/cleric-ability-score-improvement-5"
   },
   {
@@ -1768,9 +2120,7 @@
     "name": "Divine Intervention Improvement",
     "level": 20,
     "prerequisites": [],
-    "desc": [
-      "At 20th level, your call for intervention succeeds automatically, no roll required."
-    ],
+    "desc": ["At 20th level, your call for intervention succeeds automatically, no roll required."],
     "url": "/api/2014/features/divine-intervention-improvement"
   },
   {
@@ -1825,6 +2175,21 @@
       "- You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.",
       "- You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the GM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "recharge": "short_rest",
+        "uses": {
+          "count": 2
+        },
+        "modifiers": [
+          {
+            "type": "wild_shape",
+            "class_specific": ["wild_shape_max_cr", "wild_shape_fly", "wild_shape_swim"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/wild-shape-cr-1-4-or-below-no-flying-or-swim-speed"
   },
   {
@@ -2143,6 +2508,23 @@
       "Starting at 2nd level, you can regain some of your magical energy by sitting in meditation and communing with nature. During a short rest, you choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can't use this feature again until you finish a long rest.",
       "For example, when you are a 4th-level druid, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level slot or two 1st-level slots."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "rest",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "recover_spell_slots",
+            "class_level_multiplier": 0.5,
+            "round": "up",
+            "max_slot_level": 5
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/natural-recovery"
   },
   {
@@ -2188,6 +2570,21 @@
       "- You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.",
       "- You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the GM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "recharge": "short_rest",
+        "uses": {
+          "count": 2
+        },
+        "modifiers": [
+          {
+            "type": "wild_shape",
+            "class_specific": ["wild_shape_max_cr", "wild_shape_fly", "wild_shape_swim"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/wild-shape-cr-1-2-or-below-no-flying-speed"
   },
   {
@@ -2203,6 +2600,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/druid-ability-score-improvement-1"
   },
   {
@@ -2321,6 +2721,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/druid-ability-score-improvement-2"
   },
   {
@@ -2393,6 +2796,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/druid-ability-score-improvement-3"
   },
   {
@@ -2443,6 +2849,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/druid-ability-score-improvement-4"
   },
   {
@@ -2488,6 +2897,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/druid-ability-score-improvement-5"
   },
   {
@@ -2590,13 +3002,24 @@
     "name": "Fighting Style: Archery",
     "level": 1,
     "prerequisites": [],
-    "desc": [
-      "You gain a +2 bonus to attack rolls you make with ranged weapons."
-    ],
+    "desc": ["You gain a +2 bonus to attack rolls you make with ranged weapons."],
     "parent": {
       "index": "fighter-fighting-style",
       "name": "Fighting Style",
       "url": "/api/2014/features/fighter-fighting-style"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "attack_roll",
+            "flat": 2,
+            "attack_kind": "ranged_weapon"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/fighter-fighting-style-archery"
   },
@@ -2615,6 +3038,19 @@
       "index": "fighter-fighting-style",
       "name": "Fighting Style",
       "url": "/api/2014/features/fighter-fighting-style"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "armor_class",
+            "flat": 1,
+            "while": ["wearing_armor"]
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/fighter-fighting-style-defense"
   },
@@ -2636,6 +3072,20 @@
       "name": "Fighting Style",
       "url": "/api/2014/features/fighter-fighting-style"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "flat": 2,
+            "attack_kind": "melee_weapon",
+            "while": ["one_handed_melee_weapon_only"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/fighter-fighting-style-dueling"
   },
   {
@@ -2655,6 +3105,19 @@
       "index": "fighter-fighting-style",
       "name": "Fighting Style",
       "url": "/api/2014/features/fighter-fighting-style"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "reroll_damage",
+            "faces": [1, 2],
+            "attack_kind": "melee_weapon",
+            "while": ["wielding_with_two_hands"]
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/fighter-fighting-style-great-weapon-fighting"
   },
@@ -2676,6 +3139,20 @@
       "name": "Fighting Style",
       "url": "/api/2014/features/fighter-fighting-style"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "reaction",
+        "modifiers": [
+          {
+            "type": "rolls_against_others",
+            "roll": "attack",
+            "mode": "disadvantage",
+            "within_ft": 5,
+            "while": ["wielding_shield"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/fighter-fighting-style-protection"
   },
   {
@@ -2696,6 +3173,19 @@
       "name": "Fighting Style",
       "url": "/api/2014/features/fighter-fighting-style"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "attack_ability_modifier": true,
+            "attack_kind": "off_hand"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/fighter-fighting-style-two-weapon-fighting"
   },
   {
@@ -2711,6 +3201,19 @@
     "desc": [
       "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "recharge": "short_rest",
+        "uses": {
+          "count": 1
+        }
+      },
+      "heal": {
+        "dice": "1d10",
+        "add_class_level": true
+      }
+    },
     "url": "/api/2014/features/second-wind"
   },
   {
@@ -2727,6 +3230,15 @@
       "Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.",
       "Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "recharge": "short_rest",
+        "uses": {
+          "class_specific": "action_surges"
+        }
+      }
+    },
     "url": "/api/2014/features/action-surge-1-use"
   },
   {
@@ -2762,6 +3274,18 @@
     "desc": [
       "Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "critical_range",
+            "min_roll": 19,
+            "attack_kind": "weapon"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/improved-critical"
   },
   {
@@ -2777,6 +3301,9 @@
     "desc": [
       "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/fighter-ability-score-improvement-1"
   },
   {
@@ -2792,6 +3319,17 @@
     "desc": [
       "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "extra_attack",
+            "count": 1
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/extra-attack-1"
   },
   {
@@ -2807,6 +3345,9 @@
     "desc": [
       "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/fighter-ability-score-improvement-2"
   },
   {
@@ -2857,6 +3398,9 @@
     "desc": [
       "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/fighter-ability-score-improvement-3"
   },
   {
@@ -2996,6 +3540,9 @@
     "desc": [
       "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/fighter-ability-score-improvement-4"
   },
   {
@@ -3026,6 +3573,9 @@
     "desc": [
       "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/fighter-ability-score-improvement-5"
   },
   {
@@ -3076,6 +3626,9 @@
     "desc": [
       "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/fighter-ability-score-improvement-6"
   },
   {
@@ -3142,6 +3695,12 @@
     "desc": [
       "At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don't gain this benefit if you have 0 hit points."
     ],
+    "feature_specific": {
+      "heal": {
+        "bonus": 5,
+        "ability_modifier": "con"
+      }
+    },
     "url": "/api/2014/features/survivor"
   },
   {
@@ -3157,6 +3716,9 @@
     "desc": [
       "When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/fighter-ability-score-improvement-7"
   },
   {
@@ -3187,6 +3749,19 @@
     "desc": [
       "Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "armor_class",
+            "base": 10,
+            "ability_modifiers": ["dex", "wis"],
+            "while": ["not_wearing_armor", "not_wielding_shield"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/monk-unarmored-defense"
   },
   {
@@ -3206,6 +3781,34 @@
       "- You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of Table: The Monk.",
       "- When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "attack_ability",
+            "ability": "dex",
+            "instead_of": "str",
+            "attack_kind": "monk_weapon",
+            "while": ["not_wearing_armor", "not_wielding_shield"]
+          },
+          {
+            "type": "damage_die",
+            "class_specific": "martial_arts",
+            "attack_kind": "monk_weapon",
+            "while": ["not_wearing_armor", "not_wielding_shield"]
+          },
+          {
+            "type": "extra_attack",
+            "count": 1,
+            "attack_kind": "unarmed_strike",
+            "action_cost": "bonus_action",
+            "requires_attack_action": true,
+            "while": ["not_wearing_armor", "not_wielding_shield"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/martial-arts"
   },
   {
@@ -3225,6 +3828,16 @@
       "Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:",
       "Ki save DC = 8 + your proficiency bonus + your Wisdom modifier"
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "recharge": "short_rest",
+        "uses": {
+          "class_specific": "ki_points",
+          "unit": "point"
+        }
+      }
+    },
     "url": "/api/2014/features/ki"
   },
   {
@@ -3240,6 +3853,24 @@
     "desc": [
       "Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "uses": {
+          "pool": "ki",
+          "cost": 1
+        },
+        "modifiers": [
+          {
+            "type": "extra_attack",
+            "count": 2,
+            "attack_kind": "unarmed_strike",
+            "action_cost": "bonus_action",
+            "requires_attack_action": true
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/flurry-of-blows"
   },
   {
@@ -3252,9 +3883,22 @@
     "name": "Patient Defense",
     "level": 2,
     "prerequisites": [],
-    "desc": [
-      "You can spend 1 ki point to take the Dodge action as a bonus action on your turn."
-    ],
+    "desc": ["You can spend 1 ki point to take the Dodge action as a bonus action on your turn."],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "uses": {
+          "pool": "ki",
+          "cost": 1
+        },
+        "modifiers": [
+          {
+            "type": "actions",
+            "actions": ["dodge"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/patient-defense"
   },
   {
@@ -3270,6 +3914,21 @@
     "desc": [
       "You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "uses": {
+          "pool": "ki",
+          "cost": 1
+        },
+        "modifiers": [
+          {
+            "type": "actions",
+            "actions": ["disengage", "dash"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/step-of-the-wind"
   },
   {
@@ -3286,6 +3945,19 @@
       "Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in Table: The Monk.",
       "At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "speed",
+            "op": "add",
+            "class_specific": "unarmored_movement",
+            "while": ["not_wearing_armor", "not_wielding_shield"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/unarmored-movement-1"
   },
   {
@@ -3317,6 +3989,20 @@
       "Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.",
       "If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "reaction",
+        "modifiers": [
+          {
+            "type": "reduce_damage",
+            "dice": "1d10",
+            "ability_modifier": "dex",
+            "add_class_level": true,
+            "attack_kind": "ranged_weapon"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/deflect-missiles"
   },
   {
@@ -3340,6 +4026,41 @@
       "- It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.",
       "- It can't take reactions until the end of your next turn."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "modifiers": [
+          {
+            "type": "condition",
+            "condition": "prone",
+            "target": "target",
+            "save": {
+              "ability": "dex",
+              "dc": "ki"
+            },
+            "option": "prone"
+          },
+          {
+            "type": "push",
+            "distance_ft": 15,
+            "save": {
+              "ability": "str",
+              "dc": "ki"
+            },
+            "option": "push"
+          },
+          {
+            "type": "condition",
+            "condition": "no-reactions",
+            "target": "target",
+            "duration": {
+              "unit": "end_of_next_turn"
+            },
+            "option": "no_reactions"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/open-hand-technique"
   },
   {
@@ -3355,6 +4076,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/monk-ability-score-improvement-1"
   },
   {
@@ -3370,6 +4094,18 @@
     "desc": [
       "Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "reaction",
+        "modifiers": [
+          {
+            "type": "reduce_damage",
+            "class_level_multiplier": 5,
+            "source": "falling"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/slow-fall"
   },
   {
@@ -3385,6 +4121,17 @@
     "desc": [
       "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "extra_attack",
+            "count": 1
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/monk-extra-attack"
   },
   {
@@ -3400,6 +4147,29 @@
     "desc": [
       "Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "uses": {
+          "pool": "ki",
+          "cost": 1
+        },
+        "modifiers": [
+          {
+            "type": "condition",
+            "condition": "stunned",
+            "target": "target",
+            "save": {
+              "ability": "con",
+              "dc": "ki"
+            },
+            "duration": {
+              "unit": "end_of_next_turn"
+            }
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/stunning-strike"
   },
   {
@@ -3450,6 +4220,11 @@
     "desc": [
       "At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again."
     ],
+    "feature_specific": {
+      "heal": {
+        "class_level_multiplier": 3
+      }
+    },
     "url": "/api/2014/features/wholeness-of-body"
   },
   {
@@ -3495,6 +4270,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/monk-ability-score-improvement-2"
   },
   {
@@ -3576,6 +4354,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/monk-ability-score-improvement-3"
   },
   {
@@ -3607,6 +4388,40 @@
       "Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws.",
       "Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result."
     ],
+    "feature_specific": {
+      "granted_proficiencies": [
+        {
+          "index": "saving-throw-str",
+          "name": "Saving Throw: STR",
+          "url": "/api/2014/proficiencies/saving-throw-str"
+        },
+        {
+          "index": "saving-throw-dex",
+          "name": "Saving Throw: DEX",
+          "url": "/api/2014/proficiencies/saving-throw-dex"
+        },
+        {
+          "index": "saving-throw-con",
+          "name": "Saving Throw: CON",
+          "url": "/api/2014/proficiencies/saving-throw-con"
+        },
+        {
+          "index": "saving-throw-int",
+          "name": "Saving Throw: INT",
+          "url": "/api/2014/proficiencies/saving-throw-int"
+        },
+        {
+          "index": "saving-throw-wis",
+          "name": "Saving Throw: WIS",
+          "url": "/api/2014/proficiencies/saving-throw-wis"
+        },
+        {
+          "index": "saving-throw-cha",
+          "name": "Saving Throw: CHA",
+          "url": "/api/2014/proficiencies/saving-throw-cha"
+        }
+      ]
+    },
     "url": "/api/2014/features/diamond-soul"
   },
   {
@@ -3637,6 +4452,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/monk-ability-score-improvement-4"
   },
   {
@@ -3704,6 +4522,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/monk-ability-score-improvement-5"
   },
   {
@@ -3735,6 +4556,16 @@
       "The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.",
       "You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1,
+          "ability_modifier": "cha"
+        }
+      }
+    },
     "url": "/api/2014/features/divine-sense"
   },
   {
@@ -3753,6 +4584,19 @@
       "Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.",
       "This feature has no effect on undead and constructs."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "recharge": "long_rest",
+        "uses": {
+          "per_class_level": 5,
+          "unit": "hit_point"
+        }
+      },
+      "heal": {
+        "from_uses": true
+      }
+    },
     "url": "/api/2014/features/lay-on-hands"
   },
   {
@@ -3829,6 +4673,19 @@
       "name": "Fighting Style",
       "url": "/api/2014/features/paladin-fighting-style"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "armor_class",
+            "flat": 1,
+            "while": ["wearing_armor"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/fighting-style-defense"
   },
   {
@@ -3848,6 +4705,20 @@
       "index": "paladin-fighting-style",
       "name": "Fighting Style",
       "url": "/api/2014/features/paladin-fighting-style"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "flat": 2,
+            "attack_kind": "melee_weapon",
+            "while": ["one_handed_melee_weapon_only"]
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/fighting-style-dueling"
   },
@@ -3869,6 +4740,19 @@
       "name": "Fighting Style",
       "url": "/api/2014/features/paladin-fighting-style"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "reroll_damage",
+            "faces": [1, 2],
+            "attack_kind": "melee_weapon",
+            "while": ["wielding_with_two_hands"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/fighting-style-great-weapon-fighting"
   },
   {
@@ -3888,6 +4772,20 @@
       "index": "paladin-fighting-style",
       "name": "Fighting Style",
       "url": "/api/2014/features/paladin-fighting-style"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "reaction",
+        "modifiers": [
+          {
+            "type": "rolls_against_others",
+            "roll": "attack",
+            "mode": "disadvantage",
+            "within_ft": 5,
+            "while": ["wielding_shield"]
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/fighting-style-protection"
   },
@@ -3920,6 +4818,37 @@
     "desc": [
       "Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "uses": {
+          "spell_slot": true
+        },
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "dice_at_slot_level": {
+              "1": "2d8",
+              "2": "3d8",
+              "3": "4d8",
+              "4": "5d8",
+              "5": "5d8"
+            },
+            "damage_type": "radiant",
+            "attack_kind": "melee_weapon"
+          },
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "dice": "1d8",
+            "damage_type": "radiant",
+            "attack_kind": "melee_weapon",
+            "while": ["target_undead_or_fiend"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/divine-smite"
   },
   {
@@ -3932,9 +4861,18 @@
     "name": "Divine Health",
     "level": 3,
     "prerequisites": [],
-    "desc": [
-      "By 3rd level, the divine magic flowing through you makes you immune to disease."
-    ],
+    "desc": ["By 3rd level, the divine magic flowing through you makes you immune to disease."],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "immune_to",
+            "conditions": ["disease"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/divine-health"
   },
   {
@@ -3984,6 +4922,15 @@
       "When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.",
       "Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "recharge": "short_rest",
+        "uses": {
+          "count": 1
+        }
+      }
+    },
     "url": "/api/2014/features/channel-divinity"
   },
   {
@@ -4005,6 +4952,26 @@
       "As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.",
       "You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "uses": {
+          "pool": "channel-divinity",
+          "cost": 1
+        },
+        "modifiers": [
+          {
+            "type": "condition",
+            "condition": "sacred-weapon",
+            "target": "self",
+            "duration": {
+              "unit": "minute",
+              "length": 1
+            }
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/channel-divinity-sacred-weapon"
   },
   {
@@ -4026,6 +4993,30 @@
       "As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.",
       "A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "uses": {
+          "pool": "channel-divinity",
+          "cost": 1
+        },
+        "modifiers": [
+          {
+            "type": "turn",
+            "creature_types": ["fiend", "undead"],
+            "range_ft": 30,
+            "save": {
+              "ability": "wis",
+              "dc": "spell"
+            },
+            "duration": {
+              "unit": "minute",
+              "length": 1
+            }
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/channel-divinity-turn-the-unholy"
   },
   {
@@ -4041,6 +5032,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/paladin-ability-score-improvement-1"
   },
   {
@@ -4056,6 +5050,17 @@
     "desc": [
       "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "extra_attack",
+            "count": 1
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/paladin-extra-attack"
   },
   {
@@ -4124,6 +5129,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/paladin-ability-score-improvement-2"
   },
   {
@@ -4170,6 +5178,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/paladin-ability-score-improvement-3"
   },
   {
@@ -4237,6 +5248,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/paladin-ability-score-improvement-4"
   },
   {
@@ -4265,6 +5279,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/paladin-ability-score-improvement-5"
   },
   {
@@ -4330,18 +5347,18 @@
         "from": {
           "option_set_type": "options_array",
           "options": [
-            "aberrations", 
-            "beasts", 
-            "celestials", 
-            "constructs", 
-            "dragons", 
-            "elementals", 
-            "fey", 
-            "fiends", 
-            "giants", 
-            "monstrosities", 
-            "oozes", 
-            "plants", 
+            "aberrations",
+            "beasts",
+            "celestials",
+            "constructs",
+            "dragons",
+            "elementals",
+            "fey",
+            "fiends",
+            "giants",
+            "monstrosities",
+            "oozes",
+            "plants",
             "undead",
             "humanoids"
           ]
@@ -4378,15 +5395,7 @@
         "type": "string",
         "from": {
           "option_set_type": "options_array",
-          "options": [
-            "arctic", 
-            "coast", 
-            "desert", 
-            "forest", 
-            "grassland", 
-            "mountain", 
-            "swamp"
-          ]
+          "options": ["arctic", "coast", "desert", "forest", "grassland", "mountain", "swamp"]
         }
       }
     },
@@ -4460,13 +5469,24 @@
     "name": "Fighting Style: Archery",
     "level": 2,
     "prerequisites": [],
-    "desc": [
-      "You gain a +2 bonus to attack rolls you make with ranged weapons."
-    ],
+    "desc": ["You gain a +2 bonus to attack rolls you make with ranged weapons."],
     "parent": {
       "index": "ranger-fighting-style",
       "name": "Fighting Style",
       "url": "/api/2014/features/ranger-fighting-style"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "attack_roll",
+            "flat": 2,
+            "attack_kind": "ranged_weapon"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/ranger-fighting-style-archery"
   },
@@ -4485,6 +5505,19 @@
       "index": "ranger-fighting-style",
       "name": "Fighting Style",
       "url": "/api/2014/features/ranger-fighting-style"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "armor_class",
+            "flat": 1,
+            "while": ["wearing_armor"]
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/ranger-fighting-style-defense"
   },
@@ -4506,6 +5539,20 @@
       "name": "Fighting Style",
       "url": "/api/2014/features/ranger-fighting-style"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "flat": 2,
+            "attack_kind": "melee_weapon",
+            "while": ["one_handed_melee_weapon_only"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/ranger-fighting-style-dueling"
   },
   {
@@ -4525,6 +5572,19 @@
       "index": "ranger-fighting-style",
       "name": "Fighting Style",
       "url": "/api/2014/features/ranger-fighting-style"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "attack_ability_modifier": true,
+            "attack_kind": "off_hand"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/ranger-fighting-style-two-weapon-fighting"
   },
@@ -4640,6 +5700,24 @@
       "name": "Hunter's Prey",
       "url": "/api/2014/features/hunters-prey"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "recharge": "turn",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "dice": "1d8",
+            "attack_kind": "weapon",
+            "while": ["target_below_hit_point_maximum"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/hunters-prey-colossus-slayer"
   },
   {
@@ -4664,6 +5742,19 @@
       "index": "hunters-prey",
       "name": "Hunter's Prey",
       "url": "/api/2014/features/hunters-prey"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "reaction",
+        "modifiers": [
+          {
+            "type": "extra_attack",
+            "count": 1,
+            "attack_kind": "weapon",
+            "action_cost": "reaction"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/hunters-prey-giant-killer"
   },
@@ -4690,6 +5781,22 @@
       "name": "Hunter's Prey",
       "url": "/api/2014/features/hunters-prey"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "recharge": "turn",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "extra_attack",
+            "count": 1,
+            "attack_kind": "weapon"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/hunters-prey-horde-breaker"
   },
   {
@@ -4705,6 +5812,14 @@
     "desc": [
       "Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn't reveal the creatures' location or number."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "uses": {
+          "spell_slot": true
+        }
+      }
+    },
     "url": "/api/2014/features/primeval-awareness"
   },
   {
@@ -4720,6 +5835,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/ranger-ability-score-improvement-1"
   },
   {
@@ -4735,6 +5853,17 @@
     "desc": [
       "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "extra_attack",
+            "count": 1
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/ranger-extra-attack"
   },
   {
@@ -4762,18 +5891,18 @@
         "from": {
           "option_set_type": "options_array",
           "options": [
-            "aberrations", 
-            "beasts", 
-            "celestials", 
-            "constructs", 
-            "dragons", 
-            "elementals", 
-            "fey", 
-            "fiends", 
-            "giants", 
-            "monstrosities", 
-            "oozes", 
-            "plants", 
+            "aberrations",
+            "beasts",
+            "celestials",
+            "constructs",
+            "dragons",
+            "elementals",
+            "fey",
+            "fiends",
+            "giants",
+            "monstrosities",
+            "oozes",
+            "plants",
             "undead",
             "humanoids"
           ]
@@ -4810,15 +5939,7 @@
         "type": "string",
         "from": {
           "option_set_type": "options_array",
-          "options": [
-            "arctic", 
-            "coast", 
-            "desert", 
-            "forest", 
-            "grassland", 
-            "mountain", 
-            "swamp"
-          ]
+          "options": ["arctic", "coast", "desert", "forest", "grassland", "mountain", "swamp"]
         }
       }
     },
@@ -4981,6 +6102,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/ranger-ability-score-improvement-2"
   },
   {
@@ -5027,15 +6151,7 @@
         "type": "string",
         "from": {
           "option_set_type": "options_array",
-          "options": [
-            "arctic", 
-            "coast", 
-            "desert", 
-            "forest", 
-            "grassland", 
-            "mountain", 
-            "swamp"
-          ]
+          "options": ["arctic", "coast", "desert", "forest", "grassland", "mountain", "swamp"]
         }
       }
     },
@@ -5184,6 +6300,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/ranger-ability-score-improvement-3"
   },
   {
@@ -5211,18 +6330,18 @@
         "from": {
           "option_set_type": "options_array",
           "options": [
-            "aberrations", 
-            "beasts", 
-            "celestials", 
-            "constructs", 
-            "dragons", 
-            "elementals", 
-            "fey", 
-            "fiends", 
-            "giants", 
-            "monstrosities", 
-            "oozes", 
-            "plants", 
+            "aberrations",
+            "beasts",
+            "celestials",
+            "constructs",
+            "dragons",
+            "elementals",
+            "fey",
+            "fiends",
+            "giants",
+            "monstrosities",
+            "oozes",
+            "plants",
             "undead",
             "humanoids"
           ]
@@ -5407,6 +6526,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/ranger-ability-score-improvement-4"
   },
   {
@@ -5438,6 +6560,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/ranger-ability-score-improvement-5"
   },
   {
@@ -5649,6 +6774,24 @@
       "You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.",
       "The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "recharge": "turn",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "class_specific": "sneak_attack",
+            "attack_kind": "finesse_or_ranged_weapon",
+            "while": ["sneak_attack_eligible"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/sneak-attack"
   },
   {
@@ -5680,6 +6823,17 @@
     "desc": [
       "Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "modifiers": [
+          {
+            "type": "actions",
+            "actions": ["dash", "disengage", "hide"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/cunning-action"
   },
   {
@@ -5715,6 +6869,17 @@
     "desc": [
       "Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves' tools to disarm a trap or open a lock, or take the Use an Object action."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "modifiers": [
+          {
+            "type": "actions",
+            "actions": ["sleight_of_hand_check", "thieves_tools", "use_an_object"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/fast-hands"
   },
   {
@@ -5751,6 +6916,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/rogue-ability-score-improvement-1"
   },
   {
@@ -5766,6 +6934,17 @@
     "desc": [
       "Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "reaction",
+        "modifiers": [
+          {
+            "type": "reduce_damage",
+            "op": "halve"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/uncanny-dodge"
   },
   {
@@ -5975,6 +7154,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/rogue-ability-score-improvement-2"
   },
   {
@@ -6025,6 +7207,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/rogue-ability-score-improvement-3"
   },
   {
@@ -6055,6 +7240,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/rogue-ability-score-improvement-4"
   },
   {
@@ -6120,6 +7308,15 @@
     "desc": [
       "By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws."
     ],
+    "feature_specific": {
+      "granted_proficiencies": [
+        {
+          "index": "saving-throw-wis",
+          "name": "Saving Throw: WIS",
+          "url": "/api/2014/proficiencies/saving-throw-wis"
+        }
+      ]
+    },
     "url": "/api/2014/features/slippery-mind"
   },
   {
@@ -6135,6 +7332,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/rogue-ability-score-improvement-5"
   },
   {
@@ -6200,6 +7400,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/rogue-ability-score-improvement-6"
   },
   {
@@ -6641,6 +7844,23 @@
       "As magic flows through your body, it causes physical traits of your dragon ancestors to emerge. At 1st level, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.",
       "Additionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren't wearing armor, your AC equals 13 + your Dexterity modifier."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "hit_point_maximum",
+            "per_class_level": 1
+          },
+          {
+            "type": "armor_class",
+            "base": 13,
+            "ability_modifiers": ["dex"],
+            "while": ["not_wearing_armor"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/draconic-resilience"
   },
   {
@@ -6658,6 +7878,16 @@
       "Sorcery Points",
       "You have 2 sorcery points, and you gain more as you reach higher levels, as shown in the Sorcery Points column of the Sorcerer table. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "recharge": "long_rest",
+        "uses": {
+          "class_specific": "sorcery_points",
+          "unit": "point"
+        }
+      }
+    },
     "url": "/api/2014/features/font-of-magic"
   },
   {
@@ -6674,6 +7904,22 @@
       "You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th. ",
       "Any spell slot you create with this feature vanishes when you finish a long rest."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "uses": {
+          "pool": "font-of-magic",
+          "cost_class_specific": "creating_spell_slots"
+        },
+        "modifiers": [
+          {
+            "type": "spell_slot_conversion",
+            "direction": "points_to_slot",
+            "class_specific": "creating_spell_slots"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/flexible-casting-creating-spell-slots"
   },
   {
@@ -6689,6 +7935,20 @@
     "desc": [
       "As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "uses": {
+          "spell_slot": true
+        },
+        "modifiers": [
+          {
+            "type": "spell_slot_conversion",
+            "direction": "slot_to_points"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/flexible-casting-converting-spell-slot"
   },
   {
@@ -6800,6 +8060,22 @@
       "name": "Metamagic",
       "url": "/api/2014/features/metamagic-1"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "uses": {
+          "pool": "font-of-magic",
+          "cost": 1
+        },
+        "modifiers": [
+          {
+            "type": "protect_from_spell",
+            "ability_modifier": "cha",
+            "minimum": 1
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/metamagic-careful-spell"
   },
   {
@@ -6820,6 +8096,27 @@
       "index": "metamagic-1",
       "name": "Metamagic",
       "url": "/api/2014/features/metamagic-1"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "uses": {
+          "pool": "font-of-magic",
+          "cost": 1
+        },
+        "modifiers": [
+          {
+            "type": "spell_change",
+            "change": "double_range",
+            "option": "range"
+          },
+          {
+            "type": "spell_change",
+            "change": "touch_range_30_ft",
+            "option": "touch"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/metamagic-distant-spell"
   },
@@ -6842,6 +8139,21 @@
       "name": "Metamagic",
       "url": "/api/2014/features/metamagic-1"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "uses": {
+          "pool": "font-of-magic",
+          "cost": 1
+        },
+        "modifiers": [
+          {
+            "type": "spell_change",
+            "change": "reroll_damage_dice"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/metamagic-empowered-spell"
   },
   {
@@ -6861,6 +8173,21 @@
       "index": "metamagic-1",
       "name": "Metamagic",
       "url": "/api/2014/features/metamagic-1"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "uses": {
+          "pool": "font-of-magic",
+          "cost": 1
+        },
+        "modifiers": [
+          {
+            "type": "spell_change",
+            "change": "double_duration"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/metamagic-extended-spell"
   },
@@ -6882,6 +8209,21 @@
       "name": "Metamagic",
       "url": "/api/2014/features/metamagic-1"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "uses": {
+          "pool": "font-of-magic",
+          "cost": 3
+        },
+        "modifiers": [
+          {
+            "type": "spell_change",
+            "change": "save_disadvantage"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/metamagic-heightened-spell"
   },
   {
@@ -6901,6 +8243,21 @@
       "index": "metamagic-1",
       "name": "Metamagic",
       "url": "/api/2014/features/metamagic-1"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "uses": {
+          "pool": "font-of-magic",
+          "cost": 2
+        },
+        "modifiers": [
+          {
+            "type": "spell_change",
+            "change": "bonus_action_casting_time"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/metamagic-quickened-spell"
   },
@@ -6922,6 +8279,21 @@
       "name": "Metamagic",
       "url": "/api/2014/features/metamagic-1"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "uses": {
+          "pool": "font-of-magic",
+          "cost": 1
+        },
+        "modifiers": [
+          {
+            "type": "spell_change",
+            "change": "no_verbal_or_somatic"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/metamagic-subtle-spell"
   },
   {
@@ -6938,6 +8310,21 @@
       "When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).",
       "To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, magic missile and scorching ray aren't eligible, but ray of frost is."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "uses": {
+          "pool": "font-of-magic",
+          "cost": "spell_level"
+        },
+        "modifiers": [
+          {
+            "type": "spell_change",
+            "change": "second_target"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/metamagic-twinned-spell"
   },
   {
@@ -6953,6 +8340,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/sorcerer-ability-score-improvement-1"
   },
   {
@@ -7005,6 +8395,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/sorcerer-ability-score-improvement-2"
   },
   {
@@ -7111,6 +8504,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/sorcerer-ability-score-improvement-3"
   },
   {
@@ -7163,6 +8559,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/sorcerer-ability-score-improvement-4"
   },
   {
@@ -7305,6 +8704,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/sorcerer-ability-score-improvement-5"
   },
   {
@@ -7355,6 +8757,19 @@
     "desc": [
       "Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1)."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "temp_hp",
+            "ability_modifier": "cha",
+            "add_class_level": true,
+            "minimum": 1
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/dark-ones-blessing"
   },
   {
@@ -7577,6 +8992,19 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "ability_modifier": "cha",
+            "spell": "eldritch-blast"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/eldritch-invocation-agonizing-blast"
   },
   {
@@ -7597,6 +9025,20 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "mage-armor",
+            "slot": "none",
+            "self_only": true,
+            "no_material": true
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/eldritch-invocation-armor-of-shadows"
   },
   {
@@ -7609,13 +9051,23 @@
     "name": "Eldritch Invocation: Beast Speech",
     "level": 2,
     "prerequisites": [],
-    "desc": [
-      "You can cast speak with animals at will, without expending a spell slot."
-    ],
+    "desc": ["You can cast speak with animals at will, without expending a spell slot."],
     "parent": {
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "speak-with-animals",
+            "slot": "none"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/eldritch-invocation-beast-speech"
   },
@@ -7634,6 +9086,20 @@
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
+    },
+    "feature_specific": {
+      "granted_proficiencies": [
+        {
+          "index": "skill-deception",
+          "name": "Skill: Deception",
+          "url": "/api/2014/proficiencies/skill-deception"
+        },
+        {
+          "index": "skill-persuasion",
+          "name": "Skill: Persuasion",
+          "url": "/api/2014/proficiencies/skill-persuasion"
+        }
+      ]
     },
     "url": "/api/2014/features/eldritch-invocation-beguiling-influence"
   },
@@ -7693,13 +9159,23 @@
     "name": "Eldritch Invocation: Eldritch Sight",
     "level": 2,
     "prerequisites": [],
-    "desc": [
-      "You can cast detect magic at will, without expending a spell slot."
-    ],
+    "desc": ["You can cast detect magic at will, without expending a spell slot."],
     "parent": {
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "detect-magic",
+            "slot": "none"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/eldritch-invocation-eldritch-sight"
   },
@@ -7723,6 +9199,19 @@
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "spell_change",
+            "change": "range",
+            "spell": "eldritch-blast",
+            "range_ft": 300
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/eldritch-invocation-eldritch-spear"
   },
@@ -7762,6 +9251,21 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "false-life",
+            "slot": "none",
+            "at_level": 1,
+            "self_only": true,
+            "no_material": true
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/eldritch-invocation-fiendish-vigor"
   },
   {
@@ -7782,6 +9286,11 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action"
+      }
+    },
     "url": "/api/2014/features/eldritch-invocation-gaze-of-two-minds"
   },
   {
@@ -7794,13 +9303,23 @@
     "name": "Eldritch Invocation: Mask of Many Faces",
     "level": 2,
     "prerequisites": [],
-    "desc": [
-      "You can cast disguise self at will, without expending a spell slot."
-    ],
+    "desc": ["You can cast disguise self at will, without expending a spell slot."],
     "parent": {
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "disguise-self",
+            "slot": "none"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/eldritch-invocation-mask-of-many-faces"
   },
@@ -7821,6 +9340,19 @@
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "silent-image",
+            "slot": "none",
+            "no_material": true
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/eldritch-invocation-misty-visions"
   },
@@ -7847,6 +9379,18 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "push",
+            "distance_ft": 10,
+            "spell": "eldritch-blast"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/eldritch-invocation-repelling-blast"
   },
   {
@@ -7866,6 +9410,22 @@
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "bane",
+            "slot": "spell_slot"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/eldritch-invocation-thief-of-five-fates"
   },
@@ -7918,6 +9478,22 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "slow",
+            "slot": "spell_slot"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/eldritch-invocation-mire-the-mind"
   },
   {
@@ -7943,6 +9519,19 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "modifiers": [
+          {
+            "type": "condition",
+            "condition": "invisible",
+            "target": "self",
+            "while": ["in_dim_light_or_darkness"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/eldritch-invocation-one-with-shadows"
   },
   {
@@ -7967,6 +9556,22 @@
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "bestow-curse",
+            "slot": "spell_slot"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/eldritch-invocation-sign-of-ill-omen"
   },
@@ -7996,6 +9601,18 @@
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "extra_attack",
+            "count": 1,
+            "attack_kind": "bound_weapon"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/eldritch-invocation-thirsting-blade"
   },
@@ -8179,9 +9796,7 @@
         "level": 9
       }
     ],
-    "desc": [
-      "You can cast speak with dead at will, without expending a spell slot."
-    ],
+    "desc": ["You can cast speak with dead at will, without expending a spell slot."],
     "parent": {
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
@@ -8292,9 +9907,7 @@
         "level": 15
       }
     ],
-    "desc": [
-      "You can cast alter self at will, without expending a spell slot."
-    ],
+    "desc": ["You can cast alter self at will, without expending a spell slot."],
     "parent": {
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
@@ -8317,9 +9930,7 @@
         "level": 15
       }
     ],
-    "desc": [
-      "You can cast arcane eye at will, without expending a spell slot."
-    ],
+    "desc": ["You can cast arcane eye at will, without expending a spell slot."],
     "parent": {
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
@@ -8446,6 +10057,11 @@
       "name": "Pact Boon",
       "url": "/api/2014/features/pact-boon"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action"
+      }
+    },
     "url": "/api/2014/features/pact-of-the-blade"
   },
   {
@@ -8483,6 +10099,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/warlock-ability-score-improvement-1"
   },
   {
@@ -8519,6 +10138,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/warlock-ability-score-improvement-2"
   },
   {
@@ -8571,6 +10193,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/warlock-ability-score-improvement-3"
   },
   {
@@ -8642,6 +10267,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/warlock-ability-score-improvement-4"
   },
   {
@@ -8674,6 +10302,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/warlock-ability-score-improvement-5"
   },
   {
@@ -8722,6 +10353,22 @@
       "You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.",
       "For example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "rest",
+        "recharge": "day",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "recover_spell_slots",
+            "class_specific": "arcane_recovery_levels",
+            "max_slot_level": 5
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/arcane-recovery"
   },
   {
@@ -8778,6 +10425,20 @@
     "desc": [
       "Beginning at 2nd level, you can create pockets of relative safety within the effects of your evocation spells. When you cast an evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "modifiers": [
+          {
+            "type": "protect_from_spell",
+            "base": 1,
+            "add_spell_level": true,
+            "no_half_damage": true,
+            "school": "evocation"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/sculpt-spells"
   },
   {
@@ -8793,6 +10454,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/wizard-ability-score-improvement-1"
   },
   {
@@ -8844,6 +10508,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/wizard-ability-score-improvement-2"
   },
   {
@@ -8895,6 +10562,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/wizard-ability-score-improvement-3"
   },
   {
@@ -8947,6 +10617,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/wizard-ability-score-improvement-4"
   },
   {
@@ -8978,6 +10651,9 @@
     "desc": [
       "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
     ],
+    "feature_specific": {
+      "grants_asi": true
+    },
     "url": "/api/2014/features/wizard-ability-score-improvement-5"
   },
   {

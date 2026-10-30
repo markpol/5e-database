@@ -1,0 +1,286 @@
+# Class feature mechanics
+
+Class features in `src/2014/en/5e-SRD-Features.json` state their rules as text (`desc`). Four optional fields in
+`feature_specific` restate the mechanics of that text as data:
+
+| Field                   | What it says                                                                  | Features |
+| ----------------------- | ----------------------------------------------------------------------------- | -------- |
+| `engine`                | What using the feature costs, how it recharges, its uses, and what it changes | 99       |
+| `heal`                  | The hit points the feature restores                                           | 9        |
+| `granted_proficiencies` | The proficiencies the feature gives                                           | 5        |
+| `grants_asi`            | `true` on every Ability Score Improvement                                     | 63       |
+
+They are additive: no existing field, record or id is changed, and the existing `feature_specific` fields
+(`expertise_options`, `subfeature_options` and the others) keep their place. They are English-only (nothing in them
+is translated, so the translation overlays do not carry them) and marked `dd` in `src/provenance/source-markers.json`.
+
+`engine`, `heal` and `granted_proficiencies` are written by hand, one record for each feature, in
+`src/2014/feature-engine-annotations.json` (the feature texts have no fixed wording to parse) and merged into the
+features by `src/2014/derive-feature-engine.ts` (`pnpm run derive:features`); `grants_asi` is set by the same script on
+every feature named Ability Score Improvement. The Zod schema in `src/2014/schemas/5e-SRD-Features.ts` fixes the
+vocabulary below. `src/2014/tests/feature-engine.test.ts` checks the values against the feature text and the Levels
+rows, with rules that do not share code with the derivation.
+
+## Scope
+
+`engine` covers the features of class levels 1 to 5, the levels at which a character starts: 182 of the 407 features,
+in the twelve classes and their subclasses. 99 have an `engine`. 15 more have only `grants_asi` (the twelve 4th-level
+Ability Score Improvements) or only `granted_proficiencies` (Bonus Proficiency, Bonus Proficiencies and Beguiling
+Influence). The other 68 have no mechanic these fields can state, and are listed with the reason in
+`ENGINE_EXCLUDED` of `derive-feature-engine.ts` and in [What is not structured](#what-is-not-structured). The test
+fails if a feature of these levels has no structured field and is not listed, and if a feature above 5th level has an
+`engine`.
+
+`heal`, `granted_proficiencies` and `grants_asi` cover every level.
+
+A feature that the SRD splits into one record per count or die (`action-surge-1-use`, `bardic-inspiration-d8`,
+`wild-shape-cr-1-2-or-below-no-flying-speed`) has the same `engine` on each record of these levels. Features with the
+same text have the same `engine`: the fighting styles of the fighter, paladin and ranger, and the two Bardic
+Inspiration and two Wild Shape records.
+
+## Levels `class_specific`
+
+Where the class table gives a number that grows with the level, the feature names its key in the `class_specific` of
+the class rows of `5e-SRD-Levels.json` instead of repeating the numbers. The value is read from the row of the
+feature's class at the owner's level in that class. The test checks that each key exists in the rows of the class and
+that a key used for `uses` is above 0 at the feature's level.
+
+| Key                                                      | Read by                                             | Value                                                                        |
+| -------------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------------- |
+| `rage_count`                                             | Rage `uses`                                         | Rages before a long rest; 9999 at 20th level (unlimited)                     |
+| `rage_damage_bonus`                                      | Rage `bonus`                                        | Melee damage bonus while raging                                              |
+| `bardic_inspiration_die`                                 | Bardic Inspiration, Cutting Words `die`             | Faces of the die (6 is a d6)                                                 |
+| `channel_divinity_charges`                               | Channel Divinity (cleric) `uses`                    | Uses between rests                                                           |
+| `destroy_undead_cr`                                      | Destroy Undead `destroy`                            | Highest challenge rating destroyed                                           |
+| `wild_shape_max_cr`, `wild_shape_fly`, `wild_shape_swim` | Wild Shape `wild_shape`                             | Highest challenge rating, and whether flying and swimming beasts are allowed |
+| `action_surges`                                          | Action Surge `uses`                                 | Uses between rests                                                           |
+| `ki_points`                                              | Ki `uses`                                           | Ki points                                                                    |
+| `martial_arts`                                           | Martial Arts `damage_die`                           | `{ dice_count, dice_value }`                                                 |
+| `unarmored_movement`                                     | Unarmored Movement `speed`                          | Feet added to the speed                                                      |
+| `sneak_attack`                                           | Sneak Attack `bonus`                                | `{ dice_count, dice_value }`                                                 |
+| `sorcery_points`                                         | Font of Magic `uses`                                | Sorcery points                                                               |
+| `creating_spell_slots`                                   | Flexible Casting `uses` and `spell_slot_conversion` | `[{ spell_slot_level, sorcery_point_cost }]`                                 |
+| `arcane_recovery_levels`                                 | Arcane Recovery `recover_spell_slots`               | Combined level of the slots recovered                                        |
+
+## `engine`
+
+`{ action_cost, recharge?, uses?, modifiers? }`. Every `engine` has an `action_cost`, and at least one of a
+`uses`, a `modifiers` or an `action_cost` other than `passive`.
+
+### `action_cost`
+
+| Value          | Meaning                                                                                                                    | Features |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------- | -------- |
+| `action`       | Using the feature takes an action                                                                                          | 21       |
+| `bonus_action` | It takes a bonus action                                                                                                    | 11       |
+| `reaction`     | It takes a reaction                                                                                                        | 7        |
+| `free`         | It is used on purpose but takes no action: at a moment the text names, such as when the owner hits, rages or casts a spell | 17       |
+| `passive`      | It is never used on purpose: it applies while owned, or it is a pool that other features spend                             | 40       |
+| `rest`         | It is used while the owner finishes a short rest                                                                           | 3        |
+
+A feature that casts a spell (`spell` modifier) takes the spell's casting time: `action` for the at-will invocations,
+`passive` when the casting time is longer than an action.
+
+### `recharge`
+
+When spent uses come back. Present exactly when `uses` is a count of the feature's own.
+
+| Value        | Meaning                              | From the text                                 | Features |
+| ------------ | ------------------------------------ | --------------------------------------------- | -------- |
+| `short_rest` | At the end of a short or a long rest | `short or long rest`                          | 7        |
+| `long_rest`  | At the end of a long rest            | `long rest`                                   | 10       |
+| `day`        | Once a day                           | `Once per day` (Arcane Recovery)              | 1        |
+| `turn`       | At the start of each turn            | `once per turn`, `once on each of your turns` | 3        |
+
+### `uses`
+
+One of three shapes.
+
+| Shape                                                                               | Meaning                                                                                                                                                                                                                  | Features |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| `{ count?, class_specific?, ability_modifier?, per_class_level?, minimum?, unit? }` | The feature's own uses: `count` plus the `class_specific` number plus the ability modifier plus `per_class_level` times the class level, and at least `minimum`. `unit` is `use` (when absent), `point` or `hit_point`   | 21       |
+| `{ pool, cost?, cost_class_specific? }`                                             | Each use spends `cost` from the uses of the feature `pool` (an index). `cost` is a number, or `spell_level` (the spell's level, 1 for a cantrip). `cost_class_specific` names a table of costs in the Levels row instead | 18       |
+| `{ spell_slot: true }`                                                              | Each use expends one of the owner's spell slots                                                                                                                                                                          | 3        |
+
+Examples: Rage `{ class_specific: "rage_count" }`; Bardic Inspiration `{ ability_modifier: "cha", minimum: 1 }`;
+Divine Sense `{ count: 1, ability_modifier: "cha" }` (1 + the Charisma modifier); Lay on Hands
+`{ per_class_level: 5, unit: "hit_point" }`; Ki `{ class_specific: "ki_points", unit: "point" }`; Flurry of Blows
+`{ pool: "ki", cost: 1 }`; Turn Undead `{ pool: "channel-divinity-1-rest", cost: 1 }`; Divine Smite
+`{ spell_slot: true }`.
+
+A pool is the lowest-level record of its feature (`bardic-inspiration-d6`, `channel-divinity-1-rest`); the
+higher-level records of the same feature hold the same pool. The pool features are Ki, Font of Magic, Channel Divinity
+(cleric and paladin) and Bardic Inspiration.
+
+### `modifiers`
+
+A list of what the feature changes. Every modifier has a `type` and may have:
+
+- `while`: circumstances that must all hold (below);
+- `while_condition`: a condition (an index of `5e-SRD-Conditions.json`) the owner must have, such as `enraged` for
+  the rage damage bonus;
+- `option`: modifiers with the same `option` go together, and a use picks one option of a feature that has several
+  (Open Hand Technique: `prone`, `push` or `no_reactions`).
+
+| `type`                  | Fields                                                                                                                                 | Meaning                                                                                                                                                                                                                   | Used by                                                                                                                                                                                                          |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `condition`             | `condition`, `target` (`self`, `target`), `save?`, `duration?`                                                                         | Applies a condition (an index of `5e-SRD-Conditions.json`) to the owner or to the creature the feature is used on                                                                                                         | Rage (`enraged`), Reckless Attack (`reckless`), Frenzy (`frenzied`), Sacred Weapon (`sacred-weapon`), Stunning Strike (`stunned`), Open Hand Technique (`prone`, `no-reactions`), One with Shadows (`invisible`) |
+| `roll`                  | `roll`, `mode`, `abilities?`, `attack_kind?`                                                                                           | A change to the owner's own rolls, as in condition `effects.rolls`                                                                                                                                                        | Danger Sense                                                                                                                                                                                                     |
+| `bonus`                 | `to`, one amount, `abilities?`, `attack_kind?`, `damage_type?`, `spell?`, `min_spell_level?`, `minimum?`, `add_spell_level?`, `round?` | A number added to a roll, to armor class or to healing                                                                                                                                                                    | Rage, fighting styles, Jack of All Trades, Disciple of Life, Divine Smite, Colossus Slayer, Sneak Attack, Agonizing Blast                                                                                        |
+| `speed`                 | `op: "add"`, `value?` or `class_specific?`                                                                                             | The speed rises by that many feet                                                                                                                                                                                         | Fast Movement, Unarmored Movement                                                                                                                                                                                |
+| `armor_class`           | `base`, `ability_modifiers`                                                                                                            | The armor class becomes `base` plus those modifiers                                                                                                                                                                       | Unarmored Defense (both), Draconic Resilience                                                                                                                                                                    |
+| `hit_point_maximum`     | `per_class_level`                                                                                                                      | The hit point maximum rises by that much per class level                                                                                                                                                                  | Draconic Resilience                                                                                                                                                                                              |
+| `extra_attack`          | `count`, `attack_kind?`, `action_cost?` (`bonus_action`, `reaction`), `requires_attack_action?`                                        | `count` more attacks; without `action_cost` they are part of the Attack action                                                                                                                                            | Extra Attack (all), Martial Arts, Flurry of Blows, Frenzy, Giant Killer, Horde Breaker, Thirsting Blade                                                                                                          |
+| `attack_ability`        | `ability`, `instead_of`, `attack_kind`                                                                                                 | Attack and damage rolls can use `ability` instead of `instead_of`                                                                                                                                                         | Martial Arts                                                                                                                                                                                                     |
+| `damage_die`            | `class_specific`, `attack_kind`                                                                                                        | The damage die can be the `class_specific` die instead of the normal damage                                                                                                                                               | Martial Arts                                                                                                                                                                                                     |
+| `critical_range`        | `min_roll`, `attack_kind`                                                                                                              | A critical hit on a roll of `min_roll` or more                                                                                                                                                                            | Improved Critical                                                                                                                                                                                                |
+| `reroll_damage`         | `faces`, `attack_kind`                                                                                                                 | Damage dice that roll one of `faces` can be rerolled once                                                                                                                                                                 | Great Weapon Fighting                                                                                                                                                                                            |
+| `reduce_damage`         | `op?: "halve"`, `dice?`, `ability_modifier?`, `add_class_level?`, `class_level_multiplier?`, `attack_kind?`, `source?: "falling"`      | Damage taken is halved, or reduced by the sum of the amounts                                                                                                                                                              | Uncanny Dodge, Deflect Missiles, Slow Fall                                                                                                                                                                       |
+| `rolls_against_others`  | `roll: "attack"`, `mode`, `within_ft`                                                                                                  | Rolls against a creature within `within_ft` feet of the owner, other than the owner                                                                                                                                       | Protection                                                                                                                                                                                                       |
+| `die`                   | `class_specific`, `effect` (`add`, `subtract`), `rolls`, `range_ft`                                                                    | A die an ally adds to one of `rolls`, or the owner subtracts from an enemy's                                                                                                                                              | Bardic Inspiration, Cutting Words                                                                                                                                                                                |
+| `actions`               | `actions`                                                                                                                              | Using the feature takes one of these actions: `dash`, `disengage`, `dodge`, `hide`, `use_an_object`, `sleight_of_hand_check`, `thieves_tools`                                                                             | Cunning Action, Fast Hands, Patient Defense, Step of the Wind                                                                                                                                                    |
+| `turn`                  | `creature_types`, `range_ft`, `save`, `duration`                                                                                       | Creatures of these types (monster `type` values) must save or be turned                                                                                                                                                   | Turn Undead, Turn the Unholy                                                                                                                                                                                     |
+| `destroy`               | `creature_types`, `class_specific`                                                                                                     | A creature that fails the save against turning is destroyed if its challenge rating is at most the `class_specific` number                                                                                                | Destroy Undead                                                                                                                                                                                                   |
+| `push`                  | `distance_ft`, `save?`, `spell?`                                                                                                       | The target is pushed up to `distance_ft` feet away                                                                                                                                                                        | Open Hand Technique, Repelling Blast                                                                                                                                                                             |
+| `temp_hp`               | `ability_modifier?`, `add_class_level?`, `minimum?`                                                                                    | Temporary hit points                                                                                                                                                                                                      | Dark One's Blessing                                                                                                                                                                                              |
+| `immune_to`             | `conditions`                                                                                                                           | Immunity to conditions, or to `disease`, as in condition `effects.immune_to`                                                                                                                                              | Divine Health                                                                                                                                                                                                    |
+| `spell`                 | `spell`, `slot` (`none`, `spell_slot`), `at_level?`, `self_only?`, `ritual_only?`, `no_material?`                                      | The owner can cast the spell, without a slot (`none`, at will) or by expending one                                                                                                                                        | Eldritch invocations                                                                                                                                                                                             |
+| `spell_change`          | `change`, `spell?`, `range_ft?`                                                                                                        | A change to one casting: `double_range`, `touch_range_30_ft`, `range` (to `range_ft`), `double_duration`, `bonus_action_casting_time`, `no_verbal_or_somatic`, `second_target`, `reroll_damage_dice`, `save_disadvantage` | Metamagic options, Eldritch Spear                                                                                                                                                                                |
+| `protect_from_spell`    | `ability_modifier?`, `minimum?`, `base?`, `add_spell_level?`, `no_half_damage?`, `school?`                                             | Chosen creatures automatically succeed on their saves against the spell                                                                                                                                                   | Careful Spell, Sculpt Spells                                                                                                                                                                                     |
+| `recharge`              | `features`, `recharge`                                                                                                                 | These features recharge as `recharge` says instead                                                                                                                                                                        | Font of Inspiration                                                                                                                                                                                              |
+| `recover_spell_slots`   | `class_specific?` or `class_level_multiplier?` with `round?`, `max_slot_level`                                                         | Spell slots of a combined level up to that number are recovered                                                                                                                                                           | Arcane Recovery, Natural Recovery                                                                                                                                                                                |
+| `spell_slot_conversion` | `direction` (`points_to_slot`, `slot_to_points`), `class_specific?`                                                                    | Sorcery points become a spell slot, or a slot becomes points                                                                                                                                                              | Flexible Casting                                                                                                                                                                                                 |
+| `wild_shape`            | `class_specific`                                                                                                                       | The owner takes a beast's shape within the limits of these keys                                                                                                                                                           | Wild Shape                                                                                                                                                                                                       |
+
+Counts: `bonus` 18, `extra_attack` 11, `spell_change` 9, `spell` 9, `condition` 8, `actions` 4, `armor_class` 3,
+`die` 3, `reduce_damage` 3, `speed` 2, `turn` 2, `wild_shape` 2, `recover_spell_slots` 2, `reroll_damage` 2,
+`rolls_against_others` 2, `push` 2, `spell_slot_conversion` 2, `protect_from_spell` 2, and one each of `roll`,
+`recharge`, `destroy`, `critical_range`, `attack_ability`, `damage_die`, `immune_to`, `hit_point_maximum` and
+`temp_hp`. 86 features have `modifiers`.
+
+**`bonus`.** `to` is `attack_roll`, `damage_roll`, `saving_throw`, `armor_class`, `ability_check` or `healing` (the
+hit points a healing spell restores). A bonus has exactly one amount:
+
+| Amount                    | Meaning                                                                  | Example                                               |
+| ------------------------- | ------------------------------------------------------------------------ | ----------------------------------------------------- |
+| `flat`                    | A number; with `add_spell_level`, plus the spell's level                 | Archery `2`; Disciple of Life `2` + the spell's level |
+| `dice`                    | Dice                                                                     | Colossus Slayer `1d8`                                 |
+| `dice_at_slot_level`      | Dice for each spell slot level spent, keyed `"1"` to `"5"`               | Divine Smite `2d8` to `5d8`                           |
+| `ability_modifier`        | The modifier of that ability                                             | Agonizing Blast `cha`                                 |
+| `attack_ability_modifier` | `true`: the modifier of the ability the attack uses                      | Two-Weapon Fighting                                   |
+| `class_specific`          | The number or dice of that Levels key                                    | Rage `rage_damage_bonus`, Sneak Attack `sneak_attack` |
+| `proficiency_multiplier`  | The proficiency bonus times this, rounded as `round` (`down`, `up`) says | Jack of All Trades `0.5`, `down`                      |
+
+`abilities` limits a bonus to attacks that use one of those abilities, `damage_type` gives the extra damage that type,
+`spell` limits it to one spell and `min_spell_level` to spells of that level or higher.
+
+**`save`.** `{ ability, dc }`: the ability of the saving throw, and `dc` is `spell` (the owner's spell save DC, as
+Channel Divinity says) or `ki` (the ki save DC).
+
+**`duration`.** `{ unit, length? }`: `unit` is `round`, `minute` or `end_of_next_turn` (until the end of the owner's
+next turn), and `length` is the number of units.
+
+**`roll`.** `roll` is `attack`, `ability_check`, `saving_throw` or `death_saving_throw`, and `mode` is `advantage`,
+`disadvantage` or `auto_fail`, as in condition `effects.rolls`.
+
+**`attack_kind`.** The words of condition effects (`melee_weapon`, `weapon`, `bound_weapon`: the one weapon the
+feature is tied to, such as the pact weapon) and `ranged_weapon`, `unarmed_strike`, `monk_weapon` (an unarmed strike, a
+shortsword, or a simple melee weapon without the two-handed or heavy property), `finesse_or_ranged_weapon`, `off_hand`
+(the second attack of two-weapon fighting) and `spell`.
+
+**`while`.** The words of condition effects (`source_in_line_of_sight`, `can_see_attacker`, `not_incapacitated`,
+`speed_above_0`, `not_wearing_armor`, `not_wearing_heavy_armor`) and `wearing_armor`, `not_wielding_shield`,
+`wielding_shield`, `not_blinded`, `not_deafened`, `can_see_effect` (the effect is one the owner can see),
+`one_handed_melee_weapon_only` (a melee weapon in one hand and no other weapon), `wielding_with_two_hands` (a melee
+weapon with the two-handed or versatile property, held in two hands), `not_proficient` (the roll does not already
+include the proficiency bonus), `target_below_hit_point_maximum`, `target_undead_or_fiend`, `sneak_attack_eligible`
+(advantage on the attack roll, or another enemy of the target within 5 feet of it that is not incapacitated and no
+disadvantage) and `in_dim_light_or_darkness`.
+
+The words shared with conditions are defined once, in `src/schemas/effects.ts`, which both schemas import; the
+condition schema is unchanged.
+
+## `heal`
+
+`{ dice?, bonus?, ability_modifier?, add_class_level?, class_level_multiplier?, from_uses? }`: the hit points are
+`dice` plus `bonus` plus the ability modifier plus the class level (`add_class_level`) plus the class level times
+`class_level_multiplier`. `from_uses: true` means as many as the owner spends from the feature's `uses`.
+
+| Feature                         | `heal`                                                                                                                              |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Second Wind                     | `{ dice: "1d10", add_class_level: true }`                                                                                           |
+| Song of Rest (4 records)        | `{ dice: "1d6" }` to `{ dice: "1d12" }`; the die is the record's, and agrees with `song_of_rest_die` of the Levels row at its level |
+| Lay on Hands                    | `{ from_uses: true }`                                                                                                               |
+| Channel Divinity: Preserve Life | `{ class_level_multiplier: 5 }`                                                                                                     |
+| Wholeness of Body               | `{ class_level_multiplier: 3 }`                                                                                                     |
+| Survivor                        | `{ bonus: 5, ability_modifier: "con" }`                                                                                             |
+
+Limits in the text stay in the text: Preserve Life divides its hit points among creatures within 30 feet and restores
+none above half a creature's hit point maximum; Song of Rest adds its die to hit dice spent at the end of a short
+rest; Survivor works only at no more than half the hit points and not at 0.
+
+## `granted_proficiencies`
+
+A list of references into `5e-SRD-Proficiencies.json`, or `{ choose, from: "skills" }` for a number of skill
+proficiencies of the owner's choice.
+
+| Feature                    | `granted_proficiencies`                |
+| -------------------------- | -------------------------------------- |
+| Bonus Proficiency (Life)   | `heavy-armor`                          |
+| Bonus Proficiencies (Lore) | `{ choose: 3, from: "skills" }`        |
+| Beguiling Influence        | `skill-deception`, `skill-persuasion`  |
+| Diamond Soul               | the six `saving-throw-*` proficiencies |
+| Slippery Mind              | `saving-throw-wis`                     |
+
+Languages are not proficiencies in this data, so Druidic, Thieves' Cant and the Draconic of Dragon Ancestor are not
+listed. The proficiency with the pact weapon (Pact of the Blade) has no proficiency record to point at.
+
+## `grants_asi`
+
+`true` on the 63 features named Ability Score Improvement: increase one ability score by 2, or two by 1, to at most 20. The levels at which a class gets one are the levels of these records.
+
+## What is not structured
+
+The 68 features of levels 1 to 5 without a structured field, by reason:
+
+| Reason                                                                                             | Features                                                                                                                                                                                                                               |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The choice of a subclass, whose own features carry the mechanics (13)                              | Primal Path, Bard College, Divine Domain and its 2nd-level improvement, Druid Circle, Martial Archetype, Monastic Tradition, Sacred Oath, Ranger Archetype, Roguish Archetype, Sorcerous Origin, Otherworldly Patron, Arcane Tradition |
+| Spellcasting, described by the class spellcasting and the Levels spell slots (8)                   | the seven Spellcasting features, Pact Magic                                                                                                                                                                                            |
+| Spells that are always prepared, which the subclass spell list names (13)                          | Domain Spells 1 to 3, Circle Spells 1 and 2, Oath Spells, the seven lands of the Circle of the Land                                                                                                                                    |
+| One more cantrip known (1)                                                                         | Bonus Cantrip                                                                                                                                                                                                                          |
+| The choice of an option, whose own record carries the mechanics (8)                                | Fighting Style (fighter, paladin, ranger), Hunter's Prey, Metamagic, Eldritch Invocations, Pact Boon, Circle of the Land                                                                                                               |
+| A dragon ancestor: its damage type is used by features of 6th level and above, and a language (11) | Dragon Ancestor and its ten dragons                                                                                                                                                                                                    |
+| Expertise, whose choice is in `expertise_options` (2)                                              | Bard and rogue Expertise                                                                                                                                                                                                               |
+| A language (2)                                                                                     | Druidic, Thieves' Cant                                                                                                                                                                                                                 |
+| A benefit outside combat with no structured counterpart (4)                                        | Favored Enemy, Natural Explorer, Second-Story Work, Evocation Savant                                                                                                                                                                   |
+| Invocations and boons with no structured counterpart (6)                                           | Book of Ancient Secrets, Devil's Sight, Eyes of the Rune Keeper, Voice of the Chain Master, Pact of the Chain (a familiar and its attack), Pact of the Tome (three cantrips of choice)                                                 |
+
+Parts of structured features that stay in the text:
+
+- How long a use lasts and how it ends, where no condition carries it: Rage's end when the turn passes without an
+  attack or damage, Wild Shape's hours and the rules of the beast form, the turned creature's behaviour.
+- Detection and senses: Divine Sense, Primeval Awareness, Gaze of Two Minds (these have an `engine` with their cost
+  and uses only).
+- Movement other than speed: Step of the Wind's doubled jump, Unarmored Movement's walking on walls and water at 9th
+  level.
+- Lay on Hands curing disease and poison, and its 5 hit points per cure.
+- Action Surge's additional action, Pact of the Blade's weapon, Deflect Missiles' catch and throw, that a Bardic
+  Inspiration die goes to a creature other than the owner, and when a reaction is triggered (which creature, which
+  attack).
+- The extra 1d8 of Divine Smite against an undead or a fiend is a second `bonus` with `while:
+["target_undead_or_fiend"]`; the text's limit of 5d8 applies to the slot dice only.
+
+## Judgement calls
+
+- Rage applies the `enraged` condition, which already holds its advantage, resistance and spell restrictions; the
+  feature adds only the damage bonus, which the condition leaves out because it grows with the level.
+- Reckless Attack, Frenzy and Sacred Weapon apply the conditions of the same name, for the same reason.
+- Sneak Attack is `free` (the text says the owner can deal it) and Colossus Slayer `passive` (the text says the
+  creature takes it); both are limited to once a turn with `recharge: "turn"` and one use.
+- Patient Defense and Step of the Wind take actions (`dodge`, `disengage`, `dash`) rather than conditions, as the SRD
+  names the actions; the `dodging` and `disengaged` conditions are what those actions leave.
+- The paladin's Channel Divinity has one use (`count: 1`): its class table has no column for it.
+- Natural Recovery's combined level is half the druid level rounded up, which the Levels rows do not list, so it is
+  `class_level_multiplier: 0.5` with `round: "up"`; Arcane Recovery reads `arcane_recovery_levels`.
+- The eldritch invocations that cast a spell at will take the spell's casting time, an action for all of them.

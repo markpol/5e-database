@@ -19,7 +19,7 @@ removed.
 | Equipment | `5e-SRD-Equipment.json` | Added `material`, `stackable`, `is_consumable`, `effect` (damage-on-use) to select items; removed 40 non-combat items (mounts, vehicles, barding, tack/harness, stabling/feed) |
 | Equipment categories | `5e-SRD-Equipment-Categories.json` | Removed 6 non-combat categories (`gaming-sets`, `land-vehicles`, `mounts-and-other-animals`, `mounts-and-vehicles`, `tack-harness-and-drawn-vehicles`, `waterborne-vehicles`) and their members |
 | Proficiencies | `5e-SRD-Proficiencies.json` | Removed proficiency entries tied to the removed equipment (e.g. `nets`, `land-vehicles`, `water-vehicles`) |
-| Features | `5e-SRD-Features.json` | Bard/Rogue Expertise reworked from a two-level nested choice (`choose 1` of a `choose 2` sub-choice) to a flat `choose 2`; trimmed some prose (e.g. Martial Arts' "nunchaku/kama" flavor text, Frenzy wording) |
+| Features | `5e-SRD-Features.json`, `derive-feature-engine.ts` (new script), `feature-engine-annotations.json` (new file) | Bard/Rogue Expertise reworked from a two-level nested choice (`choose 1` of a `choose 2` sub-choice) to a flat `choose 2`; trimmed some prose (e.g. Martial Arts' "nunchaku/kama" flavor text, Frenzy wording); added `feature_specific.engine` (`action_cost`, `recharge`, `uses`, `modifiers`) to 99 features of levels 1 to 5, `heal` to 9, `granted_proficiencies` to 5 and `grants_asi` to the 63 Ability Score Improvements (see [feature-mechanics.md](feature-mechanics.md)) |
 | Magic items | `5e-SRD-Magic-Items.json` | Added a structured `effect` object (ability-score modifiers, damage-type resistance, healing, trait grants, duration) and an `enchantment` object (armor/weapon bonus, extra damage, to-hit bonus) to many items, so item bonuses are available as data and not only as prose; removed a handful of unusable/non-combat items |
 | Package/tooling | `package.json` | `engines.node` widened from `"22.x"` to `"22.x \|\| 24.x"` |
 
@@ -314,6 +314,17 @@ Bard's and Rogue's Expertise `feature_specific.expertise_options` was restructur
 `choose 2` skill-choice block to a single flat `choose 2`. A single flat choice is simpler than a choice-of-a-choice
 that always resolves to the same two skills either way. A few description strings had minor trims (e.g. the
 "nunchaku/kama" flavor sentence dropped from Martial Arts, a small wording tweak to Frenzy) with no mechanical effect.
+
+## Features: structured mechanics
+
+`feature_specific` gained four optional, English-only fields that restate the feature text as data: `engine` (what
+using the feature costs, how it recharges, how many uses it has and what it changes) on 99 features of class levels
+1 to 5, `heal` on 9 healing features, `granted_proficiencies` on 5 and `grants_asi` on every Ability Score
+Improvement. Numbers that grow with the level are read from the `class_specific` keys of the class rows in
+`5e-SRD-Levels.json`. The modifiers reuse the words of the condition `effects` (now defined once in
+`src/schemas/effects.ts`) and link to conditions such as `enraged` and `sacred-weapon`.
+[feature-mechanics.md](feature-mechanics.md) describes every field, its allowed values and units, and the features
+left without a structure and why.
 
 ## Magic items: `effect` and `enchantment`
 

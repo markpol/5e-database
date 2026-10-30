@@ -1,0 +1,1647 @@
+[
+  {
+    "feature": "rage",
+    "engine": {
+      "action_cost": "bonus_action",
+      "recharge": "long_rest",
+      "uses": {
+        "class_specific": "rage_count"
+      },
+      "modifiers": [
+        {
+          "type": "condition",
+          "condition": "enraged",
+          "target": "self",
+          "duration": {
+            "unit": "minute",
+            "length": 1
+          }
+        },
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "class_specific": "rage_damage_bonus",
+          "abilities": ["str"],
+          "attack_kind": "melee_weapon",
+          "while": ["not_wearing_heavy_armor"],
+          "while_condition": "enraged"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "barbarian-unarmored-defense",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "armor_class",
+          "base": 10,
+          "ability_modifiers": ["dex", "con"],
+          "while": ["not_wearing_armor"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "reckless-attack",
+    "engine": {
+      "action_cost": "free",
+      "modifiers": [
+        {
+          "type": "condition",
+          "condition": "reckless",
+          "target": "self"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "danger-sense",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "roll",
+          "roll": "saving_throw",
+          "mode": "advantage",
+          "abilities": ["dex"],
+          "while": ["can_see_effect", "not_blinded", "not_deafened", "not_incapacitated"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "frenzy",
+    "engine": {
+      "action_cost": "free",
+      "modifiers": [
+        {
+          "type": "condition",
+          "condition": "frenzied",
+          "target": "self",
+          "while_condition": "enraged"
+        },
+        {
+          "type": "extra_attack",
+          "count": 1,
+          "attack_kind": "melee_weapon",
+          "action_cost": "bonus_action",
+          "while_condition": "frenzied"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "barbarian-extra-attack",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "extra_attack",
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "feature": "fast-movement",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "speed",
+          "op": "add",
+          "value": 10,
+          "while": ["not_wearing_heavy_armor"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "bardic-inspiration-d6",
+    "engine": {
+      "action_cost": "bonus_action",
+      "recharge": "long_rest",
+      "uses": {
+        "ability_modifier": "cha",
+        "minimum": 1
+      },
+      "modifiers": [
+        {
+          "type": "die",
+          "class_specific": "bardic_inspiration_die",
+          "effect": "add",
+          "rolls": ["ability_check", "attack", "saving_throw"],
+          "range_ft": 60
+        }
+      ]
+    }
+  },
+  {
+    "feature": "jack-of-all-trades",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "ability_check",
+          "proficiency_multiplier": 0.5,
+          "round": "down",
+          "while": ["not_proficient"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "song-of-rest-d6",
+    "engine": {
+      "action_cost": "rest"
+    },
+    "heal": {
+      "dice": "1d6"
+    }
+  },
+  {
+    "feature": "bonus-proficiencies",
+    "granted_proficiencies": [
+      {
+        "choose": 3,
+        "from": "skills"
+      }
+    ]
+  },
+  {
+    "feature": "cutting-words",
+    "engine": {
+      "action_cost": "reaction",
+      "uses": {
+        "pool": "bardic-inspiration-d6",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "die",
+          "class_specific": "bardic_inspiration_die",
+          "effect": "subtract",
+          "rolls": ["attack", "ability_check", "damage"],
+          "range_ft": 60
+        }
+      ]
+    }
+  },
+  {
+    "feature": "bardic-inspiration-d8",
+    "engine": {
+      "action_cost": "bonus_action",
+      "recharge": "long_rest",
+      "uses": {
+        "ability_modifier": "cha",
+        "minimum": 1
+      },
+      "modifiers": [
+        {
+          "type": "die",
+          "class_specific": "bardic_inspiration_die",
+          "effect": "add",
+          "rolls": ["ability_check", "attack", "saving_throw"],
+          "range_ft": 60
+        }
+      ]
+    }
+  },
+  {
+    "feature": "font-of-inspiration",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "recharge",
+          "features": [
+            "bardic-inspiration-d6",
+            "bardic-inspiration-d8",
+            "bardic-inspiration-d10",
+            "bardic-inspiration-d12"
+          ],
+          "recharge": "short_rest"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "song-of-rest-d8",
+    "heal": {
+      "dice": "1d8"
+    }
+  },
+  {
+    "feature": "song-of-rest-d10",
+    "heal": {
+      "dice": "1d10"
+    }
+  },
+  {
+    "feature": "song-of-rest-d12",
+    "heal": {
+      "dice": "1d12"
+    }
+  },
+  {
+    "feature": "bonus-proficiency",
+    "granted_proficiencies": [
+      {
+        "index": "heavy-armor",
+        "name": "Heavy Armor",
+        "url": "/api/2014/proficiencies/heavy-armor"
+      }
+    ]
+  },
+  {
+    "feature": "disciple-of-life",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "healing",
+          "flat": 2,
+          "add_spell_level": true,
+          "min_spell_level": 1
+        }
+      ]
+    }
+  },
+  {
+    "feature": "channel-divinity-1-rest",
+    "engine": {
+      "action_cost": "passive",
+      "recharge": "short_rest",
+      "uses": {
+        "class_specific": "channel_divinity_charges"
+      }
+    }
+  },
+  {
+    "feature": "channel-divinity-turn-undead",
+    "engine": {
+      "action_cost": "action",
+      "uses": {
+        "pool": "channel-divinity-1-rest",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "turn",
+          "creature_types": ["undead"],
+          "range_ft": 30,
+          "save": {
+            "ability": "wis",
+            "dc": "spell"
+          },
+          "duration": {
+            "unit": "minute",
+            "length": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "feature": "channel-divinity-preserve-life",
+    "engine": {
+      "action_cost": "action",
+      "uses": {
+        "pool": "channel-divinity-1-rest",
+        "cost": 1
+      }
+    },
+    "heal": {
+      "class_level_multiplier": 5
+    }
+  },
+  {
+    "feature": "destroy-undead-cr-1-2-or-below",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "destroy",
+          "creature_types": ["undead"],
+          "class_specific": "destroy_undead_cr"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "wild-shape-cr-1-4-or-below-no-flying-or-swim-speed",
+    "engine": {
+      "action_cost": "action",
+      "recharge": "short_rest",
+      "uses": {
+        "count": 2
+      },
+      "modifiers": [
+        {
+          "type": "wild_shape",
+          "class_specific": ["wild_shape_max_cr", "wild_shape_fly", "wild_shape_swim"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "natural-recovery",
+    "engine": {
+      "action_cost": "rest",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "recover_spell_slots",
+          "class_level_multiplier": 0.5,
+          "round": "up",
+          "max_slot_level": 5
+        }
+      ]
+    }
+  },
+  {
+    "feature": "wild-shape-cr-1-2-or-below-no-flying-speed",
+    "engine": {
+      "action_cost": "action",
+      "recharge": "short_rest",
+      "uses": {
+        "count": 2
+      },
+      "modifiers": [
+        {
+          "type": "wild_shape",
+          "class_specific": ["wild_shape_max_cr", "wild_shape_fly", "wild_shape_swim"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "fighter-fighting-style-archery",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "attack_roll",
+          "flat": 2,
+          "attack_kind": "ranged_weapon"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "fighter-fighting-style-defense",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "armor_class",
+          "flat": 1,
+          "while": ["wearing_armor"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "fighter-fighting-style-dueling",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "flat": 2,
+          "attack_kind": "melee_weapon",
+          "while": ["one_handed_melee_weapon_only"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "fighter-fighting-style-great-weapon-fighting",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "reroll_damage",
+          "faces": [1, 2],
+          "attack_kind": "melee_weapon",
+          "while": ["wielding_with_two_hands"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "fighter-fighting-style-protection",
+    "engine": {
+      "action_cost": "reaction",
+      "modifiers": [
+        {
+          "type": "rolls_against_others",
+          "roll": "attack",
+          "mode": "disadvantage",
+          "within_ft": 5,
+          "while": ["wielding_shield"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "fighter-fighting-style-two-weapon-fighting",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "attack_ability_modifier": true,
+          "attack_kind": "off_hand"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "second-wind",
+    "engine": {
+      "action_cost": "bonus_action",
+      "recharge": "short_rest",
+      "uses": {
+        "count": 1
+      }
+    },
+    "heal": {
+      "dice": "1d10",
+      "add_class_level": true
+    }
+  },
+  {
+    "feature": "action-surge-1-use",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "short_rest",
+      "uses": {
+        "class_specific": "action_surges"
+      }
+    }
+  },
+  {
+    "feature": "improved-critical",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "critical_range",
+          "min_roll": 19,
+          "attack_kind": "weapon"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "extra-attack-1",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "extra_attack",
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "feature": "survivor",
+    "heal": {
+      "bonus": 5,
+      "ability_modifier": "con"
+    }
+  },
+  {
+    "feature": "monk-unarmored-defense",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "armor_class",
+          "base": 10,
+          "ability_modifiers": ["dex", "wis"],
+          "while": ["not_wearing_armor", "not_wielding_shield"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "martial-arts",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "attack_ability",
+          "ability": "dex",
+          "instead_of": "str",
+          "attack_kind": "monk_weapon",
+          "while": ["not_wearing_armor", "not_wielding_shield"]
+        },
+        {
+          "type": "damage_die",
+          "class_specific": "martial_arts",
+          "attack_kind": "monk_weapon",
+          "while": ["not_wearing_armor", "not_wielding_shield"]
+        },
+        {
+          "type": "extra_attack",
+          "count": 1,
+          "attack_kind": "unarmed_strike",
+          "action_cost": "bonus_action",
+          "requires_attack_action": true,
+          "while": ["not_wearing_armor", "not_wielding_shield"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "ki",
+    "engine": {
+      "action_cost": "passive",
+      "recharge": "short_rest",
+      "uses": {
+        "class_specific": "ki_points",
+        "unit": "point"
+      }
+    }
+  },
+  {
+    "feature": "flurry-of-blows",
+    "engine": {
+      "action_cost": "bonus_action",
+      "uses": {
+        "pool": "ki",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "extra_attack",
+          "count": 2,
+          "attack_kind": "unarmed_strike",
+          "action_cost": "bonus_action",
+          "requires_attack_action": true
+        }
+      ]
+    }
+  },
+  {
+    "feature": "patient-defense",
+    "engine": {
+      "action_cost": "bonus_action",
+      "uses": {
+        "pool": "ki",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "actions",
+          "actions": ["dodge"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "step-of-the-wind",
+    "engine": {
+      "action_cost": "bonus_action",
+      "uses": {
+        "pool": "ki",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "actions",
+          "actions": ["disengage", "dash"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "unarmored-movement-1",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "speed",
+          "op": "add",
+          "class_specific": "unarmored_movement",
+          "while": ["not_wearing_armor", "not_wielding_shield"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "deflect-missiles",
+    "engine": {
+      "action_cost": "reaction",
+      "modifiers": [
+        {
+          "type": "reduce_damage",
+          "dice": "1d10",
+          "ability_modifier": "dex",
+          "add_class_level": true,
+          "attack_kind": "ranged_weapon"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "open-hand-technique",
+    "engine": {
+      "action_cost": "free",
+      "modifiers": [
+        {
+          "type": "condition",
+          "condition": "prone",
+          "target": "target",
+          "save": {
+            "ability": "dex",
+            "dc": "ki"
+          },
+          "option": "prone"
+        },
+        {
+          "type": "push",
+          "distance_ft": 15,
+          "save": {
+            "ability": "str",
+            "dc": "ki"
+          },
+          "option": "push"
+        },
+        {
+          "type": "condition",
+          "condition": "no-reactions",
+          "target": "target",
+          "duration": {
+            "unit": "end_of_next_turn"
+          },
+          "option": "no_reactions"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "slow-fall",
+    "engine": {
+      "action_cost": "reaction",
+      "modifiers": [
+        {
+          "type": "reduce_damage",
+          "class_level_multiplier": 5,
+          "source": "falling"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "monk-extra-attack",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "extra_attack",
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "feature": "stunning-strike",
+    "engine": {
+      "action_cost": "free",
+      "uses": {
+        "pool": "ki",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "condition",
+          "condition": "stunned",
+          "target": "target",
+          "save": {
+            "ability": "con",
+            "dc": "ki"
+          },
+          "duration": {
+            "unit": "end_of_next_turn"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "feature": "wholeness-of-body",
+    "heal": {
+      "class_level_multiplier": 3
+    }
+  },
+  {
+    "feature": "diamond-soul",
+    "granted_proficiencies": [
+      {
+        "index": "saving-throw-str",
+        "name": "Saving Throw: STR",
+        "url": "/api/2014/proficiencies/saving-throw-str"
+      },
+      {
+        "index": "saving-throw-dex",
+        "name": "Saving Throw: DEX",
+        "url": "/api/2014/proficiencies/saving-throw-dex"
+      },
+      {
+        "index": "saving-throw-con",
+        "name": "Saving Throw: CON",
+        "url": "/api/2014/proficiencies/saving-throw-con"
+      },
+      {
+        "index": "saving-throw-int",
+        "name": "Saving Throw: INT",
+        "url": "/api/2014/proficiencies/saving-throw-int"
+      },
+      {
+        "index": "saving-throw-wis",
+        "name": "Saving Throw: WIS",
+        "url": "/api/2014/proficiencies/saving-throw-wis"
+      },
+      {
+        "index": "saving-throw-cha",
+        "name": "Saving Throw: CHA",
+        "url": "/api/2014/proficiencies/saving-throw-cha"
+      }
+    ]
+  },
+  {
+    "feature": "divine-sense",
+    "engine": {
+      "action_cost": "action",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1,
+        "ability_modifier": "cha"
+      }
+    }
+  },
+  {
+    "feature": "lay-on-hands",
+    "engine": {
+      "action_cost": "action",
+      "recharge": "long_rest",
+      "uses": {
+        "per_class_level": 5,
+        "unit": "hit_point"
+      }
+    },
+    "heal": {
+      "from_uses": true
+    }
+  },
+  {
+    "feature": "fighting-style-defense",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "armor_class",
+          "flat": 1,
+          "while": ["wearing_armor"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "fighting-style-dueling",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "flat": 2,
+          "attack_kind": "melee_weapon",
+          "while": ["one_handed_melee_weapon_only"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "fighting-style-great-weapon-fighting",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "reroll_damage",
+          "faces": [1, 2],
+          "attack_kind": "melee_weapon",
+          "while": ["wielding_with_two_hands"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "fighting-style-protection",
+    "engine": {
+      "action_cost": "reaction",
+      "modifiers": [
+        {
+          "type": "rolls_against_others",
+          "roll": "attack",
+          "mode": "disadvantage",
+          "within_ft": 5,
+          "while": ["wielding_shield"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "divine-smite",
+    "engine": {
+      "action_cost": "free",
+      "uses": {
+        "spell_slot": true
+      },
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "dice_at_slot_level": {
+            "1": "2d8",
+            "2": "3d8",
+            "3": "4d8",
+            "4": "5d8",
+            "5": "5d8"
+          },
+          "damage_type": "radiant",
+          "attack_kind": "melee_weapon"
+        },
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "dice": "1d8",
+          "damage_type": "radiant",
+          "attack_kind": "melee_weapon",
+          "while": ["target_undead_or_fiend"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "divine-health",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "immune_to",
+          "conditions": ["disease"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "channel-divinity",
+    "engine": {
+      "action_cost": "passive",
+      "recharge": "short_rest",
+      "uses": {
+        "count": 1
+      }
+    }
+  },
+  {
+    "feature": "channel-divinity-sacred-weapon",
+    "engine": {
+      "action_cost": "action",
+      "uses": {
+        "pool": "channel-divinity",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "condition",
+          "condition": "sacred-weapon",
+          "target": "self",
+          "duration": {
+            "unit": "minute",
+            "length": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "feature": "channel-divinity-turn-the-unholy",
+    "engine": {
+      "action_cost": "action",
+      "uses": {
+        "pool": "channel-divinity",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "turn",
+          "creature_types": ["fiend", "undead"],
+          "range_ft": 30,
+          "save": {
+            "ability": "wis",
+            "dc": "spell"
+          },
+          "duration": {
+            "unit": "minute",
+            "length": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "feature": "paladin-extra-attack",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "extra_attack",
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "feature": "ranger-fighting-style-archery",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "attack_roll",
+          "flat": 2,
+          "attack_kind": "ranged_weapon"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "ranger-fighting-style-defense",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "armor_class",
+          "flat": 1,
+          "while": ["wearing_armor"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "ranger-fighting-style-dueling",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "flat": 2,
+          "attack_kind": "melee_weapon",
+          "while": ["one_handed_melee_weapon_only"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "ranger-fighting-style-two-weapon-fighting",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "attack_ability_modifier": true,
+          "attack_kind": "off_hand"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "hunters-prey-colossus-slayer",
+    "engine": {
+      "action_cost": "passive",
+      "recharge": "turn",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "dice": "1d8",
+          "attack_kind": "weapon",
+          "while": ["target_below_hit_point_maximum"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "hunters-prey-giant-killer",
+    "engine": {
+      "action_cost": "reaction",
+      "modifiers": [
+        {
+          "type": "extra_attack",
+          "count": 1,
+          "attack_kind": "weapon",
+          "action_cost": "reaction"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "hunters-prey-horde-breaker",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "turn",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "extra_attack",
+          "count": 1,
+          "attack_kind": "weapon"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "primeval-awareness",
+    "engine": {
+      "action_cost": "action",
+      "uses": {
+        "spell_slot": true
+      }
+    }
+  },
+  {
+    "feature": "ranger-extra-attack",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "extra_attack",
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "feature": "sneak-attack",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "turn",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "class_specific": "sneak_attack",
+          "attack_kind": "finesse_or_ranged_weapon",
+          "while": ["sneak_attack_eligible"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "cunning-action",
+    "engine": {
+      "action_cost": "bonus_action",
+      "modifiers": [
+        {
+          "type": "actions",
+          "actions": ["dash", "disengage", "hide"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "fast-hands",
+    "engine": {
+      "action_cost": "bonus_action",
+      "modifiers": [
+        {
+          "type": "actions",
+          "actions": ["sleight_of_hand_check", "thieves_tools", "use_an_object"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "uncanny-dodge",
+    "engine": {
+      "action_cost": "reaction",
+      "modifiers": [
+        {
+          "type": "reduce_damage",
+          "op": "halve"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "slippery-mind",
+    "granted_proficiencies": [
+      {
+        "index": "saving-throw-wis",
+        "name": "Saving Throw: WIS",
+        "url": "/api/2014/proficiencies/saving-throw-wis"
+      }
+    ]
+  },
+  {
+    "feature": "draconic-resilience",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "hit_point_maximum",
+          "per_class_level": 1
+        },
+        {
+          "type": "armor_class",
+          "base": 13,
+          "ability_modifiers": ["dex"],
+          "while": ["not_wearing_armor"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "font-of-magic",
+    "engine": {
+      "action_cost": "passive",
+      "recharge": "long_rest",
+      "uses": {
+        "class_specific": "sorcery_points",
+        "unit": "point"
+      }
+    }
+  },
+  {
+    "feature": "flexible-casting-creating-spell-slots",
+    "engine": {
+      "action_cost": "bonus_action",
+      "uses": {
+        "pool": "font-of-magic",
+        "cost_class_specific": "creating_spell_slots"
+      },
+      "modifiers": [
+        {
+          "type": "spell_slot_conversion",
+          "direction": "points_to_slot",
+          "class_specific": "creating_spell_slots"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "flexible-casting-converting-spell-slot",
+    "engine": {
+      "action_cost": "bonus_action",
+      "uses": {
+        "spell_slot": true
+      },
+      "modifiers": [
+        {
+          "type": "spell_slot_conversion",
+          "direction": "slot_to_points"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "metamagic-careful-spell",
+    "engine": {
+      "action_cost": "free",
+      "uses": {
+        "pool": "font-of-magic",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "protect_from_spell",
+          "ability_modifier": "cha",
+          "minimum": 1
+        }
+      ]
+    }
+  },
+  {
+    "feature": "metamagic-distant-spell",
+    "engine": {
+      "action_cost": "free",
+      "uses": {
+        "pool": "font-of-magic",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "spell_change",
+          "change": "double_range",
+          "option": "range"
+        },
+        {
+          "type": "spell_change",
+          "change": "touch_range_30_ft",
+          "option": "touch"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "metamagic-empowered-spell",
+    "engine": {
+      "action_cost": "free",
+      "uses": {
+        "pool": "font-of-magic",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "spell_change",
+          "change": "reroll_damage_dice"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "metamagic-extended-spell",
+    "engine": {
+      "action_cost": "free",
+      "uses": {
+        "pool": "font-of-magic",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "spell_change",
+          "change": "double_duration"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "metamagic-heightened-spell",
+    "engine": {
+      "action_cost": "free",
+      "uses": {
+        "pool": "font-of-magic",
+        "cost": 3
+      },
+      "modifiers": [
+        {
+          "type": "spell_change",
+          "change": "save_disadvantage"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "metamagic-quickened-spell",
+    "engine": {
+      "action_cost": "free",
+      "uses": {
+        "pool": "font-of-magic",
+        "cost": 2
+      },
+      "modifiers": [
+        {
+          "type": "spell_change",
+          "change": "bonus_action_casting_time"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "metamagic-subtle-spell",
+    "engine": {
+      "action_cost": "free",
+      "uses": {
+        "pool": "font-of-magic",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "spell_change",
+          "change": "no_verbal_or_somatic"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "metamagic-twinned-spell",
+    "engine": {
+      "action_cost": "free",
+      "uses": {
+        "pool": "font-of-magic",
+        "cost": "spell_level"
+      },
+      "modifiers": [
+        {
+          "type": "spell_change",
+          "change": "second_target"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "dark-ones-blessing",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "temp_hp",
+          "ability_modifier": "cha",
+          "add_class_level": true,
+          "minimum": 1
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-agonizing-blast",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "ability_modifier": "cha",
+          "spell": "eldritch-blast"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-armor-of-shadows",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "mage-armor",
+          "slot": "none",
+          "self_only": true,
+          "no_material": true
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-beast-speech",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "speak-with-animals",
+          "slot": "none"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-beguiling-influence",
+    "granted_proficiencies": [
+      {
+        "index": "skill-deception",
+        "name": "Skill: Deception",
+        "url": "/api/2014/proficiencies/skill-deception"
+      },
+      {
+        "index": "skill-persuasion",
+        "name": "Skill: Persuasion",
+        "url": "/api/2014/proficiencies/skill-persuasion"
+      }
+    ]
+  },
+  {
+    "feature": "eldritch-invocation-eldritch-sight",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "detect-magic",
+          "slot": "none"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-eldritch-spear",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "spell_change",
+          "change": "range",
+          "spell": "eldritch-blast",
+          "range_ft": 300
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-fiendish-vigor",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "false-life",
+          "slot": "none",
+          "at_level": 1,
+          "self_only": true,
+          "no_material": true
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-gaze-of-two-minds",
+    "engine": {
+      "action_cost": "action"
+    }
+  },
+  {
+    "feature": "eldritch-invocation-mask-of-many-faces",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "disguise-self",
+          "slot": "none"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-misty-visions",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "silent-image",
+          "slot": "none",
+          "no_material": true
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-repelling-blast",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "push",
+          "distance_ft": 10,
+          "spell": "eldritch-blast"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-thief-of-five-fates",
+    "engine": {
+      "action_cost": "action",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "bane",
+          "slot": "spell_slot"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-mire-the-mind",
+    "engine": {
+      "action_cost": "action",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "slow",
+          "slot": "spell_slot"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-one-with-shadows",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "condition",
+          "condition": "invisible",
+          "target": "self",
+          "while": ["in_dim_light_or_darkness"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-sign-of-ill-omen",
+    "engine": {
+      "action_cost": "action",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "bestow-curse",
+          "slot": "spell_slot"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-thirsting-blade",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "extra_attack",
+          "count": 1,
+          "attack_kind": "bound_weapon"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "pact-of-the-blade",
+    "engine": {
+      "action_cost": "action"
+    }
+  },
+  {
+    "feature": "arcane-recovery",
+    "engine": {
+      "action_cost": "rest",
+      "recharge": "day",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "recover_spell_slots",
+          "class_specific": "arcane_recovery_levels",
+          "max_slot_level": 5
+        }
+      ]
+    }
+  },
+  {
+    "feature": "sculpt-spells",
+    "engine": {
+      "action_cost": "free",
+      "modifiers": [
+        {
+          "type": "protect_from_spell",
+          "base": 1,
+          "add_spell_level": true,
+          "no_half_damage": true,
+          "school": "evocation"
+        }
+      ]
+    }
+  }
+]
