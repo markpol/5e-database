@@ -87,6 +87,15 @@ export type NormalizedMonster = {
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
+                on_failed_repeat_save?: {
+                    condition_type: string;
+                    duration: {
+                        length: number;
+                        unit: string;
+                        interrupt?: string | undefined;
+                        interrupt_modifier?: string | undefined;
+                    };
+                } | undefined;
             } | undefined;
         } | {
             grapple: {
@@ -115,6 +124,15 @@ export type NormalizedMonster = {
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
+                on_failed_repeat_save?: {
+                    condition_type: string;
+                    duration: {
+                        length: number;
+                        unit: string;
+                        interrupt?: string | undefined;
+                        interrupt_modifier?: string | undefined;
+                    };
+                } | undefined;
             };
             dc?: {
                 dc_type: string;
@@ -141,6 +159,15 @@ export type NormalizedMonster = {
                 interrupt?: string | undefined;
                 interrupt_modifier?: string | undefined;
             };
+            on_failed_repeat_save?: {
+                condition_type: string;
+                duration: {
+                    length: number;
+                    unit: string;
+                    interrupt?: string | undefined;
+                    interrupt_modifier?: string | undefined;
+                };
+            } | undefined;
         } | undefined;
         usage?: {
             type: string;
@@ -191,6 +218,7 @@ export type NormalizedMonster = {
                 conditionExcludes?: boolean | undefined;
             };
         } | undefined;
+        pull_distance_ft?: number | undefined;
         attack_bonus?: number | undefined;
         weapon?: string | undefined;
         weapon_kind?: "spell" | "natural" | "manufactured" | undefined;
@@ -251,6 +279,15 @@ export type NormalizedMonster = {
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
+                on_failed_repeat_save?: {
+                    condition_type: string;
+                    duration: {
+                        length: number;
+                        unit: string;
+                        interrupt?: string | undefined;
+                        interrupt_modifier?: string | undefined;
+                    };
+                } | undefined;
             } | undefined;
             damage?: ({
                 damage_type: string;
@@ -280,6 +317,15 @@ export type NormalizedMonster = {
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
+                    on_failed_repeat_save?: {
+                        condition_type: string;
+                        duration: {
+                            length: number;
+                            unit: string;
+                            interrupt?: string | undefined;
+                            interrupt_modifier?: string | undefined;
+                        };
+                    } | undefined;
                 } | undefined;
             } | {
                 grapple: {
@@ -308,6 +354,15 @@ export type NormalizedMonster = {
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
+                    on_failed_repeat_save?: {
+                        condition_type: string;
+                        duration: {
+                            length: number;
+                            unit: string;
+                            interrupt?: string | undefined;
+                            interrupt_modifier?: string | undefined;
+                        };
+                    } | undefined;
                 };
                 dc?: {
                     dc_type: string;
@@ -362,6 +417,15 @@ export type NormalizedMonster = {
                                 interrupt?: string | undefined;
                                 interrupt_modifier?: string | undefined;
                             };
+                            on_failed_repeat_save?: {
+                                condition_type: string;
+                                duration: {
+                                    length: number;
+                                    unit: string;
+                                    interrupt?: string | undefined;
+                                    interrupt_modifier?: string | undefined;
+                                };
+                            } | undefined;
                         } | undefined;
                     } | {
                         grapple: {
@@ -390,6 +454,15 @@ export type NormalizedMonster = {
                                 interrupt?: string | undefined;
                                 interrupt_modifier?: string | undefined;
                             };
+                            on_failed_repeat_save?: {
+                                condition_type: string;
+                                duration: {
+                                    length: number;
+                                    unit: string;
+                                    interrupt?: string | undefined;
+                                    interrupt_modifier?: string | undefined;
+                                };
+                            } | undefined;
                         };
                         dc?: {
                             dc_type: string;
@@ -411,6 +484,15 @@ export type NormalizedMonster = {
                             interrupt?: string | undefined;
                             interrupt_modifier?: string | undefined;
                         };
+                        on_failed_repeat_save?: {
+                            condition_type: string;
+                            duration: {
+                                length: number;
+                                unit: string;
+                                interrupt?: string | undefined;
+                                interrupt_modifier?: string | undefined;
+                            };
+                        } | undefined;
                     } | undefined;
                 }[];
             };
@@ -445,6 +527,15 @@ export type NormalizedMonster = {
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
+                on_failed_repeat_save?: {
+                    condition_type: string;
+                    duration: {
+                        length: number;
+                        unit: string;
+                        interrupt?: string | undefined;
+                        interrupt_modifier?: string | undefined;
+                    };
+                } | undefined;
             } | undefined;
         } | {
             grapple: {
@@ -473,6 +564,15 @@ export type NormalizedMonster = {
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
+                on_failed_repeat_save?: {
+                    condition_type: string;
+                    duration: {
+                        length: number;
+                        unit: string;
+                        interrupt?: string | undefined;
+                        interrupt_modifier?: string | undefined;
+                    };
+                } | undefined;
             };
             dc?: {
                 dc_type: string;
@@ -531,6 +631,15 @@ export type NormalizedMonster = {
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
+                on_failed_repeat_save?: {
+                    condition_type: string;
+                    duration: {
+                        length: number;
+                        unit: string;
+                        interrupt?: string | undefined;
+                        interrupt_modifier?: string | undefined;
+                    };
+                } | undefined;
             } | undefined;
         } | {
             grapple: {
@@ -559,6 +668,15 @@ export type NormalizedMonster = {
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
+                on_failed_repeat_save?: {
+                    condition_type: string;
+                    duration: {
+                        length: number;
+                        unit: string;
+                        interrupt?: string | undefined;
+                        interrupt_modifier?: string | undefined;
+                    };
+                } | undefined;
             };
             dc?: {
                 dc_type: string;
@@ -585,6 +703,15 @@ export type NormalizedMonster = {
                 interrupt?: string | undefined;
                 interrupt_modifier?: string | undefined;
             };
+            on_failed_repeat_save?: {
+                condition_type: string;
+                duration: {
+                    length: number;
+                    unit: string;
+                    interrupt?: string | undefined;
+                    interrupt_modifier?: string | undefined;
+                };
+            } | undefined;
         } | undefined;
     }[] | undefined;
     reactions?: {
@@ -603,6 +730,15 @@ export type NormalizedMonster = {
                 interrupt?: string | undefined;
                 interrupt_modifier?: string | undefined;
             };
+            on_failed_repeat_save?: {
+                condition_type: string;
+                duration: {
+                    length: number;
+                    unit: string;
+                    interrupt?: string | undefined;
+                    interrupt_modifier?: string | undefined;
+                };
+            } | undefined;
         } | undefined;
     }[] | undefined;
     environments?: string | undefined;

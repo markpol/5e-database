@@ -318,6 +318,41 @@
                             "unit"
                           ],
                           "additionalProperties": false
+                        },
+                        "on_failed_repeat_save": {
+                          "type": "object",
+                          "properties": {
+                            "condition_type": {
+                              "type": "string"
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "length": {
+                                  "type": "number"
+                                },
+                                "unit": {
+                                  "type": "string"
+                                },
+                                "interrupt": {
+                                  "type": "string"
+                                },
+                                "interrupt_modifier": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "length",
+                                "unit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "condition_type",
+                            "duration"
+                          ],
+                          "additionalProperties": false
                         }
                       },
                       "required": [
@@ -467,6 +502,41 @@
                             "unit"
                           ],
                           "additionalProperties": false
+                        },
+                        "on_failed_repeat_save": {
+                          "type": "object",
+                          "properties": {
+                            "condition_type": {
+                              "type": "string"
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "length": {
+                                  "type": "number"
+                                },
+                                "unit": {
+                                  "type": "string"
+                                },
+                                "interrupt": {
+                                  "type": "string"
+                                },
+                                "interrupt_modifier": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "length",
+                                "unit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "condition_type",
+                            "duration"
+                          ],
+                          "additionalProperties": false
                         }
                       },
                       "required": [
@@ -566,6 +636,41 @@
                 "required": [
                   "length",
                   "unit"
+                ],
+                "additionalProperties": false
+              },
+              "on_failed_repeat_save": {
+                "type": "object",
+                "properties": {
+                  "condition_type": {
+                    "type": "string"
+                  },
+                  "duration": {
+                    "type": "object",
+                    "properties": {
+                      "length": {
+                        "type": "number"
+                      },
+                      "unit": {
+                        "type": "string"
+                      },
+                      "interrupt": {
+                        "type": "string"
+                      },
+                      "interrupt_modifier": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "length",
+                      "unit"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "condition_type",
+                  "duration"
                 ],
                 "additionalProperties": false
               }
@@ -792,6 +897,9 @@
               "target"
             ],
             "additionalProperties": false
+          },
+          "pull_distance_ft": {
+            "type": "number"
           },
           "attack_bonus": {
             "type": "number"
@@ -1054,6 +1162,41 @@
                         "unit"
                       ],
                       "additionalProperties": false
+                    },
+                    "on_failed_repeat_save": {
+                      "type": "object",
+                      "properties": {
+                        "condition_type": {
+                          "type": "string"
+                        },
+                        "duration": {
+                          "type": "object",
+                          "properties": {
+                            "length": {
+                              "type": "number"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "interrupt": {
+                              "type": "string"
+                            },
+                            "interrupt_modifier": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "length",
+                            "unit"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "condition_type",
+                        "duration"
+                      ],
+                      "additionalProperties": false
                     }
                   },
                   "required": [
@@ -1171,6 +1314,41 @@
                                 "required": [
                                   "length",
                                   "unit"
+                                ],
+                                "additionalProperties": false
+                              },
+                              "on_failed_repeat_save": {
+                                "type": "object",
+                                "properties": {
+                                  "condition_type": {
+                                    "type": "string"
+                                  },
+                                  "duration": {
+                                    "type": "object",
+                                    "properties": {
+                                      "length": {
+                                        "type": "number"
+                                      },
+                                      "unit": {
+                                        "type": "string"
+                                      },
+                                      "interrupt": {
+                                        "type": "string"
+                                      },
+                                      "interrupt_modifier": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "length",
+                                      "unit"
+                                    ],
+                                    "additionalProperties": false
+                                  }
+                                },
+                                "required": [
+                                  "condition_type",
+                                  "duration"
                                 ],
                                 "additionalProperties": false
                               }
@@ -1320,6 +1498,41 @@
                                 "required": [
                                   "length",
                                   "unit"
+                                ],
+                                "additionalProperties": false
+                              },
+                              "on_failed_repeat_save": {
+                                "type": "object",
+                                "properties": {
+                                  "condition_type": {
+                                    "type": "string"
+                                  },
+                                  "duration": {
+                                    "type": "object",
+                                    "properties": {
+                                      "length": {
+                                        "type": "number"
+                                      },
+                                      "unit": {
+                                        "type": "string"
+                                      },
+                                      "interrupt": {
+                                        "type": "string"
+                                      },
+                                      "interrupt_modifier": {
+                                        "type": "string"
+                                      }
+                                    },
+                                    "required": [
+                                      "length",
+                                      "unit"
+                                    ],
+                                    "additionalProperties": false
+                                  }
+                                },
+                                "required": [
+                                  "condition_type",
+                                  "duration"
                                 ],
                                 "additionalProperties": false
                               }
@@ -1545,6 +1758,41 @@
                                           "unit"
                                         ],
                                         "additionalProperties": false
+                                      },
+                                      "on_failed_repeat_save": {
+                                        "type": "object",
+                                        "properties": {
+                                          "condition_type": {
+                                            "type": "string"
+                                          },
+                                          "duration": {
+                                            "type": "object",
+                                            "properties": {
+                                              "length": {
+                                                "type": "number"
+                                              },
+                                              "unit": {
+                                                "type": "string"
+                                              },
+                                              "interrupt": {
+                                                "type": "string"
+                                              },
+                                              "interrupt_modifier": {
+                                                "type": "string"
+                                              }
+                                            },
+                                            "required": [
+                                              "length",
+                                              "unit"
+                                            ],
+                                            "additionalProperties": false
+                                          }
+                                        },
+                                        "required": [
+                                          "condition_type",
+                                          "duration"
+                                        ],
+                                        "additionalProperties": false
                                       }
                                     },
                                     "required": [
@@ -1694,6 +1942,41 @@
                                           "unit"
                                         ],
                                         "additionalProperties": false
+                                      },
+                                      "on_failed_repeat_save": {
+                                        "type": "object",
+                                        "properties": {
+                                          "condition_type": {
+                                            "type": "string"
+                                          },
+                                          "duration": {
+                                            "type": "object",
+                                            "properties": {
+                                              "length": {
+                                                "type": "number"
+                                              },
+                                              "unit": {
+                                                "type": "string"
+                                              },
+                                              "interrupt": {
+                                                "type": "string"
+                                              },
+                                              "interrupt_modifier": {
+                                                "type": "string"
+                                              }
+                                            },
+                                            "required": [
+                                              "length",
+                                              "unit"
+                                            ],
+                                            "additionalProperties": false
+                                          }
+                                        },
+                                        "required": [
+                                          "condition_type",
+                                          "duration"
+                                        ],
+                                        "additionalProperties": false
                                       }
                                     },
                                     "required": [
@@ -1769,6 +2052,41 @@
                               "required": [
                                 "length",
                                 "unit"
+                              ],
+                              "additionalProperties": false
+                            },
+                            "on_failed_repeat_save": {
+                              "type": "object",
+                              "properties": {
+                                "condition_type": {
+                                  "type": "string"
+                                },
+                                "duration": {
+                                  "type": "object",
+                                  "properties": {
+                                    "length": {
+                                      "type": "number"
+                                    },
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "interrupt": {
+                                      "type": "string"
+                                    },
+                                    "interrupt_modifier": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "length",
+                                    "unit"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              },
+                              "required": [
+                                "condition_type",
+                                "duration"
                               ],
                               "additionalProperties": false
                             }
@@ -1913,6 +2231,41 @@
                               "required": [
                                 "length",
                                 "unit"
+                              ],
+                              "additionalProperties": false
+                            },
+                            "on_failed_repeat_save": {
+                              "type": "object",
+                              "properties": {
+                                "condition_type": {
+                                  "type": "string"
+                                },
+                                "duration": {
+                                  "type": "object",
+                                  "properties": {
+                                    "length": {
+                                      "type": "number"
+                                    },
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "interrupt": {
+                                      "type": "string"
+                                    },
+                                    "interrupt_modifier": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "length",
+                                    "unit"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              },
+                              "required": [
+                                "condition_type",
+                                "duration"
                               ],
                               "additionalProperties": false
                             }
@@ -2062,6 +2415,41 @@
                               "required": [
                                 "length",
                                 "unit"
+                              ],
+                              "additionalProperties": false
+                            },
+                            "on_failed_repeat_save": {
+                              "type": "object",
+                              "properties": {
+                                "condition_type": {
+                                  "type": "string"
+                                },
+                                "duration": {
+                                  "type": "object",
+                                  "properties": {
+                                    "length": {
+                                      "type": "number"
+                                    },
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "interrupt": {
+                                      "type": "string"
+                                    },
+                                    "interrupt_modifier": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "length",
+                                    "unit"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              },
+                              "required": [
+                                "condition_type",
+                                "duration"
                               ],
                               "additionalProperties": false
                             }
@@ -2308,6 +2696,41 @@
                             "unit"
                           ],
                           "additionalProperties": false
+                        },
+                        "on_failed_repeat_save": {
+                          "type": "object",
+                          "properties": {
+                            "condition_type": {
+                              "type": "string"
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "length": {
+                                  "type": "number"
+                                },
+                                "unit": {
+                                  "type": "string"
+                                },
+                                "interrupt": {
+                                  "type": "string"
+                                },
+                                "interrupt_modifier": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "length",
+                                "unit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "condition_type",
+                            "duration"
+                          ],
+                          "additionalProperties": false
                         }
                       },
                       "required": [
@@ -2457,6 +2880,41 @@
                             "unit"
                           ],
                           "additionalProperties": false
+                        },
+                        "on_failed_repeat_save": {
+                          "type": "object",
+                          "properties": {
+                            "condition_type": {
+                              "type": "string"
+                            },
+                            "duration": {
+                              "type": "object",
+                              "properties": {
+                                "length": {
+                                  "type": "number"
+                                },
+                                "unit": {
+                                  "type": "string"
+                                },
+                                "interrupt": {
+                                  "type": "string"
+                                },
+                                "interrupt_modifier": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "length",
+                                "unit"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "required": [
+                            "condition_type",
+                            "duration"
+                          ],
+                          "additionalProperties": false
                         }
                       },
                       "required": [
@@ -2558,6 +3016,41 @@
                   "unit"
                 ],
                 "additionalProperties": false
+              },
+              "on_failed_repeat_save": {
+                "type": "object",
+                "properties": {
+                  "condition_type": {
+                    "type": "string"
+                  },
+                  "duration": {
+                    "type": "object",
+                    "properties": {
+                      "length": {
+                        "type": "number"
+                      },
+                      "unit": {
+                        "type": "string"
+                      },
+                      "interrupt": {
+                        "type": "string"
+                      },
+                      "interrupt_modifier": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "length",
+                      "unit"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "condition_type",
+                  "duration"
+                ],
+                "additionalProperties": false
               }
             },
             "required": [
@@ -2634,6 +3127,41 @@
                 "required": [
                   "length",
                   "unit"
+                ],
+                "additionalProperties": false
+              },
+              "on_failed_repeat_save": {
+                "type": "object",
+                "properties": {
+                  "condition_type": {
+                    "type": "string"
+                  },
+                  "duration": {
+                    "type": "object",
+                    "properties": {
+                      "length": {
+                        "type": "number"
+                      },
+                      "unit": {
+                        "type": "string"
+                      },
+                      "interrupt": {
+                        "type": "string"
+                      },
+                      "interrupt_modifier": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "length",
+                      "unit"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "condition_type",
+                  "duration"
                 ],
                 "additionalProperties": false
               }

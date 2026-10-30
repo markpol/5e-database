@@ -582,5 +582,284 @@
         }
       }
     }
+  },
+  {
+    "monster": "basilisk",
+    "section": "special_abilities",
+    "name": "Petrifying Gaze",
+    "set": {
+      "condition": {
+        "condition_type": "restrained",
+        "duration": {
+          "length": 1,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        },
+        "on_failed_repeat_save": {
+          "condition_type": "petrified",
+          "duration": {
+            "length": 1,
+            "unit": "until restored"
+          }
+        }
+      }
+    }
+  },
+  {
+    "monster": "cockatrice",
+    "section": "actions",
+    "name": "Bite",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "con",
+          "dc_value": 11,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "restrained",
+          "duration": {
+            "length": 1,
+            "unit": "round",
+            "interrupt": "saving throw success"
+          },
+          "on_failed_repeat_save": {
+            "condition_type": "petrified",
+            "duration": {
+              "length": 24,
+              "unit": "hour"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "deep-gnome-svirfneblin",
+    "section": "actions",
+    "name": "Poisoned Dart",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "con",
+          "dc_value": 12,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "poisoned",
+          "duration": {
+            "length": 10,
+            "unit": "round",
+            "interrupt": "saving throw success"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "dust-mephit",
+    "section": "actions",
+    "name": "Blinding Breath",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "blinded",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "dust-mephit",
+    "section": "special_abilities",
+    "name": "Death Burst",
+    "set": {
+      "condition": {
+        "condition_type": "blinded",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ettercap",
+    "section": "actions",
+    "name": "Web",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 11,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "gibbering-mouther",
+    "section": "actions",
+    "name": "Blinding Spittle",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "blinded",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "giant-spider",
+    "section": "actions",
+    "name": "Web",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 12,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "gladiator",
+    "section": "actions",
+    "name": "Shield Bash",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "str",
+          "dc_value": 15,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "gorgon",
+    "section": "actions",
+    "name": "Petrifying Breath",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "restrained",
+        "duration": {
+          "length": 1,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        },
+        "on_failed_repeat_save": {
+          "condition_type": "petrified",
+          "duration": {
+            "length": 1,
+            "unit": "until restored"
+          }
+        }
+      }
+    }
+  },
+  {
+    "monster": "otyugh",
+    "section": "actions",
+    "name": "Tentacle",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 13,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "otyugh",
+    "section": "actions",
+    "name": "Tentacle Slam",
+    "set": {
+      "situation": {
+        "target": {
+          "condition": "grappled"
+        }
+      }
+    }
+  },
+  {
+    "monster": "otyugh",
+    "section": "actions",
+    "name": "Tentacle Slam",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "stunned",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "roper",
+    "section": "actions",
+    "name": "Reel",
+    "set": {
+      "pull_distance_ft": 25,
+      "situation": {
+        "target": {
+          "condition": "grappled"
+        }
+      }
+    }
+  },
+  {
+    "monster": "roper",
+    "section": "actions",
+    "name": "Tendril",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 15,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
   }
 ]

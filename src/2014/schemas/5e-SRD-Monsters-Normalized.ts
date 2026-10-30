@@ -26,14 +26,21 @@ const ConditionDurationSchema = z.strictObject({
   interrupt_modifier: z.string().optional(),
 });
 
-const AppliedConditionSchema = z.strictObject({
+const BaseConditionSchema = z.strictObject({
   condition_type: IndexSchema,
   duration: ConditionDurationSchema,
 });
 
+// A condition a failed save applies. `on_failed_repeat_save` makes it the first stage of a two-stage
+// effect (petrification): the target repeats the same save at the end of its next turn, a success
+// ends the condition and a failure replaces it with the condition named here. Added by the annotations.
+const AppliedConditionSchema = BaseConditionSchema.extend({
+  on_failed_repeat_save: BaseConditionSchema.optional(),
+});
+
 const GrappleSchema = z.strictObject({
   escape_dc_value: z.number(),
-  additional_condition: AppliedConditionSchema.optional(),
+  additional_condition: BaseConditionSchema.optional(),
 });
 
 const MonsterSpeedSchema = z.strictObject({
@@ -189,6 +196,8 @@ const MonsterActionSchema = z.strictObject({
     })
     .optional(),
   situation: MonsterActionSituationSchema.optional(),
+  // Distance in feet the action pulls each target straight toward the monster (the roper's Reel).
+  pull_distance_ft: z.number().optional(),
   attack_bonus: z.number().optional(),
   weapon: z.string().optional(),
   weapon_kind: z.enum(['natural', 'manufactured', 'spell']).optional(),
