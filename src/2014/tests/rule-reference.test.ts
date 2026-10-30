@@ -333,6 +333,8 @@ describe('derivation', () => {
   it('is what the data files hold (run "pnpm run derive:rules")', () => {
     expect(deriveRules(rules as never, sections as never)).toEqual(rules);
     expect(deriveRuleSections(sections as never, rules as never)).toEqual(sections);
-    expect(deriveConditions(conditions, sections as never, rules as never)).toEqual(conditions);
+    expect(deriveConditions(conditions as never, sections as never, rules as never)).toEqual(
+      conditions
+    );
   });
 });
