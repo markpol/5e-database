@@ -149,8 +149,8 @@ one link, 568 in all.
 **Magic items.** An item links to:
 
 1. `attunement` when the first line of its `desc` says "(requires attunement". The `requires_attunement` field is not
-   used: it is set on 35 items only, while the text says it of 176. One item whose text says it later in the
-   description (`hammer-of-thunderbolts`) is linked by hand.
+   used: one item's text says it later in the description (`hammer-of-thunderbolts`) rather than the first line, and
+   is linked by hand.
 2. `activating-an-item` for an item with `uses` (Charges), for an item whose text names a command word (Command Word),
    and for potions and scrolls (Consumables, and Spells for a scroll).
 3. `making-an-attack` for a magic weapon and `using-each-ability` for magic armor.
