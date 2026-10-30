@@ -50,7 +50,7 @@ Every collection is kept. Record counts come from the data files. Status means:
 | Alignments | `src/2014/en/5e-SRD-Alignments.json` | 9 | Core game data | game data |
 | Backgrounds | `src/2014/en/5e-SRD-Backgrounds.json` | 1 | Extensible reference content: more entries and fields can be added | extensible |
 | Classes | `src/2014/en/5e-SRD-Classes.json` | 12 | Core game data | game data |
-| Conditions | `src/2014/en/5e-SRD-Conditions.json` | 33 | Core game data | game data |
+| Conditions | `src/2014/en/5e-SRD-Conditions.json` | 47 | Core game data | game data |
 | Damage Types | `src/2014/en/5e-SRD-Damage-Types.json` | 13 | Core game data | game data |
 | Equipment Categories | `src/2014/en/5e-SRD-Equipment-Categories.json` | 33 | Core game data | game data |
 | Equipment | `src/2014/en/5e-SRD-Equipment.json` | 197 | Core game data | game data |

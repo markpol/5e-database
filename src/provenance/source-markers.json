@@ -68,6 +68,40 @@
     },
     "src/2014/en/5e-SRD-Conditions.json": {
       "source": "srd",
+      "fields": {
+        "adds": {
+          "source": "dd",
+          "note": "Conditions applied along with this one, from the text of the condition."
+        },
+        "effects": {
+          "source": "dd",
+          "note": "Mechanical effects of the condition as data (roll modifiers, speed, restrictions, damage, bonuses), restating its text."
+        },
+        "exhaustion_level": {
+          "source": "dd",
+          "note": "Level of a numbered exhaustion condition, with the conditions of the level above and below."
+        },
+        "immune_if_feature": {
+          "source": "dd",
+          "note": "Features whose text makes their owner immune to the condition."
+        },
+        "immune_if_feature[].feature": {
+          "source": "dd",
+          "note": "Index of a feature whose text makes its owner immune to the condition."
+        },
+        "immune_if_feature[].while_condition": {
+          "source": "dd",
+          "note": "Condition the owner must also hold for the immunity, from the text of the feature."
+        },
+        "on_remove": {
+          "source": "dd",
+          "note": "What happens when the condition ends, from the text of the rage and Frenzy features."
+        },
+        "removes": {
+          "source": "dd",
+          "note": "Conditions this one ends when it is applied, from the SRD concentration rules and the text of the rage and Sacred Weapon features."
+        }
+      },
       "records": {
         "exhaustion-1": {
           "source": "dd",
@@ -140,6 +174,62 @@
         "surprised": {
           "source": "dd",
           "note": "The surprise rule recast as a condition; text adapted from the SRD combat rules."
+        },
+        "no-reactions": {
+          "source": "dd",
+          "note": "Condition for effects that stop a creature from taking reactions; original wording."
+        },
+        "concentrating": {
+          "source": "dd",
+          "note": "The SRD concentration rules recast as a condition; original wording."
+        },
+        "blessed": {
+          "source": "dd",
+          "note": "Effect of the bless spell recast as a condition; original wording."
+        },
+        "shield-of-faith": {
+          "source": "dd",
+          "note": "Effect of the shield of faith spell recast as a condition; original wording."
+        },
+        "sanctuary": {
+          "source": "dd",
+          "note": "Effect of the sanctuary spell recast as a condition; original wording."
+        },
+        "beacon-of-hope": {
+          "source": "dd",
+          "note": "Effect of the beacon of hope spell recast as a condition; original wording."
+        },
+        "spiritual-weapon": {
+          "source": "dd",
+          "note": "Effect of the spiritual weapon spell recast as a condition; original wording."
+        },
+        "spirit-guardians": {
+          "source": "dd",
+          "note": "Effect of the spirit guardians spell recast as a condition; original wording."
+        },
+        "sacred-weapon": {
+          "source": "dd",
+          "note": "The Sacred Weapon Channel Divinity option recast as a condition; original wording."
+        },
+        "magic-weapon": {
+          "source": "dd",
+          "note": "Effect of the magic weapon spell recast as a condition; original wording."
+        },
+        "divine-favor": {
+          "source": "dd",
+          "note": "Effect of the divine favor spell recast as a condition; original wording."
+        },
+        "branding-smite": {
+          "source": "dd",
+          "note": "Effect of the branding smite spell recast as a condition; original wording."
+        },
+        "mage-armor": {
+          "source": "dd",
+          "note": "Effect of the mage armor spell recast as a condition; original wording."
+        },
+        "commanded": {
+          "source": "dd",
+          "note": "Effect of the command spell recast as a condition; original wording."
         }
       }
     },

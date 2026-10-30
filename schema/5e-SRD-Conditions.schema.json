@@ -18,13 +18,605 @@
     },
     "url": {
       "type": "string"
+    },
+    "effects": {
+      "type": "object",
+      "properties": {
+        "includes": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rolls": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "roll": {
+                "type": "string",
+                "enum": [
+                  "attack",
+                  "ability_check",
+                  "saving_throw",
+                  "death_saving_throw"
+                ]
+              },
+              "mode": {
+                "type": "string",
+                "enum": [
+                  "advantage",
+                  "disadvantage",
+                  "auto_fail"
+                ]
+              },
+              "abilities": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "str",
+                    "dex",
+                    "con",
+                    "int",
+                    "wis",
+                    "cha"
+                  ]
+                }
+              },
+              "attack_kind": {
+                "type": "string",
+                "enum": [
+                  "melee_weapon",
+                  "weapon",
+                  "bound_weapon"
+                ]
+              },
+              "requires_sense": {
+                "type": "string",
+                "enum": [
+                  "sight",
+                  "hearing"
+                ]
+              },
+              "while": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "source_in_line_of_sight",
+                    "can_see_attacker",
+                    "not_incapacitated",
+                    "speed_above_0",
+                    "not_wearing_armor",
+                    "not_wearing_heavy_armor"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "roll",
+              "mode"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "rolls_against": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "roll": {
+                "type": "string",
+                "enum": [
+                  "attack",
+                  "ability_check"
+                ]
+              },
+              "mode": {
+                "type": "string",
+                "enum": [
+                  "advantage",
+                  "disadvantage"
+                ]
+              },
+              "critical_hit": {
+                "type": "boolean",
+                "const": true
+              },
+              "within_ft": {
+                "type": "number"
+              },
+              "beyond_ft": {
+                "type": "number"
+              },
+              "by": {
+                "type": "string",
+                "const": "source"
+              },
+              "purpose": {
+                "type": "string",
+                "const": "social_interaction"
+              },
+              "while": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "source_in_line_of_sight",
+                    "can_see_attacker",
+                    "not_incapacitated",
+                    "speed_above_0",
+                    "not_wearing_armor",
+                    "not_wearing_heavy_armor"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "roll"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "bonuses": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "to": {
+                    "type": "string",
+                    "enum": [
+                      "attack_roll",
+                      "damage_roll",
+                      "saving_throw",
+                      "armor_class"
+                    ]
+                  },
+                  "attack_kind": {
+                    "type": "string",
+                    "enum": [
+                      "melee_weapon",
+                      "weapon",
+                      "bound_weapon"
+                    ]
+                  },
+                  "damage_type": {
+                    "type": "string"
+                  },
+                  "minimum": {
+                    "type": "number"
+                  },
+                  "uses": {
+                    "type": "number"
+                  },
+                  "dice": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "to",
+                  "dice"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "to": {
+                    "type": "string",
+                    "enum": [
+                      "attack_roll",
+                      "damage_roll",
+                      "saving_throw",
+                      "armor_class"
+                    ]
+                  },
+                  "attack_kind": {
+                    "type": "string",
+                    "enum": [
+                      "melee_weapon",
+                      "weapon",
+                      "bound_weapon"
+                    ]
+                  },
+                  "damage_type": {
+                    "type": "string"
+                  },
+                  "minimum": {
+                    "type": "number"
+                  },
+                  "uses": {
+                    "type": "number"
+                  },
+                  "flat": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "to",
+                  "flat"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "to": {
+                    "type": "string",
+                    "enum": [
+                      "attack_roll",
+                      "damage_roll",
+                      "saving_throw",
+                      "armor_class"
+                    ]
+                  },
+                  "attack_kind": {
+                    "type": "string",
+                    "enum": [
+                      "melee_weapon",
+                      "weapon",
+                      "bound_weapon"
+                    ]
+                  },
+                  "damage_type": {
+                    "type": "string"
+                  },
+                  "minimum": {
+                    "type": "number"
+                  },
+                  "uses": {
+                    "type": "number"
+                  },
+                  "ability_modifier": {
+                    "type": "string",
+                    "enum": [
+                      "str",
+                      "dex",
+                      "con",
+                      "int",
+                      "wis",
+                      "cha"
+                    ]
+                  }
+                },
+                "required": [
+                  "to",
+                  "ability_modifier"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "armor_class": {
+          "type": "object",
+          "properties": {
+            "base": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number"
+                },
+                "ability_modifier": {
+                  "type": "string",
+                  "enum": [
+                    "str",
+                    "dex",
+                    "con",
+                    "int",
+                    "wis",
+                    "cha"
+                  ]
+                }
+              },
+              "required": [
+                "value",
+                "ability_modifier"
+              ],
+              "additionalProperties": false
+            },
+            "while": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "source_in_line_of_sight",
+                  "can_see_attacker",
+                  "not_incapacitated",
+                  "speed_above_0",
+                  "not_wearing_armor",
+                  "not_wearing_heavy_armor"
+                ]
+              }
+            }
+          },
+          "required": [
+            "base"
+          ],
+          "additionalProperties": false
+        },
+        "speed": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "op": {
+                  "type": "string",
+                  "const": "set"
+                },
+                "value": {
+                  "type": "number"
+                },
+                "ignores_bonuses": {
+                  "type": "boolean",
+                  "const": true
+                }
+              },
+              "required": [
+                "op",
+                "value"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "op": {
+                  "type": "string",
+                  "const": "halve"
+                }
+              },
+              "required": [
+                "op"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "op": {
+                  "type": "string",
+                  "const": "crawl_only"
+                }
+              },
+              "required": [
+                "op"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "cannot": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "take_actions",
+              "take_reactions",
+              "move",
+              "speak",
+              "see",
+              "hear",
+              "perceive_surroundings",
+              "cast_spells",
+              "concentrate",
+              "harm_source",
+              "move_closer_to_source"
+            ]
+          }
+        },
+        "limits": {
+          "type": "object",
+          "properties": {
+            "attacks_per_turn": {
+              "type": "number"
+            },
+            "one_of_action_or_bonus_action": {
+              "type": "boolean",
+              "const": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "damage": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "relation": {
+                "type": "string",
+                "enum": [
+                  "resistance",
+                  "immunity",
+                  "vulnerability"
+                ]
+              },
+              "types": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "while": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "source_in_line_of_sight",
+                    "can_see_attacker",
+                    "not_incapacitated",
+                    "speed_above_0",
+                    "not_wearing_armor",
+                    "not_wearing_heavy_armor"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "relation",
+              "types"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "immune_to": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "hit_point_maximum": {
+          "type": "object",
+          "properties": {
+            "op": {
+              "type": "string",
+              "enum": [
+                "halve",
+                "reduce"
+              ]
+            }
+          },
+          "required": [
+            "op"
+          ],
+          "additionalProperties": false
+        },
+        "ability_scores": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ability": {
+                "type": "string",
+                "enum": [
+                  "str",
+                  "dex",
+                  "con",
+                  "int",
+                  "wis",
+                  "cha"
+                ]
+              },
+              "op": {
+                "type": "string",
+                "const": "reduce"
+              }
+            },
+            "required": [
+              "ability",
+              "op"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "healing": {
+          "type": "string",
+          "const": "maximum"
+        },
+        "drops_held_items": {
+          "type": "boolean",
+          "const": true
+        },
+        "provokes_opportunity_attacks": {
+          "type": "boolean"
+        },
+        "death": {
+          "type": "boolean",
+          "const": true
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "removes": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "adds": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "on_remove": {
+      "type": "object",
+      "properties": {
+        "removes": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exhaustion_levels": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "immune_if_feature": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "feature": {
+            "type": "string"
+          },
+          "while_condition": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "feature"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "exhaustion_level": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "type": "number"
+        },
+        "next": {
+          "type": "string"
+        },
+        "prev": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "level"
+      ],
+      "additionalProperties": false
     }
   },
   "required": [
     "index",
     "name",
     "desc",
-    "url"
+    "url",
+    "effects"
   ],
   "additionalProperties": false
 }

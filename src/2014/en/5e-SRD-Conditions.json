@@ -6,7 +6,27 @@
       "- A blinded creature can't see and automatically fails any ability check that requires sight.",
       "- Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage."
     ],
-    "url": "/api/2014/conditions/blinded"
+    "url": "/api/2014/conditions/blinded",
+    "effects": {
+      "cannot": ["see"],
+      "rolls": [
+        {
+          "roll": "ability_check",
+          "mode": "auto_fail",
+          "requires_sense": "sight"
+        },
+        {
+          "roll": "attack",
+          "mode": "disadvantage"
+        }
+      ],
+      "rolls_against": [
+        {
+          "roll": "attack",
+          "mode": "advantage"
+        }
+      ]
+    }
   },
   {
     "index": "charmed",
@@ -15,7 +35,24 @@
       "- A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects.",
       "- The charmer has advantage on any ability check to interact socially with the creature."
     ],
-    "url": "/api/2014/conditions/charmed"
+    "url": "/api/2014/conditions/charmed",
+    "effects": {
+      "cannot": ["harm_source"],
+      "rolls_against": [
+        {
+          "roll": "ability_check",
+          "mode": "advantage",
+          "by": "source",
+          "purpose": "social_interaction"
+        }
+      ]
+    },
+    "immune_if_feature": [
+      {
+        "feature": "mindless-rage",
+        "while_condition": "enraged"
+      }
+    ]
   },
   {
     "index": "deafened",
@@ -23,7 +60,17 @@
     "desc": [
       "- A deafened creature can't hear and automatically fails any ability check that requires hearing."
     ],
-    "url": "/api/2014/conditions/deafened"
+    "url": "/api/2014/conditions/deafened",
+    "effects": {
+      "cannot": ["hear"],
+      "rolls": [
+        {
+          "roll": "ability_check",
+          "mode": "auto_fail",
+          "requires_sense": "hearing"
+        }
+      ]
+    }
   },
   {
     "index": "frightened",
@@ -32,7 +79,28 @@
       "- A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.",
       "- The creature can't willingly move closer to the source of its fear."
     ],
-    "url": "/api/2014/conditions/frightened"
+    "url": "/api/2014/conditions/frightened",
+    "effects": {
+      "cannot": ["move_closer_to_source"],
+      "rolls": [
+        {
+          "roll": "ability_check",
+          "mode": "disadvantage",
+          "while": ["source_in_line_of_sight"]
+        },
+        {
+          "roll": "attack",
+          "mode": "disadvantage",
+          "while": ["source_in_line_of_sight"]
+        }
+      ]
+    },
+    "immune_if_feature": [
+      {
+        "feature": "mindless-rage",
+        "while_condition": "enraged"
+      }
+    ]
   },
   {
     "index": "grappled",
@@ -42,13 +110,24 @@
       "- The condition ends if the grappler is incapacitated (see the condition).",
       "- The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the thunderwave spell."
     ],
-    "url": "/api/2014/conditions/grappled"
+    "url": "/api/2014/conditions/grappled",
+    "effects": {
+      "speed": {
+        "op": "set",
+        "value": 0,
+        "ignores_bonuses": true
+      }
+    }
   },
   {
     "index": "incapacitated",
     "name": "Incapacitated",
     "desc": ["- An incapacitated creature can't take actions or reactions."],
-    "url": "/api/2014/conditions/incapacitated"
+    "url": "/api/2014/conditions/incapacitated",
+    "effects": {
+      "cannot": ["take_actions", "take_reactions"]
+    },
+    "removes": ["concentrating"]
   },
   {
     "index": "invisible",
@@ -57,7 +136,21 @@
       "- An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.",
       "- Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage."
     ],
-    "url": "/api/2014/conditions/invisible"
+    "url": "/api/2014/conditions/invisible",
+    "effects": {
+      "rolls": [
+        {
+          "roll": "attack",
+          "mode": "advantage"
+        }
+      ],
+      "rolls_against": [
+        {
+          "roll": "attack",
+          "mode": "disadvantage"
+        }
+      ]
+    }
   },
   {
     "index": "paralyzed",
@@ -68,7 +161,29 @@
       "- Attack rolls against the creature have advantage.",
       "- Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
     ],
-    "url": "/api/2014/conditions/paralyzed"
+    "url": "/api/2014/conditions/paralyzed",
+    "effects": {
+      "includes": ["incapacitated"],
+      "cannot": ["move", "speak"],
+      "rolls": [
+        {
+          "roll": "saving_throw",
+          "mode": "auto_fail",
+          "abilities": ["str", "dex"]
+        }
+      ],
+      "rolls_against": [
+        {
+          "roll": "attack",
+          "mode": "advantage"
+        },
+        {
+          "roll": "attack",
+          "critical_hit": true,
+          "within_ft": 5
+        }
+      ]
+    }
   },
   {
     "index": "petrified",
@@ -81,15 +196,58 @@
       "- The creature has resistance to all damage.",
       "- The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized."
     ],
-    "url": "/api/2014/conditions/petrified"
+    "url": "/api/2014/conditions/petrified",
+    "effects": {
+      "includes": ["incapacitated"],
+      "cannot": ["move", "speak", "perceive_surroundings"],
+      "rolls": [
+        {
+          "roll": "saving_throw",
+          "mode": "auto_fail",
+          "abilities": ["str", "dex"]
+        }
+      ],
+      "rolls_against": [
+        {
+          "roll": "attack",
+          "mode": "advantage"
+        }
+      ],
+      "damage": [
+        {
+          "relation": "resistance",
+          "types": ["all"]
+        },
+        {
+          "relation": "immunity",
+          "types": ["poison"]
+        }
+      ],
+      "immune_to": ["poisoned", "disease"]
+    }
   },
   {
     "index": "poisoned",
     "name": "Poisoned",
-    "desc": [
-      "- A poisoned creature has disadvantage on attack rolls and ability checks."
-    ],
-    "url": "/api/2014/conditions/poisoned"
+    "desc": ["- A poisoned creature has disadvantage on attack rolls and ability checks."],
+    "url": "/api/2014/conditions/poisoned",
+    "effects": {
+      "rolls": [
+        {
+          "roll": "attack",
+          "mode": "disadvantage"
+        },
+        {
+          "roll": "ability_check",
+          "mode": "disadvantage"
+        }
+      ]
+    },
+    "immune_if_feature": [
+      {
+        "feature": "purity-of-body"
+      }
+    ]
   },
   {
     "index": "prone",
@@ -99,7 +257,30 @@
       "- The creature has disadvantage on attack rolls.",
       "- An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage."
     ],
-    "url": "/api/2014/conditions/prone"
+    "url": "/api/2014/conditions/prone",
+    "effects": {
+      "speed": {
+        "op": "crawl_only"
+      },
+      "rolls": [
+        {
+          "roll": "attack",
+          "mode": "disadvantage"
+        }
+      ],
+      "rolls_against": [
+        {
+          "roll": "attack",
+          "mode": "advantage",
+          "within_ft": 5
+        },
+        {
+          "roll": "attack",
+          "mode": "disadvantage",
+          "beyond_ft": 5
+        }
+      ]
+    }
   },
   {
     "index": "restrained",
@@ -109,7 +290,31 @@
       "- Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.",
       "- The creature has disadvantage on Dexterity saving throws."
     ],
-    "url": "/api/2014/conditions/restrained"
+    "url": "/api/2014/conditions/restrained",
+    "effects": {
+      "speed": {
+        "op": "set",
+        "value": 0,
+        "ignores_bonuses": true
+      },
+      "rolls": [
+        {
+          "roll": "attack",
+          "mode": "disadvantage"
+        },
+        {
+          "roll": "saving_throw",
+          "mode": "disadvantage",
+          "abilities": ["dex"]
+        }
+      ],
+      "rolls_against": [
+        {
+          "roll": "attack",
+          "mode": "advantage"
+        }
+      ]
+    }
   },
   {
     "index": "stunned",
@@ -119,7 +324,24 @@
       "- The creature automatically fails Strength and Dexterity saving throws.",
       "- Attack rolls against the creature have advantage."
     ],
-    "url": "/api/2014/conditions/stunned"
+    "url": "/api/2014/conditions/stunned",
+    "effects": {
+      "includes": ["incapacitated"],
+      "cannot": ["move"],
+      "rolls": [
+        {
+          "roll": "saving_throw",
+          "mode": "auto_fail",
+          "abilities": ["str", "dex"]
+        }
+      ],
+      "rolls_against": [
+        {
+          "roll": "attack",
+          "mode": "advantage"
+        }
+      ]
+    }
   },
   {
     "index": "unconscious",
@@ -131,7 +353,32 @@
       "- Attack rolls against the creature have advantage.",
       "- Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature."
     ],
-    "url": "/api/2014/conditions/unconscious"
+    "url": "/api/2014/conditions/unconscious",
+    "effects": {
+      "includes": ["incapacitated"],
+      "cannot": ["move", "speak", "perceive_surroundings"],
+      "drops_held_items": true,
+      "rolls": [
+        {
+          "roll": "saving_throw",
+          "mode": "auto_fail",
+          "abilities": ["str", "dex"]
+        }
+      ],
+      "rolls_against": [
+        {
+          "roll": "attack",
+          "mode": "advantage"
+        },
+        {
+          "roll": "attack",
+          "critical_hit": true,
+          "within_ft": 5
+        }
+      ]
+    },
+    "removes": ["enraged", "sacred-weapon"],
+    "adds": ["prone"]
   },
   {
     "index": "exhaustion",
@@ -149,24 +396,50 @@
       "An effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1.",
       "Finishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink."
     ],
-    "url": "/api/2014/conditions/exhaustion"
+    "url": "/api/2014/conditions/exhaustion",
+    "effects": {
+      "reason": "Umbrella entry for the six levels; the effects of each level are on exhaustion-1 to exhaustion-6."
+    }
   },
   {
     "index": "exhaustion-1",
     "name": "Exhaustion 1",
-    "desc": [
-      "1 - Disadvantage on ability checks, including initiative roll"
-    ],
-    "url": "/api/2014/conditions/exhaustion-1"
+    "desc": ["1 - Disadvantage on ability checks, including initiative roll"],
+    "url": "/api/2014/conditions/exhaustion-1",
+    "effects": {
+      "rolls": [
+        {
+          "roll": "ability_check",
+          "mode": "disadvantage"
+        }
+      ]
+    },
+    "exhaustion_level": {
+      "level": 1,
+      "next": "exhaustion-2"
+    }
   },
   {
     "index": "exhaustion-2",
     "name": "Exhaustion 2",
-    "desc": [
-      "1 - Disadvantage on ability checks, including initiative roll",
-      "2 - Speed halved"
-    ],
-    "url": "/api/2014/conditions/exhaustion-2"
+    "desc": ["1 - Disadvantage on ability checks, including initiative roll", "2 - Speed halved"],
+    "url": "/api/2014/conditions/exhaustion-2",
+    "effects": {
+      "rolls": [
+        {
+          "roll": "ability_check",
+          "mode": "disadvantage"
+        }
+      ],
+      "speed": {
+        "op": "halve"
+      }
+    },
+    "exhaustion_level": {
+      "level": 2,
+      "next": "exhaustion-3",
+      "prev": "exhaustion-1"
+    }
   },
   {
     "index": "exhaustion-3",
@@ -176,7 +449,31 @@
       "2 - Speed halved",
       "3 - Disadvantage on attack rolls and saving throws"
     ],
-    "url": "/api/2014/conditions/exhaustion-3"
+    "url": "/api/2014/conditions/exhaustion-3",
+    "effects": {
+      "rolls": [
+        {
+          "roll": "ability_check",
+          "mode": "disadvantage"
+        },
+        {
+          "roll": "attack",
+          "mode": "disadvantage"
+        },
+        {
+          "roll": "saving_throw",
+          "mode": "disadvantage"
+        }
+      ],
+      "speed": {
+        "op": "halve"
+      }
+    },
+    "exhaustion_level": {
+      "level": 3,
+      "next": "exhaustion-4",
+      "prev": "exhaustion-2"
+    }
   },
   {
     "index": "exhaustion-4",
@@ -187,7 +484,34 @@
       "3 - Disadvantage on attack rolls and saving throws",
       "4 - Hit point maximum halved"
     ],
-    "url": "/api/2014/conditions/exhaustion-4"
+    "url": "/api/2014/conditions/exhaustion-4",
+    "effects": {
+      "rolls": [
+        {
+          "roll": "ability_check",
+          "mode": "disadvantage"
+        },
+        {
+          "roll": "attack",
+          "mode": "disadvantage"
+        },
+        {
+          "roll": "saving_throw",
+          "mode": "disadvantage"
+        }
+      ],
+      "speed": {
+        "op": "halve"
+      },
+      "hit_point_maximum": {
+        "op": "halve"
+      }
+    },
+    "exhaustion_level": {
+      "level": 4,
+      "next": "exhaustion-5",
+      "prev": "exhaustion-3"
+    }
   },
   {
     "index": "exhaustion-5",
@@ -199,7 +523,35 @@
       "4 - Hit point maximum halved",
       "5 - Speed reduced to 0"
     ],
-    "url": "/api/2014/conditions/exhaustion-5"
+    "url": "/api/2014/conditions/exhaustion-5",
+    "effects": {
+      "rolls": [
+        {
+          "roll": "ability_check",
+          "mode": "disadvantage"
+        },
+        {
+          "roll": "attack",
+          "mode": "disadvantage"
+        },
+        {
+          "roll": "saving_throw",
+          "mode": "disadvantage"
+        }
+      ],
+      "speed": {
+        "op": "set",
+        "value": 0
+      },
+      "hit_point_maximum": {
+        "op": "halve"
+      }
+    },
+    "exhaustion_level": {
+      "level": 5,
+      "next": "exhaustion-6",
+      "prev": "exhaustion-4"
+    }
   },
   {
     "index": "exhaustion-6",
@@ -212,7 +564,35 @@
       "5 - Speed reduced to 0",
       "6 - Death"
     ],
-    "url": "/api/2014/conditions/exhaustion-6"
+    "url": "/api/2014/conditions/exhaustion-6",
+    "effects": {
+      "rolls": [
+        {
+          "roll": "ability_check",
+          "mode": "disadvantage"
+        },
+        {
+          "roll": "attack",
+          "mode": "disadvantage"
+        },
+        {
+          "roll": "saving_throw",
+          "mode": "disadvantage"
+        }
+      ],
+      "speed": {
+        "op": "set",
+        "value": 0
+      },
+      "hit_point_maximum": {
+        "op": "halve"
+      },
+      "death": true
+    },
+    "exhaustion_level": {
+      "level": 6,
+      "prev": "exhaustion-5"
+    }
   },
   {
     "index": "enraged",
@@ -226,7 +606,34 @@
       "Your rage lasts for 1 minute. It ends early if you are knocked Unconscious or if Your Turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on Your Turn as a Bonus Action.",
       "Once you have raged the maximum number of times for your barbarian level, you must finish a Long Rest before you can rage again. You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th."
     ],
-    "url": "/api/2014/conditions/enraged"
+    "url": "/api/2014/conditions/enraged",
+    "effects": {
+      "cannot": ["cast_spells", "concentrate"],
+      "rolls": [
+        {
+          "roll": "ability_check",
+          "mode": "advantage",
+          "abilities": ["str"],
+          "while": ["not_wearing_heavy_armor"]
+        },
+        {
+          "roll": "saving_throw",
+          "mode": "advantage",
+          "abilities": ["str"],
+          "while": ["not_wearing_heavy_armor"]
+        }
+      ],
+      "damage": [
+        {
+          "relation": "resistance",
+          "types": ["bludgeoning", "piercing", "slashing"],
+          "while": ["not_wearing_heavy_armor"]
+        }
+      ]
+    },
+    "on_remove": {
+      "removes": ["frenzied"]
+    }
   },
   {
     "index": "frenzied",
@@ -234,7 +641,13 @@
     "desc": [
       "For the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns. When your rage ends, you suffer one level of exhaustion."
     ],
-    "url": "/api/2014/conditions/frenzied"
+    "url": "/api/2014/conditions/frenzied",
+    "effects": {
+      "reason": "The text grants a bonus-action melee weapon attack, which is neither a roll modifier nor a restriction; what happens when the condition ends is in on_remove."
+    },
+    "on_remove": {
+      "exhaustion_levels": 1
+    }
   },
   {
     "index": "reckless",
@@ -242,7 +655,23 @@
     "desc": [
       "You throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
     ],
-    "url": "/api/2014/conditions/reckless"
+    "url": "/api/2014/conditions/reckless",
+    "effects": {
+      "rolls": [
+        {
+          "roll": "attack",
+          "mode": "advantage",
+          "abilities": ["str"],
+          "attack_kind": "melee_weapon"
+        }
+      ],
+      "rolls_against": [
+        {
+          "roll": "attack",
+          "mode": "advantage"
+        }
+      ]
+    }
   },
   {
     "index": "dodging",
@@ -250,7 +679,24 @@
     "desc": [
       "When you take the Dodge action, you focus entirely on avoiding attacks. Until the start of your next turn, any attack roll made against you has disadvantage if you can see the attacker, and you make Dexterity saving throws with advantage. You lose this benefit if you are incapacitated or if your speed drops to 0."
     ],
-    "url": "/api/2014/conditions/dodging"
+    "url": "/api/2014/conditions/dodging",
+    "effects": {
+      "rolls": [
+        {
+          "roll": "saving_throw",
+          "mode": "advantage",
+          "abilities": ["dex"],
+          "while": ["not_incapacitated", "speed_above_0"]
+        }
+      ],
+      "rolls_against": [
+        {
+          "roll": "attack",
+          "mode": "disadvantage",
+          "while": ["can_see_attacker", "not_incapacitated", "speed_above_0"]
+        }
+      ]
+    }
   },
   {
     "index": "infested",
@@ -259,7 +705,10 @@
       "A parasite has attached itself and consumes blood every turn.",
       "An action can be used to detach the parasite."
     ],
-    "url": "/api/2014/conditions/infested"
+    "url": "/api/2014/conditions/infested",
+    "effects": {
+      "reason": "The text gives blood loss every turn with no amount, and an action to detach the parasite; neither fits the fields."
+    }
   },
   {
     "index": "swallowed",
@@ -268,7 +717,10 @@
       "A creature swallowed by a larger host creature is blinded and restrained, and has total cover against attacks and other effects outside the host.",
       "Acid damage is taken every turn while swallowed. If the host dies, a swallowed creature is no longer restrained by it and can escape."
     ],
-    "url": "/api/2014/conditions/swallowed"
+    "url": "/api/2014/conditions/swallowed",
+    "effects": {
+      "includes": ["blinded", "restrained"]
+    }
   },
   {
     "index": "drained-of-strength",
@@ -276,7 +728,15 @@
     "desc": [
       "Your Strength score has been reduced. The reduction lasts until a short or long rest is taken."
     ],
-    "url": "/api/2014/conditions/drained-of-strength"
+    "url": "/api/2014/conditions/drained-of-strength",
+    "effects": {
+      "ability_scores": [
+        {
+          "ability": "str",
+          "op": "reduce"
+        }
+      ]
+    }
   },
   {
     "index": "weakened",
@@ -284,7 +744,26 @@
     "desc": [
       "A weakened creature has disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
     ],
-    "url": "/api/2014/conditions/weakened"
+    "url": "/api/2014/conditions/weakened",
+    "effects": {
+      "rolls": [
+        {
+          "roll": "attack",
+          "mode": "disadvantage",
+          "abilities": ["str"]
+        },
+        {
+          "roll": "ability_check",
+          "mode": "disadvantage",
+          "abilities": ["str"]
+        },
+        {
+          "roll": "saving_throw",
+          "mode": "disadvantage",
+          "abilities": ["str"]
+        }
+      ]
+    }
   },
   {
     "index": "slowed",
@@ -292,7 +771,17 @@
     "desc": [
       "A slowed creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save."
     ],
-    "url": "/api/2014/conditions/slowed"
+    "url": "/api/2014/conditions/slowed",
+    "effects": {
+      "cannot": ["take_reactions"],
+      "speed": {
+        "op": "halve"
+      },
+      "limits": {
+        "attacks_per_turn": 1,
+        "one_of_action_or_bonus_action": true
+      }
+    }
   },
   {
     "index": "drained-of-life",
@@ -300,7 +789,12 @@
     "desc": [
       "Your hit point maximum has been reduced. This reduction lasts until a long rest has been taken."
     ],
-    "url": "/api/2014/conditions/drained-of-life"
+    "url": "/api/2014/conditions/drained-of-life",
+    "effects": {
+      "hit_point_maximum": {
+        "op": "reduce"
+      }
+    }
   },
   {
     "index": "disengaged",
@@ -308,7 +802,10 @@
     "desc": [
       "When disengaged from combat, movement away from an adversary doesn’t provoke opportunity attacks for the rest of the turn."
     ],
-    "url": "/api/2014/conditions/disengaged"
+    "url": "/api/2014/conditions/disengaged",
+    "effects": {
+      "provokes_opportunity_attacks": false
+    }
   },
   {
     "index": "surprised",
@@ -316,6 +813,230 @@
     "desc": [
       "A surprised creature can't move or take an action on their first turn of the combat, and can't take a reaction until that turn ends. A member of a group can be surprised even if the other members aren't."
     ],
-    "url": "/api/2014/conditions/surprised"
+    "url": "/api/2014/conditions/surprised",
+    "effects": {
+      "cannot": ["move", "take_actions", "take_reactions"]
+    }
+  },
+  {
+    "index": "no-reactions",
+    "name": "No Reactions",
+    "desc": ["A creature with this condition can't take reactions until the condition ends."],
+    "url": "/api/2014/conditions/no-reactions",
+    "effects": {
+      "cannot": ["take_reactions"]
+    }
+  },
+  {
+    "index": "concentrating",
+    "name": "Concentrating",
+    "desc": [
+      "The creature is concentrating on a spell. It stops when the creature chooses to, casts another spell that requires concentration, is incapacitated, or dies.",
+      "Each time the creature takes damage, it must succeed on a Constitution saving throw to keep concentrating."
+    ],
+    "url": "/api/2014/conditions/concentrating",
+    "effects": {
+      "reason": "Marks that a creature is holding a concentration spell. The text gives a saving throw after damage and the ways it ends, which are not a roll modifier, speed change or restriction; incapacitated lists it under removes."
+    }
+  },
+  {
+    "index": "blessed",
+    "name": "Blessed",
+    "desc": ["A blessed creature adds 1d4 to its attack rolls and to its saving throws."],
+    "url": "/api/2014/conditions/blessed",
+    "effects": {
+      "bonuses": [
+        {
+          "to": "attack_roll",
+          "dice": "1d4"
+        },
+        {
+          "to": "saving_throw",
+          "dice": "1d4"
+        }
+      ]
+    }
+  },
+  {
+    "index": "shield-of-faith",
+    "name": "Shield of Faith",
+    "desc": ["A creature warded by shield of faith has a +2 bonus to Armor Class."],
+    "url": "/api/2014/conditions/shield-of-faith",
+    "effects": {
+      "bonuses": [
+        {
+          "to": "armor_class",
+          "flat": 2
+        }
+      ]
+    }
+  },
+  {
+    "index": "sanctuary",
+    "name": "Sanctuary",
+    "desc": [
+      "A creature under sanctuary is warded against attack. A creature that targets it with an attack or a harmful spell must first succeed on a Wisdom saving throw, or choose a new target.",
+      "The ward does not protect against area effects. It ends if the warded creature attacks or casts a spell that affects an enemy."
+    ],
+    "url": "/api/2014/conditions/sanctuary",
+    "effects": {
+      "reason": "The ward is a saving throw made by whoever targets the creature, which none of the fields describes."
+    }
+  },
+  {
+    "index": "beacon-of-hope",
+    "name": "Beacon of Hope",
+    "desc": [
+      "A creature uplifted by beacon of hope has advantage on Wisdom saving throws and on death saving throws.",
+      "Any healing it receives restores the greatest amount possible."
+    ],
+    "url": "/api/2014/conditions/beacon-of-hope",
+    "effects": {
+      "rolls": [
+        {
+          "roll": "saving_throw",
+          "mode": "advantage",
+          "abilities": ["wis"]
+        },
+        {
+          "roll": "death_saving_throw",
+          "mode": "advantage"
+        }
+      ],
+      "healing": "maximum"
+    }
+  },
+  {
+    "index": "spiritual-weapon",
+    "name": "Spiritual Weapon",
+    "desc": [
+      "A spectral weapon fights for its caster. It can attack a creature within 5 feet of it, and as a bonus action the caster can move it up to 20 feet and attack again."
+    ],
+    "url": "/api/2014/conditions/spiritual-weapon",
+    "effects": {
+      "reason": "Stands for a floating weapon that makes its own attacks; it changes none of the creature's rolls, speed or actions."
+    }
+  },
+  {
+    "index": "spirit-guardians",
+    "name": "Spirit Guardians",
+    "desc": [
+      "A creature in the area of spirit guardians has its speed halved.",
+      "It also takes radiant or necrotic damage, or half as much with a successful Wisdom saving throw, when it enters the area for the first time on a turn or starts its turn there."
+    ],
+    "url": "/api/2014/conditions/spirit-guardians",
+    "effects": {
+      "speed": {
+        "op": "halve"
+      }
+    }
+  },
+  {
+    "index": "sacred-weapon",
+    "name": "Sacred Weapon",
+    "desc": [
+      "A weapon imbued with sacred weapon adds its wielder's Charisma modifier, with a minimum of +1, to attack rolls made with it. It also gives off bright light and is magical.",
+      "The effect ends if the wielder falls unconscious or stops holding or carrying the weapon."
+    ],
+    "url": "/api/2014/conditions/sacred-weapon",
+    "effects": {
+      "bonuses": [
+        {
+          "to": "attack_roll",
+          "ability_modifier": "cha",
+          "minimum": 1,
+          "attack_kind": "bound_weapon"
+        }
+      ]
+    }
+  },
+  {
+    "index": "magic-weapon",
+    "name": "Magic Weapon",
+    "desc": [
+      "A weapon under magic weapon is magical and has a +1 bonus to attack rolls and damage rolls."
+    ],
+    "url": "/api/2014/conditions/magic-weapon",
+    "effects": {
+      "bonuses": [
+        {
+          "to": "attack_roll",
+          "flat": 1,
+          "attack_kind": "bound_weapon"
+        },
+        {
+          "to": "damage_roll",
+          "flat": 1,
+          "attack_kind": "bound_weapon"
+        }
+      ]
+    }
+  },
+  {
+    "index": "divine-favor",
+    "name": "Divine Favor",
+    "desc": [
+      "A creature under divine favor deals an extra 1d4 radiant damage when it hits with a weapon attack."
+    ],
+    "url": "/api/2014/conditions/divine-favor",
+    "effects": {
+      "bonuses": [
+        {
+          "to": "damage_roll",
+          "dice": "1d4",
+          "damage_type": "radiant",
+          "attack_kind": "weapon"
+        }
+      ]
+    }
+  },
+  {
+    "index": "branding-smite",
+    "name": "Branding Smite",
+    "desc": [
+      "The next weapon attack that hits from a creature under branding smite deals an extra 2d6 radiant damage.",
+      "The target of that hit becomes visible if it is invisible, and it cannot become invisible again until the condition ends."
+    ],
+    "url": "/api/2014/conditions/branding-smite",
+    "effects": {
+      "bonuses": [
+        {
+          "to": "damage_roll",
+          "dice": "2d6",
+          "damage_type": "radiant",
+          "attack_kind": "weapon",
+          "uses": 1
+        }
+      ]
+    }
+  },
+  {
+    "index": "mage-armor",
+    "name": "Mage Armor",
+    "desc": [
+      "A creature under mage armor that isn't wearing armor has a base Armor Class of 13 plus its Dexterity modifier.",
+      "The effect ends if the creature puts on armor."
+    ],
+    "url": "/api/2014/conditions/mage-armor",
+    "effects": {
+      "armor_class": {
+        "base": {
+          "value": 13,
+          "ability_modifier": "dex"
+        },
+        "while": ["not_wearing_armor"]
+      }
+    }
+  },
+  {
+    "index": "commanded",
+    "name": "Commanded",
+    "desc": [
+      "A commanded creature has been given a one-word order. On its next turn it follows the order, unless it is undead, does not understand the language, or the order would directly harm it."
+    ],
+    "url": "/api/2014/conditions/commanded",
+    "effects": {
+      "reason": "What the creature does depends on the word it was given, which is chosen when the order is spoken and is not a fixed roll, speed or action effect."
+    }
   }
 ]
