@@ -96,11 +96,11 @@ When spent uses come back. Present exactly when `uses` is a count of the feature
 
 One of three shapes.
 
-| Shape                                                                               | Meaning                                                                                                                                                                                                                  | Features |
-| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| Shape                                                                                          | Meaning                                                                                                                                                                                                                  | Features |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
 | `{ count?, class_specific?, by_level?, ability_modifier?, per_class_level?, minimum?, unit? }` | The feature's own uses: `count` plus the `class_specific` number plus the ability modifier plus `per_class_level` times the class level, and at least `minimum`. `unit` is `use` (when absent), `point` or `hit_point`   | 21       |
-| `{ pool, cost?, cost_class_specific? }`                                             | Each use spends `cost` from the uses of the feature `pool` (an index). `cost` is a number, or `spell_level` (the spell's level, 1 for a cantrip). `cost_class_specific` names a table of costs in the Levels row instead | 18       |
-| `{ spell_slot: true }`                                                              | Each use expends one of the owner's spell slots                                                                                                                                                                          | 3        |
+| `{ pool, cost?, cost_class_specific? }`                                                        | Each use spends `cost` from the uses of the feature `pool` (an index). `cost` is a number, or `spell_level` (the spell's level, 1 for a cantrip). `cost_class_specific` names a table of costs in the Levels row instead | 18       |
+| `{ spell_slot: true }`                                                                         | Each use expends one of the owner's spell slots                                                                                                                                                                          | 3        |
 
 Examples: Rage `{ class_specific: "rage_count" }`; Bardic Inspiration `{ ability_modifier: "cha", minimum: 1 }`;
 Divine Sense `{ count: 1, ability_modifier: "cha" }` (1 + the Charisma modifier); Lay on Hands
@@ -218,16 +218,16 @@ where it is 0 (the feature has no count yet). `by_level` is derived from the Lev
 The id is `<stem>-<count>-<unit>` (`<stem>-<dice>` for dice). Rage's 9999 rages at 20th level (no limit) is `count:
 9999` with the id `rage-unlimited-uses`.
 
-| Feature                                      | `class_specific` key      | Ids                                                       | Steps |
-| -------------------------------------------- | ------------------------- | --------------------------------------------------------- | ----- |
-| Rage `uses`                                  | `rage_count`              | `rage-2-uses`, `rage-3-uses` ... `rage-unlimited-uses`    | 6     |
-| Rage `bonus`                                 | `rage_damage_bonus`       | `rage-2-damage`, `rage-3-damage`, `rage-4-damage`         | 3     |
-| Ki `uses`                                    | `ki_points`               | `ki-2-points` ... `ki-20-points`                          | 19    |
-| Font of Magic `uses`                         | `sorcery_points`          | `sorcery-2-points` ... `sorcery-20-points`                | 19    |
-| Sneak Attack `bonus`                         | `sneak_attack`            | `sneak-attack-1d6` ... `sneak-attack-10d6`                | 10    |
-| Martial Arts `damage_die`                    | `martial_arts`            | `martial-arts-1d4`, `-1d6`, `-1d8`, `-1d10`               | 4     |
-| Unarmored Movement `speed`                   | `unarmored_movement`      | `unarmored-movement-10-ft` ... `unarmored-movement-30-ft` | 5     |
-| Arcane Recovery `recover_spell_slots`        | `arcane_recovery_levels`  | `arcane-recovery-1-level` ... `arcane-recovery-10-levels` | 10    |
+| Feature                               | `class_specific` key     | Ids                                                       | Steps |
+| ------------------------------------- | ------------------------ | --------------------------------------------------------- | ----- |
+| Rage `uses`                           | `rage_count`             | `rage-2-uses`, `rage-3-uses` ... `rage-unlimited-uses`    | 6     |
+| Rage `bonus`                          | `rage_damage_bonus`      | `rage-2-damage`, `rage-3-damage`, `rage-4-damage`         | 3     |
+| Ki `uses`                             | `ki_points`              | `ki-2-points` ... `ki-20-points`                          | 19    |
+| Font of Magic `uses`                  | `sorcery_points`         | `sorcery-2-points` ... `sorcery-20-points`                | 19    |
+| Sneak Attack `bonus`                  | `sneak_attack`           | `sneak-attack-1d6` ... `sneak-attack-10d6`                | 10    |
+| Martial Arts `damage_die`             | `martial_arts`           | `martial-arts-1d4`, `-1d6`, `-1d8`, `-1d10`               | 4     |
+| Unarmored Movement `speed`            | `unarmored_movement`     | `unarmored-movement-10-ft` ... `unarmored-movement-30-ft` | 5     |
+| Arcane Recovery `recover_spell_slots` | `arcane_recovery_levels` | `arcane-recovery-1-level` ... `arcane-recovery-10-levels` | 10    |
 
 The other `class_specific` numbers that grow with the level are not counted here, because their counts already have a
 record each, each with its own id (`COUNT_EXCLUDED` in `derive-feature-counts.ts`, checked by the test): Bardic
