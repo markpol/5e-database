@@ -12,6 +12,11 @@ spell or a changed text cannot silently go without a structure. `src/2014/tests/
 committed values against the text with rules that do not share code with the derivation, and fails when a text and
 its structure disagree.
 
+The combat mechanics (the damage a spell deals, the saving throw it forces, the area it covers, the dice of its damage
+and healing, and how its targets and temporary hit points grow with the slot) are in the last part of this page. They
+are derived by `src/2014/derive-spell-combat.ts`, which the same command runs, and checked by
+`src/2014/tests/spell-combat.test.ts`.
+
 ## `range_ft`
 
 A number of feet, or one of five words for a range that is not a distance.
@@ -60,3 +65,125 @@ length of time.
 A duration is in the unit the text gives: `24 hours` is `{ unit: "hour", length: 24 }`. "Up to" is not repeated in
 the structure. The SRD writes "up to" for exactly the spells that need concentration, and `concentration` already
 states that (the test checks the two agree).
+
+## Combat mechanics
+
+The `damage`, `dc` and `area_of_effect` fields keep the shapes they had. This change adds the entries that were
+missing, fixes two areas, and adds four optional fields. Every value is read from the spell's `desc` and `higher_level`
+text. Where a text has no single clear reading the entry is left out and listed below. No field is renamed or removed,
+the existing string maps are unchanged, and the spell ids are unchanged.
+
+| Field | Spells before | Spells after |
+| --- | --- | --- |
+| `damage` | 66 | 72 |
+| `dc` | 92 | 103 |
+| `area_of_effect` | 88 | 91 |
+| `heal_at_slot_level` | 10 | 10 |
+| `attack_type` | 16 | 16 |
+| `heal_at_slot_level_data` | 0 | 6 |
+| `damage[].damage_at_slot_level_data` (entries) | 0 | 69 |
+| `temp_hp_at_slot_level` | 0 | 1 |
+| `targets_at_slot_level` | 0 | 15 |
+
+### `damage`
+
+One entry for each damage type the text names, with `damage_at_slot_level` from the spell's own level to 9th (or only
+the spell's level when the spell does not scale). The text is read as `NdM <type> damage`, `NdM <type> or <type>
+damage`, `NdM <type>, <type>, or <type> damage` or `extra NdM damage`, and the scaling as `increases by NdM for each
+slot level above Nth`. Added:
+
+- Spirit Guardians: radiant and necrotic, 3d8 at 3rd level and 1d8 more for each slot level above. With `dc` (WIS, half
+  on a success) and `area_of_effect` (sphere of 15 feet, read from "to a distance of 15 feet").
+- Glyph of Warding: acid, cold, fire, lightning and thunder (explosive runes), 5d8 at 3rd level and 1d8 more for each
+  slot level above. With `dc` (DEX, half) and `area_of_effect` (sphere of 20 feet).
+- Forbiddance: radiant and necrotic, 5d10.
+- Hunter's Mark: an entry without a `damage_type`, 1d6 (the text says "extra 1d6 damage", of the weapon's type).
+- Spike Growth: piercing, 2d4 (for every 5 feet the creature travels).
+- Weird: psychic, 4d10 (at the start of each turn of a frightened creature).
+- Wall of Thorns: the slashing entry that was missing next to the piercing one, with the same scaling (the text says
+  both types increase by 1d8 for each slot level above 6th).
+
+Left out, because the amount is not the effect of the spell for a chosen target, depends on a choice or a roll, or
+differs by round or option:
+
+| Spell | Damage type | Why |
+| --- | --- | --- |
+| Alter Self | bludgeoning, piercing, slashing | unarmed strikes of a chosen form, not damage the spell deals |
+| Arcane Hand | force, bludgeoning | two options (clenched fist, grasping hand) that scale by different dice |
+| Bestow Curse | necrotic | extra damage of one of four curses the caster chooses |
+| Contact Other Plane | psychic | damage to the caster when the caster fails the spell's own save |
+| Earthquake | bludgeoning | damage to structures, and to creatures only if a structure collapses |
+| Geas | psychic | damage only if the target disobeys, once a day |
+| Meld into Stone | bludgeoning | damage to the caster when expelled |
+| Prismatic Spray | fire, acid, lightning, poison, cold | the type is chosen by a die roll for each ray (its existing entry has no type) |
+| Prismatic Wall | fire, acid, lightning, poison, cold | five layers, each with its own save and effects |
+| Storm of Vengeance | acid, lightning, bludgeoning, cold | a different effect in each round of the storm (its existing entry holds the thunder damage only) |
+| Teleport | force | damage to the traveller on a mishap |
+| Web | fire | damage only if the webs are set alight |
+| Wish | necrotic | damage to the caster from the stress of casting |
+
+A dice amount in the text that is not the value of the entry at the spell's own level, on purpose: Acid Arrow's 2d4 at
+the end of the target's next turn, Magic Missile's 1d4 + 1 for one dart (the entry holds three darts, see
+`targets_at_slot_level`), and the 5d6 of Wall of Ice for passing through the sheet of frigid air.
+
+### `dc`
+
+`dc_type` is the ability of the saving throw the text forces on a creature ("must succeed on a <ability> saving throw"
+or "must make a <ability> saving throw"), and `dc_success` is `half` when the text gives half damage on a success and
+`none` otherwise. Added for a spell whose text names exactly one such ability: Antipathy/Sympathy (WIS), Call Lightning
+(DEX, half), Flaming Sphere (DEX, half), Glyph of Warding (DEX, half), Holy Aura (CON), Power Word Stun (CON), Sanctuary
+(WIS), Sleet Storm (DEX), Spirit Guardians (WIS, half), Web (DEX) and Zone of Truth (CHA).
+
+Left out: Detect Thoughts (the save is only made when the caster probes deeper), Forcecage (the save is only made by a
+creature that tries to teleport out), Earthquake (CON and DEX), Prismatic Wall (CON and DEX) and Symbol (a different
+save for each of its eight glyph effects).
+
+### `area_of_effect`
+
+`size` is the radius of a sphere or cylinder, the edge of a cube (a "N-foot square" is read as a cube) and the length
+of a cone. Added from an explicit "N-foot <shape>" in the text for the spells that fight: Glyph of Warding (sphere
+of 20 feet), Hypnotic Pattern (cube of 30 feet) and Spirit Guardians (sphere of 15 feet). Fixed where the text
+contradicts the entry:
+
+| Spell | Was | Now | Text |
+| --- | --- | --- | --- |
+| Flame Strike | cylinder of 40 feet | cylinder of 10 feet | a 10-foot-radius, 40-foot-high cylinder |
+| Move Earth | cone of 40 feet | cube of 40 feet | an area of terrain no larger than 40 feet on a side (a "40-foot square") |
+
+Not changed: Fire Storm (ten 10-foot cubes in any arrangement; the entry is their reach) and Symbol (the 60-foot-radius
+sphere is the glyph's light after it triggers). A spell with one explicit shape that does not fight and has no entry
+(Druidcraft, Major Image, Minor Illusion, Purify Food and Drink) is left as it is, since the shape bounds an image or
+a sensory effect and is not an area of effect.
+
+### Dice as data
+
+`{ dice, bonus?, add_spellcasting_mod? }` restates a string of `NdM`, `NdM + MOD` or `NdM + N` as data: `dice` is `NdM`,
+`bonus` a flat number added to it, and `add_spellcasting_mod` is `true` when the caster's spellcasting ability modifier
+is added. A map has the structure only when every value of the map is such a string, so a flat amount (Heal's `70`) or
+a choice (Flame Strike's `4d6 OR 5d6`) has none. The string maps are unchanged.
+
+- `heal_at_slot_level_data` has the same slot keys as `heal_at_slot_level`: Cure Wounds, Healing Word, Mass Cure
+  Wounds, Mass Healing Word, Prayer of Healing and Regenerate (`{ dice: "4d8", bonus: 15 }`). False Life states temporary
+  hit points in `heal_at_slot_level` and has its structure in `temp_hp_at_slot_level` instead.
+- `damage[].damage_at_slot_level_data` sits next to `damage_at_slot_level` in 69 entries of `damage`, such as Spiritual
+  Weapon's `{ dice: "2d8", add_spellcasting_mod: true }` at 4th level and Magic Missile's `{ dice: "3d4", bonus: 3 }`.
+
+### `targets_at_slot_level`
+
+A number for each slot level from the spell's own to 9th: the number of creatures, darts, rays or bolts. The base number
+is the one the description states, and it grows by one for each slot level above the spell's own, as the `higher_level`
+text says. Bane (3), Banishment (1), Bless (3), Blindness/Deafness (1), Chain Lightning (4: the first target and three
+others), Charm Person (1), Command (1), Enhance Ability (1), Fly (1), Hold Monster (1), Hold Person (1), Invisibility (1),
+Longstrider (1), Magic Missile (3 darts) and Scorching Ray (3 rays).
+
+Left out although the `higher_level` text scales a number: Animate Dead and Animate Objects (undead and objects, two more
+for each slot level), Conjure Animals, Conjure Minor Elementals and Conjure Woodland Beings (a multiple of the base number
+at certain slots only) and Etherealness (up to three willing creatures for each slot level above 7th, the base being the
+caster alone). Mass Healing Word and Prayer of Healing have six targets at every slot level and the text scales the
+healing, so they have no entry.
+
+### `temp_hp_at_slot_level`
+
+`{ dice, bonus }` for each slot level, for the one spell whose `higher_level` text scales its temporary hit points: False
+Life, 1d4 + 4 at 1st level and 5 more for each slot level above (`bonus` 4 to 44). It agrees with the strings of
+`heal_at_slot_level`.

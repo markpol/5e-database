@@ -159,6 +159,30 @@
               "type": "string"
             }
           },
+          "damage_at_slot_level_data": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "dice": {
+                  "type": "string"
+                },
+                "bonus": {
+                  "type": "number"
+                },
+                "add_spellcasting_mod": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "dice"
+              ],
+              "additionalProperties": false
+            }
+          },
           "damage_at_character_level": {
             "type": "object",
             "propertyNames": {
@@ -242,6 +266,63 @@
       },
       "additionalProperties": {
         "type": "string"
+      }
+    },
+    "heal_at_slot_level_data": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "dice": {
+            "type": "string"
+          },
+          "bonus": {
+            "type": "number"
+          },
+          "add_spellcasting_mod": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "dice"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "temp_hp_at_slot_level": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "dice": {
+            "type": "string"
+          },
+          "bonus": {
+            "type": "number"
+          },
+          "add_spellcasting_mod": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "dice"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "targets_at_slot_level": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string"
+      },
+      "additionalProperties": {
+        "type": "number"
       }
     },
     "school": {
