@@ -17,7 +17,12 @@
       "This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit."
     ],
     "image": "/api/images/magic-items/adamantine-armor.png",
-    "url": "/api/2014/magic-items/adamantine-armor"
+    "url": "/api/2014/magic-items/adamantine-armor",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    },
+    "weight": 55
   },
   {
     "index": "ammunition",
@@ -53,7 +58,12 @@
       "You have a bonus to attack and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hits a target, the ammunition is no longer magical."
     ],
     "image": "/api/images/magic-items/ammunition.png",
-    "url": "/api/2014/magic-items/ammunition"
+    "url": "/api/2014/magic-items/ammunition",
+    "cost": {
+      "quantity": 25,
+      "unit": "gp"
+    },
+    "weight": 0.05
   },
   {
     "index": "ammunition-1",
@@ -76,7 +86,8 @@
     "cost": {
       "quantity": 25,
       "unit": "gp"
-    }
+    },
+    "weight": 0.05
   },
   {
     "index": "ammunition-2",
@@ -99,7 +110,8 @@
     "cost": {
       "quantity": 100,
       "unit": "gp"
-    }
+    },
+    "weight": 0.05
   },
   {
     "index": "ammunition-3",
@@ -122,7 +134,8 @@
     "cost": {
       "quantity": 400,
       "unit": "gp"
-    }
+    },
+    "weight": 0.05
   },
   {
     "index": "amulet-of-health",
@@ -182,7 +195,8 @@
     "cost": {
       "quantity": 6000,
       "unit": "gp"
-    }
+    },
+    "weight": 6
   },
   {
     "index": "armor",
@@ -218,7 +232,12 @@
       "You have a bonus to AC while wearing this armor. The bonus is determined by its rarity."
     ],
     "image": "/api/images/magic-items/armor.png",
-    "url": "/api/2014/magic-items/armor"
+    "url": "/api/2014/magic-items/armor",
+    "cost": {
+      "quantity": 1500,
+      "unit": "gp"
+    },
+    "weight": 55
   },
   {
     "index": "armor-1",
@@ -246,7 +265,8 @@
       "label_prefix": "+1 Magic",
       "armor_class_bonus": 1
     },
-    "url": "/api/2014/magic-items/armor-1"
+    "url": "/api/2014/magic-items/armor-1",
+    "weight": 55
   },
   {
     "index": "armor-2",
@@ -274,7 +294,8 @@
       "label_prefix": "+2 Magic",
       "armor_class_bonus": 2
     },
-    "url": "/api/2014/magic-items/armor-2"
+    "url": "/api/2014/magic-items/armor-2",
+    "weight": 55
   },
   {
     "index": "armor-3",
@@ -302,7 +323,8 @@
       "label_prefix": "+3 Magic",
       "armor_class_bonus": 3
     },
-    "url": "/api/2014/magic-items/armor-3"
+    "url": "/api/2014/magic-items/armor-3",
+    "weight": 55
   },
   {
     "index": "armor-of-invulnerability",
@@ -325,7 +347,8 @@
     "cost": {
       "quantity": 18000,
       "unit": "gp"
-    }
+    },
+    "weight": 65
   },
   {
     "index": "armor-of-resistance",
@@ -360,7 +383,8 @@
     "cost": {
       "quantity": 6000,
       "unit": "gp"
-    }
+    },
+    "weight": 55
   },
   {
     "index": "armor-of-vulnerability",
@@ -381,7 +405,12 @@
       "***Curse.*** This armor is cursed, a fact that is revealed only when an identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the remove curse spell or similar magic; removing the armor fails to end the curse. While cursed, you have vulnerability to two of the three damage types associated with the armor (not the one to which it grants resistance)."
     ],
     "image": "/api/images/magic-items/armor-of-vulnerability.png",
-    "url": "/api/2014/magic-items/armor-of-vulnerability"
+    "url": "/api/2014/magic-items/armor-of-vulnerability",
+    "cost": {
+      "quantity": 1500,
+      "unit": "gp"
+    },
+    "weight": 65
   },
   {
     "index": "arrow-catching-shield",
@@ -404,7 +433,8 @@
     "cost": {
       "quantity": 6000,
       "unit": "gp"
-    }
+    },
+    "weight": 6
   },
   {
     "index": "arrow-of-slaying",
@@ -429,7 +459,8 @@
     "cost": {
       "quantity": 600,
       "unit": "gp"
-    }
+    },
+    "weight": 0.05
   },
   {
     "index": "bag-of-beans",
@@ -465,7 +496,12 @@
       "| 100 | A giant beanstalk sprouts, growing to a height of the GM's choice. The top leads where the GM chooses, such as to a great view, a cloud giant's castle, or a different plane of existence. |"
     ],
     "image": "/api/images/magic-items/bag-of-beans.png",
-    "url": "/api/2014/magic-items/bag-of-beans"
+    "url": "/api/2014/magic-items/bag-of-beans",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "bag-of-devouring",
@@ -488,7 +524,12 @@
       "If the bag is pierced or torn, it is destroyed, and anything contained within it is transported to a random location on the Astral Plane."
     ],
     "image": "/api/images/magic-items/bag-of-devouring.png",
-    "url": "/api/2014/magic-items/bag-of-devouring"
+    "url": "/api/2014/magic-items/bag-of-devouring",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "bag-of-holding",
@@ -513,7 +554,8 @@
     "cost": {
       "quantity": 4000,
       "unit": "gp"
-    }
+    },
+    "weight": 15
   },
   {
     "index": "bag-of-tricks",
@@ -585,7 +627,12 @@
       "| 08 | Tiger |"
     ],
     "image": "/api/images/magic-items/bag-of-tricks.png",
-    "url": "/api/2014/magic-items/bag-of-tricks"
+    "url": "/api/2014/magic-items/bag-of-tricks",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "bag-of-tricks-gray",
@@ -619,7 +666,12 @@
       "| 08 | Giant Elk |"
     ],
     "image": "/api/images/magic-items/bag-of-tricks.png",
-    "url": "/api/2014/magic-items/bag-of-tricks-gray"
+    "url": "/api/2014/magic-items/bag-of-tricks-gray",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "bag-of-tricks-rust",
@@ -653,7 +705,12 @@
       "| 08 | Brown Bear |"
     ],
     "image": "/api/images/magic-items/bag-of-tricks.png",
-    "url": "/api/2014/magic-items/bag-of-tricks-rust"
+    "url": "/api/2014/magic-items/bag-of-tricks-rust",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "bag-of-tricks-tan",
@@ -687,7 +744,12 @@
       "| 08 | Tiger |"
     ],
     "image": "/api/images/magic-items/bag-of-tricks.png",
-    "url": "/api/2014/magic-items/bag-of-tricks-tan"
+    "url": "/api/2014/magic-items/bag-of-tricks-tan",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "bead-of-force",
@@ -712,7 +774,8 @@
     "cost": {
       "quantity": 960,
       "unit": "gp"
-    }
+    },
+    "weight": 0.0625
   },
   {
     "index": "belt-of-dwarvenkind",
@@ -821,7 +884,12 @@
       "| Storm Giant | 29 | Legendary |"
     ],
     "image": "/api/images/magic-items/belt-of-giant-strength.png",
-    "url": "/api/2014/magic-items/belt-of-giant-strength"
+    "url": "/api/2014/magic-items/belt-of-giant-strength",
+    "cost": {
+      "quantity": 8000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "belt-of-giant-strength-hill",
@@ -1065,7 +1133,12 @@
       "Whenever a Hostile creature damages you while the axe is in your possession, you must succeed on a DC 15 Wisdom saving throw or go berserk. While berserk, you must use your action each round to Attack the creature nearest to you with the axe. If you can make extra attacks as part of the Attack action, you use those extra attacks, moving to Attack the next nearest creature after you fell your current target. If you have multiple possible Targets, you Attack one at random. You are berserk until you start Your Turn with no creatures within 60 feet of you that you can see or hear."
     ],
     "image": "/api/images/magic-items/berserker-axe.png",
-    "url": "/api/2014/magic-items/berserker-axe"
+    "url": "/api/2014/magic-items/berserker-axe",
+    "cost": {
+      "quantity": 4000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "boots-of-elvenkind",
@@ -1124,7 +1197,8 @@
     "cost": {
       "quantity": 4000,
       "unit": "gp"
-    }
+    },
+    "weight": 2
   },
   {
     "index": "boots-of-the-winterlands",
@@ -1182,7 +1256,8 @@
     "cost": {
       "quantity": 1500,
       "unit": "gp"
-    }
+    },
+    "weight": 1
   },
   {
     "index": "bracers-of-defense",
@@ -1205,7 +1280,8 @@
     "cost": {
       "quantity": 6000,
       "unit": "gp"
-    }
+    },
+    "weight": 1
   },
   {
     "index": "brooch-of-shielding",
@@ -1271,7 +1347,12 @@
       "Alternatively, when you light the candle for the first time, you can cast the gate spell with it. Doing so destroys the candle."
     ],
     "image": "/api/images/magic-items/candle-of-invocation.png",
-    "url": "/api/2014/magic-items/candle-of-invocation"
+    "url": "/api/2014/magic-items/candle-of-invocation",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "circlet-of-blasting",
@@ -1294,7 +1375,8 @@
     "cost": {
       "quantity": 1500,
       "unit": "gp"
-    }
+    },
+    "weight": 1
   },
   {
     "index": "cloak-of-arachnida",
@@ -1322,7 +1404,8 @@
     "cost": {
       "quantity": 5000,
       "unit": "gp"
-    }
+    },
+    "weight": 2
   },
   {
     "index": "cloak-of-displacement",
@@ -1345,7 +1428,8 @@
     "cost": {
       "quantity": 60000,
       "unit": "gp"
-    }
+    },
+    "weight": 2
   },
   {
     "index": "cloak-of-elvenkind",
@@ -1444,7 +1528,12 @@
       "You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an attack using this weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become poisoned for 1 minute. The dagger can't be used this way again until the next dawn."
     ],
     "image": "/api/images/magic-items/dagger-of-venom.png",
-    "url": "/api/2014/magic-items/dagger-of-venom"
+    "url": "/api/2014/magic-items/dagger-of-venom",
+    "cost": {
+      "quantity": 4000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "dancing-sword",
@@ -1495,7 +1584,8 @@
     "cost": {
       "quantity": 2000,
       "unit": "gp"
-    }
+    },
+    "weight": 3
   },
   {
     "index": "defender",
@@ -1545,7 +1635,8 @@
     "cost": {
       "quantity": 24000,
       "unit": "gp"
-    }
+    },
+    "weight": 3
   },
   {
     "index": "demon-armor",
@@ -1566,7 +1657,12 @@
       "***Curse.*** Once you don this cursed armor, you can't doff it unless you are targeted by the remove curse spell or similar magic. While wearing the armor, you have disadvantage on attack rolls against demons and on saving throws against their spells and special abilities."
     ],
     "image": "/api/images/magic-items/demon-armor.png",
-    "url": "/api/2014/magic-items/demon-armor"
+    "url": "/api/2014/magic-items/demon-armor",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 65
   },
   {
     "index": "dragon-scale-mail",
@@ -1651,7 +1747,12 @@
       "| White | Cold |"
     ],
     "image": "/api/images/magic-items/dragon-scale-mail.png",
-    "url": "/api/2014/magic-items/dragon-scale-mail"
+    "url": "/api/2014/magic-items/dragon-scale-mail",
+    "cost": {
+      "quantity": 4000,
+      "unit": "gp"
+    },
+    "weight": 45
   },
   {
     "index": "dragon-scale-mail-black",
@@ -1695,7 +1796,8 @@
       "type": "armor",
       "label_prefix": "Black Dragon",
       "armor_class_bonus": 1
-    }
+    },
+    "weight": 45
   },
   {
     "index": "dragon-scale-mail-blue",
@@ -1739,7 +1841,8 @@
       "type": "armor",
       "label_prefix": "Blue Dragon",
       "armor_class_bonus": 1
-    }
+    },
+    "weight": 45
   },
   {
     "index": "dragon-scale-mail-brass",
@@ -1783,7 +1886,8 @@
       "type": "armor",
       "label_prefix": "Brass Dragon",
       "armor_class_bonus": 1
-    }
+    },
+    "weight": 45
   },
   {
     "index": "dragon-scale-mail-bronze",
@@ -1827,7 +1931,8 @@
       "type": "armor",
       "label_prefix": "Bronze Dragon",
       "armor_class_bonus": 1
-    }
+    },
+    "weight": 45
   },
   {
     "index": "dragon-scale-mail-copper",
@@ -1871,7 +1976,8 @@
       "type": "armor",
       "label_prefix": "Copper Dragon",
       "armor_class_bonus": 1
-    }
+    },
+    "weight": 45
   },
   {
     "index": "dragon-scale-mail-gold",
@@ -1915,7 +2021,8 @@
       "type": "armor",
       "label_prefix": "Gold Dragon",
       "armor_class_bonus": 1
-    }
+    },
+    "weight": 45
   },
   {
     "index": "dragon-scale-mail-green",
@@ -1959,7 +2066,8 @@
       "type": "armor",
       "label_prefix": "Green Dragon",
       "armor_class_bonus": 1
-    }
+    },
+    "weight": 45
   },
   {
     "index": "dragon-scale-mail-red",
@@ -2003,7 +2111,8 @@
       "type": "armor",
       "label_prefix": "Red Dragon",
       "armor_class_bonus": 1
-    }
+    },
+    "weight": 45
   },
   {
     "index": "dragon-scale-mail-silver",
@@ -2047,7 +2156,8 @@
       "type": "armor",
       "label_prefix": "Silver Dragon",
       "armor_class_bonus": 1
-    }
+    },
+    "weight": 45
   },
   {
     "index": "dragon-scale-mail-white",
@@ -2091,7 +2201,8 @@
         "unit": "while attuned",
         "length": 1
       }
-    }
+    },
+    "weight": 45
   },
   {
     "index": "dragon-slayer",
@@ -2112,7 +2223,12 @@
       "When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon's type. For the purpose of this weapon, \"dragon\" refers to any creature with the dragon type, including dragon turtles and wyverns."
     ],
     "image": "/api/images/magic-items/dragon-slayer.png",
-    "url": "/api/2014/magic-items/dragon-slayer"
+    "url": "/api/2014/magic-items/dragon-slayer",
+    "cost": {
+      "quantity": 4000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "dust-of-dryness",
@@ -2134,7 +2250,12 @@
       "An elemental composed mostly of water that is exposed to a pinch of the dust must make a DC 13 Constitution saving throw, taking 10d6 necrotic damage on a failed save, or half as much damage on a successful one."
     ],
     "image": "/api/images/magic-items/dust-of-dryness.png",
-    "url": "/api/2014/magic-items/dust-of-dryness"
+    "url": "/api/2014/magic-items/dust-of-dryness",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "dwarven-plate",
@@ -2194,7 +2315,12 @@
       "You gain a +3 bonus to attack and damage rolls made with this magic weapon. It has the thrown property with a normal range of 20 feet and a long range of 60 feet. When you hit with a ranged attack using this weapon, it deals an extra 1d8 damage or, if the target is a giant, 2d8 damage. Immediately after the attack, the weapon flies back to your hand."
     ],
     "image": "/api/images/magic-items/dwarven-thrower.png",
-    "url": "/api/2014/magic-items/dwarven-thrower"
+    "url": "/api/2014/magic-items/dwarven-thrower",
+    "cost": {
+      "quantity": 16000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "efficient-quiver",
@@ -2215,7 +2341,12 @@
       "You can draw any item the quiver contains as if doing so from a regular quiver or scabbard."
     ],
     "image": "/api/images/magic-items/efficient-quiver.png",
-    "url": "/api/2014/magic-items/efficient-quiver"
+    "url": "/api/2014/magic-items/efficient-quiver",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "elven-chain",
@@ -2280,7 +2411,12 @@
       "Wondrous item, uncommon (requires attunement)",
       "These crystal lenses fit over the eyes. They have 3 charges. While wearing them, you can expend 1 charge as an action to cast the charm person spell (save DC 13) on a humanoid within 30 feet of you, provided that you and the target can see each other. The lenses regain all expended charges daily at dawn."
     ],
-    "url": "/api/2014/magic-items/eyes-of-charming"
+    "url": "/api/2014/magic-items/eyes-of-charming",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "eyes-of-minute-seeing",
@@ -2403,7 +2539,8 @@
         "damage_dice": "2d6"
       }
     },
-    "url": "/api/2014/magic-items/flame-tongue"
+    "url": "/api/2014/magic-items/flame-tongue",
+    "weight": 3
   },
   {
     "index": "frost-brand",
@@ -2473,7 +2610,8 @@
         "length": 1
       }
     },
-    "url": "/api/2014/magic-items/frost-brand"
+    "url": "/api/2014/magic-items/frost-brand",
+    "weight": 3
   },
   {
     "index": "gauntlets-of-ogre-power",
@@ -2531,7 +2669,12 @@
       "You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
       "When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the purpose of this weapon, \"giant\" refers to any creature with the giant type, including ettins and trolls."
     ],
-    "url": "/api/2014/magic-items/giant-slayer"
+    "url": "/api/2014/magic-items/giant-slayer",
+    "cost": {
+      "quantity": 4000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "glamoured-studded-leather-armor",
@@ -2550,7 +2693,12 @@
       "Armor (studded leather), rare",
       "While wearing this armor, you gain a +1 bonus to AC. You can also use a bonus action to speak the armor's command word and cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like, including color, style, and accessories, but the armor retains its normal bulk and weight. The illusory appearance lasts until you use this property again or remove the armor."
     ],
-    "url": "/api/2014/magic-items/glamoured-studded-leather-armor"
+    "url": "/api/2014/magic-items/glamoured-studded-leather-armor",
+    "cost": {
+      "quantity": 1500,
+      "unit": "gp"
+    },
+    "weight": 13
   },
   {
     "index": "gloves-of-missile-snaring",
@@ -2569,7 +2717,12 @@
       "Wondrous item, uncommon (requires attunement)",
       "These gloves seem to almost meld into your hands when you don them. When a ranged weapon attack hits you while you're wearing them, you can use your reaction to reduce the damage by 1d10 + your Dexterity modifier, provided that you have a free hand. If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in that hand."
     ],
-    "url": "/api/2014/magic-items/gloves-of-missile-snaring"
+    "url": "/api/2014/magic-items/gloves-of-missile-snaring",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "gloves-of-swimming-and-climbing",
@@ -2603,7 +2756,8 @@
         "unit": "while attuned",
         "length": 1
       }
-    }
+    },
+    "weight": 1
   },
   {
     "index": "goggles-of-night",
@@ -2622,7 +2776,12 @@
       "Wondrous item, uncommon",
       "While wearing these dark lenses, you have darkvision out to a range of 60 feet. If you already have darkvision, wearing the goggles increases its range by 60 feet."
     ],
-    "url": "/api/2014/magic-items/goggles-of-night"
+    "url": "/api/2014/magic-items/goggles-of-night",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "hammer-of-thunderbolts",
@@ -2643,7 +2802,12 @@
       "Giant's Bane (Requires Attunement). You must be wearing a belt of giant strength (any variety) and gauntlets of ogre power to attune to this weapon. The attunement ends if you take off either of those items. While you are attuned to this weapon and holding it, your Strength score increases by 4 and can exceed 20, but not 30. When you roll a 20 on an attack roll made with this weapon against a giant, the giant must succeed on a DC 17 Constitution saving throw or die.",
       "The hammer also has 5 charges. While attuned to it, you can expend 1 charge and make a ranged weapon attack with the hammer, hurling it as if it had the thrown property with a normal range of 20 feet and a long range of 60 feet. If the attack hits, the hammer unleashes a thunderclap audible out to 300 feet. The target and every creature within 30 feet of it must succeed on a DC 17 Constitution saving throw or be stunned until the end of your next turn. The hammer regains 1d4 + 1 expended charges daily at dawn."
     ],
-    "url": "/api/2014/magic-items/hammer-of-thunderbolts"
+    "url": "/api/2014/magic-items/hammer-of-thunderbolts",
+    "cost": {
+      "quantity": 24000,
+      "unit": "gp"
+    },
+    "weight": 10
   },
   {
     "index": "handy-haversack",
@@ -2665,7 +2829,12 @@
       "The haversack has a few limitations. If it is overloaded, or if a sharp object pierces it or tears it, the haversack ruptures and is destroyed. If the haversack is destroyed, its contents are lost forever, although an artifact always turns up again somewhere. If the haversack is turned inside out, its contents spill forth, unharmed, and the haversack must be put right before it can be used again. If a breathing creature is placed within the haversack, the creature can survive for up to 10 minutes, after which time it begins to suffocate.",
       "Placing the haversack inside an extradimensional space created by a bag of holding, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened."
     ],
-    "url": "/api/2014/magic-items/handy-haversack"
+    "url": "/api/2014/magic-items/handy-haversack",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 5
   },
   {
     "index": "hat-of-disguise",
@@ -2684,7 +2853,12 @@
       "Wondrous item, uncommon (requires attunement)",
       "While wearing this hat, you can use an action to cast the disguise self spell from it at will. The spell ends if the hat is removed."
     ],
-    "url": "/api/2014/magic-items/hat-of-disguise"
+    "url": "/api/2014/magic-items/hat-of-disguise",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "headband-of-intellect",
@@ -2703,7 +2877,12 @@
       "Wondrous item, uncommon (requires attunement)",
       "Your Intelligence score is 19 while you wear this headband. It has no effect on you if your Intelligence is already 19 or higher."
     ],
-    "url": "/api/2014/magic-items/headband-of-intellect"
+    "url": "/api/2014/magic-items/headband-of-intellect",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "helm-of-brilliance",
@@ -2728,7 +2907,12 @@
       "As long as the helm has at least one fire opal, you can use an action and speak a command word to cause one weapon you are holding to burst into flames. The flames emit bright light in a 10-foot radius and dim light for an additional 10 feet. The flames are harmless to you and the weapon. When you hit with an attack using the blazing weapon, the target takes an extra 1d6 fire damage. The flames last until you use a bonus action to speak the command word again or until you drop or stow the weapon.",
       "Roll a d20 if you are wearing the helm and take fire damage as a result of failing a saving throw against a spell. On a roll of 1, the helm emits beams of light from its remaining gems. Each creature within 60 feet of the helm other than you must succeed on a DC 17 Dexterity saving throw or be struck by a beam, taking radiant damage equal to the number of gems in the helm. The helm and its gems are then destroyed."
     ],
-    "url": "/api/2014/magic-items/helm-of-brilliance"
+    "url": "/api/2014/magic-items/helm-of-brilliance",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "helm-of-comprehending-languages",
@@ -2747,7 +2931,12 @@
       "Wondrous item, uncommon",
       "While wearing this helm, you can use an action to cast the comprehend languages spell from it at will."
     ],
-    "url": "/api/2014/magic-items/helm-of-comprehending-languages"
+    "url": "/api/2014/magic-items/helm-of-comprehending-languages",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "helm-of-telepathy",
@@ -2767,7 +2956,12 @@
       "While wearing this helm, you can use an action to cast the detect thoughts spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply-using a bonus action to do so-while your focus on it continues.",
       "While focusing on a creature with detect thoughts, you can use an action to cast the suggestion spell (save DC 13) from the helm on that creature. Once used, the suggestion property can't be used again until the next dawn."
     ],
-    "url": "/api/2014/magic-items/helm-of-telepathy"
+    "url": "/api/2014/magic-items/helm-of-telepathy",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "helm-of-teleportation",
@@ -2787,7 +2981,12 @@
       "This helm has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the teleport spell from it. The helm regains 1d3",
       "expended charges daily at dawn."
     ],
-    "url": "/api/2014/magic-items/helm-of-teleportation"
+    "url": "/api/2014/magic-items/helm-of-teleportation",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "holy-avenger",
@@ -2807,7 +3006,12 @@
       "You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.",
       "While you hold the drawn sword, it creates an aura in a 10-foot radius around you. You and all creatures friendly to you in the aura have advantage on saving throws against spells and other magical effects. If you have 17 or more levels in the paladin class, the radius of the aura increases to 30 feet."
     ],
-    "url": "/api/2014/magic-items/holy-avenger"
+    "url": "/api/2014/magic-items/holy-avenger",
+    "cost": {
+      "quantity": 24000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "horn-of-blasting",
@@ -2827,7 +3031,12 @@
       "You can use an action to speak the horn's command word and then blow the horn, which emits a thunderous blast in a 30-foot cone that is audible 600 feet away. Each creature in the cone must make a DC 15 Constitution saving throw. On a failed save, a creature takes 5d6 thunder damage and is deafened for 1 minute. On a successful save, a creature takes half as much damage and isn't deafened. Creatures and objects made of glass or crystal have disadvantage on the saving throw and take 10d6 thunder damage instead of 5d6.",
       "Each use of the horn's magic has a 20 percent chance of causing the horn to explode. The explosion deals 10d6 fire damage to the blower and destroys the horn."
     ],
-    "url": "/api/2014/magic-items/horn-of-blasting"
+    "url": "/api/2014/magic-items/horn-of-blasting",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "horn-of-valhalla",
@@ -2875,7 +3084,12 @@
       "| 91-00 | Iron | 5d4 + 5 | Proficiency with all martial weapons |",
       "If you blow the horn without meeting its requirement, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands."
     ],
-    "url": "/api/2014/magic-items/horn-of-valhalla"
+    "url": "/api/2014/magic-items/horn-of-valhalla",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "horn-of-valhalla-silver",
@@ -2895,7 +3109,12 @@
       "You can use an action to blow this horn. In response, 2d4 + 2 warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed.",
       "The summoned berserkers are friendly to you and your companions and follow your commands."
     ],
-    "url": "/api/2014/magic-items/horn-of-valhalla-silver"
+    "url": "/api/2014/magic-items/horn-of-valhalla-silver",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "horn-of-valhalla-brass",
@@ -2915,7 +3134,12 @@
       "You can use an action to blow this horn. In response, 3d4 + 3 warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed.",
       "If you blow the horn without having proficiency with all simple weapons, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands."
     ],
-    "url": "/api/2014/magic-items/horn-of-valhalla-brass"
+    "url": "/api/2014/magic-items/horn-of-valhalla-brass",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "horn-of-valhalla-bronze",
@@ -2935,7 +3159,12 @@
       "You can use an action to blow this horn. In response, 4d4 + 4 warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed.",
       "If you blow the horn without having proficiency with all medium armor, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands."
     ],
-    "url": "/api/2014/magic-items/horn-of-valhalla-bronze"
+    "url": "/api/2014/magic-items/horn-of-valhalla-bronze",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "horn-of-valhalla-iron",
@@ -2955,7 +3184,12 @@
       "You can use an action to blow this horn. In response, 5d4 + 5 warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed.",
       "If you blow the horn without having proficiency with all martial weapons, the summoned berserkers attack you. If you meet the requirement, they are friendly to you and your companions and follow your commands."
     ],
-    "url": "/api/2014/magic-items/horn-of-valhalla-iron"
+    "url": "/api/2014/magic-items/horn-of-valhalla-iron",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "horseshoes-of-a-zephyr",
@@ -2974,7 +3208,12 @@
       "Wondrous item, very rare",
       "These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they allow the creature to move normally while floating 4 inches above the ground. This effect means the creature can cross or stand above nonsolid or unstable surfaces, such as water or lava. The creature leaves no tracks and ignores difficult terrain. In addition, the creature can move at normal speed for up to 12 hours a day without suffering exhaustion from a forced march."
     ],
-    "url": "/api/2014/magic-items/horseshoes-of-a-zephyr"
+    "url": "/api/2014/magic-items/horseshoes-of-a-zephyr",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 8
   },
   {
     "index": "horseshoes-of-speed",
@@ -2993,7 +3232,12 @@
       "Wondrous item, rare",
       "These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they increase the creature's walking speed by 30 feet."
     ],
-    "url": "/api/2014/magic-items/horseshoes-of-speed"
+    "url": "/api/2014/magic-items/horseshoes-of-speed",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 8
   },
   {
     "index": "immovable-rod",
@@ -3012,7 +3256,12 @@
       "Rod, uncommon",
       "This flat iron rod has a button on one end. You can use an action to press the button, which causes the rod to become magically fixed in place. Until you or another creature uses an action to push the button again, the rod doesn't move, even if it is defying gravity. The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and fall. A creature can use an action to make a DC 30 Strength check, moving the fixed rod up to 10 feet on a success."
     ],
-    "url": "/api/2014/magic-items/immovable-rod"
+    "url": "/api/2014/magic-items/immovable-rod",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "iron-flask",
@@ -3055,7 +3304,12 @@
       "| 97-99 | Succubus/incubus |",
       "| 100 | Xorn |"
     ],
-    "url": "/api/2014/magic-items/iron-flask"
+    "url": "/api/2014/magic-items/iron-flask",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "javelin-of-lightning",
@@ -3075,7 +3329,12 @@
       "This javelin is a magic weapon. When you hurl it and speak its command word, it transforms into a bolt of lightning, forming a line 5 feet wide that extends out from you to a target within 120 feet. Each creature in the line excluding you and the target must make a DC 13 Dexterity saving throw, taking 4d6 lightning damage on a failed save, and half as much damage on a successful one. The lightning bolt turns back into a javelin when it reaches the target. Make a ranged weapon attack against the target. On a hit, the target takes damage from the javelin plus 4d6 lightning damage.",
       "The javelin's property can't be used again until the next dawn. In the meantime, the javelin can still be used as a magic weapon."
     ],
-    "url": "/api/2014/magic-items/javelin-of-lightning"
+    "url": "/api/2014/magic-items/javelin-of-lightning",
+    "cost": {
+      "quantity": 1000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "luck-blade",
@@ -3096,7 +3355,12 @@
       "***Luck.*** If the sword is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. This property can't be used again until the next dawn.",
       "***Wish.*** The sword has 1d4 - 1 charges. While holding it, you can use an action to expend 1 charge and cast the wish spell from it. This property can't be used again until the next dawn. The sword loses this property if it has no charges."
     ],
-    "url": "/api/2014/magic-items/luck-blade"
+    "url": "/api/2014/magic-items/luck-blade",
+    "cost": {
+      "quantity": 24000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "mace-of-disruption",
@@ -3116,7 +3380,12 @@
       "When you hit a fiend or an undead with this magic weapon, that creature takes an extra 2d6 radiant damage. If the target has 25 hit points or fewer after taking this damage, it must succeed on a DC 15 Wisdom saving throw or be destroyed. On a successful save, the creature becomes frightened of you until the end of your next turn.",
       "While you hold this weapon, it sheds bright light in a 20-foot radius and dim light for an additional 20 feet."
     ],
-    "url": "/api/2014/magic-items/mace-of-disruption"
+    "url": "/api/2014/magic-items/mace-of-disruption",
+    "cost": {
+      "quantity": 4000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "mace-of-smiting",
@@ -3136,7 +3405,12 @@
       "You gain a +1 bonus to attack and damage rolls made with this magic weapon. The bonus increases to +3 when you use the mace to attack a construct.",
       "When you roll a 20 on an attack roll made with this weapon, the target takes an extra 2d6 bludgeoning damage, or 4d6 bludgeoning damage if it's a construct. If a construct has 25 hit points or fewer after taking this damage, it is destroyed."
     ],
-    "url": "/api/2014/magic-items/mace-of-smiting"
+    "url": "/api/2014/magic-items/mace-of-smiting",
+    "cost": {
+      "quantity": 4000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "mace-of-terror",
@@ -3156,7 +3430,12 @@
       "This magic weapon has 3 charges. While holding it, you can use an action and expend 1 charge to release a wave of terror. Each creature of your choice in a 30-foot radius extending from you must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. While it is frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can use the Dodge action. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success.",
       "The mace regains 1d3 expended charges daily at dawn."
     ],
-    "url": "/api/2014/magic-items/mace-of-terror"
+    "url": "/api/2014/magic-items/mace-of-terror",
+    "cost": {
+      "quantity": 4000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "mantle-of-spell-resistance",
@@ -3175,7 +3454,12 @@
       "Wondrous item, rare (requires attunement)",
       "You have advantage on saving throws against spells while you wear this cloak."
     ],
-    "url": "/api/2014/magic-items/mantle-of-spell-resistance"
+    "url": "/api/2014/magic-items/mantle-of-spell-resistance",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "manual-of-bodily-health",
@@ -3212,7 +3496,8 @@
     "cost": {
       "quantity": 50000,
       "unit": "gp"
-    }
+    },
+    "weight": 5
   },
   {
     "index": "manual-of-gainful-exercise",
@@ -3249,7 +3534,8 @@
     "cost": {
       "quantity": 50000,
       "unit": "gp"
-    }
+    },
+    "weight": 5
   },
   {
     "index": "manual-of-golems",
@@ -3297,7 +3583,12 @@
       "To create a golem, you must spend the time shown on the table, working without interruption with the manual at hand and resting no more than 8 hours per day. You must also pay the specified cost to purchase supplies.",
       "Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands."
     ],
-    "url": "/api/2014/magic-items/manual-of-golems"
+    "url": "/api/2014/magic-items/manual-of-golems",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 5
   },
   {
     "index": "manual-of-golems-clay",
@@ -3318,7 +3609,12 @@
       "To create a golem, you must spend 30 days, working without interruption with the manual at hand and resting no more than 8 hours per day. You must also pay 65,000 gp to purchase supplies.",
       "Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands."
     ],
-    "url": "/api/2014/magic-items/manual-of-golems-clay"
+    "url": "/api/2014/magic-items/manual-of-golems-clay",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 5
   },
   {
     "index": "manual-of-golems-flesh",
@@ -3339,7 +3635,12 @@
       "To create a golem, you must spend 60 days, working without interruption with the manual at hand and resting no more than 8 hours per day. You must also pay 50,000 gp to purchase supplies.",
       "Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands."
     ],
-    "url": "/api/2014/magic-items/manual-of-golems-flesh"
+    "url": "/api/2014/magic-items/manual-of-golems-flesh",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 5
   },
   {
     "index": "manual-of-golems-iron",
@@ -3360,7 +3661,12 @@
       "To create a golem, you must spend 120 days, working without interruption with the manual at hand and resting no more than 8 hours per day. You must also pay 100,000 gp to purchase supplies.",
       "Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands."
     ],
-    "url": "/api/2014/magic-items/manual-of-golems-iron"
+    "url": "/api/2014/magic-items/manual-of-golems-iron",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 5
   },
   {
     "index": "manual-of-golems-stone",
@@ -3381,7 +3687,12 @@
       "To create a golem, you must spend 90 days, working without interruption with the manual at hand and resting no more than 8 hours per day. You must also pay 80,000 gp to purchase supplies.",
       "Once you finish creating the golem, the book is consumed in eldritch flames. The golem becomes animate when the ashes of the manual are sprinkled on it. It is under your control, and it understands and obeys your spoken commands."
     ],
-    "url": "/api/2014/magic-items/manual-of-golems-stone"
+    "url": "/api/2014/magic-items/manual-of-golems-stone",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 5
   },
   {
     "index": "manual-of-quickness-of-action",
@@ -3418,7 +3729,8 @@
     "cost": {
       "quantity": 50000,
       "unit": "gp"
-    }
+    },
+    "weight": 5
   },
   {
     "index": "marvelous-pigments",
@@ -3441,7 +3753,12 @@
       "Nothing created by the pigments can have a value greater than 25 gp. If you paint an object of greater value (such as a diamond or a pile of gold), the object looks authentic, but close inspection reveals it is made from paste, bone, or some other worthless material.",
       "If you paint a form of energy such as fire or lightning, the energy appears but dissipates as soon as you complete the painting, doing no harm to anything."
     ],
-    "url": "/api/2014/magic-items/marvelous-pigments"
+    "url": "/api/2014/magic-items/marvelous-pigments",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "medallion-of-thoughts",
@@ -3460,7 +3777,12 @@
       "Wondrous item, uncommon (requires attunement)",
       "The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the detect thoughts spell (save DC 13) from it. The medallion regains 1d3 expended charges daily at dawn."
     ],
-    "url": "/api/2014/magic-items/medallion-of-thoughts"
+    "url": "/api/2014/magic-items/medallion-of-thoughts",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "mirror-of-life-trapping",
@@ -3485,7 +3807,12 @@
       "While within 5 feet of the mirror, you can use an action to speak the name of one creature trapped in it or call out a particular cell by number. The creature named or contained in the named cell appears as an image on the mirror's surface. You and the creature can then communicate normally.",
       "In a similar way, you can use an action to speak a second command word and free one creature trapped in the mirror. The freed creature appears, along with its possessions, in the unoccupied space nearest to the mirror and facing away from it."
     ],
-    "url": "/api/2014/magic-items/mirror-of-life-trapping"
+    "url": "/api/2014/magic-items/mirror-of-life-trapping",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 50
   },
   {
     "index": "mithral-armor",
@@ -3504,7 +3831,12 @@
       "Armor (medium or heavy), uncommon",
       "Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't."
     ],
-    "url": "/api/2014/magic-items/mithral-armor"
+    "url": "/api/2014/magic-items/mithral-armor",
+    "cost": {
+      "quantity": 500,
+      "unit": "gp"
+    },
+    "weight": 55
   },
   {
     "index": "necklace-of-adaptation",
@@ -3523,7 +3855,12 @@
       "Wondrous item, uncommon (requires attunement)",
       "While wearing this necklace, you can breathe normally in any environment, and you have advantage on saving throws made against harmful gases and vapors (such as cloudkill and stinking cloud effects, inhaled poisons, and the breath weapons of some dragons)."
     ],
-    "url": "/api/2014/magic-items/necklace-of-adaptation"
+    "url": "/api/2014/magic-items/necklace-of-adaptation",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "necklace-of-fireballs",
@@ -3543,7 +3880,12 @@
       "This necklace has 1d6 + 3 beads hanging from it. You can use an action to detach a bead and throw it up to 60 feet away. When it reaches the end of its trajectory, the bead detonates as a 3rd-level fireball spell (save DC 15).",
       "You can hurl multiple beads, or even the whole necklace, as one action. When you do so, increase the level of the fireball by 1 for each bead beyond the first."
     ],
-    "url": "/api/2014/magic-items/necklace-of-fireballs"
+    "url": "/api/2014/magic-items/necklace-of-fireballs",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "necklace-of-prayer-beads",
@@ -3571,7 +3913,12 @@
       "| 19 | Summons | Planar ally |",
       "| 20 | Wind walking | Wind walk |"
     ],
-    "url": "/api/2014/magic-items/necklace-of-prayer-beads"
+    "url": "/api/2014/magic-items/necklace-of-prayer-beads",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "nine-lives-stealer",
@@ -3591,7 +3938,12 @@
       "You gain a +2 bonus to attack and damage rolls made with this magic weapon.",
       "The sword has 1d8 + 1 charges. If you score a critical hit against a creature that has fewer than 100 hit points, it must succeed on a DC 15 Constitution saving throw or be slain instantly as the sword tears its life force from its body (a construct or an undead is immune). The sword loses 1 charge if the creature is slain. When the sword has no charges remaining, it loses this property."
     ],
-    "url": "/api/2014/magic-items/nine-lives-stealer"
+    "url": "/api/2014/magic-items/nine-lives-stealer",
+    "cost": {
+      "quantity": 16000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "oathbow",
@@ -3612,7 +3964,12 @@
       "When you make a ranged attack roll with this weapon against your sworn enemy, you have advantage on the roll. In addition, your target gains no benefit from cover, other than total cover, and you suffer no disadvantage due to long range. If the attack hits, your sworn enemy takes an extra 3d6 piercing damage.",
       "While your sworn enemy lives, you have disadvantage on attack rolls with all other weapons."
     ],
-    "url": "/api/2014/magic-items/oathbow"
+    "url": "/api/2014/magic-items/oathbow",
+    "cost": {
+      "quantity": 16000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "oil-of-etherealness",
@@ -3631,7 +3988,12 @@
       "Potion, rare",
       "Beads of this cloudy gray oil form on the outside of its container and quickly evaporate. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of the etherealness spell for 1 hour."
     ],
-    "url": "/api/2014/magic-items/oil-of-etherealness"
+    "url": "/api/2014/magic-items/oil-of-etherealness",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "oil-of-sharpness",
@@ -3650,7 +4012,12 @@
       "Potion, very rare",
       "This clear, gelatinous oil sparkles with tiny, ultrathin silver shards. The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition. Applying the oil takes 1 minute. For 1 hour, the coated item is magical and has a +3 bonus to attack and damage rolls."
     ],
-    "url": "/api/2014/magic-items/oil-of-sharpness"
+    "url": "/api/2014/magic-items/oil-of-sharpness",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "oil-of-slipperiness",
@@ -3670,7 +4037,12 @@
       "This sticky black unguent is thick and heavy in the container, but it flows quickly when poured. The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium). Applying the oil takes 10 minutes. The affected creature then gains the effect of a freedom of movement spell for 8 hours.",
       "Alternatively, the oil can be poured on the ground as an action, where it covers a 10-foot square, duplicating the effect of the grease spell in that area for 8 hours."
     ],
-    "url": "/api/2014/magic-items/oil-of-slipperiness"
+    "url": "/api/2014/magic-items/oil-of-slipperiness",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "pearl-of-power",
@@ -3689,7 +4061,12 @@
       "Wondrous item, uncommon (requires attunement by a spellcaster)",
       "While this pearl is on your person, you can use an action to speak its command word and regain one expended spell slot. If the expended slot was of 4th level or higher, the new slot is 3rd level. Once you use the pearl, it can't be used again until the next dawn."
     ],
-    "url": "/api/2014/magic-items/pearl-of-power"
+    "url": "/api/2014/magic-items/pearl-of-power",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "periapt-of-health",
@@ -3708,7 +4085,12 @@
       "Wondrous item, uncommon",
       "You are immune to contracting any disease while you wear this pendant. If you are already infected with a disease, the effects of the disease are suppressed you while you wear the pendant."
     ],
-    "url": "/api/2014/magic-items/periapt-of-health"
+    "url": "/api/2014/magic-items/periapt-of-health",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "periapt-of-proof-against-poison",
@@ -3727,7 +4109,12 @@
       "Wondrous item, rare",
       "This delicate silver chain has a brilliant-cut black gem pendant. While you wear it, poisons have no effect on you. You are immune to the poisoned condition and have immunity to poison damage."
     ],
-    "url": "/api/2014/magic-items/periapt-of-proof-against-poison"
+    "url": "/api/2014/magic-items/periapt-of-proof-against-poison",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "periapt-of-wound-closure",
@@ -3746,7 +4133,12 @@
       "Wondrous item, uncommon (requires attunement)",
       "While you wear this pendant, you stabilize whenever you are dying at the start of your turn. In addition, whenever you roll a Hit Die to regain hit points, double the number of hit points it restores."
     ],
-    "url": "/api/2014/magic-items/periapt-of-wound-closure"
+    "url": "/api/2014/magic-items/periapt-of-wound-closure",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "philter-of-love",
@@ -3765,7 +4157,12 @@
       "Potion, uncommon",
       "The next time you see a creature within 10 minutes after drinking this philter, you become charmed by that creature for 1 hour. If the creature is of a species and gender you are normally attracted to, you regard it as your true love while you are charmed. This potion's rose-hued, effervescent liquid contains one easy-to-miss bubble shaped like a heart."
     ],
-    "url": "/api/2014/magic-items/philter-of-love"
+    "url": "/api/2014/magic-items/philter-of-love",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "pipes-of-haunting",
@@ -3784,7 +4181,12 @@
       "Wondrous item, uncommon",
       "You must be proficient with wind instruments to use these pipes. They have 3 charges. You can use an action to play them and expend 1 charge to create an eerie, spellbinding tune. Each creature within 30 feet of you that hears you play must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. If you wish, all creatures in the area that aren't hostile toward you automatically succeed on the saving throw. A creature that fails the saving throw can repeat it at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on its saving throw is immune to the effect of these pipes for 24 hours. The pipes regain 1d3 expended charges daily at dawn."
     ],
-    "url": "/api/2014/magic-items/pipes-of-haunting"
+    "url": "/api/2014/magic-items/pipes-of-haunting",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "pipes-of-the-sewers",
@@ -3805,7 +4207,12 @@
       "The pipes have 3 charges. If you play the pipes as an action, you can use a bonus action to expend 1 to 3 charges, calling forth one swarm of rats with each expended charge, provided that enough rats are within half a mile of you to be called in this fashion (as determined by the GM). If there aren't enough rats to form a swarm, the charge is wasted. Called swarms move toward the music by the shortest available route but aren't under your control otherwise. The pipes regain 1d3 expended charges daily at dawn.",
       "Whenever a swarm of rats that isn't under another creature's control comes within 30 feet of you while you are playing the pipes, you can make a Charisma check contested by the swarm's Wisdom check. If you lose the contest, the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours. If you win the contest, the swarm is swayed by the pipes' music and becomes friendly to you and your companions for as long as you continue to play the pipes each round as an action. A friendly swarm obeys your commands. If you issue no commands to a friendly swarm, it defends itself but otherwise takes no actions. If a friendly swarm starts its turn and can't hear the pipes' music, your control over that swarm ends, and the swarm behaves as it normally would and can't be swayed by the pipes' music for the next 24 hours."
     ],
-    "url": "/api/2014/magic-items/pipes-of-the-sewers"
+    "url": "/api/2014/magic-items/pipes-of-the-sewers",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "plate-armor-of-etherealness",
@@ -3824,7 +4231,12 @@
       "Armor (plate), legendary (requires attunement)",
       "While you're wearing this armor, you can speak its command word as an action to gain the effect of the etherealness spell, which last for 10 minutes or until you remove the armor or use an action to speak the command word again. This property of the armor can't be used again until the next dawn."
     ],
-    "url": "/api/2014/magic-items/plate-armor-of-etherealness"
+    "url": "/api/2014/magic-items/plate-armor-of-etherealness",
+    "cost": {
+      "quantity": 24000,
+      "unit": "gp"
+    },
+    "weight": 65
   },
   {
     "index": "portable-hole",
@@ -3847,7 +4259,12 @@
       "If the hole is folded up, a creature within the hole's extradimensional space can use an action to make a DC 10 Strength check. On a successful check, the creature forces its way out and appears within 5 feet of the portable hole or the creature carrying it. A breathing creature within a closed portable hole can survive for up to 10 minutes, after which time it begins to suffocate.",
       "Placing a portable hole inside an extradimensional space created by a bag of holding, handy haversack, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened."
     ],
-    "url": "/api/2014/magic-items/portable-hole"
+    "url": "/api/2014/magic-items/portable-hole",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "potion-of-animal-friendship",
@@ -3866,7 +4283,12 @@
       "Potion, uncommon",
       "When you drink this potion, you can cast the animal friendship spell (save DC 13) for 1 hour at will. Agitating this muddy liquid brings little bits into view: a fish scale, a hummingbird tongue, a cat claw, or a squirrel hair."
     ],
-    "url": "/api/2014/magic-items/potion-of-animal-friendship"
+    "url": "/api/2014/magic-items/potion-of-animal-friendship",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "potion-of-clairvoyance",
@@ -3885,7 +4307,12 @@
       "Potion, rare",
       "When you drink this potion, you gain the effect of the clairvoyance spell. An eyeball bobs in this yellowish liquid but vanishes when the potion is opened."
     ],
-    "url": "/api/2014/magic-items/potion-of-clairvoyance"
+    "url": "/api/2014/magic-items/potion-of-clairvoyance",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "potion-of-climbing",
@@ -3904,7 +4331,12 @@
       "Potion, common",
       "When you drink this potion, you gain a climbing speed equal to your walking speed for 1 hour. During this time, you have advantage on Strength (Athletics) checks you make to climb. The potion is separated into brown, silver, and gray layers resembling bands of stone. Shaking the bottle fails to mix the colors."
     ],
-    "url": "/api/2014/magic-items/potion-of-climbing"
+    "url": "/api/2014/magic-items/potion-of-climbing",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "potion-of-diminution",
@@ -3923,7 +4355,12 @@
       "Potion, rare",
       "When you drink this potion, you gain the \"reduce\" effect of the enlarge/reduce spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously contracts to a tiny bead and then expands to color the clear liquid around it. Shaking the bottle fails to interrupt this process."
     ],
-    "url": "/api/2014/magic-items/potion-of-diminution"
+    "url": "/api/2014/magic-items/potion-of-diminution",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "potion-of-flying",
@@ -3942,7 +4379,12 @@
       "Potion, very rare",
       "When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it."
     ],
-    "url": "/api/2014/magic-items/potion-of-flying"
+    "url": "/api/2014/magic-items/potion-of-flying",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "potion-of-gaseous-form",
@@ -3961,7 +4403,12 @@
       "Potion, rare",
       "When you drink this potion, you gain the effect of the gaseous form spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water."
     ],
-    "url": "/api/2014/magic-items/potion-of-gaseous-form"
+    "url": "/api/2014/magic-items/potion-of-gaseous-form",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "potion-of-giant-strength",
@@ -4019,7 +4466,12 @@
       "| Cloud giant | 27 | Very rare |",
       "| Storm giant | 29 | Legendary |"
     ],
-    "url": "/api/2014/magic-items/potion-of-giant-strength"
+    "url": "/api/2014/magic-items/potion-of-giant-strength",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "potion-of-giant-strength-hill",
@@ -4043,7 +4495,8 @@
       "quantity": 250,
       "unit": "gp"
     },
-    "url": "/api/2014/magic-items/potion-of-giant-strength-hill"
+    "url": "/api/2014/magic-items/potion-of-giant-strength-hill",
+    "weight": 0.5
   },
   {
     "index": "potion-of-giant-strength-frost",
@@ -4067,7 +4520,8 @@
       "quantity": 2500,
       "unit": "gp"
     },
-    "url": "/api/2014/magic-items/potion-of-giant-strength-frost"
+    "url": "/api/2014/magic-items/potion-of-giant-strength-frost",
+    "weight": 0.5
   },
   {
     "index": "potion-of-giant-strength-stone",
@@ -4091,7 +4545,8 @@
       "quantity": 2500,
       "unit": "gp"
     },
-    "url": "/api/2014/magic-items/potion-of-giant-strength-stone"
+    "url": "/api/2014/magic-items/potion-of-giant-strength-stone",
+    "weight": 0.5
   },
   {
     "index": "potion-of-giant-strength-fire",
@@ -4115,7 +4570,8 @@
       "quantity": 2500,
       "unit": "gp"
     },
-    "url": "/api/2014/magic-items/potion-of-giant-strength-fire"
+    "url": "/api/2014/magic-items/potion-of-giant-strength-fire",
+    "weight": 0.5
   },
   {
     "index": "potion-of-giant-strength-cloud",
@@ -4140,7 +4596,8 @@
       "unit": "gp"
     },
 
-    "url": "/api/2014/magic-items/potion-of-giant-strength-cloud"
+    "url": "/api/2014/magic-items/potion-of-giant-strength-cloud",
+    "weight": 0.5
   },
   {
     "index": "potion-of-giant-strength-storm",
@@ -4164,7 +4621,8 @@
       "quantity": 125000,
       "unit": "gp"
     },
-    "url": "/api/2014/magic-items/potion-of-giant-strength-storm"
+    "url": "/api/2014/magic-items/potion-of-giant-strength-storm",
+    "weight": 0.5
   },
   {
     "index": "potion-of-growth",
@@ -4183,7 +4641,12 @@
       "Potion, uncommon",
       "When you drink this potion, you gain the \"enlarge\" effect of the enlarge/reduce spell for 1d4 hours (no concentration required). The red in the potion's liquid continuously expands from a tiny bead to color the clear liquid around it and then contracts. Shaking the bottle fails to interrupt this process."
     ],
-    "url": "/api/2014/magic-items/potion-of-growth"
+    "url": "/api/2014/magic-items/potion-of-growth",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "potion-of-healing",
@@ -4230,7 +4693,12 @@
       "| Superior healing | Rare | 8d4 + 8 |",
       "| Supreme healing | Very rare | 10d4 + 20 |"
     ],
-    "url": "/api/2014/magic-items/potion-of-healing"
+    "url": "/api/2014/magic-items/potion-of-healing",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "potion-of-healing-common",
@@ -4257,7 +4725,8 @@
     "effect": {
       "heal": "2d4+2"
     },
-    "url": "/api/2014/magic-items/potion-of-healing-common"
+    "url": "/api/2014/magic-items/potion-of-healing-common",
+    "weight": 0.5
   },
   {
     "index": "potion-of-healing-greater",
@@ -4284,7 +4753,8 @@
     "effect": {
       "heal": "4d4+4"
     },
-    "url": "/api/2014/magic-items/potion-of-healing-greater"
+    "url": "/api/2014/magic-items/potion-of-healing-greater",
+    "weight": 0.5
   },
   {
     "index": "potion-of-healing-superior",
@@ -4311,7 +4781,8 @@
     "effect": {
       "heal": "8d4+8"
     },
-    "url": "/api/2014/magic-items/potion-of-healing-superior"
+    "url": "/api/2014/magic-items/potion-of-healing-superior",
+    "weight": 0.5
   },
   {
     "index": "potion-of-healing-supreme",
@@ -4338,7 +4809,8 @@
     "effect": {
       "heal": "10d4+20"
     },
-    "url": "/api/2014/magic-items/potion-of-healing-supreme"
+    "url": "/api/2014/magic-items/potion-of-healing-supreme",
+    "weight": 0.5
   },
   {
     "index": "potion-of-heroism",
@@ -4357,7 +4829,12 @@
       "Potion, rare",
       "For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. For the same duration, you are under the effect of the bless spell (no concentration required). This blue potion bubbles and steams as if boiling."
     ],
-    "url": "/api/2014/magic-items/potion-of-heroism"
+    "url": "/api/2014/magic-items/potion-of-heroism",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "potion-of-invisibility",
@@ -4376,7 +4853,12 @@
       "Potion, very rare",
       "This potion's container looks empty but feels as though it holds liquid. When you drink it, you become invisible for 1 hour. Anything you wear or carry is invisible with you. The effect ends early if you attack or cast a spell."
     ],
-    "url": "/api/2014/magic-items/potion-of-invisibility"
+    "url": "/api/2014/magic-items/potion-of-invisibility",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "potion-of-mind-reading",
@@ -4395,7 +4877,12 @@
       "Potion, rare",
       "When you drink this potion, you gain the effect of the detect thoughts spell (save DC 13). The potion's dense, purple liquid has an ovoid cloud of pink floating in it."
     ],
-    "url": "/api/2014/magic-items/potion-of-mind-reading"
+    "url": "/api/2014/magic-items/potion-of-mind-reading",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "potion-of-poison",
@@ -4415,7 +4902,12 @@
       "This concoction looks, smells, and tastes like a potion of healing or other beneficial potion. However, it is actually poison masked by illusion magic. An identify spell reveals its true nature.",
       "If you drink it, you take 3d6 poison damage, and you must succeed on a DC 13 Constitution saving throw or be poisoned. At the start of each of your turns while you are poisoned in this way, you take 3d6 poison damage. At the end of each of your turns, you can repeat the saving throw. On a successful save, the poison damage you take on your subsequent turns decreases by 1d6. The poison ends when the damage decreases to 0."
     ],
-    "url": "/api/2014/magic-items/potion-of-poison"
+    "url": "/api/2014/magic-items/potion-of-poison",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "potion-of-resistance",
@@ -4497,7 +4989,12 @@
       "| 9 | Radiant |",
       "| 10 | Thunder |"
     ],
-    "url": "/api/2014/magic-items/potion-of-resistance"
+    "url": "/api/2014/magic-items/potion-of-resistance",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "potion-of-resistance-acid",
@@ -4528,7 +5025,8 @@
         "unit": "hour"
       }
     },
-    "url": "/api/2014/magic-items/potion-of-resistance-acid"
+    "url": "/api/2014/magic-items/potion-of-resistance-acid",
+    "weight": 0.5
   },
   {
     "index": "potion-of-resistance-cold",
@@ -4559,7 +5057,8 @@
         "unit": "hour"
       }
     },
-    "url": "/api/2014/magic-items/potion-of-resistance-cold"
+    "url": "/api/2014/magic-items/potion-of-resistance-cold",
+    "weight": 0.5
   },
   {
     "index": "potion-of-resistance-fire",
@@ -4590,7 +5089,8 @@
         "unit": "hour"
       }
     },
-    "url": "/api/2014/magic-items/potion-of-resistance-fire"
+    "url": "/api/2014/magic-items/potion-of-resistance-fire",
+    "weight": 0.5
   },
   {
     "index": "potion-of-resistance-force",
@@ -4621,7 +5121,8 @@
         "unit": "hour"
       }
     },
-    "url": "/api/2014/magic-items/potion-of-resistance-force"
+    "url": "/api/2014/magic-items/potion-of-resistance-force",
+    "weight": 0.5
   },
   {
     "index": "potion-of-resistance-lightning",
@@ -4652,7 +5153,8 @@
         "unit": "hour"
       }
     },
-    "url": "/api/2014/magic-items/potion-of-resistance-lightning"
+    "url": "/api/2014/magic-items/potion-of-resistance-lightning",
+    "weight": 0.5
   },
   {
     "index": "potion-of-resistance-necrotic",
@@ -4683,7 +5185,8 @@
         "unit": "hour"
       }
     },
-    "url": "/api/2014/magic-items/potion-of-resistance-necrotic"
+    "url": "/api/2014/magic-items/potion-of-resistance-necrotic",
+    "weight": 0.5
   },
   {
     "index": "potion-of-resistance-poison",
@@ -4714,7 +5217,8 @@
         "unit": "hour"
       }
     },
-    "url": "/api/2014/magic-items/potion-of-resistance-poison"
+    "url": "/api/2014/magic-items/potion-of-resistance-poison",
+    "weight": 0.5
   },
   {
     "index": "potion-of-resistance-psychic",
@@ -4745,7 +5249,8 @@
         "unit": "hour"
       }
     },
-    "url": "/api/2014/magic-items/potion-of-resistance-psychic"
+    "url": "/api/2014/magic-items/potion-of-resistance-psychic",
+    "weight": 0.5
   },
   {
     "index": "potion-of-resistance-radiant",
@@ -4776,7 +5281,8 @@
         "unit": "hour"
       }
     },
-    "url": "/api/2014/magic-items/potion-of-resistance-radiant"
+    "url": "/api/2014/magic-items/potion-of-resistance-radiant",
+    "weight": 0.5
   },
   {
     "index": "potion-of-resistance-thunder",
@@ -4807,7 +5313,8 @@
         "unit": "hour"
       }
     },
-    "url": "/api/2014/magic-items/potion-of-resistance-thunder"
+    "url": "/api/2014/magic-items/potion-of-resistance-thunder",
+    "weight": 0.5
   },
   {
     "index": "potion-of-speed",
@@ -4831,7 +5338,8 @@
       "unit": "gp"
     },
     "is_consumable": true,
-    "url": "/api/2014/magic-items/potion-of-speed"
+    "url": "/api/2014/magic-items/potion-of-speed",
+    "weight": 0.5
   },
   {
     "index": "potion-of-water-breathing",
@@ -4850,7 +5358,12 @@
       "Potion, uncommon",
       "You can breathe underwater for 1 hour after drinking this potion. Its cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it."
     ],
-    "url": "/api/2014/magic-items/potion-of-water-breathing"
+    "url": "/api/2014/magic-items/potion-of-water-breathing",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "restorative-ointment",
@@ -4870,7 +5383,12 @@
       "This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound.",
       "As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease."
     ],
-    "url": "/api/2014/magic-items/restorative-ointment"
+    "url": "/api/2014/magic-items/restorative-ointment",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0.5
   },
   {
     "index": "ring-of-animal-influence",
@@ -4892,7 +5410,12 @@
       "Fear (save DC 13), targeting only beasts that have an Intelligence of 3 or lower",
       "Speak with animals"
     ],
-    "url": "/api/2014/magic-items/ring-of-animal-influence"
+    "url": "/api/2014/magic-items/ring-of-animal-influence",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-djinni-summoning",
@@ -4913,7 +5436,12 @@
       "While summoned, the djinni is friendly to you and your companions. It obeys any commands you give it, no matter what language you use. If you fail to command it, the djinni defends itself against attackers but takes no other actions.",
       "After the djinni departs, it can't be summoned again for 24 hours, and the ring becomes nonmagical if the djinni dies."
     ],
-    "url": "/api/2014/magic-items/ring-of-djinni-summoning"
+    "url": "/api/2014/magic-items/ring-of-djinni-summoning",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-elemental-command",
@@ -4973,7 +5501,12 @@
       "You can breathe underwater and have a swimming speed equal to your walking speed.",
       "You can cast the following spells from the ring, expending the necessary number of charges: create or destroy water (1 charge), control water (3 charges), ice storm (2 charges), or wall of ice (3 charges)."
     ],
-    "url": "/api/2014/magic-items/ring-of-elemental-command"
+    "url": "/api/2014/magic-items/ring-of-elemental-command",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-elemental-command-air",
@@ -4999,7 +5532,12 @@
       "You have a flying speed equal to your walking speed and can hover.",
       "You can cast the following spells from the ring, expending the necessary number of charges: chain lightning (3 charges), gust of wind (2 charges), or wind wall (1 charge)."
     ],
-    "url": "/api/2014/magic-items/ring-of-elemental-command-air"
+    "url": "/api/2014/magic-items/ring-of-elemental-command-air",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-elemental-command-earth",
@@ -5025,7 +5563,12 @@
       "You can move through solid earth or rock as if those areas were difficult terrain. If you end your turn there, you are shunted out to the nearest unoccupied space you last occupied.",
       "You can cast the following spells from the ring, expending the necessary number of charges: stone shape (2 charges), stoneskin (3 charges), or wall of stone (3 charges)."
     ],
-    "url": "/api/2014/magic-items/ring-of-elemental-command-earth"
+    "url": "/api/2014/magic-items/ring-of-elemental-command-earth",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-elemental-command-fire",
@@ -5050,7 +5593,12 @@
       "You are immune to fire damage.",
       "You can cast the following spells from the ring, expending the necessary number of charges: burning hands (1 charge), fireball (2 charges), and wall of fire (3 charges)."
     ],
-    "url": "/api/2014/magic-items/ring-of-elemental-command-fire"
+    "url": "/api/2014/magic-items/ring-of-elemental-command-fire",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-elemental-command-water",
@@ -5075,7 +5623,12 @@
       "You can breathe underwater and have a swimming speed equal to your walking speed.",
       "You can cast the following spells from the ring, expending the necessary number of charges: create or destroy water (1 charge), control water (3 charges), ice storm (2 charges), or wall of ice (3 charges)."
     ],
-    "url": "/api/2014/magic-items/ring-of-elemental-command-water"
+    "url": "/api/2014/magic-items/ring-of-elemental-command-water",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-evasion",
@@ -5094,7 +5647,12 @@
       "Ring, rare (requires attunement)",
       "This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your reaction to expend 1 of its charges to succeed on that saving throw instead."
     ],
-    "url": "/api/2014/magic-items/ring-of-evasion"
+    "url": "/api/2014/magic-items/ring-of-evasion",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-feather-falling",
@@ -5113,7 +5671,12 @@
       "Ring, rare (requires attunement)",
       "When you fall while wearing this ring, you descend 60 feet per round and take no damage from falling."
     ],
-    "url": "/api/2014/magic-items/ring-of-feather-falling"
+    "url": "/api/2014/magic-items/ring-of-feather-falling",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-free-action",
@@ -5132,7 +5695,12 @@
       "Ring, rare (requires attunement)",
       "While you wear this ring, difficult terrain doesn't cost you extra movement. In addition, magic can neither reduce your speed nor cause you to be paralyzed or restrained."
     ],
-    "url": "/api/2014/magic-items/ring-of-free-action"
+    "url": "/api/2014/magic-items/ring-of-free-action",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-invisibility",
@@ -5151,7 +5719,12 @@
       "Ring, legendary (requires attunement)",
       "While wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until the ring is removed, until you attack or cast a spell, or until you use a bonus action to become visible again."
     ],
-    "url": "/api/2014/magic-items/ring-of-invisibility"
+    "url": "/api/2014/magic-items/ring-of-invisibility",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-jumping",
@@ -5170,7 +5743,12 @@
       "Ring, uncommon (requires attunement)",
       "While wearing this ring, you can cast the jump spell from it as a bonus action at will, but can target only yourself when you do so."
     ],
-    "url": "/api/2014/magic-items/ring-of-jumping"
+    "url": "/api/2014/magic-items/ring-of-jumping",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-mind-shielding",
@@ -5191,7 +5769,12 @@
       "You can use an action to cause the ring to become invisible until you use another action to make it visible, until you remove the ring, or until you die.",
       "If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for the afterlife. As long as your soul is in the ring, you can telepathically communicate with any creature wearing it. A wearer can't prevent this telepathic communication."
     ],
-    "url": "/api/2014/magic-items/ring-of-mind-shielding"
+    "url": "/api/2014/magic-items/ring-of-mind-shielding",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-protection",
@@ -5234,7 +5817,8 @@
     "cost": {
       "quantity": 3500,
       "unit": "gp"
-    }
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-regeneration",
@@ -5253,7 +5837,12 @@
       "Ring, very rare (requires attunement)",
       "While wearing this ring, you regain 1d6 hit points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 hit point the whole time."
     ],
-    "url": "/api/2014/magic-items/ring-of-regeneration"
+    "url": "/api/2014/magic-items/ring-of-regeneration",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-resistance",
@@ -5335,7 +5924,12 @@
       "| 9 | Radiant | Topaz |",
       "| 10 | Thunder | Spinel |"
     ],
-    "url": "/api/2014/magic-items/ring-of-resistance"
+    "url": "/api/2014/magic-items/ring-of-resistance",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-resistance-acid",
@@ -5366,7 +5960,8 @@
         "length": 1,
         "unit": "while attuned"
       }
-    }
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-resistance-cold",
@@ -5397,7 +5992,8 @@
         "length": 1,
         "unit": "while attuned"
       }
-    }
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-resistance-fire",
@@ -5428,7 +6024,8 @@
         "length": 1,
         "unit": "while attuned"
       }
-    }
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-resistance-force",
@@ -5459,7 +6056,8 @@
         "length": 1,
         "unit": "while attuned"
       }
-    }
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-resistance-lightning",
@@ -5490,7 +6088,8 @@
         "length": 1,
         "unit": "while attuned"
       }
-    }
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-resistance-necrotic",
@@ -5521,7 +6120,8 @@
         "length": 1,
         "unit": "while attuned"
       }
-    }
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-resistance-poison",
@@ -5552,7 +6152,8 @@
         "length": 1,
         "unit": "while attuned"
       }
-    }
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-resistance-psychic",
@@ -5583,7 +6184,8 @@
         "length": 1,
         "unit": "while attuned"
       }
-    }
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-resistance-radiant",
@@ -5614,7 +6216,8 @@
         "length": 1,
         "unit": "while attuned"
       }
-    }
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-resistance-thunder",
@@ -5645,7 +6248,8 @@
         "length": 1,
         "unit": "while attuned"
       }
-    }
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-shooting-stars",
@@ -5676,7 +6280,12 @@
       "| 1 | 4d12 |",
       "***Shooting Stars.*** You can expend 1 to 3 charges as an action. For every charge you expend, you launch a glowing mote of light from the ring at a point you can see within 60 feet of you. Each creature within a 15-foot cube originating from that point is showered in sparks and must make a DC 15 Dexterity saving throw, taking 5d4 fire damage on a failed save, or half as much damage on a successful one."
     ],
-    "url": "/api/2014/magic-items/ring-of-shooting-stars"
+    "url": "/api/2014/magic-items/ring-of-shooting-stars",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-spell-storing",
@@ -5697,7 +6306,12 @@
       "Any creature can cast a spell of 1st through 5th level into the ring by touching the ring as the spell is cast. The spell has no effect, other than to be stored in the ring. If the ring can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.",
       "While wearing this ring, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the ring is no longer stored in it, freeing up space."
     ],
-    "url": "/api/2014/magic-items/ring-of-spell-storing"
+    "url": "/api/2014/magic-items/ring-of-spell-storing",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-spell-turning",
@@ -5716,7 +6330,12 @@
       "Ring, legendary (requires attunement)",
       "While wearing this ring, you have advantage on saving throws against any spell that targets only you (not in an area of effect). In addition, if you roll a 20 for the save and the spell is 7th level or lower, the spell has no effect on you and instead targets the caster, using the slot level, spell save DC, attack bonus, and spellcasting ability of the caster."
     ],
-    "url": "/api/2014/magic-items/ring-of-spell-turning"
+    "url": "/api/2014/magic-items/ring-of-spell-turning",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-swimming",
@@ -5735,7 +6354,12 @@
       "Ring, uncommon",
       "You have a swimming speed of 40 feet while wearing this ring."
     ],
-    "url": "/api/2014/magic-items/ring-of-swimming"
+    "url": "/api/2014/magic-items/ring-of-swimming",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-telekinesis",
@@ -5754,7 +6378,12 @@
       "Ring, very rare (requires attunement)",
       "While wearing this ring, you can cast the telekinesis spell at will, but you can target only objects that aren't being worn or carried."
     ],
-    "url": "/api/2014/magic-items/ring-of-telekinesis"
+    "url": "/api/2014/magic-items/ring-of-telekinesis",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-the-ram",
@@ -5774,7 +6403,12 @@
       "This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use an action to expend 1 to 3 of its charges to attack one creature you can see within 60 feet of you. The ring produces a spectral ram's head and makes its attack roll with a +7 bonus. On a hit, for each charge you spend, the target takes 2d10 force damage and is pushed 5 feet away from you.",
       "Alternatively, you can expend 1 to 3 of the ring's charges as an action to try to break an object you can see within 60 feet of you that isn't being worn or carried. The ring makes a Strength check with a +5 bonus for each charge you spend."
     ],
-    "url": "/api/2014/magic-items/ring-of-the-ram"
+    "url": "/api/2014/magic-items/ring-of-the-ram",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-three-wishes",
@@ -5793,7 +6427,12 @@
       "Ring, legendary",
       "While wearing this ring, you can use an action to expend 1 of its 3 charges to cast the wish spell from it. The ring becomes nonmagical when you use the last charge."
     ],
-    "url": "/api/2014/magic-items/ring-of-three-wishes"
+    "url": "/api/2014/magic-items/ring-of-three-wishes",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-warmth",
@@ -5812,7 +6451,12 @@
       "Ring, uncommon (requires attunement)",
       "While wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as -50 degrees Fahrenheit."
     ],
-    "url": "/api/2014/magic-items/ring-of-warmth"
+    "url": "/api/2014/magic-items/ring-of-warmth",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-water-walking",
@@ -5831,7 +6475,12 @@
       "Ring, uncommon",
       "While wearing this ring, you can stand on and move across any liquid surface as if it were solid ground."
     ],
-    "url": "/api/2014/magic-items/ring-of-water-walking"
+    "url": "/api/2014/magic-items/ring-of-water-walking",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ring-of-x-ray-vision",
@@ -5851,7 +6500,12 @@
       "While wearing this ring, you can use an action to speak its command word. When you do so, you can see into and through solid matter for 1 minute. This vision has a radius of 30 feet. To you, solid objects within that radius appear transparent and don't prevent light from passing through them. The vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances block the vision, as does a thin sheet of lead.",
       "Whenever you use the ring again before taking a long rest, you must succeed on a DC 15 Constitution saving throw or gain one level of exhaustion."
     ],
-    "url": "/api/2014/magic-items/ring-of-x-ray-vision"
+    "url": "/api/2014/magic-items/ring-of-x-ray-vision",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "robe-of-eyes",
@@ -5875,7 +6529,12 @@
       "The eyes on the robe can't be closed or averted. Although you can close or avert your own eyes, you are never considered to be doing so while wearing this robe.",
       "A light spell cast on the robe or a daylight spell cast within 5 feet of the robe causes you to be blinded for 1 minute. At the end of each of your turns, you can make a Constitution saving throw (DC 11 for light or DC 15 for daylight), ending the blindness on a success."
     ],
-    "url": "/api/2014/magic-items/robe-of-eyes"
+    "url": "/api/2014/magic-items/robe-of-eyes",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "robe-of-scintillating-colors",
@@ -5894,7 +6553,12 @@
       "Wondrous item, very rare (requires attunement)",
       "This robe has 3 charges, and it regains 1d3 expended charges daily at dawn. While you wear it, you can use an action and expend 1 charge to cause the garment to display a shifting pattern of dazzling hues until the end of your next turn. During this time, the robe sheds bright light in a 30-foot radius and dim light for an additional 30 feet. Creatures that can see you have disadvantage on attack rolls against you. In addition, any creature in the bright light that can see you when the robe's power is activated must succeed on a DC 15 Wisdom saving throw or become stunned until the effect ends."
     ],
-    "url": "/api/2014/magic-items/robe-of-scintillating-colors"
+    "url": "/api/2014/magic-items/robe-of-scintillating-colors",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "robe-of-stars",
@@ -5915,7 +6579,12 @@
       "Six stars, located on the robe's upper front portion, are particularly large. While wearing this robe, you can use an action to pull off one of the stars and use it to cast magic missile as a 5th-level spell. Daily at dusk, 1d6 removed stars reappear on the robe.",
       "While you wear the robe, you can use an action to enter the Astral Plane along with everything you are wearing and carrying. You remain there until you use an action to return to the plane you were on. You reappear in the last space you occupied, or if that space is occupied, the nearest unoccupied space."
     ],
-    "url": "/api/2014/magic-items/robe-of-stars"
+    "url": "/api/2014/magic-items/robe-of-stars",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "robe-of-the-archmagi",
@@ -5938,7 +6607,12 @@
       "You have advantage on saving throws against spells and other magical effects.",
       "Your spell save DC and spell attack bonus each increase by 2."
     ],
-    "url": "/api/2014/magic-items/robe-of-the-archmagi"
+    "url": "/api/2014/magic-items/robe-of-the-archmagi",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "robe-of-useful-items",
@@ -5979,7 +6653,12 @@
       "| 91-96 | Window (2 feet by 4 feet, up to 2 feet deep), which you can place on a vertical surface you can reach |",
       "| 97-100 | Portable ram |"
     ],
-    "url": "/api/2014/magic-items/robe-of-useful-items"
+    "url": "/api/2014/magic-items/robe-of-useful-items",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "rod-of-absorption",
@@ -6001,7 +6680,12 @@
       "If you are a spellcaster holding the rod, you can convert energy stored in it into spell slots to cast spells you have prepared or know. You can create spell slots only of a level equal to or lower than your own spell slots, up to a maximum of 5th level. You use the stored levels in place of your slots, but otherwise cast the spell as normal. For example, you can use 3 levels stored in the rod as a 3rd-level spell slot.",
       "A newly found rod has 1d10 levels of spell energy stored in it already. A rod that can no longer absorb spell energy and has no energy remaining becomes nonmagical."
     ],
-    "url": "/api/2014/magic-items/rod-of-absorption"
+    "url": "/api/2014/magic-items/rod-of-absorption",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "rod-of-alertness",
@@ -6024,7 +6708,12 @@
       "***Protective Aura.*** As an action, you can plant the haft end of the rod in the ground, whereupon the rod's head sheds bright light in a 60-foot radius and dim light for an additional 60 feet. While in that bright light, you and any creature that is friendly to you gain a +1 bonus to AC and saving throws and can sense the location of any invisible hostile creature that is also in the bright light.",
       "The rod's head stops glowing and the effect ends after 10 minutes, or when a creature uses an action to pull the rod from the ground. This property can't be used again until the next dawn."
     ],
-    "url": "/api/2014/magic-items/rod-of-alertness"
+    "url": "/api/2014/magic-items/rod-of-alertness",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "rod-of-lordly-might",
@@ -6053,7 +6742,12 @@
       "***Paralyze.*** When you hit a creature with a melee attack using the rod, you can force the target to make a DC 17 Strength saving throw. On a failure, the target is paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success. This property can't be used again until the next dawn.",
       "***Terrify.*** While holding the rod, you can use an action to force each creature you can see within 30 feet of you to make a DC 17 Wisdom saving throw. On a failure, a target is frightened of you for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. This property can't be used again until the next dawn."
     ],
-    "url": "/api/2014/magic-items/rod-of-lordly-might"
+    "url": "/api/2014/magic-items/rod-of-lordly-might",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "rod-of-rulership",
@@ -6072,7 +6766,12 @@
       "Rod, rare (requires attunement)",
       "You can use an action to present the rod and command obedience from each creature of your choice that you can see within 120 feet of you. Each target must succeed on a DC 15 Wisdom saving throw or be charmed by you for 8 hours. While charmed in this way, the creature regards you as its trusted leader. If harmed by you or your companions, or commanded to do something contrary to its nature, a target ceases to be charmed in this way. The rod can't be used again until the next dawn."
     ],
-    "url": "/api/2014/magic-items/rod-of-rulership"
+    "url": "/api/2014/magic-items/rod-of-rulership",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "rod-of-security",
@@ -6097,7 +6796,8 @@
       "quantity": 90000,
       "unit": "gp"
     },
-    "url": "/api/2014/magic-items/rod-of-security"
+    "url": "/api/2014/magic-items/rod-of-security",
+    "weight": 2
   },
   {
     "index": "rope-of-climbing",
@@ -6122,7 +6822,8 @@
       "quantity": 2000,
       "unit": "gp"
     },
-    "url": "/api/2014/magic-items/rope-of-climbing"
+    "url": "/api/2014/magic-items/rope-of-climbing",
+    "weight": 3
   },
   {
     "index": "rope-of-entanglement",
@@ -6143,7 +6844,12 @@
       "You can release the creature by using a bonus action to speak a second command word. A target restrained by the rope can use an action to make a DC 15 Strength or Dexterity check (target's choice). On a success, the creature is no longer restrained by the rope.",
       "The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 hit points, it is destroyed."
     ],
-    "url": "/api/2014/magic-items/rope-of-entanglement"
+    "url": "/api/2014/magic-items/rope-of-entanglement",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "scarab-of-protection",
@@ -6164,7 +6870,12 @@
       "You have advantage on saving throws against spells.",
       "The scarab has 12 charges. If you fail a saving throw against a necromancy spell or a harmful effect originating from an undead creature, you can use your reaction to expend 1 charge and turn the failed save into a successful one. The scarab crumbles into powder and is destroyed when its last charge is expended."
     ],
-    "url": "/api/2014/magic-items/scarab-of-protection"
+    "url": "/api/2014/magic-items/scarab-of-protection",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "scimitar-of-speed",
@@ -6183,7 +6894,12 @@
       "Weapon (scimitar), very rare (requires attunement)",
       "You gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, you can make one attack with it as a bonus action on each of your turns."
     ],
-    "url": "/api/2014/magic-items/scimitar-of-speed"
+    "url": "/api/2014/magic-items/scimitar-of-speed",
+    "cost": {
+      "quantity": 16000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "shield-of-missile-attraction",
@@ -6203,7 +6919,12 @@
       "While holding this shield, you have resistance to damage from ranged weapon attacks.",
       "***Curse.*** This shield is cursed. Attuning to it curses you until you are targeted by the remove curse spell or similar magic. Removing the shield fails to end the curse on you. Whenever a ranged weapon attack is made against a target within 10 feet of you, the curse causes you to become the target instead."
     ],
-    "url": "/api/2014/magic-items/shield-of-missile-attraction"
+    "url": "/api/2014/magic-items/shield-of-missile-attraction",
+    "cost": {
+      "quantity": 1500,
+      "unit": "gp"
+    },
+    "weight": 6
   },
   {
     "index": "slippers-of-spider-climbing",
@@ -6226,7 +6947,8 @@
       "quantity": 5000,
       "unit": "gp"
     },
-    "url": "/api/2014/magic-items/slippers-of-spider-climbing"
+    "url": "/api/2014/magic-items/slippers-of-spider-climbing",
+    "weight": 1
   },
   {
     "index": "sovereign-glue",
@@ -6250,7 +6972,8 @@
       "quantity": 400,
       "unit": "gp"
     },
-    "url": "/api/2014/magic-items/sovereign-glue"
+    "url": "/api/2014/magic-items/sovereign-glue",
+    "weight": 1
   },
   {
     "index": "spell-scroll",
@@ -6336,7 +7059,12 @@
       "| 9th | Legendary | 19 | +11 |",
       "A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
     ],
-    "url": "/api/2014/magic-items/spell-scroll"
+    "url": "/api/2014/magic-items/spell-scroll",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "spell-scroll-cantrip",
@@ -6357,7 +7085,12 @@
       "If the spell is on your class's spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. The DC equals 10 + the spell's level. On a failed check, the spell disappears from the scroll with no other effect.",
       "This scroll contains a cantrip. The spell's saving throw is 13 and the attack bonus is +5."
     ],
-    "url": "/api/2014/magic-items/spell-scroll-cantrip"
+    "url": "/api/2014/magic-items/spell-scroll-cantrip",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "spell-scroll-1st",
@@ -6379,7 +7112,12 @@
       "This scroll contains a 1st level spell. The spell's saving throw is 13 and the attack bonus is +5.",
       "A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 11. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
     ],
-    "url": "/api/2014/magic-items/spell-scroll-1st"
+    "url": "/api/2014/magic-items/spell-scroll-1st",
+    "cost": {
+      "quantity": 50,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "spell-scroll-2nd",
@@ -6401,7 +7139,12 @@
       "This scroll contains a 2nd level spell. The spell's saving throw is 13 and the attack bonus is +5.",
       "A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 12. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
     ],
-    "url": "/api/2014/magic-items/spell-scroll-2nd"
+    "url": "/api/2014/magic-items/spell-scroll-2nd",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "spell-scroll-3rd",
@@ -6423,7 +7166,12 @@
       "This scroll contains a 3rd level spell. The spell's saving throw is 15 and the attack bonus is +7.",
       "A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 13. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
     ],
-    "url": "/api/2014/magic-items/spell-scroll-3rd"
+    "url": "/api/2014/magic-items/spell-scroll-3rd",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "spell-scroll-4th",
@@ -6445,7 +7193,12 @@
       "This scroll contains a 4th level spell. The spell's saving throw is 15 and the attack bonus is +7.",
       "A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 14. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
     ],
-    "url": "/api/2014/magic-items/spell-scroll-4th"
+    "url": "/api/2014/magic-items/spell-scroll-4th",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "spell-scroll-5th",
@@ -6467,7 +7220,12 @@
       "This scroll contains a 5th level spell. The spell's saving throw is 17 and the attack bonus is +9.",
       "A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 15. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
     ],
-    "url": "/api/2014/magic-items/spell-scroll-5th"
+    "url": "/api/2014/magic-items/spell-scroll-5th",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "spell-scroll-6th",
@@ -6489,7 +7247,12 @@
       "This scroll contains a 6th level spell. The spell's saving throw is 18 and the attack bonus is +10.",
       "A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 16. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
     ],
-    "url": "/api/2014/magic-items/spell-scroll-6th"
+    "url": "/api/2014/magic-items/spell-scroll-6th",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "spell-scroll-7th",
@@ -6511,7 +7274,12 @@
       "This scroll contains a 7th level spell. The spell's saving throw is 18 and the attack bonus is +10.",
       "A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 17. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
     ],
-    "url": "/api/2014/magic-items/spell-scroll-7th"
+    "url": "/api/2014/magic-items/spell-scroll-7th",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "spell-scroll-8th",
@@ -6533,7 +7301,12 @@
       "This scroll contains an 8th level spell. The spell's saving throw is 18 and the attack bonus is +10.",
       "A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 18. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
     ],
-    "url": "/api/2014/magic-items/spell-scroll-8th"
+    "url": "/api/2014/magic-items/spell-scroll-8th",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "spell-scroll-9th",
@@ -6555,7 +7328,12 @@
       "This scroll contains a 9th level spell. The spell's saving throw is 19 and the attack bonus is +11.",
       "A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 19. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed."
     ],
-    "url": "/api/2014/magic-items/spell-scroll-9th"
+    "url": "/api/2014/magic-items/spell-scroll-9th",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "spellguard-shield",
@@ -6574,7 +7352,12 @@
       "Armor (shield), very rare (requires attunement)",
       "While holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you."
     ],
-    "url": "/api/2014/magic-items/spellguard-shield"
+    "url": "/api/2014/magic-items/spellguard-shield",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 6
   },
   {
     "index": "sphere-of-annihilation",
@@ -6602,7 +7385,12 @@
       "| 51-85 | The sphere moves through the portal or into the extradimensional space. |",
       "| 86-00 | A spatial rift sends each creature and object within 180 feet of the sphere, including the sphere, to a random plane of existence. |"
     ],
-    "url": "/api/2014/magic-items/sphere-of-annihilation"
+    "url": "/api/2014/magic-items/sphere-of-annihilation",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "staff-of-charming",
@@ -6623,7 +7411,12 @@
       "If you are holding the staff and fail a saving throw against an enchantment spell that targets only you, you can turn your failed save into a successful one. You can't use this property of the staff again until the next dawn. If you succeed on a save against an enchantment spell that targets only you, with or without the staff's intervention, you can use your reaction to expend 1 charge from the staff and turn the spell back on its caster as if you had cast the spell.",
       "The staff regains 1d8 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a nonmagical quarterstaff."
     ],
-    "url": "/api/2014/magic-items/staff-of-charming"
+    "url": "/api/2014/magic-items/staff-of-charming",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "staff-of-fire",
@@ -6644,7 +7437,12 @@
       "The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: burning hands (1 charge), fireball (3 charges), or wall of fire (4 charges).",
       "The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff blackens, crumbles into cinders, and is destroyed."
     ],
-    "url": "/api/2014/magic-items/staff-of-fire"
+    "url": "/api/2014/magic-items/staff-of-fire",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "staff-of-frost",
@@ -6665,7 +7463,12 @@
       "The staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: cone of cold (5 charges), fog cloud (1 charge), ice storm (4 charges), or wall of ice (4 charges).",
       "The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff turns to water and is destroyed."
     ],
-    "url": "/api/2014/magic-items/staff-of-frost"
+    "url": "/api/2014/magic-items/staff-of-frost",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "staff-of-healing",
@@ -6685,7 +7488,12 @@
       "This staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: cure wounds (1 charge per spell level, up to 4th), lesser restoration (2 charges), or mass cure wounds (5 charges).",
       "The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff vanishes in a flash of light, lost forever."
     ],
-    "url": "/api/2014/magic-items/staff-of-healing"
+    "url": "/api/2014/magic-items/staff-of-healing",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "staff-of-power",
@@ -6714,7 +7522,12 @@
       "| 11 to 20 ft. away | 6 × the number of charges in the staff |",
       "| 21 to 30 ft. away | 4 × the number of charges in the staff |"
     ],
-    "url": "/api/2014/magic-items/staff-of-power"
+    "url": "/api/2014/magic-items/staff-of-power",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "staff-of-striking",
@@ -6734,7 +7547,12 @@
       "This staff can be wielded as a magic quarterstaff that grants a +3 bonus to attack and damage rolls made with it.",
       "The staff has 10 charges. When you hit with a melee attack using it, you can expend up to 3 of its charges. For each charge you expend, the target takes an extra 1d6 force damage. The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a nonmagical quarterstaff."
     ],
-    "url": "/api/2014/magic-items/staff-of-striking"
+    "url": "/api/2014/magic-items/staff-of-striking",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "staff-of-swarming-insects",
@@ -6755,7 +7573,12 @@
       "***Spells.*** While holding the staff, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC: giant insect (4 charges) or insect plague (5 charges).",
       "***Insect Cloud.*** While holding the staff, you can use an action and expend 1 charge to cause a swarm of harmless flying insects to spread out in a 30-foot radius from you. The insects remain for 10 minutes, making the area heavily obscured for creatures other than you. The swarm moves with you, remaining centered on you. A wind of at least 10 miles per hour disperses the swarm and ends the effect."
     ],
-    "url": "/api/2014/magic-items/staff-of-swarming-insects"
+    "url": "/api/2014/magic-items/staff-of-swarming-insects",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "staff-of-the-magi",
@@ -6785,7 +7608,12 @@
       "| 11 to 20 ft. away | 6 × the number of charges in the staff |",
       "| 21 to 30 ft. away | 4 × the number of charges in the staff |"
     ],
-    "url": "/api/2014/magic-items/staff-of-the-magi"
+    "url": "/api/2014/magic-items/staff-of-the-magi",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "staff-of-the-python",
@@ -6806,7 +7634,12 @@
       "On your turn, you can mentally command the snake if it is within 60 feet of you and you aren't incapacitated. You decide what action the snake takes and where it moves during its next turn, or you can issue it a general command, such as to attack your enemies or guard a location.",
       "If the snake is reduced to 0 hit points, it dies and reverts to its staff form. The staff then shatters and is destroyed. If the snake reverts to staff form before losing all its hit points, it regains all of them."
     ],
-    "url": "/api/2014/magic-items/staff-of-the-python"
+    "url": "/api/2014/magic-items/staff-of-the-python",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "staff-of-the-woodlands",
@@ -6829,7 +7662,12 @@
       "You can also use an action to cast the pass without trace spell from the staff without using any charges. Tree Form. You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius.",
       "The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by detect magic. While touching the tree and using another action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff."
     ],
-    "url": "/api/2014/magic-items/staff-of-the-woodlands"
+    "url": "/api/2014/magic-items/staff-of-the-woodlands",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "staff-of-thunder-and-lightning",
@@ -6853,7 +7691,12 @@
       "***Thunderclap.*** You can use an action to cause the staff to issue a deafening thunderclap, audible out to 600 feet. Each creature within 60 feet of you (not including you) must make a DC 17 Constitution saving throw. On a failed save, a creature takes 2d6 thunder damage and becomes deafened for 1 minute. On a successful save, a creature takes half damage and isn't deafened.",
       "***Thunder and Lightning.*** You can use an action to use the Lightning Strike and Thunderclap properties at the same time. Doing so doesn't expend the daily use of those properties, only the use of this one."
     ],
-    "url": "/api/2014/magic-items/staff-of-thunder-and-lightning"
+    "url": "/api/2014/magic-items/staff-of-thunder-and-lightning",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "staff-of-withering",
@@ -6873,7 +7716,12 @@
       "This staff has 3 charges and regains 1d3 expended charges daily at dawn.",
       "The staff can be wielded as a magic quarterstaff. On a hit, it deals damage as a normal quarterstaff, and you can expend 1 charge to deal an extra 2d10 necrotic damage to the target. In addition, the target must succeed on a DC 15 Constitution saving throw or have disadvantage for 1 hour on any ability check or saving throw that uses Strength or Constitution."
     ],
-    "url": "/api/2014/magic-items/staff-of-withering"
+    "url": "/api/2014/magic-items/staff-of-withering",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "stone-of-controlling-earth-elementals",
@@ -6892,7 +7740,12 @@
       "Wondrous item, rare",
       "If the stone is touching the ground, you can use an action to speak its command word and summon an earth elemental, as if you had cast the conjure elemental spell. The stone can't be used this way again until the next dawn. The stone weighs 5 pounds."
     ],
-    "url": "/api/2014/magic-items/stone-of-controlling-earth-elementals"
+    "url": "/api/2014/magic-items/stone-of-controlling-earth-elementals",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 5
   },
   {
     "index": "stone-of-good-luck-luckstone",
@@ -6911,7 +7764,12 @@
       "Wondrous item, uncommon (requires attunement)",
       "While this polished agate is on your person, you gain a +1 bonus to ability checks and saving throws."
     ],
-    "url": "/api/2014/magic-items/stone-of-good-luck-luckstone"
+    "url": "/api/2014/magic-items/stone-of-good-luck-luckstone",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "sun-blade",
@@ -6932,7 +7790,12 @@
       "You gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage.",
       "The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight. While the blade persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each."
     ],
-    "url": "/api/2014/magic-items/sun-blade"
+    "url": "/api/2014/magic-items/sun-blade",
+    "cost": {
+      "quantity": 4000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "sword-of-life-stealing",
@@ -6951,7 +7814,12 @@
       "Weapon (any sword), rare (requires attunement)",
       "When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 3d6 necrotic damage, provided that the target isn't a construct or an undead. You gain temporary hit points equal to the extra damage dealt."
     ],
-    "url": "/api/2014/magic-items/sword-of-life-stealing"
+    "url": "/api/2014/magic-items/sword-of-life-stealing",
+    "cost": {
+      "quantity": 4000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "sword-of-sharpness",
@@ -6972,7 +7840,12 @@
       "When you attack a creature with this weapon and roll a 20 on the attack roll, that target takes an extra 4d6 slashing damage. Then roll another d20. If you roll a 20, you lop off one of the target's limbs, with the effect of such loss determined by the GM. If the creature has no limb to sever, you lop off a portion of its body instead.",
       "In addition, you can speak the sword's command word to cause the blade to shed bright light in a 10 foot radius and dim light for an additional 10 feet. Speaking the command word again or sheathing the sword puts out the light."
     ],
-    "url": "/api/2014/magic-items/sword-of-sharpness"
+    "url": "/api/2014/magic-items/sword-of-sharpness",
+    "cost": {
+      "quantity": 16000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "sword-of-wounding",
@@ -6992,7 +7865,12 @@
       "Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.",
       "Once per turn, when you hit a creature with an attack using this magic weapon, you can wound the target. At the start of each of the wounded creature's turns, it takes 1d4 necrotic damage for each time you've wounded it, and it can then make a DC 15 Constitution saving throw, ending the effect of all such wounds on itself on a success. Alternatively, the wounded creature, or a creature within 5 feet of it, can use an action to make a DC 15 Wisdom (Medicine) check, ending the effect of such wounds on it on a success."
     ],
-    "url": "/api/2014/magic-items/sword-of-wounding"
+    "url": "/api/2014/magic-items/sword-of-wounding",
+    "cost": {
+      "quantity": 4000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "talisman-of-pure-good",
@@ -7013,7 +7891,12 @@
       "If you are a good cleric or paladin, you can use the talisman as a holy symbol, and you gain a +2 bonus to spell attack rolls while you wear or hold it.",
       "The talisman has 7 charges. If you are wearing or holding it, you can use an action to expend 1 charge from it and choose one creature you can see on the ground within 120 feet of you. If the target is of evil alignment, a flaming fissure opens under it. The target must succeed on a DC 20 Dexterity saving throw or fall into the fissure and be destroyed, leaving no remains. The fissure then closes, leaving no trace of its existence. When you expend the last charge, the talisman disperses into motes of golden light and is destroyed."
     ],
-    "url": "/api/2014/magic-items/talisman-of-pure-good"
+    "url": "/api/2014/magic-items/talisman-of-pure-good",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "talisman-of-the-sphere",
@@ -7032,7 +7915,12 @@
       "Wondrous item, legendary (requires attunement)",
       "When you make an Intelligence (Arcana) check to control a sphere of annihilation while you are holding this talisman, you double your proficiency bonus on the check. In addition, when you start your turn with control over a sphere of annihilation, you can use an action to levitate it 10 feet plus a number of additional feet equal to 10 × your Intelligence modifier."
     ],
-    "url": "/api/2014/magic-items/talisman-of-the-sphere"
+    "url": "/api/2014/magic-items/talisman-of-the-sphere",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "talisman-of-ultimate-evil",
@@ -7053,7 +7941,12 @@
       "If you are an evil cleric or paladin, you can use the talisman as a holy symbol, and you gain a +2 bonus to spell attack rolls while you wear or hold it.",
       "The talisman has 6 charges. If you are wearing or holding it, you can use an action to expend 1 charge from the talisman and choose one creature you can see on the ground within 120 feet of you. If the target is of good alignment, a flaming fissure opens under it. The target must succeed on a DC 20 Dexterity saving throw or fall into the fissure and be destroyed, leaving no remains. The fissure then closes, leaving no trace of its existence. When you expend the last charge, the talisman dissolves into foul-smelling slime and is destroyed."
     ],
-    "url": "/api/2014/magic-items/talisman-of-ultimate-evil"
+    "url": "/api/2014/magic-items/talisman-of-ultimate-evil",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "tome-of-clear-thought",
@@ -7090,7 +7983,8 @@
     "cost": {
       "quantity": 50000,
       "unit": "gp"
-    }
+    },
+    "weight": 5
   },
   {
     "index": "tome-of-leadership-and-influence",
@@ -7127,7 +8021,8 @@
     "cost": {
       "quantity": 50000,
       "unit": "gp"
-    }
+    },
+    "weight": 5
   },
   {
     "index": "tome-of-understanding",
@@ -7164,7 +8059,8 @@
     "cost": {
       "quantity": 50000,
       "unit": "gp"
-    }
+    },
+    "weight": 5
   },
   {
     "index": "trident-of-fish-command",
@@ -7183,7 +8079,12 @@
       "Weapon (trident), uncommon (requires attunement)",
       "This trident is a magic weapon. It has 3 charges. While you carry it, you can use an action and expend 1 charge to cast dominate beast (save DC 15) from it on a beast that has an innate swimming speed. The trident regains 1d3 expended charges daily at dawn."
     ],
-    "url": "/api/2014/magic-items/trident-of-fish-command"
+    "url": "/api/2014/magic-items/trident-of-fish-command",
+    "cost": {
+      "quantity": 1000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "universal-solvent",
@@ -7206,7 +8107,8 @@
       "quantity": 300,
       "unit": "gp"
     },
-    "url": "/api/2014/magic-items/universal-solvent"
+    "url": "/api/2014/magic-items/universal-solvent",
+    "weight": 1
   },
   {
     "index": "vicious-weapon",
@@ -7229,7 +8131,8 @@
     "cost": {
       "quantity": 350,
       "unit": "gp"
-    }
+    },
+    "weight": 3
   },
   {
     "index": "vorpal-sword",
@@ -7249,7 +8152,12 @@
       "You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, the weapon ignores resistance to slashing damage.",
       "When you attack a creature that has at least one head with this weapon and roll a 20 on the attack roll, you cut off one of the creature's heads. The creature dies if it can't survive without the lost head. A creature is immune to this effect if it is immune to slashing damage, doesn't have or need a head, has legendary actions, or the GM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes an extra 6d8 slashing damage from the hit."
     ],
-    "url": "/api/2014/magic-items/vorpal-sword"
+    "url": "/api/2014/magic-items/vorpal-sword",
+    "cost": {
+      "quantity": 24000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "wand-of-binding",
@@ -7270,7 +8178,12 @@
       "***Spells.*** While holding the wand, you can use an action to expend some of its charges to cast one of the following spells (save DC 17): hold monster (5 charges) or hold person (2 charges).",
       "***Assisted Escape.*** While holding the wand, you can use your reaction to expend 1 charge and gain advantage on a saving throw you make to avoid being paralyzed or restrained, or you can expend 1 charge and gain advantage on any check you make to escape a grapple."
     ],
-    "url": "/api/2014/magic-items/wand-of-binding"
+    "url": "/api/2014/magic-items/wand-of-binding",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-enemy-detection",
@@ -7290,7 +8203,12 @@
       "This wand has 7 charges. While holding it, you can use an action and expend 1 charge to speak its command word. For the next minute, you know the direction of the nearest creature hostile to you within 60 feet, but not its distance from you. The wand can sense the presence of hostile creatures that are ethereal, invisible, disguised, or hidden, as well as those in plain sight. The effect ends if you stop holding the wand.",
       "The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed."
     ],
-    "url": "/api/2014/magic-items/wand-of-enemy-detection"
+    "url": "/api/2014/magic-items/wand-of-enemy-detection",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-fear",
@@ -7311,7 +8229,12 @@
       "***Command.*** While holding the wand, you can use an action to expend 1 charge and command another creature to flee or grovel, as with the command spell (save DC 15).",
       "***Cone of Fear.*** While holding the wand, you can use an action to expend 2 charges, causing the wand's tip to emit a 60-foot cone of amber light. Each creature in the cone must succeed on a DC 15 Wisdom saving throw or become frightened of you for 1 minute. While it is frightened in this way, a creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it has nowhere it can move, the creature can use the Dodge action. At the end of each of its turns, a creature can repeat the saving throw, ending the effect on itself on a success."
     ],
-    "url": "/api/2014/magic-items/wand-of-fear"
+    "url": "/api/2014/magic-items/wand-of-fear",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-fireballs",
@@ -7331,7 +8254,12 @@
       "This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the fireball spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
       "The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed."
     ],
-    "url": "/api/2014/magic-items/wand-of-fireballs"
+    "url": "/api/2014/magic-items/wand-of-fireballs",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-lightning-bolts",
@@ -7351,7 +8279,12 @@
       "This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the lightning bolt spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
       "The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed."
     ],
-    "url": "/api/2014/magic-items/wand-of-lightning-bolts"
+    "url": "/api/2014/magic-items/wand-of-lightning-bolts",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-magic-detection",
@@ -7370,7 +8303,12 @@
       "Wand, uncommon",
       "This wand has 3 charges. While holding it, you can expend 1 charge as an action to cast the detect magic spell from it. The wand regains 1d3 expended charges daily at dawn."
     ],
-    "url": "/api/2014/magic-items/wand-of-magic-detection"
+    "url": "/api/2014/magic-items/wand-of-magic-detection",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-magic-missiles",
@@ -7390,7 +8328,12 @@
       "This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the magic missile spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
       "The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed."
     ],
-    "url": "/api/2014/magic-items/wand-of-magic-missiles"
+    "url": "/api/2014/magic-items/wand-of-magic-missiles",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-paralysis",
@@ -7410,7 +8353,12 @@
       "This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cause a thin blue ray to streak from the tip toward a creature you can see within 60 feet of you. The target must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute. At the end of each of the target's turns, it can repeat the saving throw, ending the effect on itself on a success.",
       "The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed."
     ],
-    "url": "/api/2014/magic-items/wand-of-paralysis"
+    "url": "/api/2014/magic-items/wand-of-paralysis",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-polymorph",
@@ -7430,7 +8378,12 @@
       "This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the polymorph spell (save DC 15) from it.",
       "The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed."
     ],
-    "url": "/api/2014/magic-items/wand-of-polymorph"
+    "url": "/api/2014/magic-items/wand-of-polymorph",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-secrets",
@@ -7449,7 +8402,12 @@
       "Wand, uncommon",
       "The wand has 3 charges. While holding it, you can use an action to expend 1 of its charges, and if a secret door or trap is within 30 feet of you, the wand pulses and points at the one nearest to you. The wand regains 1d3 expended charges daily at dawn."
     ],
-    "url": "/api/2014/magic-items/wand-of-secrets"
+    "url": "/api/2014/magic-items/wand-of-secrets",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-the-war-mage",
@@ -7484,7 +8442,12 @@
       "Wand, uncommon (+1), rare (+2), or very rare (+3) (requires attunement by a spellcaster)",
       "While holding this wand, you gain a bonus to spell attack rolls determined by the wand's rarity. In addition, you ignore half cover when making a spell attack."
     ],
-    "url": "/api/2014/magic-items/wand-of-the-war-mage"
+    "url": "/api/2014/magic-items/wand-of-the-war-mage",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-the-war-mage-1",
@@ -7503,7 +8466,12 @@
       "Wand, uncommon (requires attunement by a spellcaster)",
       "While holding this wand, you gain a +1 bonus to spell attack rolls. In addition, you ignore half cover when making a spell attack."
     ],
-    "url": "/api/2014/magic-items/wand-of-the-war-mage-1"
+    "url": "/api/2014/magic-items/wand-of-the-war-mage-1",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-the-war-mage-2",
@@ -7522,7 +8490,12 @@
       "Wand, rare (requires attunement by a spellcaster)",
       "While holding this wand, you gain a +2 bonus to spell attack rolls. In addition, you ignore half cover when making a spell attack."
     ],
-    "url": "/api/2014/magic-items/wand-of-the-war-mage-2"
+    "url": "/api/2014/magic-items/wand-of-the-war-mage-2",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-the-war-mage-3",
@@ -7541,7 +8514,12 @@
       "Wand, very rare (requires attunement by a spellcaster)",
       "While holding this wand, you gain a +3 bonus to spell attack rolls. In addition, you ignore half cover when making a spell attack."
     ],
-    "url": "/api/2014/magic-items/wand-of-the-war-mage-3"
+    "url": "/api/2014/magic-items/wand-of-the-war-mage-3",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-web",
@@ -7561,7 +8539,12 @@
       "This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the web spell (save DC 15) from it.",
       "The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed."
     ],
-    "url": "/api/2014/magic-items/wand-of-web"
+    "url": "/api/2014/magic-items/wand-of-web",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "wand-of-wonder",
@@ -7606,7 +8589,12 @@
       "| 96-97 | The target's skin turns bright blue for 1d10 days. If you chose a point in space, the creature nearest to that point is affected. |",
       "| 98-100 | If you targeted a creature, it must make a DC 15 Constitution saving throw. If you didn't target a creature, you become the target and must make the saving throw. If the saving throw fails by 5 or more, the target is instantly petrified. On any other failed save, the target is restrained and begins to turn to stone. While restrained in this way, the target must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the target is freed by the greater restoration spell or similar magic. |"
     ],
-    "url": "/api/2014/magic-items/wand-of-wonder"
+    "url": "/api/2014/magic-items/wand-of-wonder",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "weapon",
@@ -7641,7 +8629,12 @@
       "Weapon (any), uncommon (+1), rare (+2), or very rare (+3)",
       "You have a bonus to attack and damage rolls made with this magic weapon. The bonus is determined by the weapon's rarity."
     ],
-    "url": "/api/2014/magic-items/weapon"
+    "url": "/api/2014/magic-items/weapon",
+    "cost": {
+      "quantity": 1000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "weapon-1",
@@ -7670,7 +8663,8 @@
       "damage_bonus": 1,
       "to_hit_bonus": 1
     },
-    "url": "/api/2014/magic-items/weapon-1"
+    "url": "/api/2014/magic-items/weapon-1",
+    "weight": 3
   },
   {
     "index": "weapon-2",
@@ -7699,7 +8693,8 @@
       "damage_bonus": 2,
       "to_hit_bonus": 2
     },
-    "url": "/api/2014/magic-items/weapon-2"
+    "url": "/api/2014/magic-items/weapon-2",
+    "weight": 3
   },
   {
     "index": "weapon-3",
@@ -7728,7 +8723,8 @@
       "damage_bonus": 3,
       "to_hit_bonus": 3
     },
-    "url": "/api/2014/magic-items/weapon-3"
+    "url": "/api/2014/magic-items/weapon-3",
+    "weight": 3
   },
   {
     "index": "amulet-of-proof-against-detection-and-location",
@@ -7748,7 +8744,12 @@
       "While wearing this amulet, you are hidden from divination magic. You can't be targeted by such magic or perceived through magical scrying sensors."
     ],
     "image": "/api/images/magic-items/amulet-of-proof-against-detection-and-location.png",
-    "url": "/api/2014/magic-items/amulet-of-proof-against-detection-and-location"
+    "url": "/api/2014/magic-items/amulet-of-proof-against-detection-and-location",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "amulet-of-the-planes",
@@ -7768,7 +8769,12 @@
       "While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the plane shift spell. On a failure, you and each creature and object within 15 feet of you travel to a random destination. Roll a d100. On a 1-60, you travel to a random location on the plane you named. On a 61-100, you travel to a randomly determined plane of existence."
     ],
     "image": "/api/images/magic-items/amulet-of-the-planes.png",
-    "url": "/api/2014/magic-items/amulet-of-the-planes"
+    "url": "/api/2014/magic-items/amulet-of-the-planes",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "apparatus-of-the-crab",
@@ -7809,7 +8815,12 @@
       "| 10 | The rear hatch unseals and opens. |  The rear hatch closes and seals. |"
     ],
     "image": "/api/images/magic-items/apparatus-of-the-crab.png",
-    "url": "/api/2014/magic-items/apparatus-of-the-crab"
+    "url": "/api/2014/magic-items/apparatus-of-the-crab",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 500
   },
   {
     "index": "boots-of-levitation",
@@ -7829,7 +8840,12 @@
       "While you wear these boots, you can use an action to cast the levitate spell on yourself at will."
     ],
     "image": "/api/images/magic-items/boots-of-levitation.png",
-    "url": "/api/2014/magic-items/boots-of-levitation"
+    "url": "/api/2014/magic-items/boots-of-levitation",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "boots-of-striding-and-springing",
@@ -7849,7 +8865,12 @@
       "While you wear these boots, your walking speed becomes 30 feet, unless your walking speed is higher, and your speed isn't reduced if you are encumbered or wearing heavy armor. In addition, you can jump three times the normal distance, though you can't jump farther than your remaining movement would allow."
     ],
     "image": "/api/images/magic-items/boots-of-striding-and-springing.png",
-    "url": "/api/2014/magic-items/boots-of-striding-and-springing"
+    "url": "/api/2014/magic-items/boots-of-striding-and-springing",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "bowl-of-commanding-water-elementals",
@@ -7869,7 +8890,12 @@
       "While this bowl is filled with water, you can use an action to speak the bowl's command word and summon a water elemental, as if you had cast the conjure elemental spell. The bowl can't be used this way again until the next dawn.",
       "The bowl is about 1 foot in diameter and half as deep. It weighs 3 pounds and holds about 3 gallons."
     ],
-    "url": "/api/2014/magic-items/bowl-of-commanding-water-elementals"
+    "url": "/api/2014/magic-items/bowl-of-commanding-water-elementals",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "brazier-of-commanding-fire-elementals",
@@ -7890,7 +8916,12 @@
       "The brazier weighs 5 pounds."
     ],
     "image": "/api/images/magic-items/brazier-of-commanding-fire-elementals.png",
-    "url": "/api/2014/magic-items/brazier-of-commanding-fire-elementals"
+    "url": "/api/2014/magic-items/brazier-of-commanding-fire-elementals",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 5
   },
   {
     "index": "broom-of-flying",
@@ -7911,7 +8942,12 @@
       "You can send the broom to travel alone to a destination within 1 mile of you if you speak the command word, name the location, and are familiar with that place. The broom comes back to you when you speak another command word, provided that the broom is still within 1 mile of you."
     ],
     "image": "/api/images/magic-items/broom-of-flying.png",
-    "url": "/api/2014/magic-items/broom-of-flying"
+    "url": "/api/2014/magic-items/broom-of-flying",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "cape-of-the-mountebank",
@@ -7932,7 +8968,12 @@
       "When you disappear, you leave behind a cloud of smoke, and you appear in a similar cloud of smoke at your destination. The smoke lightly obscures the space you left and the space you appear in, and it dissipates at the end of your next turn. A light or stronger wind disperses the smoke."
     ],
     "image": "/api/images/magic-items/cape-of-the-mountebank.png",
-    "url": "/api/2014/magic-items/cape-of-the-mountebank"
+    "url": "/api/2014/magic-items/cape-of-the-mountebank",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "carpet-of-flying",
@@ -7981,7 +9022,12 @@
       "A carpet can carry up to twice the weight shown on the table, but it flies at half speed if it carries more than its normal capacity."
     ],
     "image": "/api/images/magic-items/carpet-of-flying.png",
-    "url": "/api/2014/magic-items/carpet-of-flying"
+    "url": "/api/2014/magic-items/carpet-of-flying",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 5
   },
   {
     "index": "carpet-of-flying-3x5",
@@ -8002,7 +9048,12 @@
       "This carpet is 3 feet by 5 feet and has a flying speed of 80 feet. It can carry up to 400 pounds, but its flying speed becomes 40 feet while carrying over 200 pounds."
     ],
     "image": "/api/images/magic-items/carpet-of-flying.png",
-    "url": "/api/2014/magic-items/carpet-of-flying-3x5"
+    "url": "/api/2014/magic-items/carpet-of-flying-3x5",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 5
   },
   {
     "index": "carpet-of-flying-4x6",
@@ -8023,7 +9074,12 @@
       "This carpet is 4 feet by 6 feet and has a flying speed of 60 feet. It can carry up to 800 pounds, but its flying speed becomes 30 feet while carrying over 400 pounds."
     ],
     "image": "/api/images/magic-items/carpet-of-flying.png",
-    "url": "/api/2014/magic-items/carpet-of-flying-4x6"
+    "url": "/api/2014/magic-items/carpet-of-flying-4x6",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 8
   },
   {
     "index": "carpet-of-flying-5x7",
@@ -8044,7 +9100,12 @@
       "This carpet is 5 feet by 7 feet and has a flying speed of 40 feet. It can carry up to 1200 pounds, but its flying speed becomes 20 feet while carrying over 600 pounds."
     ],
     "image": "/api/images/magic-items/carpet-of-flying.png",
-    "url": "/api/2014/magic-items/carpet-of-flying-5x7"
+    "url": "/api/2014/magic-items/carpet-of-flying-5x7",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 12
   },
   {
     "index": "carpet-of-flying-6x9",
@@ -8065,7 +9126,12 @@
       "This carpet is 6 feet by 9 feet and has a flying speed of 30 feet. It can carry up to 1600 pounds, but its flying speed becomes 15 feet while carrying over 800 pounds."
     ],
     "image": "/api/images/magic-items/carpet-of-flying.png",
-    "url": "/api/2014/magic-items/carpet-of-flying-6x9"
+    "url": "/api/2014/magic-items/carpet-of-flying-6x9",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 18
   },
   {
     "index": "censer-of-controlling-air-elementals",
@@ -8086,7 +9152,12 @@
       "This 6-inch-wide, 1-foot-high vessel resembles a chalice with a decorated lid. It weighs 1 pound."
     ],
     "image": "/api/images/magic-items/censer-of-controlling-air-elementals.png",
-    "url": "/api/2014/magic-items/censer-of-controlling-air-elementals"
+    "url": "/api/2014/magic-items/censer-of-controlling-air-elementals",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "chime-of-opening",
@@ -8107,7 +9178,12 @@
       "The chime can be used ten times. After the tenth time, it cracks and becomes useless."
     ],
     "image": "/api/images/magic-items/chime-of-opening.png",
-    "url": "/api/2014/magic-items/chime-of-opening"
+    "url": "/api/2014/magic-items/chime-of-opening",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "cloak-of-the-bat",
@@ -8128,7 +9204,12 @@
       "While wearing the cloak in an area of dim light or darkness, you can use your action to cast polymorph on yourself, transforming into a bat. While you are in the form of the bat, you retain your Intelligence, Wisdom, and Charisma scores. The cloak can't be used this way again until the next dawn."
     ],
     "image": "/api/images/magic-items/cloak-of-the-bat.png",
-    "url": "/api/2014/magic-items/cloak-of-the-bat"
+    "url": "/api/2014/magic-items/cloak-of-the-bat",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "cloak-of-the-manta-ray",
@@ -8148,7 +9229,12 @@
       "While wearing this cloak with its hood up, you can breathe underwater, and you have a swimming speed of 60 feet. Pulling the hood up or down requires an action."
     ],
     "image": "/api/images/magic-items/cloak-of-the-manta-ray.png",
-    "url": "/api/2014/magic-items/cloak-of-the-manta-ray"
+    "url": "/api/2014/magic-items/cloak-of-the-manta-ray",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "crystal-ball",
@@ -8188,7 +9274,12 @@
       "***Crystal Ball of True Seeing.*** While scrying with the crystal ball, you have truesight with a radius of 120 feet centered on the spell's sensor."
     ],
     "image": "/api/images/magic-items/crystal-ball.png",
-    "url": "/api/2014/magic-items/crystal-ball"
+    "url": "/api/2014/magic-items/crystal-ball",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "crystal-ball-of-mind-reading",
@@ -8209,7 +9300,12 @@
       "***Crystal Ball of Mind Reading.*** You can use an action to cast the detect thoughts spell (save DC 17) while you are scrying with the crystal ball, targeting creatures you can see within 30 feet of the spell's sensor. You don't need to concentrate on this detect thoughts to maintain it during its duration, but it ends if scrying ends."
     ],
     "image": "/api/images/magic-items/crystal-ball-of-mind-reading.png",
-    "url": "/api/2014/magic-items/crystal-ball-of-mind-reading"
+    "url": "/api/2014/magic-items/crystal-ball-of-mind-reading",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "crystal-ball-of-telepathy",
@@ -8230,7 +9326,12 @@
       "***Crystal Ball of Telepathy.*** While scrying with the crystal ball, you can communicate telepathically with creatures you can see within 30 feet of the spell's sensor. You can also use an action to cast the suggestion spell (save DC 17) through the sensor on one of those creatures. You don't need to concentrate on this suggestion to maintain it during its duration, but it ends if scrying ends. Once used, the suggestion power of the crystal ball can't be used again until the next dawn."
     ],
     "image": "/api/images/magic-items/crystal-ball-of-telepathy.png",
-    "url": "/api/2014/magic-items/crystal-ball-of-telepathy"
+    "url": "/api/2014/magic-items/crystal-ball-of-telepathy",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "crystal-ball-of-true-seeing",
@@ -8251,7 +9352,12 @@
       "***Crystal Ball of True Seeing.*** While scrying with the crystal ball, you have truesight with a radius of 120 feet centered on the spell's sensor."
     ],
     "image": "/api/images/magic-items/crystal-ball-of-true-seeing.png",
-    "url": "/api/2014/magic-items/crystal-ball-of-true-seeing"
+    "url": "/api/2014/magic-items/crystal-ball-of-true-seeing",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "cube-of-force",
@@ -8290,7 +9396,12 @@
       "| Wall of fire | 1d4 |"
     ],
     "image": "/api/images/magic-items/cube-of-force.png",
-    "url": "/api/2014/magic-items/cube-of-force"
+    "url": "/api/2014/magic-items/cube-of-force",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "cubic-gate",
@@ -8312,7 +9423,12 @@
       "The cube has 3 charges. Each use of the cube expends 1 charge. The cube regains 1d3 expended charges daily at dawn."
     ],
     "image": "/api/images/magic-items/cubic-gate.png",
-    "url": "/api/2014/magic-items/cubic-gate"
+    "url": "/api/2014/magic-items/cubic-gate",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "decanter-of-endless-water",
@@ -8336,7 +9452,12 @@
       "\"Geyser\" produces 30 gallons of water that gushes forth in a geyser 30 feet long and 1 foot wide. As a bonus action while holding the decanter, you can aim the geyser at a creature you can see within 30 feet of you. The target must succeed on a DC 13 Strength saving throw or take 1d4 bludgeoning damage and fall prone. Instead of a creature, you can target an object that isn't being worn or carried and that weighs no more than 200 pounds. The object is either knocked over or pushed up to 15 feet away from you."
     ],
     "image": "/api/images/magic-items/decanter-of-endless-water.png",
-    "url": "/api/2014/magic-items/decanter-of-endless-water"
+    "url": "/api/2014/magic-items/decanter-of-endless-water",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "deck-of-illusions",
@@ -8394,7 +9515,12 @@
       "| Jokers (2) | You (the deck's owner) |"
     ],
     "image": "/api/images/magic-items/deck-of-illusions.png",
-    "url": "/api/2014/magic-items/deck-of-illusions"
+    "url": "/api/2014/magic-items/deck-of-illusions",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "deck-of-many-things",
@@ -8457,7 +9583,12 @@
       "***Skull.*** You summon an avatar of death-a ghostly humanoid skeleton clad in a tattered black robe and carrying a spectral scythe. It appears in a space of the GM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone. The avatar fights until you die or it drops to 0 hit points, whereupon it disappears. If anyone tries to help you, the helper summons its own avatar of death. A creature slain by an avatar of death can't be restored to life."
     ],
     "image": "/api/images/magic-items/deck-of-many-things.png",
-    "url": "/api/2014/magic-items/deck-of-many-things"
+    "url": "/api/2014/magic-items/deck-of-many-things",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "dimensional-shackles",
@@ -8478,7 +9609,12 @@
       "You and any creature you designate when you use the shackles can use an action to remove them. Once every 30 days, the bound creature can make a DC 30 Strength (Athletics) check. On a success, the creature breaks free and destroys the shackles."
     ],
     "image": "/api/images/magic-items/dimensional-shackles.png",
-    "url": "/api/2014/magic-items/dimensional-shackles"
+    "url": "/api/2014/magic-items/dimensional-shackles",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 6
   },
   {
     "index": "dust-of-disappearance",
@@ -8498,7 +9634,12 @@
       "Found in a small packet, this powder resembles very fine sand. There is enough of it for one use. When you use an action to throw the dust into the air, you and each creature and object within 10 feet of you become invisible for 2d4 minutes. The duration is the same for all subjects, and the dust is consumed when its magic takes effect. If a creature affected by the dust attacks or casts a spell, the invisibility ends for that creature."
     ],
     "image": "/api/images/magic-items/dust-of-disappearance.png",
-    "url": "/api/2014/magic-items/dust-of-disappearance"
+    "url": "/api/2014/magic-items/dust-of-disappearance",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "dust-of-sneezing-and-choking",
@@ -8519,7 +9660,12 @@
       "When you use an action to throw a handful of the dust into the air, you and each creature that needs to breathe within 30 feet of you must succeed on a DC 15 Constitution saving throw or become unable to breathe, while sneezing uncontrollably. A creature affected in this way is incapacitated and suffocating. As long as it is conscious, a creature can repeat the saving throw at the end of each of its turns, ending the effect on it on a success. The lesser restoration spell can also end the effect on a creature."
     ],
     "image": "/api/images/magic-items/dust-of-sneezing-and-choking.png",
-    "url": "/api/2014/magic-items/dust-of-sneezing-and-choking"
+    "url": "/api/2014/magic-items/dust-of-sneezing-and-choking",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "efreeti-bottle",
@@ -8545,7 +9691,12 @@
       "| 91-100 | The efreeti can cast the wish spell three times for you. It disappears when it grants the final wish or after 1 hour, and the bottle loses its magic. |"
     ],
     "image": "/api/images/magic-items/efreeti-bottle.png",
-    "url": "/api/2014/magic-items/efreeti-bottle"
+    "url": "/api/2014/magic-items/efreeti-bottle",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "elemental-gem",
@@ -8592,7 +9743,12 @@
       "| Emerald | Water elemental |"
     ],
     "image": "/api/images/magic-items/elemental-gem.png",
-    "url": "/api/2014/magic-items/elemental-gem"
+    "url": "/api/2014/magic-items/elemental-gem",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "elemental-gem-air",
@@ -8612,7 +9768,12 @@
       "This blue sapphire contains a mote of elemental energy. When you use an action to break the gem, an air elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost."
     ],
     "image": "/api/images/magic-items/elemental-gem-air.png",
-    "url": "/api/2014/magic-items/elemental-gem-air"
+    "url": "/api/2014/magic-items/elemental-gem-air",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "elemental-gem-earth",
@@ -8632,7 +9793,12 @@
       "This yellow diamond contains a mote of elemental energy. When you use an action to break the gem, an earth elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost."
     ],
     "image": "/api/images/magic-items/elemental-gem-earth.png",
-    "url": "/api/2014/magic-items/elemental-gem-earth"
+    "url": "/api/2014/magic-items/elemental-gem-earth",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "elemental-gem-fire",
@@ -8652,7 +9818,12 @@
       "This red corundum contains a mote of elemental energy. When you use an action to break the gem, a fire elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost."
     ],
     "image": "/api/images/magic-items/elemental-gem-fire.png",
-    "url": "/api/2014/magic-items/elemental-gem-fire"
+    "url": "/api/2014/magic-items/elemental-gem-fire",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "elemental-gem-water",
@@ -8672,7 +9843,12 @@
       "This emerald contains a mote of elemental energy. When you use an action to break the gem, a water elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost."
     ],
     "image": "/api/images/magic-items/elemental-gem-water.png",
-    "url": "/api/2014/magic-items/elemental-gem-water"
+    "url": "/api/2014/magic-items/elemental-gem-water",
+    "cost": {
+      "quantity": 250,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "eversmoking-bottle",
@@ -8692,7 +9868,12 @@
       "Smoke leaks from the lead-stoppered mouth of this brass bottle, which weighs 1 pound. When you use an action to remove the stopper, a cloud of thick smoke pours out in a 60-foot radius from the bottle. The cloud's area is heavily obscured. Each minute the bottle remains open and within the cloud, the radius increases by 10 feet until it reaches its maximum radius of 120 feet.",
       "The cloud persists as long as the bottle is open. Closing the bottle requires you to speak its command word as an action. Once the bottle is closed, the cloud disperses after 10 minutes. A moderate wind (11 to 20 miles per hour) can also disperse the smoke after 1 minute, and a strong wind (21 or more miles per hour) can do so after 1 round."
     ],
-    "url": "/api/2014/magic-items/eversmoking-bottle"
+    "url": "/api/2014/magic-items/eversmoking-bottle",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "feather-token",
@@ -8757,7 +9938,12 @@
       "***Whip.*** You can use an action to throw the token to a point within 10 feet of you. The token disappears, and a floating whip takes its place. You can then use a bonus action to make a melee spell attack against a creature within 10 feet of the whip, with an attack bonus of +9. On a hit, the target takes 1d6 + 5 force damage.",
       "As a bonus action on your turn, you can direct the whip to fly up to 20 feet and repeat the attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are incapacitated or die."
     ],
-    "url": "/api/2014/magic-items/feather-token"
+    "url": "/api/2014/magic-items/feather-token",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "feather-token-anchor",
@@ -8777,7 +9963,12 @@
       "This tiny object looks like a feather.",
       "You can use an action to touch the token to a boat or ship. For the next 24 hours, the vessel can't be moved by any means. Touching the token to the vessel again ends the effect. When the effect ends, the token disappears."
     ],
-    "url": "/api/2014/magic-items/feather-token-anchor"
+    "url": "/api/2014/magic-items/feather-token-anchor",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "feather-token-bird",
@@ -8797,7 +9988,12 @@
       "This tiny object looks like a feather.",
       "You can use an action to toss the token 5 feet into the air. The token disappears and an enormous, multicolored bird takes its place. The bird has the statistics of a roc, but it obeys your simple commands and can't attack. It can carry up to 500 pounds while flying at its maximum speed (16 miles an hour for a maximum of 144 miles per day, with a one-hour rest for every 3 hours of flying), or 1,000 pounds at half that speed. The bird disappears after flying its maximum distance for a day or if it drops to 0 hit points. You can dismiss the bird as an action."
     ],
-    "url": "/api/2014/magic-items/feather-token-bird"
+    "url": "/api/2014/magic-items/feather-token-bird",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "feather-token-fan",
@@ -8817,7 +10013,12 @@
       "This tiny object looks like a feather.",
       "If you are on a boat or ship, you can use an action to toss the token up to 10 feet in the air. The token disappears, and a giant flapping fan takes its place. The fan floats and creates a wind strong enough to fill the sails of one ship, increasing its speed by 5 miles per hour for 8 hours. You can dismiss the fan as an action."
     ],
-    "url": "/api/2014/magic-items/feather-token-fan"
+    "url": "/api/2014/magic-items/feather-token-fan",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "feather-token-swan-boat",
@@ -8837,7 +10038,12 @@
       "This tiny object looks like a feather.",
       "You can use an action to touch the token to a body of water at least 60 feet in diameter. The token disappears, and a 50-foot-long, 20-foot wide boat shaped like a swan takes its place. The boat is self-propelled and moves across water at a speed of 6 miles per hour. You can use an action while on the boat to command it to move or to turn up to 90 degrees. The boat can carry up to thirty-two Medium or smaller creatures. A Large creature counts as four Medium creatures, while a Huge creature counts as nine. The boat remains for 24 hours and then disappears. You can dismiss the boat as an action."
     ],
-    "url": "/api/2014/magic-items/feather-token-swan-boat"
+    "url": "/api/2014/magic-items/feather-token-swan-boat",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "feather-token-tree",
@@ -8857,7 +10063,12 @@
       "This tiny object looks like a feather.",
       "You must be outdoors to use this token. You can use an action to touch it to an unoccupied space on the ground. The token disappears, and in its place a nonmagical oak tree springs into existence. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius."
     ],
-    "url": "/api/2014/magic-items/feather-token-tree"
+    "url": "/api/2014/magic-items/feather-token-tree",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "feather-token-whip",
@@ -8878,7 +10089,12 @@
       "You can use an action to throw the token to a point within 10 feet of you. The token disappears, and a floating whip takes its place. You can then use a bonus action to make a melee spell attack against a creature within 10 feet of the whip, with an attack bonus of +9. On a hit, the target takes 1d6 + 5 force damage.",
       "As a bonus action on your turn, you can direct the whip to fly up to 20 feet and repeat the attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are incapacitated or die."
     ],
-    "url": "/api/2014/magic-items/feather-token-whip"
+    "url": "/api/2014/magic-items/feather-token-whip",
+    "cost": {
+      "quantity": 750,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "figurine-of-wondrous-power",
@@ -8968,7 +10184,12 @@
       "***Serpentine Owl (Rare).*** This serpentine statuette of an owl can become a giant owl for up to 8 hours. Once it has been used, it can't be used again until 2 days have passed. The owl can telepathically communicate with you at any range if you and it are on the same plane of existence.",
       "***Silver Raven (Uncommon).*** This silver statuette of a raven can become a raven for up to 12 hours. Once it has been used, it can't be used again until 2 days have passed. While in raven form, the figurine allows you to cast the animal messenger spell on it at will."
     ],
-    "url": "/api/2014/magic-items/figurine-of-wondrous-power"
+    "url": "/api/2014/magic-items/figurine-of-wondrous-power",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "figurine-of-wondrous-power-bronze-griffon",
@@ -8990,7 +10211,12 @@
       "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
       "***Bronze Griffon.*** This bronze statuette is of a griffon rampant. It can become a griffon for up to 6 hours. Once it has been used, it can't be used again until 5 days have passed."
     ],
-    "url": "/api/2014/magic-items/figurine-of-wondrous-power-bronze-griffon"
+    "url": "/api/2014/magic-items/figurine-of-wondrous-power-bronze-griffon",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "figurine-of-wondrous-power-ebony-fly",
@@ -9022,7 +10248,12 @@
       "Senses darkvision 60 ft., passive Perception 10",
       "Languages -"
     ],
-    "url": "/api/2014/magic-items/figurine-of-wondrous-power-ebony-fly"
+    "url": "/api/2014/magic-items/figurine-of-wondrous-power-ebony-fly",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "figurine-of-wondrous-power-golden-lions",
@@ -9044,7 +10275,12 @@
       "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
       "***Golden Lions.*** These gold statuettes of lions are always created in pairs. You can use one figurine or both simultaneously. Each can become a lion for up to 1 hour. Once a lion has been used, it can't be used again until 7 days have passed."
     ],
-    "url": "/api/2014/magic-items/figurine-of-wondrous-power-golden-lions"
+    "url": "/api/2014/magic-items/figurine-of-wondrous-power-golden-lions",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "figurine-of-wondrous-power-ivory-goats",
@@ -9069,7 +10305,12 @@
       "The goat of travail becomes a giant goat for up to 3 hours. Once it has been used, it can't be used again until 30 days have passed.",
       "The goat of terror becomes a giant goat for up to 3 hours. The goat can't attack, but you can remove its horns and use them as weapons. One horn becomes a +1 lance, and the other becomes a +2 longsword. Removing a horn requires an action, and the weapons disappear and the horns return when the goat reverts to figurine form. In addition, the goat radiates a 30-foot-radius aura of terror while you are riding it. Any creature hostile to you that starts its turn in the aura must succeed on a DC 15 Wisdom saving throw or be frightened of the goat for 1 minute, or until the goat reverts to figurine form. The frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once it successfully saves against the effect, a creature is immune to the goat's aura for the next 24 hours. Once the figurine has been used, it can't be used again until 15 days have passed."
     ],
-    "url": "/api/2014/magic-items/figurine-of-wondrous-power-ivory-goats"
+    "url": "/api/2014/magic-items/figurine-of-wondrous-power-ivory-goats",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "figurine-of-wondrous-power-marble-elephant",
@@ -9091,7 +10332,12 @@
       "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
       "***Marble Elephant.*** This marble statuette is about 4 inches high and long. It can become an elephant for up to 24 hours. Once it has been used, it can't be used again until 7 days have passed."
     ],
-    "url": "/api/2014/magic-items/figurine-of-wondrous-power-marble-elephant"
+    "url": "/api/2014/magic-items/figurine-of-wondrous-power-marble-elephant",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "figurine-of-wondrous-power-obsidian-steed",
@@ -9114,7 +10360,12 @@
       "***Obsidian Steed.*** This polished obsidian horse can become a nightmare for up to 24 hours. The nightmare fights only to defend itself. Once it has been used, it can't be used again until 5 days have passed.",
       "If you have a good alignment, the figurine has a 10 percent chance each time you use it to ignore your orders, including a command to revert to figurine form. If you mount the nightmare while it is ignoring your orders, you and the nightmare are instantly transported to a random location on the plane of Hades, where the nightmare reverts to figurine form."
     ],
-    "url": "/api/2014/magic-items/figurine-of-wondrous-power-obsidian-steed"
+    "url": "/api/2014/magic-items/figurine-of-wondrous-power-obsidian-steed",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "figurine-of-wondrous-power-onyx-dog",
@@ -9136,7 +10387,12 @@
       "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
       "***Onyx Dog.*** This onyx statuette of a dog can become a mastiff for up to 6 hours. The mastiff has an Intelligence of 8 and can speak Common. It also has darkvision out to a range of 60 feet and can see invisible creatures and objects within that range. Once it has been used, it can't be used again until 7 days have passed."
     ],
-    "url": "/api/2014/magic-items/figurine-of-wondrous-power-onyx-dog"
+    "url": "/api/2014/magic-items/figurine-of-wondrous-power-onyx-dog",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "figurine-of-wondrous-power-serpentine-owl",
@@ -9158,7 +10414,12 @@
       "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
       "***Serpentine Owl.*** This serpentine statuette of an owl can become a giant owl for up to 8 hours. Once it has been used, it can't be used again until 2 days have passed. The owl can telepathically communicate with you at any range if you and it are on the same plane of existence."
     ],
-    "url": "/api/2014/magic-items/figurine-of-wondrous-power-serpentine-owl"
+    "url": "/api/2014/magic-items/figurine-of-wondrous-power-serpentine-owl",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "figurine-of-wondrous-power-silver-raven",
@@ -9180,7 +10441,12 @@
       "The creature exists for a duration specific to each figurine. At the end of the duration, the creature reverts to its figurine form. It reverts to a figurine early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature becomes a figurine again, its property can't be used again until a certain amount of time has passed, as specified in the figurine's description.",
       "***Silver Raven.*** This silver statuette of a raven can become a raven for up to 12 hours. Once it has been used, it can't be used again until 2 days have passed. While in raven form, the figurine allows you to cast the animal messenger spell on it at will."
     ],
-    "url": "/api/2014/magic-items/figurine-of-wondrous-power-silver-raven"
+    "url": "/api/2014/magic-items/figurine-of-wondrous-power-silver-raven",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "folding-boat",
@@ -9203,7 +10469,12 @@
       "When the box becomes a vessel, its weight becomes that of a normal vessel its size, and anything that was stored in the box remains in the boat.",
       "The third command word causes the folding boat to fold back into a box, provided that no creatures are aboard. Any objects in the vessel that can't fit inside the box remain outside the box as it folds. Any objects in the vessel that can fit inside the box do so."
     ],
-    "url": "/api/2014/magic-items/folding-boat"
+    "url": "/api/2014/magic-items/folding-boat",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 4
   },
   {
     "index": "gem-of-brightness",
@@ -9226,7 +10497,12 @@
       "The third command word expends 5 charges and causes the gem to flare with blinding light in a 30 foot cone originating from it. Each creature in the cone must make a saving throw as if struck by the beam created with the second command word.",
       "When all of the gem's charges are expended, the gem becomes a nonmagical jewel worth 50 gp."
     ],
-    "url": "/api/2014/magic-items/gem-of-brightness"
+    "url": "/api/2014/magic-items/gem-of-brightness",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "gem-of-seeing",
@@ -9246,7 +10522,12 @@
       "This gem has 3 charges. As an action, you can speak the gem's command word and expend 1 charge. For the next 10 minutes, you have truesight out to 120 feet when you peer through the gem.",
       "The gem regains 1d3 expended charges daily at dawn."
     ],
-    "url": "/api/2014/magic-items/gem-of-seeing"
+    "url": "/api/2014/magic-items/gem-of-seeing",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "instant-fortress",
@@ -9269,7 +10550,12 @@
       "The tower is made of adamantine, and its magic prevents it from being tipped over. The roof, the door, and the walls each have 100 hit points,",
       "immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a wish spell can repair the fortress (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of wish causes the roof, the door, or one wall to regain 50 hit points."
     ],
-    "url": "/api/2014/magic-items/instant-fortress"
+    "url": "/api/2014/magic-items/instant-fortress",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "ioun-stone",
@@ -9379,7 +10665,12 @@
       "***Strength (Very Rare).*** Your Strength score increases by 2, to a maximum of 20, while this pale blue rhomboid orbits your head.",
       "***Sustenance (Rare).*** You don't need to eat or drink while this clear spindle orbits your head."
     ],
-    "url": "/api/2014/magic-items/ioun-stone"
+    "url": "/api/2014/magic-items/ioun-stone",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ioun-stone-of-absorption",
@@ -9402,7 +10693,12 @@
       "***Absorption.*** While this pale lavender ellipsoid orbits your head, you can use your reaction to cancel a spell of 4th level or lower cast by a creature you can see and targeting only you.",
       "Once the stone has canceled 20 levels of spells, it burns out and turns dull gray, losing its magic. If you are targeted by a spell whose level is higher than the number of spell levels the stone has left, the stone can't cancel it."
     ],
-    "url": "/api/2014/magic-items/ioun-stone-of-absorption"
+    "url": "/api/2014/magic-items/ioun-stone-of-absorption",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ioun-stone-of-agility",
@@ -9424,7 +10720,12 @@
       "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
       "***Agility.*** Your Dexterity score increases by 2, to a maximum of 20, while this deep red sphere orbits your head."
     ],
-    "url": "/api/2014/magic-items/ioun-stone-of-agility"
+    "url": "/api/2014/magic-items/ioun-stone-of-agility",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ioun-stone-of-awareness",
@@ -9446,7 +10747,12 @@
       "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
       "***Awareness.*** You can't be surprised while this dark blue rhomboid orbits your head."
     ],
-    "url": "/api/2014/magic-items/ioun-stone-of-awareness"
+    "url": "/api/2014/magic-items/ioun-stone-of-awareness",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ioun-stone-of-fortitude",
@@ -9468,7 +10774,12 @@
       "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
       "***Fortitude.*** Your Constitution score increases by 2, to a maximum of 20, while this pink rhomboid orbits your head."
     ],
-    "url": "/api/2014/magic-items/ioun-stone-of-fortitude"
+    "url": "/api/2014/magic-items/ioun-stone-of-fortitude",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ioun-stone-of-greater-absorption",
@@ -9491,7 +10802,12 @@
       "***Greater Absorption.*** While this marbled lavender and green ellipsoid orbits your head, you can use your reaction to cancel a spell of 8th level or lower cast by a creature you can see and targeting only you.",
       "Once the stone has canceled 50 levels of spells, it burns out and turns dull gray, losing its magic. If you are targeted by a spell whose level is higher than the number of spell levels the stone has left, the stone can't cancel it."
     ],
-    "url": "/api/2014/magic-items/ioun-stone-of-greater-absorption"
+    "url": "/api/2014/magic-items/ioun-stone-of-greater-absorption",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ioun-stone-of-insight",
@@ -9513,7 +10829,12 @@
       "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
       "***Insight.*** Your Wisdom score increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head."
     ],
-    "url": "/api/2014/magic-items/ioun-stone-of-insight"
+    "url": "/api/2014/magic-items/ioun-stone-of-insight",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ioun-stone-of-intellect",
@@ -9535,7 +10856,12 @@
       "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
       "***Intellect.*** Your Intelligence score increases by 2, to a maximum of 20, while this marbled scarlet and blue sphere orbits your head."
     ],
-    "url": "/api/2014/magic-items/ioun-stone-of-intellect"
+    "url": "/api/2014/magic-items/ioun-stone-of-intellect",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ioun-stone-of-leadership",
@@ -9557,7 +10883,12 @@
       "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
       "***Leadership.*** Your Charisma score increases by 2, to a maximum of 20, while this marbled pink and green sphere orbits your head."
     ],
-    "url": "/api/2014/magic-items/ioun-stone-of-leadership"
+    "url": "/api/2014/magic-items/ioun-stone-of-leadership",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ioun-stone-of-mastery",
@@ -9579,7 +10910,12 @@
       "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
       "***Mastery.*** Your proficiency bonus increases by 1 while this pale green prism orbits your head."
     ],
-    "url": "/api/2014/magic-items/ioun-stone-of-mastery"
+    "url": "/api/2014/magic-items/ioun-stone-of-mastery",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ioun-stone-of-protection",
@@ -9601,7 +10937,12 @@
       "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
       "***Protection.*** You gain a +1 bonus to AC while this dusty rose prism orbits your head."
     ],
-    "url": "/api/2014/magic-items/ioun-stone-of-protection"
+    "url": "/api/2014/magic-items/ioun-stone-of-protection",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ioun-stone-of-regeneration",
@@ -9623,7 +10964,12 @@
       "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
       "***Regeneration.*** You regain 15 hit points at the end of each hour this pearly white spindle orbits your head, provided that you have at least 1 hit point."
     ],
-    "url": "/api/2014/magic-items/ioun-stone-of-regeneration"
+    "url": "/api/2014/magic-items/ioun-stone-of-regeneration",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ioun-stone-of-reserve",
@@ -9647,7 +10993,12 @@
       "Any creature can cast a spell of 1st through 3rd level into the stone by touching it as the spell is cast. The spell has no effect, other than to be stored in the stone. If the stone can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.",
       "While this stone orbits your head, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the stone is no longer stored in it, freeing up space."
     ],
-    "url": "/api/2014/magic-items/ioun-stone-of-reserve"
+    "url": "/api/2014/magic-items/ioun-stone-of-reserve",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ioun-stone-of-strength",
@@ -9669,7 +11020,12 @@
       "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
       "***Strength.*** Your Strength score increases by 2, to a maximum of 20, while this pale blue rhomboid orbits your head."
     ],
-    "url": "/api/2014/magic-items/ioun-stone-of-strength"
+    "url": "/api/2014/magic-items/ioun-stone-of-strength",
+    "cost": {
+      "quantity": 25000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "ioun-stone-of-sustenance",
@@ -9691,7 +11047,12 @@
       "A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.",
       "***Sustenance.*** You don't need to eat or drink while this clear spindle orbits your head."
     ],
-    "url": "/api/2014/magic-items/ioun-stone-of-sustenance"
+    "url": "/api/2014/magic-items/ioun-stone-of-sustenance",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 0
   },
   {
     "index": "iron-bands-of-binding",
@@ -9713,7 +11074,12 @@
       "A creature, including the one restrained, can use an action to make a DC 20 Strength check to break the iron bands. On a success, the item is destroyed, and the restrained creature is freed. If the check fails, any further attempts made by that creature automatically fail until 24 hours have elapsed.",
       "Once the bands are used, they can't be used again until the next dawn."
     ],
-    "url": "/api/2014/magic-items/iron-bands-of-binding"
+    "url": "/api/2014/magic-items/iron-bands-of-binding",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "lantern-of-revealing",
@@ -9732,7 +11098,12 @@
       "Wondrous item, uncommon",
       "While lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. Invisible creatures and objects are visible as long as they are in the lantern's bright light. You can use an action to lower the hood, reducing the light to dim light in a 5 foot radius."
     ],
-    "url": "/api/2014/magic-items/lantern-of-revealing"
+    "url": "/api/2014/magic-items/lantern-of-revealing",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "well-of-many-worlds",
@@ -9752,7 +11123,12 @@
       "This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.",
       "You can use an action to unfold and place the well of many worlds on a solid surface, whereupon it creates a two-way portal to another world or plane of existence. Each time the item opens a portal, the GM decides where it leads. You can use an action to close an open portal by taking hold of the edges of the cloth and folding it up. Once well of many worlds has opened a portal, it can't do so again for 1d8 hours."
     ],
-    "url": "/api/2014/magic-items/well-of-many-worlds"
+    "url": "/api/2014/magic-items/well-of-many-worlds",
+    "cost": {
+      "quantity": 75000,
+      "unit": "gp"
+    },
+    "weight": 3
   },
   {
     "index": "wind-fan",
@@ -9771,7 +11147,12 @@
       "Wondrous item, uncommon",
       "While holding this fan, you can use an action to cast the gust of wind spell (save DC 13) from it. Once used, the fan shouldn't be used again until the next dawn. Each time it is used again before then, it has a cumulative 20 percent chance of not working and tearing into useless, nonmagical tatters."
     ],
-    "url": "/api/2014/magic-items/wind-fan"
+    "url": "/api/2014/magic-items/wind-fan",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 1
   },
   {
     "index": "winged-boots",
@@ -9791,7 +11172,12 @@
       "While you wear these boots, you have a flying speed equal to your walking speed. You can use the boots to fly for up to 4 hours, all at once or in several shorter flights, each one using a minimum of 1 minute from the duration. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land.",
       "The boots regain 2 hours of flying capability for every 12 hours they aren't in use."
     ],
-    "url": "/api/2014/magic-items/winged-boots"
+    "url": "/api/2014/magic-items/winged-boots",
+    "cost": {
+      "quantity": 2500,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "wings-of-flying",
@@ -9810,7 +11196,12 @@
       "Wondrous item, rare (requires attunement)",
       "While wearing this cloak, you can use an action to speak its command word. This turns the cloak into a pair of bat wings or bird wings on your back for 1 hour or until you repeat the command word as an action. The wings give you a flying speed of 60 feet. When they disappear, you can't use them again for 1d12 hours."
     ],
-    "url": "/api/2014/magic-items/wings-of-flying"
+    "url": "/api/2014/magic-items/wings-of-flying",
+    "cost": {
+      "quantity": 6000,
+      "unit": "gp"
+    },
+    "weight": 2
   },
   {
     "index": "orb-of-dragonkind",
@@ -9842,6 +11233,7 @@
       "***Call Dragons.*** While you control the orb, you can use an action to cause the artifact to issue a telepathic call that extends in all directions for 40 miles. Evil dragons in range feel compelled to come to the orb as soon as possible by the most direct route. Dragon deities such as Tiamat are unaffected by this call. Dragons drawn to the orb might be hostile toward you for compelling them against their will. Once you have used this property, it can't be used again for 1 hour.",
       "***Destroying an Orb.*** An Orb of Dragonkind appears fragile but is impervious to most damage, including the attacks and breath weapons of dragons. A disintegrate spell or one good hit from a +3 magic weapon is sufficient to destroy an orb, however."
     ],
-    "url": "/api/2014/magic-items/orb-of-dragonkind"
+    "url": "/api/2014/magic-items/orb-of-dragonkind",
+    "weight": 3
   }
 ]
