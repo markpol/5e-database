@@ -244,7 +244,8 @@
         "url": "/api/2014/subclasses/berserker"
       }
     ],
-    "url": "/api/2014/classes/barbarian"
+    "url": "/api/2014/classes/barbarian",
+    "icon": "axe"
   },
   {
     "index": "bard",
@@ -1020,7 +1021,8 @@
       }
     },
     "spells": "/api/2014/classes/bard/spells",
-    "url": "/api/2014/classes/bard"
+    "url": "/api/2014/classes/bard",
+    "icon": "music"
   },
   {
     "index": "cleric",
@@ -1411,7 +1413,8 @@
       }
     },
     "spells": "/api/2014/classes/cleric/spells",
-    "url": "/api/2014/classes/cleric"
+    "url": "/api/2014/classes/cleric",
+    "icon": "cross"
   },
   {
     "index": "druid",
@@ -1791,7 +1794,8 @@
       }
     },
     "spells": "/api/2014/classes/druid/spells",
-    "url": "/api/2014/classes/druid"
+    "url": "/api/2014/classes/druid",
+    "icon": "leaf"
   },
   {
     "index": "fighter",
@@ -2168,7 +2172,8 @@
         "url": "/api/2014/subclasses/champion"
       }
     ],
-    "url": "/api/2014/classes/fighter"
+    "url": "/api/2014/classes/fighter",
+    "icon": "sword-cross"
   },
   {
     "index": "monk",
@@ -2658,7 +2663,8 @@
         "url": "/api/2014/subclasses/open-hand"
       }
     ],
-    "url": "/api/2014/classes/monk"
+    "url": "/api/2014/classes/monk",
+    "icon": "meditation"
   },
   {
     "index": "paladin",
@@ -3021,7 +3027,8 @@
       }
     },
     "spells": "/api/2014/classes/paladin/spells",
-    "url": "/api/2014/classes/paladin"
+    "url": "/api/2014/classes/paladin",
+    "icon": "shield-cross"
   },
   {
     "index": "ranger",
@@ -3441,7 +3448,8 @@
       }
     },
     "spells": "/api/2014/classes/ranger/spells",
-    "url": "/api/2014/classes/ranger"
+    "url": "/api/2014/classes/ranger",
+    "icon": "bow-arrow"
   },
   {
     "index": "rogue",
@@ -3877,7 +3885,8 @@
         "url": "/api/2014/subclasses/thief"
       }
     ],
-    "url": "/api/2014/classes/rogue"
+    "url": "/api/2014/classes/rogue",
+    "icon": "knife"
   },
   {
     "index": "sorcerer",
@@ -4197,7 +4206,8 @@
       }
     },
     "spells": "/api/2014/classes/sorcerer/spells",
-    "url": "/api/2014/classes/sorcerer"
+    "url": "/api/2014/classes/sorcerer",
+    "icon": "fire"
   },
   {
     "index": "warlock",
@@ -4544,7 +4554,8 @@
       }
     },
     "spells": "/api/2014/classes/warlock/spells",
-    "url": "/api/2014/classes/warlock"
+    "url": "/api/2014/classes/warlock",
+    "icon": "eye"
   },
   {
     "index": "wizard",
@@ -4856,6 +4867,7 @@
       }
     },
     "spells": "/api/2014/classes/wizard/spells",
-    "url": "/api/2014/classes/wizard"
+    "url": "/api/2014/classes/wizard",
+    "icon": "book-open-variant"
   }
 ]

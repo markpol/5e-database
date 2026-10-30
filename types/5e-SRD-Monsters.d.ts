@@ -533,6 +533,7 @@ export type Monster = {
         } | undefined;
     }[] | undefined;
     environments?: string | undefined;
+    environment_tags?: ("Arctic" | "Coastal" | "Desert" | "Forest" | "Grassland" | "Hill" | "Mountain" | "Swamp" | "Underdark" | "Underwater" | "Urban")[] | undefined;
     bonus_actions?: string[] | undefined;
     forms?: {
         index: string;

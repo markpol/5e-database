@@ -77,5 +77,7 @@ export const ClassSchema = z.strictObject({
   subclasses: z.array(APIReferenceSchema).optional(),
   spellcasting: SpellcastingSchema.optional(),
   spells: z.string().optional(),
+  // The key of the icon for this class, from docs/icon-keys.md. Never translated.
+  icon: z.string().min(1).optional(),
   url: z.string(),
 });

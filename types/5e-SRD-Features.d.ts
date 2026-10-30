@@ -644,6 +644,7 @@ export type Feature = {
         })[] | undefined;
         damage_type?: string | undefined;
     } | undefined;
+    icon?: string | undefined;
 };
 
 declare const data: Feature[];

@@ -66,5 +66,7 @@ export const FeatureSchema = z.strictObject({
   parent: APIReferenceSchema.optional(),
   reference: z.string().optional(),
   feature_specific: FeatureSpecificSchema.optional(),
+  // The key of the icon for this feature, from docs/icon-keys.md. Never translated.
+  icon: z.string().min(1).optional(),
   url: z.string(),
 });

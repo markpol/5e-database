@@ -4195,6 +4195,26 @@
     "environments": {
       "type": "string"
     },
+    "environment_tags": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Arctic",
+          "Coastal",
+          "Desert",
+          "Forest",
+          "Grassland",
+          "Hill",
+          "Mountain",
+          "Swamp",
+          "Underdark",
+          "Underwater",
+          "Urban"
+        ]
+      }
+    },
     "bonus_actions": {
       "type": "array",
       "items": {

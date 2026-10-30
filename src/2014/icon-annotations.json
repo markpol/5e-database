@@ -1,0 +1,3692 @@
+[
+  {
+    "collection": "spells",
+    "index": "acid-arrow",
+    "icon": "01-54"
+  },
+  {
+    "collection": "spells",
+    "index": "acid-splash",
+    "icon": "01-86"
+  },
+  {
+    "collection": "spells",
+    "index": "aid",
+    "icon": "07-21"
+  },
+  {
+    "collection": "spells",
+    "index": "alarm",
+    "icon": "07-79"
+  },
+  {
+    "collection": "spells",
+    "index": "alter-self",
+    "icon": "03-76"
+  },
+  {
+    "collection": "spells",
+    "index": "animal-friendship",
+    "icon": "04-97"
+  },
+  {
+    "collection": "spells",
+    "index": "animal-messenger",
+    "icon": "04-23"
+  },
+  {
+    "collection": "spells",
+    "index": "animal-shapes",
+    "icon": "04-81"
+  },
+  {
+    "collection": "spells",
+    "index": "animate-dead",
+    "icon": "06-107"
+  },
+  {
+    "collection": "spells",
+    "index": "animate-objects",
+    "icon": "03-58"
+  },
+  {
+    "collection": "spells",
+    "index": "antilife-shell",
+    "icon": "06-113"
+  },
+  {
+    "collection": "spells",
+    "index": "antimagic-field",
+    "icon": "06-38"
+  },
+  {
+    "collection": "spells",
+    "index": "antipathy-sympathy",
+    "icon": "04-100"
+  },
+  {
+    "collection": "spells",
+    "index": "arcane-eye",
+    "icon": "06-58"
+  },
+  {
+    "collection": "spells",
+    "index": "arcane-hand",
+    "icon": "06-55"
+  },
+  {
+    "collection": "spells",
+    "index": "arcane-lock",
+    "icon": "08-63"
+  },
+  {
+    "collection": "spells",
+    "index": "arcane-sword",
+    "icon": "09-32"
+  },
+  {
+    "collection": "spells",
+    "index": "arcanists-magic-aura",
+    "icon": "01-88"
+  },
+  {
+    "collection": "spells",
+    "index": "astral-projection",
+    "icon": "06-07"
+  },
+  {
+    "collection": "spells",
+    "index": "augury",
+    "icon": "01-09"
+  },
+  {
+    "collection": "spells",
+    "index": "awaken",
+    "icon": "04-74"
+  },
+  {
+    "collection": "spells",
+    "index": "bane",
+    "icon": "01-23"
+  },
+  {
+    "collection": "spells",
+    "index": "banishment",
+    "icon": "06-59"
+  },
+  {
+    "collection": "spells",
+    "index": "barkskin",
+    "icon": "04-06"
+  },
+  {
+    "collection": "spells",
+    "index": "beacon-of-hope",
+    "icon": "06-74"
+  },
+  {
+    "collection": "spells",
+    "index": "bestow-curse",
+    "icon": "03-78"
+  },
+  {
+    "collection": "spells",
+    "index": "black-tentacles",
+    "icon": "07-99"
+  },
+  {
+    "collection": "spells",
+    "index": "blade-barrier",
+    "icon": "06-48"
+  },
+  {
+    "collection": "spells",
+    "index": "bless",
+    "icon": "06-87"
+  },
+  {
+    "collection": "spells",
+    "index": "blight",
+    "icon": "01-74"
+  },
+  {
+    "collection": "spells",
+    "index": "blindness-deafness",
+    "icon": "07-10"
+  },
+  {
+    "collection": "spells",
+    "index": "blink",
+    "icon": "06-112"
+  },
+  {
+    "collection": "spells",
+    "index": "blur",
+    "icon": "01-47"
+  },
+  {
+    "collection": "spells",
+    "index": "branding-smite",
+    "icon": "06-77"
+  },
+  {
+    "collection": "spells",
+    "index": "burning-hands",
+    "icon": "01-17"
+  },
+  {
+    "collection": "spells",
+    "index": "call-lightning",
+    "icon": "09-17"
+  },
+  {
+    "collection": "spells",
+    "index": "calm-emotions",
+    "icon": "04-48"
+  },
+  {
+    "collection": "spells",
+    "index": "chain-lightning",
+    "icon": "01-91"
+  },
+  {
+    "collection": "spells",
+    "index": "charm-person",
+    "icon": "03-96"
+  },
+  {
+    "collection": "spells",
+    "index": "chill-touch",
+    "icon": "07-67"
+  },
+  {
+    "collection": "spells",
+    "index": "circle-of-death",
+    "icon": "06-60"
+  },
+  {
+    "collection": "spells",
+    "index": "clairvoyance",
+    "icon": "07-38"
+  },
+  {
+    "collection": "spells",
+    "index": "clone",
+    "icon": "06-92"
+  },
+  {
+    "collection": "spells",
+    "index": "cloudkill",
+    "icon": "01-95"
+  },
+  {
+    "collection": "spells",
+    "index": "color-spray",
+    "icon": "06-62"
+  },
+  {
+    "collection": "spells",
+    "index": "command",
+    "icon": "02-19"
+  },
+  {
+    "collection": "spells",
+    "index": "commune",
+    "icon": "03-52"
+  },
+  {
+    "collection": "spells",
+    "index": "commune-with-nature",
+    "icon": "04-73"
+  },
+  {
+    "collection": "spells",
+    "index": "comprehend-languages",
+    "icon": "03-46"
+  },
+  {
+    "collection": "spells",
+    "index": "compulsion",
+    "icon": "07-08"
+  },
+  {
+    "collection": "spells",
+    "index": "cone-of-cold",
+    "icon": "03-95"
+  },
+  {
+    "collection": "spells",
+    "index": "confusion",
+    "icon": "06-103"
+  },
+  {
+    "collection": "spells",
+    "index": "conjure-animals",
+    "icon": "03-67"
+  },
+  {
+    "collection": "spells",
+    "index": "conjure-celestial",
+    "icon": "03-50"
+  },
+  {
+    "collection": "spells",
+    "index": "conjure-elemental",
+    "icon": "06-97"
+  },
+  {
+    "collection": "spells",
+    "index": "conjure-fey",
+    "icon": "03-94"
+  },
+  {
+    "collection": "spells",
+    "index": "conjure-minor-elementals",
+    "icon": "06-96"
+  },
+  {
+    "collection": "spells",
+    "index": "conjure-woodland-beings",
+    "icon": "06-99"
+  },
+  {
+    "collection": "spells",
+    "index": "contact-other-plane",
+    "icon": "09-60"
+  },
+  {
+    "collection": "spells",
+    "index": "contagion",
+    "icon": "07-93"
+  },
+  {
+    "collection": "spells",
+    "index": "contingency",
+    "icon": "09-79"
+  },
+  {
+    "collection": "spells",
+    "index": "continual-flame",
+    "icon": "01-33"
+  },
+  {
+    "collection": "spells",
+    "index": "control-water",
+    "icon": "03-26"
+  },
+  {
+    "collection": "spells",
+    "index": "control-weather",
+    "icon": "03-62"
+  },
+  {
+    "collection": "spells",
+    "index": "counterspell",
+    "icon": "09-33"
+  },
+  {
+    "collection": "spells",
+    "index": "create-food-and-water",
+    "icon": "09-82"
+  },
+  {
+    "collection": "spells",
+    "index": "create-or-destroy-water",
+    "icon": "04-49"
+  },
+  {
+    "collection": "spells",
+    "index": "create-undead",
+    "icon": "07-44"
+  },
+  {
+    "collection": "spells",
+    "index": "creation",
+    "icon": "06-09"
+  },
+  {
+    "collection": "spells",
+    "index": "cure-wounds",
+    "icon": "04-92"
+  },
+  {
+    "collection": "spells",
+    "index": "dancing-lights",
+    "icon": "04-75"
+  },
+  {
+    "collection": "spells",
+    "index": "darkness",
+    "icon": "01-60"
+  },
+  {
+    "collection": "spells",
+    "index": "darkvision",
+    "icon": "07-11"
+  },
+  {
+    "collection": "spells",
+    "index": "daylight",
+    "icon": "01-35"
+  },
+  {
+    "collection": "spells",
+    "index": "death-ward",
+    "icon": "03-75"
+  },
+  {
+    "collection": "spells",
+    "index": "delayed-blast-fireball",
+    "icon": "06-22"
+  },
+  {
+    "collection": "spells",
+    "index": "demiplane",
+    "icon": "06-54"
+  },
+  {
+    "collection": "spells",
+    "index": "detect-evil-and-good",
+    "icon": "03-82"
+  },
+  {
+    "collection": "spells",
+    "index": "detect-magic",
+    "icon": "09-80"
+  },
+  {
+    "collection": "spells",
+    "index": "detect-poison-and-disease",
+    "icon": "07-100"
+  },
+  {
+    "collection": "spells",
+    "index": "detect-thoughts",
+    "icon": "01-04"
+  },
+  {
+    "collection": "spells",
+    "index": "dimension-door",
+    "icon": "09-27"
+  },
+  {
+    "collection": "spells",
+    "index": "disguise-self",
+    "icon": "09-01"
+  },
+  {
+    "collection": "spells",
+    "index": "disintegrate",
+    "icon": "07-63"
+  },
+  {
+    "collection": "spells",
+    "index": "dispel-evil-and-good",
+    "icon": "07-42"
+  },
+  {
+    "collection": "spells",
+    "index": "dispel-magic",
+    "icon": "01-24"
+  },
+  {
+    "collection": "spells",
+    "index": "divination",
+    "icon": "01-03"
+  },
+  {
+    "collection": "spells",
+    "index": "divine-favor",
+    "icon": "01-46"
+  },
+  {
+    "collection": "spells",
+    "index": "divine-word",
+    "icon": "01-06"
+  },
+  {
+    "collection": "spells",
+    "index": "dominate-beast",
+    "icon": "06-31"
+  },
+  {
+    "collection": "spells",
+    "index": "dominate-monster",
+    "icon": "09-21"
+  },
+  {
+    "collection": "spells",
+    "index": "dominate-person",
+    "icon": "07-81"
+  },
+  {
+    "collection": "spells",
+    "index": "dream",
+    "icon": "04-26"
+  },
+  {
+    "collection": "spells",
+    "index": "druidcraft",
+    "icon": "04-60"
+  },
+  {
+    "collection": "spells",
+    "index": "earthquake",
+    "icon": "01-58"
+  },
+  {
+    "collection": "spells",
+    "index": "eldritch-blast",
+    "icon": "06-02"
+  },
+  {
+    "collection": "spells",
+    "index": "enhance-ability",
+    "icon": "03-81"
+  },
+  {
+    "collection": "spells",
+    "index": "enlarge-reduce",
+    "icon": "06-105"
+  },
+  {
+    "collection": "spells",
+    "index": "entangle",
+    "icon": "01-05"
+  },
+  {
+    "collection": "spells",
+    "index": "enthrall",
+    "icon": "04-54"
+  },
+  {
+    "collection": "spells",
+    "index": "etherealness",
+    "icon": "01-29"
+  },
+  {
+    "collection": "spells",
+    "index": "expeditious-retreat",
+    "icon": "09-39"
+  },
+  {
+    "collection": "spells",
+    "index": "eyebite",
+    "icon": "07-49"
+  },
+  {
+    "collection": "spells",
+    "index": "fabricate",
+    "icon": "09-98"
+  },
+  {
+    "collection": "spells",
+    "index": "faerie-fire",
+    "icon": "01-10"
+  },
+  {
+    "collection": "spells",
+    "index": "faithful-hound",
+    "icon": "09-02"
+  },
+  {
+    "collection": "spells",
+    "index": "false-life",
+    "icon": "08-45"
+  },
+  {
+    "collection": "spells",
+    "index": "fear",
+    "icon": "07-39"
+  },
+  {
+    "collection": "spells",
+    "index": "feather-fall",
+    "icon": "03-70"
+  },
+  {
+    "collection": "spells",
+    "index": "feeblemind",
+    "icon": "07-18"
+  },
+  {
+    "collection": "spells",
+    "index": "find-familiar",
+    "icon": "07-31"
+  },
+  {
+    "collection": "spells",
+    "index": "find-steed",
+    "icon": "07-01"
+  },
+  {
+    "collection": "spells",
+    "index": "find-the-path",
+    "icon": "02-61"
+  },
+  {
+    "collection": "spells",
+    "index": "find-traps",
+    "icon": "02-118"
+  },
+  {
+    "collection": "spells",
+    "index": "finger-of-death",
+    "icon": "03-99"
+  },
+  {
+    "collection": "spells",
+    "index": "fire-bolt",
+    "icon": "06-15"
+  },
+  {
+    "collection": "spells",
+    "index": "fire-shield",
+    "icon": "06-24"
+  },
+  {
+    "collection": "spells",
+    "index": "fire-storm",
+    "icon": "01-37"
+  },
+  {
+    "collection": "spells",
+    "index": "fireball",
+    "icon": "01-26"
+  },
+  {
+    "collection": "spells",
+    "index": "flame-blade",
+    "icon": "06-117"
+  },
+  {
+    "collection": "spells",
+    "index": "flame-strike",
+    "icon": "01-15"
+  },
+  {
+    "collection": "spells",
+    "index": "flaming-sphere",
+    "icon": "01-80"
+  },
+  {
+    "collection": "spells",
+    "index": "flesh-to-stone",
+    "icon": "09-57"
+  },
+  {
+    "collection": "spells",
+    "index": "floating-disk",
+    "icon": "06-86"
+  },
+  {
+    "collection": "spells",
+    "index": "fly",
+    "icon": "06-45"
+  },
+  {
+    "collection": "spells",
+    "index": "fog-cloud",
+    "icon": "05-128"
+  },
+  {
+    "collection": "spells",
+    "index": "forbiddance",
+    "icon": "01-02"
+  },
+  {
+    "collection": "spells",
+    "index": "forcecage",
+    "icon": "06-75"
+  },
+  {
+    "collection": "spells",
+    "index": "foresight",
+    "icon": "07-23"
+  },
+  {
+    "collection": "spells",
+    "index": "freedom-of-movement",
+    "icon": "03-79"
+  },
+  {
+    "collection": "spells",
+    "index": "freezing-sphere",
+    "icon": "01-59"
+  },
+  {
+    "collection": "spells",
+    "index": "gaseous-form",
+    "icon": "06-67"
+  },
+  {
+    "collection": "spells",
+    "index": "gate",
+    "icon": "06-80"
+  },
+  {
+    "collection": "spells",
+    "index": "geas",
+    "icon": "07-70"
+  },
+  {
+    "collection": "spells",
+    "index": "gentle-repose",
+    "icon": "07-41"
+  },
+  {
+    "collection": "spells",
+    "index": "giant-insect",
+    "icon": "04-20"
+  },
+  {
+    "collection": "spells",
+    "index": "glibness",
+    "icon": "04-45"
+  },
+  {
+    "collection": "spells",
+    "index": "globe-of-invulnerability",
+    "icon": "07-37"
+  },
+  {
+    "collection": "spells",
+    "index": "glyph-of-warding",
+    "icon": "06-25"
+  },
+  {
+    "collection": "spells",
+    "index": "goodberry",
+    "icon": "04-05"
+  },
+  {
+    "collection": "spells",
+    "index": "grease",
+    "icon": "09-58"
+  },
+  {
+    "collection": "spells",
+    "index": "greater-invisibility",
+    "icon": "01-34"
+  },
+  {
+    "collection": "spells",
+    "index": "greater-restoration",
+    "icon": "04-65"
+  },
+  {
+    "collection": "spells",
+    "index": "guardian-of-faith",
+    "icon": "03-19"
+  },
+  {
+    "collection": "spells",
+    "index": "guards-and-wards",
+    "icon": "09-36"
+  },
+  {
+    "collection": "spells",
+    "index": "guidance",
+    "icon": "04-67"
+  },
+  {
+    "collection": "spells",
+    "index": "guiding-bolt",
+    "icon": "01-22"
+  },
+  {
+    "collection": "spells",
+    "index": "gust-of-wind",
+    "icon": "01-85"
+  },
+  {
+    "collection": "spells",
+    "index": "hallow",
+    "icon": "01-16"
+  },
+  {
+    "collection": "spells",
+    "index": "hallucinatory-terrain",
+    "icon": "02-112"
+  },
+  {
+    "collection": "spells",
+    "index": "harm",
+    "icon": "07-04"
+  },
+  {
+    "collection": "spells",
+    "index": "haste",
+    "icon": "01-13"
+  },
+  {
+    "collection": "spells",
+    "index": "heal",
+    "icon": "03-83"
+  },
+  {
+    "collection": "spells",
+    "index": "healing-word",
+    "icon": "06-106"
+  },
+  {
+    "collection": "spells",
+    "index": "heat-metal",
+    "icon": "01-76"
+  },
+  {
+    "collection": "spells",
+    "index": "hellish-rebuke",
+    "icon": "07-58"
+  },
+  {
+    "collection": "spells",
+    "index": "heroes-feast",
+    "icon": "03-09"
+  },
+  {
+    "collection": "spells",
+    "index": "heroism",
+    "icon": "03-59"
+  },
+  {
+    "collection": "spells",
+    "index": "hideous-laughter",
+    "icon": "06-110"
+  },
+  {
+    "collection": "spells",
+    "index": "hold-monster",
+    "icon": "03-69"
+  },
+  {
+    "collection": "spells",
+    "index": "hold-person",
+    "icon": "07-55"
+  },
+  {
+    "collection": "spells",
+    "index": "holy-aura",
+    "icon": "06-20"
+  },
+  {
+    "collection": "spells",
+    "index": "hunters-mark",
+    "icon": "01-64"
+  },
+  {
+    "collection": "spells",
+    "index": "hypnotic-pattern",
+    "icon": "01-93"
+  },
+  {
+    "collection": "spells",
+    "index": "ice-storm",
+    "icon": "01-87"
+  },
+  {
+    "collection": "spells",
+    "index": "identify",
+    "icon": "02-99"
+  },
+  {
+    "collection": "spells",
+    "index": "illusory-script",
+    "icon": "02-101"
+  },
+  {
+    "collection": "spells",
+    "index": "imprisonment",
+    "icon": "02-102"
+  },
+  {
+    "collection": "spells",
+    "index": "incendiary-cloud",
+    "icon": "06-33"
+  },
+  {
+    "collection": "spells",
+    "index": "inflict-wounds",
+    "icon": "07-65"
+  },
+  {
+    "collection": "spells",
+    "index": "insect-plague",
+    "icon": "04-04"
+  },
+  {
+    "collection": "spells",
+    "index": "instant-summons",
+    "icon": "09-97"
+  },
+  {
+    "collection": "spells",
+    "index": "invisibility",
+    "icon": "09-49"
+  },
+  {
+    "collection": "spells",
+    "index": "irresistible-dance",
+    "icon": "04-27"
+  },
+  {
+    "collection": "spells",
+    "index": "jump",
+    "icon": "04-63"
+  },
+  {
+    "collection": "spells",
+    "index": "knock",
+    "icon": "08-01"
+  },
+  {
+    "collection": "spells",
+    "index": "legend-lore",
+    "icon": "07-28"
+  },
+  {
+    "collection": "spells",
+    "index": "lesser-restoration",
+    "icon": "04-19"
+  },
+  {
+    "collection": "spells",
+    "index": "levitate",
+    "icon": "03-24"
+  },
+  {
+    "collection": "spells",
+    "index": "light",
+    "icon": "01-61"
+  },
+  {
+    "collection": "spells",
+    "index": "lightning-bolt",
+    "icon": "01-81"
+  },
+  {
+    "collection": "spells",
+    "index": "locate-animals-or-plants",
+    "icon": "04-57"
+  },
+  {
+    "collection": "spells",
+    "index": "locate-creature",
+    "icon": "04-09"
+  },
+  {
+    "collection": "spells",
+    "index": "locate-object",
+    "icon": "02-23"
+  },
+  {
+    "collection": "spells",
+    "index": "longstrider",
+    "icon": "03-04"
+  },
+  {
+    "collection": "spells",
+    "index": "mage-armor",
+    "icon": "06-79"
+  },
+  {
+    "collection": "spells",
+    "index": "mage-hand",
+    "icon": "01-52"
+  },
+  {
+    "collection": "spells",
+    "index": "magic-circle",
+    "icon": "06-94"
+  },
+  {
+    "collection": "spells",
+    "index": "magic-jar",
+    "icon": "09-50"
+  },
+  {
+    "collection": "spells",
+    "index": "magic-missile",
+    "icon": "01-96"
+  },
+  {
+    "collection": "spells",
+    "index": "magic-mouth",
+    "icon": "07-87"
+  },
+  {
+    "collection": "spells",
+    "index": "magic-weapon",
+    "icon": "09a-009"
+  },
+  {
+    "collection": "spells",
+    "index": "magnificent-mansion",
+    "icon": "05-16"
+  },
+  {
+    "collection": "spells",
+    "index": "major-image",
+    "icon": "02-52"
+  },
+  {
+    "collection": "spells",
+    "index": "mass-cure-wounds",
+    "icon": "06-70"
+  },
+  {
+    "collection": "spells",
+    "index": "mass-heal",
+    "icon": "09a-003"
+  },
+  {
+    "collection": "spells",
+    "index": "mass-healing-word",
+    "icon": "06-101"
+  },
+  {
+    "collection": "spells",
+    "index": "mass-suggestion",
+    "icon": "07-75"
+  },
+  {
+    "collection": "spells",
+    "index": "maze",
+    "icon": "05-15"
+  },
+  {
+    "collection": "spells",
+    "index": "meld-into-stone",
+    "icon": "01-102"
+  },
+  {
+    "collection": "spells",
+    "index": "mending",
+    "icon": "01-32"
+  },
+  {
+    "collection": "spells",
+    "index": "message",
+    "icon": "01-66"
+  },
+  {
+    "collection": "spells",
+    "index": "meteor-swarm",
+    "icon": "01-84"
+  },
+  {
+    "collection": "spells",
+    "index": "mind-blank",
+    "icon": "09-20"
+  },
+  {
+    "collection": "spells",
+    "index": "minor-illusion",
+    "icon": "09-92"
+  },
+  {
+    "collection": "spells",
+    "index": "mirage-arcane",
+    "icon": "02-108"
+  },
+  {
+    "collection": "spells",
+    "index": "mirror-image",
+    "icon": "09-93"
+  },
+  {
+    "collection": "spells",
+    "index": "mislead",
+    "icon": "02-49"
+  },
+  {
+    "collection": "spells",
+    "index": "misty-step",
+    "icon": "01-98"
+  },
+  {
+    "collection": "spells",
+    "index": "modify-memory",
+    "icon": "03-25"
+  },
+  {
+    "collection": "spells",
+    "index": "moonbeam",
+    "icon": "06-44"
+  },
+  {
+    "collection": "spells",
+    "index": "move-earth",
+    "icon": "03-40"
+  },
+  {
+    "collection": "spells",
+    "index": "nondetection",
+    "icon": "01-62"
+  },
+  {
+    "collection": "spells",
+    "index": "pass-without-trace",
+    "icon": "04-31"
+  },
+  {
+    "collection": "spells",
+    "index": "passwall",
+    "icon": "03-13"
+  },
+  {
+    "collection": "spells",
+    "index": "phantasmal-killer",
+    "icon": "07-88"
+  },
+  {
+    "collection": "spells",
+    "index": "phantom-steed",
+    "icon": "04-25"
+  },
+  {
+    "collection": "spells",
+    "index": "planar-ally",
+    "icon": "09-73"
+  },
+  {
+    "collection": "spells",
+    "index": "planar-binding",
+    "icon": "07-52"
+  },
+  {
+    "collection": "spells",
+    "index": "plane-shift",
+    "icon": "09-105"
+  },
+  {
+    "collection": "spells",
+    "index": "plant-growth",
+    "icon": "04-80"
+  },
+  {
+    "collection": "spells",
+    "index": "poison-spray",
+    "icon": "09-24"
+  },
+  {
+    "collection": "spells",
+    "index": "polymorph",
+    "icon": "03-35"
+  },
+  {
+    "collection": "spells",
+    "index": "power-word-kill",
+    "icon": "07-59"
+  },
+  {
+    "collection": "spells",
+    "index": "power-word-stun",
+    "icon": "03-14"
+  },
+  {
+    "collection": "spells",
+    "index": "prayer-of-healing",
+    "icon": "04-61"
+  },
+  {
+    "collection": "spells",
+    "index": "prestidigitation",
+    "icon": "08-21"
+  },
+  {
+    "collection": "spells",
+    "index": "prismatic-spray",
+    "icon": "04-64"
+  },
+  {
+    "collection": "spells",
+    "index": "prismatic-wall",
+    "icon": "05-127"
+  },
+  {
+    "collection": "spells",
+    "index": "private-sanctum",
+    "icon": "09-52"
+  },
+  {
+    "collection": "spells",
+    "index": "produce-flame",
+    "icon": "09-12"
+  },
+  {
+    "collection": "spells",
+    "index": "programmed-illusion",
+    "icon": "07-73"
+  },
+  {
+    "collection": "spells",
+    "index": "project-image",
+    "icon": "02-50"
+  },
+  {
+    "collection": "spells",
+    "index": "protection-from-energy",
+    "icon": "04-37"
+  },
+  {
+    "collection": "spells",
+    "index": "protection-from-evil-and-good",
+    "icon": "06-78"
+  },
+  {
+    "collection": "spells",
+    "index": "protection-from-poison",
+    "icon": "09-31"
+  },
+  {
+    "collection": "spells",
+    "index": "purify-food-and-drink",
+    "icon": "04-24"
+  },
+  {
+    "collection": "spells",
+    "index": "raise-dead",
+    "icon": "08-58"
+  },
+  {
+    "collection": "spells",
+    "index": "ray-of-enfeeblement",
+    "icon": "09-35"
+  },
+  {
+    "collection": "spells",
+    "index": "ray-of-frost",
+    "icon": "01-19"
+  },
+  {
+    "collection": "spells",
+    "index": "regenerate",
+    "icon": "04-98"
+  },
+  {
+    "collection": "spells",
+    "index": "reincarnate",
+    "icon": "06-14"
+  },
+  {
+    "collection": "spells",
+    "index": "remove-curse",
+    "icon": "07-43"
+  },
+  {
+    "collection": "spells",
+    "index": "resilient-sphere",
+    "icon": "06-40"
+  },
+  {
+    "collection": "spells",
+    "index": "resistance",
+    "icon": "01-48"
+  },
+  {
+    "collection": "spells",
+    "index": "resurrection",
+    "icon": "06-91"
+  },
+  {
+    "collection": "spells",
+    "index": "reverse-gravity",
+    "icon": "02-32"
+  },
+  {
+    "collection": "spells",
+    "index": "revivify",
+    "icon": "09-76"
+  },
+  {
+    "collection": "spells",
+    "index": "rope-trick",
+    "icon": "05-35"
+  },
+  {
+    "collection": "spells",
+    "index": "sacred-flame",
+    "icon": "06-23"
+  },
+  {
+    "collection": "spells",
+    "index": "sanctuary",
+    "icon": "09-05"
+  },
+  {
+    "collection": "spells",
+    "index": "scorching-ray",
+    "icon": "06-21"
+  },
+  {
+    "collection": "spells",
+    "index": "scrying",
+    "icon": "07-90"
+  },
+  {
+    "collection": "spells",
+    "index": "secret-chest",
+    "icon": "02-59"
+  },
+  {
+    "collection": "spells",
+    "index": "see-invisibility",
+    "icon": "01-11"
+  },
+  {
+    "collection": "spells",
+    "index": "seeming",
+    "icon": "04-68"
+  },
+  {
+    "collection": "spells",
+    "index": "sending",
+    "icon": "08-19"
+  },
+  {
+    "collection": "spells",
+    "index": "sequester",
+    "icon": "05-49"
+  },
+  {
+    "collection": "spells",
+    "index": "shapechange",
+    "icon": "01-57"
+  },
+  {
+    "collection": "spells",
+    "index": "shatter",
+    "icon": "03-15"
+  },
+  {
+    "collection": "spells",
+    "index": "shield",
+    "icon": "01-21"
+  },
+  {
+    "collection": "spells",
+    "index": "shield-of-faith",
+    "icon": "03-101"
+  },
+  {
+    "collection": "spells",
+    "index": "shillelagh",
+    "icon": "04-43"
+  },
+  {
+    "collection": "spells",
+    "index": "shocking-grasp",
+    "icon": "06-102"
+  },
+  {
+    "collection": "spells",
+    "index": "silence",
+    "icon": "02-51"
+  },
+  {
+    "collection": "spells",
+    "index": "silent-image",
+    "icon": "06-84"
+  },
+  {
+    "collection": "spells",
+    "index": "simulacrum",
+    "icon": "06-93"
+  },
+  {
+    "collection": "spells",
+    "index": "sleep",
+    "icon": "06-71"
+  },
+  {
+    "collection": "spells",
+    "index": "sleet-storm",
+    "icon": "01-78"
+  },
+  {
+    "collection": "spells",
+    "index": "slow",
+    "icon": "04-82"
+  },
+  {
+    "collection": "spells",
+    "index": "spare-the-dying",
+    "icon": "01-40"
+  },
+  {
+    "collection": "spells",
+    "index": "speak-with-animals",
+    "icon": "04-46"
+  },
+  {
+    "collection": "spells",
+    "index": "speak-with-dead",
+    "icon": "01-53"
+  },
+  {
+    "collection": "spells",
+    "index": "speak-with-plants",
+    "icon": "04-56"
+  },
+  {
+    "collection": "spells",
+    "index": "spider-climb",
+    "icon": "01-41"
+  },
+  {
+    "collection": "spells",
+    "index": "spike-growth",
+    "icon": "01-36"
+  },
+  {
+    "collection": "spells",
+    "index": "spirit-guardians",
+    "icon": "07-20"
+  },
+  {
+    "collection": "spells",
+    "index": "spiritual-weapon",
+    "icon": "09-74"
+  },
+  {
+    "collection": "spells",
+    "index": "stinking-cloud",
+    "icon": "01-99"
+  },
+  {
+    "collection": "spells",
+    "index": "stone-shape",
+    "icon": "09-75"
+  },
+  {
+    "collection": "spells",
+    "index": "stoneskin",
+    "icon": "03-41"
+  },
+  {
+    "collection": "spells",
+    "index": "storm-of-vengeance",
+    "icon": "04-88"
+  },
+  {
+    "collection": "spells",
+    "index": "suggestion",
+    "icon": "03-32"
+  },
+  {
+    "collection": "spells",
+    "index": "sunbeam",
+    "icon": "06-56"
+  },
+  {
+    "collection": "spells",
+    "index": "sunburst",
+    "icon": "06-11"
+  },
+  {
+    "collection": "spells",
+    "index": "symbol",
+    "icon": "08-56"
+  },
+  {
+    "collection": "spells",
+    "index": "telekinesis",
+    "icon": "02-36"
+  },
+  {
+    "collection": "spells",
+    "index": "telepathic-bond",
+    "icon": "09-94"
+  },
+  {
+    "collection": "spells",
+    "index": "teleport",
+    "icon": "06-47"
+  },
+  {
+    "collection": "spells",
+    "index": "teleportation-circle",
+    "icon": "06-39"
+  },
+  {
+    "collection": "spells",
+    "index": "thaumaturgy",
+    "icon": "06-10"
+  },
+  {
+    "collection": "spells",
+    "index": "thunderwave",
+    "icon": "01-79"
+  },
+  {
+    "collection": "spells",
+    "index": "time-stop",
+    "icon": "03-30"
+  },
+  {
+    "collection": "spells",
+    "index": "tiny-hut",
+    "icon": "02-29"
+  },
+  {
+    "collection": "spells",
+    "index": "tongues",
+    "icon": "03-71"
+  },
+  {
+    "collection": "spells",
+    "index": "transport-via-plants",
+    "icon": "04-39"
+  },
+  {
+    "collection": "spells",
+    "index": "tree-stride",
+    "icon": "06-98"
+  },
+  {
+    "collection": "spells",
+    "index": "true-polymorph",
+    "icon": "06-13"
+  },
+  {
+    "collection": "spells",
+    "index": "true-resurrection",
+    "icon": "08-96"
+  },
+  {
+    "collection": "spells",
+    "index": "true-seeing",
+    "icon": "09-53"
+  },
+  {
+    "collection": "spells",
+    "index": "true-strike",
+    "icon": "04-89"
+  },
+  {
+    "collection": "spells",
+    "index": "unseen-servant",
+    "icon": "06-27"
+  },
+  {
+    "collection": "spells",
+    "index": "vampiric-touch",
+    "icon": "07-72"
+  },
+  {
+    "collection": "spells",
+    "index": "vicious-mockery",
+    "icon": "09-46"
+  },
+  {
+    "collection": "spells",
+    "index": "wall-of-fire",
+    "icon": "09-11"
+  },
+  {
+    "collection": "spells",
+    "index": "wall-of-force",
+    "icon": "01-14"
+  },
+  {
+    "collection": "spells",
+    "index": "wall-of-ice",
+    "icon": "01-27"
+  },
+  {
+    "collection": "spells",
+    "index": "wall-of-stone",
+    "icon": "05-73"
+  },
+  {
+    "collection": "spells",
+    "index": "wall-of-thorns",
+    "icon": "07-24"
+  },
+  {
+    "collection": "spells",
+    "index": "warding-bond",
+    "icon": "03-97"
+  },
+  {
+    "collection": "spells",
+    "index": "water-breathing",
+    "icon": "09-65"
+  },
+  {
+    "collection": "spells",
+    "index": "water-walk",
+    "icon": "05-34"
+  },
+  {
+    "collection": "spells",
+    "index": "web",
+    "icon": "06-51"
+  },
+  {
+    "collection": "spells",
+    "index": "weird",
+    "icon": "07-98"
+  },
+  {
+    "collection": "spells",
+    "index": "wind-walk",
+    "icon": "06-111"
+  },
+  {
+    "collection": "spells",
+    "index": "wind-wall",
+    "icon": "02-89"
+  },
+  {
+    "collection": "spells",
+    "index": "wish",
+    "icon": "08-99"
+  },
+  {
+    "collection": "spells",
+    "index": "word-of-recall",
+    "icon": "02-28"
+  },
+  {
+    "collection": "spells",
+    "index": "zone-of-truth",
+    "icon": "03-23"
+  },
+  {
+    "collection": "features",
+    "index": "action-surge-1-use",
+    "icon": "skl-yellow-09"
+  },
+  {
+    "collection": "features",
+    "index": "action-surge-2-uses",
+    "icon": "skl-yellow-09"
+  },
+  {
+    "collection": "features",
+    "index": "additional-fighting-style",
+    "icon": "sgi-171"
+  },
+  {
+    "collection": "features",
+    "index": "additional-magical-secrets",
+    "icon": "loot-book_03"
+  },
+  {
+    "collection": "features",
+    "index": "arcane-recovery",
+    "icon": "skl-red-27"
+  },
+  {
+    "collection": "features",
+    "index": "arcane-tradition",
+    "icon": "09a-007"
+  },
+  {
+    "collection": "features",
+    "index": "arcane-tradition-improvement-1",
+    "icon": "09a-007"
+  },
+  {
+    "collection": "features",
+    "index": "arcane-tradition-improvement-2",
+    "icon": "09a-007"
+  },
+  {
+    "collection": "features",
+    "index": "arcane-tradition-improvement-3",
+    "icon": "09a-007"
+  },
+  {
+    "collection": "features",
+    "index": "archdruid",
+    "icon": "04-101"
+  },
+  {
+    "collection": "features",
+    "index": "aura-improvements",
+    "icon": "skl-blue-35"
+  },
+  {
+    "collection": "features",
+    "index": "aura-of-courage",
+    "icon": "sgi-178"
+  },
+  {
+    "collection": "features",
+    "index": "aura-of-devotion",
+    "icon": "04-93"
+  },
+  {
+    "collection": "features",
+    "index": "aura-of-protection",
+    "icon": "skl-blue-35"
+  },
+  {
+    "collection": "features",
+    "index": "barbarian-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "barbarian-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "barbarian-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "barbarian-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "barbarian-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "barbarian-extra-attack",
+    "icon": "skl-blue-12"
+  },
+  {
+    "collection": "features",
+    "index": "barbarian-unarmored-defense",
+    "icon": "skl-blue-34"
+  },
+  {
+    "collection": "features",
+    "index": "bard-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "bard-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "bard-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "bard-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "bard-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "bard-college",
+    "icon": "sgi-03"
+  },
+  {
+    "collection": "features",
+    "index": "bard-college-improvement-1",
+    "icon": "sgi-03"
+  },
+  {
+    "collection": "features",
+    "index": "bard-college-improvement-2",
+    "icon": "sgi-03"
+  },
+  {
+    "collection": "features",
+    "index": "bard-expertise-1",
+    "icon": "skl-yellow-36"
+  },
+  {
+    "collection": "features",
+    "index": "bard-expertise-2",
+    "icon": "skl-yellow-36"
+  },
+  {
+    "collection": "features",
+    "index": "bardic-inspiration-d10",
+    "icon": "loot-mi_03"
+  },
+  {
+    "collection": "features",
+    "index": "bardic-inspiration-d12",
+    "icon": "loot-mi_03"
+  },
+  {
+    "collection": "features",
+    "index": "bardic-inspiration-d6",
+    "icon": "loot-mi_03"
+  },
+  {
+    "collection": "features",
+    "index": "bardic-inspiration-d8",
+    "icon": "loot-mi_03"
+  },
+  {
+    "collection": "features",
+    "index": "beast-spells",
+    "icon": "skl-yellow-06"
+  },
+  {
+    "collection": "features",
+    "index": "blessed-healer",
+    "icon": "07-26"
+  },
+  {
+    "collection": "features",
+    "index": "blindsense",
+    "icon": "loot-eyes_02"
+  },
+  {
+    "collection": "features",
+    "index": "bonus-cantrip",
+    "icon": "skl-green-10"
+  },
+  {
+    "collection": "features",
+    "index": "bonus-proficiencies",
+    "icon": "loot-scroll_02"
+  },
+  {
+    "collection": "features",
+    "index": "bonus-proficiency",
+    "icon": "sgi-63"
+  },
+  {
+    "collection": "features",
+    "index": "brutal-critical-1-die",
+    "icon": "skl-red-15"
+  },
+  {
+    "collection": "features",
+    "index": "brutal-critical-2-dice",
+    "icon": "skl-red-15"
+  },
+  {
+    "collection": "features",
+    "index": "brutal-critical-3-dice",
+    "icon": "skl-red-15"
+  },
+  {
+    "collection": "features",
+    "index": "channel-divinity",
+    "icon": "06-52"
+  },
+  {
+    "collection": "features",
+    "index": "channel-divinity-1-rest",
+    "icon": "06-52"
+  },
+  {
+    "collection": "features",
+    "index": "channel-divinity-2-rest",
+    "icon": "06-52"
+  },
+  {
+    "collection": "features",
+    "index": "channel-divinity-3-rest",
+    "icon": "06-52"
+  },
+  {
+    "collection": "features",
+    "index": "channel-divinity-preserve-life",
+    "icon": "skl-green-20"
+  },
+  {
+    "collection": "features",
+    "index": "channel-divinity-sacred-weapon",
+    "icon": "01-25"
+  },
+  {
+    "collection": "features",
+    "index": "channel-divinity-turn-the-unholy",
+    "icon": "01-12"
+  },
+  {
+    "collection": "features",
+    "index": "channel-divinity-turn-undead",
+    "icon": "07-47"
+  },
+  {
+    "collection": "features",
+    "index": "circle-of-the-land",
+    "icon": "skl-green-17"
+  },
+  {
+    "collection": "features",
+    "index": "circle-of-the-land-arctic",
+    "icon": "skl-blue-04"
+  },
+  {
+    "collection": "features",
+    "index": "circle-of-the-land-coast",
+    "icon": "skl-blue-06"
+  },
+  {
+    "collection": "features",
+    "index": "circle-of-the-land-desert",
+    "icon": "skl-yellow-43"
+  },
+  {
+    "collection": "features",
+    "index": "circle-of-the-land-forest",
+    "icon": "skl-green-03"
+  },
+  {
+    "collection": "features",
+    "index": "circle-of-the-land-grassland",
+    "icon": "skl-green-21"
+  },
+  {
+    "collection": "features",
+    "index": "circle-of-the-land-mountain",
+    "icon": "skl-blue-33"
+  },
+  {
+    "collection": "features",
+    "index": "circle-of-the-land-swamp",
+    "icon": "skl-emerald-06"
+  },
+  {
+    "collection": "features",
+    "index": "circle-spells-1",
+    "icon": "blb-68"
+  },
+  {
+    "collection": "features",
+    "index": "circle-spells-2",
+    "icon": "blb-68"
+  },
+  {
+    "collection": "features",
+    "index": "circle-spells-3",
+    "icon": "blb-68"
+  },
+  {
+    "collection": "features",
+    "index": "circle-spells-4",
+    "icon": "blb-68"
+  },
+  {
+    "collection": "features",
+    "index": "cleansing-touch",
+    "icon": "06-68"
+  },
+  {
+    "collection": "features",
+    "index": "cleric-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "cleric-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "cleric-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "cleric-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "cleric-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "countercharm",
+    "icon": "loot-bell_01"
+  },
+  {
+    "collection": "features",
+    "index": "cunning-action",
+    "icon": "skl-violet-08"
+  },
+  {
+    "collection": "features",
+    "index": "cutting-words",
+    "icon": "skl-red-24"
+  },
+  {
+    "collection": "features",
+    "index": "danger-sense",
+    "icon": "skl-red-11"
+  },
+  {
+    "collection": "features",
+    "index": "dark-ones-blessing",
+    "icon": "01-69"
+  },
+  {
+    "collection": "features",
+    "index": "dark-ones-own-luck",
+    "icon": "03-72"
+  },
+  {
+    "collection": "features",
+    "index": "defensive-tactics",
+    "icon": "04-17"
+  },
+  {
+    "collection": "features",
+    "index": "defensive-tactics-escape-the-horde",
+    "icon": "04-38"
+  },
+  {
+    "collection": "features",
+    "index": "defensive-tactics-multiattack-defense",
+    "icon": "04-86"
+  },
+  {
+    "collection": "features",
+    "index": "defensive-tactics-steel-will",
+    "icon": "09-38"
+  },
+  {
+    "collection": "features",
+    "index": "deflect-missiles",
+    "icon": "06-04"
+  },
+  {
+    "collection": "features",
+    "index": "destroy-undead-cr-1-2-or-below",
+    "icon": "01-18"
+  },
+  {
+    "collection": "features",
+    "index": "destroy-undead-cr-1-or-below",
+    "icon": "01-18"
+  },
+  {
+    "collection": "features",
+    "index": "destroy-undead-cr-2-or-below",
+    "icon": "01-18"
+  },
+  {
+    "collection": "features",
+    "index": "destroy-undead-cr-3-or-below",
+    "icon": "01-18"
+  },
+  {
+    "collection": "features",
+    "index": "destroy-undead-cr-4-or-below",
+    "icon": "01-18"
+  },
+  {
+    "collection": "features",
+    "index": "diamond-soul",
+    "icon": "nec-11"
+  },
+  {
+    "collection": "features",
+    "index": "disciple-of-life",
+    "icon": "loot-heart_01"
+  },
+  {
+    "collection": "features",
+    "index": "divine-domain",
+    "icon": "sgi-106"
+  },
+  {
+    "collection": "features",
+    "index": "divine-domain-improvement-1",
+    "icon": "sgi-106"
+  },
+  {
+    "collection": "features",
+    "index": "divine-domain-improvement-2",
+    "icon": "sgi-106"
+  },
+  {
+    "collection": "features",
+    "index": "divine-domain-improvement-3",
+    "icon": "sgi-106"
+  },
+  {
+    "collection": "features",
+    "index": "divine-domain-improvement-4",
+    "icon": "sgi-106"
+  },
+  {
+    "collection": "features",
+    "index": "divine-health",
+    "icon": "08-73"
+  },
+  {
+    "collection": "features",
+    "index": "divine-intervention",
+    "icon": "skl-red-03"
+  },
+  {
+    "collection": "features",
+    "index": "divine-intervention-improvement",
+    "icon": "skl-red-03"
+  },
+  {
+    "collection": "features",
+    "index": "divine-sense",
+    "icon": "sgi-94"
+  },
+  {
+    "collection": "features",
+    "index": "divine-smite",
+    "icon": "01-67"
+  },
+  {
+    "collection": "features",
+    "index": "divine-strike",
+    "icon": "03-61"
+  },
+  {
+    "collection": "features",
+    "index": "domain-spells-1",
+    "icon": "blb-68"
+  },
+  {
+    "collection": "features",
+    "index": "domain-spells-2",
+    "icon": "blb-68"
+  },
+  {
+    "collection": "features",
+    "index": "domain-spells-3",
+    "icon": "blb-68"
+  },
+  {
+    "collection": "features",
+    "index": "domain-spells-4",
+    "icon": "blb-68"
+  },
+  {
+    "collection": "features",
+    "index": "domain-spells-5",
+    "icon": "blb-68"
+  },
+  {
+    "collection": "features",
+    "index": "draconic-presence",
+    "icon": "06-01"
+  },
+  {
+    "collection": "features",
+    "index": "draconic-resilience",
+    "icon": "03-64"
+  },
+  {
+    "collection": "features",
+    "index": "dragon-ancestor",
+    "icon": "skl-blue-19"
+  },
+  {
+    "collection": "features",
+    "index": "dragon-ancestor-black---acid-damage",
+    "icon": "skl-blue-19"
+  },
+  {
+    "collection": "features",
+    "index": "dragon-ancestor-blue---lightning-damage",
+    "icon": "skl-blue-19"
+  },
+  {
+    "collection": "features",
+    "index": "dragon-ancestor-brass---fire-damage",
+    "icon": "skl-blue-19"
+  },
+  {
+    "collection": "features",
+    "index": "dragon-ancestor-bronze---lightning-damage",
+    "icon": "skl-blue-19"
+  },
+  {
+    "collection": "features",
+    "index": "dragon-ancestor-copper---acid-damage",
+    "icon": "skl-blue-19"
+  },
+  {
+    "collection": "features",
+    "index": "dragon-ancestor-gold---fire-damage",
+    "icon": "skl-blue-19"
+  },
+  {
+    "collection": "features",
+    "index": "dragon-ancestor-green---poison-damage",
+    "icon": "skl-blue-19"
+  },
+  {
+    "collection": "features",
+    "index": "dragon-ancestor-red---fire-damage",
+    "icon": "skl-blue-19"
+  },
+  {
+    "collection": "features",
+    "index": "dragon-ancestor-silver---cold-damage",
+    "icon": "skl-blue-19"
+  },
+  {
+    "collection": "features",
+    "index": "dragon-ancestor-white---cold-damage",
+    "icon": "skl-blue-19"
+  },
+  {
+    "collection": "features",
+    "index": "dragon-wings",
+    "icon": "skl-blue-02"
+  },
+  {
+    "collection": "features",
+    "index": "druid-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "druid-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "druid-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "druid-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "druid-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "druid-circle",
+    "icon": "skl-green-27"
+  },
+  {
+    "collection": "features",
+    "index": "druid-circle-improvement-1",
+    "icon": "skl-green-27"
+  },
+  {
+    "collection": "features",
+    "index": "druid-circle-improvement-2",
+    "icon": "skl-green-27"
+  },
+  {
+    "collection": "features",
+    "index": "druid-circle-improvement-3",
+    "icon": "skl-green-27"
+  },
+  {
+    "collection": "features",
+    "index": "druid-lands-stride",
+    "icon": "skl-green-02"
+  },
+  {
+    "collection": "features",
+    "index": "druid-timeless-body",
+    "icon": "07-53"
+  },
+  {
+    "collection": "features",
+    "index": "druidic",
+    "icon": "loot-runestone_03"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-agonizing-blast",
+    "icon": "06-36"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-armor-of-shadows",
+    "icon": "01-89"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-ascendant-step",
+    "icon": "07-32"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-beast-speech",
+    "icon": "04-83"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-beguiling-influence",
+    "icon": "07-78"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-bewitching-whispers",
+    "icon": "skl-violet-04"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-book-of-ancient-secrets",
+    "icon": "03-05"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-chains-of-carceri",
+    "icon": "skl-red-08"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-devils-sight",
+    "icon": "09-55"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-dreadful-word",
+    "icon": "07-09"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-eldritch-sight",
+    "icon": "skl-violet-03"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-eldritch-spear",
+    "icon": "01-45"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-eyes-of-the-rune-keeper",
+    "icon": "loot-runestone_02"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-fiendish-vigor",
+    "icon": "06-42"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-gaze-of-two-minds",
+    "icon": "skl-violet-10"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-lifedrinker",
+    "icon": "03-91"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-mask-of-many-faces",
+    "icon": "09-37"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-master-of-myriad-forms",
+    "icon": "04-30"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-minions-of-chaos",
+    "icon": "07-86"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-mire-the-mind",
+    "icon": "loot-snail_01"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-misty-visions",
+    "icon": "09-62"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-one-with-shadows",
+    "icon": "06-41"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-otherworldly-leap",
+    "icon": "03-66"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-repelling-blast",
+    "icon": "06-46"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-sculptor-of-flesh",
+    "icon": "07-17"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-sign-of-ill-omen",
+    "icon": "07-48"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-thief-of-five-fates",
+    "icon": "skl-violet-26"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-thirsting-blade",
+    "icon": "09-67"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-visions-of-distant-realms",
+    "icon": "06a-001"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-voice-of-the-chain-master",
+    "icon": "skl-violet-11"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-whispers-of-the-grave",
+    "icon": "07-07"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocation-witch-sight",
+    "icon": "loot-eye_01"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-invocations",
+    "icon": "skl-violet-13"
+  },
+  {
+    "collection": "features",
+    "index": "eldritch-master",
+    "icon": "skl-violet-18"
+  },
+  {
+    "collection": "features",
+    "index": "elemental-affinity",
+    "icon": "06-115"
+  },
+  {
+    "collection": "features",
+    "index": "elusive",
+    "icon": "01-82"
+  },
+  {
+    "collection": "features",
+    "index": "empowered-evocation",
+    "icon": "06-116"
+  },
+  {
+    "collection": "features",
+    "index": "empty-body",
+    "icon": "skl-blue-37"
+  },
+  {
+    "collection": "features",
+    "index": "evocation-savant",
+    "icon": "09-51"
+  },
+  {
+    "collection": "features",
+    "index": "extra-attack-1",
+    "icon": "skl-blue-12"
+  },
+  {
+    "collection": "features",
+    "index": "extra-attack-2",
+    "icon": "skl-blue-12"
+  },
+  {
+    "collection": "features",
+    "index": "extra-attack-3",
+    "icon": "skl-blue-12"
+  },
+  {
+    "collection": "features",
+    "index": "fast-hands",
+    "icon": "skl-yellow-35"
+  },
+  {
+    "collection": "features",
+    "index": "fast-movement",
+    "icon": "sgi-161"
+  },
+  {
+    "collection": "features",
+    "index": "favored-enemy-1-type",
+    "icon": "04-70"
+  },
+  {
+    "collection": "features",
+    "index": "favored-enemy-2-types",
+    "icon": "04-70"
+  },
+  {
+    "collection": "features",
+    "index": "favored-enemy-3-enemies",
+    "icon": "04-70"
+  },
+  {
+    "collection": "features",
+    "index": "feral-instinct",
+    "icon": "skl-blue-31"
+  },
+  {
+    "collection": "features",
+    "index": "feral-senses",
+    "icon": "skl-blue-28"
+  },
+  {
+    "collection": "features",
+    "index": "fiendish-resilience",
+    "icon": "03-20"
+  },
+  {
+    "collection": "features",
+    "index": "fighter-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "fighter-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "fighter-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "fighter-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "fighter-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "fighter-ability-score-improvement-6",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "fighter-ability-score-improvement-7",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "fighter-fighting-style",
+    "icon": "sgi-171"
+  },
+  {
+    "collection": "features",
+    "index": "fighter-fighting-style-archery",
+    "icon": "skl-green-01"
+  },
+  {
+    "collection": "features",
+    "index": "fighter-fighting-style-defense",
+    "icon": "sgi-179"
+  },
+  {
+    "collection": "features",
+    "index": "fighter-fighting-style-dueling",
+    "icon": "skl-gray-03"
+  },
+  {
+    "collection": "features",
+    "index": "fighter-fighting-style-great-weapon-fighting",
+    "icon": "skl-yellow-29"
+  },
+  {
+    "collection": "features",
+    "index": "fighter-fighting-style-protection",
+    "icon": "skl-blue-20"
+  },
+  {
+    "collection": "features",
+    "index": "fighter-fighting-style-two-weapon-fighting",
+    "icon": "03-45"
+  },
+  {
+    "collection": "features",
+    "index": "fighting-style-defense",
+    "icon": "sgi-179"
+  },
+  {
+    "collection": "features",
+    "index": "fighting-style-dueling",
+    "icon": "skl-gray-03"
+  },
+  {
+    "collection": "features",
+    "index": "fighting-style-great-weapon-fighting",
+    "icon": "skl-yellow-29"
+  },
+  {
+    "collection": "features",
+    "index": "fighting-style-protection",
+    "icon": "skl-blue-20"
+  },
+  {
+    "collection": "features",
+    "index": "flexible-casting-converting-spell-slot",
+    "icon": "09-104"
+  },
+  {
+    "collection": "features",
+    "index": "flexible-casting-creating-spell-slots",
+    "icon": "09-103"
+  },
+  {
+    "collection": "features",
+    "index": "flurry-of-blows",
+    "icon": "03-54"
+  },
+  {
+    "collection": "features",
+    "index": "foe-slayer",
+    "icon": "06-73"
+  },
+  {
+    "collection": "features",
+    "index": "font-of-inspiration",
+    "icon": "skl-yellow-01"
+  },
+  {
+    "collection": "features",
+    "index": "font-of-magic",
+    "icon": "skl-red-26"
+  },
+  {
+    "collection": "features",
+    "index": "frenzy",
+    "icon": "skl-red-14"
+  },
+  {
+    "collection": "features",
+    "index": "hide-in-plain-sight",
+    "icon": "04-21"
+  },
+  {
+    "collection": "features",
+    "index": "holy-nimbus",
+    "icon": "08-09"
+  },
+  {
+    "collection": "features",
+    "index": "hunters-prey",
+    "icon": "04-76"
+  },
+  {
+    "collection": "features",
+    "index": "hunters-prey-colossus-slayer",
+    "icon": "04-13"
+  },
+  {
+    "collection": "features",
+    "index": "hunters-prey-giant-killer",
+    "icon": "07-12"
+  },
+  {
+    "collection": "features",
+    "index": "hunters-prey-horde-breaker",
+    "icon": "03-87"
+  },
+  {
+    "collection": "features",
+    "index": "hurl-through-hell",
+    "icon": "06-81"
+  },
+  {
+    "collection": "features",
+    "index": "improved-critical",
+    "icon": "04-11"
+  },
+  {
+    "collection": "features",
+    "index": "improved-divine-smite",
+    "icon": "01-67"
+  },
+  {
+    "collection": "features",
+    "index": "indomitable-1-use",
+    "icon": "skl-violet-16"
+  },
+  {
+    "collection": "features",
+    "index": "indomitable-2-uses",
+    "icon": "skl-violet-16"
+  },
+  {
+    "collection": "features",
+    "index": "indomitable-3-uses",
+    "icon": "skl-violet-16"
+  },
+  {
+    "collection": "features",
+    "index": "indomitable-might",
+    "icon": "skl-blue-29"
+  },
+  {
+    "collection": "features",
+    "index": "intimidating-presence",
+    "icon": "skl-red-02"
+  },
+  {
+    "collection": "features",
+    "index": "jack-of-all-trades",
+    "icon": "skl-yellow-38"
+  },
+  {
+    "collection": "features",
+    "index": "ki",
+    "icon": "skl-blue-11"
+  },
+  {
+    "collection": "features",
+    "index": "ki-empowered-strikes",
+    "icon": "skl-violet-29"
+  },
+  {
+    "collection": "features",
+    "index": "lay-on-hands",
+    "icon": "skl-yellow-11"
+  },
+  {
+    "collection": "features",
+    "index": "magical-secrets-1",
+    "icon": "loot-book_03"
+  },
+  {
+    "collection": "features",
+    "index": "magical-secrets-2",
+    "icon": "loot-book_03"
+  },
+  {
+    "collection": "features",
+    "index": "magical-secrets-3",
+    "icon": "loot-book_03"
+  },
+  {
+    "collection": "features",
+    "index": "martial-archetype",
+    "icon": "blb-91"
+  },
+  {
+    "collection": "features",
+    "index": "martial-archetype-improvement-1",
+    "icon": "blb-91"
+  },
+  {
+    "collection": "features",
+    "index": "martial-archetype-improvement-2",
+    "icon": "blb-91"
+  },
+  {
+    "collection": "features",
+    "index": "martial-archetype-improvement-3",
+    "icon": "blb-91"
+  },
+  {
+    "collection": "features",
+    "index": "martial-archetype-improvement-4",
+    "icon": "blb-91"
+  },
+  {
+    "collection": "features",
+    "index": "martial-arts",
+    "icon": "04-62"
+  },
+  {
+    "collection": "features",
+    "index": "metamagic-1",
+    "icon": "01-56"
+  },
+  {
+    "collection": "features",
+    "index": "metamagic-2",
+    "icon": "01-56"
+  },
+  {
+    "collection": "features",
+    "index": "metamagic-3",
+    "icon": "01-56"
+  },
+  {
+    "collection": "features",
+    "index": "metamagic-careful-spell",
+    "icon": "06-82"
+  },
+  {
+    "collection": "features",
+    "index": "metamagic-distant-spell",
+    "icon": "06-12"
+  },
+  {
+    "collection": "features",
+    "index": "metamagic-empowered-spell",
+    "icon": "06-18"
+  },
+  {
+    "collection": "features",
+    "index": "metamagic-extended-spell",
+    "icon": "03-98"
+  },
+  {
+    "collection": "features",
+    "index": "metamagic-heightened-spell",
+    "icon": "09-10"
+  },
+  {
+    "collection": "features",
+    "index": "metamagic-quickened-spell",
+    "icon": "06-16"
+  },
+  {
+    "collection": "features",
+    "index": "metamagic-subtle-spell",
+    "icon": "01-49"
+  },
+  {
+    "collection": "features",
+    "index": "metamagic-twinned-spell",
+    "icon": "06a-005"
+  },
+  {
+    "collection": "features",
+    "index": "mindless-rage",
+    "icon": "skl-red-04"
+  },
+  {
+    "collection": "features",
+    "index": "monastic-tradition",
+    "icon": "04-99"
+  },
+  {
+    "collection": "features",
+    "index": "monastic-tradition-improvement-1",
+    "icon": "04-99"
+  },
+  {
+    "collection": "features",
+    "index": "monastic-tradition-improvement-2",
+    "icon": "04-99"
+  },
+  {
+    "collection": "features",
+    "index": "monastic-tradition-improvement-3",
+    "icon": "04-99"
+  },
+  {
+    "collection": "features",
+    "index": "monk-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "monk-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "monk-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "monk-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "monk-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "monk-evasion",
+    "icon": "skl-emerald-09"
+  },
+  {
+    "collection": "features",
+    "index": "monk-extra-attack",
+    "icon": "skl-blue-12"
+  },
+  {
+    "collection": "features",
+    "index": "monk-timeless-body",
+    "icon": "07-53"
+  },
+  {
+    "collection": "features",
+    "index": "monk-unarmored-defense",
+    "icon": "04-87"
+  },
+  {
+    "collection": "features",
+    "index": "multiattack",
+    "icon": "09-72"
+  },
+  {
+    "collection": "features",
+    "index": "multiattack-volley",
+    "icon": "04-40"
+  },
+  {
+    "collection": "features",
+    "index": "multiattack-whirlwind-attack",
+    "icon": "skl-gray-04"
+  },
+  {
+    "collection": "features",
+    "index": "mystic-arcanum-6th-level",
+    "icon": "01-63"
+  },
+  {
+    "collection": "features",
+    "index": "mystic-arcanum-7th-level",
+    "icon": "01-63"
+  },
+  {
+    "collection": "features",
+    "index": "mystic-arcanum-8th-level",
+    "icon": "01-63"
+  },
+  {
+    "collection": "features",
+    "index": "mystic-arcanum-9th-level",
+    "icon": "01-63"
+  },
+  {
+    "collection": "features",
+    "index": "natural-explorer-1-terrain-type",
+    "icon": "loot-map_01"
+  },
+  {
+    "collection": "features",
+    "index": "natural-explorer-2-terrain-types",
+    "icon": "loot-map_01"
+  },
+  {
+    "collection": "features",
+    "index": "natural-explorer-3-terrain-types",
+    "icon": "loot-map_01"
+  },
+  {
+    "collection": "features",
+    "index": "natural-recovery",
+    "icon": "skl-red-32"
+  },
+  {
+    "collection": "features",
+    "index": "natures-sanctuary",
+    "icon": "skl-green-28"
+  },
+  {
+    "collection": "features",
+    "index": "natures-ward",
+    "icon": "06-95"
+  },
+  {
+    "collection": "features",
+    "index": "oath-spells",
+    "icon": "blb-68"
+  },
+  {
+    "collection": "features",
+    "index": "open-hand-technique",
+    "icon": "skl-gray-10"
+  },
+  {
+    "collection": "features",
+    "index": "otherworldly-patron",
+    "icon": "01-92"
+  },
+  {
+    "collection": "features",
+    "index": "otherworldly-patron-improvement-1",
+    "icon": "01-92"
+  },
+  {
+    "collection": "features",
+    "index": "otherworldly-patron-improvement-2",
+    "icon": "01-92"
+  },
+  {
+    "collection": "features",
+    "index": "otherworldly-patron-improvement-3",
+    "icon": "01-92"
+  },
+  {
+    "collection": "features",
+    "index": "overchannel",
+    "icon": "06-88"
+  },
+  {
+    "collection": "features",
+    "index": "pact-boon",
+    "icon": "01-51"
+  },
+  {
+    "collection": "features",
+    "index": "pact-magic",
+    "icon": "skl-violet-06"
+  },
+  {
+    "collection": "features",
+    "index": "pact-of-the-blade",
+    "icon": "06a-010"
+  },
+  {
+    "collection": "features",
+    "index": "pact-of-the-chain",
+    "icon": "07-02"
+  },
+  {
+    "collection": "features",
+    "index": "pact-of-the-tome",
+    "icon": "loot-book_01"
+  },
+  {
+    "collection": "features",
+    "index": "paladin-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "paladin-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "paladin-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "paladin-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "paladin-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "paladin-extra-attack",
+    "icon": "skl-blue-12"
+  },
+  {
+    "collection": "features",
+    "index": "paladin-fighting-style",
+    "icon": "sgi-171"
+  },
+  {
+    "collection": "features",
+    "index": "patient-defense",
+    "icon": "blb-31"
+  },
+  {
+    "collection": "features",
+    "index": "peerless-skill",
+    "icon": "skl-yellow-37"
+  },
+  {
+    "collection": "features",
+    "index": "perfect-self",
+    "icon": "skl-yellow-44"
+  },
+  {
+    "collection": "features",
+    "index": "persistent-rage",
+    "icon": "06-63"
+  },
+  {
+    "collection": "features",
+    "index": "potent-cantrip",
+    "icon": "01-07"
+  },
+  {
+    "collection": "features",
+    "index": "primal-champion",
+    "icon": "skl-yellow-19"
+  },
+  {
+    "collection": "features",
+    "index": "primal-path",
+    "icon": "09-54"
+  },
+  {
+    "collection": "features",
+    "index": "primal-path-improvement-1",
+    "icon": "09-54"
+  },
+  {
+    "collection": "features",
+    "index": "primal-path-improvement-2",
+    "icon": "09-54"
+  },
+  {
+    "collection": "features",
+    "index": "primal-path-improvement-3",
+    "icon": "09-54"
+  },
+  {
+    "collection": "features",
+    "index": "primeval-awareness",
+    "icon": "sgi-45"
+  },
+  {
+    "collection": "features",
+    "index": "purity-of-body",
+    "icon": "04-50"
+  },
+  {
+    "collection": "features",
+    "index": "purity-of-spirit",
+    "icon": "09-90"
+  },
+  {
+    "collection": "features",
+    "index": "quivering-palm",
+    "icon": "06-85"
+  },
+  {
+    "collection": "features",
+    "index": "rage",
+    "icon": "06-26"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-archetype",
+    "icon": "04-29"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-archetype-improvement-1",
+    "icon": "04-29"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-archetype-improvement-2",
+    "icon": "04-29"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-archetype-improvement-3",
+    "icon": "04-29"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-extra-attack",
+    "icon": "skl-blue-12"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-fighting-style",
+    "icon": "sgi-171"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-fighting-style-archery",
+    "icon": "skl-green-01"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-fighting-style-defense",
+    "icon": "sgi-179"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-fighting-style-dueling",
+    "icon": "skl-gray-03"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-fighting-style-two-weapon-fighting",
+    "icon": "03-45"
+  },
+  {
+    "collection": "features",
+    "index": "ranger-lands-stride",
+    "icon": "skl-green-02"
+  },
+  {
+    "collection": "features",
+    "index": "reckless-attack",
+    "icon": "skl-red-18"
+  },
+  {
+    "collection": "features",
+    "index": "relentless-rage",
+    "icon": "skl-red-37"
+  },
+  {
+    "collection": "features",
+    "index": "reliable-talent",
+    "icon": "loot-dice_01"
+  },
+  {
+    "collection": "features",
+    "index": "remarkable-athlete",
+    "icon": "sgi-126"
+  },
+  {
+    "collection": "features",
+    "index": "retaliation",
+    "icon": "skl-red-33"
+  },
+  {
+    "collection": "features",
+    "index": "rogue-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "rogue-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "rogue-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "rogue-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "rogue-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "rogue-ability-score-improvement-6",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "rogue-evasion",
+    "icon": "skl-emerald-09"
+  },
+  {
+    "collection": "features",
+    "index": "rogue-expertise-1",
+    "icon": "skl-yellow-36"
+  },
+  {
+    "collection": "features",
+    "index": "rogue-expertise-2",
+    "icon": "skl-yellow-36"
+  },
+  {
+    "collection": "features",
+    "index": "roguish-archetype",
+    "icon": "skl-violet-02"
+  },
+  {
+    "collection": "features",
+    "index": "roguish-archetype-improvement-1",
+    "icon": "skl-violet-02"
+  },
+  {
+    "collection": "features",
+    "index": "roguish-archetype-improvement-2",
+    "icon": "skl-violet-02"
+  },
+  {
+    "collection": "features",
+    "index": "roguish-archetype-improvement-3",
+    "icon": "skl-violet-02"
+  },
+  {
+    "collection": "features",
+    "index": "sacred-oath",
+    "icon": "blb-77"
+  },
+  {
+    "collection": "features",
+    "index": "sacred-oath-improvement-1",
+    "icon": "blb-77"
+  },
+  {
+    "collection": "features",
+    "index": "sacred-oath-improvement-2",
+    "icon": "blb-77"
+  },
+  {
+    "collection": "features",
+    "index": "sacred-oath-improvement-3",
+    "icon": "blb-77"
+  },
+  {
+    "collection": "features",
+    "index": "sculpt-spells",
+    "icon": "09a-005"
+  },
+  {
+    "collection": "features",
+    "index": "second-story-work",
+    "icon": "skl-blue-25"
+  },
+  {
+    "collection": "features",
+    "index": "second-wind",
+    "icon": "skl-red-17"
+  },
+  {
+    "collection": "features",
+    "index": "signature-spell",
+    "icon": "skl-red-28"
+  },
+  {
+    "collection": "features",
+    "index": "slippery-mind",
+    "icon": "loot-brain_01"
+  },
+  {
+    "collection": "features",
+    "index": "slow-fall",
+    "icon": "04-32"
+  },
+  {
+    "collection": "features",
+    "index": "sneak-attack",
+    "icon": "03-33"
+  },
+  {
+    "collection": "features",
+    "index": "song-of-rest-d10",
+    "icon": "04-94"
+  },
+  {
+    "collection": "features",
+    "index": "song-of-rest-d12",
+    "icon": "04-94"
+  },
+  {
+    "collection": "features",
+    "index": "song-of-rest-d6",
+    "icon": "04-94"
+  },
+  {
+    "collection": "features",
+    "index": "song-of-rest-d8",
+    "icon": "04-94"
+  },
+  {
+    "collection": "features",
+    "index": "sorcerer-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "sorcerer-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "sorcerer-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "sorcerer-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "sorcerer-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "sorcerous-origin",
+    "icon": "06-72"
+  },
+  {
+    "collection": "features",
+    "index": "sorcerous-origin-improvement-1",
+    "icon": "06-72"
+  },
+  {
+    "collection": "features",
+    "index": "sorcerous-origin-improvement-2",
+    "icon": "06-72"
+  },
+  {
+    "collection": "features",
+    "index": "sorcerous-origin-improvement-3",
+    "icon": "06-72"
+  },
+  {
+    "collection": "features",
+    "index": "sorcerous-restoration",
+    "icon": "09a-004"
+  },
+  {
+    "collection": "features",
+    "index": "spell-mastery",
+    "icon": "sgi-22"
+  },
+  {
+    "collection": "features",
+    "index": "spellcasting-bard",
+    "icon": "04-58"
+  },
+  {
+    "collection": "features",
+    "index": "spellcasting-cleric",
+    "icon": "blb-78"
+  },
+  {
+    "collection": "features",
+    "index": "spellcasting-druid",
+    "icon": "skl-green-11"
+  },
+  {
+    "collection": "features",
+    "index": "spellcasting-paladin",
+    "icon": "sgi-21"
+  },
+  {
+    "collection": "features",
+    "index": "spellcasting-ranger",
+    "icon": "04-42"
+  },
+  {
+    "collection": "features",
+    "index": "spellcasting-sorcerer",
+    "icon": "skl-violet-01"
+  },
+  {
+    "collection": "features",
+    "index": "spellcasting-wizard",
+    "icon": "03-01"
+  },
+  {
+    "collection": "features",
+    "index": "step-of-the-wind",
+    "icon": "skl-blue-41"
+  },
+  {
+    "collection": "features",
+    "index": "stillness-of-mind",
+    "icon": "04-47"
+  },
+  {
+    "collection": "features",
+    "index": "stroke-of-luck",
+    "icon": "03-44"
+  },
+  {
+    "collection": "features",
+    "index": "stunning-strike",
+    "icon": "04-33"
+  },
+  {
+    "collection": "features",
+    "index": "superior-critical",
+    "icon": "04-11"
+  },
+  {
+    "collection": "features",
+    "index": "superior-hunters-defense",
+    "icon": "blb-71"
+  },
+  {
+    "collection": "features",
+    "index": "superior-hunters-defense-evasion",
+    "icon": "skl-emerald-09"
+  },
+  {
+    "collection": "features",
+    "index": "superior-hunters-defense-stand-against-the-tide",
+    "icon": "skl-blue-27"
+  },
+  {
+    "collection": "features",
+    "index": "superior-hunters-defense-uncanny-dodge",
+    "icon": "sgi-36"
+  },
+  {
+    "collection": "features",
+    "index": "superior-inspiration",
+    "icon": "skl-yellow-39"
+  },
+  {
+    "collection": "features",
+    "index": "supreme-healing",
+    "icon": "03-57"
+  },
+  {
+    "collection": "features",
+    "index": "supreme-sneak",
+    "icon": "skl-gray-12"
+  },
+  {
+    "collection": "features",
+    "index": "survivor",
+    "icon": "skl-red-35"
+  },
+  {
+    "collection": "features",
+    "index": "thiefs-reflexes",
+    "icon": "07-06"
+  },
+  {
+    "collection": "features",
+    "index": "thieves-cant",
+    "icon": "loot-letters_01"
+  },
+  {
+    "collection": "features",
+    "index": "tongue-of-the-sun-and-moon",
+    "icon": "07-05"
+  },
+  {
+    "collection": "features",
+    "index": "tranquility",
+    "icon": "09-101"
+  },
+  {
+    "collection": "features",
+    "index": "unarmored-movement-1",
+    "icon": "skl-blue-05"
+  },
+  {
+    "collection": "features",
+    "index": "unarmored-movement-2",
+    "icon": "skl-blue-05"
+  },
+  {
+    "collection": "features",
+    "index": "uncanny-dodge",
+    "icon": "sgi-36"
+  },
+  {
+    "collection": "features",
+    "index": "use-magic-device",
+    "icon": "loot-scroll_01"
+  },
+  {
+    "collection": "features",
+    "index": "vanish",
+    "icon": "skl-blue-39"
+  },
+  {
+    "collection": "features",
+    "index": "warlock-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "warlock-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "warlock-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "warlock-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "warlock-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "wholeness-of-body",
+    "icon": "09-99"
+  },
+  {
+    "collection": "features",
+    "index": "wild-shape-cr-1-2-or-below-no-flying-speed",
+    "icon": "skl-green-14"
+  },
+  {
+    "collection": "features",
+    "index": "wild-shape-cr-1-4-or-below-no-flying-or-swim-speed",
+    "icon": "skl-green-14"
+  },
+  {
+    "collection": "features",
+    "index": "wild-shape-cr-1-or-below",
+    "icon": "skl-green-14"
+  },
+  {
+    "collection": "features",
+    "index": "wizard-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "wizard-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "wizard-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "wizard-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "features",
+    "index": "wizard-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
+  },
+  {
+    "collection": "classes",
+    "index": "barbarian",
+    "icon": "axe"
+  },
+  {
+    "collection": "classes",
+    "index": "bard",
+    "icon": "music"
+  },
+  {
+    "collection": "classes",
+    "index": "cleric",
+    "icon": "cross"
+  },
+  {
+    "collection": "classes",
+    "index": "druid",
+    "icon": "leaf"
+  },
+  {
+    "collection": "classes",
+    "index": "fighter",
+    "icon": "sword-cross"
+  },
+  {
+    "collection": "classes",
+    "index": "monk",
+    "icon": "meditation"
+  },
+  {
+    "collection": "classes",
+    "index": "paladin",
+    "icon": "shield-cross"
+  },
+  {
+    "collection": "classes",
+    "index": "ranger",
+    "icon": "bow-arrow"
+  },
+  {
+    "collection": "classes",
+    "index": "rogue",
+    "icon": "knife"
+  },
+  {
+    "collection": "classes",
+    "index": "sorcerer",
+    "icon": "fire"
+  },
+  {
+    "collection": "classes",
+    "index": "warlock",
+    "icon": "eye"
+  },
+  {
+    "collection": "classes",
+    "index": "wizard",
+    "icon": "book-open-variant"
+  }
+]

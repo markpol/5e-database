@@ -82,6 +82,7 @@ export type Class = {
         } | undefined;
     } | undefined;
     spells?: string | undefined;
+    icon?: string | undefined;
 };
 
 declare const data: Class[];

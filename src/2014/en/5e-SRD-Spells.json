@@ -110,7 +110,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-54"
   },
   {
     "index": "acid-splash",
@@ -197,7 +198,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-86"
   },
   {
     "index": "aid",
@@ -271,7 +273,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "07-21"
   },
   {
     "index": "alarm",
@@ -336,7 +339,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-79"
   },
   {
     "index": "alter-self",
@@ -397,7 +401,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-76"
   },
   {
     "index": "animal-friendship",
@@ -469,7 +474,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-97"
   },
   {
     "index": "animal-messenger",
@@ -533,7 +539,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-23"
   },
   {
     "index": "animal-shapes",
@@ -582,7 +589,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-81"
   },
   {
     "index": "animate-dead",
@@ -645,7 +653,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-107"
   },
   {
     "index": "animate-objects",
@@ -716,7 +725,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-58"
   },
   {
     "index": "antilife-shell",
@@ -769,7 +779,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-113"
   },
   {
     "index": "antimagic-field",
@@ -835,7 +846,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-38"
   },
   {
     "index": "antipathy-sympathy",
@@ -909,7 +921,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-100"
   },
   {
     "index": "arcane-eye",
@@ -968,7 +981,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-58"
   },
   {
     "index": "arcane-hand",
@@ -1025,7 +1039,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-55"
   },
   {
     "index": "arcane-lock",
@@ -1079,7 +1094,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "08-63"
   },
   {
     "index": "arcane-sword",
@@ -1157,7 +1173,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-32"
   },
   {
     "index": "arcanists-magic-aura",
@@ -1210,7 +1227,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "01-88"
   },
   {
     "index": "astral-projection",
@@ -1272,7 +1290,8 @@
         "collection": "rule-sections",
         "index": "the-planes-of-existence"
       }
-    ]
+    ],
+    "icon": "06-07"
   },
   {
     "index": "augury",
@@ -1327,7 +1346,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "01-09"
   },
   {
     "index": "awaken",
@@ -1376,7 +1396,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-74"
   },
   {
     "index": "bane",
@@ -1457,7 +1478,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-23"
   },
   {
     "index": "banishment",
@@ -1552,7 +1574,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-59"
   },
   {
     "index": "barkskin",
@@ -1616,7 +1639,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-06"
   },
   {
     "index": "beacon-of-hope",
@@ -1685,7 +1709,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-74"
   },
   {
     "index": "bestow-curse",
@@ -1765,7 +1790,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-78"
   },
   {
     "index": "black-tentacles",
@@ -1851,7 +1877,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-99"
   },
   {
     "index": "blade-barrier",
@@ -1934,7 +1961,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-48"
   },
   {
     "index": "bless",
@@ -2018,7 +2046,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-87"
   },
   {
     "index": "blight",
@@ -2141,7 +2170,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-74"
   },
   {
     "index": "blindness-deafness",
@@ -2241,7 +2271,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-10"
   },
   {
     "index": "blink",
@@ -2296,7 +2327,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "06-112"
   },
   {
     "index": "blur",
@@ -2359,7 +2391,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-47"
   },
   {
     "index": "branding-smite",
@@ -2460,7 +2493,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-77"
   },
   {
     "index": "burning-hands",
@@ -2593,7 +2627,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-17"
   },
   {
     "index": "call-lightning",
@@ -2715,7 +2750,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-17"
   },
   {
     "index": "calm-emotions",
@@ -2796,7 +2832,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-48"
   },
   {
     "index": "chain-lightning",
@@ -2889,7 +2926,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-91"
   },
   {
     "index": "charm-person",
@@ -2990,7 +3028,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-96"
   },
   {
     "index": "chill-touch",
@@ -3081,7 +3120,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-67"
   },
   {
     "index": "circle-of-death",
@@ -3188,7 +3228,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-60"
   },
   {
     "index": "clairvoyance",
@@ -3259,7 +3300,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-38"
   },
   {
     "index": "clone",
@@ -3303,7 +3345,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "06-92"
   },
   {
     "index": "cloudkill",
@@ -3418,7 +3461,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-95"
   },
   {
     "index": "color-spray",
@@ -3485,7 +3529,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-62"
   },
   {
     "index": "command",
@@ -3582,7 +3627,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-19"
   },
   {
     "index": "commune",
@@ -3634,7 +3680,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "03-52"
   },
   {
     "index": "commune-with-nature",
@@ -3694,7 +3741,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-73"
   },
   {
     "index": "comprehend-languages",
@@ -3760,7 +3808,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "03-46"
   },
   {
     "index": "compulsion",
@@ -3822,7 +3871,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-08"
   },
   {
     "index": "cone-of-cold",
@@ -3936,7 +3986,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-95"
   },
   {
     "index": "confusion",
@@ -4022,7 +4073,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-103"
   },
   {
     "index": "conjure-animals",
@@ -4090,7 +4142,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-67"
   },
   {
     "index": "conjure-celestial",
@@ -4142,7 +4195,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-50"
   },
   {
     "index": "conjure-elemental",
@@ -4211,7 +4265,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-97"
   },
   {
     "index": "conjure-fey",
@@ -4269,7 +4324,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-94"
   },
   {
     "index": "conjure-minor-elementals",
@@ -4331,7 +4387,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-96"
   },
   {
     "index": "conjure-woodland-beings",
@@ -4394,7 +4451,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-99"
   },
   {
     "index": "contact-other-plane",
@@ -4460,7 +4518,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-60"
   },
   {
     "index": "contagion",
@@ -4536,7 +4595,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-93"
   },
   {
     "index": "contingency",
@@ -4582,7 +4642,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-79"
   },
   {
     "index": "continual-flame",
@@ -4636,7 +4697,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "01-33"
   },
   {
     "index": "control-water",
@@ -4731,7 +4793,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-26"
   },
   {
     "index": "control-weather",
@@ -4822,7 +4885,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-62"
   },
   {
     "index": "counterspell",
@@ -4877,7 +4941,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-33"
   },
   {
     "index": "create-food-and-water",
@@ -4940,7 +5005,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-82"
   },
   {
     "index": "create-undead",
@@ -4998,7 +5064,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "07-44"
   },
   {
     "index": "create-or-destroy-water",
@@ -5065,7 +5132,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-49"
   },
   {
     "index": "creation",
@@ -5133,7 +5201,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-09"
   },
   {
     "index": "cure-wounds",
@@ -5268,7 +5337,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-92"
   },
   {
     "index": "dancing-lights",
@@ -5333,7 +5403,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-75"
   },
   {
     "index": "darkness",
@@ -5408,7 +5479,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-60"
   },
   {
     "index": "darkvision",
@@ -5473,7 +5545,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "07-11"
   },
   {
     "index": "daylight",
@@ -5557,7 +5630,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-35"
   },
   {
     "index": "death-ward",
@@ -5613,7 +5687,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "03-75"
   },
   {
     "index": "delayed-blast-fireball",
@@ -5715,7 +5790,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-22"
   },
   {
     "index": "demiplane",
@@ -5764,7 +5840,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "06-54"
   },
   {
     "index": "detect-evil-and-good",
@@ -5827,7 +5904,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-82"
   },
   {
     "index": "detect-magic",
@@ -5919,7 +5997,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-80"
   },
   {
     "index": "detect-poison-and-disease",
@@ -5993,7 +6072,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-100"
   },
   {
     "index": "detect-thoughts",
@@ -6061,7 +6141,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-04"
   },
   {
     "index": "dimension-door",
@@ -6137,7 +6218,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-27"
   },
   {
     "index": "disguise-self",
@@ -6198,7 +6280,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-01"
   },
   {
     "index": "disintegrate",
@@ -6292,7 +6375,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-63"
   },
   {
     "index": "dispel-evil-and-good",
@@ -6357,7 +6441,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-42"
   },
   {
     "index": "dispel-magic",
@@ -6447,7 +6532,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "01-24"
   },
   {
     "index": "divination",
@@ -6498,7 +6584,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "01-03"
   },
   {
     "index": "divine-favor",
@@ -6574,7 +6661,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-46"
   },
   {
     "index": "divine-word",
@@ -6640,7 +6728,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-06"
   },
   {
     "index": "dominate-beast",
@@ -6711,7 +6800,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-31"
   },
   {
     "index": "dominate-monster",
@@ -6794,7 +6884,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-21"
   },
   {
     "index": "dominate-person",
@@ -6872,7 +6963,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-81"
   },
   {
     "index": "dream",
@@ -6966,7 +7058,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-26"
   },
   {
     "index": "druidcraft",
@@ -7012,7 +7105,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-60"
   },
   {
     "index": "earthquake",
@@ -7084,7 +7178,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-58"
   },
   {
     "index": "eldritch-blast",
@@ -7158,7 +7253,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-02"
   },
   {
     "index": "enhance-ability",
@@ -7246,7 +7342,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-81"
   },
   {
     "index": "enlarge-reduce",
@@ -7316,7 +7413,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-105"
   },
   {
     "index": "entangle",
@@ -7389,7 +7487,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-05"
   },
   {
     "index": "enthrall",
@@ -7461,7 +7560,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-54"
   },
   {
     "index": "etherealness",
@@ -7535,7 +7635,8 @@
         "collection": "rule-sections",
         "index": "the-planes-of-existence"
       }
-    ]
+    ],
+    "icon": "01-29"
   },
   {
     "index": "expeditious-retreat",
@@ -7598,7 +7699,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-39"
   },
   {
     "index": "eyebite",
@@ -7678,7 +7780,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-49"
   },
   {
     "index": "fabricate",
@@ -7722,7 +7825,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-98"
   },
   {
     "index": "faerie-fire",
@@ -7794,7 +7898,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-10"
   },
   {
     "index": "faithful-hound",
@@ -7868,7 +7973,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-02"
   },
   {
     "index": "false-life",
@@ -7981,7 +8087,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "08-45"
   },
   {
     "index": "fear",
@@ -8070,7 +8177,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-39"
   },
   {
     "index": "feather-fall",
@@ -8130,7 +8238,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "03-70"
   },
   {
     "index": "feeblemind",
@@ -8227,7 +8336,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-18"
   },
   {
     "index": "find-familiar",
@@ -8276,7 +8386,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "07-31"
   },
   {
     "index": "find-steed",
@@ -8328,7 +8439,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "07-01"
   },
   {
     "index": "find-traps",
@@ -8387,7 +8499,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "02-118"
   },
   {
     "index": "find-the-path",
@@ -8446,7 +8559,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-61"
   },
   {
     "index": "finger-of-death",
@@ -8535,7 +8649,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-99"
   },
   {
     "index": "fire-bolt",
@@ -8609,7 +8724,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-15"
   },
   {
     "index": "fire-shield",
@@ -8692,7 +8808,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-24"
   },
   {
     "index": "fire-storm",
@@ -8784,7 +8901,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-37"
   },
   {
     "index": "fireball",
@@ -8914,7 +9032,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-26"
   },
   {
     "index": "flame-blade",
@@ -9008,7 +9127,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-117"
   },
   {
     "index": "flame-strike",
@@ -9121,7 +9241,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-15"
   },
   {
     "index": "flaming-sphere",
@@ -9244,7 +9365,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-80"
   },
   {
     "index": "flesh-to-stone",
@@ -9315,7 +9437,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-57"
   },
   {
     "index": "floating-disk",
@@ -9367,7 +9490,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "06-86"
   },
   {
     "index": "fly",
@@ -9447,7 +9571,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-45"
   },
   {
     "index": "fog-cloud",
@@ -9522,7 +9647,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "05-128"
   },
   {
     "index": "forbiddance",
@@ -9609,7 +9735,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-02"
   },
   {
     "index": "forcecage",
@@ -9680,7 +9807,8 @@
         "collection": "rule-sections",
         "index": "the-planes-of-existence"
       }
-    ]
+    ],
+    "icon": "06-75"
   },
   {
     "index": "foresight",
@@ -9740,7 +9868,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "07-23"
   },
   {
     "index": "freedom-of-movement",
@@ -9811,7 +9940,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "03-79"
   },
   {
     "index": "freezing-sphere",
@@ -9898,7 +10028,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-59"
   },
   {
     "index": "gaseous-form",
@@ -9969,7 +10100,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-67"
   },
   {
     "index": "gate",
@@ -10034,7 +10166,8 @@
         "collection": "rule-sections",
         "index": "the-planes-of-existence"
       }
-    ]
+    ],
+    "icon": "06-80"
   },
   {
     "index": "geas",
@@ -10114,7 +10247,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-70"
   },
   {
     "index": "gentle-repose",
@@ -10170,7 +10304,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "07-41"
   },
   {
     "index": "giant-insect",
@@ -10220,7 +10355,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-20"
   },
   {
     "index": "glibness",
@@ -10268,7 +10404,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-45"
   },
   {
     "index": "globe-of-invulnerability",
@@ -10329,7 +10466,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-37"
   },
   {
     "index": "glyph-of-warding",
@@ -10620,7 +10758,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-25"
   },
   {
     "index": "goodberry",
@@ -10669,7 +10808,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-05"
   },
   {
     "index": "grease",
@@ -10742,7 +10882,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-58"
   },
   {
     "index": "greater-invisibility",
@@ -10805,7 +10946,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-34"
   },
   {
     "index": "greater-restoration",
@@ -10872,7 +11014,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-65"
   },
   {
     "index": "guardian-of-faith",
@@ -10950,7 +11093,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-19"
   },
   {
     "index": "guards-and-wards",
@@ -11020,7 +11164,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-36"
   },
   {
     "index": "guidance",
@@ -11078,7 +11223,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-67"
   },
   {
     "index": "guiding-bolt",
@@ -11190,7 +11336,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-22"
   },
   {
     "index": "gust-of-wind",
@@ -11269,7 +11416,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-85"
   },
   {
     "index": "hallow",
@@ -11346,7 +11494,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-16"
   },
   {
     "index": "hallucinatory-terrain",
@@ -11420,7 +11569,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-112"
   },
   {
     "index": "harm",
@@ -11497,7 +11647,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-04"
   },
   {
     "index": "haste",
@@ -11562,7 +11713,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-13"
   },
   {
     "index": "heal",
@@ -11628,7 +11780,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "03-83"
   },
   {
     "index": "healing-word",
@@ -11744,7 +11897,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "06-106"
   },
   {
     "index": "heat-metal",
@@ -11867,7 +12021,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-76"
   },
   {
     "index": "hellish-rebuke",
@@ -11979,7 +12134,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-58"
   },
   {
     "index": "heroes-feast",
@@ -12028,7 +12184,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "03-09"
   },
   {
     "index": "heroism",
@@ -12086,7 +12243,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-59"
   },
   {
     "index": "hideous-laughter",
@@ -12160,7 +12318,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-110"
   },
   {
     "index": "hold-monster",
@@ -12247,7 +12406,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-69"
   },
   {
     "index": "hold-person",
@@ -12358,7 +12518,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-55"
   },
   {
     "index": "holy-aura",
@@ -12424,7 +12585,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-20"
   },
   {
     "index": "hunters-mark",
@@ -12492,7 +12654,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-64"
   },
   {
     "index": "hypnotic-pattern",
@@ -12581,7 +12744,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-93"
   },
   {
     "index": "ice-storm",
@@ -12738,7 +12902,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-87"
   },
   {
     "index": "identify",
@@ -12793,7 +12958,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "02-99"
   },
   {
     "index": "illusory-script",
@@ -12856,7 +13022,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "02-101"
   },
   {
     "index": "imprisonment",
@@ -12931,7 +13098,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-102"
   },
   {
     "index": "incendiary-cloud",
@@ -13020,7 +13188,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-33"
   },
   {
     "index": "inflict-wounds",
@@ -13131,7 +13300,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-65"
   },
   {
     "index": "insect-plague",
@@ -13250,7 +13420,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-04"
   },
   {
     "index": "instant-summons",
@@ -13296,7 +13467,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-97"
   },
   {
     "index": "invisibility",
@@ -13383,7 +13555,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-49"
   },
   {
     "index": "irresistible-dance",
@@ -13436,7 +13609,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-27"
   },
   {
     "index": "jump",
@@ -13499,7 +13673,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-63"
   },
   {
     "index": "knock",
@@ -13560,7 +13735,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "08-01"
   },
   {
     "index": "legend-lore",
@@ -13614,7 +13790,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "07-28"
   },
   {
     "index": "lesser-restoration",
@@ -13706,7 +13883,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-19"
   },
   {
     "index": "levitate",
@@ -13767,7 +13945,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-24"
   },
   {
     "index": "light",
@@ -13845,7 +14024,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-61"
   },
   {
     "index": "lightning-bolt",
@@ -13975,7 +14155,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-81"
   },
   {
     "index": "locate-animals-or-plants",
@@ -14034,7 +14215,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-57"
   },
   {
     "index": "locate-creature",
@@ -14115,7 +14297,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-09"
   },
   {
     "index": "locate-object",
@@ -14196,7 +14379,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-23"
   },
   {
     "index": "longstrider",
@@ -14273,7 +14457,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "03-04"
   },
   {
     "index": "mage-armor",
@@ -14334,7 +14519,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "06-79"
   },
   {
     "index": "mage-hand",
@@ -14400,7 +14586,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "01-52"
   },
   {
     "index": "magic-circle",
@@ -14490,7 +14677,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-94"
   },
   {
     "index": "magic-jar",
@@ -14552,7 +14740,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-50"
   },
   {
     "index": "magic-missile",
@@ -14695,7 +14884,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-96"
   },
   {
     "index": "magic-mouth",
@@ -14752,7 +14942,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "07-87"
   },
   {
     "index": "magic-weapon",
@@ -14819,7 +15010,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09a-009"
   },
   {
     "index": "magnificent-mansion",
@@ -14878,7 +15070,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "05-16"
   },
   {
     "index": "major-image",
@@ -14952,7 +15145,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-52"
   },
   {
     "index": "mass-cure-wounds",
@@ -15056,7 +15250,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-70"
   },
   {
     "index": "mass-heal",
@@ -15107,7 +15302,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09a-003"
   },
   {
     "index": "mass-healing-word",
@@ -15203,7 +15399,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "06-101"
   },
   {
     "index": "mass-suggestion",
@@ -15286,7 +15483,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-75"
   },
   {
     "index": "maze",
@@ -15335,7 +15533,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "05-15"
   },
   {
     "index": "meld-into-stone",
@@ -15391,7 +15590,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "01-102"
   },
   {
     "index": "mending",
@@ -15461,7 +15661,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "01-32"
   },
   {
     "index": "message",
@@ -15522,7 +15723,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "01-66"
   },
   {
     "index": "meteor-swarm",
@@ -15624,7 +15826,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-84"
   },
   {
     "index": "mind-blank",
@@ -15672,7 +15875,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-20"
   },
   {
     "index": "minor-illusion",
@@ -15740,7 +15944,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-92"
   },
   {
     "index": "mirage-arcane",
@@ -15804,7 +16009,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-108"
   },
   {
     "index": "mirror-image",
@@ -15872,7 +16078,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-93"
   },
   {
     "index": "mislead",
@@ -15926,7 +16133,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-49"
   },
   {
     "index": "misty-step",
@@ -15989,7 +16197,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "01-98"
   },
   {
     "index": "modify-memory",
@@ -16056,7 +16265,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-25"
   },
   {
     "index": "moonbeam",
@@ -16179,7 +16389,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-44"
   },
   {
     "index": "move-earth",
@@ -16245,7 +16456,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-40"
   },
   {
     "index": "nondetection",
@@ -16305,7 +16517,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "01-62"
   },
   {
     "index": "pass-without-trace",
@@ -16369,7 +16582,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-31"
   },
   {
     "index": "passwall",
@@ -16420,7 +16634,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "03-13"
   },
   {
     "index": "phantasmal-killer",
@@ -16501,7 +16716,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-88"
   },
   {
     "index": "phantom-steed",
@@ -16551,7 +16767,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-25"
   },
   {
     "index": "planar-ally",
@@ -16598,7 +16815,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-73"
   },
   {
     "index": "planar-binding",
@@ -16673,7 +16891,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-52"
   },
   {
     "index": "plane-shift",
@@ -16756,7 +16975,8 @@
         "collection": "rule-sections",
         "index": "the-planes-of-existence"
       }
-    ]
+    ],
+    "icon": "09-105"
   },
   {
     "index": "plant-growth",
@@ -16822,7 +17042,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-80"
   },
   {
     "index": "poison-spray",
@@ -16913,7 +17134,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-24"
   },
   {
     "index": "polymorph",
@@ -16988,7 +17210,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-35"
   },
   {
     "index": "power-word-kill",
@@ -17045,7 +17268,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "07-59"
   },
   {
     "index": "power-word-stun",
@@ -17121,7 +17345,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-14"
   },
   {
     "index": "prayer-of-healing",
@@ -17222,7 +17447,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-61"
   },
   {
     "index": "prestidigitation",
@@ -17293,7 +17519,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "08-21"
   },
   {
     "index": "prismatic-spray",
@@ -17383,7 +17610,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-64"
   },
   {
     "index": "prismatic-wall",
@@ -17445,7 +17673,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "05-127"
   },
   {
     "index": "private-sanctum",
@@ -17508,7 +17737,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-52"
   },
   {
     "index": "produce-flame",
@@ -17585,7 +17815,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-12"
   },
   {
     "index": "programmed-illusion",
@@ -17644,7 +17875,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-73"
   },
   {
     "index": "project-image",
@@ -17700,7 +17932,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-50"
   },
   {
     "index": "protection-from-energy",
@@ -17778,7 +18011,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-37"
   },
   {
     "index": "protection-from-evil-and-good",
@@ -17853,7 +18087,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-78"
   },
   {
     "index": "protection-from-poison",
@@ -17918,7 +18153,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-31"
   },
   {
     "index": "purify-food-and-drink",
@@ -17976,7 +18212,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-24"
   },
   {
     "index": "raise-dead",
@@ -18038,7 +18275,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "08-58"
   },
   {
     "index": "ray-of-enfeeblement",
@@ -18112,7 +18350,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-35"
   },
   {
     "index": "ray-of-frost",
@@ -18192,7 +18431,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-19"
   },
   {
     "index": "regenerate",
@@ -18262,7 +18502,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-98"
   },
   {
     "index": "reincarnate",
@@ -18323,7 +18564,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "06-14"
   },
   {
     "index": "remove-curse",
@@ -18390,7 +18632,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "07-43"
   },
   {
     "index": "resilient-sphere",
@@ -18449,7 +18692,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-40"
   },
   {
     "index": "resistance",
@@ -18508,7 +18752,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-48"
   },
   {
     "index": "resurrection",
@@ -18560,7 +18805,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "06-91"
   },
   {
     "index": "reverse-gravity",
@@ -18633,7 +18879,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-32"
   },
   {
     "index": "revivify",
@@ -18696,7 +18943,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-76"
   },
   {
     "index": "rope-trick",
@@ -18749,7 +18997,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "05-35"
   },
   {
     "index": "sacred-flame",
@@ -18831,7 +19080,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-23"
   },
   {
     "index": "sanctuary",
@@ -18905,7 +19155,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-05"
   },
   {
     "index": "scorching-ray",
@@ -19004,7 +19255,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-21"
   },
   {
     "index": "scrying",
@@ -19100,7 +19352,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-90"
   },
   {
     "index": "secret-chest",
@@ -19145,7 +19398,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "02-59"
   },
   {
     "index": "see-invisibility",
@@ -19209,7 +19463,8 @@
         "collection": "rule-sections",
         "index": "the-planes-of-existence"
       }
-    ]
+    ],
+    "icon": "01-11"
   },
   {
     "index": "seeming",
@@ -19265,7 +19520,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-68"
   },
   {
     "index": "sending",
@@ -19326,7 +19582,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "08-19"
   },
   {
     "index": "sequester",
@@ -19371,7 +19628,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "05-49"
   },
   {
     "index": "shapechange",
@@ -19429,7 +19687,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-57"
   },
   {
     "index": "shatter",
@@ -19564,7 +19823,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-15"
   },
   {
     "index": "shield",
@@ -19622,7 +19882,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-21"
   },
   {
     "index": "shield-of-faith",
@@ -19687,7 +19948,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-101"
   },
   {
     "index": "shillelagh",
@@ -19737,7 +19999,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-43"
   },
   {
     "index": "shocking-grasp",
@@ -19817,7 +20080,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-102"
   },
   {
     "index": "silence",
@@ -19890,7 +20154,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-51"
   },
   {
     "index": "silent-image",
@@ -19960,7 +20225,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-84"
   },
   {
     "index": "simulacrum",
@@ -20006,7 +20272,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "06-93"
   },
   {
     "index": "sleep",
@@ -20097,7 +20364,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-71"
   },
   {
     "index": "sleet-storm",
@@ -20186,7 +20454,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-78"
   },
   {
     "index": "slow",
@@ -20266,7 +20535,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-82"
   },
   {
     "index": "spare-the-dying",
@@ -20314,7 +20584,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "01-40"
   },
   {
     "index": "speak-with-animals",
@@ -20373,7 +20644,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-46"
   },
   {
     "index": "speak-with-dead",
@@ -20429,7 +20701,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "01-53"
   },
   {
     "index": "speak-with-plants",
@@ -20500,7 +20773,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-56"
   },
   {
     "index": "spider-climb",
@@ -20569,7 +20843,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-41"
   },
   {
     "index": "spike-growth",
@@ -20661,7 +20936,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-36"
   },
   {
     "index": "spirit-guardians",
@@ -20817,7 +21093,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-20"
   },
   {
     "index": "spiritual-weapon",
@@ -20944,7 +21221,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-74"
   },
   {
     "index": "stinking-cloud",
@@ -21033,7 +21311,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-99"
   },
   {
     "index": "stone-shape",
@@ -21092,7 +21371,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-75"
   },
   {
     "index": "stoneskin",
@@ -21161,7 +21441,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-41"
   },
   {
     "index": "storm-of-vengeance",
@@ -21249,7 +21530,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-88"
   },
   {
     "index": "suggestion",
@@ -21335,7 +21617,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-32"
   },
   {
     "index": "sunbeam",
@@ -21431,7 +21714,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-56"
   },
   {
     "index": "sunburst",
@@ -21526,7 +21810,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-11"
   },
   {
     "index": "symbol",
@@ -21607,7 +21892,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "08-56"
   },
   {
     "index": "telekinesis",
@@ -21668,7 +21954,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-36"
   },
   {
     "index": "telepathic-bond",
@@ -21713,7 +22000,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-94"
   },
   {
     "index": "teleport",
@@ -21794,7 +22082,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-47"
   },
   {
     "index": "teleportation-circle",
@@ -21858,7 +22147,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-39"
   },
   {
     "index": "thaumaturgy",
@@ -21914,7 +22204,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "06-10"
   },
   {
     "index": "thunderwave",
@@ -22056,7 +22347,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-79"
   },
   {
     "index": "time-stop",
@@ -22104,7 +22396,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "03-30"
   },
   {
     "index": "tiny-hut",
@@ -22169,7 +22462,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-29"
   },
   {
     "index": "tongues",
@@ -22239,7 +22533,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "03-71"
   },
   {
     "index": "transport-via-plants",
@@ -22282,7 +22577,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "04-39"
   },
   {
     "index": "tree-stride",
@@ -22341,7 +22637,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-98"
   },
   {
     "index": "true-polymorph",
@@ -22407,7 +22704,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-13"
   },
   {
     "index": "true-resurrection",
@@ -22457,7 +22755,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "08-96"
   },
   {
     "index": "true-seeing",
@@ -22525,7 +22824,8 @@
         "collection": "rule-sections",
         "index": "the-planes-of-existence"
       }
-    ]
+    ],
+    "icon": "09-53"
   },
   {
     "index": "true-strike",
@@ -22593,7 +22893,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "04-89"
   },
   {
     "index": "unseen-servant",
@@ -22655,7 +22956,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "06-27"
   },
   {
     "index": "vampiric-touch",
@@ -22764,7 +23066,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-72"
   },
   {
     "index": "vicious-mockery",
@@ -22840,7 +23143,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-46"
   },
   {
     "index": "wall-of-fire",
@@ -22945,7 +23249,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "09-11"
   },
   {
     "index": "wall-of-force",
@@ -22994,7 +23299,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-14"
   },
   {
     "index": "wall-of-ice",
@@ -23094,7 +23400,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "01-27"
   },
   {
     "index": "wall-of-stone",
@@ -23163,7 +23470,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "05-73"
   },
   {
     "index": "wall-of-thorns",
@@ -23290,7 +23598,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-24"
   },
   {
     "index": "warding-bond",
@@ -23342,7 +23651,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "03-97"
   },
   {
     "index": "water-breathing",
@@ -23412,7 +23722,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "09-65"
   },
   {
     "index": "water-walk",
@@ -23483,7 +23794,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "05-34"
   },
   {
     "index": "web",
@@ -23573,7 +23885,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "06-51"
   },
   {
     "index": "weird",
@@ -23655,7 +23968,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "07-98"
   },
   {
     "index": "wind-walk",
@@ -23700,7 +24014,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "06-111"
   },
   {
     "index": "wind-wall",
@@ -23796,7 +24111,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-89"
   },
   {
     "index": "wish",
@@ -23852,7 +24168,8 @@
         "collection": "rule-sections",
         "index": "what-is-a-spell"
       }
-    ]
+    ],
+    "icon": "08-99"
   },
   {
     "index": "word-of-recall",
@@ -23903,7 +24220,8 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "02-28"
   },
   {
     "index": "zone-of-truth",
@@ -23988,6 +24306,7 @@
         "collection": "rule-sections",
         "index": "casting-a-spell"
       }
-    ]
+    ],
+    "icon": "03-23"
   }
 ]

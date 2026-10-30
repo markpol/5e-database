@@ -25,6 +25,22 @@ export const RuleLinkSchema = z.strictObject({
   index: z.string(),
 });
 
+/** The habitats a monster can have, the vocabulary of the `environments` text and of `environment_tags`. */
+export const ENVIRONMENT_TAGS = [
+  'Arctic',
+  'Coastal',
+  'Desert',
+  'Forest',
+  'Grassland',
+  'Hill',
+  'Mountain',
+  'Swamp',
+  'Underdark',
+  'Underwater',
+  'Urban',
+] as const;
+export const EnvironmentTagSchema = z.enum(ENVIRONMENT_TAGS);
+
 export const APIReferenceSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
