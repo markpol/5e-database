@@ -346,7 +346,7 @@
         },
         "feature_specific.engine": {
           "source": "dd",
-          "note": "Mechanics of a class feature of levels 1 to 5 (action cost, recharge, uses, modifiers), written by hand in feature-engine-annotations.json and merged in by derive-feature-engine.ts."
+          "note": "Mechanics of a class feature of levels 1 to 5, and of levels 6 to 20 of the barbarian, fighter, monk and rogue (action cost, recharge, uses, modifiers), written by hand in feature-engine-annotations.json and merged in by derive-feature-engine.ts."
         },
         "feature_specific.granted_languages": {
           "source": "dd",

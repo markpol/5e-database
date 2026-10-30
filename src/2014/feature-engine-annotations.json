@@ -745,12 +745,33 @@
   },
   {
     "feature": "wholeness-of-body",
+    "engine": {
+      "action_cost": "action",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      }
+    },
     "heal": {
       "class_level_multiplier": 3
     }
   },
   {
     "feature": "diamond-soul",
+    "engine": {
+      "action_cost": "free",
+      "uses": {
+        "pool": "ki",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "reroll",
+          "roll": "saving_throw",
+          "when": "failed"
+        }
+      ]
+    },
     "granted_proficiencies": [
       {
         "index": "saving-throw-str",
@@ -1786,5 +1807,450 @@
         "from": "favored_enemy_languages"
       }
     ]
+  },
+  {
+    "feature": "mindless-rage",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "immune_to",
+          "conditions": ["charmed", "frightened"],
+          "while_condition": "enraged"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "feral-instinct",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "roll",
+          "roll": "initiative",
+          "mode": "advantage"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "brutal-critical-1-die",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "critical_damage_dice",
+          "class_specific": "brutal_critical_dice",
+          "attack_kind": "melee_weapon"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "intimidating-presence",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "condition",
+          "condition": "frightened",
+          "target": "target",
+          "save": {
+            "ability": "wis",
+            "dc": {
+              "ability_modifier": "cha"
+            }
+          },
+          "duration": {
+            "unit": "end_of_next_turn"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "feature": "relentless-rage",
+    "engine": {
+      "action_cost": "free",
+      "modifiers": [
+        {
+          "type": "avoid_dropping_to_zero",
+          "hit_points": 1,
+          "save": {
+            "ability": "con",
+            "dc": {
+              "fixed": 10,
+              "increase_per_use": 5,
+              "reset": "short_rest"
+            }
+          },
+          "while_condition": "enraged"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "brutal-critical-2-dice",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "critical_damage_dice",
+          "class_specific": "brutal_critical_dice",
+          "attack_kind": "melee_weapon"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "retaliation",
+    "engine": {
+      "action_cost": "reaction",
+      "modifiers": [
+        {
+          "type": "extra_attack",
+          "count": 1,
+          "attack_kind": "melee_weapon",
+          "action_cost": "reaction"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "brutal-critical-3-dice",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "critical_damage_dice",
+          "class_specific": "brutal_critical_dice",
+          "attack_kind": "melee_weapon"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "indomitable-might",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "minimum_total",
+          "roll": "ability_check",
+          "abilities": ["str"],
+          "ability_score": "str"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "primal-champion",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "ability_score_increase",
+          "abilities": ["str", "con"],
+          "increase": 4,
+          "maximum": 24
+        }
+      ]
+    }
+  },
+  {
+    "feature": "remarkable-athlete",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "ability_check",
+          "proficiency_multiplier": 0.5,
+          "round": "up",
+          "abilities": ["str", "dex", "con"],
+          "while": ["not_proficient"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "indomitable-1-use",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "long_rest",
+      "uses": {
+        "class_specific": "indomitable_uses"
+      },
+      "modifiers": [
+        {
+          "type": "reroll",
+          "roll": "saving_throw",
+          "when": "failed"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "extra-attack-2",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "extra_attack",
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "feature": "indomitable-2-uses",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "long_rest",
+      "uses": {
+        "class_specific": "indomitable_uses"
+      },
+      "modifiers": [
+        {
+          "type": "reroll",
+          "roll": "saving_throw",
+          "when": "failed"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "superior-critical",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "critical_range",
+          "min_roll": 18,
+          "attack_kind": "weapon"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "action-surge-2-uses",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "short_rest",
+      "uses": {
+        "class_specific": "action_surges"
+      }
+    }
+  },
+  {
+    "feature": "indomitable-3-uses",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "long_rest",
+      "uses": {
+        "class_specific": "indomitable_uses"
+      },
+      "modifiers": [
+        {
+          "type": "reroll",
+          "roll": "saving_throw",
+          "when": "failed"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "extra-attack-3",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "extra_attack",
+          "count": 1
+        }
+      ]
+    }
+  },
+  {
+    "feature": "ki-empowered-strikes",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "magical_attacks",
+          "attack_kind": "unarmed_strike"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "monk-evasion",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "evasion",
+          "ability": "dex"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "stillness-of-mind",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "end_condition",
+          "conditions": ["charmed", "frightened"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "purity-of-body",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "immune_to",
+          "conditions": ["disease", "poisoned"]
+        },
+        {
+          "type": "damage",
+          "relation": "immunity",
+          "types": ["poison"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "tranquility",
+    "engine": {
+      "action_cost": "rest",
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "sanctuary",
+          "slot": "none",
+          "self_only": true,
+          "save_dc": {
+            "ability_modifier": "wis"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "feature": "empty-body",
+    "engine": {
+      "action_cost": "action",
+      "uses": {
+        "pool": "ki",
+        "cost": 4
+      },
+      "modifiers": [
+        {
+          "type": "condition",
+          "condition": "invisible",
+          "target": "self",
+          "duration": {
+            "unit": "minute",
+            "length": 1
+          }
+        },
+        {
+          "type": "damage",
+          "relation": "resistance",
+          "types": ["all"],
+          "except": ["force"],
+          "duration": {
+            "unit": "minute",
+            "length": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "feature": "perfect-self",
+    "engine": {
+      "action_cost": "free",
+      "modifiers": [
+        {
+          "type": "recover_uses",
+          "feature": "ki",
+          "count": 4,
+          "trigger": "initiative_with_no_uses_left"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "rogue-evasion",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "evasion",
+          "ability": "dex"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "supreme-sneak",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "roll",
+          "roll": "ability_check",
+          "mode": "advantage",
+          "abilities": ["dex"],
+          "skills": ["stealth"],
+          "while": ["moving_at_most_half_speed"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "reliable-talent",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "minimum_d20",
+          "roll": "ability_check",
+          "minimum": 10,
+          "while": ["proficient"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "elusive",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "rolls_against_owner",
+          "roll": "attack",
+          "no_advantage": true,
+          "while": ["not_incapacitated"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "stroke-of-luck",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "short_rest",
+      "uses": {
+        "count": 1
+      }
+    }
   }
 ]

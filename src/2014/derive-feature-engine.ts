@@ -20,8 +20,19 @@ type Annotation = {
   granted_languages?: unknown;
 };
 
-// `engine` covers the features of class levels 1 to 5, which are the ones a low-level character has.
-export const ENGINE_MAX_LEVEL = 5;
+// `engine` covers the features of class levels 1 to 5, which are the ones a low-level character has, and for the
+// classes listed here the features of the higher levels too, up to the level given.
+export const ENGINE_BASE_MAX_LEVEL = 5;
+export const ENGINE_MAX_LEVEL_BY_CLASS: Record<string, number> = {
+  barbarian: 20,
+  fighter: 20,
+  monk: 20,
+  rogue: 20,
+};
+
+/** The highest class level whose features are structured, for a class. */
+export const engineMaxLevel = (classIndex: string) =>
+  ENGINE_MAX_LEVEL_BY_CLASS[classIndex] ?? ENGINE_BASE_MAX_LEVEL;
 
 export const FEATURE_ANNOTATIONS: Record<string, Omit<Annotation, 'feature'>> = Object.fromEntries(
   (annotations as Annotation[]).map(({ feature, ...rest }) => [feature, rest])
@@ -38,8 +49,10 @@ const EXPERTISE =
   'a doubled proficiency bonus for chosen proficiencies, the choice of which is in expertise_options';
 const EXPLORATION =
   'a benefit outside combat (travel, tracking, climbing, copying spells) with no structured counterpart';
+const RAGE_END = 'when a rage ends, which stays in the text with how a use of the feature lasts';
+const AGING = 'age and the need for food and water, with no structured counterpart';
 
-// The features of levels 1 to 5 that have no `engine`, and why. A feature of these levels with neither an `engine`
+// The features within the scope above that have no `engine`, and why. A feature in scope with neither an `engine`
 // nor another structured field (`grants_asi`, `heal`, `granted_proficiencies`, `granted_languages`, `damage_type`)
 // must be listed here.
 export const ENGINE_EXCLUDED: Record<string, string> = {
@@ -101,6 +114,33 @@ export const ENGINE_EXCLUDED: Record<string, string> = {
   'eldritch-invocation-voice-of-the-chain-master': 'senses and speech shared with a familiar',
   'pact-of-the-chain': 'a familiar and the attack it makes, and find familiar learned as a spell',
   'pact-of-the-tome': "three cantrips of the owner's choice, cast from a book",
+  'primal-path-improvement-1': SUBCLASS_CHOICE,
+  'primal-path-improvement-2': SUBCLASS_CHOICE,
+  'primal-path-improvement-3': SUBCLASS_CHOICE,
+  'persistent-rage': RAGE_END,
+  'martial-archetype-improvement-1': SUBCLASS_CHOICE,
+  'martial-archetype-improvement-2': SUBCLASS_CHOICE,
+  'martial-archetype-improvement-3': SUBCLASS_CHOICE,
+  'martial-archetype-improvement-4': SUBCLASS_CHOICE,
+  'additional-fighting-style': OPTION_PARENT,
+  'monastic-tradition-improvement-1': SUBCLASS_CHOICE,
+  'monastic-tradition-improvement-2': SUBCLASS_CHOICE,
+  'monastic-tradition-improvement-3': SUBCLASS_CHOICE,
+  'unarmored-movement-2':
+    'the speed bonus, which the 2nd-level record carries, and walking on walls and liquids, which is movement other than speed',
+  'tongue-of-the-sun-and-moon':
+    'understanding all spoken languages, which is not a language granted',
+  'monk-timeless-body': AGING,
+  'quivering-palm':
+    'a delayed effect that starts with a hit and ends with an action, which a single action cost cannot state',
+  'rogue-expertise-2': EXPERTISE,
+  'roguish-archetype-improvement-1': SUBCLASS_CHOICE,
+  'roguish-archetype-improvement-2': SUBCLASS_CHOICE,
+  'roguish-archetype-improvement-3': SUBCLASS_CHOICE,
+  'use-magic-device':
+    'ignoring the requirements on the use of magic items, with no structured counterpart',
+  blindsense: 'awareness of hidden and invisible creatures, a sense with no structured counterpart',
+  'thiefs-reflexes': 'a second turn in the first round of combat, with no structured counterpart',
 };
 
 const ASI_NAME = 'Ability Score Improvement';

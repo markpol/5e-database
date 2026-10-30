@@ -44,6 +44,10 @@ export const FEATURE_WHILE = [
   // and no disadvantage on the attack roll.
   'sneak_attack_eligible',
   'in_dim_light_or_darkness',
+  // The roll includes the proficiency bonus.
+  'proficient',
+  // The creature moves no more than half its speed on the same turn.
+  'moving_at_most_half_speed',
 ] as const;
 
 // The kind of attack a roll or bonus is limited to. `bound_weapon` is the one weapon the condition is tied to.
@@ -64,5 +68,7 @@ export const FEATURE_ATTACK_KINDS = [
 ] as const;
 
 export const ROLLS = ['attack', 'ability_check', 'saving_throw', 'death_saving_throw'] as const;
+// The rolls a feature modifier can change: those of conditions, and the initiative roll.
+export const FEATURE_ROLLS = [...ROLLS, 'initiative'] as const;
 export const ROLL_MODES = ['advantage', 'disadvantage', 'auto_fail'] as const;
 export const DAMAGE_RELATIONS = ['resistance', 'immunity', 'vulnerability'] as const;

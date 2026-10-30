@@ -2,10 +2,11 @@ import { z } from 'zod';
 import { APIReferenceSchema, ChoiceSchema, translatable } from '../../schemas/common';
 import {
   AbilitySchema,
+  DAMAGE_RELATIONS,
   FEATURE_ATTACK_KINDS,
+  FEATURE_ROLLS,
   FEATURE_WHILE,
   ROLL_MODES,
-  ROLLS,
 } from '../../schemas/effects';
 
 /**
@@ -32,10 +33,23 @@ const ByLevelSchema = z.array(CountStepSchema).min(1);
 const WhileSchema = z.array(z.enum(FEATURE_WHILE)).min(1);
 const AttackKindSchema = z.enum(FEATURE_ATTACK_KINDS);
 
-// A saving throw a modifier forces. `dc` names the save DC: the owner's spell save DC, or the ki save DC.
+// A save DC: the owner's spell save DC, the ki save DC, 8 plus the proficiency bonus plus the modifier of an
+// ability, or a fixed number that rises by `increase_per_use` each time the feature is used again and goes back to
+// `fixed` when the owner finishes a short or a long rest (`reset`).
+const DcSchema = z.union([
+  z.enum(['spell', 'ki']),
+  z.strictObject({ ability_modifier: AbilitySchema }),
+  z.strictObject({
+    fixed: z.number(),
+    increase_per_use: z.number().optional(),
+    reset: z.literal('short_rest').optional(),
+  }),
+]);
+
+// A saving throw a modifier forces, or that the owner makes. `dc` is the save DC.
 const SaveSchema = z.strictObject({
   ability: AbilitySchema,
-  dc: z.enum(['spell', 'ki']),
+  dc: DcSchema,
 });
 
 const DurationSchema = z.strictObject({
@@ -66,9 +80,11 @@ const ModifierSchema = z.discriminatedUnion('type', [
   z.strictObject({
     type: z.literal('roll'),
     ...ModifierBase,
-    roll: z.enum(ROLLS),
+    roll: z.enum(FEATURE_ROLLS),
     mode: z.enum(ROLL_MODES),
     abilities: z.array(AbilitySchema).min(1).optional(),
+    // The checks of these skills only (indexes of 5e-SRD-Skills).
+    skills: z.array(z.string()).min(1).optional(),
     attack_kind: AttackKindSchema.optional(),
   }),
   // A number added to a roll, to armor class, or to the hit points a healing spell restores. Exactly one amount:
@@ -97,7 +113,7 @@ const ModifierSchema = z.discriminatedUnion('type', [
     proficiency_multiplier: z.number().optional(),
     round: z.enum(['down', 'up']).optional(),
     add_spell_level: z.literal(true).optional(),
-    // The attack uses one of these abilities.
+    // The attack or check uses one of these abilities.
     abilities: z.array(AbilitySchema).min(1).optional(),
     attack_kind: AttackKindSchema.optional(),
     // Extra damage of this damage type.
@@ -262,6 +278,7 @@ const ModifierSchema = z.discriminatedUnion('type', [
   // The owner can cast `spell` (an index of 5e-SRD-Spells). `slot`: `none` without expending a spell slot, or
   // `spell_slot` by expending one. `at_level` is the level it is cast at. `self_only` limits it to the owner as
   // the target, `ritual_only` to casting it as a ritual, and `no_material` drops its material components.
+  // `save_dc` is the save DC of the spell when it is not the owner's spell save DC.
   z.strictObject({
     type: z.literal('spell'),
     ...ModifierBase,
@@ -271,6 +288,7 @@ const ModifierSchema = z.discriminatedUnion('type', [
     self_only: z.literal(true).optional(),
     ritual_only: z.literal(true).optional(),
     no_material: z.literal(true).optional(),
+    save_dc: DcSchema.optional(),
   }),
   // A change to one casting of a spell. `range_ft` is the new range of `range`.
   z.strictObject({
@@ -329,6 +347,98 @@ const ModifierSchema = z.discriminatedUnion('type', [
     ...ModifierBase,
     direction: z.enum(['points_to_slot', 'slot_to_points']),
     class_specific: ClassSpecificKeySchema.optional(),
+  }),
+  // The owner has resistance, immunity or vulnerability to damage of these types (indexes of 5e-SRD-Damage-Types,
+  // or `all`), except the types in `except`: the words of condition `effects.damage`. `duration` limits it to a use
+  // of the feature.
+  z.strictObject({
+    type: z.literal('damage'),
+    ...ModifierBase,
+    relation: z.enum(DAMAGE_RELATIONS),
+    types: z.array(z.string()).min(1),
+    except: z.array(z.string()).min(1).optional(),
+    duration: DurationSchema.optional(),
+  }),
+  // Evasion: when the owner is subjected to an effect that allows a saving throw of `ability` to take half damage,
+  // the owner takes no damage on a success and half damage on a failure.
+  z.strictObject({
+    type: z.literal('evasion'),
+    ...ModifierBase,
+    ability: AbilitySchema,
+  }),
+  // The owner rolls additional damage dice on a critical hit with these attacks: as many as the number in
+  // `class_specific`, which is the owner's total, not the number a single record of the feature adds.
+  z.strictObject({
+    type: z.literal('critical_damage_dice'),
+    ...ModifierBase,
+    class_specific: ClassSpecificKeySchema,
+    attack_kind: AttackKindSchema,
+  }),
+  // When the owner drops to 0 hit points without dying outright, the owner can make `save` and, on a success, drop
+  // to `hit_points` instead.
+  z.strictObject({
+    type: z.literal('avoid_dropping_to_zero'),
+    ...ModifierBase,
+    hit_points: z.number(),
+    save: SaveSchema,
+  }),
+  // The owner can roll `roll` again after a failure, and must use the new roll.
+  z.strictObject({
+    type: z.literal('reroll'),
+    ...ModifierBase,
+    roll: z.literal('saving_throw'),
+    when: z.literal('failed'),
+  }),
+  // A d20 roll lower than `minimum` counts as `minimum`.
+  z.strictObject({
+    type: z.literal('minimum_d20'),
+    ...ModifierBase,
+    roll: z.literal('ability_check'),
+    minimum: z.number(),
+  }),
+  // A total lower than the owner's `ability_score` can be replaced by that score, on these checks.
+  z.strictObject({
+    type: z.literal('minimum_total'),
+    ...ModifierBase,
+    roll: z.literal('ability_check'),
+    abilities: z.array(AbilitySchema).min(1),
+    ability_score: AbilitySchema,
+  }),
+  // The scores of these abilities rise by `increase`, and their maximum becomes `maximum`.
+  z.strictObject({
+    type: z.literal('ability_score_increase'),
+    ...ModifierBase,
+    abilities: z.array(AbilitySchema).min(1),
+    increase: z.number(),
+    maximum: z.number(),
+  }),
+  // These attacks count as magical for overcoming resistance and immunity to nonmagical attacks and damage.
+  z.strictObject({
+    type: z.literal('magical_attacks'),
+    ...ModifierBase,
+    attack_kind: AttackKindSchema,
+  }),
+  // The owner can end an effect on the owner that is causing one of these conditions.
+  z.strictObject({
+    type: z.literal('end_condition'),
+    ...ModifierBase,
+    conditions: z.array(z.string()).min(1),
+  }),
+  // No attack roll against the owner has advantage.
+  z.strictObject({
+    type: z.literal('rolls_against_owner'),
+    ...ModifierBase,
+    roll: z.literal('attack'),
+    no_advantage: z.literal(true),
+  }),
+  // The owner regains `count` uses of the feature `feature` (an index of 5e-SRD-Features) at the moment of
+  // `trigger`: rolling initiative with none left.
+  z.strictObject({
+    type: z.literal('recover_uses'),
+    ...ModifierBase,
+    feature: z.string(),
+    count: z.number(),
+    trigger: z.literal('initiative_with_no_uses_left'),
   }),
   // The owner takes the shape of a beast within the limits of these `class_specific` keys.
   z.strictObject({
