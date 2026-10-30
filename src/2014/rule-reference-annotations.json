@@ -597,5 +597,429 @@
         "anchor": "Reactions"
       }
     ]
+  },
+  {
+    "collection": "equipment",
+    "index": "torch",
+    "related": [
+      {
+        "to": "the-environment",
+        "anchor": "Vision and Light"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "lamp",
+    "related": [
+      {
+        "to": "the-environment",
+        "anchor": "Vision and Light"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "lantern-bullseye",
+    "related": [
+      {
+        "to": "the-environment",
+        "anchor": "Vision and Light"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "lantern-hooded",
+    "related": [
+      {
+        "to": "the-environment",
+        "anchor": "Vision and Light"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "candle",
+    "related": [
+      {
+        "to": "the-environment",
+        "anchor": "Vision and Light"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "rations-1-day",
+    "related": [
+      {
+        "to": "the-environment",
+        "anchor": "Food and Water"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "waterskin",
+    "related": [
+      {
+        "to": "the-environment",
+        "anchor": "Food and Water"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "rope-hempen-50-feet",
+    "related": [
+      {
+        "to": "movement",
+        "anchor": "Climbing, Swimming, and Crawling"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "rope-silk-50-feet",
+    "related": [
+      {
+        "to": "movement",
+        "anchor": "Climbing, Swimming, and Crawling"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "grappling-hook",
+    "related": [
+      {
+        "to": "movement",
+        "anchor": "Climbing, Swimming, and Crawling"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "piton",
+    "related": [
+      {
+        "to": "movement",
+        "anchor": "Climbing, Swimming, and Crawling"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "ladder-10-foot",
+    "related": [
+      {
+        "to": "movement",
+        "anchor": "Climbing, Swimming, and Crawling"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "pole-10-foot",
+    "related": [
+      {
+        "to": "movement",
+        "anchor": "Climbing, Swimming, and Crawling"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "lock",
+    "related": [
+      {
+        "to": "objects",
+        "anchor": "Object Hit Points"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "manacles",
+    "related": [
+      {
+        "to": "objects",
+        "anchor": "Object Hit Points"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "crowbar",
+    "related": [
+      {
+        "to": "objects",
+        "anchor": "Object Hit Points"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "chain-10-feet",
+    "related": [
+      {
+        "to": "objects",
+        "anchor": "Object Hit Points"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "ram-portable",
+    "related": [
+      {
+        "to": "objects",
+        "anchor": "Object Hit Points"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "thieves-tools",
+    "related": [
+      {
+        "to": "traps",
+        "anchor": "Detecting and Disabling a Trap"
+      },
+      {
+        "to": "objects",
+        "anchor": "Object Armor Class"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "hunting-trap",
+    "related": [
+      {
+        "to": "traps",
+        "anchor": "Traps in Play"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "poison-basic-vial",
+    "related": [
+      {
+        "to": "poisons",
+        "anchor": "Poisons"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "antitoxin-vial",
+    "related": [
+      {
+        "to": "poisons",
+        "anchor": "Poisons"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "poisoners-kit",
+    "related": [
+      {
+        "to": "poisons",
+        "anchor": "Poisons"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "healers-kit",
+    "related": [
+      {
+        "to": "damage-and-healing",
+        "anchor": "Stabilizing a Creature"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "component-pouch",
+    "related": [
+      {
+        "to": "casting-a-spell",
+        "anchor": "Material (M)"
+      }
+    ]
+  },
+  {
+    "collection": "equipment",
+    "index": "spellbook",
+    "related": [
+      {
+        "to": "what-is-a-spell",
+        "anchor": "Known and Prepared Spells"
+      }
+    ]
+  },
+  {
+    "collection": "magic-items",
+    "index": "boots-of-elvenkind",
+    "related": [
+      {
+        "to": "wearing-and-wielding-items",
+        "anchor": "Paired Items"
+      }
+    ]
+  },
+  {
+    "collection": "magic-items",
+    "index": "boots-of-speed",
+    "related": [
+      {
+        "to": "wearing-and-wielding-items",
+        "anchor": "Paired Items"
+      }
+    ]
+  },
+  {
+    "collection": "magic-items",
+    "index": "boots-of-the-winterlands",
+    "related": [
+      {
+        "to": "wearing-and-wielding-items",
+        "anchor": "Paired Items"
+      }
+    ]
+  },
+  {
+    "collection": "magic-items",
+    "index": "boots-of-levitation",
+    "related": [
+      {
+        "to": "wearing-and-wielding-items",
+        "anchor": "Paired Items"
+      }
+    ]
+  },
+  {
+    "collection": "magic-items",
+    "index": "boots-of-striding-and-springing",
+    "related": [
+      {
+        "to": "wearing-and-wielding-items",
+        "anchor": "Paired Items"
+      }
+    ]
+  },
+  {
+    "collection": "magic-items",
+    "index": "bracers-of-archery",
+    "related": [
+      {
+        "to": "wearing-and-wielding-items",
+        "anchor": "Paired Items"
+      }
+    ]
+  },
+  {
+    "collection": "magic-items",
+    "index": "bracers-of-defense",
+    "related": [
+      {
+        "to": "wearing-and-wielding-items",
+        "anchor": "Paired Items"
+      }
+    ]
+  },
+  {
+    "collection": "magic-items",
+    "index": "gauntlets-of-ogre-power",
+    "related": [
+      {
+        "to": "wearing-and-wielding-items",
+        "anchor": "Paired Items"
+      }
+    ]
+  },
+  {
+    "collection": "magic-items",
+    "index": "gloves-of-missile-snaring",
+    "related": [
+      {
+        "to": "wearing-and-wielding-items",
+        "anchor": "Paired Items"
+      }
+    ]
+  },
+  {
+    "collection": "magic-items",
+    "index": "gloves-of-swimming-and-climbing",
+    "related": [
+      {
+        "to": "wearing-and-wielding-items",
+        "anchor": "Paired Items"
+      }
+    ]
+  },
+  {
+    "collection": "magic-items",
+    "index": "slippers-of-spider-climbing",
+    "related": [
+      {
+        "to": "wearing-and-wielding-items",
+        "anchor": "Paired Items"
+      }
+    ]
+  },
+  {
+    "collection": "spells",
+    "index": "arcane-hand",
+    "related": [
+      {
+        "to": "casting-a-spell",
+        "anchor": "Spell Attack Rolls"
+      }
+    ]
+  },
+  {
+    "collection": "spells",
+    "index": "dispel-evil-and-good",
+    "related": [
+      {
+        "to": "casting-a-spell",
+        "anchor": "Spell Attack Rolls"
+      }
+    ]
+  },
+  {
+    "collection": "spells",
+    "index": "flame-blade",
+    "related": [
+      {
+        "to": "casting-a-spell",
+        "anchor": "Spell Attack Rolls"
+      }
+    ]
+  },
+  {
+    "collection": "spells",
+    "index": "scorching-ray",
+    "related": [
+      {
+        "to": "casting-a-spell",
+        "anchor": "Spell Attack Rolls"
+      }
+    ]
+  },
+  {
+    "collection": "magic-items",
+    "index": "hammer-of-thunderbolts",
+    "related": [
+      {
+        "to": "attunement",
+        "anchor": "Attunement"
+      }
+    ]
   }
 ]

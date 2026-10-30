@@ -16,15 +16,15 @@ changes with a `BREAKING CHANGE:` footer. They keep the history readable when a 
 
 ## Where things live
 
-| Path                                        | Contents                                            |
-| ------------------------------------------- | --------------------------------------------------- |
-| `src/{year}/en/5e-SRD-{Collection}.json`    | English source data for a collection                |
-| `src/{year}/schemas/5e-SRD-{Collection}.ts` | Zod schema for that collection                      |
-| `src/{year}/tests/`                         | Tests that run the schemas and checks over the data |
-| `src/{year}/{locale}/`                      | Translation overlays (not published)                |
-| `src/2014/5e-SRD-Monsters-Normalized.json`  | Generated; do not edit by hand                      |
-| `src/provenance/source-markers.json`        | Source of each data file and its non-SRD fields     |
-| `schema/`, `types/`, `ids/`                 | Generated JSON Schema, `.d.ts` and id lists; do not edit |
+| Path                                        | Contents                                                       |
+| ------------------------------------------- | -------------------------------------------------------------- |
+| `src/{year}/en/5e-SRD-{Collection}.json`    | English source data for a collection                           |
+| `src/{year}/schemas/5e-SRD-{Collection}.ts` | Zod schema for that collection                                 |
+| `src/{year}/tests/`                         | Tests that run the schemas and checks over the data            |
+| `src/{year}/{locale}/`                      | Translation overlays (not published)                           |
+| `src/2014/5e-SRD-Monsters-Normalized.json`  | Generated; do not edit by hand                                 |
+| `src/provenance/source-markers.json`        | Source of each data file and its non-SRD fields                |
+| `schema/`, `types/`, `ids/`                 | Generated JSON Schema, `.d.ts` and id lists; do not edit       |
 | `scripts/package-exports.ts`                | The `exports` map of `package.json` (`pnpm run exports:write`) |
 
 `{year}` is `2014` or `2024`. `src/2024` is dormant and frozen: changes to it are not accepted except bug fixes to the
@@ -63,7 +63,7 @@ count-bearing features from the Levels rows. The ids of the class choices are de
 `pnpm run derive:spellcasting` ([docs/class-spellcasting.md](docs/class-spellcasting.md)), and the `cost_cp`, `bundle_size`, `reach_ft`, `rarity.rank`, `rarity.min_level` and `effects` of the equipment and
 magic items, and the `uses` that `src/2014/item-engine-annotations.json` writes by hand, with `pnpm run derive:items`
 ([docs/item-data.md](docs/item-data.md)). The `order`, `keywords` and `related` fields of the rules, the rule sections and
-the conditions are derived with `pnpm run derive:rules`, which also merges in the summaries and the curated links of
+the conditions, and the `related` links of the spells, the equipment and the magic items, are derived with `pnpm run derive:rules`, which also merges in the summaries and the curated links of
 `src/2014/rule-reference-annotations.json` ([docs/rule-reference.md](docs/rule-reference.md)).
 
 ## Generated id lists
@@ -244,7 +244,12 @@ position:
   "starting_equipment_options": [
     {
       "desc": "(a) une hache à deux mains ou (b) une arme de guerre de corps à corps au choix",
-      "from": { "options": [null, { "choice": { "desc": "n'importe quelle arme de guerre de corps à corps" } }] }
+      "from": {
+        "options": [
+          null,
+          { "choice": { "desc": "n'importe quelle arme de guerre de corps à corps" } }
+        ]
+      }
     }
   ]
 }
@@ -264,7 +269,11 @@ with the collection's generated type. `src/i18n/localize.ts` ships in the packag
 imports.
 
 ```ts
-import { createLocalizer, type DataRecord, type JsonSchema } from '@markpol/dd-srd/src/i18n/localize';
+import {
+  createLocalizer,
+  type DataRecord,
+  type JsonSchema,
+} from '@markpol/dd-srd/src/i18n/localize';
 import enSpells from '@markpol/dd-srd/spells';
 import spellSchema from '@markpol/dd-srd/schema/5e-SRD-Spells.schema.json';
 // Overlays are not published in the package: the caller brings its own overlay files.

@@ -25,7 +25,13 @@
       "unit": "gp"
     },
     "weight": 55,
-    "cost_cp": 50000
+    "cost_cp": 50000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "ammunition",
@@ -198,6 +204,12 @@
           "value": 19
         }
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
     ]
   },
   {
@@ -225,7 +237,21 @@
       "unit": "gp"
     },
     "weight": 6,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "armor",
@@ -267,7 +293,13 @@
       "unit": "gp"
     },
     "weight": 55,
-    "cost_cp": 150000
+    "cost_cp": 150000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "armor-1",
@@ -306,6 +338,12 @@
         "armor_class": {
           "bonus": 1
         }
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
       }
     ]
   },
@@ -347,6 +385,12 @@
           "bonus": 2
         }
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
     ]
   },
   {
@@ -387,6 +431,12 @@
           "bonus": 3
         }
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
     ]
   },
   {
@@ -419,7 +469,21 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "armor-of-resistance",
@@ -458,7 +522,17 @@
       "unit": "gp"
     },
     "weight": 55,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "armor-of-vulnerability",
@@ -487,7 +561,17 @@
       "unit": "gp"
     },
     "weight": 65,
-    "cost_cp": 150000
+    "cost_cp": 150000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "arrow-catching-shield",
@@ -514,7 +598,17 @@
       "unit": "gp"
     },
     "weight": 6,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "arrow-of-slaying",
@@ -732,7 +826,13 @@
       "count": 3,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "bag-of-tricks-gray",
@@ -779,7 +879,13 @@
       "count": 3,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "bag-of-tricks-rust",
@@ -826,7 +932,13 @@
       "count": 3,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "bag-of-tricks-tan",
@@ -873,7 +985,13 @@
       "count": 3,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "bead-of-force",
@@ -972,6 +1090,12 @@
           "dwarven-resilience"
         ]
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
     ]
   },
   {
@@ -1037,7 +1161,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 800000
+    "cost_cp": 800000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "belt-of-giant-strength-hill",
@@ -1086,6 +1216,12 @@
           "op": "set",
           "value": 21
         }
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
       }
     ]
   },
@@ -1137,6 +1273,12 @@
           "value": 23
         }
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
     ]
   },
   {
@@ -1186,6 +1328,12 @@
           "op": "set",
           "value": 23
         }
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
       }
     ]
   },
@@ -1237,6 +1385,12 @@
           "value": 25
         }
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
     ]
   },
   {
@@ -1286,6 +1440,12 @@
           "op": "set",
           "value": 27
         }
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
       }
     ]
   },
@@ -1337,6 +1497,12 @@
           "value": 29
         }
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
     ]
   },
   {
@@ -1367,7 +1533,17 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 400000
+    "cost_cp": 400000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "boots-of-elvenkind",
@@ -1414,6 +1590,12 @@
           "advantage": true
         }
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "wearing-and-wielding-items"
+      }
     ]
   },
   {
@@ -1442,7 +1624,17 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 400000
+    "cost_cp": 400000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "wearing-and-wielding-items"
+      }
+    ]
   },
   {
     "index": "boots-of-the-winterlands",
@@ -1488,6 +1680,16 @@
           "cold"
         ]
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "wearing-and-wielding-items"
+      }
     ]
   },
   {
@@ -1515,7 +1717,17 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 150000
+    "cost_cp": 150000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "wearing-and-wielding-items"
+      }
+    ]
   },
   {
     "index": "bracers-of-defense",
@@ -1542,7 +1754,17 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "wearing-and-wielding-items"
+      }
+    ]
   },
   {
     "index": "brooch-of-shielding",
@@ -1584,6 +1806,12 @@
         "resistances": [
           "force"
         ]
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
       }
     ]
   },
@@ -1627,7 +1855,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "circlet-of-blasting",
@@ -1659,7 +1893,13 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "cloak-of-arachnida",
@@ -1696,7 +1936,17 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "cloak-of-displacement",
@@ -1723,7 +1973,13 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 6000000
+    "cost_cp": 6000000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "cloak-of-elvenkind",
@@ -1769,6 +2025,12 @@
           "skill": "stealth",
           "advantage": true
         }
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
       }
     ]
   },
@@ -1835,6 +2097,12 @@
           "bonus": 1
         }
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
     ]
   },
   {
@@ -1869,7 +2137,17 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "dancing-sword",
@@ -1932,6 +2210,20 @@
       "rapiers",
       "scimitars",
       "shortswords"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1994,6 +2286,16 @@
       "rapiers",
       "scimitars",
       "shortswords"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -2023,7 +2325,17 @@
       "unit": "gp"
     },
     "weight": 65,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "dragon-scale-mail",
@@ -2125,7 +2437,21 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "dragon-scale-mail-black",
@@ -2193,7 +2519,21 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "dragon-scale-mail-blue",
@@ -2261,7 +2601,21 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "dragon-scale-mail-brass",
@@ -2329,7 +2683,21 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "dragon-scale-mail-bronze",
@@ -2397,7 +2765,21 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "dragon-scale-mail-copper",
@@ -2465,7 +2847,21 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "dragon-scale-mail-gold",
@@ -2533,7 +2929,21 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "dragon-scale-mail-green",
@@ -2601,7 +3011,21 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "dragon-scale-mail-red",
@@ -2669,7 +3093,21 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "dragon-scale-mail-silver",
@@ -2737,7 +3175,21 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "dragon-scale-mail-white",
@@ -2805,7 +3257,21 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "dragon-slayer",
@@ -2834,7 +3300,13 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 400000
+    "cost_cp": 400000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "dust-of-dryness",
@@ -2921,6 +3393,12 @@
       "medium-armor",
       "plate-armor",
       "heavy-armor"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
     ]
   },
   {
@@ -2949,7 +3427,17 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 1600000
+    "cost_cp": 1600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "efficient-quiver",
@@ -3045,6 +3533,12 @@
     "proficiency_ids": [
       "chain-shirt",
       "medium-armor"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
     ]
   },
   {
@@ -3077,7 +3571,17 @@
       "count": 3,
       "unit": "charge",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "eyes-of-minute-seeing",
@@ -3162,6 +3666,12 @@
           "skill": "investigation",
           "advantage": true
         }
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
       }
     ]
   },
@@ -3249,6 +3759,20 @@
       "rapiers",
       "scimitars",
       "shortswords"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -3347,6 +3871,16 @@
       "rapiers",
       "scimitars",
       "shortswords"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -3397,6 +3931,16 @@
           "value": 19
         }
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "wearing-and-wielding-items"
+      }
     ]
   },
   {
@@ -3425,7 +3969,13 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 400000
+    "cost_cp": 400000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "glamoured-studded-leather-armor",
@@ -3452,7 +4002,17 @@
       "unit": "gp"
     },
     "weight": 13,
-    "cost_cp": 150000
+    "cost_cp": 150000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "gloves-of-missile-snaring",
@@ -3479,7 +4039,17 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "wearing-and-wielding-items"
+      }
+    ]
   },
   {
     "index": "gloves-of-swimming-and-climbing",
@@ -3525,6 +4095,16 @@
           "skill": "athletics",
           "bonus": 5
         }
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "wearing-and-wielding-items"
       }
     ]
   },
@@ -3588,7 +4168,21 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d4+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "handy-haversack",
@@ -3645,7 +4239,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "headband-of-intellect",
@@ -3672,7 +4272,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "helm-of-brilliance",
@@ -3705,7 +4311,17 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "helm-of-comprehending-languages",
@@ -3765,7 +4381,17 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "helm-of-teleportation",
@@ -3799,7 +4425,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "holy-avenger",
@@ -3827,7 +4463,17 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 2400000
+    "cost_cp": 2400000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "horn-of-blasting",
@@ -3855,7 +4501,13 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "horn-of-valhalla",
@@ -4153,7 +4805,13 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "javelin-of-lightning",
@@ -4186,7 +4844,17 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "luck-blade",
@@ -4215,7 +4883,17 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 2400000
+    "cost_cp": 2400000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "mace-of-disruption",
@@ -4243,7 +4921,17 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 400000
+    "cost_cp": 400000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "mace-of-smiting",
@@ -4271,7 +4959,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 400000
+    "cost_cp": 400000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "mace-of-terror",
@@ -4305,7 +4999,21 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "mantle-of-spell-resistance",
@@ -4332,7 +5040,13 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "manual-of-bodily-health",
@@ -4730,7 +5444,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "mirror-of-life-trapping",
@@ -4763,7 +5487,13 @@
       "unit": "gp"
     },
     "weight": 50,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "mithral-armor",
@@ -4790,7 +5520,13 @@
       "unit": "gp"
     },
     "weight": 55,
-    "cost_cp": 50000
+    "cost_cp": 50000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "necklace-of-adaptation",
@@ -4817,7 +5553,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "necklace-of-fireballs",
@@ -4881,7 +5623,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "nine-lives-stealer",
@@ -4909,7 +5657,17 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 1600000
+    "cost_cp": 1600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "oathbow",
@@ -4938,7 +5696,17 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 1600000
+    "cost_cp": 1600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "oil-of-etherealness",
@@ -4965,7 +5733,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 75000
+    "cost_cp": 75000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "oil-of-sharpness",
@@ -4992,7 +5766,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "oil-of-slipperiness",
@@ -5020,7 +5800,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 25000
+    "cost_cp": 25000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "pearl-of-power",
@@ -5052,7 +5838,17 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "periapt-of-health",
@@ -5133,7 +5929,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "philter-of-love",
@@ -5160,7 +5962,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 25000
+    "cost_cp": 25000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "pipes-of-haunting",
@@ -5193,7 +6001,13 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "pipes-of-the-sewers",
@@ -5228,7 +6042,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "plate-armor-of-etherealness",
@@ -5260,7 +6084,21 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "portable-hole",
@@ -5318,7 +6156,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 25000
+    "cost_cp": 25000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-clairvoyance",
@@ -5345,7 +6189,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 75000
+    "cost_cp": 75000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-climbing",
@@ -5372,7 +6222,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 5000
+    "cost_cp": 5000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-diminution",
@@ -5399,7 +6255,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 75000
+    "cost_cp": 75000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-flying",
@@ -5426,7 +6288,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-gaseous-form",
@@ -5453,7 +6321,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 75000
+    "cost_cp": 75000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-giant-strength",
@@ -5517,7 +6391,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 25000
+    "cost_cp": 25000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-giant-strength-hill",
@@ -5545,7 +6425,13 @@
     },
     "url": "/api/2014/magic-items/potion-of-giant-strength-hill",
     "weight": 0.5,
-    "cost_cp": 25000
+    "cost_cp": 25000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-giant-strength-frost",
@@ -5573,7 +6459,13 @@
     },
     "url": "/api/2014/magic-items/potion-of-giant-strength-frost",
     "weight": 0.5,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-giant-strength-stone",
@@ -5601,7 +6493,13 @@
     },
     "url": "/api/2014/magic-items/potion-of-giant-strength-stone",
     "weight": 0.5,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-giant-strength-fire",
@@ -5629,7 +6527,13 @@
     },
     "url": "/api/2014/magic-items/potion-of-giant-strength-fire",
     "weight": 0.5,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-giant-strength-cloud",
@@ -5657,7 +6561,13 @@
     },
     "url": "/api/2014/magic-items/potion-of-giant-strength-cloud",
     "weight": 0.5,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-giant-strength-storm",
@@ -5685,7 +6595,13 @@
     },
     "url": "/api/2014/magic-items/potion-of-giant-strength-storm",
     "weight": 0.5,
-    "cost_cp": 12500000
+    "cost_cp": 12500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-growth",
@@ -5712,7 +6628,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 25000
+    "cost_cp": 25000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-healing",
@@ -5765,7 +6687,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 5000
+    "cost_cp": 5000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-healing-common",
@@ -5801,6 +6729,12 @@
       {
         "activation": "use",
         "heal": "2d4+2"
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
       }
     ]
   },
@@ -5839,6 +6773,12 @@
         "activation": "use",
         "heal": "4d4+4"
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
     ]
   },
   {
@@ -5875,6 +6815,12 @@
       {
         "activation": "use",
         "heal": "8d4+8"
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
       }
     ]
   },
@@ -5913,6 +6859,12 @@
         "activation": "use",
         "heal": "10d4+20"
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
     ]
   },
   {
@@ -5940,7 +6892,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 75000
+    "cost_cp": 75000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-invisibility",
@@ -5967,7 +6925,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-mind-reading",
@@ -5994,7 +6958,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 75000
+    "cost_cp": 75000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-poison",
@@ -6022,7 +6992,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 25000
+    "cost_cp": 25000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-resistance",
@@ -6112,7 +7088,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 25000
+    "cost_cp": 25000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-resistance-acid",
@@ -6158,6 +7140,12 @@
         "resistances": [
           "acid"
         ]
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
       }
     ]
   },
@@ -6206,6 +7194,12 @@
           "cold"
         ]
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
     ]
   },
   {
@@ -6252,6 +7246,12 @@
         "resistances": [
           "fire"
         ]
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
       }
     ]
   },
@@ -6300,6 +7300,12 @@
           "force"
         ]
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
     ]
   },
   {
@@ -6346,6 +7352,12 @@
         "resistances": [
           "lightning"
         ]
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
       }
     ]
   },
@@ -6394,6 +7406,12 @@
           "necrotic"
         ]
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
     ]
   },
   {
@@ -6440,6 +7458,12 @@
         "resistances": [
           "poison"
         ]
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
       }
     ]
   },
@@ -6488,6 +7512,12 @@
           "psychic"
         ]
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
     ]
   },
   {
@@ -6534,6 +7564,12 @@
         "resistances": [
           "radiant"
         ]
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
       }
     ]
   },
@@ -6582,6 +7618,12 @@
           "thunder"
         ]
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
     ]
   },
   {
@@ -6610,7 +7652,13 @@
     "is_consumable": true,
     "url": "/api/2014/magic-items/potion-of-speed",
     "weight": 0.5,
-    "cost_cp": 40000
+    "cost_cp": 40000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "potion-of-water-breathing",
@@ -6637,7 +7685,13 @@
       "unit": "gp"
     },
     "weight": 0.5,
-    "cost_cp": 25000
+    "cost_cp": 25000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "restorative-ointment",
@@ -6701,7 +7755,13 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "ring-of-djinni-summoning",
@@ -6730,7 +7790,17 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "ring-of-elemental-command",
@@ -6804,7 +7874,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d4+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "ring-of-elemental-command-air",
@@ -6844,7 +7924,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d4+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "ring-of-elemental-command-earth",
@@ -6884,7 +7974,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d4+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "ring-of-elemental-command-fire",
@@ -6923,7 +8023,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d4+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "ring-of-elemental-command-water",
@@ -6962,7 +8072,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d4+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "ring-of-evasion",
@@ -6995,7 +8115,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "ring-of-feather-falling",
@@ -7022,7 +8152,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ring-of-free-action",
@@ -7049,7 +8185,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ring-of-invisibility",
@@ -7076,7 +8218,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ring-of-jumping",
@@ -7103,7 +8251,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ring-of-mind-shielding",
@@ -7132,7 +8286,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ring-of-protection",
@@ -7198,6 +8358,12 @@
           "bonus": 1
         }
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
     ]
   },
   {
@@ -7225,7 +8391,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ring-of-resistance",
@@ -7315,7 +8487,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ring-of-resistance-acid",
@@ -7357,6 +8535,12 @@
         "resistances": [
           "acid"
         ]
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
       }
     ]
   },
@@ -7401,6 +8585,12 @@
           "cold"
         ]
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
     ]
   },
   {
@@ -7443,6 +8633,12 @@
         "resistances": [
           "fire"
         ]
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
       }
     ]
   },
@@ -7487,6 +8683,12 @@
           "force"
         ]
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
     ]
   },
   {
@@ -7529,6 +8731,12 @@
         "resistances": [
           "lightning"
         ]
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
       }
     ]
   },
@@ -7573,6 +8781,12 @@
           "necrotic"
         ]
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
     ]
   },
   {
@@ -7615,6 +8829,12 @@
         "resistances": [
           "poison"
         ]
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
       }
     ]
   },
@@ -7659,6 +8879,12 @@
           "psychic"
         ]
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
     ]
   },
   {
@@ -7702,6 +8928,12 @@
           "radiant"
         ]
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
     ]
   },
   {
@@ -7744,6 +8976,12 @@
         "resistances": [
           "thunder"
         ]
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
       }
     ]
   },
@@ -7790,7 +9028,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "ring-of-spell-storing",
@@ -7819,7 +9067,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ring-of-spell-turning",
@@ -7846,7 +9100,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ring-of-swimming",
@@ -7900,7 +9160,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ring-of-the-ram",
@@ -7934,7 +9200,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "ring-of-three-wishes",
@@ -7965,7 +9241,13 @@
     "uses": {
       "count": 3,
       "unit": "charge"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "ring-of-warmth",
@@ -7992,7 +9274,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ring-of-water-walking",
@@ -8047,7 +9335,17 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "robe-of-eyes",
@@ -8079,7 +9377,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "robe-of-scintillating-colors",
@@ -8112,7 +9416,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "robe-of-stars",
@@ -8141,7 +9455,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "robe-of-the-archmagi",
@@ -8172,7 +9492,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "robe-of-useful-items",
@@ -8251,7 +9577,13 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "rod-of-alertness",
@@ -8287,7 +9619,17 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "rod-of-lordly-might",
@@ -8324,7 +9666,13 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "rod-of-rulership",
@@ -8356,7 +9704,17 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "rod-of-security",
@@ -8414,7 +9772,13 @@
     },
     "url": "/api/2014/magic-items/rope-of-climbing",
     "weight": 3,
-    "cost_cp": 200000
+    "cost_cp": 200000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "rope-of-entanglement",
@@ -8443,7 +9807,13 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "scarab-of-protection",
@@ -8476,7 +9846,17 @@
     "uses": {
       "count": 12,
       "unit": "charge"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "scimitar-of-speed",
@@ -8503,7 +9883,17 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 1600000
+    "cost_cp": 1600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "shield-of-missile-attraction",
@@ -8531,7 +9921,17 @@
       "unit": "gp"
     },
     "weight": 6,
-    "cost_cp": 150000
+    "cost_cp": 150000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "slippers-of-spider-climbing",
@@ -8558,7 +9958,17 @@
     },
     "url": "/api/2014/magic-items/slippers-of-spider-climbing",
     "weight": 1,
-    "cost_cp": 500000
+    "cost_cp": 500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "wearing-and-wielding-items"
+      }
+    ]
   },
   {
     "index": "sovereign-glue",
@@ -8678,7 +10088,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 5000
+    "cost_cp": 5000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "spell-scroll-cantrip",
@@ -8707,7 +10123,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 5000
+    "cost_cp": 5000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "spell-scroll-1st",
@@ -8737,7 +10159,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 5000
+    "cost_cp": 5000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "spell-scroll-2nd",
@@ -8767,7 +10195,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 25000
+    "cost_cp": 25000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "spell-scroll-3rd",
@@ -8797,7 +10231,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 25000
+    "cost_cp": 25000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "spell-scroll-4th",
@@ -8827,7 +10267,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 75000
+    "cost_cp": 75000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "spell-scroll-5th",
@@ -8857,7 +10303,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 75000
+    "cost_cp": 75000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "spell-scroll-6th",
@@ -8887,7 +10339,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "spell-scroll-7th",
@@ -8917,7 +10375,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "spell-scroll-8th",
@@ -8947,7 +10411,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "spell-scroll-9th",
@@ -8977,7 +10447,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "spellguard-shield",
@@ -9004,7 +10480,17 @@
       "unit": "gp"
     },
     "weight": 6,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      }
+    ]
   },
   {
     "index": "sphere-of-annihilation",
@@ -9069,7 +10555,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "staff-of-fire",
@@ -9104,7 +10596,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+4"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "staff-of-frost",
@@ -9139,7 +10641,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+4"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "staff-of-healing",
@@ -9173,7 +10685,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+4"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "staff-of-power",
@@ -9216,7 +10738,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "2d8+4"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "staff-of-striking",
@@ -9250,7 +10782,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+4"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "staff-of-swarming-insects",
@@ -9285,7 +10827,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+4"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "staff-of-the-magi",
@@ -9329,7 +10881,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "4d6+2"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "staff-of-the-python",
@@ -9358,7 +10920,17 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "staff-of-the-woodlands",
@@ -9395,7 +10967,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+4"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "staff-of-thunder-and-lightning",
@@ -9427,7 +11009,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "staff-of-withering",
@@ -9461,7 +11049,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "stone-of-controlling-earth-elementals",
@@ -9493,7 +11091,13 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "stone-of-good-luck-luckstone",
@@ -9520,7 +11124,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "sun-blade",
@@ -9549,7 +11159,17 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 400000
+    "cost_cp": 400000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "sword-of-life-stealing",
@@ -9576,7 +11196,17 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 400000
+    "cost_cp": 400000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "sword-of-sharpness",
@@ -9605,7 +11235,21 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 1600000
+    "cost_cp": 1600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "sword-of-wounding",
@@ -9633,7 +11277,17 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 400000
+    "cost_cp": 400000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "talisman-of-pure-good",
@@ -9666,7 +11320,17 @@
     "uses": {
       "count": 7,
       "unit": "charge"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "talisman-of-the-sphere",
@@ -9693,7 +11357,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "talisman-of-ultimate-evil",
@@ -9726,7 +11396,17 @@
     "uses": {
       "count": 6,
       "unit": "charge"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "tome-of-clear-thought",
@@ -9921,7 +11601,21 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "universal-solvent",
@@ -9975,7 +11669,13 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 35000
+    "cost_cp": 35000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "vorpal-sword",
@@ -10003,7 +11703,17 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 2400000
+    "cost_cp": 2400000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "wand-of-binding",
@@ -10038,7 +11748,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "wand-of-enemy-detection",
@@ -10072,7 +11792,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "wand-of-fear",
@@ -10107,7 +11837,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "wand-of-fireballs",
@@ -10141,7 +11881,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "wand-of-lightning-bolts",
@@ -10175,7 +11925,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "wand-of-magic-detection",
@@ -10208,7 +11968,13 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "wand-of-magic-missiles",
@@ -10242,7 +12008,13 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "wand-of-paralysis",
@@ -10276,7 +12048,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "wand-of-polymorph",
@@ -10310,7 +12092,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "wand-of-secrets",
@@ -10343,7 +12135,13 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "wand-of-the-war-mage",
@@ -10384,7 +12182,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "wand-of-the-war-mage-1",
@@ -10411,7 +12215,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "wand-of-the-war-mage-2",
@@ -10438,7 +12248,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "wand-of-the-war-mage-3",
@@ -10465,7 +12281,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "wand-of-web",
@@ -10499,7 +12321,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "wand-of-wonder",
@@ -10558,7 +12390,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d6+1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "weapon",
@@ -10599,7 +12441,13 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 100000
+    "cost_cp": 100000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "weapon-1",
@@ -10640,6 +12488,12 @@
           "to_hit_bonus": 1,
           "damage_bonus": 1
         }
+      }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
       }
     ]
   },
@@ -10683,6 +12537,12 @@
           "damage_bonus": 2
         }
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -10725,6 +12585,12 @@
           "damage_bonus": 3
         }
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -10753,7 +12619,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "amulet-of-the-planes",
@@ -10781,7 +12653,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "apparatus-of-the-crab",
@@ -10858,7 +12736,17 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "wearing-and-wielding-items"
+      }
+    ]
   },
   {
     "index": "boots-of-striding-and-springing",
@@ -10886,7 +12774,17 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "wearing-and-wielding-items"
+      }
+    ]
   },
   {
     "index": "bowl-of-commanding-water-elementals",
@@ -10919,7 +12817,13 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "brazier-of-commanding-fire-elementals",
@@ -10953,7 +12857,13 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "broom-of-flying",
@@ -10982,7 +12892,13 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "cape-of-the-mountebank",
@@ -11016,7 +12932,13 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "carpet-of-flying",
@@ -11073,7 +12995,13 @@
       "unit": "gp"
     },
     "weight": 5,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "carpet-of-flying-3x5",
@@ -11102,7 +13030,13 @@
       "unit": "gp"
     },
     "weight": 5,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "carpet-of-flying-4x6",
@@ -11131,7 +13065,13 @@
       "unit": "gp"
     },
     "weight": 8,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "carpet-of-flying-5x7",
@@ -11160,7 +13100,13 @@
       "unit": "gp"
     },
     "weight": 12,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "carpet-of-flying-6x9",
@@ -11189,7 +13135,13 @@
       "unit": "gp"
     },
     "weight": 18,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "censer-of-controlling-air-elementals",
@@ -11223,7 +13175,13 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "chime-of-opening",
@@ -11286,7 +13244,17 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "cloak-of-the-manta-ray",
@@ -11362,7 +13330,13 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "crystal-ball-of-mind-reading",
@@ -11391,7 +13365,13 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "crystal-ball-of-telepathy",
@@ -11425,7 +13405,17 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "crystal-ball-of-true-seeing",
@@ -11454,7 +13444,13 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "cube-of-force",
@@ -11507,7 +13503,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d20"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "cubic-gate",
@@ -11543,7 +13549,13 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "decanter-of-endless-water",
@@ -11575,7 +13587,13 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "deck-of-illusions",
@@ -12027,7 +14045,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "feather-token",
@@ -12365,7 +14389,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "figurine-of-wondrous-power-bronze-griffon",
@@ -12395,7 +14425,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "figurine-of-wondrous-power-ebony-fly",
@@ -12435,7 +14471,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "figurine-of-wondrous-power-golden-lions",
@@ -12465,7 +14507,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "figurine-of-wondrous-power-ivory-goats",
@@ -12498,7 +14546,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "figurine-of-wondrous-power-marble-elephant",
@@ -12528,7 +14582,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "figurine-of-wondrous-power-obsidian-steed",
@@ -12559,7 +14619,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "figurine-of-wondrous-power-onyx-dog",
@@ -12589,7 +14655,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "figurine-of-wondrous-power-serpentine-owl",
@@ -12619,7 +14691,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "figurine-of-wondrous-power-silver-raven",
@@ -12649,7 +14727,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "folding-boat",
@@ -12680,7 +14764,13 @@
       "unit": "gp"
     },
     "weight": 4,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "gem-of-brightness",
@@ -12715,7 +14805,13 @@
     "uses": {
       "count": 50,
       "unit": "charge"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "gem-of-seeing",
@@ -12749,7 +14845,17 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "instant-fortress",
@@ -12780,7 +14886,13 @@
       "unit": "gp"
     },
     "weight": 1,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "ioun-stone",
@@ -12896,7 +15008,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ioun-stone-of-absorption",
@@ -12927,7 +15045,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ioun-stone-of-agility",
@@ -12957,7 +15081,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ioun-stone-of-awareness",
@@ -12987,7 +15117,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ioun-stone-of-fortitude",
@@ -13017,7 +15153,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ioun-stone-of-greater-absorption",
@@ -13048,7 +15190,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ioun-stone-of-insight",
@@ -13078,7 +15226,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ioun-stone-of-intellect",
@@ -13108,7 +15262,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ioun-stone-of-leadership",
@@ -13138,7 +15298,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ioun-stone-of-mastery",
@@ -13168,7 +15334,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ioun-stone-of-protection",
@@ -13198,7 +15370,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ioun-stone-of-regeneration",
@@ -13228,7 +15406,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 7500000
+    "cost_cp": 7500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ioun-stone-of-reserve",
@@ -13260,7 +15444,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ioun-stone-of-strength",
@@ -13290,7 +15480,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 2500000
+    "cost_cp": 2500000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "ioun-stone-of-sustenance",
@@ -13320,7 +15516,13 @@
       "unit": "gp"
     },
     "weight": 0,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "iron-bands-of-binding",
@@ -13355,7 +15557,13 @@
       "count": 1,
       "unit": "use",
       "recharge": "dawn"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "lantern-of-revealing",
@@ -13465,7 +15673,13 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 250000
+    "cost_cp": 250000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      }
+    ]
   },
   {
     "index": "wings-of-flying",
@@ -13492,7 +15706,17 @@
       "unit": "gp"
     },
     "weight": 2,
-    "cost_cp": 600000
+    "cost_cp": 600000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   },
   {
     "index": "orb-of-dragonkind",
@@ -13532,6 +15756,16 @@
       "unit": "charge",
       "recharge": "dawn",
       "regain": "1d4+3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "attunement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "activating-an-item"
+      }
+    ]
   }
 ]

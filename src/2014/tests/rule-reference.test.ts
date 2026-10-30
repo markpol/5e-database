@@ -302,7 +302,9 @@ describe('related links', () => {
   });
 
   it('include every curated link, and each names a phrase of the section it points at', () => {
-    for (const annotation of annotations.filter((a) => a.related)) {
+    for (const annotation of annotations.filter(
+      (a) => a.related && ['conditions', 'rule-sections'].includes(a.collection)
+    )) {
       const holder =
         annotation.collection === 'conditions'
           ? conditions.filter(

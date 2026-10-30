@@ -3,7 +3,7 @@
 `src/2014/en/5e-SRD-Rules.json` (6 rules) and `src/2014/en/5e-SRD-Rule-Sections.json` (33 sections, about 190,000
 characters of markdown) hold the SRD 5.1 rules text. This page describes the markdown the text is written in, and the
 optional fields added so the text can be read as a manual: a reading `order`, a `summary`, `keywords`, and `related`
-links between rule sections and from conditions. Every addition is optional, and no `index`, `name` or `desc` changed.
+links between rule sections and from conditions, spells, equipment and magic items to the rule sections. Every addition is optional, and no `index`, `name` or `desc` changed.
 
 ## The markdown subset
 
@@ -31,12 +31,12 @@ All the fields below are optional in the schema and present on every rule and ev
 in [src/provenance/source-markers.json](../src/provenance/source-markers.json), so the text written for this data can be
 told from SRD text: the SRD text is `name` and `desc`, and the fields below are not.
 
-| Field      | On                        | Meaning                                                                                                    | Translated |
-| ---------- | ------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------- |
-| `order`    | rules, rule sections      | Position in reading order, from 1. The six rules are 1 to 6 and the 33 sections 1 to 33 across all rules.  | no         |
-| `summary`  | rules, rule sections      | One or two sentences that say what the entry covers. Original wording written for this data, not SRD text. | yes        |
-| `keywords` | rules, rule sections      | Search terms in lower case, read from the headings and the bold terms                                      | no         |
-| `related`  | rule sections, conditions | Links to rule sections: `[{ "collection": "rule-sections", "index": "making-an-attack" }]`                 | no         |
+| Field      | On                                                        | Meaning                                                                                                    | Translated |
+| ---------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------- |
+| `order`    | rules, rule sections                                      | Position in reading order, from 1. The six rules are 1 to 6 and the 33 sections 1 to 33 across all rules.  | no         |
+| `summary`  | rules, rule sections                                      | One or two sentences that say what the entry covers. Original wording written for this data, not SRD text. | yes        |
+| `keywords` | rules, rule sections                                      | Search terms in lower case, read from the headings and the bold terms                                      | no         |
+| `related`  | rule sections, conditions, spells, equipment, magic items | Links to rule sections: `[{ "collection": "rule-sections", "index": "making-an-attack" }]`                 | no         |
 
 `summary` is the only new text. It is translatable (`"translatable": true` in the JSON Schema), and the translation
 overlays do not have it yet, so the coverage report (`pnpm run i18n:coverage`) counts it as untranslated. `order`,
@@ -106,9 +106,73 @@ repeats six words of its text.
   match by accident (`Invisible` is a plain adjective in the text), which is why those links are checked by hand.
 - A link points at a section, never at a heading inside it. The phrase a curated link gives shows where in the section
   to look.
-- The links are one-way: a section does not list the conditions that point at it. Only conditions and rule sections have
-  links so far; spells, equipment and magic items do not.
+- The links are one-way: a section does not list the conditions, spells, equipment or magic items that point at it.
+  Reverse links can be computed from the `related` fields.
 - Only the 33 sections are linked to. Pointers to the six rules, or from rules, are not present.
+
+### Links from spells, equipment and magic items
+
+`related` on a spell, an item of the equipment list or a magic item has the same shape as on a condition and points at
+a rule section, in reading order, once each. The links are derived by fixed rules in
+`src/2014/derive-rule-reference.ts`, with a few curated links in
+[src/2014/rule-reference-annotations.json](../src/2014/rule-reference-annotations.json) (each with a phrase of the
+target section that justifies it). Equipment and magic items have `related` only where a rule applies: 93 of the 197
+equipment items have 107 links, and 291 of the 362 magic items have 413 links. Every one of the 319 spells has at least
+one link, 568 in all.
+
+**Spells.** A spell links to:
+
+1. A section whose text writes the spell name in italics (`*fireball*`), which is how the text marks a spell it refers
+   to. 39 spells match, for example Fly to `movement-and-position`, Web to `actions-in-combat` and Revivify to
+   `damage-and-healing`. A name in plain text is not matched, because many spell names are ordinary words (Light,
+   Gate, Command, Bane, Resistance, Jump, Slow).
+2. `what-is-a-spell`: for a cantrip (Cantrips), for every other spell (Spell Slots) and for a ritual spell (Rituals).
+3. `casting-a-spell`: for a concentration spell (Concentration), a spell with a saving throw `dc` (Spell Saving
+   Throws), a spell with an `attack_type` (Spell Attack Rolls) and a spell with an `area_of_effect` (Areas of Effect).
+   Four spells whose text makes a spell attack but have no `attack_type` (`arcane-hand`, `dispel-evil-and-good`,
+   `flame-blade`, `scorching-ray`) are linked to Spell Attack Rolls by hand.
+
+**Equipment.** An item links to:
+
+1. `making-an-attack` for a weapon (Attack Rolls), for a ranged weapon or an ammunition item (Ranged Attacks) and for a
+   weapon with the `light` property (Two-Weapon Fighting).
+2. `what-is-a-spell` (Casting in Armor) and `using-each-ability` (Armor Class) for armor and shields.
+3. `casting-a-spell` (Material (M)) for an arcane focus, a druidic focus and a holy symbol.
+4. A section whose text writes the name of the item with the same capitals and whole words. Only names of two words
+   or more are matched, after the parenthesis that gives a size or quantity is dropped and a name such as "Spike, iron"
+   is turned round into "iron spike". One-word names (Net, Chest, Lock, Rod, Staff, Arrow, Crystal, Book, Shield) are
+   ordinary words in the rules text and are never matched. Only `iron spike` matches today, in `traps`.
+5. Curated links: gear that gives light or needs food (`the-environment`), rope and climbing gear (`movement`), locks,
+   chains and tools for breaking things (`objects`), thieves' tools and the hunting trap (`traps`), the poisons and
+   the antitoxin (`poisons`), the healer's kit (`damage-and-healing`), the component pouch and the spellbook.
+
+**Magic items.** An item links to:
+
+1. `attunement` when the first line of its `desc` says "(requires attunement". The `requires_attunement` field is not
+   used: it is set on 35 items only, while the text says it of 176. One item whose text says it later in the
+   description (`hammer-of-thunderbolts`) is linked by hand.
+2. `activating-an-item` for an item with `uses` (Charges), for an item whose text names a command word (Command Word),
+   and for potions and scrolls (Consumables, and Spells for a scroll).
+3. `making-an-attack` for a magic weapon and `using-each-ability` for magic armor.
+4. `wearing-and-wielding-items` (Paired Items) for the boots, bracers, gauntlets, gloves and slippers, by hand.
+
+`src/2014/tests/rule-reference-links.test.ts` checks that every link resolves, appears once, points at no entry of its
+own collection and is in reading order, that each link has one of the reasons above, that every curated phrase is in
+its target, and that the files are what `pnpm run derive:rules` writes.
+
+#### Limits of these links
+
+- An italic spell name in a rule section says that the section uses the spell, not that it explains it. The traps,
+  diseases and madness sections write spell names in examples and cures (`dispel-magic` in `traps`,
+  `lesser-restoration` in `diseases`).
+- A category link says the rules of the section apply to the whole category, not that the item is explained there. All
+  the weapons link to `making-an-attack`, and every cantrip links to `what-is-a-spell`.
+- Every leveled spell links to `what-is-a-spell` (Spell Slots), so that link does not tell spells apart.
+- The matching is on English text. Spells with a saving throw that the structured data does not hold (the 23 spells
+  whose text mentions a saving throw but have no `dc`) have no Spell Saving Throws link.
+- A magic item whose attunement is not in its first line, or whose properties are only in the description, may have no
+  link. The magic items that have none (71) are mostly wondrous items and other magic items with no attunement,
+  charge, command word, or consumable. Equipment has no link where no category or curated entry applies (104 items).
 
 ## Translation overlays
 

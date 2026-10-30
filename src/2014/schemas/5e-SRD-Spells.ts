@@ -1,5 +1,10 @@
 import { z } from 'zod';
-import { APIReferenceSchema, AreaOfEffectSchema, translatable } from '../../schemas/common';
+import {
+  APIReferenceSchema,
+  AreaOfEffectSchema,
+  RuleLinkSchema,
+  translatable,
+} from '../../schemas/common';
 
 /**
  * A dice amount as data: `dice` is `NdM`, `bonus` a flat number added to it, and `add_spellcasting_mod` is true when
@@ -92,6 +97,8 @@ export const SpellSchema = z.strictObject({
   temp_hp_at_slot_level: z.record(z.string(), SpellDiceAmountSchema).optional(),
   targets_at_slot_level: z.record(z.string(), z.number()).optional(),
   engine: SpellEngineSchema.optional(),
+  // Rule sections that give the rules this spell uses or is covered by, from docs/rule-reference.md. Never translated.
+  related: z.array(RuleLinkSchema).min(1).optional(),
   school: APIReferenceSchema,
   classes: z.array(APIReferenceSchema),
   subclasses: z.array(APIReferenceSchema).optional(),

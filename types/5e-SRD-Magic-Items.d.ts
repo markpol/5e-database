@@ -125,6 +125,10 @@ export type MagicItem = {
     } | undefined;
     proficiency_ids?: string[] | undefined;
     requires_attunement?: boolean | undefined;
+    related?: {
+        collection: "rule-sections";
+        index: string;
+    }[] | undefined;
     is_consumable?: boolean | undefined;
     weight?: number | undefined;
     desc?: string[] | undefined;

@@ -100,7 +100,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/acid-arrow"
+    "url": "/api/2014/spells/acid-arrow",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "acid-splash",
@@ -177,7 +187,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/acid-splash"
+    "url": "/api/2014/spells/acid-splash",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "aid",
@@ -245,7 +265,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/aid"
+    "url": "/api/2014/spells/aid",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "alarm",
@@ -300,7 +326,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/alarm"
+    "url": "/api/2014/spells/alarm",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "alter-self",
@@ -351,7 +387,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/alter-self"
+    "url": "/api/2014/spells/alter-self",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "animal-friendship",
@@ -413,7 +459,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/animal-friendship"
+    "url": "/api/2014/spells/animal-friendship",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "animal-messenger",
@@ -471,7 +527,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/animal-messenger"
+    "url": "/api/2014/spells/animal-messenger",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "animal-shapes",
@@ -510,7 +572,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/animal-shapes"
+    "url": "/api/2014/spells/animal-shapes",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "animate-dead",
@@ -563,7 +635,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/animate-dead"
+    "url": "/api/2014/spells/animate-dead",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "animate-objects",
@@ -624,7 +706,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/animate-objects"
+    "url": "/api/2014/spells/animate-objects",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "antilife-shell",
@@ -667,7 +759,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/antilife-shell"
+    "url": "/api/2014/spells/antilife-shell",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "antimagic-field",
@@ -723,7 +825,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/antimagic-field"
+    "url": "/api/2014/spells/antimagic-field",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "antipathy-sympathy",
@@ -783,7 +895,21 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/antipathy-sympathy"
+    "url": "/api/2014/spells/antipathy-sympathy",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "traps"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "arcane-eye",
@@ -832,7 +958,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/arcane-eye"
+    "url": "/api/2014/spells/arcane-eye",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "arcane-hand",
@@ -879,7 +1015,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/arcane-hand"
+    "url": "/api/2014/spells/arcane-hand",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "arcane-lock",
@@ -923,7 +1069,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/arcane-lock"
+    "url": "/api/2014/spells/arcane-lock",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "traps"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "arcane-sword",
@@ -991,7 +1147,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/arcane-sword"
+    "url": "/api/2014/spells/arcane-sword",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "arcanists-magic-aura",
@@ -1038,7 +1204,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/arcanists-magic-aura"
+    "url": "/api/2014/spells/arcanists-magic-aura",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "astral-projection",
@@ -1090,7 +1262,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/astral-projection"
+    "url": "/api/2014/spells/astral-projection",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "the-planes-of-existence"
+      }
+    ]
   },
   {
     "index": "augury",
@@ -1139,7 +1321,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/augury"
+    "url": "/api/2014/spells/augury",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "awaken",
@@ -1182,7 +1370,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/awaken"
+    "url": "/api/2014/spells/awaken",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "bane",
@@ -1253,7 +1447,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/bane"
+    "url": "/api/2014/spells/bane",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "banishment",
@@ -1338,7 +1542,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/banishment"
+    "url": "/api/2014/spells/banishment",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "barkskin",
@@ -1392,7 +1606,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/barkskin"
+    "url": "/api/2014/spells/barkskin",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "beacon-of-hope",
@@ -1451,7 +1675,17 @@
         "url": "/api/2014/subclasses/devotion"
       }
     ],
-    "url": "/api/2014/spells/beacon-of-hope"
+    "url": "/api/2014/spells/beacon-of-hope",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "bestow-curse",
@@ -1521,7 +1755,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/bestow-curse"
+    "url": "/api/2014/spells/bestow-curse",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "black-tentacles",
@@ -1597,7 +1841,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/black-tentacles"
+    "url": "/api/2014/spells/black-tentacles",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "blade-barrier",
@@ -1670,7 +1924,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/blade-barrier"
+    "url": "/api/2014/spells/blade-barrier",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "bless",
@@ -1744,7 +2008,17 @@
         "url": "/api/2014/subclasses/life"
       }
     ],
-    "url": "/api/2014/spells/bless"
+    "url": "/api/2014/spells/bless",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "blight",
@@ -1857,7 +2131,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/blight"
+    "url": "/api/2014/spells/blight",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "blindness-deafness",
@@ -1947,7 +2231,17 @@
         "url": "/api/2014/subclasses/fiend"
       }
     ],
-    "url": "/api/2014/spells/blindness-deafness"
+    "url": "/api/2014/spells/blindness-deafness",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "blink",
@@ -1996,7 +2290,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/blink"
+    "url": "/api/2014/spells/blink",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "blur",
@@ -2049,7 +2349,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/blur"
+    "url": "/api/2014/spells/blur",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "branding-smite",
@@ -2140,7 +2450,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/branding-smite"
+    "url": "/api/2014/spells/branding-smite",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "burning-hands",
@@ -2263,7 +2583,17 @@
         "url": "/api/2014/subclasses/fiend"
       }
     ],
-    "url": "/api/2014/spells/burning-hands"
+    "url": "/api/2014/spells/burning-hands",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "call-lightning",
@@ -2375,7 +2705,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/call-lightning"
+    "url": "/api/2014/spells/call-lightning",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "calm-emotions",
@@ -2442,7 +2782,21 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/calm-emotions"
+    "url": "/api/2014/spells/calm-emotions",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "madness"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "chain-lightning",
@@ -2525,7 +2879,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/chain-lightning"
+    "url": "/api/2014/spells/chain-lightning",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "charm-person",
@@ -2616,7 +2980,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/charm-person"
+    "url": "/api/2014/spells/charm-person",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "chill-touch",
@@ -2693,7 +3067,21 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/chill-touch"
+    "url": "/api/2014/spells/chill-touch",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "damage-and-healing"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "circle-of-death",
@@ -2790,7 +3178,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/circle-of-death"
+    "url": "/api/2014/spells/circle-of-death",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "clairvoyance",
@@ -2851,7 +3249,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/clairvoyance"
+    "url": "/api/2014/spells/clairvoyance",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "clone",
@@ -2889,7 +3297,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/clone"
+    "url": "/api/2014/spells/clone",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "cloudkill",
@@ -2994,7 +3408,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/cloudkill"
+    "url": "/api/2014/spells/cloudkill",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "color-spray",
@@ -3051,7 +3475,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/color-spray"
+    "url": "/api/2014/spells/color-spray",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "command",
@@ -3138,7 +3572,17 @@
         "url": "/api/2014/subclasses/fiend"
       }
     ],
-    "url": "/api/2014/spells/command"
+    "url": "/api/2014/spells/command",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "commune",
@@ -3184,7 +3628,13 @@
         "url": "/api/2014/subclasses/devotion"
       }
     ],
-    "url": "/api/2014/spells/commune"
+    "url": "/api/2014/spells/commune",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "commune-with-nature",
@@ -3238,7 +3688,13 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/commune-with-nature"
+    "url": "/api/2014/spells/commune-with-nature",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "comprehend-languages",
@@ -3298,7 +3754,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/comprehend-languages"
+    "url": "/api/2014/spells/comprehend-languages",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "compulsion",
@@ -3350,7 +3812,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/compulsion"
+    "url": "/api/2014/spells/compulsion",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "cone-of-cold",
@@ -3454,7 +3926,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/cone-of-cold"
+    "url": "/api/2014/spells/cone-of-cold",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "confusion",
@@ -3530,7 +4012,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/confusion"
+    "url": "/api/2014/spells/confusion",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "conjure-animals",
@@ -3588,7 +4080,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/conjure-animals"
+    "url": "/api/2014/spells/conjure-animals",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "conjure-celestial",
@@ -3630,7 +4132,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/conjure-celestial"
+    "url": "/api/2014/spells/conjure-celestial",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "conjure-elemental",
@@ -3689,7 +4201,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/conjure-elemental"
+    "url": "/api/2014/spells/conjure-elemental",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "conjure-fey",
@@ -3737,7 +4259,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/conjure-fey"
+    "url": "/api/2014/spells/conjure-fey",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "conjure-minor-elementals",
@@ -3789,7 +4321,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/conjure-minor-elementals"
+    "url": "/api/2014/spells/conjure-minor-elementals",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "conjure-woodland-beings",
@@ -3842,7 +4384,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/conjure-woodland-beings"
+    "url": "/api/2014/spells/conjure-woodland-beings",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "contact-other-plane",
@@ -3894,7 +4446,21 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/contact-other-plane"
+    "url": "/api/2014/spells/contact-other-plane",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "madness"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "contagion",
@@ -3960,7 +4526,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/contagion"
+    "url": "/api/2014/spells/contagion",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "contingency",
@@ -4000,7 +4576,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/contingency"
+    "url": "/api/2014/spells/contingency",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "continual-flame",
@@ -4048,7 +4630,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/continual-flame"
+    "url": "/api/2014/spells/continual-flame",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "control-water",
@@ -4133,7 +4721,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/control-water"
+    "url": "/api/2014/spells/control-water",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "control-weather",
@@ -4214,7 +4812,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/control-weather"
+    "url": "/api/2014/spells/control-weather",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "counterspell",
@@ -4263,7 +4871,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/counterspell"
+    "url": "/api/2014/spells/counterspell",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "create-food-and-water",
@@ -4320,7 +4934,13 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/create-food-and-water"
+    "url": "/api/2014/spells/create-food-and-water",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "create-undead",
@@ -4372,7 +4992,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/create-undead"
+    "url": "/api/2014/spells/create-undead",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "create-or-destroy-water",
@@ -4429,7 +5055,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/create-or-destroy-water"
+    "url": "/api/2014/spells/create-or-destroy-water",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "creation",
@@ -4487,7 +5123,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/creation"
+    "url": "/api/2014/spells/creation",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "cure-wounds",
@@ -4612,7 +5258,17 @@
         "url": "/api/2014/subclasses/life"
       }
     ],
-    "url": "/api/2014/spells/cure-wounds"
+    "url": "/api/2014/spells/cure-wounds",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "damage-and-healing"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "dancing-lights",
@@ -4667,7 +5323,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/dancing-lights"
+    "url": "/api/2014/spells/dancing-lights",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "darkness",
@@ -4732,7 +5398,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/darkness"
+    "url": "/api/2014/spells/darkness",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "darkvision",
@@ -4791,7 +5467,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/darkvision"
+    "url": "/api/2014/spells/darkvision",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "daylight",
@@ -4865,7 +5547,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/daylight"
+    "url": "/api/2014/spells/daylight",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "death-ward",
@@ -4915,7 +5607,13 @@
         "url": "/api/2014/subclasses/life"
       }
     ],
-    "url": "/api/2014/spells/death-ward"
+    "url": "/api/2014/spells/death-ward",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "delayed-blast-fireball",
@@ -5007,7 +5705,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/delayed-blast-fireball"
+    "url": "/api/2014/spells/delayed-blast-fireball",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "demiplane",
@@ -5050,7 +5758,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/demiplane"
+    "url": "/api/2014/spells/demiplane",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "detect-evil-and-good",
@@ -5103,7 +5817,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/detect-evil-and-good"
+    "url": "/api/2014/spells/detect-evil-and-good",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "detect-magic",
@@ -5181,7 +5905,21 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/detect-magic"
+    "url": "/api/2014/spells/detect-magic",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "traps"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "detect-poison-and-disease",
@@ -5245,7 +5983,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/detect-poison-and-disease"
+    "url": "/api/2014/spells/detect-poison-and-disease",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "detect-thoughts",
@@ -5303,7 +6051,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/detect-thoughts"
+    "url": "/api/2014/spells/detect-thoughts",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "dimension-door",
@@ -5373,7 +6131,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/dimension-door"
+    "url": "/api/2014/spells/dimension-door",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "disguise-self",
@@ -5428,7 +6192,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/disguise-self"
+    "url": "/api/2014/spells/disguise-self",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "disintegrate",
@@ -5512,7 +6282,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/disintegrate"
+    "url": "/api/2014/spells/disintegrate",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "dispel-evil-and-good",
@@ -5567,7 +6347,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/dispel-evil-and-good"
+    "url": "/api/2014/spells/dispel-evil-and-good",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "dispel-magic",
@@ -5647,7 +6437,17 @@
         "url": "/api/2014/subclasses/devotion"
       }
     ],
-    "url": "/api/2014/spells/dispel-magic"
+    "url": "/api/2014/spells/dispel-magic",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "traps"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "divination",
@@ -5692,7 +6492,13 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/divination"
+    "url": "/api/2014/spells/divination",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "divine-favor",
@@ -5758,7 +6564,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/divine-favor"
+    "url": "/api/2014/spells/divine-favor",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "divine-word",
@@ -5814,7 +6630,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/divine-word"
+    "url": "/api/2014/spells/divine-word",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "dominate-beast",
@@ -5875,7 +6701,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/dominate-beast"
+    "url": "/api/2014/spells/dominate-beast",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "dominate-monster",
@@ -5948,7 +6784,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/dominate-monster"
+    "url": "/api/2014/spells/dominate-monster",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "dominate-person",
@@ -6016,7 +6862,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/dominate-person"
+    "url": "/api/2014/spells/dominate-person",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "dream",
@@ -6100,7 +6956,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/dream"
+    "url": "/api/2014/spells/dream",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "druidcraft",
@@ -6140,7 +7006,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/druidcraft"
+    "url": "/api/2014/spells/druidcraft",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "earthquake",
@@ -6198,7 +7070,21 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/earthquake"
+    "url": "/api/2014/spells/earthquake",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "objects"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "eldritch-blast",
@@ -6262,7 +7148,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/eldritch-blast"
+    "url": "/api/2014/spells/eldritch-blast",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "enhance-ability",
@@ -6340,7 +7236,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/enhance-ability"
+    "url": "/api/2014/spells/enhance-ability",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "enlarge-reduce",
@@ -6400,7 +7306,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/enlarge-reduce"
+    "url": "/api/2014/spells/enlarge-reduce",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "entangle",
@@ -6463,7 +7379,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/entangle"
+    "url": "/api/2014/spells/entangle",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "enthrall",
@@ -6525,7 +7451,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/enthrall"
+    "url": "/api/2014/spells/enthrall",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "etherealness",
@@ -6589,7 +7525,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/etherealness"
+    "url": "/api/2014/spells/etherealness",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "the-planes-of-existence"
+      }
+    ]
   },
   {
     "index": "expeditious-retreat",
@@ -6642,7 +7588,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/expeditious-retreat"
+    "url": "/api/2014/spells/expeditious-retreat",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "eyebite",
@@ -6712,7 +7668,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/eyebite"
+    "url": "/api/2014/spells/eyebite",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "fabricate",
@@ -6750,7 +7716,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/fabricate"
+    "url": "/api/2014/spells/fabricate",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "faerie-fire",
@@ -6812,7 +7784,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/faerie-fire"
+    "url": "/api/2014/spells/faerie-fire",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "faithful-hound",
@@ -6876,7 +7858,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/faithful-hound"
+    "url": "/api/2014/spells/faithful-hound",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "false-life",
@@ -6983,7 +7975,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/false-life"
+    "url": "/api/2014/spells/false-life",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "fear",
@@ -7062,7 +8060,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/fear"
+    "url": "/api/2014/spells/fear",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "feather-fall",
@@ -7116,7 +8124,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/feather-fall"
+    "url": "/api/2014/spells/feather-fall",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "feeblemind",
@@ -7203,7 +8217,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/feeblemind"
+    "url": "/api/2014/spells/feeblemind",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "find-familiar",
@@ -7246,7 +8270,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/find-familiar"
+    "url": "/api/2014/spells/find-familiar",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "find-steed",
@@ -7292,7 +8322,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/find-steed"
+    "url": "/api/2014/spells/find-steed",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "find-traps",
@@ -7345,7 +8381,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/find-traps"
+    "url": "/api/2014/spells/find-traps",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "find-the-path",
@@ -7394,7 +8436,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/find-the-path"
+    "url": "/api/2014/spells/find-the-path",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "finger-of-death",
@@ -7473,7 +8525,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/finger-of-death"
+    "url": "/api/2014/spells/finger-of-death",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "fire-bolt",
@@ -7537,7 +8599,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/fire-bolt"
+    "url": "/api/2014/spells/fire-bolt",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "fire-shield",
@@ -7610,7 +8682,17 @@
         "url": "/api/2014/subclasses/fiend"
       }
     ],
-    "url": "/api/2014/spells/fire-shield"
+    "url": "/api/2014/spells/fire-shield",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "fire-storm",
@@ -7692,7 +8774,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/fire-storm"
+    "url": "/api/2014/spells/fire-storm",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "fireball",
@@ -7808,7 +8900,21 @@
         "url": "/api/2014/subclasses/fiend"
       }
     ],
-    "url": "/api/2014/spells/fireball"
+    "url": "/api/2014/spells/fireball",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "damage-and-healing"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "flame-blade",
@@ -7892,7 +8998,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/flame-blade"
+    "url": "/api/2014/spells/flame-blade",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "flame-strike",
@@ -7991,7 +9107,21 @@
         "url": "/api/2014/subclasses/fiend"
       }
     ],
-    "url": "/api/2014/spells/flame-strike"
+    "url": "/api/2014/spells/flame-strike",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "damage-and-healing"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "flaming-sphere",
@@ -8104,7 +9234,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/flaming-sphere"
+    "url": "/api/2014/spells/flaming-sphere",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "flesh-to-stone",
@@ -8165,7 +9305,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/flesh-to-stone"
+    "url": "/api/2014/spells/flesh-to-stone",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "floating-disk",
@@ -8211,7 +9361,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/floating-disk"
+    "url": "/api/2014/spells/floating-disk",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "fly",
@@ -8277,7 +9433,21 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/fly"
+    "url": "/api/2014/spells/fly",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement-and-position"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "fog-cloud",
@@ -8342,7 +9512,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/fog-cloud"
+    "url": "/api/2014/spells/fog-cloud",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "forbiddance",
@@ -8419,7 +9599,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/forbiddance"
+    "url": "/api/2014/spells/forbiddance",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "forcecage",
@@ -8476,7 +9666,21 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/forcecage"
+    "url": "/api/2014/spells/forcecage",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "the-planes-of-existence"
+      }
+    ]
   },
   {
     "index": "foresight",
@@ -8530,7 +9734,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/foresight"
+    "url": "/api/2014/spells/foresight",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "freedom-of-movement",
@@ -8595,7 +9805,13 @@
         "url": "/api/2014/subclasses/devotion"
       }
     ],
-    "url": "/api/2014/spells/freedom-of-movement"
+    "url": "/api/2014/spells/freedom-of-movement",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "freezing-sphere",
@@ -8672,7 +9888,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/freezing-sphere"
+    "url": "/api/2014/spells/freezing-sphere",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "gaseous-form",
@@ -8733,7 +9959,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/gaseous-form"
+    "url": "/api/2014/spells/gaseous-form",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "gate",
@@ -8784,7 +10020,21 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/gate"
+    "url": "/api/2014/spells/gate",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "the-planes-of-existence"
+      }
+    ]
   },
   {
     "index": "geas",
@@ -8854,7 +10104,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/geas"
+    "url": "/api/2014/spells/geas",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "gentle-repose",
@@ -8904,7 +10164,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/gentle-repose"
+    "url": "/api/2014/spells/gentle-repose",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "giant-insect",
@@ -8944,7 +10210,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/giant-insect"
+    "url": "/api/2014/spells/giant-insect",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "glibness",
@@ -8986,7 +10262,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/glibness"
+    "url": "/api/2014/spells/glibness",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "globe-of-invulnerability",
@@ -9037,7 +10319,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/globe-of-invulnerability"
+    "url": "/api/2014/spells/globe-of-invulnerability",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "glyph-of-warding",
@@ -9314,7 +10606,21 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/glyph-of-warding"
+    "url": "/api/2014/spells/glyph-of-warding",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "traps"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "goodberry",
@@ -9357,7 +10663,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/goodberry"
+    "url": "/api/2014/spells/goodberry",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "grease",
@@ -9420,7 +10732,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/grease"
+    "url": "/api/2014/spells/grease",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "greater-invisibility",
@@ -9473,7 +10795,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/greater-invisibility"
+    "url": "/api/2014/spells/greater-invisibility",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "greater-restoration",
@@ -9530,7 +10862,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/greater-restoration"
+    "url": "/api/2014/spells/greater-restoration",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "madness"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "guardian-of-faith",
@@ -9598,7 +10940,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/guardian-of-faith"
+    "url": "/api/2014/spells/guardian-of-faith",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "guards-and-wards",
@@ -9658,7 +11010,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/guards-and-wards"
+    "url": "/api/2014/spells/guards-and-wards",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "guidance",
@@ -9706,7 +11068,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/guidance"
+    "url": "/api/2014/spells/guidance",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "guiding-bolt",
@@ -9808,7 +11180,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/guiding-bolt"
+    "url": "/api/2014/spells/guiding-bolt",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "gust-of-wind",
@@ -9877,7 +11259,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/gust-of-wind"
+    "url": "/api/2014/spells/gust-of-wind",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "hallow",
@@ -9944,7 +11336,17 @@
         "url": "/api/2014/subclasses/fiend"
       }
     ],
-    "url": "/api/2014/spells/hallow"
+    "url": "/api/2014/spells/hallow",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "hallucinatory-terrain",
@@ -10008,7 +11410,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/hallucinatory-terrain"
+    "url": "/api/2014/spells/hallucinatory-terrain",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "harm",
@@ -10075,7 +11487,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/harm"
+    "url": "/api/2014/spells/harm",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "haste",
@@ -10130,7 +11552,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/haste"
+    "url": "/api/2014/spells/haste",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "heal",
@@ -10186,7 +11618,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/heal"
+    "url": "/api/2014/spells/heal",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "diseases"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "healing-word",
@@ -10296,7 +11738,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/healing-word"
+    "url": "/api/2014/spells/healing-word",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "heat-metal",
@@ -10409,7 +11857,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/heat-metal"
+    "url": "/api/2014/spells/heat-metal",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "hellish-rebuke",
@@ -10511,7 +11969,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/hellish-rebuke"
+    "url": "/api/2014/spells/hellish-rebuke",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "heroes-feast",
@@ -10554,7 +12022,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/heroes-feast"
+    "url": "/api/2014/spells/heroes-feast",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "heroism",
@@ -10602,7 +12076,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/heroism"
+    "url": "/api/2014/spells/heroism",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "hideous-laughter",
@@ -10666,7 +12150,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/hideous-laughter"
+    "url": "/api/2014/spells/hideous-laughter",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "hold-monster",
@@ -10743,7 +12237,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/hold-monster"
+    "url": "/api/2014/spells/hold-monster",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "hold-person",
@@ -10844,7 +12348,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/hold-person"
+    "url": "/api/2014/spells/hold-person",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "holy-aura",
@@ -10900,7 +12414,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/holy-aura"
+    "url": "/api/2014/spells/holy-aura",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "hunters-mark",
@@ -10958,7 +12482,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/hunters-mark"
+    "url": "/api/2014/spells/hunters-mark",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "hypnotic-pattern",
@@ -11037,7 +12571,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/hypnotic-pattern"
+    "url": "/api/2014/spells/hypnotic-pattern",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "ice-storm",
@@ -11184,7 +12728,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/ice-storm"
+    "url": "/api/2014/spells/ice-storm",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "identify",
@@ -11233,7 +12787,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/identify"
+    "url": "/api/2014/spells/identify",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "illusory-script",
@@ -11290,7 +12850,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/illusory-script"
+    "url": "/api/2014/spells/illusory-script",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "imprisonment",
@@ -11355,7 +12921,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/imprisonment"
+    "url": "/api/2014/spells/imprisonment",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "incendiary-cloud",
@@ -11434,7 +13010,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/incendiary-cloud"
+    "url": "/api/2014/spells/incendiary-cloud",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "inflict-wounds",
@@ -11535,7 +13121,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/inflict-wounds"
+    "url": "/api/2014/spells/inflict-wounds",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "insect-plague",
@@ -11644,7 +13240,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/insect-plague"
+    "url": "/api/2014/spells/insect-plague",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "instant-summons",
@@ -11684,7 +13290,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/instant-summons"
+    "url": "/api/2014/spells/instant-summons",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "invisibility",
@@ -11761,7 +13373,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/invisibility"
+    "url": "/api/2014/spells/invisibility",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "irresistible-dance",
@@ -11804,7 +13426,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/irresistible-dance"
+    "url": "/api/2014/spells/irresistible-dance",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "jump",
@@ -11861,7 +13493,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/jump"
+    "url": "/api/2014/spells/jump",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "knock",
@@ -11916,7 +13554,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/knock"
+    "url": "/api/2014/spells/knock",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "legend-lore",
@@ -11964,7 +13608,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/legend-lore"
+    "url": "/api/2014/spells/legend-lore",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "lesser-restoration",
@@ -12042,7 +13692,21 @@
         "url": "/api/2014/subclasses/devotion"
       }
     ],
-    "url": "/api/2014/spells/lesser-restoration"
+    "url": "/api/2014/spells/lesser-restoration",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "diseases"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "madness"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "levitate",
@@ -12093,7 +13757,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/levitate"
+    "url": "/api/2014/spells/levitate",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "light",
@@ -12161,7 +13835,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/light"
+    "url": "/api/2014/spells/light",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "lightning-bolt",
@@ -12277,7 +13961,21 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/lightning-bolt"
+    "url": "/api/2014/spells/lightning-bolt",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "damage-and-healing"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "locate-animals-or-plants",
@@ -12330,7 +14028,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/locate-animals-or-plants"
+    "url": "/api/2014/spells/locate-animals-or-plants",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "locate-creature",
@@ -12401,7 +14105,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/locate-creature"
+    "url": "/api/2014/spells/locate-creature",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "locate-object",
@@ -12472,7 +14186,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/locate-object"
+    "url": "/api/2014/spells/locate-object",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "longstrider",
@@ -12543,7 +14267,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/longstrider"
+    "url": "/api/2014/spells/longstrider",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "mage-armor",
@@ -12598,7 +14328,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/mage-armor"
+    "url": "/api/2014/spells/mage-armor",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "mage-hand",
@@ -12658,7 +14394,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/mage-hand"
+    "url": "/api/2014/spells/mage-hand",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "magic-circle",
@@ -12738,7 +14480,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/magic-circle"
+    "url": "/api/2014/spells/magic-circle",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "magic-jar",
@@ -12790,7 +14542,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/magic-jar"
+    "url": "/api/2014/spells/magic-jar",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "magic-missile",
@@ -12915,7 +14677,25 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/magic-missile"
+    "url": "/api/2014/spells/magic-missile",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "actions-in-combat"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "damage-and-healing"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "magic-mouth",
@@ -12966,7 +14746,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/magic-mouth"
+    "url": "/api/2014/spells/magic-mouth",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "magic-weapon",
@@ -13023,7 +14809,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/magic-weapon"
+    "url": "/api/2014/spells/magic-weapon",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "magnificent-mansion",
@@ -13072,7 +14868,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/magnificent-mansion"
+    "url": "/api/2014/spells/magnificent-mansion",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "major-image",
@@ -13136,7 +14942,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/major-image"
+    "url": "/api/2014/spells/major-image",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "mass-cure-wounds",
@@ -13230,7 +15046,17 @@
         "url": "/api/2014/subclasses/life"
       }
     ],
-    "url": "/api/2014/spells/mass-cure-wounds"
+    "url": "/api/2014/spells/mass-cure-wounds",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "mass-heal",
@@ -13275,7 +15101,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/mass-heal"
+    "url": "/api/2014/spells/mass-heal",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "mass-healing-word",
@@ -13365,7 +15197,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/mass-healing-word"
+    "url": "/api/2014/spells/mass-healing-word",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "mass-suggestion",
@@ -13438,7 +15276,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/mass-suggestion"
+    "url": "/api/2014/spells/mass-suggestion",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "maze",
@@ -13477,7 +15325,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/maze"
+    "url": "/api/2014/spells/maze",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "meld-into-stone",
@@ -13527,7 +15385,13 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/meld-into-stone"
+    "url": "/api/2014/spells/meld-into-stone",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "mending",
@@ -13591,7 +15455,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/mending"
+    "url": "/api/2014/spells/mending",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "message",
@@ -13646,7 +15516,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/message"
+    "url": "/api/2014/spells/message",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "meteor-swarm",
@@ -13738,7 +15614,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/meteor-swarm"
+    "url": "/api/2014/spells/meteor-swarm",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "mind-blank",
@@ -13780,7 +15666,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/mind-blank"
+    "url": "/api/2014/spells/mind-blank",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "minor-illusion",
@@ -13842,7 +15734,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/minor-illusion"
+    "url": "/api/2014/spells/minor-illusion",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "mirage-arcane",
@@ -13896,7 +15794,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/mirage-arcane"
+    "url": "/api/2014/spells/mirage-arcane",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "mirror-image",
@@ -13958,7 +15866,13 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/mirror-image"
+    "url": "/api/2014/spells/mirror-image",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "mislead",
@@ -14002,7 +15916,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/mislead"
+    "url": "/api/2014/spells/mislead",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "misty-step",
@@ -14059,7 +15983,13 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/misty-step"
+    "url": "/api/2014/spells/misty-step",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "modify-memory",
@@ -14116,7 +16046,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/modify-memory"
+    "url": "/api/2014/spells/modify-memory",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "moonbeam",
@@ -14229,7 +16169,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/moonbeam"
+    "url": "/api/2014/spells/moonbeam",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "move-earth",
@@ -14285,7 +16235,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/move-earth"
+    "url": "/api/2014/spells/move-earth",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "nondetection",
@@ -14339,7 +16299,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/nondetection"
+    "url": "/api/2014/spells/nondetection",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "pass-without-trace",
@@ -14393,7 +16359,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/pass-without-trace"
+    "url": "/api/2014/spells/pass-without-trace",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "passwall",
@@ -14438,7 +16414,13 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/passwall"
+    "url": "/api/2014/spells/passwall",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "phantasmal-killer",
@@ -14509,7 +16491,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/phantasmal-killer"
+    "url": "/api/2014/spells/phantasmal-killer",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "phantom-steed",
@@ -14553,7 +16545,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/phantom-steed"
+    "url": "/api/2014/spells/phantom-steed",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "planar-ally",
@@ -14594,7 +16592,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/planar-ally"
+    "url": "/api/2014/spells/planar-ally",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "planar-binding",
@@ -14659,7 +16663,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/planar-binding"
+    "url": "/api/2014/spells/planar-binding",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "plane-shift",
@@ -14728,7 +16742,21 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/plane-shift"
+    "url": "/api/2014/spells/plane-shift",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "the-planes-of-existence"
+      }
+    ]
   },
   {
     "index": "plant-growth",
@@ -14788,7 +16816,13 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/plant-growth"
+    "url": "/api/2014/spells/plant-growth",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "poison-spray",
@@ -14869,7 +16903,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/poison-spray"
+    "url": "/api/2014/spells/poison-spray",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "polymorph",
@@ -14934,7 +16978,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/polymorph"
+    "url": "/api/2014/spells/polymorph",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "power-word-kill",
@@ -14985,7 +17039,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/power-word-kill"
+    "url": "/api/2014/spells/power-word-kill",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "power-word-stun",
@@ -15051,7 +17111,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/power-word-stun"
+    "url": "/api/2014/spells/power-word-stun",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "prayer-of-healing",
@@ -15146,7 +17216,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/prayer-of-healing"
+    "url": "/api/2014/spells/prayer-of-healing",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "prestidigitation",
@@ -15211,7 +17287,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/prestidigitation"
+    "url": "/api/2014/spells/prestidigitation",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "prismatic-spray",
@@ -15291,7 +17373,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/prismatic-spray"
+    "url": "/api/2014/spells/prismatic-spray",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "prismatic-wall",
@@ -15343,7 +17435,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/prismatic-wall"
+    "url": "/api/2014/spells/prismatic-wall",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "private-sanctum",
@@ -15396,7 +17498,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/private-sanctum"
+    "url": "/api/2014/spells/private-sanctum",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "produce-flame",
@@ -15463,7 +17575,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/produce-flame"
+    "url": "/api/2014/spells/produce-flame",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "programmed-illusion",
@@ -15512,7 +17634,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/programmed-illusion"
+    "url": "/api/2014/spells/programmed-illusion",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "project-image",
@@ -15558,7 +17690,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/project-image"
+    "url": "/api/2014/spells/project-image",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "protection-from-energy",
@@ -15626,7 +17768,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/protection-from-energy"
+    "url": "/api/2014/spells/protection-from-energy",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "protection-from-evil-and-good",
@@ -15691,7 +17843,17 @@
         "url": "/api/2014/subclasses/devotion"
       }
     ],
-    "url": "/api/2014/spells/protection-from-evil-and-good"
+    "url": "/api/2014/spells/protection-from-evil-and-good",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "protection-from-poison",
@@ -15750,7 +17912,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/protection-from-poison"
+    "url": "/api/2014/spells/protection-from-poison",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "purify-food-and-drink",
@@ -15802,7 +17970,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/purify-food-and-drink"
+    "url": "/api/2014/spells/purify-food-and-drink",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "raise-dead",
@@ -15858,7 +18032,13 @@
         "url": "/api/2014/subclasses/life"
       }
     ],
-    "url": "/api/2014/spells/raise-dead"
+    "url": "/api/2014/spells/raise-dead",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "ray-of-enfeeblement",
@@ -15922,7 +18102,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/ray-of-enfeeblement"
+    "url": "/api/2014/spells/ray-of-enfeeblement",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "ray-of-frost",
@@ -15992,7 +18182,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/ray-of-frost"
+    "url": "/api/2014/spells/ray-of-frost",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "regenerate",
@@ -16056,7 +18256,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/regenerate"
+    "url": "/api/2014/spells/regenerate",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "reincarnate",
@@ -16111,7 +18317,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/reincarnate"
+    "url": "/api/2014/spells/reincarnate",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "remove-curse",
@@ -16168,7 +18380,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/remove-curse"
+    "url": "/api/2014/spells/remove-curse",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "madness"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "resilient-sphere",
@@ -16217,7 +18439,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/resilient-sphere"
+    "url": "/api/2014/spells/resilient-sphere",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "resistance",
@@ -16266,7 +18498,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/resistance"
+    "url": "/api/2014/spells/resistance",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "resurrection",
@@ -16312,7 +18554,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/resurrection"
+    "url": "/api/2014/spells/resurrection",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "reverse-gravity",
@@ -16375,7 +18623,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/reverse-gravity"
+    "url": "/api/2014/spells/reverse-gravity",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "revivify",
@@ -16428,7 +18686,17 @@
         "url": "/api/2014/subclasses/life"
       }
     ],
-    "url": "/api/2014/spells/revivify"
+    "url": "/api/2014/spells/revivify",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "damage-and-healing"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "rope-trick",
@@ -16475,7 +18743,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/rope-trick"
+    "url": "/api/2014/spells/rope-trick",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "sacred-flame",
@@ -16547,7 +18821,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/sacred-flame"
+    "url": "/api/2014/spells/sacred-flame",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "sanctuary",
@@ -16611,7 +18895,17 @@
         "url": "/api/2014/subclasses/devotion"
       }
     ],
-    "url": "/api/2014/spells/sanctuary"
+    "url": "/api/2014/spells/sanctuary",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "scorching-ray",
@@ -16700,7 +18994,17 @@
         "url": "/api/2014/subclasses/fiend"
       }
     ],
-    "url": "/api/2014/spells/scorching-ray"
+    "url": "/api/2014/spells/scorching-ray",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "scrying",
@@ -16786,7 +19090,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/scrying"
+    "url": "/api/2014/spells/scrying",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "secret-chest",
@@ -16825,7 +19139,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/secret-chest"
+    "url": "/api/2014/spells/secret-chest",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "see-invisibility",
@@ -16879,7 +19199,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/see-invisibility"
+    "url": "/api/2014/spells/see-invisibility",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "the-planes-of-existence"
+      }
+    ]
   },
   {
     "index": "seeming",
@@ -16929,7 +19259,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/seeming"
+    "url": "/api/2014/spells/seeming",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "sending",
@@ -16984,7 +19320,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/sending"
+    "url": "/api/2014/spells/sending",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "sequester",
@@ -17023,7 +19365,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/sequester"
+    "url": "/api/2014/spells/sequester",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "shapechange",
@@ -17071,7 +19419,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/shapechange"
+    "url": "/api/2014/spells/shapechange",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "shatter",
@@ -17196,7 +19554,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/shatter"
+    "url": "/api/2014/spells/shatter",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "shield",
@@ -17244,7 +19612,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/shield"
+    "url": "/api/2014/spells/shield",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "shield-of-faith",
@@ -17299,7 +19677,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/shield-of-faith"
+    "url": "/api/2014/spells/shield-of-faith",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "shillelagh",
@@ -17343,7 +19731,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/shillelagh"
+    "url": "/api/2014/spells/shillelagh",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "shocking-grasp",
@@ -17413,7 +19807,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/shocking-grasp"
+    "url": "/api/2014/spells/shocking-grasp",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "silence",
@@ -17476,7 +19880,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/silence"
+    "url": "/api/2014/spells/silence",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "silent-image",
@@ -17536,7 +19950,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/silent-image"
+    "url": "/api/2014/spells/silent-image",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "simulacrum",
@@ -17576,7 +20000,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/simulacrum"
+    "url": "/api/2014/spells/simulacrum",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "sleep",
@@ -17657,7 +20087,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/sleep"
+    "url": "/api/2014/spells/sleep",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "sleet-storm",
@@ -17736,7 +20176,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/sleet-storm"
+    "url": "/api/2014/spells/sleet-storm",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "slow",
@@ -17806,7 +20256,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/slow"
+    "url": "/api/2014/spells/slow",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "spare-the-dying",
@@ -17848,7 +20308,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/spare-the-dying"
+    "url": "/api/2014/spells/spare-the-dying",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "speak-with-animals",
@@ -17901,7 +20367,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/speak-with-animals"
+    "url": "/api/2014/spells/speak-with-animals",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "speak-with-dead",
@@ -17951,7 +20423,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/speak-with-dead"
+    "url": "/api/2014/spells/speak-with-dead",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "speak-with-plants",
@@ -18012,7 +20490,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/speak-with-plants"
+    "url": "/api/2014/spells/speak-with-plants",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "spider-climb",
@@ -18071,7 +20559,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/spider-climb"
+    "url": "/api/2014/spells/spider-climb",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "spike-growth",
@@ -18153,7 +20651,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/spike-growth"
+    "url": "/api/2014/spells/spike-growth",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "spirit-guardians",
@@ -18299,7 +20807,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/spirit-guardians"
+    "url": "/api/2014/spells/spirit-guardians",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "spiritual-weapon",
@@ -18412,7 +20930,21 @@
         "url": "/api/2014/subclasses/life"
       }
     ],
-    "url": "/api/2014/spells/spiritual-weapon"
+    "url": "/api/2014/spells/spiritual-weapon",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "damage-and-healing"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "stinking-cloud",
@@ -18491,7 +21023,17 @@
         "url": "/api/2014/subclasses/fiend"
       }
     ],
-    "url": "/api/2014/spells/stinking-cloud"
+    "url": "/api/2014/spells/stinking-cloud",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "stone-shape",
@@ -18544,7 +21086,13 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/stone-shape"
+    "url": "/api/2014/spells/stone-shape",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "stoneskin",
@@ -18603,7 +21151,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/stoneskin"
+    "url": "/api/2014/spells/stoneskin",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "storm-of-vengeance",
@@ -18681,7 +21239,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/storm-of-vengeance"
+    "url": "/api/2014/spells/storm-of-vengeance",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "suggestion",
@@ -18757,7 +21325,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/suggestion"
+    "url": "/api/2014/spells/suggestion",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "sunbeam",
@@ -18843,7 +21421,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/sunbeam"
+    "url": "/api/2014/spells/sunbeam",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "sunburst",
@@ -18928,7 +21516,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/sunburst"
+    "url": "/api/2014/spells/sunburst",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "symbol",
@@ -18991,7 +21589,25 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/symbol"
+    "url": "/api/2014/spells/symbol",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "traps"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "madness"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "telekinesis",
@@ -19042,7 +21658,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/telekinesis"
+    "url": "/api/2014/spells/telekinesis",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "telepathic-bond",
@@ -19081,7 +21707,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/telepathic-bond"
+    "url": "/api/2014/spells/telepathic-bond",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "teleport",
@@ -19152,7 +21784,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/teleport"
+    "url": "/api/2014/spells/teleport",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "teleportation-circle",
@@ -19206,7 +21848,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/teleportation-circle"
+    "url": "/api/2014/spells/teleportation-circle",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "thaumaturgy",
@@ -19256,7 +21908,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/thaumaturgy"
+    "url": "/api/2014/spells/thaumaturgy",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "thunderwave",
@@ -19384,7 +22042,21 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/thunderwave"
+    "url": "/api/2014/spells/thunderwave",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "damage-and-healing"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "time-stop",
@@ -19426,7 +22098,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/time-stop"
+    "url": "/api/2014/spells/time-stop",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "tiny-hut",
@@ -19481,7 +22159,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/tiny-hut"
+    "url": "/api/2014/spells/tiny-hut",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "tongues",
@@ -19545,7 +22233,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/tongues"
+    "url": "/api/2014/spells/tongues",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "transport-via-plants",
@@ -19582,7 +22276,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/transport-via-plants"
+    "url": "/api/2014/spells/transport-via-plants",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "tree-stride",
@@ -19631,7 +22331,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/tree-stride"
+    "url": "/api/2014/spells/tree-stride",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "true-polymorph",
@@ -19687,7 +22397,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/true-polymorph"
+    "url": "/api/2014/spells/true-polymorph",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "true-resurrection",
@@ -19731,7 +22451,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/true-resurrection"
+    "url": "/api/2014/spells/true-resurrection",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "true-seeing",
@@ -19789,7 +22515,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/true-seeing"
+    "url": "/api/2014/spells/true-seeing",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "the-planes-of-existence"
+      }
+    ]
   },
   {
     "index": "true-strike",
@@ -19847,7 +22583,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/true-strike"
+    "url": "/api/2014/spells/true-strike",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "unseen-servant",
@@ -19903,7 +22649,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/unseen-servant"
+    "url": "/api/2014/spells/unseen-servant",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "vampiric-touch",
@@ -20002,7 +22754,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/vampiric-touch"
+    "url": "/api/2014/spells/vampiric-touch",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "vicious-mockery",
@@ -20068,7 +22830,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/vicious-mockery"
+    "url": "/api/2014/spells/vicious-mockery",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "wall-of-fire",
@@ -20163,7 +22935,17 @@
         "url": "/api/2014/subclasses/fiend"
       }
     ],
-    "url": "/api/2014/spells/wall-of-fire"
+    "url": "/api/2014/spells/wall-of-fire",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "wall-of-force",
@@ -20202,7 +22984,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/wall-of-force"
+    "url": "/api/2014/spells/wall-of-force",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "wall-of-ice",
@@ -20292,7 +23084,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/wall-of-ice"
+    "url": "/api/2014/spells/wall-of-ice",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "wall-of-stone",
@@ -20351,7 +23153,17 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/wall-of-stone"
+    "url": "/api/2014/spells/wall-of-stone",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "wall-of-thorns",
@@ -20468,7 +23280,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/wall-of-thorns"
+    "url": "/api/2014/spells/wall-of-thorns",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "warding-bond",
@@ -20514,7 +23336,13 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/warding-bond"
+    "url": "/api/2014/spells/warding-bond",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "water-breathing",
@@ -20578,7 +23406,13 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/water-breathing"
+    "url": "/api/2014/spells/water-breathing",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "water-walk",
@@ -20643,7 +23477,13 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/water-walk"
+    "url": "/api/2014/spells/water-walk",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "web",
@@ -20719,7 +23559,21 @@
         "url": "/api/2014/subclasses/land"
       }
     ],
-    "url": "/api/2014/spells/web"
+    "url": "/api/2014/spells/web",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "actions-in-combat"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "weird",
@@ -20791,7 +23645,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/weird"
+    "url": "/api/2014/spells/weird",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "wind-walk",
@@ -20830,7 +23694,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/wind-walk"
+    "url": "/api/2014/spells/wind-walk",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "wind-wall",
@@ -20916,7 +23786,17 @@
         "url": "/api/2014/subclasses/lore"
       }
     ],
-    "url": "/api/2014/spells/wind-wall"
+    "url": "/api/2014/spells/wind-wall",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "wish",
@@ -20966,7 +23846,13 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/wish"
+    "url": "/api/2014/spells/wish",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "word-of-recall",
@@ -21007,7 +23893,17 @@
       }
     ],
     "subclasses": [],
-    "url": "/api/2014/spells/word-of-recall"
+    "url": "/api/2014/spells/word-of-recall",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "zone-of-truth",
@@ -21078,6 +23974,20 @@
         "url": "/api/2014/subclasses/devotion"
       }
     ],
-    "url": "/api/2014/spells/zone-of-truth"
+    "url": "/api/2014/spells/zone-of-truth",
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "poisons"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   }
 ]

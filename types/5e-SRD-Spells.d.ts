@@ -83,6 +83,10 @@ export type Spell = {
         campaign: boolean;
         npc: boolean;
     } | undefined;
+    related?: {
+        collection: "rule-sections";
+        index: string;
+    }[] | undefined;
     subclasses?: {
         index: string;
         name: string;

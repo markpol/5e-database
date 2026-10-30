@@ -1,5 +1,10 @@
 import { z } from 'zod';
-import { APIReferenceSchema, DamageSchema, translatable } from '../../schemas/common';
+import {
+  APIReferenceSchema,
+  DamageSchema,
+  RuleLinkSchema,
+  translatable,
+} from '../../schemas/common';
 import { ItemEffectsSchema } from '../../schemas/item-effects';
 
 const CostSchema = z.strictObject({
@@ -94,4 +99,6 @@ export const EquipmentSchema = z.strictObject({
   vehicle_category: translatable(z.string()).optional(),
   weapon_category: translatable(z.string()).optional(),
   weapon_range: translatable(z.string()).optional(),
+  // Rule sections that give the rules this item uses or is covered by, from docs/rule-reference.md. Never translated.
+  related: z.array(RuleLinkSchema).min(1).optional(),
 });
