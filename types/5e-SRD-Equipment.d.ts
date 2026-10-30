@@ -14,6 +14,7 @@ export type Equipment = {
         unit: string;
     };
     url: string;
+    cost_cp?: number | undefined;
     desc?: string[] | undefined;
     material?: string | undefined;
     stackable?: boolean | undefined;
@@ -25,6 +26,48 @@ export type Equipment = {
             damage_dice: string;
         }[] | undefined;
     } | undefined;
+    effects?: {
+        activation: "equipped" | "attuned" | "carried" | "use";
+        duration?: {
+            unit: "hour" | "permanent";
+            length?: number | undefined;
+        } | undefined;
+        armor_class?: {
+            bonus: number;
+        } | undefined;
+        ability?: {
+            ability: "int" | "str" | "dex" | "con" | "wis" | "cha";
+            op: "set" | "add";
+            value: number;
+            cap?: number | undefined;
+        } | undefined;
+        resistances?: string[] | undefined;
+        attack?: {
+            to_hit_bonus?: number | undefined;
+            damage_bonus?: number | undefined;
+            extra_damage?: {
+                damage_type: string;
+                damage_dice: string;
+            }[] | undefined;
+        } | undefined;
+        damage?: {
+            damage_type: string;
+            damage_dice: string;
+        }[] | undefined;
+        heal?: string | undefined;
+        saving_throws?: {
+            abilities: ("int" | "str" | "dex" | "con" | "wis" | "cha")[];
+            bonus?: number | undefined;
+            advantage?: true | undefined;
+        } | undefined;
+        skill_check?: {
+            skill: string;
+            bonus?: number | undefined;
+            advantage?: true | undefined;
+        } | undefined;
+        proficiencies?: string[] | undefined;
+        traits?: string[] | undefined;
+    }[] | undefined;
     weight?: number | undefined;
     gear_category?: {
         index: string;
@@ -75,7 +118,9 @@ export type Equipment = {
         url: string;
         note?: string | undefined;
     }[] | undefined;
+    bundle_size?: number | undefined;
     quantity?: number | undefined;
+    reach_ft?: number | undefined;
     range?: {
         normal: number;
         long?: number | undefined;

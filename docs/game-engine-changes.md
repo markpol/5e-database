@@ -22,6 +22,7 @@ removed.
 | Classes | `5e-SRD-Classes.json`, `derive-class-choices.ts` (new script) | Added a stable `id` to the 14 proficiency choices, the 39 starting-equipment choices, the 4 multi-classing proficiency choices and the 21 choices nested in their options (see "Classes: choice ids") |
 | Features | `5e-SRD-Features.json`, `derive-feature-engine.ts` (new script), `feature-engine-annotations.json` (new file) | Bard/Rogue Expertise reworked from a two-level nested choice (`choose 1` of a `choose 2` sub-choice) to a flat `choose 2`; trimmed some prose (e.g. Martial Arts' "nunchaku/kama" flavor text, Frenzy wording); added `feature_specific.engine` (`action_cost`, `recharge`, `uses`, `modifiers`) to 187 features (99 of levels 1 to 5 and 88 of levels 6 to 20, of every class), `heal` to 9, `granted_proficiencies` to 5 and `grants_asi` to the 63 Ability Score Improvements (see [feature-mechanics.md](feature-mechanics.md)); added `by_level` (an id for each count) to the 7 features whose count grows with the level and has a single record |
 | Magic items | `5e-SRD-Magic-Items.json` | Added a structured `effect` object (ability-score modifiers, damage-type resistance, healing, trait grants, duration) and an `enchantment` object (armor/weapon bonus, extra damage, to-hit bonus) to many items, so item bonuses are available as data and not only as prose; removed a handful of unusable/non-combat items |
+| Item data | `5e-SRD-Equipment.json`, `5e-SRD-Magic-Items.json`, `derive-item-data.ts` (new script) | Added `cost_cp` (cost in copper pieces) to 197 equipment entries and 361 magic items; `bundle_size` (5 equipment entries), `reach_ft` (28 melee weapons); `rarity.rank` and `rarity.min_level` to the magic items; and `effects`, one shape that restates `effect` and `enchantment` (2 equipment entries, 68 magic items), with the old fields unchanged (see [item-data.md](item-data.md)) |
 | Classes (spellcasting) | `5e-SRD-Classes.json`, `derive-class-spellcasting.ts` (new script) | Added `caster_kind` (8 classes), `prepared_formula` (4), `spellbook_size` (the wizard) and `subclass_spells` (8) to the existing `spellcasting` object (see [class-spellcasting.md](class-spellcasting.md)) |
 | Features (languages, dragons) | `5e-SRD-Features.json`, `feature-engine-annotations.json` | Added `feature_specific.granted_languages` to 15 features (Druidic, Thieves' Cant, the ten dragon ancestors, the three Favored Enemy records) and `feature_specific.damage_type` to the ten `dragon-ancestor-*` records (see [feature-mechanics.md](feature-mechanics.md)) |
 | Package/tooling | `package.json` | `engines.node` widened from `"22.x"` to `"22.x \|\| 24.x"` |
@@ -355,6 +356,13 @@ Many magic items gained a structured `effect` object (`ability_score_modifier` w
 `enchantment` object for `+N` weapon/armor items (`armor_class_bonus`, `extra_damage`, `to_hit_bonus`, a
 `label_prefix`/`type` for display). `requires_attunement` is a plain boolean alongside the existing prose. A handful of
 items with no combat use were removed.
+
+### Unified `effects`
+
+Equipment and magic items also have `effects`, one array of effects that restates `effect` and `enchantment` in a
+single shape (`activation`, `armor_class`, `ability`, `resistances`, `attack`, `damage` and the like), plus the derived
+`cost_cp`, `bundle_size`, `reach_ft`, `rarity.rank` and `rarity.min_level`. The older fields are unchanged; see
+[item-data.md](item-data.md) for the shape and the mapping.
 
 ## Filled values: monster `environments`, magic-item `cost` and `weight`
 

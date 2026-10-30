@@ -316,9 +316,37 @@
           "source": "dd",
           "note": "Links a ranged weapon to the equipment index of its ammunition."
         },
+        "bundle_size": {
+          "source": "dd",
+          "note": "How many pieces the cost buys, from the quantity of a bundle of ammunition or the count in the item name (bag of 1,000); derived by derive-item-data.ts."
+        },
+        "cost_cp": {
+          "source": "dd",
+          "note": "The cost in copper pieces, converted from cost with the SRD coin table (1 sp = 10 cp, 1 gp = 100 cp); derived by derive-item-data.ts."
+        },
         "effect": {
           "source": "dd",
           "note": "Damage applied when a consumable (e.g. Acid Vial) is used."
+        },
+        "effects": {
+          "source": "dd",
+          "note": "The unified form of effect (activation, damage when used), derived by derive-item-data.ts; see docs/item-data.md."
+        },
+        "effects[].activation": {
+          "source": "dd",
+          "note": "When the effect applies: equipped, attuned, carried or use."
+        },
+        "effects[].damage": {
+          "source": "dd",
+          "note": "Damage the item deals when used."
+        },
+        "effects[].damage[].damage_dice": {
+          "source": "dd",
+          "note": "Dice of the damage."
+        },
+        "effects[].damage[].damage_type": {
+          "source": "dd",
+          "note": "Index of the damage type of the damage."
         },
         "is_consumable": {
           "source": "dd",
@@ -327,6 +355,10 @@
         "material": {
           "source": "dd",
           "note": "Item material (e.g. metal) for rules that depend on the material."
+        },
+        "reach_ft": {
+          "source": "dd",
+          "note": "Reach in feet of a melee weapon: 5, or 10 with the reach property; derived by derive-item-data.ts."
         },
         "stackable": {
           "source": "dd",
@@ -423,9 +455,61 @@
           "source": "dd",
           "note": "Item price. Not SRD text; origin unverified."
         },
+        "cost_cp": {
+          "source": "dd",
+          "note": "The cost in copper pieces, converted from cost with the SRD coin table; derived by derive-item-data.ts."
+        },
         "effect": {
           "source": "dd",
           "note": "Structured mechanics (ability, resistance, healing, save and skill modifiers, duration) read from the item prose."
+        },
+        "effects": {
+          "source": "dd",
+          "note": "The unified form of effect and enchantment (activation, armor class, ability score, resistances, attack bonuses and the like), derived by derive-item-data.ts; see docs/item-data.md."
+        },
+        "effects[].ability": {
+          "source": "dd",
+          "note": "The ability score the item sets or raises: ability, op, value and an optional cap."
+        },
+        "effects[].activation": {
+          "source": "dd",
+          "note": "When the effect applies: equipped, attuned, carried or use."
+        },
+        "effects[].armor_class": {
+          "source": "dd",
+          "note": "The armor class bonus of the item."
+        },
+        "effects[].attack": {
+          "source": "dd",
+          "note": "To-hit and damage bonuses and extra damage of the weapon."
+        },
+        "effects[].duration": {
+          "source": "dd",
+          "note": "How long a used item lasts: an hour or permanently."
+        },
+        "effects[].heal": {
+          "source": "dd",
+          "note": "Dice of the hit points the item restores."
+        },
+        "effects[].proficiencies": {
+          "source": "dd",
+          "note": "Proficiencies (indexes) the item grants."
+        },
+        "effects[].resistances": {
+          "source": "dd",
+          "note": "Damage types (indexes) the owner resists."
+        },
+        "effects[].saving_throws": {
+          "source": "dd",
+          "note": "Saving throw bonus and advantage of the item."
+        },
+        "effects[].skill_check": {
+          "source": "dd",
+          "note": "Skill check bonus and advantage of the item."
+        },
+        "effects[].traits": {
+          "source": "dd",
+          "note": "Traits (indexes) the item grants."
         },
         "enchantment": {
           "source": "dd",
@@ -434,6 +518,14 @@
         "is_consumable": {
           "source": "dd",
           "note": "Marks an item as expended on use."
+        },
+        "rarity.min_level": {
+          "source": "dd",
+          "note": "Character level from which an item of this rarity is a fitting reward (1, 1, 5, 11, 17 for common to legendary); set by derive-item-data.ts."
+        },
+        "rarity.rank": {
+          "source": "dd",
+          "note": "Ordinal of the rarity name (1 common to 6 artifact), set by derive-item-data.ts."
         },
         "requires_attunement": {
           "source": "dd",

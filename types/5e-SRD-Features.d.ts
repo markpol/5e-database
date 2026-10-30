@@ -83,7 +83,7 @@ export type Feature = {
                     };
                 } | undefined;
                 duration?: {
-                    unit: "round" | "minute" | "end_of_next_turn" | "hour";
+                    unit: "hour" | "round" | "minute" | "end_of_next_turn";
                     length?: number | undefined;
                 } | undefined;
                 aura?: {
@@ -108,7 +108,7 @@ export type Feature = {
                 against_spells_cast_by?: string[] | undefined;
                 against_conditions?: string[] | undefined;
                 duration?: {
-                    unit: "round" | "minute" | "end_of_next_turn" | "hour";
+                    unit: "hour" | "round" | "minute" | "end_of_next_turn";
                     length?: number | undefined;
                 } | undefined;
                 aura?: {
@@ -292,7 +292,7 @@ export type Feature = {
                     };
                 };
                 duration: {
-                    unit: "round" | "minute" | "end_of_next_turn" | "hour";
+                    unit: "hour" | "round" | "minute" | "end_of_next_turn";
                     length?: number | undefined;
                 };
                 type: "turn";
@@ -425,7 +425,7 @@ export type Feature = {
                 types_from?: "dragon_ancestor" | undefined;
                 except?: string[] | undefined;
                 duration?: {
-                    unit: "round" | "minute" | "end_of_next_turn" | "hour";
+                    unit: "hour" | "round" | "minute" | "end_of_next_turn";
                     length?: number | undefined;
                 } | undefined;
                 cost?: {
@@ -531,7 +531,7 @@ export type Feature = {
                 flat?: number | undefined;
                 dice?: string | undefined;
                 duration?: {
-                    unit: "round" | "minute" | "end_of_next_turn" | "hour";
+                    unit: "hour" | "round" | "minute" | "end_of_next_turn";
                     length?: number | undefined;
                 } | undefined;
                 aura?: {
