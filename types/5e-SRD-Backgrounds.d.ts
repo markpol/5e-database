@@ -10,6 +10,20 @@ export type Background = {
         note?: string | undefined;
     }[];
     url: string;
+    source?: "srd-5.2" | "dd" | undefined;
+    ability_scores?: {
+        index: string;
+        name: string;
+        url: string;
+        note?: string | undefined;
+    }[] | undefined;
+    feat?: {
+        index: string;
+        name: string;
+        url: string;
+        note?: string | undefined;
+    } | undefined;
+    proficiency_choices?: any[] | undefined;
     language_options?: any;
     starting_equipment?: {
         equipment: {

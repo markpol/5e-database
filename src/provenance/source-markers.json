@@ -133,7 +133,119 @@
       "source": "srd"
     },
     "src/2014/en/5e-SRD-Backgrounds.json": {
-      "source": "srd"
+      "source": "srd",
+      "fields": {
+        "ability_scores": {
+          "source": "srd-5.2",
+          "note": "The abilities a background from the SRD 5.2 set can raise, in the shape of that set."
+        },
+        "ability_scores[].index": {
+          "source": "srd-5.2",
+          "note": "Part of a reference to an ability score a background from the SRD 5.2 set can raise."
+        },
+        "ability_scores[].name": {
+          "source": "srd-5.2",
+          "note": "Part of a reference to an ability score a background from the SRD 5.2 set can raise."
+        },
+        "ability_scores[].url": {
+          "source": "srd-5.2",
+          "note": "Part of a reference to an ability score a background from the SRD 5.2 set can raise."
+        },
+        "feat": {
+          "source": "srd-5.2",
+          "note": "The origin feat a background from the SRD 5.2 set gives, in the shape of that set; a reference into 5e-SRD-Feats, with the choice made within the feat in its note."
+        },
+        "proficiency_choices": {
+          "source": "srd-5.2",
+          "note": "Proficiencies a background from the SRD 5.2 set lets its owner pick (a gaming set), as a choice."
+        },
+        "proficiency_choices[].choose": {
+          "source": "srd-5.2",
+          "note": "Part of the proficiency choice of a background from the SRD 5.2 set."
+        },
+        "proficiency_choices[].desc": {
+          "source": "srd-5.2",
+          "note": "Part of the proficiency choice of a background from the SRD 5.2 set."
+        },
+        "proficiency_choices[].from": {
+          "source": "srd-5.2",
+          "note": "Part of the proficiency choice of a background from the SRD 5.2 set."
+        },
+        "proficiency_choices[].type": {
+          "source": "srd-5.2",
+          "note": "Part of the proficiency choice of a background from the SRD 5.2 set."
+        },
+        "source": {
+          "source": "dd",
+          "note": "Where a background added after SRD 5.1 comes from (srd-5.2 or dd); the SRD 5.1 background has none."
+        },
+        "starting_equipment_options[].desc": {
+          "source": "srd-5.2",
+          "note": "The wording of the equipment package choice of a background from the SRD 5.2 set."
+        },
+        "starting_equipment_options[].from.options": {
+          "source": "srd-5.2",
+          "note": "The equipment package choice (a list of items and gold, or 50 gp) of a background from the SRD 5.2 set; items are references into 5e-SRD-Equipment, where the set has them."
+        },
+        "starting_equipment_options[].from.options[].count": {
+          "source": "srd-5.2",
+          "note": "Part of the equipment package choice of a background from the SRD 5.2 set."
+        },
+        "starting_equipment_options[].from.options[].items": {
+          "source": "srd-5.2",
+          "note": "Part of the equipment package choice of a background from the SRD 5.2 set."
+        },
+        "starting_equipment_options[].from.options[].items[].choice": {
+          "source": "srd-5.2",
+          "note": "Part of the equipment package choice of a background from the SRD 5.2 set."
+        },
+        "starting_equipment_options[].from.options[].items[].count": {
+          "source": "srd-5.2",
+          "note": "Part of the equipment package choice of a background from the SRD 5.2 set."
+        },
+        "starting_equipment_options[].from.options[].items[].of": {
+          "source": "srd-5.2",
+          "note": "Part of the equipment package choice of a background from the SRD 5.2 set."
+        },
+        "starting_equipment_options[].from.options[].items[].option_type": {
+          "source": "srd-5.2",
+          "note": "Part of the equipment package choice of a background from the SRD 5.2 set."
+        },
+        "starting_equipment_options[].from.options[].items[].unit": {
+          "source": "srd-5.2",
+          "note": "Part of the equipment package choice of a background from the SRD 5.2 set."
+        },
+        "starting_equipment_options[].from.options[].option_type": {
+          "source": "srd-5.2",
+          "note": "Part of the equipment package choice of a background from the SRD 5.2 set."
+        },
+        "starting_equipment_options[].from.options[].unit": {
+          "source": "srd-5.2",
+          "note": "Part of the equipment package choice of a background from the SRD 5.2 set."
+        }
+      },
+      "records": {
+        "criminal": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 background of the same name; the equipment is that of 5e-SRD-Equipment."
+        },
+        "sage": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 background of the same name; the equipment is that of 5e-SRD-Equipment."
+        },
+        "soldier": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 background of the same name; the gaming sets are those of 5e-SRD-Equipment."
+        },
+        "cartographer": {
+          "source": "dd",
+          "note": "Original background written for this data, with an original feature and personality tables."
+        },
+        "lighthouse-keeper": {
+          "source": "dd",
+          "note": "Original background written for this data, with an original feature and personality tables."
+        }
+      }
     },
     "src/2014/en/5e-SRD-Classes.json": {
       "source": "srd",
@@ -447,7 +559,115 @@
       }
     },
     "src/2014/en/5e-SRD-Feats.json": {
-      "source": "srd"
+      "source": "srd",
+      "fields": {
+        "engine": {
+          "source": "dd",
+          "note": "Cost, recharge, uses and modifiers of the feat as data, restating its text in the words of the engine of class features; written for this data."
+        },
+        "feature_named": {
+          "source": "srd-5.2",
+          "note": "The class feature a feat needs, taken from the prerequisites of the SRD 5.2 feat of the same name."
+        },
+        "granted_proficiencies": {
+          "source": "dd",
+          "note": "Proficiencies the feat gives, restating its text; the same field as on class features."
+        },
+        "granted_proficiencies[].choose": {
+          "source": "dd",
+          "note": "Part of the proficiencies the feat gives."
+        },
+        "granted_proficiencies[].from": {
+          "source": "dd",
+          "note": "Part of the proficiencies the feat gives."
+        },
+        "grants_asi": {
+          "source": "dd",
+          "note": "True on the feat that is an Ability Score Improvement; the same field as on class features."
+        },
+        "minimum_level": {
+          "source": "srd-5.2",
+          "note": "The character level a feat needs, taken from the prerequisites of the SRD 5.2 feat of the same name."
+        },
+        "repeatable": {
+          "source": "srd-5.2",
+          "note": "When a feat can be taken more than once, as in the feat shape of the SRD 5.2 set."
+        },
+        "source": {
+          "source": "dd",
+          "note": "Where a feat added after SRD 5.1 comes from (srd-5.2 or dd); the SRD 5.1 feat has none."
+        },
+        "type": {
+          "source": "srd-5.2",
+          "note": "The kind of feat (origin, general, fighting-style, epic-boon), as in the feat shape of the SRD 5.2 set."
+        }
+      },
+      "records": {
+        "alert": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "magic-initiate": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "savage-attacker": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "skilled": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "ability-score-improvement": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "archery": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "defense": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "great-weapon-fighting": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "two-weapon-fighting": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "boon-of-combat-prowess": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "boon-of-dimensional-travel": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "boon-of-fate": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "boon-of-irresistible-offense": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "boon-of-spell-recall": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "boon-of-the-night-spirit": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        },
+        "boon-of-truesight": {
+          "source": "srd-5.2",
+          "note": "Adapted from the SRD 5.2 feat of the same name; the text is split into paragraphs."
+        }
+      }
     },
     "src/2014/en/5e-SRD-Features.json": {
       "source": "srd",

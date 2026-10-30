@@ -26,6 +26,8 @@ removed.
 | Item data | `5e-SRD-Equipment.json`, `5e-SRD-Magic-Items.json`, `derive-item-data.ts` (new script) | Added `cost_cp` (cost in copper pieces) to 197 equipment entries and 361 magic items; `bundle_size` (5 equipment entries), `reach_ft` (28 melee weapons); `rarity.rank` and `rarity.min_level` to the magic items; and `effects`, one shape that restates `effect` and `enchantment` (2 equipment entries, 68 magic items), with the old fields unchanged; and `uses` (charges or uses and their recharge) on 81 magic items, from `item-engine-annotations.json` (see [item-data.md](item-data.md)) |
 | Classes (spellcasting) | `5e-SRD-Classes.json`, `derive-class-spellcasting.ts` (new script) | Added `caster_kind` (8 classes), `prepared_formula` (4), `spellbook_size` (the wizard) and `subclass_spells` (8) to the existing `spellcasting` object (see [class-spellcasting.md](class-spellcasting.md)) |
 | Features (languages, dragons) | `5e-SRD-Features.json`, `feature-engine-annotations.json` | Added `feature_specific.granted_languages` to 15 features (Druidic, Thieves' Cant, the ten dragon ancestors, the three Favored Enemy records) and `feature_specific.damage_type` to the ten `dragon-ancestor-*` records (see [feature-mechanics.md](feature-mechanics.md)) |
+| Backgrounds | `5e-SRD-Backgrounds.json` | Added 5 entries: `criminal`, `sage` and `soldier`, adapted from the SRD 5.2 backgrounds of the same name, and `cartographer` and `lighthouse-keeper`, written for this data; added `source` to each, and the optional `ability_scores`, `feat` and `proficiency_choices` (see [feat-data.md](feat-data.md)) |
+| Feats | `5e-SRD-Feats.json` | Added 16 entries adapted from the SRD 5.2 feats; added `type`, `repeatable`, `minimum_level`, `feature_named`, `source`, `engine` (13 feats, plus Grappler), `grants_asi` and `granted_proficiencies`, with the words of the class feature `engine` and a few more (see [feat-data.md](feat-data.md)) |
 | Package/tooling | `package.json` | `engines.node` widened from `"22.x"` to `"22.x \|\| 24.x"` |
 
 [NOTICE.md](../NOTICE.md) and `src/provenance/source-markers.json` list every field and record that is not SRD text.
@@ -367,6 +369,19 @@ the number, read from the class rows of `5e-SRD-Levels.json` (76 ids, for exampl
 `sneak-attack-5d6`). The features that have a record for each count (Action Surge, Indomitable, Extra Attack, Channel
 Divinity of the cleric, Favored Enemy and the like) keep those records and their ids. See "Counts" in
 [feature-mechanics.md](feature-mechanics.md).
+
+## Feats and backgrounds: more entries, `type`, `source`, `engine`
+
+The one SRD 5.1 feat and the one SRD 5.1 background are joined by 16 feats and 3 backgrounds adapted from the SRD 5.2
+set (which is unchanged in `src/2024`) and 2 backgrounds written for this data. Each added entry has a `source`
+(`srd-5.2` or `dd`) and a record marker. Feats gained `type`, `repeatable`, `minimum_level` and `feature_named` in the
+shape of the SRD 5.2 feats, and the `engine`, `grants_asi` and `granted_proficiencies` of class features; backgrounds
+gained `ability_scores`, `feat` and `proficiency_choices`. The shared `engine` schema moved from
+`src/2014/schemas/5e-SRD-Features.ts` to `src/schemas/feature-engine.ts` without a change to the class features, and the
+modifier vocabulary gained `roll_damage_twice`, `minimum_damage_die`, `hit_instead_of_miss`, `teleport`,
+`ignore_resistance` and `sense`, the `bonus` target `initiative`, the circumstance `target_grappled_by_owner`,
+`choose` on `ability_score_increase`, and `skills_or_tools` in `granted_proficiencies`. All of it is optional and
+English-only except the text. [feat-data.md](feat-data.md) lists what is and is not structured.
 
 ## Classes: choice ids
 
