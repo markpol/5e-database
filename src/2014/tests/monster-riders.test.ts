@@ -81,6 +81,65 @@ describe('monster damage entries', () => {
     }
   });
 
+  // Damage the text states and the structure lacked: [monster, section, name, [type, dice, save?][]]. The save is
+  // `<ability><DC><success>` where success is n (no effect on a success) or h (half damage).
+  it.each([
+    ['giant-centipede', 'actions', 'Bite', [['poison', '3d6', 'con11n']]],
+    ['guardian-naga', 'actions', 'Bite', [['poison', '10d8', 'con15h']]],
+    ['guardian-naga', 'actions', 'Spit Poison', [['poison', '10d8', 'con15h']]],
+    ['spirit-naga', 'actions', 'Bite', [['poison', '7d8', 'con13h']]],
+    ['pit-fiend', 'actions', 'Bite', [['poison', '6d6', 'con21n']]],
+    ['pit-fiend', 'actions', 'Mace', [['fire', '6d6']]],
+    ['wyvern', 'actions', 'Stinger', [['poison', '7d6', 'con15h']]],
+    ['purple-worm', 'actions', 'Tail Stinger', [['poison', '12d6', 'con19h']]],
+    ['purple-worm', 'actions', 'Bite', [['acid', '6d6']]],
+    ['rug-of-smothering', 'actions', 'Smother', [['bludgeoning', '2d6+3']]],
+    ['shambling-mound', 'actions', 'Engulf', [['bludgeoning', '2d8+4', 'con14n']]],
+    ['vrock', 'actions', 'Spores', [['poison', '1d10', 'con14n']]],
+    ['chain-devil', 'actions', 'Chain', [['piercing', '2d6']]],
+    ['fire-elemental', 'actions', 'Touch', [['fire', '1d10']]],
+    ['magmin', 'actions', 'Touch', [['fire', '1d6']]],
+    ['bulette', 'actions', 'Deadly Leap', [['bludgeoning', '3d6+4'], ['slashing', '3d6+4']]],
+    ['kraken', 'actions', 'Bite', [['acid', '12d6']]],
+    ['remorhaz', 'actions', 'Swallow', [['acid', '6d6']]],
+    ['tarrasque', 'actions', 'Swallow', [['acid', '16d6']]],
+    ['ice-devil', 'actions', 'Wall of Ice', [['cold', '10d6', 'dex17h'], ['cold', '5d6', 'con17h']]],
+    ['wereboar-boar', 'special_abilities', 'Charge (Boar or Hybrid Form Only)', [['slashing', '2d6']]],
+    ['wereboar-hybrid', 'special_abilities', 'Charge (Boar or Hybrid Form Only)', [['slashing', '2d6']]],
+  ] as [string, 'actions' | 'special_abilities', string, string[][]][])(
+    '%s %s %s states its damage dice, type and save',
+    (index, section, name, expected) => {
+      for (const monsters of [english, normalized]) {
+        const entries = (find(monsters, index, section, name).damage ?? []).filter((entry) => 'damage_dice' in entry);
+        expect(entries.length, `${index} ${name}`).toBeGreaterThanOrEqual(expected.length);
+        // Entries added after the ones an action already had, so compare the last ones.
+        const added = entries.slice(-expected.length);
+        added.forEach((entry, position) => {
+          const [type, expectedDice, save] = expected[position];
+          expect(entry.damage_type?.index ?? entry.damage_type).toBe(type);
+          expect(entry.damage_dice).toBe(expectedDice);
+          // The English file keeps a save that the action has as a whole on the action; the normalized file moves it onto the last damage entry.
+          if (monsters === english && !entry.dc) return;
+          const dc = entry.dc;
+          const found = dc ? `${dc.dc_type?.index ?? dc.dc_type}${dc.dc_value}${dc.success_type === 'half' ? 'h' : 'n'}` : undefined;
+          expect(found, `${index} ${name} ${expectedDice}`).toBe(save);
+        });
+      }
+    },
+  );
+
+  it('states the damage of a swallowed creature in the text it comes from', () => {
+    // The kraken and the purple worm swallow in their Bite, the remorhaz and the tarrasque in a Swallow action.
+    for (const [index, name, text] of [
+      ['kraken', 'Bite', '42 (12d6) acid damage'],
+      ['purple-worm', 'Bite', '21 (6d6) acid damage'],
+      ['remorhaz', 'Swallow', '21 (6d6) acid damage'],
+      ['tarrasque', 'Swallow', '56 (16d6) acid damage'],
+    ]) {
+      expect(find(english, index, 'actions', name).desc).toContain(text);
+    }
+  });
+
   it("rolls the rhinoceros Charge's extra damage as 2d8", () => {
     expect(dice(find(english, 'rhinoceros', 'special_abilities', 'Charge'))).toEqual([['bludgeoning', '2d8']]);
     expect(dice(find(normalized, 'rhinoceros', 'special_abilities', 'Charge'))).toEqual([['bludgeoning', '2d8']]);
@@ -157,6 +216,7 @@ describe('monster rider annotations', () => {
       'basilisk Petrifying Gaze',
       'cockatrice Bite',
       'gorgon Petrifying Breath',
+      'medusa Petrifying Gaze',
     ]);
     for (const { monster, name, owner } of staged) {
       expect(owner.dc, `${monster} ${name}`).toBeDefined();
@@ -230,6 +290,224 @@ describe('monster rider annotations', () => {
   });
 });
 
+describe('monster conditions applied only in prose', () => {
+  const conditions = ['blinded', 'charmed', 'deafened', 'frightened', 'incapacitated', 'paralyzed', 'petrified', 'poisoned', 'prone', 'restrained', 'stunned', 'unconscious'];
+  const parts = (monster: Entry) =>
+    (['actions', 'legendary_actions', 'special_abilities', 'reactions'] as const).flatMap((section) =>
+      ((monster[section] ?? []) as Part[]).map((part) => ({ section, part })),
+    );
+  const structured = (value: unknown, found = new Set<string>()) => {
+    if (Array.isArray(value)) value.forEach((item) => structured(item, found));
+    else if (value && typeof value === 'object') {
+      for (const [key, inner] of Object.entries(value)) {
+        if ((key === 'condition_type' || key === 'condition') && typeof inner === 'string') found.add(inner);
+        else if (key === 'grapple') {
+          found.add('grapple');
+          structured(inner, found);
+        }
+        else structured(inner, found);
+      }
+    }
+    return found;
+  };
+  // A sentence that has a saving throw (or an escape DC) and applies the condition: "or be knocked prone",
+  // "must ... become poisoned", "is grappled (escape DC 12)".
+  const applied = (desc: string) => {
+    const found = new Set<string>();
+    for (const sentence of desc.split(/(?<=[.!])\s+/)) {
+      if (!/saving throw|escape DC/.test(sentence)) continue;
+      for (const condition of conditions) {
+        const word = condition === 'unconscious' ? '(?:unconscious|asleep)' : condition;
+        if (new RegExp(`\\b(?:be|become|becomes|is|are|falls?|knocked|also)\\s+(?:also\\s+)?(?:knocked\\s+)?${word}\\b`, 'i').test(sentence)) found.add(condition);
+      }
+      if (/grappled \(escape DC \d+\)/.test(sentence)) found.add('grapple');
+    }
+    return found;
+  };
+  // Conditions the text names that are deliberately not encoded, with the reason. Everything else the text
+  // applies with a save must be in the structure.
+  const notEncoded: Record<string, string> = {
+    'androsphinx actions Roar deafened': 'second condition of the second roar; one condition per save',
+    'animated-armor special_abilities Antimagic Susceptibility unconscious': "save against the caster's spell DC",
+    'flying-sword special_abilities Antimagic Susceptibility unconscious': "save against the caster's spell DC",
+    'rug-of-smothering special_abilities Antimagic Susceptibility unconscious': "save against the caster's spell DC",
+    'behir actions Swallow prone': 'regurgitated creatures fall prone; not a rider on a target',
+    'kraken actions Bite prone': 'regurgitated creatures fall prone; not a rider on a target',
+    'purple-worm actions Bite prone': 'regurgitated creatures fall prone; not a rider on a target',
+    'remorhaz actions Swallow prone': 'regurgitated creatures fall prone; not a rider on a target',
+    'tarrasque actions Swallow prone': 'regurgitated creatures fall prone; not a rider on a target',
+    'bulette actions Deadly Leap prone': "Strength or Dexterity save, the target's choice",
+    'death-dog special_abilities Two-Headed unconscious': 'advantage on saves against the condition, no rider',
+    'ettin special_abilities Two Heads unconscious': 'advantage on saves against the condition, no rider',
+    'hydra special_abilities Multiple Heads unconscious': 'advantage on saves against the condition, no rider',
+    'djinni actions Create Whirlwind restrained': 'no duration stated; ends by a Strength check or when the whirlwind ends',
+    'drow actions Hand Crossbow unconscious': 'second condition, if the save fails by 5 or more',
+    'sprite actions Shortbow unconscious': 'second condition, if the save result is 5 or lower',
+    'pseudodragon actions Sting unconscious': 'second condition, if the save fails by 5 or more',
+    'mummy actions Dreadful Glare paralyzed': 'second condition, if the save fails by 5 or more',
+    'mummy-lord actions Dreadful Glare paralyzed': 'second condition, if the save fails by 5 or more',
+    'ghost actions Possession incapacitated': 'possession has no duration of its own',
+    'kraken actions Fling prone': 'secondary target of a thrown creature',
+    'pit-fiend special_abilities Fear Aura incapacitated': 'the aura needs the pit fiend to be able to act, no rider',
+    'shambling-mound actions Multiattack grapple': 'applied by two hits of the Slam, then Engulf; no attack of its own',
+    'shambling-mound actions Engulf blinded': 'second condition of the engulfed target',
+  };
+
+  it('has a structured condition for every condition a saving throw applies in the text', () => {
+    const missing: string[] = [];
+    for (const monster of normalized) {
+      for (const { section, part } of parts(monster)) {
+        const have = structured(part);
+        for (const condition of applied(part.desc ?? '')) {
+          const key = `${monster.index} ${section} ${part.name} ${condition}`;
+          if (!have.has(condition) && !(key in notEncoded)) missing.push(key);
+        }
+      }
+    }
+    expect(missing).toEqual([]);
+  });
+
+  it('lists only exceptions that still apply', () => {
+    const stale = Object.keys(notEncoded).filter((key) => {
+      const [index, section, ...rest] = key.split(' ');
+      const condition = rest.pop() as string;
+      const name = rest.join(' ');
+      const monster = normalized.find((item) => item.index === index);
+      const part = monster && parts(monster).find((item) => item.section === section && item.part.name === name);
+      return !part || !applied(part.part.desc ?? '').has(condition) || structured(part.part).has(condition);
+    });
+    expect(stale).toEqual([]);
+  });
+
+  it.each([
+    ['dire-wolf', 'Bite', 'str', 13], ['dragon-turtle', 'Tail', 'str', 20], ['gibbering-mouther', 'Bites', 'str', 10],
+    ['giant-crocodile', 'Tail', 'str', 16], ['mastiff', 'Bite', 'str', 11], ['stone-giant', 'Rock', 'str', 17],
+    ['tarrasque', 'Tail', 'str', 20], ['winter-wolf', 'Bite', 'str', 14], ['wolf', 'Bite', 'str', 11], ['worg', 'Bite', 'str', 13],
+  ])('%s %s knocks the target prone on a failed DC %s save', (index, name, ability, value) => {
+    const rider = (find(normalized, index, 'actions', name).damage as Entry[]).at(-1);
+    expect(rider).toEqual({
+      dc: { dc_type: ability, dc_value: value, success_type: 'none' },
+      condition: { condition_type: 'prone', duration: { length: 1, unit: 'round' } },
+    });
+  });
+
+  it.each([
+    ['bearded-devil', 'Beard', 12, 'poisoned', { length: 10, unit: 'round', interrupt: 'saving throw success' }],
+    ['bone-devil', 'Sting', 14, 'poisoned', { length: 10, unit: 'round', interrupt: 'saving throw success' }],
+    ['couatl', 'Bite', 13, 'poisoned', { length: 24, unit: 'hour' }],
+    ['death-dog', 'Bite', 12, 'poisoned', { length: 1, unit: 'until restored' }],
+    ['erinyes', 'Longbow', 14, 'poisoned', { length: 1, unit: 'until restored' }],
+    ['otyugh', 'Bite', 15, 'poisoned', { length: 1, unit: 'until restored' }],
+    ['sprite', 'Shortbow', 10, 'poisoned', { length: 10, unit: 'round' }],
+    ['ghast', 'Claws', 10, 'paralyzed', { length: 10, unit: 'round', interrupt: 'saving throw success' }],
+    ['lich', 'Paralyzing Touch', 18, 'paralyzed', { length: 10, unit: 'round', interrupt: 'saving throw success' }],
+  ])('%s %s applies %s after a failed DC %i Constitution save', (index, name, value, condition, duration) => {
+    const rider = (find(normalized, index, 'actions', name).damage as Entry[]).at(-1);
+    expect(rider).toEqual({
+      dc: { dc_type: 'con', dc_value: value, success_type: 'none' },
+      condition: { condition_type: condition, duration },
+    });
+  });
+
+  it('ends the poison of the pit fiend and the vrock when the target succeeds on a repeated save', () => {
+    const poisoned = { condition_type: 'poisoned', duration: { length: 1, unit: 'until saving throw success' } };
+    expect((find(normalized, 'pit-fiend', 'actions', 'Bite').damage as Entry[])[1].condition).toEqual(poisoned);
+    expect((find(normalized, 'vrock', 'actions', 'Spores').damage as Entry[])[0].condition).toEqual(poisoned);
+    expect(find(english, 'pit-fiend', 'actions', 'Bite').desc).toContain('repeat the saving throw at the end of each of its turns');
+    expect(find(english, 'vrock', 'actions', 'Spores').desc).toContain('repeat the saving throw at the end of each of its turns');
+  });
+
+  it('adds the conditions to saves the data already had', () => {
+    const condition = (index: string, section: 'actions' | 'special_abilities', name: string, position?: number) => {
+      const part = find(normalized, index, section, name);
+      return position === undefined ? part.condition : (part.damage as Entry[])[position].condition;
+    };
+    expect(condition('chuul', 'actions', 'Tentacles', 0)).toEqual({
+      condition_type: 'poisoned',
+      duration: { length: 10, unit: 'round', interrupt: 'saving throw success' },
+    });
+    expect(condition('vrock', 'actions', 'Stunning Screech', 0)).toEqual({ condition_type: 'stunned', duration: { length: 1, unit: 'round' } });
+    for (const monster of ['ghast', 'hezrou']) {
+      expect(condition(monster, 'special_abilities', 'Stench')).toEqual({ condition_type: 'poisoned', duration: { length: 1, unit: 'round' } });
+    }
+    expect(find(normalized, 'sea-hag', 'special_abilities', 'Horrific Appearance')).toMatchObject({
+      dc: { dc_type: 'wis', dc_value: 11, success_type: 'none' },
+      condition: { condition_type: 'frightened', duration: { length: 10, unit: 'round', interrupt: 'saving throw success' } },
+    });
+    const legendary = (index: string, name: string) => normalized.find((m) => m.index === index)?.legendary_actions?.find((a: Part) => a.name === name) as Part;
+    expect(legendary('solar', 'Blinding Gaze (Costs 3 Actions)').condition).toEqual({ condition_type: 'blinded', duration: { length: 1, unit: 'until restored' } });
+    expect(legendary('mummy-lord', 'Blinding Dust').condition).toEqual({ condition_type: 'blinded', duration: { length: 1, unit: 'round' } });
+    expect(legendary('mummy-lord', 'Blasphemous Word (Costs 2 Actions)').condition).toEqual({ condition_type: 'stunned', duration: { length: 1, unit: 'round' } });
+    expect(find(normalized, 'androsphinx', 'actions', 'Roar').attacks?.[2]).toMatchObject({
+      name: 'Third Roar',
+      condition: { condition_type: 'prone', duration: { length: 1, unit: 'round' } },
+    });
+  });
+
+  it('knocks prone the target of the wereboar Charge, like the boar Charge', () => {
+    for (const index of ['wereboar-boar', 'wereboar-hybrid']) {
+      const damage = find(normalized, index, 'special_abilities', 'Charge (Boar or Hybrid Form Only)').damage as Entry[];
+      expect(damage.at(-1)).toEqual({
+        dc: { dc_type: 'str', dc_value: 13, success_type: 'none' },
+        condition: { condition_type: 'prone', duration: { length: 1, unit: 'round' } },
+      });
+    }
+  });
+
+  it('applies the wing attack prone condition to every adult and ancient dragon', () => {
+    const dragons = normalized.filter((monster) => /^(adult|ancient)-.*-dragon$/.test(monster.index));
+    expect(dragons).toHaveLength(20);
+    for (const dragon of dragons) {
+      const wing = dragon.legendary_actions?.find((action: Part) => action.name === 'Wing Attack (Costs 2 Actions)') as Part;
+      expect(wing.condition, dragon.index).toEqual({ condition_type: 'prone', duration: { length: 1, unit: 'round' } });
+      expect(wing.dc?.dc_type, dragon.index).toBe('dex');
+    }
+  });
+
+  it('applies the sleep and paralyzing breath conditions to the young, adult and ancient dragons', () => {
+    const option = (index: string, name: string) =>
+      find(normalized, index, 'actions', 'Breath Weapons').options.from.options.find((item: Entry) => item.name === name);
+    for (const [age, minutes] of [['young', 5], ['adult', 10], ['ancient', 10]] as const) {
+      expect(option(`${age}-brass-dragon`, 'Sleep Breath').condition).toEqual({
+        condition_type: 'unconscious',
+        duration: { length: minutes * 10, unit: 'round', interrupt: 'damage taken' },
+      });
+      expect(find(english, `${age}-brass-dragon`, 'actions', 'Breath Weapons').desc).toContain(`unconscious for ${minutes} minutes`);
+      expect(option(`${age}-silver-dragon`, 'Paralyzing Breath').condition).toEqual({
+        condition_type: 'paralyzed',
+        duration: { length: 10, unit: 'round', interrupt: 'saving throw success' },
+      });
+    }
+  });
+
+  it('stages the medusa petrification like the basilisk', () => {
+    const gaze = (index: string) => find(normalized, index, 'special_abilities', 'Petrifying Gaze').condition;
+    expect(gaze('medusa')).toEqual(gaze('basilisk'));
+  });
+
+  it.each([
+    ['behir', 'Constrict', 16, true], ['chain-devil', 'Chain', 14, true], ['chuul', 'Pincer', 14, false],
+    ['couatl', 'Constrict', 15, true], ['giant-crocodile', 'Bite', 16, true], ['glabrezu', 'Pincer', 15, false],
+    ['kraken', 'Tentacle', 18, true], ['marilith', 'Tail', 19, true], ['octopus', 'Tentacles', 10, false],
+    ['remorhaz', 'Bite', 17, true], ['roc', 'Talons', 19, true], ['rug-of-smothering', 'Smother', 13, true],
+    ['salamander', 'Tail', 14, true], ['tarrasque', 'Bite', 20, true], ['tyrannosaurus-rex', 'Bite', 17, true],
+  ])('%s %s grapples with escape DC %i', (index, name, escape, restrains) => {
+    const grapple = (find(normalized, index, 'actions', name).damage as Entry[]).at(-1);
+    expect(grapple).toEqual({
+      grapple: {
+        escape_dc_value: escape,
+        ...(restrains ? { additional_condition: { condition_type: 'restrained', duration: { length: 1, unit: 'until escape' } } } : {}),
+      },
+    });
+  });
+
+  it('grapples with the mimic Adhesive', () => {
+    expect(find(normalized, 'mimic', 'special_abilities', 'Adhesive (Object Form Only)').damage).toEqual([
+      { grapple: { escape_dc_value: 13 } },
+    ]);
+  });
+});
+
 describe('applyEngineAnnotations', () => {
   const monster = () => ({
     index: 'test',
@@ -259,6 +537,23 @@ describe('applyEngineAnnotations', () => {
     expect(target.actions[0].damage?.[0]).toEqual({ damage_type: 'piercing', damage_dice: '1d4', condition: { condition_type: 'blinded' } });
     expect((target.actions[0].damage?.[0] as Entry).condition).not.toBe(set.condition);
     expect(target.actions[1]).toEqual({ name: 'Web', pull_distance_ft: 5 });
+  });
+
+  it('sets fields on a breath option or an attack named by `attack`', () => {
+    const target = {
+      index: 'test',
+      actions: [
+        { name: 'Breath', options: { from: { options: [{ name: 'Sleep Breath' }, { name: 'Fire Breath' }] } } },
+        { name: 'Roar', attacks: [{ name: 'First Roar' }] },
+      ],
+    };
+    applyEngineAnnotations(target, [
+      { monster: 'test', section: 'actions', name: 'Breath', attack: 'Sleep Breath', set: { condition: { condition_type: 'unconscious' } } },
+      { monster: 'test', section: 'actions', name: 'Roar', attack: 'First Roar', set: { condition: { condition_type: 'frightened' } } },
+    ]);
+    expect(target.actions[0].options?.from.options[0]).toEqual({ name: 'Sleep Breath', condition: { condition_type: 'unconscious' } });
+    expect(target.actions[0].options?.from.options[1]).toEqual({ name: 'Fire Breath' });
+    expect(target.actions[1].attacks?.[0]).toEqual({ name: 'First Roar', condition: { condition_type: 'frightened' } });
   });
 
   it('throws when the annotation names nothing in the monster', () => {

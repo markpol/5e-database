@@ -501,7 +501,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+6"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/adult-black-dragon.png",
@@ -712,7 +719,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+7"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/adult-blue-dragon.png",
@@ -920,6 +934,14 @@
                   "dc_type": "con",
                   "dc_value": 18,
                   "success_type": "none"
+                },
+                "condition": {
+                  "condition_type": "unconscious",
+                  "duration": {
+                    "length": 100,
+                    "unit": "round",
+                    "interrupt": "damage taken"
+                  }
                 }
               }
             ]
@@ -949,7 +971,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+6"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/adult-brass-dragon.png",
@@ -1186,7 +1215,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+7"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/adult-bronze-dragon.png",
@@ -1419,7 +1455,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+6"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/adult-copper-dragon.png",
@@ -1660,7 +1703,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/adult-gold-dragon.png",
@@ -1889,7 +1939,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+6"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/adult-green-dragon.png",
@@ -2100,7 +2157,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/adult-red-dragon.png",
@@ -2307,6 +2371,14 @@
                   "dc_type": "con",
                   "dc_value": 20,
                   "success_type": "none"
+                },
+                "condition": {
+                  "condition_type": "paralyzed",
+                  "duration": {
+                    "length": 10,
+                    "unit": "round",
+                    "interrupt": "saving throw success"
+                  }
                 }
               }
             ]
@@ -2336,7 +2408,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/adult-silver-dragon.png",
@@ -2552,7 +2631,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+6"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/adult-white-dragon.png",
@@ -2883,7 +2969,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/ancient-black-dragon.png",
@@ -3094,7 +3187,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+9"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/ancient-blue-dragon.png",
@@ -3302,6 +3402,14 @@
                   "dc_type": "con",
                   "dc_value": 21,
                   "success_type": "none"
+                },
+                "condition": {
+                  "condition_type": "unconscious",
+                  "duration": {
+                    "length": 100,
+                    "unit": "round",
+                    "interrupt": "damage taken"
+                  }
                 }
               }
             ]
@@ -3335,7 +3443,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/ancient-brass-dragon.png",
@@ -3576,7 +3691,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+9"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/ancient-bronze-dragon.png",
@@ -3813,7 +3935,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/ancient-copper-dragon.png",
@@ -4058,7 +4187,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+10"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/ancient-gold-dragon.png",
@@ -4287,7 +4423,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/ancient-green-dragon.png",
@@ -4498,7 +4641,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+10"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/ancient-red-dragon.png",
@@ -4705,6 +4855,14 @@
                   "dc_type": "con",
                   "dc_value": 24,
                   "success_type": "none"
+                },
+                "condition": {
+                  "condition_type": "paralyzed",
+                  "duration": {
+                    "length": 10,
+                    "unit": "round",
+                    "interrupt": "saving throw success"
+                  }
                 }
               }
             ]
@@ -4738,7 +4896,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+10"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/ancient-silver-dragon.png",
@@ -4954,7 +5119,14 @@
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+8"
           }
-        ]
+        ],
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
       }
     ],
     "image": "/api/images/monsters/ancient-white-dragon.png",
@@ -5221,7 +5393,14 @@
                 "damage_type": "thunder",
                 "damage_dice": "8d10"
               }
-            ]
+            ],
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
         ]
       }
@@ -7165,6 +7344,21 @@
           {
             "damage_type": "piercing",
             "damage_dice": "1d8+2"
+          },
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 12,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "poisoned",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -7278,6 +7472,18 @@
           {
             "damage_type": "slashing",
             "damage_dice": "2d10+6"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 16,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -8163,6 +8369,21 @@
           {
             "damage_type": "poison",
             "damage_dice": "5d6"
+          },
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 14,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "poisoned",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -8703,7 +8924,17 @@
       },
       {
         "name": "Deadly Leap",
-        "desc": "If the bulette jumps at least 15 ft. as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) bludgeoning damage plus 14 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 ft. out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the bulette's space."
+        "desc": "If the bulette jumps at least 15 ft. as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) bludgeoning damage plus 14 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 ft. out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the bulette's space.",
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "3d6+4"
+          },
+          {
+            "damage_type": "slashing",
+            "damage_dice": "3d6+4"
+          }
+        ]
       }
     ],
     "url": "/api/2014/monsters/bulette",
@@ -9072,6 +9303,22 @@
           {
             "damage_type": "slashing",
             "damage_dice": "2d6+4"
+          },
+          {
+            "damage_type": "piercing",
+            "damage_dice": "2d6"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 14,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ],
         "weapon_kind": "manufactured"
@@ -9401,6 +9648,11 @@
           {
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+4"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 14
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -9414,6 +9666,14 @@
               "dc_type": "con",
               "dc_value": 13,
               "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "poisoned",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
             }
           }
         ]
@@ -10423,6 +10683,20 @@
           {
             "damage_type": "piercing",
             "damage_dice": "1d6+5"
+          },
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 13,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "poisoned",
+              "duration": {
+                "length": 24,
+                "unit": "hour"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -10435,6 +10709,18 @@
           {
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+3"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 15,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -10976,6 +11262,20 @@
           {
             "damage_type": "piercing",
             "damage_dice": "1d6+2"
+          },
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 12,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "poisoned",
+              "duration": {
+                "length": 1,
+                "unit": "until restored"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -11424,6 +11724,20 @@
           {
             "damage_type": "piercing",
             "damage_dice": "2d6+3"
+          },
+          {
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 13,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -11968,6 +12282,20 @@
           {
             "damage_type": "bludgeoning",
             "damage_dice": "3d12+7"
+          },
+          {
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 20,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -13850,6 +14178,20 @@
           {
             "damage_type": "poison",
             "damage_dice": "3d8"
+          },
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 14,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "poisoned",
+              "duration": {
+                "length": 1,
+                "unit": "until restored"
+              }
+            }
           }
         ],
         "weapon": "longbow",
@@ -14218,6 +14560,10 @@
           {
             "damage_type": "fire",
             "damage_dice": "2d6+3"
+          },
+          {
+            "damage_type": "fire",
+            "damage_dice": "1d10"
           }
         ]
       }
@@ -14938,6 +15284,13 @@
           "dc_type": "con",
           "dc_value": 10,
           "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "poisoned",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
         }
       },
       {
@@ -14968,6 +15321,21 @@
           {
             "damage_type": "slashing",
             "damage_dice": "2d6+3"
+          },
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 10,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "paralyzed",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -15588,6 +15956,15 @@
           {
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
+          },
+          {
+            "damage_type": "poison",
+            "damage_dice": "3d6",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 11,
+              "success_type": "none"
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -15835,6 +16212,18 @@
           {
             "damage_type": "piercing",
             "damage_dice": "3d10+5"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 16,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -15847,6 +16236,20 @@
           {
             "damage_type": "bludgeoning",
             "damage_dice": "2d8+5"
+          },
+          {
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 16,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -17685,6 +18088,20 @@
           {
             "damage_type": "piercing",
             "damage_dice": "5d6"
+          },
+          {
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 10,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -17910,6 +18327,11 @@
           {
             "damage_type": "bludgeoning",
             "damage_dice": "2d10+5"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 15
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -19597,6 +20019,15 @@
           {
             "damage_type": "piercing",
             "damage_dice": "1d8+4"
+          },
+          {
+            "damage_type": "poison",
+            "damage_dice": "10d8",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 15,
+              "success_type": "half"
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -19604,7 +20035,18 @@
       {
         "name": "Spit Poison",
         "desc": "Ranged Weapon Attack: +8 to hit, range 15/30 ft., one creature. Hit: The target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 8
+        "attack_bonus": 8,
+        "damage": [
+          {
+            "damage_type": "poison",
+            "damage_dice": "10d8",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 15,
+              "success_type": "half"
+            }
+          }
+        ]
       }
     ],
     "image": "/api/images/monsters/guardian-naga.png",
@@ -20317,6 +20759,13 @@
           "dc_type": "con",
           "dc_value": 14,
           "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "poisoned",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
         }
       }
     ],
@@ -21291,7 +21740,27 @@
       },
       {
         "name": "Wall of Ice",
-        "desc": "The devil magically forms an opaque wall of ice on a solid surface it can see within 60 feet of it. The wall is 1 foot thick and up to 30 feet long and 10 feet high, or it's a hemispherical dome up to 20 feet in diameter.\nWhen the wall appears, each creature in its space is pushed out of it by the shortest route. The creature chooses which side of the wall to end up on, unless the creature is incapacitated. The creature then makes a DC 17 Dexterity saving throw, taking 35 (10d6) cold damage on a failed save, or half as much damage on a successful one.\nThe wall lasts for 1 minute or until the devil is incapacitated or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 17 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes."
+        "desc": "The devil magically forms an opaque wall of ice on a solid surface it can see within 60 feet of it. The wall is 1 foot thick and up to 30 feet long and 10 feet high, or it's a hemispherical dome up to 20 feet in diameter.\nWhen the wall appears, each creature in its space is pushed out of it by the shortest route. The creature chooses which side of the wall to end up on, unless the creature is incapacitated. The creature then makes a DC 17 Dexterity saving throw, taking 35 (10d6) cold damage on a failed save, or half as much damage on a successful one.\nThe wall lasts for 1 minute or until the devil is incapacitated or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 17 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes.",
+        "damage": [
+          {
+            "damage_type": "cold",
+            "damage_dice": "10d6",
+            "dc": {
+              "dc_type": "dex",
+              "dc_value": 17,
+              "success_type": "half"
+            }
+          },
+          {
+            "damage_type": "cold",
+            "damage_dice": "5d6",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 17,
+              "success_type": "half"
+            }
+          }
+        ]
       }
     ],
     "image": "/api/images/monsters/ice-devil.png",
@@ -22310,6 +22779,10 @@
           {
             "damage_type": "piercing",
             "damage_dice": "3d8+10"
+          },
+          {
+            "damage_type": "acid",
+            "damage_dice": "12d6"
           }
         ],
         "weapon_kind": "natural"
@@ -22322,6 +22795,18 @@
           {
             "damage_type": "bludgeoning",
             "damage_dice": "3d6+10"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 18,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -22932,6 +23417,21 @@
           {
             "damage_type": "cold",
             "damage_dice": "3d6"
+          },
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 18,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "paralyzed",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
           }
         ]
       }
@@ -23793,6 +24293,10 @@
           {
             "damage_type": "fire",
             "damage_dice": "2d6"
+          },
+          {
+            "damage_type": "fire",
+            "damage_dice": "1d6"
           }
         ]
       }
@@ -24142,6 +24646,18 @@
           {
             "damage_type": "bludgeoning",
             "damage_dice": "2d10+4"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 19,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -24219,6 +24735,20 @@
           {
             "damage_type": "piercing",
             "damage_dice": "1d6+1"
+          },
+          {
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 11,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -24289,6 +24819,21 @@
           "dc_type": "con",
           "dc_value": 14,
           "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "restrained",
+          "duration": {
+            "length": 1,
+            "unit": "round",
+            "interrupt": "saving throw success"
+          },
+          "on_failed_repeat_save": {
+            "condition_type": "petrified",
+            "duration": {
+              "length": 1,
+              "unit": "until restored"
+            }
+          }
         }
       }
     ],
@@ -24685,7 +25230,14 @@
       },
       {
         "name": "Adhesive (Object Form Only)",
-        "desc": "The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 13). Ability checks made to escape this grapple have disadvantage."
+        "desc": "The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic is also grappled by it (escape DC 13). Ability checks made to escape this grapple have disadvantage.",
+        "damage": [
+          {
+            "grapple": {
+              "escape_dc_value": 13
+            }
+          }
+        ]
       },
       {
         "name": "False Appearance (Object Form Only)",
@@ -25383,6 +25935,13 @@
           "dc_type": "con",
           "dc_value": 16,
           "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "blinded",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
         }
       },
       {
@@ -25392,6 +25951,13 @@
           "dc_type": "con",
           "dc_value": 16,
           "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "stunned",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
         }
       },
       {
@@ -26031,6 +26597,11 @@
           {
             "damage_type": "bludgeoning",
             "damage_dice": "1"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 10
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -26586,6 +27157,20 @@
           {
             "damage_type": "piercing",
             "damage_dice": "2d8+3"
+          },
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 15,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "poisoned",
+              "duration": {
+                "length": 1,
+                "unit": "until restored"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -27261,6 +27846,22 @@
           {
             "damage_type": "piercing",
             "damage_dice": "4d6+8"
+          },
+          {
+            "damage_type": "poison",
+            "damage_dice": "6d6",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 21,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "poisoned",
+              "duration": {
+                "length": 1,
+                "unit": "until saving throw success"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -27285,6 +27886,10 @@
           {
             "damage_type": "bludgeoning",
             "damage_dice": "2d6+8"
+          },
+          {
+            "damage_type": "fire",
+            "damage_dice": "6d6"
           }
         ],
         "weapon": "mace",
@@ -28144,6 +28749,10 @@
           {
             "damage_type": "piercing",
             "damage_dice": "3d8+9"
+          },
+          {
+            "damage_type": "acid",
+            "damage_dice": "6d6"
           }
         ],
         "weapon_kind": "natural"
@@ -28156,6 +28765,15 @@
           {
             "damage_type": "piercing",
             "damage_dice": "3d6+9"
+          },
+          {
+            "damage_type": "poison",
+            "damage_dice": "12d6",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 19,
+              "success_type": "half"
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -28945,13 +29563,31 @@
           {
             "damage_type": "fire",
             "damage_dice": "3d6"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 17,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
       },
       {
         "name": "Swallow",
-        "desc": "The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 (6d6) acid damage at the start of each of the remorhaz's turns.\nIf the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone."
+        "desc": "The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 (6d6) acid damage at the start of each of the remorhaz's turns.\nIf the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.",
+        "damage": [
+          {
+            "damage_type": "acid",
+            "damage_dice": "6d6"
+          }
+        ]
       }
     ],
     "image": "/api/images/monsters/remorhaz.png",
@@ -29193,6 +29829,18 @@
           {
             "damage_type": "slashing",
             "damage_dice": "4d6+9"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 19,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -29400,7 +30048,25 @@
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one Medium or smaller creature. Hit: The creature is grappled (escape DC 13). Until this grapple ends, the target is restrained, blinded, and at risk of suffocating, and the rug can't smother another target. In addition, at the start of each of the target's turns, the target takes 10 (2d6 + 3) bludgeoning damage.",
         "attack_bonus": 5,
         "attack_type": "Melee",
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d6+3"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 13,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
+          }
+        ]
       }
     ],
     "url": "/api/2014/monsters/rug-of-smothering",
@@ -29895,6 +30561,18 @@
           {
             "damage_type": "fire",
             "damage_dice": "2d6"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 14,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -30247,7 +30925,20 @@
       },
       {
         "name": "Horrific Appearance",
-        "desc": "Any humanoid that starts its turn within 30 feet of the hag and can see the hag's true form must make a DC 11 Wisdom saving throw. On a failed save, the creature is frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the hag is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Horrific Appearance for the next 24 hours.\nUnless the target is surprised or the revelation of the hag's true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against the hag."
+        "desc": "Any humanoid that starts its turn within 30 feet of the hag and can see the hag's true form must make a DC 11 Wisdom saving throw. On a failed save, the creature is frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the hag is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Horrific Appearance for the next 24 hours.\nUnless the target is surprised or the revelation of the hag's true form is sudden, the target can avert its eyes and avoid making the initial saving throw. Until the start of its next turn, a creature that averts its eyes has disadvantage on attack rolls against the hag.",
+        "dc": {
+          "dc_type": "wis",
+          "dc_value": 11,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "frightened",
+          "duration": {
+            "length": 10,
+            "unit": "round",
+            "interrupt": "saving throw success"
+          }
+        }
       }
     ],
     "actions": [
@@ -30477,7 +31168,18 @@
       },
       {
         "name": "Engulf",
-        "desc": "The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8 + 4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time."
+        "desc": "The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8 + 4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.",
+        "damage": [
+          {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d8+4",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 14,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "/api/2014/monsters/shambling-mound",
@@ -31040,6 +31742,13 @@
           "dc_type": "con",
           "dc_value": 15,
           "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "blinded",
+          "duration": {
+            "length": 1,
+            "unit": "until restored"
+          }
         }
       }
     ],
@@ -31393,6 +32102,15 @@
           {
             "damage_type": "piercing",
             "damage_dice": "1d6+4"
+          },
+          {
+            "damage_type": "poison",
+            "damage_dice": "7d8",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 13,
+              "success_type": "half"
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -31475,6 +32193,20 @@
           {
             "damage_type": "piercing",
             "damage_dice": "1"
+          },
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 10,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "poisoned",
+              "duration": {
+                "length": 10,
+                "unit": "round"
+              }
+            }
           }
         ],
         "weapon": "shortbow",
@@ -31913,6 +32645,20 @@
           {
             "damage_type": "bludgeoning",
             "damage_dice": "4d10+6"
+          },
+          {
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 17,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
         ],
         "weapon_kind": "natural",
@@ -33358,6 +34104,18 @@
           {
             "damage_type": "piercing",
             "damage_dice": "4d12+10"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 20,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -33394,6 +34152,20 @@
           {
             "damage_type": "bludgeoning",
             "damage_dice": "4d6+10"
+          },
+          {
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 20,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -33421,7 +34193,13 @@
       },
       {
         "name": "Swallow",
-        "desc": "The tarrasque makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the tarrasque, and it takes 56 (16d6) acid damage at the start of each of the tarrasque's turns.\nIf the tarrasque takes 60 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the tarrasque. If the tarrasque dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone."
+        "desc": "The tarrasque makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the tarrasque, and it takes 56 (16d6) acid damage at the start of each of the tarrasque's turns.\nIf the tarrasque takes 60 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the tarrasque. If the tarrasque dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone.",
+        "damage": [
+          {
+            "damage_type": "acid",
+            "damage_dice": "16d6"
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -34112,6 +34890,18 @@
           {
             "damage_type": "piercing",
             "damage_dice": "4d12+7"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 17,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -35317,10 +36107,19 @@
         },
         "damage": [
           {
+            "damage_type": "poison",
+            "damage_dice": "1d10",
             "dc": {
               "dc_type": "con",
               "dc_value": 14,
               "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "poisoned",
+              "duration": {
+                "length": 1,
+                "unit": "until saving throw success"
+              }
             }
           }
         ]
@@ -35338,6 +36137,13 @@
               "dc_type": "con",
               "dc_value": 14,
               "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "stunned",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
             }
           }
         ]
@@ -36152,7 +36958,27 @@
       },
       {
         "name": "Charge (Boar or Hybrid Form Only)",
-        "desc": "If the wereboar moves at least 15 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+        "desc": "If the wereboar moves at least 15 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6"
+          },
+          {
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 13,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Relentless",
@@ -36335,7 +37161,27 @@
       },
       {
         "name": "Charge (Boar or Hybrid Form Only)",
-        "desc": "If the wereboar moves at least 15 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+        "desc": "If the wereboar moves at least 15 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+        "damage": [
+          {
+            "damage_type": "slashing",
+            "damage_dice": "2d6"
+          },
+          {
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 13,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Relentless",
@@ -38019,6 +38865,20 @@
           {
             "damage_type": "piercing",
             "damage_dice": "2d6+4"
+          },
+          {
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 14,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -38113,6 +38973,20 @@
           {
             "damage_type": "piercing",
             "damage_dice": "2d4+2"
+          },
+          {
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 11,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -38181,6 +39055,20 @@
           {
             "damage_type": "piercing",
             "damage_dice": "2d6+3"
+          },
+          {
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 13,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -38434,6 +39322,15 @@
           {
             "damage_type": "piercing",
             "damage_dice": "2d6+4"
+          },
+          {
+            "damage_type": "poison",
+            "damage_dice": "7d6",
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 15,
+              "success_type": "half"
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -38985,6 +39882,14 @@
                   "dc_type": "con",
                   "dc_value": 14,
                   "success_type": "none"
+                },
+                "condition": {
+                  "condition_type": "unconscious",
+                  "duration": {
+                    "length": 50,
+                    "unit": "round",
+                    "interrupt": "damage taken"
+                  }
                 }
               }
             ]
@@ -39932,6 +40837,14 @@
                   "dc_type": "con",
                   "dc_value": 17,
                   "success_type": "none"
+                },
+                "condition": {
+                  "condition_type": "paralyzed",
+                  "duration": {
+                    "length": 10,
+                    "unit": "round",
+                    "interrupt": "saving throw success"
+                  }
                 }
               }
             ]

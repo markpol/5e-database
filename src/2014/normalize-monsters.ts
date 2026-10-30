@@ -148,7 +148,9 @@ export function applyEngineAnnotations(
   for (const annotation of annotations.filter((a) => a.monster === monster.index)) {
     let target = monster[annotation.section]?.find((item: any) => item.name === annotation.name);
     if (target && annotation.attack) {
-      target = target.attacks?.find((attack: any) => attack.name === annotation.attack);
+      target = [...(target.attacks ?? []), ...(target.options?.from?.options ?? [])].find(
+        (attack: any) => attack.name === annotation.attack,
+      );
     }
     if (target && annotation.append_damage) {
       target.damage = [...(target.damage ?? []), ...structuredClone(annotation.append_damage)];

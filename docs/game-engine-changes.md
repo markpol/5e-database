@@ -104,7 +104,8 @@ reference is the plain `index` string (the file is normalized), and every durati
 - `dc` is `{ dc_type, dc_value, success_type }`: the ability (`str`, `dex`, `con`, `int`, `wis`, `cha`), the DC, and
   what a successful save does (`none`: no effect, `half`: half damage, `other`).
 - `condition` is `{ condition_type, duration, on_failed_repeat_save? }`. `condition_type` is the `index` of an entry in
-  the conditions. `duration` is `{ length, unit, interrupt? }`: `unit` is `round`, `hour`, `day`, `until escape` or
+  the conditions. `duration` is `{ length, unit, interrupt? }`: `unit` is `round`, `hour`, `day`, `until escape`,
+  `until saving throw success` (no fixed length; the target repeats the save at the end of each of its turns) or
   `until restored` (the condition lasts until it is ended by magic such as greater restoration), and `interrupt`, when
   present, names what ends the condition early, for example `saving throw success` (the target repeats the save at the
   end of each of its turns). A condition that lasts for a minute is `length: 10, unit: "round"`.
@@ -131,7 +132,7 @@ Slam apply only to grappled targets.
 **Annotation entries.** `monster-engine-annotations.json` is a list of
 `{ monster, section, name, attack?, damage?, append_damage?, set? }`. `monster` is a monster `index`; `section` is
 `actions`, `legendary_actions`, `special_abilities` or `reactions`; `name` is the name of the action or ability, and
-`attack` the name of one attack of a multiattack-style action. `append_damage` is a list of `damage[]` entries added
+`attack` the name of one attack of a multiattack-style action or of one breath option of a dragon's Breath Weapons. `append_damage` is a list of `damage[]` entries added
 after the existing ones. `set` is a set of fields written onto the action or ability, or onto its `damage[damage]`
 entry when `damage` (a position) is given. An entry whose target does not exist makes the generator fail.
 
@@ -143,12 +144,71 @@ Slam (stunned). Grapples: the ettercap's and giant spider's Web (escape DC 11 an
 the roper's Tendril (15), each with a restrained condition until the target escapes. `pull_distance_ft` (25) on the
 roper's Reel, and `situation` (grappled target) on the Reel and the Tentacle Slam.
 
+**Conditions the text applies with a save.** Every other condition that an action, ability or legendary action applies
+with a saving throw and names with its DC now has a `condition`, found by checking each sentence of the monsters'
+text that has a saving throw and a condition:
+
+- Knocked prone on a failed Strength save, as a rider after the damage: the dire wolf's, mastiff's, winter wolf's, wolf's
+  and worg's Bite, the dragon turtle's, giant crocodile's and tarrasque's Tail, the stone giant's Rock and the gibbering
+  mouther's Bites. The wereboar's Charge has the same rider, as the boar's Charge does, and the Wing Attack of the 20
+  adult and ancient dragons carries `prone` (the DC was already there). The androsphinx's Third Roar is prone as well.
+- Poisoned on a failed Constitution save, as a rider after the damage: the bearded devil's Beard and the bone devil's
+  Sting (10 rounds, ended by a save), the couatl's Bite (24 hours), the erinyes's Longbow and the death dog's and
+  otyugh's Bite (until restored), the sprite's Shortbow (10 rounds). The pit fiend's Bite and the vrock's Spores take
+  `until saving throw success` on the poison damage entry they already carry. The chuul's Tentacles (10 rounds, ended
+  by a save), the Stench of the ghast and the hezrou (1 round), and the sea hag's Horrific Appearance (frightened,
+  10 rounds, ended by a save) complete a save the data already had or gave the ability its DC.
+- Paralyzed: the ghast's Claws and the lich's Paralyzing Touch (10 rounds, ended by a save), and the Paralyzing Breath of
+  the young, adult and ancient silver dragons. Unconscious: the Sleep Breath of the young, adult and ancient brass
+  dragons (5 or 10 minutes, as 50 or 100 rounds, ended by taking damage). The breath conditions are on the breath option.
+- Blinded, stunned: the solar's Blinding Gaze (until restored), the mummy lord's Blinding Dust and Blasphemous Word, the
+  vrock's Stunning Screech (1 round).
+- The medusa's Petrifying Gaze has the two-stage petrification of the basilisk's.
+- Grapples, as `grapple` entries with the escape DC and, where the text says the target is restrained, the restrained
+  condition: the behir's Constrict, the chain devil's Chain, the couatl's Constrict, the giant crocodile's Bite, the
+  kraken's Tentacle, the marilith's Tail, the remorhaz's Bite, the roc's Talons, the rug of smothering's Smother, the
+  salamander's Tail, the tarrasque's Bite and the tyrannosaurus's Bite; and the escape DC alone for the chuul's Pincer,
+  the glabrezu's Pincer, the octopus's Tentacles and the mimic's Adhesive.
+
+The text names more conditions than the data encodes: a second condition on the same save (for example the paralysis that
+goes with the chuul's poison), conditions that apply only when a save fails by a margin or when the poison damage takes
+the target to 0 hit points, and conditions with no duration or with a choice of ability stay in the action's `desc`.
+`src/2014/tests/monster-riders.test.ts` lists each of them with its reason and fails when a new condition appears in
+the text with a saving throw and has neither a structured `condition` nor an entry in that list.
+
 ## Monster damage corrections
 
 - The rhinoceros's Charge rolled `2d9` extra bludgeoning damage; its text and its average (9) say `2d8`. It now reads
   `2d8` in both monster files.
 - The otyugh's Tentacle Slam had a saving throw but no damage entry. It now has `2d6+3` bludgeoning damage (the text
   says 10 (2d6 + 3)), with the save and the stun on the same entry in the normalized file.
+- Damage the text states and the structured data lacked now has a `damage` entry. The saving throw is on the entry
+  where the text gives one (`half` where the text says half damage on a success). An entry that the text says is dealt
+  at the start of each of the target's turns (the entries marked "each turn" below) is stated as written; the turn
+  structure stays in the `desc`.
+
+  | Monster | Action | Entries added |
+  | --- | --- | --- |
+  | giant centipede | Bite | 3d6 poison, DC 11 Con |
+  | guardian naga | Bite, Spit Poison | 10d8 poison, DC 15 Con, half |
+  | spirit naga | Bite | 7d8 poison, DC 13 Con, half |
+  | pit fiend | Bite | 6d6 poison, DC 21 Con, each turn |
+  | pit fiend | Mace | 6d6 fire |
+  | wyvern | Stinger | 7d6 poison, DC 15 Con, half |
+  | purple worm | Tail Stinger | 12d6 poison, DC 19 Con, half |
+  | purple worm, kraken | Bite | 6d6 and 12d6 acid, each turn while swallowed |
+  | remorhaz, tarrasque | Swallow | 6d6 and 16d6 acid, each turn |
+  | rug of smothering | Smother | 2d6+3 bludgeoning, each turn |
+  | shambling mound | Engulf | 2d8+4 bludgeoning, DC 14 Con, each turn |
+  | vrock | Spores | 1d10 poison, each turn |
+  | chain devil | Chain | 2d6 piercing, each turn |
+  | fire elemental | Touch | 1d10 fire, each turn |
+  | magmin | Touch | 1d6 fire, each turn |
+  | bulette | Deadly Leap | 3d6+4 bludgeoning and 3d6+4 slashing |
+  | ice devil | Wall of Ice | 10d6 cold, DC 17 Dex, half; 5d6 cold, DC 17 Con, half |
+  | wereboar (both forms) | Charge | 2d6 slashing |
+
+  The save of the bulette's Deadly Leap is a choice of Strength or Dexterity and is not encoded.
 - `src/2014/tests/monster-riders.test.ts` checks that every dice-and-type damage entry of an action, ability, attack or
   option appears in that entry's own text, and pins the damage of the crocodile's, duergar's, eagle's, ettercap's,
   flying snake's, gibbering mouther's, hunter shark's, noble's, plesiosaurus's and scorpion's attacks.

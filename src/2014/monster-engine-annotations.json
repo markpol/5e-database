@@ -861,5 +861,1290 @@
         }
       }
     ]
+  },
+  {
+    "monster": "dire-wolf",
+    "section": "actions",
+    "name": "Bite",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "str",
+          "dc_value": 13,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "dragon-turtle",
+    "section": "actions",
+    "name": "Tail",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "str",
+          "dc_value": 20,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "gibbering-mouther",
+    "section": "actions",
+    "name": "Bites",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "str",
+          "dc_value": 10,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "giant-crocodile",
+    "section": "actions",
+    "name": "Tail",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "str",
+          "dc_value": 16,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "mastiff",
+    "section": "actions",
+    "name": "Bite",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "str",
+          "dc_value": 11,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "stone-giant",
+    "section": "actions",
+    "name": "Rock",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "str",
+          "dc_value": 17,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "tarrasque",
+    "section": "actions",
+    "name": "Tail",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "str",
+          "dc_value": 20,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "winter-wolf",
+    "section": "actions",
+    "name": "Bite",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "str",
+          "dc_value": 14,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "wolf",
+    "section": "actions",
+    "name": "Bite",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "str",
+          "dc_value": 11,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "worg",
+    "section": "actions",
+    "name": "Bite",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "str",
+          "dc_value": 13,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "adult-black-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-blue-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-brass-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-bronze-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-copper-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-gold-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-green-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-red-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-silver-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-white-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-black-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-blue-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-brass-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-bronze-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-copper-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-gold-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-green-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-red-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-silver-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-white-dragon",
+    "section": "legendary_actions",
+    "name": "Wing Attack (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "wereboar-boar",
+    "section": "special_abilities",
+    "name": "Charge (Boar or Hybrid Form Only)",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "str",
+          "dc_value": 13,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "wereboar-hybrid",
+    "section": "special_abilities",
+    "name": "Charge (Boar or Hybrid Form Only)",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "str",
+          "dc_value": 13,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "prone",
+          "duration": {
+            "length": 1,
+            "unit": "round"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "bearded-devil",
+    "section": "actions",
+    "name": "Beard",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "con",
+          "dc_value": 12,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "poisoned",
+          "duration": {
+            "length": 10,
+            "unit": "round",
+            "interrupt": "saving throw success"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "bone-devil",
+    "section": "actions",
+    "name": "Sting",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "con",
+          "dc_value": 14,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "poisoned",
+          "duration": {
+            "length": 10,
+            "unit": "round",
+            "interrupt": "saving throw success"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "couatl",
+    "section": "actions",
+    "name": "Bite",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "con",
+          "dc_value": 13,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "poisoned",
+          "duration": {
+            "length": 24,
+            "unit": "hour"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "death-dog",
+    "section": "actions",
+    "name": "Bite",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "con",
+          "dc_value": 12,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "poisoned",
+          "duration": {
+            "length": 1,
+            "unit": "until restored"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "erinyes",
+    "section": "actions",
+    "name": "Longbow",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "con",
+          "dc_value": 14,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "poisoned",
+          "duration": {
+            "length": 1,
+            "unit": "until restored"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "otyugh",
+    "section": "actions",
+    "name": "Bite",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "con",
+          "dc_value": 15,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "poisoned",
+          "duration": {
+            "length": 1,
+            "unit": "until restored"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "sprite",
+    "section": "actions",
+    "name": "Shortbow",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "con",
+          "dc_value": 10,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "poisoned",
+          "duration": {
+            "length": 10,
+            "unit": "round"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "ghast",
+    "section": "actions",
+    "name": "Claws",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "con",
+          "dc_value": 10,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "paralyzed",
+          "duration": {
+            "length": 10,
+            "unit": "round",
+            "interrupt": "saving throw success"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "lich",
+    "section": "actions",
+    "name": "Paralyzing Touch",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "con",
+          "dc_value": 18,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "paralyzed",
+          "duration": {
+            "length": 10,
+            "unit": "round",
+            "interrupt": "saving throw success"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "pit-fiend",
+    "section": "actions",
+    "name": "Bite",
+    "damage": 1,
+    "set": {
+      "condition": {
+        "condition_type": "poisoned",
+        "duration": {
+          "length": 1,
+          "unit": "until saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "vrock",
+    "section": "actions",
+    "name": "Spores",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "poisoned",
+        "duration": {
+          "length": 1,
+          "unit": "until saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "chuul",
+    "section": "actions",
+    "name": "Tentacles",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "poisoned",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "vrock",
+    "section": "actions",
+    "name": "Stunning Screech",
+    "damage": 0,
+    "set": {
+      "condition": {
+        "condition_type": "stunned",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ghast",
+    "section": "special_abilities",
+    "name": "Stench",
+    "set": {
+      "condition": {
+        "condition_type": "poisoned",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "hezrou",
+    "section": "special_abilities",
+    "name": "Stench",
+    "set": {
+      "condition": {
+        "condition_type": "poisoned",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "sea-hag",
+    "section": "special_abilities",
+    "name": "Horrific Appearance",
+    "set": {
+      "dc": {
+        "dc_type": "wis",
+        "dc_value": 11,
+        "success_type": "none"
+      },
+      "condition": {
+        "condition_type": "frightened",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "solar",
+    "section": "legendary_actions",
+    "name": "Blinding Gaze (Costs 3 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "blinded",
+        "duration": {
+          "length": 1,
+          "unit": "until restored"
+        }
+      }
+    }
+  },
+  {
+    "monster": "mummy-lord",
+    "section": "legendary_actions",
+    "name": "Blinding Dust",
+    "set": {
+      "condition": {
+        "condition_type": "blinded",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "mummy-lord",
+    "section": "legendary_actions",
+    "name": "Blasphemous Word (Costs 2 Actions)",
+    "set": {
+      "condition": {
+        "condition_type": "stunned",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "androsphinx",
+    "section": "actions",
+    "name": "Roar",
+    "attack": "Third Roar",
+    "set": {
+      "condition": {
+        "condition_type": "prone",
+        "duration": {
+          "length": 1,
+          "unit": "round"
+        }
+      }
+    }
+  },
+  {
+    "monster": "medusa",
+    "section": "special_abilities",
+    "name": "Petrifying Gaze",
+    "set": {
+      "condition": {
+        "condition_type": "restrained",
+        "duration": {
+          "length": 1,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        },
+        "on_failed_repeat_save": {
+          "condition_type": "petrified",
+          "duration": {
+            "length": 1,
+            "unit": "until restored"
+          }
+        }
+      }
+    }
+  },
+  {
+    "monster": "young-brass-dragon",
+    "section": "actions",
+    "name": "Breath Weapons",
+    "attack": "Sleep Breath",
+    "set": {
+      "condition": {
+        "condition_type": "unconscious",
+        "duration": {
+          "length": 50,
+          "unit": "round",
+          "interrupt": "damage taken"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-brass-dragon",
+    "section": "actions",
+    "name": "Breath Weapons",
+    "attack": "Sleep Breath",
+    "set": {
+      "condition": {
+        "condition_type": "unconscious",
+        "duration": {
+          "length": 100,
+          "unit": "round",
+          "interrupt": "damage taken"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-brass-dragon",
+    "section": "actions",
+    "name": "Breath Weapons",
+    "attack": "Sleep Breath",
+    "set": {
+      "condition": {
+        "condition_type": "unconscious",
+        "duration": {
+          "length": 100,
+          "unit": "round",
+          "interrupt": "damage taken"
+        }
+      }
+    }
+  },
+  {
+    "monster": "young-silver-dragon",
+    "section": "actions",
+    "name": "Breath Weapons",
+    "attack": "Paralyzing Breath",
+    "set": {
+      "condition": {
+        "condition_type": "paralyzed",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "adult-silver-dragon",
+    "section": "actions",
+    "name": "Breath Weapons",
+    "attack": "Paralyzing Breath",
+    "set": {
+      "condition": {
+        "condition_type": "paralyzed",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "ancient-silver-dragon",
+    "section": "actions",
+    "name": "Breath Weapons",
+    "attack": "Paralyzing Breath",
+    "set": {
+      "condition": {
+        "condition_type": "paralyzed",
+        "duration": {
+          "length": 10,
+          "unit": "round",
+          "interrupt": "saving throw success"
+        }
+      }
+    }
+  },
+  {
+    "monster": "behir",
+    "section": "actions",
+    "name": "Constrict",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 16,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "chain-devil",
+    "section": "actions",
+    "name": "Chain",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 14,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "chuul",
+    "section": "actions",
+    "name": "Pincer",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 14
+        }
+      }
+    ]
+  },
+  {
+    "monster": "couatl",
+    "section": "actions",
+    "name": "Constrict",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 15,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "giant-crocodile",
+    "section": "actions",
+    "name": "Bite",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 16,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "glabrezu",
+    "section": "actions",
+    "name": "Pincer",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 15
+        }
+      }
+    ]
+  },
+  {
+    "monster": "kraken",
+    "section": "actions",
+    "name": "Tentacle",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 18,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "marilith",
+    "section": "actions",
+    "name": "Tail",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 19,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "octopus",
+    "section": "actions",
+    "name": "Tentacles",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 10
+        }
+      }
+    ]
+  },
+  {
+    "monster": "remorhaz",
+    "section": "actions",
+    "name": "Bite",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 17,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "roc",
+    "section": "actions",
+    "name": "Talons",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 19,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "rug-of-smothering",
+    "section": "actions",
+    "name": "Smother",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 13,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "salamander",
+    "section": "actions",
+    "name": "Tail",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 14,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "tarrasque",
+    "section": "actions",
+    "name": "Bite",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 20,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "tyrannosaurus-rex",
+    "section": "actions",
+    "name": "Bite",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 17,
+          "additional_condition": {
+            "condition_type": "restrained",
+            "duration": {
+              "length": 1,
+              "unit": "until escape"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "monster": "mimic",
+    "section": "special_abilities",
+    "name": "Adhesive (Object Form Only)",
+    "append_damage": [
+      {
+        "grapple": {
+          "escape_dc_value": 13
+        }
+      }
+    ]
   }
 ]
