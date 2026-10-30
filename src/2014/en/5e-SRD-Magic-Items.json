@@ -1884,7 +1884,15 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 200000
+    "cost_cp": 200000,
+    "proficiency_ids": [
+      "greatswords",
+      "martial-weapons",
+      "longswords",
+      "rapiers",
+      "scimitars",
+      "shortswords"
+    ]
   },
   {
     "index": "defender",
@@ -1938,7 +1946,15 @@
       "unit": "gp"
     },
     "weight": 3,
-    "cost_cp": 2400000
+    "cost_cp": 2400000,
+    "proficiency_ids": [
+      "greatswords",
+      "martial-weapons",
+      "longswords",
+      "rapiers",
+      "scimitars",
+      "shortswords"
+    ]
   },
   {
     "index": "demon-armor",
@@ -2060,7 +2076,11 @@
       "unit": "gp"
     },
     "weight": 45,
-    "cost_cp": 400000
+    "cost_cp": 400000,
+    "proficiency_ids": [
+      "scale-mail",
+      "medium-armor"
+    ]
   },
   {
     "index": "dragon-scale-mail-black",
@@ -2119,6 +2139,10 @@
           "bonus": 1
         }
       }
+    ],
+    "proficiency_ids": [
+      "scale-mail",
+      "medium-armor"
     ]
   },
   {
@@ -2178,6 +2202,10 @@
           "bonus": 1
         }
       }
+    ],
+    "proficiency_ids": [
+      "scale-mail",
+      "medium-armor"
     ]
   },
   {
@@ -2237,6 +2265,10 @@
           "bonus": 1
         }
       }
+    ],
+    "proficiency_ids": [
+      "scale-mail",
+      "medium-armor"
     ]
   },
   {
@@ -2296,6 +2328,10 @@
           "bonus": 1
         }
       }
+    ],
+    "proficiency_ids": [
+      "scale-mail",
+      "medium-armor"
     ]
   },
   {
@@ -2355,6 +2391,10 @@
           "bonus": 1
         }
       }
+    ],
+    "proficiency_ids": [
+      "scale-mail",
+      "medium-armor"
     ]
   },
   {
@@ -2414,6 +2454,10 @@
           "bonus": 1
         }
       }
+    ],
+    "proficiency_ids": [
+      "scale-mail",
+      "medium-armor"
     ]
   },
   {
@@ -2473,6 +2517,10 @@
           "bonus": 1
         }
       }
+    ],
+    "proficiency_ids": [
+      "scale-mail",
+      "medium-armor"
     ]
   },
   {
@@ -2532,6 +2580,10 @@
           "bonus": 1
         }
       }
+    ],
+    "proficiency_ids": [
+      "scale-mail",
+      "medium-armor"
     ]
   },
   {
@@ -2591,6 +2643,10 @@
           "bonus": 1
         }
       }
+    ],
+    "proficiency_ids": [
+      "scale-mail",
+      "medium-armor"
     ]
   },
   {
@@ -2650,6 +2706,10 @@
           "bonus": 1
         }
       }
+    ],
+    "proficiency_ids": [
+      "scale-mail",
+      "medium-armor"
     ]
   },
   {
@@ -2760,6 +2820,12 @@
           "bonus": 2
         }
       }
+    ],
+    "proficiency_ids": [
+      "half-plate-armor",
+      "medium-armor",
+      "plate-armor",
+      "heavy-armor"
     ]
   },
   {
@@ -2880,6 +2946,10 @@
           "bonus": 1
         }
       }
+    ],
+    "proficiency_ids": [
+      "chain-shirt",
+      "medium-armor"
     ]
   },
   {
@@ -3071,6 +3141,14 @@
           ]
         }
       }
+    ],
+    "proficiency_ids": [
+      "greatswords",
+      "martial-weapons",
+      "longswords",
+      "rapiers",
+      "scimitars",
+      "shortswords"
     ]
   },
   {
@@ -3161,6 +3239,14 @@
           ]
         }
       }
+    ],
+    "proficiency_ids": [
+      "greatswords",
+      "martial-weapons",
+      "longswords",
+      "rapiers",
+      "scimitars",
+      "shortswords"
     ]
   },
   {

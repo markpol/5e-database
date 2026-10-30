@@ -312,6 +312,10 @@
     "src/2014/en/5e-SRD-Equipment.json": {
       "source": "srd",
       "fields": {
+        "aliases": {
+          "source": "dd",
+          "note": "The natural-order English name of an item named \"Noun, adjective\" (\"Light crossbow\" for \"Crossbow, light\"); a search alias, not translatable; derived by derive-item-data.ts."
+        },
         "ammunition": {
           "source": "dd",
           "note": "Links a ranged weapon to the equipment index of its ammunition."
@@ -355,6 +359,10 @@
         "material": {
           "source": "dd",
           "note": "Item material (e.g. metal) for rules that depend on the material."
+        },
+        "proficiency_ids": {
+          "source": "dd",
+          "note": "Indexes of the proficiencies that cover a weapon, armor or tool: its own and its category's; derived by derive-item-data.ts from the proficiency references."
         },
         "reach_ft": {
           "source": "dd",
@@ -518,6 +526,10 @@
         "is_consumable": {
           "source": "dd",
           "note": "Marks an item as expended on use."
+        },
+        "proficiency_ids": {
+          "source": "dd",
+          "note": "Indexes of the proficiencies of the weapon or armor a magic item is a kind of, taken from the equipment its variants name; derived by derive-item-data.ts."
         },
         "rarity.min_level": {
           "source": "dd",
