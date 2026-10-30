@@ -5,6 +5,103 @@ export type Condition = {
     name: string;
     desc: string[];
     url: string;
+    effects: {
+        includes?: string[] | undefined;
+        rolls?: {
+            roll: "attack" | "ability_check" | "saving_throw" | "death_saving_throw";
+            mode: "advantage" | "disadvantage" | "auto_fail";
+            abilities?: ("int" | "str" | "dex" | "con" | "wis" | "cha")[] | undefined;
+            attack_kind?: "melee_weapon" | "weapon" | "bound_weapon" | undefined;
+            requires_sense?: "sight" | "hearing" | undefined;
+            while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor")[] | undefined;
+        }[] | undefined;
+        rolls_against?: {
+            roll: "attack" | "ability_check";
+            mode?: "advantage" | "disadvantage" | undefined;
+            critical_hit?: true | undefined;
+            within_ft?: number | undefined;
+            beyond_ft?: number | undefined;
+            by?: "source" | undefined;
+            purpose?: "social_interaction" | undefined;
+            while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor")[] | undefined;
+        }[] | undefined;
+        bonuses?: ({
+            dice: string;
+            to: "saving_throw" | "attack_roll" | "damage_roll" | "armor_class";
+            attack_kind?: "melee_weapon" | "weapon" | "bound_weapon" | undefined;
+            damage_type?: string | undefined;
+            minimum?: number | undefined;
+            uses?: number | undefined;
+        } | {
+            flat: number;
+            to: "saving_throw" | "attack_roll" | "damage_roll" | "armor_class";
+            attack_kind?: "melee_weapon" | "weapon" | "bound_weapon" | undefined;
+            damage_type?: string | undefined;
+            minimum?: number | undefined;
+            uses?: number | undefined;
+        } | {
+            ability_modifier: "int" | "str" | "dex" | "con" | "wis" | "cha";
+            to: "saving_throw" | "attack_roll" | "damage_roll" | "armor_class";
+            attack_kind?: "melee_weapon" | "weapon" | "bound_weapon" | undefined;
+            damage_type?: string | undefined;
+            minimum?: number | undefined;
+            uses?: number | undefined;
+        })[] | undefined;
+        armor_class?: {
+            base: {
+                value: number;
+                ability_modifier: "int" | "str" | "dex" | "con" | "wis" | "cha";
+            };
+            while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor")[] | undefined;
+        } | undefined;
+        speed?: {
+            op: "set";
+            value: number;
+            ignores_bonuses?: true | undefined;
+        } | {
+            op: "halve";
+        } | {
+            op: "crawl_only";
+        } | undefined;
+        cannot?: ("take_actions" | "take_reactions" | "move" | "speak" | "see" | "hear" | "perceive_surroundings" | "cast_spells" | "concentrate" | "harm_source" | "move_closer_to_source")[] | undefined;
+        limits?: {
+            attacks_per_turn?: number | undefined;
+            one_of_action_or_bonus_action?: true | undefined;
+        } | undefined;
+        damage?: {
+            relation: "resistance" | "immunity" | "vulnerability";
+            types: string[];
+            while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor")[] | undefined;
+        }[] | undefined;
+        immune_to?: string[] | undefined;
+        hit_point_maximum?: {
+            op: "reduce" | "halve";
+        } | undefined;
+        ability_scores?: {
+            ability: "int" | "str" | "dex" | "con" | "wis" | "cha";
+            op: "reduce";
+        }[] | undefined;
+        healing?: "maximum" | undefined;
+        drops_held_items?: true | undefined;
+        provokes_opportunity_attacks?: boolean | undefined;
+        death?: true | undefined;
+        reason?: string | undefined;
+    };
+    removes?: string[] | undefined;
+    adds?: string[] | undefined;
+    on_remove?: {
+        removes?: string[] | undefined;
+        exhaustion_levels?: number | undefined;
+    } | undefined;
+    immune_if_feature?: {
+        feature: string;
+        while_condition?: string | undefined;
+    }[] | undefined;
+    exhaustion_level?: {
+        level: number;
+        next?: string | undefined;
+        prev?: string | undefined;
+    } | undefined;
 };
 
 declare const data: Condition[];

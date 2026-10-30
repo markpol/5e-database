@@ -14,7 +14,7 @@ removed.
 | --- | --- | --- |
 | Monster actions | `5e-SRD-Monsters.json` | Added `attack_type` ("Melee"/"Ranged") to actions; added `bonus_actions` (parsed list of bonus-action ids); added `environments` (habitat string); `speed.*` and `senses.{darkvision,blindsight,truesight}` changed from strings (`"40 ft."`) to plain integers (`40`); added `weapon`, `weapon_kind`, and `supply` (equipment-linked weapon/ammunition annotations) |
 | Monster normalization | `5e-SRD-Monsters-Normalized.json` (new file), `normalize-monsters.ts` (new script), `monster-engine-annotations.json` (new file), `verify-normalize.sh` (new script) | Adds a pre-flattened copy of the monster data that collapses nested reference objects (`dc_type`, `damage_type`, `condition_type`, spellcasting `ability`, etc.) down to their plain string `index`, normalizes where `dc`/`condition` sit on an action, merges in extra annotations (e.g. conditions applied on a failed save, riders, grapples, a pull distance, weapon annotations) from `monster-engine-annotations.json`, and derives the structure of attacks (`attack_type`, `attack_kind`, `reach_ft`, `range`) and of areas of effect (`area`) from the action text; `src/2014/tests/normalized-monsters.test.ts` regenerates from the English source and asserts it matches the committed normalized file byte-for-byte |
-| Conditions | `5e-SRD-Conditions.json` | Added 17 new condition entries: 6 numbered exhaustion levels (`exhaustion-1`…`exhaustion-6`) plus `enraged`, `frenzied`, `reckless`, `dodging`, `infested`, `swallowed`, `drained-of-strength`, `weakened`, `slowed`, `drained-of-life`, `disengaged`, `surprised` |
+| Conditions | `5e-SRD-Conditions.json` | Added 17 new condition entries: 6 numbered exhaustion levels (`exhaustion-1`…`exhaustion-6`) plus `enraged`, `frenzied`, `reckless`, `dodging`, `infested`, `swallowed`, `drained-of-strength`, `weakened`, `slowed`, `drained-of-life`, `disengaged`, `surprised`; added 14 more for states that the SRD text implies (`no-reactions`, `concentrating` and 12 effects of spells and of the Sacred Weapon option); added a structured `effects` object to every condition, and `exhaustion_level`, `removes`, `adds`, `on_remove` and `immune_if_feature` where the text defines them (see "Conditions: structured effects") |
 | Equipment | `5e-SRD-Equipment.json` | Added `material`, `stackable`, `is_consumable`, `effect` (damage-on-use) to select items; removed 40 non-combat items (mounts, vehicles, barding, tack/harness, stabling/feed) |
 | Equipment categories | `5e-SRD-Equipment-Categories.json` | Removed 6 non-combat categories (`gaming-sets`, `land-vehicles`, `mounts-and-other-animals`, `mounts-and-vehicles`, `tack-harness-and-drawn-vehicles`, `waterborne-vehicles`) and their members |
 | Proficiencies | `5e-SRD-Proficiencies.json` | Removed proficiency entries tied to the removed equipment (e.g. `nets`, `land-vehicles`, `water-vehicles`) |
@@ -380,3 +380,129 @@ other change.
 - Reconciling the `/api/2014/...` vs `/api/...` URL drift noted above.
 - Structuring the areas and ranges of special abilities and legendary actions (the lights' radii, the kraken's Ink
   Cloud, the solar's Searing Burst), and the placement range of the djinni's Create Whirlwind.
+
+## Conditions: structured effects
+
+Every condition has an `effects` object that states, as data, the mechanical effects its `desc` states. It is
+additive: `index`, `name`, `desc` and `url` of the existing 33 conditions are unchanged. `effects` is English-only and
+is never translated, so the translation overlays do not carry it; the translatable text stays in `name` and `desc`.
+The fields are in the schema (`src/2014/schemas/5e-SRD-Conditions.ts`), which comments each of them, and are marked
+`dd` in `src/provenance/source-markers.json`.
+
+`effects` says what the condition does while it lasts. How long it lasts, and the saving throw that ends or applies
+it, are not part of it; the text of a row (`desc`) keeps them. The effects of a row are those its own text states. Where
+the text says the creature is in another condition ("is incapacitated (see the condition)"), `effects.includes` names it,
+and the effects of the included condition, and its `removes`, apply as well.
+
+### Fields of a condition
+
+| Field | Value | Meaning |
+| --- | --- | --- |
+| `effects` | object, always present | See below |
+| `removes` | condition indexes | Conditions that end when this one is applied: `incapacitated` ends `concentrating` (the concentration rules), `unconscious` ends `enraged` and `sacred-weapon` (their text says they end on falling unconscious) |
+| `adds` | condition indexes | Conditions applied along with this one: `unconscious` adds `prone` ("falls prone") |
+| `on_remove` | `{ removes?, exhaustion_levels? }` | What happens when the condition ends: `enraged` ends `frenzied` ("for the duration of your rage") and `frenzied` gives one level of exhaustion ("when your rage ends, you suffer one level of exhaustion"). `exhaustion_levels` is a number of levels |
+| `immune_if_feature` | `[{ feature, while_condition? }]` | A feature (an index of `5e-SRD-Features.json`) whose text makes its owner immune to the condition. With `while_condition`, only while the owner also has that condition: `charmed` and `frightened` have `mindless-rage` while `enraged`, `poisoned` has `purity-of-body` |
+| `exhaustion_level` | `{ level, next?, prev? }` | On `exhaustion-1` to `exhaustion-6`: the level, and the indexes of the next and previous level. `exhaustion-1` has no `prev` (below level 1 every exhaustion effect ends) and `exhaustion-6` has no `next`. Each level row states the effects of its level and of all lower levels, as the text of the SRD does |
+
+### The `effects` object
+
+All fields are optional. A condition with none of them has `reason`, a note for maintainers on why the text gives no
+effect that fits (7 of the 47 conditions: `exhaustion`, `frenzied`, `infested`, `concentrating`, `sanctuary`,
+`spiritual-weapon`, `commanded`); `reason` is never present next to another field and is not display text.
+
+| Field | Shape | Meaning |
+| --- | --- | --- |
+| `includes` | condition indexes | Also has the effects of these conditions |
+| `rolls` | `[{ roll, mode, abilities?, attack_kind?, requires_sense?, while? }]` | A change to the creature's own rolls |
+| `rolls_against` | `[{ roll, mode?, critical_hit?, within_ft?, beyond_ft?, by?, purpose?, while? }]` | A change to the rolls that others make against the creature |
+| `bonuses` | `[{ to, dice \| flat \| ability_modifier, attack_kind?, damage_type?, minimum?, uses? }]` | A bonus added to a roll or to armor class |
+| `armor_class` | `{ base: { value, ability_modifier }, while? }` | The armor class becomes `value` plus the ability modifier |
+| `speed` | `{ op: "set", value, ignores_bonuses? }`, `{ op: "halve" }` or `{ op: "crawl_only" }` | A change to the creature's speed |
+| `cannot` | list | What the creature cannot do |
+| `limits` | `{ attacks_per_turn?, one_of_action_or_bonus_action? }` | A cap on what the creature can do in a turn |
+| `damage` | `[{ relation, types, while? }]` | Resistance, immunity or vulnerability to damage |
+| `immune_to` | list | Conditions (indexes) and `disease` that the creature is immune to |
+| `hit_point_maximum` | `{ op }` | `halve` the hit point maximum, or `reduce` it by an amount that the applying effect states |
+| `ability_scores` | `[{ ability, op: "reduce" }]` | An ability score reduced by an amount that the applying effect states |
+| `healing` | `"maximum"` | Any healing restores the most hit points possible |
+| `drops_held_items` | `true` | The creature drops what it holds |
+| `provokes_opportunity_attacks` | boolean | `false`: its movement does not provoke opportunity attacks |
+| `death` | `true` | The creature dies |
+
+**`rolls`.** `roll` is `attack`, `ability_check`, `saving_throw` or `death_saving_throw`. `mode` is `advantage`,
+`disadvantage` or `auto_fail`. `abilities` lists ability score indexes (`str`, `dex`, `con`, `int`, `wis`, `cha`);
+without it every ability is covered, and for an attack roll it is the ability the attack uses. `attack_kind` limits
+an attack roll to `melee_weapon` (a melee weapon attack), `weapon` (any weapon attack) or `bound_weapon` (the one
+weapon that the condition is tied to). `requires_sense` (`sight` or `hearing`) limits an ability check to those that
+need the sense.
+
+**`rolls_against`.** `roll` is `attack` or `ability_check`. An entry has either `mode` (`advantage` or `disadvantage`)
+or `critical_hit: true` (a hit is a critical hit). `within_ft` limits it to an attacker at most that many feet away
+and `beyond_ft` to an attacker farther than that, in feet: a prone creature has `{ advantage, within_ft: 5 }` and
+`{ disadvantage, beyond_ft: 5 }`. `by: "source"` limits it to the creature that applied the condition, and
+`purpose: "social_interaction"` to ability checks to interact socially (charmed).
+
+**`while`.** A list of circumstances, all of which must hold for the entry to apply: `source_in_line_of_sight` (the
+source of the condition is in the creature's line of sight), `can_see_attacker`, `not_incapacitated`, `speed_above_0`,
+`not_wearing_armor`, `not_wearing_heavy_armor`.
+
+**`bonuses`.** `to` is `attack_roll`, `damage_roll`, `saving_throw` or `armor_class`. The bonus is `dice` (`"1d4"`),
+`flat` (a number) or `ability_modifier` (an ability index, whose modifier is added). `minimum` is the least the bonus
+can be. `damage_type` is a damage type index, for extra damage of that type. `uses` ends the bonus after that many
+uses. Values are those of the lowest level; a condition that grows with the level of the source (magic weapon) keeps
+its base value.
+
+**`cannot`.** `take_actions`, `take_reactions`, `move`, `speak`, `see`, `hear`, `perceive_surroundings` (unaware of
+its surroundings), `cast_spells`, `concentrate`, `harm_source` (attack the source of the condition or target it with
+harmful abilities or effects), `move_closer_to_source` (willingly).
+
+**`speed`.** `set` makes the speed `value` feet (`ignores_bonuses` when the text says it cannot benefit from a speed
+bonus), `halve` halves it, `crawl_only` leaves crawling as the only movement. Where a row has the speed set to 0
+(`exhaustion-5`, `exhaustion-6`), the earlier halving of the lower level is replaced by it.
+
+**`damage`.** `relation` is `resistance`, `immunity` or `vulnerability`; `types` is a list of damage type indexes, or
+`["all"]`.
+
+### Counts
+
+47 conditions: 33 before and 14 new. 40 have structured effects and 7 have a `reason`. Among the fields of `effects`:
+`rolls` 22, `cannot` 13, `rolls_against` 11, `speed` 10, `bonuses` 6, `includes` 5, `hit_point_maximum` 4, `damage` 2,
+and one each of `armor_class`, `immune_to`, `drops_held_items`, `death`, `ability_scores`, `limits`, `healing` and
+`provokes_opportunity_attacks`. `removes` is on 2 conditions, `adds` on 1, `on_remove` on 2, `immune_if_feature` on 3
+and `exhaustion_level` on 6.
+
+### New condition rows
+
+The 14 rows below are not SRD condition entries. They state, in wording written for the game, states that the SRD
+text implies. Each is marked `dd` in `src/provenance/source-markers.json`.
+
+| Index | Source of the state |
+| --- | --- |
+| `no-reactions` | Effects that stop a creature from taking reactions |
+| `concentrating` | The SRD concentration rules |
+| `blessed`, `shield-of-faith`, `sanctuary`, `beacon-of-hope`, `spiritual-weapon`, `spirit-guardians`, `magic-weapon`, `divine-favor`, `branding-smite`, `mage-armor`, `commanded` | The spells of the same name |
+| `sacred-weapon` | The Sacred Weapon Channel Divinity option of the Oath of Devotion |
+
+The translation overlays do not cover these rows, so the coverage report shows them as untranslated.
+
+### What is not structured
+
+The audit in `src/2014/tests/condition-effects.test.ts` lists, per condition, the mechanical phrases that `effects`
+leaves out, and fails if a text states a mechanical phrase that is neither structured nor listed. They are:
+
+- Durations, repeat saving throws and the ways a condition ends: grappled ending when the grappler is incapacitated
+  or the creature leaves its reach; rage ending early, its minute of duration and its uses; the duration and repeat
+  save of weakened and slowed; what a rest restores for drained-of-strength and drained-of-life; the turns that
+  surprised, reckless, dodging and disengaged cover.
+- Visibility: invisible being impossible to see without magic or a special sense, being heavily obscured for hiding, and
+  being found by noise or tracks; the total cover of swallowed.
+- Changes of the creature itself: petrified weight and aging, and its poison and disease being suspended; stunned
+  speaking only falteringly.
+- Grants of actions and damage: the rage bonus to melee damage (+2, growing with level), the bonus-action attack of
+  frenzied, the blood loss of infested, the acid damage of swallowed, the damage of spirit-guardians, and the
+  effects of branding-smite on the target's visibility.
+- Spell mechanics that are a saving throw of someone else or a choice made when the spell is cast: sanctuary,
+  commanded, spiritual-weapon.
+- The immunities that auras give to allies (the paladin's Aura of Courage and Aura of Devotion), which
+  `immune_if_feature` does not model because they protect creatures within a range of the feature's owner.
