@@ -51,6 +51,7 @@ export const COUNT_PROGRESSIONS: Record<string, Progression[]> = {
 // The `class_specific` keys of an `engine` that grow with the level and are not counted here, and why. Each is a
 // pair `<feature>:<key>`.
 const OWN_RECORDS = 'each count has a feature record of its own';
+const AURA_RANGE = 'the range of an aura, read from the Levels row, with no resource to count';
 export const COUNT_EXCLUDED: Record<string, string> = {
   'bardic-inspiration-d6:bardic_inspiration_die': OWN_RECORDS,
   'bardic-inspiration-d8:bardic_inspiration_die': OWN_RECORDS,
@@ -61,13 +62,20 @@ export const COUNT_EXCLUDED: Record<string, string> = {
   'indomitable-2-uses:indomitable_uses': OWN_RECORDS,
   'brutal-critical-1-die:brutal_critical_dice': OWN_RECORDS,
   'brutal-critical-2-dice:brutal_critical_dice': OWN_RECORDS,
+  'channel-divinity-2-rest:channel_divinity_charges': OWN_RECORDS,
   'destroy-undead-cr-1-2-or-below:destroy_undead_cr': OWN_RECORDS,
+  'destroy-undead-cr-1-or-below:destroy_undead_cr': OWN_RECORDS,
+  'destroy-undead-cr-2-or-below:destroy_undead_cr': OWN_RECORDS,
+  'destroy-undead-cr-3-or-below:destroy_undead_cr': OWN_RECORDS,
   'wild-shape-cr-1-4-or-below-no-flying-or-swim-speed:wild_shape_max_cr': OWN_RECORDS,
   'wild-shape-cr-1-4-or-below-no-flying-or-swim-speed:wild_shape_fly': OWN_RECORDS,
   'wild-shape-cr-1-4-or-below-no-flying-or-swim-speed:wild_shape_swim': OWN_RECORDS,
   'wild-shape-cr-1-2-or-below-no-flying-speed:wild_shape_max_cr': OWN_RECORDS,
   'wild-shape-cr-1-2-or-below-no-flying-speed:wild_shape_fly': OWN_RECORDS,
   'wild-shape-cr-1-2-or-below-no-flying-speed:wild_shape_swim': OWN_RECORDS,
+  'aura-of-protection:aura_range': AURA_RANGE,
+  'aura-of-devotion:aura_range': AURA_RANGE,
+  'aura-of-courage:aura_range': AURA_RANGE,
   'flexible-casting-creating-spell-slots:creating_spell_slots':
     'a table of costs for each spell slot level, not a count',
 };

@@ -1997,6 +1997,15 @@
     "desc": [
       "Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "recharge": "short_rest",
+        "uses": {
+          "class_specific": "channel_divinity_charges"
+        }
+      }
+    },
     "url": "/api/2014/features/channel-divinity-2-rest"
   },
   {
@@ -2033,6 +2042,21 @@
     "desc": [
       "Beginning at 6th level, the healing spells you cast on others heal you as well. When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell's level."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "healing",
+            "flat": 2,
+            "add_spell_level": true,
+            "min_spell_level": 1,
+            "target": "self"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/blessed-healer"
   },
   {
@@ -2082,6 +2106,18 @@
     "desc": [
       "Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "destroy",
+            "creature_types": ["undead"],
+            "class_specific": "destroy_undead_cr"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/destroy-undead-cr-1-or-below"
   },
   {
@@ -2118,6 +2154,27 @@
     "desc": [
       "At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "recharge": "turn",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "dice_at_class_level": {
+              "8": "1d8",
+              "14": "2d8"
+            },
+            "damage_type": "radiant",
+            "attack_kind": "weapon"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/divine-strike"
   },
   {
@@ -2152,6 +2209,15 @@
       "If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.",
       "At 20th level, your call for intervention succeeds automatically, no roll required."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1
+        }
+      }
+    },
     "url": "/api/2014/features/divine-intervention"
   },
   {
@@ -2167,6 +2233,18 @@
     "desc": [
       "Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "destroy",
+            "creature_types": ["undead"],
+            "class_specific": "destroy_undead_cr"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/destroy-undead-cr-2-or-below"
   },
   {
@@ -2200,6 +2278,18 @@
     "desc": [
       "Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "destroy",
+            "creature_types": ["undead"],
+            "class_specific": "destroy_undead_cr"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/destroy-undead-cr-3-or-below"
   },
   {
@@ -2233,6 +2323,18 @@
     "desc": [
       "Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "destroy",
+            "creature_types": ["undead"],
+            "class_specific": "destroy_undead_cr"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/destroy-undead-cr-4-or-below"
   },
   {
@@ -2264,6 +2366,17 @@
     "desc": [
       "Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die. For example, instead of restoring 2d6 hit points to a creature, you restore 12."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "spell_change",
+            "change": "maximize_healing_dice"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/supreme-healing"
   },
   {
@@ -2279,6 +2392,15 @@
     "desc": [
       "Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "recharge": "short_rest",
+        "uses": {
+          "class_specific": "channel_divinity_charges"
+        }
+      }
+    },
     "url": "/api/2014/features/channel-divinity-3-rest"
   },
   {
@@ -5654,6 +5776,24 @@
       "Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.",
       "At 18th level, the range of this aura increases to 30 feet."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "saving_throw",
+            "ability_modifier": "cha",
+            "minimum": 1,
+            "aura": {
+              "class_specific": "aura_range",
+              "affects": "allies_and_self"
+            },
+            "while": ["conscious"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/aura-of-protection"
   },
   {
@@ -5691,6 +5831,22 @@
       "Starting at 7th level, you and friendly creatures within 10 feet of you can't be charmed while you are conscious.",
       "At 18th level, the range of this aura increases to 30 feet."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "immune_to",
+            "conditions": ["charmed"],
+            "aura": {
+              "class_specific": "aura_range",
+              "affects": "allies_and_self"
+            },
+            "while": ["conscious"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/aura-of-devotion"
   },
   {
@@ -5725,6 +5881,22 @@
       "Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.",
       "At 18th level, the range of this aura increases to 30 feet."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "immune_to",
+            "conditions": ["frightened"],
+            "aura": {
+              "class_specific": "aura_range",
+              "affects": "allies_and_self"
+            },
+            "while": ["conscious"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/aura-of-courage"
   },
   {
@@ -5740,6 +5912,20 @@
     "desc": [
       "By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage. If you also use your Divine Smite with an attack, you add this damage to the extra damage of your Divine Smite."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "dice": "1d8",
+            "damage_type": "radiant",
+            "attack_kind": "melee_weapon"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/improved-divine-smite"
   },
   {
@@ -5774,6 +5960,23 @@
       "Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.",
       "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "recharge": "long_rest",
+        "uses": {
+          "ability_modifier": "cha",
+          "minimum": 1
+        },
+        "modifiers": [
+          {
+            "type": "end_spell",
+            "count": 1,
+            "targets": ["self", "willing_creature"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/cleansing-touch"
   },
   {
@@ -5810,6 +6013,26 @@
     "desc": [
       "Beginning at 15th level, you are always under the effects of a protection from evil and good spell."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "protection-from-evil-and-good",
+            "slot": "none",
+            "self_only": true,
+            "always_active": true
+          },
+          {
+            "type": "rolls_against_owner",
+            "roll": "attack",
+            "mode": "disadvantage",
+            "creature_types": ["aberration", "celestial", "elemental", "fey", "fiend", "undead"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/purity-of-spirit"
   },
   {
@@ -5897,6 +6120,37 @@
       "Whenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.",
       "In addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "modifiers": [
+          {
+            "type": "deal_damage",
+            "flat": 10,
+            "damage_type": "radiant",
+            "trigger": "starts_turn_in_aura",
+            "aura": {
+              "range_ft": 30,
+              "affects": "enemies"
+            },
+            "duration": {
+              "unit": "minute",
+              "length": 1
+            }
+          },
+          {
+            "type": "roll",
+            "roll": "saving_throw",
+            "mode": "advantage",
+            "against_spells_cast_by": ["fiend", "undead"],
+            "duration": {
+              "unit": "minute",
+              "length": 1
+            }
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/holy-nimbus"
   },
   {
@@ -11457,6 +11711,18 @@
     "desc": [
       "Starting at 6th level, your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "spell_change",
+            "change": "half_damage_on_successful_save",
+            "max_spell_level": 0
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/potent-cantrip"
   },
   {
@@ -11511,6 +11777,19 @@
     "desc": [
       "Beginning at 10th level, you can add your Intelligence modifier to one damage roll of any wizard evocation spell you cast."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "ability_modifier": "int",
+            "school": "evocation"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/empowered-evocation"
   },
   {
@@ -11634,6 +11913,15 @@
       "When you reach 20th level, you gain mastery over two powerful spells and can cast them with little effort. Choose two 3rd-level wizard spells in your spellbook as your signature spells. You always have these spells prepared, they don't count against the number of spells you have prepared, and you can cast each of them once at 3rd level without expending a spell slot. When you do so, you can't do so again until you finish a short or long rest.",
       "If you want to cast either spell at a higher level, you must expend a spell slot as normal."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "recharge": "short_rest",
+        "uses": {
+          "count": 2
+        }
+      }
+    },
     "url": "/api/2014/features/signature-spell"
   }
 ]

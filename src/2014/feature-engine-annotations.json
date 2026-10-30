@@ -2252,5 +2252,313 @@
         "count": 1
       }
     }
+  },
+  {
+    "feature": "aura-of-protection",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "saving_throw",
+          "ability_modifier": "cha",
+          "minimum": 1,
+          "aura": {
+            "class_specific": "aura_range",
+            "affects": "allies_and_self"
+          },
+          "while": ["conscious"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "aura-of-devotion",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "immune_to",
+          "conditions": ["charmed"],
+          "aura": {
+            "class_specific": "aura_range",
+            "affects": "allies_and_self"
+          },
+          "while": ["conscious"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "aura-of-courage",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "immune_to",
+          "conditions": ["frightened"],
+          "aura": {
+            "class_specific": "aura_range",
+            "affects": "allies_and_self"
+          },
+          "while": ["conscious"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "improved-divine-smite",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "dice": "1d8",
+          "damage_type": "radiant",
+          "attack_kind": "melee_weapon"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "cleansing-touch",
+    "engine": {
+      "action_cost": "action",
+      "recharge": "long_rest",
+      "uses": {
+        "ability_modifier": "cha",
+        "minimum": 1
+      },
+      "modifiers": [
+        {
+          "type": "end_spell",
+          "count": 1,
+          "targets": ["self", "willing_creature"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "purity-of-spirit",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "protection-from-evil-and-good",
+          "slot": "none",
+          "self_only": true,
+          "always_active": true
+        },
+        {
+          "type": "rolls_against_owner",
+          "roll": "attack",
+          "mode": "disadvantage",
+          "creature_types": ["aberration", "celestial", "elemental", "fey", "fiend", "undead"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "holy-nimbus",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "deal_damage",
+          "flat": 10,
+          "damage_type": "radiant",
+          "trigger": "starts_turn_in_aura",
+          "aura": {
+            "range_ft": 30,
+            "affects": "enemies"
+          },
+          "duration": {
+            "unit": "minute",
+            "length": 1
+          }
+        },
+        {
+          "type": "roll",
+          "roll": "saving_throw",
+          "mode": "advantage",
+          "against_spells_cast_by": ["fiend", "undead"],
+          "duration": {
+            "unit": "minute",
+            "length": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "feature": "channel-divinity-2-rest",
+    "engine": {
+      "action_cost": "passive",
+      "recharge": "short_rest",
+      "uses": {
+        "class_specific": "channel_divinity_charges"
+      }
+    }
+  },
+  {
+    "feature": "channel-divinity-3-rest",
+    "engine": {
+      "action_cost": "passive",
+      "recharge": "short_rest",
+      "uses": {
+        "class_specific": "channel_divinity_charges"
+      }
+    }
+  },
+  {
+    "feature": "blessed-healer",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "healing",
+          "flat": 2,
+          "add_spell_level": true,
+          "min_spell_level": 1,
+          "target": "self"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "destroy-undead-cr-1-or-below",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "destroy",
+          "creature_types": ["undead"],
+          "class_specific": "destroy_undead_cr"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "destroy-undead-cr-2-or-below",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "destroy",
+          "creature_types": ["undead"],
+          "class_specific": "destroy_undead_cr"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "destroy-undead-cr-3-or-below",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "destroy",
+          "creature_types": ["undead"],
+          "class_specific": "destroy_undead_cr"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "destroy-undead-cr-4-or-below",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "destroy",
+          "creature_types": ["undead"],
+          "class_specific": "destroy_undead_cr"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "divine-strike",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "turn",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "dice_at_class_level": {
+            "8": "1d8",
+            "14": "2d8"
+          },
+          "damage_type": "radiant",
+          "attack_kind": "weapon"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "divine-intervention",
+    "engine": {
+      "action_cost": "action",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      }
+    }
+  },
+  {
+    "feature": "supreme-healing",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "spell_change",
+          "change": "maximize_healing_dice"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "potent-cantrip",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "spell_change",
+          "change": "half_damage_on_successful_save",
+          "max_spell_level": 0
+        }
+      ]
+    }
+  },
+  {
+    "feature": "empowered-evocation",
+    "engine": {
+      "action_cost": "free",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "ability_modifier": "int",
+          "school": "evocation"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "signature-spell",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "short_rest",
+      "uses": {
+        "count": 2
+      }
+    }
   }
 ]

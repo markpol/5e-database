@@ -28,6 +28,9 @@ export const ENGINE_MAX_LEVEL_BY_CLASS: Record<string, number> = {
   fighter: 20,
   monk: 20,
   rogue: 20,
+  paladin: 20,
+  cleric: 20,
+  wizard: 20,
 };
 
 /** The highest class level whose features are structured, for a class. */
@@ -60,6 +63,9 @@ export const ENGINE_EXCLUDED: Record<string, string> = {
   'bard-college': SUBCLASS_CHOICE,
   'divine-domain': SUBCLASS_CHOICE,
   'divine-domain-improvement-1': SUBCLASS_CHOICE,
+  'divine-domain-improvement-2': SUBCLASS_CHOICE,
+  'divine-domain-improvement-3': SUBCLASS_CHOICE,
+  'divine-domain-improvement-4': SUBCLASS_CHOICE,
   'druid-circle': SUBCLASS_CHOICE,
   'martial-archetype': SUBCLASS_CHOICE,
   'monastic-tradition': SUBCLASS_CHOICE,
@@ -81,6 +87,8 @@ export const ENGINE_EXCLUDED: Record<string, string> = {
   'domain-spells-1': PREPARED_SPELLS,
   'domain-spells-2': PREPARED_SPELLS,
   'domain-spells-3': PREPARED_SPELLS,
+  'domain-spells-4': PREPARED_SPELLS,
+  'domain-spells-5': PREPARED_SPELLS,
   'circle-spells-1': PREPARED_SPELLS,
   'circle-spells-2': PREPARED_SPELLS,
   'oath-spells': PREPARED_SPELLS,
@@ -141,6 +149,20 @@ export const ENGINE_EXCLUDED: Record<string, string> = {
     'ignoring the requirements on the use of magic items, with no structured counterpart',
   blindsense: 'awareness of hidden and invisible creatures, a sense with no structured counterpart',
   'thiefs-reflexes': 'a second turn in the first round of combat, with no structured counterpart',
+  'sacred-oath-improvement-1': SUBCLASS_CHOICE,
+  'sacred-oath-improvement-2': SUBCLASS_CHOICE,
+  'sacred-oath-improvement-3': SUBCLASS_CHOICE,
+  'aura-improvements':
+    'the larger range of the auras at 18th level, which the aura_range of the Levels rows gives to each aura',
+  'divine-intervention-improvement':
+    'a call for intervention that succeeds without a roll, which only the text of Divine Intervention states',
+  'arcane-tradition-improvement-1': SUBCLASS_CHOICE,
+  'arcane-tradition-improvement-2': SUBCLASS_CHOICE,
+  'arcane-tradition-improvement-3': SUBCLASS_CHOICE,
+  'spell-mastery':
+    "two spells of the owner's choice from the spellbook cast without a spell slot, with no structured counterpart",
+  overchannel:
+    'necrotic damage taken on a repeated use before a long rest, which rises by 1d12 per spell level each time, with no structured counterpart',
 };
 
 const ASI_NAME = 'Ability Score Improvement';
