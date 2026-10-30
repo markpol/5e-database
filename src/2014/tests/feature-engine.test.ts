@@ -584,9 +584,7 @@ describe('feature engine modifiers', () => {
   });
 
   it('change a casting of a spell as the text states', () => {
-    const ORDINALS: Record<number, string> = { 1: '1st', 5: '5th' };
     for (const [f, m] of all.filter(([, m]) => m.type === 'spell_change')) {
-      if (m.change === 'maximize_damage_dice') expect(text(f), f.index).toMatch(/maximum damage/);
       if (m.change === 'maximize_healing_dice')
         expect(text(f), f.index).toMatch(/highest number possible for each die/);
       if (m.change === 'half_damage_on_successful_save')
@@ -594,11 +592,6 @@ describe('feature engine modifiers', () => {
           /takes half the cantrip's damage \(if any\) but suffers no additional/
         );
       if (m.max_spell_level === 0) expect(text(f), f.index).toMatch(/cantrip/);
-      else if (m.max_spell_level) {
-        expect(text(f), f.index).toContain(
-          `${ORDINALS[m.min_spell_level as number]} through ${ORDINALS[m.max_spell_level as number]} level`
-        );
-      }
     }
   });
 

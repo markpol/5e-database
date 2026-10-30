@@ -315,10 +315,10 @@ const ModifierSchema = z.discriminatedUnion('type', [
     save_dc: DcSchema.optional(),
     always_active: z.literal(true).optional(),
   }),
-  // A change to one casting of a spell. `range_ft` is the new range of `range`. `maximize_damage_dice` and
-  // `maximize_healing_dice` give every die of the damage or the healing its highest number;
-  // `half_damage_on_successful_save` makes a creature that succeeds on its save take half the damage and none of the
-  // other effects. `min_spell_level` and `max_spell_level` limit it to spells of those levels (0 is a cantrip).
+  // A change to one casting of a spell. `range_ft` is the new range of `range`. `maximize_healing_dice` gives every
+  // die of the healing its highest number; `half_damage_on_successful_save` makes a creature that succeeds on its
+  // save take half the damage and none of the other effects. `max_spell_level` limits it to spells up to that level
+  // (0 is a cantrip).
   z.strictObject({
     type: z.literal('spell_change'),
     ...ModifierBase,
@@ -332,13 +332,11 @@ const ModifierSchema = z.discriminatedUnion('type', [
       'second_target',
       'reroll_damage_dice',
       'save_disadvantage',
-      'maximize_damage_dice',
       'maximize_healing_dice',
       'half_damage_on_successful_save',
     ]),
     spell: z.string().optional(),
     range_ft: z.number().optional(),
-    min_spell_level: z.number().optional(),
     max_spell_level: z.number().optional(),
   }),
   // Creatures the owner chooses automatically succeed on their saving throws against the spell, and with

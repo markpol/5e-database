@@ -342,11 +342,10 @@ export type Feature = {
                 while_condition?: string | undefined;
                 option?: string | undefined;
             } | {
-                change: "range" | "double_range" | "touch_range_30_ft" | "double_duration" | "bonus_action_casting_time" | "no_verbal_or_somatic" | "second_target" | "reroll_damage_dice" | "save_disadvantage" | "maximize_damage_dice" | "maximize_healing_dice" | "half_damage_on_successful_save";
+                change: "range" | "double_range" | "touch_range_30_ft" | "double_duration" | "bonus_action_casting_time" | "no_verbal_or_somatic" | "second_target" | "reroll_damage_dice" | "save_disadvantage" | "maximize_healing_dice" | "half_damage_on_successful_save";
                 type: "spell_change";
                 spell?: string | undefined;
                 range_ft?: number | undefined;
-                min_spell_level?: number | undefined;
                 max_spell_level?: number | undefined;
                 while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness" | "proficient" | "moving_at_most_half_speed" | "conscious")[] | undefined;
                 while_condition?: string | undefined;

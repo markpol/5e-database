@@ -161,6 +161,8 @@ export const ENGINE_EXCLUDED: Record<string, string> = {
   'arcane-tradition-improvement-3': SUBCLASS_CHOICE,
   'spell-mastery':
     "two spells of the owner's choice from the spellbook cast without a spell slot, with no structured counterpart",
+  overchannel:
+    'necrotic damage taken on a repeated use before a long rest, which rises by 1d12 per spell level each time, with no structured counterpart',
 };
 
 const ASI_NAME = 'Ability Score Improvement';

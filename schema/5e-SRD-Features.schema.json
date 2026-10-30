@@ -2525,7 +2525,6 @@
                           "second_target",
                           "reroll_damage_dice",
                           "save_disadvantage",
-                          "maximize_damage_dice",
                           "maximize_healing_dice",
                           "half_damage_on_successful_save"
                         ]
@@ -2534,9 +2533,6 @@
                         "type": "string"
                       },
                       "range_ft": {
-                        "type": "number"
-                      },
-                      "min_spell_level": {
                         "type": "number"
                       },
                       "max_spell_level": {

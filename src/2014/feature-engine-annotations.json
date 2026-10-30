@@ -2552,20 +2552,6 @@
     }
   },
   {
-    "feature": "overchannel",
-    "engine": {
-      "action_cost": "free",
-      "modifiers": [
-        {
-          "type": "spell_change",
-          "change": "maximize_damage_dice",
-          "min_spell_level": 1,
-          "max_spell_level": 5
-        }
-      ]
-    }
-  },
-  {
     "feature": "signature-spell",
     "engine": {
       "action_cost": "free",

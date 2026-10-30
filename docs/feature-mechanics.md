@@ -5,7 +5,7 @@ Class features in `src/2014/en/5e-SRD-Features.json` state their rules as text (
 
 | Field                   | What it says                                                                  | Features |
 | ----------------------- | ----------------------------------------------------------------------------- | -------- |
-| `engine`                | What using the feature costs, how it recharges, its uses, and what it changes | 152      |
+| `engine`                | What using the feature costs, how it recharges, its uses, and what it changes | 151      |
 | `heal`                  | The hit points the feature restores                                           | 9        |
 | `granted_proficiencies` | The proficiencies the feature gives                                           | 5        |
 | `grants_asi`            | `true` on every Ability Score Improvement                                     | 63       |
@@ -28,11 +28,11 @@ rows, with rules that do not share code with the derivation.
 `engine` covers the features of class levels 1 to 5, the levels at which a character starts, in the twelve classes and
 their subclasses, and the features of levels 6 to 20 of the classes named in `ENGINE_MAX_LEVEL_BY_CLASS` of
 `derive-feature-engine.ts`: the barbarian, fighter, monk, rogue, paladin, cleric and wizard and their subclasses
-(the Oath of Devotion, the Life domain and the school of Evocation). That is 305 of the 407 features, and 152 of them
-have an `engine`: 99 at levels 1 to 5 and 53 at levels 6 to 20. Of the other 153, 61 have only
+(the Oath of Devotion, the Life domain and the school of Evocation). That is 305 of the 407 features, and 151 of them
+have an `engine`: 99 at levels 1 to 5 and 52 at levels 6 to 20. Of the other 154, 61 have only
 `grants_asi` (the Ability Score Improvements), only `heal`, only `granted_proficiencies` (Bonus Proficiency, Bonus
 Proficiencies, Beguiling Influence, Slippery Mind), or only `granted_languages` (Druidic, Thieves' Cant) or
-`granted_languages` and `damage_type` (the ten dragon ancestors), and 92 have no mechanic these fields can state. 93
+`granted_languages` and `damage_type` (the ten dragon ancestors), and 93 have no mechanic these fields can state. 94
 features are listed with the reason in `ENGINE_EXCLUDED` of `derive-feature-engine.ts` and in
 [What is not structured](#what-is-not-structured) (Favored Enemy has `granted_languages` and is listed as well). The test fails if a
 feature in scope has no structured field and is not listed, and if a feature outside the scope has an `engine`.
@@ -95,7 +95,7 @@ that a key used for `uses` is above 0 at the feature's level.
 | `action`       | Using the feature takes an action                                                                                          | 28       |
 | `bonus_action` | It takes a bonus action                                                                                                    | 11       |
 | `reaction`     | It takes a reaction                                                                                                        | 8        |
-| `free`         | It is used on purpose but takes no action: at a moment the text names, such as when the owner hits, rages or casts a spell | 29       |
+| `free`         | It is used on purpose but takes no action: at a moment the text names, such as when the owner hits, rages or casts a spell | 28       |
 | `passive`      | It is never used on purpose: it applies while owned, or it is a pool that other features spend                             | 72       |
 | `rest`         | It is used while the owner finishes a rest (a short rest, or a long rest for Tranquility)                                  | 4        |
 
@@ -120,7 +120,7 @@ One of three shapes.
 
 | Shape                                                                                          | Meaning                                                                                                                                                                                                                  | Features |
 | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
-| `{ count?, class_specific?, by_level?, ability_modifier?, per_class_level?, minimum?, unit? }` | The feature's own uses: `count` plus the `class_specific` number plus the ability modifier plus `per_class_level` times the class level, and at least `minimum`. `unit` is `use` (when absent), `point` or `hit_point`   | 27       | 33  |
+| `{ count?, class_specific?, by_level?, ability_modifier?, per_class_level?, minimum?, unit? }` | The feature's own uses: `count` plus the `class_specific` number plus the ability modifier plus `per_class_level` times the class level, and at least `minimum`. `unit` is `use` (when absent), `point` or `hit_point`   | 33       |
 | `{ pool, cost?, cost_class_specific? }`                                                        | Each use spends `cost` from the uses of the feature `pool` (an index). `cost` is a number, or `spell_level` (the spell's level, 1 for a cantrip). `cost_class_specific` names a table of costs in the Levels row instead | 20       |
 | `{ spell_slot: true }`                                                                         | Each use expends one of the owner's spell slots                                                                                                                                                                          | 3        |
 
@@ -167,7 +167,7 @@ A list of what the feature changes. Every modifier has a `type` and may have:
 | `temp_hp`                | `ability_modifier?`, `add_class_level?`, `minimum?`                                                                                                                           | Temporary hit points                                                                                                                                                                                                                                                                                         | Dark One's Blessing                                                                                                                                                                                                                                                              |
 | `immune_to`              | `conditions`, `aura?`                                                                                                                                                         | Immunity to conditions, or to `disease`, as in condition `effects.immune_to`                                                                                                                                                                                                                                 | Divine Health, Mindless Rage, Purity of Body, Aura of Devotion, Aura of Courage                                                                                                                                                                                                  |
 | `spell`                  | `spell`, `slot` (`none`, `spell_slot`), `at_level?`, `self_only?`, `ritual_only?`, `no_material?`, `save_dc?`, `always_active?`                                               | The owner can cast the spell, without a slot (`none`, at will) or by expending one; with `always_active` the owner is always under its effects                                                                                                                                                               | Eldritch invocations, Tranquility, Purity of Spirit                                                                                                                                                                                                                              |
-| `spell_change`           | `change`, `spell?`, `range_ft?`, `min_spell_level?`, `max_spell_level?`                                                                                                       | A change to one casting: `double_range`, `touch_range_30_ft`, `range` (to `range_ft`), `double_duration`, `bonus_action_casting_time`, `no_verbal_or_somatic`, `second_target`, `reroll_damage_dice`, `save_disadvantage`, `maximize_damage_dice`, `maximize_healing_dice`, `half_damage_on_successful_save` | Metamagic options, Eldritch Spear, Supreme Healing, Potent Cantrip, Overchannel                                                                                                                                                                                                  |
+| `spell_change`           | `change`, `spell?`, `range_ft?`, `max_spell_level?`                                                                                                                           | A change to one casting: `double_range`, `touch_range_30_ft`, `range` (to `range_ft`), `double_duration`, `bonus_action_casting_time`, `no_verbal_or_somatic`, `second_target`, `reroll_damage_dice`, `save_disadvantage`, `maximize_healing_dice`, `half_damage_on_successful_save`                         | Metamagic options, Eldritch Spear, Supreme Healing, Potent Cantrip                                                                                                                                                                                                                |
 | `protect_from_spell`     | `ability_modifier?`, `minimum?`, `base?`, `add_spell_level?`, `no_half_damage?`, `school?`                                                                                    | Chosen creatures automatically succeed on their saves against the spell                                                                                                                                                                                                                                      | Careful Spell, Sculpt Spells                                                                                                                                                                                                                                                     |
 | `recharge`               | `features`, `recharge`                                                                                                                                                        | These features recharge as `recharge` says instead                                                                                                                                                                                                                                                           | Font of Inspiration                                                                                                                                                                                                                                                              |
 | `recover_spell_slots`    | `class_specific?` or `class_level_multiplier?` with `round?`, `max_slot_level`                                                                                                | Spell slots of a combined level up to that number are recovered                                                                                                                                                                                                                                              | Arcane Recovery, Natural Recovery                                                                                                                                                                                                                                                |
@@ -188,13 +188,13 @@ A list of what the feature changes. Every modifier has a `type` and may have:
 | `end_spell`              | `count`, `targets` (`self`, `willing_creature`)                                                                                                                               | The owner can end `count` spells on the owner or on a willing creature the owner touches                                                                                                                                                                                                                     | Cleansing Touch                                                                                                                                                                                                                                                                  |
 | `deal_damage`            | `flat?` or `dice?`, `damage_type`, `trigger: "starts_turn_in_aura"`, `aura`, `duration?`                                                                                      | Damage dealt to the creatures of the `aura` when they start their turn in it                                                                                                                                                                                                                                 | Holy Nimbus                                                                                                                                                                                                                                                                      |
 
-Counts: `bonus` 24, `extra_attack` 14, `condition` 10, `spell` 11, `spell_change` 12, `reroll` 4, `actions` 4, `roll` 4,
+Counts: `bonus` 24, `extra_attack` 14, `condition` 10, `spell` 11, `spell_change` 11, `reroll` 4, `actions` 4, `roll` 4,
 `destroy` 5, `immune_to` 5, `armor_class` 3, `die` 3, `reduce_damage` 3, `critical_damage_dice` 3, `speed` 2, `turn` 2,
 `wild_shape` 2, `recover_spell_slots` 2, `reroll_damage` 2, `rolls_against_others` 2, `push` 2,
 `spell_slot_conversion` 2, `protect_from_spell` 2, `critical_range` 2, `evasion` 2, `damage` 2, `rolls_against_owner` 2,
 and one each of `recharge`, `attack_ability`, `damage_die`, `hit_point_maximum`, `temp_hp`, `avoid_dropping_to_zero`,
 `minimum_d20`, `minimum_total`, `ability_score_increase`, `magical_attacks`, `end_condition`, `recover_uses`,
-`end_spell` and `deal_damage`. 132 features have `modifiers`.
+`end_spell` and `deal_damage`. 131 features have `modifiers`.
 
 **`bonus`.** `to` is `attack_roll`, `damage_roll`, `saving_throw`, `armor_class`, `ability_check` or `healing` (the
 hit points a healing spell restores). A bonus has exactly one amount:
@@ -224,11 +224,10 @@ Aura Improvements has no record of its own), or `range_ft` for a fixed radius (H
 `allies_and_self` (the owner and the friendly creatures) or `enemies`. The test reads the key at the owner's level and
 checks that the text gives that range.
 
-**`spell_change`.** `maximize_damage_dice` and `maximize_healing_dice` give every die of a damaging or a healing spell
-its highest number (Overchannel for the damage of spells of 1st to 5th level; Supreme Healing for every healing spell);
+**`spell_change`.** `maximize_healing_dice` gives every die of a healing spell its highest number (Supreme Healing);
 `half_damage_on_successful_save` makes a creature that succeeds on its saving throw take half the damage and none of the
-other effects (Potent Cantrip, `max_spell_level: 0`: cantrips only). `min_spell_level` and `max_spell_level` limit the
-change to spells of those levels, 0 being a cantrip.
+other effects (Potent Cantrip, `max_spell_level: 0`: cantrips only). `max_spell_level` limits the
+change to spells up to that level, 0 being a cantrip.
 
 **`rolls_against_owner`.** `no_advantage: true` is Elusive; `mode: "disadvantage"` with `creature_types` is the attack
 rolls of creatures of those types, as the protection from evil and good spell has them, which Purity of Spirit names with
@@ -389,7 +388,7 @@ that the text says is associated with each dragon and used by features gained la
 
 ## What is not structured
 
-The 92 features in scope without a structured field, and Favored Enemy, which has only `granted_languages`, by reason:
+The 93 features in scope without a structured field, and Favored Enemy, which has only `granted_languages`, by reason:
 
 | Reason                                                                               | Features                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -411,6 +410,7 @@ The 92 features in scope without a structured field, and Favored Enemy, which ha
 | The range of the auras, which the Levels `aura_range` gives to each aura (1)         | Aura Improvements                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | A call for intervention that succeeds without a roll (1)                             | Divine Intervention at 20th level                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Two spells of the owner's choice cast without a spell slot (1)                       | Spell Mastery                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Necrotic damage taken on a repeated use before a long rest, rising by 1d12 per spell level each time, with no structured counterpart (1) | Overchannel                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 Parts of structured features that stay in the text:
 
@@ -433,7 +433,6 @@ Parts of structured features that stay in the text:
 ["target_undead_or_fiend"]`; the text's limit of 5d8 applies to the slot dice only.
 - Divine Intervention's percentile roll against the cleric level, the choice of the god's intervention and the 7 days
   before it can be used again after it succeeds (the structured use is the action and one use between long rests);
-  Overchannel's necrotic damage on a repeated use, which rises by 1d12 per spell level each time before a long rest;
   Cleansing Touch's range (a touch); Holy Nimbus's bright and dim light; Signature Spell's choice of two 3rd-level
   spells, each cast once (the record has two uses, as the text allows one cast of each).
 
