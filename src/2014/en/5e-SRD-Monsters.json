@@ -31684,6 +31684,16 @@
       {
         "name": "Tentacle Slam",
         "desc": "The otyugh slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 14 Constitution saving throw or take 10 (2d6 + 3) bludgeoning damage and be stunned until the end of the otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't stunned.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+3"
+          }
+        ],
         "dc": {
           "dc_type": {
             "index": "con",
@@ -34439,7 +34449,7 @@
               "name": "Bludgeoning",
               "url": "/api/2014/damage-types/bludgeoning"
             },
-            "damage_dice": "2d9"
+            "damage_dice": "2d8"
           },
           {
             "dc": {

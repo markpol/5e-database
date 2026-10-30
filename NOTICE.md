@@ -75,7 +75,7 @@ marked `dd`:
 | `src/2014/en/5e-SRD-Magic-Items.json` | `cost`, `weight`, `effect`, `enchantment`, `is_consumable`, `requires_attunement` |
 | `src/2014/en/5e-SRD-Equipment.json` | `ammunition`, `effect`, `is_consumable`, `material`, `stackable` |
 | `src/2014/en/5e-SRD-Conditions.json` | Entries `exhaustion-1` to `exhaustion-6`, `enraged`, `frenzied`, `reckless`, `dodging`, `infested`, `swallowed`, `drained-of-strength`, `weakened`, `slowed`, `drained-of-life`, `disengaged`, `surprised` |
-| `src/2014/5e-SRD-Monsters-Normalized.json` | The fields above, plus `condition` on `actions[].attacks[]`, `legendary_actions[]`, `reactions[]` and `special_abilities[]` merged in from the annotations file |
+| `src/2014/5e-SRD-Monsters-Normalized.json` | The fields above, plus `condition` on `actions[].attacks[]`, `legendary_actions[]`, `reactions[]` and `special_abilities[]`, `actions[].damage[].condition.on_failed_repeat_save` and `actions[].pull_distance_ft`, merged in from the annotations file |
 | `src/2014/monster-engine-annotations.json` | The whole file |
 
 Many of these fields restate a rule from the SRD prose next to them in structured form. Monster `environments`

@@ -13,7 +13,7 @@ removed.
 | Area | File(s) | What changed |
 | --- | --- | --- |
 | Monster actions | `5e-SRD-Monsters.json` | Added `attack_type` ("Melee"/"Ranged") to actions; added `bonus_actions` (parsed list of bonus-action ids); added `environments` (habitat string); `speed.*` and `senses.{darkvision,blindsight,truesight}` changed from strings (`"40 ft."`) to plain integers (`40`); added `weapon`, `weapon_kind`, and `supply` (equipment-linked weapon/ammunition annotations) |
-| Monster normalization | `5e-SRD-Monsters-Normalized.json` (new file), `normalize-monsters.ts` (new script), `monster-engine-annotations.json` (new file), `verify-normalize.sh` (new script) | Adds a pre-flattened copy of the monster data that collapses nested reference objects (`dc_type`, `damage_type`, `condition_type`, spellcasting `ability`, etc.) down to their plain string `index`, normalizes where `dc`/`condition` sit on an action, and merges in extra annotations (e.g. conditions applied on a failed save) from `monster-engine-annotations.json`; `src/2014/tests/normalized-monsters.test.ts` regenerates from the English source and asserts it matches the committed normalized file byte-for-byte |
+| Monster normalization | `5e-SRD-Monsters-Normalized.json` (new file), `normalize-monsters.ts` (new script), `monster-engine-annotations.json` (new file), `verify-normalize.sh` (new script) | Adds a pre-flattened copy of the monster data that collapses nested reference objects (`dc_type`, `damage_type`, `condition_type`, spellcasting `ability`, etc.) down to their plain string `index`, normalizes where `dc`/`condition` sit on an action, and merges in extra annotations (e.g. conditions applied on a failed save, riders, grapples, a pull distance) from `monster-engine-annotations.json`; `src/2014/tests/normalized-monsters.test.ts` regenerates from the English source and asserts it matches the committed normalized file byte-for-byte |
 | Conditions | `5e-SRD-Conditions.json` | Added 17 new condition entries: 6 numbered exhaustion levels (`exhaustion-1`…`exhaustion-6`) plus `enraged`, `frenzied`, `reckless`, `dodging`, `infested`, `swallowed`, `drained-of-strength`, `weakened`, `slowed`, `drained-of-life`, `disengaged`, `surprised` |
 | Equipment | `5e-SRD-Equipment.json` | Added `material`, `stackable`, `is_consumable`, `effect` (damage-on-use) to select items; removed 40 non-combat items (mounts, vehicles, barding, tack/harness, stabling/feed) |
 | Equipment categories | `5e-SRD-Equipment-Categories.json` | Removed 6 non-combat categories (`gaming-sets`, `land-vehicles`, `mounts-and-other-animals`, `mounts-and-vehicles`, `tack-harness-and-drawn-vehicles`, `waterborne-vehicles`) and their members |
@@ -84,6 +84,74 @@ with that change, or the regeneration test fails. The output is also validated b
 `verify-normalize.sh` is a small `jq`-based sanity check over the normalized file (lists actions with a `condition`, a
 `dc`, no damage, or a damage `dc`) used to eyeball the output after regenerating it; it makes no changes and has no
 exit-code assertions.
+
+## Monster riders: `damage[]` entries, staged conditions, `pull_distance_ft`, `situation`
+
+The normalized monster file (`5e-SRD-Monsters-Normalized.json`) carries the saving throws and conditions that some
+attacks and abilities state only in prose, as structured data. They are written in `monster-engine-annotations.json`
+and merged in by `normalize-monsters.ts`; the English file is unchanged by them. All of these fields are optional, and
+the fields written to the annotations file are marked `dd` in `src/provenance/source-markers.json`. Every
+reference is the plain `index` string (the file is normalized), and every duration length is a number.
+
+**`damage[]` entries.** `damage` on an action is a list. An entry is one of:
+
+| Shape | Fields | Meaning |
+| --- | --- | --- |
+| Damage | `damage_type`, `damage_dice`, optional `dc`, optional `condition`, optional `grapple` | Damage dealt on a hit (or on a failed save, with `dc`) |
+| Rider | `dc` (optional), `condition` | A saving throw and the condition a failed save applies, with no damage of its own. Follows the damage entry of the same attack |
+| Grapple | `grapple` | `escape_dc_value` (number, the DC of the escape check), optional `additional_condition` (a condition applied until the target escapes) |
+
+- `dc` is `{ dc_type, dc_value, success_type }`: the ability (`str`, `dex`, `con`, `int`, `wis`, `cha`), the DC, and
+  what a successful save does (`none`: no effect, `half`: half damage, `other`).
+- `condition` is `{ condition_type, duration, on_failed_repeat_save? }`. `condition_type` is the `index` of an entry in
+  the conditions. `duration` is `{ length, unit, interrupt? }`: `unit` is `round`, `hour`, `day`, `until escape` or
+  `until restored` (the condition lasts until it is ended by magic such as greater restoration), and `interrupt`, when
+  present, names what ends the condition early, for example `saving throw success` (the target repeats the save at the
+  end of each of its turns). A condition that lasts for a minute is `length: 10, unit: "round"`.
+- The condition of an entry applies only when the target fails the entry's `dc`. A rider carries its own `dc`; a
+  damage entry with both `dc` and `condition` applies the damage per `success_type` and the condition on a failure.
+- Size limits and other conditions on a rider (for example "if the target is Medium or smaller") are not encoded;
+  they stay in the action's `desc`.
+
+**Staged conditions: `condition.on_failed_repeat_save`.** An optional `{ condition_type, duration }` on a `condition`
+for effects with two stages (petrification). The first stage (`condition_type`, here `restrained`) lasts until the end
+of the target's next turn, when the target repeats the same save: a success ends the condition, a failure replaces it
+with the condition named by `on_failed_repeat_save`. The first stage has `duration.interrupt` of
+`saving throw success` and a `length` of 1 round. The second stage's duration is `{ length: 24, unit: "hour" }`, or
+`{ length: 1, unit: "until restored" }` where the text says the creature stays petrified until freed by magic.
+
+**`pull_distance_ft`.** An optional number on an action: the distance in feet the action pulls each target straight
+toward the monster. It is the distance the action text states ("up to 25 ft."), as a maximum.
+
+**`situation`.** An optional `{ target: { condition, max_size?, conditionExcludes? } }` on an action: the action can be
+used only against targets that have the condition `target.condition` (or, with `conditionExcludes: true`, that do not
+have it). `max_size` (`Small` or `Medium`) limits the size of the target. The roper's Reel and the otyugh's Tentacle
+Slam apply only to grappled targets.
+
+**Annotation entries.** `monster-engine-annotations.json` is a list of
+`{ monster, section, name, attack?, damage?, append_damage?, set? }`. `monster` is a monster `index`; `section` is
+`actions`, `legendary_actions`, `special_abilities` or `reactions`; `name` is the name of the action or ability, and
+`attack` the name of one attack of a multiattack-style action. `append_damage` is a list of `damage[]` entries added
+after the existing ones. `set` is a set of fields written onto the action or ability, or onto its `damage[damage]`
+entry when `damage` (a position) is given. An entry whose target does not exist makes the generator fail.
+
+**What the annotations add.** Riders: the gladiator's Shield Bash (prone, DC 15 Strength), the deep gnome's Poisoned
+Dart (poisoned, DC 12 Constitution), the cockatrice's Bite (petrification, DC 11 Constitution). Conditions on saves the
+data already had: the dust mephit's Blinding Breath and Death Burst (blinded), the gibbering mouther's Blinding Spittle
+(blinded), the gorgon's Petrifying Breath and the basilisk's Petrifying Gaze (petrification), the otyugh's Tentacle
+Slam (stunned). Grapples: the ettercap's and giant spider's Web (escape DC 11 and 12), the otyugh's Tentacle (13) and
+the roper's Tendril (15), each with a restrained condition until the target escapes. `pull_distance_ft` (25) on the
+roper's Reel, and `situation` (grappled target) on the Reel and the Tentacle Slam.
+
+## Monster damage corrections
+
+- The rhinoceros's Charge rolled `2d9` extra bludgeoning damage; its text and its average (9) say `2d8`. It now reads
+  `2d8` in both monster files.
+- The otyugh's Tentacle Slam had a saving throw but no damage entry. It now has `2d6+3` bludgeoning damage (the text
+  says 10 (2d6 + 3)), with the save and the stun on the same entry in the normalized file.
+- `src/2014/tests/monster-riders.test.ts` checks that every dice-and-type damage entry of an action, ability, attack or
+  option appears in that entry's own text, and pins the damage of the crocodile's, duergar's, eagle's, ettercap's,
+  flying snake's, gibbering mouther's, hunter shark's, noble's, plesiosaurus's and scorpion's attacks.
 
 ## New conditions
 

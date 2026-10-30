@@ -126,23 +126,32 @@ function normalizeSpecialAbility(specialAbility: any) {
   return normalizedSpecialAbility;
 } 
 
-type EngineAnnotation = {
+export type EngineAnnotation = {
   monster: string;
   section: 'actions' | 'legendary_actions' | 'special_abilities' | 'reactions';
   name: string;
   attack?: string;
   damage?: number;
-  set: Record<string, unknown>;
+  // Damage entries added after the target's existing ones (a rider, or a grapple): the entry itself
+  // is not in the SRD structure. Appended to the action or ability named by `name` / `attack`.
+  append_damage?: Record<string, unknown>[];
+  set?: Record<string, unknown>;
 };
 
-// Annotations that are not part of the SRD text (conditions applied on a failed save, implied DCs).
+// Annotations that are not part of the SRD text (conditions applied on a failed save, implied DCs, riders).
 // They live in monster-engine-annotations.json and are merged onto the normalized output, so the
 // committed file stays exactly what this generator produces.
-function applyEngineAnnotations(monster: { index: string } & Record<string, any>) {
-  for (const annotation of (engineAnnotations as EngineAnnotation[]).filter((a) => a.monster === monster.index)) {
+export function applyEngineAnnotations(
+  monster: { index: string } & Record<string, any>,
+  annotations: EngineAnnotation[] = engineAnnotations as EngineAnnotation[],
+) {
+  for (const annotation of annotations.filter((a) => a.monster === monster.index)) {
     let target = monster[annotation.section]?.find((item: any) => item.name === annotation.name);
     if (target && annotation.attack) {
       target = target.attacks?.find((attack: any) => attack.name === annotation.attack);
+    }
+    if (target && annotation.append_damage) {
+      target.damage = [...(target.damage ?? []), ...structuredClone(annotation.append_damage)];
     }
     if (target && annotation.damage !== undefined) {
       target = target.damage?.[annotation.damage];
@@ -150,7 +159,7 @@ function applyEngineAnnotations(monster: { index: string } & Record<string, any>
     if (!target) {
       throw new Error(`Annotation target not found: ${JSON.stringify(annotation)}`);
     }
-    Object.assign(target, structuredClone(annotation.set));
+    Object.assign(target, structuredClone(annotation.set ?? {}));
   }
 }
 

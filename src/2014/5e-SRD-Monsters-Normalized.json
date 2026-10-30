@@ -6959,6 +6959,21 @@
           "dc_type": "con",
           "dc_value": 12,
           "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "restrained",
+          "duration": {
+            "length": 1,
+            "unit": "round",
+            "interrupt": "saving throw success"
+          },
+          "on_failed_repeat_save": {
+            "condition_type": "petrified",
+            "duration": {
+              "length": 1,
+              "unit": "until restored"
+            }
+          }
         }
       }
     ],
@@ -9900,6 +9915,28 @@
           {
             "damage_type": "piercing",
             "damage_dice": "1d4+1"
+          },
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 11,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "restrained",
+              "duration": {
+                "length": 1,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              },
+              "on_failed_repeat_save": {
+                "condition_type": "petrified",
+                "duration": {
+                  "length": 24,
+                  "unit": "hour"
+                }
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -11083,6 +11120,21 @@
           {
             "damage_type": "piercing",
             "damage_dice": "1d4+2"
+          },
+          {
+            "dc": {
+              "dc_type": "con",
+              "dc_value": 12,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "poisoned",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
+            }
           }
         ],
         "weapon_kind": "manufactured",
@@ -12970,6 +13022,14 @@
           "dc_type": "con",
           "dc_value": 10,
           "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "blinded",
+          "duration": {
+            "length": 10,
+            "unit": "round",
+            "interrupt": "saving throw success"
+          }
         }
       },
       {
@@ -13023,6 +13083,14 @@
               "dc_type": "dex",
               "dc_value": 10,
               "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "blinded",
+              "duration": {
+                "length": 10,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              }
             }
           }
         ]
@@ -13938,7 +14006,21 @@
           "min_value": 5
         },
         "attack_bonus": 4,
-        "attack_type": "Ranged"
+        "attack_type": "Ranged",
+        "damage": [
+          {
+            "grapple": {
+              "escape_dc_value": 11,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
+          }
+        ]
       }
     ],
     "url": "/api/2014/monsters/ettercap",
@@ -17071,7 +17153,21 @@
           "dice": "1d6",
           "min_value": 5
         },
-        "attack_bonus": 5
+        "attack_bonus": 5,
+        "damage": [
+          {
+            "grapple": {
+              "escape_dc_value": 12,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
+          }
+        ]
       }
     ],
     "url": "/api/2014/monsters/giant-spider",
@@ -17607,6 +17703,13 @@
               "dc_type": "dex",
               "dc_value": 13,
               "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "blinded",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
             }
           }
         ]
@@ -18010,6 +18113,20 @@
           {
             "damage_type": "bludgeoning",
             "damage_dice": "2d4+4"
+          },
+          {
+            "dc": {
+              "dc_type": "str",
+              "dc_value": 15,
+              "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "prone",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
+            }
           }
         ],
         "weapon_kind": "manufactured"
@@ -18576,6 +18693,21 @@
               "dc_type": "con",
               "dc_value": 13,
               "success_type": "none"
+            },
+            "condition": {
+              "condition_type": "restrained",
+              "duration": {
+                "length": 1,
+                "unit": "round",
+                "interrupt": "saving throw success"
+              },
+              "on_failed_repeat_save": {
+                "condition_type": "petrified",
+                "duration": {
+                  "length": 1,
+                  "unit": "until restored"
+                }
+              }
             }
           }
         ]
@@ -26470,6 +26602,18 @@
           {
             "damage_type": "piercing",
             "damage_dice": "1d8"
+          },
+          {
+            "grapple": {
+              "escape_dc_value": 13,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -26479,13 +26623,27 @@
         "desc": "The otyugh slams creatures grappled by it into each other or a solid surface. Each creature must succeed on a DC 14 Constitution saving throw or take 10 (2d6 + 3) bludgeoning damage and be stunned until the end of the otyugh's next turn. On a successful save, the target takes half the bludgeoning damage and isn't stunned.",
         "damage": [
           {
+            "damage_type": "bludgeoning",
+            "damage_dice": "2d6+3",
             "dc": {
               "dc_type": "con",
               "dc_value": 14,
               "success_type": "half"
+            },
+            "condition": {
+              "condition_type": "stunned",
+              "duration": {
+                "length": 1,
+                "unit": "round"
+              }
             }
           }
-        ]
+        ],
+        "situation": {
+          "target": {
+            "condition": "grappled"
+          }
+        }
       }
     ],
     "url": "/api/2014/monsters/otyugh",
@@ -28843,7 +29001,7 @@
         "damage": [
           {
             "damage_type": "bludgeoning",
-            "damage_dice": "2d9"
+            "damage_dice": "2d8"
           },
           {
             "dc": {
@@ -29143,11 +29301,31 @@
       {
         "name": "Tendril",
         "desc": "Melee Weapon Attack: +7 to hit, reach 50 ft., one creature. Hit: The target is grappled (escape DC 15). Until the grapple ends, the target is restrained and has disadvantage on Strength checks and Strength saving throws, and the roper can't use the same tendril on another target.",
-        "attack_bonus": 7
+        "attack_bonus": 7,
+        "damage": [
+          {
+            "grapple": {
+              "escape_dc_value": 15,
+              "additional_condition": {
+                "condition_type": "restrained",
+                "duration": {
+                  "length": 1,
+                  "unit": "until escape"
+                }
+              }
+            }
+          }
+        ]
       },
       {
         "name": "Reel",
-        "desc": "The roper pulls each creature grappled by it up to 25 ft. straight toward it."
+        "desc": "The roper pulls each creature grappled by it up to 25 ft. straight toward it.",
+        "pull_distance_ft": 25,
+        "situation": {
+          "target": {
+            "condition": "grappled"
+          }
+        }
       }
     ],
     "url": "/api/2014/monsters/roper",
