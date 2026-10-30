@@ -197,3 +197,27 @@ describe('weapon annotations of attacks', () => {
     expect(without.sort()).toEqual(unresolved);
   });
 });
+
+describe('actions that are not attack rolls', () => {
+  const find = (monsters: Monster[], index: string, name: string) =>
+    Object.values(monsters.find((m) => m.index === index) ?? {})
+      .flatMap((value) => (Array.isArray(value) ? value : []))
+      .find((entry: Entry) => entry?.name === name);
+
+  it('have no attack bonus', () => {
+    const cases = [
+      ['octopus', 'Ink Cloud'],
+      ['kraken', 'Lightning Storm (Costs 2 Actions)'],
+      ['vampire-vampire', 'Move'],
+      ['vampire-bat', 'Move'],
+      ['vampire-mist', 'Move'],
+    ];
+    for (const [index, name] of cases) {
+      for (const monsters of [english, normalized]) {
+        const entry = find(monsters, index, name);
+        expect(entry, `${index} ${name}`).toBeDefined();
+        expect(entry).not.toHaveProperty('attack_bonus');
+      }
+    }
+  });
+});

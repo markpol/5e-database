@@ -230,11 +230,10 @@ mail has one `attuned` entry with both its resistance and its armor class bonus.
 
 ### Corrections and what is not structured
 
-- The old `total` of `gauntlets-of-ogre-power` is 29; its text says "Your Strength score is 19". `ability.value` follows
-  the text (19). The old field is unchanged.
+- The `total` of `gauntlets-of-ogre-power` is 19, as its text says "Your Strength score is 19", and `ability.value` is 19.
 - The manuals and tomes (`manual-of-bodily-health` and the like) raise the ability score by 2 "as does your maximum for
   that score". `ability` records the increase and no `cap`; the raised maximum is not structured.
-- The activations of the old data are kept as they are: `frost-brand` and `flame-tongue` have no `requires_attunement`
-  in the data, so their effects are `equipped`.
+- `requires_attunement` is true for every item whose first line of text says "requires attunement". The hammer of
+  thunderbolts is not marked, as its text requires attunement only for its Giant's Bane property.
 - Magic items with neither an `effect` nor an `enchantment` (for example `ammunition`) have no `effects`; their prose
   is not structured here.
