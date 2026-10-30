@@ -1,0 +1,821 @@
+[
+  {
+    "spell": "acid-arrow",
+    "kind": "spell-attack",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "acid-splash",
+    "kind": "save-damage",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "aid",
+    "kind": "buff",
+    "target": "ally",
+    "campaign": true,
+    "npc": true
+  },
+  {
+    "spell": "animal-friendship",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "arcane-sword",
+    "kind": "summon-weapon",
+    "target": "enemy",
+    "campaign": false,
+    "npc": false
+  },
+  {
+    "spell": "banishment",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "beacon-of-hope",
+    "kind": "buff",
+    "target": "ally",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "black-tentacles",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "blade-barrier",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "bless",
+    "kind": "buff",
+    "target": "ally",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "blight",
+    "kind": "save-damage",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "blindness-deafness",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "branding-smite",
+    "kind": "buff",
+    "target": "ally",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "burning-hands",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "call-lightning",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "calm-emotions",
+    "kind": "save-condition",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "chain-lightning",
+    "kind": "save-damage",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "charm-person",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "chill-touch",
+    "kind": "spell-attack",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "circle-of-death",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": false
+  },
+  {
+    "spell": "cloudkill",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "command",
+    "kind": "command",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "compulsion",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "cone-of-cold",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "contagion",
+    "kind": "spell-attack",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "cure-wounds",
+    "kind": "heal",
+    "target": "ally",
+    "campaign": true,
+    "npc": true
+  },
+  {
+    "spell": "delayed-blast-fireball",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "disintegrate",
+    "kind": "save-damage",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "divine-favor",
+    "kind": "buff",
+    "target": "ally",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "divine-word",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "dominate-beast",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "dominate-monster",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "dominate-person",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "eldritch-blast",
+    "kind": "spell-attack",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "entangle",
+    "kind": "save-condition",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "enthrall",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "eyebite",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "faerie-fire",
+    "kind": "save-condition",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "faithful-hound",
+    "kind": "summon",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "false-life",
+    "kind": "buff",
+    "target": "ally",
+    "campaign": true,
+    "npc": true
+  },
+  {
+    "spell": "fear",
+    "kind": "save-condition",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "feeblemind",
+    "kind": "save-damage",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "finger-of-death",
+    "kind": "save-damage",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "fire-bolt",
+    "kind": "spell-attack",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "fire-shield",
+    "kind": "aura",
+    "target": "ally",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "fire-storm",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "fireball",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "flame-blade",
+    "kind": "summon-weapon",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "flame-strike",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "flaming-sphere",
+    "kind": "save-damage",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "flesh-to-stone",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "freezing-sphere",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "glyph-of-warding",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": false
+  },
+  {
+    "spell": "grease",
+    "kind": "save-condition",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "greater-restoration",
+    "kind": "cure-condition",
+    "target": "ally",
+    "campaign": true,
+    "npc": false
+  },
+  {
+    "spell": "guardian-of-faith",
+    "kind": "summon",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "guiding-bolt",
+    "kind": "spell-attack",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "harm",
+    "kind": "save-damage",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "heal",
+    "kind": "heal",
+    "target": "ally",
+    "campaign": true,
+    "npc": true
+  },
+  {
+    "spell": "healing-word",
+    "kind": "heal",
+    "target": "ally",
+    "campaign": true,
+    "npc": true
+  },
+  {
+    "spell": "heat-metal",
+    "kind": "save-damage",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "hellish-rebuke",
+    "kind": "save-damage",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "hideous-laughter",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "hold-monster",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "hold-person",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "holy-aura",
+    "kind": "aura",
+    "target": "ally",
+    "campaign": false,
+    "npc": false
+  },
+  {
+    "spell": "hunters-mark",
+    "kind": "buff",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "hypnotic-pattern",
+    "kind": "save-condition",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "ice-storm",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "incendiary-cloud",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "inflict-wounds",
+    "kind": "spell-attack",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "insect-plague",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "lesser-restoration",
+    "kind": "cure-condition",
+    "target": "ally",
+    "campaign": true,
+    "npc": true
+  },
+  {
+    "spell": "lightning-bolt",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "mage-armor",
+    "kind": "buff",
+    "target": "ally",
+    "campaign": true,
+    "npc": false
+  },
+  {
+    "spell": "magic-missile",
+    "kind": "auto-hit",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "magic-weapon",
+    "kind": "buff",
+    "target": "ally",
+    "campaign": false,
+    "npc": false
+  },
+  {
+    "spell": "mass-cure-wounds",
+    "kind": "mass-heal",
+    "target": "ally",
+    "campaign": true,
+    "npc": true
+  },
+  {
+    "spell": "mass-heal",
+    "kind": "mass-heal",
+    "target": "ally",
+    "campaign": true,
+    "npc": true
+  },
+  {
+    "spell": "mass-healing-word",
+    "kind": "mass-heal",
+    "target": "ally",
+    "campaign": true,
+    "npc": true
+  },
+  {
+    "spell": "mass-suggestion",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "meteor-swarm",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "moonbeam",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "phantasmal-killer",
+    "kind": "save-damage",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "poison-spray",
+    "kind": "save-damage",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "power-word-stun",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "prayer-of-healing",
+    "kind": "mass-heal",
+    "target": "ally",
+    "campaign": true,
+    "npc": false
+  },
+  {
+    "spell": "prismatic-spray",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "produce-flame",
+    "kind": "spell-attack",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "ray-of-enfeeblement",
+    "kind": "spell-attack",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "ray-of-frost",
+    "kind": "spell-attack",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "regenerate",
+    "kind": "heal",
+    "target": "ally",
+    "campaign": true,
+    "npc": false
+  },
+  {
+    "spell": "sacred-flame",
+    "kind": "save-damage",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "sanctuary",
+    "kind": "buff",
+    "target": "ally",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "scorching-ray",
+    "kind": "spell-attack",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "shatter",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "shield-of-faith",
+    "kind": "buff",
+    "target": "ally",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "shocking-grasp",
+    "kind": "spell-attack",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "sleep",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "sleet-storm",
+    "kind": "save-condition",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "spare-the-dying",
+    "kind": "stabilize",
+    "target": "ally",
+    "campaign": true,
+    "npc": true
+  },
+  {
+    "spell": "spike-growth",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "spirit-guardians",
+    "kind": "aura",
+    "target": "ally",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "spiritual-weapon",
+    "kind": "summon-weapon",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "storm-of-vengeance",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "suggestion",
+    "kind": "save-condition",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "sunbeam",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "sunburst",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "thunderwave",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "vampiric-touch",
+    "kind": "spell-attack",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "vicious-mockery",
+    "kind": "save-damage",
+    "target": "enemy",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "wall-of-fire",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "wall-of-ice",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "wall-of-thorns",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "web",
+    "kind": "save-condition",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "weird",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  },
+  {
+    "spell": "wind-wall",
+    "kind": "area-damage",
+    "target": "area",
+    "campaign": false,
+    "npc": true
+  }
+]

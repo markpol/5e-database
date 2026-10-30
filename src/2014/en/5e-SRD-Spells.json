@@ -70,6 +70,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "spell-attack",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -141,6 +147,12 @@
       },
       "dc_success": "none"
     },
+    "engine": {
+      "kind": "save-damage",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -202,6 +214,12 @@
       "7": "30",
       "8": "35",
       "9": "40"
+    },
+    "engine": {
+      "kind": "buff",
+      "target": "ally",
+      "campaign": true,
+      "npc": true
     },
     "school": {
       "index": "abjuration",
@@ -365,6 +383,12 @@
         "url": "/api/2014/ability-scores/wis"
       },
       "dc_success": "none"
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -943,6 +967,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "summon-weapon",
+      "target": "enemy",
+      "campaign": false,
+      "npc": false
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -1269,6 +1299,12 @@
       "8": 5,
       "9": 6
     },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "abjuration",
       "name": "Abjuration",
@@ -1380,6 +1416,12 @@
       "unit": "action"
     },
     "level": 3,
+    "engine": {
+      "kind": "buff",
+      "target": "ally",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "abjuration",
       "name": "Abjuration",
@@ -1536,6 +1578,12 @@
       "type": "cube",
       "size": 20
     },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -1603,6 +1651,12 @@
       "type": "line",
       "size": 100
     },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -1654,6 +1708,12 @@
       "7": 9,
       "8": 10,
       "9": 11
+    },
+    "engine": {
+      "kind": "buff",
+      "target": "ally",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -1757,6 +1817,12 @@
       },
       "dc_success": "half"
     },
+    "engine": {
+      "kind": "save-damage",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "necromancy",
       "name": "Necromancy",
@@ -1835,6 +1901,12 @@
       "7": 6,
       "8": 7,
       "9": 8
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "necromancy",
@@ -2049,6 +2121,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "buff",
+      "target": "ally",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -2149,6 +2227,12 @@
     "area_of_effect": {
       "type": "cone",
       "size": 15
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -2261,6 +2345,12 @@
       "type": "sphere",
       "size": 5
     },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -2321,6 +2411,12 @@
     "area_of_effect": {
       "type": "sphere",
       "size": 20
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -2405,6 +2501,12 @@
       "8": 6,
       "9": 7
     },
+    "engine": {
+      "kind": "save-damage",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -2468,6 +2570,12 @@
       "7": 7,
       "8": 8,
       "9": 9
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -2550,6 +2658,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "spell-attack",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "necromancy",
       "name": "Necromancy",
@@ -2646,6 +2760,12 @@
     "area_of_effect": {
       "type": "sphere",
       "size": 60
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": false
     },
     "school": {
       "index": "necromancy",
@@ -2844,6 +2964,12 @@
       "type": "sphere",
       "size": 20
     },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -2976,6 +3102,12 @@
       "7": 7,
       "8": 8,
       "9": 9
+    },
+    "engine": {
+      "kind": "command",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -3199,6 +3331,12 @@
       },
       "dc_success": "none"
     },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "enchantment",
       "name": "Enchantment",
@@ -3285,6 +3423,12 @@
     "area_of_effect": {
       "type": "cone",
       "size": 60
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -3791,6 +3935,12 @@
       },
       "dc_success": "other",
       "desc": "After succeeding on three of these saving throws, the creature recovers from the disease, and the spell ends."
+    },
+    "engine": {
+      "kind": "spell-attack",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "necromancy",
@@ -4412,6 +4562,12 @@
         "add_spellcasting_mod": true
       }
     },
+    "engine": {
+      "kind": "heal",
+      "target": "ally",
+      "campaign": true,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -4826,6 +4982,12 @@
     "area_of_effect": {
       "type": "sphere",
       "size": 20
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -5326,6 +5488,12 @@
       "type": "cube",
       "size": 10
     },
+    "engine": {
+      "kind": "save-damage",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "transmutation",
       "name": "Transmutation",
@@ -5565,6 +5733,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "buff",
+      "target": "ally",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -5621,6 +5795,12 @@
       "dc_success": "none",
       "desc": "On a failed save, a creature suffers an effect based on its current hit points."
     },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -5670,6 +5850,12 @@
         "url": "/api/2014/ability-scores/wis"
       },
       "dc_success": "none"
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -5727,6 +5913,12 @@
       },
       "dc_success": "none",
       "desc": "On failure, the creature is charmed by you for the duration."
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -5794,6 +5986,12 @@
       },
       "dc_success": "other",
       "desc": "Each time the target takes damage, it makes a new wisdom saving throw against the spell. If the saving throw succeeds, the spell ends."
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -6039,6 +6237,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "spell-attack",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -6234,6 +6438,12 @@
       "type": "cube",
       "size": 20
     },
+    "engine": {
+      "kind": "save-condition",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -6284,6 +6494,12 @@
         "url": "/api/2014/ability-scores/wis"
       },
       "dc_success": "none"
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -6462,6 +6678,12 @@
       "dc_success": "none",
       "desc": "On failure, the target can be affected by one of the following effects of your choice for the duration. [Asleep. The target falls unconscious. It wakes up if it takes any damage or if another creature uses its action to shake the sleeper awake.] [Panicked. The target is frightened of you. On each of its turns, the frightened creature must take the Dash action and move away from you by the safest and shortest available route, unless there is nowhere to move. If the target moves to a place at least 60 feet away from you where it can no longer see you, this effect ends.] [Sickened. The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another wisdom saving throw. If it succeeds, the effect ends.]"
     },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "necromancy",
       "name": "Necromancy",
@@ -6565,6 +6787,12 @@
       "type": "cube",
       "size": 20
     },
+    "engine": {
+      "kind": "save-condition",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -6629,6 +6857,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "summon",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -6719,6 +6953,12 @@
         "bonus": 44
       }
     },
+    "engine": {
+      "kind": "buff",
+      "target": "ally",
+      "campaign": true,
+      "npc": true
+    },
     "school": {
       "index": "necromancy",
       "name": "Necromancy",
@@ -6781,6 +7021,12 @@
     "area_of_effect": {
       "type": "cone",
       "size": 30
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "illusion",
@@ -6922,6 +7168,12 @@
       },
       "dc_success": "other",
       "desc": "The target always takes the damage. On a failed save, the creature's Intelligence and Charisma scores become 1."
+    },
+    "engine": {
+      "kind": "save-damage",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -7192,6 +7444,12 @@
       },
       "dc_success": "half"
     },
+    "engine": {
+      "kind": "save-damage",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "necromancy",
       "name": "Necromancy",
@@ -7255,6 +7513,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "spell-attack",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -7320,6 +7584,12 @@
     "area_of_effect": {
       "type": "sphere",
       "size": 5
+    },
+    "engine": {
+      "kind": "aura",
+      "target": "ally",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -7392,6 +7662,12 @@
     "area_of_effect": {
       "type": "cube",
       "size": 100
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -7497,6 +7773,12 @@
       "type": "sphere",
       "size": 20
     },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -7585,6 +7867,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "summon-weapon",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -7672,6 +7960,12 @@
     "area_of_effect": {
       "type": "cylinder",
       "size": 10
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -7780,6 +8074,12 @@
       },
       "dc_success": "half"
     },
+    "engine": {
+      "kind": "save-damage",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -7840,6 +8140,12 @@
       },
       "dc_success": "none",
       "desc": "On a failed save, the target is restrained as its flesh begins to harden."
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "transmutation",
@@ -8346,6 +8652,12 @@
     "area_of_effect": {
       "type": "sphere",
       "size": 60
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -8967,6 +9279,12 @@
       "type": "sphere",
       "size": 20
     },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": false
+    },
     "school": {
       "index": "abjuration",
       "name": "Abjuration",
@@ -9077,6 +9395,12 @@
       "type": "cube",
       "size": 10
     },
+    "engine": {
+      "kind": "save-condition",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -9177,6 +9501,12 @@
       "unit": "action"
     },
     "level": 5,
+    "engine": {
+      "kind": "cure-condition",
+      "target": "ally",
+      "campaign": true,
+      "npc": false
+    },
     "school": {
       "index": "abjuration",
       "name": "Abjuration",
@@ -9248,6 +9578,12 @@
     "area_of_effect": {
       "type": "cylinder",
       "size": 10
+    },
+    "engine": {
+      "kind": "summon",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "conjuration",
@@ -9447,6 +9783,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "spell-attack",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -9714,6 +10056,12 @@
       },
       "dc_success": "half"
     },
+    "engine": {
+      "kind": "save-damage",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "necromancy",
       "name": "Necromancy",
@@ -9814,6 +10162,12 @@
       "8": "90",
       "9": "100"
     },
+    "engine": {
+      "kind": "heal",
+      "target": "ally",
+      "campaign": true,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -9906,6 +10260,12 @@
         "dice": "9d4",
         "add_spellcasting_mod": true
       }
+    },
+    "engine": {
+      "kind": "heal",
+      "target": "ally",
+      "campaign": true,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -10019,6 +10379,12 @@
       "dc_success": "other",
       "desc": "Can choose to not drop the object"
     },
+    "engine": {
+      "kind": "save-damage",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "transmutation",
       "name": "Transmutation",
@@ -10125,6 +10491,12 @@
         "url": "/api/2014/ability-scores/dex"
       },
       "dc_success": "half"
+    },
+    "engine": {
+      "kind": "save-damage",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -10264,6 +10636,12 @@
       },
       "dc_success": "none"
     },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "enchantment",
       "name": "Enchantment",
@@ -10330,6 +10708,12 @@
       "7": 3,
       "8": 4,
       "9": 5
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -10404,6 +10788,12 @@
       "7": 6,
       "8": 7,
       "9": 8
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -10491,6 +10881,12 @@
       "type": "sphere",
       "size": 30
     },
+    "engine": {
+      "kind": "aura",
+      "target": "ally",
+      "campaign": false,
+      "npc": false
+    },
     "school": {
       "index": "abjuration",
       "name": "Abjuration",
@@ -10543,6 +10939,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "buff",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "divination",
       "name": "Divination",
@@ -10594,6 +10996,12 @@
     "area_of_effect": {
       "type": "cube",
       "size": 30
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "illusion",
@@ -10740,6 +11148,12 @@
     "area_of_effect": {
       "type": "cylinder",
       "size": 20
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -10996,6 +11410,12 @@
       "type": "sphere",
       "size": 20
     },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -11090,6 +11510,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "spell-attack",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "necromancy",
       "name": "Necromancy",
@@ -11182,6 +11608,12 @@
     "area_of_effect": {
       "type": "sphere",
       "size": 20
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "conjuration",
@@ -11555,6 +11987,12 @@
       "unit": "action"
     },
     "level": 2,
+    "engine": {
+      "kind": "cure-condition",
+      "target": "ally",
+      "campaign": true,
+      "npc": true
+    },
     "school": {
       "index": "abjuration",
       "name": "Abjuration",
@@ -11803,6 +12241,12 @@
     "area_of_effect": {
       "type": "line",
       "size": 100
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -12124,6 +12568,12 @@
       "unit": "action"
     },
     "level": 1,
+    "engine": {
+      "kind": "buff",
+      "target": "ally",
+      "campaign": true,
+      "npc": false
+    },
     "school": {
       "index": "abjuration",
       "name": "Abjuration",
@@ -12435,6 +12885,12 @@
       "8": 10,
       "9": 11
     },
+    "engine": {
+      "kind": "auto-hit",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -12537,6 +12993,12 @@
       "unit": "bonus_action"
     },
     "level": 2,
+    "engine": {
+      "kind": "buff",
+      "target": "ally",
+      "campaign": false,
+      "npc": false
+    },
     "school": {
       "index": "transmutation",
       "name": "Transmutation",
@@ -12733,6 +13195,12 @@
       "type": "sphere",
       "size": 30
     },
+    "engine": {
+      "kind": "mass-heal",
+      "target": "ally",
+      "campaign": true,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -12787,6 +13255,12 @@
     "level": 9,
     "heal_at_slot_level": {
       "9": "700"
+    },
+    "engine": {
+      "kind": "mass-heal",
+      "target": "ally",
+      "campaign": true,
+      "npc": true
     },
     "school": {
       "index": "conjuration",
@@ -12866,6 +13340,12 @@
         "add_spellcasting_mod": true
       }
     },
+    "engine": {
+      "kind": "mass-heal",
+      "target": "ally",
+      "campaign": true,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -12923,6 +13403,12 @@
         "url": "/api/2014/ability-scores/wis"
       },
       "dc_success": "none"
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -13227,6 +13713,12 @@
     "area_of_effect": {
       "type": "sphere",
       "size": 40
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -13712,6 +14204,12 @@
       "type": "cylinder",
       "size": 5
     },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -13991,6 +14489,12 @@
         "url": "/api/2014/ability-scores/wis"
       },
       "dc_success": "none"
+    },
+    "engine": {
+      "kind": "save-damage",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "illusion",
@@ -14331,6 +14835,12 @@
       },
       "dc_success": "none"
     },
+    "engine": {
+      "kind": "save-damage",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -14507,6 +15017,12 @@
       },
       "dc_success": "none"
     },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "enchantment",
       "name": "Enchantment",
@@ -14604,6 +15120,12 @@
         "dice": "9d8",
         "add_spellcasting_mod": true
       }
+    },
+    "engine": {
+      "kind": "mass-heal",
+      "target": "ally",
+      "campaign": true,
+      "npc": false
     },
     "school": {
       "index": "evocation",
@@ -14744,6 +15266,12 @@
     "area_of_effect": {
       "type": "cone",
       "size": 60
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -14910,6 +15438,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "spell-attack",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -15358,6 +15892,12 @@
       "dc_success": "none"
     },
     "attack_type": "ranged",
+    "engine": {
+      "kind": "spell-attack",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "necromancy",
       "name": "Necromancy",
@@ -15422,6 +15962,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "spell-attack",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -15480,6 +16026,12 @@
         "dice": "4d8",
         "bonus": 15
       }
+    },
+    "engine": {
+      "kind": "heal",
+      "target": "ally",
+      "campaign": true,
+      "npc": false
     },
     "school": {
       "index": "transmutation",
@@ -15970,6 +16522,12 @@
       },
       "dc_success": "none"
     },
+    "engine": {
+      "kind": "save-damage",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -16022,6 +16580,12 @@
         "url": "/api/2014/ability-scores/wis"
       },
       "dc_success": "none"
+    },
+    "engine": {
+      "kind": "buff",
+      "target": "ally",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "abjuration",
@@ -16100,6 +16664,12 @@
       "7": 8,
       "8": 9,
       "9": 10
+    },
+    "engine": {
+      "kind": "spell-attack",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -16586,6 +17156,12 @@
       "type": "sphere",
       "size": 10
     },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -16693,6 +17269,12 @@
       "unit": "bonus_action"
     },
     "level": 1,
+    "engine": {
+      "kind": "buff",
+      "target": "ally",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "abjuration",
       "name": "Abjuration",
@@ -16801,6 +17383,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "spell-attack",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -17034,6 +17622,12 @@
       "type": "sphere",
       "size": 20
     },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "enchantment",
       "name": "Enchantment",
@@ -17101,6 +17695,12 @@
     "area_of_effect": {
       "type": "cylinder",
       "size": 40
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "conjuration",
@@ -17229,6 +17829,12 @@
       "unit": "action"
     },
     "level": 0,
+    "engine": {
+      "kind": "stabilize",
+      "target": "ally",
+      "campaign": true,
+      "npc": true
+    },
     "school": {
       "index": "necromancy",
       "name": "Necromancy",
@@ -17512,6 +18118,12 @@
       "type": "cylinder",
       "size": 20
     },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "transmutation",
       "name": "Transmutation",
@@ -17662,6 +18274,12 @@
       "type": "sphere",
       "size": 15
     },
+    "engine": {
+      "kind": "aura",
+      "target": "ally",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -17764,6 +18382,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "summon-weapon",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -18038,6 +18662,12 @@
       "type": "sphere",
       "size": 360
     },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -18086,6 +18716,12 @@
         "url": "/api/2014/ability-scores/wis"
       },
       "dc_success": "none"
+    },
+    "engine": {
+      "kind": "save-condition",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -18178,6 +18814,12 @@
       "type": "line",
       "size": 60
     },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -18256,6 +18898,12 @@
     "area_of_effect": {
       "type": "cylinder",
       "size": 60
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -18695,6 +19343,12 @@
     "area_of_effect": {
       "type": "cube",
       "size": 15
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -19318,6 +19972,12 @@
         }
       }
     ],
+    "engine": {
+      "kind": "spell-attack",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "necromancy",
       "name": "Necromancy",
@@ -19388,6 +20048,12 @@
         "url": "/api/2014/ability-scores/wis"
       },
       "dc_success": "none"
+    },
+    "engine": {
+      "kind": "save-damage",
+      "target": "enemy",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "enchantment",
@@ -19461,6 +20127,12 @@
     "area_of_effect": {
       "type": "line",
       "size": 60
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -19600,6 +20272,12 @@
     "area_of_effect": {
       "type": "sphere",
       "size": 10
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
@@ -19770,6 +20448,12 @@
     "area_of_effect": {
       "type": "line",
       "size": 60
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "conjuration",
@@ -20000,6 +20684,12 @@
       "type": "cube",
       "size": 20
     },
+    "engine": {
+      "kind": "save-condition",
+      "target": "area",
+      "campaign": false,
+      "npc": true
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -20081,6 +20771,12 @@
     "area_of_effect": {
       "type": "sphere",
       "size": 30
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "illusion",
@@ -20189,6 +20885,12 @@
     "area_of_effect": {
       "type": "line",
       "size": 50
+    },
+    "engine": {
+      "kind": "area-damage",
+      "target": "area",
+      "campaign": false,
+      "npc": true
     },
     "school": {
       "index": "evocation",
