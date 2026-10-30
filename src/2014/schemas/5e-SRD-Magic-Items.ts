@@ -1,8 +1,13 @@
 import { z } from 'zod';
 import { APIReferenceSchema, translatable } from '../../schemas/common';
+import { ItemEffectsSchema } from '../../schemas/item-effects';
 
 const RaritySchema = z.strictObject({
   name: translatable(z.string()),
+  // 1 Common, 2 Uncommon, 3 Rare, 4 Very Rare, 5 Legendary, 6 Artifact; absent when the rarity varies.
+  rank: z.number().optional(),
+  // The character level from which the item is a fitting reward, by rarity; absent for artifacts and varying rarity.
+  min_level: z.number().optional(),
 });
 
 const CostSchema = z.strictObject({
@@ -26,16 +31,20 @@ const MagicItemEffectSchema = z.strictObject({
   duration: z.strictObject({ unit: z.string(), length: z.number() }).optional(),
   heal: z.string().optional(),
   proficiency_modifier: z.strictObject({ grants: z.array(z.string()) }).optional(),
-  saving_throw_modifier: z.strictObject({
-    abilities: z.array(z.string()),
-    bonus: z.number(),
-    gives_advantage: z.boolean().optional(),
-  }).optional(),
-  skill_check_modifier: z.strictObject({
-    skill: z.string(),
-    bonus: z.number().optional(),
-    gives_advantage: z.boolean().optional(),
-  }).optional(),
+  saving_throw_modifier: z
+    .strictObject({
+      abilities: z.array(z.string()),
+      bonus: z.number(),
+      gives_advantage: z.boolean().optional(),
+    })
+    .optional(),
+  skill_check_modifier: z
+    .strictObject({
+      skill: z.string(),
+      bonus: z.number().optional(),
+      gives_advantage: z.boolean().optional(),
+    })
+    .optional(),
   trait_modifier: z.strictObject({ grants: z.array(z.string()) }).optional(),
 });
 
@@ -46,7 +55,10 @@ const EnchantmentSchema = z.strictObject({
   damage_bonus: z.number().optional(),
   to_hit_bonus: z.number().optional(),
   extra_damage: z
-    .strictObject({ damage_type: z.strictObject({ index: z.string(), name: z.string(), url: z.string() }), damage_dice: z.string() })
+    .strictObject({
+      damage_type: z.strictObject({ index: z.string(), name: z.string(), url: z.string() }),
+      damage_dice: z.string(),
+    })
     .optional(),
 });
 
@@ -58,8 +70,12 @@ export const MagicItemSchema = z.strictObject({
   variants: z.array(APIReferenceSchema),
   variant: z.boolean(),
   cost: CostSchema.optional(),
+  // The price in copper pieces, from `cost`.
+  cost_cp: z.number().optional(),
   effect: MagicItemEffectSchema.optional(),
   enchantment: EnchantmentSchema.optional(),
+  // The unified form of `effect` and `enchantment`.
+  effects: ItemEffectsSchema.optional(),
   requires_attunement: z.boolean().optional(),
   is_consumable: z.boolean().optional(),
   weight: z.number().optional(),

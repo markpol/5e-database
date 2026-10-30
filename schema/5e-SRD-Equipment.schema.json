@@ -48,6 +48,9 @@
       ],
       "additionalProperties": false
     },
+    "cost_cp": {
+      "type": "number"
+    },
     "url": {
       "type": "string"
     },
@@ -94,6 +97,220 @@
         }
       },
       "additionalProperties": false
+    },
+    "effects": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "activation": {
+            "type": "string",
+            "enum": [
+              "equipped",
+              "attuned",
+              "carried",
+              "use"
+            ]
+          },
+          "duration": {
+            "type": "object",
+            "properties": {
+              "unit": {
+                "type": "string",
+                "enum": [
+                  "hour",
+                  "permanent"
+                ]
+              },
+              "length": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "unit"
+            ],
+            "additionalProperties": false
+          },
+          "armor_class": {
+            "type": "object",
+            "properties": {
+              "bonus": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "bonus"
+            ],
+            "additionalProperties": false
+          },
+          "ability": {
+            "type": "object",
+            "properties": {
+              "ability": {
+                "type": "string",
+                "enum": [
+                  "str",
+                  "dex",
+                  "con",
+                  "int",
+                  "wis",
+                  "cha"
+                ]
+              },
+              "op": {
+                "type": "string",
+                "enum": [
+                  "set",
+                  "add"
+                ]
+              },
+              "value": {
+                "type": "number"
+              },
+              "cap": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "ability",
+              "op",
+              "value"
+            ],
+            "additionalProperties": false
+          },
+          "resistances": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "attack": {
+            "type": "object",
+            "properties": {
+              "to_hit_bonus": {
+                "type": "number"
+              },
+              "damage_bonus": {
+                "type": "number"
+              },
+              "extra_damage": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "damage_type": {
+                      "type": "string"
+                    },
+                    "damage_dice": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "damage_type",
+                    "damage_dice"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          },
+          "damage": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "damage_type": {
+                  "type": "string"
+                },
+                "damage_dice": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "damage_type",
+                "damage_dice"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "heal": {
+            "type": "string"
+          },
+          "saving_throws": {
+            "type": "object",
+            "properties": {
+              "abilities": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "str",
+                    "dex",
+                    "con",
+                    "int",
+                    "wis",
+                    "cha"
+                  ]
+                }
+              },
+              "bonus": {
+                "type": "number"
+              },
+              "advantage": {
+                "type": "boolean",
+                "const": true
+              }
+            },
+            "required": [
+              "abilities"
+            ],
+            "additionalProperties": false
+          },
+          "skill_check": {
+            "type": "object",
+            "properties": {
+              "skill": {
+                "type": "string"
+              },
+              "bonus": {
+                "type": "number"
+              },
+              "advantage": {
+                "type": "boolean",
+                "const": true
+              }
+            },
+            "required": [
+              "skill"
+            ],
+            "additionalProperties": false
+          },
+          "proficiencies": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "traits": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "activation"
+        ],
+        "additionalProperties": false
+      }
     },
     "weight": {
       "type": "number"
@@ -300,7 +517,13 @@
         "additionalProperties": false
       }
     },
+    "bundle_size": {
+      "type": "number"
+    },
     "quantity": {
+      "type": "number"
+    },
+    "reach_ft": {
       "type": "number"
     },
     "range": {

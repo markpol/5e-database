@@ -11,6 +11,8 @@ export type MagicItem = {
     };
     rarity: {
         name: string;
+        rank?: number | undefined;
+        min_level?: number | undefined;
     };
     variants: {
         index: string;
@@ -24,6 +26,7 @@ export type MagicItem = {
         quantity: number;
         unit: string;
     } | undefined;
+    cost_cp?: number | undefined;
     effect?: {
         ability_score_modifier?: {
             ability: string;
@@ -72,6 +75,48 @@ export type MagicItem = {
             damage_dice: string;
         } | undefined;
     } | undefined;
+    effects?: {
+        activation: "equipped" | "attuned" | "carried" | "use";
+        duration?: {
+            unit: "hour" | "permanent";
+            length?: number | undefined;
+        } | undefined;
+        armor_class?: {
+            bonus: number;
+        } | undefined;
+        ability?: {
+            ability: "int" | "str" | "dex" | "con" | "wis" | "cha";
+            op: "set" | "add";
+            value: number;
+            cap?: number | undefined;
+        } | undefined;
+        resistances?: string[] | undefined;
+        attack?: {
+            to_hit_bonus?: number | undefined;
+            damage_bonus?: number | undefined;
+            extra_damage?: {
+                damage_type: string;
+                damage_dice: string;
+            }[] | undefined;
+        } | undefined;
+        damage?: {
+            damage_type: string;
+            damage_dice: string;
+        }[] | undefined;
+        heal?: string | undefined;
+        saving_throws?: {
+            abilities: ("int" | "str" | "dex" | "con" | "wis" | "cha")[];
+            bonus?: number | undefined;
+            advantage?: true | undefined;
+        } | undefined;
+        skill_check?: {
+            skill: string;
+            bonus?: number | undefined;
+            advantage?: true | undefined;
+        } | undefined;
+        proficiencies?: string[] | undefined;
+        traits?: string[] | undefined;
+    }[] | undefined;
     requires_attunement?: boolean | undefined;
     is_consumable?: boolean | undefined;
     weight?: number | undefined;

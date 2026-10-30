@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { APIReferenceSchema, DamageSchema, translatable } from '../../schemas/common';
+import { ItemEffectsSchema } from '../../schemas/item-effects';
 
 const CostSchema = z.strictObject({
   quantity: z.number(),
@@ -48,6 +49,8 @@ export const EquipmentSchema = z.strictObject({
   name: translatable(z.string()),
   equipment_category: APIReferenceSchema,
   cost: CostSchema,
+  // The price in copper pieces, from `cost`; for an item sold in a bundle it is the price of the bundle.
+  cost_cp: z.number().optional(),
   url: z.string(),
   desc: translatable(z.array(z.string())).optional(),
   material: z.string().optional(),
@@ -55,6 +58,8 @@ export const EquipmentSchema = z.strictObject({
   ammunition: z.string().optional(),
   is_consumable: z.boolean().optional(),
   effect: EquipmentEffectSchema.optional(),
+  // The unified form of `effect`.
+  effects: ItemEffectsSchema.optional(),
   weight: z.number().optional(),
   gear_category: APIReferenceSchema.optional(),
   armor_category: translatable(z.string()).optional(),
@@ -65,7 +70,11 @@ export const EquipmentSchema = z.strictObject({
   damage: DamageSchema.optional(),
   image: z.string().optional(),
   properties: z.array(APIReferenceSchema).optional(),
+  // How many pieces `cost` buys, for the items sold as a bundle (a bundle of arrows, a bag of ball bearings).
+  bundle_size: z.number().optional(),
   quantity: z.number().optional(),
+  // The distance in feet a melee weapon reaches.
+  reach_ft: z.number().optional(),
   range: RangeSchema.optional(),
   special: translatable(z.array(z.string())).optional(),
   speed: SpeedSchema.optional(),
