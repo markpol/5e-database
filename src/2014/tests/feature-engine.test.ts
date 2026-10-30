@@ -545,7 +545,12 @@ describe('feature engine modifiers', () => {
     const auras = all.filter(([, m]) => m.aura);
     expect(auras.length).toBeGreaterThan(0);
     for (const [f, m] of auras) {
-      const aura = m.aura as { class_specific?: string; range_ft?: number; affects: string };
+      const aura = m.aura as {
+        class_specific?: string;
+        range_ft?: number;
+        affects: string;
+        must_hear_owner?: boolean;
+      };
       if (aura.class_specific) {
         // The Levels row of the owner's level gives the range, and the text states it for that level.
         const range = classSpecific(f, aura.class_specific);
