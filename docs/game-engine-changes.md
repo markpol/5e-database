@@ -132,8 +132,8 @@ Slam apply only to grappled targets.
 **Annotation entries.** `monster-engine-annotations.json` is a list of
 `{ monster, section, name, attack?, damage?, append_damage?, set? }`. `monster` is a monster `index`; `section` is
 `actions`, `legendary_actions`, `special_abilities` or `reactions`; `name` is the name of the action or ability, and
-`attack` the name of one attack of a multiattack-style action or of one breath option of a dragon's Breath Weapons. `append_damage` is a list of `damage[]` entries added
-after the existing ones. `set` is a set of fields written onto the action or ability, or onto its `damage[damage]`
+`attack` the name of one attack of a multiattack-style action or of one breath option of a dragon's
+Breath Weapons. `append_damage` is a list of `damage[]` entries added after the existing ones. `set` is a set of fields written onto the action or ability, or onto its `damage[damage]`
 entry when `damage` (a position) is given. An entry whose target does not exist makes the generator fail.
 
 **What the annotations add.** Riders: the gladiator's Shield Bash (prone, DC 15 Strength), the deep gnome's Poisoned
