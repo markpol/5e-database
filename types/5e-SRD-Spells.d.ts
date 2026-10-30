@@ -25,7 +25,16 @@ export type Spell = {
     }[];
     url: string;
     higher_level?: string[] | undefined;
+    range_ft?: number | "sight" | "special" | "self" | "touch" | "unlimited" | undefined;
     material?: string | undefined;
+    duration_data?: {
+        unit: "special" | "minute" | "hour" | "instantaneous" | "round" | "day" | "until_dispelled";
+        length?: number | undefined;
+    } | undefined;
+    casting_time_data?: {
+        amount: number;
+        unit: "action" | "bonus_action" | "reaction" | "minute" | "hour";
+    } | undefined;
     attack_type?: string | undefined;
     damage?: {
         damage_type?: {

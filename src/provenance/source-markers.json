@@ -401,7 +401,21 @@
       "source": "srd"
     },
     "src/2014/en/5e-SRD-Spells.json": {
-      "source": "srd"
+      "source": "srd",
+      "fields": {
+        "casting_time_data": {
+          "source": "dd",
+          "note": "casting_time as an amount of a unit, derived from the casting_time text by derive-spell-mechanics.ts."
+        },
+        "duration_data": {
+          "source": "dd",
+          "note": "duration as a unit and a length, derived from the duration text by derive-spell-mechanics.ts."
+        },
+        "range_ft": {
+          "source": "dd",
+          "note": "range as a number of feet, or a word for self, touch, sight, special or unlimited, derived from the range text by derive-spell-mechanics.ts."
+        }
+      }
     },
     "src/2014/en/5e-SRD-Subclasses.json": {
       "source": "srd"

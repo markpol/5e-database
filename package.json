@@ -136,6 +136,7 @@
   ],
   "scripts": {
     "normalize:monsters": "node --experimental-strip-types --no-warnings src/2014/normalize-monsters.ts",
+    "derive:spells": "node --experimental-strip-types --no-warnings src/2014/derive-spell-mechanics.ts",
     "generate": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs scripts/generate-schemas.ts",
     "generate:check": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs scripts/generate-schemas.ts --check",
     "i18n:coverage": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs scripts/i18n-coverage.ts",
@@ -167,6 +168,7 @@
     "eslint-plugin-prettier": "^5.5.6",
     "glob": "^13.0.6",
     "globals": "^17.11.0",
+    "prettier": "^3.9.8",
     "typescript": "^6.0.3",
     "vitest": "^5.0.0",
     "zod": "^4.5.4"
