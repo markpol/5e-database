@@ -338,5 +338,1084 @@
       }
     },
     "url": "/api/2014/backgrounds/acolyte"
+  },
+  {
+    "index": "criminal",
+    "name": "Criminal",
+    "source": "srd-5.2",
+    "ability_scores": [
+      {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2014/ability-scores/dex"
+      },
+      {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/2014/ability-scores/con"
+      },
+      {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/2014/ability-scores/int"
+      }
+    ],
+    "feat": {
+      "index": "alert",
+      "name": "Alert",
+      "url": "/api/2014/feats/alert"
+    },
+    "starting_proficiencies": [
+      {
+        "index": "skill-sleight-of-hand",
+        "name": "Skill: Sleight of Hand",
+        "url": "/api/2014/proficiencies/skill-sleight-of-hand"
+      },
+      {
+        "index": "skill-stealth",
+        "name": "Skill: Stealth",
+        "url": "/api/2014/proficiencies/skill-stealth"
+      },
+      {
+        "index": "thieves-tools",
+        "name": "Thieves' Tools",
+        "url": "/api/2014/proficiencies/thieves-tools"
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "Choose A or B: (A) 2 Daggers, Thieves' Tools, Crowbar, 2 Pouches, Traveler's Clothes, 16 GP; or (B) 50 GP",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 2,
+                  "of": {
+                    "index": "dagger",
+                    "name": "Dagger",
+                    "url": "/api/2014/equipment/dagger"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "thieves-tools",
+                    "name": "Thieves' Tools",
+                    "url": "/api/2014/equipment/thieves-tools"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "crowbar",
+                    "name": "Crowbar",
+                    "url": "/api/2014/equipment/crowbar"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 2,
+                  "of": {
+                    "index": "pouch",
+                    "name": "Pouch",
+                    "url": "/api/2014/equipment/pouch"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "clothes-travelers",
+                    "name": "Clothes, traveler's",
+                    "url": "/api/2014/equipment/clothes-travelers"
+                  }
+                },
+                {
+                  "option_type": "money",
+                  "count": 16,
+                  "unit": "gp"
+                }
+              ]
+            },
+            {
+              "option_type": "money",
+              "count": 50,
+              "unit": "gp"
+            }
+          ]
+        }
+      }
+    ],
+    "url": "/api/2014/backgrounds/criminal"
+  },
+  {
+    "index": "sage",
+    "name": "Sage",
+    "source": "srd-5.2",
+    "ability_scores": [
+      {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/2014/ability-scores/con"
+      },
+      {
+        "index": "int",
+        "name": "INT",
+        "url": "/api/2014/ability-scores/int"
+      },
+      {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/2014/ability-scores/wis"
+      }
+    ],
+    "feat": {
+      "index": "magic-initiate",
+      "name": "Magic Initiate",
+      "url": "/api/2014/feats/magic-initiate",
+      "note": "Wizard"
+    },
+    "starting_proficiencies": [
+      {
+        "index": "skill-arcana",
+        "name": "Skill: Arcana",
+        "url": "/api/2014/proficiencies/skill-arcana"
+      },
+      {
+        "index": "skill-history",
+        "name": "Skill: History",
+        "url": "/api/2014/proficiencies/skill-history"
+      },
+      {
+        "index": "calligraphers-supplies",
+        "name": "Calligrapher's Supplies",
+        "url": "/api/2014/proficiencies/calligraphers-supplies"
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "Choose A or B: (A) Quarterstaff, Calligrapher's Supplies, Book (history), Parchment (8 sheets), Robe, 8 GP; or (B) 50 GP",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "quarterstaff",
+                    "name": "Quarterstaff",
+                    "url": "/api/2014/equipment/quarterstaff"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "calligraphers-supplies",
+                    "name": "Calligrapher's Supplies",
+                    "url": "/api/2014/equipment/calligraphers-supplies"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "book",
+                    "name": "Book",
+                    "url": "/api/2014/equipment/book",
+                    "note": "History"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 8,
+                  "of": {
+                    "index": "parchment-one-sheet",
+                    "name": "Parchment (one sheet)",
+                    "url": "/api/2014/equipment/parchment-one-sheet"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "robes",
+                    "name": "Robes",
+                    "url": "/api/2014/equipment/robes"
+                  }
+                },
+                {
+                  "option_type": "money",
+                  "count": 8,
+                  "unit": "gp"
+                }
+              ]
+            },
+            {
+              "option_type": "money",
+              "count": 50,
+              "unit": "gp"
+            }
+          ]
+        }
+      }
+    ],
+    "url": "/api/2014/backgrounds/sage"
+  },
+  {
+    "index": "soldier",
+    "name": "Soldier",
+    "source": "srd-5.2",
+    "ability_scores": [
+      {
+        "index": "str",
+        "name": "STR",
+        "url": "/api/2014/ability-scores/str"
+      },
+      {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2014/ability-scores/dex"
+      },
+      {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/2014/ability-scores/con"
+      }
+    ],
+    "feat": {
+      "index": "savage-attacker",
+      "name": "Savage Attacker",
+      "url": "/api/2014/feats/savage-attacker"
+    },
+    "starting_proficiencies": [
+      {
+        "index": "skill-athletics",
+        "name": "Skill: Athletics",
+        "url": "/api/2014/proficiencies/skill-athletics"
+      },
+      {
+        "index": "skill-intimidation",
+        "name": "Skill: Intimidation",
+        "url": "/api/2014/proficiencies/skill-intimidation"
+      }
+    ],
+    "proficiency_choices": [
+      {
+        "desc": "Choose one kind of Gaming Set (see \"Equipment\")",
+        "choose": 1,
+        "type": "proficiencies",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "dice-set",
+                "name": "Dice Set",
+                "url": "/api/2014/proficiencies/dice-set"
+              }
+            },
+            {
+              "option_type": "reference",
+              "item": {
+                "index": "playing-card-set",
+                "name": "Playing Card Set",
+                "url": "/api/2014/proficiencies/playing-card-set"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "starting_equipment_options": [
+      {
+        "desc": "Choose A or B: (A) Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer's Kit, Quiver, Traveler's Clothes, 14 GP; or (B) 50 GP",
+        "choose": 1,
+        "type": "equipment",
+        "from": {
+          "option_set_type": "options_array",
+          "options": [
+            {
+              "option_type": "multiple",
+              "items": [
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "spear",
+                    "name": "Spear",
+                    "url": "/api/2014/equipment/spear"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "shortbow",
+                    "name": "Shortbow",
+                    "url": "/api/2014/equipment/shortbow"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 20,
+                  "of": {
+                    "index": "arrow",
+                    "name": "Arrow",
+                    "url": "/api/2014/equipment/arrow"
+                  }
+                },
+                {
+                  "option_type": "choice",
+                  "choice": {
+                    "choose": 1,
+                    "type": "equipment",
+                    "from": {
+                      "option_set_type": "options_array",
+                      "options": [
+                        {
+                          "option_type": "reference",
+                          "item": {
+                            "index": "dice-set",
+                            "name": "Dice Set",
+                            "url": "/api/2014/equipment/dice-set"
+                          }
+                        },
+                        {
+                          "option_type": "reference",
+                          "item": {
+                            "index": "playing-card-set",
+                            "name": "Playing Card Set",
+                            "url": "/api/2014/equipment/playing-card-set"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "healers-kit",
+                    "name": "Healer's Kit",
+                    "url": "/api/2014/equipment/healers-kit"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "quiver",
+                    "name": "Quiver",
+                    "url": "/api/2014/equipment/quiver"
+                  }
+                },
+                {
+                  "option_type": "counted_reference",
+                  "count": 1,
+                  "of": {
+                    "index": "clothes-travelers",
+                    "name": "Clothes, traveler's",
+                    "url": "/api/2014/equipment/clothes-travelers"
+                  }
+                },
+                {
+                  "option_type": "money",
+                  "count": 14,
+                  "unit": "gp"
+                }
+              ]
+            },
+            {
+              "option_type": "money",
+              "count": 50,
+              "unit": "gp"
+            }
+          ]
+        }
+      }
+    ],
+    "url": "/api/2014/backgrounds/soldier"
+  },
+  {
+    "index": "cartographer",
+    "name": "Cartographer",
+    "source": "dd",
+    "starting_proficiencies": [
+      {
+        "index": "skill-investigation",
+        "name": "Skill: Investigation",
+        "url": "/api/2014/proficiencies/skill-investigation"
+      },
+      {
+        "index": "skill-survival",
+        "name": "Skill: Survival",
+        "url": "/api/2014/proficiencies/skill-survival"
+      },
+      {
+        "index": "cartographers-tools",
+        "name": "Cartographer's Tools",
+        "url": "/api/2014/proficiencies/cartographers-tools"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/2014/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "clothes-travelers",
+          "name": "Clothes, traveler's",
+          "url": "/api/2014/equipment/clothes-travelers"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "case-map-or-scroll",
+          "name": "Case, map or scroll",
+          "url": "/api/2014/equipment/case-map-or-scroll"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "ink-1-ounce-bottle",
+          "name": "Ink (1 ounce bottle)",
+          "url": "/api/2014/equipment/ink-1-ounce-bottle"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "ink-pen",
+          "name": "Ink pen",
+          "url": "/api/2014/equipment/ink-pen"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "parchment-one-sheet",
+          "name": "Parchment (one sheet)",
+          "url": "/api/2014/equipment/parchment-one-sheet"
+        },
+        "quantity": 5
+      }
+    ],
+    "starting_gold": {
+      "quantity": 10,
+      "unit": "gp"
+    },
+    "feature": {
+      "name": "Surveyor's Standing",
+      "desc": [
+        "You have drawn maps that other people have staked money and lives on, and those who rely on maps know the worth of the hand that made them. Officials, caravan masters, guild clerks and expedition leaders are willing to hear you out, and you can usually arrange a short meeting with one of them by offering to check or improve their charts of a region.",
+        "When you spend a day studying the maps, survey notes or landmarks of a place, you can sketch a map of it that is accurate about distances and the layout of roads, rivers and settlements. Anyone who holds that sketch can use it to find their way through the area you mapped."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I pace out every distance myself and cannot rest until a measurement agrees with the one I had before."
+          },
+          {
+            "option_type": "string",
+            "string": "I describe the world in bearings, landmarks and the number of days it takes to cross it."
+          },
+          {
+            "option_type": "string",
+            "string": "I sketch in the margins of whatever I am reading, whether or not anyone wants to see the result."
+          },
+          {
+            "option_type": "string",
+            "string": "I would sooner walk three days to check a rumor than trust a map I did not draw."
+          },
+          {
+            "option_type": "string",
+            "string": "I am endlessly patient with a blank page and not at all patient with a crowded room."
+          },
+          {
+            "option_type": "string",
+            "string": "I name every hill, stream and ford I pass, and I am hurt when someone uses a different name."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Accuracy. A map that lies is worse than no map at all, and I will not sign one that does.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Discovery. The blank places on the page are the ones worth walking to.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Sharing. A road is only worth knowing if everyone who needs it can find it.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Ambition. The name on the map is the name that history remembers, and I mean it to be mine.",
+            "alignments": [
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Craft. A fine chart is a work of art as much as a tool, and I give it the time it deserves.",
+            "alignments": [
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Caution. I mark every danger I find so that those who come after me need not meet it.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "My master drew the great chart of our homeland, and I mean to finish the corners that were left empty."
+          },
+          {
+            "option_type": "string",
+            "string": "A caravan followed one of my maps into a place it should never have gone, and I owe its survivors a better one."
+          },
+          {
+            "option_type": "string",
+            "string": "I carry a map I could not finish, and I will not rest until I have seen what lies at its edge."
+          },
+          {
+            "option_type": "string",
+            "string": "My maps hang in a hall I may never see again, and I want them to be remembered kindly."
+          },
+          {
+            "option_type": "string",
+            "string": "The only copy of a charted pass is in my head, and I am determined to protect those who need it."
+          },
+          {
+            "option_type": "string",
+            "string": "A rival has taken credit for my survey, and I mean to set the record straight."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I trust the page over the people, and I have led others into trouble because the map said it was safe."
+          },
+          {
+            "option_type": "string",
+            "string": "I cannot leave a survey unfinished, even when the weather or the road demands that I do."
+          },
+          {
+            "option_type": "string",
+            "string": "I hoard my notes and share them only on my own terms."
+          },
+          {
+            "option_type": "string",
+            "string": "I would risk a great deal for a view that no one has drawn before."
+          },
+          {
+            "option_type": "string",
+            "string": "I correct other people's maps aloud, and I do not notice how that sounds."
+          },
+          {
+            "option_type": "string",
+            "string": "I forget that the people I travel with did not agree to wander to the edge of the page."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/cartographer"
+  },
+  {
+    "index": "lighthouse-keeper",
+    "name": "Lighthouse Keeper",
+    "source": "dd",
+    "starting_proficiencies": [
+      {
+        "index": "skill-perception",
+        "name": "Skill: Perception",
+        "url": "/api/2014/proficiencies/skill-perception"
+      },
+      {
+        "index": "skill-nature",
+        "name": "Skill: Nature",
+        "url": "/api/2014/proficiencies/skill-nature"
+      },
+      {
+        "index": "navigators-tools",
+        "name": "Navigator's Tools",
+        "url": "/api/2014/proficiencies/navigators-tools"
+      }
+    ],
+    "language_options": {
+      "choose": 1,
+      "type": "languages",
+      "from": {
+        "option_set_type": "resource_list",
+        "resource_list_url": "/api/2014/languages"
+      }
+    },
+    "starting_equipment": [
+      {
+        "equipment": {
+          "index": "clothes-common",
+          "name": "Clothes, common",
+          "url": "/api/2014/equipment/clothes-common"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "lantern-hooded",
+          "name": "Lantern, hooded",
+          "url": "/api/2014/equipment/lantern-hooded"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "oil-flask",
+          "name": "Oil (flask)",
+          "url": "/api/2014/equipment/oil-flask"
+        },
+        "quantity": 3
+      },
+      {
+        "equipment": {
+          "index": "tinderbox",
+          "name": "Tinderbox",
+          "url": "/api/2014/equipment/tinderbox"
+        },
+        "quantity": 1
+      },
+      {
+        "equipment": {
+          "index": "signal-whistle",
+          "name": "Signal whistle",
+          "url": "/api/2014/equipment/signal-whistle"
+        },
+        "quantity": 1
+      }
+    ],
+    "starting_gold": {
+      "quantity": 8,
+      "unit": "gp"
+    },
+    "feature": {
+      "name": "Keeper's Welcome",
+      "desc": [
+        "Sailors, ferry crews and coast wardens know that a keeper stays awake so that others can sleep. Anyone who works the water and recognizes your calling will share a meal with you and give you passage on a vessel that has room for you, though you must work or pay for any cargo you bring.",
+        "You can find a dry place to sleep at any lighthouse, watchtower or signal station, and its keeper will tell you what the weather and the water have been doing in the area over the past season."
+      ]
+    },
+    "personality_traits": {
+      "choose": 2,
+      "type": "personality_traits",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I wake at the same hour every night, whether or not there is a lamp to tend."
+          },
+          {
+            "option_type": "string",
+            "string": "I read the weather in the color of the sky and the temper of the gulls, and I say so loudly."
+          },
+          {
+            "option_type": "string",
+            "string": "I am happiest with one companion and a long silence, and I grow restless in a crowd."
+          },
+          {
+            "option_type": "string",
+            "string": "I count the ships that pass, and I remember the ones that did not return."
+          },
+          {
+            "option_type": "string",
+            "string": "I keep every flame I light burning as if someone were counting on it."
+          },
+          {
+            "option_type": "string",
+            "string": "I tell long stories about the sea as though everyone in the room had been there."
+          }
+        ]
+      }
+    },
+    "ideals": {
+      "choose": 1,
+      "type": "ideals",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "ideal",
+            "desc": "Duty. The light must burn, and no storm or sorrow is a reason to let it go out.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Freedom. The sea belongs to no one, and neither do I.",
+            "alignments": [
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Guidance. I would rather save one stranger than be thanked by a hundred friends.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Solitude. The quiet I keep is worth more to me than the company I gave up.",
+            "alignments": [
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Vigilance. Trouble does not announce itself, and the only defense is to be looking.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              }
+            ]
+          },
+          {
+            "option_type": "ideal",
+            "desc": "Mastery. I want to know the water so well that it can hide nothing from me.",
+            "alignments": [
+              {
+                "index": "lawful-good",
+                "name": "Lawful Good",
+                "url": "/api/2014/alignments/lawful-good"
+              },
+              {
+                "index": "neutral-good",
+                "name": "Neutral Good",
+                "url": "/api/2014/alignments/neutral-good"
+              },
+              {
+                "index": "chaotic-good",
+                "name": "Chaotic Good",
+                "url": "/api/2014/alignments/chaotic-good"
+              },
+              {
+                "index": "lawful-neutral",
+                "name": "Lawful Neutral",
+                "url": "/api/2014/alignments/lawful-neutral"
+              },
+              {
+                "index": "neutral",
+                "name": "Neutral",
+                "url": "/api/2014/alignments/neutral"
+              },
+              {
+                "index": "chaotic-neutral",
+                "name": "Chaotic Neutral",
+                "url": "/api/2014/alignments/chaotic-neutral"
+              },
+              {
+                "index": "lawful-evil",
+                "name": "Lawful Evil",
+                "url": "/api/2014/alignments/lawful-evil"
+              },
+              {
+                "index": "neutral-evil",
+                "name": "Neutral Evil",
+                "url": "/api/2014/alignments/neutral-evil"
+              },
+              {
+                "index": "chaotic-evil",
+                "name": "Chaotic Evil",
+                "url": "/api/2014/alignments/chaotic-evil"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "bonds": {
+      "choose": 1,
+      "type": "bonds",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I tend the light that my father tended, and I will not be the keeper who lets it fail."
+          },
+          {
+            "option_type": "string",
+            "string": "A ship went down within sight of my tower, and I will not let that happen again."
+          },
+          {
+            "option_type": "string",
+            "string": "I owe my life to a stranger who rowed out in a gale, and I mean to repay it to someone else."
+          },
+          {
+            "option_type": "string",
+            "string": "The village on the shore has never forgotten the keeper who came before me, and I mean to deserve their trust."
+          },
+          {
+            "option_type": "string",
+            "string": "A sailor left me a locked sea chest, and I have promised to see it delivered."
+          },
+          {
+            "option_type": "string",
+            "string": "I carry the log of my tower, and I want it read by someone who will understand it."
+          }
+        ]
+      }
+    },
+    "flaws": {
+      "choose": 1,
+      "type": "flaws",
+      "from": {
+        "option_set_type": "options_array",
+        "options": [
+          {
+            "option_type": "string",
+            "string": "I assume the worst of strangers who come asking about my tower."
+          },
+          {
+            "option_type": "string",
+            "string": "I do not sleep well anywhere but under a roof that I can see the light from."
+          },
+          {
+            "option_type": "string",
+            "string": "I cannot stand to be indoors during a storm."
+          },
+          {
+            "option_type": "string",
+            "string": "I would sooner stand a watch alone than ask anyone for help."
+          },
+          {
+            "option_type": "string",
+            "string": "I take every shipwreck as a personal failure, and I punish myself for it."
+          },
+          {
+            "option_type": "string",
+            "string": "I speak so little that people mistake my silence for contempt."
+          }
+        ]
+      }
+    },
+    "url": "/api/2014/backgrounds/lighthouse-keeper"
   }
 ]

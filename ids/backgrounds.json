@@ -1,6 +1,11 @@
 {
   "collection": "backgrounds",
   "indices": [
-    "acolyte"
+    "acolyte",
+    "cartographer",
+    "criminal",
+    "lighthouse-keeper",
+    "sage",
+    "soldier"
   ]
 }

@@ -40,7 +40,8 @@ Every collection is kept. Record counts come from the data files. Status means:
 - **extensible**: reference content that is kept and open to more entries and fields.
 - **reference**: kept as SRD reference data.
 - **dormant**: the 2024 data. The 2024 (SRD 5.2) set is frozen: it is kept as the in-repo source of more backgrounds
-  and feats, is not reshaped, and is excluded from the published package. Its schema tests stay.
+  and feats (three backgrounds and sixteen feats of it are now in the 2014 collections), is not reshaped, and is
+  excluded from the published package. Its schema tests stay.
 
 ### 2014 SRD (`src/2014`)
 
@@ -48,13 +49,13 @@ Every collection is kept. Record counts come from the data files. Status means:
 | --------------------- | ---------------------------------------------- | ------: | ----------------------------------------------------------------------------------------------------------------- | --------------- |
 | Ability Scores | `src/2014/en/5e-SRD-Ability-Scores.json` | 6 | Core game data | game data |
 | Alignments | `src/2014/en/5e-SRD-Alignments.json` | 9 | Core game data | game data |
-| Backgrounds | `src/2014/en/5e-SRD-Backgrounds.json` | 1 | Extensible reference content: more entries and fields can be added | extensible |
+| Backgrounds | `src/2014/en/5e-SRD-Backgrounds.json` | 6 | Extensible reference content: more entries and fields can be added | extensible |
 | Classes | `src/2014/en/5e-SRD-Classes.json` | 12 | Core game data | game data |
 | Conditions | `src/2014/en/5e-SRD-Conditions.json` | 47 | Core game data | game data |
 | Damage Types | `src/2014/en/5e-SRD-Damage-Types.json` | 13 | Core game data | game data |
 | Equipment Categories | `src/2014/en/5e-SRD-Equipment-Categories.json` | 33 | Core game data | game data |
 | Equipment | `src/2014/en/5e-SRD-Equipment.json` | 197 | Core game data | game data |
-| Feats | `src/2014/en/5e-SRD-Feats.json` | 1 | Extensible reference content: more entries and fields can be added | extensible |
+| Feats | `src/2014/en/5e-SRD-Feats.json` | 17 | Extensible reference content: more entries and fields can be added | extensible |
 | Features | `src/2014/en/5e-SRD-Features.json` | 407 | Core game data | game data |
 | Languages | `src/2014/en/5e-SRD-Languages.json` | 16 | SRD reference data | reference |
 | Levels | `src/2014/en/5e-SRD-Levels.json` | 290 | Core game data | game data |

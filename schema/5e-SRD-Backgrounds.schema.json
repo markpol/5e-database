@@ -9,6 +9,62 @@
       "type": "string",
       "translatable": true
     },
+    "source": {
+      "type": "string",
+      "enum": [
+        "srd-5.2",
+        "dd"
+      ]
+    },
+    "ability_scores": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "index": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "index",
+          "name",
+          "url"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "feat": {
+      "type": "object",
+      "properties": {
+        "index": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "index",
+        "name",
+        "url"
+      ],
+      "additionalProperties": false
+    },
     "starting_proficiencies": {
       "type": "array",
       "items": {
@@ -33,6 +89,12 @@
           "url"
         ],
         "additionalProperties": false
+      }
+    },
+    "proficiency_choices": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/__schema0"
       }
     },
     "language_options": {

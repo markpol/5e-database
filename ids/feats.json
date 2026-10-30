@@ -1,6 +1,22 @@
 {
   "collection": "feats",
   "indices": [
-    "grappler"
+    "ability-score-improvement",
+    "alert",
+    "archery",
+    "boon-of-combat-prowess",
+    "boon-of-dimensional-travel",
+    "boon-of-fate",
+    "boon-of-irresistible-offense",
+    "boon-of-spell-recall",
+    "boon-of-the-night-spirit",
+    "boon-of-truesight",
+    "defense",
+    "grappler",
+    "great-weapon-fighting",
+    "magic-initiate",
+    "savage-attacker",
+    "skilled",
+    "two-weapon-fighting"
   ]
 }

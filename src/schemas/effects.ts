@@ -55,6 +55,8 @@ export const FEATURE_WHILE = [
   // The target is one of the owner's favored enemies.
   'target_favored_enemy',
   'target_not_fiend',
+  // The target is a creature that the owner is grappling.
+  'target_grappled_by_owner',
 ] as const;
 
 // The kind of attack a roll or bonus is limited to. `bound_weapon` is the one weapon the condition is tied to.

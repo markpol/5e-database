@@ -10,6 +10,12 @@ export function translatable<T extends z.ZodType>(schema: T): T {
   return schema.meta({ translatable: true });
 }
 
+/**
+ * Where an entry added to a collection after the SRD 5.1 set comes from: `srd-5.2` for the entries taken from the SRD 5.2
+ * set, `dd` for those written for this data. The entries of SRD 5.1 carry no `source`. Never translated.
+ */
+export const RecordSourceSchema = z.enum(['srd-5.2', 'dd']);
+
 export const APIReferenceSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
