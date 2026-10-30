@@ -28,8 +28,11 @@ const equipmentByIndex = new Map(Equipment.map((item) => [item.index, item]));
 const nonEquipmentSupplies = new Set(['rock', 'harpoon', 'poisoned-dart']);
 
 describe('monster weapon annotations', () => {
-  it('references valid weapon and supply equipment and matching ammunition', () => {
-    for (const monster of Monsters) {
+  it.each([
+    ['English', Monsters],
+    ['normalized', NormalizedMonsters],
+  ])('references valid weapon and supply equipment and matching ammunition in the %s data', (_name, monsters) => {
+    for (const monster of monsters) {
       for (const action of monster.actions ?? []) {
         if (action.weapon) {
           expect(equipmentByIndex.has(action.weapon), `${monster.index}: ${action.name} weapon`).toBe(true);
@@ -44,7 +47,17 @@ describe('monster weapon annotations', () => {
     }
   });
 
-  it('keeps weapon and supply annotations in the normalized monster data', () => {
+  it('uses only the three documented non-equipment supply tokens', () => {
+    const used = new Set(
+      NormalizedMonsters.flatMap((monster) => (monster.actions ?? []).map((action) => action.supply?.item)).filter(
+        (item): item is string => !!item && !equipmentByIndex.has(item),
+      ),
+    );
+
+    expect([...used].sort()).toEqual([...nonEquipmentSupplies].sort());
+  });
+
+  it('keeps weapon and supply annotations of the English data in the normalized monster data', () => {
     const sourceRows = new Map(Monsters.flatMap((monster) => (monster.actions ?? [])
       .filter((action) => action.weapon || action.weapon_kind || action.supply)
       .map((action) => [`${monster.index}:${action.name}`, action] as const)));
@@ -52,7 +65,8 @@ describe('monster weapon annotations', () => {
       .filter((action) => action.weapon || action.weapon_kind || action.supply)
       .map((action) => [`${monster.index}:${action.name}`, action] as const)));
 
-    expect(normalizedRows.size).toBe(sourceRows.size);
+    // The annotations file completes the English data, so the normalized data has at least its rows.
+    expect(normalizedRows.size).toBeGreaterThanOrEqual(sourceRows.size);
     for (const [key, action] of sourceRows) {
       expect(normalizedRows.get(key)).toMatchObject({
         ...(action.weapon ? { weapon: action.weapon } : {}),

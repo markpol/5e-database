@@ -4,6 +4,14 @@
       "source": "srd",
       "derived_from": "src/2014/en/5e-SRD-Monsters.json",
       "fields": {
+        "actions[].area": {
+          "source": "dd",
+          "note": "Cone, line, sphere or cylinder in feet, read from the action prose by normalize-monsters.ts."
+        },
+        "actions[].attack_kind": {
+          "source": "dd",
+          "note": "melee, ranged or melee_or_ranged, read from the attack header by normalize-monsters.ts."
+        },
         "actions[].attacks[].condition": {
           "source": "dd",
           "note": "Merged in from monster-engine-annotations.json."
@@ -15,6 +23,18 @@
         "actions[].pull_distance_ft": {
           "source": "dd",
           "note": "Distance in feet the action pulls each target toward the monster, merged in from monster-engine-annotations.json."
+        },
+        "actions[].options.from.options[].area": {
+          "source": "dd",
+          "note": "Area of one breath weapon in feet, read from the action prose by normalize-monsters.ts."
+        },
+        "actions[].range": {
+          "source": "dd",
+          "note": "Normal and long range in feet, read from the attack header by normalize-monsters.ts."
+        },
+        "actions[].reach_ft": {
+          "source": "dd",
+          "note": "Reach in feet, read from the attack header by normalize-monsters.ts."
         },
         "legendary_actions[].condition": {
           "source": "dd",

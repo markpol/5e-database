@@ -13,7 +13,7 @@ removed.
 | Area | File(s) | What changed |
 | --- | --- | --- |
 | Monster actions | `5e-SRD-Monsters.json` | Added `attack_type` ("Melee"/"Ranged") to actions; added `bonus_actions` (parsed list of bonus-action ids); added `environments` (habitat string); `speed.*` and `senses.{darkvision,blindsight,truesight}` changed from strings (`"40 ft."`) to plain integers (`40`); added `weapon`, `weapon_kind`, and `supply` (equipment-linked weapon/ammunition annotations) |
-| Monster normalization | `5e-SRD-Monsters-Normalized.json` (new file), `normalize-monsters.ts` (new script), `monster-engine-annotations.json` (new file), `verify-normalize.sh` (new script) | Adds a pre-flattened copy of the monster data that collapses nested reference objects (`dc_type`, `damage_type`, `condition_type`, spellcasting `ability`, etc.) down to their plain string `index`, normalizes where `dc`/`condition` sit on an action, and merges in extra annotations (e.g. conditions applied on a failed save, riders, grapples, a pull distance) from `monster-engine-annotations.json`; `src/2014/tests/normalized-monsters.test.ts` regenerates from the English source and asserts it matches the committed normalized file byte-for-byte |
+| Monster normalization | `5e-SRD-Monsters-Normalized.json` (new file), `normalize-monsters.ts` (new script), `monster-engine-annotations.json` (new file), `verify-normalize.sh` (new script) | Adds a pre-flattened copy of the monster data that collapses nested reference objects (`dc_type`, `damage_type`, `condition_type`, spellcasting `ability`, etc.) down to their plain string `index`, normalizes where `dc`/`condition` sit on an action, merges in extra annotations (e.g. conditions applied on a failed save, riders, grapples, a pull distance, weapon annotations) from `monster-engine-annotations.json`, and derives the structure of attacks (`attack_type`, `attack_kind`, `reach_ft`, `range`) and of areas of effect (`area`) from the action text; `src/2014/tests/normalized-monsters.test.ts` regenerates from the English source and asserts it matches the committed normalized file byte-for-byte |
 | Conditions | `5e-SRD-Conditions.json` | Added 17 new condition entries: 6 numbered exhaustion levels (`exhaustion-1`…`exhaustion-6`) plus `enraged`, `frenzied`, `reckless`, `dodging`, `infested`, `swallowed`, `drained-of-strength`, `weakened`, `slowed`, `drained-of-life`, `disengaged`, `surprised` |
 | Equipment | `5e-SRD-Equipment.json` | Added `material`, `stackable`, `is_consumable`, `effect` (damage-on-use) to select items; removed 40 non-combat items (mounts, vehicles, barding, tack/harness, stabling/feed) |
 | Equipment categories | `5e-SRD-Equipment-Categories.json` | Removed 6 non-combat categories (`gaming-sets`, `land-vehicles`, `mounts-and-other-animals`, `mounts-and-vehicles`, `tack-harness-and-drawn-vehicles`, `waterborne-vehicles`) and their members |
@@ -26,8 +26,9 @@ removed.
 
 ## Monster actions: `attack_type`, `bonus_actions`, `environments`
 
-- `attack_type` (`"Melee"` / `"Ranged"`) is added to individual monster actions. It is not present on every action (a
-  small number of named attacks omit it), so coverage is best-effort and not guaranteed.
+- `attack_type` (`"Melee"` / `"Ranged"`) is added to individual monster actions of `5e-SRD-Monsters.json`. It is not
+  present on every action there (244 of the 533 attack actions have it); the normalized file has it on all 533 (see
+  "Monster attack structure").
 - `bonus_actions` is a new top-level array on each monster (e.g. `["disengage", "hide"]` for the Goblin's Nimble
   Escape), derived from the monster's special abilities and actions prose by extracting which bonus actions it can
   take.
@@ -43,6 +44,20 @@ for rocks), not a book value. The schema (`MonsterActionSchema` in `schemas/5e-S
 noting that these fields and counts are not SRD text. `src/2014/tests/monster-weapons.test.ts` checks that every
 `weapon`/`supply` index resolves against `5e-SRD-Equipment.json`, that ammunition weapons' `supply.item` matches that
 weapon's `ammunition` field, and that the normalized copy carries the same annotations.
+
+The normalized file completes these annotations from `monster-engine-annotations.json` (`set` on the action). Every
+attack action now has a `weapon_kind` (518 had one; 15 were added): `spell` for the four "Melee Spell Attack" actions
+that had none (the lamia's Intoxicating Touch, the lich's Paralyzing Touch, the specter's Life Drain, the will-o'-the-wisp's
+Shock), `manufactured` for the solar's Slaying Longbow, and `natural` for the other ten (the darkmantle's Crush, the
+ettercap's and giant spider's Web, the fire elemental's and magmin's Touch, the guardian naga's Spit Poison, the
+roper's Tendril, the shadow's Strength Drain, the wight's and wraith's Life Drain). The Slaying Longbow also gets
+`weapon: "longbow"` and `supply` of 20 arrows, as every other longbow. `weapon` is added to six `manufactured` actions
+whose name contains the name of an SRD equipment item: the Chain of the chain devil (`chain-10-feet`), the Poisoned
+Dart of the deep gnome (`dart`), the Shield Bash of the gladiator and the Spiked Shield of the lizardfolk (`shield`),
+and the Spiked Bone Club of the grimlock and the Heavy Club of the lizardfolk (`club`). Three `manufactured` actions
+have no `weapon` because no SRD equipment item is named for them: the horned devil's Fork, the iron golem's Sword
+and the merrow's Harpoon. `supply.item` is an equipment index except for the three tokens named above: `rock` (the Rock of nine
+monsters), `harpoon` (the merrow) and `poisoned-dart` (the deep gnome).
 
 ## Speed and senses as integers
 
@@ -84,6 +99,55 @@ with that change, or the regeneration test fails. The output is also validated b
 `verify-normalize.sh` is a small `jq`-based sanity check over the normalized file (lists actions with a `condition`, a
 `dc`, no damage, or a damage `dc`) used to eyeball the output after regenerating it; it makes no changes and has no
 exit-code assertions.
+
+## Monster attack structure: `attack_type`, `attack_kind`, `reach_ft`, `range`, `area`
+
+The normalized file states the roll, the reach, the range and the area of an attack as data, so none of it has to be
+read from the action text. The fields are optional, English-only (no text to translate) and flat keys of an entry of
+`actions[]`. They are derived by `normalize-monsters.ts` from the action's own `desc`, so the English file is unchanged
+by them, and they are marked `dd` in `src/provenance/source-markers.json`.
+
+| Field | Values | Meaning |
+| --- | --- | --- |
+| `attack_type` | `Melee`, `Ranged` | The attack's type. On every attack action. An existing value is kept; where there is none it is the first word of the attack header ("Melee or Ranged" is `Melee`) |
+| `attack_kind` | `melee`, `ranged`, `melee_or_ranged` | The wording of the attack header, so "Melee or Ranged" is not lost. On every attack action |
+| `reach_ft` | number | Reach in feet. On every `melee` and `melee_or_ranged` attack |
+| `range` | `{ normal_ft, long_ft? }` | Range in feet. `long_ft` is absent where the text gives one range ("range 150 ft."). On every `ranged` and `melee_or_ranged` attack |
+| `area` | `{ shape, ... }` | The area an action affects. See below |
+
+An attack action is an action whose text starts with "Melee Weapon Attack:", "Ranged Weapon Attack:",
+"Melee or Ranged Weapon Attack:", "Melee Spell Attack:" or "Ranged Spell Attack:": 533 actions. Of them 472 are
+`melee`, 43 are `ranged` and 18 are `melee_or_ranged`; 490 have a `reach_ft` and 61 a `range`, 58 of them with a
+`long_ft`. `attack_type` was missing on 289 of them. A `melee_or_ranged` attack has both `reach_ft` and `range`,
+for example a spear: `reach_ft: 5, range: { normal_ft: 20, long_ft: 60 }`.
+
+The rule is the attack header, the text before "Hit:": `reach N ft.` gives `reach_ft` and `range N/M ft.` or
+`range N ft.` gives `range`. The generator fails when a header does not state the reach or the range that its wording
+(melee, ranged) requires. Spell attacks are told from weapon attacks by `weapon_kind: "spell"`.
+
+**`area`.** One of the following, in feet. The values are those of the phrases the text uses: "a 60-foot cone", "a 90-foot
+line that is 5 feet wide" (or "a line that is 30 ft. long and 5 ft. wide"), "a 15-foot-radius cloud" (or "a 10-foot radius
+of gas"), "a 5-foot-radius, 30-foot-tall cylinder".
+
+| `shape` | Fields | Used by |
+| --- | --- | --- |
+| `cone` | `length_ft` | the breath of dragons, wyrmlings, the chimera, dragon turtle, gorgon, hell hound, iron golem, mephits, winter wolf and half-red dragon veteran |
+| `line` | `length_ft`, `width_ft` | the breath of the blue, black, brass, bronze and copper dragons, wyrmlings included; the ankheg's Acid Spray; the behir's Lightning Breath |
+| `sphere` | `radius_ft` | the Ink Cloud of the octopus (5) and giant octopus (20), the vrock's Spores (15), the dretch's Fetid Cloud (10), the darkmantle's Darkness Aura (15) |
+| `cylinder` | `radius_ft`, `height_ft` | the djinni's Create Whirlwind (5 by 30) |
+
+A cone or a line starts at the monster, and a sphere is centered on it. A cylinder is placed at the point the text
+says. A dragon's "Breath Weapons" (the 20 brass, bronze, copper, gold and silver dragons) names two breaths in one
+action, so each breath option in `options.from.options[]` has its own `area` and the action has none. 39 actions and
+40 breath options have an area (79 areas). The areas of the Frightful Presence ("within 120 feet"), of the ice devil's
+Wall of Ice (a wall and a dome) and of the rust monster's Antennae (an amount of metal destroyed) are not shapes in this
+sense and have no `area`. Only `actions` carry these fields; the areas that special abilities and legendary actions
+state ("10-foot radius" of a light, the kraken's Ink Cloud) are not structured.
+
+`src/2014/tests/monster-attacks.test.ts` is the audit: every attack action has the structure, the `attack_kind` is the
+header's wording, every reach and range in a header is in the structure and nothing else is, every area phrase of an
+action is in its `area` (and every size in an `area` is in the text), and the English file has none of these fields. The
+generator's rules are tested on their own, and the counts above are pinned.
 
 ## Monster riders: `damage[]` entries, staged conditions, `pull_distance_ft`, `situation`
 
@@ -314,4 +378,5 @@ other change.
 ## Follow-up ideas
 
 - Reconciling the `/api/2014/...` vs `/api/...` URL drift noted above.
-- Extending `attack_type` coverage to the actions that currently omit it.
+- Structuring the areas and ranges of special abilities and legendary actions (the lights' radii, the kraken's Ink
+  Cloud, the solar's Searing Burst), and the placement range of the djinni's Create Whirlwind.

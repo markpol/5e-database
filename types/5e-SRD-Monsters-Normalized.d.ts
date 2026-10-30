@@ -207,6 +207,27 @@ export type NormalizedMonster = {
         name: string;
         desc: string;
         attack_type?: "Melee" | "Ranged" | undefined;
+        attack_kind?: "melee" | "ranged" | "melee_or_ranged" | undefined;
+        reach_ft?: number | undefined;
+        range?: {
+            normal_ft: number;
+            long_ft?: number | undefined;
+        } | undefined;
+        area?: {
+            shape: "cone";
+            length_ft: number;
+        } | {
+            shape: "line";
+            length_ft: number;
+            width_ft: number;
+        } | {
+            shape: "sphere";
+            radius_ft: number;
+        } | {
+            shape: "cylinder";
+            radius_ft: number;
+            height_ft: number;
+        } | undefined;
         preference?: {
             type: "always until first hit" | "always on first round" | "always unless target has condition";
             target_condition?: string | undefined;
@@ -493,6 +514,21 @@ export type NormalizedMonster = {
                                 interrupt_modifier?: string | undefined;
                             };
                         } | undefined;
+                    } | undefined;
+                    area?: {
+                        shape: "cone";
+                        length_ft: number;
+                    } | {
+                        shape: "line";
+                        length_ft: number;
+                        width_ft: number;
+                    } | {
+                        shape: "sphere";
+                        radius_ft: number;
+                    } | {
+                        shape: "cylinder";
+                        radius_ft: number;
+                        height_ft: number;
                     } | undefined;
                 }[];
             };
