@@ -1,9 +1,20 @@
 import { z } from 'zod';
 import { APIReferenceSchema, AreaOfEffectSchema, translatable } from '../../schemas/common';
 
+/**
+ * A dice amount as data: `dice` is `NdM`, `bonus` a flat number added to it, and `add_spellcasting_mod` is true when
+ * the caster's spellcasting ability modifier is added. See docs/spell-mechanics.md.
+ */
+const SpellDiceAmountSchema = z.strictObject({
+  dice: z.string(),
+  bonus: z.number().optional(),
+  add_spellcasting_mod: z.boolean().optional(),
+});
+
 const SpellDamageSchema = z.strictObject({
   damage_type: APIReferenceSchema.optional(),
   damage_at_slot_level: z.record(z.string(), z.string()).optional(),
+  damage_at_slot_level_data: z.record(z.string(), SpellDiceAmountSchema).optional(),
   damage_at_character_level: z.record(z.string(), z.string()).optional(),
 });
 
@@ -52,6 +63,9 @@ export const SpellSchema = z.strictObject({
   dc: SpellDCSchema.optional(),
   area_of_effect: AreaOfEffectSchema.optional(),
   heal_at_slot_level: z.record(z.string(), z.string()).optional(),
+  heal_at_slot_level_data: z.record(z.string(), SpellDiceAmountSchema).optional(),
+  temp_hp_at_slot_level: z.record(z.string(), SpellDiceAmountSchema).optional(),
+  targets_at_slot_level: z.record(z.string(), z.number()).optional(),
   school: APIReferenceSchema,
   classes: z.array(APIReferenceSchema),
   subclasses: z.array(APIReferenceSchema).optional(),

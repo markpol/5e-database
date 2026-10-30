@@ -1,10 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
+import { deriveSpellCombat, type CombatSpell } from './derive-spell-combat';
 
 // Structured range, casting time and duration of a spell, read from the spell's own text fields (`range`,
 // `casting_time` and `duration`). Those fields are the only text read, and a value the vocabulary has no word for
-// throws, so a new spell or a changed text fails here and not silently. The vocabulary is documented in
+// throws, so a new spell or a changed text fails here and not silently. The combat mechanics (damage, saving
+// throw, area, dice, targets) are derived in derive-spell-combat.ts. The vocabulary is documented in
 // docs/spell-mechanics.md and enforced by the Zod schema in schemas/5e-SRD-Spells.ts.
 
 export type RangeToken = 'self' | 'touch' | 'sight' | 'special' | 'unlimited';
@@ -88,7 +90,7 @@ function insertAfter(spell: Spell, after: string, key: string, value: unknown): 
 }
 
 export function deriveSpellMechanics(spells: Spell[]): Spell[] {
-  return spells.map((spell) => {
+  const timed = spells.map((spell) => {
     let derived = insertAfter(spell, 'range', 'range_ft', deriveRangeFt(spell.range));
     derived = insertAfter(derived, 'duration', 'duration_data', deriveDuration(spell.duration));
     return insertAfter(
@@ -98,6 +100,7 @@ export function deriveSpellMechanics(spells: Spell[]): Spell[] {
       deriveCastingTime(spell.casting_time)
     );
   });
+  return deriveSpellCombat(timed as unknown as CombatSpell[]) as unknown as Spell[];
 }
 
 const repoRoot = path.resolve(import.meta.dirname, '../..');
@@ -113,7 +116,7 @@ function writeSpellsToFile() {
     '--write',
     spellsFile,
   ]);
-  console.log(`Derived range_ft, casting_time_data and duration_data for ${spells.length} spells`);
+  console.log(`Derived the structured mechanics of ${spells.length} spells`);
 }
 
 if (process.argv[1]?.endsWith('/derive-spell-mechanics.ts')) {

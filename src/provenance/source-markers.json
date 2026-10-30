@@ -407,13 +407,29 @@
           "source": "dd",
           "note": "casting_time as an amount of a unit, derived from the casting_time text by derive-spell-mechanics.ts."
         },
+        "damage[].damage_at_slot_level_data": {
+          "source": "dd",
+          "note": "damage_at_slot_level as dice, a flat bonus and whether the spellcasting ability modifier is added, derived from the damage_at_slot_level strings by derive-spell-combat.ts."
+        },
         "duration_data": {
           "source": "dd",
           "note": "duration as a unit and a length, derived from the duration text by derive-spell-mechanics.ts."
         },
+        "heal_at_slot_level_data": {
+          "source": "dd",
+          "note": "heal_at_slot_level as dice, a flat bonus and whether the spellcasting ability modifier is added, derived from the heal_at_slot_level strings by derive-spell-combat.ts."
+        },
         "range_ft": {
           "source": "dd",
           "note": "range as a number of feet, or a word for self, touch, sight, special or unlimited, derived from the range text by derive-spell-mechanics.ts."
+        },
+        "targets_at_slot_level": {
+          "source": "dd",
+          "note": "Number of targets, darts, rays or bolts at each slot level, derived from the higher_level text and the number the description states by derive-spell-combat.ts."
+        },
+        "temp_hp_at_slot_level": {
+          "source": "dd",
+          "note": "Temporary hit points at each slot level as dice and a flat bonus, derived from the description and higher_level text by derive-spell-combat.ts."
         }
       }
     },

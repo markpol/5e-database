@@ -44,6 +44,11 @@ export type Spell = {
             note?: string | undefined;
         } | undefined;
         damage_at_slot_level?: Record<string, string> | undefined;
+        damage_at_slot_level_data?: Record<string, {
+            dice: string;
+            bonus?: number | undefined;
+            add_spellcasting_mod?: boolean | undefined;
+        }> | undefined;
         damage_at_character_level?: Record<string, string> | undefined;
     }[] | undefined;
     dc?: {
@@ -61,6 +66,17 @@ export type Spell = {
         type: "sphere" | "cube" | "cylinder" | "line" | "cone";
     } | undefined;
     heal_at_slot_level?: Record<string, string> | undefined;
+    heal_at_slot_level_data?: Record<string, {
+        dice: string;
+        bonus?: number | undefined;
+        add_spellcasting_mod?: boolean | undefined;
+    }> | undefined;
+    temp_hp_at_slot_level?: Record<string, {
+        dice: string;
+        bonus?: number | undefined;
+        add_spellcasting_mod?: boolean | undefined;
+    }> | undefined;
+    targets_at_slot_level?: Record<string, number> | undefined;
     subclasses?: {
         index: string;
         name: string;

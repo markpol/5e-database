@@ -41,6 +41,32 @@
           "7": "9d4",
           "8": "10d4",
           "9": "11d4"
+        },
+        "damage_at_slot_level_data": {
+          "2": {
+            "dice": "4d4"
+          },
+          "3": {
+            "dice": "5d4"
+          },
+          "4": {
+            "dice": "6d4"
+          },
+          "5": {
+            "dice": "7d4"
+          },
+          "6": {
+            "dice": "8d4"
+          },
+          "7": {
+            "dice": "9d4"
+          },
+          "8": {
+            "dice": "10d4"
+          },
+          "9": {
+            "dice": "11d4"
+          }
         }
       }
     ],
@@ -703,6 +729,14 @@
       "unit": "hour"
     },
     "level": 8,
+    "dc": {
+      "dc_type": {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/2014/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "area_of_effect": {
       "type": "cube",
       "size": 200
@@ -901,6 +935,11 @@
         },
         "damage_at_slot_level": {
           "7": "3d10"
+        },
+        "damage_at_slot_level_data": {
+          "7": {
+            "dice": "3d10"
+          }
         }
       }
     ],
@@ -1149,6 +1188,17 @@
       },
       "dc_success": "none"
     },
+    "targets_at_slot_level": {
+      "1": 3,
+      "2": 4,
+      "3": 5,
+      "4": 6,
+      "5": 7,
+      "6": 8,
+      "7": 9,
+      "8": 10,
+      "9": 11
+    },
     "school": {
       "index": "enchantment",
       "name": "Enchantment",
@@ -1210,6 +1260,14 @@
         "url": "/api/2014/ability-scores/cha"
       },
       "dc_success": "none"
+    },
+    "targets_at_slot_level": {
+      "4": 1,
+      "5": 2,
+      "6": 3,
+      "7": 4,
+      "8": 5,
+      "9": 6
     },
     "school": {
       "index": "abjuration",
@@ -1457,6 +1515,11 @@
         },
         "damage_at_slot_level": {
           "4": "3d6"
+        },
+        "damage_at_slot_level_data": {
+          "4": {
+            "dice": "3d6"
+          }
         }
       }
     ],
@@ -1520,6 +1583,11 @@
         },
         "damage_at_slot_level": {
           "6": "6d10"
+        },
+        "damage_at_slot_level_data": {
+          "6": {
+            "dice": "6d10"
+          }
         }
       }
     ],
@@ -1576,6 +1644,17 @@
       "unit": "action"
     },
     "level": 1,
+    "targets_at_slot_level": {
+      "1": 3,
+      "2": 4,
+      "3": 5,
+      "4": 6,
+      "5": 7,
+      "6": 8,
+      "7": 9,
+      "8": 10,
+      "9": 11
+    },
     "school": {
       "index": "enchantment",
       "name": "Enchantment",
@@ -1647,6 +1726,26 @@
           "7": "11d8",
           "8": "12d8",
           "9": "13d8"
+        },
+        "damage_at_slot_level_data": {
+          "4": {
+            "dice": "8d8"
+          },
+          "5": {
+            "dice": "9d8"
+          },
+          "6": {
+            "dice": "10d8"
+          },
+          "7": {
+            "dice": "11d8"
+          },
+          "8": {
+            "dice": "12d8"
+          },
+          "9": {
+            "dice": "13d8"
+          }
         }
       }
     ],
@@ -1726,6 +1825,16 @@
         "url": "/api/2014/ability-scores/con"
       },
       "dc_success": "none"
+    },
+    "targets_at_slot_level": {
+      "2": 1,
+      "3": 2,
+      "4": 3,
+      "5": 4,
+      "6": 5,
+      "7": 6,
+      "8": 7,
+      "9": 8
     },
     "school": {
       "index": "necromancy",
@@ -1911,6 +2020,32 @@
           "7": "7d6",
           "8": "8d6",
           "9": "9d6"
+        },
+        "damage_at_slot_level_data": {
+          "2": {
+            "dice": "2d6"
+          },
+          "3": {
+            "dice": "3d6"
+          },
+          "4": {
+            "dice": "4d6"
+          },
+          "5": {
+            "dice": "5d6"
+          },
+          "6": {
+            "dice": "6d6"
+          },
+          "7": {
+            "dice": "7d6"
+          },
+          "8": {
+            "dice": "8d6"
+          },
+          "9": {
+            "dice": "9d6"
+          }
         }
       }
     ],
@@ -1971,6 +2106,35 @@
           "7": "9d6",
           "8": "10d6",
           "9": "11d6"
+        },
+        "damage_at_slot_level_data": {
+          "1": {
+            "dice": "3d6"
+          },
+          "2": {
+            "dice": "4d6"
+          },
+          "3": {
+            "dice": "5d6"
+          },
+          "4": {
+            "dice": "6d6"
+          },
+          "5": {
+            "dice": "7d6"
+          },
+          "6": {
+            "dice": "8d6"
+          },
+          "7": {
+            "dice": "9d6"
+          },
+          "8": {
+            "dice": "10d6"
+          },
+          "9": {
+            "dice": "11d6"
+          }
         }
       }
     ],
@@ -2059,9 +2223,40 @@
           "7": "7d10",
           "8": "8d10",
           "9": "9d10"
+        },
+        "damage_at_slot_level_data": {
+          "3": {
+            "dice": "3d10"
+          },
+          "4": {
+            "dice": "4d10"
+          },
+          "5": {
+            "dice": "5d10"
+          },
+          "6": {
+            "dice": "6d10"
+          },
+          "7": {
+            "dice": "7d10"
+          },
+          "8": {
+            "dice": "8d10"
+          },
+          "9": {
+            "dice": "9d10"
+          }
         }
       }
     ],
+    "dc": {
+      "dc_type": {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2014/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
     "area_of_effect": {
       "type": "sphere",
       "size": 5
@@ -2188,6 +2383,11 @@
         },
         "damage_at_slot_level": {
           "6": "10d8"
+        },
+        "damage_at_slot_level_data": {
+          "6": {
+            "dice": "10d8"
+          }
         }
       }
     ],
@@ -2198,6 +2398,12 @@
         "url": "/api/2014/ability-scores/dex"
       },
       "dc_success": "half"
+    },
+    "targets_at_slot_level": {
+      "6": 4,
+      "7": 5,
+      "8": 6,
+      "9": 7
     },
     "school": {
       "index": "evocation",
@@ -2251,6 +2457,17 @@
         "url": "/api/2014/ability-scores/wis"
       },
       "dc_success": "none"
+    },
+    "targets_at_slot_level": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9
     },
     "school": {
       "index": "enchantment",
@@ -2401,6 +2618,20 @@
           "7": "10d6",
           "8": "12d6",
           "9": "14d6"
+        },
+        "damage_at_slot_level_data": {
+          "6": {
+            "dice": "8d6"
+          },
+          "7": {
+            "dice": "10d6"
+          },
+          "8": {
+            "dice": "12d6"
+          },
+          "9": {
+            "dice": "14d6"
+          }
         }
       }
     ],
@@ -2580,6 +2811,23 @@
           "7": "7d8",
           "8": "8d8",
           "9": "9d8"
+        },
+        "damage_at_slot_level_data": {
+          "5": {
+            "dice": "5d8"
+          },
+          "6": {
+            "dice": "6d8"
+          },
+          "7": {
+            "dice": "7d8"
+          },
+          "8": {
+            "dice": "8d8"
+          },
+          "9": {
+            "dice": "9d8"
+          }
         }
       }
     ],
@@ -2717,6 +2965,17 @@
         "url": "/api/2014/ability-scores/wis"
       },
       "dc_success": "none"
+    },
+    "targets_at_slot_level": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9
     },
     "school": {
       "index": "enchantment",
@@ -2994,6 +3253,23 @@
           "7": "10d8",
           "8": "11d8",
           "9": "12d8"
+        },
+        "damage_at_slot_level_data": {
+          "5": {
+            "dice": "8d8"
+          },
+          "6": {
+            "dice": "9d8"
+          },
+          "7": {
+            "dice": "10d8"
+          },
+          "8": {
+            "dice": "11d8"
+          },
+          "9": {
+            "dice": "12d8"
+          }
         }
       }
     ],
@@ -3664,6 +3940,11 @@
         },
         "damage_at_slot_level": {
           "4": "2d8"
+        },
+        "damage_at_slot_level_data": {
+          "4": {
+            "dice": "2d8"
+          }
         }
       }
     ],
@@ -4093,6 +4374,44 @@
       "8": "8d8 + MOD",
       "9": "9d8 + MOD"
     },
+    "heal_at_slot_level_data": {
+      "1": {
+        "dice": "1d8",
+        "add_spellcasting_mod": true
+      },
+      "2": {
+        "dice": "2d8",
+        "add_spellcasting_mod": true
+      },
+      "3": {
+        "dice": "3d8",
+        "add_spellcasting_mod": true
+      },
+      "4": {
+        "dice": "4d8",
+        "add_spellcasting_mod": true
+      },
+      "5": {
+        "dice": "5d8",
+        "add_spellcasting_mod": true
+      },
+      "6": {
+        "dice": "6d8",
+        "add_spellcasting_mod": true
+      },
+      "7": {
+        "dice": "7d8",
+        "add_spellcasting_mod": true
+      },
+      "8": {
+        "dice": "8d8",
+        "add_spellcasting_mod": true
+      },
+      "9": {
+        "dice": "9d8",
+        "add_spellcasting_mod": true
+      }
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -4482,6 +4801,17 @@
           "7": "12d6",
           "8": "13d6",
           "9": "14d6"
+        },
+        "damage_at_slot_level_data": {
+          "7": {
+            "dice": "12d6"
+          },
+          "8": {
+            "dice": "13d6"
+          },
+          "9": {
+            "dice": "14d6"
+          }
         }
       }
     ],
@@ -4845,6 +5175,11 @@
         },
         "damage_at_slot_level": {
           "4": "4d6"
+        },
+        "damage_at_slot_level_data": {
+          "4": {
+            "dice": "4d6"
+          }
         }
       }
     ],
@@ -4970,6 +5305,12 @@
         },
         "damage_at_slot_level": {
           "6": "10d6 + 40"
+        },
+        "damage_at_slot_level_data": {
+          "6": {
+            "dice": "10d6",
+            "bonus": 40
+          }
         }
       }
     ],
@@ -5216,6 +5557,11 @@
         },
         "damage_at_slot_level": {
           "1": "1d4"
+        },
+        "damage_at_slot_level_data": {
+          "1": {
+            "dice": "1d4"
+          }
         }
       }
     ],
@@ -5510,6 +5856,11 @@
         },
         "damage_at_slot_level": {
           "5": "3d6"
+        },
+        "damage_at_slot_level_data": {
+          "5": {
+            "dice": "3d6"
+          }
         }
       }
     ],
@@ -5741,6 +6092,16 @@
       "unit": "action"
     },
     "level": 2,
+    "targets_at_slot_level": {
+      "2": 1,
+      "3": 2,
+      "4": 3,
+      "5": 4,
+      "6": 5,
+      "7": 6,
+      "8": 7,
+      "9": 8
+    },
     "school": {
       "index": "transmutation",
       "name": "Transmutation",
@@ -6260,6 +6621,11 @@
         },
         "damage_at_slot_level": {
           "4": "4d8"
+        },
+        "damage_at_slot_level_data": {
+          "4": {
+            "dice": "4d8"
+          }
         }
       }
     ],
@@ -6314,6 +6680,44 @@
       "7": "1d4 + 34",
       "8": "1d4 + 39",
       "9": "1d4 + 44"
+    },
+    "temp_hp_at_slot_level": {
+      "1": {
+        "dice": "1d4",
+        "bonus": 4
+      },
+      "2": {
+        "dice": "1d4",
+        "bonus": 9
+      },
+      "3": {
+        "dice": "1d4",
+        "bonus": 14
+      },
+      "4": {
+        "dice": "1d4",
+        "bonus": 19
+      },
+      "5": {
+        "dice": "1d4",
+        "bonus": 24
+      },
+      "6": {
+        "dice": "1d4",
+        "bonus": 29
+      },
+      "7": {
+        "dice": "1d4",
+        "bonus": 34
+      },
+      "8": {
+        "dice": "1d4",
+        "bonus": 39
+      },
+      "9": {
+        "dice": "1d4",
+        "bonus": 44
+      }
     },
     "school": {
       "index": "necromancy",
@@ -6502,6 +6906,11 @@
         },
         "damage_at_slot_level": {
           "8": "4d6"
+        },
+        "damage_at_slot_level_data": {
+          "8": {
+            "dice": "4d6"
+          }
         }
       }
     ],
@@ -6766,6 +7175,12 @@
         },
         "damage_at_slot_level": {
           "7": "7d8 + 30"
+        },
+        "damage_at_slot_level_data": {
+          "7": {
+            "dice": "7d8",
+            "bonus": 30
+          }
         }
       }
     ],
@@ -6894,6 +7309,11 @@
         },
         "damage_at_slot_level": {
           "4": "2d8"
+        },
+        "damage_at_slot_level_data": {
+          "4": {
+            "dice": "2d8"
+          }
         }
       }
     ],
@@ -6953,6 +7373,11 @@
         },
         "damage_at_slot_level": {
           "7": "7d10"
+        },
+        "damage_at_slot_level_data": {
+          "7": {
+            "dice": "7d10"
+          }
         }
       }
     ],
@@ -7034,6 +7459,29 @@
           "7": "12d6",
           "8": "13d6",
           "9": "14d6"
+        },
+        "damage_at_slot_level_data": {
+          "3": {
+            "dice": "8d6"
+          },
+          "4": {
+            "dice": "9d6"
+          },
+          "5": {
+            "dice": "10d6"
+          },
+          "6": {
+            "dice": "11d6"
+          },
+          "7": {
+            "dice": "12d6"
+          },
+          "8": {
+            "dice": "13d6"
+          },
+          "9": {
+            "dice": "14d6"
+          }
         }
       }
     ],
@@ -7120,6 +7568,20 @@
           "4": "4d6",
           "6": "5d6",
           "8": "6d6"
+        },
+        "damage_at_slot_level_data": {
+          "2": {
+            "dice": "3d6"
+          },
+          "4": {
+            "dice": "4d6"
+          },
+          "6": {
+            "dice": "5d6"
+          },
+          "8": {
+            "dice": "6d6"
+          }
         }
       }
     ],
@@ -7209,7 +7671,7 @@
     },
     "area_of_effect": {
       "type": "cylinder",
-      "size": 40
+      "size": 10
     },
     "school": {
       "index": "evocation",
@@ -7281,9 +7743,43 @@
           "7": "7d6",
           "8": "8d6",
           "9": "9d6"
+        },
+        "damage_at_slot_level_data": {
+          "2": {
+            "dice": "2d6"
+          },
+          "3": {
+            "dice": "3d6"
+          },
+          "4": {
+            "dice": "4d6"
+          },
+          "5": {
+            "dice": "5d6"
+          },
+          "6": {
+            "dice": "6d6"
+          },
+          "7": {
+            "dice": "7d6"
+          },
+          "8": {
+            "dice": "8d6"
+          },
+          "9": {
+            "dice": "9d6"
+          }
         }
       }
     ],
+    "dc": {
+      "dc_type": {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2014/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -7437,6 +7933,15 @@
       "unit": "action"
     },
     "level": 3,
+    "targets_at_slot_level": {
+      "3": 1,
+      "4": 2,
+      "5": 3,
+      "6": 4,
+      "7": 5,
+      "8": 6,
+      "9": 7
+    },
     "school": {
       "index": "transmutation",
       "name": "Transmutation",
@@ -7559,6 +8064,38 @@
       "unit": "minute"
     },
     "level": 6,
+    "damage": [
+      {
+        "damage_type": {
+          "index": "radiant",
+          "name": "Radiant",
+          "url": "/api/2014/damage-types/radiant"
+        },
+        "damage_at_slot_level": {
+          "6": "5d10"
+        },
+        "damage_at_slot_level_data": {
+          "6": {
+            "dice": "5d10"
+          }
+        }
+      },
+      {
+        "damage_type": {
+          "index": "necrotic",
+          "name": "Necrotic",
+          "url": "/api/2014/damage-types/necrotic"
+        },
+        "damage_at_slot_level": {
+          "6": "5d10"
+        },
+        "damage_at_slot_level_data": {
+          "6": {
+            "dice": "5d10"
+          }
+        }
+      }
+    ],
     "area_of_effect": {
       "type": "cube",
       "size": 40000
@@ -7790,6 +8327,11 @@
         },
         "damage_at_slot_level": {
           "6": "10d6"
+        },
+        "damage_at_slot_level_data": {
+          "6": {
+            "dice": "10d6"
+          }
         }
       }
     ],
@@ -8216,6 +8758,215 @@
       "unit": "hour"
     },
     "level": 3,
+    "damage": [
+      {
+        "damage_type": {
+          "index": "acid",
+          "name": "Acid",
+          "url": "/api/2014/damage-types/acid"
+        },
+        "damage_at_slot_level": {
+          "3": "5d8",
+          "4": "6d8",
+          "5": "7d8",
+          "6": "8d8",
+          "7": "9d8",
+          "8": "10d8",
+          "9": "11d8"
+        },
+        "damage_at_slot_level_data": {
+          "3": {
+            "dice": "5d8"
+          },
+          "4": {
+            "dice": "6d8"
+          },
+          "5": {
+            "dice": "7d8"
+          },
+          "6": {
+            "dice": "8d8"
+          },
+          "7": {
+            "dice": "9d8"
+          },
+          "8": {
+            "dice": "10d8"
+          },
+          "9": {
+            "dice": "11d8"
+          }
+        }
+      },
+      {
+        "damage_type": {
+          "index": "cold",
+          "name": "Cold",
+          "url": "/api/2014/damage-types/cold"
+        },
+        "damage_at_slot_level": {
+          "3": "5d8",
+          "4": "6d8",
+          "5": "7d8",
+          "6": "8d8",
+          "7": "9d8",
+          "8": "10d8",
+          "9": "11d8"
+        },
+        "damage_at_slot_level_data": {
+          "3": {
+            "dice": "5d8"
+          },
+          "4": {
+            "dice": "6d8"
+          },
+          "5": {
+            "dice": "7d8"
+          },
+          "6": {
+            "dice": "8d8"
+          },
+          "7": {
+            "dice": "9d8"
+          },
+          "8": {
+            "dice": "10d8"
+          },
+          "9": {
+            "dice": "11d8"
+          }
+        }
+      },
+      {
+        "damage_type": {
+          "index": "fire",
+          "name": "Fire",
+          "url": "/api/2014/damage-types/fire"
+        },
+        "damage_at_slot_level": {
+          "3": "5d8",
+          "4": "6d8",
+          "5": "7d8",
+          "6": "8d8",
+          "7": "9d8",
+          "8": "10d8",
+          "9": "11d8"
+        },
+        "damage_at_slot_level_data": {
+          "3": {
+            "dice": "5d8"
+          },
+          "4": {
+            "dice": "6d8"
+          },
+          "5": {
+            "dice": "7d8"
+          },
+          "6": {
+            "dice": "8d8"
+          },
+          "7": {
+            "dice": "9d8"
+          },
+          "8": {
+            "dice": "10d8"
+          },
+          "9": {
+            "dice": "11d8"
+          }
+        }
+      },
+      {
+        "damage_type": {
+          "index": "lightning",
+          "name": "Lightning",
+          "url": "/api/2014/damage-types/lightning"
+        },
+        "damage_at_slot_level": {
+          "3": "5d8",
+          "4": "6d8",
+          "5": "7d8",
+          "6": "8d8",
+          "7": "9d8",
+          "8": "10d8",
+          "9": "11d8"
+        },
+        "damage_at_slot_level_data": {
+          "3": {
+            "dice": "5d8"
+          },
+          "4": {
+            "dice": "6d8"
+          },
+          "5": {
+            "dice": "7d8"
+          },
+          "6": {
+            "dice": "8d8"
+          },
+          "7": {
+            "dice": "9d8"
+          },
+          "8": {
+            "dice": "10d8"
+          },
+          "9": {
+            "dice": "11d8"
+          }
+        }
+      },
+      {
+        "damage_type": {
+          "index": "thunder",
+          "name": "Thunder",
+          "url": "/api/2014/damage-types/thunder"
+        },
+        "damage_at_slot_level": {
+          "3": "5d8",
+          "4": "6d8",
+          "5": "7d8",
+          "6": "8d8",
+          "7": "9d8",
+          "8": "10d8",
+          "9": "11d8"
+        },
+        "damage_at_slot_level_data": {
+          "3": {
+            "dice": "5d8"
+          },
+          "4": {
+            "dice": "6d8"
+          },
+          "5": {
+            "dice": "7d8"
+          },
+          "6": {
+            "dice": "8d8"
+          },
+          "7": {
+            "dice": "9d8"
+          },
+          "8": {
+            "dice": "10d8"
+          },
+          "9": {
+            "dice": "11d8"
+          }
+        }
+      }
+    ],
+    "dc": {
+      "dc_type": {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2014/ability-scores/dex"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 20
+    },
     "school": {
       "index": "abjuration",
       "name": "Abjuration",
@@ -8664,6 +9415,35 @@
           "7": "10d6",
           "8": "11d6",
           "9": "12d6"
+        },
+        "damage_at_slot_level_data": {
+          "1": {
+            "dice": "4d6"
+          },
+          "2": {
+            "dice": "5d6"
+          },
+          "3": {
+            "dice": "6d6"
+          },
+          "4": {
+            "dice": "7d6"
+          },
+          "5": {
+            "dice": "8d6"
+          },
+          "6": {
+            "dice": "9d6"
+          },
+          "7": {
+            "dice": "10d6"
+          },
+          "8": {
+            "dice": "11d6"
+          },
+          "9": {
+            "dice": "12d6"
+          }
         }
       }
     ],
@@ -8918,6 +9698,11 @@
         },
         "damage_at_slot_level": {
           "6": "14d6"
+        },
+        "damage_at_slot_level_data": {
+          "6": {
+            "dice": "14d6"
+          }
         }
       }
     ],
@@ -9084,6 +9869,44 @@
       "8": "8d4 + MOD",
       "9": "9d4 + MOD"
     },
+    "heal_at_slot_level_data": {
+      "1": {
+        "dice": "1d4",
+        "add_spellcasting_mod": true
+      },
+      "2": {
+        "dice": "2d4",
+        "add_spellcasting_mod": true
+      },
+      "3": {
+        "dice": "3d4",
+        "add_spellcasting_mod": true
+      },
+      "4": {
+        "dice": "4d4",
+        "add_spellcasting_mod": true
+      },
+      "5": {
+        "dice": "5d4",
+        "add_spellcasting_mod": true
+      },
+      "6": {
+        "dice": "6d4",
+        "add_spellcasting_mod": true
+      },
+      "7": {
+        "dice": "7d4",
+        "add_spellcasting_mod": true
+      },
+      "8": {
+        "dice": "8d4",
+        "add_spellcasting_mod": true
+      },
+      "9": {
+        "dice": "9d4",
+        "add_spellcasting_mod": true
+      }
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -9158,6 +9981,32 @@
           "7": "7d8",
           "8": "8d8",
           "9": "9d8"
+        },
+        "damage_at_slot_level_data": {
+          "2": {
+            "dice": "2d8"
+          },
+          "3": {
+            "dice": "3d8"
+          },
+          "4": {
+            "dice": "4d8"
+          },
+          "5": {
+            "dice": "5d8"
+          },
+          "6": {
+            "dice": "6d8"
+          },
+          "7": {
+            "dice": "7d8"
+          },
+          "8": {
+            "dice": "8d8"
+          },
+          "9": {
+            "dice": "9d8"
+          }
         }
       }
     ],
@@ -9237,6 +10086,35 @@
           "7": "8d10",
           "8": "9d10",
           "9": "10d10"
+        },
+        "damage_at_slot_level_data": {
+          "1": {
+            "dice": "2d10"
+          },
+          "2": {
+            "dice": "3d10"
+          },
+          "3": {
+            "dice": "4d10"
+          },
+          "4": {
+            "dice": "5d10"
+          },
+          "5": {
+            "dice": "6d10"
+          },
+          "6": {
+            "dice": "7d10"
+          },
+          "7": {
+            "dice": "8d10"
+          },
+          "8": {
+            "dice": "9d10"
+          },
+          "9": {
+            "dice": "10d10"
+          }
         }
       }
     ],
@@ -9446,6 +10324,13 @@
       },
       "dc_success": "none"
     },
+    "targets_at_slot_level": {
+      "5": 1,
+      "6": 2,
+      "7": 3,
+      "8": 4,
+      "9": 5
+    },
     "school": {
       "index": "enchantment",
       "name": "Enchantment",
@@ -9509,6 +10394,16 @@
         "url": "/api/2014/ability-scores/wis"
       },
       "dc_success": "none"
+    },
+    "targets_at_slot_level": {
+      "2": 1,
+      "3": 2,
+      "4": 3,
+      "5": 4,
+      "6": 5,
+      "7": 6,
+      "8": 7,
+      "9": 8
     },
     "school": {
       "index": "enchantment",
@@ -9584,6 +10479,14 @@
       "unit": "action"
     },
     "level": 8,
+    "dc": {
+      "dc_type": {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/2014/ability-scores/con"
+      },
+      "dc_success": "none"
+    },
     "area_of_effect": {
       "type": "sphere",
       "size": 30
@@ -9628,6 +10531,18 @@
       "unit": "bonus_action"
     },
     "level": 1,
+    "damage": [
+      {
+        "damage_at_slot_level": {
+          "1": "1d6"
+        },
+        "damage_at_slot_level_data": {
+          "1": {
+            "dice": "1d6"
+          }
+        }
+      }
+    ],
     "school": {
       "index": "divination",
       "name": "Divination",
@@ -9675,6 +10590,10 @@
       },
       "dc_success": "none",
       "desc": "On a failed save, the creature becomes charmed for the duration."
+    },
+    "area_of_effect": {
+      "type": "cube",
+      "size": 30
     },
     "school": {
       "index": "illusion",
@@ -9752,6 +10671,26 @@
           "7": "5d8",
           "8": "6d8",
           "9": "7d8"
+        },
+        "damage_at_slot_level_data": {
+          "4": {
+            "dice": "2d8"
+          },
+          "5": {
+            "dice": "3d8"
+          },
+          "6": {
+            "dice": "4d8"
+          },
+          "7": {
+            "dice": "5d8"
+          },
+          "8": {
+            "dice": "6d8"
+          },
+          "9": {
+            "dice": "7d8"
+          }
         }
       },
       {
@@ -9767,6 +10706,26 @@
           "7": "4d6",
           "8": "4d6",
           "9": "4d6"
+        },
+        "damage_at_slot_level_data": {
+          "4": {
+            "dice": "4d6"
+          },
+          "5": {
+            "dice": "4d6"
+          },
+          "6": {
+            "dice": "4d6"
+          },
+          "7": {
+            "dice": "4d6"
+          },
+          "8": {
+            "dice": "4d6"
+          },
+          "9": {
+            "dice": "4d6"
+          }
         }
       }
     ],
@@ -10017,6 +10976,11 @@
         },
         "damage_at_slot_level": {
           "8": "10d8"
+        },
+        "damage_at_slot_level_data": {
+          "8": {
+            "dice": "10d8"
+          }
         }
       }
     ],
@@ -10094,6 +11058,35 @@
           "7": "9d10",
           "8": "10d10",
           "9": "11d10"
+        },
+        "damage_at_slot_level_data": {
+          "1": {
+            "dice": "3d10"
+          },
+          "2": {
+            "dice": "4d10"
+          },
+          "3": {
+            "dice": "5d10"
+          },
+          "4": {
+            "dice": "6d10"
+          },
+          "5": {
+            "dice": "7d10"
+          },
+          "6": {
+            "dice": "8d10"
+          },
+          "7": {
+            "dice": "9d10"
+          },
+          "8": {
+            "dice": "10d10"
+          },
+          "9": {
+            "dice": "11d10"
+          }
         }
       }
     ],
@@ -10158,6 +11151,23 @@
           "7": "6d10",
           "8": "7d10",
           "9": "8d10"
+        },
+        "damage_at_slot_level_data": {
+          "5": {
+            "dice": "4d10"
+          },
+          "6": {
+            "dice": "5d10"
+          },
+          "7": {
+            "dice": "6d10"
+          },
+          "8": {
+            "dice": "7d10"
+          },
+          "9": {
+            "dice": "8d10"
+          }
         }
       }
     ],
@@ -10270,6 +11280,16 @@
       "unit": "action"
     },
     "level": 2,
+    "targets_at_slot_level": {
+      "2": 1,
+      "3": 2,
+      "4": 3,
+      "5": 4,
+      "6": 5,
+      "7": 6,
+      "8": 7,
+      "9": 8
+    },
     "school": {
       "index": "illusion",
       "name": "Illusion",
@@ -10746,6 +11766,29 @@
           "7": "12d6",
           "8": "13d6",
           "9": "14d6"
+        },
+        "damage_at_slot_level_data": {
+          "3": {
+            "dice": "8d6"
+          },
+          "4": {
+            "dice": "9d6"
+          },
+          "5": {
+            "dice": "10d6"
+          },
+          "6": {
+            "dice": "11d6"
+          },
+          "7": {
+            "dice": "12d6"
+          },
+          "8": {
+            "dice": "13d6"
+          },
+          "9": {
+            "dice": "14d6"
+          }
         }
       }
     ],
@@ -11011,6 +12054,17 @@
       "unit": "action"
     },
     "level": 1,
+    "targets_at_slot_level": {
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9
+    },
     "school": {
       "index": "transmutation",
       "name": "Transmutation",
@@ -11329,9 +12383,58 @@
           "7": "9d4 + 9",
           "8": "10d4 + 10",
           "9": "11d4 + 11"
+        },
+        "damage_at_slot_level_data": {
+          "1": {
+            "dice": "3d4",
+            "bonus": 3
+          },
+          "2": {
+            "dice": "4d4",
+            "bonus": 4
+          },
+          "3": {
+            "dice": "5d4",
+            "bonus": 5
+          },
+          "4": {
+            "dice": "6d4",
+            "bonus": 6
+          },
+          "5": {
+            "dice": "7d4",
+            "bonus": 7
+          },
+          "6": {
+            "dice": "8d4",
+            "bonus": 8
+          },
+          "7": {
+            "dice": "9d4",
+            "bonus": 9
+          },
+          "8": {
+            "dice": "10d4",
+            "bonus": 10
+          },
+          "9": {
+            "dice": "11d4",
+            "bonus": 11
+          }
         }
       }
     ],
+    "targets_at_slot_level": {
+      "1": 3,
+      "2": 4,
+      "3": 5,
+      "4": 6,
+      "5": 7,
+      "6": 8,
+      "7": 9,
+      "8": 10,
+      "9": 11
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -11604,6 +12707,28 @@
       "8": "6d8 + MOD",
       "9": "7d8 + MOD"
     },
+    "heal_at_slot_level_data": {
+      "5": {
+        "dice": "3d8",
+        "add_spellcasting_mod": true
+      },
+      "6": {
+        "dice": "4d8",
+        "add_spellcasting_mod": true
+      },
+      "7": {
+        "dice": "5d8",
+        "add_spellcasting_mod": true
+      },
+      "8": {
+        "dice": "6d8",
+        "add_spellcasting_mod": true
+      },
+      "9": {
+        "dice": "7d8",
+        "add_spellcasting_mod": true
+      }
+    },
     "area_of_effect": {
       "type": "sphere",
       "size": 30
@@ -11710,6 +12835,36 @@
       "7": "5d4 + MOD",
       "8": "6d4 + MOD",
       "9": "7d4 + MOD"
+    },
+    "heal_at_slot_level_data": {
+      "3": {
+        "dice": "1d4",
+        "add_spellcasting_mod": true
+      },
+      "4": {
+        "dice": "2d4",
+        "add_spellcasting_mod": true
+      },
+      "5": {
+        "dice": "3d4",
+        "add_spellcasting_mod": true
+      },
+      "6": {
+        "dice": "4d4",
+        "add_spellcasting_mod": true
+      },
+      "7": {
+        "dice": "5d4",
+        "add_spellcasting_mod": true
+      },
+      "8": {
+        "dice": "6d4",
+        "add_spellcasting_mod": true
+      },
+      "9": {
+        "dice": "7d4",
+        "add_spellcasting_mod": true
+      }
     },
     "school": {
       "index": "evocation",
@@ -12038,6 +13193,11 @@
         },
         "damage_at_slot_level": {
           "9": "20d6"
+        },
+        "damage_at_slot_level_data": {
+          "9": {
+            "dice": "20d6"
+          }
         }
       },
       {
@@ -12048,6 +13208,11 @@
         },
         "damage_at_slot_level": {
           "9": "20d6"
+        },
+        "damage_at_slot_level_data": {
+          "9": {
+            "dice": "20d6"
+          }
         }
       }
     ],
@@ -12506,6 +13671,32 @@
           "7": "7d10",
           "8": "8d10",
           "9": "9d10"
+        },
+        "damage_at_slot_level_data": {
+          "2": {
+            "dice": "2d10"
+          },
+          "3": {
+            "dice": "3d10"
+          },
+          "4": {
+            "dice": "4d10"
+          },
+          "5": {
+            "dice": "5d10"
+          },
+          "6": {
+            "dice": "6d10"
+          },
+          "7": {
+            "dice": "7d10"
+          },
+          "8": {
+            "dice": "8d10"
+          },
+          "9": {
+            "dice": "9d10"
+          }
         }
       }
     ],
@@ -12570,7 +13761,7 @@
     },
     "level": 6,
     "area_of_effect": {
-      "type": "cone",
+      "type": "cube",
       "size": 40
     },
     "school": {
@@ -12785,6 +13976,11 @@
         },
         "damage_at_slot_level": {
           "4": "4d10"
+        },
+        "damage_at_slot_level_data": {
+          "4": {
+            "dice": "4d10"
+          }
         }
       }
     ],
@@ -13303,6 +14499,14 @@
       "unit": "action"
     },
     "level": 8,
+    "dc": {
+      "dc_type": {
+        "index": "con",
+        "name": "CON",
+        "url": "/api/2014/ability-scores/con"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "index": "enchantment",
       "name": "Enchantment",
@@ -13366,6 +14570,40 @@
       "7": "7d8 + MOD",
       "8": "8d8 + MOD",
       "9": "9d8 + MOD"
+    },
+    "heal_at_slot_level_data": {
+      "2": {
+        "dice": "2d8",
+        "add_spellcasting_mod": true
+      },
+      "3": {
+        "dice": "3d8",
+        "add_spellcasting_mod": true
+      },
+      "4": {
+        "dice": "4d8",
+        "add_spellcasting_mod": true
+      },
+      "5": {
+        "dice": "5d8",
+        "add_spellcasting_mod": true
+      },
+      "6": {
+        "dice": "6d8",
+        "add_spellcasting_mod": true
+      },
+      "7": {
+        "dice": "7d8",
+        "add_spellcasting_mod": true
+      },
+      "8": {
+        "dice": "8d8",
+        "add_spellcasting_mod": true
+      },
+      "9": {
+        "dice": "9d8",
+        "add_spellcasting_mod": true
+      }
     },
     "school": {
       "index": "evocation",
@@ -13486,6 +14724,11 @@
       {
         "damage_at_slot_level": {
           "7": "10d6"
+        },
+        "damage_at_slot_level_data": {
+          "7": {
+            "dice": "10d6"
+          }
         }
       }
     ],
@@ -14232,6 +15475,12 @@
     "heal_at_slot_level": {
       "7": "4d8 + 15"
     },
+    "heal_at_slot_level_data": {
+      "7": {
+        "dice": "4d8",
+        "bonus": 15
+      }
+    },
     "school": {
       "index": "transmutation",
       "name": "Transmutation",
@@ -14766,6 +16015,14 @@
       "unit": "bonus_action"
     },
     "level": 1,
+    "dc": {
+      "dc_type": {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/2014/ability-scores/wis"
+      },
+      "dc_success": "none"
+    },
     "school": {
       "index": "abjuration",
       "name": "Abjuration",
@@ -14826,9 +16083,24 @@
         },
         "damage_at_slot_level": {
           "2": "2d6"
+        },
+        "damage_at_slot_level_data": {
+          "2": {
+            "dice": "2d6"
+          }
         }
       }
     ],
+    "targets_at_slot_level": {
+      "2": 3,
+      "3": 4,
+      "4": 5,
+      "5": 6,
+      "6": 7,
+      "7": 8,
+      "8": 9,
+      "9": 10
+    },
     "school": {
       "index": "evocation",
       "name": "Evocation",
@@ -15273,6 +16545,32 @@
           "7": "8d8",
           "8": "9d8",
           "9": "10d8"
+        },
+        "damage_at_slot_level_data": {
+          "2": {
+            "dice": "3d8"
+          },
+          "3": {
+            "dice": "4d8"
+          },
+          "4": {
+            "dice": "5d8"
+          },
+          "5": {
+            "dice": "6d8"
+          },
+          "6": {
+            "dice": "7d8"
+          },
+          "7": {
+            "dice": "8d8"
+          },
+          "8": {
+            "dice": "9d8"
+          },
+          "9": {
+            "dice": "10d8"
+          }
         }
       }
     ],
@@ -15724,6 +17022,11 @@
       {
         "damage_at_slot_level": {
           "1": "5d8"
+        },
+        "damage_at_slot_level_data": {
+          "1": {
+            "dice": "5d8"
+          }
         }
       }
     ],
@@ -15787,6 +17090,14 @@
       "unit": "action"
     },
     "level": 3,
+    "dc": {
+      "dc_type": {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2014/ability-scores/dex"
+      },
+      "dc_success": "none"
+    },
     "area_of_effect": {
       "type": "cylinder",
       "size": 40
@@ -16180,6 +17491,23 @@
       "unit": "action"
     },
     "level": 2,
+    "damage": [
+      {
+        "damage_type": {
+          "index": "piercing",
+          "name": "Piercing",
+          "url": "/api/2014/damage-types/piercing"
+        },
+        "damage_at_slot_level": {
+          "2": "2d4"
+        },
+        "damage_at_slot_level_data": {
+          "2": {
+            "dice": "2d4"
+          }
+        }
+      }
+    ],
     "area_of_effect": {
       "type": "cylinder",
       "size": 20
@@ -16242,6 +17570,98 @@
       "unit": "action"
     },
     "level": 3,
+    "damage": [
+      {
+        "damage_type": {
+          "index": "radiant",
+          "name": "Radiant",
+          "url": "/api/2014/damage-types/radiant"
+        },
+        "damage_at_slot_level": {
+          "3": "3d8",
+          "4": "4d8",
+          "5": "5d8",
+          "6": "6d8",
+          "7": "7d8",
+          "8": "8d8",
+          "9": "9d8"
+        },
+        "damage_at_slot_level_data": {
+          "3": {
+            "dice": "3d8"
+          },
+          "4": {
+            "dice": "4d8"
+          },
+          "5": {
+            "dice": "5d8"
+          },
+          "6": {
+            "dice": "6d8"
+          },
+          "7": {
+            "dice": "7d8"
+          },
+          "8": {
+            "dice": "8d8"
+          },
+          "9": {
+            "dice": "9d8"
+          }
+        }
+      },
+      {
+        "damage_type": {
+          "index": "necrotic",
+          "name": "Necrotic",
+          "url": "/api/2014/damage-types/necrotic"
+        },
+        "damage_at_slot_level": {
+          "3": "3d8",
+          "4": "4d8",
+          "5": "5d8",
+          "6": "6d8",
+          "7": "7d8",
+          "8": "8d8",
+          "9": "9d8"
+        },
+        "damage_at_slot_level_data": {
+          "3": {
+            "dice": "3d8"
+          },
+          "4": {
+            "dice": "4d8"
+          },
+          "5": {
+            "dice": "5d8"
+          },
+          "6": {
+            "dice": "6d8"
+          },
+          "7": {
+            "dice": "7d8"
+          },
+          "8": {
+            "dice": "8d8"
+          },
+          "9": {
+            "dice": "9d8"
+          }
+        }
+      }
+    ],
+    "dc": {
+      "dc_type": {
+        "index": "wis",
+        "name": "WIS",
+        "url": "/api/2014/ability-scores/wis"
+      },
+      "dc_success": "half"
+    },
+    "area_of_effect": {
+      "type": "sphere",
+      "size": 15
+    },
     "school": {
       "index": "conjuration",
       "name": "Conjuration",
@@ -16307,6 +17727,40 @@
           "7": "3d8 + MOD",
           "8": "4d8 + MOD",
           "9": "4d8 + MOD"
+        },
+        "damage_at_slot_level_data": {
+          "2": {
+            "dice": "1d8",
+            "add_spellcasting_mod": true
+          },
+          "3": {
+            "dice": "1d8",
+            "add_spellcasting_mod": true
+          },
+          "4": {
+            "dice": "2d8",
+            "add_spellcasting_mod": true
+          },
+          "5": {
+            "dice": "2d8",
+            "add_spellcasting_mod": true
+          },
+          "6": {
+            "dice": "3d8",
+            "add_spellcasting_mod": true
+          },
+          "7": {
+            "dice": "3d8",
+            "add_spellcasting_mod": true
+          },
+          "8": {
+            "dice": "4d8",
+            "add_spellcasting_mod": true
+          },
+          "9": {
+            "dice": "4d8",
+            "add_spellcasting_mod": true
+          }
         }
       }
     ],
@@ -16563,6 +18017,11 @@
         },
         "damage_at_slot_level": {
           "9": "2d6"
+        },
+        "damage_at_slot_level_data": {
+          "9": {
+            "dice": "2d6"
+          }
         }
       }
     ],
@@ -16698,6 +18157,11 @@
         },
         "damage_at_slot_level": {
           "6": "6d8"
+        },
+        "damage_at_slot_level_data": {
+          "6": {
+            "dice": "6d8"
+          }
         }
       }
     ],
@@ -16772,6 +18236,11 @@
         },
         "damage_at_slot_level": {
           "8": "12d6"
+        },
+        "damage_at_slot_level_data": {
+          "8": {
+            "dice": "12d6"
+          }
         }
       }
     ],
@@ -17183,6 +18652,35 @@
           "7": "8d8",
           "8": "9d8",
           "9": "10d8"
+        },
+        "damage_at_slot_level_data": {
+          "1": {
+            "dice": "2d8"
+          },
+          "2": {
+            "dice": "3d8"
+          },
+          "3": {
+            "dice": "4d8"
+          },
+          "4": {
+            "dice": "5d8"
+          },
+          "5": {
+            "dice": "6d8"
+          },
+          "6": {
+            "dice": "7d8"
+          },
+          "7": {
+            "dice": "8d8"
+          },
+          "8": {
+            "dice": "9d8"
+          },
+          "9": {
+            "dice": "10d8"
+          }
         }
       }
     ],
@@ -17794,6 +19292,29 @@
           "7": "7d6",
           "8": "8d6",
           "9": "9d6"
+        },
+        "damage_at_slot_level_data": {
+          "3": {
+            "dice": "3d6"
+          },
+          "4": {
+            "dice": "4d6"
+          },
+          "5": {
+            "dice": "5d6"
+          },
+          "6": {
+            "dice": "6d6"
+          },
+          "7": {
+            "dice": "7d6"
+          },
+          "8": {
+            "dice": "8d6"
+          },
+          "9": {
+            "dice": "9d6"
+          }
         }
       }
     ],
@@ -17921,6 +19442,11 @@
         },
         "damage_at_slot_level": {
           "4": "5d8"
+        },
+        "damage_at_slot_level_data": {
+          "4": {
+            "dice": "5d8"
+          }
         }
       }
     ],
@@ -18046,6 +19572,20 @@
           "7": "12d6",
           "8": "14d6",
           "9": "16d6"
+        },
+        "damage_at_slot_level_data": {
+          "6": {
+            "dice": "10d6"
+          },
+          "7": {
+            "dice": "12d6"
+          },
+          "8": {
+            "dice": "14d6"
+          },
+          "9": {
+            "dice": "16d6"
+          }
         }
       }
     ],
@@ -18175,6 +19715,47 @@
           "7": "8d8",
           "8": "9d8",
           "9": "10d8"
+        },
+        "damage_at_slot_level_data": {
+          "6": {
+            "dice": "7d8"
+          },
+          "7": {
+            "dice": "8d8"
+          },
+          "8": {
+            "dice": "9d8"
+          },
+          "9": {
+            "dice": "10d8"
+          }
+        }
+      },
+      {
+        "damage_type": {
+          "index": "slashing",
+          "name": "Slashing",
+          "url": "/api/2014/damage-types/slashing"
+        },
+        "damage_at_slot_level": {
+          "6": "7d8",
+          "7": "8d8",
+          "8": "9d8",
+          "9": "10d8"
+        },
+        "damage_at_slot_level_data": {
+          "6": {
+            "dice": "7d8"
+          },
+          "7": {
+            "dice": "8d8"
+          },
+          "8": {
+            "dice": "9d8"
+          },
+          "9": {
+            "dice": "10d8"
+          }
         }
       }
     ],
@@ -18407,6 +19988,14 @@
       "unit": "action"
     },
     "level": 2,
+    "dc": {
+      "dc_type": {
+        "index": "dex",
+        "name": "DEX",
+        "url": "/api/2014/ability-scores/dex"
+      },
+      "dc_success": "none"
+    },
     "area_of_effect": {
       "type": "cube",
       "size": 20
@@ -18464,6 +20053,23 @@
       "unit": "action"
     },
     "level": 9,
+    "damage": [
+      {
+        "damage_type": {
+          "index": "psychic",
+          "name": "Psychic",
+          "url": "/api/2014/damage-types/psychic"
+        },
+        "damage_at_slot_level": {
+          "9": "4d10"
+        },
+        "damage_at_slot_level_data": {
+          "9": {
+            "dice": "4d10"
+          }
+        }
+      }
+    ],
     "dc": {
       "dc_type": {
         "index": "wis",
@@ -18564,6 +20170,11 @@
         },
         "damage_at_slot_level": {
           "3": "3d8"
+        },
+        "damage_at_slot_level_data": {
+          "3": {
+            "dice": "3d8"
+          }
         }
       }
     ],
@@ -18719,6 +20330,14 @@
       "unit": "action"
     },
     "level": 2,
+    "dc": {
+      "dc_type": {
+        "index": "cha",
+        "name": "CHA",
+        "url": "/api/2014/ability-scores/cha"
+      },
+      "dc_success": "none"
+    },
     "area_of_effect": {
       "type": "sphere",
       "size": 15
