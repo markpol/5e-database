@@ -31,6 +31,11 @@ export const ENGINE_MAX_LEVEL_BY_CLASS: Record<string, number> = {
   paladin: 20,
   cleric: 20,
   wizard: 20,
+  bard: 20,
+  druid: 20,
+  sorcerer: 20,
+  ranger: 20,
+  warlock: 20,
 };
 
 /** The highest class level whose features are structured, for a class. */
@@ -54,6 +59,10 @@ const EXPLORATION =
   'a benefit outside combat (travel, tracking, climbing, copying spells) with no structured counterpart';
 const RAGE_END = 'when a rage ends, which stays in the text with how a use of the feature lasts';
 const AGING = 'age and the need for food and water, with no structured counterpart';
+const MAGICAL_SECRETS =
+  'spells of any class that count as class spells, which the class spellcasting describes';
+const LANDS_STRIDE =
+  'moving through nonmagical difficult terrain and plants without cost, which is movement other than speed, with no structured counterpart';
 
 // The features within the scope above that have no `engine`, and why. A feature in scope with neither an `engine`
 // nor another structured field (`grants_asi`, `heal`, `granted_proficiencies`, `granted_languages`, `damage_type`)
@@ -163,6 +172,59 @@ export const ENGINE_EXCLUDED: Record<string, string> = {
     "two spells of the owner's choice from the spellbook cast without a spell slot, with no structured counterpart",
   overchannel:
     'necrotic damage taken on a repeated use before a long rest, which rises by 1d12 per spell level each time, with no structured counterpart',
+  'bard-college-improvement-1': SUBCLASS_CHOICE,
+  'bard-college-improvement-2': SUBCLASS_CHOICE,
+  'additional-magical-secrets': MAGICAL_SECRETS,
+  'magical-secrets-1': MAGICAL_SECRETS,
+  'magical-secrets-2': MAGICAL_SECRETS,
+  'magical-secrets-3': MAGICAL_SECRETS,
+  'bard-expertise-2': EXPERTISE,
+  'druid-circle-improvement-1': SUBCLASS_CHOICE,
+  'druid-circle-improvement-2': SUBCLASS_CHOICE,
+  'druid-circle-improvement-3': SUBCLASS_CHOICE,
+  'circle-spells-3': PREPARED_SPELLS,
+  'circle-spells-4': PREPARED_SPELLS,
+  'druid-lands-stride': LANDS_STRIDE,
+  'natures-sanctuary':
+    'a saving throw that beasts and plants make when they attack the owner, with the choice of another target or a miss on a failure and a 24-hour immunity on a success, with no structured counterpart',
+  'druid-timeless-body': AGING,
+  'beast-spells':
+    'casting spells in a beast shape without material components, an exception to the rules of Wild Shape that stay in its text',
+  'sorcerous-origin-improvement-1': SUBCLASS_CHOICE,
+  'sorcerous-origin-improvement-2': SUBCLASS_CHOICE,
+  'sorcerous-origin-improvement-3': SUBCLASS_CHOICE,
+  'metamagic-2': OPTION_PARENT,
+  'metamagic-3': OPTION_PARENT,
+  'ranger-archetype-improvement-1': SUBCLASS_CHOICE,
+  'ranger-archetype-improvement-2': SUBCLASS_CHOICE,
+  'ranger-archetype-improvement-3': SUBCLASS_CHOICE,
+  'favored-enemy-2-types': EXPLORATION,
+  'favored-enemy-3-enemies': EXPLORATION,
+  'natural-explorer-2-terrain-types': EXPLORATION,
+  'natural-explorer-3-terrain-types': EXPLORATION,
+  'defensive-tactics': OPTION_PARENT,
+  'ranger-lands-stride': LANDS_STRIDE,
+  'hide-in-plain-sight':
+    'a minute of preparation, and a bonus to Dexterity (Stealth) checks that lasts only while the owner stays still against a surface, which no action cost or circumstance states',
+  multiattack: OPTION_PARENT,
+  'multiattack-volley':
+    'an action that attacks any number of creatures within an area, with a separate attack roll for each, with no structured counterpart',
+  'multiattack-whirlwind-attack':
+    'an action that attacks any number of creatures within 5 feet, with a separate attack roll for each, with no structured counterpart',
+  'superior-hunters-defense': OPTION_PARENT,
+  'feral-senses':
+    'attacks against creatures the owner cannot see without disadvantage, and awareness of invisible creatures, which are senses with no structured counterpart',
+  'otherworldly-patron-improvement-1': SUBCLASS_CHOICE,
+  'otherworldly-patron-improvement-2': SUBCLASS_CHOICE,
+  'otherworldly-patron-improvement-3': SUBCLASS_CHOICE,
+  'eldritch-invocation-witch-sight':
+    'seeing the true form of shapechangers and of creatures concealed by illusion or transmutation, a sense with no structured counterpart',
+  'eldritch-invocation-chains-of-carceri':
+    'a spell cast at will on celestials, fiends and elementals, once for each creature between long rests, which a count of uses cannot state',
+  'fiendish-resilience':
+    'a damage type chosen after each rest, and a resistance that magical weapons and silver weapons ignore, which the damage modifier cannot state',
+  'eldritch-master':
+    'a minute of entreaty to regain all the expended Pact Magic spell slots, a cost that the action cost cannot state',
 };
 
 const ASI_NAME = 'Ability Score Improvement';

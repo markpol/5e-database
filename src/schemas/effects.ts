@@ -50,6 +50,11 @@ export const FEATURE_WHILE = [
   'moving_at_most_half_speed',
   // The creature is conscious.
   'conscious',
+  // The creature that makes the attack has already hit the owner on the same turn.
+  'attacker_hit_owner_this_turn',
+  // The target is one of the owner's favored enemies.
+  'target_favored_enemy',
+  'target_not_fiend',
 ] as const;
 
 // The kind of attack a roll or bonus is limited to. `bound_weapon` is the one weapon the condition is tied to.
