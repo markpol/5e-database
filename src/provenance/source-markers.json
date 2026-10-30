@@ -20,6 +20,14 @@
           "source": "dd",
           "note": "Second stage of a two-stage condition (petrification), merged in from monster-engine-annotations.json."
         },
+        "actions[].damage_dice_at_half_hp": {
+          "source": "dd",
+          "note": "Read from the action prose by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "actions[].detach_after_damage": {
+          "source": "dd",
+          "note": "Read from the action prose by normalize-monsters.ts (docs/monster-effects.md)."
+        },
         "actions[].pull_distance_ft": {
           "source": "dd",
           "note": "Distance in feet the action pulls each target toward the monster, merged in from monster-engine-annotations.json."
@@ -36,6 +44,30 @@
           "source": "dd",
           "note": "Reach in feet, read from the attack header by normalize-monsters.ts."
         },
+        "actions[].reduce_max_hp": {
+          "source": "dd",
+          "note": "Read from the action prose by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "actions[].reduction_dice": {
+          "source": "dd",
+          "note": "Read from the action prose by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "actions[].trigger": {
+          "source": "dd",
+          "note": "Read from the action prose by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "immunities": {
+          "source": "dd",
+          "note": "The rules of the damage list with the same name after 'damage_', read from its text by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "immunities[].types": {
+          "source": "dd",
+          "note": "The rules of the damage list with the same name after 'damage_', read from its text by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "immunities[].unless": {
+          "source": "dd",
+          "note": "The rules of the damage list with the same name after 'damage_', read from its text by normalize-monsters.ts (docs/monster-effects.md)."
+        },
         "legendary_actions[].condition": {
           "source": "dd",
           "note": "Merged in from monster-engine-annotations.json."
@@ -44,6 +76,22 @@
           "source": "dd",
           "note": "Merged in from monster-engine-annotations.json."
         },
+        "resistances": {
+          "source": "dd",
+          "note": "The rules of the damage list with the same name after 'damage_', read from its text by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "resistances[].only_from": {
+          "source": "dd",
+          "note": "The rules of the damage list with the same name after 'damage_', read from its text by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "resistances[].types": {
+          "source": "dd",
+          "note": "The rules of the damage list with the same name after 'damage_', read from its text by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "resistances[].unless": {
+          "source": "dd",
+          "note": "The rules of the damage list with the same name after 'damage_', read from its text by normalize-monsters.ts (docs/monster-effects.md)."
+        },
         "special_abilities[].condition": {
           "source": "dd",
           "note": "Merged in from monster-engine-annotations.json."
@@ -51,6 +99,30 @@
         "special_abilities[].damage[].grapple": {
           "source": "dd",
           "note": "Grapple escape DC, merged in from monster-engine-annotations.json."
+        },
+        "special_abilities[].regeneration": {
+          "source": "dd",
+          "note": "Read from the trait prose by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "special_abilities[].resistances": {
+          "source": "dd",
+          "note": "Read from the trait prose by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "special_abilities[].resistances[].types": {
+          "source": "dd",
+          "note": "Read from the trait prose by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "special_abilities[].trigger": {
+          "source": "dd",
+          "note": "Read from the trait prose by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "vulnerabilities": {
+          "source": "dd",
+          "note": "The rules of the damage list with the same name after 'damage_', read from its text by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "vulnerabilities[].types": {
+          "source": "dd",
+          "note": "The rules of the damage list with the same name after 'damage_', read from its text by normalize-monsters.ts (docs/monster-effects.md)."
         }
       }
     },

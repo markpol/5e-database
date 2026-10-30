@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { DamageRuleSchema, MonsterAbilityEffectFields } from '../../schemas/monster-effects';
 
 /**
  * Schema for `src/2014/5e-SRD-Monsters-Normalized.json`, the generated, normalized monster file.
@@ -229,6 +230,8 @@ const MonsterActionSchema = z.strictObject({
   attacks: z.array(MonsterAttackSchema).optional(),
   options: OptionsChoiceSchema.optional(),
   damage: z.array(z.union([MonsterDamageSchema, DamageChoiceSchema])).optional(),
+  // Structured effects read from the action text (docs/monster-effects.md).
+  ...MonsterAbilityEffectFields,
 });
 
 const LegendaryActionSchema = z.strictObject({
@@ -238,6 +241,7 @@ const LegendaryActionSchema = z.strictObject({
   damage: z.array(MonsterDamageSchema).optional(),
   dc: DifficultyClassSchema.optional(),
   condition: AppliedConditionSchema.optional(),
+  ...MonsterAbilityEffectFields,
 });
 
 const ReactionSchema = z.strictObject({
@@ -245,6 +249,7 @@ const ReactionSchema = z.strictObject({
   desc: z.string(),
   dc: DifficultyClassSchema.optional(),
   condition: AppliedConditionSchema.optional(),
+  ...MonsterAbilityEffectFields,
 });
 
 const SpecialAbilityUsageSchema = z.strictObject({
@@ -288,6 +293,7 @@ const SpecialAbilitySchema = z.strictObject({
     })
     .optional(),
   relentless_max_damage: z.number().optional(),
+  ...MonsterAbilityEffectFields,
 });
 
 export const NormalizedMonsterSchema = z.strictObject({
@@ -313,6 +319,10 @@ export const NormalizedMonsterSchema = z.strictObject({
   damage_vulnerabilities: z.array(z.string()),
   damage_resistances: z.array(z.string()),
   damage_immunities: z.array(z.string()),
+  // The three damage lists as rules (docs/monster-effects.md), each present where its list gives a rule.
+  vulnerabilities: z.array(DamageRuleSchema).min(1).optional(),
+  resistances: z.array(DamageRuleSchema).min(1).optional(),
+  immunities: z.array(DamageRuleSchema).min(1).optional(),
   condition_immunities: z.array(IndexSchema),
   senses: SenseSchema,
   languages: z.string(),

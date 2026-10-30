@@ -54,10 +54,54 @@ export type NormalizedMonster = {
     url: string;
     desc?: string | undefined;
     subtype?: string | undefined;
+    vulnerabilities?: {
+        types: string[];
+        unless?: ("magical" | "silvered" | "adamantine")[] | undefined;
+        only_from?: "spells" | undefined;
+    }[] | undefined;
+    resistances?: {
+        types: string[];
+        unless?: ("magical" | "silvered" | "adamantine")[] | undefined;
+        only_from?: "spells" | undefined;
+    }[] | undefined;
+    immunities?: {
+        types: string[];
+        unless?: ("magical" | "silvered" | "adamantine")[] | undefined;
+        only_from?: "spells" | undefined;
+    }[] | undefined;
     proficiency_bonus?: number | undefined;
     special_abilities?: {
         name: string;
         desc: string;
+        trigger?: "start_of_turn" | "on_hit" | "on_failed_save" | "on_damage" | "every_24_hours" | "after_1_hour_of_visions" | "half_hit_points_or_fewer" | "while_ridden" | undefined;
+        regeneration?: {
+            hit_points: number;
+            min_hit_points?: number | undefined;
+            suppressed_by?: {
+                damage_types: string[];
+                sources?: "holy_water"[] | undefined;
+            } | undefined;
+            disabled_in?: ("sunlight" | "running_water")[] | undefined;
+            dies_only_without_regenerating?: true | undefined;
+        } | undefined;
+        detach_after_damage?: number | undefined;
+        reduction_dice?: {
+            dice: string;
+            until: "long_rest" | "greater_restoration" | "disease_cured" | "remove_curse";
+            every_hours?: number | undefined;
+            repeat_save?: true | undefined;
+        } | undefined;
+        reduce_max_hp?: {
+            by: "damage_taken";
+            until: "long_rest" | "greater_restoration" | "disease_cured" | "remove_curse";
+            damage_type?: string | undefined;
+        } | undefined;
+        damage_dice_at_half_hp?: string | undefined;
+        resistances?: {
+            types: string[];
+            unless?: ("magical" | "silvered" | "adamantine")[] | undefined;
+            only_from?: "spells" | undefined;
+        }[] | undefined;
         attack_bonus?: number | undefined;
         damage?: ({
             damage_type: string;
@@ -206,6 +250,35 @@ export type NormalizedMonster = {
     actions?: {
         name: string;
         desc: string;
+        trigger?: "start_of_turn" | "on_hit" | "on_failed_save" | "on_damage" | "every_24_hours" | "after_1_hour_of_visions" | "half_hit_points_or_fewer" | "while_ridden" | undefined;
+        regeneration?: {
+            hit_points: number;
+            min_hit_points?: number | undefined;
+            suppressed_by?: {
+                damage_types: string[];
+                sources?: "holy_water"[] | undefined;
+            } | undefined;
+            disabled_in?: ("sunlight" | "running_water")[] | undefined;
+            dies_only_without_regenerating?: true | undefined;
+        } | undefined;
+        detach_after_damage?: number | undefined;
+        reduction_dice?: {
+            dice: string;
+            until: "long_rest" | "greater_restoration" | "disease_cured" | "remove_curse";
+            every_hours?: number | undefined;
+            repeat_save?: true | undefined;
+        } | undefined;
+        reduce_max_hp?: {
+            by: "damage_taken";
+            until: "long_rest" | "greater_restoration" | "disease_cured" | "remove_curse";
+            damage_type?: string | undefined;
+        } | undefined;
+        damage_dice_at_half_hp?: string | undefined;
+        resistances?: {
+            types: string[];
+            unless?: ("magical" | "silvered" | "adamantine")[] | undefined;
+            only_from?: "spells" | undefined;
+        }[] | undefined;
         attack_type?: "Melee" | "Ranged" | undefined;
         attack_kind?: "melee" | "ranged" | "melee_or_ranged" | undefined;
         reach_ft?: number | undefined;
@@ -638,6 +711,35 @@ export type NormalizedMonster = {
     legendary_actions?: {
         name: string;
         desc: string;
+        trigger?: "start_of_turn" | "on_hit" | "on_failed_save" | "on_damage" | "every_24_hours" | "after_1_hour_of_visions" | "half_hit_points_or_fewer" | "while_ridden" | undefined;
+        regeneration?: {
+            hit_points: number;
+            min_hit_points?: number | undefined;
+            suppressed_by?: {
+                damage_types: string[];
+                sources?: "holy_water"[] | undefined;
+            } | undefined;
+            disabled_in?: ("sunlight" | "running_water")[] | undefined;
+            dies_only_without_regenerating?: true | undefined;
+        } | undefined;
+        detach_after_damage?: number | undefined;
+        reduction_dice?: {
+            dice: string;
+            until: "long_rest" | "greater_restoration" | "disease_cured" | "remove_curse";
+            every_hours?: number | undefined;
+            repeat_save?: true | undefined;
+        } | undefined;
+        reduce_max_hp?: {
+            by: "damage_taken";
+            until: "long_rest" | "greater_restoration" | "disease_cured" | "remove_curse";
+            damage_type?: string | undefined;
+        } | undefined;
+        damage_dice_at_half_hp?: string | undefined;
+        resistances?: {
+            types: string[];
+            unless?: ("magical" | "silvered" | "adamantine")[] | undefined;
+            only_from?: "spells" | undefined;
+        }[] | undefined;
         attack_bonus?: number | undefined;
         damage?: ({
             damage_type: string;
@@ -753,6 +855,35 @@ export type NormalizedMonster = {
     reactions?: {
         name: string;
         desc: string;
+        trigger?: "start_of_turn" | "on_hit" | "on_failed_save" | "on_damage" | "every_24_hours" | "after_1_hour_of_visions" | "half_hit_points_or_fewer" | "while_ridden" | undefined;
+        regeneration?: {
+            hit_points: number;
+            min_hit_points?: number | undefined;
+            suppressed_by?: {
+                damage_types: string[];
+                sources?: "holy_water"[] | undefined;
+            } | undefined;
+            disabled_in?: ("sunlight" | "running_water")[] | undefined;
+            dies_only_without_regenerating?: true | undefined;
+        } | undefined;
+        detach_after_damage?: number | undefined;
+        reduction_dice?: {
+            dice: string;
+            until: "long_rest" | "greater_restoration" | "disease_cured" | "remove_curse";
+            every_hours?: number | undefined;
+            repeat_save?: true | undefined;
+        } | undefined;
+        reduce_max_hp?: {
+            by: "damage_taken";
+            until: "long_rest" | "greater_restoration" | "disease_cured" | "remove_curse";
+            damage_type?: string | undefined;
+        } | undefined;
+        damage_dice_at_half_hp?: string | undefined;
+        resistances?: {
+            types: string[];
+            unless?: ("magical" | "silvered" | "adamantine")[] | undefined;
+            only_from?: "spells" | undefined;
+        }[] | undefined;
         dc?: {
             dc_type: string;
             success_type: "none" | "half" | "other";

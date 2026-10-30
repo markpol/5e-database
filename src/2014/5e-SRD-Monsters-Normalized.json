@@ -358,6 +358,13 @@
     "damage_immunities": [
       "acid"
     ],
+    "immunities": [
+      {
+        "types": [
+          "acid"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 60,
@@ -593,6 +600,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "lightning"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "lightning"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -833,6 +847,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "fire"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -1100,6 +1121,13 @@
     "damage_immunities": [
       "lightning"
     ],
+    "immunities": [
+      {
+        "types": [
+          "lightning"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 60,
@@ -1362,6 +1390,13 @@
     "damage_immunities": [
       "acid"
     ],
+    "immunities": [
+      {
+        "types": [
+          "acid"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 60,
@@ -1623,6 +1658,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "fire"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -1893,6 +1935,13 @@
     "damage_immunities": [
       "poison"
     ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
+    ],
     "condition_immunities": [
       "poisoned"
     ],
@@ -2129,6 +2178,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "fire"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -2367,6 +2423,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "cold"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "cold"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -2630,6 +2693,13 @@
     "damage_immunities": [
       "cold"
     ],
+    "immunities": [
+      {
+        "types": [
+          "cold"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 60,
@@ -2840,8 +2910,33 @@
       "thunder",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "lightning",
+          "thunder"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "exhaustion",
@@ -2983,6 +3078,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "acid"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "acid"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -3219,6 +3321,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "lightning"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "lightning"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -3459,6 +3568,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "fire"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -3730,6 +3846,13 @@
     "damage_immunities": [
       "lightning"
     ],
+    "immunities": [
+      {
+        "types": [
+          "lightning"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 60,
@@ -3996,6 +4119,13 @@
     "damage_immunities": [
       "acid"
     ],
+    "immunities": [
+      {
+        "types": [
+          "acid"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 60,
@@ -4261,6 +4391,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "fire"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -4535,6 +4672,13 @@
     "damage_immunities": [
       "poison"
     ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
+    ],
     "condition_immunities": [
       "poisoned"
     ],
@@ -4771,6 +4915,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "fire"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -5009,6 +5160,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "cold"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "cold"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -5276,6 +5434,13 @@
     "damage_immunities": [
       "cold"
     ],
+    "immunities": [
+      {
+        "types": [
+          "cold"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 60,
@@ -5514,6 +5679,23 @@
     "damage_immunities": [
       "psychic",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "psychic"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -5777,6 +5959,14 @@
     "damage_immunities": [
       "poison",
       "psychic"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison",
+          "psychic"
+        ]
+      }
     ],
     "condition_immunities": [
       "blinded",
@@ -6101,6 +6291,14 @@
       "damage from spells",
       "bludgeoning, piercing, and slashing from nonmagical attacks (from stoneskin)"
     ],
+    "resistances": [
+      {
+        "types": [
+          "all"
+        ],
+        "only_from": "spells"
+      }
+    ],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -6378,6 +6576,13 @@
     "damage_resistances": [
       "poison"
     ],
+    "resistances": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
+    ],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -6505,8 +6710,22 @@
     "damage_vulnerabilities": [
       "fire"
     ],
+    "vulnerabilities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
+    ],
     "damage_resistances": [
       "piercing"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "piercing"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [],
@@ -6573,9 +6792,24 @@
     "damage_vulnerabilities": [
       "fire"
     ],
+    "vulnerabilities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
+    ],
     "damage_resistances": [
       "bludgeoning",
       "piercing"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [],
@@ -6713,6 +6947,14 @@
     "damage_immunities": [
       "fire",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -6954,9 +7196,35 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold",
+          "lightning"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "fire",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -7368,9 +7636,35 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "damage_immunities": [
       "fire",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -7692,9 +7986,35 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "damage_immunities": [
       "fire",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -7828,6 +8148,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "lightning"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "lightning"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -8162,6 +8489,13 @@
     "damage_immunities": [
       "acid"
     ],
+    "immunities": [
+      {
+        "types": [
+          "acid"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 10,
@@ -8261,6 +8595,16 @@
       "cold",
       "lightning",
       "slashing"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "acid",
+          "cold",
+          "lightning",
+          "slashing"
+        ]
+      }
     ],
     "condition_immunities": [
       "blinded",
@@ -8542,6 +8886,13 @@
     "damage_immunities": [
       "lightning"
     ],
+    "immunities": [
+      {
+        "types": [
+          "lightning"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 10,
@@ -8750,9 +9101,35 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "damage_immunities": [
       "fire",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -8904,6 +9281,13 @@
     "damage_immunities": [
       "fire"
     ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 10,
@@ -9050,6 +9434,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "lightning"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "lightning"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -9761,9 +10152,35 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "damage_immunities": [
       "fire",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -10102,6 +10519,13 @@
     "damage_immunities": [
       "poison"
     ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
+    ],
     "condition_immunities": [
       "poisoned"
     ],
@@ -10239,6 +10663,26 @@
       "psychic",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
     ],
+    "immunities": [
+      {
+        "types": [
+          "acid",
+          "poison",
+          "psychic"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "adamantine"
+        ]
+      }
+    ],
     "condition_immunities": [
       "charmed",
       "exhaustion",
@@ -10303,7 +10747,12 @@
         "weapon_kind": "natural",
         "attack_type": "Melee",
         "attack_kind": "melee",
-        "reach_ft": 5
+        "reach_ft": 5,
+        "trigger": "on_failed_save",
+        "reduce_max_hp": {
+          "by": "damage_taken",
+          "until": "greater_restoration"
+        }
       },
       {
         "name": "Haste",
@@ -10954,6 +11403,13 @@
     "damage_immunities": [
       "acid"
     ],
+    "immunities": [
+      {
+        "types": [
+          "acid"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 10,
@@ -11086,9 +11542,33 @@
     "damage_resistances": [
       "radiant"
     ],
+    "resistances": [
+      {
+        "types": [
+          "radiant"
+        ]
+      }
+    ],
     "damage_immunities": [
       "psychic",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "psychic"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -11869,7 +12349,14 @@
         ],
         "weapon_kind": "natural",
         "attack_kind": "melee",
-        "reach_ft": 5
+        "reach_ft": 5,
+        "trigger": "every_24_hours",
+        "reduction_dice": {
+          "dice": "1d10",
+          "every_hours": 24,
+          "repeat_save": true,
+          "until": "disease_cured"
+        }
       }
     ],
     "url": "/api/2014/monsters/death-dog",
@@ -12152,6 +12639,23 @@
       "radiant",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "radiant"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [],
     "condition_immunities": [
       "charmed",
@@ -12398,6 +12902,14 @@
     "damage_immunities": [
       "lightning",
       "thunder"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "lightning",
+          "thunder"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -12805,6 +13317,13 @@
     "damage_resistances": [
       "fire"
     ],
+    "resistances": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
+    ],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -12990,8 +13509,24 @@
       "fire",
       "lightning"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold",
+          "fire",
+          "lightning"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -13874,6 +14409,13 @@
     "damage_resistances": [
       "poison"
     ],
+    "resistances": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
+    ],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -13999,9 +14541,23 @@
     "damage_vulnerabilities": [
       "fire"
     ],
+    "vulnerabilities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
+    ],
     "damage_resistances": [],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -14203,11 +14759,37 @@
     "damage_vulnerabilities": [
       "thunder"
     ],
+    "vulnerabilities": [
+      {
+        "types": [
+          "thunder"
+        ]
+      }
+    ],
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "exhaustion",
@@ -14311,6 +14893,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "fire"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -14748,9 +15337,35 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "damage_immunities": [
       "fire",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -15224,9 +15839,29 @@
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "fire",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "exhaustion",
@@ -15356,6 +15991,13 @@
     "damage_immunities": [
       "fire"
     ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 16
@@ -15451,6 +16093,25 @@
       "lightning",
       "poison",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "lightning",
+          "poison"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "adamantine"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -15634,6 +16295,14 @@
       "poison",
       "psychic"
     ],
+    "immunities": [
+      {
+        "types": [
+          "poison",
+          "psychic"
+        ]
+      }
+    ],
     "condition_immunities": [
       "blinded",
       "charmed",
@@ -15735,6 +16404,13 @@
     "damage_immunities": [
       "cold"
     ],
+    "immunities": [
+      {
+        "types": [
+          "cold"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 13
@@ -15829,8 +16505,28 @@
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
     ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "adamantine"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "exhaustion",
@@ -16022,8 +16718,22 @@
     "damage_resistances": [
       "necrotic"
     ],
+    "resistances": [
+      {
+        "types": [
+          "necrotic"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned",
@@ -16145,10 +16855,39 @@
       "thunder",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "acid",
+          "fire",
+          "lightning",
+          "thunder"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "cold",
       "necrotic",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "cold",
+          "necrotic",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -16271,6 +17010,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned",
@@ -18042,7 +18788,13 @@
         ],
         "weapon_kind": "natural",
         "attack_kind": "melee",
-        "reach_ft": 5
+        "reach_ft": 5,
+        "trigger": "every_24_hours",
+        "reduction_dice": {
+          "dice": "1d6",
+          "every_hours": 24,
+          "until": "disease_cured"
+        }
       }
     ],
     "image": "/api/images/monsters/giant-rat-diseased.png",
@@ -19056,8 +19808,34 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold",
+          "fire",
+          "lightning"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -19828,6 +20606,13 @@
     "damage_immunities": [
       "fire"
     ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 10,
@@ -20108,6 +20893,15 @@
       "cold",
       "fire"
     ],
+    "resistances": [
+      {
+        "types": [
+          "acid",
+          "cold",
+          "fire"
+        ]
+      }
+    ],
     "damage_immunities": [],
     "condition_immunities": [
       "blinded",
@@ -20220,6 +21014,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -20446,6 +21247,18 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [],
@@ -20854,6 +21667,13 @@
     "damage_immunities": [
       "poison"
     ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
+    ],
     "condition_immunities": [
       "charmed",
       "poisoned"
@@ -21071,8 +21891,27 @@
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "psychic"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "psychic"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -21274,6 +22113,13 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "fire"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [],
@@ -21622,6 +22468,13 @@
     "damage_immunities": [
       "fire"
     ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "darkvision": 60,
@@ -21735,8 +22588,34 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold",
+          "fire",
+          "lightning"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -22160,6 +23039,13 @@
     "damage_immunities": [
       "poison"
     ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
+    ],
     "condition_immunities": [
       "charmed",
       "poisoned"
@@ -22261,9 +23147,35 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "damage_immunities": [
       "fire",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -22691,9 +23603,30 @@
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "damage_immunities": [
       "fire",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -22865,10 +23798,26 @@
       "bludgeoning",
       "fire"
     ],
+    "vulnerabilities": [
+      {
+        "types": [
+          "bludgeoning",
+          "fire"
+        ]
+      }
+    ],
     "damage_resistances": [],
     "damage_immunities": [
       "cold",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "cold",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -23021,9 +23970,35 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "damage_immunities": [
       "fire",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -23123,8 +24098,27 @@
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "exhaustion",
@@ -23219,6 +24213,26 @@
       "poison",
       "psychic",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison",
+          "psychic"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "adamantine"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -23783,6 +24797,23 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "immunities": [
+      {
+        "types": [
+          "lightning"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "condition_immunities": [
       "frightened",
       "paralyzed"
@@ -24222,9 +25253,24 @@
     "damage_resistances": [
       "cold"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold"
+        ]
+      }
+    ],
     "damage_immunities": [
       "fire",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -24329,9 +25375,35 @@
       "lightning",
       "necrotic"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold",
+          "lightning",
+          "necrotic"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -25273,10 +26345,25 @@
     "damage_vulnerabilities": [
       "cold"
     ],
+    "vulnerabilities": [
+      {
+        "types": [
+          "cold"
+        ]
+      }
+    ],
     "damage_resistances": [],
     "damage_immunities": [
       "fire",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -25410,8 +26497,27 @@
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "fire"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -25757,8 +26863,34 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold",
+          "fire",
+          "lightning"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -26426,6 +27558,13 @@
     "damage_immunities": [
       "acid"
     ],
+    "immunities": [
+      {
+        "types": [
+          "acid"
+        ]
+      }
+    ],
     "condition_immunities": [
       "prone"
     ],
@@ -26650,9 +27789,23 @@
     "damage_vulnerabilities": [
       "bludgeoning"
     ],
+    "vulnerabilities": [
+      {
+        "types": [
+          "bludgeoning"
+        ]
+      }
+    ],
     "damage_resistances": [],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "exhaustion",
@@ -26830,12 +27983,39 @@
     "damage_vulnerabilities": [
       "fire"
     ],
+    "vulnerabilities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
+    ],
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
     ],
     "damage_immunities": [
       "necrotic",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "necrotic",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -26887,7 +28067,13 @@
         ],
         "weapon_kind": "natural",
         "attack_kind": "melee",
-        "reach_ft": 5
+        "reach_ft": 5,
+        "trigger": "every_24_hours",
+        "reduction_dice": {
+          "dice": "3d6",
+          "every_hours": 24,
+          "until": "remove_curse"
+        }
       },
       {
         "name": "Dreadful Glare",
@@ -26966,11 +28152,36 @@
     "damage_vulnerabilities": [
       "fire"
     ],
+    "vulnerabilities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
+    ],
     "damage_resistances": [],
     "damage_immunities": [
       "necrotic",
       "poison",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "necrotic",
+          "poison"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -27133,7 +28344,13 @@
         "weapon_kind": "natural",
         "attack_type": "Melee",
         "attack_kind": "melee",
-        "reach_ft": 5
+        "reach_ft": 5,
+        "trigger": "every_24_hours",
+        "reduction_dice": {
+          "dice": "3d6",
+          "every_hours": 24,
+          "until": "remove_curse"
+        }
       },
       {
         "name": "Dreadful Glare",
@@ -27257,8 +28474,34 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold",
+          "fire",
+          "lightning"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -27413,6 +28656,25 @@
       "fire",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold",
+          "fire"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "damage_immunities": [],
     "condition_immunities": [
       "charmed"
@@ -27524,6 +28786,11 @@
         "usage": {
           "type": "per day",
           "times": 1
+        },
+        "trigger": "after_1_hour_of_visions",
+        "reduction_dice": {
+          "dice": "1d10",
+          "until": "greater_restoration"
         }
       }
     ],
@@ -27561,6 +28828,13 @@
     "damage_immunities": [
       "fire"
     ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 11
@@ -27572,7 +28846,15 @@
     "special_abilities": [
       {
         "name": "Confer Fire Resistance",
-        "desc": "The nightmare can grant resistance to fire damage to anyone riding it."
+        "desc": "The nightmare can grant resistance to fire damage to anyone riding it.",
+        "trigger": "while_ridden",
+        "resistances": [
+          {
+            "types": [
+              "fire"
+            ]
+          }
+        ]
       },
       {
         "name": "Illumination",
@@ -27714,9 +28996,24 @@
     "damage_resistances": [
       "acid"
     ],
+    "resistances": [
+      {
+        "types": [
+          "acid"
+        ]
+      }
+    ],
     "damage_immunities": [
       "lightning",
       "slashing"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "lightning",
+          "slashing"
+        ]
+      }
     ],
     "condition_immunities": [
       "blinded",
@@ -27997,6 +29294,13 @@
     "damage_immunities": [
       "poison"
     ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
+    ],
     "condition_immunities": [
       "poisoned"
     ],
@@ -28178,7 +29482,12 @@
       },
       {
         "name": "Regeneration",
-        "desc": "The oni regains 10 hit points at the start of its turn if it has at least 1 hit point."
+        "desc": "The oni regains 10 hit points at the start of its turn if it has at least 1 hit point.",
+        "trigger": "start_of_turn",
+        "regeneration": {
+          "hit_points": 10,
+          "min_hit_points": 1
+        }
       }
     ],
     "actions": [
@@ -28457,7 +29766,14 @@
         "weapon_kind": "natural",
         "attack_type": "Melee",
         "attack_kind": "melee",
-        "reach_ft": 5
+        "reach_ft": 5,
+        "trigger": "every_24_hours",
+        "reduction_dice": {
+          "dice": "1d10",
+          "every_hours": 24,
+          "repeat_save": true,
+          "until": "disease_cured"
+        }
       },
       {
         "name": "Tentacle",
@@ -29022,9 +30338,35 @@
       "cold",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "damage_immunities": [
       "fire",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -29272,6 +30614,23 @@
     "damage_resistances": [
       "radiant",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "radiant"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [
@@ -30159,8 +31518,34 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold",
+          "fire",
+          "lightning"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -30359,6 +31744,18 @@
     "damage_resistances": [],
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -30724,6 +32121,13 @@
     "damage_immunities": [
       "fire"
     ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 10,
@@ -30886,6 +32290,14 @@
     "damage_immunities": [
       "cold",
       "fire"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "cold",
+          "fire"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -31390,6 +32802,14 @@
       "poison",
       "psychic"
     ],
+    "immunities": [
+      {
+        "types": [
+          "poison",
+          "psychic"
+        ]
+      }
+    ],
     "condition_immunities": [
       "blinded",
       "charmed",
@@ -31861,11 +33281,37 @@
     "damage_vulnerabilities": [
       "cold"
     ],
+    "vulnerabilities": [
+      {
+        "types": [
+          "cold"
+        ]
+      }
+    ],
     "damage_resistances": [
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "fire"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -32438,6 +33884,13 @@
     "damage_vulnerabilities": [
       "radiant"
     ],
+    "vulnerabilities": [
+      {
+        "types": [
+          "radiant"
+        ]
+      }
+    ],
     "damage_resistances": [
       "acid",
       "cold",
@@ -32446,9 +33899,38 @@
       "thunder",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "acid",
+          "cold",
+          "fire",
+          "lightning",
+          "thunder"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "necrotic",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "necrotic",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "exhaustion",
@@ -32545,8 +34027,23 @@
       "cold",
       "fire"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold",
+          "fire"
+        ]
+      }
+    ],
     "damage_immunities": [
       "lightning"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "lightning"
+        ]
+      }
     ],
     "condition_immunities": [
       "blinded",
@@ -32650,6 +34147,13 @@
     "damage_immunities": [
       "poison"
     ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
+    ],
     "condition_immunities": [
       "charmed",
       "exhaustion",
@@ -32673,7 +34177,12 @@
       },
       {
         "name": "Regeneration",
-        "desc": "The shield guardian regains 10 hit points at the start of its turn if it has at least 1 hit. point."
+        "desc": "The shield guardian regains 10 hit points at the start of its turn if it has at least 1 hit. point.",
+        "trigger": "start_of_turn",
+        "regeneration": {
+          "hit_points": 10,
+          "min_hit_points": 1
+        }
       },
       {
         "name": "Spell Storing",
@@ -32774,6 +34283,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "cold"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "cold"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -32892,9 +34408,23 @@
     "damage_vulnerabilities": [
       "bludgeoning"
     ],
+    "vulnerabilities": [
+      {
+        "types": [
+          "bludgeoning"
+        ]
+      }
+    ],
     "damage_resistances": [],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned",
@@ -33000,9 +34530,34 @@
       "radiant",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "radiant"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "necrotic",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "necrotic",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -33262,9 +34817,38 @@
       "thunder",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "acid",
+          "cold",
+          "fire",
+          "lightning",
+          "thunder"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "necrotic",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "necrotic",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -33323,7 +34907,12 @@
         ],
         "attack_kind": "melee",
         "reach_ft": 5,
-        "weapon_kind": "spell"
+        "weapon_kind": "spell",
+        "trigger": "on_failed_save",
+        "reduce_max_hp": {
+          "by": "damage_taken",
+          "until": "long_rest"
+        }
       }
     ],
     "url": "/api/2014/monsters/specter",
@@ -33461,6 +35050,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -33883,6 +35479,14 @@
       "fire",
       "poison"
     ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      }
+    ],
     "condition_immunities": [
       "poisoned"
     ],
@@ -34041,7 +35645,9 @@
         ],
         "weapon_kind": "natural",
         "attack_kind": "melee",
-        "reach_ft": 5
+        "reach_ft": 5,
+        "trigger": "start_of_turn",
+        "detach_after_damage": 10
       }
     ],
     "url": "/api/2014/monsters/stirge",
@@ -34219,6 +35825,25 @@
       "psychic",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
     ],
+    "immunities": [
+      {
+        "types": [
+          "poison",
+          "psychic"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "adamantine"
+        ]
+      }
+    ],
     "condition_immunities": [
       "charmed",
       "exhaustion",
@@ -34374,9 +35999,24 @@
     "damage_resistances": [
       "cold"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold"
+        ]
+      }
+    ],
     "damage_immunities": [
       "lightning",
       "thunder"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "lightning",
+          "thunder"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -34588,6 +36228,26 @@
       "poison",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold",
+          "fire",
+          "lightning",
+          "poison"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -34653,7 +36313,12 @@
             "damage_type": "psychic",
             "damage_dice": "5d10+5"
           }
-        ]
+        ],
+        "trigger": "on_damage",
+        "reduce_max_hp": {
+          "by": "damage_taken",
+          "until": "long_rest"
+        }
       },
       {
         "name": "Etherealness",
@@ -34694,6 +36359,15 @@
       "bludgeoning",
       "piercing",
       "slashing"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [
@@ -34742,7 +36416,9 @@
         ],
         "weapon_kind": "natural",
         "attack_kind": "melee",
-        "reach_ft": 0
+        "reach_ft": 0,
+        "trigger": "half_hit_points_or_fewer",
+        "damage_dice_at_half_hp": "1d4"
       }
     ],
     "url": "/api/2014/monsters/swarm-of-bats",
@@ -34780,6 +36456,15 @@
       "bludgeoning",
       "piercing",
       "slashing"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [
@@ -34820,7 +36505,9 @@
         ],
         "weapon_kind": "natural",
         "attack_kind": "melee",
-        "reach_ft": 0
+        "reach_ft": 0,
+        "trigger": "half_hit_points_or_fewer",
+        "damage_dice_at_half_hp": "2d4"
       }
     ],
     "url": "/api/2014/monsters/swarm-of-beetles",
@@ -34857,6 +36544,15 @@
       "bludgeoning",
       "piercing",
       "slashing"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [
@@ -34897,7 +36593,9 @@
         ],
         "weapon_kind": "natural",
         "attack_kind": "melee",
-        "reach_ft": 0
+        "reach_ft": 0,
+        "trigger": "half_hit_points_or_fewer",
+        "damage_dice_at_half_hp": "2d4"
       }
     ],
     "url": "/api/2014/monsters/swarm-of-centipedes",
@@ -34934,6 +36632,15 @@
       "bludgeoning",
       "piercing",
       "slashing"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [
@@ -34974,7 +36681,9 @@
         ],
         "weapon_kind": "natural",
         "attack_kind": "melee",
-        "reach_ft": 0
+        "reach_ft": 0,
+        "trigger": "half_hit_points_or_fewer",
+        "damage_dice_at_half_hp": "2d4"
       }
     ],
     "url": "/api/2014/monsters/swarm-of-insects",
@@ -35011,6 +36720,15 @@
       "bludgeoning",
       "piercing",
       "slashing"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [
@@ -35060,7 +36778,9 @@
         ],
         "weapon_kind": "natural",
         "attack_kind": "melee",
-        "reach_ft": 0
+        "reach_ft": 0,
+        "trigger": "half_hit_points_or_fewer",
+        "damage_dice_at_half_hp": "1d6"
       }
     ],
     "url": "/api/2014/monsters/swarm-of-poisonous-snakes",
@@ -35097,6 +36817,15 @@
       "bludgeoning",
       "piercing",
       "slashing"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [
@@ -35145,7 +36874,9 @@
         ],
         "weapon_kind": "natural",
         "attack_kind": "melee",
-        "reach_ft": 0
+        "reach_ft": 0,
+        "trigger": "half_hit_points_or_fewer",
+        "damage_dice_at_half_hp": "2d6"
       }
     ],
     "url": "/api/2014/monsters/swarm-of-quippers",
@@ -35181,6 +36912,15 @@
       "bludgeoning",
       "piercing",
       "slashing"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [
@@ -35225,7 +36965,9 @@
         ],
         "weapon_kind": "natural",
         "attack_kind": "melee",
-        "reach_ft": 0
+        "reach_ft": 0,
+        "trigger": "half_hit_points_or_fewer",
+        "damage_dice_at_half_hp": "1d6"
       }
     ],
     "url": "/api/2014/monsters/swarm-of-rats",
@@ -35262,6 +37004,15 @@
       "bludgeoning",
       "piercing",
       "slashing"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [
@@ -35301,7 +37052,9 @@
         ],
         "weapon_kind": "natural",
         "attack_kind": "melee",
-        "reach_ft": 5
+        "reach_ft": 5,
+        "trigger": "half_hit_points_or_fewer",
+        "damage_dice_at_half_hp": "1d6"
       }
     ],
     "url": "/api/2014/monsters/swarm-of-ravens",
@@ -35338,6 +37091,15 @@
       "bludgeoning",
       "piercing",
       "slashing"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [
@@ -35389,7 +37151,9 @@
         ],
         "weapon_kind": "natural",
         "attack_kind": "melee",
-        "reach_ft": 0
+        "reach_ft": 0,
+        "trigger": "half_hit_points_or_fewer",
+        "damage_dice_at_half_hp": "2d4"
       }
     ],
     "url": "/api/2014/monsters/swarm-of-spiders",
@@ -35426,6 +37190,15 @@
       "bludgeoning",
       "piercing",
       "slashing"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [
@@ -35466,7 +37239,9 @@
         ],
         "weapon_kind": "natural",
         "attack_kind": "melee",
-        "reach_ft": 0
+        "reach_ft": 0,
+        "trigger": "half_hit_points_or_fewer",
+        "damage_dice_at_half_hp": "2d4"
       }
     ],
     "url": "/api/2014/monsters/swarm-of-wasps",
@@ -35517,6 +37292,24 @@
       "fire",
       "poison",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire",
+          "poison"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -36030,9 +37823,24 @@
     "damage_vulnerabilities": [
       "fire"
     ],
+    "vulnerabilities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
+    ],
     "damage_resistances": [
       "bludgeoning",
       "piercing"
+    ],
+    "resistances": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing"
+        ]
+      }
     ],
     "damage_immunities": [],
     "condition_immunities": [],
@@ -36362,7 +38170,18 @@
       },
       {
         "name": "Regeneration",
-        "desc": "The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate."
+        "desc": "The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+        "trigger": "start_of_turn",
+        "regeneration": {
+          "hit_points": 10,
+          "suppressed_by": {
+            "damage_types": [
+              "acid",
+              "fire"
+            ]
+          },
+          "dies_only_without_regenerating": true
+        }
       }
     ],
     "actions": [
@@ -36552,6 +38371,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -36800,6 +38626,23 @@
       "necrotic",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "necrotic"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -36829,7 +38672,24 @@
       },
       {
         "name": "Regeneration",
-        "desc": "The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn."
+        "desc": "The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn.",
+        "trigger": "start_of_turn",
+        "regeneration": {
+          "hit_points": 20,
+          "min_hit_points": 1,
+          "disabled_in": [
+            "sunlight",
+            "running_water"
+          ],
+          "suppressed_by": {
+            "damage_types": [
+              "radiant"
+            ],
+            "sources": [
+              "holy_water"
+            ]
+          }
+        }
       },
       {
         "name": "Spider Climb",
@@ -36910,7 +38770,13 @@
         "weapon_kind": "natural",
         "attack_type": "Melee",
         "attack_kind": "melee",
-        "reach_ft": 5
+        "reach_ft": 5,
+        "trigger": "on_hit",
+        "reduce_max_hp": {
+          "by": "damage_taken",
+          "damage_type": "necrotic",
+          "until": "long_rest"
+        }
       },
       {
         "name": "Charm",
@@ -37020,6 +38886,23 @@
       "necrotic",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "necrotic"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -37049,7 +38932,24 @@
       },
       {
         "name": "Regeneration",
-        "desc": "The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn."
+        "desc": "The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn.",
+        "trigger": "start_of_turn",
+        "regeneration": {
+          "hit_points": 20,
+          "min_hit_points": 1,
+          "disabled_in": [
+            "sunlight",
+            "running_water"
+          ],
+          "suppressed_by": {
+            "damage_types": [
+              "radiant"
+            ],
+            "sources": [
+              "holy_water"
+            ]
+          }
+        }
       },
       {
         "name": "Spider Climb",
@@ -37078,7 +38978,13 @@
         "weapon_kind": "natural",
         "attack_type": "Melee",
         "attack_kind": "melee",
-        "reach_ft": 5
+        "reach_ft": 5,
+        "trigger": "on_hit",
+        "reduce_max_hp": {
+          "by": "damage_taken",
+          "damage_type": "necrotic",
+          "until": "long_rest"
+        }
       },
       {
         "name": "Charm",
@@ -37187,6 +39093,23 @@
       "necrotic",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "necrotic"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -37216,7 +39139,24 @@
       },
       {
         "name": "Regeneration",
-        "desc": "The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn."
+        "desc": "The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn.",
+        "trigger": "start_of_turn",
+        "regeneration": {
+          "hit_points": 20,
+          "min_hit_points": 1,
+          "disabled_in": [
+            "sunlight",
+            "running_water"
+          ],
+          "suppressed_by": {
+            "damage_types": [
+              "radiant"
+            ],
+            "sources": [
+              "holy_water"
+            ]
+          }
+        }
       },
       {
         "name": "Spider Climb",
@@ -37296,6 +39236,23 @@
       "necrotic",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "necrotic"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -37309,7 +39266,24 @@
     "special_abilities": [
       {
         "name": "Regeneration",
-        "desc": "The vampire regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn."
+        "desc": "The vampire regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn.",
+        "trigger": "start_of_turn",
+        "regeneration": {
+          "hit_points": 10,
+          "min_hit_points": 1,
+          "disabled_in": [
+            "sunlight",
+            "running_water"
+          ],
+          "suppressed_by": {
+            "damage_types": [
+              "radiant"
+            ],
+            "sources": [
+              "holy_water"
+            ]
+          }
+        }
       },
       {
         "name": "Spider Climb",
@@ -37375,7 +39349,13 @@
         "weapon_kind": "natural",
         "attack_type": "Melee",
         "attack_kind": "melee",
-        "reach_ft": 5
+        "reach_ft": 5,
+        "trigger": "on_hit",
+        "reduce_max_hp": {
+          "by": "damage_taken",
+          "damage_type": "necrotic",
+          "until": "long_rest"
+        }
       },
       {
         "name": "Claws",
@@ -37667,8 +39647,34 @@
       "lightning",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "cold",
+          "fire",
+          "lightning"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
@@ -37983,9 +39989,23 @@
     "damage_vulnerabilities": [
       "bludgeoning"
     ],
+    "vulnerabilities": [
+      {
+        "types": [
+          "bludgeoning"
+        ]
+      }
+    ],
     "damage_resistances": [],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "exhaustion",
@@ -38050,8 +40070,32 @@
       "acid",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "acid"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "exhaustion",
@@ -38265,6 +40309,19 @@
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 17
@@ -38370,6 +40427,19 @@
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 17
@@ -38461,6 +40531,19 @@
     "damage_resistances": [],
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -38614,6 +40697,19 @@
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 12
@@ -38724,6 +40820,19 @@
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 12
@@ -38822,6 +40931,19 @@
     "damage_resistances": [],
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -38990,6 +41112,19 @@
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 12
@@ -39138,6 +41273,19 @@
     "damage_resistances": [],
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -39337,6 +41485,19 @@
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "darkvision": 60,
@@ -39419,6 +41580,19 @@
     "damage_resistances": [],
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -39552,6 +41726,19 @@
     "damage_resistances": [],
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -39748,6 +41935,19 @@
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "darkvision": 60,
@@ -39873,6 +42073,19 @@
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 14
@@ -39989,6 +42202,19 @@
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 14
@@ -40099,6 +42325,19 @@
     "damage_immunities": [
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "immunities": [
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "passive_perception": 14
@@ -40194,6 +42433,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "cold"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "cold"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -40295,8 +42541,33 @@
       "necrotic",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "resistances": [
+      {
+        "types": [
+          "necrotic"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "exhaustion",
@@ -40387,7 +42658,12 @@
         ],
         "attack_kind": "melee",
         "reach_ft": 5,
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "trigger": "on_failed_save",
+        "reduce_max_hp": {
+          "by": "damage_taken",
+          "until": "long_rest"
+        }
       },
       {
         "name": "Longsword",
@@ -40486,9 +42762,38 @@
       "thunder",
       "bludgeoning, piercing, and slashing from nonmagical weapons"
     ],
+    "resistances": [
+      {
+        "types": [
+          "acid",
+          "cold",
+          "fire",
+          "necrotic",
+          "thunder"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical"
+        ]
+      }
+    ],
     "damage_immunities": [
       "lightning",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "lightning",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "exhaustion",
@@ -40594,6 +42899,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "cold"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "cold"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -40886,9 +43198,39 @@
       "thunder",
       "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
     ],
+    "resistances": [
+      {
+        "types": [
+          "acid",
+          "cold",
+          "fire",
+          "lightning",
+          "thunder"
+        ]
+      },
+      {
+        "types": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "silvered"
+        ]
+      }
+    ],
     "damage_immunities": [
       "necrotic",
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "necrotic",
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "charmed",
@@ -40946,7 +43288,12 @@
         "attack_type": "Melee",
         "attack_kind": "melee",
         "reach_ft": 5,
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "trigger": "on_failed_save",
+        "reduce_max_hp": {
+          "by": "damage_taken",
+          "until": "long_rest"
+        }
       },
       {
         "name": "Create Specter",
@@ -41164,6 +43511,18 @@
     "damage_resistances": [
       "piercing and slashing from nonmagical weapons that aren't adamantine"
     ],
+    "resistances": [
+      {
+        "types": [
+          "piercing",
+          "slashing"
+        ],
+        "unless": [
+          "magical",
+          "adamantine"
+        ]
+      }
+    ],
     "damage_immunities": [],
     "condition_immunities": [],
     "senses": {
@@ -41298,6 +43657,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "acid"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "acid"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -41454,6 +43820,13 @@
     "damage_immunities": [
       "lightning"
     ],
+    "immunities": [
+      {
+        "types": [
+          "lightning"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 30,
@@ -41606,6 +43979,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "fire"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -41790,6 +44170,13 @@
     "damage_immunities": [
       "lightning"
     ],
+    "immunities": [
+      {
+        "types": [
+          "lightning"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 30,
@@ -41971,6 +44358,13 @@
     "damage_immunities": [
       "acid"
     ],
+    "immunities": [
+      {
+        "types": [
+          "acid"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 30,
@@ -42149,6 +44543,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "fire"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -42330,6 +44731,13 @@
     "damage_immunities": [
       "poison"
     ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
+    ],
     "condition_immunities": [
       "poisoned"
     ],
@@ -42486,6 +44894,13 @@
     "damage_immunities": [
       "fire"
     ],
+    "immunities": [
+      {
+        "types": [
+          "fire"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 30,
@@ -42640,6 +45055,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "cold"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "cold"
+        ]
+      }
     ],
     "condition_immunities": [],
     "senses": {
@@ -42820,6 +45242,13 @@
     "damage_immunities": [
       "cold"
     ],
+    "immunities": [
+      {
+        "types": [
+          "cold"
+        ]
+      }
+    ],
     "condition_immunities": [],
     "senses": {
       "blindsight": 30,
@@ -42951,6 +45380,13 @@
     "damage_resistances": [],
     "damage_immunities": [
       "poison"
+    ],
+    "immunities": [
+      {
+        "types": [
+          "poison"
+        ]
+      }
     ],
     "condition_immunities": [
       "poisoned"
