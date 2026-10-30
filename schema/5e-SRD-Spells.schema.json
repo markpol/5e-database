@@ -27,6 +27,23 @@
       "type": "string",
       "translatable": true
     },
+    "range_ft": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "string",
+          "enum": [
+            "self",
+            "touch",
+            "sight",
+            "special",
+            "unlimited"
+          ]
+        }
+      ]
+    },
     "components": {
       "type": "array",
       "items": {
@@ -44,12 +61,59 @@
       "type": "string",
       "translatable": true
     },
+    "duration_data": {
+      "type": "object",
+      "properties": {
+        "unit": {
+          "type": "string",
+          "enum": [
+            "instantaneous",
+            "round",
+            "minute",
+            "hour",
+            "day",
+            "until_dispelled",
+            "special"
+          ]
+        },
+        "length": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "unit"
+      ],
+      "additionalProperties": false
+    },
     "concentration": {
       "type": "boolean"
     },
     "casting_time": {
       "type": "string",
       "translatable": true
+    },
+    "casting_time_data": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string",
+          "enum": [
+            "action",
+            "bonus_action",
+            "reaction",
+            "minute",
+            "hour"
+          ]
+        }
+      },
+      "required": [
+        "amount",
+        "unit"
+      ],
+      "additionalProperties": false
     },
     "level": {
       "type": "number"

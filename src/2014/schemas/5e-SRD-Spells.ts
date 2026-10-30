@@ -13,18 +13,39 @@ const SpellDCSchema = z.strictObject({
   desc: translatable(z.string()).optional(),
 });
 
+/** A distance in feet, or the word for a range that is not a distance. See docs/spell-mechanics.md. */
+const SpellRangeFtSchema = z.union([
+  z.number(),
+  z.enum(['self', 'touch', 'sight', 'special', 'unlimited']),
+]);
+
+/** `casting_time` as an amount of a unit. */
+const SpellCastingTimeDataSchema = z.strictObject({
+  amount: z.number(),
+  unit: z.enum(['action', 'bonus_action', 'reaction', 'minute', 'hour']),
+});
+
+/** `duration` as a length of a unit; `length` is absent for the units that are not a length of time. */
+const SpellDurationDataSchema = z.strictObject({
+  unit: z.enum(['instantaneous', 'round', 'minute', 'hour', 'day', 'until_dispelled', 'special']),
+  length: z.number().optional(),
+});
+
 export const SpellSchema = z.strictObject({
   index: z.string(),
   name: translatable(z.string()),
   desc: translatable(z.array(z.string())),
   higher_level: translatable(z.array(z.string())).optional(),
   range: translatable(z.string()),
+  range_ft: SpellRangeFtSchema.optional(),
   components: z.array(z.string()),
   material: translatable(z.string()).optional(),
   ritual: z.boolean(),
   duration: translatable(z.string()),
+  duration_data: SpellDurationDataSchema.optional(),
   concentration: z.boolean(),
   casting_time: translatable(z.string()),
+  casting_time_data: SpellCastingTimeDataSchema.optional(),
   level: z.number(),
   attack_type: translatable(z.string()).optional(),
   damage: z.array(SpellDamageSchema).optional(),
