@@ -263,6 +263,30 @@ describe('effects', () => {
     }
   });
 
+  it('state attunement in the field exactly when the first line of the text does', () => {
+    // The hammer of thunderbolts needs attunement only for one of its properties, so its first line does not say it.
+    for (const item of magicItems) {
+      const needsAttunement = /requires attunement/i.test(item.desc[0]);
+      expect(item.requires_attunement === true, item.index).toBe(needsAttunement);
+    }
+  });
+
+  it('follow the attunement of the flame tongue and the frost brand', () => {
+    for (const index of ['flame-tongue', 'frost-brand']) {
+      const item = magicItems.find((i) => i.index === index)!;
+      expect(item.desc[0], index).toMatch(/requires attunement/);
+      expect(item.requires_attunement, index).toBe(true);
+      expect(item.effects!.map((e) => e.activation), index).toEqual(['attuned']);
+    }
+  });
+
+  it('give the gauntlets of ogre power a Strength score of 19 in the text and in the data', () => {
+    const item = magicItems.find((i) => i.index === 'gauntlets-of-ogre-power')!;
+    expect(item.desc.join(' ')).toMatch(/Your Strength score is 19/);
+    expect(item.effect!.ability_score_modifier!.amount.total).toBe(19);
+    expect(item.effects![0].ability).toEqual({ ability: 'str', op: 'set', value: 19 });
+  });
+
   it('keep every value of the old effect and enchantment', () => {
     for (const item of magicItems.filter((i) => i.effects)) {
       const effects = item.effects!;
@@ -369,8 +393,7 @@ describe('effects', () => {
         if (amount.max !== undefined) expect(text, item.index).toMatch(`maximum of ${amount.max}`);
       }
     }
-    // The old `total` of the gauntlets of ogre power is 29 and its text says 19; `effects` follows the text.
-    expect(differs).toEqual(['gauntlets-of-ogre-power']);
+    expect(differs).toEqual([]);
   });
 
   it('map the damage of a consumable of the equipment', () => {

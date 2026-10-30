@@ -236,6 +236,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 6,
     "cost_cp": 600000,
     "related": [
@@ -463,6 +464,7 @@
       "quantity": 18000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 65,
     "cost_cp": 1800000,
     "uses": {
@@ -521,6 +523,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 55,
     "cost_cp": 600000,
     "related": [
@@ -560,6 +563,7 @@
       "quantity": 1500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 65,
     "cost_cp": 150000,
     "related": [
@@ -597,6 +601,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 6,
     "cost_cp": 600000,
     "related": [
@@ -1160,6 +1165,7 @@
       "quantity": 8000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 800000,
     "related": [
@@ -1532,6 +1538,7 @@
       "quantity": 4000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 400000,
     "related": [
@@ -1623,6 +1630,7 @@
       "quantity": 4000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 400000,
     "related": [
@@ -1716,6 +1724,7 @@
       "quantity": 1500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 150000,
     "related": [
@@ -1753,6 +1762,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 600000,
     "related": [
@@ -1854,6 +1864,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 2500000,
     "related": [
@@ -1930,6 +1941,7 @@
       "quantity": 5000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 500000,
     "uses": {
@@ -1972,6 +1984,7 @@
       "quantity": 60000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 6000000,
     "related": [
@@ -2201,6 +2214,7 @@
       "quantity": 2000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 200000,
     "proficiency_ids": [
@@ -2277,6 +2291,7 @@
       "quantity": 24000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 2400000,
     "proficiency_ids": [
@@ -2324,6 +2339,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 65,
     "cost_cp": 600000,
     "related": [
@@ -2427,6 +2443,7 @@
       "quantity": 4000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 45,
     "cost_cp": 400000,
     "proficiency_ids": [
@@ -3426,6 +3443,7 @@
       "quantity": 16000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 1600000,
     "related": [
@@ -3565,6 +3583,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 250000,
     "uses": {
@@ -3647,7 +3666,7 @@
     ],
     "url": "/api/2014/magic-items/eyes-of-the-eagle",
     "weight": 0,
-    "requires_attunement": false,
+    "requires_attunement": true,
     "cost": {
       "quantity": 2500,
       "unit": "gp"
@@ -3661,7 +3680,7 @@
     "cost_cp": 250000,
     "effects": [
       {
-        "activation": "equipped",
+        "activation": "attuned",
         "skill_check": {
           "skill": "investigation",
           "advantage": true
@@ -3737,11 +3756,12 @@
       }
     },
     "url": "/api/2014/magic-items/flame-tongue",
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 500000,
     "effects": [
       {
-        "activation": "equipped",
+        "activation": "attuned",
         "attack": {
           "extra_damage": [
             {
@@ -3841,16 +3861,17 @@
     "effect": {
       "damage_type_resistance": "fire",
       "duration": {
-        "unit": "while equipped",
+        "unit": "while attuned",
         "length": 1
       }
     },
     "url": "/api/2014/magic-items/frost-brand",
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 220000,
     "effects": [
       {
-        "activation": "equipped",
+        "activation": "attuned",
         "resistances": [
           "fire"
         ],
@@ -3912,7 +3933,7 @@
       "ability_score_modifier": {
         "ability": "str",
         "amount": {
-          "total": 29
+          "total": 19
         }
       },
       "duration": {
@@ -4038,6 +4059,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 250000,
     "related": [
@@ -4238,6 +4260,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 250000,
     "related": [
@@ -4271,6 +4294,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 250000,
     "related": [
@@ -4310,6 +4334,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 2500000,
     "related": [
@@ -4375,6 +4400,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 250000,
     "uses": {
@@ -4418,6 +4444,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 600000,
     "uses": {
@@ -4462,6 +4489,7 @@
       "quantity": 24000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 2400000,
     "related": [
@@ -4882,6 +4910,7 @@
       "quantity": 24000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 2400000,
     "related": [
@@ -4920,6 +4949,7 @@
       "quantity": 4000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 400000,
     "related": [
@@ -4992,6 +5022,7 @@
       "quantity": 4000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 400000,
     "uses": {
@@ -5039,6 +5070,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 600000,
     "related": [
@@ -5437,6 +5469,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 250000,
     "uses": {
@@ -5552,6 +5585,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 250000,
     "related": [
@@ -5622,6 +5656,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 600000,
     "related": [
@@ -5656,6 +5691,7 @@
       "quantity": 16000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 1600000,
     "related": [
@@ -5695,6 +5731,7 @@
       "quantity": 16000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 1600000,
     "related": [
@@ -5832,6 +5869,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 250000,
     "uses": {
@@ -5928,6 +5966,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 250000,
     "related": [
@@ -6035,6 +6074,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 250000,
     "uses": {
@@ -6078,6 +6118,7 @@
       "quantity": 24000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 65,
     "cost_cp": 2400000,
     "uses": {
@@ -7789,6 +7830,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 7500000,
     "related": [
@@ -7867,6 +7909,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 7500000,
     "uses": {
@@ -7917,6 +7960,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 7500000,
     "uses": {
@@ -7967,6 +8011,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 7500000,
     "uses": {
@@ -8016,6 +8061,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 7500000,
     "uses": {
@@ -8065,6 +8111,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 7500000,
     "uses": {
@@ -8108,6 +8155,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 600000,
     "uses": {
@@ -8151,6 +8199,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 600000,
     "related": [
@@ -8184,6 +8233,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 600000,
     "related": [
@@ -8217,6 +8267,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 7500000,
     "related": [
@@ -8250,6 +8301,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 250000,
     "related": [
@@ -8285,6 +8337,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 250000,
     "related": [
@@ -8390,6 +8443,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 2500000,
     "related": [
@@ -8486,6 +8540,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 600000,
     "related": [
@@ -9021,6 +9076,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 2500000,
     "uses": {
@@ -9066,6 +9122,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 600000,
     "related": [
@@ -9099,6 +9156,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 7500000,
     "related": [
@@ -9159,6 +9217,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 2500000,
     "related": [
@@ -9193,6 +9252,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 600000,
     "uses": {
@@ -9273,6 +9333,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 250000,
     "related": [
@@ -9334,6 +9395,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 600000,
     "related": [
@@ -9376,6 +9438,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 600000,
     "related": [
@@ -9409,6 +9472,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 2500000,
     "uses": {
@@ -9454,6 +9518,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 2500000,
     "related": [
@@ -9491,6 +9556,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 7500000,
     "related": [
@@ -9576,6 +9642,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 2500000,
     "related": [
@@ -9613,6 +9680,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 2500000,
     "uses": {
@@ -9665,6 +9733,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 7500000,
     "related": [
@@ -9698,6 +9767,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 600000,
     "uses": {
@@ -9841,6 +9911,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 7500000,
     "uses": {
@@ -9882,6 +9953,7 @@
       "quantity": 16000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 1600000,
     "related": [
@@ -9920,6 +9992,7 @@
       "quantity": 1500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 6,
     "cost_cp": 150000,
     "related": [
@@ -9957,6 +10030,7 @@
       "unit": "gp"
     },
     "url": "/api/2014/magic-items/slippers-of-spider-climbing",
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 500000,
     "related": [
@@ -10479,6 +10553,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 6,
     "cost_cp": 600000,
     "related": [
@@ -10554,6 +10629,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 600000,
     "related": [
@@ -10589,6 +10665,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 2500000,
     "uses": {
@@ -10634,6 +10711,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 2500000,
     "uses": {
@@ -10678,6 +10756,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 600000,
     "uses": {
@@ -10731,6 +10810,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 2500000,
     "uses": {
@@ -10775,6 +10855,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 2500000,
     "uses": {
@@ -10820,6 +10901,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 2500000,
     "uses": {
@@ -10874,6 +10956,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 7500000,
     "uses": {
@@ -10919,6 +11002,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 2500000,
     "related": [
@@ -10960,6 +11044,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 600000,
     "uses": {
@@ -11008,6 +11093,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 2500000,
     "related": [
@@ -11042,6 +11128,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 600000,
     "uses": {
@@ -11123,6 +11210,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 250000,
     "related": [
@@ -11158,6 +11246,7 @@
       "quantity": 4000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 400000,
     "related": [
@@ -11195,6 +11284,7 @@
       "quantity": 4000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 400000,
     "related": [
@@ -11234,6 +11324,7 @@
       "quantity": 16000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 1600000,
     "related": [
@@ -11276,6 +11367,7 @@
       "quantity": 4000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 400000,
     "related": [
@@ -11315,6 +11407,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 7500000,
     "uses": {
@@ -11356,6 +11449,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 7500000,
     "related": [
@@ -11391,6 +11485,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 7500000,
     "uses": {
@@ -11594,6 +11689,7 @@
       "quantity": 1000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 4,
     "cost_cp": 100000,
     "uses": {
@@ -11702,6 +11798,7 @@
       "quantity": 24000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 2400000,
     "related": [
@@ -11741,6 +11838,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 600000,
     "uses": {
@@ -11785,6 +11883,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 600000,
     "uses": {
@@ -11830,6 +11929,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 600000,
     "uses": {
@@ -11874,6 +11974,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 600000,
     "uses": {
@@ -11918,6 +12019,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 600000,
     "uses": {
@@ -12041,6 +12143,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 600000,
     "uses": {
@@ -12085,6 +12188,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 2500000,
     "uses": {
@@ -12181,6 +12285,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 250000,
     "related": [
@@ -12214,6 +12319,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 250000,
     "related": [
@@ -12247,6 +12353,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 600000,
     "related": [
@@ -12280,6 +12387,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 2500000,
     "related": [
@@ -12314,6 +12422,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 250000,
     "uses": {
@@ -12383,6 +12492,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 600000,
     "uses": {
@@ -12618,6 +12728,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 250000,
     "related": [
@@ -12652,6 +12763,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 2500000,
     "related": [
@@ -12735,6 +12847,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 600000,
     "related": [
@@ -12773,6 +12886,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 250000,
     "related": [
@@ -13238,6 +13352,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 600000,
     "uses": {
@@ -13329,6 +13444,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 7500000,
     "related": [
@@ -13364,6 +13480,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 7500000,
     "related": [
@@ -13399,6 +13516,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 7500000,
     "uses": {
@@ -13443,6 +13561,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 3,
     "cost_cp": 7500000,
     "related": [
@@ -13496,6 +13615,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 1,
     "cost_cp": 600000,
     "uses": {
@@ -14838,6 +14958,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 600000,
     "uses": {
@@ -15007,6 +15128,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 600000,
     "related": [
@@ -15044,6 +15166,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 2500000,
     "related": [
@@ -15080,6 +15203,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 2500000,
     "related": [
@@ -15116,6 +15240,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 600000,
     "related": [
@@ -15152,6 +15277,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 2500000,
     "related": [
@@ -15189,6 +15315,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 7500000,
     "related": [
@@ -15225,6 +15352,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 2500000,
     "related": [
@@ -15261,6 +15389,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 2500000,
     "related": [
@@ -15297,6 +15426,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 2500000,
     "related": [
@@ -15333,6 +15463,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 7500000,
     "related": [
@@ -15369,6 +15500,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 600000,
     "related": [
@@ -15405,6 +15537,7 @@
       "quantity": 75000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 7500000,
     "related": [
@@ -15443,6 +15576,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 600000,
     "related": [
@@ -15479,6 +15613,7 @@
       "quantity": 25000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 2500000,
     "related": [
@@ -15515,6 +15650,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 0,
     "cost_cp": 600000,
     "related": [
@@ -15672,6 +15808,7 @@
       "quantity": 2500,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 250000,
     "related": [
@@ -15705,6 +15842,7 @@
       "quantity": 6000,
       "unit": "gp"
     },
+    "requires_attunement": true,
     "weight": 2,
     "cost_cp": 600000,
     "related": [
@@ -15750,6 +15888,7 @@
       "***Destroying an Orb.*** An Orb of Dragonkind appears fragile but is impervious to most damage, including the attacks and breath weapons of dragons. A disintegrate spell or one good hit from a +3 magic weapon is sufficient to destroy an orb, however."
     ],
     "url": "/api/2014/magic-items/orb-of-dragonkind",
+    "requires_attunement": true,
     "weight": 3,
     "uses": {
       "count": 7,

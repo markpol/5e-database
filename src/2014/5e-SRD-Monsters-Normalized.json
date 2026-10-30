@@ -25719,8 +25719,7 @@
       },
       {
         "name": "Lightning Storm (Costs 2 Actions)",
-        "desc": "The kraken uses Lightning Storm.",
-        "attack_bonus": 0
+        "desc": "The kraken uses Lightning Storm."
       },
       {
         "name": "Ink Cloud (Costs 3 Actions)",
@@ -30014,7 +30013,6 @@
             "long"
           ]
         },
-        "attack_bonus": 0,
         "area": {
           "shape": "sphere",
           "radius_ft": 5
@@ -40017,8 +40015,7 @@
     "legendary_actions": [
       {
         "name": "Move",
-        "desc": "The vampire moves up to its speed without provoking opportunity attacks.",
-        "attack_bonus": 0
+        "desc": "The vampire moves up to its speed without provoking opportunity attacks."
       },
       {
         "name": "Unarmed Strike",
@@ -40229,8 +40226,7 @@
     "legendary_actions": [
       {
         "name": "Move",
-        "desc": "The vampire moves up to its speed without provoking opportunity attacks.",
-        "attack_bonus": 0
+        "desc": "The vampire moves up to its speed without provoking opportunity attacks."
       },
       {
         "name": "Unarmed Strike",
@@ -40385,8 +40381,7 @@
     "legendary_actions": [
       {
         "name": "Move",
-        "desc": "The vampire moves up to its speed without provoking opportunity attacks.",
-        "attack_bonus": 0
+        "desc": "The vampire moves up to its speed without provoking opportunity attacks."
       },
       {
         "name": "Unarmed Strike",
