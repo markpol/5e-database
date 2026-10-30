@@ -102,6 +102,10 @@ export type Condition = {
         next?: string | undefined;
         prev?: string | undefined;
     } | undefined;
+    related?: {
+        collection: "rule-sections";
+        index: string;
+    }[] | undefined;
 };
 
 declare const data: Condition[];

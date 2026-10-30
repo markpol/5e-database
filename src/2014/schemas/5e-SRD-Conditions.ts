@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { translatable } from '../../schemas/common';
+import { RuleLinkSchema, translatable } from '../../schemas/common';
 import {
   AbilitySchema,
   CONDITION_ATTACK_KINDS,
@@ -170,4 +170,6 @@ export const ConditionSchema = z.strictObject({
       prev: z.string().optional(),
     })
     .optional(),
+  // Rule sections that give the rules for this condition or use it. Never translated.
+  related: z.array(RuleLinkSchema).min(1).optional(),
 });

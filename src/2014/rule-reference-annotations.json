@@ -1,0 +1,601 @@
+[
+  {
+    "collection": "rules",
+    "index": "equipment",
+    "order": 1,
+    "summary": "Coins and what they buy, how to price and swap goods, and the rules for objects, poisons and magic items: attunement, wearing, activating and sentient items."
+  },
+  {
+    "collection": "rules",
+    "index": "using-ability-scores",
+    "order": 2,
+    "summary": "The six abilities and how a roll turns them into results: ability checks, advantage and disadvantage, the proficiency bonus and saving throws."
+  },
+  {
+    "collection": "rules",
+    "index": "adventuring",
+    "order": 3,
+    "summary": "Rules for exploration and downtime: keeping time, travelling, environmental hazards, traps, diseases and madness, resting, and what characters do between adventures."
+  },
+  {
+    "collection": "rules",
+    "index": "combat",
+    "order": 4,
+    "summary": "How a fight is run: turn order, moving and acting, making attacks, cover, damage and healing, and special cases such as mounts and underwater fights."
+  },
+  {
+    "collection": "rules",
+    "index": "spellcasting",
+    "order": 5,
+    "summary": "How magic works at the table: what a spell is, how slots and preparation limit casting, and the steps and options for casting a spell."
+  },
+  {
+    "collection": "rules",
+    "index": "appendix",
+    "order": 6,
+    "summary": "Background for campaigns that range across worlds: sample pantheons of gods from history and myth, and the planes of existence."
+  },
+  {
+    "collection": "rule-sections",
+    "index": "standard-exchange-rates",
+    "summary": "A table of how the coin types convert into one another.",
+    "related": [
+      {
+        "to": "between-adventures",
+        "anchor": "Lifestyle Expenses"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "objects",
+    "summary": "How to treat an object as a target: its armor class, its hit points and the damage it takes.",
+    "related": [
+      {
+        "to": "damage-and-healing",
+        "anchor": "Damage Resistance and Vulnerability"
+      },
+      {
+        "to": "the-environment",
+        "anchor": "Interacting with Objects"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "poisons",
+    "summary": "The ways a poison is delivered, with sample poisons and their prices and effects.",
+    "related": [
+      {
+        "to": "saving-throws",
+        "anchor": "Saving Throws"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "attunement",
+    "summary": "How a character bonds with a magic item that calls for it, the limit on attuned items, and how attunement ends.",
+    "related": [
+      {
+        "to": "wearing-and-wielding-items",
+        "anchor": "Wearing and Wielding Items"
+      },
+      {
+        "to": "activating-an-item",
+        "anchor": "Activating an Item"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "wearing-and-wielding-items",
+    "summary": "What counts as wearing or wielding a magic item, how many items of a kind work at once, and how paired items work.",
+    "related": [
+      {
+        "to": "attunement",
+        "anchor": "Attunement"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "activating-an-item",
+    "summary": "The ways a magic item is triggered: command words, consumables, spells and charges.",
+    "related": [
+      {
+        "to": "attunement",
+        "anchor": "Attunement"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "sentient-magic-items",
+    "summary": "Items with a mind of their own: how to generate their abilities, senses, alignment and purpose, and what happens when their will conflicts with the wielder's.",
+    "related": [
+      {
+        "to": "attunement",
+        "anchor": "Attunement"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "ability-scores-and-modifiers",
+    "summary": "How an ability score is turned into the modifier that is added to rolls.",
+    "related": [
+      {
+        "to": "ability-checks",
+        "anchor": "Ability Checks"
+      },
+      {
+        "to": "using-each-ability",
+        "anchor": "Using Each Ability"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "advantage-and-disadvantage",
+    "summary": "Rolling a second d20 and keeping the higher or lower result, what grants each, and how several sources combine.",
+    "related": [
+      {
+        "to": "ability-checks",
+        "anchor": "Ability Checks"
+      },
+      {
+        "to": "saving-throws",
+        "anchor": "Saving Throws"
+      },
+      {
+        "to": "making-an-attack",
+        "anchor": "Attack Rolls"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "proficiency-bonus",
+    "summary": "The level-based bonus that applies to skills, saving throws and attacks a character is trained in, and the limits on how it is added.",
+    "related": [
+      {
+        "to": "ability-checks",
+        "anchor": "Skills"
+      },
+      {
+        "to": "saving-throws",
+        "anchor": "Saving Throws"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "ability-checks",
+    "summary": "How a check is rolled, typical difficulty classes, contests, the skills tied to each ability, passive checks, and working together or as a group.",
+    "related": [
+      {
+        "to": "using-each-ability",
+        "anchor": "Strength Checks"
+      },
+      {
+        "to": "proficiency-bonus",
+        "anchor": "Proficiency Bonus"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "using-each-ability",
+    "summary": "What each of the six abilities covers in play, with the checks, attack and damage rolls, carrying capacity, armor, hit points and spellcasting that each one drives.",
+    "exclude_keywords": ["lightly"],
+    "related": [
+      {
+        "to": "ability-checks",
+        "anchor": "Ability Checks"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "saving-throws",
+    "summary": "The roll made to resist a harmful effect, how the ability and the difficulty class are chosen, and the effect of proficiency.",
+    "related": [
+      {
+        "to": "advantage-and-disadvantage",
+        "anchor": "Advantage and Disadvantage"
+      },
+      {
+        "to": "proficiency-bonus",
+        "anchor": "Proficiency Bonus"
+      },
+      {
+        "to": "casting-a-spell",
+        "anchor": "Spell Saving Throws"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "time",
+    "summary": "The scales of time used in play: rounds in a fight, minutes while exploring, and hours or days while travelling.",
+    "related": [
+      {
+        "to": "movement",
+        "anchor": "Travel Pace"
+      },
+      {
+        "to": "resting",
+        "anchor": "Short Rest"
+      },
+      {
+        "to": "between-adventures",
+        "anchor": "Downtime Activities"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "movement",
+    "summary": "Speed over longer distances: travel pace and its effects, difficult terrain, forced marches, climbing, swimming, crawling and jumping.",
+    "related": [
+      {
+        "to": "time",
+        "anchor": "Time"
+      },
+      {
+        "to": "movement-and-position",
+        "anchor": "Difficult Terrain"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "the-environment",
+    "summary": "Hazards of the surroundings: falling, suffocating, vision and light, the senses that see in the dark, food and water, and interacting with objects.",
+    "related": [
+      {
+        "to": "objects",
+        "anchor": "Statistics for Objects"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "traps",
+    "summary": "Running traps: how they are triggered, found and disabled, their effects and save DCs, damage by severity, complex traps, and a set of sample traps.",
+    "related": [
+      {
+        "to": "poisons",
+        "anchor": "Poisons"
+      },
+      {
+        "to": "ability-checks",
+        "anchor": "Passive Checks"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "diseases",
+    "summary": "How a disease spreads and is endured, with the sample diseases cackle fever, sewer plague and sight rot.",
+    "related": [
+      {
+        "to": "madness",
+        "anchor": "Indefinite Madness"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "madness",
+    "summary": "Mind-shattering effects of three lengths, short-term, long-term and indefinite, with tables of effects and the ways to cure them."
+  },
+  {
+    "collection": "rule-sections",
+    "index": "resting",
+    "summary": "What a short rest and a long rest are, how long each takes, and what a character regains from them.",
+    "related": [
+      {
+        "to": "damage-and-healing",
+        "anchor": "Healing"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "between-adventures",
+    "summary": "Downtime between adventures: lifestyle costs, and activities such as crafting, working a trade, recuperating, researching and training.",
+    "related": [
+      {
+        "to": "standard-exchange-rates",
+        "anchor": "Standard Exchange Rates"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "the-order-of-combat",
+    "summary": "The sequence of a fight: who is surprised, how initiative sets the turn order, and what a creature may do on its turn, including bonus actions, other activity and reactions."
+  },
+  {
+    "collection": "rule-sections",
+    "index": "movement-and-position",
+    "summary": "Moving in a fight: splitting movement, difficult terrain, falling prone, passing other creatures, flying, creature size and space, squeezing through tight gaps, and handling nearby objects.",
+    "related": [
+      {
+        "to": "movement",
+        "anchor": "Travel Pace"
+      },
+      {
+        "to": "the-environment",
+        "anchor": "Interacting with Objects"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "actions-in-combat",
+    "summary": "The actions open to a creature on its turn, such as attacking, casting a spell, dashing, disengaging, dodging, helping, hiding, readying, searching and using an object.",
+    "related": [
+      {
+        "to": "casting-a-spell",
+        "anchor": "Casting Time"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "making-an-attack",
+    "summary": "How an attack is resolved: the attack roll and its modifiers, unseen targets, ranged and melee attacks, opportunity attacks, fighting with two weapons, grappling and shoving.",
+    "related": [
+      {
+        "to": "cover",
+        "anchor": "Cover"
+      },
+      {
+        "to": "damage-and-healing",
+        "anchor": "Damage Rolls"
+      },
+      {
+        "to": "advantage-and-disadvantage",
+        "anchor": "Advantage and Disadvantage"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "cover",
+    "summary": "How obstacles shield a target, and the defensive bonuses that half cover and three-quarters cover give, with total cover blocking targeting outright.",
+    "related": [
+      {
+        "to": "making-an-attack",
+        "anchor": "Attack Rolls"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "damage-and-healing",
+    "summary": "Hit points, damage rolls and critical hits, damage types, resistance and vulnerability, healing, and what happens at 0 hit points, including death saves, stabilizing, knockouts and temporary hit points.",
+    "exclude_keywords": ["more", "than one target"],
+    "related": [
+      {
+        "to": "resting",
+        "anchor": "Long Rest"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "mounted-combat",
+    "summary": "Getting on and off a mount, and how a controlled or an independent mount behaves during a fight.",
+    "related": [
+      {
+        "to": "movement-and-position",
+        "anchor": "Difficult Terrain"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "underwater-combat",
+    "summary": "How fighting while immersed in water changes attacks and which damage is resisted.",
+    "related": [
+      {
+        "to": "making-an-attack",
+        "anchor": "Ranged Attacks"
+      },
+      {
+        "to": "movement",
+        "anchor": "Climbing, Swimming, and Crawling"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "what-is-a-spell",
+    "summary": "Spell levels, spell slots, known and prepared spells, casting at a higher level, casting in armor, cantrips and rituals.",
+    "related": [
+      {
+        "to": "casting-a-spell",
+        "anchor": "Casting Time"
+      },
+      {
+        "to": "resting",
+        "anchor": "Long Rest"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "casting-a-spell",
+    "summary": "The elements of casting a spell: casting time, range, components, duration and concentration, targets, areas of effect, saving throws, attack rolls, combined effects and the schools of magic.",
+    "related": [
+      {
+        "to": "what-is-a-spell",
+        "anchor": "Spell Slots"
+      },
+      {
+        "to": "making-an-attack",
+        "anchor": "Attack Rolls"
+      },
+      {
+        "to": "saving-throws",
+        "anchor": "Saving Throws"
+      },
+      {
+        "to": "cover",
+        "anchor": "Cover"
+      }
+    ]
+  },
+  {
+    "collection": "rule-sections",
+    "index": "fantasy-historical-pantheons",
+    "summary": "Sample pantheons from Celtic, Greek, Egyptian and Norse tradition, each with a list of deities."
+  },
+  {
+    "collection": "rule-sections",
+    "index": "the-planes-of-existence",
+    "summary": "The cosmology of the multiverse: the Material Plane, planar travel, and the transitive, inner and outer planes and demiplanes."
+  },
+  {
+    "collection": "conditions",
+    "index": "blinded",
+    "related": [
+      {
+        "to": "making-an-attack",
+        "anchor": "Unseen Attackers and Targets"
+      },
+      {
+        "to": "the-environment",
+        "anchor": "Vision and Light"
+      }
+    ]
+  },
+  {
+    "collection": "conditions",
+    "index": "invisible",
+    "related": [
+      {
+        "to": "making-an-attack",
+        "anchor": "Unseen Attackers and Targets"
+      },
+      {
+        "to": "the-environment",
+        "anchor": "Vision and Light"
+      }
+    ]
+  },
+  {
+    "collection": "conditions",
+    "index": "grappled",
+    "related": [
+      {
+        "to": "making-an-attack",
+        "anchor": "Grappling"
+      }
+    ]
+  },
+  {
+    "collection": "conditions",
+    "index": "prone",
+    "related": [
+      {
+        "to": "movement-and-position",
+        "anchor": "Being Prone"
+      }
+    ]
+  },
+  {
+    "collection": "conditions",
+    "index": "unconscious",
+    "related": [
+      {
+        "to": "damage-and-healing",
+        "anchor": "Falling Unconscious"
+      }
+    ]
+  },
+  {
+    "collection": "conditions",
+    "index": "incapacitated",
+    "related": [
+      {
+        "to": "casting-a-spell",
+        "anchor": "Concentration"
+      }
+    ]
+  },
+  {
+    "collection": "conditions",
+    "index": "poisoned",
+    "related": [
+      {
+        "to": "poisons",
+        "anchor": "Poisons"
+      }
+    ]
+  },
+  {
+    "collection": "conditions",
+    "index": "exhaustion",
+    "related": [
+      {
+        "to": "movement",
+        "anchor": "Forced March"
+      }
+    ]
+  },
+  {
+    "collection": "conditions",
+    "index": "concentrating",
+    "related": [
+      {
+        "to": "casting-a-spell",
+        "anchor": "Concentration"
+      }
+    ]
+  },
+  {
+    "collection": "conditions",
+    "index": "surprised",
+    "related": [
+      {
+        "to": "the-order-of-combat",
+        "anchor": "Surprise"
+      }
+    ]
+  },
+  {
+    "collection": "conditions",
+    "index": "dodging",
+    "related": [
+      {
+        "to": "actions-in-combat",
+        "anchor": "Dodge"
+      }
+    ]
+  },
+  {
+    "collection": "conditions",
+    "index": "disengaged",
+    "related": [
+      {
+        "to": "actions-in-combat",
+        "anchor": "Disengage"
+      }
+    ]
+  },
+  {
+    "collection": "conditions",
+    "index": "no-reactions",
+    "related": [
+      {
+        "to": "the-order-of-combat",
+        "anchor": "Reactions"
+      }
+    ]
+  }
+]

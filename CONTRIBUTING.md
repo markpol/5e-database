@@ -62,7 +62,9 @@ count-bearing features from the Levels rows. The ids of the class choices are de
 ([Id stability contract](#id-stability-contract)), and the structured `spellcasting` fields of the classes with
 `pnpm run derive:spellcasting` ([docs/class-spellcasting.md](docs/class-spellcasting.md)), and the `cost_cp`, `bundle_size`, `reach_ft`, `rarity.rank`, `rarity.min_level` and `effects` of the equipment and
 magic items, and the `uses` that `src/2014/item-engine-annotations.json` writes by hand, with `pnpm run derive:items`
-([docs/item-data.md](docs/item-data.md)).
+([docs/item-data.md](docs/item-data.md)). The `order`, `keywords` and `related` fields of the rules, the rule sections and
+the conditions are derived with `pnpm run derive:rules`, which also merges in the summaries and the curated links of
+`src/2014/rule-reference-annotations.json` ([docs/rule-reference.md](docs/rule-reference.md)).
 
 ## Generated id lists
 

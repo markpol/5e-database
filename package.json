@@ -139,6 +139,7 @@
     "derive:spells": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs src/2014/derive-spell-mechanics.ts",
     "derive:classes": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs src/2014/derive-class-choices.ts",
     "derive:spellcasting": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs src/2014/derive-class-spellcasting.ts",
+    "derive:rules": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs src/2014/derive-rule-reference.ts",
     "derive:items": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs src/2014/derive-item-data.ts",
     "derive:features": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs src/2014/derive-feature-engine.ts",
     "generate": "node --experimental-strip-types --no-warnings --import ./scripts/register-ts.mjs scripts/generate-schemas.ts",

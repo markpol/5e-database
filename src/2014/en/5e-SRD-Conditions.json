@@ -26,7 +26,17 @@
           "mode": "advantage"
         }
       ]
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "charmed",
@@ -117,7 +127,13 @@
         "value": 0,
         "ignores_bonuses": true
       }
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "incapacitated",
@@ -127,7 +143,17 @@
     "effects": {
       "cannot": ["take_actions", "take_reactions"]
     },
-    "removes": ["concentrating"]
+    "removes": ["concentrating"],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "poisons"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "invisible",
@@ -150,7 +176,17 @@
           "mode": "disadvantage"
         }
       ]
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "paralyzed",
@@ -250,6 +286,16 @@
       {
         "feature": "natures-ward"
       }
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "poisons"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "traps"
+      }
     ]
   },
   {
@@ -283,7 +329,17 @@
           "beyond_ft": 5
         }
       ]
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement-and-position"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "mounted-combat"
+      }
+    ]
   },
   {
     "index": "restrained",
@@ -381,7 +437,17 @@
       ]
     },
     "removes": ["enraged", "sacred-weapon"],
-    "adds": ["prone"]
+    "adds": ["prone"],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "poisons"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "damage-and-healing"
+      }
+    ]
   },
   {
     "index": "exhaustion",
@@ -402,7 +468,21 @@
     "url": "/api/2014/conditions/exhaustion",
     "effects": {
       "reason": "Umbrella entry for the six levels; the effects of each level are on exhaustion-1 to exhaustion-6."
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "diseases"
+      }
+    ]
   },
   {
     "index": "exhaustion-1",
@@ -420,7 +500,21 @@
     "exhaustion_level": {
       "level": 1,
       "next": "exhaustion-2"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "diseases"
+      }
+    ]
   },
   {
     "index": "exhaustion-2",
@@ -442,7 +536,21 @@
       "level": 2,
       "next": "exhaustion-3",
       "prev": "exhaustion-1"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "diseases"
+      }
+    ]
   },
   {
     "index": "exhaustion-3",
@@ -476,7 +584,21 @@
       "level": 3,
       "next": "exhaustion-4",
       "prev": "exhaustion-2"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "diseases"
+      }
+    ]
   },
   {
     "index": "exhaustion-4",
@@ -514,7 +636,21 @@
       "level": 4,
       "next": "exhaustion-5",
       "prev": "exhaustion-3"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "diseases"
+      }
+    ]
   },
   {
     "index": "exhaustion-5",
@@ -554,7 +690,21 @@
       "level": 5,
       "next": "exhaustion-6",
       "prev": "exhaustion-4"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "diseases"
+      }
+    ]
   },
   {
     "index": "exhaustion-6",
@@ -595,7 +745,21 @@
     "exhaustion_level": {
       "level": 6,
       "prev": "exhaustion-5"
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "diseases"
+      }
+    ]
   },
   {
     "index": "enraged",
@@ -699,7 +863,13 @@
           "while": ["can_see_attacker", "not_incapacitated", "speed_above_0"]
         }
       ]
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "actions-in-combat"
+      }
+    ]
   },
   {
     "index": "infested",
@@ -808,7 +978,13 @@
     "url": "/api/2014/conditions/disengaged",
     "effects": {
       "provokes_opportunity_attacks": false
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "actions-in-combat"
+      }
+    ]
   },
   {
     "index": "surprised",
@@ -819,7 +995,13 @@
     "url": "/api/2014/conditions/surprised",
     "effects": {
       "cannot": ["move", "take_actions", "take_reactions"]
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "the-order-of-combat"
+      }
+    ]
   },
   {
     "index": "no-reactions",
@@ -828,7 +1010,13 @@
     "url": "/api/2014/conditions/no-reactions",
     "effects": {
       "cannot": ["take_reactions"]
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "the-order-of-combat"
+      }
+    ]
   },
   {
     "index": "concentrating",
@@ -840,7 +1028,13 @@
     "url": "/api/2014/conditions/concentrating",
     "effects": {
       "reason": "Marks that a creature is holding a concentration spell. The text gives a saving throw after damage and the ways it ends, which are not a roll modifier, speed change or restriction; incapacitated lists it under removes."
-    }
+    },
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "blessed",

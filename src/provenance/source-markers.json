@@ -351,6 +351,18 @@
           "source": "dd",
           "note": "What happens when the condition ends, from the text of the rage and Frenzy features."
         },
+        "related": {
+          "source": "dd",
+          "note": "Links to the rule sections that name the condition or give its rules, read from the section text and from the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
+        },
+        "related[].collection": {
+          "source": "dd",
+          "note": "Links to the rule sections that name the condition or give its rules, read from the section text and from the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
+        },
+        "related[].index": {
+          "source": "dd",
+          "note": "Links to the rule sections that name the condition or give its rules, read from the section text and from the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
+        },
         "removes": {
           "source": "dd",
           "note": "Conditions this one ends when it is applied, from the SRD concentration rules and the text of the rage and Sacred Weapon features."
@@ -932,10 +944,50 @@
       "source": "srd"
     },
     "src/2014/en/5e-SRD-Rule-Sections.json": {
-      "source": "srd"
+      "source": "srd",
+      "fields": {
+        "keywords": {
+          "source": "dd",
+          "note": "Search terms read from the headings and bold terms of desc by derive-rule-reference.ts (docs/rule-reference.md)."
+        },
+        "order": {
+          "source": "dd",
+          "note": "Reading order of the section across all sections, from 1, following the order of the subsections of its rule (set by derive-rule-reference.ts)."
+        },
+        "related": {
+          "source": "dd",
+          "note": "Links to other rule sections, read from quoted headings in desc and from the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
+        },
+        "related[].collection": {
+          "source": "dd",
+          "note": "Links to other rule sections, read from quoted headings in desc and from the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
+        },
+        "related[].index": {
+          "source": "dd",
+          "note": "Links to other rule sections, read from quoted headings in desc and from the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
+        },
+        "summary": {
+          "source": "dd",
+          "note": "One or two sentences written for this data, in original wording; not SRD text (merged in from src/2014/rule-reference-annotations.json)."
+        }
+      }
     },
     "src/2014/en/5e-SRD-Rules.json": {
-      "source": "srd"
+      "source": "srd",
+      "fields": {
+        "keywords": {
+          "source": "dd",
+          "note": "Search terms read from the name and the subsection names by derive-rule-reference.ts (docs/rule-reference.md)."
+        },
+        "order": {
+          "source": "dd",
+          "note": "Reading order of the rule, from 1, following the chapter order of the SRD 5.1 (src/2014/rule-reference-annotations.json, set by derive-rule-reference.ts)."
+        },
+        "summary": {
+          "source": "dd",
+          "note": "One or two sentences written for this data, in original wording; not SRD text (merged in from src/2014/rule-reference-annotations.json)."
+        }
+      }
     },
     "src/2014/en/5e-SRD-Skills.json": {
       "source": "srd"
@@ -996,6 +1048,9 @@
       "source": "dd"
     },
     "src/2014/monster-engine-annotations.json": {
+      "source": "dd"
+    },
+    "src/2014/rule-reference-annotations.json": {
       "source": "dd"
     },
     "src/2014/spell-engine-annotations.json": {

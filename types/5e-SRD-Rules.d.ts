@@ -11,6 +11,9 @@ export type Rule = {
         note?: string | undefined;
     }[];
     url: string;
+    order?: number | undefined;
+    summary?: string | undefined;
+    keywords?: string[] | undefined;
 };
 
 declare const data: Rule[];

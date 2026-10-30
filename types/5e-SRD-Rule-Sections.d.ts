@@ -5,6 +5,13 @@ export type RuleSection = {
     name: string;
     desc: string;
     url: string;
+    order?: number | undefined;
+    summary?: string | undefined;
+    keywords?: string[] | undefined;
+    related?: {
+        collection: "rule-sections";
+        index: string;
+    }[] | undefined;
 };
 
 declare const data: RuleSection[];
