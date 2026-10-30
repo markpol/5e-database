@@ -3,6 +3,7 @@ import srcMonsters from './en/5e-SRD-Monsters.json' with { type: 'json' };
 import type { z } from 'zod';
 import type { MonsterSchema } from './schemas/5e-SRD-Monsters';
 import engineAnnotations from './monster-engine-annotations.json' with { type: 'json' };
+import { deriveAbilityEffects, deriveDamageRules } from './derive-monster-effects';
 console.log(`Loaded ${srcMonsters.length} monsters to normalize from 5e-SRD-Monsters.json`);
 
 const outputFilePath = "./src/2014/5e-SRD-Monsters-Normalized.json";
@@ -261,6 +262,35 @@ export function applyEngineAnnotations(
   }
 }
 
+// Structured effects, read from the text of each trait and action (docs/monster-effects.md).
+const EFFECT_SECTIONS = ['special_abilities', 'actions', 'legendary_actions', 'reactions'] as const;
+
+function applyAbilityEffects(monster: Record<string, any>) {
+  for (const section of EFFECT_SECTIONS) {
+    for (const ability of monster[section] ?? []) {
+      Object.assign(ability, deriveAbilityEffects(ability));
+    }
+  }
+}
+
+// The damage_* lists as rules, each next to the list it restates.
+const DAMAGE_RULE_FIELDS = [
+  ['damage_vulnerabilities', 'vulnerabilities'],
+  ['damage_resistances', 'resistances'],
+  ['damage_immunities', 'immunities'],
+] as const;
+
+function withDamageRules<T extends Record<string, any>>(monster: T): T {
+  const result: Record<string, any> = {};
+  for (const [key, value] of Object.entries(monster)) {
+    result[key] = value;
+    const field = DAMAGE_RULE_FIELDS.find(([source]) => source === key);
+    const rules = field && deriveDamageRules(value);
+    if (field && rules) result[field[1]] = rules;
+  }
+  return result as T;
+}
+
 export function normalizeMonster(monster: Monster) {
   console.log(`    Normalizing monster: ${monster.name}`);
 
@@ -323,8 +353,9 @@ export function normalizeMonster(monster: Monster) {
     actions: monster.actions?.map(normalizeAction),
   };
   applyEngineAnnotations(normalizedMonster);
+  applyAbilityEffects(normalizedMonster);
 
-  return normalizedMonster;
+  return withDamageRules(normalizedMonster);
 }
 
 export function normalizeMonsters(monsters: unknown[]) {

@@ -14,6 +14,7 @@ removed.
 | --- | --- | --- |
 | Monster actions | `5e-SRD-Monsters.json` | Added `attack_type` ("Melee"/"Ranged") to actions; added `bonus_actions` (parsed list of bonus-action ids); added `environments` (habitat string); `speed.*` and `senses.{darkvision,blindsight,truesight}` changed from strings (`"40 ft."`) to plain integers (`40`); added `weapon`, `weapon_kind`, and `supply` (equipment-linked weapon/ammunition annotations) |
 | Monster normalization | `5e-SRD-Monsters-Normalized.json` (new file), `normalize-monsters.ts` (new script), `monster-engine-annotations.json` (new file), `verify-normalize.sh` (new script) | Adds a pre-flattened copy of the monster data that collapses nested reference objects (`dc_type`, `damage_type`, `condition_type`, spellcasting `ability`, etc.) down to their plain string `index`, normalizes where `dc`/`condition` sit on an action, merges in extra annotations (e.g. conditions applied on a failed save, riders, grapples, a pull distance, weapon annotations) from `monster-engine-annotations.json`, and derives the structure of attacks (`attack_type`, `attack_kind`, `reach_ft`, `range`) and of areas of effect (`area`) from the action text; `src/2014/tests/normalized-monsters.test.ts` regenerates from the English source and asserts it matches the committed normalized file byte-for-byte |
+| Monster effects | `5e-SRD-Monsters-Normalized.json`, `derive-monster-effects.ts` (new script) | Added to traits and actions of the normalized monsters `trigger`, `regeneration` (7 traits), `damage_dice_at_half_hp` (10 swarm attacks), `detach_after_damage` (1), `reduce_max_hp` (8), `reduction_dice` (6) and `resistances` (1), and to each monster `vulnerabilities`, `resistances` and `immunities`, the damage lists as rules of the form `{ types, unless? }`, all read from the SRD text (see [monster-effects.md](monster-effects.md)) |
 | Spells | `5e-SRD-Spells.json`, `derive-spell-mechanics.ts` (new script), `derive-spell-combat.ts` (new script), `derive-spell-engine.ts` (new script), `spell-engine-annotations.json` (new file) | Added `range_ft`, `casting_time_data` and `duration_data` to every spell, derived from the `range`, `casting_time` and `duration` text; added missing `damage`, `dc` and `area_of_effect` entries, fixed two areas, and added `heal_at_slot_level_data`, `damage[].damage_at_slot_level_data`, `temp_hp_at_slot_level` and `targets_at_slot_level`, derived from the description and `higher_level` text; added `engine` (`kind`, `target`, `campaign`, `npc`), a hand-written classification of 117 combat spells (see [spell-mechanics.md](spell-mechanics.md)) |
 | Conditions | `5e-SRD-Conditions.json` | Added 17 new condition entries: 6 numbered exhaustion levels (`exhaustion-1`…`exhaustion-6`) plus `enraged`, `frenzied`, `reckless`, `dodging`, `infested`, `swallowed`, `drained-of-strength`, `weakened`, `slowed`, `drained-of-life`, `disengaged`, `surprised`; added 14 more for states that the SRD text implies (`no-reactions`, `concentrating` and 12 effects of spells and of the Sacred Weapon option); added a structured `effects` object to every condition, and `exhaustion_level`, `removes`, `adds`, `on_remove` and `immune_if_feature` where the text defines them (see "Conditions: structured effects") |
 | Equipment | `5e-SRD-Equipment.json` | Added `material`, `stackable`, `is_consumable`, `effect` (damage-on-use) to select items; removed 40 non-combat items (mounts, vehicles, barding, tack/harness, stabling/feed) |
@@ -281,6 +282,33 @@ the text with a saving throw and has neither a structured `condition` nor an ent
 - `src/2014/tests/monster-riders.test.ts` checks that every dice-and-type damage entry of an action, ability, attack or
   option appears in that entry's own text, and pins the damage of the crocodile's, duergar's, eagle's, ettercap's,
   flying snake's, gibbering mouther's, hunter shark's, noble's, plesiosaurus's and scorpion's attacks.
+
+## Monster effects: `trigger`, `regeneration`, `reduce_max_hp`, `damage_dice_at_half_hp`, damage rules
+
+The normalized monsters state the mechanics below as optional fields, read by `derive-monster-effects.ts` from the
+trait or action text; the English file is unchanged. [monster-effects.md](monster-effects.md) gives every field, its
+values and units, the abilities left out and why.
+
+- `regeneration` on the 7 traits that regain hit points at the start of a turn (oni, shield guardian, troll, the four
+  vampires), with the minimum hit points, the damage that stops it, and where it does not work.
+- `damage_dice_at_half_hp` on the Bites or Beaks of the 10 swarms, the dice used when the swarm has half of its hit points
+  or fewer.
+- `detach_after_damage` on the stirge's Blood Drain (10 hit points).
+- `reduce_max_hp` on 8 actions that reduce the hit point maximum by the damage taken (clay golem, specter,
+  succubus/incubus, three vampires, wight, wraith) and `reduction_dice` on 6 that reduce it by dice, every 24 hours or once
+  (death dog, giant diseased rat, mummy, mummy lord, night hag, otyugh).
+- `trigger` on each of those 33 entries says when the effect applies. The nightmare's Confer Fire Resistance has
+  `resistances` of fire and the trigger `while_ridden`.
+- `vulnerabilities`, `resistances` and `immunities` on a monster restate its `damage_vulnerabilities`,
+  `damage_resistances` and `damage_immunities` as rules `{ types, unless?, only_from? }`: for example "bludgeoning,
+  piercing, and slashing from nonmagical weapons that aren't silvered" is types `bludgeoning`, `piercing` and
+  `slashing` with `unless` of `magical` and `silvered`. 14, 70 and 136 monsters have them (14, 102 and 146 rules). Two
+  entries (the archmage's stoneskin resistance and the rakshasa's vulnerability to magic weapons of good wielders) are
+  left in the string lists only.
+
+`src/2014/tests/monster-effects.test.ts` checks every value against the English text and fails when a trait or action
+mentions one of these mechanics, or a way hit points change, and has neither a field nor an entry in its list of 53
+excluded abilities.
 
 ## New conditions
 

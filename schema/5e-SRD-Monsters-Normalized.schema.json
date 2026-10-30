@@ -145,6 +145,120 @@
         "type": "string"
       }
     },
+    "vulnerabilities": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "types": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "unless": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "magical",
+                "silvered",
+                "adamantine"
+              ]
+            }
+          },
+          "only_from": {
+            "type": "string",
+            "enum": [
+              "spells"
+            ]
+          }
+        },
+        "required": [
+          "types"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "resistances": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "types": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "unless": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "magical",
+                "silvered",
+                "adamantine"
+              ]
+            }
+          },
+          "only_from": {
+            "type": "string",
+            "enum": [
+              "spells"
+            ]
+          }
+        },
+        "required": [
+          "types"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "immunities": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "types": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "unless": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "magical",
+                "silvered",
+                "adamantine"
+              ]
+            }
+          },
+          "only_from": {
+            "type": "string",
+            "enum": [
+              "spells"
+            ]
+          }
+        },
+        "required": [
+          "types"
+        ],
+        "additionalProperties": false
+      }
+    },
     "condition_immunities": {
       "type": "array",
       "items": {
@@ -820,6 +934,184 @@
           },
           "relentless_max_damage": {
             "type": "number"
+          },
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "start_of_turn",
+              "on_hit",
+              "on_failed_save",
+              "on_damage",
+              "every_24_hours",
+              "after_1_hour_of_visions",
+              "half_hit_points_or_fewer",
+              "while_ridden"
+            ]
+          },
+          "regeneration": {
+            "type": "object",
+            "properties": {
+              "hit_points": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "min_hit_points": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "suppressed_by": {
+                "type": "object",
+                "properties": {
+                  "damage_types": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "sources": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "holy_water"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "damage_types"
+                ],
+                "additionalProperties": false
+              },
+              "disabled_in": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "sunlight",
+                    "running_water"
+                  ]
+                }
+              },
+              "dies_only_without_regenerating": {
+                "type": "boolean",
+                "const": true
+              }
+            },
+            "required": [
+              "hit_points"
+            ],
+            "additionalProperties": false
+          },
+          "detach_after_damage": {
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "maximum": 9007199254740991
+          },
+          "reduction_dice": {
+            "type": "object",
+            "properties": {
+              "dice": {
+                "type": "string",
+                "pattern": "^\\d+d\\d+$"
+              },
+              "every_hours": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "repeat_save": {
+                "type": "boolean",
+                "const": true
+              },
+              "until": {
+                "type": "string",
+                "enum": [
+                  "long_rest",
+                  "greater_restoration",
+                  "disease_cured",
+                  "remove_curse"
+                ]
+              }
+            },
+            "required": [
+              "dice",
+              "until"
+            ],
+            "additionalProperties": false
+          },
+          "reduce_max_hp": {
+            "type": "object",
+            "properties": {
+              "by": {
+                "type": "string",
+                "const": "damage_taken"
+              },
+              "damage_type": {
+                "type": "string"
+              },
+              "until": {
+                "type": "string",
+                "enum": [
+                  "long_rest",
+                  "greater_restoration",
+                  "disease_cured",
+                  "remove_curse"
+                ]
+              }
+            },
+            "required": [
+              "by",
+              "until"
+            ],
+            "additionalProperties": false
+          },
+          "damage_dice_at_half_hp": {
+            "type": "string",
+            "pattern": "^\\d+d\\d+$"
+          },
+          "resistances": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "types": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "unless": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "magical",
+                      "silvered",
+                      "adamantine"
+                    ]
+                  }
+                },
+                "only_from": {
+                  "type": "string",
+                  "enum": [
+                    "spells"
+                  ]
+                }
+              },
+              "required": [
+                "types"
+              ],
+              "additionalProperties": false
+            }
           }
         },
         "required": [
@@ -2748,6 +3040,184 @@
                 }
               ]
             }
+          },
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "start_of_turn",
+              "on_hit",
+              "on_failed_save",
+              "on_damage",
+              "every_24_hours",
+              "after_1_hour_of_visions",
+              "half_hit_points_or_fewer",
+              "while_ridden"
+            ]
+          },
+          "regeneration": {
+            "type": "object",
+            "properties": {
+              "hit_points": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "min_hit_points": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "suppressed_by": {
+                "type": "object",
+                "properties": {
+                  "damage_types": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "sources": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "holy_water"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "damage_types"
+                ],
+                "additionalProperties": false
+              },
+              "disabled_in": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "sunlight",
+                    "running_water"
+                  ]
+                }
+              },
+              "dies_only_without_regenerating": {
+                "type": "boolean",
+                "const": true
+              }
+            },
+            "required": [
+              "hit_points"
+            ],
+            "additionalProperties": false
+          },
+          "detach_after_damage": {
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "maximum": 9007199254740991
+          },
+          "reduction_dice": {
+            "type": "object",
+            "properties": {
+              "dice": {
+                "type": "string",
+                "pattern": "^\\d+d\\d+$"
+              },
+              "every_hours": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "repeat_save": {
+                "type": "boolean",
+                "const": true
+              },
+              "until": {
+                "type": "string",
+                "enum": [
+                  "long_rest",
+                  "greater_restoration",
+                  "disease_cured",
+                  "remove_curse"
+                ]
+              }
+            },
+            "required": [
+              "dice",
+              "until"
+            ],
+            "additionalProperties": false
+          },
+          "reduce_max_hp": {
+            "type": "object",
+            "properties": {
+              "by": {
+                "type": "string",
+                "const": "damage_taken"
+              },
+              "damage_type": {
+                "type": "string"
+              },
+              "until": {
+                "type": "string",
+                "enum": [
+                  "long_rest",
+                  "greater_restoration",
+                  "disease_cured",
+                  "remove_curse"
+                ]
+              }
+            },
+            "required": [
+              "by",
+              "until"
+            ],
+            "additionalProperties": false
+          },
+          "damage_dice_at_half_hp": {
+            "type": "string",
+            "pattern": "^\\d+d\\d+$"
+          },
+          "resistances": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "types": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "unless": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "magical",
+                      "silvered",
+                      "adamantine"
+                    ]
+                  }
+                },
+                "only_from": {
+                  "type": "string",
+                  "enum": [
+                    "spells"
+                  ]
+                }
+              },
+              "required": [
+                "types"
+              ],
+              "additionalProperties": false
+            }
           }
         },
         "required": [
@@ -3244,6 +3714,184 @@
               "duration"
             ],
             "additionalProperties": false
+          },
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "start_of_turn",
+              "on_hit",
+              "on_failed_save",
+              "on_damage",
+              "every_24_hours",
+              "after_1_hour_of_visions",
+              "half_hit_points_or_fewer",
+              "while_ridden"
+            ]
+          },
+          "regeneration": {
+            "type": "object",
+            "properties": {
+              "hit_points": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "min_hit_points": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "suppressed_by": {
+                "type": "object",
+                "properties": {
+                  "damage_types": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "sources": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "holy_water"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "damage_types"
+                ],
+                "additionalProperties": false
+              },
+              "disabled_in": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "sunlight",
+                    "running_water"
+                  ]
+                }
+              },
+              "dies_only_without_regenerating": {
+                "type": "boolean",
+                "const": true
+              }
+            },
+            "required": [
+              "hit_points"
+            ],
+            "additionalProperties": false
+          },
+          "detach_after_damage": {
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "maximum": 9007199254740991
+          },
+          "reduction_dice": {
+            "type": "object",
+            "properties": {
+              "dice": {
+                "type": "string",
+                "pattern": "^\\d+d\\d+$"
+              },
+              "every_hours": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "repeat_save": {
+                "type": "boolean",
+                "const": true
+              },
+              "until": {
+                "type": "string",
+                "enum": [
+                  "long_rest",
+                  "greater_restoration",
+                  "disease_cured",
+                  "remove_curse"
+                ]
+              }
+            },
+            "required": [
+              "dice",
+              "until"
+            ],
+            "additionalProperties": false
+          },
+          "reduce_max_hp": {
+            "type": "object",
+            "properties": {
+              "by": {
+                "type": "string",
+                "const": "damage_taken"
+              },
+              "damage_type": {
+                "type": "string"
+              },
+              "until": {
+                "type": "string",
+                "enum": [
+                  "long_rest",
+                  "greater_restoration",
+                  "disease_cured",
+                  "remove_curse"
+                ]
+              }
+            },
+            "required": [
+              "by",
+              "until"
+            ],
+            "additionalProperties": false
+          },
+          "damage_dice_at_half_hp": {
+            "type": "string",
+            "pattern": "^\\d+d\\d+$"
+          },
+          "resistances": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "types": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "unless": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "magical",
+                      "silvered",
+                      "adamantine"
+                    ]
+                  }
+                },
+                "only_from": {
+                  "type": "string",
+                  "enum": [
+                    "spells"
+                  ]
+                }
+              },
+              "required": [
+                "types"
+              ],
+              "additionalProperties": false
+            }
           }
         },
         "required": [
@@ -3357,6 +4005,184 @@
               "duration"
             ],
             "additionalProperties": false
+          },
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "start_of_turn",
+              "on_hit",
+              "on_failed_save",
+              "on_damage",
+              "every_24_hours",
+              "after_1_hour_of_visions",
+              "half_hit_points_or_fewer",
+              "while_ridden"
+            ]
+          },
+          "regeneration": {
+            "type": "object",
+            "properties": {
+              "hit_points": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "min_hit_points": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "suppressed_by": {
+                "type": "object",
+                "properties": {
+                  "damage_types": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "sources": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "holy_water"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "damage_types"
+                ],
+                "additionalProperties": false
+              },
+              "disabled_in": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "sunlight",
+                    "running_water"
+                  ]
+                }
+              },
+              "dies_only_without_regenerating": {
+                "type": "boolean",
+                "const": true
+              }
+            },
+            "required": [
+              "hit_points"
+            ],
+            "additionalProperties": false
+          },
+          "detach_after_damage": {
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "maximum": 9007199254740991
+          },
+          "reduction_dice": {
+            "type": "object",
+            "properties": {
+              "dice": {
+                "type": "string",
+                "pattern": "^\\d+d\\d+$"
+              },
+              "every_hours": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "repeat_save": {
+                "type": "boolean",
+                "const": true
+              },
+              "until": {
+                "type": "string",
+                "enum": [
+                  "long_rest",
+                  "greater_restoration",
+                  "disease_cured",
+                  "remove_curse"
+                ]
+              }
+            },
+            "required": [
+              "dice",
+              "until"
+            ],
+            "additionalProperties": false
+          },
+          "reduce_max_hp": {
+            "type": "object",
+            "properties": {
+              "by": {
+                "type": "string",
+                "const": "damage_taken"
+              },
+              "damage_type": {
+                "type": "string"
+              },
+              "until": {
+                "type": "string",
+                "enum": [
+                  "long_rest",
+                  "greater_restoration",
+                  "disease_cured",
+                  "remove_curse"
+                ]
+              }
+            },
+            "required": [
+              "by",
+              "until"
+            ],
+            "additionalProperties": false
+          },
+          "damage_dice_at_half_hp": {
+            "type": "string",
+            "pattern": "^\\d+d\\d+$"
+          },
+          "resistances": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "types": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "unless": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "magical",
+                      "silvered",
+                      "adamantine"
+                    ]
+                  }
+                },
+                "only_from": {
+                  "type": "string",
+                  "enum": [
+                    "spells"
+                  ]
+                }
+              },
+              "required": [
+                "types"
+              ],
+              "additionalProperties": false
+            }
           }
         },
         "required": [

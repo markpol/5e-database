@@ -164,7 +164,9 @@ Because the schemas are strict, a new field is added in the schema and the data 
    generated; never edit it by hand. `normalized-monsters.test.ts` fails if the
    committed file is stale and shows the expected differences, and `schemas.test.ts` validates it against
    `src/2014/schemas/5e-SRD-Monsters-Normalized.ts`, so a shape change goes in that schema too. Extra monster
-   annotations go in `src/2014/monster-engine-annotations.json`, not in the English file.
+   annotations go in `src/2014/monster-engine-annotations.json`, not in the English file. The effects read from trait and
+   action text and the damage rules come from `src/2014/derive-monster-effects.ts`; see
+   [docs/monster-effects.md](docs/monster-effects.md).
 5. Mark the field in `src/provenance/source-markers.json` under its file's `fields`, with `"source": "dd"` and a
    `note` saying what it holds. A new entry (for example a condition the SRD does not have) goes under `records`,
    keyed by its `index`. A new data file needs its own entry. Update the table in [NOTICE.md](NOTICE.md) to match.
