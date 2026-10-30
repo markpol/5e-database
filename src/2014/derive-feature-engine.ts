@@ -17,6 +17,7 @@ type Annotation = {
   engine?: unknown;
   heal?: unknown;
   granted_proficiencies?: unknown;
+  granted_languages?: unknown;
 };
 
 // `engine` covers the features of class levels 1 to 5, which are the ones a low-level character has.
@@ -32,15 +33,15 @@ const SPELLCASTING =
 const PREPARED_SPELLS = 'spells that are always prepared, which the subclass spell list names';
 const OPTION_PARENT = 'the choice of an option, whose own feature record carries the mechanics';
 const DRAGON_ANCESTOR =
-  'the choice of a dragon, whose damage type is used by features of 6th level and above, and a language';
+  'the choice of a dragon, whose own feature record carries the damage type and the language';
 const EXPERTISE =
   'a doubled proficiency bonus for chosen proficiencies, the choice of which is in expertise_options';
-const LANGUAGE = 'a language, which is not a proficiency';
 const EXPLORATION =
   'a benefit outside combat (travel, tracking, climbing, copying spells) with no structured counterpart';
 
 // The features of levels 1 to 5 that have no `engine`, and why. A feature of these levels with neither an `engine`
-// nor another structured field (`grants_asi`, `heal`, `granted_proficiencies`) must be listed here.
+// nor another structured field (`grants_asi`, `heal`, `granted_proficiencies`, `granted_languages`, `damage_type`)
+// must be listed here.
 export const ENGINE_EXCLUDED: Record<string, string> = {
   'primal-path': SUBCLASS_CHOICE,
   'bard-college': SUBCLASS_CHOICE,
@@ -86,20 +87,8 @@ export const ENGINE_EXCLUDED: Record<string, string> = {
   'eldritch-invocations': OPTION_PARENT,
   'pact-boon': OPTION_PARENT,
   'dragon-ancestor': DRAGON_ANCESTOR,
-  'dragon-ancestor-black---acid-damage': DRAGON_ANCESTOR,
-  'dragon-ancestor-blue---lightning-damage': DRAGON_ANCESTOR,
-  'dragon-ancestor-brass---fire-damage': DRAGON_ANCESTOR,
-  'dragon-ancestor-bronze---lightning-damage': DRAGON_ANCESTOR,
-  'dragon-ancestor-copper---acid-damage': DRAGON_ANCESTOR,
-  'dragon-ancestor-gold---fire-damage': DRAGON_ANCESTOR,
-  'dragon-ancestor-green---poison-damage': DRAGON_ANCESTOR,
-  'dragon-ancestor-red---fire-damage': DRAGON_ANCESTOR,
-  'dragon-ancestor-silver---cold-damage': DRAGON_ANCESTOR,
-  'dragon-ancestor-white---cold-damage': DRAGON_ANCESTOR,
   'bard-expertise-1': EXPERTISE,
   'rogue-expertise-1': EXPERTISE,
-  druidic: LANGUAGE,
-  'thieves-cant': LANGUAGE,
   'favored-enemy-1-type': EXPLORATION,
   'natural-explorer-1-terrain-type': EXPLORATION,
   'second-story-work': EXPLORATION,
@@ -115,7 +104,18 @@ export const ENGINE_EXCLUDED: Record<string, string> = {
 };
 
 const ASI_NAME = 'Ability Score Improvement';
-const DERIVED_KEYS = ['engine', 'grants_asi', 'heal', 'granted_proficiencies'] as const;
+const DERIVED_KEYS = [
+  'engine',
+  'grants_asi',
+  'heal',
+  'granted_proficiencies',
+  'granted_languages',
+  'damage_type',
+] as const;
+
+// The name of a dragon ancestor says its damage type: "Dragon Ancestor: Black - Acid Damage".
+const DRAGON_ANCESTOR_NAME = /^Dragon Ancestor: \w+ - (\w+) Damage$/;
+const dragonDamageType = (name: string) => DRAGON_ANCESTOR_NAME.exec(name)?.[1].toLowerCase();
 
 function deriveFeature(feature: Feature): Feature {
   const annotation = FEATURE_ANNOTATIONS[feature.index] ?? {};
@@ -126,6 +126,8 @@ function deriveFeature(feature: Feature): Feature {
     grants_asi: feature.name === ASI_NAME ? true : undefined,
     heal: annotation.heal,
     granted_proficiencies: annotation.granted_proficiencies,
+    granted_languages: annotation.granted_languages,
+    damage_type: dragonDamageType(feature.name),
   };
   const featureSpecific = Object.fromEntries(
     Object.entries({ ...existing, ...derived }).filter(([, value]) => value !== undefined)

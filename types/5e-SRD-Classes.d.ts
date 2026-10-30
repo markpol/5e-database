@@ -66,6 +66,20 @@ export type Class = {
             name: string;
             desc: string[];
         }[];
+        caster_kind?: "half" | "full" | "pact" | undefined;
+        prepared_formula?: {
+            class_levels: "full" | "half_rounded_down";
+            minimum: number;
+        } | undefined;
+        spellbook_size?: {
+            initial: number;
+            per_level: number;
+        } | undefined;
+        subclass_spells?: {
+            mode: "none" | "always_prepared" | "expanded_list";
+            with_spells: string[];
+            without_spells: string[];
+        } | undefined;
     } | undefined;
     spells?: string | undefined;
 };

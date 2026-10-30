@@ -1009,7 +1009,15 @@
             "You can use a musical instrument (see Equipment) as a spellcasting focus for your bard spells."
           ]
         }
-      ]
+      ],
+      "caster_kind": "full",
+      "subclass_spells": {
+        "mode": "none",
+        "with_spells": [],
+        "without_spells": [
+          "lore"
+        ]
+      }
     },
     "spells": "/api/2014/classes/bard/spells",
     "url": "/api/2014/classes/bard"
@@ -1388,7 +1396,19 @@
             "You can use a holy symbol (see Equipment) as a spellcasting focus for your cleric spells."
           ]
         }
-      ]
+      ],
+      "caster_kind": "full",
+      "prepared_formula": {
+        "class_levels": "full",
+        "minimum": 1
+      },
+      "subclass_spells": {
+        "mode": "always_prepared",
+        "with_spells": [
+          "life"
+        ],
+        "without_spells": []
+      }
     },
     "spells": "/api/2014/classes/cleric/spells",
     "url": "/api/2014/classes/cleric"
@@ -1756,7 +1776,19 @@
             "You can use a druidic focus (see chapter 5, \"Equipment\") as a spellcasting focus for your druid spells."
           ]
         }
-      ]
+      ],
+      "caster_kind": "full",
+      "prepared_formula": {
+        "class_levels": "full",
+        "minimum": 1
+      },
+      "subclass_spells": {
+        "mode": "always_prepared",
+        "with_spells": [
+          "land"
+        ],
+        "without_spells": []
+      }
     },
     "spells": "/api/2014/classes/druid/spells",
     "url": "/api/2014/classes/druid"
@@ -2974,7 +3006,19 @@
             "You can use a holy symbol as a spellcasting focus for your paladin spells."
           ]
         }
-      ]
+      ],
+      "caster_kind": "half",
+      "prepared_formula": {
+        "class_levels": "half_rounded_down",
+        "minimum": 1
+      },
+      "subclass_spells": {
+        "mode": "always_prepared",
+        "with_spells": [
+          "devotion"
+        ],
+        "without_spells": []
+      }
     },
     "spells": "/api/2014/classes/paladin/spells",
     "url": "/api/2014/classes/paladin"
@@ -3386,7 +3430,15 @@
             "Spell attack modifier = your proficiency bonus + your Wisdom modifier."
           ]
         }
-      ]
+      ],
+      "caster_kind": "half",
+      "subclass_spells": {
+        "mode": "none",
+        "with_spells": [],
+        "without_spells": [
+          "hunter"
+        ]
+      }
     },
     "spells": "/api/2014/classes/ranger/spells",
     "url": "/api/2014/classes/ranger"
@@ -4134,7 +4186,15 @@
             "You can use an arcane focus as a spellcasting focus for your sorcerer spells."
           ]
         }
-      ]
+      ],
+      "caster_kind": "full",
+      "subclass_spells": {
+        "mode": "none",
+        "with_spells": [],
+        "without_spells": [
+          "draconic"
+        ]
+      }
     },
     "spells": "/api/2014/classes/sorcerer/spells",
     "url": "/api/2014/classes/sorcerer"
@@ -4473,7 +4533,15 @@
             "You can use an arcane focus as a spellcasting focus for your warlock spells."
           ]
         }
-      ]
+      ],
+      "caster_kind": "pact",
+      "subclass_spells": {
+        "mode": "expanded_list",
+        "with_spells": [
+          "fiend"
+        ],
+        "without_spells": []
+      }
     },
     "spells": "/api/2014/classes/warlock/spells",
     "url": "/api/2014/classes/warlock"
@@ -4769,7 +4837,23 @@
             "You can use an arcane focus as a spellcasting focus for your wizard spells."
           ]
         }
-      ]
+      ],
+      "caster_kind": "full",
+      "prepared_formula": {
+        "class_levels": "full",
+        "minimum": 1
+      },
+      "spellbook_size": {
+        "initial": 6,
+        "per_level": 2
+      },
+      "subclass_spells": {
+        "mode": "none",
+        "with_spells": [],
+        "without_spells": [
+          "evocation"
+        ]
+      }
     },
     "spells": "/api/2014/classes/wizard/spells",
     "url": "/api/2014/classes/wizard"

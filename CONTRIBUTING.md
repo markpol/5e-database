@@ -59,7 +59,8 @@ regenerate the normalized file with `pnpm normalize:monsters` (below). The struc
 written in `src/2014/feature-engine-annotations.json` and merged into the features with `pnpm run derive:features`
 ([docs/feature-mechanics.md](docs/feature-mechanics.md)); the same command derives the `by_level` ids of the
 count-bearing features from the Levels rows. The ids of the class choices are derived with `pnpm run derive:classes`
-([Id stability contract](#id-stability-contract)).
+([Id stability contract](#id-stability-contract)), and the structured `spellcasting` fields of the classes with
+`pnpm run derive:spellcasting` ([docs/class-spellcasting.md](docs/class-spellcasting.md)).
 
 ## Generated id lists
 

@@ -1,6 +1,6 @@
 # Class feature mechanics
 
-Class features in `src/2014/en/5e-SRD-Features.json` state their rules as text (`desc`). Four optional fields in
+Class features in `src/2014/en/5e-SRD-Features.json` state their rules as text (`desc`). Six optional fields in
 `feature_specific` restate the mechanics of that text as data:
 
 | Field                   | What it says                                                                  | Features |
@@ -9,29 +9,32 @@ Class features in `src/2014/en/5e-SRD-Features.json` state their rules as text (
 | `heal`                  | The hit points the feature restores                                           | 9        |
 | `granted_proficiencies` | The proficiencies the feature gives                                           | 5        |
 | `grants_asi`            | `true` on every Ability Score Improvement                                     | 63       |
+| `granted_languages`     | The languages the feature gives                                               | 15       |
+| `damage_type`           | The damage type of a dragon ancestor                                          | 10       |
 
 They are additive: no existing field, record or id is changed, and the existing `feature_specific` fields
 (`expertise_options`, `subfeature_options` and the others) keep their place. They are English-only (nothing in them
 is translated, so the translation overlays do not carry them) and marked `dd` in `src/provenance/source-markers.json`.
 
-`engine`, `heal` and `granted_proficiencies` are written by hand, one record for each feature, in
+`engine`, `heal`, `granted_proficiencies` and `granted_languages` are written by hand, one record for each feature, in
 `src/2014/feature-engine-annotations.json` (the feature texts have no fixed wording to parse) and merged into the
 features by `src/2014/derive-feature-engine.ts` (`pnpm run derive:features`); `grants_asi` is set by the same script on
-every feature named Ability Score Improvement. The Zod schema in `src/2014/schemas/5e-SRD-Features.ts` fixes the
+every feature named Ability Score Improvement, and `damage_type` from the name of each dragon ancestor. The Zod schema in `src/2014/schemas/5e-SRD-Features.ts` fixes the
 vocabulary below. `src/2014/tests/feature-engine.test.ts` checks the values against the feature text and the Levels
 rows, with rules that do not share code with the derivation.
 
 ## Scope
 
 `engine` covers the features of class levels 1 to 5, the levels at which a character starts: 182 of the 407 features,
-in the twelve classes and their subclasses. 99 have an `engine`. 15 more have only `grants_asi` (the twelve 4th-level
-Ability Score Improvements) or only `granted_proficiencies` (Bonus Proficiency, Bonus Proficiencies and Beguiling
-Influence). The other 68 have no mechanic these fields can state, and are listed with the reason in
+in the twelve classes and their subclasses. 99 have an `engine`. 27 more have only `grants_asi` (the twelve 4th-level
+Ability Score Improvements), only `granted_proficiencies` (Bonus Proficiency, Bonus Proficiencies and Beguiling
+Influence), or only `granted_languages` (Druidic, Thieves' Cant) or `granted_languages` and `damage_type` (the ten
+dragon ancestors). The other 56 have no mechanic these fields can state, and are listed with the reason in
 `ENGINE_EXCLUDED` of `derive-feature-engine.ts` and in [What is not structured](#what-is-not-structured). The test
 fails if a feature of these levels has no structured field and is not listed, and if a feature above 5th level has an
 `engine`.
 
-`heal`, `granted_proficiencies` and `grants_asi` cover every level.
+`heal`, `granted_proficiencies`, `granted_languages`, `damage_type` and `grants_asi` cover every level.
 
 A feature that the SRD splits into one record per count or die (`action-surge-1-use`, `bardic-inspiration-d8`,
 `wild-shape-cr-1-2-or-below-no-flying-speed`) has the same `engine` on each record of these levels. Features with the
@@ -272,8 +275,44 @@ proficiencies of the owner's choice.
 | Diamond Soul               | the six `saving-throw-*` proficiencies |
 | Slippery Mind              | `saving-throw-wis`                     |
 
-Languages are not proficiencies in this data, so Druidic, Thieves' Cant and the Draconic of Dragon Ancestor are not
-listed. The proficiency with the pact weapon (Pact of the Blade) has no proficiency record to point at.
+Languages are not proficiencies in this data, so they are not listed here: see `granted_languages`. The proficiency with the pact weapon (Pact of the Blade) has no proficiency record to point at.
+
+## `granted_languages`
+
+A list of the languages a feature gives. Each item is one of:
+
+- a reference into `5e-SRD-Languages.json` (`index`, `name`, `url`);
+- `{ secret_language }` for a secret language of a class, which has no record in `5e-SRD-Languages.json`: `druidic` or
+  `thieves-cant`;
+- `{ choose, from: "favored_enemy_languages" }` for a number of languages of the owner's choice, taken from the
+  languages the favored enemies speak.
+
+| Feature                                    | `granted_languages`                              |
+| ------------------------------------------ | ------------------------------------------------ |
+| Druidic                                    | `{ secret_language: "druidic" }`                 |
+| Thieves' Cant                              | `{ secret_language: "thieves-cant" }`            |
+| Dragon Ancestor (each of the ten dragons)  | `draconic`                                       |
+| Favored Enemy (1 type, 2 types, 3 enemies) | `{ choose: 1, from: "favored_enemy_languages" }` |
+
+The Favored Enemy text gives one language when the feature is gained and one more with each additional favored enemy
+(at 6th and 14th level), and each of the three records carries the text, so each has `choose: 1`; the language need not
+exist ("if they speak one at all"). The parent record Dragon Ancestor is the choice of a dragon and has no
+`granted_languages`: the chosen dragon's record does. Tongue of the Sun and Moon (understanding all spoken languages)
+is not a language granted and is left as text.
+
+## `damage_type`
+
+The `index` of a damage type in `5e-SRD-Damage-Types.json`, on the ten `dragon-ancestor-*` records: the damage type
+that the text says is associated with each dragon and used by features gained later. It is read from the feature name
+("Dragon Ancestor: Black - Acid Damage"), and a feature that uses it reads it from the dragon the owner chose.
+
+| Dragon           | `damage_type` |
+| ---------------- | ------------- |
+| black, copper    | `acid`        |
+| blue, bronze     | `lightning`   |
+| brass, gold, red | `fire`        |
+| green            | `poison`      |
+| silver, white    | `cold`        |
 
 ## `grants_asi`
 
@@ -281,20 +320,19 @@ listed. The proficiency with the pact weapon (Pact of the Blade) has no proficie
 
 ## What is not structured
 
-The 68 features of levels 1 to 5 without a structured field, by reason:
+The 56 features of levels 1 to 5 without a structured field, by reason:
 
-| Reason                                                                                             | Features                                                                                                                                                                                                                               |
-| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| The choice of a subclass, whose own features carry the mechanics (13)                              | Primal Path, Bard College, Divine Domain and its 2nd-level improvement, Druid Circle, Martial Archetype, Monastic Tradition, Sacred Oath, Ranger Archetype, Roguish Archetype, Sorcerous Origin, Otherworldly Patron, Arcane Tradition |
-| Spellcasting, described by the class spellcasting and the Levels spell slots (8)                   | the seven Spellcasting features, Pact Magic                                                                                                                                                                                            |
-| Spells that are always prepared, which the subclass spell list names (13)                          | Domain Spells 1 to 3, Circle Spells 1 and 2, Oath Spells, the seven lands of the Circle of the Land                                                                                                                                    |
-| One more cantrip known (1)                                                                         | Bonus Cantrip                                                                                                                                                                                                                          |
-| The choice of an option, whose own record carries the mechanics (8)                                | Fighting Style (fighter, paladin, ranger), Hunter's Prey, Metamagic, Eldritch Invocations, Pact Boon, Circle of the Land                                                                                                               |
-| A dragon ancestor: its damage type is used by features of 6th level and above, and a language (11) | Dragon Ancestor and its ten dragons                                                                                                                                                                                                    |
-| Expertise, whose choice is in `expertise_options` (2)                                              | Bard and rogue Expertise                                                                                                                                                                                                               |
-| A language (2)                                                                                     | Druidic, Thieves' Cant                                                                                                                                                                                                                 |
-| A benefit outside combat with no structured counterpart (4)                                        | Favored Enemy, Natural Explorer, Second-Story Work, Evocation Savant                                                                                                                                                                   |
-| Invocations and boons with no structured counterpart (6)                                           | Book of Ancient Secrets, Devil's Sight, Eyes of the Rune Keeper, Voice of the Chain Master, Pact of the Chain (a familiar and its attack), Pact of the Tome (three cantrips of choice)                                                 |
+| Reason                                                                               | Features                                                                                                                                                                                                                               |
+| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The choice of a subclass, whose own features carry the mechanics (13)                | Primal Path, Bard College, Divine Domain and its 2nd-level improvement, Druid Circle, Martial Archetype, Monastic Tradition, Sacred Oath, Ranger Archetype, Roguish Archetype, Sorcerous Origin, Otherworldly Patron, Arcane Tradition |
+| Spellcasting, described by the class spellcasting and the Levels spell slots (8)     | the seven Spellcasting features, Pact Magic                                                                                                                                                                                            |
+| Spells that are always prepared, which the subclass spell list names (13)            | Domain Spells 1 to 3, Circle Spells 1 and 2, Oath Spells, the seven lands of the Circle of the Land                                                                                                                                    |
+| One more cantrip known (1)                                                           | Bonus Cantrip                                                                                                                                                                                                                          |
+| The choice of an option, whose own record carries the mechanics (8)                  | Fighting Style (fighter, paladin, ranger), Hunter's Prey, Metamagic, Eldritch Invocations, Pact Boon, Circle of the Land                                                                                                               |
+| The choice of a dragon, whose own records carry the damage type and the language (1) | Dragon Ancestor                                                                                                                                                                                                                        |
+| Expertise, whose choice is in `expertise_options` (2)                                | Bard and rogue Expertise                                                                                                                                                                                                               |
+| A benefit outside combat with no structured counterpart (4)                          | Favored Enemy, Natural Explorer, Second-Story Work, Evocation Savant                                                                                                                                                                   |
+| Invocations and boons with no structured counterpart (6)                             | Book of Ancient Secrets, Devil's Sight, Eyes of the Rune Keeper, Voice of the Chain Master, Pact of the Chain (a familiar and its attack), Pact of the Tome (three cantrips of choice)                                                 |
 
 Parts of structured features that stay in the text:
 

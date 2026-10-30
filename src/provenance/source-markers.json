@@ -78,6 +78,50 @@
           "source": "dd",
           "note": "Stable id of a proficiency choice, set by derive-class-choices.ts and never renamed."
         },
+        "spellcasting.caster_kind": {
+          "source": "dd",
+          "note": "full, half or pact, from the level at which the class gets spell slots and the Pact Magic feature, set by derive-class-spellcasting.ts."
+        },
+        "spellcasting.prepared_formula": {
+          "source": "dd",
+          "note": "How many spells a prepared caster prepares, read from the Preparing and Casting Spells text by derive-class-spellcasting.ts."
+        },
+        "spellcasting.prepared_formula.class_levels": {
+          "source": "dd",
+          "note": "Whether the class level counts in full or as half rounded down."
+        },
+        "spellcasting.prepared_formula.minimum": {
+          "source": "dd",
+          "note": "The least number of prepared spells, read from the text."
+        },
+        "spellcasting.spellbook_size": {
+          "source": "dd",
+          "note": "The spells in the wizard's spellbook, set by derive-class-spellcasting.ts."
+        },
+        "spellcasting.spellbook_size.initial": {
+          "source": "dd",
+          "note": "The spells in the spellbook at 1st level, read from the Spellbook text."
+        },
+        "spellcasting.spellbook_size.per_level": {
+          "source": "dd",
+          "note": "The spells added to the spellbook for each level gained after the first. The SRD Spellbook rules state it; the wizard text of this data does not."
+        },
+        "spellcasting.subclass_spells": {
+          "source": "dd",
+          "note": "How the subclasses of the class add spells, set by derive-class-spellcasting.ts from the subclass spell lists and the subclass spells features."
+        },
+        "spellcasting.subclass_spells.mode": {
+          "source": "dd",
+          "note": "always_prepared, expanded_list or none."
+        },
+        "spellcasting.subclass_spells.with_spells": {
+          "source": "dd",
+          "note": "Indices of the subclasses that have a spell list in 5e-SRD-Subclasses."
+        },
+        "spellcasting.subclass_spells.without_spells": {
+          "source": "dd",
+          "note": "Indices of the subclasses of the class that have no spell list."
+        },
         "starting_equipment_options[].from.options[].choice.id": {
           "source": "dd",
           "note": "Stable id of a choice nested in the options of a starting-equipment choice, set by derive-class-choices.ts and never renamed."
@@ -296,9 +340,41 @@
     "src/2014/en/5e-SRD-Features.json": {
       "source": "srd",
       "fields": {
+        "feature_specific.damage_type": {
+          "source": "dd",
+          "note": "Index into 5e-SRD-Damage-Types of the damage type of a dragon ancestor, read from the name of the feature by derive-feature-engine.ts."
+        },
         "feature_specific.engine": {
           "source": "dd",
           "note": "Mechanics of a class feature of levels 1 to 5 (action cost, recharge, uses, modifiers), written by hand in feature-engine-annotations.json and merged in by derive-feature-engine.ts."
+        },
+        "feature_specific.granted_languages": {
+          "source": "dd",
+          "note": "Languages the feature gives, from its text, written in feature-engine-annotations.json and merged in by derive-feature-engine.ts."
+        },
+        "feature_specific.granted_languages[].choose": {
+          "source": "dd",
+          "note": "Number of languages of the owner's choice that the feature gives."
+        },
+        "feature_specific.granted_languages[].from": {
+          "source": "dd",
+          "note": "What the chosen languages are taken from: the languages the favored enemies speak."
+        },
+        "feature_specific.granted_languages[].index": {
+          "source": "dd",
+          "note": "The index of a language the feature gives, a reference into 5e-SRD-Languages."
+        },
+        "feature_specific.granted_languages[].name": {
+          "source": "dd",
+          "note": "The name of a language the feature gives, a reference into 5e-SRD-Languages."
+        },
+        "feature_specific.granted_languages[].secret_language": {
+          "source": "dd",
+          "note": "A secret language of a class with no record in 5e-SRD-Languages: druidic or thieves-cant."
+        },
+        "feature_specific.granted_languages[].url": {
+          "source": "dd",
+          "note": "The url of a language the feature gives, a reference into 5e-SRD-Languages."
         },
         "feature_specific.granted_proficiencies": {
           "source": "dd",

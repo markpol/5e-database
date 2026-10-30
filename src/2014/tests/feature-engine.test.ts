@@ -19,6 +19,8 @@ type FeatureSpecific = {
   grants_asi?: true;
   heal?: Heal;
   granted_proficiencies?: Granted[];
+  granted_languages?: unknown[];
+  damage_type?: string;
 };
 type Feature = {
   index: string;
@@ -80,7 +82,14 @@ describe('feature engine', () => {
   it('covers every feature of levels 1 to 5 that is not listed as excluded, and nothing above', () => {
     const structured = (f: Feature) => {
       const fs = f.feature_specific;
-      return Boolean(fs?.engine || fs?.grants_asi || fs?.heal || fs?.granted_proficiencies);
+      return Boolean(
+        fs?.engine ||
+        fs?.grants_asi ||
+        fs?.heal ||
+        fs?.granted_proficiencies ||
+        fs?.granted_languages ||
+        fs?.damage_type
+      );
     };
     const inScope = features.filter((f) => f.level <= ENGINE_MAX_LEVEL);
     expect(
