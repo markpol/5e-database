@@ -161,6 +161,10 @@ export type Equipment = {
     vehicle_category?: string | undefined;
     weapon_category?: string | undefined;
     weapon_range?: string | undefined;
+    related?: {
+        collection: "rule-sections";
+        index: string;
+    }[] | undefined;
 };
 
 declare const data: Equipment[];

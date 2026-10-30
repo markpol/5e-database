@@ -564,6 +564,18 @@
           "source": "dd",
           "note": "Reach in feet of a melee weapon: 5, or 10 with the reach property; derived by derive-item-data.ts."
         },
+        "related": {
+          "source": "dd",
+          "note": "Links to the rule sections for the weapon, ranged weapon, armor and focus categories and to those that name the item, derived by derive-rule-reference.ts with the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
+        },
+        "related[].collection": {
+          "source": "dd",
+          "note": "Links to the rule sections for the weapon, ranged weapon, armor and focus categories and to those that name the item, derived by derive-rule-reference.ts with the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
+        },
+        "related[].index": {
+          "source": "dd",
+          "note": "Links to the rule sections for the weapon, ranged weapon, armor and focus categories and to those that name the item, derived by derive-rule-reference.ts with the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
+        },
         "stackable": {
           "source": "dd",
           "note": "Marks ammunition and consumables as stackable."
@@ -779,10 +791,6 @@
           "source": "dd",
           "note": "The unified form of effect and enchantment (activation, armor class, ability score, resistances, attack bonuses and the like), derived by derive-item-data.ts; see docs/item-data.md."
         },
-        "uses": {
-          "source": "dd",
-          "note": "How many charges or uses a magic item has and how they recharge, written by hand from the item text in item-engine-annotations.json; see docs/item-data.md."
-        },
         "effects[].ability": {
           "source": "dd",
           "note": "The ability score the item sets or raises: ability, op, value and an optional cap."
@@ -847,9 +855,25 @@
           "source": "dd",
           "note": "Ordinal of the rarity name (1 common to 6 artifact), set by derive-item-data.ts."
         },
+        "related": {
+          "source": "dd",
+          "note": "Links to the rule sections for attunement, charges, command words, consumables and the weapon and armor categories, derived by derive-rule-reference.ts with the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
+        },
+        "related[].collection": {
+          "source": "dd",
+          "note": "Links to the rule sections for attunement, charges, command words, consumables and the weapon and armor categories, derived by derive-rule-reference.ts with the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
+        },
+        "related[].index": {
+          "source": "dd",
+          "note": "Links to the rule sections for attunement, charges, command words, consumables and the weapon and armor categories, derived by derive-rule-reference.ts with the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
+        },
         "requires_attunement": {
           "source": "dd",
           "note": "Attunement as a boolean, read from the item prose."
+        },
+        "uses": {
+          "source": "dd",
+          "note": "How many charges or uses a magic item has and how they recharge, written by hand from the item text in item-engine-annotations.json; see docs/item-data.md."
         },
         "weight": {
           "source": "dd",
@@ -1018,6 +1042,18 @@
         "range_ft": {
           "source": "dd",
           "note": "range as a number of feet, or a word for self, touch, sight, special or unlimited, derived from the range text by derive-spell-mechanics.ts."
+        },
+        "related": {
+          "source": "dd",
+          "note": "Links to the rule sections that name the spell in italics or that give the rules for its level, ritual, concentration, saving throw, attack roll and area, derived by derive-rule-reference.ts with the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
+        },
+        "related[].collection": {
+          "source": "dd",
+          "note": "Links to the rule sections that name the spell in italics or that give the rules for its level, ritual, concentration, saving throw, attack roll and area, derived by derive-rule-reference.ts with the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
+        },
+        "related[].index": {
+          "source": "dd",
+          "note": "Links to the rule sections that name the spell in italics or that give the rules for its level, ritual, concentration, saving throw, attack roll and area, derived by derive-rule-reference.ts with the curated links in src/2014/rule-reference-annotations.json (docs/rule-reference.md)."
         },
         "targets_at_slot_level": {
           "source": "dd",

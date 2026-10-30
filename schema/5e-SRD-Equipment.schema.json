@@ -693,6 +693,29 @@
     "weapon_range": {
       "type": "string",
       "translatable": true
+    },
+    "related": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "collection": {
+            "type": "string",
+            "enum": [
+              "rule-sections"
+            ]
+          },
+          "index": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "collection",
+          "index"
+        ],
+        "additionalProperties": false
+      }
     }
   },
   "required": [

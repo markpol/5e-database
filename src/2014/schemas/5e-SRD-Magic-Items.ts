@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { APIReferenceSchema, translatable } from '../../schemas/common';
+import { APIReferenceSchema, RuleLinkSchema, translatable } from '../../schemas/common';
 import { ItemEffectsSchema, ItemUsesSchema } from '../../schemas/item-effects';
 
 const RaritySchema = z.strictObject({
@@ -83,6 +83,8 @@ export const MagicItemSchema = z.strictObject({
   // equipment its `variants` name (see 5e-SRD-Equipment `proficiency_ids`).
   proficiency_ids: z.array(z.string()).optional(),
   requires_attunement: z.boolean().optional(),
+  // Rule sections that give the rules this item uses or is covered by, from docs/rule-reference.md. Never translated.
+  related: z.array(RuleLinkSchema).min(1).optional(),
   is_consumable: z.boolean().optional(),
   weight: z.number().optional(),
   desc: translatable(z.array(z.string())).optional(),

@@ -45,6 +45,12 @@
     "proficiency_ids": [
       "clubs",
       "simple-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -107,6 +113,12 @@
     "proficiency_ids": [
       "daggers",
       "simple-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -150,6 +162,12 @@
     "proficiency_ids": [
       "greatclubs",
       "simple-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -207,6 +225,12 @@
     "proficiency_ids": [
       "handaxes",
       "simple-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -260,6 +284,12 @@
     "proficiency_ids": [
       "javelins",
       "simple-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -317,6 +347,12 @@
     "proficiency_ids": [
       "light-hammers",
       "simple-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -360,6 +396,12 @@
     "proficiency_ids": [
       "maces",
       "simple-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -416,6 +458,12 @@
     "proficiency_ids": [
       "quarterstaffs",
       "simple-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -464,6 +512,12 @@
     "proficiency_ids": [
       "sickles",
       "simple-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -529,6 +583,12 @@
     "proficiency_ids": [
       "spears",
       "simple-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -586,6 +646,12 @@
     ],
     "aliases": [
       "Light crossbow"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -639,6 +705,12 @@
     "proficiency_ids": [
       "darts",
       "simple-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -688,6 +760,12 @@
     "proficiency_ids": [
       "shortbows",
       "simple-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -732,6 +810,12 @@
     "proficiency_ids": [
       "slings",
       "simple-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -783,6 +867,12 @@
     "proficiency_ids": [
       "battleaxes",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -820,6 +910,12 @@
     "proficiency_ids": [
       "flails",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -873,6 +969,12 @@
     "proficiency_ids": [
       "glaives",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -921,6 +1023,12 @@
     "proficiency_ids": [
       "greataxes",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -969,6 +1077,12 @@
     "proficiency_ids": [
       "greatswords",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1022,6 +1136,12 @@
     "proficiency_ids": [
       "halberds",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1073,6 +1193,12 @@
     "proficiency_ids": [
       "lances",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1124,6 +1250,12 @@
     "proficiency_ids": [
       "longswords",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1172,6 +1304,12 @@
     "proficiency_ids": [
       "mauls",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1209,6 +1347,12 @@
     "proficiency_ids": [
       "morningstars",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1262,6 +1406,12 @@
     "proficiency_ids": [
       "pikes",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1305,6 +1455,12 @@
     "proficiency_ids": [
       "rapiers",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1353,6 +1509,12 @@
     "proficiency_ids": [
       "scimitars",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1406,6 +1568,12 @@
     "proficiency_ids": [
       "shortswords",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1466,6 +1634,12 @@
     "proficiency_ids": [
       "tridents",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1503,6 +1677,12 @@
     "proficiency_ids": [
       "war-picks",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1554,6 +1734,12 @@
     "proficiency_ids": [
       "warhammers",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1602,6 +1788,12 @@
     "proficiency_ids": [
       "whips",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1651,6 +1843,12 @@
     "proficiency_ids": [
       "blowguns",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1708,6 +1906,12 @@
     ],
     "aliases": [
       "Hand crossbow"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1770,6 +1974,12 @@
     ],
     "aliases": [
       "Heavy crossbow"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1824,6 +2034,12 @@
     "proficiency_ids": [
       "longbows",
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1869,6 +2085,12 @@
     "cost_cp": 100,
     "proficiency_ids": [
       "martial-weapons"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
     ]
   },
   {
@@ -1897,6 +2119,16 @@
     "proficiency_ids": [
       "padded-armor",
       "light-armor"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
     ]
   },
   {
@@ -1925,6 +2157,16 @@
     "proficiency_ids": [
       "leather-armor",
       "light-armor"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
     ]
   },
   {
@@ -1953,6 +2195,16 @@
     "proficiency_ids": [
       "studded-leather-armor",
       "light-armor"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
     ]
   },
   {
@@ -1982,6 +2234,16 @@
     "proficiency_ids": [
       "hide-armor",
       "medium-armor"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
     ]
   },
   {
@@ -2011,6 +2273,16 @@
     "proficiency_ids": [
       "chain-shirt",
       "medium-armor"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
     ]
   },
   {
@@ -2040,6 +2312,16 @@
     "proficiency_ids": [
       "scale-mail",
       "medium-armor"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
     ]
   },
   {
@@ -2069,6 +2351,16 @@
     "proficiency_ids": [
       "breastplate",
       "medium-armor"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
     ]
   },
   {
@@ -2098,6 +2390,16 @@
     "proficiency_ids": [
       "half-plate-armor",
       "medium-armor"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
     ]
   },
   {
@@ -2127,6 +2429,16 @@
     "proficiency_ids": [
       "ring-mail",
       "heavy-armor"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
     ]
   },
   {
@@ -2156,6 +2468,16 @@
     "proficiency_ids": [
       "chain-mail",
       "heavy-armor"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
     ]
   },
   {
@@ -2185,6 +2507,16 @@
     "proficiency_ids": [
       "splint-armor",
       "heavy-armor"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
     ]
   },
   {
@@ -2214,6 +2546,16 @@
     "proficiency_ids": [
       "plate-armor",
       "heavy-armor"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
     ]
   },
   {
@@ -2242,6 +2584,16 @@
     "cost_cp": 1000,
     "proficiency_ids": [
       "shields"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "using-each-ability"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
     ]
   },
   {
@@ -2402,7 +2754,13 @@
     "stackable": true,
     "url": "/api/2014/equipment/arrow",
     "cost_cp": 100,
-    "bundle_size": 20
+    "bundle_size": 20,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "block-of-incense",
@@ -2450,7 +2808,13 @@
     "stackable": true,
     "url": "/api/2014/equipment/blowgun-needle",
     "cost_cp": 100,
-    "bundle_size": 50
+    "bundle_size": 50,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "censer",
@@ -2498,7 +2862,13 @@
     "stackable": true,
     "url": "/api/2014/equipment/crossbow-bolt",
     "cost_cp": 100,
-    "bundle_size": 20
+    "bundle_size": 20,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "sling-bullet",
@@ -2522,7 +2892,13 @@
     "stackable": true,
     "url": "/api/2014/equipment/sling-bullet",
     "cost_cp": 4,
-    "bundle_size": 20
+    "bundle_size": 20,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "making-an-attack"
+      }
+    ]
   },
   {
     "index": "amulet",
@@ -2547,7 +2923,13 @@
       "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
     ],
     "url": "/api/2014/equipment/amulet",
-    "cost_cp": 500
+    "cost_cp": 500,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "antitoxin-vial",
@@ -2571,7 +2953,13 @@
       "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs."
     ],
     "url": "/api/2014/equipment/antitoxin-vial",
-    "cost_cp": 5000
+    "cost_cp": 5000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "poisons"
+      }
+    ]
   },
   {
     "index": "crystal",
@@ -2595,7 +2983,13 @@
       "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
     ],
     "url": "/api/2014/equipment/crystal",
-    "cost_cp": 1000
+    "cost_cp": 1000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "orb",
@@ -2619,7 +3013,13 @@
       "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
     ],
     "url": "/api/2014/equipment/orb",
-    "cost_cp": 2000
+    "cost_cp": 2000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "rod",
@@ -2643,7 +3043,13 @@
       "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
     ],
     "url": "/api/2014/equipment/rod",
-    "cost_cp": 1000
+    "cost_cp": 1000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "staff",
@@ -2667,7 +3073,13 @@
       "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
     ],
     "url": "/api/2014/equipment/staff",
-    "cost_cp": 500
+    "cost_cp": 500,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "wand",
@@ -2691,7 +3103,13 @@
       "An arcane focus is a special item--an orb, a crystal, a rod, a specially constructed staff, a wand-like length of wood, or some similar item--designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus."
     ],
     "url": "/api/2014/equipment/wand",
-    "cost_cp": 1000
+    "cost_cp": 1000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "backpack",
@@ -2989,7 +3407,13 @@
       "For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet."
     ],
     "url": "/api/2014/equipment/candle",
-    "cost_cp": 1
+    "cost_cp": 1,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      }
+    ]
   },
   {
     "index": "case-crossbow-bolt",
@@ -3067,7 +3491,13 @@
       "A chain has 10 hit points. It can be burst with a successful DC 20 Strength check."
     ],
     "url": "/api/2014/equipment/chain-10-feet",
-    "cost_cp": 500
+    "cost_cp": 500,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "objects"
+      }
+    ]
   },
   {
     "index": "chalk-1-piece",
@@ -3229,7 +3659,13 @@
       "A component pouch is a small, watertight leather belt pouch that has compartments to hold all the material components and other special items you need to cast your spells, except for those components that have a specific cost (as indicated in a spell's description)."
     ],
     "url": "/api/2014/equipment/component-pouch",
-    "cost_cp": 2500
+    "cost_cp": 2500,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "crowbar",
@@ -3253,7 +3689,13 @@
       "Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied."
     ],
     "url": "/api/2014/equipment/crowbar",
-    "cost_cp": 200
+    "cost_cp": 200,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "objects"
+      }
+    ]
   },
   {
     "index": "sprig-of-mistletoe",
@@ -3277,7 +3719,13 @@
       "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus."
     ],
     "url": "/api/2014/equipment/sprig-of-mistletoe",
-    "cost_cp": 100
+    "cost_cp": 100,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "totem",
@@ -3301,7 +3749,13 @@
       "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus."
     ],
     "url": "/api/2014/equipment/totem",
-    "cost_cp": 100
+    "cost_cp": 100,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "wooden-staff",
@@ -3325,7 +3779,13 @@
       "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus."
     ],
     "url": "/api/2014/equipment/wooden-staff",
-    "cost_cp": 500
+    "cost_cp": 500,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "yew-wand",
@@ -3349,7 +3809,13 @@
       "A druidic focus might be a sprig of mistletoe or holly, a wand or scepter made of yew or another special wood, a staff drawn whole out of a living tree, or a totem object incorporating feathers, fur, bones, and teeth from sacred animals. A druid can use such an object as a spellcasting focus."
     ],
     "url": "/api/2014/equipment/yew-wand",
-    "cost_cp": 1000
+    "cost_cp": 1000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "emblem",
@@ -3374,7 +3840,13 @@
       "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
     ],
     "url": "/api/2014/equipment/emblem",
-    "cost_cp": 500
+    "cost_cp": 500,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "fishing-tackle",
@@ -3440,7 +3912,13 @@
     },
     "weight": 4,
     "url": "/api/2014/equipment/grappling-hook",
-    "cost_cp": 200
+    "cost_cp": 200,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement"
+      }
+    ]
   },
   {
     "index": "hammer",
@@ -3559,7 +4037,13 @@
     ],
     "weight": 25,
     "url": "/api/2014/equipment/hunting-trap",
-    "cost_cp": 500
+    "cost_cp": 500,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "traps"
+      }
+    ]
   },
   {
     "index": "ink-1-ounce-bottle",
@@ -3742,7 +4226,13 @@
       "This kit is a leather pouch containing bandages, salves, and splints. The kit has ten uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 hit points, without needing to make a Wisdom (Medicine) check."
     ],
     "url": "/api/2014/equipment/healers-kit",
-    "cost_cp": 500
+    "cost_cp": 500,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "damage-and-healing"
+      }
+    ]
   },
   {
     "index": "mess-kit",
@@ -3790,7 +4280,13 @@
       "A poisoner's kit includes the vials, chemicals, and other equipment necessary for the creation of poisons. Proficiency with this kit lets you add your proficiency bonus to any ability checks you make to craft or use poisons."
     ],
     "url": "/api/2014/equipment/poisoners-kit",
-    "cost_cp": 5000
+    "cost_cp": 5000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "poisons"
+      }
+    ]
   },
   {
     "index": "ladder-10-foot",
@@ -3811,7 +4307,13 @@
     },
     "weight": 25,
     "url": "/api/2014/equipment/ladder-10-foot",
-    "cost_cp": 10
+    "cost_cp": 10,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement"
+      }
+    ]
   },
   {
     "index": "lamp",
@@ -3835,7 +4337,13 @@
       "A lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil."
     ],
     "url": "/api/2014/equipment/lamp",
-    "cost_cp": 50
+    "cost_cp": 50,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      }
+    ]
   },
   {
     "index": "lantern-bullseye",
@@ -3862,6 +4370,12 @@
     "cost_cp": 1000,
     "aliases": [
       "Bullseye lantern"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      }
     ]
   },
   {
@@ -3889,6 +4403,12 @@
     "cost_cp": 500,
     "aliases": [
       "Hooded lantern"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      }
     ]
   },
   {
@@ -3937,7 +4457,13 @@
       "A key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 15 Dexterity check. Your GM may decide that better locks are available for higher prices."
     ],
     "url": "/api/2014/equipment/lock",
-    "cost_cp": 1000
+    "cost_cp": 1000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "objects"
+      }
+    ]
   },
   {
     "index": "magnifying-glass",
@@ -3987,7 +4513,13 @@
       "Each set of manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles' lock with a successful DC 15 Dexterity check. Manacles have 15 hit points."
     ],
     "url": "/api/2014/equipment/manacles",
-    "cost_cp": 200
+    "cost_cp": 200,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "objects"
+      }
+    ]
   },
   {
     "index": "mirror-steel",
@@ -4148,7 +4680,13 @@
     "weight": 0.25,
     "stackable": true,
     "url": "/api/2014/equipment/piton",
-    "cost_cp": 5
+    "cost_cp": 5,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement"
+      }
+    ]
   },
   {
     "index": "poison-basic-vial",
@@ -4175,6 +4713,12 @@
     "cost_cp": 10000,
     "aliases": [
       "Basic poison (vial)"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "poisons"
+      }
     ]
   },
   {
@@ -4196,7 +4740,13 @@
     },
     "weight": 7,
     "url": "/api/2014/equipment/pole-10-foot",
-    "cost_cp": 5
+    "cost_cp": 5,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement"
+      }
+    ]
   },
   {
     "index": "pot-iron",
@@ -4295,6 +4845,12 @@
     "cost_cp": 400,
     "aliases": [
       "Portable ram"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "objects"
+      }
     ]
   },
   {
@@ -4320,7 +4876,13 @@
     ],
     "stackable": true,
     "url": "/api/2014/equipment/rations-1-day",
-    "cost_cp": 50
+    "cost_cp": 50,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      }
+    ]
   },
   {
     "index": "reliquary",
@@ -4345,7 +4907,13 @@
       "Appendix B lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield."
     ],
     "url": "/api/2014/equipment/reliquary",
-    "cost_cp": 500
+    "cost_cp": 500,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "casting-a-spell"
+      }
+    ]
   },
   {
     "index": "robes",
@@ -4393,6 +4961,12 @@
     "cost_cp": 100,
     "aliases": [
       "Hempen rope (50 feet)"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement"
+      }
     ]
   },
   {
@@ -4420,6 +4994,12 @@
     "cost_cp": 1000,
     "aliases": [
       "Silk rope (50 feet)"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "movement"
+      }
     ]
   },
   {
@@ -4621,7 +5201,13 @@
       "Essential for wizards, a spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spells."
     ],
     "url": "/api/2014/equipment/spellbook",
-    "cost_cp": 5000
+    "cost_cp": 5000,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "what-is-a-spell"
+      }
+    ]
   },
   {
     "index": "spike-iron",
@@ -4645,6 +5231,12 @@
     "cost_cp": 10,
     "aliases": [
       "Iron spike"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "traps"
+      }
     ]
   },
   {
@@ -4770,7 +5362,13 @@
       "A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage."
     ],
     "url": "/api/2014/equipment/torch",
-    "cost_cp": 1
+    "cost_cp": 1,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      }
+    ]
   },
   {
     "index": "vestments",
@@ -4836,7 +5434,13 @@
     },
     "weight": 5,
     "url": "/api/2014/equipment/waterskin",
-    "cost_cp": 20
+    "cost_cp": 20,
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "the-environment"
+      }
+    ]
   },
   {
     "index": "whetstone",
@@ -6246,6 +6850,16 @@
     "cost_cp": 2500,
     "proficiency_ids": [
       "thieves-tools"
+    ],
+    "related": [
+      {
+        "collection": "rule-sections",
+        "index": "objects"
+      },
+      {
+        "collection": "rule-sections",
+        "index": "traps"
+      }
     ]
   }
 ]
