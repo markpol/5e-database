@@ -1,0 +1,687 @@
+[
+  {
+    "item": "eyes-of-charming",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "hammer-of-thunderbolts",
+    "uses": {
+      "count": 5,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d4+1"
+    }
+  },
+  {
+    "item": "ring-of-elemental-command",
+    "uses": {
+      "count": 5,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d4+1"
+    }
+  },
+  {
+    "item": "ring-of-elemental-command-air",
+    "uses": {
+      "count": 5,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d4+1"
+    }
+  },
+  {
+    "item": "ring-of-elemental-command-earth",
+    "uses": {
+      "count": 5,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d4+1"
+    }
+  },
+  {
+    "item": "ring-of-elemental-command-fire",
+    "uses": {
+      "count": 5,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d4+1"
+    }
+  },
+  {
+    "item": "ring-of-elemental-command-water",
+    "uses": {
+      "count": 5,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d4+1"
+    }
+  },
+  {
+    "item": "helm-of-teleportation",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "mace-of-terror",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "medallion-of-thoughts",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "pipes-of-haunting",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "pipes-of-the-sewers",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "ring-of-animal-influence",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "ring-of-evasion",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "ring-of-the-ram",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "robe-of-scintillating-colors",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "staff-of-withering",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "trident-of-fish-command",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "wand-of-magic-detection",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "wand-of-secrets",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "cubic-gate",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "gem-of-seeing",
+    "uses": {
+      "count": 3,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d3"
+    }
+  },
+  {
+    "item": "ring-of-shooting-stars",
+    "uses": {
+      "count": 6,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6"
+    }
+  },
+  {
+    "item": "staff-of-fire",
+    "uses": {
+      "count": 10,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+4"
+    }
+  },
+  {
+    "item": "staff-of-frost",
+    "uses": {
+      "count": 10,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+4"
+    }
+  },
+  {
+    "item": "staff-of-healing",
+    "uses": {
+      "count": 10,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+4"
+    }
+  },
+  {
+    "item": "staff-of-striking",
+    "uses": {
+      "count": 10,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+4"
+    }
+  },
+  {
+    "item": "staff-of-swarming-insects",
+    "uses": {
+      "count": 10,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+4"
+    }
+  },
+  {
+    "item": "staff-of-the-woodlands",
+    "uses": {
+      "count": 10,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+4"
+    }
+  },
+  {
+    "item": "staff-of-power",
+    "uses": {
+      "count": 20,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "2d8+4"
+    }
+  },
+  {
+    "item": "staff-of-the-magi",
+    "uses": {
+      "count": 50,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "4d6+2"
+    }
+  },
+  {
+    "item": "wand-of-binding",
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
+  },
+  {
+    "item": "wand-of-enemy-detection",
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
+  },
+  {
+    "item": "wand-of-fear",
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
+  },
+  {
+    "item": "wand-of-fireballs",
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
+  },
+  {
+    "item": "wand-of-lightning-bolts",
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
+  },
+  {
+    "item": "wand-of-magic-missiles",
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
+  },
+  {
+    "item": "wand-of-paralysis",
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
+  },
+  {
+    "item": "wand-of-polymorph",
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
+  },
+  {
+    "item": "wand-of-web",
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
+  },
+  {
+    "item": "wand-of-wonder",
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d6+1"
+    }
+  },
+  {
+    "item": "orb-of-dragonkind",
+    "uses": {
+      "count": 7,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d4+3"
+    }
+  },
+  {
+    "item": "cube-of-force",
+    "uses": {
+      "count": 36,
+      "unit": "charge",
+      "recharge": "dawn",
+      "regain": "1d20"
+    }
+  },
+  {
+    "item": "ring-of-three-wishes",
+    "uses": {
+      "count": 3,
+      "unit": "charge"
+    }
+  },
+  {
+    "item": "scarab-of-protection",
+    "uses": {
+      "count": 12,
+      "unit": "charge"
+    }
+  },
+  {
+    "item": "talisman-of-pure-good",
+    "uses": {
+      "count": 7,
+      "unit": "charge"
+    }
+  },
+  {
+    "item": "talisman-of-ultimate-evil",
+    "uses": {
+      "count": 6,
+      "unit": "charge"
+    }
+  },
+  {
+    "item": "gem-of-brightness",
+    "uses": {
+      "count": 50,
+      "unit": "charge"
+    }
+  },
+  {
+    "item": "bag-of-tricks",
+    "uses": {
+      "count": 3,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "bag-of-tricks-gray",
+    "uses": {
+      "count": 3,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "bag-of-tricks-rust",
+    "uses": {
+      "count": 3,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "bag-of-tricks-tan",
+    "uses": {
+      "count": 3,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "armor-of-invulnerability",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "circlet-of-blasting",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "cloak-of-arachnida",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "dagger-of-venom",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "dragon-scale-mail",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "dragon-scale-mail-black",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "dragon-scale-mail-blue",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "dragon-scale-mail-brass",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "dragon-scale-mail-bronze",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "dragon-scale-mail-copper",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "dragon-scale-mail-gold",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "dragon-scale-mail-green",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "dragon-scale-mail-red",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "dragon-scale-mail-silver",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "dragon-scale-mail-white",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "helm-of-telepathy",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "javelin-of-lightning",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "plate-armor-of-etherealness",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "rod-of-alertness",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "rod-of-rulership",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "stone-of-controlling-earth-elementals",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "bowl-of-commanding-water-elementals",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "brazier-of-commanding-fire-elementals",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "cape-of-the-mountebank",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "censer-of-controlling-air-elementals",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "cloak-of-the-bat",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "crystal-ball-of-telepathy",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "iron-bands-of-binding",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  },
+  {
+    "item": "pearl-of-power",
+    "uses": {
+      "count": 1,
+      "unit": "use",
+      "recharge": "dawn"
+    }
+  }
+]

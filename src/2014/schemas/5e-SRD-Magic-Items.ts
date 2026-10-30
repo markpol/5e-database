@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { APIReferenceSchema, translatable } from '../../schemas/common';
-import { ItemEffectsSchema } from '../../schemas/item-effects';
+import { ItemEffectsSchema, ItemUsesSchema } from '../../schemas/item-effects';
 
 const RaritySchema = z.strictObject({
   name: translatable(z.string()),
@@ -76,6 +76,9 @@ export const MagicItemSchema = z.strictObject({
   enchantment: EnchantmentSchema.optional(),
   // The unified form of `effect` and `enchantment`.
   effects: ItemEffectsSchema.optional(),
+  // How many charges or uses the item has and how they recharge, for the items whose text limits them; see
+  // docs/item-data.md.
+  uses: ItemUsesSchema.optional(),
   // The `index` values of the 5e-SRD-Proficiencies that cover the weapon or armor the item is a kind of, from the
   // equipment its `variants` name (see 5e-SRD-Equipment `proficiency_ids`).
   proficiency_ids: z.array(z.string()).optional(),

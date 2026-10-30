@@ -2,7 +2,7 @@
 
 The equipment (`src/2014/en/5e-SRD-Equipment.json`) and magic items (`src/2014/en/5e-SRD-Magic-Items.json`) keep every
 field they had. This page describes the optional fields next to them that restate prices, rarity, reach, bundle sizes
-and effects as data, and the one `effects` shape that equipment and magic items now share.
+effects and limited uses as data, and the one `effects` shape that equipment and magic items now share.
 
 They are additive, English-only (the translation overlays do not carry them) and marked `dd` in
 `src/provenance/source-markers.json`. They are written by `src/2014/derive-item-data.ts` (`pnpm run derive:items`),
@@ -19,7 +19,8 @@ and the older fields with rules that do not share code with the derivation.
 | `rarity.rank`           | magic items            | The ordinal of the rarity name                                           | 351                            |
 | `rarity.min_level`      | magic items            | The character level from which the item is a fitting reward              | 350                            |
 | `effects`               | equipment, magic items | The unified effects (below)                                              | 2 equipment, 68 magic items    |
-| `armor_class.max_bonus` | equipment              | The most Dexterity modifier an armor adds, now on every armor with a cap | 10 of 13 armor entries          |
+| `uses`                  | magic items            | How many charges or uses the item has and when they come back            | 81 magic items                 |
+| `armor_class.max_bonus` | equipment              | The most Dexterity modifier an armor adds, now on every armor with a cap | 10 of 13 armor entries         |
 | `proficiency_ids`       | equipment, magic items | The proficiencies that cover a weapon, armor or tool                     | 81 equipment, 17 magic items   |
 | `aliases`               | equipment              | The natural-order name of a "Noun, adjective" name                       | 23                             |
 
@@ -101,6 +102,61 @@ For an equipment name written "Noun, adjective", with an optional parenthesis at
 and 20 adventuring-gear names, 23 in all. The aliases are English search aliases, not translatable text: a translation
 overlay does not replace them. Names with a comma only inside the parenthesis (`Ball bearings (bag of 1,000)`) have
 none.
+
+## `uses`
+
+Charges and limited uses of a magic item, for the items whose text limits them. The text of these items has no fixed
+wording, so the values are written by hand, one entry for each item, in `src/2014/item-engine-annotations.json` and
+merged into the items by `src/2014/derive-item-data.ts`. Each value is read from the item text; a count that the text
+does not give is not written. The words are those of `feature_specific.engine.uses` and `recharge` of the class features
+(`docs/feature-mechanics.md`), with a `dawn` recharge for the items.
+
+```json
+{ "count": 7, "unit": "charge", "recharge": "dawn", "regain": "1d6+1" }
+```
+
+| Member     | Value                 | Meaning                                                                                                          |
+| ---------- | --------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `count`    | positive integer      | The charges the item holds when full, or the times its limited property can be used before it recharges          |
+| `unit`     | `charge`, `use`       | `charge`: charges that actions of the item spend (a wand, a staff, a ring). `use`: uses of one property          |
+| `recharge` | `dawn`                | The spent uses come back at dawn: "daily at dawn", "can't be used again until the next dawn". Absent: they never |
+| `regain`   | dice, such as `1d6+1` | The charges regained at each recharge. Absent with a `recharge`: all the spent uses come back                    |
+
+`regain` is the dice of the text ("regains 1d6 + 1 expended charges daily at dawn") with the spaces taken out. It is on
+the items with charges only; a property that cannot be used again until the next dawn regains its one use.
+
+| Group                                                                        | `unit`   | `recharge` | Items |
+| ---------------------------------------------------------------------------- | -------- | ---------- | ----- |
+| Charges that come back at dawn (wands, staffs, rings, ...)                   | `charge` | `dawn`     | 43    |
+| Charges that never come back (scarab, talismans, gems, ring of three wishes) | `charge` | absent     | 5     |
+| A property that can be used once until the next dawn                         | `use`    | `dawn`     | 29    |
+| The bags of tricks, which pull three objects before dawn                     | `use`    | `dawn`     | 4     |
+
+A variant has the same `uses` as the item it varies (the ring of elemental command and its four elements, dragon scale
+mail and its ten colours, the bag of tricks and its three colours). The text of an item can have other properties with
+no limit (the circlet of blasting is also a circlet to wear); `uses` is about the limited one. What happens when the last
+charge is spent (a d20 roll on the wands and staffs, an item that is destroyed or becomes nonmagical) stays in the text.
+
+### Items without `uses`
+
+An item whose text names a limit that one `uses` object cannot state has none, and is listed with its reason in
+`ITEM_USES_EXCLUDED` of `derive-item-data.ts`. There are 30:
+
+- Charges that depend on a roll: `luck-blade` and `nine-lives-stealer`.
+- More than one limit: `staff-of-charming` (charges and a separate property that works once until the next dawn),
+  `rod-of-lordly-might` and `staff-of-thunder-and-lightning` (several properties, each once until the next dawn),
+  `necklace-of-prayer-beads` (one use for each bead, and the number of beads is rolled), `crystal-ball` (the property
+  belongs to the telepathy variant, `crystal-ball-of-telepathy`, which has the `uses`).
+- A recharge that is not at dawn: the five `horn-of-valhalla` items and the ten `figurine-of-wondrous-power` items
+  (days between uses, and 24 charges of the goats that come back after 7 days), `frost-brand` (once per hour),
+  `boots-of-speed` and `ring-of-x-ray-vision` (a long rest), `oathbow` (dawn seven days later).
+- Not a count of uses: `wind-fan` (it can be used again at the risk of destroying the fan), `robe-of-stars` (stars that
+  come back at dusk), `belt-of-dwarvenkind` and `bag-of-devouring` (things that happen each day).
+
+`src/2014/tests/item-data.test.ts` audits this: an item whose text mentions charges, dawn, a daily event, a number of
+days between uses or a long rest must have `uses` or be in that list with a reason, and a listed item must still
+mention one. For an item with `uses`, the count must be the number of charges the text states, a `dawn` recharge must be
+in the text, and `regain` must be the dice the text gives.
 
 ## `effects`
 

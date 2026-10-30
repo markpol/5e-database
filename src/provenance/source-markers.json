@@ -475,6 +475,10 @@
           "source": "dd",
           "note": "The unified form of effect and enchantment (activation, armor class, ability score, resistances, attack bonuses and the like), derived by derive-item-data.ts; see docs/item-data.md."
         },
+        "uses": {
+          "source": "dd",
+          "note": "How many charges or uses a magic item has and how they recharge, written by hand from the item text in item-engine-annotations.json; see docs/item-data.md."
+        },
         "effects[].ability": {
           "source": "dd",
           "note": "The ability score the item sets or raises: ability, op, value and an optional cap."
@@ -694,6 +698,9 @@
       "source": "srd"
     },
     "src/2014/feature-engine-annotations.json": {
+      "source": "dd"
+    },
+    "src/2014/item-engine-annotations.json": {
       "source": "dd"
     },
     "src/2014/monster-engine-annotations.json": {

@@ -6,7 +6,7 @@ import ProficiencyData from '../en/5e-SRD-Proficiencies.json' with { type: 'json
 import SkillData from '../en/5e-SRD-Skills.json' with { type: 'json' };
 import TraitData from '../en/5e-SRD-Traits.json' with { type: 'json' };
 import WeaponPropertyData from '../en/5e-SRD-Weapon-Properties.json' with { type: 'json' };
-import { deriveEquipment, deriveMagicItems } from '../derive-item-data';
+import { deriveEquipment, deriveMagicItems, ITEM_USES_EXCLUDED } from '../derive-item-data';
 
 type Cost = { quantity: number; unit: string };
 type Damage = { damage_type: string; damage_dice: string };
@@ -75,6 +75,7 @@ type MagicItem = {
     extra_damage?: { damage_type: { index: string }; damage_dice: string };
   };
   effects?: ItemEffect[];
+  uses?: { count: number; unit: string; recharge?: string; regain?: string };
 };
 
 const equipment = EquipmentData as unknown as Equipment[];
@@ -584,6 +585,115 @@ describe('aliases', () => {
     for (const item of equipment.filter((i) => i.aliases)) {
       expect(new Set(item.aliases).size, item.index).toBe(item.aliases!.length);
       expect(item.aliases, item.index).not.toContain(item.name);
+    }
+  });
+});
+
+describe('uses', () => {
+  const text = (item: MagicItem) => item.desc.join(' ');
+  // The spelling of the dice in the text is "1d4 + 1"; the data has "1d4+1".
+  const compact = (value: string) => value.replace(/\s*\+\s*/g, '+');
+  const withUses = magicItems.filter((item) => item.uses);
+  const wordsOf: Record<number, string> = { 1: 'one', 3: 'three' };
+
+  // What makes an item's text limit its use: a count of charges, a recharge at dawn or after a rest, a number of
+  // days or a period between two uses.
+  const LIMIT =
+    /\bcharges?\b|\bdawn\b|\bdaily\b|\bonce (?:per|each|a) (?:day|hour)\b|\b\d+ days have passed\b|\b(?:until|before) (?:you (?:finish|take) )?(?:taking )?a long rest\b/i;
+  const mentionsLimit = (item: MagicItem) => LIMIT.test(text(item));
+
+  it('is on every item whose text limits its use, unless the item is listed with a reason', () => {
+    for (const item of magicItems) {
+      if (!mentionsLimit(item)) continue;
+      const excluded = item.index in ITEM_USES_EXCLUDED;
+      expect(item.uses !== undefined || excluded, `${item.index} has no uses and no reason`).toBe(
+        true
+      );
+    }
+  });
+
+  it('is on no item that is listed as excluded, and on no item whose text does not limit its use', () => {
+    for (const [index, reason] of Object.entries(ITEM_USES_EXCLUDED)) {
+      const item = magicItems.find((i) => i.index === index);
+      expect(item, index).toBeDefined();
+      expect(item!.uses, index).toBeUndefined();
+      expect(mentionsLimit(item!), `${index} no longer mentions a limit`).toBe(true);
+      expect(reason.length, index).toBeGreaterThan(20);
+    }
+    for (const item of withUses) expect(mentionsLimit(item), item.index).toBe(true);
+  });
+
+  it('states the count of the charges that the text states', () => {
+    for (const item of withUses.filter((i) => i.uses!.unit === 'charge')) {
+      const { count } = item.uses!;
+      expect(text(item), item.index).toMatch(new RegExp(`\\b${count} charges\\b`));
+      // Only one number of charges is stated in the text, so the count is the one the item holds.
+      const counts = [
+        ...text(item).matchAll(/\b(?:has|have|with|of its|starts with) (\d+) charges\b/g),
+      ];
+      for (const match of counts) expect(Number(match[1]), item.index).toBe(count);
+    }
+  });
+
+  it('counts the uses of a property that cannot be used again until the next dawn', () => {
+    for (const item of withUses.filter((i) => i.uses!.unit === 'use')) {
+      const { count, recharge } = item.uses!;
+      expect(recharge, item.index).toBe('dawn');
+      expect(text(item), item.index).toMatch(
+        /(?:can't|cannot) be used (?:this way |again )?(?:again )?until the next dawn/
+      );
+      if (count > 1)
+        expect(text(item), item.index).toMatch(new RegExp(`once ${wordsOf[count]} `, 'i'));
+    }
+  });
+
+  it('recharges at dawn exactly when the text says the charges come back at dawn', () => {
+    for (const item of withUses.filter((i) => i.uses!.unit === 'charge')) {
+      const { recharge, regain } = item.uses!;
+      const back = compact(text(item)).match(
+        /regains? (all|\d+d\d+(?:\+\d+)?) expended charges(?: daily at dawn)?/
+      );
+      expect(Boolean(recharge), item.index).toBe(Boolean(back));
+      if (!back) {
+        expect(text(item), item.index).not.toMatch(/\bdawn\b/);
+        expect(regain, item.index).toBeUndefined();
+        continue;
+      }
+      expect(recharge, item.index).toBe('dawn');
+      expect(text(item), item.index).toMatch(/daily at dawn/);
+      expect(regain ?? 'all', item.index).toBe(back[1]);
+    }
+  });
+
+  it('has only known members and values', () => {
+    for (const item of withUses) {
+      const uses = item.uses!;
+      expect(
+        Object.keys(uses).every((k) => ['count', 'unit', 'recharge', 'regain'].includes(k)),
+        item.index
+      ).toBe(true);
+      expect(Number.isInteger(uses.count) && uses.count > 0, item.index).toBe(true);
+      expect(['charge', 'use'], item.index).toContain(uses.unit);
+      if (uses.regain) expect(uses.regain, item.index).toMatch(/^\d+d\d+(\+\d+)?$/);
+      if (uses.regain) expect(uses.recharge, item.index).toBe('dawn');
+    }
+  });
+
+  it('counts the items structured and the items excluded', () => {
+    expect(withUses.length).toBe(81);
+    expect(withUses.filter((i) => i.uses!.unit === 'charge').length).toBe(48);
+    expect(withUses.filter((i) => i.uses!.unit === 'use').length).toBe(33);
+    expect(Object.keys(ITEM_USES_EXCLUDED).length).toBe(30);
+  });
+
+  it('is the same on a variant and on the item it varies', () => {
+    const byIndex = new Map(magicItems.map((i) => [i.index, i]));
+    for (const item of magicItems.filter((i) => i.variants.length)) {
+      for (const variant of item.variants) {
+        const other = byIndex.get(variant.index);
+        if (!other || !item.uses || !other.uses) continue;
+        expect(other.uses, variant.index).toEqual(item.uses);
+      }
     }
   });
 });

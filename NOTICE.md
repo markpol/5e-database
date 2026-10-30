@@ -72,7 +72,7 @@ marked `dd`:
 | File | Fields and entries written for the game |
 | --- | --- |
 | `src/2014/en/5e-SRD-Monsters.json` | `environments`, `bonus_actions`, `senses.blindsight_blind_beyond`, `senses.blindsight_deafened`; on actions `attack_type`, `weapon`, `weapon_kind`, `supply` (its `count` is a chosen default), `condition`, `damage[].condition`, `damage[].grapple`, `options.from.options[].condition`, `preference`, `situation`; on special abilities `bonus_action`, `damage[].condition`, `damage[].dc`, `relentless_max_damage` |
-| `src/2014/en/5e-SRD-Magic-Items.json` | `cost`, `cost_cp`, `weight`, `effect`, `enchantment`, `effects`, `rarity.rank`, `rarity.min_level`, `is_consumable`, `requires_attunement` |
+| `src/2014/en/5e-SRD-Magic-Items.json` | `cost`, `cost_cp`, `weight`, `effect`, `enchantment`, `effects`, `uses` (written by hand in `src/2014/item-engine-annotations.json`), `rarity.rank`, `rarity.min_level`, `is_consumable`, `requires_attunement` |
 | `src/2014/en/5e-SRD-Equipment.json` | `ammunition`, `bundle_size`, `cost_cp`, `effect`, `effects`, `is_consumable`, `material`, `reach_ft`, `stackable` |
 | `src/2014/en/5e-SRD-Spells.json` | `range_ft`, `casting_time_data`, `duration_data` (derived from the `range`, `casting_time` and `duration` text); `heal_at_slot_level_data`, `damage[].damage_at_slot_level_data`, `temp_hp_at_slot_level`, `targets_at_slot_level` (derived from the description and `higher_level` text); entries added to `damage`, `dc` and `area_of_effect` where the text states them, and two corrected areas (`flame-strike`, `move-earth`); `engine` (kind, target, campaign and npc of 117 combat spells, written for the game in `src/2014/spell-engine-annotations.json`) |
 | `src/2014/en/5e-SRD-Conditions.json` | Entries `exhaustion-1` to `exhaustion-6`, `enraged`, `frenzied`, `reckless`, `dodging`, `infested`, `swallowed`, `drained-of-strength`, `weakened`, `slowed`, `drained-of-life`, `disengaged`, `surprised`, `no-reactions`, `concentrating`, `blessed`, `shield-of-faith`, `sanctuary`, `beacon-of-hope`, `spiritual-weapon`, `spirit-guardians`, `sacred-weapon`, `magic-weapon`, `divine-favor`, `branding-smite`, `mage-armor`, `commanded` (the last 14 in wording written for the game); on every entry `effects`, and where they apply `removes`, `adds`, `on_remove`, `immune_if_feature` and `exhaustion_level` |
@@ -82,6 +82,7 @@ marked `dd`:
 | `src/2014/monster-engine-annotations.json` | The whole file |
 | `src/2014/spell-engine-annotations.json` | The whole file |
 | `src/2014/feature-engine-annotations.json` | The whole file |
+| `src/2014/item-engine-annotations.json` | The whole file |
 
 Many of these fields restate a rule from the SRD prose next to them in structured form. Monster `environments`
 and magic-item `cost` and `weight` are not SRD 5.1 text, and their origin has not been verified.
