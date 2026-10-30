@@ -64,7 +64,33 @@
       "source": "srd"
     },
     "src/2014/en/5e-SRD-Classes.json": {
-      "source": "srd"
+      "source": "srd",
+      "fields": {
+        "multi_classing.proficiency_choices[].id": {
+          "source": "dd",
+          "note": "Stable id of a proficiency choice of the multi-classing rules, set by derive-class-choices.ts and never renamed."
+        },
+        "proficiency_choices[].from.options[].choice.id": {
+          "source": "dd",
+          "note": "Stable id of a choice nested in the options of a proficiency choice, set by derive-class-choices.ts and never renamed."
+        },
+        "proficiency_choices[].id": {
+          "source": "dd",
+          "note": "Stable id of a proficiency choice, set by derive-class-choices.ts and never renamed."
+        },
+        "starting_equipment_options[].from.options[].choice.id": {
+          "source": "dd",
+          "note": "Stable id of a choice nested in the options of a starting-equipment choice, set by derive-class-choices.ts and never renamed."
+        },
+        "starting_equipment_options[].from.options[].items[].choice.id": {
+          "source": "dd",
+          "note": "Stable id of a choice nested in a combined option of a starting-equipment choice, set by derive-class-choices.ts and never renamed."
+        },
+        "starting_equipment_options[].id": {
+          "source": "dd",
+          "note": "Stable id of a starting-equipment choice, set by derive-class-choices.ts and never renamed."
+        }
+      }
     },
     "src/2014/en/5e-SRD-Conditions.json": {
       "source": "srd",

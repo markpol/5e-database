@@ -3,7 +3,13 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { describe, it, expect } from 'vitest';
 
-import { collectionOfUrl, loadCollections, sortedIndices, type Entry } from '../../../scripts/ids';
+import {
+  collectionOfUrl,
+  loadCollections,
+  loadDerivedCollections,
+  sortedIndices,
+  type Entry,
+} from '../../../scripts/ids';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
 const collections = loadCollections();
@@ -154,13 +160,14 @@ describe('monster references', () => {
 });
 
 describe('ids/', () => {
+  const lists = [...collections, ...loadDerivedCollections()];
   it('has one list per collection', () => {
     const files = fs
       .readdirSync(path.join(root, 'ids'))
       .filter((f) => f !== 'published.json' && f !== 'removed.json')
       .sort();
-    expect(files).toEqual(collections.map((c) => `${c.name}.json`).sort());
-    for (const c of collections) {
+    expect(files).toEqual(lists.map((c) => `${c.name}.json`).sort());
+    for (const c of lists) {
       const list = JSON.parse(fs.readFileSync(path.join(root, 'ids', `${c.name}.json`), 'utf8'));
       expect(list).toEqual({ collection: c.name, indices: sortedIndices(c) });
     }

@@ -190,6 +190,54 @@
                     "class_specific": {
                       "type": "string"
                     },
+                    "by_level": {
+                      "minItems": 1,
+                      "type": "array",
+                      "items": {
+                        "anyOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "level": {
+                                "type": "number"
+                              },
+                              "count": {
+                                "type": "number"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "level",
+                              "count"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "level": {
+                                "type": "number"
+                              },
+                              "dice": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "level",
+                              "dice"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      }
+                    },
                     "ability_modifier": {
                       "type": "string",
                       "enum": [
@@ -551,6 +599,54 @@
                       "class_specific": {
                         "type": "string"
                       },
+                      "by_level": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "level": {
+                                  "type": "number"
+                                },
+                                "count": {
+                                  "type": "number"
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "level",
+                                "count"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "level": {
+                                  "type": "number"
+                                },
+                                "dice": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "level",
+                                "dice"
+                              ],
+                              "additionalProperties": false
+                            }
+                          ]
+                        }
+                      },
                       "proficiency_multiplier": {
                         "type": "number"
                       },
@@ -663,6 +759,54 @@
                       },
                       "class_specific": {
                         "type": "string"
+                      },
+                      "by_level": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "level": {
+                                  "type": "number"
+                                },
+                                "count": {
+                                  "type": "number"
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "level",
+                                "count"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "level": {
+                                  "type": "number"
+                                },
+                                "dice": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "level",
+                                "dice"
+                              ],
+                              "additionalProperties": false
+                            }
+                          ]
+                        }
                       }
                     },
                     "required": [
@@ -994,6 +1138,54 @@
                       },
                       "class_specific": {
                         "type": "string"
+                      },
+                      "by_level": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "level": {
+                                  "type": "number"
+                                },
+                                "count": {
+                                  "type": "number"
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "level",
+                                "count"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "level": {
+                                  "type": "number"
+                                },
+                                "dice": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "level",
+                                "dice"
+                              ],
+                              "additionalProperties": false
+                            }
+                          ]
+                        }
                       },
                       "attack_kind": {
                         "type": "string",
@@ -2142,6 +2334,54 @@
                       "class_specific": {
                         "type": "string"
                       },
+                      "by_level": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "level": {
+                                  "type": "number"
+                                },
+                                "count": {
+                                  "type": "number"
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "level",
+                                "count"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "level": {
+                                  "type": "number"
+                                },
+                                "dice": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "level",
+                                "dice"
+                              ],
+                              "additionalProperties": false
+                            }
+                          ]
+                        }
+                      },
                       "class_level_multiplier": {
                         "type": "number"
                       },
@@ -2390,6 +2630,9 @@
     "__schema0": {
       "type": "object",
       "properties": {
+        "id": {
+          "type": "string"
+        },
         "desc": {
           "type": "string",
           "translatable": true

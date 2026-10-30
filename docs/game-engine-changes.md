@@ -19,7 +19,8 @@ removed.
 | Equipment | `5e-SRD-Equipment.json` | Added `material`, `stackable`, `is_consumable`, `effect` (damage-on-use) to select items; removed 40 non-combat items (mounts, vehicles, barding, tack/harness, stabling/feed) |
 | Equipment categories | `5e-SRD-Equipment-Categories.json` | Removed 6 non-combat categories (`gaming-sets`, `land-vehicles`, `mounts-and-other-animals`, `mounts-and-vehicles`, `tack-harness-and-drawn-vehicles`, `waterborne-vehicles`) and their members |
 | Proficiencies | `5e-SRD-Proficiencies.json` | Removed proficiency entries tied to the removed equipment (e.g. `nets`, `land-vehicles`, `water-vehicles`) |
-| Features | `5e-SRD-Features.json`, `derive-feature-engine.ts` (new script), `feature-engine-annotations.json` (new file) | Bard/Rogue Expertise reworked from a two-level nested choice (`choose 1` of a `choose 2` sub-choice) to a flat `choose 2`; trimmed some prose (e.g. Martial Arts' "nunchaku/kama" flavor text, Frenzy wording); added `feature_specific.engine` (`action_cost`, `recharge`, `uses`, `modifiers`) to 99 features of levels 1 to 5, `heal` to 9, `granted_proficiencies` to 5 and `grants_asi` to the 63 Ability Score Improvements (see [feature-mechanics.md](feature-mechanics.md)) |
+| Classes | `5e-SRD-Classes.json`, `derive-class-choices.ts` (new script) | Added a stable `id` to the 14 proficiency choices, the 39 starting-equipment choices, the 4 multi-classing proficiency choices and the 21 choices nested in their options (see "Classes: choice ids") |
+| Features | `5e-SRD-Features.json`, `derive-feature-engine.ts` (new script), `feature-engine-annotations.json` (new file) | Bard/Rogue Expertise reworked from a two-level nested choice (`choose 1` of a `choose 2` sub-choice) to a flat `choose 2`; trimmed some prose (e.g. Martial Arts' "nunchaku/kama" flavor text, Frenzy wording); added `feature_specific.engine` (`action_cost`, `recharge`, `uses`, `modifiers`) to 99 features of levels 1 to 5, `heal` to 9, `granted_proficiencies` to 5 and `grants_asi` to the 63 Ability Score Improvements (see [feature-mechanics.md](feature-mechanics.md)); added `by_level` (an id for each count) to the 7 features whose count grows with the level and has a single record |
 | Magic items | `5e-SRD-Magic-Items.json` | Added a structured `effect` object (ability-score modifiers, damage-type resistance, healing, trait grants, duration) and an `enchantment` object (armor/weapon bonus, extra damage, to-hit bonus) to many items, so item bonuses are available as data and not only as prose; removed a handful of unusable/non-combat items |
 | Package/tooling | `package.json` | `engines.node` widened from `"22.x"` to `"22.x \|\| 24.x"` |
 
@@ -325,6 +326,25 @@ Improvement. Numbers that grow with the level are read from the `class_specific`
 `src/schemas/effects.ts`) and link to conditions such as `enraged` and `sacred-weapon`.
 [feature-mechanics.md](feature-mechanics.md) describes every field, its allowed values and units, and the features
 left without a structure and why.
+
+### Features: an id for each count
+
+Seven features have one record while their count or size grows with the level: Rage (rages and damage bonus), Ki,
+Font of Magic (sorcery points), Sneak Attack, Martial Arts, Unarmored Movement and Arcane Recovery. Their `engine` gained
+`by_level`, a list of `{ id, level, count }` (or `{ id, level, dice }`) steps next to the `class_specific` key that holds
+the number, read from the class rows of `5e-SRD-Levels.json` (76 ids, for example `rage-3-uses`, `ki-12-points`,
+`sneak-attack-5d6`). The features that have a record for each count (Action Surge, Indomitable, Extra Attack, Channel
+Divinity of the cleric, Favored Enemy and the like) keep those records and their ids. See "Counts" in
+[feature-mechanics.md](feature-mechanics.md).
+
+## Classes: choice ids
+
+The proficiency choices, starting-equipment choices and `multi_classing.proficiency_choices` of the 12 classes, and the
+choices nested in their `options`, gained an optional `id` (78 in all, for example `fighter-equipment-2`,
+`bard-proficiency-skills`, `bard-multiclass-proficiency-instruments`, `fighter-equipment-2-option-1-item-1`). `ChoiceSchema`
+in `src/schemas/common.ts` has the optional `id`; it is a structural field, so translation overlays do not carry it.
+The ids are listed in `ids/class-choices.json` and, with the count ids in `ids/feature-counts.json`, are covered by the
+id stability contract in [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## Magic items: `effect` and `enchantment`
 

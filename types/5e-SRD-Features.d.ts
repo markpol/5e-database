@@ -48,6 +48,15 @@ export type Feature = {
             uses?: {
                 count?: number | undefined;
                 class_specific?: string | undefined;
+                by_level?: ({
+                    id: string;
+                    level: number;
+                    count: number;
+                } | {
+                    id: string;
+                    level: number;
+                    dice: string;
+                })[] | undefined;
                 ability_modifier?: "int" | "str" | "dex" | "con" | "wis" | "cha" | undefined;
                 per_class_level?: number | undefined;
                 minimum?: number | undefined;
@@ -92,6 +101,15 @@ export type Feature = {
                 ability_modifier?: "int" | "str" | "dex" | "con" | "wis" | "cha" | undefined;
                 attack_ability_modifier?: true | undefined;
                 class_specific?: string | undefined;
+                by_level?: ({
+                    id: string;
+                    level: number;
+                    count: number;
+                } | {
+                    id: string;
+                    level: number;
+                    dice: string;
+                })[] | undefined;
                 proficiency_multiplier?: number | undefined;
                 round?: "down" | "up" | undefined;
                 add_spell_level?: true | undefined;
@@ -109,6 +127,15 @@ export type Feature = {
                 type: "speed";
                 value?: number | undefined;
                 class_specific?: string | undefined;
+                by_level?: ({
+                    id: string;
+                    level: number;
+                    count: number;
+                } | {
+                    id: string;
+                    level: number;
+                    dice: string;
+                })[] | undefined;
                 while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
                 while_condition?: string | undefined;
                 option?: string | undefined;
@@ -146,6 +173,15 @@ export type Feature = {
                 class_specific: string;
                 attack_kind: "melee_weapon" | "weapon" | "bound_weapon" | "ranged_weapon" | "unarmed_strike" | "monk_weapon" | "finesse_or_ranged_weapon" | "off_hand" | "spell";
                 type: "damage_die";
+                by_level?: ({
+                    id: string;
+                    level: number;
+                    count: number;
+                } | {
+                    id: string;
+                    level: number;
+                    dice: string;
+                })[] | undefined;
                 while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;
                 while_condition?: string | undefined;
                 option?: string | undefined;
@@ -286,6 +322,15 @@ export type Feature = {
                 max_slot_level: number;
                 type: "recover_spell_slots";
                 class_specific?: string | undefined;
+                by_level?: ({
+                    id: string;
+                    level: number;
+                    count: number;
+                } | {
+                    id: string;
+                    level: number;
+                    dice: string;
+                })[] | undefined;
                 class_level_multiplier?: number | undefined;
                 round?: "down" | "up" | undefined;
                 while?: ("source_in_line_of_sight" | "can_see_attacker" | "not_incapacitated" | "speed_above_0" | "not_wearing_armor" | "not_wearing_heavy_armor" | "wearing_armor" | "not_wielding_shield" | "wielding_shield" | "not_blinded" | "not_deafened" | "can_see_effect" | "one_handed_melee_weapon_only" | "wielding_with_two_hands" | "not_proficient" | "target_below_hit_point_maximum" | "target_undead_or_fiend" | "sneak_attack_eligible" | "in_dim_light_or_darkness")[] | undefined;

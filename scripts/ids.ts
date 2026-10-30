@@ -5,6 +5,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { classChoiceIds } from '../src/2014/derive-class-choices';
+import { featureCountIds } from '../src/2014/derive-feature-counts';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const publishedFile = path.join(root, 'ids/published.json');
@@ -48,6 +50,29 @@ export function loadCollections(): Collection[] {
 export function collectionOfUrl(url: string): string {
   const parts = url.split('/');
   return parts[5] === 'levels' ? 'levels' : parts[3];
+}
+
+/**
+ * Ids that are not the `index` of a record but are published all the same, as collections of their own: the ids of
+ * the class choices (`class-choices`) and of the counts of the count-bearing features (`feature-counts`). They go
+ * through the same growth-only list, tombstones and stability test as the collections.
+ */
+export function loadDerivedCollections(): Collection[] {
+  const entries = (ids: string[]): Entry[] => [...new Set(ids)].map((index) => ({ index }));
+  const read = (file: string) =>
+    JSON.parse(fs.readFileSync(path.join(dataDir, file), 'utf8')) as never[];
+  return [
+    {
+      name: 'class-choices',
+      file: 'src/2014/en/5e-SRD-Classes.json',
+      entries: entries(classChoiceIds(read('5e-SRD-Classes.json'))),
+    },
+    {
+      name: 'feature-counts',
+      file: 'src/2014/en/5e-SRD-Features.json',
+      entries: entries(featureCountIds(read('5e-SRD-Features.json'))),
+    },
+  ];
 }
 
 /** Ids of a collection in code-point order, so the output does not depend on the data order. */

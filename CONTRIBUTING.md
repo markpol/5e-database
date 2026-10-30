@@ -57,7 +57,9 @@ data itself.
 Edit the entry in `src/{year}/en/5e-SRD-{Collection}.json` and run `pnpm test`. If you change a 2014 monster, also
 regenerate the normalized file with `pnpm normalize:monsters` (below). The structured mechanics of class features are
 written in `src/2014/feature-engine-annotations.json` and merged into the features with `pnpm run derive:features`
-([docs/feature-mechanics.md](docs/feature-mechanics.md)).
+([docs/feature-mechanics.md](docs/feature-mechanics.md)); the same command derives the `by_level` ids of the
+count-bearing features from the Levels rows. The ids of the class choices are derived with `pnpm run derive:classes`
+([Id stability contract](#id-stability-contract)).
 
 ## Generated id lists
 
@@ -66,6 +68,8 @@ registries against the data. Each file is `{ "collection": "conditions", "indice
 with the indices sorted. They are produced by `pnpm run generate` together with `schema/` and `types/` and checked by
 the same `generate:check` job; they ship in the npm package, so a consumer can
 `import conditions from '@markpol/dd-srd/ids/conditions.json' with { type: 'json' }` and compare `conditions.indices`.
+`ids/class-choices.json` and `ids/feature-counts.json` have the same shape and list the class choice ids and the
+per-count ids (see [Id stability contract](#id-stability-contract)).
 
 ## Package entries
 
@@ -106,6 +110,28 @@ tombstone to `ids/removed.json`.
 - `src/2014/tests/id-stability.test.ts` fails if a published id is neither in the data nor tombstoned, if a tombstone
   names an id that was never published or exists again (delete it when you restore an id), or if its `replacement`
   does not exist.
+
+Two more kinds of id are published the same way, as collections of their own in `ids/published.json`, with an
+`ids/<name>.json` list each and the same tombstones and test:
+
+- `class-choices`: the `id` of every proficiency choice, starting-equipment choice and `multi_classing.proficiency_choices`
+  choice of the 12 classes, and of the choices nested in their `options`. They are set by
+  `src/2014/derive-class-choices.ts` (`pnpm run derive:classes`): `<class>-equipment-<n>` counts the equipment choices
+  from 1, `<class>-proficiency-<what>` and `<class>-multiclass-proficiency-<what>` name what is chosen (`skills`,
+  `instruments`, `tool-or-instrument`), and `<choice id>-option-<n>` (and `-item-<m>` inside a `multiple` option) names a
+  nested choice by its position. An id belongs to the choice it was published for: if a choice is reordered, split or
+  merged, keep the old id on the choice it still names, give the new ones new ids and document them in
+  `docs/game-engine-changes.md`. The optional `id` is in the shared `ChoiceSchema` and is not translatable, so the
+  translation overlays, which carry choices by position, do not hold it.
+- `feature-counts`: the `id` of each step in the `by_level` lists of the features whose count grows with the level and
+  that have one record (`rage-3-uses`, `ki-12-points`, `sneak-attack-5d6`; see [docs/feature-mechanics.md](docs/feature-mechanics.md)).
+  They are derived from the Levels rows by `pnpm run derive:features`. The ids of the features that have a record
+  for each count (`action-surge-1-use`, `action-surge-2-uses`, `extra-attack-2`, `channel-divinity-2-rest` and the
+  like) are ordinary feature ids and are never renamed; if one is split, the old record and id stay and the new ids are
+  documented.
+
+`pnpm run generate` adds new ids of both kinds to their lists and to `ids/published.json` and never drops one;
+`pnpm test` fails if a published id is no longer in the data.
 
 To remove an id on purpose, delete it from the data, add its tombstone to `ids/removed.json`, run
 `pnpm run generate` and `pnpm test`. The 52 ids removed before the contract existed (40 equipment, 6 equipment
