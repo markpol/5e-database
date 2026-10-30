@@ -864,7 +864,8 @@
       }
     ],
     "image": "/api/images/monsters/adult-blue-dragon.png",
-    "url": "/api/2014/monsters/adult-blue-dragon"
+    "url": "/api/2014/monsters/adult-blue-dragon",
+    "environments": "Coastal, Desert"
   },
   {
     "index": "adult-brass-dragon",
@@ -1156,7 +1157,8 @@
       }
     ],
     "image": "/api/images/monsters/adult-brass-dragon.png",
-    "url": "/api/2014/monsters/adult-brass-dragon"
+    "url": "/api/2014/monsters/adult-brass-dragon",
+    "environments": "Desert"
   },
   {
     "index": "adult-bronze-dragon",
@@ -1444,7 +1446,8 @@
       }
     ],
     "image": "/api/images/monsters/adult-bronze-dragon.png",
-    "url": "/api/2014/monsters/adult-bronze-dragon"
+    "url": "/api/2014/monsters/adult-bronze-dragon",
+    "environments": "Coastal"
   },
   {
     "index": "adult-copper-dragon",
@@ -1728,7 +1731,8 @@
       }
     ],
     "image": "/api/images/monsters/adult-copper-dragon.png",
-    "url": "/api/2014/monsters/adult-copper-dragon"
+    "url": "/api/2014/monsters/adult-copper-dragon",
+    "environments": "Hill, Mountain"
   },
   {
     "index": "adult-gold-dragon",
@@ -2024,7 +2028,8 @@
       }
     ],
     "image": "/api/images/monsters/adult-gold-dragon.png",
-    "url": "/api/2014/monsters/adult-gold-dragon"
+    "url": "/api/2014/monsters/adult-gold-dragon",
+    "environments": "Forest, Grassland"
   },
   {
     "index": "adult-green-dragon",
@@ -2316,7 +2321,8 @@
       }
     ],
     "image": "/api/images/monsters/adult-green-dragon.png",
-    "url": "/api/2014/monsters/adult-green-dragon"
+    "url": "/api/2014/monsters/adult-green-dragon",
+    "environments": "Forest"
   },
   {
     "index": "adult-red-dragon",
@@ -2574,7 +2580,8 @@
       }
     ],
     "image": "/api/images/monsters/adult-red-dragon.png",
-    "url": "/api/2014/monsters/adult-red-dragon"
+    "url": "/api/2014/monsters/adult-red-dragon",
+    "environments": "Mountain"
   },
   {
     "index": "adult-silver-dragon",
@@ -2865,7 +2872,8 @@
       }
     ],
     "image": "/api/images/monsters/adult-silver-dragon.png",
-    "url": "/api/2014/monsters/adult-silver-dragon"
+    "url": "/api/2014/monsters/adult-silver-dragon",
+    "environments": "Arctic, Mountain"
   },
   {
     "index": "adult-white-dragon",
@@ -3128,7 +3136,8 @@
       }
     ],
     "image": "/api/images/monsters/adult-white-dragon.png",
-    "url": "/api/2014/monsters/adult-white-dragon"
+    "url": "/api/2014/monsters/adult-white-dragon",
+    "environments": "Arctic"
   },
   {
     "index": "air-elemental",
@@ -3554,7 +3563,8 @@
       }
     ],
     "image": "/api/images/monsters/ancient-black-dragon.png",
-    "url": "/api/2014/monsters/ancient-black-dragon"
+    "url": "/api/2014/monsters/ancient-black-dragon",
+    "environments": "Forest, Swamp"
   },
   {
     "index": "ancient-blue-dragon",
@@ -3812,7 +3822,8 @@
       }
     ],
     "image": "/api/images/monsters/ancient-blue-dragon.png",
-    "url": "/api/2014/monsters/ancient-blue-dragon"
+    "url": "/api/2014/monsters/ancient-blue-dragon",
+    "environments": "Coastal, Desert"
   },
   {
     "index": "ancient-brass-dragon",
@@ -4108,7 +4119,8 @@
       }
     ],
     "image": "/api/images/monsters/ancient-brass-dragon.png",
-    "url": "/api/2014/monsters/ancient-brass-dragon"
+    "url": "/api/2014/monsters/ancient-brass-dragon",
+    "environments": "Desert"
   },
   {
     "index": "ancient-bronze-dragon",
@@ -4400,7 +4412,8 @@
       }
     ],
     "image": "/api/images/monsters/ancient-bronze-dragon.png",
-    "url": "/api/2014/monsters/ancient-bronze-dragon"
+    "url": "/api/2014/monsters/ancient-bronze-dragon",
+    "environments": "Coastal"
   },
   {
     "index": "ancient-copper-dragon",
@@ -4688,7 +4701,8 @@
       }
     ],
     "image": "/api/images/monsters/ancient-copper-dragon.png",
-    "url": "/api/2014/monsters/ancient-copper-dragon"
+    "url": "/api/2014/monsters/ancient-copper-dragon",
+    "environments": "Hill, Mountain"
   },
   {
     "index": "ancient-gold-dragon",
@@ -4988,7 +5002,8 @@
       }
     ],
     "image": "/api/images/monsters/ancient-gold-dragon.png",
-    "url": "/api/2014/monsters/ancient-gold-dragon"
+    "url": "/api/2014/monsters/ancient-gold-dragon",
+    "environments": "Forest, Grassland"
   },
   {
     "index": "ancient-green-dragon",
@@ -5280,7 +5295,8 @@
       }
     ],
     "image": "/api/images/monsters/ancient-green-dragon.png",
-    "url": "/api/2014/monsters/ancient-green-dragon"
+    "url": "/api/2014/monsters/ancient-green-dragon",
+    "environments": "Forest"
   },
   {
     "index": "ancient-red-dragon",
@@ -5538,7 +5554,8 @@
       }
     ],
     "image": "/api/images/monsters/ancient-red-dragon.png",
-    "url": "/api/2014/monsters/ancient-red-dragon"
+    "url": "/api/2014/monsters/ancient-red-dragon",
+    "environments": "Mountain"
   },
   {
     "index": "ancient-silver-dragon",
@@ -5833,7 +5850,8 @@
       }
     ],
     "image": "/api/images/monsters/ancient-silver-dragon.png",
-    "url": "/api/2014/monsters/ancient-silver-dragon"
+    "url": "/api/2014/monsters/ancient-silver-dragon",
+    "environments": "Arctic, Mountain"
   },
   {
     "index": "ancient-white-dragon",
@@ -6096,7 +6114,8 @@
       }
     ],
     "image": "/api/images/monsters/ancient-white-dragon.png",
-    "url": "/api/2014/monsters/ancient-white-dragon"
+    "url": "/api/2014/monsters/ancient-white-dragon",
+    "environments": "Arctic"
   },
   {
     "index": "androsphinx",
@@ -6422,7 +6441,8 @@
       }
     ],
     "image": "/api/images/monsters/androsphinx.png",
-    "url": "/api/2014/monsters/androsphinx"
+    "url": "/api/2014/monsters/androsphinx",
+    "environments": "Desert"
   },
   {
     "index": "animated-armor",
@@ -6549,7 +6569,7 @@
     ],
     "image": "/api/images/monsters/animated-armor.png",
     "url": "/api/2014/monsters/animated-armor",
-    "environments": "Desert, Mountain"
+    "environments": "Underdark, Urban"
   },
   {
     "index": "ankheg",
@@ -7074,7 +7094,8 @@
       }
     ],
     "image": "/api/images/monsters/archmage.png",
-    "url": "/api/2014/monsters/archmage"
+    "url": "/api/2014/monsters/archmage",
+    "environments": "Urban"
   },
   {
     "index": "assassin",
@@ -7273,7 +7294,8 @@
       }
     ],
     "image": "/api/images/monsters/assassin.png",
-    "url": "/api/2014/monsters/assassin"
+    "url": "/api/2014/monsters/assassin",
+    "environments": "Urban"
   },
   {
     "index": "awakened-shrub",
@@ -7604,7 +7626,7 @@
       }
     ],
     "url": "/api/2014/monsters/azer",
-    "environments": ""
+    "environments": "Mountain, Underdark"
   },
   {
     "index": "baboon",
@@ -7945,7 +7967,8 @@
       }
     ],
     "image": "/api/images/monsters/balor.png",
-    "url": "/api/2014/monsters/balor"
+    "url": "/api/2014/monsters/balor",
+    "environments": "Underdark"
   },
   {
     "index": "bandit",
@@ -8433,7 +8456,7 @@
     ],
     "image": "/api/images/monsters/barbed-devil.png",
     "url": "/api/2014/monsters/barbed-devil",
-    "environments": ""
+    "environments": "Underdark"
   },
   {
     "index": "basilisk",
@@ -8585,7 +8608,7 @@
       }
     ],
     "url": "/api/2014/monsters/bat",
-    "environments": ""
+    "environments": "Forest, Underdark"
   },
   {
     "index": "bearded-devil",
@@ -8731,7 +8754,7 @@
       }
     ],
     "url": "/api/2014/monsters/bearded-devil",
-    "environments": ""
+    "environments": "Underdark"
   },
   {
     "index": "behir",
@@ -8892,7 +8915,8 @@
       }
     ],
     "image": "/api/images/monsters/behir.png",
-    "url": "/api/2014/monsters/behir"
+    "url": "/api/2014/monsters/behir",
+    "environments": "Mountain, Underdark"
   },
   {
     "index": "berserker",
@@ -9673,7 +9697,7 @@
     ],
     "image": "/api/images/monsters/blue-dragon-wyrmling.png",
     "url": "/api/2014/monsters/blue-dragon-wyrmling",
-    "environments": ""
+    "environments": "Coastal, Desert"
   },
   {
     "index": "boar",
@@ -9946,7 +9970,8 @@
       }
     ],
     "image": "/api/images/monsters/bone-devil.png",
-    "url": "/api/2014/monsters/bone-devil"
+    "url": "/api/2014/monsters/bone-devil",
+    "environments": "Underdark"
   },
   {
     "index": "brass-dragon-wyrmling",
@@ -10126,7 +10151,7 @@
     ],
     "image": "/api/images/monsters/brass-dragon-wyrmling.png",
     "url": "/api/2014/monsters/brass-dragon-wyrmling",
-    "environments": ""
+    "environments": "Desert"
   },
   {
     "index": "bronze-dragon-wyrmling",
@@ -10300,7 +10325,7 @@
     ],
     "image": "/api/images/monsters/bronze-dragon-wyrmling.png",
     "url": "/api/2014/monsters/bronze-dragon-wyrmling",
-    "environments": ""
+    "environments": "Coastal"
   },
   {
     "index": "brown-bear",
@@ -11072,7 +11097,8 @@
       }
     ],
     "image": "/api/images/monsters/chain-devil.png",
-    "url": "/api/2014/monsters/chain-devil"
+    "url": "/api/2014/monsters/chain-devil",
+    "environments": "Underdark"
   },
   {
     "index": "chimera",
@@ -11283,7 +11309,8 @@
       }
     ],
     "image": "/api/images/monsters/chimera.png",
-    "url": "/api/2014/monsters/chimera"
+    "url": "/api/2014/monsters/chimera",
+    "environments": "Hill, Mountain"
   },
   {
     "index": "chuul",
@@ -11556,7 +11583,8 @@
       }
     ],
     "image": "/api/images/monsters/clay-golem.png",
-    "url": "/api/2014/monsters/clay-golem"
+    "url": "/api/2014/monsters/clay-golem",
+    "environments": "Urban"
   },
   {
     "index": "cloaker",
@@ -11695,7 +11723,8 @@
       }
     ],
     "image": "/api/images/monsters/cloaker.png",
-    "url": "/api/2014/monsters/cloaker"
+    "url": "/api/2014/monsters/cloaker",
+    "environments": "Underdark"
   },
   {
     "index": "cloud-giant",
@@ -11927,7 +11956,8 @@
       }
     ],
     "image": "/api/images/monsters/cloud-giant.png",
-    "url": "/api/2014/monsters/cloud-giant"
+    "url": "/api/2014/monsters/cloud-giant",
+    "environments": "Mountain"
   },
   {
     "index": "cockatrice",
@@ -12322,7 +12352,7 @@
       }
     ],
     "url": "/api/2014/monsters/copper-dragon-wyrmling",
-    "environments": ""
+    "environments": "Hill, Mountain"
   },
   {
     "index": "couatl",
@@ -13620,7 +13650,8 @@
       }
     ],
     "image": "/api/images/monsters/deva.png",
-    "url": "/api/2014/monsters/deva"
+    "url": "/api/2014/monsters/deva",
+    "environments": "Urban"
   },
   {
     "index": "dire-wolf",
@@ -13977,7 +14008,8 @@
       }
     ],
     "image": "/api/images/monsters/djinni.png",
-    "url": "/api/2014/monsters/djinni"
+    "url": "/api/2014/monsters/djinni",
+    "environments": "Desert, Mountain"
   },
   {
     "index": "doppelganger",
@@ -14348,7 +14380,8 @@
       }
     ],
     "image": "/api/images/monsters/dragon-turtle.png",
-    "url": "/api/2014/monsters/dragon-turtle"
+    "url": "/api/2014/monsters/dragon-turtle",
+    "environments": "Coastal, Underwater"
   },
   {
     "index": "dretch",
@@ -14482,7 +14515,7 @@
       }
     ],
     "url": "/api/2014/monsters/dretch",
-    "environments": ""
+    "environments": "Underdark"
   },
   {
     "index": "drider",
@@ -14755,7 +14788,8 @@
       }
     ],
     "image": "/api/images/monsters/drider.png",
-    "url": "/api/2014/monsters/drider"
+    "url": "/api/2014/monsters/drider",
+    "environments": "Underdark"
   },
   {
     "index": "drow",
@@ -16033,7 +16067,8 @@
       }
     ],
     "image": "/api/images/monsters/efreeti.png",
-    "url": "/api/2014/monsters/efreeti"
+    "url": "/api/2014/monsters/efreeti",
+    "environments": "Desert"
   },
   {
     "index": "elephant",
@@ -16514,7 +16549,8 @@
       }
     ],
     "image": "/api/images/monsters/erinyes.png",
-    "url": "/api/2014/monsters/erinyes"
+    "url": "/api/2014/monsters/erinyes",
+    "environments": "Underdark"
   },
   {
     "index": "ettercap",
@@ -17079,7 +17115,8 @@
       }
     ],
     "image": "/api/images/monsters/fire-giant.png",
-    "url": "/api/2014/monsters/fire-giant"
+    "url": "/api/2014/monsters/fire-giant",
+    "environments": "Mountain"
   },
   {
     "index": "flesh-golem",
@@ -17210,7 +17247,7 @@
       }
     ],
     "url": "/api/2014/monsters/flesh-golem",
-    "environments": ""
+    "environments": "Urban"
   },
   {
     "index": "flying-snake",
@@ -17407,7 +17444,7 @@
       }
     ],
     "url": "/api/2014/monsters/flying-sword",
-    "environments": ""
+    "environments": "Urban"
   },
   {
     "index": "frost-giant",
@@ -17541,7 +17578,8 @@
       }
     ],
     "image": "/api/images/monsters/frost-giant.png",
-    "url": "/api/2014/monsters/frost-giant"
+    "url": "/api/2014/monsters/frost-giant",
+    "environments": "Arctic, Mountain"
   },
   {
     "index": "gargoyle",
@@ -18293,7 +18331,8 @@
       }
     ],
     "image": "/api/images/monsters/giant-ape.png",
-    "url": "/api/2014/monsters/giant-ape"
+    "url": "/api/2014/monsters/giant-ape",
+    "environments": "Forest, Mountain"
   },
   {
     "index": "giant-badger",
@@ -20031,7 +20070,8 @@
       }
     ],
     "image": "/api/images/monsters/giant-rat-diseased.png",
-    "url": "/api/2014/monsters/giant-rat-diseased"
+    "url": "/api/2014/monsters/giant-rat-diseased",
+    "environments": "Swamp, Urban"
   },
   {
     "index": "giant-scorpion",
@@ -21311,7 +21351,8 @@
       }
     ],
     "image": "/api/images/monsters/glabrezu.png",
-    "url": "/api/2014/monsters/glabrezu"
+    "url": "/api/2014/monsters/glabrezu",
+    "environments": "Underdark"
   },
   {
     "index": "gladiator",
@@ -22526,7 +22567,7 @@
       }
     ],
     "url": "/api/2014/monsters/green-dragon-wyrmling",
-    "environments": ""
+    "environments": "Forest"
   },
   {
     "index": "green-hag",
@@ -23337,7 +23378,8 @@
       }
     ],
     "image": "/api/images/monsters/guardian-naga.png",
-    "url": "/api/2014/monsters/guardian-naga"
+    "url": "/api/2014/monsters/guardian-naga",
+    "environments": "Underdark"
   },
   {
     "index": "gynosphinx",
@@ -23583,7 +23625,8 @@
       }
     ],
     "image": "/api/images/monsters/gynosphinx.png",
-    "url": "/api/2014/monsters/gynosphinx"
+    "url": "/api/2014/monsters/gynosphinx",
+    "environments": "Desert"
   },
   {
     "index": "half-red-dragon-veteran",
@@ -23757,7 +23800,7 @@
       }
     ],
     "url": "/api/2014/monsters/half-red-dragon-veteran",
-    "environments": ""
+    "environments": "Hill, Mountain"
   },
   {
     "index": "harpy",
@@ -23954,7 +23997,7 @@
       }
     ],
     "url": "/api/2014/monsters/hawk",
-    "environments": ""
+    "environments": "Forest, Grassland, Hill, Mountain"
   },
   {
     "index": "hell-hound",
@@ -24219,7 +24262,8 @@
       }
     ],
     "image": "/api/images/monsters/hezrou.png",
-    "url": "/api/2014/monsters/hezrou"
+    "url": "/api/2014/monsters/hezrou",
+    "environments": "Underdark"
   },
   {
     "index": "hill-giant",
@@ -24647,7 +24691,7 @@
       }
     ],
     "url": "/api/2014/monsters/homunculus",
-    "environments": ""
+    "environments": "Urban"
   },
   {
     "index": "horned-devil",
@@ -24865,7 +24909,8 @@
       }
     ],
     "image": "/api/images/monsters/horned-devil.png",
-    "url": "/api/2014/monsters/horned-devil"
+    "url": "/api/2014/monsters/horned-devil",
+    "environments": "Underdark"
   },
   {
     "index": "hunter-shark",
@@ -25042,7 +25087,8 @@
       }
     ],
     "image": "/api/images/monsters/hydra.png",
-    "url": "/api/2014/monsters/hydra"
+    "url": "/api/2014/monsters/hydra",
+    "environments": "Swamp"
   },
   {
     "index": "hyena",
@@ -25311,7 +25357,8 @@
       }
     ],
     "image": "/api/images/monsters/ice-devil.png",
-    "url": "/api/2014/monsters/ice-devil"
+    "url": "/api/2014/monsters/ice-devil",
+    "environments": "Underdark"
   },
   {
     "index": "ice-mephit",
@@ -25631,7 +25678,7 @@
       }
     ],
     "url": "/api/2014/monsters/imp",
-    "environments": ""
+    "environments": "Underdark, Urban"
   },
   {
     "index": "invisible-stalker",
@@ -25775,7 +25822,8 @@
       }
     ],
     "image": "/api/images/monsters/invisible-stalker.png",
-    "url": "/api/2014/monsters/invisible-stalker"
+    "url": "/api/2014/monsters/invisible-stalker",
+    "environments": "Urban"
   },
   {
     "index": "iron-golem",
@@ -25974,7 +26022,8 @@
       }
     ],
     "image": "/api/images/monsters/iron-golem.png",
-    "url": "/api/2014/monsters/iron-golem"
+    "url": "/api/2014/monsters/iron-golem",
+    "environments": "Urban"
   },
   {
     "index": "jackal",
@@ -26639,7 +26688,8 @@
       }
     ],
     "image": "/api/images/monsters/kraken.png",
-    "url": "/api/2014/monsters/kraken"
+    "url": "/api/2014/monsters/kraken",
+    "environments": "Underwater"
   },
   {
     "index": "lamia",
@@ -26969,7 +27019,7 @@
       }
     ],
     "url": "/api/2014/monsters/lemure",
-    "environments": ""
+    "environments": "Underdark"
   },
   {
     "index": "lich",
@@ -27343,7 +27393,8 @@
       }
     ],
     "image": "/api/images/monsters/lich.png",
-    "url": "/api/2014/monsters/lich"
+    "url": "/api/2014/monsters/lich",
+    "environments": "Underdark, Urban"
   },
   {
     "index": "lion",
@@ -27552,7 +27603,7 @@
       }
     ],
     "url": "/api/2014/monsters/lizard",
-    "environments": ""
+    "environments": "Desert, Forest, Swamp"
   },
   {
     "index": "lizardfolk",
@@ -28039,7 +28090,8 @@
       }
     ],
     "image": "/api/images/monsters/mage.png",
-    "url": "/api/2014/monsters/mage"
+    "url": "/api/2014/monsters/mage",
+    "environments": "Urban"
   },
   {
     "index": "magma-mephit",
@@ -28300,7 +28352,7 @@
       }
     ],
     "url": "/api/2014/monsters/magmin",
-    "environments": ""
+    "environments": "Mountain, Underdark"
   },
   {
     "index": "mammoth",
@@ -28419,7 +28471,8 @@
       }
     ],
     "image": "/api/images/monsters/mammoth.png",
-    "url": "/api/2014/monsters/mammoth"
+    "url": "/api/2014/monsters/mammoth",
+    "environments": "Arctic"
   },
   {
     "index": "manticore",
@@ -28719,7 +28772,8 @@
       }
     ],
     "image": "/api/images/monsters/marilith.png",
-    "url": "/api/2014/monsters/marilith"
+    "url": "/api/2014/monsters/marilith",
+    "environments": "Underdark"
   },
   {
     "index": "mastiff",
@@ -28990,7 +29044,8 @@
       }
     ],
     "image": "/api/images/monsters/medusa.png",
-    "url": "/api/2014/monsters/medusa"
+    "url": "/api/2014/monsters/medusa",
+    "environments": "Underdark, Urban"
   },
   {
     "index": "merfolk",
@@ -30204,7 +30259,8 @@
       }
     ],
     "image": "/api/images/monsters/mummy-lord.png",
-    "url": "/api/2014/monsters/mummy-lord"
+    "url": "/api/2014/monsters/mummy-lord",
+    "environments": "Desert, Urban"
   },
   {
     "index": "nalfeshnee",
@@ -30376,7 +30432,8 @@
       }
     ],
     "image": "/api/images/monsters/nalfeshnee.png",
-    "url": "/api/2014/monsters/nalfeshnee"
+    "url": "/api/2014/monsters/nalfeshnee",
+    "environments": "Underdark"
   },
   {
     "index": "night-hag",
@@ -30566,7 +30623,7 @@
       }
     ],
     "url": "/api/2014/monsters/night-hag",
-    "environments": ""
+    "environments": "Swamp, Underdark"
   },
   {
     "index": "nightmare",
@@ -30645,7 +30702,7 @@
       }
     ],
     "url": "/api/2014/monsters/nightmare",
-    "environments": ""
+    "environments": "Underdark"
   },
   {
     "index": "noble",
@@ -31139,7 +31196,7 @@
       }
     ],
     "url": "/api/2014/monsters/ogre-zombie",
-    "environments": ""
+    "environments": "Urban"
   },
   {
     "index": "oni",
@@ -31408,7 +31465,8 @@
       }
     ],
     "image": "/api/images/monsters/oni.png",
-    "url": "/api/2014/monsters/oni"
+    "url": "/api/2014/monsters/oni",
+    "environments": "Forest, Hill"
   },
   {
     "index": "orc",
@@ -32416,7 +32474,8 @@
       }
     ],
     "image": "/api/images/monsters/pit-fiend.png",
-    "url": "/api/2014/monsters/pit-fiend"
+    "url": "/api/2014/monsters/pit-fiend",
+    "environments": "Underdark"
   },
   {
     "index": "planetar",
@@ -32668,7 +32727,8 @@
       }
     ],
     "image": "/api/images/monsters/planetar.png",
-    "url": "/api/2014/monsters/planetar"
+    "url": "/api/2014/monsters/planetar",
+    "environments": "Mountain"
   },
   {
     "index": "plesiosaurus",
@@ -33416,7 +33476,8 @@
       }
     ],
     "image": "/api/images/monsters/purple-worm.png",
-    "url": "/api/2014/monsters/purple-worm"
+    "url": "/api/2014/monsters/purple-worm",
+    "environments": "Underdark"
   },
   {
     "index": "quasit",
@@ -33572,7 +33633,7 @@
       }
     ],
     "url": "/api/2014/monsters/quasit",
-    "environments": ""
+    "environments": "Underdark, Urban"
   },
   {
     "index": "quipper",
@@ -33871,7 +33932,8 @@
       }
     ],
     "image": "/api/images/monsters/rakshasa.png",
-    "url": "/api/2014/monsters/rakshasa"
+    "url": "/api/2014/monsters/rakshasa",
+    "environments": "Urban"
   },
   {
     "index": "rat",
@@ -34158,7 +34220,7 @@
       }
     ],
     "url": "/api/2014/monsters/red-dragon-wyrmling",
-    "environments": ""
+    "environments": "Mountain"
   },
   {
     "index": "reef-shark",
@@ -34327,7 +34389,8 @@
       }
     ],
     "image": "/api/images/monsters/remorhaz.png",
-    "url": "/api/2014/monsters/remorhaz"
+    "url": "/api/2014/monsters/remorhaz",
+    "environments": "Arctic"
   },
   {
     "index": "rhinoceros",
@@ -34618,7 +34681,8 @@
       }
     ],
     "image": "/api/images/monsters/roc.png",
-    "url": "/api/2014/monsters/roc"
+    "url": "/api/2014/monsters/roc",
+    "environments": "Coastal, Mountain"
   },
   {
     "index": "roper",
@@ -34842,7 +34906,7 @@
       }
     ],
     "url": "/api/2014/monsters/rug-of-smothering",
-    "environments": ""
+    "environments": "Urban"
   },
   {
     "index": "rust-monster",
@@ -36241,7 +36305,8 @@
       }
     ],
     "image": "/api/images/monsters/shield-guardian.png",
-    "url": "/api/2014/monsters/shield-guardian"
+    "url": "/api/2014/monsters/shield-guardian",
+    "environments": "Urban"
   },
   {
     "index": "silver-dragon-wyrmling",
@@ -36419,7 +36484,7 @@
       }
     ],
     "url": "/api/2014/monsters/silver-dragon-wyrmling",
-    "environments": ""
+    "environments": "Arctic, Mountain"
   },
   {
     "index": "skeleton",
@@ -36836,7 +36901,8 @@
       }
     ],
     "image": "/api/images/monsters/solar.png",
-    "url": "/api/2014/monsters/solar"
+    "url": "/api/2014/monsters/solar",
+    "environments": "Mountain"
   },
   {
     "index": "specter",
@@ -37084,7 +37150,7 @@
       }
     ],
     "url": "/api/2014/monsters/spider",
-    "environments": ""
+    "environments": "Forest, Underdark, Urban"
   },
   {
     "index": "spirit-naga",
@@ -37286,7 +37352,8 @@
       }
     ],
     "image": "/api/images/monsters/spirit-naga.png",
-    "url": "/api/2014/monsters/spirit-naga"
+    "url": "/api/2014/monsters/spirit-naga",
+    "environments": "Swamp, Underdark"
   },
   {
     "index": "sprite",
@@ -37924,7 +37991,8 @@
       }
     ],
     "image": "/api/images/monsters/stone-giant.png",
-    "url": "/api/2014/monsters/stone-giant"
+    "url": "/api/2014/monsters/stone-giant",
+    "environments": "Mountain"
   },
   {
     "index": "stone-golem",
@@ -38073,7 +38141,8 @@
       }
     ],
     "image": "/api/images/monsters/stone-golem.png",
-    "url": "/api/2014/monsters/stone-golem"
+    "url": "/api/2014/monsters/stone-golem",
+    "environments": "Urban"
   },
   {
     "index": "storm-giant",
@@ -38343,7 +38412,8 @@
       }
     ],
     "image": "/api/images/monsters/storm-giant.png",
-    "url": "/api/2014/monsters/storm-giant"
+    "url": "/api/2014/monsters/storm-giant",
+    "environments": "Coastal, Mountain"
   },
   {
     "index": "succubus-incubus",
@@ -39939,7 +40009,8 @@
       }
     ],
     "image": "/api/images/monsters/tarrasque.png",
-    "url": "/api/2014/monsters/tarrasque"
+    "url": "/api/2014/monsters/tarrasque",
+    "environments": "Grassland, Hill"
   },
   {
     "index": "thug",
@@ -40310,7 +40381,8 @@
       }
     ],
     "image": "/api/images/monsters/treant.png",
-    "url": "/api/2014/monsters/treant"
+    "url": "/api/2014/monsters/treant",
+    "environments": "Forest"
   },
   {
     "index": "tribal-warrior",
@@ -40736,7 +40808,8 @@
       }
     ],
     "image": "/api/images/monsters/tyrannosaurus-rex.png",
-    "url": "/api/2014/monsters/tyrannosaurus-rex"
+    "url": "/api/2014/monsters/tyrannosaurus-rex",
+    "environments": "Forest, Grassland, Swamp"
   },
   {
     "index": "unicorn",
@@ -41231,7 +41304,8 @@
       }
     ],
     "image": "/api/images/monsters/vampire-vampire.png",
-    "url": "/api/2014/monsters/vampire-vampire"
+    "url": "/api/2014/monsters/vampire-vampire",
+    "environments": "Underdark, Urban"
   },
   {
     "index": "vampire-bat",
@@ -41423,7 +41497,8 @@
       }
     ],
     "image": "/api/images/monsters/vampire-bat.png",
-    "url": "/api/2014/monsters/vampire-bat"
+    "url": "/api/2014/monsters/vampire-bat",
+    "environments": "Underdark, Urban"
   },
   {
     "index": "vampire-mist",
@@ -41568,7 +41643,8 @@
       }
     ],
     "image": "/api/images/monsters/vampire-mist.png",
-    "url": "/api/2014/monsters/vampire-mist"
+    "url": "/api/2014/monsters/vampire-mist",
+    "environments": "Underdark, Urban"
   },
   {
     "index": "vampire-spawn",
@@ -42166,7 +42242,8 @@
       }
     ],
     "image": "/api/images/monsters/vrock.png",
-    "url": "/api/2014/monsters/vrock"
+    "url": "/api/2014/monsters/vrock",
+    "environments": "Underdark"
   },
   {
     "index": "vulture",
@@ -42420,7 +42497,7 @@
       }
     ],
     "url": "/api/2014/monsters/warhorse-skeleton",
-    "environments": ""
+    "environments": "Urban"
   },
   {
     "index": "water-elemental",
@@ -42684,7 +42761,7 @@
     ],
     "image": "/api/images/monsters/weasel.png",
     "url": "/api/2014/monsters/weasel",
-    "environments": ""
+    "environments": "Forest, Grassland, Hill"
   },
   {
     "index": "werebear-bear",
@@ -44957,7 +45034,7 @@
       }
     ],
     "url": "/api/2014/monsters/white-dragon-wyrmling",
-    "environments": ""
+    "environments": "Arctic"
   },
   {
     "index": "wight",
@@ -45921,7 +45998,8 @@
       }
     ],
     "image": "/api/images/monsters/wyvern.png",
-    "url": "/api/2014/monsters/wyvern"
+    "url": "/api/2014/monsters/wyvern",
+    "environments": "Hill, Mountain"
   },
   {
     "index": "xorn",
@@ -46235,7 +46313,8 @@
       }
     ],
     "image": "/api/images/monsters/young-black-dragon.png",
-    "url": "/api/2014/monsters/young-black-dragon"
+    "url": "/api/2014/monsters/young-black-dragon",
+    "environments": "Forest, Swamp"
   },
   {
     "index": "young-blue-dragon",
@@ -46416,7 +46495,8 @@
       }
     ],
     "image": "/api/images/monsters/young-blue-dragon.png",
-    "url": "/api/2014/monsters/young-blue-dragon"
+    "url": "/api/2014/monsters/young-blue-dragon",
+    "environments": "Coastal, Desert"
   },
   {
     "index": "young-brass-dragon",
@@ -46623,7 +46703,8 @@
       }
     ],
     "image": "/api/images/monsters/young-brass-dragon.png",
-    "url": "/api/2014/monsters/young-brass-dragon"
+    "url": "/api/2014/monsters/young-brass-dragon",
+    "environments": "Desert"
   },
   {
     "index": "young-bronze-dragon",
@@ -46836,7 +46917,8 @@
       }
     ],
     "image": "/api/images/monsters/young-bronze-dragon.png",
-    "url": "/api/2014/monsters/young-bronze-dragon"
+    "url": "/api/2014/monsters/young-bronze-dragon",
+    "environments": "Coastal"
   },
   {
     "index": "young-copper-dragon",
@@ -47043,7 +47125,8 @@
       }
     ],
     "image": "/api/images/monsters/young-copper-dragon.png",
-    "url": "/api/2014/monsters/young-copper-dragon"
+    "url": "/api/2014/monsters/young-copper-dragon",
+    "environments": "Hill, Mountain"
   },
   {
     "index": "young-gold-dragon",
@@ -47264,7 +47347,8 @@
       }
     ],
     "image": "/api/images/monsters/young-gold-dragon.png",
-    "url": "/api/2014/monsters/young-gold-dragon"
+    "url": "/api/2014/monsters/young-gold-dragon",
+    "environments": "Forest, Grassland"
   },
   {
     "index": "young-green-dragon",
@@ -47465,7 +47549,8 @@
       }
     ],
     "image": "/api/images/monsters/young-green-dragon.png",
-    "url": "/api/2014/monsters/young-green-dragon"
+    "url": "/api/2014/monsters/young-green-dragon",
+    "environments": "Forest"
   },
   {
     "index": "young-red-dragon",
@@ -47646,7 +47731,8 @@
       }
     ],
     "image": "/api/images/monsters/young-red-dragon.png",
-    "url": "/api/2014/monsters/young-red-dragon"
+    "url": "/api/2014/monsters/young-red-dragon",
+    "environments": "Mountain"
   },
   {
     "index": "young-silver-dragon",
@@ -47860,7 +47946,8 @@
       }
     ],
     "image": "/api/images/monsters/young-silver-dragon.png",
-    "url": "/api/2014/monsters/young-silver-dragon"
+    "url": "/api/2014/monsters/young-silver-dragon",
+    "environments": "Arctic, Mountain"
   },
   {
     "index": "young-white-dragon",
@@ -48048,7 +48135,8 @@
       }
     ],
     "image": "/api/images/monsters/young-white-dragon.png",
-    "url": "/api/2014/monsters/young-white-dragon"
+    "url": "/api/2014/monsters/young-white-dragon",
+    "environments": "Arctic"
   },
   {
     "index": "zombie",

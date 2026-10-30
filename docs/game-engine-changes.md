@@ -130,6 +130,47 @@ Many magic items gained a structured `effect` object (`ability_score_modifier` w
 `label_prefix`/`type` for display). `requires_attunement` is a plain boolean alongside the existing prose. A handful of
 items with no combat use were removed.
 
+## Filled values: monster `environments`, magic-item `cost` and `weight`
+
+The `environments` of every monster and the `cost` and `weight` of every magic item are filled in. The values that were
+already present are unchanged, with one exception (`animated-armor`, below). The values added are invented, not taken
+from the SRD or any other source, and follow the fixed rules below so they can be regenerated or extended
+consistently. All three fields are marked as game-authored in `src/provenance/source-markers.json`.
+
+**Monster `environments`.** A comma-separated list (alphabetical for the values added) drawn from the 11 terms already in use: Arctic,
+Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark, Underwater, Urban. 118 monsters had no value
+(88 without the field and 30 with an empty string); each now has one, chosen from its type and from the values of
+similar monsters (for example the metallic and chromatic dragons by colour, fiends and aberrations in the Underdark,
+constructs and humanoid casters in Urban, golems and animated objects where they are built). `animated-armor` repeated
+`air-elemental`'s value (`Desert, Mountain`) and now reads `Underdark, Urban`. No monster is exempt.
+
+**Magic-item `cost`.** `{ quantity, unit: "gp" }`. An existing `cost` is kept; a missing one comes from the table below
+by rarity, with the existing priced items as anchors. Consumables are the potions, scrolls, oils, single-use dusts, the
+restorative ointment, feather tokens, elemental gems, marvelous pigments and anything flagged `is_consumable`.
+
+| Group | Common | Uncommon | Rare | Very rare | Legendary |
+| --- | --- | --- | --- | --- | --- |
+| Permanent (wondrous, ring, rod, staff, wand) | n/a | 2500 | 6000 | 25000 | 75000 |
+| Weapon | n/a | 1000 | 4000 | 16000 | 24000 |
+| Armor and shield | n/a | 500 | 1500 | 6000 | 24000 |
+| Ammunition (one piece) | n/a | 25 | 100 | 400 | n/a |
+| Consumable | 50 | 250 | 750 | 2500 | 25000 |
+
+A base entry that has variants (for example `potion-of-healing`, `armor`, `ioun-stone`) takes the lowest `cost` among
+its variants. `orb-of-dragonkind`, an artifact, has no `cost`; it is the only magic item without one.
+
+**Magic-item `weight`.** Pounds, as a number. A weight that the item's own text states is used as written. Otherwise:
+armor and shields use the weight of the SRD base armor in `5e-SRD-Equipment.json` (plate for plate armor, scale mail for
+dragon scale mail, chain mail for "any armor" entries, shield for shields); weapons use the SRD base weapon (a longsword
+for "any sword" and "any weapon" entries, the named weapon otherwise); ammunition is one twentieth of the SRD arrow
+bundle; potions 0.5 and oils the SRD oil flask; scrolls and rings the SRD parchment and signet ring (0); wands, rods and
+staffs the SRD arcane focus of the same name; books, tomes and manuals the SRD book; robes the SRD robes. Remaining
+wondrous items weigh 0 (gems, stones, tokens, dust), 1 (amulets and most worn or carried items), 2 (boots, cloaks,
+mantles), or 3 (helms), with a few larger objects set from the nearest SRD gear item.
+
+`src/2014/tests/game-data-coverage.test.ts` checks that every monster has a non-empty `environments` value made of
+those terms and every magic item has a `cost` and a `weight`, apart from the exception listed there.
+
 ## `package.json`: Node 24
 
 `engines.node` was widened from `"22.x"` to `"22.x || 24.x"` so the package can be installed under Node 24, with no
