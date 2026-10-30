@@ -343,7 +343,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -378,10 +380,53 @@
                             ]
                           },
                           "dc": {
-                            "type": "string",
-                            "enum": [
-                              "spell",
-                              "ki"
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "enum": [
+                                  "spell",
+                                  "ki"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "ability_modifier": {
+                                    "type": "string",
+                                    "enum": [
+                                      "str",
+                                      "dex",
+                                      "con",
+                                      "int",
+                                      "wis",
+                                      "cha"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "ability_modifier"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "fixed": {
+                                    "type": "number"
+                                  },
+                                  "increase_per_use": {
+                                    "type": "number"
+                                  },
+                                  "reset": {
+                                    "type": "string",
+                                    "const": "short_rest"
+                                  }
+                                },
+                                "required": [
+                                  "fixed"
+                                ],
+                                "additionalProperties": false
+                              }
                             ]
                           }
                         },
@@ -450,7 +495,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -466,7 +513,8 @@
                           "attack",
                           "ability_check",
                           "saving_throw",
-                          "death_saving_throw"
+                          "death_saving_throw",
+                          "initiative"
                         ]
                       },
                       "mode": {
@@ -490,6 +538,13 @@
                             "wis",
                             "cha"
                           ]
+                        }
+                      },
+                      "skills": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string"
                         }
                       },
                       "attack_kind": {
@@ -545,7 +600,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -740,7 +797,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -846,7 +905,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -913,7 +974,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -964,7 +1027,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -1040,7 +1105,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -1126,7 +1193,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -1240,7 +1309,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -1306,7 +1377,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -1376,7 +1449,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -1466,7 +1541,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -1530,7 +1607,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -1607,7 +1686,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -1671,7 +1752,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -1706,10 +1789,53 @@
                             ]
                           },
                           "dc": {
-                            "type": "string",
-                            "enum": [
-                              "spell",
-                              "ki"
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "enum": [
+                                  "spell",
+                                  "ki"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "ability_modifier": {
+                                    "type": "string",
+                                    "enum": [
+                                      "str",
+                                      "dex",
+                                      "con",
+                                      "int",
+                                      "wis",
+                                      "cha"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "ability_modifier"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "fixed": {
+                                    "type": "number"
+                                  },
+                                  "increase_per_use": {
+                                    "type": "number"
+                                  },
+                                  "reset": {
+                                    "type": "string",
+                                    "const": "short_rest"
+                                  }
+                                },
+                                "required": [
+                                  "fixed"
+                                ],
+                                "additionalProperties": false
+                              }
                             ]
                           }
                         },
@@ -1780,7 +1906,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -1839,7 +1967,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -1867,10 +1997,53 @@
                             ]
                           },
                           "dc": {
-                            "type": "string",
-                            "enum": [
-                              "spell",
-                              "ki"
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "enum": [
+                                  "spell",
+                                  "ki"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "ability_modifier": {
+                                    "type": "string",
+                                    "enum": [
+                                      "str",
+                                      "dex",
+                                      "con",
+                                      "int",
+                                      "wis",
+                                      "cha"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "ability_modifier"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "fixed": {
+                                    "type": "number"
+                                  },
+                                  "increase_per_use": {
+                                    "type": "number"
+                                  },
+                                  "reset": {
+                                    "type": "string",
+                                    "const": "short_rest"
+                                  }
+                                },
+                                "required": [
+                                  "fixed"
+                                ],
+                                "additionalProperties": false
+                              }
                             ]
                           }
                         },
@@ -1921,7 +2094,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -1986,7 +2161,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -2041,7 +2218,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -2075,6 +2254,56 @@
                       "no_material": {
                         "type": "boolean",
                         "const": true
+                      },
+                      "save_dc": {
+                        "anyOf": [
+                          {
+                            "type": "string",
+                            "enum": [
+                              "spell",
+                              "ki"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "ability_modifier": {
+                                "type": "string",
+                                "enum": [
+                                  "str",
+                                  "dex",
+                                  "con",
+                                  "int",
+                                  "wis",
+                                  "cha"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "ability_modifier"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "fixed": {
+                                "type": "number"
+                              },
+                              "increase_per_use": {
+                                "type": "number"
+                              },
+                              "reset": {
+                                "type": "string",
+                                "const": "short_rest"
+                              }
+                            },
+                            "required": [
+                              "fixed"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
                       }
                     },
                     "required": [
@@ -2115,7 +2344,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -2183,7 +2414,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -2258,7 +2491,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -2321,7 +2556,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -2433,7 +2670,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },
@@ -2457,6 +2696,867 @@
                     "required": [
                       "type",
                       "direction"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "damage"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "relation": {
+                        "type": "string",
+                        "enum": [
+                          "resistance",
+                          "immunity",
+                          "vulnerability"
+                        ]
+                      },
+                      "types": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "except": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "duration": {
+                        "type": "object",
+                        "properties": {
+                          "unit": {
+                            "type": "string",
+                            "enum": [
+                              "round",
+                              "minute",
+                              "end_of_next_turn"
+                            ]
+                          },
+                          "length": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "unit"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "relation",
+                      "types"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "evasion"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "ability": {
+                        "type": "string",
+                        "enum": [
+                          "str",
+                          "dex",
+                          "con",
+                          "int",
+                          "wis",
+                          "cha"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "ability"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "critical_damage_dice"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "class_specific": {
+                        "type": "string"
+                      },
+                      "attack_kind": {
+                        "type": "string",
+                        "enum": [
+                          "melee_weapon",
+                          "weapon",
+                          "bound_weapon",
+                          "ranged_weapon",
+                          "unarmed_strike",
+                          "monk_weapon",
+                          "finesse_or_ranged_weapon",
+                          "off_hand",
+                          "spell"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "class_specific",
+                      "attack_kind"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "avoid_dropping_to_zero"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "hit_points": {
+                        "type": "number"
+                      },
+                      "save": {
+                        "type": "object",
+                        "properties": {
+                          "ability": {
+                            "type": "string",
+                            "enum": [
+                              "str",
+                              "dex",
+                              "con",
+                              "int",
+                              "wis",
+                              "cha"
+                            ]
+                          },
+                          "dc": {
+                            "anyOf": [
+                              {
+                                "type": "string",
+                                "enum": [
+                                  "spell",
+                                  "ki"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "ability_modifier": {
+                                    "type": "string",
+                                    "enum": [
+                                      "str",
+                                      "dex",
+                                      "con",
+                                      "int",
+                                      "wis",
+                                      "cha"
+                                    ]
+                                  }
+                                },
+                                "required": [
+                                  "ability_modifier"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "fixed": {
+                                    "type": "number"
+                                  },
+                                  "increase_per_use": {
+                                    "type": "number"
+                                  },
+                                  "reset": {
+                                    "type": "string",
+                                    "const": "short_rest"
+                                  }
+                                },
+                                "required": [
+                                  "fixed"
+                                ],
+                                "additionalProperties": false
+                              }
+                            ]
+                          }
+                        },
+                        "required": [
+                          "ability",
+                          "dc"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "hit_points",
+                      "save"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "reroll"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "roll": {
+                        "type": "string",
+                        "const": "saving_throw"
+                      },
+                      "when": {
+                        "type": "string",
+                        "const": "failed"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "roll",
+                      "when"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "minimum_d20"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "roll": {
+                        "type": "string",
+                        "const": "ability_check"
+                      },
+                      "minimum": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "roll",
+                      "minimum"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "minimum_total"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "roll": {
+                        "type": "string",
+                        "const": "ability_check"
+                      },
+                      "abilities": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "str",
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                          ]
+                        }
+                      },
+                      "ability_score": {
+                        "type": "string",
+                        "enum": [
+                          "str",
+                          "dex",
+                          "con",
+                          "int",
+                          "wis",
+                          "cha"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "roll",
+                      "abilities",
+                      "ability_score"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "ability_score_increase"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "abilities": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "str",
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                          ]
+                        }
+                      },
+                      "increase": {
+                        "type": "number"
+                      },
+                      "maximum": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "abilities",
+                      "increase",
+                      "maximum"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "magical_attacks"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "attack_kind": {
+                        "type": "string",
+                        "enum": [
+                          "melee_weapon",
+                          "weapon",
+                          "bound_weapon",
+                          "ranged_weapon",
+                          "unarmed_strike",
+                          "monk_weapon",
+                          "finesse_or_ranged_weapon",
+                          "off_hand",
+                          "spell"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "attack_kind"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "end_condition"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "conditions": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "conditions"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "rolls_against_owner"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "roll": {
+                        "type": "string",
+                        "const": "attack"
+                      },
+                      "no_advantage": {
+                        "type": "boolean",
+                        "const": true
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "roll",
+                      "no_advantage"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "recover_uses"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "feature": {
+                        "type": "string"
+                      },
+                      "count": {
+                        "type": "number"
+                      },
+                      "trigger": {
+                        "type": "string",
+                        "const": "initiative_with_no_uses_left"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "feature",
+                      "count",
+                      "trigger"
                     ],
                     "additionalProperties": false
                   },
@@ -2491,7 +3591,9 @@
                             "target_below_hit_point_maximum",
                             "target_undead_or_fiend",
                             "sneak_attack_eligible",
-                            "in_dim_light_or_darkness"
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed"
                           ]
                         }
                       },

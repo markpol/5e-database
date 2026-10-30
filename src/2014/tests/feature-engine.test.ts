@@ -5,9 +5,15 @@ import ConditionData from '../en/5e-SRD-Conditions.json' with { type: 'json' };
 import SpellData from '../en/5e-SRD-Spells.json' with { type: 'json' };
 import MonsterData from '../en/5e-SRD-Monsters.json' with { type: 'json' };
 import SchoolData from '../en/5e-SRD-Magic-Schools.json' with { type: 'json' };
+import SkillData from '../en/5e-SRD-Skills.json' with { type: 'json' };
 import DamageTypeData from '../en/5e-SRD-Damage-Types.json' with { type: 'json' };
 import annotations from '../feature-engine-annotations.json' with { type: 'json' };
-import { deriveFeatureEngine, ENGINE_EXCLUDED, ENGINE_MAX_LEVEL } from '../derive-feature-engine';
+import {
+  deriveFeatureEngine,
+  ENGINE_EXCLUDED,
+  ENGINE_MAX_LEVEL_BY_CLASS,
+  engineMaxLevel,
+} from '../derive-feature-engine';
 
 type Modifier = { type: string } & Record<string, unknown>;
 type Uses = Record<string, unknown>;
@@ -65,6 +71,7 @@ const spells = new Map(
 const monsterTypes = new Set((MonsterData as unknown as { type: string }[]).map((m) => m.type));
 const schools = new Set(SchoolData.map((s) => s.index));
 const damageTypes = new Set(DamageTypeData.map((d) => d.index));
+const skills = new Set(SkillData.map((sk) => sk.index));
 
 const ABILITY_NAMES: Record<string, string> = {
   str: 'Strength',
@@ -79,7 +86,7 @@ const mentions = (f: Feature, n: number) =>
   new RegExp(`\\b(?:${n}|${NUMBER_WORDS[n] ?? n})\\b`, 'i').test(text(f));
 
 describe('feature engine', () => {
-  it('covers every feature of levels 1 to 5 that is not listed as excluded, and nothing above', () => {
+  it('covers every feature in scope that is not listed as excluded, and nothing above', () => {
     const structured = (f: Feature) => {
       const fs = f.feature_specific;
       return Boolean(
@@ -91,19 +98,28 @@ describe('feature engine', () => {
         fs?.damage_type
       );
     };
-    const inScope = features.filter((f) => f.level <= ENGINE_MAX_LEVEL);
+    const inScope = features.filter((f) => f.level <= engineMaxLevel(f.class.index));
     expect(
       inScope.filter((f) => !structured(f) && !(f.index in ENGINE_EXCLUDED)).map((f) => f.index)
     ).toEqual([]);
     expect(
-      features.filter((f) => f.level > ENGINE_MAX_LEVEL && engineOf(f)).map((f) => f.index)
+      features
+        .filter((f) => f.level > engineMaxLevel(f.class.index) && engineOf(f))
+        .map((f) => f.index)
     ).toEqual([]);
     for (const index of Object.keys(ENGINE_EXCLUDED)) {
       const excluded = feature(index);
       expect(excluded, index).toBeDefined();
-      expect(excluded!.level, index).toBeLessThanOrEqual(ENGINE_MAX_LEVEL);
+      expect(excluded!.level, index).toBeLessThanOrEqual(engineMaxLevel(excluded!.class.index));
       expect(engineOf(excluded!), index).toBeUndefined();
     }
+  });
+
+  it('names classes that exist in the per-class scope', () => {
+    const classes = new Set(features.map((f) => f.class.index));
+    for (const index of Object.keys(ENGINE_MAX_LEVEL_BY_CLASS))
+      expect(classes, index).toContain(index);
+    expect(Math.max(...features.map((f) => f.level))).toBe(20);
   });
 
   it('is derived from the annotation file without drift', () => {
@@ -131,8 +147,11 @@ describe('feature engine', () => {
   it('agrees with the action the text names', () => {
     for (const f of withEngine) {
       const { action_cost: cost } = engineOf(f)!;
-      const spell = modifiersOf(f).find((m) => m.type === 'spell');
-      if (spell) {
+      // A feature that only casts a spell takes its casting time, unless it is used at the end of a rest.
+      const spell = modifiersOf(f).every((m) => m.type === 'spell')
+        ? modifiersOf(f).find((m) => m.type === 'spell')
+        : undefined;
+      if (spell && cost !== 'rest') {
         const unit = spells.get(spell.spell as string)!.casting_time_data.unit;
         expect(cost, f.index).toBe(
           ['action', 'bonus_action', 'reaction'].includes(unit) ? unit : 'passive'
@@ -142,7 +161,7 @@ describe('feature engine', () => {
       if (cost === 'bonus_action') expect(text(f), f.index).toMatch(/bonus action/i);
       if (cost === 'reaction') expect(text(f), f.index).toMatch(/your reaction/i);
       if (cost === 'action') expect(text(f), f.index).toMatch(/\b(?:an|your) action\b/i);
-      if (cost === 'rest') expect(text(f), f.index).toMatch(/short rest/i);
+      if (cost === 'rest') expect(text(f), f.index).toMatch(/(?:short|long) rest/i);
       if (cost === 'passive' || cost === 'free')
         expect(text(f), f.index).not.toMatch(/(?:as an|use your) action/i);
     }
@@ -176,7 +195,7 @@ describe('feature engine', () => {
       if ('count' in uses && !('ability_modifier' in uses)) {
         expect(text(f), f.index).toMatch(
           uses.count === 1
-            ? /once|again until|before you can use it again|to use your [\w ]+ again/i
+            ? /once|again until|before you can use (?:it|this feature) again|to use your [\w ]+ again/i
             : /twice/i
         );
       }
@@ -276,6 +295,19 @@ describe('feature engine modifiers', () => {
       if (m.spell) expect(spells.has(m.spell as string), f.index).toBe(true);
       if (m.school) expect(schools, f.index).toContain(m.school);
       if (m.damage_type) expect(damageTypes, f.index).toContain(m.damage_type);
+      if (m.type === 'damage') {
+        for (const t of [...(m.types as string[]), ...((m.except as string[]) ?? [])])
+          expect(['all', ...damageTypes], f.index).toContain(t);
+      }
+      if (m.type === 'end_condition') {
+        for (const c of m.conditions as string[]) expect(conditions, f.index).toContain(c);
+      }
+      for (const skill of (m.skills as string[]) ?? []) expect(skills, f.index).toContain(skill);
+      if (m.type === 'recover_uses') {
+        const target = feature(m.feature as string);
+        expect(target, f.index).toBeDefined();
+        expect(target!.class.index, f.index).toBe(f.class.index);
+      }
       for (const t of (m.creature_types as string[]) ?? [])
         expect(monsterTypes, f.index).toContain(t);
       for (const index of (m.features as string[]) ?? [])
@@ -331,7 +363,7 @@ describe('feature engine modifiers', () => {
         );
       }
       if (m.type === 'critical_range')
-        expect(text(f), f.index).toContain(`roll of ${m.min_roll} or 20`);
+        expect(text(f), f.index).toMatch(new RegExp(`roll of ${m.min_roll}(?: or |-)20`));
       if (m.type === 'reroll_damage')
         expect(text(f), f.index).toContain(`roll a ${(m.faces as number[]).join(' or ')}`);
       if (m.type === 'extra_attack' && !m.action_cost && m.attack_kind === undefined) {
@@ -352,6 +384,105 @@ describe('feature engine modifiers', () => {
         expect(text(f), f.index).toContain(`${ABILITY_NAMES[save.ability]} saving throw`);
       }
       if (m.type === 'die') expect(text(f), f.index).toContain('Bardic Inspiration die');
+    }
+  });
+
+  it('mirror the conditions that name a feature as making its owner immune', () => {
+    // The condition side: `immune_if_feature` on charmed, frightened and poisoned.
+    const named = ConditionData.flatMap((c) =>
+      (
+        (c as { immune_if_feature?: { feature: string; while_condition?: string }[] })
+          .immune_if_feature ?? []
+      ).map((i) => ({ condition: c.index, ...i }))
+    );
+    expect(named.length).toBeGreaterThan(0);
+    for (const { condition, feature: index, while_condition } of named) {
+      const immunity = modifiersOf(feature(index)!).find(
+        (m) => m.type === 'immune_to' && (m.conditions as string[]).includes(condition)
+      );
+      expect(immunity, `${index}: ${condition}`).toBeDefined();
+      expect(immunity!.while_condition, `${index}: ${condition}`).toBe(while_condition);
+    }
+    // The feature side: an immunity to a condition that is not `disease` is named by that condition.
+    for (const [f, m] of all.filter(([, m]) => m.type === 'immune_to')) {
+      for (const c of (m.conditions as string[]).filter((x) => x !== 'disease')) {
+        expect(
+          named.some((n) => n.condition === c && n.feature === f.index),
+          `${f.index}: ${c}`
+        ).toBe(true);
+      }
+    }
+  });
+
+  it('state resistance and immunity to damage as the text does', () => {
+    for (const [f, m] of all.filter(([, m]) => m.type === 'damage')) {
+      expect(text(f), f.index).toMatch(m.relation === 'immunity' ? /immune to/i : /resistance to/i);
+      for (const t of m.types as string[]) {
+        if (t !== 'all') expect(text(f), f.index).toContain(t);
+      }
+      for (const t of (m.except as string[]) ?? []) expect(text(f), f.index).toContain(t);
+    }
+  });
+
+  it('give the evasion, rerolls, minimums and scores the text states', () => {
+    for (const [f, m] of all) {
+      if (m.type === 'evasion') {
+        expect(text(f), f.index).toContain(`${ABILITY_NAMES[m.ability as string]} saving throw`);
+        expect(text(f), f.index).toMatch(
+          /take no damage if you succeed .* only half damage if you fail/
+        );
+      }
+      if (m.type === 'reroll') expect(text(f), f.index).toMatch(/\breroll\b/);
+      if (m.type === 'minimum_d20') {
+        expect(text(f), f.index).toContain(
+          `d20 roll of ${(m.minimum as number) - 1} or lower as a ${m.minimum}`
+        );
+      }
+      if (m.type === 'minimum_total') {
+        expect(text(f), f.index).toContain(`${ABILITY_NAMES[m.ability_score as string]} score`);
+        expect(text(f), f.index).toMatch(/less than your/);
+      }
+      if (m.type === 'ability_score_increase') {
+        for (const a of m.abilities as string[])
+          expect(text(f), f.index).toContain(ABILITY_NAMES[a]);
+        expect(text(f), f.index).toContain(`increase by ${m.increase}`);
+        expect(text(f), f.index).toContain(`now ${m.maximum}`);
+      }
+      if (m.type === 'magical_attacks') expect(text(f), f.index).toMatch(/count as magical/);
+      if (m.type === 'rolls_against_owner')
+        expect(text(f), f.index).toMatch(/No attack roll has advantage against you/);
+      if (m.type === 'critical_damage_dice')
+        expect(text(f), f.index).toMatch(
+          /additional weapon damage die when determining the extra damage/
+        );
+      if (m.type === 'recover_uses') {
+        expect(text(f), f.index).toMatch(new RegExp(`regain ${m.count} ki points`));
+        expect(text(f), f.index).toMatch(/roll for initiative and have no ki points remaining/);
+      }
+      if (m.type === 'avoid_dropping_to_zero') {
+        const dc = (m.save as { dc: { fixed: number; increase_per_use: number } }).dc;
+        expect(text(f), f.index).toContain(`DC ${dc.fixed}`);
+        expect(text(f), f.index).toContain(`the DC increases by ${dc.increase_per_use}`);
+        expect(text(f), f.index).toContain(`${m.hit_points} hit point`);
+      }
+      if (m.type === 'roll' && m.roll === 'initiative')
+        expect(text(f), f.index).toMatch(/initiative/);
+      for (const sk of (m.skills as string[]) ?? []) {
+        expect(text(f).toLowerCase(), f.index).toContain(`(${sk})`);
+      }
+    }
+  });
+
+  it('give each save DC the formula the text states', () => {
+    for (const [f, m] of all) {
+      const dc = ((m.save as { dc?: unknown } | undefined)?.dc ?? m.save_dc) as unknown;
+      if (typeof dc !== 'object' || dc === null || !('ability_modifier' in dc)) continue;
+      const ability = ABILITY_NAMES[dc.ability_modifier as string];
+      expect(text(f), f.index).toMatch(
+        new RegExp(
+          `8 \\+ your (?:proficiency bonus \\+ your ${ability} modifier|${ability} modifier \\+ your proficiency bonus)`
+        )
+      );
     }
   });
 
