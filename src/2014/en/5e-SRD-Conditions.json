@@ -246,6 +246,9 @@
     "immune_if_feature": [
       {
         "feature": "purity-of-body"
+      },
+      {
+        "feature": "natures-ward"
       }
     ]
   },

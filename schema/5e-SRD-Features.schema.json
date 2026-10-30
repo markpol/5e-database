@@ -346,7 +346,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -355,6 +358,58 @@
                       },
                       "option": {
                         "type": "string"
+                      },
+                      "aura": {
+                        "anyOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "class_specific": {
+                                "type": "string"
+                              },
+                              "affects": {
+                                "type": "string",
+                                "enum": [
+                                  "allies_and_self",
+                                  "enemies"
+                                ]
+                              },
+                              "must_hear_owner": {
+                                "type": "boolean",
+                                "const": true
+                              }
+                            },
+                            "required": [
+                              "class_specific",
+                              "affects"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "range_ft": {
+                                "type": "number"
+                              },
+                              "affects": {
+                                "type": "string",
+                                "enum": [
+                                  "allies_and_self",
+                                  "enemies"
+                                ]
+                              },
+                              "must_hear_owner": {
+                                "type": "boolean",
+                                "const": true
+                              }
+                            },
+                            "required": [
+                              "range_ft",
+                              "affects"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
                       },
                       "condition": {
                         "type": "string"
@@ -445,7 +500,8 @@
                             "enum": [
                               "round",
                               "minute",
-                              "end_of_next_turn"
+                              "end_of_next_turn",
+                              "hour"
                             ]
                           },
                           "length": {
@@ -499,7 +555,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -508,6 +567,58 @@
                       },
                       "option": {
                         "type": "string"
+                      },
+                      "aura": {
+                        "anyOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "class_specific": {
+                                "type": "string"
+                              },
+                              "affects": {
+                                "type": "string",
+                                "enum": [
+                                  "allies_and_self",
+                                  "enemies"
+                                ]
+                              },
+                              "must_hear_owner": {
+                                "type": "boolean",
+                                "const": true
+                              }
+                            },
+                            "required": [
+                              "class_specific",
+                              "affects"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "range_ft": {
+                                "type": "number"
+                              },
+                              "affects": {
+                                "type": "string",
+                                "enum": [
+                                  "allies_and_self",
+                                  "enemies"
+                                ]
+                              },
+                              "must_hear_owner": {
+                                "type": "boolean",
+                                "const": true
+                              }
+                            },
+                            "required": [
+                              "range_ft",
+                              "affects"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
                       },
                       "roll": {
                         "type": "string",
@@ -570,6 +681,13 @@
                           "type": "string"
                         }
                       },
+                      "against_conditions": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
                       "duration": {
                         "type": "object",
                         "properties": {
@@ -578,7 +696,8 @@
                             "enum": [
                               "round",
                               "minute",
-                              "end_of_next_turn"
+                              "end_of_next_turn",
+                              "hour"
                             ]
                           },
                           "length": {
@@ -632,7 +751,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -656,6 +778,10 @@
                                   "allies_and_self",
                                   "enemies"
                                 ]
+                              },
+                              "must_hear_owner": {
+                                "type": "boolean",
+                                "const": true
                               }
                             },
                             "required": [
@@ -676,6 +802,10 @@
                                   "allies_and_self",
                                   "enemies"
                                 ]
+                              },
+                              "must_hear_owner": {
+                                "type": "boolean",
+                                "const": true
                               }
                             },
                             "required": [
@@ -836,6 +966,10 @@
                       "spell": {
                         "type": "string"
                       },
+                      "spell_damage_type_from": {
+                        "type": "string",
+                        "const": "dragon_ancestor"
+                      },
                       "min_spell_level": {
                         "type": "number"
                       },
@@ -890,7 +1024,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -999,7 +1136,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -1069,7 +1209,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -1123,7 +1266,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -1202,7 +1348,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -1291,7 +1440,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -1408,7 +1560,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -1477,7 +1632,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -1550,7 +1708,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -1643,7 +1804,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -1710,7 +1874,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -1727,7 +1894,8 @@
                         "type": "string",
                         "enum": [
                           "add",
-                          "subtract"
+                          "subtract",
+                          "add_to_own"
                         ]
                       },
                       "rolls": {
@@ -1751,8 +1919,7 @@
                       "type",
                       "class_specific",
                       "effect",
-                      "rolls",
-                      "range_ft"
+                      "rolls"
                     ],
                     "additionalProperties": false
                   },
@@ -1790,7 +1957,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -1857,7 +2027,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -1956,7 +2129,8 @@
                             "enum": [
                               "round",
                               "minute",
-                              "end_of_next_turn"
+                              "end_of_next_turn",
+                              "hour"
                             ]
                           },
                           "length": {
@@ -2012,7 +2186,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -2074,7 +2251,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -2202,7 +2382,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -2270,7 +2453,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -2294,6 +2480,10 @@
                                   "allies_and_self",
                                   "enemies"
                                 ]
+                              },
+                              "must_hear_owner": {
+                                "type": "boolean",
+                                "const": true
                               }
                             },
                             "required": [
@@ -2314,6 +2504,10 @@
                                   "allies_and_self",
                                   "enemies"
                                 ]
+                              },
+                              "must_hear_owner": {
+                                "type": "boolean",
+                                "const": true
                               }
                             },
                             "required": [
@@ -2325,6 +2519,13 @@
                         ]
                       },
                       "conditions": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "creature_types": {
                         "minItems": 1,
                         "type": "array",
                         "items": {
@@ -2372,7 +2573,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -2503,7 +2707,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -2526,7 +2733,8 @@
                           "reroll_damage_dice",
                           "save_disadvantage",
                           "maximize_healing_dice",
-                          "half_damage_on_successful_save"
+                          "half_damage_on_successful_save",
+                          "no_material_without_cost"
                         ]
                       },
                       "spell": {
@@ -2579,7 +2787,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -2657,7 +2868,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -2723,7 +2937,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -2838,7 +3055,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -2899,7 +3119,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -2924,6 +3147,10 @@
                           "type": "string"
                         }
                       },
+                      "types_from": {
+                        "type": "string",
+                        "const": "dragon_ancestor"
+                      },
                       "except": {
                         "minItems": 1,
                         "type": "array",
@@ -2939,7 +3166,8 @@
                             "enum": [
                               "round",
                               "minute",
-                              "end_of_next_turn"
+                              "end_of_next_turn",
+                              "hour"
                             ]
                           },
                           "length": {
@@ -2950,12 +3178,37 @@
                           "unit"
                         ],
                         "additionalProperties": false
+                      },
+                      "cost": {
+                        "type": "object",
+                        "properties": {
+                          "pool": {
+                            "type": "string"
+                          },
+                          "cost": {
+                            "anyOf": [
+                              {
+                                "type": "number"
+                              },
+                              {
+                                "type": "string",
+                                "const": "spell_level"
+                              }
+                            ]
+                          },
+                          "cost_class_specific": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "pool"
+                        ],
+                        "additionalProperties": false
                       }
                     },
                     "required": [
                       "type",
-                      "relation",
-                      "types"
+                      "relation"
                     ],
                     "additionalProperties": false
                   },
@@ -2993,7 +3246,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -3055,7 +3311,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -3124,7 +3383,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -3250,7 +3512,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -3310,7 +3575,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -3369,7 +3637,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -3452,7 +3723,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -3526,7 +3800,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -3591,7 +3868,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -3649,7 +3929,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -3677,6 +3960,10 @@
                         "items": {
                           "type": "string"
                         }
+                      },
+                      "opportunity_attacks_only": {
+                        "type": "boolean",
+                        "const": true
                       }
                     },
                     "required": [
@@ -3719,7 +4006,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -3785,7 +4075,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -3809,6 +4102,10 @@
                                   "allies_and_self",
                                   "enemies"
                                 ]
+                              },
+                              "must_hear_owner": {
+                                "type": "boolean",
+                                "const": true
                               }
                             },
                             "required": [
@@ -3829,6 +4126,10 @@
                                   "allies_and_self",
                                   "enemies"
                                 ]
+                              },
+                              "must_hear_owner": {
+                                "type": "boolean",
+                                "const": true
                               }
                             },
                             "required": [
@@ -3850,7 +4151,10 @@
                       },
                       "trigger": {
                         "type": "string",
-                        "const": "starts_turn_in_aura"
+                        "enum": [
+                          "starts_turn_in_aura",
+                          "target_returns"
+                        ]
                       },
                       "duration": {
                         "type": "object",
@@ -3860,7 +4164,8 @@
                             "enum": [
                               "round",
                               "minute",
-                              "end_of_next_turn"
+                              "end_of_next_turn",
+                              "hour"
                             ]
                           },
                           "length": {
@@ -3914,7 +4219,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -3932,7 +4240,10 @@
                       },
                       "trigger": {
                         "type": "string",
-                        "const": "initiative_with_no_uses_left"
+                        "enum": [
+                          "initiative_with_no_uses_left",
+                          "short_rest"
+                        ]
                       }
                     },
                     "required": [
@@ -3977,7 +4288,10 @@
                             "in_dim_light_or_darkness",
                             "proficient",
                             "moving_at_most_half_speed",
-                            "conscious"
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
                           ]
                         }
                       },
@@ -3998,6 +4312,125 @@
                     "required": [
                       "type",
                       "class_specific"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "fly_speed"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed",
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "equal_to_speed": {
+                        "type": "boolean",
+                        "const": true
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "equal_to_speed"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "const": "unlimited_uses"
+                      },
+                      "while": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "source_in_line_of_sight",
+                            "can_see_attacker",
+                            "not_incapacitated",
+                            "speed_above_0",
+                            "not_wearing_armor",
+                            "not_wearing_heavy_armor",
+                            "wearing_armor",
+                            "not_wielding_shield",
+                            "wielding_shield",
+                            "not_blinded",
+                            "not_deafened",
+                            "can_see_effect",
+                            "one_handed_melee_weapon_only",
+                            "wielding_with_two_hands",
+                            "not_proficient",
+                            "target_below_hit_point_maximum",
+                            "target_undead_or_fiend",
+                            "sneak_attack_eligible",
+                            "in_dim_light_or_darkness",
+                            "proficient",
+                            "moving_at_most_half_speed",
+                            "conscious",
+                            "attacker_hit_owner_this_turn",
+                            "target_favored_enemy",
+                            "target_not_fiend"
+                          ]
+                        }
+                      },
+                      "while_condition": {
+                        "type": "string"
+                      },
+                      "option": {
+                        "type": "string"
+                      },
+                      "features": {
+                        "minItems": 1,
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "features"
                     ],
                     "additionalProperties": false
                   }

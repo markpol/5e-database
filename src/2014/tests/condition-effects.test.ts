@@ -265,6 +265,7 @@ describe('condition references', () => {
       'charmed:mindless-rage',
       'frightened:mindless-rage',
       'poisoned:purity-of-body',
+      'poisoned:natures-ward',
     ]);
     for (const [condition, { feature }] of immunities) {
       const stem = condition.replace(/ed$/, '');

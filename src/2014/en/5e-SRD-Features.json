@@ -1206,6 +1206,28 @@
     "desc": [
       "At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required)."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "modifiers": [
+          {
+            "type": "roll",
+            "roll": "saving_throw",
+            "mode": "advantage",
+            "against_conditions": ["frightened", "charmed"],
+            "aura": {
+              "range_ft": 30,
+              "affects": "allies_and_self",
+              "must_hear_owner": true
+            },
+            "duration": {
+              "unit": "end_of_next_turn"
+            },
+            "while": ["not_incapacitated"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/countercharm"
   },
   {
@@ -1297,6 +1319,25 @@
       "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. ",
       "Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "recharge": "long_rest",
+        "uses": {
+          "ability_modifier": "cha",
+          "minimum": 1
+        },
+        "modifiers": [
+          {
+            "type": "die",
+            "class_specific": "bardic_inspiration_die",
+            "effect": "add",
+            "rolls": ["ability_check", "attack", "saving_throw"],
+            "range_ft": 60
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/bardic-inspiration-d10"
   },
   {
@@ -1575,6 +1616,23 @@
     "desc": [
       "Starting at 14th level, when you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the GM tells you whether you succeed or fail."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "uses": {
+          "pool": "bardic-inspiration-d6",
+          "cost": 1
+        },
+        "modifiers": [
+          {
+            "type": "die",
+            "class_specific": "bardic_inspiration_die",
+            "effect": "add_to_own",
+            "rolls": ["ability_check"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/peerless-skill"
   },
   {
@@ -1592,6 +1650,25 @@
       "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. ",
       "Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "recharge": "long_rest",
+        "uses": {
+          "ability_modifier": "cha",
+          "minimum": 1
+        },
+        "modifiers": [
+          {
+            "type": "die",
+            "class_specific": "bardic_inspiration_die",
+            "effect": "add",
+            "rolls": ["ability_check", "attack", "saving_throw"],
+            "range_ft": 60
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/bardic-inspiration-d12"
   },
   {
@@ -1681,6 +1758,19 @@
     "desc": [
       "At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "modifiers": [
+          {
+            "type": "recover_uses",
+            "feature": "bardic-inspiration-d6",
+            "count": 1,
+            "trigger": "initiative_with_no_uses_left"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/superior-inspiration"
   },
   {
@@ -3024,6 +3114,21 @@
       "- You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.",
       "- You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the GM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "recharge": "short_rest",
+        "uses": {
+          "count": 2
+        },
+        "modifiers": [
+          {
+            "type": "wild_shape",
+            "class_specific": ["wild_shape_max_cr", "wild_shape_fly", "wild_shape_swim"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/wild-shape-cr-1-or-below"
   },
   {
@@ -3099,6 +3204,27 @@
     "desc": [
       "When you reach 10th level, you can't be charmed or frightened by elementals or fey, and you are immune to poison and disease."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "immune_to",
+            "conditions": ["charmed", "frightened"],
+            "creature_types": ["elemental", "fey"]
+          },
+          {
+            "type": "immune_to",
+            "conditions": ["poisoned", "disease"]
+          },
+          {
+            "type": "damage",
+            "relation": "immunity",
+            "types": ["poison"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/natures-ward"
   },
   {
@@ -3234,6 +3360,29 @@
       "At 20th level, you can use your Wild Shape an unlimited number of times.",
       "Additionally, you can ignore the verbal and somatic components of your druid spells, as well as any material components that lack a cost and aren't consumed by a spell. You gain this benefit in both your normal shape and your beast shape from Wild Shape."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "unlimited_uses",
+            "features": [
+              "wild-shape-cr-1-4-or-below-no-flying-or-swim-speed",
+              "wild-shape-cr-1-2-or-below-no-flying-speed",
+              "wild-shape-cr-1-or-below"
+            ]
+          },
+          {
+            "type": "spell_change",
+            "change": "no_verbal_or_somatic"
+          },
+          {
+            "type": "spell_change",
+            "change": "no_material_without_cost"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/archdruid"
   },
   {
@@ -6882,6 +7031,19 @@
       "name": "Defensive Tactics",
       "url": "/api/2014/features/defensive-tactics"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "rolls_against_owner",
+            "roll": "attack",
+            "mode": "disadvantage",
+            "opportunity_attacks_only": true
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/defensive-tactics-escape-the-horde"
   },
   {
@@ -6907,6 +7069,19 @@
       "name": "Defensive Tactics",
       "url": "/api/2014/features/defensive-tactics"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "armor_class",
+            "flat": 4,
+            "while": ["attacker_hit_owner_this_turn"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/defensive-tactics-multiattack-defense"
   },
   {
@@ -6929,6 +7104,19 @@
       "index": "defensive-tactics",
       "name": "Defensive Tactics",
       "url": "/api/2014/features/defensive-tactics"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "roll",
+            "roll": "saving_throw",
+            "mode": "advantage",
+            "against_conditions": ["frightened"]
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/defensive-tactics-steel-will"
   },
@@ -7212,6 +7400,17 @@
     "desc": [
       "Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "modifiers": [
+          {
+            "type": "actions",
+            "actions": ["hide"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/vanish"
   },
   {
@@ -7310,6 +7509,17 @@
       "name": "Superior Hunter's Defense",
       "url": "/api/2014/features/superior-hunters-defense"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "evasion",
+            "ability": "dex"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/superior-hunters-defense-evasion"
   },
   {
@@ -7335,6 +7545,11 @@
       "name": "Superior Hunter's Defense",
       "url": "/api/2014/features/superior-hunters-defense"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "reaction"
+      }
+    },
     "url": "/api/2014/features/superior-hunters-defense-stand-against-the-tide"
   },
   {
@@ -7359,6 +7574,17 @@
       "index": "superior-hunters-defense",
       "name": "Superior Hunter's Defense",
       "url": "/api/2014/features/superior-hunters-defense"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "reaction",
+        "modifiers": [
+          {
+            "type": "reduce_damage",
+            "op": "halve"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/superior-hunters-defense-uncanny-dodge"
   },
@@ -7427,6 +7653,31 @@
     "desc": [
       "At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "recharge": "turn",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "attack_roll",
+            "ability_modifier": "wis",
+            "while": ["target_favored_enemy"],
+            "option": "attack_roll"
+          },
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "ability_modifier": "wis",
+            "while": ["target_favored_enemy"],
+            "option": "damage_roll"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/foe-slayer"
   },
   {
@@ -9546,6 +9797,32 @@
       "Starting at 6th level, when you cast a spell that deals damage of the type associated with your draconic ancestry, you can add your Charisma modifier to one damage roll of that spell. At the same time, you can spend 1 sorcery point to gain resistance to that damage type for 1 hour."
     ],
     "reference": "/api/2014/subclasses/draconic",
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "ability_modifier": "cha",
+            "spell_damage_type_from": "dragon_ancestor"
+          },
+          {
+            "type": "damage",
+            "relation": "resistance",
+            "types_from": "dragon_ancestor",
+            "duration": {
+              "unit": "hour",
+              "length": 1
+            },
+            "cost": {
+              "pool": "font-of-magic",
+              "cost": 1
+            }
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/elemental-affinity"
   },
   {
@@ -9710,6 +9987,18 @@
       "At 14th level, you gain the ability to sprout a pair of dragon wings from your back, gaining a flying speed equal to your current speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.",
       "You can't manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "bonus_action",
+        "modifiers": [
+          {
+            "type": "fly_speed",
+            "equal_to_speed": true,
+            "while": ["not_wearing_armor"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/dragon-wings"
   },
   {
@@ -9855,6 +10144,62 @@
     "desc": [
       "Beginning at 18th level, you can channel the dread presence of your dragon ancestor, causing those around you to become awestruck or frightened. As an action, you can spend 5 sorcery points to draw on this power and exude an aura of awe or fear (your choice) to a distance of 60 feet. For 1 minute or until you lose your concentration (as if you were casting a concentration spell), each hostile creature that starts its turn in this aura must succeed on a Wisdom saving throw or be charmed (if you chose awe) or frightened (if you chose fear) until the aura ends. A creature that succeeds on this saving throw is immune to your aura for 24 hours."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "uses": {
+          "pool": "font-of-magic",
+          "cost": 5
+        },
+        "modifiers": [
+          {
+            "type": "condition",
+            "condition": "charmed",
+            "target": "target",
+            "aura": {
+              "range_ft": 60,
+              "affects": "enemies"
+            },
+            "save": {
+              "ability": "wis",
+              "dc": "spell"
+            },
+            "duration": {
+              "unit": "minute",
+              "length": 1
+            },
+            "option": "awe"
+          },
+          {
+            "type": "condition",
+            "condition": "frightened",
+            "target": "target",
+            "aura": {
+              "range_ft": 60,
+              "affects": "enemies"
+            },
+            "save": {
+              "ability": "wis",
+              "dc": "spell"
+            },
+            "duration": {
+              "unit": "minute",
+              "length": 1
+            },
+            "option": "fear"
+          },
+          {
+            "type": "condition",
+            "condition": "concentrating",
+            "target": "self",
+            "duration": {
+              "unit": "minute",
+              "length": 1
+            }
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/draconic-presence"
   },
   {
@@ -9888,6 +10233,19 @@
     "desc": [
       "At 20th level, you regain 4 expended sorcery points whenever you finish a short rest."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "recover_uses",
+            "feature": "font-of-magic",
+            "count": 4,
+            "trigger": "short_rest"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/sorcerous-restoration"
   },
   {
@@ -10820,6 +11178,22 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "compulsion",
+            "slot": "spell_slot"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/eldritch-invocation-bewitching-whispers"
   },
   {
@@ -10844,6 +11218,22 @@
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "confusion",
+            "slot": "spell_slot"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/eldritch-invocation-dreadful-word"
   },
@@ -10870,6 +11260,22 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "polymorph",
+            "slot": "spell_slot"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/eldritch-invocation-sculptor-of-flesh"
   },
   {
@@ -10894,6 +11300,20 @@
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "levitate",
+            "slot": "none",
+            "self_only": true,
+            "no_material": true
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/eldritch-invocation-ascendant-step"
   },
@@ -10920,6 +11340,22 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "conjure-elemental",
+            "slot": "spell_slot"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/eldritch-invocation-minions-of-chaos"
   },
   {
@@ -10945,6 +11381,20 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "jump",
+            "slot": "none",
+            "self_only": true,
+            "no_material": true
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/eldritch-invocation-otherworldly-leap"
   },
   {
@@ -10967,6 +11417,18 @@
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "speak-with-dead",
+            "slot": "none"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/eldritch-invocation-whispers-of-the-grave"
   },
@@ -11011,6 +11473,21 @@
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "passive",
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "damage_roll",
+            "ability_modifier": "cha",
+            "minimum": 1,
+            "damage_type": "necrotic",
+            "attack_kind": "bound_weapon"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/eldritch-invocation-lifedrinker"
   },
@@ -11079,6 +11556,18 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "alter-self",
+            "slot": "none"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/eldritch-invocation-master-of-myriad-forms"
   },
   {
@@ -11101,6 +11590,18 @@
       "index": "eldritch-invocations",
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
+    },
+    "feature_specific": {
+      "engine": {
+        "action_cost": "action",
+        "modifiers": [
+          {
+            "type": "spell",
+            "spell": "arcane-eye",
+            "slot": "none"
+          }
+        ]
+      }
     },
     "url": "/api/2014/features/eldritch-invocation-visions-of-distant-realms"
   },
@@ -11289,6 +11790,29 @@
       "Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur.",
       "Once you use this feature, you can't use it again until you finish a short or long rest."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "recharge": "short_rest",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "bonus",
+            "to": "ability_check",
+            "dice": "1d10",
+            "option": "ability_check"
+          },
+          {
+            "type": "bonus",
+            "to": "saving_throw",
+            "dice": "1d10",
+            "option": "saving_throw"
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/dark-ones-own-luck"
   },
   {
@@ -11344,6 +11868,15 @@
       "You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.",
       "At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th- level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1
+        }
+      }
+    },
     "url": "/api/2014/features/mystic-arcanum-6th-level"
   },
   {
@@ -11379,6 +11912,15 @@
       "You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.",
       "At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th- level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1
+        }
+      }
+    },
     "url": "/api/2014/features/mystic-arcanum-7th-level"
   },
   {
@@ -11401,6 +11943,24 @@
       "At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes 10d10 psychic damage as it reels from its horrific experience.",
       "Once you use this feature, you can't use it again until you finish a long rest."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1
+        },
+        "modifiers": [
+          {
+            "type": "deal_damage",
+            "dice": "10d10",
+            "damage_type": "psychic",
+            "trigger": "target_returns",
+            "while": ["target_not_fiend"]
+          }
+        ]
+      }
+    },
     "url": "/api/2014/features/hurl-through-hell"
   },
   {
@@ -11418,6 +11978,15 @@
       "You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.",
       "At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th- level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1
+        }
+      }
+    },
     "url": "/api/2014/features/mystic-arcanum-8th-level"
   },
   {
@@ -11453,6 +12022,15 @@
       "You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.",
       "At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th- level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest."
     ],
+    "feature_specific": {
+      "engine": {
+        "action_cost": "free",
+        "recharge": "long_rest",
+        "uses": {
+          "count": 1
+        }
+      }
+    },
     "url": "/api/2014/features/mystic-arcanum-9th-level"
   },
   {

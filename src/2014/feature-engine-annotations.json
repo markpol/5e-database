@@ -2560,5 +2560,619 @@
         "count": 2
       }
     }
+  },
+  {
+    "feature": "countercharm",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "roll",
+          "roll": "saving_throw",
+          "mode": "advantage",
+          "against_conditions": ["frightened", "charmed"],
+          "aura": {
+            "range_ft": 30,
+            "affects": "allies_and_self",
+            "must_hear_owner": true
+          },
+          "duration": {
+            "unit": "end_of_next_turn"
+          },
+          "while": ["not_incapacitated"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "bardic-inspiration-d10",
+    "engine": {
+      "action_cost": "bonus_action",
+      "recharge": "long_rest",
+      "uses": {
+        "ability_modifier": "cha",
+        "minimum": 1
+      },
+      "modifiers": [
+        {
+          "type": "die",
+          "class_specific": "bardic_inspiration_die",
+          "effect": "add",
+          "rolls": ["ability_check", "attack", "saving_throw"],
+          "range_ft": 60
+        }
+      ]
+    }
+  },
+  {
+    "feature": "bardic-inspiration-d12",
+    "engine": {
+      "action_cost": "bonus_action",
+      "recharge": "long_rest",
+      "uses": {
+        "ability_modifier": "cha",
+        "minimum": 1
+      },
+      "modifiers": [
+        {
+          "type": "die",
+          "class_specific": "bardic_inspiration_die",
+          "effect": "add",
+          "rolls": ["ability_check", "attack", "saving_throw"],
+          "range_ft": 60
+        }
+      ]
+    }
+  },
+  {
+    "feature": "peerless-skill",
+    "engine": {
+      "action_cost": "free",
+      "uses": {
+        "pool": "bardic-inspiration-d6",
+        "cost": 1
+      },
+      "modifiers": [
+        {
+          "type": "die",
+          "class_specific": "bardic_inspiration_die",
+          "effect": "add_to_own",
+          "rolls": ["ability_check"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "superior-inspiration",
+    "engine": {
+      "action_cost": "free",
+      "modifiers": [
+        {
+          "type": "recover_uses",
+          "feature": "bardic-inspiration-d6",
+          "count": 1,
+          "trigger": "initiative_with_no_uses_left"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "wild-shape-cr-1-or-below",
+    "engine": {
+      "action_cost": "action",
+      "recharge": "short_rest",
+      "uses": {
+        "count": 2
+      },
+      "modifiers": [
+        {
+          "type": "wild_shape",
+          "class_specific": ["wild_shape_max_cr", "wild_shape_fly", "wild_shape_swim"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "natures-ward",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "immune_to",
+          "conditions": ["charmed", "frightened"],
+          "creature_types": ["elemental", "fey"]
+        },
+        {
+          "type": "immune_to",
+          "conditions": ["poisoned", "disease"]
+        },
+        {
+          "type": "damage",
+          "relation": "immunity",
+          "types": ["poison"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "archdruid",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "unlimited_uses",
+          "features": [
+            "wild-shape-cr-1-4-or-below-no-flying-or-swim-speed",
+            "wild-shape-cr-1-2-or-below-no-flying-speed",
+            "wild-shape-cr-1-or-below"
+          ]
+        },
+        {
+          "type": "spell_change",
+          "change": "no_verbal_or_somatic"
+        },
+        {
+          "type": "spell_change",
+          "change": "no_material_without_cost"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "elemental-affinity",
+    "engine": {
+      "action_cost": "free",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "ability_modifier": "cha",
+          "spell_damage_type_from": "dragon_ancestor"
+        },
+        {
+          "type": "damage",
+          "relation": "resistance",
+          "types_from": "dragon_ancestor",
+          "duration": {
+            "unit": "hour",
+            "length": 1
+          },
+          "cost": {
+            "pool": "font-of-magic",
+            "cost": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "feature": "dragon-wings",
+    "engine": {
+      "action_cost": "bonus_action",
+      "modifiers": [
+        {
+          "type": "fly_speed",
+          "equal_to_speed": true,
+          "while": ["not_wearing_armor"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "draconic-presence",
+    "engine": {
+      "action_cost": "action",
+      "uses": {
+        "pool": "font-of-magic",
+        "cost": 5
+      },
+      "modifiers": [
+        {
+          "type": "condition",
+          "condition": "charmed",
+          "target": "target",
+          "aura": {
+            "range_ft": 60,
+            "affects": "enemies"
+          },
+          "save": {
+            "ability": "wis",
+            "dc": "spell"
+          },
+          "duration": {
+            "unit": "minute",
+            "length": 1
+          },
+          "option": "awe"
+        },
+        {
+          "type": "condition",
+          "condition": "frightened",
+          "target": "target",
+          "aura": {
+            "range_ft": 60,
+            "affects": "enemies"
+          },
+          "save": {
+            "ability": "wis",
+            "dc": "spell"
+          },
+          "duration": {
+            "unit": "minute",
+            "length": 1
+          },
+          "option": "fear"
+        },
+        {
+          "type": "condition",
+          "condition": "concentrating",
+          "target": "self",
+          "duration": {
+            "unit": "minute",
+            "length": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "feature": "sorcerous-restoration",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "recover_uses",
+          "feature": "font-of-magic",
+          "count": 4,
+          "trigger": "short_rest"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "defensive-tactics-escape-the-horde",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "rolls_against_owner",
+          "roll": "attack",
+          "mode": "disadvantage",
+          "opportunity_attacks_only": true
+        }
+      ]
+    }
+  },
+  {
+    "feature": "defensive-tactics-multiattack-defense",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "armor_class",
+          "flat": 4,
+          "while": ["attacker_hit_owner_this_turn"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "defensive-tactics-steel-will",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "roll",
+          "roll": "saving_throw",
+          "mode": "advantage",
+          "against_conditions": ["frightened"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "vanish",
+    "engine": {
+      "action_cost": "bonus_action",
+      "modifiers": [
+        {
+          "type": "actions",
+          "actions": ["hide"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "superior-hunters-defense-evasion",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "evasion",
+          "ability": "dex"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "superior-hunters-defense-stand-against-the-tide",
+    "engine": {
+      "action_cost": "reaction"
+    }
+  },
+  {
+    "feature": "superior-hunters-defense-uncanny-dodge",
+    "engine": {
+      "action_cost": "reaction",
+      "modifiers": [
+        {
+          "type": "reduce_damage",
+          "op": "halve"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "foe-slayer",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "turn",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "attack_roll",
+          "ability_modifier": "wis",
+          "while": ["target_favored_enemy"],
+          "option": "attack_roll"
+        },
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "ability_modifier": "wis",
+          "while": ["target_favored_enemy"],
+          "option": "damage_roll"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-bewitching-whispers",
+    "engine": {
+      "action_cost": "action",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "compulsion",
+          "slot": "spell_slot"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-dreadful-word",
+    "engine": {
+      "action_cost": "action",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "confusion",
+          "slot": "spell_slot"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-sculptor-of-flesh",
+    "engine": {
+      "action_cost": "action",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "polymorph",
+          "slot": "spell_slot"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-minions-of-chaos",
+    "engine": {
+      "action_cost": "passive",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "conjure-elemental",
+          "slot": "spell_slot"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-ascendant-step",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "levitate",
+          "slot": "none",
+          "self_only": true,
+          "no_material": true
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-otherworldly-leap",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "jump",
+          "slot": "none",
+          "self_only": true,
+          "no_material": true
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-whispers-of-the-grave",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "speak-with-dead",
+          "slot": "none"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-master-of-myriad-forms",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "alter-self",
+          "slot": "none"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-visions-of-distant-realms",
+    "engine": {
+      "action_cost": "action",
+      "modifiers": [
+        {
+          "type": "spell",
+          "spell": "arcane-eye",
+          "slot": "none"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "eldritch-invocation-lifedrinker",
+    "engine": {
+      "action_cost": "passive",
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "damage_roll",
+          "ability_modifier": "cha",
+          "minimum": 1,
+          "damage_type": "necrotic",
+          "attack_kind": "bound_weapon"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "dark-ones-own-luck",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "short_rest",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "bonus",
+          "to": "ability_check",
+          "dice": "1d10",
+          "option": "ability_check"
+        },
+        {
+          "type": "bonus",
+          "to": "saving_throw",
+          "dice": "1d10",
+          "option": "saving_throw"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "hurl-through-hell",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      },
+      "modifiers": [
+        {
+          "type": "deal_damage",
+          "dice": "10d10",
+          "damage_type": "psychic",
+          "trigger": "target_returns",
+          "while": ["target_not_fiend"]
+        }
+      ]
+    }
+  },
+  {
+    "feature": "mystic-arcanum-6th-level",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      }
+    }
+  },
+  {
+    "feature": "mystic-arcanum-7th-level",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      }
+    }
+  },
+  {
+    "feature": "mystic-arcanum-8th-level",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      }
+    }
+  },
+  {
+    "feature": "mystic-arcanum-9th-level",
+    "engine": {
+      "action_cost": "free",
+      "recharge": "long_rest",
+      "uses": {
+        "count": 1
+      }
+    }
   }
 ]

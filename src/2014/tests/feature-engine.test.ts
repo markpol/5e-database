@@ -80,7 +80,13 @@ const ABILITY_NAMES: Record<string, string> = {
   wis: 'Wisdom',
   cha: 'Charisma',
 };
-const NUMBER_WORDS: Record<number, string> = { 1: 'one', 2: 'two', 3: 'three', 5: 'five' };
+const NUMBER_WORDS: Record<number, string> = {
+  1: 'one',
+  2: 'two',
+  3: 'three',
+  4: 'four',
+  5: 'five',
+};
 const mentions = (f: Feature, n: number) =>
   new RegExp(`\\b(?:${n}|${NUMBER_WORDS[n] ?? n})\\b`, 'i').test(text(f));
 
@@ -295,9 +301,21 @@ describe('feature engine modifiers', () => {
       if (m.school) expect(schools, f.index).toContain(m.school);
       if (m.damage_type) expect(damageTypes, f.index).toContain(m.damage_type);
       if (m.type === 'damage') {
-        for (const t of [...(m.types as string[]), ...((m.except as string[]) ?? [])])
+        for (const t of [...((m.types as string[]) ?? []), ...((m.except as string[]) ?? [])])
           expect(['all', ...damageTypes], f.index).toContain(t);
+        // A damage modifier names its types, or takes them from the dragon ancestor.
+        expect(
+          ['types', 'types_from'].filter((k) => k in m),
+          f.index
+        ).toHaveLength(1);
+        const cost = m.cost as { pool: string } | undefined;
+        if (cost) {
+          expect(feature(cost.pool)!.class.index, f.index).toBe(f.class.index);
+          expect(engineOf(feature(cost.pool)!)?.uses, f.index).toBeDefined();
+        }
       }
+      for (const c of (m.against_conditions as string[]) ?? [])
+        expect(conditions, f.index).toContain(c);
       if (m.type === 'end_condition') {
         for (const c of m.conditions as string[]) expect(conditions, f.index).toContain(c);
       }
@@ -353,7 +371,11 @@ describe('feature engine modifiers', () => {
           new RegExp(`\\+${m.flat} bonus|${m.flat} \\+ the spell's level`)
         );
       }
-      if (typeof m.dice === 'string') expect(text(f), f.index).toContain(m.dice);
+      // "add a d10" is the dice 1d10.
+      if (typeof m.dice === 'string')
+        expect(text(f), f.index).toMatch(
+          new RegExp(`(?:\\b1)?${(m.dice as string).replace(/^1/, '')}\\b`)
+        );
       for (const field of ['range_ft', 'within_ft', 'distance_ft']) {
         if (typeof m[field] === 'number')
           expect(text(f), `${f.index}: ${field}`).toContain(`${m[field]} feet`);
@@ -387,6 +409,8 @@ describe('feature engine modifiers', () => {
         expect(text(f), f.index).toContain(`${ABILITY_NAMES[save.ability]} saving throw`);
       }
       if (m.type === 'die') expect(text(f), f.index).toContain('Bardic Inspiration die');
+      // A die an owner adds to the owner's own roll has no range; the others have one.
+      if (m.type === 'die') expect('range_ft' in m, f.index).toBe(m.effect !== 'add_to_own');
     }
   });
 
@@ -407,8 +431,11 @@ describe('feature engine modifiers', () => {
       expect(immunity!.while_condition, `${index}: ${condition}`).toBe(while_condition);
     }
     // The feature side: an immunity to a condition that is not `disease` is named by that condition, unless it is an
-    // aura, which protects the creatures within a range of the owner and which `immune_if_feature` does not model.
-    for (const [f, m] of all.filter(([, m]) => m.type === 'immune_to' && !m.aura)) {
+    // aura, which protects the creatures within a range of the owner, or is limited to the conditions that creatures
+    // of some types cause; `immune_if_feature` models neither.
+    for (const [f, m] of all.filter(
+      ([, m]) => m.type === 'immune_to' && !m.aura && !m.creature_types
+    )) {
       for (const c of (m.conditions as string[]).filter((x) => x !== 'disease')) {
         expect(
           named.some((n) => n.condition === c && n.feature === f.index),
@@ -421,10 +448,25 @@ describe('feature engine modifiers', () => {
   it('state resistance and immunity to damage as the text does', () => {
     for (const [f, m] of all.filter(([, m]) => m.type === 'damage')) {
       expect(text(f), f.index).toMatch(m.relation === 'immunity' ? /immune to/i : /resistance to/i);
-      for (const t of m.types as string[]) {
+      for (const t of (m.types as string[]) ?? []) {
         if (t !== 'all') expect(text(f), f.index).toContain(t);
       }
       for (const t of (m.except as string[]) ?? []) expect(text(f), f.index).toContain(t);
+      const duration = m.duration as { unit: string; length: number } | undefined;
+      if (duration) expect(text(f), f.index).toContain(`${duration.length} ${duration.unit}`);
+      const cost = m.cost as { pool: string; cost: number } | undefined;
+      if (cost) expect(text(f), f.index).toContain(`${cost.cost} sorcery point`);
+      if (m.types_from) {
+        // The type is that of the dragon ancestor the owner chose, of which every dragon has a damage type.
+        expect(text(f), f.index).toMatch(
+          /damage of the type associated with your draconic ancestry/
+        );
+        expect(text(f), f.index).toContain('resistance to that damage type');
+        const dragons = features.filter((x) => x.index.startsWith('dragon-ancestor-'));
+        expect(dragons.length).toBeGreaterThan(0);
+        for (const d of dragons)
+          expect(damageTypes, d.index).toContain(d.feature_specific?.damage_type);
+      }
     }
   });
 
@@ -460,8 +502,17 @@ describe('feature engine modifiers', () => {
           /additional weapon damage die when determining the extra damage/
         );
       if (m.type === 'recover_uses') {
-        expect(text(f), f.index).toMatch(new RegExp(`regain ${m.count} ki points`));
-        expect(text(f), f.index).toMatch(/roll for initiative and have no ki points remaining/);
+        const pool = feature(m.feature as string)!;
+        // The recovered uses are those of the pool: ki points, uses of Bardic Inspiration, sorcery points.
+        const unit = engineOf(pool)!.uses?.unit === 'point' ? 'points?' : 'uses?';
+        const what = `(?:${NUMBER_WORDS[m.count as number]}|${m.count}) (?:expended )?(?:(?:ki|sorcery) )?${unit}`;
+        expect(text(f), f.index).toMatch(new RegExp(`regain ${what}`));
+        if (m.trigger === 'initiative_with_no_uses_left')
+          expect(text(f), f.index).toMatch(
+            /roll(?: for)? initiative and have no (?:ki points|uses of Bardic Inspiration) (?:remaining|left)/
+          );
+        if (m.trigger === 'short_rest')
+          expect(text(f), f.index).toMatch(/whenever you finish a short rest/);
       }
       if (m.type === 'avoid_dropping_to_zero') {
         const dc = (m.save as { dc: { fixed: number; increase_per_use: number } }).dc;
@@ -494,20 +545,30 @@ describe('feature engine modifiers', () => {
     const auras = all.filter(([, m]) => m.aura);
     expect(auras.length).toBeGreaterThan(0);
     for (const [f, m] of auras) {
-      const aura = m.aura as { class_specific?: string; range_ft?: number; affects: string };
+      const aura = m.aura as {
+        class_specific?: string;
+        range_ft?: number;
+        affects: string;
+        must_hear_owner?: boolean;
+      };
       if (aura.class_specific) {
         // The Levels row of the owner's level gives the range, and the text states it for that level.
         const range = classSpecific(f, aura.class_specific);
         expect(typeof range === 'number' && range > 0, f.index).toBe(true);
         expect(text(f), f.index).toContain(`within ${range} feet of you`);
       } else {
-        expect(text(f), f.index).toContain(`${aura.range_ft}-foot radius`);
+        expect(text(f), f.index).toMatch(
+          new RegExp(
+            `${aura.range_ft}-foot radius|distance of ${aura.range_ft} feet|within ${aura.range_ft} feet of you`
+          )
+        );
       }
       expect(text(f), f.index).toMatch(
         aura.affects === 'enemies'
-          ? /enemy creature/
-          : /you (?:or a|and) friendly creatures? within \d+ feet of you/
+          ? /enemy creature|hostile creature/
+          : /you (?:or a|and) (?:any )?friendly creatures? within \d+ feet of you/
       );
+      if (aura.must_hear_owner) expect(text(f), f.index).toMatch(/must be able to hear you/);
     }
   });
 
@@ -521,8 +582,12 @@ describe('feature engine modifiers', () => {
   it('give the damage dealt, the spells ended and the rolls against spells the text states', () => {
     for (const [f, m] of all) {
       if (m.type === 'deal_damage') {
-        expect(text(f), f.index).toContain(`${m.flat} ${m.damage_type} damage`);
-        expect(text(f), f.index).toMatch(/starts its turn/);
+        expect(text(f), f.index).toContain(`${m.flat ?? m.dice} ${m.damage_type} damage`);
+        expect(text(f), f.index).toMatch(
+          m.trigger === 'starts_turn_in_aura'
+            ? /starts its turn/
+            : /At the end of your next turn, the target returns to the space it previously occupied/
+        );
       }
       if (m.type === 'end_spell') {
         expect(text(f), f.index).toContain(`end ${NUMBER_WORDS[m.count as number]} spell`);
@@ -534,8 +599,10 @@ describe('feature engine modifiers', () => {
         expect(text(f), f.index).toMatch(/saving throws against spells cast by/);
         for (const t of m.against_spells_cast_by as string[]) expect(text(f), f.index).toContain(t);
       }
-      const duration = m.duration as { unit: string; length: number } | undefined;
-      if ((m.type === 'roll' || m.type === 'deal_damage') && duration)
+      const duration = m.duration as { unit: string; length?: number } | undefined;
+      if ((m.type === 'roll' || m.type === 'deal_damage') && duration?.unit === 'end_of_next_turn')
+        expect(text(f), f.index).toContain('until the end of your next turn');
+      else if ((m.type === 'roll' || m.type === 'deal_damage') && duration)
         expect(text(f), f.index).toContain(`${duration.length} ${duration.unit}`);
     }
   });
@@ -546,8 +613,18 @@ describe('feature engine modifiers', () => {
         ['no_advantage', 'mode'].filter((k) => k in m),
         f.index
       ).toHaveLength(1);
-      expect('mode' in m, f.index).toBe('creature_types' in m);
       if (!m.mode) continue;
+      // The attack rolls that have disadvantage are those of some creature types, or the opportunity attacks.
+      expect(
+        ['creature_types', 'opportunity_attacks_only'].filter((k) => k in m),
+        f.index
+      ).toHaveLength(1);
+      if (m.opportunity_attacks_only) {
+        expect(text(f), f.index).toMatch(
+          /Opportunity attacks against you are made with disadvantage/
+        );
+        continue;
+      }
       const named = modifiersOf(f).find((x) => x.type === 'spell' && x.always_active)!;
       expect(named, f.index).toBeDefined();
       const spellText = spells.get(named.spell as string)!.desc.join(' ');
@@ -570,8 +647,22 @@ describe('feature engine modifiers', () => {
       if (m.target === 'self') expect(text(f), f.index).toMatch(/creature other than you/);
       if (m.school) expect(text(f), f.index).toContain(m.school);
       if (m.ability_modifier && m.minimum) {
-        expect(text(f), f.index).toContain(`minimum bonus of +${m.minimum}`);
+        expect(text(f), f.index).toMatch(
+          new RegExp(`minimum bonus of \\+${m.minimum}|\\(minimum ${m.minimum}\\)`)
+        );
       }
+      if (m.spell_damage_type_from) {
+        expect(text(f), f.index).toMatch(/spell that deals damage of the type associated with/);
+        expect(text(f), f.index).toContain(
+          `add your ${ABILITY_NAMES[m.ability_modifier as string]} modifier to one damage roll`
+        );
+      }
+      if (m.damage_type) expect(text(f), f.index).toContain(`${m.damage_type} damage`);
+      if (m.attack_kind === 'bound_weapon') expect(text(f), f.index).toMatch(/pact weapon/);
+      if ((m.while as string[] | undefined)?.includes('attacker_hit_owner_this_turn'))
+        expect(text(f), f.index).toMatch(
+          /When a creature hits you with an attack.* all subsequent attacks made by that creature/
+        );
       if (m.dice_at_class_level) {
         const steps = Object.entries(m.dice_at_class_level as Record<string, string>);
         expect(Number(steps[0][0]), f.index).toBe(f.level);
@@ -592,6 +683,12 @@ describe('feature engine modifiers', () => {
           /takes half the cantrip's damage \(if any\) but suffers no additional/
         );
       if (m.max_spell_level === 0) expect(text(f), f.index).toMatch(/cantrip/);
+      if (m.change === 'no_material_without_cost')
+        expect(text(f), f.index).toMatch(
+          /material components that lack a cost and aren't consumed by a spell/
+        );
+      if (m.change === 'no_verbal_or_somatic' && !f.index.startsWith('metamagic-'))
+        expect(text(f), f.index).toMatch(/ignore the verbal and somatic components/);
     }
   });
 
@@ -607,6 +704,45 @@ describe('feature engine modifiers', () => {
     expect(smite.dice_at_slot_level).toEqual(expected);
   });
 
+  it('give the rolls against conditions, the flying speed and the unlimited uses the text states', () => {
+    for (const [f, m] of all) {
+      for (const c of (m.against_conditions as string[]) ?? []) {
+        expect(m.roll, f.index).toBe('saving_throw');
+        expect(text(f), f.index).toMatch(
+          new RegExp(`advantage on saving throws against being .*${c}`)
+        );
+      }
+      if (m.type === 'immune_to' && m.creature_types) {
+        expect(text(f), f.index).toMatch(/can't be charmed or frightened by elementals or fey/);
+        expect(m.conditions, f.index).toEqual(['charmed', 'frightened']);
+      }
+      if (m.type === 'fly_speed')
+        expect(text(f), f.index).toContain('flying speed equal to your current speed');
+      if (m.type === 'unlimited_uses') {
+        expect(text(f), f.index).toContain('Wild Shape an unlimited number of times');
+        for (const index of m.features as string[]) {
+          const target = feature(index)!;
+          expect(target.class.index, f.index).toBe(f.class.index);
+          expect(engineOf(target)?.uses, index).toBeDefined();
+        }
+      }
+    }
+  });
+
+  it('give an aura that applies a condition the save and the choice the text states', () => {
+    const presence = engineOf(feature('draconic-presence')!)!;
+    const options = presence.modifiers!.filter((m) => m.aura);
+    expect(options.map((m) => [m.option, m.condition])).toEqual([
+      ['awe', 'charmed'],
+      ['fear', 'frightened'],
+    ]);
+    // Concentration is the cost of keeping the aura, and applies whichever option is chosen.
+    const concentration = presence.modifiers!.find((m) => m.condition === 'concentrating')!;
+    expect(concentration.option).toBeUndefined();
+    expect(concentration.target).toBe('self');
+    expect(text(feature('draconic-presence')!)).toMatch(/until you lose your concentration/);
+  });
+
   it('apply conditions that the text names', () => {
     const WORDS: Record<string, RegExp> = {
       enraged: /rage/i,
@@ -614,6 +750,7 @@ describe('feature engine modifiers', () => {
       reckless: /recklessly/i,
       'sacred-weapon': /imbue one weapon/i,
       'no-reactions': /can't take reactions/i,
+      concentrating: /concentration/i,
     };
     for (const [f, m] of all.filter(([, m]) => m.type === 'condition')) {
       expect(text(f), f.index).toMatch(

@@ -20,7 +20,7 @@ removed.
 | Equipment categories | `5e-SRD-Equipment-Categories.json` | Removed 6 non-combat categories (`gaming-sets`, `land-vehicles`, `mounts-and-other-animals`, `mounts-and-vehicles`, `tack-harness-and-drawn-vehicles`, `waterborne-vehicles`) and their members |
 | Proficiencies | `5e-SRD-Proficiencies.json` | Removed proficiency entries tied to the removed equipment (e.g. `nets`, `land-vehicles`, `water-vehicles`) |
 | Classes | `5e-SRD-Classes.json`, `derive-class-choices.ts` (new script) | Added a stable `id` to the 14 proficiency choices, the 39 starting-equipment choices, the 4 multi-classing proficiency choices and the 21 choices nested in their options (see "Classes: choice ids") |
-| Features | `5e-SRD-Features.json`, `derive-feature-engine.ts` (new script), `feature-engine-annotations.json` (new file) | Bard/Rogue Expertise reworked from a two-level nested choice (`choose 1` of a `choose 2` sub-choice) to a flat `choose 2`; trimmed some prose (e.g. Martial Arts' "nunchaku/kama" flavor text, Frenzy wording); added `feature_specific.engine` (`action_cost`, `recharge`, `uses`, `modifiers`) to 151 features (99 of levels 1 to 5 and 52 of levels 6 to 20 of the barbarian, fighter, monk, rogue, paladin, cleric and wizard), `heal` to 9, `granted_proficiencies` to 5 and `grants_asi` to the 63 Ability Score Improvements (see [feature-mechanics.md](feature-mechanics.md)); added `by_level` (an id for each count) to the 7 features whose count grows with the level and has a single record |
+| Features | `5e-SRD-Features.json`, `derive-feature-engine.ts` (new script), `feature-engine-annotations.json` (new file) | Bard/Rogue Expertise reworked from a two-level nested choice (`choose 1` of a `choose 2` sub-choice) to a flat `choose 2`; trimmed some prose (e.g. Martial Arts' "nunchaku/kama" flavor text, Frenzy wording); added `feature_specific.engine` (`action_cost`, `recharge`, `uses`, `modifiers`) to 187 features (99 of levels 1 to 5 and 88 of levels 6 to 20, of every class), `heal` to 9, `granted_proficiencies` to 5 and `grants_asi` to the 63 Ability Score Improvements (see [feature-mechanics.md](feature-mechanics.md)); added `by_level` (an id for each count) to the 7 features whose count grows with the level and has a single record |
 | Magic items | `5e-SRD-Magic-Items.json` | Added a structured `effect` object (ability-score modifiers, damage-type resistance, healing, trait grants, duration) and an `enchantment` object (armor/weapon bonus, extra damage, to-hit bonus) to many items, so item bonuses are available as data and not only as prose; removed a handful of unusable/non-combat items |
 | Classes (spellcasting) | `5e-SRD-Classes.json`, `derive-class-spellcasting.ts` (new script) | Added `caster_kind` (8 classes), `prepared_formula` (4), `spellbook_size` (the wizard) and `subclass_spells` (8) to the existing `spellcasting` object (see [class-spellcasting.md](class-spellcasting.md)) |
 | Features (languages, dragons) | `5e-SRD-Features.json`, `feature-engine-annotations.json` | Added `feature_specific.granted_languages` to 15 features (Druidic, Thieves' Cant, the ten dragon ancestors, the three Favored Enemy records) and `feature_specific.damage_type` to the ten `dragon-ancestor-*` records (see [feature-mechanics.md](feature-mechanics.md)) |
@@ -321,8 +321,8 @@ that always resolves to the same two skills either way. A few description string
 ## Features: structured mechanics
 
 `feature_specific` gained four optional, English-only fields that restate the feature text as data: `engine` (what
-using the feature costs, how it recharges, how many uses it has and what it changes) on 151 features (99 of class
-levels 1 to 5 and 52 of levels 6 to 20 of the barbarian, fighter, monk, rogue, paladin, cleric and wizard), `heal` on 9 healing features, `granted_proficiencies` on 5 and `grants_asi` on every Ability Score
+using the feature costs, how it recharges, how many uses it has and what it changes) on 187 features (99 of class
+levels 1 to 5 and 88 of levels 6 to 20 of every class), `heal` on 9 healing features, `granted_proficiencies` on 5 and `grants_asi` on every Ability Score
 Improvement. Numbers that grow with the level are read from the `class_specific` keys of the class rows in
 `5e-SRD-Levels.json`. The modifiers reuse the words of the condition `effects` (now defined once in
 `src/schemas/effects.ts`) and link to conditions such as `enraged` and `sacred-weapon`.
@@ -436,7 +436,7 @@ and the effects of the included condition, and its `removes`, apply as well.
 | `removes` | condition indexes | Conditions that end when this one is applied: `incapacitated` ends `concentrating` (the concentration rules), `unconscious` ends `enraged` and `sacred-weapon` (their text says they end on falling unconscious) |
 | `adds` | condition indexes | Conditions applied along with this one: `unconscious` adds `prone` ("falls prone") |
 | `on_remove` | `{ removes?, exhaustion_levels? }` | What happens when the condition ends: `enraged` ends `frenzied` ("for the duration of your rage") and `frenzied` gives one level of exhaustion ("when your rage ends, you suffer one level of exhaustion"). `exhaustion_levels` is a number of levels |
-| `immune_if_feature` | `[{ feature, while_condition? }]` | A feature (an index of `5e-SRD-Features.json`) whose text makes its owner immune to the condition. With `while_condition`, only while the owner also has that condition: `charmed` and `frightened` have `mindless-rage` while `enraged`, `poisoned` has `purity-of-body` |
+| `immune_if_feature` | `[{ feature, while_condition? }]` | A feature (an index of `5e-SRD-Features.json`) whose text makes its owner immune to the condition. With `while_condition`, only while the owner also has that condition: `charmed` and `frightened` have `mindless-rage` while `enraged`, `poisoned` has `purity-of-body` and `natures-ward` |
 | `exhaustion_level` | `{ level, next?, prev? }` | On `exhaustion-1` to `exhaustion-6`: the level, and the indexes of the next and previous level. `exhaustion-1` has no `prev` (below level 1 every exhaustion effect ends) and `exhaustion-6` has no `next`. Each level row states the effects of its level and of all lower levels, as the text of the SRD does |
 
 ### The `effects` object
@@ -504,7 +504,7 @@ bonus), `halve` halves it, `crawl_only` leaves crawling as the only movement. Wh
 `rolls` 22, `cannot` 13, `rolls_against` 11, `speed` 10, `bonuses` 6, `includes` 5, `hit_point_maximum` 4, `damage` 2,
 and one each of `armor_class`, `immune_to`, `drops_held_items`, `death`, `ability_scores`, `limits`, `healing` and
 `provokes_opportunity_attacks`. `removes` is on 2 conditions, `adds` on 1, `on_remove` on 2, `immune_if_feature` on 3
-and `exhaustion_level` on 6.
+and `exhaustion_level` on 6. The `poisoned` condition names two features there, Purity of Body and Nature's Ward.
 
 ### New condition rows
 
@@ -541,3 +541,6 @@ leaves out, and fails if a text states a mechanical phrase that is neither struc
 - The immunities that auras give to allies (the paladin's Aura of Courage and Aura of Devotion), which
   `immune_if_feature` does not model because they protect creatures within a range of the feature's owner. The
   features state them with `immune_to` and an `aura` (see [feature-mechanics.md](feature-mechanics.md)).
+- The immunity of the druid's Nature's Ward to being charmed or frightened by elementals and fey, which
+  `immune_if_feature` does not model because it names no source; the feature states it with `immune_to` and
+  `creature_types`. Its immunity to poison is named by `poisoned`.

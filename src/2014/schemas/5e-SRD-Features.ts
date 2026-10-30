@@ -53,18 +53,36 @@ const SaveSchema = z.strictObject({
 });
 
 const DurationSchema = z.strictObject({
-  unit: z.enum(['round', 'minute', 'end_of_next_turn']),
+  unit: z.enum(['round', 'minute', 'end_of_next_turn', 'hour']),
   length: z.number().optional(),
 });
 
 // An aura: the modifier applies to the creatures within a range of the owner. The range is `range_ft`, or the
 // number of feet in the `class_specific` key of the class rows. `allies_and_self` is the owner and the friendly
-// creatures, `enemies` the creatures hostile to the owner.
+// creatures, `enemies` the creatures hostile to the owner. `must_hear_owner`: a creature gets the modifier only if it
+// can hear the owner.
 const AuraAffectsSchema = z.enum(['allies_and_self', 'enemies']);
 const AuraSchema = z.union([
-  z.strictObject({ class_specific: ClassSpecificKeySchema, affects: AuraAffectsSchema }),
-  z.strictObject({ range_ft: z.number(), affects: AuraAffectsSchema }),
+  z.strictObject({
+    class_specific: ClassSpecificKeySchema,
+    affects: AuraAffectsSchema,
+    must_hear_owner: z.literal(true).optional(),
+  }),
+  z.strictObject({
+    range_ft: z.number(),
+    affects: AuraAffectsSchema,
+    must_hear_owner: z.literal(true).optional(),
+  }),
 ]);
+
+// Each use spends `cost` from the uses of `pool` (the index of another feature). `cost` is a number, or the level
+// of the spell for a Metamagic option. `cost_class_specific` names a table of costs in the Levels row instead. A
+// `damage` modifier can have the same shape as the cost of its use alone.
+const PoolUsesSchema = z.strictObject({
+  pool: z.string(),
+  cost: z.union([z.number(), z.literal('spell_level')]).optional(),
+  cost_class_specific: ClassSpecificKeySchema.optional(),
+});
 
 // Fields every modifier can have. `while` lists circumstances that must all hold, `while_condition` a condition
 // (an index of 5e-SRD-Conditions) the owner must have. Modifiers that share an `option` value apply together, and a
@@ -75,24 +93,29 @@ const ModifierBase = {
   option: z.string().optional(),
 };
 // The modifiers that can be an aura apply to the creatures it names within a range of the owner instead of to the
-// owner alone.
+// owner alone (a `condition` with an aura is applied to those creatures, not to the owner).
 const AuraField = { aura: AuraSchema.optional() };
 
 const ModifierSchema = z.discriminatedUnion('type', [
-  // A condition is applied to the owner (`self`) or to the creature the feature is used on (`target`).
+  // A condition is applied to the owner (`self`) or to the creature the feature is used on (`target`), or with an
+  // `aura` to the creatures of the aura.
   z.strictObject({
     type: z.literal('condition'),
     ...ModifierBase,
+    ...AuraField,
     condition: z.string(),
     target: z.enum(['self', 'target']),
     save: SaveSchema.optional(),
     duration: DurationSchema.optional(),
   }),
-  // A change to the owner's own rolls. `against_spells_cast_by` limits it to the saving throws against spells cast by
-  // creatures of these types, `duration` to a use of the feature.
+  // A change to the owner's own rolls, or with an `aura` to the rolls of the creatures of the aura.
+  // `against_spells_cast_by` limits it to the saving throws against spells cast by creatures of these types,
+  // `against_conditions` to the saving throws against being given one of these conditions (indexes of
+  // 5e-SRD-Conditions), `duration` to a use of the feature.
   z.strictObject({
     type: z.literal('roll'),
     ...ModifierBase,
+    ...AuraField,
     roll: z.enum(FEATURE_ROLLS),
     mode: z.enum(ROLL_MODES),
     abilities: z.array(AbilitySchema).min(1).optional(),
@@ -100,6 +123,7 @@ const ModifierSchema = z.discriminatedUnion('type', [
     skills: z.array(z.string()).min(1).optional(),
     attack_kind: AttackKindSchema.optional(),
     against_spells_cast_by: z.array(z.string()).min(1).optional(),
+    against_conditions: z.array(z.string()).min(1).optional(),
     duration: DurationSchema.optional(),
   }),
   // A number added to a roll, to armor class, or to the hit points a healing spell restores. Exactly one amount:
@@ -139,6 +163,8 @@ const ModifierSchema = z.discriminatedUnion('type', [
     damage_type: z.string().optional(),
     // Only for this spell (an index of 5e-SRD-Spells).
     spell: z.string().optional(),
+    // Only for spells that deal damage of the damage type of the dragon ancestor the owner chose.
+    spell_damage_type_from: z.literal('dragon_ancestor').optional(),
     // Only for spells of this level or higher.
     min_spell_level: z.number().optional(),
     // Only for spells of this school (an index of 5e-SRD-Magic-Schools).
@@ -231,14 +257,15 @@ const ModifierSchema = z.discriminatedUnion('type', [
     within_ft: z.number(),
   }),
   // A die from `class_specific` that a creature within `range_ft` feet adds to (`effect: "add"`, an ally) or that
-  // the owner subtracts from (`effect: "subtract"`, an enemy) one of `rolls`.
+  // the owner subtracts from (`effect: "subtract"`, an enemy) one of `rolls`, or that the owner adds to the owner's
+  // own roll (`effect: "add_to_own"`, with no `range_ft`).
   z.strictObject({
     type: z.literal('die'),
     ...ModifierBase,
     class_specific: ClassSpecificKeySchema,
-    effect: z.enum(['add', 'subtract']),
+    effect: z.enum(['add', 'subtract', 'add_to_own']),
     rolls: z.array(z.enum(['attack', 'ability_check', 'saving_throw', 'damage'])).min(1),
-    range_ft: z.number(),
+    range_ft: z.number().optional(),
   }),
   // Using the feature takes one of these actions.
   z.strictObject({
@@ -291,12 +318,14 @@ const ModifierSchema = z.discriminatedUnion('type', [
     add_class_level: z.literal(true).optional(),
     minimum: z.number().optional(),
   }),
-  // Immunity to conditions (indexes of 5e-SRD-Conditions), or to `disease`.
+  // Immunity to conditions (indexes of 5e-SRD-Conditions), or to `disease`. With `creature_types`, only to the
+  // conditions that creatures of these types cause.
   z.strictObject({
     type: z.literal('immune_to'),
     ...ModifierBase,
     ...AuraField,
     conditions: z.array(z.string()).min(1),
+    creature_types: z.array(z.string()).min(1).optional(),
   }),
   // The owner can cast `spell` (an index of 5e-SRD-Spells). `slot`: `none` without expending a spell slot, or
   // `spell_slot` by expending one. `at_level` is the level it is cast at. `self_only` limits it to the owner as
@@ -317,8 +346,9 @@ const ModifierSchema = z.discriminatedUnion('type', [
   }),
   // A change to one casting of a spell. `range_ft` is the new range of `range`. `maximize_healing_dice` gives every
   // die of the healing its highest number; `half_damage_on_successful_save` makes a creature that succeeds on its
-  // save take half the damage and none of the other effects. `max_spell_level` limits it to spells up to that level
-  // (0 is a cantrip).
+  // save take half the damage and none of the other effects; `no_material_without_cost` drops the material
+  // components that have no cost and that the spell does not consume. `max_spell_level` limits it to spells up to
+  // that level (0 is a cantrip).
   z.strictObject({
     type: z.literal('spell_change'),
     ...ModifierBase,
@@ -334,6 +364,7 @@ const ModifierSchema = z.discriminatedUnion('type', [
       'save_disadvantage',
       'maximize_healing_dice',
       'half_damage_on_successful_save',
+      'no_material_without_cost',
     ]),
     spell: z.string().optional(),
     range_ft: z.number().optional(),
@@ -380,15 +411,18 @@ const ModifierSchema = z.discriminatedUnion('type', [
     class_specific: ClassSpecificKeySchema.optional(),
   }),
   // The owner has resistance, immunity or vulnerability to damage of these types (indexes of 5e-SRD-Damage-Types,
-  // or `all`), except the types in `except`: the words of condition `effects.damage`. `duration` limits it to a use
-  // of the feature.
+  // or `all`), except the types in `except`: the words of condition `effects.damage`. `types_from` names the
+  // damage type of the dragon ancestor the owner chose instead of `types`. `duration` limits it to a use of the
+  // feature, and `cost` is what a use spends from the uses of another feature.
   z.strictObject({
     type: z.literal('damage'),
     ...ModifierBase,
     relation: z.enum(DAMAGE_RELATIONS),
-    types: z.array(z.string()).min(1),
+    types: z.array(z.string()).min(1).optional(),
+    types_from: z.literal('dragon_ancestor').optional(),
     except: z.array(z.string()).min(1).optional(),
     duration: DurationSchema.optional(),
+    cost: PoolUsesSchema.optional(),
   }),
   // Evasion: when the owner is subjected to an effect that allows a saving throw of `ability` to take half damage,
   // the owner takes no damage on a success and half damage on a failure.
@@ -455,8 +489,9 @@ const ModifierSchema = z.discriminatedUnion('type', [
     ...ModifierBase,
     conditions: z.array(z.string()).min(1),
   }),
-  // Attack rolls against the owner: none has advantage (`no_advantage`), or those of creatures of these types have
-  // disadvantage (`mode` and `creature_types`). A modifier has one of the two.
+  // Attack rolls against the owner: none has advantage (`no_advantage`), or those of creatures of these types
+  // (`creature_types`) or the opportunity attacks (`opportunity_attacks_only`) have disadvantage (`mode`). A modifier
+  // has one of the two.
   z.strictObject({
     type: z.literal('rolls_against_owner'),
     ...ModifierBase,
@@ -464,6 +499,7 @@ const ModifierSchema = z.discriminatedUnion('type', [
     no_advantage: z.literal(true).optional(),
     mode: z.literal('disadvantage').optional(),
     creature_types: z.array(z.string()).min(1).optional(),
+    opportunity_attacks_only: z.literal(true).optional(),
   }),
   // The owner can end `count` spells on the owner or on a willing creature the owner touches.
   z.strictObject({
@@ -472,8 +508,9 @@ const ModifierSchema = z.discriminatedUnion('type', [
     count: z.number(),
     targets: z.array(z.enum(['self', 'willing_creature'])).min(1),
   }),
-  // Damage dealt to the creatures the modifier's `aura` affects, `flat` or `dice`, of `damage_type`, at the moment
-  // of `trigger`: a creature starting its turn in the aura. `duration` limits it to a use of the feature.
+  // Damage dealt, `flat` or `dice`, of `damage_type`, at the moment of `trigger`: a creature of the modifier's `aura`
+  // starting its turn in the aura, or the target of the feature coming back at the end of the owner's next turn
+  // (`target_returns`). `duration` limits it to a use of the feature.
   z.strictObject({
     type: z.literal('deal_damage'),
     ...ModifierBase,
@@ -481,23 +518,35 @@ const ModifierSchema = z.discriminatedUnion('type', [
     flat: z.number().optional(),
     dice: z.string().optional(),
     damage_type: z.string(),
-    trigger: z.literal('starts_turn_in_aura'),
+    trigger: z.enum(['starts_turn_in_aura', 'target_returns']),
     duration: DurationSchema.optional(),
   }),
   // The owner regains `count` uses of the feature `feature` (an index of 5e-SRD-Features) at the moment of
-  // `trigger`: rolling initiative with none left.
+  // `trigger`: rolling initiative with none left, or finishing a short rest.
   z.strictObject({
     type: z.literal('recover_uses'),
     ...ModifierBase,
     feature: z.string(),
     count: z.number(),
-    trigger: z.literal('initiative_with_no_uses_left'),
+    trigger: z.enum(['initiative_with_no_uses_left', 'short_rest']),
   }),
   // The owner takes the shape of a beast within the limits of these `class_specific` keys.
   z.strictObject({
     type: z.literal('wild_shape'),
     ...ModifierBase,
     class_specific: z.array(ClassSpecificKeySchema).min(1),
+  }),
+  // The owner has a flying speed equal to the owner's current speed.
+  z.strictObject({
+    type: z.literal('fly_speed'),
+    ...ModifierBase,
+    equal_to_speed: z.literal(true),
+  }),
+  // The owner can use these features (indexes of 5e-SRD-Features) any number of times.
+  z.strictObject({
+    type: z.literal('unlimited_uses'),
+    ...ModifierBase,
+    features: z.array(z.string()).min(1),
   }),
 ]);
 
@@ -512,14 +561,6 @@ const OwnUsesSchema = z.strictObject({
   per_class_level: z.number().optional(),
   minimum: z.number().optional(),
   unit: z.enum(['use', 'point', 'hit_point']).optional(),
-});
-
-// Each use spends `cost` from the uses of `pool` (the index of another feature). `cost` is a number, or the level
-// of the spell for a Metamagic option. `cost_class_specific` names a table of costs in the Levels row instead.
-const PoolUsesSchema = z.strictObject({
-  pool: z.string(),
-  cost: z.union([z.number(), z.literal('spell_level')]).optional(),
-  cost_class_specific: ClassSpecificKeySchema.optional(),
 });
 
 // Each use expends one of the owner's spell slots.
