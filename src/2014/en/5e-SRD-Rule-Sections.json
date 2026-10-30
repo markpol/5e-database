@@ -157,12 +157,7 @@
     "url": "/api/2014/rule-sections/cover",
     "order": 26,
     "summary": "How obstacles shield a target, and the defensive bonuses that half cover and three-quarters cover give, with total cover blocking targeting outright.",
-    "keywords": [
-      "cover",
-      "half cover",
-      "three-quarters cover",
-      "total cover"
-    ],
+    "keywords": ["cover", "half cover", "three-quarters cover", "total cover"],
     "related": [
       {
         "collection": "rule-sections",
@@ -228,11 +223,7 @@
     "url": "/api/2014/rule-sections/mounted-combat",
     "order": 28,
     "summary": "Getting on and off a mount, and how a controlled or an independent mount behaves during a fight.",
-    "keywords": [
-      "mounted combat",
-      "mounting and dismounting",
-      "controlling a mount"
-    ],
+    "keywords": ["mounted combat", "mounting and dismounting", "controlling a mount"],
     "related": [
       {
         "collection": "rule-sections",
@@ -247,11 +238,7 @@
     "url": "/api/2014/rule-sections/underwater-combat",
     "order": 29,
     "summary": "How fighting while immersed in water changes attacks and which damage is resisted.",
-    "keywords": [
-      "underwater combat",
-      "melee weapon attack",
-      "ranged weapon attack"
-    ],
+    "keywords": ["underwater combat", "melee weapon attack", "ranged weapon attack"],
     "related": [
       {
         "collection": "rule-sections",
@@ -270,9 +257,7 @@
     "url": "/api/2014/rule-sections/ability-scores-and-modifiers",
     "order": 8,
     "summary": "How an ability score is turned into the modifier that is added to rolls.",
-    "keywords": [
-      "ability scores and modifiers"
-    ],
+    "keywords": ["ability scores and modifiers"],
     "related": [
       {
         "collection": "rule-sections",
@@ -291,9 +276,7 @@
     "url": "/api/2014/rule-sections/advantage-and-disadvantage",
     "order": 9,
     "summary": "Rolling a second d20 and keeping the higher or lower result, what grants each, and how several sources combine.",
-    "keywords": [
-      "advantage and disadvantage"
-    ],
+    "keywords": ["advantage and disadvantage"],
     "related": [
       {
         "collection": "rule-sections",
@@ -316,9 +299,7 @@
     "url": "/api/2014/rule-sections/proficiency-bonus",
     "order": 10,
     "summary": "The level-based bonus that applies to skills, saving throws and attacks a character is trained in, and the limits on how it is added.",
-    "keywords": [
-      "proficiency bonus"
-    ],
+    "keywords": ["proficiency bonus"],
     "related": [
       {
         "collection": "rule-sections",
@@ -439,9 +420,7 @@
     "url": "/api/2014/rule-sections/saving-throws",
     "order": 13,
     "summary": "The roll made to resist a harmful effect, how the ability and the difficulty class are chosen, and the effect of proficiency.",
-    "keywords": [
-      "saving throws"
-    ],
+    "keywords": ["saving throws"],
     "related": [
       {
         "collection": "rule-sections",
@@ -464,13 +443,7 @@
     "url": "/api/2014/rule-sections/time",
     "order": 14,
     "summary": "The scales of time used in play: rounds in a fight, minutes while exploring, and hours or days while travelling.",
-    "keywords": [
-      "time",
-      "minutes",
-      "hours",
-      "days",
-      "rounds"
-    ],
+    "keywords": ["time", "minutes", "hours", "days", "rounds"],
     "related": [
       {
         "collection": "rule-sections",
@@ -556,11 +529,7 @@
     "url": "/api/2014/rule-sections/resting",
     "order": 20,
     "summary": "What a short rest and a long rest are, how long each takes, and what a character regains from them.",
-    "keywords": [
-      "resting",
-      "short rest",
-      "long rest"
-    ],
+    "keywords": ["resting", "short rest", "long rest"],
     "related": [
       {
         "collection": "rule-sections",
@@ -692,9 +661,7 @@
     "url": "/api/2014/rule-sections/standard-exchange-rates",
     "order": 1,
     "summary": "A table of how the coin types convert into one another.",
-    "keywords": [
-      "standard exchange rates"
-    ],
+    "keywords": ["standard exchange rates"],
     "related": [
       {
         "collection": "rule-sections",
@@ -774,9 +741,7 @@
     "url": "/api/2014/rule-sections/attunement",
     "order": 4,
     "summary": "How a character bonds with a magic item that calls for it, the limit on attuned items, and how attunement ends.",
-    "keywords": [
-      "attunement"
-    ],
+    "keywords": ["attunement"],
     "related": [
       {
         "collection": "rule-sections",
@@ -795,10 +760,7 @@
     "url": "/api/2014/rule-sections/wearing-and-wielding-items",
     "order": 5,
     "summary": "What counts as wearing or wielding a magic item, how many items of a kind work at once, and how paired items work.",
-    "keywords": [
-      "wearing and wielding items",
-      "paired items"
-    ],
+    "keywords": ["wearing and wielding items", "paired items"],
     "related": [
       {
         "collection": "rule-sections",
@@ -813,13 +775,7 @@
     "url": "/api/2014/rule-sections/activating-an-item",
     "order": 6,
     "summary": "The ways a magic item is triggered: command words, consumables, spells and charges.",
-    "keywords": [
-      "activating an item",
-      "command word",
-      "consumables",
-      "spells",
-      "charges"
-    ],
+    "keywords": ["activating an item", "command word", "consumables", "spells", "charges"],
     "related": [
       {
         "collection": "rule-sections",
@@ -949,13 +905,7 @@
     "url": "/api/2014/rule-sections/diseases",
     "order": 18,
     "summary": "How a disease spreads and is endured, with the sample diseases cackle fever, sewer plague and sight rot.",
-    "keywords": [
-      "diseases",
-      "sample diseases",
-      "cackle fever",
-      "sewer plague",
-      "sight rot"
-    ],
+    "keywords": ["diseases", "sample diseases", "cackle fever", "sewer plague", "sight rot"],
     "related": [
       {
         "collection": "rule-sections",

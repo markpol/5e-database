@@ -189,11 +189,7 @@
     "url": "/api/2014/rules/spellcasting",
     "order": 5,
     "summary": "How magic works at the table: what a spell is, how slots and preparation limit casting, and the steps and options for casting a spell.",
-    "keywords": [
-      "spellcasting",
-      "what is a spell?",
-      "casting a spell"
-    ]
+    "keywords": ["spellcasting", "what is a spell?", "casting a spell"]
   },
   {
     "name": "Equipment",
@@ -269,10 +265,6 @@
     "url": "/api/2014/rules/appendix",
     "order": 6,
     "summary": "Background for campaigns that range across worlds: sample pantheons of gods from history and myth, and the planes of existence.",
-    "keywords": [
-      "appendix",
-      "fantasy-historical pantheons",
-      "the planes of existence"
-    ]
+    "keywords": ["appendix", "fantasy-historical pantheons", "the planes of existence"]
   }
 ]
