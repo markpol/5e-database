@@ -847,6 +847,112 @@
               "Ranged"
             ]
           },
+          "attack_kind": {
+            "type": "string",
+            "enum": [
+              "melee",
+              "ranged",
+              "melee_or_ranged"
+            ]
+          },
+          "reach_ft": {
+            "type": "number"
+          },
+          "range": {
+            "type": "object",
+            "properties": {
+              "normal_ft": {
+                "type": "number"
+              },
+              "long_ft": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "normal_ft"
+            ],
+            "additionalProperties": false
+          },
+          "area": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "shape": {
+                    "type": "string",
+                    "const": "cone"
+                  },
+                  "length_ft": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "shape",
+                  "length_ft"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "shape": {
+                    "type": "string",
+                    "const": "line"
+                  },
+                  "length_ft": {
+                    "type": "number"
+                  },
+                  "width_ft": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "shape",
+                  "length_ft",
+                  "width_ft"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "shape": {
+                    "type": "string",
+                    "const": "sphere"
+                  },
+                  "radius_ft": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "shape",
+                  "radius_ft"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "shape": {
+                    "type": "string",
+                    "const": "cylinder"
+                  },
+                  "radius_ft": {
+                    "type": "number"
+                  },
+                  "height_ft": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "shape",
+                  "radius_ft",
+                  "height_ft"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
           "preference": {
             "type": "object",
             "properties": {
@@ -2096,6 +2202,86 @@
                             "duration"
                           ],
                           "additionalProperties": false
+                        },
+                        "area": {
+                          "oneOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "shape": {
+                                  "type": "string",
+                                  "const": "cone"
+                                },
+                                "length_ft": {
+                                  "type": "number"
+                                }
+                              },
+                              "required": [
+                                "shape",
+                                "length_ft"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "shape": {
+                                  "type": "string",
+                                  "const": "line"
+                                },
+                                "length_ft": {
+                                  "type": "number"
+                                },
+                                "width_ft": {
+                                  "type": "number"
+                                }
+                              },
+                              "required": [
+                                "shape",
+                                "length_ft",
+                                "width_ft"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "shape": {
+                                  "type": "string",
+                                  "const": "sphere"
+                                },
+                                "radius_ft": {
+                                  "type": "number"
+                                }
+                              },
+                              "required": [
+                                "shape",
+                                "radius_ft"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "shape": {
+                                  "type": "string",
+                                  "const": "cylinder"
+                                },
+                                "radius_ft": {
+                                  "type": "number"
+                                },
+                                "height_ft": {
+                                  "type": "number"
+                                }
+                              },
+                              "required": [
+                                "shape",
+                                "radius_ft",
+                                "height_ft"
+                              ],
+                              "additionalProperties": false
+                            }
+                          ]
                         }
                       },
                       "required": [

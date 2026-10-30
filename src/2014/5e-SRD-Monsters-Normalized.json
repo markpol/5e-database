@@ -109,7 +109,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -121,7 +124,10 @@
             "damage_dice": "3d6+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Enslave",
@@ -286,7 +292,9 @@
           }
         ],
         "weapon": "club",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/acolyte.png",
@@ -411,7 +419,10 @@
             "damage_dice": "1d8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -423,7 +434,10 @@
             "damage_dice": "2d6+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -435,7 +449,10 @@
             "damage_dice": "2d8+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Frightful Presence",
@@ -476,7 +493,12 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "line",
+          "length_ft": 60,
+          "width_ft": 5
+        }
       }
     ],
     "legendary_actions": [
@@ -629,7 +651,10 @@
             "damage_dice": "1d10"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -641,7 +666,10 @@
             "damage_dice": "2d6+7"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -653,7 +681,10 @@
             "damage_dice": "2d8+7"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Frightful Presence",
@@ -694,7 +725,12 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "line",
+          "length_ft": 90,
+          "width_ft": 5
+        }
       }
     ],
     "legendary_actions": [
@@ -851,7 +887,10 @@
             "damage_dice": "2d10+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -863,7 +902,10 @@
             "damage_dice": "2d6+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -875,7 +917,10 @@
             "damage_dice": "2d8+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Frightful Presence",
@@ -925,7 +970,12 @@
                     "damage_type": "fire",
                     "damage_dice": "13d6"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "line",
+                  "length_ft": 60,
+                  "width_ft": 5
+                }
               },
               {
                 "option_type": "breath",
@@ -934,6 +984,10 @@
                   "dc_type": "con",
                   "dc_value": 18,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 60
                 },
                 "condition": {
                   "condition_type": "unconscious",
@@ -1103,7 +1157,10 @@
             "damage_dice": "2d10+7"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -1115,7 +1172,10 @@
             "damage_dice": "2d6+7"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -1127,7 +1187,10 @@
             "damage_dice": "2d8+7"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Frightful Presence",
@@ -1177,7 +1240,12 @@
                     "damage_type": "lightning",
                     "damage_dice": "12d10"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "line",
+                  "length_ft": 90,
+                  "width_ft": 5
+                }
               },
               {
                 "option_type": "breath",
@@ -1186,6 +1254,10 @@
                   "dc_type": "str",
                   "dc_value": 19,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 30
                 }
               }
             ]
@@ -1343,7 +1415,10 @@
             "damage_dice": "2d10+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -1355,7 +1430,10 @@
             "damage_dice": "2d6+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -1367,7 +1445,10 @@
             "damage_dice": "2d8+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Frightful Presence",
@@ -1417,7 +1498,12 @@
                     "damage_type": "acid",
                     "damage_dice": "12d8"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "line",
+                  "length_ft": 60,
+                  "width_ft": 5
+                }
               },
               {
                 "option_type": "breath",
@@ -1426,6 +1512,10 @@
                   "dc_type": "con",
                   "dc_value": 18,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 60
                 }
               }
             ]
@@ -1591,7 +1681,10 @@
             "damage_dice": "2d10+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -1603,7 +1696,10 @@
             "damage_dice": "2d6+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -1615,7 +1711,10 @@
             "damage_dice": "2d8+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Frightful Presence",
@@ -1665,7 +1764,11 @@
                     "damage_type": "fire",
                     "damage_dice": "12d10"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 60
+                }
               },
               {
                 "option_type": "breath",
@@ -1674,6 +1777,10 @@
                   "dc_type": "str",
                   "dc_value": 21,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 60
                 }
               }
             ]
@@ -1849,7 +1956,10 @@
             "damage_dice": "2d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -1861,7 +1971,10 @@
             "damage_dice": "2d6+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -1873,7 +1986,10 @@
             "damage_dice": "2d8+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Frightful Presence",
@@ -1914,7 +2030,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 60
+        }
       }
     ],
     "legendary_actions": [
@@ -2067,7 +2187,10 @@
             "damage_dice": "2d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -2079,7 +2202,10 @@
             "damage_dice": "2d6+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -2091,7 +2217,10 @@
             "damage_dice": "2d8+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Frightful Presence",
@@ -2132,7 +2261,11 @@
               "success_type": "none"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 60
+        }
       }
     ],
     "legendary_actions": [
@@ -2288,7 +2421,10 @@
             "damage_dice": "2d10+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -2300,7 +2436,10 @@
             "damage_dice": "2d6+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -2312,7 +2451,10 @@
             "damage_dice": "2d8+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Frightful Presence",
@@ -2362,7 +2504,11 @@
                     "damage_type": "cold",
                     "damage_dice": "13d8"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 60
+                }
               },
               {
                 "option_type": "breath",
@@ -2371,6 +2517,10 @@
                   "dc_type": "con",
                   "dc_value": 20,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 60
                 },
                 "condition": {
                   "condition_type": "paralyzed",
@@ -2541,7 +2691,10 @@
             "damage_dice": "1d8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -2553,7 +2706,10 @@
             "damage_dice": "2d6+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -2565,7 +2721,10 @@
             "damage_dice": "2d8+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Frightful Presence",
@@ -2606,7 +2765,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 60
+        }
       }
     ],
     "legendary_actions": [
@@ -2727,7 +2890,10 @@
             "damage_dice": "2d8+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Whirlwind",
@@ -2879,7 +3045,10 @@
             "damage_dice": "2d8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Claw",
@@ -2891,7 +3060,10 @@
             "damage_dice": "2d6+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -2903,7 +3075,10 @@
             "damage_dice": "2d8+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 20
       },
       {
         "name": "Frightful Presence",
@@ -2944,7 +3119,12 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "line",
+          "length_ft": 90,
+          "width_ft": 10
+        }
       }
     ],
     "legendary_actions": [
@@ -3097,7 +3277,10 @@
             "damage_dice": "2d10"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Claw",
@@ -3109,7 +3292,10 @@
             "damage_dice": "2d6+9"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -3121,7 +3307,10 @@
             "damage_dice": "2d8+9"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 20
       },
       {
         "name": "Frightful Presence",
@@ -3162,7 +3351,12 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "line",
+          "length_ft": 120,
+          "width_ft": 10
+        }
       }
     ],
     "legendary_actions": [
@@ -3319,7 +3513,10 @@
             "damage_dice": "2d10+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Claw",
@@ -3331,7 +3528,10 @@
             "damage_dice": "2d6+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -3343,7 +3543,10 @@
             "damage_dice": "2d8+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 20
       },
       {
         "name": "Frightful Presence",
@@ -3393,7 +3596,12 @@
                     "damage_type": "fire",
                     "damage_dice": "16d6"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "line",
+                  "length_ft": 90,
+                  "width_ft": 10
+                }
               },
               {
                 "option_type": "breath",
@@ -3402,6 +3610,10 @@
                   "dc_type": "con",
                   "dc_value": 21,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 90
                 },
                 "condition": {
                   "condition_type": "unconscious",
@@ -3575,7 +3787,10 @@
             "damage_dice": "2d10+9"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Claw",
@@ -3587,7 +3802,10 @@
             "damage_dice": "2d6+9"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -3599,7 +3817,10 @@
             "damage_dice": "2d8+9"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 20
       },
       {
         "name": "Frightful Presence",
@@ -3649,7 +3870,12 @@
                     "damage_type": "lightning",
                     "damage_dice": "16d10"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "line",
+                  "length_ft": 120,
+                  "width_ft": 10
+                }
               },
               {
                 "option_type": "breath",
@@ -3658,6 +3884,10 @@
                   "dc_type": "str",
                   "dc_value": 23,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 30
                 }
               }
             ]
@@ -3819,7 +4049,10 @@
             "damage_dice": "2d10+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Claw",
@@ -3831,7 +4064,10 @@
             "damage_dice": "2d6+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -3843,7 +4079,10 @@
             "damage_dice": "2d8+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 20
       },
       {
         "name": "Frightful Presence",
@@ -3893,7 +4132,12 @@
                     "damage_type": "acid",
                     "damage_dice": "14d8"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "line",
+                  "length_ft": 90,
+                  "width_ft": 10
+                }
               },
               {
                 "option_type": "breath",
@@ -3902,6 +4146,10 @@
                   "dc_type": "con",
                   "dc_value": 22,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 90
                 }
               }
             ]
@@ -4071,7 +4319,10 @@
             "damage_dice": "2d10+10"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Claw",
@@ -4083,7 +4334,10 @@
             "damage_dice": "2d6+10"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -4095,7 +4349,10 @@
             "damage_dice": "2d8+10"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 20
       },
       {
         "name": "Frightful Presence",
@@ -4145,7 +4402,11 @@
                     "damage_type": "fire",
                     "damage_dice": "13d10"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 90
+                }
               },
               {
                 "option_type": "breath",
@@ -4154,6 +4415,10 @@
                   "dc_type": "str",
                   "dc_value": 24,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 90
                 }
               }
             ]
@@ -4333,7 +4598,10 @@
             "damage_dice": "3d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Claw",
@@ -4345,7 +4613,10 @@
             "damage_dice": "4d6+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -4357,7 +4628,10 @@
             "damage_dice": "2d8+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 20
       },
       {
         "name": "Frightful Presence",
@@ -4398,7 +4672,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 90
+        }
       }
     ],
     "legendary_actions": [
@@ -4551,7 +4829,10 @@
             "damage_dice": "4d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Claw",
@@ -4563,7 +4844,10 @@
             "damage_dice": "2d6+10"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -4575,7 +4859,10 @@
             "damage_dice": "2d8+10"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 20
       },
       {
         "name": "Frightful Presence",
@@ -4616,7 +4903,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 90
+        }
       }
     ],
     "legendary_actions": [
@@ -4772,7 +5063,10 @@
             "damage_dice": "2d10+10"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Claw",
@@ -4784,7 +5078,10 @@
             "damage_dice": "2d6+10"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -4796,7 +5093,10 @@
             "damage_dice": "2d8+10"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 20
       },
       {
         "name": "Frightful Presence",
@@ -4846,7 +5146,11 @@
                     "damage_type": "cold",
                     "damage_dice": "15d8"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 90
+                }
               },
               {
                 "option_type": "breath",
@@ -4855,6 +5159,10 @@
                   "dc_type": "con",
                   "dc_value": 24,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 90
                 },
                 "condition": {
                   "condition_type": "paralyzed",
@@ -5029,7 +5337,10 @@
             "damage_dice": "2d8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Claw",
@@ -5041,7 +5352,10 @@
             "damage_dice": "2d6+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -5053,7 +5367,10 @@
             "damage_dice": "2d8+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 20
       },
       {
         "name": "Frightful Presence",
@@ -5094,7 +5411,11 @@
               "success_type": "none"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 90
+        }
       }
     ],
     "legendary_actions": [
@@ -5339,7 +5660,10 @@
             "damage_dice": "2d10+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Roar",
@@ -5507,7 +5831,9 @@
             "damage_dice": "1d6+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/animated-armor.png",
@@ -5586,7 +5912,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Acid Spray",
@@ -5606,7 +5934,12 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "line",
+          "length_ft": 30,
+          "width_ft": 5
+        }
       }
     ],
     "image": "/api/images/monsters/ankheg.png",
@@ -5683,7 +6016,9 @@
             "damage_dice": "1d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Rock",
@@ -5700,6 +6035,11 @@
         "supply": {
           "item": "rock",
           "count": 3
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 25,
+          "long_ft": 50
         }
       }
     ],
@@ -5965,6 +6305,13 @@
         "supply": {
           "item": "dagger",
           "count": 4
+        },
+        "attack_type": "Melee",
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 20,
+          "long_ft": 60
         }
       }
     ],
@@ -6087,7 +6434,10 @@
           }
         ],
         "weapon": "shortsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Light Crossbow",
@@ -6113,6 +6463,12 @@
         "supply": {
           "item": "crossbow-bolt",
           "count": 20
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 80,
+          "long_ft": 320
         }
       }
     ],
@@ -6179,7 +6535,9 @@
             "damage_dice": "1d4-1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/awakened-shrub.png",
@@ -6246,7 +6604,9 @@
             "damage_dice": "3d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "image": "/api/images/monsters/awakened-tree.png",
@@ -6302,7 +6662,9 @@
             "damage_dice": "1d8+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/axe-beak.png",
@@ -6405,7 +6767,9 @@
           }
         ],
         "weapon": "warhammer",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/azer",
@@ -6466,7 +6830,9 @@
             "damage_dice": "1d4-1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/baboon.png",
@@ -6529,7 +6895,9 @@
             "damage_dice": "1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/badger.png",
@@ -6669,7 +7037,10 @@
           }
         ],
         "weapon": "longsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Whip",
@@ -6686,7 +7057,10 @@
           }
         ],
         "weapon": "whip",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 30
       },
       {
         "name": "Teleport",
@@ -6751,7 +7125,9 @@
           }
         ],
         "weapon": "scimitar",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Light Crossbow",
@@ -6769,6 +7145,11 @@
         "supply": {
           "item": "crossbow-bolt",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 80,
+          "long_ft": 320
         }
       }
     ],
@@ -6888,7 +7269,9 @@
           }
         ],
         "weapon": "scimitar",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Dagger",
@@ -6906,6 +7289,12 @@
         "supply": {
           "item": "dagger",
           "count": 4
+        },
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 20,
+          "long_ft": 60
         }
       }
     ],
@@ -7062,7 +7451,10 @@
             "damage_dice": "1d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -7074,7 +7466,10 @@
             "damage_dice": "2d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Hurl Flame",
@@ -7086,7 +7481,12 @@
             "damage_dice": "3d6"
           }
         ],
-        "weapon_kind": "spell"
+        "weapon_kind": "spell",
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 150
+        }
       }
     ],
     "image": "/api/images/monsters/barbed-devil.png",
@@ -7172,7 +7572,9 @@
             "damage_dice": "2d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/basilisk",
@@ -7238,7 +7640,9 @@
             "damage_dice": "1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/bat",
@@ -7361,7 +7765,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Glaive",
@@ -7375,7 +7781,9 @@
           }
         ],
         "weapon": "glaive",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "url": "/api/2014/monsters/bearded-devil",
@@ -7458,7 +7866,10 @@
             "damage_dice": "3d10+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Constrict",
@@ -7486,7 +7897,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Lightning Breath",
@@ -7506,7 +7920,12 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "line",
+          "length_ft": 20,
+          "width_ft": 5
+        }
       },
       {
         "name": "Swallow",
@@ -7582,7 +8001,9 @@
           }
         ],
         "weapon": "greataxe",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/berserker",
@@ -7660,7 +8081,9 @@
             "damage_dice": "1d6+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -7673,7 +8096,9 @@
             "damage_dice": "2d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/black-bear.png",
@@ -7769,7 +8194,9 @@
             "damage_dice": "1d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Acid Breath",
@@ -7789,7 +8216,12 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "line",
+          "length_ft": 15,
+          "width_ft": 5
+        }
       }
     ],
     "image": "/api/images/monsters/black-dragon-wyrmling.png",
@@ -7881,7 +8313,10 @@
             "damage_dice": "4d8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "reactions": [
@@ -7958,7 +8393,9 @@
             "damage_dice": "1d6+1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Teleport",
@@ -8039,7 +8476,9 @@
             "damage_dice": "1d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/blood-hawk.png",
@@ -8129,7 +8568,9 @@
             "damage_dice": "1d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Lightning Breath",
@@ -8149,7 +8590,12 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "line",
+          "length_ft": 30,
+          "width_ft": 5
+        }
       }
     ],
     "image": "/api/images/monsters/blue-dragon-wyrmling.png",
@@ -8242,7 +8688,9 @@
             "damage_dice": "1d6+1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/boar.png",
@@ -8355,7 +8803,10 @@
             "damage_dice": "1d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Sting",
@@ -8386,7 +8837,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "image": "/api/images/monsters/bone-devil.png",
@@ -8472,7 +8926,9 @@
             "damage_dice": "1d10+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Breath Weapons",
@@ -8501,7 +8957,12 @@
                     "damage_type": "fire",
                     "damage_dice": "4d6"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "line",
+                  "length_ft": 20,
+                  "width_ft": 5
+                }
               },
               {
                 "option_type": "breath",
@@ -8518,6 +8979,10 @@
                     "unit": "round",
                     "interrupt": "damage taken"
                   }
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 15
                 }
               }
             ]
@@ -8614,7 +9079,9 @@
             "damage_dice": "1d10+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Breath Weapons",
@@ -8643,7 +9110,12 @@
                     "damage_type": "lightning",
                     "damage_dice": "3d10"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "line",
+                  "length_ft": 40,
+                  "width_ft": 5
+                }
               },
               {
                 "option_type": "breath",
@@ -8652,6 +9124,10 @@
                   "dc_type": "str",
                   "dc_value": 12,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 30
                 }
               }
             ]
@@ -8740,7 +9216,9 @@
             "damage_dice": "1d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -8753,7 +9231,9 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/brown-bear.png",
@@ -8834,7 +9314,9 @@
           }
         ],
         "weapon": "morningstar",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Javelin",
@@ -8852,6 +9334,12 @@
         "supply": {
           "item": "javelin",
           "count": 4
+        },
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 30,
+          "long_ft": 120
         }
       }
     ],
@@ -8920,7 +9408,10 @@
             "damage_dice": "4d12+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Deadly Leap",
@@ -8988,7 +9479,9 @@
             "damage_dice": "1d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/camel.png",
@@ -9059,7 +9552,9 @@
             "damage_dice": "1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/cat",
@@ -9176,7 +9671,9 @@
           }
         ],
         "weapon": "pike",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Hooves",
@@ -9189,7 +9686,9 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Longbow",
@@ -9207,6 +9706,11 @@
         "supply": {
           "item": "arrow",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 150,
+          "long_ft": 600
         }
       }
     ],
@@ -9321,7 +9825,11 @@
             }
           }
         ],
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10,
+        "weapon": "chain-10-feet"
       },
       {
         "name": "Animate Chains",
@@ -9494,7 +10002,10 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Horns",
@@ -9506,7 +10017,10 @@
             "damage_dice": "1d12+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -9518,7 +10032,10 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Fire Breath",
@@ -9538,7 +10055,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 15
+        }
       }
     ],
     "image": "/api/images/monsters/chimera.png",
@@ -9655,7 +10176,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tentacles",
@@ -9776,7 +10300,10 @@
             "damage_dice": "2d10+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Haste",
@@ -9877,7 +10404,10 @@
             "damage_dice": "2d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -9889,7 +10419,10 @@
             "damage_dice": "1d8+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Moan",
@@ -10105,7 +10638,10 @@
           }
         ],
         "weapon": "morningstar",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Rock",
@@ -10121,6 +10657,12 @@
         "supply": {
           "item": "rock",
           "count": 3
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 60,
+          "long_ft": 240
         }
       }
     ],
@@ -10199,7 +10741,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/cockatrice.png",
@@ -10257,7 +10802,9 @@
           }
         ],
         "weapon": "club",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/commoner.png",
@@ -10314,7 +10861,9 @@
             "damage_dice": "1d6+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Constrict",
@@ -10339,7 +10888,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/constrictor-snake.png",
@@ -10425,7 +10976,9 @@
             "damage_dice": "1d10+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Breath Weapons",
@@ -10454,7 +11007,12 @@
                     "damage_type": "acid",
                     "damage_dice": "4d8"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "line",
+                  "length_ft": 20,
+                  "width_ft": 5
+                }
               },
               {
                 "option_type": "breath",
@@ -10471,6 +11029,10 @@
                     "unit": "round",
                     "interrupt": "saving throw success"
                   }
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 15
                 }
               }
             ]
@@ -10699,7 +11261,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Constrict",
@@ -10723,7 +11288,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Change Shape",
@@ -10794,7 +11362,9 @@
             "damage_dice": "1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/crab",
@@ -10871,7 +11441,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/crocodile.png",
@@ -11029,6 +11602,12 @@
         "supply": {
           "item": "dagger",
           "count": 4
+        },
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 20,
+          "long_ft": 60
         }
       }
     ],
@@ -11104,7 +11683,9 @@
           }
         ],
         "weapon": "scimitar",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/cultist",
@@ -11173,7 +11754,11 @@
             "damage_type": "bludgeoning",
             "damage_dice": "1d6+3"
           }
-        ]
+        ],
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5,
+        "weapon_kind": "natural"
       },
       {
         "name": "Darkness Aura",
@@ -11181,6 +11766,10 @@
         "usage": {
           "type": "per day",
           "times": 1
+        },
+        "area": {
+          "shape": "sphere",
+          "radius_ft": 15
         }
       }
     ],
@@ -11278,7 +11867,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/death-dog",
@@ -11410,7 +12001,10 @@
           }
         ],
         "weapon": "war-pick",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Poisoned Dart",
@@ -11441,7 +12035,14 @@
         "supply": {
           "item": "poisoned-dart",
           "count": 4
-        }
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 30,
+          "long_ft": 120
+        },
+        "weapon": "dart"
       }
     ],
     "url": "/api/2014/monsters/deep-gnome-svirfneblin",
@@ -11495,7 +12096,9 @@
             "damage_dice": "1d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/deer",
@@ -11640,7 +12243,10 @@
           }
         ],
         "weapon": "mace",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Healing Touch",
@@ -11740,7 +12346,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/dire-wolf",
@@ -11971,7 +12579,10 @@
           }
         ],
         "weapon": "scimitar",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Create Whirlwind",
@@ -11984,7 +12595,12 @@
               "success_type": "none"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cylinder",
+          "radius_ft": 5,
+          "height_ft": 30
+        }
       }
     ],
     "image": "/api/images/monsters/djinni.png",
@@ -12078,7 +12694,9 @@
             "damage_dice": "1d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Read Thoughts",
@@ -12136,7 +12754,9 @@
             "damage_dice": "2d4+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/draft-horse",
@@ -12260,7 +12880,10 @@
             "damage_dice": "3d12+7"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Claw",
@@ -12272,7 +12895,10 @@
             "damage_dice": "2d8+7"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -12298,7 +12924,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Steam Breath",
@@ -12318,7 +12947,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 60
+        }
       }
     ],
     "image": "/api/images/monsters/dragon-turtle.png",
@@ -12400,7 +13033,9 @@
             "damage_dice": "1d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -12413,7 +13048,9 @@
             "damage_dice": "2d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Fetid Cloud",
@@ -12437,7 +13074,11 @@
               }
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "sphere",
+          "radius_ft": 10
+        }
       }
     ],
     "url": "/api/2014/monsters/dretch",
@@ -12623,7 +13264,10 @@
             "damage_dice": "2d8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Longsword",
@@ -12653,7 +13297,10 @@
           }
         ],
         "weapon": "longsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Longbow",
@@ -12674,6 +13321,12 @@
         "supply": {
           "item": "arrow",
           "count": 20
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 150,
+          "long_ft": 600
         }
       }
     ],
@@ -12795,7 +13448,9 @@
           }
         ],
         "weapon": "shortsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Hand Crossbow",
@@ -12830,6 +13485,11 @@
         "supply": {
           "item": "crossbow-bolt",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 30,
+          "long_ft": 120
         }
       }
     ],
@@ -12997,7 +13657,9 @@
           }
         ],
         "weapon": "quarterstaff",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/druid",
@@ -13148,7 +13810,9 @@
           }
         ],
         "weapon": "club",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Fey Charm",
@@ -13254,7 +13918,9 @@
           }
         ],
         "weapon": "war-pick",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Javelin",
@@ -13272,6 +13938,12 @@
         "supply": {
           "item": "javelin",
           "count": 4
+        },
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 30,
+          "long_ft": 120
         }
       },
       {
@@ -13395,7 +14067,10 @@
             "damage_dice": "1d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Blinding Breath",
@@ -13421,7 +14096,11 @@
               }
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 15
+        }
       }
     ],
     "url": "/api/2014/monsters/dust-mephit",
@@ -13487,7 +14166,9 @@
             "damage_dice": "1d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/eagle",
@@ -13577,7 +14258,10 @@
             "damage_dice": "2d8+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "image": "/api/images/monsters/earth-elemental.png",
@@ -13781,7 +14465,10 @@
           }
         ],
         "weapon": "scimitar",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Hurl Flame",
@@ -13793,7 +14480,12 @@
             "damage_dice": "5d6"
           }
         ],
-        "weapon_kind": "spell"
+        "weapon_kind": "spell",
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 120
+        }
       }
     ],
     "image": "/api/images/monsters/efreeti.png",
@@ -13880,7 +14572,10 @@
         "preference": {
           "type": "always on first round"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Stomp",
@@ -13892,7 +14587,10 @@
             "damage_dice": "3d10+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/elephant",
@@ -13975,7 +14673,9 @@
         "preference": {
           "type": "always on first round"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Hooves",
@@ -13988,7 +14688,9 @@
             "damage_dice": "2d4+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/elk",
@@ -14164,7 +14866,10 @@
           }
         ],
         "weapon": "longsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Longbow",
@@ -14199,6 +14904,12 @@
         "supply": {
           "item": "arrow",
           "count": 20
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 150,
+          "long_ft": 600
         }
       }
     ],
@@ -14324,7 +15035,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -14337,7 +15050,9 @@
             "damage_dice": "2d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Web",
@@ -14362,7 +15077,13 @@
               }
             }
           }
-        ]
+        ],
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 30,
+          "long_ft": 60
+        },
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/2014/monsters/ettercap",
@@ -14449,7 +15170,10 @@
           }
         ],
         "weapon": "battleaxe",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Morningstar",
@@ -14462,7 +15186,10 @@
           }
         ],
         "weapon": "morningstar",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/ettin",
@@ -14565,7 +15292,11 @@
             "damage_type": "fire",
             "damage_dice": "1d10"
           }
-        ]
+        ],
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5,
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/2014/monsters/fire-elemental",
@@ -14657,7 +15388,10 @@
           }
         ],
         "weapon": "greatsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Rock",
@@ -14673,6 +15407,12 @@
         "supply": {
           "item": "rock",
           "count": 3
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 60,
+          "long_ft": 240
         }
       }
     ],
@@ -14777,7 +15517,10 @@
             "damage_dice": "2d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/flesh-golem",
@@ -14845,7 +15588,9 @@
             "damage_dice": "3d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/flying-snake",
@@ -14930,7 +15675,9 @@
           }
         ],
         "weapon": "longsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/flying-sword",
@@ -15020,7 +15767,10 @@
           }
         ],
         "weapon": "greataxe",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Rock",
@@ -15036,6 +15786,12 @@
         "supply": {
           "item": "rock",
           "count": 3
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 60,
+          "long_ft": 240
         }
       }
     ],
@@ -15124,7 +15880,9 @@
             "damage_dice": "1d6+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -15137,7 +15895,9 @@
             "damage_dice": "1d6+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/gargoyle",
@@ -15210,7 +15970,9 @@
             "damage_dice": "3d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Engulf",
@@ -15310,7 +16072,9 @@
             "damage_dice": "2d8+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -15338,7 +16102,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/ghast",
@@ -15424,7 +16190,10 @@
             "damage_dice": "4d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Etherealness",
@@ -15528,7 +16297,9 @@
             "damage_dice": "2d6+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -15560,7 +16331,9 @@
           "type": "always unless target has condition",
           "target_condition": "paralyzed"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/ghoul",
@@ -15635,7 +16408,10 @@
             "damage_dice": "3d10+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Rock",
@@ -15651,6 +16427,12 @@
         "supply": {
           "item": "rock",
           "count": 3
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 50,
+          "long_ft": 100
         }
       }
     ],
@@ -15731,7 +16513,9 @@
             "damage_dice": "1d6+1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -15744,7 +16528,9 @@
             "damage_dice": "2d4+1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-badger",
@@ -15810,7 +16596,9 @@
             "damage_dice": "1d6+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-bat",
@@ -15902,7 +16690,9 @@
             "damage_dice": "2d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-boar",
@@ -15967,7 +16757,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-centipede",
@@ -16028,7 +16820,9 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Constrict",
@@ -16053,7 +16847,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-constrictor-snake",
@@ -16132,7 +16928,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-crab",
@@ -16226,7 +17024,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -16252,7 +17053,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "url": "/api/2014/monsters/giant-crocodile",
@@ -16336,7 +17140,9 @@
             "damage_dice": "1d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Talons",
@@ -16349,7 +17155,9 @@
             "damage_dice": "2d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-eagle",
@@ -16438,7 +17246,9 @@
         "preference": {
           "type": "always on first round"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Hooves",
@@ -16451,7 +17261,9 @@
             "damage_dice": "4d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-elk",
@@ -16513,7 +17325,9 @@
             "damage_dice": "1d6-1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-fire-beetle",
@@ -16600,7 +17414,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Swallow",
@@ -16706,7 +17522,10 @@
             "damage_dice": "2d4+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-goat",
@@ -16771,7 +17590,9 @@
             "damage_dice": "2d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-hyena",
@@ -16828,7 +17649,9 @@
             "damage_dice": "1d8+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-lizard",
@@ -16919,7 +17742,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Ink Cloud",
@@ -16930,6 +17755,10 @@
             "short",
             "long"
           ]
+        },
+        "area": {
+          "shape": "sphere",
+          "radius_ft": 20
         }
       }
     ],
@@ -17005,7 +17834,9 @@
             "damage_dice": "2d6+1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-owl",
@@ -17075,7 +17906,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "url": "/api/2014/monsters/giant-poisonous-snake",
@@ -17140,7 +17973,9 @@
             "damage_dice": "1d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-rat",
@@ -17205,7 +18040,9 @@
             "damage_dice": "1d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/giant-rat-diseased.png",
@@ -17266,7 +18103,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Multiattack",
@@ -17305,7 +18144,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-scorpion",
@@ -17390,7 +18231,10 @@
             "damage_dice": "1d6+1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-sea-horse",
@@ -17460,7 +18304,10 @@
             "damage_dice": "3d10+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-shark",
@@ -17546,7 +18393,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Web",
@@ -17570,7 +18419,14 @@
               }
             }
           }
-        ]
+        ],
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 30,
+          "long_ft": 60
+        },
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/2014/monsters/giant-spider",
@@ -17652,7 +18508,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Swallow",
@@ -17763,7 +18621,9 @@
             "damage_dice": "2d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Talons",
@@ -17776,7 +18636,9 @@
             "damage_dice": "2d6+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-vulture",
@@ -17840,7 +18702,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-wasp",
@@ -17910,7 +18775,9 @@
             "damage_dice": "1d4+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-weasel",
@@ -18000,7 +18867,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/giant-wolf-spider",
@@ -18104,7 +18973,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Blinding Spittle",
@@ -18334,7 +19205,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Fist",
@@ -18346,7 +19220,10 @@
             "damage_dice": "2d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/glabrezu.png",
@@ -18525,6 +19402,13 @@
         "supply": {
           "item": "spear",
           "count": 4
+        },
+        "attack_type": "Melee",
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 20,
+          "long_ft": 60
         }
       },
       {
@@ -18551,7 +19435,11 @@
             }
           }
         ],
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5,
+        "weapon": "shield"
       }
     ],
     "reactions": [
@@ -18622,7 +19510,10 @@
             "damage_dice": "1d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Spear",
@@ -18656,6 +19547,13 @@
         "supply": {
           "item": "spear",
           "count": 4
+        },
+        "attack_type": "Melee",
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 20,
+          "long_ft": 60
         }
       },
       {
@@ -18673,6 +19571,12 @@
         "supply": {
           "item": "arrow",
           "count": 20
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 150,
+          "long_ft": 600
         }
       }
     ],
@@ -18757,7 +19661,9 @@
             "damage_dice": "1d4+1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/goat",
@@ -18829,7 +19735,9 @@
           }
         ],
         "weapon": "scimitar",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Shortbow",
@@ -18847,6 +19755,11 @@
         "supply": {
           "item": "arrow",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 80,
+          "long_ft": 320
         }
       }
     ],
@@ -18943,7 +19856,9 @@
             "damage_dice": "1d10+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Breath Weapons",
@@ -18972,7 +19887,11 @@
                     "damage_type": "fire",
                     "damage_dice": "4d10"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 15
+                }
               },
               {
                 "option_type": "breath",
@@ -18989,6 +19908,10 @@
                     "unit": "round",
                     "interrupt": "saving throw success"
                   }
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 15
                 }
               }
             ]
@@ -19087,7 +20010,10 @@
         "preference": {
           "type": "always on first round"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Hooves",
@@ -19099,7 +20025,10 @@
             "damage_dice": "2d10+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Petrifying Breath",
@@ -19132,7 +20061,11 @@
               }
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 30
+        }
       }
     ],
     "url": "/api/2014/monsters/gorgon",
@@ -19222,7 +20155,10 @@
             "damage_dice": "2d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/gray-ooze",
@@ -19319,7 +20255,9 @@
             "damage_dice": "1d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Poison Breath",
@@ -19339,7 +20277,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 15
+        }
       }
     ],
     "url": "/api/2014/monsters/green-dragon-wyrmling",
@@ -19459,7 +20401,9 @@
             "damage_dice": "2d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Illusory Appearance",
@@ -19548,7 +20492,9 @@
             "damage_dice": "2d6+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Beak",
@@ -19561,7 +20507,9 @@
             "damage_dice": "1d6+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/grick",
@@ -19645,7 +20593,9 @@
             "damage_dice": "1d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -19658,7 +20608,9 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/griffon",
@@ -19749,7 +20701,10 @@
             "damage_dice": "1d4"
           }
         ],
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5,
+        "weapon": "club"
       }
     ],
     "url": "/api/2014/monsters/grimlock",
@@ -19836,6 +20791,12 @@
         "supply": {
           "item": "spear",
           "count": 4
+        },
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 20,
+          "long_ft": 60
         }
       }
     ],
@@ -20030,7 +20991,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Spit Poison",
@@ -20046,7 +21010,14 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 15,
+          "long_ft": 30
+        },
+        "weapon_kind": "natural"
       }
     ],
     "image": "/api/images/monsters/guardian-naga.png",
@@ -20247,7 +21218,10 @@
             "damage_dice": "2d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "legendary_actions": [
@@ -20358,7 +21332,10 @@
           }
         ],
         "weapon": "longsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Shortsword",
@@ -20371,7 +21348,10 @@
           }
         ],
         "weapon": "shortsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Heavy Crossbow",
@@ -20388,6 +21368,12 @@
         "supply": {
           "item": "crossbow-bolt",
           "count": 20
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 100,
+          "long_ft": 400
         }
       },
       {
@@ -20408,7 +21394,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 15
+        }
       }
     ],
     "url": "/api/2014/monsters/half-red-dragon-veteran",
@@ -20480,7 +21470,9 @@
             "damage_dice": "2d4+1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Club",
@@ -20494,7 +21486,9 @@
           }
         ],
         "weapon": "club",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Luring Song",
@@ -20585,7 +21579,9 @@
             "damage_dice": "1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/hawk",
@@ -20661,7 +21657,9 @@
             "damage_dice": "2d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Fire Breath",
@@ -20681,7 +21679,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 15
+        }
       }
     ],
     "url": "/api/2014/monsters/hell-hound",
@@ -20797,7 +21799,10 @@
             "damage_dice": "2d10+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -20809,7 +21814,10 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/hezrou.png",
@@ -20881,7 +21889,10 @@
           }
         ],
         "weapon": "greatclub",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Rock",
@@ -20897,6 +21908,12 @@
         "supply": {
           "item": "rock",
           "count": 3
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 60,
+          "long_ft": 240
         }
       }
     ],
@@ -20980,7 +21997,9 @@
             "damage_dice": "1d10+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -20993,7 +22012,9 @@
             "damage_dice": "2d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/hippogriff",
@@ -21076,7 +22097,10 @@
           }
         ],
         "weapon": "longsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Longbow",
@@ -21093,6 +22117,12 @@
         "supply": {
           "item": "arrow",
           "count": 20
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 150,
+          "long_ft": 600
         }
       }
     ],
@@ -21174,7 +22204,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/homunculus",
@@ -21336,7 +22368,10 @@
             "damage_dice": "2d8+6"
           }
         ],
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -21348,7 +22383,10 @@
             "damage_dice": "1d8+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Hurl Flame",
@@ -21360,7 +22398,12 @@
             "damage_dice": "4d6"
           }
         ],
-        "weapon_kind": "spell"
+        "weapon_kind": "spell",
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 150
+        }
       }
     ],
     "image": "/api/images/monsters/horned-devil.png",
@@ -21432,7 +22475,9 @@
             "damage_dice": "2d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/hunter-shark",
@@ -21522,7 +22567,10 @@
             "damage_dice": "1d10+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "image": "/api/images/monsters/hydra.png",
@@ -21588,7 +22636,9 @@
             "damage_dice": "1d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/hyena",
@@ -21704,7 +22754,10 @@
             "damage_dice": "3d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -21720,7 +22773,10 @@
             "damage_dice": "3d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -21736,7 +22792,10 @@
             "damage_dice": "3d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Wall of Ice",
@@ -21880,7 +22939,10 @@
             "damage_dice": "1d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Frost Breath",
@@ -21900,7 +22962,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 15
+        }
       }
     ],
     "url": "/api/2014/monsters/ice-mephit",
@@ -22005,7 +23071,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Invisibility",
@@ -22109,7 +23177,10 @@
             "damage_dice": "2d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/invisible-stalker.png",
@@ -22237,7 +23308,10 @@
             "damage_dice": "3d8+7"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Sword",
@@ -22249,7 +23323,10 @@
             "damage_dice": "3d10+7"
           }
         ],
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Poison Breath",
@@ -22269,7 +23346,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 15
+        }
       }
     ],
     "image": "/api/images/monsters/iron-golem.png",
@@ -22339,7 +23420,9 @@
             "damage_dice": "1d4-1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/jackal",
@@ -22413,7 +23496,9 @@
             "damage_dice": "5d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/killer-whale",
@@ -22500,7 +23585,9 @@
           }
         ],
         "weapon": "greatsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Heavy Crossbow",
@@ -22518,6 +23605,11 @@
         "supply": {
           "item": "crossbow-bolt",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 100,
+          "long_ft": 400
         }
       },
       {
@@ -22606,7 +23698,9 @@
         "supply": {
           "item": "dagger",
           "count": 4
-        }
+        },
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Sling",
@@ -22624,6 +23718,11 @@
         "supply": {
           "item": "sling-bullet",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 30,
+          "long_ft": 120
         }
       }
     ],
@@ -22785,7 +23884,10 @@
             "damage_dice": "12d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tentacle",
@@ -22809,7 +23911,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 30
       },
       {
         "name": "Fling",
@@ -23049,7 +24154,10 @@
             "damage_dice": "2d10+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Dagger",
@@ -23066,12 +24174,19 @@
         "supply": {
           "item": "dagger",
           "count": 4
-        }
+        },
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Intoxicating Touch",
         "desc": "Melee Spell Attack: +5 to hit, reach 5 ft., one creature. Hit: The target is magically cursed for 1 hour. Until the curse ends, the target has disadvantage on Wisdom saving throws and all ability checks.",
-        "attack_bonus": 5
+        "attack_bonus": 5,
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5,
+        "weapon_kind": "spell"
       }
     ],
     "url": "/api/2014/monsters/lamia",
@@ -23146,7 +24261,9 @@
             "damage_dice": "1d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/lemure",
@@ -23433,7 +24550,11 @@
               }
             }
           }
-        ]
+        ],
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5,
+        "weapon_kind": "spell"
       }
     ],
     "legendary_actions": [
@@ -23581,7 +24702,9 @@
             "damage_dice": "1d8+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claw",
@@ -23597,7 +24720,9 @@
         "preference": {
           "type": "always on first round"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/lion",
@@ -23653,7 +24778,9 @@
             "damage_dice": "1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/lizard",
@@ -23850,7 +24977,10 @@
             "damage_dice": "1d6+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Heavy Club",
@@ -23862,7 +24992,11 @@
             "damage_dice": "1d6+2"
           }
         ],
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5,
+        "weapon": "club"
       },
       {
         "name": "Javelin",
@@ -23879,6 +25013,13 @@
         "supply": {
           "item": "javelin",
           "count": 4
+        },
+        "attack_type": "Melee",
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 30,
+          "long_ft": 120
         }
       },
       {
@@ -23891,7 +25032,11 @@
             "damage_dice": "1d6+2"
           }
         ],
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5,
+        "weapon": "shield"
       }
     ],
     "url": "/api/2014/monsters/lizardfolk",
@@ -24080,6 +25225,13 @@
         "supply": {
           "item": "dagger",
           "count": 4
+        },
+        "attack_type": "Melee",
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 20,
+          "long_ft": 60
         }
       }
     ],
@@ -24196,7 +25348,10 @@
             "damage_dice": "1d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Fire Breath",
@@ -24216,7 +25371,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 15
+        }
       }
     ],
     "url": "/api/2014/monsters/magma-mephit",
@@ -24298,7 +25457,11 @@
             "damage_type": "fire",
             "damage_dice": "1d6"
           }
-        ]
+        ],
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5,
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/2014/monsters/magmin",
@@ -24385,7 +25548,10 @@
         "preference": {
           "type": "always on first round"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Stomp",
@@ -24397,7 +25563,10 @@
             "damage_dice": "4d10+7"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/mammoth.png",
@@ -24497,7 +25666,9 @@
             "damage_dice": "1d8+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claw",
@@ -24510,7 +25681,9 @@
             "damage_dice": "1d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail Spike",
@@ -24523,7 +25696,12 @@
             "damage_dice": "1d8+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 100,
+          "long_ft": 200
+        }
       }
     ],
     "url": "/api/2014/monsters/manticore",
@@ -24636,7 +25814,10 @@
           }
         ],
         "weapon": "longsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tail",
@@ -24660,7 +25841,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Teleport",
@@ -24751,7 +25935,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/mastiff",
@@ -24889,7 +26075,10 @@
             "damage_dice": "4d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Shortsword",
@@ -24902,7 +26091,10 @@
           }
         ],
         "weapon": "shortsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Longbow",
@@ -24923,6 +26115,12 @@
         "supply": {
           "item": "arrow",
           "count": 20
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 150,
+          "long_ft": 600
         }
       }
     ],
@@ -25013,6 +26211,12 @@
         "supply": {
           "item": "spear",
           "count": 4
+        },
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 20,
+          "long_ft": 60
         }
       }
     ],
@@ -25140,7 +26344,9 @@
             "damage_dice": "1d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -25153,7 +26359,9 @@
             "damage_dice": "2d4+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Harpoon",
@@ -25170,6 +26378,12 @@
         "supply": {
           "item": "harpoon",
           "count": 4
+        },
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 20,
+          "long_ft": 60
         }
       }
     ],
@@ -25265,7 +26479,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Bite",
@@ -25282,7 +26498,9 @@
             "damage_dice": "1d8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/mimic.png",
@@ -25378,7 +26596,9 @@
           }
         ],
         "weapon": "greataxe",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Gore",
@@ -25394,7 +26614,9 @@
         "preference": {
           "type": "always on first round"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/minotaur",
@@ -25483,7 +26705,9 @@
           }
         ],
         "weapon": "greataxe",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Gore",
@@ -25499,7 +26723,9 @@
         "preference": {
           "type": "always on first round"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/minotaur-skeleton",
@@ -25563,7 +26789,9 @@
             "damage_dice": "1d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/mule",
@@ -25657,7 +26885,9 @@
             "damage_dice": "3d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Dreadful Glare",
@@ -25900,7 +27130,10 @@
             "damage_dice": "6d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Dreadful Glare",
@@ -26077,7 +27310,10 @@
             "damage_dice": "5d10+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claw",
@@ -26089,7 +27325,10 @@
             "damage_dice": "3d6+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Horror Nimbus",
@@ -26266,7 +27505,10 @@
             "damage_dice": "2d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Change Shape",
@@ -26353,7 +27595,9 @@
             "damage_dice": "2d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/nightmare",
@@ -26426,7 +27670,9 @@
           }
         ],
         "weapon": "rapier",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "reactions": [
@@ -26515,7 +27761,9 @@
             "damage_dice": "1d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "reactions": [
@@ -26604,7 +27852,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Ink Cloud",
@@ -26616,7 +27867,11 @@
             "long"
           ]
         },
-        "attack_bonus": 0
+        "attack_bonus": 0,
+        "area": {
+          "shape": "sphere",
+          "radius_ft": 5
+        }
       }
     ],
     "url": "/api/2014/monsters/octopus",
@@ -26675,7 +27930,9 @@
           }
         ],
         "weapon": "greatclub",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Javelin",
@@ -26693,6 +27950,12 @@
         "supply": {
           "item": "javelin",
           "count": 4
+        },
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 30,
+          "long_ft": 120
         }
       }
     ],
@@ -26764,7 +28027,9 @@
           }
         ],
         "weapon": "morningstar",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/ogre-zombie",
@@ -26972,7 +28237,10 @@
             "damage_dice": "1d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Glaive",
@@ -26985,7 +28253,10 @@
           }
         ],
         "weapon": "glaive",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Change Shape",
@@ -27060,7 +28331,10 @@
           }
         ],
         "weapon": "greataxe",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Javelin",
@@ -27077,6 +28351,13 @@
         "supply": {
           "item": "javelin",
           "count": 4
+        },
+        "attack_type": "Melee",
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 30,
+          "long_ft": 120
         }
       }
     ],
@@ -27173,7 +28454,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tentacle",
@@ -27201,7 +28485,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tentacle Slam",
@@ -27303,7 +28590,9 @@
             "damage_dice": "1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/owl",
@@ -27386,7 +28675,9 @@
             "damage_dice": "1d10+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -27399,7 +28690,9 @@
             "damage_dice": "2d8+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/owlbear",
@@ -27497,7 +28790,9 @@
             "damage_dice": "1d6+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claw",
@@ -27513,7 +28808,9 @@
         "preference": {
           "type": "always on first round"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/panther",
@@ -27585,7 +28882,9 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/pegasus",
@@ -27670,7 +28969,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/phase-spider",
@@ -27864,7 +29165,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claw",
@@ -27876,7 +29180,10 @@
             "damage_dice": "2d8+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Mace",
@@ -27893,7 +29200,10 @@
           }
         ],
         "weapon": "mace",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -27905,7 +29215,10 @@
             "damage_dice": "3d10+8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "image": "/api/images/monsters/pit-fiend.png",
@@ -28110,7 +29423,10 @@
           }
         ],
         "weapon": "greatsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Healing Touch",
@@ -28189,7 +29505,9 @@
             "damage_dice": "3d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "url": "/api/2014/monsters/plesiosaurus",
@@ -28254,7 +29572,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/poisonous-snake",
@@ -28337,7 +29657,9 @@
             "damage_dice": "1d8+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -28350,7 +29672,9 @@
             "damage_dice": "2d6+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/polar-bear",
@@ -28404,7 +29728,9 @@
             "damage_dice": "2d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/pony",
@@ -28556,7 +29882,9 @@
           }
         ],
         "weapon": "mace",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/priest",
@@ -28636,7 +29964,9 @@
             "damage_dice": "1d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Sting",
@@ -28663,7 +29993,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/pseudodragon",
@@ -28755,7 +30087,10 @@
             "damage_dice": "6d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail Stinger",
@@ -28776,7 +30111,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "image": "/api/images/monsters/purple-worm.png",
@@ -28875,7 +30213,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Scare",
@@ -28971,7 +30311,9 @@
             "damage_dice": "1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/quipper",
@@ -29184,7 +30526,10 @@
             "damage_dice": "2d6+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/rakshasa.png",
@@ -29246,7 +30591,9 @@
             "damage_dice": "1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/rat",
@@ -29312,7 +30659,9 @@
             "damage_dice": "1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/raven",
@@ -29400,7 +30749,10 @@
             "damage_dice": "1d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Fire Breath",
@@ -29420,7 +30772,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 15
+        }
       }
     ],
     "url": "/api/2014/monsters/red-dragon-wyrmling",
@@ -29490,7 +30846,10 @@
             "damage_dice": "1d8+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/reef-shark",
@@ -29577,7 +30936,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Swallow",
@@ -29667,7 +31029,10 @@
             "damage_dice": "2d8+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/rhinoceros",
@@ -29721,7 +31086,9 @@
             "damage_dice": "2d4+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/riding-horse",
@@ -29819,7 +31186,10 @@
             "damage_dice": "4d8+9"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Talons",
@@ -29843,7 +31213,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/roc.png",
@@ -29944,7 +31317,10 @@
             "damage_dice": "4d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tendril",
@@ -29963,7 +31339,11 @@
               }
             }
           }
-        ]
+        ],
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 50,
+        "weapon_kind": "natural"
       },
       {
         "name": "Reel",
@@ -30066,7 +31446,9 @@
               }
             }
           }
-        ]
+        ],
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/rug-of-smothering",
@@ -30130,7 +31512,10 @@
             "damage_dice": "1d8+1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Antennae",
@@ -30240,7 +31625,9 @@
             "damage_dice": "1d10+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claw",
@@ -30256,7 +31643,9 @@
         "preference": {
           "type": "always on first round"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/saber-toothed-tiger",
@@ -30380,7 +31769,9 @@
             "damage_dice": "1d4+1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -30393,7 +31784,9 @@
             "damage_dice": "1d4+1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Spear",
@@ -30428,6 +31821,12 @@
         "supply": {
           "item": "spear",
           "count": 4
+        },
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 20,
+          "long_ft": 60
         }
       }
     ],
@@ -30547,6 +31946,13 @@
         "supply": {
           "item": "spear",
           "count": 4
+        },
+        "attack_type": "Melee",
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 20,
+          "long_ft": 60
         }
       },
       {
@@ -30575,7 +31981,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "url": "/api/2014/monsters/salamander",
@@ -30651,7 +32060,9 @@
             "damage_dice": "2d4+1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Shortsword",
@@ -30665,7 +32076,9 @@
           }
         ],
         "weapon": "shortsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Shortbow",
@@ -30683,6 +32096,11 @@
         "supply": {
           "item": "arrow",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 80,
+          "long_ft": 320
         }
       }
     ],
@@ -30747,7 +32165,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/scorpion",
@@ -30856,7 +32276,9 @@
           }
         ],
         "weapon": "shortsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Longbow",
@@ -30874,6 +32296,11 @@
         "supply": {
           "item": "arrow",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 150,
+          "long_ft": 600
         }
       }
     ],
@@ -30953,7 +32380,9 @@
             "damage_dice": "2d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Death Glare",
@@ -31071,7 +32500,10 @@
               }
             }
           }
-        ]
+        ],
+        "attack_kind": "melee",
+        "reach_ft": 5,
+        "weapon_kind": "natural"
       }
     ],
     "url": "/api/2014/monsters/shadow",
@@ -31164,7 +32596,10 @@
             "damage_dice": "2d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Engulf",
@@ -31268,7 +32703,10 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "reactions": [
@@ -31359,7 +32797,9 @@
             "damage_dice": "1d10+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Breath Weapons",
@@ -31388,7 +32828,11 @@
                     "damage_type": "cold",
                     "damage_dice": "4d8"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 15
+                }
               },
               {
                 "option_type": "breath",
@@ -31405,6 +32849,10 @@
                     "unit": "round",
                     "interrupt": "saving throw success"
                   }
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 15
                 }
               }
             ]
@@ -31473,7 +32921,9 @@
           }
         ],
         "weapon": "shortsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Shortbow",
@@ -31491,6 +32941,11 @@
         "supply": {
           "item": "arrow",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 80,
+          "long_ft": 320
         }
       }
     ],
@@ -31681,7 +33136,10 @@
           }
         ],
         "weapon": "greatsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Slaying Longbow",
@@ -31696,7 +33154,19 @@
             "damage_type": "radiant",
             "damage_dice": "6d8"
           }
-        ]
+        ],
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 150,
+          "long_ft": 600
+        },
+        "weapon_kind": "manufactured",
+        "weapon": "longbow",
+        "supply": {
+          "item": "arrow",
+          "count": 20
+        }
       },
       {
         "name": "Flying Sword",
@@ -31850,7 +33320,10 @@
               }
             }
           }
-        ]
+        ],
+        "attack_kind": "melee",
+        "reach_ft": 5,
+        "weapon_kind": "spell"
       }
     ],
     "url": "/api/2014/monsters/specter",
@@ -31934,7 +33407,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/spider",
@@ -32113,7 +33588,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "image": "/api/images/monsters/spirit-naga.png",
@@ -32182,7 +33660,9 @@
           }
         ],
         "weapon": "longsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Shortbow",
@@ -32214,6 +33694,11 @@
         "supply": {
           "item": "arrow",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 40,
+          "long_ft": 160
         }
       },
       {
@@ -32335,7 +33820,9 @@
           }
         ],
         "weapon": "shortsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Hand Crossbow",
@@ -32353,6 +33840,11 @@
         "supply": {
           "item": "crossbow-bolt",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 30,
+          "long_ft": 120
         }
       }
     ],
@@ -32458,7 +33950,9 @@
             "damage_dice": "1d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Steam Breath",
@@ -32478,7 +33972,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 15
+        }
       }
     ],
     "url": "/api/2014/monsters/steam-mephit",
@@ -32541,7 +34039,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/stirge",
@@ -32635,7 +34135,10 @@
           }
         ],
         "weapon": "greatclub",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Rock",
@@ -32665,6 +34168,12 @@
         "supply": {
           "item": "rock",
           "count": 3
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 60,
+          "long_ft": 240
         }
       }
     ],
@@ -32763,7 +34272,10 @@
             "damage_dice": "3d8+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Slow",
@@ -32968,7 +34480,10 @@
           }
         ],
         "weapon": "greatsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Rock",
@@ -32984,6 +34499,12 @@
         "supply": {
           "item": "rock",
           "count": 3
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 60,
+          "long_ft": 240
         }
       },
       {
@@ -33098,7 +34619,10 @@
             "damage_dice": "1d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Charm",
@@ -33216,7 +34740,9 @@
             "damage_dice": "2d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 0
       }
     ],
     "url": "/api/2014/monsters/swarm-of-bats",
@@ -33292,7 +34818,9 @@
             "damage_dice": "4d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 0
       }
     ],
     "url": "/api/2014/monsters/swarm-of-beetles",
@@ -33367,7 +34895,9 @@
             "damage_dice": "4d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 0
       }
     ],
     "url": "/api/2014/monsters/swarm-of-centipedes",
@@ -33442,7 +34972,9 @@
             "damage_dice": "4d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 0
       }
     ],
     "url": "/api/2014/monsters/swarm-of-insects",
@@ -33526,7 +35058,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 0
       }
     ],
     "url": "/api/2014/monsters/swarm-of-poisonous-snakes",
@@ -33609,7 +35143,9 @@
             "damage_dice": "4d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 0
       }
     ],
     "url": "/api/2014/monsters/swarm-of-quippers",
@@ -33687,7 +35223,9 @@
             "damage_dice": "2d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 0
       }
     ],
     "url": "/api/2014/monsters/swarm-of-rats",
@@ -33761,7 +35299,9 @@
             "damage_dice": "2d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/swarm-of-ravens",
@@ -33847,7 +35387,9 @@
             "damage_dice": "4d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 0
       }
     ],
     "url": "/api/2014/monsters/swarm-of-spiders",
@@ -33922,7 +35464,9 @@
             "damage_dice": "4d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 0
       }
     ],
     "url": "/api/2014/monsters/swarm-of-wasps",
@@ -34118,7 +35662,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -34130,7 +35677,10 @@
             "damage_dice": "4d8+10"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 15
       },
       {
         "name": "Horns",
@@ -34142,7 +35692,10 @@
             "damage_dice": "4d10+10"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -34168,7 +35721,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 20
       },
       {
         "name": "Frightful Presence",
@@ -34297,7 +35853,9 @@
           }
         ],
         "weapon": "mace",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Heavy Crossbow",
@@ -34315,6 +35873,11 @@
         "supply": {
           "item": "crossbow-bolt",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 100,
+          "long_ft": 400
         }
       }
     ],
@@ -34413,7 +35976,9 @@
             "damage_dice": "1d10+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claw",
@@ -34429,7 +35994,9 @@
         "preference": {
           "type": "always on first round"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/tiger",
@@ -34509,7 +36076,10 @@
             "damage_dice": "3d6+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Rock",
@@ -34525,6 +36095,12 @@
         "supply": {
           "item": "rock",
           "count": 3
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 60,
+          "long_ft": 180
         }
       },
       {
@@ -34621,6 +36197,12 @@
         "supply": {
           "item": "spear",
           "count": 4
+        },
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 20,
+          "long_ft": 60
         }
       }
     ],
@@ -34707,7 +36289,10 @@
         "preference": {
           "type": "always on first round"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Stomp",
@@ -34719,7 +36304,10 @@
             "damage_dice": "3d10+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/triceratops",
@@ -34805,7 +36393,10 @@
             "damage_dice": "1d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claw",
@@ -34817,7 +36408,10 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/troll",
@@ -34904,7 +36498,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Tail",
@@ -34916,7 +36513,10 @@
             "damage_dice": "3d8+7"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "image": "/api/images/monsters/tyrannosaurus-rex.png",
@@ -35090,7 +36690,10 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Horn",
@@ -35102,7 +36705,10 @@
             "damage_dice": "1d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Healing Touch",
@@ -35282,7 +36888,10 @@
             "damage_dice": "1d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Bite",
@@ -35298,7 +36907,10 @@
             "damage_dice": "3d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Charm",
@@ -35463,7 +37075,10 @@
             "damage_dice": "3d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Charm",
@@ -35757,7 +37372,10 @@
             "damage_dice": "2d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -35769,7 +37387,10 @@
             "damage_dice": "2d4+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/vampire-spawn",
@@ -35872,7 +37493,9 @@
           }
         ],
         "weapon": "longsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Shortsword",
@@ -35886,7 +37509,9 @@
           }
         ],
         "weapon": "shortsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Heavy Crossbow",
@@ -35904,6 +37529,11 @@
         "supply": {
           "item": "crossbow-bolt",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 100,
+          "long_ft": 400
         }
       }
     ],
@@ -35982,7 +37612,9 @@
             "damage_dice": "1d8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "url": "/api/2014/monsters/violet-fungus",
@@ -36083,7 +37715,10 @@
             "damage_dice": "2d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Talons",
@@ -36095,7 +37730,10 @@
             "damage_dice": "2d10+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Spores",
@@ -36122,7 +37760,11 @@
               }
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "sphere",
+          "radius_ft": 15
+        }
       },
       {
         "name": "Stunning Screech",
@@ -36217,7 +37859,9 @@
             "damage_dice": "1d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/vulture",
@@ -36301,7 +37945,9 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/warhorse.png",
@@ -36365,7 +38011,9 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/warhorse-skeleton",
@@ -36456,7 +38104,10 @@
             "damage_dice": "2d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Whelm",
@@ -36564,7 +38215,9 @@
             "damage_dice": "1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/weasel.png",
@@ -36653,7 +38306,10 @@
             "damage_dice": "2d10+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claw",
@@ -36665,7 +38321,10 @@
             "damage_dice": "2d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/werebear-bear",
@@ -36753,7 +38412,10 @@
           }
         ],
         "weapon": "greataxe",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/werebear-human",
@@ -36872,7 +38534,10 @@
             "damage_dice": "2d10+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claw",
@@ -36884,7 +38549,10 @@
             "damage_dice": "2d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Greataxe",
@@ -36897,7 +38565,10 @@
           }
         ],
         "weapon": "greataxe",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/werebear-hybrid",
@@ -37004,7 +38675,10 @@
             "damage_dice": "2d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/wereboar-boar",
@@ -37100,7 +38774,10 @@
           }
         ],
         "weapon": "maul",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/wereboar-human",
@@ -37245,7 +38922,10 @@
           }
         ],
         "weapon": "maul",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Tusks",
@@ -37257,7 +38937,10 @@
             "damage_dice": "2d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/wereboar-hybrid",
@@ -37381,7 +39064,9 @@
           }
         ],
         "weapon": "shortsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Hand Crossbow",
@@ -37399,6 +39084,11 @@
         "supply": {
           "item": "crossbow-bolt",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 30,
+          "long_ft": 120
         }
       }
     ],
@@ -37556,7 +39246,9 @@
             "damage_dice": "1d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Shortsword",
@@ -37570,7 +39262,9 @@
           }
         ],
         "weapon": "shortsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Hand Crossbow",
@@ -37588,6 +39282,11 @@
         "supply": {
           "item": "crossbow-bolt",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 30,
+          "long_ft": 120
         }
       }
     ],
@@ -37669,7 +39368,9 @@
             "damage_dice": "1d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/wererat-rat",
@@ -37776,7 +39477,10 @@
           }
         ],
         "weapon": "scimitar",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Longbow",
@@ -37793,6 +39497,12 @@
         "supply": {
           "item": "arrow",
           "count": 20
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 150,
+          "long_ft": 600
         }
       }
     ],
@@ -37928,7 +39638,10 @@
             "damage_dice": "1d10+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claw",
@@ -37943,7 +39656,10 @@
         "preference": {
           "type": "always on first round"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Scimitar",
@@ -37956,7 +39672,10 @@
           }
         ],
         "weapon": "scimitar",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Longbow",
@@ -37973,6 +39692,12 @@
         "supply": {
           "item": "arrow",
           "count": 20
+        },
+        "attack_type": "Ranged",
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 150,
+          "long_ft": 600
         }
       }
     ],
@@ -38081,7 +39806,10 @@
             "damage_dice": "1d10+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claw",
@@ -38096,7 +39824,10 @@
         "preference": {
           "type": "always on first round"
         },
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/weretiger-tiger",
@@ -38206,6 +39937,12 @@
         "supply": {
           "item": "spear",
           "count": 4
+        },
+        "attack_kind": "melee_or_ranged",
+        "reach_ft": 5,
+        "range": {
+          "normal_ft": 20,
+          "long_ft": 60
         }
       }
     ],
@@ -38299,7 +40036,9 @@
             "damage_dice": "1d8+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claws",
@@ -38312,7 +40051,9 @@
             "damage_dice": "2d4+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/werewolf-hybrid",
@@ -38388,7 +40129,9 @@
             "damage_dice": "1d8+2"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "url": "/api/2014/monsters/werewolf-wolf",
@@ -38478,7 +40221,9 @@
             "damage_dice": "1d4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Cold Breath",
@@ -38498,7 +40243,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 15
+        }
       }
     ],
     "url": "/api/2014/monsters/white-dragon-wyrmling",
@@ -38635,7 +40384,10 @@
               }
             }
           }
-        ]
+        ],
+        "attack_kind": "melee",
+        "reach_ft": 5,
+        "weapon_kind": "natural"
       },
       {
         "name": "Longsword",
@@ -38666,7 +40418,9 @@
           }
         ],
         "weapon": "longsword",
-        "weapon_kind": "manufactured"
+        "weapon_kind": "manufactured",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Longbow",
@@ -38684,6 +40438,11 @@
         "supply": {
           "item": "arrow",
           "count": 20
+        },
+        "attack_kind": "ranged",
+        "range": {
+          "normal_ft": 150,
+          "long_ft": 600
         }
       }
     ],
@@ -38782,7 +40541,10 @@
             "damage_type": "lightning",
             "damage_dice": "2d8"
           }
-        ]
+        ],
+        "attack_kind": "melee",
+        "reach_ft": 5,
+        "weapon_kind": "spell"
       },
       {
         "name": "Invisibility",
@@ -38881,7 +40643,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Cold Breath",
@@ -38901,7 +40665,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 15
+        }
       }
     ],
     "image": "/api/images/monsters/winter-wolf.png",
@@ -38989,7 +40757,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/wolf.png",
@@ -39071,7 +40841,9 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/worg.png",
@@ -39170,7 +40942,11 @@
               }
             }
           }
-        ]
+        ],
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5,
+        "weapon_kind": "natural"
       },
       {
         "name": "Create Specter",
@@ -39300,7 +41076,10 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claws",
@@ -39312,7 +41091,10 @@
             "damage_dice": "2d8+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Stinger",
@@ -39333,7 +41115,10 @@
             }
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       }
     ],
     "image": "/api/images/monsters/wyvern.png",
@@ -39432,7 +41217,10 @@
             "damage_dice": "3d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Claw",
@@ -39444,7 +41232,10 @@
             "damage_dice": "1d6+3"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/xorn.png",
@@ -39556,7 +41347,10 @@
             "damage_dice": "1d8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -39568,7 +41362,10 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Acid Breath",
@@ -39588,7 +41385,12 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "line",
+          "length_ft": 30,
+          "width_ft": 5
+        }
       }
     ],
     "image": "/api/images/monsters/young-black-dragon.png",
@@ -39694,7 +41496,10 @@
             "damage_dice": "1d10"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -39706,7 +41511,10 @@
             "damage_dice": "2d6+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Lightning Breath",
@@ -39726,7 +41534,12 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "line",
+          "length_ft": 60,
+          "width_ft": 5
+        }
       }
     ],
     "image": "/api/images/monsters/young-blue-dragon.png",
@@ -39832,7 +41645,10 @@
             "damage_dice": "2d10+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -39844,7 +41660,10 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Breath Weapons",
@@ -39873,7 +41692,12 @@
                     "damage_type": "fire",
                     "damage_dice": "12d6"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "line",
+                  "length_ft": 40,
+                  "width_ft": 5
+                }
               },
               {
                 "option_type": "breath",
@@ -39882,6 +41706,10 @@
                   "dc_type": "con",
                   "dc_value": 14,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 30
                 },
                 "condition": {
                   "condition_type": "unconscious",
@@ -40006,7 +41834,10 @@
             "damage_dice": "2d10+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -40018,7 +41849,10 @@
             "damage_dice": "2d6+5"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Breath Weapons",
@@ -40047,7 +41881,12 @@
                     "damage_type": "lightning",
                     "damage_dice": "10d10"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "line",
+                  "length_ft": 60,
+                  "width_ft": 5
+                }
               },
               {
                 "option_type": "breath",
@@ -40056,6 +41895,10 @@
                   "dc_type": "str",
                   "dc_value": 15,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 30
                 }
               }
             ]
@@ -40166,7 +42009,10 @@
             "damage_dice": "2d10+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -40178,7 +42024,10 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Breath Weapons",
@@ -40207,7 +42056,12 @@
                     "damage_type": "acid",
                     "damage_dice": "9d8"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "line",
+                  "length_ft": 40,
+                  "width_ft": 5
+                }
               },
               {
                 "option_type": "breath",
@@ -40216,6 +42070,10 @@
                   "dc_type": "con",
                   "dc_value": 14,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 30
                 }
               }
             ]
@@ -40336,7 +42194,10 @@
             "damage_dice": "2d10+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -40348,7 +42209,10 @@
             "damage_dice": "2d6+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Breath Weapons",
@@ -40377,7 +42241,11 @@
                     "damage_type": "fire",
                     "damage_dice": "10d10"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 30
+                }
               },
               {
                 "option_type": "breath",
@@ -40386,6 +42254,10 @@
                   "dc_type": "str",
                   "dc_value": 17,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 30
                 }
               }
             ]
@@ -40508,7 +42380,10 @@
             "damage_dice": "2d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -40520,7 +42395,10 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Poison Breath",
@@ -40540,7 +42418,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 30
+        }
       }
     ],
     "image": "/api/images/monsters/young-green-dragon.png",
@@ -40646,7 +42528,10 @@
             "damage_dice": "1d6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -40658,7 +42543,10 @@
             "damage_dice": "2d6+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Fire Breath",
@@ -40678,7 +42566,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 30
+        }
       }
     ],
     "image": "/api/images/monsters/young-red-dragon.png",
@@ -40787,7 +42679,10 @@
             "damage_dice": "2d10+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -40799,7 +42694,10 @@
             "damage_dice": "2d6+6"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Breath Weapons",
@@ -40828,7 +42726,11 @@
                     "damage_type": "cold",
                     "damage_dice": "12d8"
                   }
-                ]
+                ],
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 30
+                }
               },
               {
                 "option_type": "breath",
@@ -40837,6 +42739,10 @@
                   "dc_type": "con",
                   "dc_value": 17,
                   "success_type": "none"
+                },
+                "area": {
+                  "shape": "cone",
+                  "length_ft": 30
                 },
                 "condition": {
                   "condition_type": "paralyzed",
@@ -40962,7 +42868,10 @@
             "damage_dice": "1d8"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 10
       },
       {
         "name": "Claw",
@@ -40974,7 +42883,10 @@
             "damage_dice": "2d6+4"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_type": "Melee",
+        "attack_kind": "melee",
+        "reach_ft": 5
       },
       {
         "name": "Cold Breath",
@@ -40994,7 +42906,11 @@
               "success_type": "half"
             }
           }
-        ]
+        ],
+        "area": {
+          "shape": "cone",
+          "length_ft": 30
+        }
       }
     ],
     "image": "/api/images/monsters/young-white-dragon.png",
@@ -41065,7 +42981,9 @@
             "damage_dice": "1d6+1"
           }
         ],
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "attack_kind": "melee",
+        "reach_ft": 5
       }
     ],
     "image": "/api/images/monsters/zombie.png",

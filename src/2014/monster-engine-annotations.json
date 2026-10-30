@@ -2146,5 +2146,178 @@
         }
       }
     ]
+  },
+  {
+    "monster": "darkmantle",
+    "section": "actions",
+    "name": "Crush",
+    "set": {
+      "weapon_kind": "natural"
+    }
+  },
+  {
+    "monster": "ettercap",
+    "section": "actions",
+    "name": "Web",
+    "set": {
+      "weapon_kind": "natural"
+    }
+  },
+  {
+    "monster": "fire-elemental",
+    "section": "actions",
+    "name": "Touch",
+    "set": {
+      "weapon_kind": "natural"
+    }
+  },
+  {
+    "monster": "giant-spider",
+    "section": "actions",
+    "name": "Web",
+    "set": {
+      "weapon_kind": "natural"
+    }
+  },
+  {
+    "monster": "guardian-naga",
+    "section": "actions",
+    "name": "Spit Poison",
+    "set": {
+      "weapon_kind": "natural"
+    }
+  },
+  {
+    "monster": "magmin",
+    "section": "actions",
+    "name": "Touch",
+    "set": {
+      "weapon_kind": "natural"
+    }
+  },
+  {
+    "monster": "roper",
+    "section": "actions",
+    "name": "Tendril",
+    "set": {
+      "weapon_kind": "natural"
+    }
+  },
+  {
+    "monster": "shadow",
+    "section": "actions",
+    "name": "Strength Drain",
+    "set": {
+      "weapon_kind": "natural"
+    }
+  },
+  {
+    "monster": "wight",
+    "section": "actions",
+    "name": "Life Drain",
+    "set": {
+      "weapon_kind": "natural"
+    }
+  },
+  {
+    "monster": "wraith",
+    "section": "actions",
+    "name": "Life Drain",
+    "set": {
+      "weapon_kind": "natural"
+    }
+  },
+  {
+    "monster": "lamia",
+    "section": "actions",
+    "name": "Intoxicating Touch",
+    "set": {
+      "weapon_kind": "spell"
+    }
+  },
+  {
+    "monster": "lich",
+    "section": "actions",
+    "name": "Paralyzing Touch",
+    "set": {
+      "weapon_kind": "spell"
+    }
+  },
+  {
+    "monster": "specter",
+    "section": "actions",
+    "name": "Life Drain",
+    "set": {
+      "weapon_kind": "spell"
+    }
+  },
+  {
+    "monster": "will-o-wisp",
+    "section": "actions",
+    "name": "Shock",
+    "set": {
+      "weapon_kind": "spell"
+    }
+  },
+  {
+    "monster": "solar",
+    "section": "actions",
+    "name": "Slaying Longbow",
+    "set": {
+      "weapon_kind": "manufactured",
+      "weapon": "longbow",
+      "supply": {
+        "item": "arrow",
+        "count": 20
+      }
+    }
+  },
+  {
+    "monster": "chain-devil",
+    "section": "actions",
+    "name": "Chain",
+    "set": {
+      "weapon": "chain-10-feet"
+    }
+  },
+  {
+    "monster": "deep-gnome-svirfneblin",
+    "section": "actions",
+    "name": "Poisoned Dart",
+    "set": {
+      "weapon": "dart"
+    }
+  },
+  {
+    "monster": "gladiator",
+    "section": "actions",
+    "name": "Shield Bash",
+    "set": {
+      "weapon": "shield"
+    }
+  },
+  {
+    "monster": "grimlock",
+    "section": "actions",
+    "name": "Spiked Bone Club",
+    "set": {
+      "weapon": "club"
+    }
+  },
+  {
+    "monster": "lizardfolk",
+    "section": "actions",
+    "name": "Heavy Club",
+    "set": {
+      "weapon": "club"
+    }
+  },
+  {
+    "monster": "lizardfolk",
+    "section": "actions",
+    "name": "Spiked Shield",
+    "set": {
+      "weapon": "shield"
+    }
   }
 ]

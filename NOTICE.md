@@ -75,7 +75,7 @@ marked `dd`:
 | `src/2014/en/5e-SRD-Magic-Items.json` | `cost`, `weight`, `effect`, `enchantment`, `is_consumable`, `requires_attunement` |
 | `src/2014/en/5e-SRD-Equipment.json` | `ammunition`, `effect`, `is_consumable`, `material`, `stackable` |
 | `src/2014/en/5e-SRD-Conditions.json` | Entries `exhaustion-1` to `exhaustion-6`, `enraged`, `frenzied`, `reckless`, `dodging`, `infested`, `swallowed`, `drained-of-strength`, `weakened`, `slowed`, `drained-of-life`, `disengaged`, `surprised` |
-| `src/2014/5e-SRD-Monsters-Normalized.json` | The fields above, plus `condition` on `actions[].attacks[]`, `legendary_actions[]`, `reactions[]` and `special_abilities[]`, `actions[].damage[].condition.on_failed_repeat_save`, `actions[].pull_distance_ft` and `special_abilities[].damage[].grapple`, merged in from the annotations file |
+| `src/2014/5e-SRD-Monsters-Normalized.json` | The fields above, plus `condition` on `actions[].attacks[]`, `legendary_actions[]`, `reactions[]` and `special_abilities[]`, `actions[].damage[].condition.on_failed_repeat_save`, `actions[].pull_distance_ft` and `special_abilities[].damage[].grapple`, merged in from the annotations file, and `actions[].attack_kind`, `actions[].reach_ft`, `actions[].range`, `actions[].area` and `actions[].options.from.options[].area`, which the generator reads from the action prose; the generator also fills `actions[].attack_type` where the English file has none |
 | `src/2014/monster-engine-annotations.json` | The whole file |
 
 Many of these fields restate a rule from the SRD prose next to them in structured form. Monster `environments`

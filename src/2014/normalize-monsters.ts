@@ -32,6 +32,93 @@ function normalizeDamage(damage: any) {
   return {...damage};
 }
 
+// Structure of an attack, read from the action's own text. The attack header
+// ("Melee Weapon Attack: +5 to hit, reach 5 ft., one target.", "Ranged Weapon Attack: +4 to hit,
+// range 80/320 ft., one target.", "Melee or Ranged Weapon Attack: ... reach 5 ft. or range 20/60 ft.")
+// is the only place the SRD states the attack roll, the reach and the range, so it is the only text read.
+const ATTACK_HEADER = /^\s*(Melee or Ranged|Melee|Ranged) (?:Weapon|Spell) Attack:/;
+const ATTACK_KINDS = { 'Melee': 'melee', 'Ranged': 'ranged', 'Melee or Ranged': 'melee_or_ranged' } as const;
+
+export type AttackStructure = {
+  attack_type: 'Melee' | 'Ranged';
+  attack_kind: 'melee' | 'ranged' | 'melee_or_ranged';
+  reach_ft?: number;
+  range?: { normal_ft: number; long_ft?: number };
+};
+
+// Returns undefined for an action that is not an attack roll. Throws when the header does not state the
+// reach or the range its wording promises, so a new wording is reviewed instead of silently left unstructured.
+export function deriveAttackStructure(action: { name: string; desc?: string }): AttackStructure | undefined {
+  const desc = action.desc ?? '';
+  const header = ATTACK_HEADER.exec(desc);
+  if (!header) return undefined;
+  const wording = header[1] as keyof typeof ATTACK_KINDS;
+  const attackKind = ATTACK_KINDS[wording];
+  const head = desc.split('Hit:')[0];
+  const reach = /\breach (\d+) ft\./.exec(head);
+  const range = /\brange (\d+)(?:\/(\d+))? ft\./.exec(head);
+  if (attackKind !== 'ranged' && !reach) throw new Error(`Attack without a reach: ${action.name}`);
+  if (attackKind !== 'melee' && !range) throw new Error(`Attack without a range: ${action.name}`);
+  return {
+    // "Melee or Ranged" is typed by its first word; attack_kind keeps both.
+    attack_type: wording === 'Ranged' ? 'Ranged' : 'Melee',
+    attack_kind: attackKind,
+    ...(attackKind !== 'ranged' && reach ? { reach_ft: Number(reach[1]) } : {}),
+    ...(attackKind !== 'melee' && range
+      ? { range: { normal_ft: Number(range[1]), ...(range[2] ? { long_ft: Number(range[2]) } : {}) } }
+      : {}),
+  };
+}
+
+export type AreaOfEffect =
+  | { shape: 'cone'; length_ft: number }
+  | { shape: 'line'; length_ft: number; width_ft: number }
+  | { shape: 'sphere'; radius_ft: number }
+  | { shape: 'cylinder'; radius_ft: number; height_ft: number };
+
+// Areas of effect, read from the phrases the SRD uses for them: "60-foot cone", "a 90-foot line that is 5 feet
+// wide" or "a line that is 30 ft. long and 5 ft. wide", "a 15-foot-radius cloud" or "a 10-foot radius of gas",
+// "a 5-foot-radius, 30-foot-tall cylinder". Text without one of these phrases has no area.
+const AREA_PATTERNS: { pattern: RegExp; area: (match: RegExpMatchArray) => AreaOfEffect }[] = [
+  { pattern: /(\d+)-foot cone/g, area: (m) => ({ shape: 'cone', length_ft: Number(m[1]) }) },
+  {
+    pattern: /(\d+)-foot line that is (\d+) (?:feet|ft\.) wide/g,
+    area: (m) => ({ shape: 'line', length_ft: Number(m[1]), width_ft: Number(m[2]) }),
+  },
+  {
+    pattern: /line (?:of \w+ )?that is (\d+) ft\. long and (\d+) ft\. wide/g,
+    area: (m) => ({ shape: 'line', length_ft: Number(m[1]), width_ft: Number(m[2]) }),
+  },
+  {
+    pattern: /(\d+)-foot-radius, (\d+)-foot-tall cylinder/g,
+    area: (m) => ({ shape: 'cylinder', radius_ft: Number(m[1]), height_ft: Number(m[2]) }),
+  },
+  { pattern: /(\d+)-foot[- ]radius(?!,)/g, area: (m) => ({ shape: 'sphere', radius_ft: Number(m[1]) }) },
+];
+
+export function deriveAreas(text: string): AreaOfEffect[] {
+  return AREA_PATTERNS.flatMap(({ pattern, area }) => [...text.matchAll(pattern)].map(area));
+}
+
+// The one area an action's text describes. Several areas in one text (a dragon's two breath weapons) are
+// assigned to the options they belong to, so more than one here is an error.
+function deriveArea(action: { name: string; desc?: string }): AreaOfEffect | undefined {
+  const areas = deriveAreas(action.desc ?? '');
+  if (areas.length > 1) throw new Error(`More than one area in: ${action.name}`);
+  return areas[0];
+}
+
+// A dragon's "Breath Weapons" lists its breaths in the text as "Fire Breath. The dragon exhales fire in ...".
+function deriveBreathOptionAreas(action: { name: string; desc?: string; options?: any }) {
+  const lines = (action.desc ?? '').split('\n');
+  for (const option of action.options?.from?.options ?? []) {
+    const line = lines.find((l) => l.startsWith(`${option.name}. `));
+    const areas = line ? deriveAreas(line) : [];
+    if (areas.length > 1) throw new Error(`More than one area in: ${action.name} / ${option.name}`);
+    if (areas[0]) option.area = areas[0];
+  }
+}
+
 export function normalizeAction(action: any) {
   console.log(`        Normalizing action: ${action.name}`);
   if (action.dc) {
@@ -93,9 +180,18 @@ export function normalizeAction(action: any) {
     action.preference.target_condition = action.preference.target_condition.index;
   }
 
+  const attack = deriveAttackStructure(action);
+  if (action.options?.from?.options?.length) {
+    deriveBreathOptionAreas(action);
+  }
+  const area = action.options?.from?.options?.length ? undefined : deriveArea(action);
+
   const normalizedAction = {
     ...action,
     damage: action.damage?.map(normalizeDamage),
+    // An existing attack_type is kept: "Melee or Ranged" attacks are not all typed by their first word.
+    ...(attack ? { ...attack, attack_type: action.attack_type ?? attack.attack_type } : {}),
+    ...(area ? { area } : {}),
   };
 
   return normalizedAction;

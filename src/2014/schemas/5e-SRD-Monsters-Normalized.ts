@@ -117,6 +117,16 @@ const DamageChoiceSchema = z.strictObject({
   }),
 });
 
+// The area an action or a breath weapon affects, in feet, as the SRD text gives it. A cone is as wide at its
+// far end as it is long. A cone or a line starts at the monster, a sphere is centered on the monster, and a
+// cylinder is placed where the text says.
+const AreaSchema = z.discriminatedUnion('shape', [
+  z.strictObject({ shape: z.literal('cone'), length_ft: z.number() }),
+  z.strictObject({ shape: z.literal('line'), length_ft: z.number(), width_ft: z.number() }),
+  z.strictObject({ shape: z.literal('sphere'), radius_ft: z.number() }),
+  z.strictObject({ shape: z.literal('cylinder'), radius_ft: z.number(), height_ft: z.number() }),
+]);
+
 // An action option that is itself a damage-and-save effect (a dragon's breath weapon).
 const BreathOptionSchema = z.strictObject({
   option_type: z.literal('breath'),
@@ -124,6 +134,7 @@ const BreathOptionSchema = z.strictObject({
   dc: DifficultyClassSchema,
   damage: z.array(MonsterDamageSchema).optional(),
   condition: AppliedConditionSchema.optional(),
+  area: AreaSchema.optional(),
 });
 
 const OptionsChoiceSchema = z.strictObject({
@@ -188,7 +199,16 @@ const MonsterAttackSchema = z.strictObject({
 const MonsterActionSchema = z.strictObject({
   name: z.string(),
   desc: z.string(),
+  // `attack_type`, `attack_kind`, `reach_ft` and `range` are on every attack-roll action ("Melee Weapon Attack:",
+  // "Ranged Spell Attack:", ...). `attack_kind` keeps the "Melee or Ranged" wording that `attack_type` cannot.
   attack_type: z.enum(['Melee', 'Ranged']).optional(),
+  attack_kind: z.enum(['melee', 'ranged', 'melee_or_ranged']).optional(),
+  // Reach in feet of a melee attack, and the normal and long range in feet of a ranged one (`long_ft` is absent
+  // when the text gives one range). A "Melee or Ranged" attack has both.
+  reach_ft: z.number().optional(),
+  range: z.strictObject({ normal_ft: z.number(), long_ft: z.number().optional() }).optional(),
+  // Area of an action that affects an area (a breath, a cloud). A dragon's "Breath Weapons" has it on each option.
+  area: AreaSchema.optional(),
   preference: z
     .strictObject({
       type: z.enum(['always until first hit', 'always on first round', 'always unless target has condition']),
