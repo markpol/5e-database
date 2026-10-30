@@ -27,6 +27,10 @@
         "special_abilities[].condition": {
           "source": "dd",
           "note": "Merged in from monster-engine-annotations.json."
+        },
+        "special_abilities[].damage[].grapple": {
+          "source": "dd",
+          "note": "Grapple escape DC, merged in from monster-engine-annotations.json."
         }
       }
     },

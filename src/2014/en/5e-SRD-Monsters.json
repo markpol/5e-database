@@ -10632,7 +10632,25 @@
       },
       {
         "name": "Deadly Leap",
-        "desc": "If the bulette jumps at least 15 ft. as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) bludgeoning damage plus 14 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 ft. out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the bulette's space."
+        "desc": "If the bulette jumps at least 15 ft. as part of its movement, it can then use this action to land on its feet in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 16 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) bludgeoning damage plus 14 (3d6 + 4) slashing damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 ft. out of the bulette's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the bulette's space.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "3d6+4"
+          },
+          {
+            "damage_type": {
+              "index": "slashing",
+              "name": "Slashing",
+              "url": "/api/2014/damage-types/slashing"
+            },
+            "damage_dice": "3d6+4"
+          }
+        ]
       }
     ],
     "url": "/api/2014/monsters/bulette",
@@ -11065,6 +11083,14 @@
               "url": "/api/2014/damage-types/slashing"
             },
             "damage_dice": "2d6+4"
+          },
+          {
+            "damage_type": {
+              "index": "piercing",
+              "name": "Piercing",
+              "url": "/api/2014/damage-types/piercing"
+            },
+            "damage_dice": "2d6"
           }
         ],
         "weapon_kind": "manufactured"
@@ -16970,6 +16996,14 @@
               "url": "/api/2014/damage-types/fire"
             },
             "damage_dice": "2d6+3"
+          },
+          {
+            "damage_type": {
+              "index": "fire",
+              "name": "Fire",
+              "url": "/api/2014/damage-types/fire"
+            },
+            "damage_dice": "1d10"
           }
         ]
       }
@@ -18664,6 +18698,23 @@
               "url": "/api/2014/damage-types/piercing"
             },
             "damage_dice": "1d4+2"
+          },
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/2014/damage-types/poison"
+            },
+            "damage_dice": "3d6",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/2014/ability-scores/con"
+              },
+              "dc_value": 11,
+              "success_type": "none"
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -23367,6 +23418,23 @@
               "url": "/api/2014/damage-types/piercing"
             },
             "damage_dice": "1d8+4"
+          },
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/2014/damage-types/poison"
+            },
+            "damage_dice": "10d8",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/2014/ability-scores/con"
+              },
+              "dc_value": 15,
+              "success_type": "half"
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -23374,7 +23442,26 @@
       {
         "name": "Spit Poison",
         "desc": "Ranged Weapon Attack: +8 to hit, range 15/30 ft., one creature. Hit: The target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one.",
-        "attack_bonus": 8
+        "attack_bonus": 8,
+        "damage": [
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/2014/damage-types/poison"
+            },
+            "damage_dice": "10d8",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/2014/ability-scores/con"
+              },
+              "dc_value": 15,
+              "success_type": "half"
+            }
+          }
+        ]
       }
     ],
     "image": "/api/images/monsters/guardian-naga.png",
@@ -25353,7 +25440,43 @@
       },
       {
         "name": "Wall of Ice",
-        "desc": "The devil magically forms an opaque wall of ice on a solid surface it can see within 60 feet of it. The wall is 1 foot thick and up to 30 feet long and 10 feet high, or it's a hemispherical dome up to 20 feet in diameter.\nWhen the wall appears, each creature in its space is pushed out of it by the shortest route. The creature chooses which side of the wall to end up on, unless the creature is incapacitated. The creature then makes a DC 17 Dexterity saving throw, taking 35 (10d6) cold damage on a failed save, or half as much damage on a successful one.\nThe wall lasts for 1 minute or until the devil is incapacitated or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 17 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes."
+        "desc": "The devil magically forms an opaque wall of ice on a solid surface it can see within 60 feet of it. The wall is 1 foot thick and up to 30 feet long and 10 feet high, or it's a hemispherical dome up to 20 feet in diameter.\nWhen the wall appears, each creature in its space is pushed out of it by the shortest route. The creature chooses which side of the wall to end up on, unless the creature is incapacitated. The creature then makes a DC 17 Dexterity saving throw, taking 35 (10d6) cold damage on a failed save, or half as much damage on a successful one.\nThe wall lasts for 1 minute or until the devil is incapacitated or dies. The wall can be damaged and breached; each 10-foot section has AC 5, 30 hit points, vulnerability to fire damage, and immunity to acid, cold, necrotic, poison, and psychic damage. If a section is destroyed, it leaves behind a sheet of frigid air in the space the wall occupied. Whenever a creature finishes moving through the frigid air on a turn, willingly or otherwise, the creature must make a DC 17 Constitution saving throw, taking 17 (5d6) cold damage on a failed save, or half as much damage on a successful one. The frigid air dissipates when the rest of the wall vanishes.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "cold",
+              "name": "Cold",
+              "url": "/api/2014/damage-types/cold"
+            },
+            "damage_dice": "10d6",
+            "dc": {
+              "dc_type": {
+                "index": "dex",
+                "name": "DEX",
+                "url": "/api/2014/ability-scores/dex"
+              },
+              "dc_value": 17,
+              "success_type": "half"
+            }
+          },
+          {
+            "damage_type": {
+              "index": "cold",
+              "name": "Cold",
+              "url": "/api/2014/damage-types/cold"
+            },
+            "damage_dice": "5d6",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/2014/ability-scores/con"
+              },
+              "dc_value": 17,
+              "success_type": "half"
+            }
+          }
+        ]
       }
     ],
     "image": "/api/images/monsters/ice-devil.png",
@@ -26604,6 +26727,14 @@
               "url": "/api/2014/damage-types/piercing"
             },
             "damage_dice": "3d8+10"
+          },
+          {
+            "damage_type": {
+              "index": "acid",
+              "name": "Acid",
+              "url": "/api/2014/damage-types/acid"
+            },
+            "damage_dice": "12d6"
           }
         ],
         "weapon_kind": "natural"
@@ -28347,6 +28478,14 @@
               "url": "/api/2014/damage-types/fire"
             },
             "damage_dice": "2d6"
+          },
+          {
+            "damage_type": {
+              "index": "fire",
+              "name": "Fire",
+              "url": "/api/2014/damage-types/fire"
+            },
+            "damage_dice": "1d6"
           }
         ]
       }
@@ -32429,6 +32568,23 @@
               "url": "/api/2014/damage-types/piercing"
             },
             "damage_dice": "4d6+8"
+          },
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/2014/damage-types/poison"
+            },
+            "damage_dice": "6d6",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/2014/ability-scores/con"
+              },
+              "dc_value": 21,
+              "success_type": "none"
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -32461,6 +32617,14 @@
               "url": "/api/2014/damage-types/bludgeoning"
             },
             "damage_dice": "2d6+8"
+          },
+          {
+            "damage_type": {
+              "index": "fire",
+              "name": "Fire",
+              "url": "/api/2014/damage-types/fire"
+            },
+            "damage_dice": "6d6"
           }
         ],
         "weapon": "mace",
@@ -33464,6 +33628,14 @@
               "url": "/api/2014/damage-types/piercing"
             },
             "damage_dice": "3d8+9"
+          },
+          {
+            "damage_type": {
+              "index": "acid",
+              "name": "Acid",
+              "url": "/api/2014/damage-types/acid"
+            },
+            "damage_dice": "6d6"
           }
         ],
         "weapon_kind": "natural"
@@ -33480,6 +33652,23 @@
               "url": "/api/2014/damage-types/piercing"
             },
             "damage_dice": "3d6+9"
+          },
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/2014/damage-types/poison"
+            },
+            "damage_dice": "12d6",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/2014/ability-scores/con"
+              },
+              "dc_value": 19,
+              "success_type": "half"
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -34395,7 +34584,17 @@
       },
       {
         "name": "Swallow",
-        "desc": "The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 (6d6) acid damage at the start of each of the remorhaz's turns.\nIf the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone."
+        "desc": "The remorhaz makes one bite attack against a Medium or smaller creature it is grappling. If the attack hits, that creature takes the bite's damage and is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the remorhaz, and it takes 21 (6d6) acid damage at the start of each of the remorhaz's turns.\nIf the remorhaz takes 30 damage or more on a single turn from a creature inside it, the remorhaz must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the remorhaz. If the remorhaz dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 15 feet of movement, exiting prone.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "acid",
+              "name": "Acid",
+              "url": "/api/2014/damage-types/acid"
+            },
+            "damage_dice": "6d6"
+          }
+        ]
       }
     ],
     "image": "/api/images/monsters/remorhaz.png",
@@ -34912,7 +35111,17 @@
         "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one Medium or smaller creature. Hit: The creature is grappled (escape DC 13). Until this grapple ends, the target is restrained, blinded, and at risk of suffocating, and the rug can't smother another target. In addition, at the start of each of the target's turns, the target takes 10 (2d6 + 3) bludgeoning damage.",
         "attack_bonus": 5,
         "attack_type": "Melee",
-        "weapon_kind": "natural"
+        "weapon_kind": "natural",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d6+3"
+          }
+        ]
       }
     ],
     "url": "/api/2014/monsters/rug-of-smothering",
@@ -36192,7 +36401,26 @@
       },
       {
         "name": "Engulf",
-        "desc": "The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8 + 4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time."
+        "desc": "The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8 + 4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2014/damage-types/bludgeoning"
+            },
+            "damage_dice": "2d8+4",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/2014/ability-scores/con"
+              },
+              "dc_value": 14,
+              "success_type": "none"
+            }
+          }
+        ]
       }
     ],
     "url": "/api/2014/monsters/shambling-mound",
@@ -37356,6 +37584,23 @@
               "url": "/api/2014/damage-types/piercing"
             },
             "damage_dice": "1d6+4"
+          },
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/2014/damage-types/poison"
+            },
+            "damage_dice": "7d8",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/2014/ability-scores/con"
+              },
+              "dc_value": 13,
+              "success_type": "half"
+            }
           }
         ],
         "weapon_kind": "natural"
@@ -40001,7 +40246,17 @@
       },
       {
         "name": "Swallow",
-        "desc": "The tarrasque makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the tarrasque, and it takes 56 (16d6) acid damage at the start of each of the tarrasque's turns.\nIf the tarrasque takes 60 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the tarrasque. If the tarrasque dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone."
+        "desc": "The tarrasque makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside the tarrasque, and it takes 56 (16d6) acid damage at the start of each of the tarrasque's turns.\nIf the tarrasque takes 60 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a DC 20 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the tarrasque. If the tarrasque dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 30 feet of movement, exiting prone.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "acid",
+              "name": "Acid",
+              "url": "/api/2014/damage-types/acid"
+            },
+            "damage_dice": "16d6"
+          }
+        ]
       }
     ],
     "legendary_actions": [
@@ -42231,7 +42486,17 @@
           },
           "dc_value": 14,
           "success_type": "none"
-        }
+        },
+        "damage": [
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/2014/damage-types/poison"
+            },
+            "damage_dice": "1d10"
+          }
+        ]
       },
       {
         "name": "Stunning Screech",
@@ -43232,7 +43497,17 @@
       },
       {
         "name": "Charge (Boar or Hybrid Form Only)",
-        "desc": "If the wereboar moves at least 15 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+        "desc": "If the wereboar moves at least 15 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "slashing",
+              "name": "Slashing",
+              "url": "/api/2014/damage-types/slashing"
+            },
+            "damage_dice": "2d6"
+          }
+        ]
       },
       {
         "name": "Relentless",
@@ -43447,7 +43722,17 @@
       },
       {
         "name": "Charge (Boar or Hybrid Form Only)",
-        "desc": "If the wereboar moves at least 15 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+        "desc": "If the wereboar moves at least 15 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "slashing",
+              "name": "Slashing",
+              "url": "/api/2014/damage-types/slashing"
+            },
+            "damage_dice": "2d6"
+          }
+        ]
       },
       {
         "name": "Relentless",
@@ -46002,6 +46287,23 @@
               "url": "/api/2014/damage-types/piercing"
             },
             "damage_dice": "2d6+4"
+          },
+          {
+            "damage_type": {
+              "index": "poison",
+              "name": "Poison",
+              "url": "/api/2014/damage-types/poison"
+            },
+            "damage_dice": "7d6",
+            "dc": {
+              "dc_type": {
+                "index": "con",
+                "name": "CON",
+                "url": "/api/2014/ability-scores/con"
+              },
+              "dc_value": 15,
+              "success_type": "half"
+            }
           }
         ],
         "weapon_kind": "natural"
