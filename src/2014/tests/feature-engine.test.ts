@@ -63,10 +63,9 @@ const classSpecificKeys = (classIndex: string) =>
 
 const conditions = new Set(ConditionData.map((c) => c.index));
 const spells = new Map(
-  (SpellData as unknown as { index: string; casting_time_data: { unit: string } }[]).map((s) => [
-    s.index,
-    s,
-  ])
+  (
+    SpellData as unknown as { index: string; desc: string[]; casting_time_data: { unit: string } }[]
+  ).map((s) => [s.index, s])
 );
 const monsterTypes = new Set((MonsterData as unknown as { type: string }[]).map((m) => m.type));
 const schools = new Set(SchoolData.map((s) => s.index));
@@ -195,8 +194,8 @@ describe('feature engine', () => {
       if ('count' in uses && !('ability_modifier' in uses)) {
         expect(text(f), f.index).toMatch(
           uses.count === 1
-            ? /once|again until|before you can use (?:it|this feature) again|to use your [\w ]+ again/i
-            : /twice/i
+            ? /once|again until|before you can use (?:it|this feature) again|can't use this feature again|to use your [\w ]+ again/i
+            : /twice|can cast each of them once/i
         );
       }
       if ('ability_modifier' in uses) {
@@ -317,7 +316,10 @@ describe('feature engine modifiers', () => {
 
   it('read class_specific keys that the class has in its Levels rows', () => {
     for (const [f, m] of all) {
-      const keys = [m.class_specific ?? []].flat() as string[];
+      const keys = [
+        m.class_specific ?? [],
+        (m.aura as { class_specific?: string })?.class_specific ?? [],
+      ].flat() as string[];
       for (const key of keys)
         expect(classSpecificKeys(f.class.index), `${f.index}: ${key}`).toContain(key);
     }
@@ -328,6 +330,7 @@ describe('feature engine modifiers', () => {
       'flat',
       'dice',
       'dice_at_slot_level',
+      'dice_at_class_level',
       'ability_modifier',
       'attack_ability_modifier',
       'class_specific',
@@ -403,8 +406,9 @@ describe('feature engine modifiers', () => {
       expect(immunity, `${index}: ${condition}`).toBeDefined();
       expect(immunity!.while_condition, `${index}: ${condition}`).toBe(while_condition);
     }
-    // The feature side: an immunity to a condition that is not `disease` is named by that condition.
-    for (const [f, m] of all.filter(([, m]) => m.type === 'immune_to')) {
+    // The feature side: an immunity to a condition that is not `disease` is named by that condition, unless it is an
+    // aura, which protects the creatures within a range of the owner and which `immune_if_feature` does not model.
+    for (const [f, m] of all.filter(([, m]) => m.type === 'immune_to' && !m.aura)) {
       for (const c of (m.conditions as string[]).filter((x) => x !== 'disease')) {
         expect(
           named.some((n) => n.condition === c && n.feature === f.index),
@@ -449,7 +453,7 @@ describe('feature engine modifiers', () => {
         expect(text(f), f.index).toContain(`now ${m.maximum}`);
       }
       if (m.type === 'magical_attacks') expect(text(f), f.index).toMatch(/count as magical/);
-      if (m.type === 'rolls_against_owner')
+      if (m.type === 'rolls_against_owner' && m.no_advantage)
         expect(text(f), f.index).toMatch(/No attack roll has advantage against you/);
       if (m.type === 'critical_damage_dice')
         expect(text(f), f.index).toMatch(
@@ -483,6 +487,118 @@ describe('feature engine modifiers', () => {
           `8 \\+ your (?:proficiency bonus \\+ your ${ability} modifier|${ability} modifier \\+ your proficiency bonus)`
         )
       );
+    }
+  });
+
+  it('give each aura the range and the creatures the text states', () => {
+    const auras = all.filter(([, m]) => m.aura);
+    expect(auras.length).toBeGreaterThan(0);
+    for (const [f, m] of auras) {
+      const aura = m.aura as { class_specific?: string; range_ft?: number; affects: string };
+      if (aura.class_specific) {
+        // The Levels row of the owner's level gives the range, and the text states it for that level.
+        const range = classSpecific(f, aura.class_specific);
+        expect(typeof range === 'number' && range > 0, f.index).toBe(true);
+        expect(text(f), f.index).toContain(`within ${range} feet of you`);
+      } else {
+        expect(text(f), f.index).toContain(`${aura.range_ft}-foot radius`);
+      }
+      expect(text(f), f.index).toMatch(
+        aura.affects === 'enemies'
+          ? /enemy creature/
+          : /you (?:or a|and) friendly creatures? within \d+ feet of you/
+      );
+    }
+  });
+
+  it('require consciousness only where the text does', () => {
+    for (const [f, m] of all) {
+      if ((m.while as string[] | undefined)?.includes('conscious'))
+        expect(text(f), f.index).toMatch(/while you are conscious|You must be conscious/);
+    }
+  });
+
+  it('give the damage dealt, the spells ended and the rolls against spells the text states', () => {
+    for (const [f, m] of all) {
+      if (m.type === 'deal_damage') {
+        expect(text(f), f.index).toContain(`${m.flat} ${m.damage_type} damage`);
+        expect(text(f), f.index).toMatch(/starts its turn/);
+      }
+      if (m.type === 'end_spell') {
+        expect(text(f), f.index).toContain(`end ${NUMBER_WORDS[m.count as number]} spell`);
+        const targets = m.targets as string[];
+        expect(text(f), f.index).toMatch(/on yourself or on one willing creature that you touch/);
+        expect(targets, f.index).toEqual(['self', 'willing_creature']);
+      }
+      if (m.against_spells_cast_by) {
+        expect(text(f), f.index).toMatch(/saving throws against spells cast by/);
+        for (const t of m.against_spells_cast_by as string[]) expect(text(f), f.index).toContain(t);
+      }
+      const duration = m.duration as { unit: string; length: number } | undefined;
+      if ((m.type === 'roll' || m.type === 'deal_damage') && duration)
+        expect(text(f), f.index).toContain(`${duration.length} ${duration.unit}`);
+    }
+  });
+
+  it('give the attacks against the owner the creatures of the spell the owner is under', () => {
+    for (const [f, m] of all.filter(([, m]) => m.type === 'rolls_against_owner')) {
+      expect(
+        ['no_advantage', 'mode'].filter((k) => k in m),
+        f.index
+      ).toHaveLength(1);
+      expect('mode' in m, f.index).toBe('creature_types' in m);
+      if (!m.mode) continue;
+      const named = modifiersOf(f).find((x) => x.type === 'spell' && x.always_active)!;
+      expect(named, f.index).toBeDefined();
+      const spellText = spells.get(named.spell as string)!.desc.join(' ');
+      expect(spellText, f.index).toMatch(/disadvantage/);
+      for (const t of m.creature_types as string[]) expect(spellText, f.index).toContain(t);
+    }
+  });
+
+  it('are always under the effects of a spell only where the text says so', () => {
+    for (const [f, m] of all.filter(([, m]) => m.type === 'spell' && m.always_active)) {
+      expect(engineOf(f)!.action_cost, f.index).toBe('passive');
+      expect(text(f), f.index).toMatch(/always under the effects of/);
+      expect(text(f).toLowerCase(), f.index).toContain((m.spell as string).replaceAll('-', ' '));
+    }
+  });
+
+  it('give the amounts and recipients of a bonus the text states', () => {
+    const ORDINALS: Record<number, string> = { 1: '1st', 5: '5th', 8: '8th', 14: '14th' };
+    for (const [f, m] of all.filter(([, m]) => m.type === 'bonus')) {
+      if (m.target === 'self') expect(text(f), f.index).toMatch(/creature other than you/);
+      if (m.school) expect(text(f), f.index).toContain(m.school);
+      if (m.ability_modifier && m.minimum) {
+        expect(text(f), f.index).toContain(`minimum bonus of +${m.minimum}`);
+      }
+      if (m.dice_at_class_level) {
+        const steps = Object.entries(m.dice_at_class_level as Record<string, string>);
+        expect(Number(steps[0][0]), f.index).toBe(f.level);
+        for (const [level, dice] of steps) {
+          expect(text(f), f.index).toContain(dice);
+          expect(text(f), f.index).toContain(ORDINALS[Number(level)]);
+        }
+      }
+    }
+  });
+
+  it('change a casting of a spell as the text states', () => {
+    const ORDINALS: Record<number, string> = { 1: '1st', 5: '5th' };
+    for (const [f, m] of all.filter(([, m]) => m.type === 'spell_change')) {
+      if (m.change === 'maximize_damage_dice') expect(text(f), f.index).toMatch(/maximum damage/);
+      if (m.change === 'maximize_healing_dice')
+        expect(text(f), f.index).toMatch(/highest number possible for each die/);
+      if (m.change === 'half_damage_on_successful_save')
+        expect(text(f), f.index).toMatch(
+          /takes half the cantrip's damage \(if any\) but suffers no additional/
+        );
+      if (m.max_spell_level === 0) expect(text(f), f.index).toMatch(/cantrip/);
+      else if (m.max_spell_level) {
+        expect(text(f), f.index).toContain(
+          `${ORDINALS[m.min_spell_level as number]} through ${ORDINALS[m.max_spell_level as number]} level`
+        );
+      }
     }
   });
 

@@ -57,6 +57,15 @@ const DurationSchema = z.strictObject({
   length: z.number().optional(),
 });
 
+// An aura: the modifier applies to the creatures within a range of the owner. The range is `range_ft`, or the
+// number of feet in the `class_specific` key of the class rows. `allies_and_self` is the owner and the friendly
+// creatures, `enemies` the creatures hostile to the owner.
+const AuraAffectsSchema = z.enum(['allies_and_self', 'enemies']);
+const AuraSchema = z.union([
+  z.strictObject({ class_specific: ClassSpecificKeySchema, affects: AuraAffectsSchema }),
+  z.strictObject({ range_ft: z.number(), affects: AuraAffectsSchema }),
+]);
+
 // Fields every modifier can have. `while` lists circumstances that must all hold, `while_condition` a condition
 // (an index of 5e-SRD-Conditions) the owner must have. Modifiers that share an `option` value apply together, and a
 // use picks one option of a feature that has several.
@@ -65,6 +74,9 @@ const ModifierBase = {
   while_condition: z.string().optional(),
   option: z.string().optional(),
 };
+// The modifiers that can be an aura apply to the creatures it names within a range of the owner instead of to the
+// owner alone.
+const AuraField = { aura: AuraSchema.optional() };
 
 const ModifierSchema = z.discriminatedUnion('type', [
   // A condition is applied to the owner (`self`) or to the creature the feature is used on (`target`).
@@ -76,7 +88,8 @@ const ModifierSchema = z.discriminatedUnion('type', [
     save: SaveSchema.optional(),
     duration: DurationSchema.optional(),
   }),
-  // A change to the owner's own rolls.
+  // A change to the owner's own rolls. `against_spells_cast_by` limits it to the saving throws against spells cast by
+  // creatures of these types, `duration` to a use of the feature.
   z.strictObject({
     type: z.literal('roll'),
     ...ModifierBase,
@@ -86,15 +99,20 @@ const ModifierSchema = z.discriminatedUnion('type', [
     // The checks of these skills only (indexes of 5e-SRD-Skills).
     skills: z.array(z.string()).min(1).optional(),
     attack_kind: AttackKindSchema.optional(),
+    against_spells_cast_by: z.array(z.string()).min(1).optional(),
+    duration: DurationSchema.optional(),
   }),
   // A number added to a roll, to armor class, or to the hit points a healing spell restores. Exactly one amount:
   // `flat`, `dice`, `dice_at_slot_level` (dice for each spell slot level spent), `ability_modifier`,
   // `attack_ability_modifier` (the modifier of the ability the attack uses), `class_specific` (a number or dice
   // from the Levels row), or `proficiency_multiplier` (the proficiency bonus times this, rounded as `round` says).
-  // `add_spell_level` adds the level of the spell to `flat`.
+  // `dice_at_class_level` is dice for the class level at which they start (the dice of the highest level the owner
+  // has apply). `add_spell_level` adds the level of the spell to `flat`. With `target: "self"` the amount goes to
+  // the owner instead of to the creature the roll is about.
   z.strictObject({
     type: z.literal('bonus'),
     ...ModifierBase,
+    ...AuraField,
     to: z.enum([
       'attack_roll',
       'damage_roll',
@@ -106,6 +124,7 @@ const ModifierSchema = z.discriminatedUnion('type', [
     flat: z.number().optional(),
     dice: z.string().optional(),
     dice_at_slot_level: z.record(z.string(), z.string()).optional(),
+    dice_at_class_level: z.record(z.string(), z.string()).optional(),
     ability_modifier: AbilitySchema.optional(),
     attack_ability_modifier: z.literal(true).optional(),
     class_specific: ClassSpecificKeySchema.optional(),
@@ -122,6 +141,9 @@ const ModifierSchema = z.discriminatedUnion('type', [
     spell: z.string().optional(),
     // Only for spells of this level or higher.
     min_spell_level: z.number().optional(),
+    // Only for spells of this school (an index of 5e-SRD-Magic-Schools).
+    school: z.string().optional(),
+    target: z.literal('self').optional(),
     minimum: z.number().optional(),
   }),
   // The owner's speed rises by `value` feet, or by the number of feet in `class_specific`.
@@ -273,12 +295,14 @@ const ModifierSchema = z.discriminatedUnion('type', [
   z.strictObject({
     type: z.literal('immune_to'),
     ...ModifierBase,
+    ...AuraField,
     conditions: z.array(z.string()).min(1),
   }),
   // The owner can cast `spell` (an index of 5e-SRD-Spells). `slot`: `none` without expending a spell slot, or
   // `spell_slot` by expending one. `at_level` is the level it is cast at. `self_only` limits it to the owner as
   // the target, `ritual_only` to casting it as a ritual, and `no_material` drops its material components.
-  // `save_dc` is the save DC of the spell when it is not the owner's spell save DC.
+  // `save_dc` is the save DC of the spell when it is not the owner's spell save DC. `always_active`: the owner is
+  // always under the effects of the spell, without casting it.
   z.strictObject({
     type: z.literal('spell'),
     ...ModifierBase,
@@ -289,8 +313,12 @@ const ModifierSchema = z.discriminatedUnion('type', [
     ritual_only: z.literal(true).optional(),
     no_material: z.literal(true).optional(),
     save_dc: DcSchema.optional(),
+    always_active: z.literal(true).optional(),
   }),
-  // A change to one casting of a spell. `range_ft` is the new range of `range`.
+  // A change to one casting of a spell. `range_ft` is the new range of `range`. `maximize_damage_dice` and
+  // `maximize_healing_dice` give every die of the damage or the healing its highest number;
+  // `half_damage_on_successful_save` makes a creature that succeeds on its save take half the damage and none of the
+  // other effects. `min_spell_level` and `max_spell_level` limit it to spells of those levels (0 is a cantrip).
   z.strictObject({
     type: z.literal('spell_change'),
     ...ModifierBase,
@@ -304,9 +332,14 @@ const ModifierSchema = z.discriminatedUnion('type', [
       'second_target',
       'reroll_damage_dice',
       'save_disadvantage',
+      'maximize_damage_dice',
+      'maximize_healing_dice',
+      'half_damage_on_successful_save',
     ]),
     spell: z.string().optional(),
     range_ft: z.number().optional(),
+    min_spell_level: z.number().optional(),
+    max_spell_level: z.number().optional(),
   }),
   // Creatures the owner chooses automatically succeed on their saving throws against the spell, and with
   // `no_half_damage` take no damage where a success would halve it. Their number is the ability modifier (at
@@ -424,12 +457,34 @@ const ModifierSchema = z.discriminatedUnion('type', [
     ...ModifierBase,
     conditions: z.array(z.string()).min(1),
   }),
-  // No attack roll against the owner has advantage.
+  // Attack rolls against the owner: none has advantage (`no_advantage`), or those of creatures of these types have
+  // disadvantage (`mode` and `creature_types`). A modifier has one of the two.
   z.strictObject({
     type: z.literal('rolls_against_owner'),
     ...ModifierBase,
     roll: z.literal('attack'),
-    no_advantage: z.literal(true),
+    no_advantage: z.literal(true).optional(),
+    mode: z.literal('disadvantage').optional(),
+    creature_types: z.array(z.string()).min(1).optional(),
+  }),
+  // The owner can end `count` spells on the owner or on a willing creature the owner touches.
+  z.strictObject({
+    type: z.literal('end_spell'),
+    ...ModifierBase,
+    count: z.number(),
+    targets: z.array(z.enum(['self', 'willing_creature'])).min(1),
+  }),
+  // Damage dealt to the creatures the modifier's `aura` affects, `flat` or `dice`, of `damage_type`, at the moment
+  // of `trigger`: a creature starting its turn in the aura. `duration` limits it to a use of the feature.
+  z.strictObject({
+    type: z.literal('deal_damage'),
+    ...ModifierBase,
+    ...AuraField,
+    flat: z.number().optional(),
+    dice: z.string().optional(),
+    damage_type: z.string(),
+    trigger: z.literal('starts_turn_in_aura'),
+    duration: DurationSchema.optional(),
   }),
   // The owner regains `count` uses of the feature `feature` (an index of 5e-SRD-Features) at the moment of
   // `trigger`: rolling initiative with none left.

@@ -48,6 +48,8 @@ export const FEATURE_WHILE = [
   'proficient',
   // The creature moves no more than half its speed on the same turn.
   'moving_at_most_half_speed',
+  // The creature is conscious.
+  'conscious',
 ] as const;
 
 // The kind of attack a roll or bonus is limited to. `bound_weapon` is the one weapon the condition is tied to.
