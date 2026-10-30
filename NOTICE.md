@@ -31,6 +31,20 @@ https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.pdf. The SRD p
 also lists SRD 5.2.1, whose PDF carries the same statement with "5.2.1" in place of "5.2". If the 2024 data is checked
 against SRD 5.2.1, use that statement instead.
 
+### French translation overlay (fr-FR): French SRD 5.1
+
+The French overlay in `src/2014/fr-FR/` includes text from the French edition of the SRD 5.1. It is in the
+repository but not published in the package.
+
+Ce travail comprend la documentation tirée du Document de Référence du Système 5.1 (« SRD 5.1 ») par
+Wizards of the Coast LLC et disponible à l'adresse https://dnd.wizards.com/fr/resources/systems-reference-document.
+Le SRD 5.1 est distribué en vertu de la licence Creative Commons Attribution 4.0 International disponible à
+l'adresse https://creativecommons.org/licenses/by/4.0/legalcode.fr.
+
+Source of the wording: the "Informations juridiques" section on page 1 of the French SRD 5.1 PDF,
+https://media.dndbeyond.com/compendium-images/srd/5.1/SRD_CC_v5.1_FR.pdf, listed under "Localized SRD Downloads"
+on https://www.dndbeyond.com/srd.
+
 ## Changes to the SRD material
 
 The SRD text has been converted to JSON and changed: values have been restructured and reformatted (for example,

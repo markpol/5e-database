@@ -9,11 +9,11 @@
   },
   {
     "index": "adventuring-gear",
-    "name": "Équipement d'aventurier"
+    "name": "Équipement d’aventurier"
   },
   {
     "index": "ammunition",
-    "name": "Munition"
+    "name": "Munitions"
   },
   {
     "index": "tools",
@@ -21,35 +21,35 @@
   },
   {
     "index": "simple-weapons",
-    "name": "Simple Armes"
+    "name": "Armes courantes"
   },
   {
     "index": "martial-weapons",
-    "name": "Martial Armes"
+    "name": "Armes de guerre"
   },
   {
     "index": "melee-weapons",
-    "name": "Melee Armes"
+    "name": "Armes de corps à corps"
   },
   {
     "index": "ranged-weapons",
-    "name": "Ranged Armes"
+    "name": "Armes à distance"
   },
   {
     "index": "simple-melee-weapons",
-    "name": "Simple Melee Armes"
+    "name": "Armes courantes de corps à corps"
   },
   {
     "index": "simple-ranged-weapons",
-    "name": "Simple Ranged Armes"
+    "name": "Armes courantes à distance"
   },
   {
     "index": "martial-melee-weapons",
-    "name": "Martial Melee Armes"
+    "name": "Armes de guerre de corps à corps"
   },
   {
     "index": "martial-ranged-weapons",
-    "name": "Martial Ranged Armes"
+    "name": "Armes de guerre à distance"
   },
   {
     "index": "light-armor",
@@ -57,7 +57,7 @@
   },
   {
     "index": "medium-armor",
-    "name": "Armure intérmédiaire"
+    "name": "Armure intermédiaire"
   },
   {
     "index": "heavy-armor",
@@ -65,7 +65,7 @@
   },
   {
     "index": "shields",
-    "name": "Shields"
+    "name": "Boucliers"
   },
   {
     "index": "standard-gear",
@@ -77,11 +77,11 @@
   },
   {
     "index": "equipment-packs",
-    "name": "Paquetages d'équipement"
+    "name": "Paquetages"
   },
   {
     "index": "artisans-tools",
-    "name": "Artisan's Tools"
+    "name": "Outils d’artisan"
   },
   {
     "index": "musical-instruments",
@@ -101,15 +101,15 @@
   },
   {
     "index": "holy-symbols",
-    "name": "Holy Symbols"
+    "name": "Symbole sacré"
   },
   {
     "index": "wondrous-items",
-    "name": "Wondrous Items"
+    "name": "Objet merveilleux"
   },
   {
     "index": "rod",
-    "name": "Rod"
+    "name": "Sceptre"
   },
   {
     "index": "potion",
@@ -117,18 +117,18 @@
   },
   {
     "index": "ring",
-    "name": "Ring"
+    "name": "Anneau"
   },
   {
     "index": "scroll",
-    "name": "Scroll"
+    "name": "Parchemin"
   },
   {
     "index": "staff",
-    "name": "Staff"
+    "name": "Bâton"
   },
   {
     "index": "wand",
-    "name": "Wand"
+    "name": "Baguette"
   }
 ]

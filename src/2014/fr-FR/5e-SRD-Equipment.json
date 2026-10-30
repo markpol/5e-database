@@ -43,14 +43,14 @@
   },
   {
     "index": "mace",
-    "name": "Masse d'armes",
+    "name": "Masse d’armes",
     "weapon_category": "Courante",
     "weapon_range": "Corps à corps",
     "category_range": "Courante de Corps à corps"
   },
   {
     "index": "quarterstaff",
-    "name": "Bâton",
+    "name": "Bâton de combat",
     "weapon_category": "Courante",
     "weapon_range": "Corps à corps",
     "category_range": "Courante de Corps à corps"
@@ -99,14 +99,14 @@
   },
   {
     "index": "battleaxe",
-    "name": "Hache d'armes",
+    "name": "Hache d’armes",
     "weapon_category": "De guerre",
     "weapon_range": "Corps à corps",
     "category_range": "De guerre de Corps à corps"
   },
   {
     "index": "flail",
-    "name": "Fléau d'armes",
+    "name": "Fléau d’armes",
     "weapon_category": "De guerre",
     "weapon_range": "Corps à corps",
     "category_range": "De guerre de Corps à corps"
@@ -141,12 +141,12 @@
   },
   {
     "index": "lance",
-    "name": "Lance d'arçon",
+    "name": "Lance d’arçon",
     "weapon_category": "De guerre",
     "weapon_range": "Corps à corps",
     "category_range": "De guerre de Corps à corps",
     "special": [
-      "Vous avez un désavantage lorsque vous utilisez une lance d'arçon pour attaquer une cible à 1,50 mètre ou moins de vous. En outre, une lance d'arçon requiert deux mains pour être maniée lorsque vous n'êtes pas sur une monture."
+      "Vous êtes désavantagé lorsque vous utilisez une lance d’arçon pour attaquer une cible dans un rayon de 1,50 m. De plus, une lance d’arçon se manie à deux mains quand vous n’êtes pas sur une monture."
     ]
   },
   {
@@ -158,7 +158,7 @@
   },
   {
     "index": "maul",
-    "name": "Maillet",
+    "name": "Maillet d’armes",
     "weapon_category": "De guerre",
     "weapon_range": "Corps à corps",
     "category_range": "De guerre de Corps à corps"
@@ -261,12 +261,13 @@
     "weapon_range": "À distance",
     "category_range": "De guerre à distance",
     "special": [
-      "Une créature de taille G ou plus petite qui est touchée par un filet est entravée jusqu'à ce qu'elle soit libérée. Un filet n'a aucun effet sur les créatures sans forme ou de taille supérieure à G. Une créature peut utiliser son action pour effectuer un jet de Force DD 10 afin de se libérer ou de libérer une autre créature à sa portée en cas de succès. Infliger 5 points de dégâts tranchants à un filet (CA 10) permet également de libérer une créature sans la blesser, mettant fin à l'effet tout en détruisant le filet. Lorsque vous utilisez une action, une action bonus ou une réaction pour attaquer avec un filet, vous ne pouvez effectuer qu'une seule attaque, et ce quel que soit le nombre d'attaques que vous pouvez normalement réaliser."
+      "Une créature de taille G ou inférieure touchée par un filet est entravée jusqu’à ce qu’elle soit libérée. Le filet n’a aucun effet sur les créatures sans forme ainsi que sur les créatures de taille TG ou supérieure. Toute créature peut consacrer son action à effectuer un test de Force DD 10 pour se libérer du filet ou en extraire une autre créature à portée d’allonge. Infliger 5 dégâts tranchants au filet (CA 10) libère également la créature sans lui faire le moindre mal, ce qui met fin à l’effet et détruit le filet.",
+      "Vous ne pouvez effectuer qu’une seule attaque lorsque vous consacrez une action, une action bonus ou une réaction à attaquer avec un filet, quel que soit le nombre d’attaques que vous pouvez normalement effectuer."
     ]
   },
   {
     "index": "padded-armor",
-    "name": "Armure Matelassée",
+    "name": "Armure matelassée",
     "armor_category": "Légère"
   },
   {
@@ -291,7 +292,7 @@
   },
   {
     "index": "scale-mail",
-    "name": "Armure d'écailles",
+    "name": "Armure d’écailles",
     "armor_category": "Intermédiaire"
   },
   {
@@ -337,19 +338,19 @@
     "index": "acid-vial",
     "name": "Acide (fiole)",
     "desc": [
-      "Au prix d'une action, vous pouvez lancer le contenu de ce flacon sur une créature à 1,50 mètre ou moins de vous, ou jeter le flacon jusqu'à 6 mètres, le brisant à l'impact. Dans les deux cas, faire une attaque à distance contre une créature ou un objet, en considérant l'acide comme une arme improvisée. En cas de succès, la cible reçoit 2d6 dégâts d'acide."
+      "Au prix d’une action, vous pouvez asperger une créature située à 1,50 m ou moins de vous du contenu de cette fiole ou la lancer à une distance maximale de 6 m, auquel cas elle se brise à l’impact. Dans les deux cas, effectuez une attaque à distance contre une créature ou un objet, l’acide étant considéré comme une arme improvisée. Si vous touchez la cible, elle subit 2d6 dégâts d’acide."
     ]
   },
   {
     "index": "alchemists-fire-flask",
     "name": "Feu grégeois (flasque)",
     "desc": [
-      "Ce liquide adhésif et collant s'enflamme lorsqu'il est exposé à l'air. Au prix d'une action, vous pouvez jeter cette flasque jusqu'à 6 mètres, la brisant à l'impact. Faire une attaque à distance contre une créature ou un objet, en considérant le feu grégeois comme une arme improvisée. En cas de succès, la cible reçoit 1d4 dégâts de feu au début de chacun de ses tours. Une créature peut mettre fin à ces dégâts en utilisant son action pour faire un jet de Dextérité DD 10 pour éteindre les flammes."
+      "Ce liquide gluant et collant s’enflamme au contact de l’air. Au prix d’une action, vous pouvez lancer cette flasque à une distance maximale de 6 m, qui se brise à l’impact. Effectuez une attaque à distance contre une créature ou un objet, le feu grégeois étant considéré comme une arme improvisée. Si vous touchez la cible, elle subit 1d4 dégâts de feu au début de chacun de ses tours. Une créature peut tenter de mettre fin à ces dégâts en consacrant son action à effectuer un test de Dextérité DD 10 pour éteindre les flammes."
     ]
   },
   {
     "index": "alms-box",
-    "name": "Boîte d'aumône",
+    "name": "Tronc à offrandes",
     "desc": [
       "La boîte d'aumône est un petit objet, inclus par défaut dans le paquet du prêtre."
     ]
@@ -360,14 +361,14 @@
   },
   {
     "index": "block-of-incense",
-    "name": "Bâtonnet d'encens",
+    "name": "Bloc d’encens",
     "desc": [
       "Un bâtonnet d'encens, inclus par défaut dans le paquet du prêtre."
     ]
   },
   {
     "index": "blowgun-needle",
-    "name": "Aiguilles de sarbacane "
+    "name": "Dard de sarbacane"
   },
   {
     "index": "censer",
@@ -378,59 +379,59 @@
   },
   {
     "index": "crossbow-bolt",
-    "name": "Carreaux d'arbalète"
+    "name": "Carreau d’arbalète"
   },
   {
     "index": "sling-bullet",
-    "name": "Billes de fronde"
+    "name": "Bille de fronde"
   },
   {
     "index": "amulet",
     "name": "Amulette",
     "desc": [
-      "Un symbole sacré est une représentation d'un dieu ou d'un panthéon. Cela peut être une amulette avec un symbole représentant une divinité, ce même symbole gravé ou incrusté tel un emblème sur un bouclier, ou une toute petite boîte renfermant le fragment d'une relique sacrée. Un clerc ou paladin peut utiliser un symbole sacré comme focaliseur d'incantation. Pour utiliser le symbole de cette manière, le lanceur doit le porter visiblement, en main ou sur un bouclier."
+      "Un symbole sacré est une représentation d’un dieu ou d’un panthéon. Ce peut être une amulette marquée du symbole d’une divinité ou ce même symbole ciselé comme emblème à la surface d’un bouclier, ou encore une petite boîte renfermant un fragment de relique. L’annexe MdJ-B « Panthéons historiques et mythologiques » répertorie les symboles communément associés à de nombreuses divinités du multivers. Clercs et paladins peuvent se servir d’un symbole sacré comme focaliseur d’incantation. Pour utiliser le symbole de cette façon, le lanceur doit le tenir dans une main, le porter ostensiblement ou l’arborer sur un bouclier."
     ]
   },
   {
     "index": "antitoxin-vial",
     "name": "Antidote (fiole)",
     "desc": [
-      "Une créature qui boit cette fiole gagne un avantage aux jets de sauvegarde contre le poison pendant 1 heure. Il ne confère aucun avantage aux morts-vivants et aux artificiels."
+      "Une créature qui boit le liquide de cette fiole reçoit l’avantage aux jets de sauvegarde contre le poison pendant 1 heure. Il n’octroie aucun bénéfice aux morts-vivants ou aux artificiels."
     ]
   },
   {
     "index": "crystal",
-    "name": "Boule de cristal",
+    "name": "Cristal",
     "desc": [
-      "Un focaliseur arcanique est un objet spécial (orbe, boule de cristal, baguette, bâton, sceptre) conçu pour canaliser la puissance de sorts de la magie des arcanes. Un ensorceleur, un magicien ou un occultiste peut utiliser ce type d'objet comme focaliseur d'incantation."
+      "Un focaliseur arcanique est un objet spécial (un orbe, un cristal ou un sceptre, un bâton de conception particulière, une sorte de baguette de bois ou autre objet du même genre) conçu pour canaliser les énergies des sorts arcaniques. Un personnage ensorceleur, magicien ou occultiste peut se servir d’un tel objet comme focaliseur d’incantation."
     ]
   },
   {
     "index": "orb",
     "name": "Orbe",
     "desc": [
-      "Un focaliseur arcanique est un objet spécial (orbe, boule de cristal, baguette, bâton, sceptre) conçu pour canaliser la puissance de sorts de la magie des arcanes. Un ensorceleur, un magicien ou un occultiste peut utiliser ce type d'objet comme focaliseur d'incantation."
+      "Un focaliseur arcanique est un objet spécial (un orbe, un cristal ou un sceptre, un bâton de conception particulière, une sorte de baguette de bois ou autre objet du même genre) conçu pour canaliser les énergies des sorts arcaniques. Un personnage ensorceleur, magicien ou occultiste peut se servir d’un tel objet comme focaliseur d’incantation."
     ]
   },
   {
     "index": "rod",
     "name": "Sceptre",
     "desc": [
-      "Un focaliseur arcanique est un objet spécial (orbe, boule de cristal, baguette, bâton, sceptre) conçu pour canaliser la puissance de sorts de la magie des arcanes. Un ensorceleur, un magicien ou un occultiste peut utiliser ce type d'objet comme focaliseur d'incantation."
+      "Un focaliseur arcanique est un objet spécial (un orbe, un cristal ou un sceptre, un bâton de conception particulière, une sorte de baguette de bois ou autre objet du même genre) conçu pour canaliser les énergies des sorts arcaniques. Un personnage ensorceleur, magicien ou occultiste peut se servir d’un tel objet comme focaliseur d’incantation."
     ]
   },
   {
     "index": "staff",
     "name": "Bâton",
     "desc": [
-      "Un focaliseur arcanique est un objet spécial (orbe, boule de cristal, baguette, bâton, sceptre) conçu pour canaliser la puissance de sorts de la magie des arcanes. Un ensorceleur, un magicien ou un occultiste peut utiliser ce type d'objet comme focaliseur d'incantation."
+      "Un focaliseur arcanique est un objet spécial (un orbe, un cristal ou un sceptre, un bâton de conception particulière, une sorte de baguette de bois ou autre objet du même genre) conçu pour canaliser les énergies des sorts arcaniques. Un personnage ensorceleur, magicien ou occultiste peut se servir d’un tel objet comme focaliseur d’incantation."
     ]
   },
   {
     "index": "wand",
     "name": "Baguette",
     "desc": [
-      "Un focaliseur arcanique est un objet spécial (orbe, boule de cristal, baguette, bâton, sceptre) conçu pour canaliser la puissance de sorts de la magie des arcanes. Un ensorceleur, un magicien ou un occultiste peut utiliser ce type d'objet comme focaliseur d'incantation."
+      "Un focaliseur arcanique est un objet spécial (un orbe, un cristal ou un sceptre, un bâton de conception particulière, une sorte de baguette de bois ou autre objet du même genre) conçu pour canaliser les énergies des sorts arcaniques. Un personnage ensorceleur, magicien ou occultiste peut se servir d’un tel objet comme focaliseur d’incantation."
     ]
   },
   {
@@ -439,9 +440,9 @@
   },
   {
     "index": "ball-bearings-bag-of-1000",
-    "name": "Billes (sac de 1000)",
+    "name": "Billes (sac de 1 000)",
     "desc": [
-      "Au prix d'une action, vous pouvez sortir ces petites billes métalliques de leur poche pour recouvrir une zone de 3 m x 3 m. Une créature se déplaçant à travers la zone recouverte doit réussir un jet de sauvegarde de Dextérité DD 10 ou tomber à terre. Une créature se déplaçant à travers la zone à la moitié de sa vitesse n'a pas besoin de faire le jet de sauvegarde."
+      "Au prix d’une action, vous pouvez déverser ces minuscules billes métalliques de leur poche pour recouvrir une zone carrée et plane de 3 m de côté. Une créature qui se déplace sur la zone ainsi couverte doit réussir un jet de sauvegarde de Dextérité DD 10 sous peine de tomber à terre. Si elle traverse la zone à la moitié de sa vitesse, elle n’est pas soumise au jet de sauvegarde."
     ]
   },
   {
@@ -468,19 +469,19 @@
     "index": "block-and-tackle",
     "name": "Palan",
     "desc": [
-      "Ensemble de poulies avec un câble et un crochet pour attacher des objets, un palan permet de hisser jusqu'à quatre fois le poids que vous pouvez normalement soulever."
+      "Le palan est un système de poulies avec un câble et un crochet qui vous permet de soulever jusqu’à quatre fois le poids que vous pouvez normalement soulever."
     ]
   },
   {
     "index": "book",
     "name": "Livre",
     "desc": [
-      "Un livre peut contenir de la poésie, des récits historiques, des informations relatives à un domaine particulier de connaissance, des diagrammes et des notes sur une invention gnome, ou n'importe quoi d'autre qui peut être représenté en utilisant du texte ou des images. Un livre de sorts est un grimoire (voir la description plus loin ci-dessus)."
+      "Un livre peut contenir de la poésie, des récits historiques, des informations relatives à un domaine particulier de savoir, des diagrammes et des notes sur des inventions gnomes, en bref, tout ce qui peut être représenté sous forme de texte et d’images. Un livre de sorts est appelé grimoire (décrit plus haut dans cette section)."
     ]
   },
   {
     "index": "bottle-glass",
-    "name": "Bouteille en verre"
+    "name": "Bouteille, verre"
   },
   {
     "index": "bucket",
@@ -490,35 +491,35 @@
     "index": "caltrops",
     "name": "Chausse-trappes",
     "desc": [
-      "Au prix d'une action, vous pouvez étaler le contenu d'un sac de chausse-trappes pour couvrir une zone de 1,50 m x 1,50 m. Toute créature qui entre dans la zone doit réussir un jet de sauvegarde de Dextérité DD 15 ou mettre fin à son mouvement et prendre 1 point de dégâts perforants. Jusqu'à ce que la créature retrouve au moins 1 point de vie, sa vitesse de marche est réduite de 3 mètres. Une créature se déplaçant à travers la zone à la moitié de sa vitesse n'a pas besoin de faire le jet de sauvegarde."
+      "Au prix d’une action, vous pouvez répandre le contenu d’un sac de chausse-trappes pour recouvrir une zone carrée de 1,50 m de côté. Toute créature qui pénètre dans la zone doit réussir un jet de sauvegarde de Dextérité DD 15 sous peine de voir son déplacement s’interrompre à ce tour et de subir 1 dégât perforant. Subir ces dégâts réduit la vitesse au sol de la créature de 3 m jusqu’à ce qu’elle récupère au moins 1 point de vie. Si elle traverse la zone à la moitié de sa vitesse, elle n’est pas soumise au jet de sauvegarde."
     ]
   },
   {
     "index": "candle",
     "name": "Bougie",
     "desc": [
-      "Pendant 1 heure, une bougie produit une lumière vive dans un rayon de 1,50 mètre et une lumière faible sur 1,50 mètre supplémentaire."
+      "Pendant 1 heure, une bougie allumée produit une lumière vive sur un rayon de 1,50 m et une lumière faible sur 1,50 m de plus."
     ]
   },
   {
     "index": "case-crossbow-bolt",
-    "name": "Étui à carreaux d'arbalète",
+    "name": "Étui pour carreaux d’arbalète",
     "desc": [
-      "Cet étui en bois peut contenir jusqu'à vingt carreaux d'arbalète."
+      "Cet étui en bois peut contenir jusqu’à vingt carreaux d’arbalète."
     ]
   },
   {
     "index": "case-map-or-scroll",
-    "name": "Étui à cartes ou parchemins",
+    "name": "Étui à cartes ou à parchemins",
     "desc": [
-      "Cet étui cylindrique en cuir peut contenir jusqu'à dix feuilles de papier roulées ou cinq feuilles de parchemin roulées."
+      "Cet étui cylindrique en cuir peut contenir jusqu’à dix feuilles de papier roulées ou cinq parchemins roulés."
     ]
   },
   {
     "index": "chain-10-feet",
-    "name": "Chaîne (3 mètres)",
+    "name": "Chaîne (3 m)",
     "desc": [
-      "Une chaîne possède 10 points de vie. Elle peut être brisée en réussissant un jet de Force DD 20."
+      "Une chaîne a 10 points de vie. Une créature peut la briser en réussissant un test de Force DD 20."
     ]
   },
   {
@@ -531,67 +532,67 @@
   },
   {
     "index": "clothes-common",
-    "name": "Vêtements communs"
+    "name": "Vêtements ordinaires"
   },
   {
     "index": "clothes-costume",
-    "name": "Vêtements de costume"
+    "name": "Costume"
   },
   {
     "index": "clothes-fine",
-    "name": "Vêtements de luxe"
+    "name": "Vêtements de qualité"
   },
   {
     "index": "clothes-travelers",
-    "name": "Vêtements de voyage"
+    "name": "Tenue de voyage"
   },
   {
     "index": "component-pouch",
     "name": "Sacoche à composantes",
     "desc": [
-      "Une sacoche à composantes est une petite bourse en cuir étanche qui peut être portée à la ceinture ou en bandoulière. Elle possède des compartiments pour ranger toutes les composantes matérielles et autres objets spéciaux dont vous avez besoin pour lancer vos sorts, à l'exception de ceux qui ont un coût spécifique."
+      "Une sacoche à composantes est une petite sacoche en cuir étanche qui se porte à la ceinture, dotée de compartiments accueillant toutes les composantes matérielles et autres objets demandés par l’incantation de vos sorts, en dehors des composantes associées à un coût (ce qui est alors indiqué dans la description du sort)."
     ]
   },
   {
     "index": "crowbar",
     "name": "Pied-de-biche",
     "desc": [
-      "L'utilisation d'un pied-de-biche accorde l'avantage aux tests de Force lorsqu'un bras de levier peut s'appliquer."
+      "L’utilisation d’un pied-de-biche octroie l’avantage aux tests de Force pour lesquels l’objet peut servir de levier."
     ]
   },
   {
     "index": "sprig-of-mistletoe",
-    "name": "Branche de gui",
+    "name": "Branche de houx",
     "desc": [
-      "Un focaliseur druidique peut être un brin de gui ou de houx, une baguette ou un sceptre en bois d'if ou en un autre bois particulier, un bâton taillé d'une seule pièce dans un arbre vivant, ou encore un objet totémique intégrant des plumes, de la fourrure, des os et des dents d'animaux sacrés. Un druide peut utiliser un tel objet comme focalisateur pour lancer des sorts."
+      "Un focaliseur druidique peut être une branche de gui ou de houx, une baguette ou un sceptre d’if ou autre essence spéciale, un bâton extrait d’un arbre vivant, ou un objet totem arborant des plumes, poils, os ou dents d’animal sacré. Un druide peut se servir d’un tel objet comme focaliseur d’incantation."
     ]
   },
   {
     "index": "totem",
     "name": "Totem",
     "desc": [
-      "Un focaliseur druidique peut être un brin de gui ou de houx, une baguette ou un sceptre en bois d'if ou en un autre bois particulier, un bâton taillé d'une seule pièce dans un arbre vivant, ou encore un objet totémique intégrant des plumes, de la fourrure, des os et des dents d'animaux sacrés. Un druide peut utiliser un tel objet comme focalisateur pour lancer des sorts."
+      "Un focaliseur druidique peut être une branche de gui ou de houx, une baguette ou un sceptre d’if ou autre essence spéciale, un bâton extrait d’un arbre vivant, ou un objet totem arborant des plumes, poils, os ou dents d’animal sacré. Un druide peut se servir d’un tel objet comme focaliseur d’incantation."
     ]
   },
   {
     "index": "wooden-staff",
     "name": "Bâton",
     "desc": [
-      "Un focaliseur druidique peut être un brin de gui ou de houx, une baguette ou un sceptre en bois d'if ou en un autre bois particulier, un bâton taillé d'une seule pièce dans un arbre vivant, ou encore un objet totémique intégrant des plumes, de la fourrure, des os et des dents d'animaux sacrés. Un druide peut utiliser un tel objet comme focalisateur pour lancer des sorts."
+      "Un focaliseur druidique peut être une branche de gui ou de houx, une baguette ou un sceptre d’if ou autre essence spéciale, un bâton extrait d’un arbre vivant, ou un objet totem arborant des plumes, poils, os ou dents d’animal sacré. Un druide peut se servir d’un tel objet comme focaliseur d’incantation."
     ]
   },
   {
     "index": "yew-wand",
-    "name": "Baguette d'if)",
+    "name": "Baguette d’if",
     "desc": [
-      "Un focaliseur druidique peut être un brin de gui ou de houx, une baguette ou un sceptre en bois d'if ou en un autre bois particulier, un bâton taillé d'une seule pièce dans un arbre vivant, ou encore un objet totémique intégrant des plumes, de la fourrure, des os et des dents d'animaux sacrés. Un druide peut utiliser un tel objet comme focalisateur pour lancer des sorts."
+      "Un focaliseur druidique peut être une branche de gui ou de houx, une baguette ou un sceptre d’if ou autre essence spéciale, un bâton extrait d’un arbre vivant, ou un objet totem arborant des plumes, poils, os ou dents d’animal sacré. Un druide peut se servir d’un tel objet comme focaliseur d’incantation."
     ]
   },
   {
     "index": "fishing-tackle",
     "name": "Matériel de pêche",
     "desc": [
-      "Ce kit comprend une canne en bois, une ligne en soie, des flottes de liège, des hameçons en acier, des plombets, des leurres en velours et une petite boîte pour ranger le tout."
+      "Ce matériel inclut une canne en bois, un fil de soie, des bouchons en liège, des hameçons en acier, des plombs, des leurres en velours et une épuisette."
     ]
   },
   {
@@ -608,64 +609,65 @@
   },
   {
     "index": "hammer-sledge",
-    "name": "Masse (marteau lourd)"
+    "name": "Masse"
   },
   {
     "index": "holy-water-flask",
     "name": "Eau bénite (flasque)",
     "desc": [
-      "Par une action de d'attaque, vous pouvez lancer cette flasque sur une créature située à 6 mètres ou moins de vous. Considérez cette attaque comme une attaque avec une arme improvisée à distance. Si vous touchez, la flasque se brise et la cible subit 2d6 dégâts radiants si c'est un fiélon ou un mort-vivant."
+      "Au prix d’une action, vous pouvez asperger une créature située à 1,50 m ou moins de vous du contenu de cette flasque ou la lancer à une distance maximale de 6 m, auquel cas elle se brise à l’impact. Dans les deux cas, effectuez une attaque à distance contre la créature ciblée, l’eau bénite étant considérée comme une arme improvisée. Si la cible est un fiélon ou un mort-vivant, elle subit 2d6 dégâts radiants.",
+      "Un clerc ou un paladin peut créer de l’eau bénite par l’intermédiaire d’un rituel spécifique. Ce rituel, qui s’accomplit en 1 heure et consomme 25 po de poudre d’argent, demande au lanceur de dépenser un emplacement de sort du 1er niveau."
     ]
   },
   {
     "index": "ink-1-ounce-bottle",
-    "name": "Encre (bouteille de 30 ml)"
+    "name": "Encre (bouteille de 30 cl)"
   },
   {
     "index": "ink-pen",
-    "name": "Plume à écrire"
+    "name": "Porte-plume"
   },
   {
     "index": "jug-or-pitcher",
-    "name": "Cruche ou pot"
+    "name": "Cruche ou pichet"
   },
   {
     "index": "ladder-10-foot",
-    "name": "Échelle (3 mètres)"
+    "name": "Échelle (3 m)"
   },
   {
     "index": "lantern-bullseye",
     "name": "Lanterne sourde",
     "desc": [
-      "Une lanterne sourde projette une lumière vive dans un cône de 18 mètres et une lumière faible sur 18 mètres supplémentaires. Elle brûle pendant 6 heures avec une fiole d'huile (50 cl)."
+      "Une lanterne sourde produit une lumière vive dans un cône de 18 m et une lumière faible sur 18 m de plus. Une fois allumée, elle brûle pendant 6 heures en consommant une flasque d’huile (50 cl)."
     ]
   },
   {
     "index": "lantern-hooded",
-    "name": "Lanterne à capuchon",
+    "name": "Lanterne à capote",
     "desc": [
-      "Une lanterne à capuchon projette une lumière vive dans un rayon de 9 mètres et une lumière faible sur 9 mètres supplémentaires. Elle brûle pendant 6 heures avec une fiole d'huile (50 cl). Par une action, vous pouvez abaisser le capuchon pour réduire la lumière à une lumière faible dans un rayon de 1,50 mètre."
+      "Une lanterne à capote produit une lumière vive sur un rayon de 9 m et une lumière faible sur 9 m de plus. Une fois allumée, elle brûle pendant 6 heures en consommant une flasque d’huile (50 cl). Au prix d’une action, vous pouvez abaisser la capote, ce qui réduit l’éclairage à une lumière faible sur un rayon de 1,50 m."
     ]
   },
   {
     "index": "lock",
     "name": "Cadenas",
     "desc": [
-      "Fourni avec une clé. Sans la clé, une créature maîtrisant les outils de crocheteur peut crocheter ce cadenas en réussissant un test de Dextérité DD 15."
+      "Ce cadenas est fourni avec une clef. Sans celle-ci, une créature ayant la maîtrise des outils de voleur peut crocheter le cadenas en réussissant un test de Dextérité DD 15. Votre MJ peut décider que de meilleurs cadenas sont disponibles à des prix plus élevés."
     ]
   },
   {
     "index": "magnifying-glass",
     "name": "Loupe",
     "desc": [
-      "Cette lentille permet d'examiner de près de petits objets. Elle accorde également l'avantage aux tests d'Investigation visant des détails minuscules."
+      "Cette lentille permet d’examiner de près les objets de petite taille. Elle peut se substituer à la boîte à amadou complète pour démarrer un feu. Démarrer un feu avec une loupe nécessite une lumière aussi vive que celle du soleil, que la lentille concentre sur de l’amadou, lequel s’enflamme au bout d’environ 5 minutes. Une loupe octroie l’avantage à tout test de caractéristique visant à inspecter ou estimer la valeur d’un objet de petite taille ou très détaillé."
     ]
   },
   {
     "index": "manacles",
     "name": "Menottes",
     "desc": [
-      "Ces menottes métalliques peuvent enchaîner une créature de taille Petite ou Moyenne. Se libérer des menottes nécessite un test d'Acrobaties DD 20 réussi. Les briser nécessite un test de Force DD 20 réussi."
+      "Ces entraves métalliques peuvent être utilisées sur une créature de taille P ou M. Se libérer de menottes nécessite de réussir un test de Dextérité DD 20. Pour les briser, il faut réussir un test de Force DD 20. Chaque paire de menottes est fournie avec une clef. Sans cette clef, une créature ayant la maîtrise des outils de voleur peut crocheter la serrure des menottes en réussissant un test de Dextérité DD 15. Les menottes ont 15 points de vie."
     ]
   },
   {
@@ -678,18 +680,18 @@
   },
   {
     "index": "oil-flask",
-    "name": "Huile (fiole)",
+    "name": "Huile (flasque)",
     "desc": [
-      "L'huile vient généralement dans une fiole d'argile de 50 cl. Par une action, vous pouvez verser cette huile sur une créature située à 1,50 mètre ou moins ou la lancer jusqu'à 6 mètres."
+      "L’huile se présente généralement dans une flasque d’argile de 50 cl. Au prix d’une action, vous pouvez asperger d’huile une créature située à 1,50 m ou moins de vous du contenu de cette flasque ou la lancer à une distance maximale de 6 m, auquel cas elle se brise à l’impact. Dans un cas comme dans l’autre, effectuez une attaque à distance contre la créature ou l’objet ciblé, l’huile étant considérée comme une arme improvisée. Si l’attaque touche, la cible est recouverte d’huile. Si elle subit des dégâts de feu avant que l’huile ait séché (ce qui demande 1 minute), la cible subit 5 dégâts de feu supplémentaires, provoqués par l’embrasement de l’huile. Vous pouvez également verser le contenu de la flasque sur une zone horizontale carrée de 1,50 m de côté. Si vous embrasez la zone, l’huile brûle pendant 2 rounds et inflige 5 dégâts de feu à toute créature qui pénètre dans la zone ou y termine son tour. Une même créature ne peut subir ces dégâts qu’une fois par tour."
     ]
   },
   {
     "index": "paper-one-sheet",
-    "name": "Papier (une feuille)"
+    "name": "Papier (la feuille)"
   },
   {
     "index": "parchment-one-sheet",
-    "name": "Parchemin (une feuille)"
+    "name": "Parchemin (la feuille)"
   },
   {
     "index": "perfume-vial",
@@ -705,63 +707,63 @@
   },
   {
     "index": "poison-basic-vial",
-    "name": "Poison basique (flacon)",
+    "name": "Poison standard (fiole)",
     "desc": [
-      "Vous pouvez utiliser le poison contenu dans ce flacon pour enduire une arme tranchante ou perforante, ou jusqu'à trois pièces de munition. Appliquer le poison prend une action. Une créature touchée par l'arme ou la munition empoisonnée doit réussir un jet de sauvegarde de Constitution DD 10 sous peine de subir 1d4 dégâts de poison. Une fois appliqué, le poison reste efficace pendant 1 minute avant de sécher."
+      "Vous pouvez utiliser le poison contenu dans cette fiole pour enduire la lame d’une arme tranchante ou perforante ou jusqu’à trois projectiles (munitions). L’application du poison nécessite une action. Une créature touchée par l’arme ou le projectile empoisonnés effectue un jet de sauvegarde de Constitution DD 10 sous peine de subir 1d4 dégâts de poison. Une fois appliqué, le poison conserve sa virulence pendant 1 minute avant de sécher."
     ]
   },
   {
     "index": "pole-10-foot",
-    "name": "Perche (3 mètres)"
+    "name": "Perche (3 m)"
   },
   {
     "index": "pot-iron",
-    "name": "Marmite en fer"
+    "name": "Pot en fer"
   },
   {
     "index": "pouch",
-    "name": "Bourse",
+    "name": "Sacoche",
     "desc": [
-      "Une bourse en tissu ou en cuir peut contenir jusqu'à 20 pièces de munition ou 50 pièces de monnaie, ou d'autres petits objets."
+      "Une sacoche en tissu ou en cuir peut contenir jusqu’à 20 billes de fronde ou 50 dards de sarbacane, entre autres. La sacoche compartimentée permettant de contenir des composantes de sort, et logiquement appelée sacoche à composantes, est décrite ci-après dans cette même section."
     ]
   },
   {
     "index": "quiver",
     "name": "Carquois",
     "desc": [
-      "Un carquois peut contenir jusqu'à 20 flèches."
+      "Un carquois peut contenir jusqu’à 20 flèches."
     ]
   },
   {
     "index": "ram-portable",
     "name": "Bélier portable",
     "desc": [
-      "Vous pouvez utiliser un bélier portable pour enfoncer des portes. Cela vous donne un bonus de +4 à vos tests de Force pour enfoncer une porte. Un autre personnage peut vous aider à utiliser le bélier, ce qui vous donne l'avantage lors du test."
+      "Vous pouvez utiliser un bélier portable pour enfoncer les portes. Vous recevez alors un bonus de +4 au test de Force associé. Si un autre personnage vous aide à utiliser le bélier, vous recevez en outre l’avantage à ce test."
     ]
   },
   {
     "index": "rations-1-day",
-    "name": "Rations de subsistance (1 jour)",
+    "name": "Rations (1 jour)",
     "desc": [
-      "Les rations consistent en des aliments secs adaptés à des voyages prolongés, incluant de la viande séchée, des fruits secs, du pain de biscuit et du fromage."
+      "Les rations consistent en des vivres adaptés aux longs voyages, notamment de la viande séchée, des biscuits, noix, noisettes et autres fruits secs."
     ]
   },
   {
     "index": "robes",
-    "name": "Robe"
+    "name": "Habit de cérémonie"
   },
   {
     "index": "rope-hempen-50-feet",
-    "name": "Corde de chanvre (15 mètres)",
+    "name": "Corde en chanvre (15 m)",
     "desc": [
-      "Une corde a 2 points de vie et peut être rompue avec un test de Force DD 17 réussi."
+      "Toute corde, qu’elle soit en chanvre ou en soie, est dotée de 2 points de vie et se rompt sur un test de Force DD 17."
     ]
   },
   {
     "index": "rope-silk-50-feet",
-    "name": "Corde de soie (15 mètres)",
+    "name": "Corde en soie (15 m)",
     "desc": [
-      "Une corde de soie a 2 points de vie et peut être rompue avec un test de Force DD 17 réussi."
+      "Toute corde, qu’elle soit en chanvre ou en soie, est dotée de 2 points de vie et se rompt sur un test de Force DD 17."
     ]
   },
   {
@@ -774,7 +776,7 @@
   },
   {
     "index": "sealing-wax",
-    "name": "Cire à sceller"
+    "name": "Cire à cacheter"
   },
   {
     "index": "shovel",
@@ -782,11 +784,11 @@
   },
   {
     "index": "signal-whistle",
-    "name": "Sifflet de signalisation"
+    "name": "Sifflet"
   },
   {
     "index": "signet-ring",
-    "name": "Chevalière (anneau)"
+    "name": "Chevalière"
   },
   {
     "index": "soap",
@@ -794,9 +796,9 @@
   },
   {
     "index": "spellbook",
-    "name": "Grimoire de sorts",
+    "name": "Grimoire",
     "desc": [
-      "Essentiel pour les magiciens, un grimoire est un livre relié en cuir composé de 100 pages de parchemin vierges adaptées à la retranscription de sorts."
+      "Indispensable pour les magiciens, le grimoire est un tome en cuir relié comportant 100 pages en vélin pour accueillir les formules de sorts."
     ]
   },
   {
@@ -807,34 +809,34 @@
     "index": "spyglass",
     "name": "Longue-vue",
     "desc": [
-      "Les objets vus à travers une longue-vue sont grossis jusqu'à deux fois leur taille réelle."
+      "Une longue-vue permet de grossir jusqu’à deux fois les objets que vous voyez à distance."
     ]
   },
   {
     "index": "tent-two-person",
-    "name": "Tente (deux personnes)"
+    "name": "Tente, 2 places"
   },
   {
     "index": "tinderbox",
-    "name": "Boîte à briquet",
+    "name": "Boîte à amadou",
     "desc": [
-      "Cette petite boîte contient du flint, du pyrite et de l'adoucis (du bois sec inflammable traité). L'utiliser pour allumer une torche — ou tout autre élément avec du combustible préparé — prend une action. Allumer un feu de camp prend au moins 1 minute."
+      "Ce petit conteneur renferme silex, pierre à briquet et amorce (généralement un morceau de tissu imbibé d’huile), soit de quoi allumer un feu. Utiliser cet objet pour allumer une torche ou un autre objet imprégné de combustible demande une action. Produire un autre type de flammes demande 1 minute."
     ]
   },
   {
     "index": "torch",
     "name": "Torche",
     "desc": [
-      "Une torche brûle pendant 1 heure, produisant une lumière vive dans un rayon de 6 mètres et une lumière faible sur 6 mètres supplémentaires. Si vous effectuez une attaque au corps à corps avec une torche allumée et touchez, elle inflige 1 dégât de feu."
+      "Une torche produit une lumière vive sur un rayon de 6 m et une lumière faible sur 6 m de plus. Si vous effectuez une attaque de corps à corps avec une torche embrasée et que vous touchez, elle inflige 1 dégât de feu."
     ]
   },
   {
     "index": "vial",
-    "name": "Flacon"
+    "name": "Fiole"
   },
   {
     "index": "waterskin",
-    "name": "Gourde (pleine)"
+    "name": "Outre"
   },
   {
     "index": "whetstone",
@@ -844,7 +846,7 @@
     "index": "emblem",
     "name": "Emblème",
     "desc": [
-      "Un symbole sacré est une représentation d'un dieu ou d'un panthéon. Cela peut être une amulette avec un symbole représentant une divinité, ce même symbole gravé ou incrusté tel un emblème sur un bouclier, ou une toute petite boîte renfermant le fragment d'une relique sacrée. Un clerc ou paladin peut utiliser un symbole sacré comme focaliseur d'incantation. Pour utiliser le symbole de cette manière, le lanceur doit le porter visiblement, en main ou sur un bouclier."
+      "Un symbole sacré est une représentation d’un dieu ou d’un panthéon. Ce peut être une amulette marquée du symbole d’une divinité ou ce même symbole ciselé comme emblème à la surface d’un bouclier, ou encore une petite boîte renfermant un fragment de relique. L’annexe MdJ-B « Panthéons historiques et mythologiques » répertorie les symboles communément associés à de nombreuses divinités du multivers. Clercs et paladins peuvent se servir d’un symbole sacré comme focaliseur d’incantation. Pour utiliser le symbole de cette façon, le lanceur doit le tenir dans une main, le porter ostensiblement ou l’arborer sur un bouclier."
     ]
   },
   {
@@ -853,60 +855,58 @@
   },
   {
     "index": "hunting-trap",
-    "name": "Piège de chasse",
+    "name": "Piège à mâchoires",
     "desc": [
-      "Lorsque vous utilisez votre action pour le poser, ce piège forme un anneau d'acier aux dents de scie qui se referme brusquement quand une créature marche sur une plaque de pression en son centre. Le piège est fixé par une lourde chaîne à un objet immobile, comme un arbre ou un pieu enfoncé dans le sol.",
-      "Une créature qui marche sur la plaque doit réussir un jet de sauvegarde de Dextérité DD 13 sous peine de subir 1d4 dégâts perforants et de s'arrêter de bouger. Ensuite, jusqu'à ce que la créature se libère du piège, ses déplacements sont limités par la longueur de la chaîne (généralement 90 cm de long).",
-      "Une créature peut utiliser son action pour effectuer un test de Force DD 13, se libérant elle-même ou une autre créature à sa portée en cas de réussite. Chaque échec inflige 1 dégât perforant à la créature piégée."
+      "Lorsque vous consacrez votre action à l’installer, ce piège se présente sous la forme d’un anneau d’acier dentelé qui se referme violemment lorsqu’une créature marche sur la plaque de pression située en son centre. Le piège est ancré par une lourde chaîne à un objet immobile, comme un arbre ou une pointe enfoncée dans le sol. Une créature qui marche sur la plaque doit réussir un jet de sauvegarde de Dextérité DD 13 sous peine de subir 1d4 dégâts perforants et de devoir mettre un terme à son déplacement. En cas d’échec et jusqu’à ce que la créature se libère du piège, son déplacement est limité par la longueur de la chaîne (en règle générale 90 cm de long). Toute créature peut consacrer une action à effectuer un test de Force DD 13 pour se libérer ou libérer une autre créature à portée d’allonge en cas de réussite. Chaque échec au test inflige 1 dégât perforant à la créature piégée."
     ]
   },
   {
     "index": "climbers-kit",
-    "name": "Kit d'escalade",
+    "name": "Matériel d’escalade",
     "desc": [
-      "Un kit d'escalade comprend des pitons spéciaux, des embouts de bottes, des gants et un harnais. Vous pouvez utiliser le kit d'escalade au prix d'une action pour vous ancrer ; lorsque vous le faites, vous ne pouvez pas chuter de plus de 7,50 mètres depuis le point où vous vous êtes ancré, et vous ne pouvez pas grimper à plus de 7,50 mètres de ce point sans défaire l'ancrage."
+      "Le matériel d’escalade comprend des pitons spéciaux, des crampons de chaussures, des gants et un harnais. Vous pouvez utiliser le matériel d’escalade au prix d’une action pour vous accrocher à une paroi ; une fois cette précaution prise, vous ne pouvez pas dévisser de plus de 7,50 m de votre point d’ancrage, mais vous ne pouvez pas davantage escalader plus de 7,50 m dans n’importe quelle direction sans vous décrocher."
     ]
   },
   {
     "index": "disguise-kit",
-    "name": "Kit de déguisement",
+    "name": "Accessoires de déguisement",
     "desc": [
-      "Cette pochette de cosmétiques, teinture pour cheveux et petits accessoires vous permet de créer des déguisements qui modifient votre apparence physique. La maîtrise de ce kit vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour créer un déguisement visuel."
+      "Cette pochette de maquillage, de teintures et d’accessoires vous permet d’altérer votre apparence physique. La maîtrise de ces accessoires vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique visant à créer un déguisement visuel."
     ]
   },
   {
     "index": "forgery-kit",
-    "name": "Kit de faussaire",
+    "name": "Matériel de contrefaçon",
     "desc": [
-      "Cette petite boîte contient une variété de papiers et de parchemins, des plumes et des encres, des sceaux et de la cire à cacheter, des feuilles d'or et d'argent, et d'autres fournitures nécessaires pour créer des faux documents convaincants. La maîtrise de ce kit vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour créer un faux document physique."
+      "Cette petite boîte contient un ensemble de papiers et parchemins, plumes et encres, sceaux et cire à cacheter, feuilles d’or et d’argent et autres fournitures nécessaires pour créer des contrefaçons convaincantes de documents tangibles. La maîtrise de ce matériel vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique visant à créer la contrefaçon d’un document physique."
     ]
   },
   {
     "index": "herbalism-kit",
-    "name": "Kit d'herboristerie",
+    "name": "Matériel d’herboriste",
     "desc": [
-      "Ce kit contient une variété d'instruments tels que des sécateurs, un mortier et un pilon, ainsi que des pochettes et des fioles utilisés par les herboristes pour créer des remèdes et des potions. La maîtrise de ce kit vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour identifier ou utiliser des herbes. De plus, la maîtrise de ce kit est nécessaire pour créer des antidotes et des potions de soins."
+      "Ce matériel regroupe un ensemble d’outils : sécateurs, mortier et pilon, bourses et flacons utilisés par les herboristes pour créer leurs remèdes et potions. La maîtrise de ce matériel vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique visant à identifier et utiliser des plantes. En outre, la maîtrise de ce matériel est requise pour préparer antidotes et potions de guérison."
     ]
   },
   {
     "index": "healers-kit",
-    "name": "Kit de soins",
+    "name": "Trousse de soins",
     "desc": [
-      "Ce kit est une pochette en cuir contenant des bandages, des onguents et des attelles. Le kit possède dix utilisations. Par une action, vous pouvez dépenser une utilisation du kit pour stabiliser une créature ayant 0 point de vie, sans avoir besoin d'effectuer un test de Sagesse (Médecine)."
+      "Cette trousse se présente comme une pochette en cuir renfermant bandages, baumes et attelles. Elle peut servir dix fois. Au prix d’une action, vous pouvez dépenser l’une de ces doses pour stabiliser une créature à 0 point de vie, sans passer par un test de Sagesse (Médecine)."
     ]
   },
   {
     "index": "poisoners-kit",
-    "name": "Kit d'empoisonneur",
+    "name": "Matériel d’empoisonneur",
     "desc": [
-      "Un kit d'empoisonneur comprend les fioles, produits chimiques et autres équipements nécessaires à la fabrication de poisons. La maîtrise de ce kit vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour fabriquer ou utiliser des poisons."
+      "Le matériel d’empoisonneur comprend les flacons, produits chimiques et tout l’équipement nécessaire à la concoction de poison. La maîtrise de ce matériel vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique visant à créer ou utiliser un poison."
     ]
   },
   {
     "index": "lamp",
     "name": "Lampe",
     "desc": [
-      "Une lampe projette une lumière vive dans un rayon de 4,50 mètres et une lumière faible sur 9 mètres supplémentaires. Une fois allumée, elle brûle pendant 6 heures avec une fiole d'huile (50 cl)."
+      "Une lampe produit une lumière vive sur un rayon de 4,50 m et une lumière faible sur 9 m de plus. Une fois allumée, elle brûle pendant 6 heures en consommant une flasque d’huile (50 cl)."
     ]
   },
   {
@@ -920,8 +920,7 @@
     "index": "reliquary",
     "name": "Reliquaire",
     "desc": [
-      "Un symbole sacré est une représentation d'un dieu ou d'un panthéon. Cela peut être une amulette avec un symbole représentant une divinité, ce même symbole gravé ou incrusté tel un emblème sur un bouclier, ou une toute petite boîte renfermant le fragment d'une relique sacrée.",
-      "L'Annexe B répertorie les symboles couramment associés à de nombreux dieux du multivers. Un clerc ou un paladin peut utiliser un symbole sacré comme focaliseur d'incantation. Pour utiliser le symbole de cette manière, le lanceur doit le tenir en main, le porter visiblement, ou le porter sur un bouclier."
+      "Un symbole sacré est une représentation d’un dieu ou d’un panthéon. Ce peut être une amulette marquée du symbole d’une divinité ou ce même symbole ciselé comme emblème à la surface d’un bouclier, ou encore une petite boîte renfermant un fragment de relique. L’annexe MdJ-B « Panthéons historiques et mythologiques » répertorie les symboles communément associés à de nombreuses divinités du multivers. Clercs et paladins peuvent se servir d’un symbole sacré comme focaliseur d’incantation. Pour utiliser le symbole de cette façon, le lanceur doit le tenir dans une main, le porter ostensiblement ou l’arborer sur un bouclier."
     ]
   },
   {
@@ -933,14 +932,14 @@
   },
   {
     "index": "string-10-feet",
-    "name": "Ficelle (3 mètres)",
+    "name": "Ficelle (3 m)",
     "desc": [
       "Une longueur de ficelle de 3 mètres, généralement incluse dans le paquetage du cambrioleur."
     ]
   },
   {
     "index": "vestments",
-    "name": "Vêtements sacerdotaux",
+    "name": "Habits liturgiques",
     "desc": [
       "Des vêtements religieux, généralement inclus dans le paquetage du prêtre."
     ]
@@ -955,38 +954,38 @@
   },
   {
     "index": "dungeoneers-pack",
-    "name": "Paquetage d'explorateur de donjon"
+    "name": "Paquetage d’exploration souterraine"
   },
   {
     "index": "entertainers-pack",
-    "name": "Paquetage de saltimbanque"
+    "name": "Paquetage d’artiste"
   },
   {
     "index": "explorers-pack",
-    "name": "Paquetage d'explorateur"
+    "name": "Paquetage d’explorateur"
   },
   {
     "index": "priests-pack",
-    "name": "Paquetage de prêtre"
+    "name": "Paquetage d’ecclésiastique"
   },
   {
     "index": "scholars-pack",
-    "name": "Paquetage d'érudit"
+    "name": "Paquetage d’érudit"
   },
   {
     "index": "alchemists-supplies",
-    "name": "Outils d'alchimiste",
+    "name": "Matériel d’alchimiste",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
     "index": "brewers-supplies",
-    "name": "Outils de brasseur",
+    "name": "Matériel de brasseur",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
@@ -994,7 +993,7 @@
     "name": "Matériel de calligraphe",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1002,7 +1001,7 @@
     "name": "Outils de charpentier",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1010,7 +1009,7 @@
     "name": "Outils de cartographe",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1018,7 +1017,7 @@
     "name": "Outils de cordonnier",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1026,7 +1025,7 @@
     "name": "Ustensiles de cuisinier",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1034,7 +1033,7 @@
     "name": "Outils de souffleur de verre",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1042,15 +1041,15 @@
     "name": "Outils de joaillier",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
     "index": "leatherworkers-tools",
-    "name": "Outils de travailleur du cuir",
+    "name": "Outils de tanneur",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1058,7 +1057,7 @@
     "name": "Outils de maçon",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1066,7 +1065,7 @@
     "name": "Matériel de peintre",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1074,7 +1073,7 @@
     "name": "Outils de potier",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1082,7 +1081,7 @@
     "name": "Outils de forgeron",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1090,7 +1089,7 @@
     "name": "Outils de bricoleur",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1098,23 +1097,23 @@
     "name": "Outils de tisserand",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
     "index": "woodcarvers-tools",
-    "name": "Outils de sculpteur sur bois",
+    "name": "Outils de menuisier",
     "tool_category": "Outils d'artisan",
     "desc": [
-      "Ces outils spéciaux comprennent les éléments nécessaires pour exercer un artisanat ou un métier. Le tableau présente des exemples des types d'outils les plus courants, chacun fournissant des éléments liés à un artisanat particulier. La maîtrise d'un jeu d'outils d'artisan vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez en utilisant les outils de votre artisanat. Chaque type d'outils d'artisan nécessite une maîtrise séparée."
+      "Ce type particulier d’outils réunit les objets nécessaires à certains métiers et artisanats. La table en fournit quelques exemples courants, associés chacun à un métier donné. La maîtrise d’un type d’outils d’artisan vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique qui y recourt. Chaque type d’outils d’artisan correspond à une maîtrise distincte."
     ]
   },
   {
     "index": "dice-set",
-    "name": "Jeu de dés",
+    "name": "Dés",
     "tool_category": "Jeux",
     "desc": [
-      "Cet objet englobe une large gamme de pièces de jeu, y compris des dés et des jeux de cartes (pour des jeux tels que la Passe du Dragon Triple). Quelques exemples courants figurent dans le tableau des Outils, mais d'autres types de jeux existent. Si vous maîtrisez un jeu, vous pouvez ajouter votre bonus de maîtrise aux tests de caractéristique que vous effectuez pour jouer avec ce jeu. Chaque type de jeu nécessite une maîtrise séparée."
+      "Cet objet correspond à une grande variété de pièces ludiques, notamment les dés et paquets de cartes (telles que celles permettant de jouer au « jeu des dragons »). Quelques exemples courants figurent sur la table « Outils », mais il existe d’autres types de boîtes de jeux. Si vous avez la maîtrise d’une boîte de jeux, vous pouvez ajouter votre bonus de maîtrise aux tests de caractéristique associés à des parties des jeux correspondants. Chaque type de boîte de jeux correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1122,7 +1121,7 @@
     "name": "Jeu de cartes",
     "tool_category": "Jeux",
     "desc": [
-      "Cet objet englobe une large gamme de pièces de jeu, y compris des dés et des jeux de cartes (pour des jeux tels que la Passe du Dragon Triple). Quelques exemples courants figurent dans le tableau des Outils, mais d'autres types de jeux existent. Si vous maîtrisez un jeu, vous pouvez ajouter votre bonus de maîtrise aux tests de caractéristique que vous effectuez pour jouer avec ce jeu. Chaque type de jeu nécessite une maîtrise séparée."
+      "Cet objet correspond à une grande variété de pièces ludiques, notamment les dés et paquets de cartes (telles que celles permettant de jouer au « jeu des dragons »). Quelques exemples courants figurent sur la table « Outils », mais il existe d’autres types de boîtes de jeux. Si vous avez la maîtrise d’une boîte de jeux, vous pouvez ajouter votre bonus de maîtrise aux tests de caractéristique associés à des parties des jeux correspondants. Chaque type de boîte de jeux correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1130,7 +1129,7 @@
     "name": "Cornemuse",
     "tool_category": "Instrument de musique",
     "desc": [
-      "Plusieurs des types d'instruments de musique les plus courants sont présentés dans le tableau à titre d'exemples. Si vous maîtrisez un instrument de musique donné, vous pouvez ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour jouer de la musique avec cet instrument. Un barde peut utiliser un instrument de musique comme focaliseur d'incantation. Chaque type d'instrument de musique nécessite une maîtrise séparée."
+      "Quelques-uns des instruments de musique les plus courants apparaissent sur la table, à titre d’exemples. Si vous avez la maîtrise d’un instrument de musique, vous pouvez ajouter votre bonus de maîtrise aux tests de caractéristique intervenant pour en jouer. Un barde peut recourir à un instrument de musique comme focaliseur d’incantation. Chaque type d’instrument de musique correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1138,7 +1137,7 @@
     "name": "Tambour",
     "tool_category": "Instrument de musique",
     "desc": [
-      "Plusieurs des types d'instruments de musique les plus courants sont présentés dans le tableau à titre d'exemples. Si vous maîtrisez un instrument de musique donné, vous pouvez ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour jouer de la musique avec cet instrument. Un barde peut utiliser un instrument de musique comme focaliseur d'incantation. Chaque type d'instrument de musique nécessite une maîtrise séparée."
+      "Quelques-uns des instruments de musique les plus courants apparaissent sur la table, à titre d’exemples. Si vous avez la maîtrise d’un instrument de musique, vous pouvez ajouter votre bonus de maîtrise aux tests de caractéristique intervenant pour en jouer. Un barde peut recourir à un instrument de musique comme focaliseur d’incantation. Chaque type d’instrument de musique correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1146,7 +1145,7 @@
     "name": "Tympanon",
     "tool_category": "Instrument de musique",
     "desc": [
-      "Plusieurs des types d'instruments de musique les plus courants sont présentés dans le tableau à titre d'exemples. Si vous maîtrisez un instrument de musique donné, vous pouvez ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour jouer de la musique avec cet instrument. Un barde peut utiliser un instrument de musique comme focaliseur d'incantation. Chaque type d'instrument de musique nécessite une maîtrise séparée."
+      "Quelques-uns des instruments de musique les plus courants apparaissent sur la table, à titre d’exemples. Si vous avez la maîtrise d’un instrument de musique, vous pouvez ajouter votre bonus de maîtrise aux tests de caractéristique intervenant pour en jouer. Un barde peut recourir à un instrument de musique comme focaliseur d’incantation. Chaque type d’instrument de musique correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1154,7 +1153,7 @@
     "name": "Flûte",
     "tool_category": "Instrument de musique",
     "desc": [
-      "Plusieurs des types d'instruments de musique les plus courants sont présentés dans le tableau à titre d'exemples. Si vous maîtrisez un instrument de musique donné, vous pouvez ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour jouer de la musique avec cet instrument. Un barde peut utiliser un instrument de musique comme focaliseur d'incantation. Chaque type d'instrument de musique nécessite une maîtrise séparée."
+      "Quelques-uns des instruments de musique les plus courants apparaissent sur la table, à titre d’exemples. Si vous avez la maîtrise d’un instrument de musique, vous pouvez ajouter votre bonus de maîtrise aux tests de caractéristique intervenant pour en jouer. Un barde peut recourir à un instrument de musique comme focaliseur d’incantation. Chaque type d’instrument de musique correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1162,7 +1161,7 @@
     "name": "Luth",
     "tool_category": "Instrument de musique",
     "desc": [
-      "Plusieurs des types d'instruments de musique les plus courants sont présentés dans le tableau à titre d'exemples. Si vous maîtrisez un instrument de musique donné, vous pouvez ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour jouer de la musique avec cet instrument. Un barde peut utiliser un instrument de musique comme focaliseur d'incantation. Chaque type d'instrument de musique nécessite une maîtrise séparée."
+      "Quelques-uns des instruments de musique les plus courants apparaissent sur la table, à titre d’exemples. Si vous avez la maîtrise d’un instrument de musique, vous pouvez ajouter votre bonus de maîtrise aux tests de caractéristique intervenant pour en jouer. Un barde peut recourir à un instrument de musique comme focaliseur d’incantation. Chaque type d’instrument de musique correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1170,7 +1169,7 @@
     "name": "Lyre",
     "tool_category": "Instrument de musique",
     "desc": [
-      "Plusieurs des types d'instruments de musique les plus courants sont présentés dans le tableau à titre d'exemples. Si vous maîtrisez un instrument de musique donné, vous pouvez ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour jouer de la musique avec cet instrument. Un barde peut utiliser un instrument de musique comme focaliseur d'incantation. Chaque type d'instrument de musique nécessite une maîtrise séparée."
+      "Quelques-uns des instruments de musique les plus courants apparaissent sur la table, à titre d’exemples. Si vous avez la maîtrise d’un instrument de musique, vous pouvez ajouter votre bonus de maîtrise aux tests de caractéristique intervenant pour en jouer. Un barde peut recourir à un instrument de musique comme focaliseur d’incantation. Chaque type d’instrument de musique correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1178,23 +1177,23 @@
     "name": "Cor",
     "tool_category": "Instrument de musique",
     "desc": [
-      "Plusieurs des types d'instruments de musique les plus courants sont présentés dans le tableau à titre d'exemples. Si vous maîtrisez un instrument de musique donné, vous pouvez ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour jouer de la musique avec cet instrument. Un barde peut utiliser un instrument de musique comme focaliseur d'incantation. Chaque type d'instrument de musique nécessite une maîtrise séparée."
+      "Quelques-uns des instruments de musique les plus courants apparaissent sur la table, à titre d’exemples. Si vous avez la maîtrise d’un instrument de musique, vous pouvez ajouter votre bonus de maîtrise aux tests de caractéristique intervenant pour en jouer. Un barde peut recourir à un instrument de musique comme focaliseur d’incantation. Chaque type d’instrument de musique correspond à une maîtrise distincte."
     ]
   },
   {
     "index": "pan-flute",
-    "name": "Flûte de Pan",
+    "name": "Flûte de pan",
     "tool_category": "Instrument de musique",
     "desc": [
-      "Plusieurs des types d'instruments de musique les plus courants sont présentés dans le tableau à titre d'exemples. Si vous maîtrisez un instrument de musique donné, vous pouvez ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour jouer de la musique avec cet instrument. Un barde peut utiliser un instrument de musique comme focaliseur d'incantation. Chaque type d'instrument de musique nécessite une maîtrise séparée."
+      "Quelques-uns des instruments de musique les plus courants apparaissent sur la table, à titre d’exemples. Si vous avez la maîtrise d’un instrument de musique, vous pouvez ajouter votre bonus de maîtrise aux tests de caractéristique intervenant pour en jouer. Un barde peut recourir à un instrument de musique comme focaliseur d’incantation. Chaque type d’instrument de musique correspond à une maîtrise distincte."
     ]
   },
   {
     "index": "shawm",
-    "name": "Chalumeau",
+    "name": "Chalemie",
     "tool_category": "Instrument de musique",
     "desc": [
-      "Plusieurs des types d'instruments de musique les plus courants sont présentés dans le tableau à titre d'exemples. Si vous maîtrisez un instrument de musique donné, vous pouvez ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour jouer de la musique avec cet instrument. Un barde peut utiliser un instrument de musique comme focaliseur d'incantation. Chaque type d'instrument de musique nécessite une maîtrise séparée."
+      "Quelques-uns des instruments de musique les plus courants apparaissent sur la table, à titre d’exemples. Si vous avez la maîtrise d’un instrument de musique, vous pouvez ajouter votre bonus de maîtrise aux tests de caractéristique intervenant pour en jouer. Un barde peut recourir à un instrument de musique comme focaliseur d’incantation. Chaque type d’instrument de musique correspond à une maîtrise distincte."
     ]
   },
   {
@@ -1202,15 +1201,15 @@
     "name": "Viole",
     "tool_category": "Instrument de musique",
     "desc": [
-      "Plusieurs des types d'instruments de musique les plus courants sont présentés dans le tableau à titre d'exemples. Si vous maîtrisez un instrument de musique donné, vous pouvez ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour jouer de la musique avec cet instrument. Un barde peut utiliser un instrument de musique comme focaliseur d'incantation. Chaque type d'instrument de musique nécessite une maîtrise séparée."
+      "Quelques-uns des instruments de musique les plus courants apparaissent sur la table, à titre d’exemples. Si vous avez la maîtrise d’un instrument de musique, vous pouvez ajouter votre bonus de maîtrise aux tests de caractéristique intervenant pour en jouer. Un barde peut recourir à un instrument de musique comme focaliseur d’incantation. Chaque type d’instrument de musique correspond à une maîtrise distincte."
     ]
   },
   {
     "index": "navigators-tools",
-    "name": "Outils de navigateur",
+    "name": "Instruments de navigateur",
     "tool_category": "Autres outils",
     "desc": [
-      "Cet ensemble d'instruments est utilisé pour la navigation en mer. La maîtrise des outils de navigateur vous permet de tracer la route d'un navire et de suivre des cartes de navigation. De plus, ces outils vous permettent d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour éviter de vous perdre en mer."
+      "Cet ensemble d’instruments est utilisé pour la navigation en mer. La maîtrise des instruments de navigation vous permet de lire une carte et d’y tracer la route d’un navire. En outre, la maîtrise de ces outils vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique effectué pour éviter de se perdre en mer."
     ]
   },
   {
@@ -1218,7 +1217,7 @@
     "name": "Outils de voleur",
     "tool_category": "Autres outils",
     "desc": [
-      "Cet ensemble d'outils comprend une petite lime, un jeu de crochets, un petit miroir monté sur une poignée métallique, une paire de ciseaux à lame fine et une pince. La maîtrise de ces outils vous permet d'ajouter votre bonus de maîtrise à tout test de caractéristique que vous effectuez pour désamorcer des pièges ou ouvrir des serrures."
+      "Cet ensemble d’outils comprend une lime, plusieurs crochets, un petit miroir articulé sur une poignée métallique, des ciseaux fins et une paire de pinces. La maîtrise de ces outils vous permet d’ajouter votre bonus de maîtrise à tout test de caractéristique visant à désarmer un piège ou crocheter une serrure."
     ]
   }
 ]
