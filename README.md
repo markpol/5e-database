@@ -25,6 +25,7 @@ src/
   tests/translationTestUtils.ts      Shared translation test suite
 docs/
   game-engine-changes.md             What this fork changes relative to upstream, and why
+  rule-reference.md                  The markdown of the rules text, and the order, summary, keywords and related links
   i18n-overlay-migration.md          What the move to text-only translation overlays (#31) changed
   upstream-changelog.md              Upstream's release history, kept for reference and no longer generated
 schema/                              Generated JSON Schema, one per collection (see CONTRIBUTING.md)
@@ -65,8 +66,8 @@ Every collection is kept. Record counts come from the data files. Status means:
 | Monsters (normalized) | `src/2014/5e-SRD-Monsters-Normalized.json` | 331 | Generated from the English monsters and `monster-engine-annotations.json` by `pnpm normalize:monsters`, validated by `schemas/5e-SRD-Monsters-Normalized.ts` | game data |
 | Proficiencies | `src/2014/en/5e-SRD-Proficiencies.json` | 114 | Core game data | game data |
 | Races | `src/2014/en/5e-SRD-Races.json` | 9 | Core game data | game data |
-| Rule Sections | `src/2014/en/5e-SRD-Rule-Sections.json` | 33 | Extensible reference content: more entries and fields can be added | extensible |
-| Rules | `src/2014/en/5e-SRD-Rules.json` | 6 | Extensible reference content: more entries and fields can be added | extensible |
+| Rule Sections | `src/2014/en/5e-SRD-Rule-Sections.json` | 33 | Extensible reference content: more entries and fields can be added (see [docs/rule-reference.md](docs/rule-reference.md)) | extensible |
+| Rules | `src/2014/en/5e-SRD-Rules.json` | 6 | Extensible reference content: more entries and fields can be added (see [docs/rule-reference.md](docs/rule-reference.md)) | extensible |
 | Skills | `src/2014/en/5e-SRD-Skills.json` | 18 | Core game data | game data |
 | Spells | `src/2014/en/5e-SRD-Spells.json` | 319 | Core game data | game data |
 | Subclasses | `src/2014/en/5e-SRD-Subclasses.json` | 12 | SRD reference data | reference |

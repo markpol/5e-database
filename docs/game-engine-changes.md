@@ -28,6 +28,7 @@ removed.
 | Features (languages, dragons) | `5e-SRD-Features.json`, `feature-engine-annotations.json` | Added `feature_specific.granted_languages` to 15 features (Druidic, Thieves' Cant, the ten dragon ancestors, the three Favored Enemy records) and `feature_specific.damage_type` to the ten `dragon-ancestor-*` records (see [feature-mechanics.md](feature-mechanics.md)) |
 | Backgrounds | `5e-SRD-Backgrounds.json` | Added 5 entries: `criminal`, `sage` and `soldier`, adapted from the SRD 5.2 backgrounds of the same name, and `cartographer` and `lighthouse-keeper`, written for this data; added `source` to each, and the optional `ability_scores`, `feat` and `proficiency_choices` (see [feat-data.md](feat-data.md)) |
 | Feats | `5e-SRD-Feats.json` | Added 16 entries adapted from the SRD 5.2 feats; added `type`, `repeatable`, `minimum_level`, `feature_named`, `source`, `engine` (13 feats, plus Grappler), `grants_asi` and `granted_proficiencies`, with the words of the class feature `engine` and a few more (see [feat-data.md](feat-data.md)) |
+| Rules and rule sections | `5e-SRD-Rules.json`, `5e-SRD-Rule-Sections.json`, `5e-SRD-Conditions.json`, `derive-rule-reference.ts` (new script), `rule-reference-annotations.json` (new file) | Added `order`, `summary` and `keywords` to the 6 rules and the 33 rule sections, `related` links to rule sections on 30 of the sections and 19 conditions, and documented the markdown subset of `desc`; `summary` is original wording and is translatable, the other fields are English-only (see [rule-reference.md](rule-reference.md)) |
 | Package/tooling | `package.json` | `engines.node` widened from `"22.x"` to `"22.x \|\| 24.x"` |
 
 [NOTICE.md](../NOTICE.md) and `src/provenance/source-markers.json` list every field and record that is not SRD text.
@@ -382,6 +383,17 @@ modifier vocabulary gained `roll_damage_twice`, `minimum_damage_die`, `hit_inste
 `ignore_resistance` and `sense`, the `bonus` target `initiative`, the circumstance `target_grappled_by_owner`,
 `choose` on `ability_score_increase`, and `skills_or_tools` in `granted_proficiencies`. All of it is optional and
 English-only except the text. [feat-data.md](feat-data.md) lists what is and is not structured.
+
+## Rules and rule sections: `order`, `summary`, `keywords`, `related`
+
+The 6 rules and the 33 rule sections (about 190,000 characters of markdown) gained `order` (reading order), `summary`
+(one or two sentences in original wording, not SRD text) and `keywords` (read from the headings and bold terms); the
+sections and 19 conditions gained `related`, a list of `{ collection, index }` links to rule sections, so one can open
+the rules that bear on a condition or on another section. `summary` is translatable and the overlays do not have it
+yet; `order`, `keywords` and `related` are English-only. Each field is marked `dd` in the source markers. The
+markdown that `desc` is written in is documented and tested. Nothing existing changed: `index`, `name`, `desc` and
+the overlays are as before. [rule-reference.md](rule-reference.md) describes the fields, how they are derived and the
+limits of the links.
 
 ## Classes: choice ids
 

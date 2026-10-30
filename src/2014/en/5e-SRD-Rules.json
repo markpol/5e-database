@@ -45,7 +45,20 @@
         "url": "/api/2014/rule-sections/underwater-combat"
       }
     ],
-    "url": "/api/2014/rules/combat"
+    "url": "/api/2014/rules/combat",
+    "order": 4,
+    "summary": "How a fight is run: turn order, moving and acting, making attacks, cover, damage and healing, and special cases such as mounts and underwater fights.",
+    "keywords": [
+      "combat",
+      "the order of combat",
+      "movement and position",
+      "actions in combat",
+      "making an attack",
+      "cover",
+      "damage and healing",
+      "mounted combat",
+      "underwater combat"
+    ]
   },
   {
     "name": "Using Ability Scores",
@@ -83,7 +96,18 @@
         "url": "/api/2014/rule-sections/saving-throws"
       }
     ],
-    "url": "/api/2014/rules/using-ability-scores"
+    "url": "/api/2014/rules/using-ability-scores",
+    "order": 2,
+    "summary": "The six abilities and how a roll turns them into results: ability checks, advantage and disadvantage, the proficiency bonus and saving throws.",
+    "keywords": [
+      "using ability scores",
+      "ability scores and modifiers",
+      "advantage and disadvantage",
+      "proficiency bonus",
+      "ability checks",
+      "using each ability",
+      "saving throws"
+    ]
   },
   {
     "name": "Adventuring",
@@ -131,7 +155,20 @@
         "url": "/api/2014/rule-sections/between-adventures"
       }
     ],
-    "url": "/api/2014/rules/adventuring"
+    "url": "/api/2014/rules/adventuring",
+    "order": 3,
+    "summary": "Rules for exploration and downtime: keeping time, travelling, environmental hazards, traps, diseases and madness, resting, and what characters do between adventures.",
+    "keywords": [
+      "adventuring",
+      "time",
+      "movement",
+      "the environment",
+      "traps",
+      "diseases",
+      "madness",
+      "resting",
+      "between adventures"
+    ]
   },
   {
     "name": "Spellcasting",
@@ -149,7 +186,10 @@
         "url": "/api/2014/rule-sections/casting-a-spell"
       }
     ],
-    "url": "/api/2014/rules/spellcasting"
+    "url": "/api/2014/rules/spellcasting",
+    "order": 5,
+    "summary": "How magic works at the table: what a spell is, how slots and preparation limit casting, and the steps and options for casting a spell.",
+    "keywords": ["spellcasting", "what is a spell?", "casting a spell"]
   },
   {
     "name": "Equipment",
@@ -192,7 +232,19 @@
         "url": "/api/2014/rule-sections/sentient-magic-items"
       }
     ],
-    "url": "/api/2014/rules/equipment"
+    "url": "/api/2014/rules/equipment",
+    "order": 1,
+    "summary": "Coins and what they buy, how to price and swap goods, and the rules for objects, poisons and magic items: attunement, wearing, activating and sentient items.",
+    "keywords": [
+      "equipment",
+      "standard exchange rates",
+      "objects",
+      "poisons",
+      "attunement",
+      "wearing and wielding items",
+      "activating an item",
+      "sentient magic items"
+    ]
   },
   {
     "name": "Appendix",
@@ -210,6 +262,9 @@
         "url": "/api/2014/rule-sections/the-planes-of-existence"
       }
     ],
-    "url": "/api/2014/rules/appendix"
+    "url": "/api/2014/rules/appendix",
+    "order": 6,
+    "summary": "Background for campaigns that range across worlds: sample pantheons of gods from history and myth, and the planes of existence.",
+    "keywords": ["appendix", "fantasy-historical pantheons", "the planes of existence"]
   }
 ]

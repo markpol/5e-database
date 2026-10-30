@@ -41,6 +41,22 @@
     },
     "url": {
       "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "exclusiveMinimum": 0,
+      "maximum": 9007199254740991
+    },
+    "summary": {
+      "type": "string",
+      "translatable": true
+    },
+    "keywords": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "required": [

@@ -16,6 +16,15 @@ export function translatable<T extends z.ZodType>(schema: T): T {
  */
 export const RecordSourceSchema = z.enum(['srd-5.2', 'dd']);
 
+/**
+ * A link from one entry to a rule section, so a reader can open the rules that apply to it. `collection` names the
+ * collection the target is in (only `rule-sections` for now) and `index` its `index`. Never translated.
+ */
+export const RuleLinkSchema = z.strictObject({
+  collection: z.enum(['rule-sections']),
+  index: z.string(),
+});
+
 export const APIReferenceSchema = z.strictObject({
   index: z.string(),
   name: z.string(),
