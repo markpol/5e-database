@@ -177,7 +177,10 @@
     ],
     "image": "/api/images/monsters/aboleth.png",
     "url": "/api/2014/monsters/aboleth",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "acolyte",
@@ -299,7 +302,11 @@
     ],
     "image": "/api/images/monsters/acolyte.png",
     "url": "/api/2014/monsters/acolyte",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "adult-black-dragon",
@@ -542,7 +549,12 @@
     ],
     "image": "/api/images/monsters/adult-black-dragon.png",
     "url": "/api/2014/monsters/adult-black-dragon",
-    "environments": "Underdark, Urban, Swamp"
+    "environments": "Underdark, Urban, Swamp",
+    "environment_tags": [
+      "Underdark",
+      "Urban",
+      "Swamp"
+    ]
   },
   {
     "index": "adult-blue-dragon",
@@ -781,7 +793,11 @@
     ],
     "image": "/api/images/monsters/adult-blue-dragon.png",
     "url": "/api/2014/monsters/adult-blue-dragon",
-    "environments": "Coastal, Desert"
+    "environments": "Coastal, Desert",
+    "environment_tags": [
+      "Coastal",
+      "Desert"
+    ]
   },
   {
     "index": "adult-brass-dragon",
@@ -1058,7 +1074,10 @@
     ],
     "image": "/api/images/monsters/adult-brass-dragon.png",
     "url": "/api/2014/monsters/adult-brass-dragon",
-    "environments": "Desert"
+    "environments": "Desert",
+    "environment_tags": [
+      "Desert"
+    ]
   },
   {
     "index": "adult-bronze-dragon",
@@ -1327,7 +1346,10 @@
     ],
     "image": "/api/images/monsters/adult-bronze-dragon.png",
     "url": "/api/2014/monsters/adult-bronze-dragon",
-    "environments": "Coastal"
+    "environments": "Coastal",
+    "environment_tags": [
+      "Coastal"
+    ]
   },
   {
     "index": "adult-copper-dragon",
@@ -1592,7 +1614,11 @@
     ],
     "image": "/api/images/monsters/adult-copper-dragon.png",
     "url": "/api/2014/monsters/adult-copper-dragon",
-    "environments": "Hill, Mountain"
+    "environments": "Hill, Mountain",
+    "environment_tags": [
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "adult-gold-dragon",
@@ -1864,7 +1890,11 @@
     ],
     "image": "/api/images/monsters/adult-gold-dragon.png",
     "url": "/api/2014/monsters/adult-gold-dragon",
-    "environments": "Forest, Grassland"
+    "environments": "Forest, Grassland",
+    "environment_tags": [
+      "Forest",
+      "Grassland"
+    ]
   },
   {
     "index": "adult-green-dragon",
@@ -2120,7 +2150,10 @@
     ],
     "image": "/api/images/monsters/adult-green-dragon.png",
     "url": "/api/2014/monsters/adult-green-dragon",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "adult-red-dragon",
@@ -2358,7 +2391,10 @@
     ],
     "image": "/api/images/monsters/adult-red-dragon.png",
     "url": "/api/2014/monsters/adult-red-dragon",
-    "environments": "Mountain"
+    "environments": "Mountain",
+    "environment_tags": [
+      "Mountain"
+    ]
   },
   {
     "index": "adult-silver-dragon",
@@ -2633,7 +2669,11 @@
     ],
     "image": "/api/images/monsters/adult-silver-dragon.png",
     "url": "/api/2014/monsters/adult-silver-dragon",
-    "environments": "Arctic, Mountain"
+    "environments": "Arctic, Mountain",
+    "environment_tags": [
+      "Arctic",
+      "Mountain"
+    ]
   },
   {
     "index": "adult-white-dragon",
@@ -2876,7 +2916,10 @@
     ],
     "image": "/api/images/monsters/adult-white-dragon.png",
     "url": "/api/2014/monsters/adult-white-dragon",
-    "environments": "Arctic"
+    "environments": "Arctic",
+    "environment_tags": [
+      "Arctic"
+    ]
   },
   {
     "index": "air-elemental",
@@ -3020,7 +3063,11 @@
     ],
     "image": "/api/images/monsters/air-elemental.png",
     "url": "/api/2014/monsters/air-elemental",
-    "environments": "Desert, Mountain"
+    "environments": "Desert, Mountain",
+    "environment_tags": [
+      "Desert",
+      "Mountain"
+    ]
   },
   {
     "index": "ancient-black-dragon",
@@ -3263,7 +3310,11 @@
     ],
     "image": "/api/images/monsters/ancient-black-dragon.png",
     "url": "/api/2014/monsters/ancient-black-dragon",
-    "environments": "Forest, Swamp"
+    "environments": "Forest, Swamp",
+    "environment_tags": [
+      "Forest",
+      "Swamp"
+    ]
   },
   {
     "index": "ancient-blue-dragon",
@@ -3502,7 +3553,11 @@
     ],
     "image": "/api/images/monsters/ancient-blue-dragon.png",
     "url": "/api/2014/monsters/ancient-blue-dragon",
-    "environments": "Coastal, Desert"
+    "environments": "Coastal, Desert",
+    "environment_tags": [
+      "Coastal",
+      "Desert"
+    ]
   },
   {
     "index": "ancient-brass-dragon",
@@ -3783,7 +3838,10 @@
     ],
     "image": "/api/images/monsters/ancient-brass-dragon.png",
     "url": "/api/2014/monsters/ancient-brass-dragon",
-    "environments": "Desert"
+    "environments": "Desert",
+    "environment_tags": [
+      "Desert"
+    ]
   },
   {
     "index": "ancient-bronze-dragon",
@@ -4056,7 +4114,10 @@
     ],
     "image": "/api/images/monsters/ancient-bronze-dragon.png",
     "url": "/api/2014/monsters/ancient-bronze-dragon",
-    "environments": "Coastal"
+    "environments": "Coastal",
+    "environment_tags": [
+      "Coastal"
+    ]
   },
   {
     "index": "ancient-copper-dragon",
@@ -4325,7 +4386,11 @@
     ],
     "image": "/api/images/monsters/ancient-copper-dragon.png",
     "url": "/api/2014/monsters/ancient-copper-dragon",
-    "environments": "Hill, Mountain"
+    "environments": "Hill, Mountain",
+    "environment_tags": [
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "ancient-gold-dragon",
@@ -4601,7 +4666,11 @@
     ],
     "image": "/api/images/monsters/ancient-gold-dragon.png",
     "url": "/api/2014/monsters/ancient-gold-dragon",
-    "environments": "Forest, Grassland"
+    "environments": "Forest, Grassland",
+    "environment_tags": [
+      "Forest",
+      "Grassland"
+    ]
   },
   {
     "index": "ancient-green-dragon",
@@ -4857,7 +4926,10 @@
     ],
     "image": "/api/images/monsters/ancient-green-dragon.png",
     "url": "/api/2014/monsters/ancient-green-dragon",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "ancient-red-dragon",
@@ -5095,7 +5167,10 @@
     ],
     "image": "/api/images/monsters/ancient-red-dragon.png",
     "url": "/api/2014/monsters/ancient-red-dragon",
-    "environments": "Mountain"
+    "environments": "Mountain",
+    "environment_tags": [
+      "Mountain"
+    ]
   },
   {
     "index": "ancient-silver-dragon",
@@ -5374,7 +5449,11 @@
     ],
     "image": "/api/images/monsters/ancient-silver-dragon.png",
     "url": "/api/2014/monsters/ancient-silver-dragon",
-    "environments": "Arctic, Mountain"
+    "environments": "Arctic, Mountain",
+    "environment_tags": [
+      "Arctic",
+      "Mountain"
+    ]
   },
   {
     "index": "ancient-white-dragon",
@@ -5617,7 +5696,10 @@
     ],
     "image": "/api/images/monsters/ancient-white-dragon.png",
     "url": "/api/2014/monsters/ancient-white-dragon",
-    "environments": "Arctic"
+    "environments": "Arctic",
+    "environment_tags": [
+      "Arctic"
+    ]
   },
   {
     "index": "androsphinx",
@@ -5927,7 +6009,10 @@
     ],
     "image": "/api/images/monsters/androsphinx.png",
     "url": "/api/2014/monsters/androsphinx",
-    "environments": "Desert"
+    "environments": "Desert",
+    "environment_tags": [
+      "Desert"
+    ]
   },
   {
     "index": "animated-armor",
@@ -6028,7 +6113,11 @@
     ],
     "image": "/api/images/monsters/animated-armor.png",
     "url": "/api/2014/monsters/animated-armor",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "ankheg",
@@ -6134,7 +6223,11 @@
     ],
     "image": "/api/images/monsters/ankheg.png",
     "url": "/api/2014/monsters/ankheg",
-    "environments": "Forest, Grassland"
+    "environments": "Forest, Grassland",
+    "environment_tags": [
+      "Forest",
+      "Grassland"
+    ]
   },
   {
     "index": "ape",
@@ -6235,7 +6328,10 @@
     ],
     "image": "/api/images/monsters/ape.png",
     "url": "/api/2014/monsters/ape",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "archmage",
@@ -6515,7 +6611,10 @@
     ],
     "image": "/api/images/monsters/archmage.png",
     "url": "/api/2014/monsters/archmage",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "assassin",
@@ -6679,7 +6778,10 @@
     ],
     "image": "/api/images/monsters/assassin.png",
     "url": "/api/2014/monsters/assassin",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "awakened-shrub",
@@ -6761,7 +6863,10 @@
     ],
     "image": "/api/images/monsters/awakened-shrub.png",
     "url": "/api/2014/monsters/awakened-shrub",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "awakened-tree",
@@ -6845,7 +6950,10 @@
     ],
     "image": "/api/images/monsters/awakened-tree.png",
     "url": "/api/2014/monsters/awakened-tree",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "axe-beak",
@@ -6903,7 +7011,11 @@
     ],
     "image": "/api/images/monsters/axe-beak.png",
     "url": "/api/2014/monsters/axe-beak",
-    "environments": "Grassland, Hill"
+    "environments": "Grassland, Hill",
+    "environment_tags": [
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "azer",
@@ -7015,7 +7127,11 @@
       }
     ],
     "url": "/api/2014/monsters/azer",
-    "environments": "Mountain, Underdark"
+    "environments": "Mountain, Underdark",
+    "environment_tags": [
+      "Mountain",
+      "Underdark"
+    ]
   },
   {
     "index": "baboon",
@@ -7079,7 +7195,11 @@
     ],
     "image": "/api/images/monsters/baboon.png",
     "url": "/api/2014/monsters/baboon",
-    "environments": "Forest, Hill"
+    "environments": "Forest, Hill",
+    "environment_tags": [
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "index": "badger",
@@ -7144,7 +7264,10 @@
     ],
     "image": "/api/images/monsters/badger.png",
     "url": "/api/2014/monsters/badger",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "balor",
@@ -7337,7 +7460,10 @@
     ],
     "image": "/api/images/monsters/balor.png",
     "url": "/api/2014/monsters/balor",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "bandit",
@@ -7423,7 +7549,15 @@
     ],
     "image": "/api/images/monsters/bandit.png",
     "url": "/api/2014/monsters/bandit",
-    "environments": "Arctic, Coastal, Desert, Forest, Hill, Urban"
+    "environments": "Arctic, Coastal, Desert, Forest, Hill, Urban",
+    "environment_tags": [
+      "Arctic",
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Hill",
+      "Urban"
+    ]
   },
   {
     "index": "bandit-captain",
@@ -7574,7 +7708,15 @@
     ],
     "image": "/api/images/monsters/bandit-captain.png",
     "url": "/api/2014/monsters/bandit-captain",
-    "environments": "Arctic, Coastal, Desert, Forest, Hill, Urban"
+    "environments": "Arctic, Coastal, Desert, Forest, Hill, Urban",
+    "environment_tags": [
+      "Arctic",
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Hill",
+      "Urban"
+    ]
   },
   {
     "index": "barbed-devil",
@@ -7785,7 +7927,10 @@
     ],
     "image": "/api/images/monsters/barbed-devil.png",
     "url": "/api/2014/monsters/barbed-devil",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "basilisk",
@@ -7872,7 +8017,10 @@
       }
     ],
     "url": "/api/2014/monsters/basilisk",
-    "environments": "Mountain"
+    "environments": "Mountain",
+    "environment_tags": [
+      "Mountain"
+    ]
   },
   {
     "index": "bat",
@@ -7940,7 +8088,11 @@
       }
     ],
     "url": "/api/2014/monsters/bat",
-    "environments": "Forest, Underdark"
+    "environments": "Forest, Underdark",
+    "environment_tags": [
+      "Forest",
+      "Underdark"
+    ]
   },
   {
     "index": "bearded-devil",
@@ -8107,7 +8259,10 @@
       }
     ],
     "url": "/api/2014/monsters/bearded-devil",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "behir",
@@ -8267,7 +8422,11 @@
     ],
     "image": "/api/images/monsters/behir.png",
     "url": "/api/2014/monsters/behir",
-    "environments": "Mountain, Underdark"
+    "environments": "Mountain, Underdark",
+    "environment_tags": [
+      "Mountain",
+      "Underdark"
+    ]
   },
   {
     "index": "berserker",
@@ -8334,7 +8493,15 @@
       }
     ],
     "url": "/api/2014/monsters/berserker",
-    "environments": "Arctic, Coastal, Desert, Forest, Hill, Mountain"
+    "environments": "Arctic, Coastal, Desert, Forest, Hill, Mountain",
+    "environment_tags": [
+      "Arctic",
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "black-bear",
@@ -8430,7 +8597,10 @@
     ],
     "image": "/api/images/monsters/black-bear.png",
     "url": "/api/2014/monsters/black-bear",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "black-dragon-wyrmling",
@@ -8560,7 +8730,11 @@
     ],
     "image": "/api/images/monsters/black-dragon-wyrmling.png",
     "url": "/api/2014/monsters/black-dragon-wyrmling",
-    "environments": "Forest, Swamp"
+    "environments": "Forest, Swamp",
+    "environment_tags": [
+      "Forest",
+      "Swamp"
+    ]
   },
   {
     "index": "black-pudding",
@@ -8671,7 +8845,10 @@
     ],
     "image": "/api/images/monsters/black-pudding.png",
     "url": "/api/2014/monsters/black-pudding",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "blink-dog",
@@ -8753,7 +8930,10 @@
     ],
     "image": "/api/images/monsters/blink-dog.png",
     "url": "/api/2014/monsters/blink-dog",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "blood-hawk",
@@ -8827,7 +9007,15 @@
     ],
     "image": "/api/images/monsters/blood-hawk.png",
     "url": "/api/2014/monsters/blood-hawk",
-    "environments": "Arctic, Coastal, Forest, Grassland, Hill, Mountain"
+    "environments": "Arctic, Coastal, Forest, Grassland, Hill, Mountain",
+    "environment_tags": [
+      "Arctic",
+      "Coastal",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "blue-dragon-wyrmling",
@@ -8951,7 +9139,11 @@
     ],
     "image": "/api/images/monsters/blue-dragon-wyrmling.png",
     "url": "/api/2014/monsters/blue-dragon-wyrmling",
-    "environments": "Coastal, Desert"
+    "environments": "Coastal, Desert",
+    "environment_tags": [
+      "Coastal",
+      "Desert"
+    ]
   },
   {
     "index": "boar",
@@ -9046,7 +9238,12 @@
     ],
     "image": "/api/images/monsters/boar.png",
     "url": "/api/2014/monsters/boar",
-    "environments": "Forest, Grassland, Hill"
+    "environments": "Forest, Grassland, Hill",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "bone-devil",
@@ -9222,7 +9419,10 @@
     ],
     "image": "/api/images/monsters/bone-devil.png",
     "url": "/api/2014/monsters/bone-devil",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "brass-dragon-wyrmling",
@@ -9376,7 +9576,10 @@
     ],
     "image": "/api/images/monsters/brass-dragon-wyrmling.png",
     "url": "/api/2014/monsters/brass-dragon-wyrmling",
-    "environments": "Desert"
+    "environments": "Desert",
+    "environment_tags": [
+      "Desert"
+    ]
   },
   {
     "index": "bronze-dragon-wyrmling",
@@ -9528,7 +9731,10 @@
     ],
     "image": "/api/images/monsters/bronze-dragon-wyrmling.png",
     "url": "/api/2014/monsters/bronze-dragon-wyrmling",
-    "environments": "Coastal"
+    "environments": "Coastal",
+    "environment_tags": [
+      "Coastal"
+    ]
   },
   {
     "index": "brown-bear",
@@ -9629,7 +9835,12 @@
     ],
     "image": "/api/images/monsters/brown-bear.png",
     "url": "/api/2014/monsters/brown-bear",
-    "environments": "Arctic, Forest, Hill"
+    "environments": "Arctic, Forest, Hill",
+    "environment_tags": [
+      "Arctic",
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "index": "bugbear",
@@ -9736,7 +9947,12 @@
     ],
     "image": "/api/images/monsters/bugbear.png",
     "url": "/api/2014/monsters/bugbear",
-    "environments": "Forest, Grassland, Underdark"
+    "environments": "Forest, Grassland, Underdark",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Underdark"
+    ]
   },
   {
     "index": "bulette",
@@ -9820,7 +10036,12 @@
       }
     ],
     "url": "/api/2014/monsters/bulette",
-    "environments": "Grassland, Hill, Mountain"
+    "environments": "Grassland, Hill, Mountain",
+    "environment_tags": [
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "camel",
@@ -9877,7 +10098,13 @@
     ],
     "image": "/api/images/monsters/camel.png",
     "url": "/api/2014/monsters/camel",
-    "environments": "Desert, Grassland, Hill, Mountain"
+    "environments": "Desert, Grassland, Hill, Mountain",
+    "environment_tags": [
+      "Desert",
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "cat",
@@ -9949,7 +10176,13 @@
       }
     ],
     "url": "/api/2014/monsters/cat",
-    "environments": "Desert, Forest, Grassland, Urban"
+    "environments": "Desert, Forest, Grassland, Urban",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Urban"
+    ]
   },
   {
     "index": "centaur",
@@ -10106,7 +10339,11 @@
       }
     ],
     "url": "/api/2014/monsters/centaur",
-    "environments": "Forest, Grassland"
+    "environments": "Forest, Grassland",
+    "environment_tags": [
+      "Forest",
+      "Grassland"
+    ]
   },
   {
     "index": "chain-devil",
@@ -10280,7 +10517,10 @@
     ],
     "image": "/api/images/monsters/chain-devil.png",
     "url": "/api/2014/monsters/chain-devil",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "chimera",
@@ -10481,7 +10721,11 @@
     ],
     "image": "/api/images/monsters/chimera.png",
     "url": "/api/2014/monsters/chimera",
-    "environments": "Hill, Mountain"
+    "environments": "Hill, Mountain",
+    "environment_tags": [
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "chuul",
@@ -10628,7 +10872,10 @@
       }
     ],
     "url": "/api/2014/monsters/chuul",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "clay-golem",
@@ -10766,7 +11013,10 @@
     ],
     "image": "/api/images/monsters/clay-golem.png",
     "url": "/api/2014/monsters/clay-golem",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "cloaker",
@@ -10907,7 +11157,10 @@
     ],
     "image": "/api/images/monsters/cloaker.png",
     "url": "/api/2014/monsters/cloaker",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "cloud-giant",
@@ -11117,7 +11370,10 @@
     ],
     "image": "/api/images/monsters/cloud-giant.png",
     "url": "/api/2014/monsters/cloud-giant",
-    "environments": "Mountain"
+    "environments": "Mountain",
+    "environment_tags": [
+      "Mountain"
+    ]
   },
   {
     "index": "cockatrice",
@@ -11198,7 +11454,10 @@
     ],
     "image": "/api/images/monsters/cockatrice.png",
     "url": "/api/2014/monsters/cockatrice",
-    "environments": "Grassland"
+    "environments": "Grassland",
+    "environment_tags": [
+      "Grassland"
+    ]
   },
   {
     "index": "commoner",
@@ -11258,7 +11517,16 @@
     ],
     "image": "/api/images/monsters/commoner.png",
     "url": "/api/2014/monsters/commoner",
-    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Urban"
+    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Urban",
+    "environment_tags": [
+      "Arctic",
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Urban"
+    ]
   },
   {
     "index": "constrictor-snake",
@@ -11344,7 +11612,13 @@
     ],
     "image": "/api/images/monsters/constrictor-snake.png",
     "url": "/api/2014/monsters/constrictor-snake",
-    "environments": "Desert, Forest, Swamp, Underwater"
+    "environments": "Desert, Forest, Swamp, Underwater",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Swamp",
+      "Underwater"
+    ]
   },
   {
     "index": "copper-dragon-wyrmling",
@@ -11497,7 +11771,11 @@
       }
     ],
     "url": "/api/2014/monsters/copper-dragon-wyrmling",
-    "environments": "Hill, Mountain"
+    "environments": "Hill, Mountain",
+    "environment_tags": [
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "couatl",
@@ -11779,7 +12057,13 @@
       }
     ],
     "url": "/api/2014/monsters/couatl",
-    "environments": "Desert, Forest, Grassland, Urban"
+    "environments": "Desert, Forest, Grassland, Urban",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Urban"
+    ]
   },
   {
     "index": "crab",
@@ -11848,7 +12132,10 @@
       }
     ],
     "url": "/api/2014/monsters/crab",
-    "environments": "Coastal"
+    "environments": "Coastal",
+    "environment_tags": [
+      "Coastal"
+    ]
   },
   {
     "index": "crocodile",
@@ -11929,7 +12216,11 @@
     ],
     "image": "/api/images/monsters/crocodile.png",
     "url": "/api/2014/monsters/crocodile",
-    "environments": "Swamp, Urban"
+    "environments": "Swamp, Urban",
+    "environment_tags": [
+      "Swamp",
+      "Urban"
+    ]
   },
   {
     "index": "cult-fanatic",
@@ -12092,7 +12383,10 @@
       }
     ],
     "url": "/api/2014/monsters/cult-fanatic",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "cultist",
@@ -12169,7 +12463,10 @@
       }
     ],
     "url": "/api/2014/monsters/cultist",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "darkmantle",
@@ -12254,7 +12551,10 @@
       }
     ],
     "url": "/api/2014/monsters/darkmantle",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "death-dog",
@@ -12360,7 +12660,10 @@
       }
     ],
     "url": "/api/2014/monsters/death-dog",
-    "environments": "Desert"
+    "environments": "Desert",
+    "environment_tags": [
+      "Desert"
+    ]
   },
   {
     "index": "deep-gnome-svirfneblin",
@@ -12533,7 +12836,10 @@
       }
     ],
     "url": "/api/2014/monsters/deep-gnome-svirfneblin",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "deer",
@@ -12589,7 +12895,11 @@
       }
     ],
     "url": "/api/2014/monsters/deer",
-    "environments": "Forest, Grassland"
+    "environments": "Forest, Grassland",
+    "environment_tags": [
+      "Forest",
+      "Grassland"
+    ]
   },
   {
     "index": "deva",
@@ -12767,7 +13077,10 @@
     ],
     "image": "/api/images/monsters/deva.png",
     "url": "/api/2014/monsters/deva",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "dire-wolf",
@@ -12856,7 +13169,11 @@
       }
     ],
     "url": "/api/2014/monsters/dire-wolf",
-    "environments": "Forest, Hill"
+    "environments": "Forest, Hill",
+    "environment_tags": [
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "index": "djinni",
@@ -13117,7 +13434,11 @@
     ],
     "image": "/api/images/monsters/djinni.png",
     "url": "/api/2014/monsters/djinni",
-    "environments": "Desert, Mountain"
+    "environments": "Desert, Mountain",
+    "environment_tags": [
+      "Desert",
+      "Mountain"
+    ]
   },
   {
     "index": "doppelganger",
@@ -13216,7 +13537,11 @@
       }
     ],
     "url": "/api/2014/monsters/doppelganger",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "draft-horse",
@@ -13272,7 +13597,10 @@
       }
     ],
     "url": "/api/2014/monsters/draft-horse",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "dragon-turtle",
@@ -13475,7 +13803,11 @@
     ],
     "image": "/api/images/monsters/dragon-turtle.png",
     "url": "/api/2014/monsters/dragon-turtle",
-    "environments": "Coastal, Underwater"
+    "environments": "Coastal, Underwater",
+    "environment_tags": [
+      "Coastal",
+      "Underwater"
+    ]
   },
   {
     "index": "dretch",
@@ -13617,7 +13949,10 @@
       }
     ],
     "url": "/api/2014/monsters/dretch",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "drider",
@@ -13867,7 +14202,10 @@
     ],
     "image": "/api/images/monsters/drider.png",
     "url": "/api/2014/monsters/drider",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "drow",
@@ -14029,7 +14367,10 @@
       }
     ],
     "url": "/api/2014/monsters/drow",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "druid",
@@ -14198,7 +14539,18 @@
       }
     ],
     "url": "/api/2014/monsters/druid",
-    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark"
+    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark",
+    "environment_tags": [
+      "Arctic",
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Mountain",
+      "Swamp",
+      "Underdark"
+    ]
   },
   {
     "index": "dryad",
@@ -14373,7 +14725,10 @@
     ],
     "image": "/api/images/monsters/dryad.png",
     "url": "/api/2014/monsters/dryad",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "duergar",
@@ -14501,7 +14856,10 @@
       }
     ],
     "url": "/api/2014/monsters/duergar",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "dust-mephit",
@@ -14660,7 +15018,10 @@
       }
     ],
     "url": "/api/2014/monsters/dust-mephit",
-    "environments": "Desert"
+    "environments": "Desert",
+    "environment_tags": [
+      "Desert"
+    ]
   },
   {
     "index": "eagle",
@@ -14728,7 +15089,13 @@
       }
     ],
     "url": "/api/2014/monsters/eagle",
-    "environments": "Coastal, Grassland, Hill, Mountain"
+    "environments": "Coastal, Grassland, Hill, Mountain",
+    "environment_tags": [
+      "Coastal",
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "earth-elemental",
@@ -14848,7 +15215,10 @@
     ],
     "image": "/api/images/monsters/earth-elemental.png",
     "url": "/api/2014/monsters/earth-elemental",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "efreeti",
@@ -15079,7 +15449,10 @@
     ],
     "image": "/api/images/monsters/efreeti.png",
     "url": "/api/2014/monsters/efreeti",
-    "environments": "Desert"
+    "environments": "Desert",
+    "environment_tags": [
+      "Desert"
+    ]
   },
   {
     "index": "elephant",
@@ -15183,7 +15556,10 @@
       }
     ],
     "url": "/api/2014/monsters/elephant",
-    "environments": "Grassland"
+    "environments": "Grassland",
+    "environment_tags": [
+      "Grassland"
+    ]
   },
   {
     "index": "elk",
@@ -15283,7 +15659,12 @@
       }
     ],
     "url": "/api/2014/monsters/elk",
-    "environments": "Forest, Grassland, Hill"
+    "environments": "Forest, Grassland, Hill",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "erinyes",
@@ -15536,7 +15917,10 @@
     ],
     "image": "/api/images/monsters/erinyes.png",
     "url": "/api/2014/monsters/erinyes",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "ettercap",
@@ -15702,7 +16086,10 @@
       }
     ],
     "url": "/api/2014/monsters/ettercap",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "ettin",
@@ -15808,7 +16195,12 @@
       }
     ],
     "url": "/api/2014/monsters/ettin",
-    "environments": "Hill, Mountain, Underdark"
+    "environments": "Hill, Mountain, Underdark",
+    "environment_tags": [
+      "Hill",
+      "Mountain",
+      "Underdark"
+    ]
   },
   {
     "index": "fire-elemental",
@@ -15935,7 +16327,10 @@
       }
     ],
     "url": "/api/2014/monsters/fire-elemental",
-    "environments": "Desert"
+    "environments": "Desert",
+    "environment_tags": [
+      "Desert"
+    ]
   },
   {
     "index": "fire-giant",
@@ -16060,7 +16455,10 @@
     ],
     "image": "/api/images/monsters/fire-giant.png",
     "url": "/api/2014/monsters/fire-giant",
-    "environments": "Mountain"
+    "environments": "Mountain",
+    "environment_tags": [
+      "Mountain"
+    ]
   },
   {
     "index": "flesh-golem",
@@ -16185,7 +16583,10 @@
       }
     ],
     "url": "/api/2014/monsters/flesh-golem",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "flying-snake",
@@ -16255,7 +16656,13 @@
       }
     ],
     "url": "/api/2014/monsters/flying-snake",
-    "environments": "Desert, Forest, Grassland, Urban"
+    "environments": "Desert, Forest, Grassland, Urban",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Urban"
+    ]
   },
   {
     "index": "flying-sword",
@@ -16350,7 +16757,10 @@
       }
     ],
     "url": "/api/2014/monsters/flying-sword",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "frost-giant",
@@ -16473,7 +16883,11 @@
     ],
     "image": "/api/images/monsters/frost-giant.png",
     "url": "/api/2014/monsters/frost-giant",
-    "environments": "Arctic, Mountain"
+    "environments": "Arctic, Mountain",
+    "environment_tags": [
+      "Arctic",
+      "Mountain"
+    ]
   },
   {
     "index": "gargoyle",
@@ -16597,7 +17011,11 @@
       }
     ],
     "url": "/api/2014/monsters/gargoyle",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "gelatinous-cube",
@@ -16687,7 +17105,10 @@
       }
     ],
     "url": "/api/2014/monsters/gelatinous-cube",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "ghast",
@@ -16818,7 +17239,12 @@
       }
     ],
     "url": "/api/2014/monsters/ghast",
-    "environments": "Swamp, Underdark, Urban"
+    "environments": "Swamp, Underdark, Urban",
+    "environment_tags": [
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "ghost",
@@ -16979,7 +17405,11 @@
       }
     ],
     "url": "/api/2014/monsters/ghost",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "ghoul",
@@ -17083,7 +17513,12 @@
       }
     ],
     "url": "/api/2014/monsters/ghoul",
-    "environments": "Swamp, Underdark, Urban"
+    "environments": "Swamp, Underdark, Urban",
+    "environment_tags": [
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "giant-ape",
@@ -17184,7 +17619,11 @@
     ],
     "image": "/api/images/monsters/giant-ape.png",
     "url": "/api/2014/monsters/giant-ape",
-    "environments": "Forest, Mountain"
+    "environments": "Forest, Mountain",
+    "environment_tags": [
+      "Forest",
+      "Mountain"
+    ]
   },
   {
     "index": "giant-badger",
@@ -17280,7 +17719,10 @@
       }
     ],
     "url": "/api/2014/monsters/giant-badger",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "giant-bat",
@@ -17348,7 +17790,11 @@
       }
     ],
     "url": "/api/2014/monsters/giant-bat",
-    "environments": "Forest, Underdark"
+    "environments": "Forest, Underdark",
+    "environment_tags": [
+      "Forest",
+      "Underdark"
+    ]
   },
   {
     "index": "giant-boar",
@@ -17442,7 +17888,12 @@
       }
     ],
     "url": "/api/2014/monsters/giant-boar",
-    "environments": "Forest, Grassland, Hill"
+    "environments": "Forest, Grassland, Hill",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "giant-centipede",
@@ -17509,7 +17960,11 @@
       }
     ],
     "url": "/api/2014/monsters/giant-centipede",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "giant-constrictor-snake",
@@ -17599,7 +18054,14 @@
       }
     ],
     "url": "/api/2014/monsters/giant-constrictor-snake",
-    "environments": "Desert, Forest, Swamp, Underdark, Underwater"
+    "environments": "Desert, Forest, Swamp, Underdark, Underwater",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Swamp",
+      "Underdark",
+      "Underwater"
+    ]
   },
   {
     "index": "giant-crab",
@@ -17680,7 +18142,10 @@
       }
     ],
     "url": "/api/2014/monsters/giant-crab",
-    "environments": "Coastal"
+    "environments": "Coastal",
+    "environment_tags": [
+      "Coastal"
+    ]
   },
   {
     "index": "giant-crocodile",
@@ -17806,7 +18271,10 @@
       }
     ],
     "url": "/api/2014/monsters/giant-crocodile",
-    "environments": "Swamp"
+    "environments": "Swamp",
+    "environment_tags": [
+      "Swamp"
+    ]
   },
   {
     "index": "giant-eagle",
@@ -17907,7 +18375,13 @@
       }
     ],
     "url": "/api/2014/monsters/giant-eagle",
-    "environments": "Coastal, Grassland, Hill, Mountain"
+    "environments": "Coastal, Grassland, Hill, Mountain",
+    "environment_tags": [
+      "Coastal",
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "giant-elk",
@@ -18013,7 +18487,13 @@
       }
     ],
     "url": "/api/2014/monsters/giant-elk",
-    "environments": "Forest, Grassland, Hill, Mountain"
+    "environments": "Forest, Grassland, Hill, Mountain",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "giant-fire-beetle",
@@ -18077,7 +18557,10 @@
       }
     ],
     "url": "/api/2014/monsters/giant-fire-beetle",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "giant-frog",
@@ -18189,7 +18672,11 @@
       }
     ],
     "url": "/api/2014/monsters/giant-frog",
-    "environments": "Forest, Swamp"
+    "environments": "Forest, Swamp",
+    "environment_tags": [
+      "Forest",
+      "Swamp"
+    ]
   },
   {
     "index": "giant-goat",
@@ -18275,7 +18762,12 @@
       }
     ],
     "url": "/api/2014/monsters/giant-goat",
-    "environments": "Grassland, Hill, Mountain"
+    "environments": "Grassland, Hill, Mountain",
+    "environment_tags": [
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "giant-hyena",
@@ -18342,7 +18834,13 @@
       }
     ],
     "url": "/api/2014/monsters/giant-hyena",
-    "environments": "Desert, Forest, Grassland, Hill"
+    "environments": "Desert, Forest, Grassland, Hill",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "giant-lizard",
@@ -18401,7 +18899,14 @@
       }
     ],
     "url": "/api/2014/monsters/giant-lizard",
-    "environments": "Coastal, Desert, Forest, Swamp, Underdark"
+    "environments": "Coastal, Desert, Forest, Swamp, Underdark",
+    "environment_tags": [
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Swamp",
+      "Underdark"
+    ]
   },
   {
     "index": "giant-octopus",
@@ -18509,7 +19014,10 @@
       }
     ],
     "url": "/api/2014/monsters/giant-octopus",
-    "environments": "Underwater"
+    "environments": "Underwater",
+    "environment_tags": [
+      "Underwater"
+    ]
   },
   {
     "index": "giant-owl",
@@ -18586,7 +19094,12 @@
       }
     ],
     "url": "/api/2014/monsters/giant-owl",
-    "environments": "Arctic, Forest, Hill"
+    "environments": "Arctic, Forest, Hill",
+    "environment_tags": [
+      "Arctic",
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "index": "giant-poisonous-snake",
@@ -18658,7 +19171,15 @@
       }
     ],
     "url": "/api/2014/monsters/giant-poisonous-snake",
-    "environments": "Desert, Forest, Grassland, Swamp, Underdark, Urban"
+    "environments": "Desert, Forest, Grassland, Swamp, Underdark, Urban",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "giant-rat",
@@ -18725,7 +19246,13 @@
       }
     ],
     "url": "/api/2014/monsters/giant-rat",
-    "environments": "Forest, Swamp, Underdark, Urban"
+    "environments": "Forest, Swamp, Underdark, Urban",
+    "environment_tags": [
+      "Forest",
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "giant-rat-diseased",
@@ -18799,7 +19326,11 @@
     ],
     "image": "/api/images/monsters/giant-rat-diseased.png",
     "url": "/api/2014/monsters/giant-rat-diseased",
-    "environments": "Swamp, Urban"
+    "environments": "Swamp, Urban",
+    "environment_tags": [
+      "Swamp",
+      "Urban"
+    ]
   },
   {
     "index": "giant-scorpion",
@@ -18902,7 +19433,10 @@
       }
     ],
     "url": "/api/2014/monsters/giant-scorpion",
-    "environments": "Desert"
+    "environments": "Desert",
+    "environment_tags": [
+      "Desert"
+    ]
   },
   {
     "index": "giant-sea-horse",
@@ -18990,7 +19524,10 @@
       }
     ],
     "url": "/api/2014/monsters/giant-sea-horse",
-    "environments": "Underwater"
+    "environments": "Underwater",
+    "environment_tags": [
+      "Underwater"
+    ]
   },
   {
     "index": "giant-shark",
@@ -19063,7 +19600,10 @@
       }
     ],
     "url": "/api/2014/monsters/giant-shark",
-    "environments": "Underwater"
+    "environments": "Underwater",
+    "environment_tags": [
+      "Underwater"
+    ]
   },
   {
     "index": "giant-spider",
@@ -19182,7 +19722,14 @@
       }
     ],
     "url": "/api/2014/monsters/giant-spider",
-    "environments": "Desert, Forest, Swamp, Underdark, Urban"
+    "environments": "Desert, Forest, Swamp, Underdark, Urban",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "giant-toad",
@@ -19289,7 +19836,14 @@
       }
     ],
     "url": "/api/2014/monsters/giant-toad",
-    "environments": "Coastal, Desert, Forest, Swamp, Underdark"
+    "environments": "Coastal, Desert, Forest, Swamp, Underdark",
+    "environment_tags": [
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Swamp",
+      "Underdark"
+    ]
   },
   {
     "index": "giant-vulture",
@@ -19394,7 +19948,11 @@
       }
     ],
     "url": "/api/2014/monsters/giant-vulture",
-    "environments": "Desert, Grassland"
+    "environments": "Desert, Grassland",
+    "environment_tags": [
+      "Desert",
+      "Grassland"
+    ]
   },
   {
     "index": "giant-wasp",
@@ -19461,7 +20019,12 @@
       }
     ],
     "url": "/api/2014/monsters/giant-wasp",
-    "environments": "Forest, Grassland, Urban"
+    "environments": "Forest, Grassland, Urban",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Urban"
+    ]
   },
   {
     "index": "giant-weasel",
@@ -19533,7 +20096,12 @@
       }
     ],
     "url": "/api/2014/monsters/giant-weasel",
-    "environments": "Forest, Grassland, Hill"
+    "environments": "Forest, Grassland, Hill",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "giant-wolf-spider",
@@ -19625,7 +20193,14 @@
       }
     ],
     "url": "/api/2014/monsters/giant-wolf-spider",
-    "environments": "Coastal, Desert, Forest, Grassland, Hill"
+    "environments": "Coastal, Desert, Forest, Grassland, Hill",
+    "environment_tags": [
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "gibbering-mouther",
@@ -19756,7 +20331,10 @@
       }
     ],
     "url": "/api/2014/monsters/gibbering-mouther",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "glabrezu",
@@ -20006,7 +20584,10 @@
     ],
     "image": "/api/images/monsters/glabrezu.png",
     "url": "/api/2014/monsters/glabrezu",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "gladiator",
@@ -20227,7 +20808,10 @@
       }
     ],
     "url": "/api/2014/monsters/gladiator",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "gnoll",
@@ -20359,7 +20943,13 @@
       }
     ],
     "url": "/api/2014/monsters/gnoll",
-    "environments": "Desert, Forest, Grassland, Hill"
+    "environments": "Desert, Forest, Grassland, Hill",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "goat",
@@ -20445,7 +21035,13 @@
       }
     ],
     "url": "/api/2014/monsters/goat",
-    "environments": "Grassland, Hill, Mountain, Urban"
+    "environments": "Grassland, Hill, Mountain, Urban",
+    "environment_tags": [
+      "Grassland",
+      "Hill",
+      "Mountain",
+      "Urban"
+    ]
   },
   {
     "index": "goblin",
@@ -20547,7 +21143,13 @@
     ],
     "image": "/api/images/monsters/goblin.png",
     "url": "/api/2014/monsters/goblin",
-    "environments": "Forest, Grassland, Hill, Underdark"
+    "environments": "Forest, Grassland, Hill, Underdark",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Underdark"
+    ]
   },
   {
     "index": "gold-dragon-wyrmling",
@@ -20705,7 +21307,11 @@
       }
     ],
     "url": "/api/2014/monsters/gold-dragon-wyrmling",
-    "environments": "Forest, Grassland"
+    "environments": "Forest, Grassland",
+    "environment_tags": [
+      "Forest",
+      "Grassland"
+    ]
   },
   {
     "index": "gorgon",
@@ -20854,7 +21460,12 @@
       }
     ],
     "url": "/api/2014/monsters/gorgon",
-    "environments": "Forest, Grassland, Hill"
+    "environments": "Forest, Grassland, Hill",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "gray-ooze",
@@ -20956,7 +21567,10 @@
       }
     ],
     "url": "/api/2014/monsters/gray-ooze",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "green-dragon-wyrmling",
@@ -21086,7 +21700,10 @@
       }
     ],
     "url": "/api/2014/monsters/green-dragon-wyrmling",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "green-hag",
@@ -21216,7 +21833,12 @@
       }
     ],
     "url": "/api/2014/monsters/green-hag",
-    "environments": "Forest, Hill, Swamp"
+    "environments": "Forest, Hill, Swamp",
+    "environment_tags": [
+      "Forest",
+      "Hill",
+      "Swamp"
+    ]
   },
   {
     "index": "grick",
@@ -21326,7 +21948,11 @@
       }
     ],
     "url": "/api/2014/monsters/grick",
-    "environments": "Forest, Underdark"
+    "environments": "Forest, Underdark",
+    "environment_tags": [
+      "Forest",
+      "Underdark"
+    ]
   },
   {
     "index": "griffon",
@@ -21427,7 +22053,14 @@
       }
     ],
     "url": "/api/2014/monsters/griffon",
-    "environments": "Arctic, Coastal, Grassland, Hill, Mountain"
+    "environments": "Arctic, Coastal, Grassland, Hill, Mountain",
+    "environment_tags": [
+      "Arctic",
+      "Coastal",
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "grimlock",
@@ -21521,7 +22154,10 @@
       }
     ],
     "url": "/api/2014/monsters/grimlock",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "guard",
@@ -21614,7 +22250,16 @@
       }
     ],
     "url": "/api/2014/monsters/guard",
-    "environments": "Coastal, Desert, Forest, Grassland, Hill, Mountain, Urban"
+    "environments": "Coastal, Desert, Forest, Grassland, Hill, Mountain, Urban",
+    "environment_tags": [
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Mountain",
+      "Urban"
+    ]
   },
   {
     "index": "guardian-naga",
@@ -21842,7 +22487,10 @@
     ],
     "image": "/api/images/monsters/guardian-naga.png",
     "url": "/api/2014/monsters/guardian-naga",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "gynosphinx",
@@ -22079,7 +22727,10 @@
     ],
     "image": "/api/images/monsters/gynosphinx.png",
     "url": "/api/2014/monsters/gynosphinx",
-    "environments": "Desert"
+    "environments": "Desert",
+    "environment_tags": [
+      "Desert"
+    ]
   },
   {
     "index": "half-red-dragon-veteran",
@@ -22248,7 +22899,11 @@
       }
     ],
     "url": "/api/2014/monsters/half-red-dragon-veteran",
-    "environments": "Hill, Mountain"
+    "environments": "Hill, Mountain",
+    "environment_tags": [
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "harpy",
@@ -22363,7 +23018,13 @@
       }
     ],
     "url": "/api/2014/monsters/harpy",
-    "environments": "Coastal, Forest, Hill, Mountain"
+    "environments": "Coastal, Forest, Hill, Mountain",
+    "environment_tags": [
+      "Coastal",
+      "Forest",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "hawk",
@@ -22431,7 +23092,13 @@
       }
     ],
     "url": "/api/2014/monsters/hawk",
-    "environments": "Forest, Grassland, Hill, Mountain"
+    "environments": "Forest, Grassland, Hill, Mountain",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "hell-hound",
@@ -22540,7 +23207,11 @@
       }
     ],
     "url": "/api/2014/monsters/hell-hound",
-    "environments": "Mountain, Underdark"
+    "environments": "Mountain, Underdark",
+    "environment_tags": [
+      "Mountain",
+      "Underdark"
+    ]
   },
   {
     "index": "hezrou",
@@ -22701,7 +23372,10 @@
     ],
     "image": "/api/images/monsters/hezrou.png",
     "url": "/api/2014/monsters/hezrou",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "hill-giant",
@@ -22797,7 +23471,10 @@
       }
     ],
     "url": "/api/2014/monsters/hill-giant",
-    "environments": "Hill"
+    "environments": "Hill",
+    "environment_tags": [
+      "Hill"
+    ]
   },
   {
     "index": "hippogriff",
@@ -22897,7 +23574,12 @@
       }
     ],
     "url": "/api/2014/monsters/hippogriff",
-    "environments": "Grassland, Hill, Mountain"
+    "environments": "Grassland, Hill, Mountain",
+    "environment_tags": [
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "hobgoblin",
@@ -23006,7 +23688,14 @@
       }
     ],
     "url": "/api/2014/monsters/hobgoblin",
-    "environments": "Desert, Forest, Grassland, Hill, Underdark"
+    "environments": "Desert, Forest, Grassland, Hill, Underdark",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Underdark"
+    ]
   },
   {
     "index": "homunculus",
@@ -23096,7 +23785,10 @@
       }
     ],
     "url": "/api/2014/monsters/homunculus",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "horned-devil",
@@ -23320,7 +24012,10 @@
     ],
     "image": "/api/images/monsters/horned-devil.png",
     "url": "/api/2014/monsters/horned-devil",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "hunter-shark",
@@ -23393,7 +24088,10 @@
       }
     ],
     "url": "/api/2014/monsters/hunter-shark",
-    "environments": "Underwater"
+    "environments": "Underwater",
+    "environment_tags": [
+      "Underwater"
+    ]
   },
   {
     "index": "hydra",
@@ -23487,7 +24185,10 @@
     ],
     "image": "/api/images/monsters/hydra.png",
     "url": "/api/2014/monsters/hydra",
-    "environments": "Swamp"
+    "environments": "Swamp",
+    "environment_tags": [
+      "Swamp"
+    ]
   },
   {
     "index": "hyena",
@@ -23554,7 +24255,13 @@
       }
     ],
     "url": "/api/2014/monsters/hyena",
-    "environments": "Desert, Forest, Grassland, Hill"
+    "environments": "Desert, Forest, Grassland, Hill",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "ice-devil",
@@ -23757,7 +24464,10 @@
     ],
     "image": "/api/images/monsters/ice-devil.png",
     "url": "/api/2014/monsters/ice-devil",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "ice-mephit",
@@ -23919,7 +24629,10 @@
       }
     ],
     "url": "/api/2014/monsters/ice-mephit",
-    "environments": "Arctic"
+    "environments": "Arctic",
+    "environment_tags": [
+      "Arctic"
+    ]
   },
   {
     "index": "imp",
@@ -24056,7 +24769,11 @@
       }
     ],
     "url": "/api/2014/monsters/imp",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "invisible-stalker",
@@ -24179,7 +24896,10 @@
     ],
     "image": "/api/images/monsters/invisible-stalker.png",
     "url": "/api/2014/monsters/invisible-stalker",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "iron-golem",
@@ -24369,7 +25089,10 @@
     ],
     "image": "/api/images/monsters/iron-golem.png",
     "url": "/api/2014/monsters/iron-golem",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "jackal",
@@ -24440,7 +25163,11 @@
       }
     ],
     "url": "/api/2014/monsters/jackal",
-    "environments": "Desert, Grassland"
+    "environments": "Desert, Grassland",
+    "environment_tags": [
+      "Desert",
+      "Grassland"
+    ]
   },
   {
     "index": "killer-whale",
@@ -24516,7 +25243,10 @@
       }
     ],
     "url": "/api/2014/monsters/killer-whale",
-    "environments": "Underwater"
+    "environments": "Underwater",
+    "environment_tags": [
+      "Underwater"
+    ]
   },
   {
     "index": "knight",
@@ -24645,7 +25375,10 @@
       }
     ],
     "url": "/api/2014/monsters/knight",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "kobold",
@@ -24741,7 +25474,18 @@
       }
     ],
     "url": "/api/2014/monsters/kobold",
-    "environments": "Arctic, Coastal, Desert, Forest, Hill, Mountain, Swamp, Underdark, Urban"
+    "environments": "Arctic, Coastal, Desert, Forest, Hill, Mountain, Swamp, Underdark, Urban",
+    "environment_tags": [
+      "Arctic",
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Hill",
+      "Mountain",
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "kraken",
@@ -24996,7 +25740,10 @@
     ],
     "image": "/api/images/monsters/kraken.png",
     "url": "/api/2014/monsters/kraken",
-    "environments": "Underwater"
+    "environments": "Underwater",
+    "environment_tags": [
+      "Underwater"
+    ]
   },
   {
     "index": "lamia",
@@ -25221,7 +25968,10 @@
       }
     ],
     "url": "/api/2014/monsters/lamia",
-    "environments": "Desert"
+    "environments": "Desert",
+    "environment_tags": [
+      "Desert"
+    ]
   },
   {
     "index": "lemure",
@@ -25313,7 +26063,10 @@
       }
     ],
     "url": "/api/2014/monsters/lemure",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "lich",
@@ -25673,7 +26426,11 @@
     ],
     "image": "/api/images/monsters/lich.png",
     "url": "/api/2014/monsters/lich",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "lion",
@@ -25798,7 +26555,13 @@
       }
     ],
     "url": "/api/2014/monsters/lion",
-    "environments": "Desert, Grassland, Hill, Mountain"
+    "environments": "Desert, Grassland, Hill, Mountain",
+    "environment_tags": [
+      "Desert",
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "lizard",
@@ -25856,7 +26619,12 @@
       }
     ],
     "url": "/api/2014/monsters/lizard",
-    "environments": "Desert, Forest, Swamp"
+    "environments": "Desert, Forest, Swamp",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Swamp"
+    ]
   },
   {
     "index": "lizardfolk",
@@ -26112,7 +26880,11 @@
       }
     ],
     "url": "/api/2014/monsters/lizardfolk",
-    "environments": "Forest, Swamp"
+    "environments": "Forest, Swamp",
+    "environment_tags": [
+      "Forest",
+      "Swamp"
+    ]
   },
   {
     "index": "mage",
@@ -26309,7 +27081,10 @@
     ],
     "image": "/api/images/monsters/mage.png",
     "url": "/api/2014/monsters/mage",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "magma-mephit",
@@ -26466,7 +27241,10 @@
       }
     ],
     "url": "/api/2014/monsters/magma-mephit",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "magmin",
@@ -26571,7 +27349,11 @@
       }
     ],
     "url": "/api/2014/monsters/magmin",
-    "environments": "Mountain, Underdark"
+    "environments": "Mountain, Underdark",
+    "environment_tags": [
+      "Mountain",
+      "Underdark"
+    ]
   },
   {
     "index": "mammoth",
@@ -26677,7 +27459,10 @@
     ],
     "image": "/api/images/monsters/mammoth.png",
     "url": "/api/2014/monsters/mammoth",
-    "environments": "Arctic"
+    "environments": "Arctic",
+    "environment_tags": [
+      "Arctic"
+    ]
   },
   {
     "index": "manticore",
@@ -26811,7 +27596,14 @@
       }
     ],
     "url": "/api/2014/monsters/manticore",
-    "environments": "Arctic, Coastal, Grassland, Hill, Mountain"
+    "environments": "Arctic, Coastal, Grassland, Hill, Mountain",
+    "environment_tags": [
+      "Arctic",
+      "Coastal",
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "marilith",
@@ -26991,7 +27783,10 @@
     ],
     "image": "/api/images/monsters/marilith.png",
     "url": "/api/2014/monsters/marilith",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "mastiff",
@@ -27073,7 +27868,12 @@
       }
     ],
     "url": "/api/2014/monsters/mastiff",
-    "environments": "Forest, Hill, Urban"
+    "environments": "Forest, Hill, Urban",
+    "environment_tags": [
+      "Forest",
+      "Hill",
+      "Urban"
+    ]
   },
   {
     "index": "medusa",
@@ -27258,7 +28058,11 @@
     ],
     "image": "/api/images/monsters/medusa.png",
     "url": "/api/2014/monsters/medusa",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "merfolk",
@@ -27353,7 +28157,11 @@
       }
     ],
     "url": "/api/2014/monsters/merfolk",
-    "environments": "Coastal, Underwater"
+    "environments": "Coastal, Underwater",
+    "environment_tags": [
+      "Coastal",
+      "Underwater"
+    ]
   },
   {
     "index": "merrow",
@@ -27520,7 +28328,11 @@
       }
     ],
     "url": "/api/2014/monsters/merrow",
-    "environments": "Coastal, Underwater"
+    "environments": "Coastal, Underwater",
+    "environment_tags": [
+      "Coastal",
+      "Underwater"
+    ]
   },
   {
     "index": "mimic",
@@ -27644,7 +28456,11 @@
     ],
     "image": "/api/images/monsters/mimic.png",
     "url": "/api/2014/monsters/mimic",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "minotaur",
@@ -27759,7 +28575,10 @@
       }
     ],
     "url": "/api/2014/monsters/minotaur",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "minotaur-skeleton",
@@ -27882,7 +28701,10 @@
       }
     ],
     "url": "/api/2014/monsters/minotaur-skeleton",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "mule",
@@ -27948,7 +28770,12 @@
       }
     ],
     "url": "/api/2014/monsters/mule",
-    "environments": "Desert, Hill, Urban"
+    "environments": "Desert, Hill, Urban",
+    "environment_tags": [
+      "Desert",
+      "Hill",
+      "Urban"
+    ]
   },
   {
     "index": "mummy",
@@ -28097,7 +28924,10 @@
       }
     ],
     "url": "/api/2014/monsters/mummy",
-    "environments": "Desert"
+    "environments": "Desert",
+    "environment_tags": [
+      "Desert"
+    ]
   },
   {
     "index": "mummy-lord",
@@ -28421,7 +29251,11 @@
     ],
     "image": "/api/images/monsters/mummy-lord.png",
     "url": "/api/2014/monsters/mummy-lord",
-    "environments": "Desert, Urban"
+    "environments": "Desert, Urban",
+    "environment_tags": [
+      "Desert",
+      "Urban"
+    ]
   },
   {
     "index": "nalfeshnee",
@@ -28606,7 +29440,10 @@
     ],
     "image": "/api/images/monsters/nalfeshnee.png",
     "url": "/api/2014/monsters/nalfeshnee",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "night-hag",
@@ -28795,7 +29632,11 @@
       }
     ],
     "url": "/api/2014/monsters/night-hag",
-    "environments": "Swamp, Underdark"
+    "environments": "Swamp, Underdark",
+    "environment_tags": [
+      "Swamp",
+      "Underdark"
+    ]
   },
   {
     "index": "nightmare",
@@ -28883,7 +29724,10 @@
       }
     ],
     "url": "/api/2014/monsters/nightmare",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "noble",
@@ -28964,7 +29808,10 @@
       }
     ],
     "url": "/api/2014/monsters/noble",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "ochre-jelly",
@@ -29070,7 +29917,10 @@
       }
     ],
     "url": "/api/2014/monsters/ochre-jelly",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "octopus",
@@ -29172,7 +30022,10 @@
       }
     ],
     "url": "/api/2014/monsters/octopus",
-    "environments": "Underwater"
+    "environments": "Underwater",
+    "environment_tags": [
+      "Underwater"
+    ]
   },
   {
     "index": "ogre",
@@ -29257,7 +30110,18 @@
       }
     ],
     "url": "/api/2014/monsters/ogre",
-    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark"
+    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark",
+    "environment_tags": [
+      "Arctic",
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Mountain",
+      "Swamp",
+      "Underdark"
+    ]
   },
   {
     "index": "ogre-zombie",
@@ -29337,7 +30201,10 @@
       }
     ],
     "url": "/api/2014/monsters/ogre-zombie",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "oni",
@@ -29574,7 +30441,11 @@
     ],
     "image": "/api/images/monsters/oni.png",
     "url": "/api/2014/monsters/oni",
-    "environments": "Forest, Hill"
+    "environments": "Forest, Hill",
+    "environment_tags": [
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "index": "orc",
@@ -29671,7 +30542,16 @@
       }
     ],
     "url": "/api/2014/monsters/orc",
-    "environments": "Arctic, Forest, Grassland, Hill, Mountain, Swamp, Underdark"
+    "environments": "Arctic, Forest, Grassland, Hill, Mountain, Swamp, Underdark",
+    "environment_tags": [
+      "Arctic",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Mountain",
+      "Swamp",
+      "Underdark"
+    ]
   },
   {
     "index": "otyugh",
@@ -29835,7 +30715,10 @@
       }
     ],
     "url": "/api/2014/monsters/otyugh",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "owl",
@@ -29912,7 +30795,11 @@
       }
     ],
     "url": "/api/2014/monsters/owl",
-    "environments": "Arctic, Forest"
+    "environments": "Arctic, Forest",
+    "environment_tags": [
+      "Arctic",
+      "Forest"
+    ]
   },
   {
     "index": "owlbear",
@@ -30012,7 +30899,10 @@
       }
     ],
     "url": "/api/2014/monsters/owlbear",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "panther",
@@ -30130,7 +31020,12 @@
       }
     ],
     "url": "/api/2014/monsters/panther",
-    "environments": "Forest, Grassland, Hill"
+    "environments": "Forest, Grassland, Hill",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "pegasus",
@@ -30204,7 +31099,12 @@
       }
     ],
     "url": "/api/2014/monsters/pegasus",
-    "environments": "Forest, Grassland, Hill"
+    "environments": "Forest, Grassland, Hill",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "phase-spider",
@@ -30291,7 +31191,15 @@
       }
     ],
     "url": "/api/2014/monsters/phase-spider",
-    "environments": "Desert, Forest, Grassland, Hill, Underdark, Urban"
+    "environments": "Desert, Forest, Grassland, Hill, Underdark, Urban",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "pit-fiend",
@@ -30565,7 +31473,10 @@
     ],
     "image": "/api/images/monsters/pit-fiend.png",
     "url": "/api/2014/monsters/pit-fiend",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "planetar",
@@ -30798,7 +31709,10 @@
     ],
     "image": "/api/images/monsters/planetar.png",
     "url": "/api/2014/monsters/planetar",
-    "environments": "Mountain"
+    "environments": "Mountain",
+    "environment_tags": [
+      "Mountain"
+    ]
   },
   {
     "index": "plesiosaurus",
@@ -30870,7 +31784,11 @@
       }
     ],
     "url": "/api/2014/monsters/plesiosaurus",
-    "environments": "Coastal, Underwater"
+    "environments": "Coastal, Underwater",
+    "environment_tags": [
+      "Coastal",
+      "Underwater"
+    ]
   },
   {
     "index": "poisonous-snake",
@@ -30937,7 +31855,15 @@
       }
     ],
     "url": "/api/2014/monsters/poisonous-snake",
-    "environments": "Coastal, Desert, Forest, Grassland, Hill, Swamp"
+    "environments": "Coastal, Desert, Forest, Grassland, Hill, Swamp",
+    "environment_tags": [
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Swamp"
+    ]
   },
   {
     "index": "polar-bear",
@@ -31037,7 +31963,11 @@
       }
     ],
     "url": "/api/2014/monsters/polar-bear",
-    "environments": "Arctic, Underdark"
+    "environments": "Arctic, Underdark",
+    "environment_tags": [
+      "Arctic",
+      "Underdark"
+    ]
   },
   {
     "index": "pony",
@@ -31093,7 +32023,10 @@
       }
     ],
     "url": "/api/2014/monsters/pony",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "priest",
@@ -31247,7 +32180,10 @@
       }
     ],
     "url": "/api/2014/monsters/priest",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "pseudodragon",
@@ -31358,7 +32294,15 @@
       }
     ],
     "url": "/api/2014/monsters/pseudodragon",
-    "environments": "Coastal, Desert, Forest, Hill, Mountain, Urban"
+    "environments": "Coastal, Desert, Forest, Hill, Mountain, Urban",
+    "environment_tags": [
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Hill",
+      "Mountain",
+      "Urban"
+    ]
   },
   {
     "index": "purple-worm",
@@ -31478,7 +32422,10 @@
     ],
     "image": "/api/images/monsters/purple-worm.png",
     "url": "/api/2014/monsters/purple-worm",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "quasit",
@@ -31634,7 +32581,11 @@
       }
     ],
     "url": "/api/2014/monsters/quasit",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "quipper",
@@ -31702,7 +32653,10 @@
       }
     ],
     "url": "/api/2014/monsters/quipper",
-    "environments": "Underwater"
+    "environments": "Underwater",
+    "environment_tags": [
+      "Underwater"
+    ]
   },
   {
     "index": "rakshasa",
@@ -31931,7 +32885,10 @@
     ],
     "image": "/api/images/monsters/rakshasa.png",
     "url": "/api/2014/monsters/rakshasa",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "rat",
@@ -31994,7 +32951,11 @@
       }
     ],
     "url": "/api/2014/monsters/rat",
-    "environments": "Swamp, Urban"
+    "environments": "Swamp, Urban",
+    "environment_tags": [
+      "Swamp",
+      "Urban"
+    ]
   },
   {
     "index": "raven",
@@ -32062,7 +33023,12 @@
       }
     ],
     "url": "/api/2014/monsters/raven",
-    "environments": "Hill, Swamp, Urban"
+    "environments": "Hill, Swamp, Urban",
+    "environment_tags": [
+      "Hill",
+      "Swamp",
+      "Urban"
+    ]
   },
   {
     "index": "red-dragon-wyrmling",
@@ -32184,7 +33150,10 @@
       }
     ],
     "url": "/api/2014/monsters/red-dragon-wyrmling",
-    "environments": "Mountain"
+    "environments": "Mountain",
+    "environment_tags": [
+      "Mountain"
+    ]
   },
   {
     "index": "reef-shark",
@@ -32257,7 +33226,10 @@
       }
     ],
     "url": "/api/2014/monsters/reef-shark",
-    "environments": "Underwater"
+    "environments": "Underwater",
+    "environment_tags": [
+      "Underwater"
+    ]
   },
   {
     "index": "remorhaz",
@@ -32366,7 +33338,10 @@
     ],
     "image": "/api/images/monsters/remorhaz.png",
     "url": "/api/2014/monsters/remorhaz",
-    "environments": "Arctic"
+    "environments": "Arctic",
+    "environment_tags": [
+      "Arctic"
+    ]
   },
   {
     "index": "rhinoceros",
@@ -32448,7 +33423,10 @@
       }
     ],
     "url": "/api/2014/monsters/rhinoceros",
-    "environments": "Grassland"
+    "environments": "Grassland",
+    "environment_tags": [
+      "Grassland"
+    ]
   },
   {
     "index": "riding-horse",
@@ -32504,7 +33482,11 @@
       }
     ],
     "url": "/api/2014/monsters/riding-horse",
-    "environments": "Grassland, Urban"
+    "environments": "Grassland, Urban",
+    "environment_tags": [
+      "Grassland",
+      "Urban"
+    ]
   },
   {
     "index": "roc",
@@ -32633,7 +33615,11 @@
     ],
     "image": "/api/images/monsters/roc.png",
     "url": "/api/2014/monsters/roc",
-    "environments": "Coastal, Mountain"
+    "environments": "Coastal, Mountain",
+    "environment_tags": [
+      "Coastal",
+      "Mountain"
+    ]
   },
   {
     "index": "roper",
@@ -32769,7 +33755,10 @@
       }
     ],
     "url": "/api/2014/monsters/roper",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "rug-of-smothering",
@@ -32872,7 +33861,10 @@
       }
     ],
     "url": "/api/2014/monsters/rug-of-smothering",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "rust-monster",
@@ -32952,7 +33944,10 @@
       }
     ],
     "url": "/api/2014/monsters/rust-monster",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "saber-toothed-tiger",
@@ -33069,7 +34064,11 @@
       }
     ],
     "url": "/api/2014/monsters/saber-toothed-tiger",
-    "environments": "Arctic, Mountain"
+    "environments": "Arctic, Mountain",
+    "environment_tags": [
+      "Arctic",
+      "Mountain"
+    ]
   },
   {
     "index": "sahuagin",
@@ -33251,7 +34250,11 @@
       }
     ],
     "url": "/api/2014/monsters/sahuagin",
-    "environments": "Coastal, Underwater"
+    "environments": "Coastal, Underwater",
+    "environment_tags": [
+      "Coastal",
+      "Underwater"
+    ]
   },
   {
     "index": "salamander",
@@ -33434,7 +34437,10 @@
       }
     ],
     "url": "/api/2014/monsters/salamander",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "satyr",
@@ -33551,7 +34557,10 @@
       }
     ],
     "url": "/api/2014/monsters/satyr",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "scorpion",
@@ -33617,7 +34626,10 @@
       }
     ],
     "url": "/api/2014/monsters/scorpion",
-    "environments": "Desert"
+    "environments": "Desert",
+    "environment_tags": [
+      "Desert"
+    ]
   },
   {
     "index": "scout",
@@ -33751,7 +34763,18 @@
       }
     ],
     "url": "/api/2014/monsters/scout",
-    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark"
+    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark",
+    "environment_tags": [
+      "Arctic",
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Mountain",
+      "Swamp",
+      "Underdark"
+    ]
   },
   {
     "index": "sea-hag",
@@ -33849,7 +34872,11 @@
       }
     ],
     "url": "/api/2014/monsters/sea-hag",
-    "environments": "Coastal, Underwater"
+    "environments": "Coastal, Underwater",
+    "environment_tags": [
+      "Coastal",
+      "Underwater"
+    ]
   },
   {
     "index": "shadow",
@@ -33989,7 +35016,11 @@
       }
     ],
     "url": "/api/2014/monsters/shadow",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "shambling-mound",
@@ -34115,7 +35146,11 @@
       }
     ],
     "url": "/api/2014/monsters/shambling-mound",
-    "environments": "Forest, Swamp"
+    "environments": "Forest, Swamp",
+    "environment_tags": [
+      "Forest",
+      "Swamp"
+    ]
   },
   {
     "index": "shield-guardian",
@@ -34226,7 +35261,10 @@
     ],
     "image": "/api/images/monsters/shield-guardian.png",
     "url": "/api/2014/monsters/shield-guardian",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "silver-dragon-wyrmling",
@@ -34377,7 +35415,11 @@
       }
     ],
     "url": "/api/2014/monsters/silver-dragon-wyrmling",
-    "environments": "Arctic, Mountain"
+    "environments": "Arctic, Mountain",
+    "environment_tags": [
+      "Arctic",
+      "Mountain"
+    ]
   },
   {
     "index": "skeleton",
@@ -34480,7 +35522,10 @@
       }
     ],
     "url": "/api/2014/monsters/skeleton",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "solar",
@@ -34779,7 +35824,10 @@
     ],
     "image": "/api/images/monsters/solar.png",
     "url": "/api/2014/monsters/solar",
-    "environments": "Mountain"
+    "environments": "Mountain",
+    "environment_tags": [
+      "Mountain"
+    ]
   },
   {
     "index": "specter",
@@ -34916,7 +35964,11 @@
       }
     ],
     "url": "/api/2014/monsters/specter",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "spider",
@@ -35002,7 +36054,12 @@
       }
     ],
     "url": "/api/2014/monsters/spider",
-    "environments": "Forest, Underdark, Urban"
+    "environments": "Forest, Underdark, Urban",
+    "environment_tags": [
+      "Forest",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "spirit-naga",
@@ -35192,7 +36249,11 @@
     ],
     "image": "/api/images/monsters/spirit-naga.png",
     "url": "/api/2014/monsters/spirit-naga",
-    "environments": "Swamp, Underdark"
+    "environments": "Swamp, Underdark",
+    "environment_tags": [
+      "Swamp",
+      "Underdark"
+    ]
   },
   {
     "index": "sprite",
@@ -35316,7 +36377,10 @@
       }
     ],
     "url": "/api/2014/monsters/sprite",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "spy",
@@ -35445,7 +36509,10 @@
       }
     ],
     "url": "/api/2014/monsters/spy",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "steam-mephit",
@@ -35584,7 +36651,10 @@
       }
     ],
     "url": "/api/2014/monsters/steam-mephit",
-    "environments": "Underwater"
+    "environments": "Underwater",
+    "environment_tags": [
+      "Underwater"
+    ]
   },
   {
     "index": "stirge",
@@ -35651,7 +36721,18 @@
       }
     ],
     "url": "/api/2014/monsters/stirge",
-    "environments": "Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark, Urban"
+    "environments": "Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark, Urban",
+    "environment_tags": [
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Mountain",
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "stone-giant",
@@ -35791,7 +36872,10 @@
     ],
     "image": "/api/images/monsters/stone-giant.png",
     "url": "/api/2014/monsters/stone-giant",
-    "environments": "Mountain"
+    "environments": "Mountain",
+    "environment_tags": [
+      "Mountain"
+    ]
   },
   {
     "index": "stone-golem",
@@ -35931,7 +37015,10 @@
     ],
     "image": "/api/images/monsters/stone-golem.png",
     "url": "/api/2014/monsters/stone-golem",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "storm-giant",
@@ -36170,7 +37257,11 @@
     ],
     "image": "/api/images/monsters/storm-giant.png",
     "url": "/api/2014/monsters/storm-giant",
-    "environments": "Coastal, Mountain"
+    "environments": "Coastal, Mountain",
+    "environment_tags": [
+      "Coastal",
+      "Mountain"
+    ]
   },
   {
     "index": "succubus-incubus",
@@ -36326,7 +37417,10 @@
       }
     ],
     "url": "/api/2014/monsters/succubus-incubus",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "swarm-of-bats",
@@ -36422,7 +37516,13 @@
       }
     ],
     "url": "/api/2014/monsters/swarm-of-bats",
-    "environments": "Hill, Mountain, Underdark, Urban"
+    "environments": "Hill, Mountain, Underdark, Urban",
+    "environment_tags": [
+      "Hill",
+      "Mountain",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "swarm-of-beetles",
@@ -36511,7 +37611,16 @@
       }
     ],
     "url": "/api/2014/monsters/swarm-of-beetles",
-    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban"
+    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "swarm-of-centipedes",
@@ -36599,7 +37708,16 @@
       }
     ],
     "url": "/api/2014/monsters/swarm-of-centipedes",
-    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban"
+    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "swarm-of-insects",
@@ -36687,7 +37805,16 @@
       }
     ],
     "url": "/api/2014/monsters/swarm-of-insects",
-    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban"
+    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "swarm-of-poisonous-snakes",
@@ -36784,7 +37911,11 @@
       }
     ],
     "url": "/api/2014/monsters/swarm-of-poisonous-snakes",
-    "environments": "Forest, Swamp"
+    "environments": "Forest, Swamp",
+    "environment_tags": [
+      "Forest",
+      "Swamp"
+    ]
   },
   {
     "index": "swarm-of-quippers",
@@ -36880,7 +38011,10 @@
       }
     ],
     "url": "/api/2014/monsters/swarm-of-quippers",
-    "environments": "Underwater"
+    "environments": "Underwater",
+    "environment_tags": [
+      "Underwater"
+    ]
   },
   {
     "index": "swarm-of-rats",
@@ -36971,7 +38105,11 @@
       }
     ],
     "url": "/api/2014/monsters/swarm-of-rats",
-    "environments": "Swamp, Urban"
+    "environments": "Swamp, Urban",
+    "environment_tags": [
+      "Swamp",
+      "Urban"
+    ]
   },
   {
     "index": "swarm-of-ravens",
@@ -37058,7 +38196,13 @@
       }
     ],
     "url": "/api/2014/monsters/swarm-of-ravens",
-    "environments": "Forest, Hill, Swamp, Urban"
+    "environments": "Forest, Hill, Swamp, Urban",
+    "environment_tags": [
+      "Forest",
+      "Hill",
+      "Swamp",
+      "Urban"
+    ]
   },
   {
     "index": "swarm-of-spiders",
@@ -37157,7 +38301,16 @@
       }
     ],
     "url": "/api/2014/monsters/swarm-of-spiders",
-    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban"
+    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "swarm-of-wasps",
@@ -37245,7 +38398,16 @@
       }
     ],
     "url": "/api/2014/monsters/swarm-of-wasps",
-    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban"
+    "environments": "Desert, Forest, Grassland, Hill, Swamp, Underdark, Urban",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "tarrasque",
@@ -37567,7 +38729,11 @@
     ],
     "image": "/api/images/monsters/tarrasque.png",
     "url": "/api/2014/monsters/tarrasque",
-    "environments": "Grassland, Hill"
+    "environments": "Grassland, Hill",
+    "environment_tags": [
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "thug",
@@ -37675,7 +38841,10 @@
       }
     ],
     "url": "/api/2014/monsters/thug",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "tiger",
@@ -37793,7 +38962,11 @@
       }
     ],
     "url": "/api/2014/monsters/tiger",
-    "environments": "Forest, Grassland"
+    "environments": "Forest, Grassland",
+    "environment_tags": [
+      "Forest",
+      "Grassland"
+    ]
   },
   {
     "index": "treant",
@@ -37922,7 +39095,10 @@
     ],
     "image": "/api/images/monsters/treant.png",
     "url": "/api/2014/monsters/treant",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "tribal-warrior",
@@ -38015,7 +39191,18 @@
       }
     ],
     "url": "/api/2014/monsters/tribal-warrior",
-    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark"
+    "environments": "Arctic, Coastal, Desert, Forest, Grassland, Hill, Mountain, Swamp, Underdark",
+    "environment_tags": [
+      "Arctic",
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Mountain",
+      "Swamp",
+      "Underdark"
+    ]
   },
   {
     "index": "triceratops",
@@ -38119,7 +39306,10 @@
       }
     ],
     "url": "/api/2014/monsters/triceratops",
-    "environments": "Grassland"
+    "environments": "Grassland",
+    "environment_tags": [
+      "Grassland"
+    ]
   },
   {
     "index": "troll",
@@ -38234,7 +39424,15 @@
       }
     ],
     "url": "/api/2014/monsters/troll",
-    "environments": "Arctic, Forest, Hill, Mountain, Swamp, Underdark"
+    "environments": "Arctic, Forest, Hill, Mountain, Swamp, Underdark",
+    "environment_tags": [
+      "Arctic",
+      "Forest",
+      "Hill",
+      "Mountain",
+      "Swamp",
+      "Underdark"
+    ]
   },
   {
     "index": "tyrannosaurus-rex",
@@ -38340,7 +39538,12 @@
     ],
     "image": "/api/images/monsters/tyrannosaurus-rex.png",
     "url": "/api/2014/monsters/tyrannosaurus-rex",
-    "environments": "Forest, Grassland, Swamp"
+    "environments": "Forest, Grassland, Swamp",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Swamp"
+    ]
   },
   {
     "index": "unicorn",
@@ -38568,7 +39771,10 @@
       }
     ],
     "url": "/api/2014/monsters/unicorn",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "vampire-vampire",
@@ -38827,7 +40033,11 @@
     ],
     "image": "/api/images/monsters/vampire-vampire.png",
     "url": "/api/2014/monsters/vampire-vampire",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "vampire-bat",
@@ -39035,7 +40245,11 @@
     ],
     "image": "/api/images/monsters/vampire-bat.png",
     "url": "/api/2014/monsters/vampire-bat",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "vampire-mist",
@@ -39187,7 +40401,11 @@
     ],
     "image": "/api/images/monsters/vampire-mist.png",
     "url": "/api/2014/monsters/vampire-mist",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "vampire-spawn",
@@ -39374,7 +40592,11 @@
       }
     ],
     "url": "/api/2014/monsters/vampire-spawn",
-    "environments": "Underdark, Urban"
+    "environments": "Underdark, Urban",
+    "environment_tags": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "veteran",
@@ -39518,7 +40740,17 @@
       }
     ],
     "url": "/api/2014/monsters/veteran",
-    "environments": "Arctic, Coastal, Forest, Grassland, Hill, Mountain, Underdark, Urban"
+    "environments": "Arctic, Coastal, Forest, Grassland, Hill, Mountain, Underdark, Urban",
+    "environment_tags": [
+      "Arctic",
+      "Coastal",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Mountain",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "violet-fungus",
@@ -39598,7 +40830,10 @@
       }
     ],
     "url": "/api/2014/monsters/violet-fungus",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "vrock",
@@ -39799,7 +41034,10 @@
     ],
     "image": "/api/images/monsters/vrock.png",
     "url": "/api/2014/monsters/vrock",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "vulture",
@@ -39871,7 +41109,12 @@
       }
     ],
     "url": "/api/2014/monsters/vulture",
-    "environments": "Desert, Grassland, Hill"
+    "environments": "Desert, Grassland, Hill",
+    "environment_tags": [
+      "Desert",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "warhorse",
@@ -39958,7 +41201,10 @@
     ],
     "image": "/api/images/monsters/warhorse.png",
     "url": "/api/2014/monsters/warhorse",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "warhorse-skeleton",
@@ -40037,7 +41283,10 @@
       }
     ],
     "url": "/api/2014/monsters/warhorse-skeleton",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   },
   {
     "index": "water-elemental",
@@ -40194,7 +41443,12 @@
     ],
     "image": "/api/images/monsters/water-elemental.png",
     "url": "/api/2014/monsters/water-elemental",
-    "environments": "Coastal, Swamp, Underwater"
+    "environments": "Coastal, Swamp, Underwater",
+    "environment_tags": [
+      "Coastal",
+      "Swamp",
+      "Underwater"
+    ]
   },
   {
     "index": "weasel",
@@ -40266,7 +41520,12 @@
     ],
     "image": "/api/images/monsters/weasel.png",
     "url": "/api/2014/monsters/weasel",
-    "environments": "Forest, Grassland, Hill"
+    "environments": "Forest, Grassland, Hill",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "werebear-bear",
@@ -40385,7 +41644,12 @@
       }
     ],
     "url": "/api/2014/monsters/werebear-bear",
-    "environments": "Arctic, Forest, Hill"
+    "environments": "Arctic, Forest, Hill",
+    "environment_tags": [
+      "Arctic",
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "index": "werebear-human",
@@ -40489,7 +41753,12 @@
       }
     ],
     "url": "/api/2014/monsters/werebear-human",
-    "environments": "Arctic, Forest, Hill"
+    "environments": "Arctic, Forest, Hill",
+    "environment_tags": [
+      "Arctic",
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "index": "werebear-hybrid",
@@ -40655,7 +41924,12 @@
       }
     ],
     "url": "/api/2014/monsters/werebear-hybrid",
-    "environments": "Arctic, Forest, Hill"
+    "environments": "Arctic, Forest, Hill",
+    "environment_tags": [
+      "Arctic",
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "index": "wereboar-boar",
@@ -40778,7 +42052,12 @@
       }
     ],
     "url": "/api/2014/monsters/wereboar-boar",
-    "environments": "Forest, Grassland, Hill"
+    "environments": "Forest, Grassland, Hill",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "wereboar-human",
@@ -40890,7 +42169,12 @@
       }
     ],
     "url": "/api/2014/monsters/wereboar-human",
-    "environments": "Forest, Grassland, Hill"
+    "environments": "Forest, Grassland, Hill",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "wereboar-hybrid",
@@ -41066,7 +42350,12 @@
       }
     ],
     "url": "/api/2014/monsters/wereboar-hybrid",
-    "environments": "Forest, Grassland, Hill"
+    "environments": "Forest, Grassland, Hill",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "wererat-human",
@@ -41228,7 +42517,11 @@
       }
     ],
     "url": "/api/2014/monsters/wererat-human",
-    "environments": "Forest, Urban"
+    "environments": "Forest, Urban",
+    "environment_tags": [
+      "Forest",
+      "Urban"
+    ]
   },
   {
     "index": "wererat-hybrid",
@@ -41439,7 +42732,11 @@
       }
     ],
     "url": "/api/2014/monsters/wererat-hybrid",
-    "environments": "Forest, Urban"
+    "environments": "Forest, Urban",
+    "environment_tags": [
+      "Forest",
+      "Urban"
+    ]
   },
   {
     "index": "wererat-rat",
@@ -41535,7 +42832,11 @@
       }
     ],
     "url": "/api/2014/monsters/wererat-rat",
-    "environments": "Forest, Urban"
+    "environments": "Forest, Urban",
+    "environment_tags": [
+      "Forest",
+      "Urban"
+    ]
   },
   {
     "index": "weretiger-human",
@@ -41681,7 +42982,12 @@
       }
     ],
     "url": "/api/2014/monsters/weretiger-human",
-    "environments": "Desert, Forest, Grassland"
+    "environments": "Desert, Forest, Grassland",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland"
+    ]
   },
   {
     "index": "weretiger-hybrid",
@@ -41889,7 +43195,12 @@
       }
     ],
     "url": "/api/2014/monsters/weretiger-hybrid",
-    "environments": "Desert, Forest, Grassland"
+    "environments": "Desert, Forest, Grassland",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland"
+    ]
   },
   {
     "index": "weretiger-tiger",
@@ -42031,7 +43342,12 @@
       }
     ],
     "url": "/api/2014/monsters/weretiger-tiger",
-    "environments": "Desert, Forest, Grassland"
+    "environments": "Desert, Forest, Grassland",
+    "environment_tags": [
+      "Desert",
+      "Forest",
+      "Grassland"
+    ]
   },
   {
     "index": "werewolf-human",
@@ -42160,7 +43476,11 @@
       }
     ],
     "url": "/api/2014/monsters/werewolf-human",
-    "environments": "Forest, Hill"
+    "environments": "Forest, Hill",
+    "environment_tags": [
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "index": "werewolf-hybrid",
@@ -42283,7 +43603,11 @@
       }
     ],
     "url": "/api/2014/monsters/werewolf-hybrid",
-    "environments": "Forest, Hill"
+    "environments": "Forest, Hill",
+    "environment_tags": [
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "index": "werewolf-wolf",
@@ -42374,7 +43698,11 @@
       }
     ],
     "url": "/api/2014/monsters/werewolf-wolf",
-    "environments": "Forest, Hill"
+    "environments": "Forest, Hill",
+    "environment_tags": [
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "index": "white-dragon-wyrmling",
@@ -42497,7 +43825,10 @@
       }
     ],
     "url": "/api/2014/monsters/white-dragon-wyrmling",
-    "environments": "Arctic"
+    "environments": "Arctic",
+    "environment_tags": [
+      "Arctic"
+    ]
   },
   {
     "index": "wight",
@@ -42724,7 +44055,13 @@
     ],
     "image": "/api/images/monsters/wight.png",
     "url": "/api/2014/monsters/wight",
-    "environments": "Desert, Swamp, Underdark, Urban"
+    "environments": "Desert, Swamp, Underdark, Urban",
+    "environment_tags": [
+      "Desert",
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "index": "will-o-wisp",
@@ -42858,7 +44195,12 @@
     ],
     "image": "/api/images/monsters/will-o-wisp.png",
     "url": "/api/2014/monsters/will-o-wisp",
-    "environments": "Forest, Swamp, Urban"
+    "environments": "Forest, Swamp, Urban",
+    "environment_tags": [
+      "Forest",
+      "Swamp",
+      "Urban"
+    ]
   },
   {
     "index": "winter-wolf",
@@ -42986,7 +44328,10 @@
     ],
     "image": "/api/images/monsters/winter-wolf.png",
     "url": "/api/2014/monsters/winter-wolf",
-    "environments": "Arctic"
+    "environments": "Arctic",
+    "environment_tags": [
+      "Arctic"
+    ]
   },
   {
     "index": "wolf",
@@ -43076,7 +44421,12 @@
     ],
     "image": "/api/images/monsters/wolf.png",
     "url": "/api/2014/monsters/wolf",
-    "environments": "Forest, Grassland, Hill"
+    "environments": "Forest, Grassland, Hill",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "worg",
@@ -43160,7 +44510,12 @@
     ],
     "image": "/api/images/monsters/worg.png",
     "url": "/api/2014/monsters/worg",
-    "environments": "Forest, Grassland, Hill"
+    "environments": "Forest, Grassland, Hill",
+    "environment_tags": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "index": "wraith",
@@ -43302,7 +44657,10 @@
     ],
     "image": "/api/images/monsters/wraith.png",
     "url": "/api/2014/monsters/wraith",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "wyvern",
@@ -43470,7 +44828,11 @@
     ],
     "image": "/api/images/monsters/wyvern.png",
     "url": "/api/2014/monsters/wyvern",
-    "environments": "Hill, Mountain"
+    "environments": "Hill, Mountain",
+    "environment_tags": [
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "xorn",
@@ -43599,7 +44961,10 @@
     ],
     "image": "/api/images/monsters/xorn.png",
     "url": "/api/2014/monsters/xorn",
-    "environments": "Underdark"
+    "environments": "Underdark",
+    "environment_tags": [
+      "Underdark"
+    ]
   },
   {
     "index": "young-black-dragon",
@@ -43761,7 +45126,11 @@
     ],
     "image": "/api/images/monsters/young-black-dragon.png",
     "url": "/api/2014/monsters/young-black-dragon",
-    "environments": "Forest, Swamp"
+    "environments": "Forest, Swamp",
+    "environment_tags": [
+      "Forest",
+      "Swamp"
+    ]
   },
   {
     "index": "young-blue-dragon",
@@ -43917,7 +45286,11 @@
     ],
     "image": "/api/images/monsters/young-blue-dragon.png",
     "url": "/api/2014/monsters/young-blue-dragon",
-    "environments": "Coastal, Desert"
+    "environments": "Coastal, Desert",
+    "environment_tags": [
+      "Coastal",
+      "Desert"
+    ]
   },
   {
     "index": "young-brass-dragon",
@@ -44107,7 +45480,10 @@
     ],
     "image": "/api/images/monsters/young-brass-dragon.png",
     "url": "/api/2014/monsters/young-brass-dragon",
-    "environments": "Desert"
+    "environments": "Desert",
+    "environment_tags": [
+      "Desert"
+    ]
   },
   {
     "index": "young-bronze-dragon",
@@ -44295,7 +45671,10 @@
     ],
     "image": "/api/images/monsters/young-bronze-dragon.png",
     "url": "/api/2014/monsters/young-bronze-dragon",
-    "environments": "Coastal"
+    "environments": "Coastal",
+    "environment_tags": [
+      "Coastal"
+    ]
   },
   {
     "index": "young-copper-dragon",
@@ -44477,7 +45856,11 @@
     ],
     "image": "/api/images/monsters/young-copper-dragon.png",
     "url": "/api/2014/monsters/young-copper-dragon",
-    "environments": "Hill, Mountain"
+    "environments": "Hill, Mountain",
+    "environment_tags": [
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "index": "young-gold-dragon",
@@ -44668,7 +46051,11 @@
     ],
     "image": "/api/images/monsters/young-gold-dragon.png",
     "url": "/api/2014/monsters/young-gold-dragon",
-    "environments": "Forest, Grassland"
+    "environments": "Forest, Grassland",
+    "environment_tags": [
+      "Forest",
+      "Grassland"
+    ]
   },
   {
     "index": "young-green-dragon",
@@ -44835,7 +46222,10 @@
     ],
     "image": "/api/images/monsters/young-green-dragon.png",
     "url": "/api/2014/monsters/young-green-dragon",
-    "environments": "Forest"
+    "environments": "Forest",
+    "environment_tags": [
+      "Forest"
+    ]
   },
   {
     "index": "young-red-dragon",
@@ -44990,7 +46380,10 @@
     ],
     "image": "/api/images/monsters/young-red-dragon.png",
     "url": "/api/2014/monsters/young-red-dragon",
-    "environments": "Mountain"
+    "environments": "Mountain",
+    "environment_tags": [
+      "Mountain"
+    ]
   },
   {
     "index": "young-silver-dragon",
@@ -45182,7 +46575,11 @@
     ],
     "image": "/api/images/monsters/young-silver-dragon.png",
     "url": "/api/2014/monsters/young-silver-dragon",
-    "environments": "Arctic, Mountain"
+    "environments": "Arctic, Mountain",
+    "environment_tags": [
+      "Arctic",
+      "Mountain"
+    ]
   },
   {
     "index": "young-white-dragon",
@@ -45344,7 +46741,10 @@
     ],
     "image": "/api/images/monsters/young-white-dragon.png",
     "url": "/api/2014/monsters/young-white-dragon",
-    "environments": "Arctic"
+    "environments": "Arctic",
+    "environment_tags": [
+      "Arctic"
+    ]
   },
   {
     "index": "zombie",
@@ -45424,6 +46824,9 @@
     ],
     "image": "/api/images/monsters/zombie.png",
     "url": "/api/2014/monsters/zombie",
-    "environments": "Urban"
+    "environments": "Urban",
+    "environment_tags": [
+      "Urban"
+    ]
   }
 ]

@@ -87,6 +87,7 @@ export type Spell = {
         collection: "rule-sections";
         index: string;
     }[] | undefined;
+    icon?: string | undefined;
     subclasses?: {
         index: string;
         name: string;

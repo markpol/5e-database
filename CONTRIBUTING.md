@@ -65,6 +65,10 @@ magic items, and the `uses` that `src/2014/item-engine-annotations.json` writes 
 ([docs/item-data.md](docs/item-data.md)). The `order`, `keywords` and `related` fields of the rules, the rule sections and
 the conditions, and the `related` links of the spells, the equipment and the magic items, are derived with `pnpm run derive:rules`, which also merges in the summaries and the curated links of
 `src/2014/rule-reference-annotations.json` ([docs/rule-reference.md](docs/rule-reference.md)).
+The `environment_tags` of the monsters are derived from their `environments` text with `pnpm run derive:environments`
+([docs/monster-environments.md](docs/monster-environments.md)), and the `icon` keys of the spells, class features and
+classes are written from `src/2014/icon-annotations.json` with `pnpm run derive:icons`
+([docs/icon-keys.md](docs/icon-keys.md)).
 
 ## Generated id lists
 

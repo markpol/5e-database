@@ -362,6 +362,10 @@
     "spells": {
       "type": "string"
     },
+    "icon": {
+      "type": "string",
+      "minLength": 1
+    },
     "url": {
       "type": "string"
     }

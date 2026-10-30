@@ -99,6 +99,8 @@ export const SpellSchema = z.strictObject({
   engine: SpellEngineSchema.optional(),
   // Rule sections that give the rules this spell uses or is covered by, from docs/rule-reference.md. Never translated.
   related: z.array(RuleLinkSchema).min(1).optional(),
+  // The key of the icon for this spell, from docs/icon-keys.md. Never translated.
+  icon: z.string().min(1).optional(),
   school: APIReferenceSchema,
   classes: z.array(APIReferenceSchema),
   subclasses: z.array(APIReferenceSchema).optional(),

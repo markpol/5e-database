@@ -250,6 +250,10 @@
     "src/2014/en/5e-SRD-Classes.json": {
       "source": "srd",
       "fields": {
+        "icon": {
+          "source": "dd",
+          "note": "The key of the icon for the class, set by derive-icons.ts from src/2014/icon-annotations.json (docs/icon-keys.md)."
+        },
         "multi_classing.proficiency_choices[].id": {
           "source": "dd",
           "note": "Stable id of a proficiency choice of the multi-classing rules, set by derive-class-choices.ts and never renamed."
@@ -763,6 +767,10 @@
         "feature_specific.heal": {
           "source": "dd",
           "note": "Hit points the feature restores (dice, bonus, class level), from its text, written in feature-engine-annotations.json and merged in by derive-feature-engine.ts."
+        },
+        "icon": {
+          "source": "dd",
+          "note": "The key of the icon for the class feature, set by derive-icons.ts from src/2014/icon-annotations.json (docs/icon-keys.md)."
         }
       }
     },
@@ -931,6 +939,10 @@
           "source": "dd",
           "note": "Bonus actions the monster can take, read from its prose."
         },
+        "environment_tags": {
+          "source": "dd",
+          "note": "The terms of environments as a list, in the same order, derived by derive-monster-environments.ts (docs/monster-environments.md)."
+        },
         "environments": {
           "source": "dd",
           "note": "Habitats. Not SRD 5.1 text; origin unverified."
@@ -1039,6 +1051,10 @@
           "source": "dd",
           "note": "heal_at_slot_level as dice, a flat bonus and whether the spellcasting ability modifier is added, derived from the heal_at_slot_level strings by derive-spell-combat.ts."
         },
+        "icon": {
+          "source": "dd",
+          "note": "The key of the icon for the spell, set by derive-icons.ts from src/2014/icon-annotations.json (docs/icon-keys.md)."
+        },
         "range_ft": {
           "source": "dd",
           "note": "range as a number of feet, or a word for self, touch, sight, special or unlimited, derived from the range text by derive-spell-mechanics.ts."
@@ -1078,6 +1094,9 @@
       "source": "srd"
     },
     "src/2014/feature-engine-annotations.json": {
+      "source": "dd"
+    },
+    "src/2014/icon-annotations.json": {
       "source": "dd"
     },
     "src/2014/item-engine-annotations.json": {

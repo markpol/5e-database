@@ -96,7 +96,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/rage"
+    "url": "/api/2014/features/rage",
+    "icon": "06-26"
   },
   {
     "index": "barbarian-unarmored-defense",
@@ -124,7 +125,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/barbarian-unarmored-defense"
+    "url": "/api/2014/features/barbarian-unarmored-defense",
+    "icon": "skl-blue-34"
   },
   {
     "index": "reckless-attack",
@@ -151,7 +153,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/reckless-attack"
+    "url": "/api/2014/features/reckless-attack",
+    "icon": "skl-red-18"
   },
   {
     "index": "danger-sense",
@@ -180,7 +183,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/danger-sense"
+    "url": "/api/2014/features/danger-sense",
+    "icon": "skl-red-11"
   },
   {
     "index": "primal-path",
@@ -195,7 +199,8 @@
     "desc": [
       "At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels."
     ],
-    "url": "/api/2014/features/primal-path"
+    "url": "/api/2014/features/primal-path",
+    "icon": "09-54"
   },
   {
     "index": "frenzy",
@@ -235,7 +240,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/frenzy"
+    "url": "/api/2014/features/frenzy",
+    "icon": "skl-red-14"
   },
   {
     "index": "barbarian-ability-score-improvement-1",
@@ -253,7 +259,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/barbarian-ability-score-improvement-1"
+    "url": "/api/2014/features/barbarian-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "barbarian-extra-attack",
@@ -279,7 +286,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/barbarian-extra-attack"
+    "url": "/api/2014/features/barbarian-extra-attack",
+    "icon": "skl-blue-12"
   },
   {
     "index": "fast-movement",
@@ -307,7 +315,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/fast-movement"
+    "url": "/api/2014/features/fast-movement",
+    "icon": "sgi-161"
   },
   {
     "index": "mindless-rage",
@@ -339,7 +348,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/mindless-rage"
+    "url": "/api/2014/features/mindless-rage",
+    "icon": "skl-red-04"
   },
   {
     "index": "primal-path-improvement-1",
@@ -354,7 +364,8 @@
     "desc": [
       "At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels."
     ],
-    "url": "/api/2014/features/primal-path-improvement-1"
+    "url": "/api/2014/features/primal-path-improvement-1",
+    "icon": "09-54"
   },
   {
     "index": "feral-instinct",
@@ -382,7 +393,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/feral-instinct"
+    "url": "/api/2014/features/feral-instinct",
+    "icon": "skl-blue-31"
   },
   {
     "index": "barbarian-ability-score-improvement-2",
@@ -400,7 +412,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/barbarian-ability-score-improvement-2"
+    "url": "/api/2014/features/barbarian-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "brutal-critical-1-die",
@@ -427,7 +440,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/brutal-critical-1-die"
+    "url": "/api/2014/features/brutal-critical-1-die",
+    "icon": "skl-red-15"
   },
   {
     "index": "intimidating-presence",
@@ -469,7 +483,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/intimidating-presence"
+    "url": "/api/2014/features/intimidating-presence",
+    "icon": "skl-red-02"
   },
   {
     "index": "primal-path-improvement-2",
@@ -484,7 +499,8 @@
     "desc": [
       "At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels."
     ],
-    "url": "/api/2014/features/primal-path-improvement-2"
+    "url": "/api/2014/features/primal-path-improvement-2",
+    "icon": "09-54"
   },
   {
     "index": "relentless-rage",
@@ -520,7 +536,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/relentless-rage"
+    "url": "/api/2014/features/relentless-rage",
+    "icon": "skl-red-37"
   },
   {
     "index": "barbarian-ability-score-improvement-3",
@@ -538,7 +555,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/barbarian-ability-score-improvement-3"
+    "url": "/api/2014/features/barbarian-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "brutal-critical-2-dice",
@@ -565,7 +583,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/brutal-critical-2-dice"
+    "url": "/api/2014/features/brutal-critical-2-dice",
+    "icon": "skl-red-15"
   },
   {
     "index": "retaliation",
@@ -598,7 +617,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/retaliation"
+    "url": "/api/2014/features/retaliation",
+    "icon": "skl-red-33"
   },
   {
     "index": "primal-path-improvement-3",
@@ -613,7 +633,8 @@
     "desc": [
       "At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels."
     ],
-    "url": "/api/2014/features/primal-path-improvement-3"
+    "url": "/api/2014/features/primal-path-improvement-3",
+    "icon": "09-54"
   },
   {
     "index": "persistent-rage",
@@ -628,7 +649,8 @@
     "desc": [
       "Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it."
     ],
-    "url": "/api/2014/features/persistent-rage"
+    "url": "/api/2014/features/persistent-rage",
+    "icon": "06-63"
   },
   {
     "index": "barbarian-ability-score-improvement-4",
@@ -646,7 +668,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/barbarian-ability-score-improvement-4"
+    "url": "/api/2014/features/barbarian-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "brutal-critical-3-dice",
@@ -673,7 +696,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/brutal-critical-3-dice"
+    "url": "/api/2014/features/brutal-critical-3-dice",
+    "icon": "skl-red-15"
   },
   {
     "index": "indomitable-might",
@@ -701,7 +725,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/indomitable-might"
+    "url": "/api/2014/features/indomitable-might",
+    "icon": "skl-blue-29"
   },
   {
     "index": "barbarian-ability-score-improvement-5",
@@ -719,7 +744,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/barbarian-ability-score-improvement-5"
+    "url": "/api/2014/features/barbarian-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "primal-champion",
@@ -747,7 +773,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/primal-champion"
+    "url": "/api/2014/features/primal-champion",
+    "icon": "skl-yellow-19"
   },
   {
     "index": "spellcasting-bard",
@@ -763,7 +790,8 @@
       "You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations."
     ],
     "reference": "/api/2014/classes/bard/spellcasting",
-    "url": "/api/2014/features/spellcasting-bard"
+    "url": "/api/2014/features/spellcasting-bard",
+    "icon": "04-58"
   },
   {
     "index": "bardic-inspiration-d6",
@@ -799,7 +827,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/bardic-inspiration-d6"
+    "url": "/api/2014/features/bardic-inspiration-d6",
+    "icon": "loot-mi_03"
   },
   {
     "index": "jack-of-all-trades",
@@ -828,7 +857,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/jack-of-all-trades"
+    "url": "/api/2014/features/jack-of-all-trades",
+    "icon": "skl-yellow-38"
   },
   {
     "index": "song-of-rest-d6",
@@ -852,7 +882,8 @@
         "dice": "1d6"
       }
     },
-    "url": "/api/2014/features/song-of-rest-d6"
+    "url": "/api/2014/features/song-of-rest-d6",
+    "icon": "04-94"
   },
   {
     "index": "bard-college",
@@ -867,7 +898,8 @@
     "desc": [
       "At 3rd level, you delve into the advanced techniques of a bard college of your choice, such as the College of Lore. Your choice grants you features at 3rd level and again at 6th and 14th level."
     ],
-    "url": "/api/2014/features/bard-college"
+    "url": "/api/2014/features/bard-college",
+    "icon": "sgi-03"
   },
   {
     "index": "bonus-proficiencies",
@@ -895,7 +927,8 @@
         }
       ]
     },
-    "url": "/api/2014/features/bonus-proficiencies"
+    "url": "/api/2014/features/bonus-proficiencies",
+    "icon": "loot-scroll_02"
   },
   {
     "index": "cutting-words",
@@ -935,7 +968,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/cutting-words"
+    "url": "/api/2014/features/cutting-words",
+    "icon": "skl-red-24"
   },
   {
     "index": "bard-expertise-1",
@@ -1105,7 +1139,8 @@
         }
       }
     },
-    "url": "/api/2014/features/bard-expertise-1"
+    "url": "/api/2014/features/bard-expertise-1",
+    "icon": "skl-yellow-36"
   },
   {
     "index": "bard-ability-score-improvement-1",
@@ -1123,7 +1158,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/bard-ability-score-improvement-1"
+    "url": "/api/2014/features/bard-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "bardic-inspiration-d8",
@@ -1159,7 +1195,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/bardic-inspiration-d8"
+    "url": "/api/2014/features/bardic-inspiration-d8",
+    "icon": "loot-mi_03"
   },
   {
     "index": "font-of-inspiration",
@@ -1191,7 +1228,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/font-of-inspiration"
+    "url": "/api/2014/features/font-of-inspiration",
+    "icon": "skl-yellow-01"
   },
   {
     "index": "countercharm",
@@ -1228,7 +1266,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/countercharm"
+    "url": "/api/2014/features/countercharm",
+    "icon": "loot-bell_01"
   },
   {
     "index": "bard-college-improvement-1",
@@ -1243,7 +1282,8 @@
     "desc": [
       "At 3rd level, you delve into the advanced techniques of a bard college of your choice, such as the College of Lore. Your choice grants you features at 3rd level and again at 6th and 14th level."
     ],
-    "url": "/api/2014/features/bard-college-improvement-1"
+    "url": "/api/2014/features/bard-college-improvement-1",
+    "icon": "sgi-03"
   },
   {
     "index": "additional-magical-secrets",
@@ -1263,7 +1303,8 @@
     "desc": [
       "At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don't count against the number of bard spells you know."
     ],
-    "url": "/api/2014/features/additional-magical-secrets"
+    "url": "/api/2014/features/additional-magical-secrets",
+    "icon": "loot-book_03"
   },
   {
     "index": "bard-ability-score-improvement-2",
@@ -1281,7 +1322,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/bard-ability-score-improvement-2"
+    "url": "/api/2014/features/bard-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "song-of-rest-d8",
@@ -1302,7 +1344,8 @@
         "dice": "1d8"
       }
     },
-    "url": "/api/2014/features/song-of-rest-d8"
+    "url": "/api/2014/features/song-of-rest-d8",
+    "icon": "04-94"
   },
   {
     "index": "bardic-inspiration-d10",
@@ -1338,7 +1381,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/bardic-inspiration-d10"
+    "url": "/api/2014/features/bardic-inspiration-d10",
+    "icon": "loot-mi_03"
   },
   {
     "index": "bard-expertise-2",
@@ -1508,7 +1552,8 @@
         }
       }
     },
-    "url": "/api/2014/features/bard-expertise-2"
+    "url": "/api/2014/features/bard-expertise-2",
+    "icon": "skl-yellow-36"
   },
   {
     "index": "magical-secrets-1",
@@ -1525,7 +1570,8 @@
       "The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table. ",
       "You learn two additional spells from any class at 14th level and again at 18th level."
     ],
-    "url": "/api/2014/features/magical-secrets-1"
+    "url": "/api/2014/features/magical-secrets-1",
+    "icon": "loot-book_03"
   },
   {
     "index": "bard-ability-score-improvement-3",
@@ -1543,7 +1589,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/bard-ability-score-improvement-3"
+    "url": "/api/2014/features/bard-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "song-of-rest-d10",
@@ -1564,7 +1611,8 @@
         "dice": "1d10"
       }
     },
-    "url": "/api/2014/features/song-of-rest-d10"
+    "url": "/api/2014/features/song-of-rest-d10",
+    "icon": "04-94"
   },
   {
     "index": "magical-secrets-2",
@@ -1581,7 +1629,8 @@
       "The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table. ",
       "You learn two additional spells from any class at 14th level and again at 18th level."
     ],
-    "url": "/api/2014/features/magical-secrets-2"
+    "url": "/api/2014/features/magical-secrets-2",
+    "icon": "loot-book_03"
   },
   {
     "index": "bard-college-improvement-2",
@@ -1596,7 +1645,8 @@
     "desc": [
       "At 3rd level, you delve into the advanced techniques of a bard college of your choice, such as the College of Lore. Your choice grants you features at 3rd level and again at 6th and 14th level."
     ],
-    "url": "/api/2014/features/bard-college-improvement-2"
+    "url": "/api/2014/features/bard-college-improvement-2",
+    "icon": "sgi-03"
   },
   {
     "index": "peerless-skill",
@@ -1633,7 +1683,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/peerless-skill"
+    "url": "/api/2014/features/peerless-skill",
+    "icon": "skl-yellow-37"
   },
   {
     "index": "bardic-inspiration-d12",
@@ -1669,7 +1720,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/bardic-inspiration-d12"
+    "url": "/api/2014/features/bardic-inspiration-d12",
+    "icon": "loot-mi_03"
   },
   {
     "index": "bard-ability-score-improvement-4",
@@ -1687,7 +1739,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/bard-ability-score-improvement-4"
+    "url": "/api/2014/features/bard-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "song-of-rest-d12",
@@ -1708,7 +1761,8 @@
         "dice": "1d12"
       }
     },
-    "url": "/api/2014/features/song-of-rest-d12"
+    "url": "/api/2014/features/song-of-rest-d12",
+    "icon": "04-94"
   },
   {
     "index": "magical-secrets-3",
@@ -1725,7 +1779,8 @@
       "The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table. ",
       "You learn two additional spells from any class at 14th level and again at 18th level."
     ],
-    "url": "/api/2014/features/magical-secrets-3"
+    "url": "/api/2014/features/magical-secrets-3",
+    "icon": "loot-book_03"
   },
   {
     "index": "bard-ability-score-improvement-5",
@@ -1743,7 +1798,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/bard-ability-score-improvement-5"
+    "url": "/api/2014/features/bard-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "superior-inspiration",
@@ -1771,7 +1827,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/superior-inspiration"
+    "url": "/api/2014/features/superior-inspiration",
+    "icon": "skl-yellow-39"
   },
   {
     "index": "spellcasting-cleric",
@@ -1785,7 +1842,8 @@
     "prerequisites": [],
     "desc": ["As a conduit for divine power, you can cast cleric spells."],
     "reference": "/api/2014/classes/cleric/spellcasting",
-    "url": "/api/2014/features/spellcasting-cleric"
+    "url": "/api/2014/features/spellcasting-cleric",
+    "icon": "blb-78"
   },
   {
     "index": "divine-domain",
@@ -1801,7 +1859,8 @@
       "Choose one domain related to your deity, such as Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Only the Life domain is detailed in the Open Game Licensed SRD. Additional Domains are described in the official rulebooks or products from other publishers.",
       "Your domain grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels."
     ],
-    "url": "/api/2014/features/divine-domain"
+    "url": "/api/2014/features/divine-domain",
+    "icon": "sgi-106"
   },
   {
     "index": "domain-spells-1",
@@ -1817,7 +1876,8 @@
       "Each domain has a list of spells--its domain spells--that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.",
       "If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
     ],
-    "url": "/api/2014/features/domain-spells-1"
+    "url": "/api/2014/features/domain-spells-1",
+    "icon": "blb-68"
   },
   {
     "index": "bonus-proficiency",
@@ -1844,7 +1904,8 @@
         }
       ]
     },
-    "url": "/api/2014/features/bonus-proficiency"
+    "url": "/api/2014/features/bonus-proficiency",
+    "icon": "sgi-63"
   },
   {
     "index": "disciple-of-life",
@@ -1878,7 +1939,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/disciple-of-life"
+    "url": "/api/2014/features/disciple-of-life",
+    "icon": "loot-heart_01"
   },
   {
     "index": "channel-divinity-1-rest",
@@ -1905,7 +1967,8 @@
         }
       }
     },
-    "url": "/api/2014/features/channel-divinity-1-rest"
+    "url": "/api/2014/features/channel-divinity-1-rest",
+    "icon": "06-52"
   },
   {
     "index": "channel-divinity-turn-undead",
@@ -1945,7 +2008,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/channel-divinity-turn-undead"
+    "url": "/api/2014/features/channel-divinity-turn-undead",
+    "icon": "07-47"
   },
   {
     "index": "divine-domain-improvement-1",
@@ -1961,7 +2025,8 @@
       "Choose one domain related to your deity, such as Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Only the Life domain is detailed in the Open Game Licensed SRD. Additional Domains are described in the official rulebooks or products from other publishers.",
       "Your domain grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels."
     ],
-    "url": "/api/2014/features/divine-domain-improvement-1"
+    "url": "/api/2014/features/divine-domain-improvement-1",
+    "icon": "sgi-106"
   },
   {
     "index": "channel-divinity-preserve-life",
@@ -1995,7 +2060,8 @@
         "class_level_multiplier": 5
       }
     },
-    "url": "/api/2014/features/channel-divinity-preserve-life"
+    "url": "/api/2014/features/channel-divinity-preserve-life",
+    "icon": "skl-green-20"
   },
   {
     "index": "domain-spells-2",
@@ -2011,7 +2077,8 @@
       "Each domain has a list of spells--its domain spells--that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.",
       "If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
     ],
-    "url": "/api/2014/features/domain-spells-2"
+    "url": "/api/2014/features/domain-spells-2",
+    "icon": "blb-68"
   },
   {
     "index": "cleric-ability-score-improvement-1",
@@ -2029,7 +2096,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/cleric-ability-score-improvement-1"
+    "url": "/api/2014/features/cleric-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "domain-spells-3",
@@ -2045,7 +2113,8 @@
       "Each domain has a list of spells--its domain spells--that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.",
       "If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
     ],
-    "url": "/api/2014/features/domain-spells-3"
+    "url": "/api/2014/features/domain-spells-3",
+    "icon": "blb-68"
   },
   {
     "index": "destroy-undead-cr-1-2-or-below",
@@ -2072,7 +2141,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/destroy-undead-cr-1-2-or-below"
+    "url": "/api/2014/features/destroy-undead-cr-1-2-or-below",
+    "icon": "01-18"
   },
   {
     "index": "channel-divinity-2-rest",
@@ -2096,7 +2166,8 @@
         }
       }
     },
-    "url": "/api/2014/features/channel-divinity-2-rest"
+    "url": "/api/2014/features/channel-divinity-2-rest",
+    "icon": "06-52"
   },
   {
     "index": "divine-domain-improvement-2",
@@ -2112,7 +2183,8 @@
       "Choose one domain related to your deity, such as Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Only the Life domain is detailed in the Open Game Licensed SRD. Additional Domains are described in the official rulebooks or products from other publishers.",
       "Your domain grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels."
     ],
-    "url": "/api/2014/features/divine-domain-improvement-2"
+    "url": "/api/2014/features/divine-domain-improvement-2",
+    "icon": "sgi-106"
   },
   {
     "index": "blessed-healer",
@@ -2147,7 +2219,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/blessed-healer"
+    "url": "/api/2014/features/blessed-healer",
+    "icon": "07-26"
   },
   {
     "index": "domain-spells-4",
@@ -2163,7 +2236,8 @@
       "Each domain has a list of spells--its domain spells--that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.",
       "If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
     ],
-    "url": "/api/2014/features/domain-spells-4"
+    "url": "/api/2014/features/domain-spells-4",
+    "icon": "blb-68"
   },
   {
     "index": "cleric-ability-score-improvement-2",
@@ -2181,7 +2255,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/cleric-ability-score-improvement-2"
+    "url": "/api/2014/features/cleric-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "destroy-undead-cr-1-or-below",
@@ -2208,7 +2283,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/destroy-undead-cr-1-or-below"
+    "url": "/api/2014/features/destroy-undead-cr-1-or-below",
+    "icon": "01-18"
   },
   {
     "index": "divine-domain-improvement-3",
@@ -2224,7 +2300,8 @@
       "Choose one domain related to your deity, such as Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Only the Life domain is detailed in the Open Game Licensed SRD. Additional Domains are described in the official rulebooks or products from other publishers.",
       "Your domain grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels."
     ],
-    "url": "/api/2014/features/divine-domain-improvement-3"
+    "url": "/api/2014/features/divine-domain-improvement-3",
+    "icon": "sgi-106"
   },
   {
     "index": "divine-strike",
@@ -2265,7 +2342,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/divine-strike"
+    "url": "/api/2014/features/divine-strike",
+    "icon": "03-61"
   },
   {
     "index": "domain-spells-5",
@@ -2281,7 +2359,8 @@
       "Each domain has a list of spells--its domain spells--that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.",
       "If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you."
     ],
-    "url": "/api/2014/features/domain-spells-5"
+    "url": "/api/2014/features/domain-spells-5",
+    "icon": "blb-68"
   },
   {
     "index": "divine-intervention",
@@ -2308,7 +2387,8 @@
         }
       }
     },
-    "url": "/api/2014/features/divine-intervention"
+    "url": "/api/2014/features/divine-intervention",
+    "icon": "skl-red-03"
   },
   {
     "index": "destroy-undead-cr-2-or-below",
@@ -2335,7 +2415,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/destroy-undead-cr-2-or-below"
+    "url": "/api/2014/features/destroy-undead-cr-2-or-below",
+    "icon": "01-18"
   },
   {
     "index": "cleric-ability-score-improvement-3",
@@ -2353,7 +2434,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/cleric-ability-score-improvement-3"
+    "url": "/api/2014/features/cleric-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "destroy-undead-cr-3-or-below",
@@ -2380,7 +2462,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/destroy-undead-cr-3-or-below"
+    "url": "/api/2014/features/destroy-undead-cr-3-or-below",
+    "icon": "01-18"
   },
   {
     "index": "cleric-ability-score-improvement-4",
@@ -2398,7 +2481,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/cleric-ability-score-improvement-4"
+    "url": "/api/2014/features/cleric-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "destroy-undead-cr-4-or-below",
@@ -2425,7 +2509,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/destroy-undead-cr-4-or-below"
+    "url": "/api/2014/features/destroy-undead-cr-4-or-below",
+    "icon": "01-18"
   },
   {
     "index": "divine-domain-improvement-4",
@@ -2441,7 +2526,8 @@
       "Choose one domain related to your deity, such as Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Only the Life domain is detailed in the Open Game Licensed SRD. Additional Domains are described in the official rulebooks or products from other publishers.",
       "Your domain grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels."
     ],
-    "url": "/api/2014/features/divine-domain-improvement-4"
+    "url": "/api/2014/features/divine-domain-improvement-4",
+    "icon": "sgi-106"
   },
   {
     "index": "supreme-healing",
@@ -2467,7 +2553,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/supreme-healing"
+    "url": "/api/2014/features/supreme-healing",
+    "icon": "03-57"
   },
   {
     "index": "channel-divinity-3-rest",
@@ -2491,7 +2578,8 @@
         }
       }
     },
-    "url": "/api/2014/features/channel-divinity-3-rest"
+    "url": "/api/2014/features/channel-divinity-3-rest",
+    "icon": "06-52"
   },
   {
     "index": "cleric-ability-score-improvement-5",
@@ -2509,7 +2597,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/cleric-ability-score-improvement-5"
+    "url": "/api/2014/features/cleric-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "divine-intervention-improvement",
@@ -2522,7 +2611,8 @@
     "level": 20,
     "prerequisites": [],
     "desc": ["At 20th level, your call for intervention succeeds automatically, no roll required."],
-    "url": "/api/2014/features/divine-intervention-improvement"
+    "url": "/api/2014/features/divine-intervention-improvement",
+    "icon": "skl-red-03"
   },
   {
     "index": "spellcasting-druid",
@@ -2538,7 +2628,8 @@
       "Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will."
     ],
     "reference": "/api/2014/classes/druid/spellcasting",
-    "url": "/api/2014/features/spellcasting-druid"
+    "url": "/api/2014/features/spellcasting-druid",
+    "icon": "skl-green-11"
   },
   {
     "index": "druidic",
@@ -2560,7 +2651,8 @@
         }
       ]
     },
-    "url": "/api/2014/features/druidic"
+    "url": "/api/2014/features/druidic",
+    "icon": "loot-runestone_03"
   },
   {
     "index": "wild-shape-cr-1-4-or-below-no-flying-or-swim-speed",
@@ -2598,7 +2690,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/wild-shape-cr-1-4-or-below-no-flying-or-swim-speed"
+    "url": "/api/2014/features/wild-shape-cr-1-4-or-below-no-flying-or-swim-speed",
+    "icon": "skl-green-14"
   },
   {
     "index": "druid-circle",
@@ -2613,7 +2706,8 @@
     "desc": [
       "At 2nd level, you choose to identify with a circle of druids, such as the Circle of the Land. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
     ],
-    "url": "/api/2014/features/druid-circle"
+    "url": "/api/2014/features/druid-circle",
+    "icon": "skl-green-27"
   },
   {
     "index": "circle-of-the-land",
@@ -2700,7 +2794,8 @@
         }
       }
     },
-    "url": "/api/2014/features/circle-of-the-land"
+    "url": "/api/2014/features/circle-of-the-land",
+    "icon": "skl-green-17"
   },
   {
     "index": "circle-of-the-land-arctic",
@@ -2725,7 +2820,8 @@
       "name": "Circle of the Land",
       "url": "/api/2014/features/circle-of-the-land"
     },
-    "url": "/api/2014/features/circle-of-the-land-arctic"
+    "url": "/api/2014/features/circle-of-the-land-arctic",
+    "icon": "skl-blue-04"
   },
   {
     "index": "circle-of-the-land-coast",
@@ -2750,7 +2846,8 @@
       "name": "Circle of the Land",
       "url": "/api/2014/features/circle-of-the-land"
     },
-    "url": "/api/2014/features/circle-of-the-land-coast"
+    "url": "/api/2014/features/circle-of-the-land-coast",
+    "icon": "skl-blue-06"
   },
   {
     "index": "circle-of-the-land-desert",
@@ -2775,7 +2872,8 @@
       "name": "Circle of the Land",
       "url": "/api/2014/features/circle-of-the-land"
     },
-    "url": "/api/2014/features/circle-of-the-land-desert"
+    "url": "/api/2014/features/circle-of-the-land-desert",
+    "icon": "skl-yellow-43"
   },
   {
     "index": "circle-of-the-land-forest",
@@ -2800,7 +2898,8 @@
       "name": "Circle of the Land",
       "url": "/api/2014/features/circle-of-the-land"
     },
-    "url": "/api/2014/features/circle-of-the-land-forest"
+    "url": "/api/2014/features/circle-of-the-land-forest",
+    "icon": "skl-green-03"
   },
   {
     "index": "circle-of-the-land-grassland",
@@ -2825,7 +2924,8 @@
       "name": "Circle of the Land",
       "url": "/api/2014/features/circle-of-the-land"
     },
-    "url": "/api/2014/features/circle-of-the-land-grassland"
+    "url": "/api/2014/features/circle-of-the-land-grassland",
+    "icon": "skl-green-21"
   },
   {
     "index": "circle-of-the-land-mountain",
@@ -2850,7 +2950,8 @@
       "name": "Circle of the Land",
       "url": "/api/2014/features/circle-of-the-land"
     },
-    "url": "/api/2014/features/circle-of-the-land-mountain"
+    "url": "/api/2014/features/circle-of-the-land-mountain",
+    "icon": "skl-blue-33"
   },
   {
     "index": "circle-of-the-land-swamp",
@@ -2875,7 +2976,8 @@
       "name": "Circle of the Land",
       "url": "/api/2014/features/circle-of-the-land"
     },
-    "url": "/api/2014/features/circle-of-the-land-swamp"
+    "url": "/api/2014/features/circle-of-the-land-swamp",
+    "icon": "skl-emerald-06"
   },
   {
     "index": "bonus-cantrip",
@@ -2895,7 +2997,8 @@
     "desc": [
       "When you choose this circle at 2nd level, you learn one additional druid cantrip of your choice."
     ],
-    "url": "/api/2014/features/bonus-cantrip"
+    "url": "/api/2014/features/bonus-cantrip",
+    "icon": "skl-green-10"
   },
   {
     "index": "natural-recovery",
@@ -2933,7 +3036,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/natural-recovery"
+    "url": "/api/2014/features/natural-recovery",
+    "icon": "skl-red-32"
   },
   {
     "index": "circle-spells-1",
@@ -2955,7 +3059,8 @@
       "Choose that land--arctic, coast, desert, forest, grassland, mountain, or swamp--and consult the associated list of spells.",
       "Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you."
     ],
-    "url": "/api/2014/features/circle-spells-1"
+    "url": "/api/2014/features/circle-spells-1",
+    "icon": "blb-68"
   },
   {
     "index": "wild-shape-cr-1-2-or-below-no-flying-speed",
@@ -2993,7 +3098,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/wild-shape-cr-1-2-or-below-no-flying-speed"
+    "url": "/api/2014/features/wild-shape-cr-1-2-or-below-no-flying-speed",
+    "icon": "skl-green-14"
   },
   {
     "index": "druid-ability-score-improvement-1",
@@ -3011,7 +3117,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/druid-ability-score-improvement-1"
+    "url": "/api/2014/features/druid-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "circle-spells-2",
@@ -3033,7 +3140,8 @@
       "Choose that land--arctic, coast, desert, forest, grassland, mountain, or swamp--and consult the associated list of spells.",
       "Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you."
     ],
-    "url": "/api/2014/features/circle-spells-2"
+    "url": "/api/2014/features/circle-spells-2",
+    "icon": "blb-68"
   },
   {
     "index": "druid-circle-improvement-1",
@@ -3048,7 +3156,8 @@
     "desc": [
       "At 2nd level, you choose to identify with a circle of druids, such as the Circle of the Land. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
     ],
-    "url": "/api/2014/features/druid-circle-improvement-1"
+    "url": "/api/2014/features/druid-circle-improvement-1",
+    "icon": "skl-green-27"
   },
   {
     "index": "druid-lands-stride",
@@ -3069,7 +3178,8 @@
       "Starting at 6th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.",
       "In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell."
     ],
-    "url": "/api/2014/features/druid-lands-stride"
+    "url": "/api/2014/features/druid-lands-stride",
+    "icon": "skl-green-02"
   },
   {
     "index": "circle-spells-3",
@@ -3091,7 +3201,8 @@
       "Choose that land--arctic, coast, desert, forest, grassland, mountain, or swamp--and consult the associated list of spells.",
       "Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you."
     ],
-    "url": "/api/2014/features/circle-spells-3"
+    "url": "/api/2014/features/circle-spells-3",
+    "icon": "blb-68"
   },
   {
     "index": "wild-shape-cr-1-or-below",
@@ -3129,7 +3240,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/wild-shape-cr-1-or-below"
+    "url": "/api/2014/features/wild-shape-cr-1-or-below",
+    "icon": "skl-green-14"
   },
   {
     "index": "druid-ability-score-improvement-2",
@@ -3147,7 +3259,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/druid-ability-score-improvement-2"
+    "url": "/api/2014/features/druid-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "circle-spells-4",
@@ -3169,7 +3282,8 @@
       "Choose that land--arctic, coast, desert, forest, grassland, mountain, or swamp--and consult the associated list of spells.",
       "Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you."
     ],
-    "url": "/api/2014/features/circle-spells-4"
+    "url": "/api/2014/features/circle-spells-4",
+    "icon": "blb-68"
   },
   {
     "index": "druid-circle-improvement-2",
@@ -3184,7 +3298,8 @@
     "desc": [
       "At 2nd level, you choose to identify with a circle of druids, such as the Circle of the Land. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
     ],
-    "url": "/api/2014/features/druid-circle-improvement-2"
+    "url": "/api/2014/features/druid-circle-improvement-2",
+    "icon": "skl-green-27"
   },
   {
     "index": "natures-ward",
@@ -3225,7 +3340,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/natures-ward"
+    "url": "/api/2014/features/natures-ward",
+    "icon": "06-95"
   },
   {
     "index": "druid-ability-score-improvement-3",
@@ -3243,7 +3359,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/druid-ability-score-improvement-3"
+    "url": "/api/2014/features/druid-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "druid-circle-improvement-3",
@@ -3258,7 +3375,8 @@
     "desc": [
       "At 2nd level, you choose to identify with a circle of druids, such as the Circle of the Land. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
     ],
-    "url": "/api/2014/features/druid-circle-improvement-3"
+    "url": "/api/2014/features/druid-circle-improvement-3",
+    "icon": "skl-green-27"
   },
   {
     "index": "natures-sanctuary",
@@ -3278,7 +3396,8 @@
     "desc": [
       "When you reach 14th level, creatures of the natural world sense your connection to nature and become hesitant to attack you. When a beast or plant creature attacks you, that creature must make a Wisdom saving throw against your druid spell save DC. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours. The creature is aware of this effect before it makes its attack against you."
     ],
-    "url": "/api/2014/features/natures-sanctuary"
+    "url": "/api/2014/features/natures-sanctuary",
+    "icon": "skl-green-28"
   },
   {
     "index": "druid-ability-score-improvement-4",
@@ -3296,7 +3415,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/druid-ability-score-improvement-4"
+    "url": "/api/2014/features/druid-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "druid-timeless-body",
@@ -3311,7 +3431,8 @@
     "desc": [
       "Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year."
     ],
-    "url": "/api/2014/features/druid-timeless-body"
+    "url": "/api/2014/features/druid-timeless-body",
+    "icon": "07-53"
   },
   {
     "index": "beast-spells",
@@ -3326,7 +3447,8 @@
     "desc": [
       "Beginning at 18th level, you can cast many of your druid spells in any shape you assume using Wild Shape. You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren't able to provide material components."
     ],
-    "url": "/api/2014/features/beast-spells"
+    "url": "/api/2014/features/beast-spells",
+    "icon": "skl-yellow-06"
   },
   {
     "index": "druid-ability-score-improvement-5",
@@ -3344,7 +3466,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/druid-ability-score-improvement-5"
+    "url": "/api/2014/features/druid-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "archdruid",
@@ -3383,7 +3506,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/archdruid"
+    "url": "/api/2014/features/archdruid",
+    "icon": "04-101"
   },
   {
     "index": "fighter-fighting-style",
@@ -3457,7 +3581,8 @@
         }
       }
     },
-    "url": "/api/2014/features/fighter-fighting-style"
+    "url": "/api/2014/features/fighter-fighting-style",
+    "icon": "sgi-171"
   },
   {
     "index": "fighter-fighting-style-archery",
@@ -3488,7 +3613,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/fighter-fighting-style-archery"
+    "url": "/api/2014/features/fighter-fighting-style-archery",
+    "icon": "skl-green-01"
   },
   {
     "index": "fighter-fighting-style-defense",
@@ -3519,7 +3645,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/fighter-fighting-style-defense"
+    "url": "/api/2014/features/fighter-fighting-style-defense",
+    "icon": "sgi-179"
   },
   {
     "index": "fighter-fighting-style-dueling",
@@ -3553,7 +3680,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/fighter-fighting-style-dueling"
+    "url": "/api/2014/features/fighter-fighting-style-dueling",
+    "icon": "skl-gray-03"
   },
   {
     "index": "fighter-fighting-style-great-weapon-fighting",
@@ -3586,7 +3714,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/fighter-fighting-style-great-weapon-fighting"
+    "url": "/api/2014/features/fighter-fighting-style-great-weapon-fighting",
+    "icon": "skl-yellow-29"
   },
   {
     "index": "fighter-fighting-style-protection",
@@ -3620,7 +3749,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/fighter-fighting-style-protection"
+    "url": "/api/2014/features/fighter-fighting-style-protection",
+    "icon": "skl-blue-20"
   },
   {
     "index": "fighter-fighting-style-two-weapon-fighting",
@@ -3653,7 +3783,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/fighter-fighting-style-two-weapon-fighting"
+    "url": "/api/2014/features/fighter-fighting-style-two-weapon-fighting",
+    "icon": "03-45"
   },
   {
     "index": "second-wind",
@@ -3681,7 +3812,8 @@
         "add_class_level": true
       }
     },
-    "url": "/api/2014/features/second-wind"
+    "url": "/api/2014/features/second-wind",
+    "icon": "skl-red-17"
   },
   {
     "index": "action-surge-1-use",
@@ -3706,7 +3838,8 @@
         }
       }
     },
-    "url": "/api/2014/features/action-surge-1-use"
+    "url": "/api/2014/features/action-surge-1-use",
+    "icon": "skl-yellow-09"
   },
   {
     "index": "martial-archetype",
@@ -3721,7 +3854,8 @@
     "desc": [
       "At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques, such as Champion. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."
     ],
-    "url": "/api/2014/features/martial-archetype"
+    "url": "/api/2014/features/martial-archetype",
+    "icon": "blb-91"
   },
   {
     "index": "improved-critical",
@@ -3753,7 +3887,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/improved-critical"
+    "url": "/api/2014/features/improved-critical",
+    "icon": "04-11"
   },
   {
     "index": "fighter-ability-score-improvement-1",
@@ -3771,7 +3906,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/fighter-ability-score-improvement-1"
+    "url": "/api/2014/features/fighter-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "extra-attack-1",
@@ -3797,7 +3933,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/extra-attack-1"
+    "url": "/api/2014/features/extra-attack-1",
+    "icon": "skl-blue-12"
   },
   {
     "index": "fighter-ability-score-improvement-2",
@@ -3815,7 +3952,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/fighter-ability-score-improvement-2"
+    "url": "/api/2014/features/fighter-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "remarkable-athlete",
@@ -3850,7 +3988,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/remarkable-athlete"
+    "url": "/api/2014/features/remarkable-athlete",
+    "icon": "sgi-126"
   },
   {
     "index": "martial-archetype-improvement-1",
@@ -3865,7 +4004,8 @@
     "desc": [
       "At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques, such as Champion. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."
     ],
-    "url": "/api/2014/features/martial-archetype-improvement-1"
+    "url": "/api/2014/features/martial-archetype-improvement-1",
+    "icon": "blb-91"
   },
   {
     "index": "fighter-ability-score-improvement-3",
@@ -3883,7 +4023,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/fighter-ability-score-improvement-3"
+    "url": "/api/2014/features/fighter-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "indomitable-1-use",
@@ -3914,7 +4055,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/indomitable-1-use"
+    "url": "/api/2014/features/indomitable-1-use",
+    "icon": "skl-violet-16"
   },
   {
     "index": "additional-fighting-style",
@@ -3993,7 +4135,8 @@
         }
       }
     },
-    "url": "/api/2014/features/additional-fighting-style"
+    "url": "/api/2014/features/additional-fighting-style",
+    "icon": "sgi-171"
   },
   {
     "index": "martial-archetype-improvement-2",
@@ -4008,7 +4151,8 @@
     "desc": [
       "At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques, such as Champion. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."
     ],
-    "url": "/api/2014/features/martial-archetype-improvement-2"
+    "url": "/api/2014/features/martial-archetype-improvement-2",
+    "icon": "blb-91"
   },
   {
     "index": "extra-attack-2",
@@ -4034,7 +4178,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/extra-attack-2"
+    "url": "/api/2014/features/extra-attack-2",
+    "icon": "skl-blue-12"
   },
   {
     "index": "fighter-ability-score-improvement-4",
@@ -4052,7 +4197,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/fighter-ability-score-improvement-4"
+    "url": "/api/2014/features/fighter-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "indomitable-2-uses",
@@ -4083,7 +4229,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/indomitable-2-uses"
+    "url": "/api/2014/features/indomitable-2-uses",
+    "icon": "skl-violet-16"
   },
   {
     "index": "fighter-ability-score-improvement-5",
@@ -4101,7 +4248,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/fighter-ability-score-improvement-5"
+    "url": "/api/2014/features/fighter-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "superior-critical",
@@ -4133,7 +4281,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/superior-critical"
+    "url": "/api/2014/features/superior-critical",
+    "icon": "04-11"
   },
   {
     "index": "martial-archetype-improvement-3",
@@ -4148,7 +4297,8 @@
     "desc": [
       "At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques, such as Champion. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."
     ],
-    "url": "/api/2014/features/martial-archetype-improvement-3"
+    "url": "/api/2014/features/martial-archetype-improvement-3",
+    "icon": "blb-91"
   },
   {
     "index": "fighter-ability-score-improvement-6",
@@ -4166,7 +4316,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/fighter-ability-score-improvement-6"
+    "url": "/api/2014/features/fighter-ability-score-improvement-6",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "action-surge-2-uses",
@@ -4191,7 +4342,8 @@
         }
       }
     },
-    "url": "/api/2014/features/action-surge-2-uses"
+    "url": "/api/2014/features/action-surge-2-uses",
+    "icon": "skl-yellow-09"
   },
   {
     "index": "indomitable-3-uses",
@@ -4222,7 +4374,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/indomitable-3-uses"
+    "url": "/api/2014/features/indomitable-3-uses",
+    "icon": "skl-violet-16"
   },
   {
     "index": "martial-archetype-improvement-4",
@@ -4237,7 +4390,8 @@
     "desc": [
       "At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques, such as Champion. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level."
     ],
-    "url": "/api/2014/features/martial-archetype-improvement-4"
+    "url": "/api/2014/features/martial-archetype-improvement-4",
+    "icon": "blb-91"
   },
   {
     "index": "survivor",
@@ -4263,7 +4417,8 @@
         "ability_modifier": "con"
       }
     },
-    "url": "/api/2014/features/survivor"
+    "url": "/api/2014/features/survivor",
+    "icon": "skl-red-35"
   },
   {
     "index": "fighter-ability-score-improvement-7",
@@ -4281,7 +4436,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/fighter-ability-score-improvement-7"
+    "url": "/api/2014/features/fighter-ability-score-improvement-7",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "extra-attack-3",
@@ -4307,7 +4463,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/extra-attack-3"
+    "url": "/api/2014/features/extra-attack-3",
+    "icon": "skl-blue-12"
   },
   {
     "index": "monk-unarmored-defense",
@@ -4335,7 +4492,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/monk-unarmored-defense"
+    "url": "/api/2014/features/monk-unarmored-defense",
+    "icon": "04-87"
   },
   {
     "index": "martial-arts",
@@ -4404,7 +4562,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/martial-arts"
+    "url": "/api/2014/features/martial-arts",
+    "icon": "04-62"
   },
   {
     "index": "ki",
@@ -4530,7 +4689,8 @@
         }
       }
     },
-    "url": "/api/2014/features/ki"
+    "url": "/api/2014/features/ki",
+    "icon": "skl-blue-11"
   },
   {
     "index": "flurry-of-blows",
@@ -4563,7 +4723,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/flurry-of-blows"
+    "url": "/api/2014/features/flurry-of-blows",
+    "icon": "03-54"
   },
   {
     "index": "patient-defense",
@@ -4591,7 +4752,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/patient-defense"
+    "url": "/api/2014/features/patient-defense",
+    "icon": "blb-31"
   },
   {
     "index": "step-of-the-wind",
@@ -4621,7 +4783,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/step-of-the-wind"
+    "url": "/api/2014/features/step-of-the-wind",
+    "icon": "skl-blue-41"
   },
   {
     "index": "unarmored-movement-1",
@@ -4677,7 +4840,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/unarmored-movement-1"
+    "url": "/api/2014/features/unarmored-movement-1",
+    "icon": "skl-blue-05"
   },
   {
     "index": "monastic-tradition",
@@ -4692,7 +4856,8 @@
     "desc": [
       "When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
     ],
-    "url": "/api/2014/features/monastic-tradition"
+    "url": "/api/2014/features/monastic-tradition",
+    "icon": "04-99"
   },
   {
     "index": "deflect-missiles",
@@ -4722,7 +4887,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/deflect-missiles"
+    "url": "/api/2014/features/deflect-missiles",
+    "icon": "06-04"
   },
   {
     "index": "open-hand-technique",
@@ -4780,7 +4946,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/open-hand-technique"
+    "url": "/api/2014/features/open-hand-technique",
+    "icon": "skl-gray-10"
   },
   {
     "index": "monk-ability-score-improvement-1",
@@ -4798,7 +4965,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/monk-ability-score-improvement-1"
+    "url": "/api/2014/features/monk-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "slow-fall",
@@ -4825,7 +4993,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/slow-fall"
+    "url": "/api/2014/features/slow-fall",
+    "icon": "04-32"
   },
   {
     "index": "monk-extra-attack",
@@ -4851,7 +5020,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/monk-extra-attack"
+    "url": "/api/2014/features/monk-extra-attack",
+    "icon": "skl-blue-12"
   },
   {
     "index": "stunning-strike",
@@ -4889,7 +5059,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/stunning-strike"
+    "url": "/api/2014/features/stunning-strike",
+    "icon": "04-33"
   },
   {
     "index": "ki-empowered-strikes",
@@ -4915,7 +5086,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/ki-empowered-strikes"
+    "url": "/api/2014/features/ki-empowered-strikes",
+    "icon": "skl-violet-29"
   },
   {
     "index": "monastic-tradition-improvement-1",
@@ -4930,7 +5102,8 @@
     "desc": [
       "When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
     ],
-    "url": "/api/2014/features/monastic-tradition-improvement-1"
+    "url": "/api/2014/features/monastic-tradition-improvement-1",
+    "icon": "04-99"
   },
   {
     "index": "wholeness-of-body",
@@ -4962,7 +5135,8 @@
         "class_level_multiplier": 3
       }
     },
-    "url": "/api/2014/features/wholeness-of-body"
+    "url": "/api/2014/features/wholeness-of-body",
+    "icon": "09-99"
   },
   {
     "index": "monk-evasion",
@@ -4988,7 +5162,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/monk-evasion"
+    "url": "/api/2014/features/monk-evasion",
+    "icon": "skl-emerald-09"
   },
   {
     "index": "stillness-of-mind",
@@ -5014,7 +5189,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/stillness-of-mind"
+    "url": "/api/2014/features/stillness-of-mind",
+    "icon": "04-47"
   },
   {
     "index": "monk-ability-score-improvement-2",
@@ -5032,7 +5208,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/monk-ability-score-improvement-2"
+    "url": "/api/2014/features/monk-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "unarmored-movement-2",
@@ -5048,7 +5225,8 @@
       "Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in Table: The Monk.",
       "At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move."
     ],
-    "url": "/api/2014/features/unarmored-movement-2"
+    "url": "/api/2014/features/unarmored-movement-2",
+    "icon": "skl-blue-05"
   },
   {
     "index": "purity-of-body",
@@ -5079,7 +5257,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/purity-of-body"
+    "url": "/api/2014/features/purity-of-body",
+    "icon": "04-50"
   },
   {
     "index": "monastic-tradition-improvement-2",
@@ -5094,7 +5273,8 @@
     "desc": [
       "When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
     ],
-    "url": "/api/2014/features/monastic-tradition-improvement-2"
+    "url": "/api/2014/features/monastic-tradition-improvement-2",
+    "icon": "04-99"
   },
   {
     "index": "tranquility",
@@ -5130,7 +5310,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/tranquility"
+    "url": "/api/2014/features/tranquility",
+    "icon": "09-101"
   },
   {
     "index": "monk-ability-score-improvement-3",
@@ -5148,7 +5329,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/monk-ability-score-improvement-3"
+    "url": "/api/2014/features/monk-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "tongue-of-the-sun-and-moon",
@@ -5163,7 +5345,8 @@
     "desc": [
       "Starting at 13th level, you learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say."
     ],
-    "url": "/api/2014/features/tongue-of-the-sun-and-moon"
+    "url": "/api/2014/features/tongue-of-the-sun-and-moon",
+    "icon": "07-05"
   },
   {
     "index": "diamond-soul",
@@ -5227,7 +5410,8 @@
         }
       ]
     },
-    "url": "/api/2014/features/diamond-soul"
+    "url": "/api/2014/features/diamond-soul",
+    "icon": "nec-11"
   },
   {
     "index": "monk-timeless-body",
@@ -5242,7 +5426,8 @@
     "desc": [
       "At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water."
     ],
-    "url": "/api/2014/features/monk-timeless-body"
+    "url": "/api/2014/features/monk-timeless-body",
+    "icon": "07-53"
   },
   {
     "index": "monk-ability-score-improvement-4",
@@ -5260,7 +5445,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/monk-ability-score-improvement-4"
+    "url": "/api/2014/features/monk-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "monastic-tradition-improvement-3",
@@ -5275,7 +5461,8 @@
     "desc": [
       "When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
     ],
-    "url": "/api/2014/features/monastic-tradition-improvement-3"
+    "url": "/api/2014/features/monastic-tradition-improvement-3",
+    "icon": "04-99"
   },
   {
     "index": "quivering-palm",
@@ -5296,7 +5483,8 @@
       "At 17th level, you gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.",
       "You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action."
     ],
-    "url": "/api/2014/features/quivering-palm"
+    "url": "/api/2014/features/quivering-palm",
+    "icon": "06-85"
   },
   {
     "index": "empty-body",
@@ -5342,7 +5530,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/empty-body"
+    "url": "/api/2014/features/empty-body",
+    "icon": "skl-blue-37"
   },
   {
     "index": "monk-ability-score-improvement-5",
@@ -5360,7 +5549,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/monk-ability-score-improvement-5"
+    "url": "/api/2014/features/monk-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "perfect-self",
@@ -5388,7 +5578,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/perfect-self"
+    "url": "/api/2014/features/perfect-self",
+    "icon": "skl-yellow-44"
   },
   {
     "index": "divine-sense",
@@ -5414,7 +5605,8 @@
         }
       }
     },
-    "url": "/api/2014/features/divine-sense"
+    "url": "/api/2014/features/divine-sense",
+    "icon": "sgi-94"
   },
   {
     "index": "lay-on-hands",
@@ -5445,7 +5637,8 @@
         "from_uses": true
       }
     },
-    "url": "/api/2014/features/lay-on-hands"
+    "url": "/api/2014/features/lay-on-hands",
+    "icon": "skl-yellow-11"
   },
   {
     "index": "paladin-fighting-style",
@@ -5503,7 +5696,8 @@
         }
       }
     },
-    "url": "/api/2014/features/paladin-fighting-style"
+    "url": "/api/2014/features/paladin-fighting-style",
+    "icon": "sgi-171"
   },
   {
     "index": "fighting-style-defense",
@@ -5534,7 +5728,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/fighting-style-defense"
+    "url": "/api/2014/features/fighting-style-defense",
+    "icon": "sgi-179"
   },
   {
     "index": "fighting-style-dueling",
@@ -5568,7 +5763,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/fighting-style-dueling"
+    "url": "/api/2014/features/fighting-style-dueling",
+    "icon": "skl-gray-03"
   },
   {
     "index": "fighting-style-great-weapon-fighting",
@@ -5601,7 +5797,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/fighting-style-great-weapon-fighting"
+    "url": "/api/2014/features/fighting-style-great-weapon-fighting",
+    "icon": "skl-yellow-29"
   },
   {
     "index": "fighting-style-protection",
@@ -5635,7 +5832,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/fighting-style-protection"
+    "url": "/api/2014/features/fighting-style-protection",
+    "icon": "skl-blue-20"
   },
   {
     "index": "spellcasting-paladin",
@@ -5651,7 +5849,8 @@
       "By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does."
     ],
     "reference": "/api/2014/classes/paladin/spellcasting",
-    "url": "/api/2014/features/spellcasting-paladin"
+    "url": "/api/2014/features/spellcasting-paladin",
+    "icon": "sgi-21"
   },
   {
     "index": "divine-smite",
@@ -5697,7 +5896,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/divine-smite"
+    "url": "/api/2014/features/divine-smite",
+    "icon": "01-67"
   },
   {
     "index": "divine-health",
@@ -5721,7 +5921,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/divine-health"
+    "url": "/api/2014/features/divine-health",
+    "icon": "08-73"
   },
   {
     "index": "sacred-oath",
@@ -5737,7 +5938,8 @@
       "When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.",
       "Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature."
     ],
-    "url": "/api/2014/features/sacred-oath"
+    "url": "/api/2014/features/sacred-oath",
+    "icon": "blb-77"
   },
   {
     "index": "oath-spells",
@@ -5753,7 +5955,8 @@
       "Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.",
       "If you gain an oath spell that doesn't appear on the paladin spell list, the spell is nonetheless a paladin spell for you."
     ],
-    "url": "/api/2014/features/oath-spells"
+    "url": "/api/2014/features/oath-spells",
+    "icon": "blb-68"
   },
   {
     "index": "channel-divinity",
@@ -5779,7 +5982,8 @@
         }
       }
     },
-    "url": "/api/2014/features/channel-divinity"
+    "url": "/api/2014/features/channel-divinity",
+    "icon": "06-52"
   },
   {
     "index": "channel-divinity-sacred-weapon",
@@ -5820,7 +6024,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/channel-divinity-sacred-weapon"
+    "url": "/api/2014/features/channel-divinity-sacred-weapon",
+    "icon": "01-25"
   },
   {
     "index": "channel-divinity-turn-the-unholy",
@@ -5865,7 +6070,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/channel-divinity-turn-the-unholy"
+    "url": "/api/2014/features/channel-divinity-turn-the-unholy",
+    "icon": "01-12"
   },
   {
     "index": "paladin-ability-score-improvement-1",
@@ -5883,7 +6089,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/paladin-ability-score-improvement-1"
+    "url": "/api/2014/features/paladin-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "paladin-extra-attack",
@@ -5909,7 +6116,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/paladin-extra-attack"
+    "url": "/api/2014/features/paladin-extra-attack",
+    "icon": "skl-blue-12"
   },
   {
     "index": "aura-of-protection",
@@ -5943,7 +6151,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/aura-of-protection"
+    "url": "/api/2014/features/aura-of-protection",
+    "icon": "skl-blue-35"
   },
   {
     "index": "sacred-oath-improvement-1",
@@ -5959,7 +6168,8 @@
       "When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.",
       "Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature."
     ],
-    "url": "/api/2014/features/sacred-oath-improvement-1"
+    "url": "/api/2014/features/sacred-oath-improvement-1",
+    "icon": "blb-77"
   },
   {
     "index": "aura-of-devotion",
@@ -5996,7 +6206,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/aura-of-devotion"
+    "url": "/api/2014/features/aura-of-devotion",
+    "icon": "04-93"
   },
   {
     "index": "paladin-ability-score-improvement-2",
@@ -6014,7 +6225,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/paladin-ability-score-improvement-2"
+    "url": "/api/2014/features/paladin-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "aura-of-courage",
@@ -6046,7 +6258,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/aura-of-courage"
+    "url": "/api/2014/features/aura-of-courage",
+    "icon": "sgi-178"
   },
   {
     "index": "improved-divine-smite",
@@ -6075,7 +6288,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/improved-divine-smite"
+    "url": "/api/2014/features/improved-divine-smite",
+    "icon": "01-67"
   },
   {
     "index": "paladin-ability-score-improvement-3",
@@ -6093,7 +6307,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/paladin-ability-score-improvement-3"
+    "url": "/api/2014/features/paladin-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "cleansing-touch",
@@ -6126,7 +6341,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/cleansing-touch"
+    "url": "/api/2014/features/cleansing-touch",
+    "icon": "06-68"
   },
   {
     "index": "sacred-oath-improvement-2",
@@ -6142,7 +6358,8 @@
       "When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.",
       "Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature."
     ],
-    "url": "/api/2014/features/sacred-oath-improvement-2"
+    "url": "/api/2014/features/sacred-oath-improvement-2",
+    "icon": "blb-77"
   },
   {
     "index": "purity-of-spirit",
@@ -6182,7 +6399,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/purity-of-spirit"
+    "url": "/api/2014/features/purity-of-spirit",
+    "icon": "09-90"
   },
   {
     "index": "paladin-ability-score-improvement-4",
@@ -6200,7 +6418,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/paladin-ability-score-improvement-4"
+    "url": "/api/2014/features/paladin-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "aura-improvements",
@@ -6213,7 +6432,8 @@
     "level": 18,
     "prerequisites": [],
     "desc": ["At 18th level, the range of your auras increase to 30 feet."],
-    "url": "/api/2014/features/aura-improvements"
+    "url": "/api/2014/features/aura-improvements",
+    "icon": "skl-blue-35"
   },
   {
     "index": "paladin-ability-score-improvement-5",
@@ -6231,7 +6451,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/paladin-ability-score-improvement-5"
+    "url": "/api/2014/features/paladin-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "sacred-oath-improvement-3",
@@ -6247,7 +6468,8 @@
       "When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.",
       "Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature."
     ],
-    "url": "/api/2014/features/sacred-oath-improvement-3"
+    "url": "/api/2014/features/sacred-oath-improvement-3",
+    "icon": "blb-77"
   },
   {
     "index": "holy-nimbus",
@@ -6300,7 +6522,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/holy-nimbus"
+    "url": "/api/2014/features/holy-nimbus",
+    "icon": "08-09"
   },
   {
     "index": "favored-enemy-1-type",
@@ -6351,7 +6574,8 @@
         }
       ]
     },
-    "url": "/api/2014/features/favored-enemy-1-type"
+    "url": "/api/2014/features/favored-enemy-1-type",
+    "icon": "04-70"
   },
   {
     "index": "natural-explorer-1-terrain-type",
@@ -6385,7 +6609,8 @@
         }
       }
     },
-    "url": "/api/2014/features/natural-explorer-1-terrain-type"
+    "url": "/api/2014/features/natural-explorer-1-terrain-type",
+    "icon": "loot-map_01"
   },
   {
     "index": "ranger-fighting-style",
@@ -6443,7 +6668,8 @@
         }
       }
     },
-    "url": "/api/2014/features/ranger-fighting-style"
+    "url": "/api/2014/features/ranger-fighting-style",
+    "icon": "sgi-171"
   },
   {
     "index": "ranger-fighting-style-archery",
@@ -6474,7 +6700,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/ranger-fighting-style-archery"
+    "url": "/api/2014/features/ranger-fighting-style-archery",
+    "icon": "skl-green-01"
   },
   {
     "index": "ranger-fighting-style-defense",
@@ -6505,7 +6732,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/ranger-fighting-style-defense"
+    "url": "/api/2014/features/ranger-fighting-style-defense",
+    "icon": "sgi-179"
   },
   {
     "index": "ranger-fighting-style-dueling",
@@ -6539,7 +6767,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/ranger-fighting-style-dueling"
+    "url": "/api/2014/features/ranger-fighting-style-dueling",
+    "icon": "skl-gray-03"
   },
   {
     "index": "ranger-fighting-style-two-weapon-fighting",
@@ -6572,7 +6801,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/ranger-fighting-style-two-weapon-fighting"
+    "url": "/api/2014/features/ranger-fighting-style-two-weapon-fighting",
+    "icon": "03-45"
   },
   {
     "index": "spellcasting-ranger",
@@ -6588,7 +6818,8 @@
       "By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does."
     ],
     "reference": "/api/2014/classes/ranger/spellcasting",
-    "url": "/api/2014/features/spellcasting-ranger"
+    "url": "/api/2014/features/spellcasting-ranger",
+    "icon": "04-42"
   },
   {
     "index": "ranger-archetype",
@@ -6603,7 +6834,8 @@
     "desc": [
       "At 3rd level, you choose an archetype that you strive to emulate, such as the Hunter. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
     ],
-    "url": "/api/2014/features/ranger-archetype"
+    "url": "/api/2014/features/ranger-archetype",
+    "icon": "04-29"
   },
   {
     "index": "hunters-prey",
@@ -6661,7 +6893,8 @@
         }
       }
     },
-    "url": "/api/2014/features/hunters-prey"
+    "url": "/api/2014/features/hunters-prey",
+    "icon": "04-76"
   },
   {
     "index": "hunters-prey-colossus-slayer",
@@ -6704,7 +6937,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/hunters-prey-colossus-slayer"
+    "url": "/api/2014/features/hunters-prey-colossus-slayer",
+    "icon": "04-13"
   },
   {
     "index": "hunters-prey-giant-killer",
@@ -6742,7 +6976,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/hunters-prey-giant-killer"
+    "url": "/api/2014/features/hunters-prey-giant-killer",
+    "icon": "07-12"
   },
   {
     "index": "hunters-prey-horde-breaker",
@@ -6783,7 +7018,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/hunters-prey-horde-breaker"
+    "url": "/api/2014/features/hunters-prey-horde-breaker",
+    "icon": "03-87"
   },
   {
     "index": "primeval-awareness",
@@ -6806,7 +7042,8 @@
         }
       }
     },
-    "url": "/api/2014/features/primeval-awareness"
+    "url": "/api/2014/features/primeval-awareness",
+    "icon": "sgi-45"
   },
   {
     "index": "ranger-ability-score-improvement-1",
@@ -6824,7 +7061,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/ranger-ability-score-improvement-1"
+    "url": "/api/2014/features/ranger-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "ranger-extra-attack",
@@ -6850,7 +7088,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/ranger-extra-attack"
+    "url": "/api/2014/features/ranger-extra-attack",
+    "icon": "skl-blue-12"
   },
   {
     "index": "favored-enemy-2-types",
@@ -6901,7 +7140,8 @@
         }
       ]
     },
-    "url": "/api/2014/features/favored-enemy-2-types"
+    "url": "/api/2014/features/favored-enemy-2-types",
+    "icon": "04-70"
   },
   {
     "index": "natural-explorer-2-terrain-types",
@@ -6935,7 +7175,8 @@
         }
       }
     },
-    "url": "/api/2014/features/natural-explorer-2-terrain-types"
+    "url": "/api/2014/features/natural-explorer-2-terrain-types",
+    "icon": "loot-map_01"
   },
   {
     "index": "ranger-archetype-improvement-1",
@@ -6950,7 +7191,8 @@
     "desc": [
       "At 3rd level, you choose an archetype that you strive to emulate, such as the Hunter. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
     ],
-    "url": "/api/2014/features/ranger-archetype-improvement-1"
+    "url": "/api/2014/features/ranger-archetype-improvement-1",
+    "icon": "04-29"
   },
   {
     "index": "defensive-tactics",
@@ -7008,7 +7250,8 @@
         }
       }
     },
-    "url": "/api/2014/features/defensive-tactics"
+    "url": "/api/2014/features/defensive-tactics",
+    "icon": "04-17"
   },
   {
     "index": "defensive-tactics-escape-the-horde",
@@ -7044,7 +7287,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/defensive-tactics-escape-the-horde"
+    "url": "/api/2014/features/defensive-tactics-escape-the-horde",
+    "icon": "04-38"
   },
   {
     "index": "defensive-tactics-multiattack-defense",
@@ -7082,7 +7326,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/defensive-tactics-multiattack-defense"
+    "url": "/api/2014/features/defensive-tactics-multiattack-defense",
+    "icon": "04-86"
   },
   {
     "index": "defensive-tactics-steel-will",
@@ -7118,7 +7363,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/defensive-tactics-steel-will"
+    "url": "/api/2014/features/defensive-tactics-steel-will",
+    "icon": "09-38"
   },
   {
     "index": "ranger-ability-score-improvement-2",
@@ -7136,7 +7382,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/ranger-ability-score-improvement-2"
+    "url": "/api/2014/features/ranger-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "ranger-lands-stride",
@@ -7152,7 +7399,8 @@
       "Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.",
       "In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell."
     ],
-    "url": "/api/2014/features/ranger-lands-stride"
+    "url": "/api/2014/features/ranger-lands-stride",
+    "icon": "skl-green-02"
   },
   {
     "index": "natural-explorer-3-terrain-types",
@@ -7186,7 +7434,8 @@
         }
       }
     },
-    "url": "/api/2014/features/natural-explorer-3-terrain-types"
+    "url": "/api/2014/features/natural-explorer-3-terrain-types",
+    "icon": "loot-map_01"
   },
   {
     "index": "hide-in-plain-sight",
@@ -7202,7 +7451,8 @@
       "Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.",
       "Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit."
     ],
-    "url": "/api/2014/features/hide-in-plain-sight"
+    "url": "/api/2014/features/hide-in-plain-sight",
+    "icon": "04-21"
   },
   {
     "index": "ranger-archetype-improvement-2",
@@ -7217,7 +7467,8 @@
     "desc": [
       "At 3rd level, you choose an archetype that you strive to emulate, such as the Hunter. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
     ],
-    "url": "/api/2014/features/ranger-archetype-improvement-2"
+    "url": "/api/2014/features/ranger-archetype-improvement-2",
+    "icon": "04-29"
   },
   {
     "index": "multiattack",
@@ -7266,7 +7517,8 @@
         }
       }
     },
-    "url": "/api/2014/features/multiattack"
+    "url": "/api/2014/features/multiattack",
+    "icon": "09-72"
   },
   {
     "index": "multiattack-volley",
@@ -7291,7 +7543,8 @@
       "name": "Multiattack",
       "url": "/api/2014/features/multiattack"
     },
-    "url": "/api/2014/features/multiattack-volley"
+    "url": "/api/2014/features/multiattack-volley",
+    "icon": "04-40"
   },
   {
     "index": "multiattack-whirlwind-attack",
@@ -7316,7 +7569,8 @@
       "name": "Multiattack",
       "url": "/api/2014/features/multiattack"
     },
-    "url": "/api/2014/features/multiattack-whirlwind-attack"
+    "url": "/api/2014/features/multiattack-whirlwind-attack",
+    "icon": "skl-gray-04"
   },
   {
     "index": "ranger-ability-score-improvement-3",
@@ -7334,7 +7588,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/ranger-ability-score-improvement-3"
+    "url": "/api/2014/features/ranger-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "favored-enemy-3-enemies",
@@ -7385,7 +7640,8 @@
         }
       ]
     },
-    "url": "/api/2014/features/favored-enemy-3-enemies"
+    "url": "/api/2014/features/favored-enemy-3-enemies",
+    "icon": "04-70"
   },
   {
     "index": "vanish",
@@ -7411,7 +7667,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/vanish"
+    "url": "/api/2014/features/vanish",
+    "icon": "skl-blue-39"
   },
   {
     "index": "ranger-archetype-improvement-3",
@@ -7426,7 +7683,8 @@
     "desc": [
       "At 3rd level, you choose an archetype that you strive to emulate, such as the Hunter. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level."
     ],
-    "url": "/api/2014/features/ranger-archetype-improvement-3"
+    "url": "/api/2014/features/ranger-archetype-improvement-3",
+    "icon": "04-29"
   },
   {
     "index": "superior-hunters-defense",
@@ -7484,7 +7742,8 @@
         }
       }
     },
-    "url": "/api/2014/features/superior-hunters-defense"
+    "url": "/api/2014/features/superior-hunters-defense",
+    "icon": "blb-71"
   },
   {
     "index": "superior-hunters-defense-evasion",
@@ -7520,7 +7779,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/superior-hunters-defense-evasion"
+    "url": "/api/2014/features/superior-hunters-defense-evasion",
+    "icon": "skl-emerald-09"
   },
   {
     "index": "superior-hunters-defense-stand-against-the-tide",
@@ -7550,7 +7810,8 @@
         "action_cost": "reaction"
       }
     },
-    "url": "/api/2014/features/superior-hunters-defense-stand-against-the-tide"
+    "url": "/api/2014/features/superior-hunters-defense-stand-against-the-tide",
+    "icon": "skl-blue-27"
   },
   {
     "index": "superior-hunters-defense-uncanny-dodge",
@@ -7586,7 +7847,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/superior-hunters-defense-uncanny-dodge"
+    "url": "/api/2014/features/superior-hunters-defense-uncanny-dodge",
+    "icon": "sgi-36"
   },
   {
     "index": "ranger-ability-score-improvement-4",
@@ -7604,7 +7866,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/ranger-ability-score-improvement-4"
+    "url": "/api/2014/features/ranger-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "feral-senses",
@@ -7620,7 +7883,8 @@
       "At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it.",
       "You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened."
     ],
-    "url": "/api/2014/features/feral-senses"
+    "url": "/api/2014/features/feral-senses",
+    "icon": "skl-blue-28"
   },
   {
     "index": "ranger-ability-score-improvement-5",
@@ -7638,7 +7902,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/ranger-ability-score-improvement-5"
+    "url": "/api/2014/features/ranger-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "foe-slayer",
@@ -7678,7 +7943,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/foe-slayer"
+    "url": "/api/2014/features/foe-slayer",
+    "icon": "06-73"
   },
   {
     "index": "rogue-expertise-1",
@@ -7857,7 +8123,8 @@
         }
       }
     },
-    "url": "/api/2014/features/rogue-expertise-1"
+    "url": "/api/2014/features/rogue-expertise-1",
+    "icon": "skl-yellow-36"
   },
   {
     "index": "sneak-attack",
@@ -7944,7 +8211,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/sneak-attack"
+    "url": "/api/2014/features/sneak-attack",
+    "icon": "03-33"
   },
   {
     "index": "thieves-cant",
@@ -7967,7 +8235,8 @@
         }
       ]
     },
-    "url": "/api/2014/features/thieves-cant"
+    "url": "/api/2014/features/thieves-cant",
+    "icon": "loot-letters_01"
   },
   {
     "index": "cunning-action",
@@ -7993,7 +8262,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/cunning-action"
+    "url": "/api/2014/features/cunning-action",
+    "icon": "skl-violet-08"
   },
   {
     "index": "roguish-archetype",
@@ -8008,7 +8278,8 @@
     "desc": [
       "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities, such as Thief. Additional archetypes are available in the original source material. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
     ],
-    "url": "/api/2014/features/roguish-archetype"
+    "url": "/api/2014/features/roguish-archetype",
+    "icon": "skl-violet-02"
   },
   {
     "index": "fast-hands",
@@ -8039,7 +8310,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/fast-hands"
+    "url": "/api/2014/features/fast-hands",
+    "icon": "skl-yellow-35"
   },
   {
     "index": "second-story-work",
@@ -8060,7 +8332,8 @@
       "When you choose this archetype at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.",
       "In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier."
     ],
-    "url": "/api/2014/features/second-story-work"
+    "url": "/api/2014/features/second-story-work",
+    "icon": "skl-blue-25"
   },
   {
     "index": "rogue-ability-score-improvement-1",
@@ -8078,7 +8351,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/rogue-ability-score-improvement-1"
+    "url": "/api/2014/features/rogue-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "uncanny-dodge",
@@ -8104,7 +8378,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/uncanny-dodge"
+    "url": "/api/2014/features/uncanny-dodge",
+    "icon": "sgi-36"
   },
   {
     "index": "rogue-expertise-2",
@@ -8283,7 +8558,8 @@
         }
       }
     },
-    "url": "/api/2014/features/rogue-expertise-2"
+    "url": "/api/2014/features/rogue-expertise-2",
+    "icon": "skl-yellow-36"
   },
   {
     "index": "rogue-evasion",
@@ -8309,7 +8585,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/rogue-evasion"
+    "url": "/api/2014/features/rogue-evasion",
+    "icon": "skl-emerald-09"
   },
   {
     "index": "rogue-ability-score-improvement-2",
@@ -8327,7 +8604,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/rogue-ability-score-improvement-2"
+    "url": "/api/2014/features/rogue-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "roguish-archetype-improvement-1",
@@ -8342,7 +8620,8 @@
     "desc": [
       "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities, such as Thief. Additional archetypes are available in the original source material. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
     ],
-    "url": "/api/2014/features/roguish-archetype-improvement-1"
+    "url": "/api/2014/features/roguish-archetype-improvement-1",
+    "icon": "skl-violet-02"
   },
   {
     "index": "supreme-sneak",
@@ -8377,7 +8656,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/supreme-sneak"
+    "url": "/api/2014/features/supreme-sneak",
+    "icon": "skl-gray-12"
   },
   {
     "index": "rogue-ability-score-improvement-3",
@@ -8395,7 +8675,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/rogue-ability-score-improvement-3"
+    "url": "/api/2014/features/rogue-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "reliable-talent",
@@ -8423,7 +8704,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/reliable-talent"
+    "url": "/api/2014/features/reliable-talent",
+    "icon": "loot-dice_01"
   },
   {
     "index": "rogue-ability-score-improvement-4",
@@ -8441,7 +8723,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/rogue-ability-score-improvement-4"
+    "url": "/api/2014/features/rogue-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "roguish-archetype-improvement-2",
@@ -8456,7 +8739,8 @@
     "desc": [
       "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities, such as Thief. Additional archetypes are available in the original source material. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
     ],
-    "url": "/api/2014/features/roguish-archetype-improvement-2"
+    "url": "/api/2014/features/roguish-archetype-improvement-2",
+    "icon": "skl-violet-02"
   },
   {
     "index": "use-magic-device",
@@ -8476,7 +8760,8 @@
     "desc": [
       "By 13th level, you have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of magic items."
     ],
-    "url": "/api/2014/features/use-magic-device"
+    "url": "/api/2014/features/use-magic-device",
+    "icon": "loot-scroll_01"
   },
   {
     "index": "blindsense",
@@ -8491,7 +8776,8 @@
     "desc": [
       "Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you."
     ],
-    "url": "/api/2014/features/blindsense"
+    "url": "/api/2014/features/blindsense",
+    "icon": "loot-eyes_02"
   },
   {
     "index": "slippery-mind",
@@ -8515,7 +8801,8 @@
         }
       ]
     },
-    "url": "/api/2014/features/slippery-mind"
+    "url": "/api/2014/features/slippery-mind",
+    "icon": "loot-brain_01"
   },
   {
     "index": "rogue-ability-score-improvement-5",
@@ -8533,7 +8820,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/rogue-ability-score-improvement-5"
+    "url": "/api/2014/features/rogue-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "roguish-archetype-improvement-3",
@@ -8548,7 +8836,8 @@
     "desc": [
       "At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities, such as Thief. Additional archetypes are available in the original source material. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level."
     ],
-    "url": "/api/2014/features/roguish-archetype-improvement-3"
+    "url": "/api/2014/features/roguish-archetype-improvement-3",
+    "icon": "skl-violet-02"
   },
   {
     "index": "thiefs-reflexes",
@@ -8568,7 +8857,8 @@
     "desc": [
       "When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can't use this feature when you are surprised."
     ],
-    "url": "/api/2014/features/thiefs-reflexes"
+    "url": "/api/2014/features/thiefs-reflexes",
+    "icon": "07-06"
   },
   {
     "index": "elusive",
@@ -8596,7 +8886,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/elusive"
+    "url": "/api/2014/features/elusive",
+    "icon": "01-82"
   },
   {
     "index": "rogue-ability-score-improvement-6",
@@ -8614,7 +8905,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/rogue-ability-score-improvement-6"
+    "url": "/api/2014/features/rogue-ability-score-improvement-6",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "stroke-of-luck",
@@ -8639,7 +8931,8 @@
         }
       }
     },
-    "url": "/api/2014/features/stroke-of-luck"
+    "url": "/api/2014/features/stroke-of-luck",
+    "icon": "03-44"
   },
   {
     "index": "spellcasting-sorcerer",
@@ -8655,7 +8948,8 @@
       "An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells."
     ],
     "reference": "/api/2014/classes/sorcerer/spellcasting",
-    "url": "/api/2014/features/spellcasting-sorcerer"
+    "url": "/api/2014/features/spellcasting-sorcerer",
+    "icon": "skl-violet-01"
   },
   {
     "index": "sorcerous-origin",
@@ -8671,7 +8965,8 @@
       "Choose a sorcerous origin, which describes the source of your innate magical power, such as Draconic Bloodline.",
       "Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level."
     ],
-    "url": "/api/2014/features/sorcerous-origin"
+    "url": "/api/2014/features/sorcerous-origin",
+    "icon": "06-72"
   },
   {
     "index": "dragon-ancestor",
@@ -8783,7 +9078,8 @@
         }
       }
     },
-    "url": "/api/2014/features/dragon-ancestor"
+    "url": "/api/2014/features/dragon-ancestor",
+    "icon": "skl-blue-19"
   },
   {
     "index": "dragon-ancestor-black---acid-damage",
@@ -8819,7 +9115,8 @@
       ],
       "damage_type": "acid"
     },
-    "url": "/api/2014/features/dragon-ancestor-black---acid-damage"
+    "url": "/api/2014/features/dragon-ancestor-black---acid-damage",
+    "icon": "skl-blue-19"
   },
   {
     "index": "dragon-ancestor-blue---lightning-damage",
@@ -8855,7 +9152,8 @@
       ],
       "damage_type": "lightning"
     },
-    "url": "/api/2014/features/dragon-ancestor-blue---lightning-damage"
+    "url": "/api/2014/features/dragon-ancestor-blue---lightning-damage",
+    "icon": "skl-blue-19"
   },
   {
     "index": "dragon-ancestor-brass---fire-damage",
@@ -8891,7 +9189,8 @@
       ],
       "damage_type": "fire"
     },
-    "url": "/api/2014/features/dragon-ancestor-brass---fire-damage"
+    "url": "/api/2014/features/dragon-ancestor-brass---fire-damage",
+    "icon": "skl-blue-19"
   },
   {
     "index": "dragon-ancestor-bronze---lightning-damage",
@@ -8927,7 +9226,8 @@
       ],
       "damage_type": "lightning"
     },
-    "url": "/api/2014/features/dragon-ancestor-bronze---lightning-damage"
+    "url": "/api/2014/features/dragon-ancestor-bronze---lightning-damage",
+    "icon": "skl-blue-19"
   },
   {
     "index": "dragon-ancestor-copper---acid-damage",
@@ -8963,7 +9263,8 @@
       ],
       "damage_type": "acid"
     },
-    "url": "/api/2014/features/dragon-ancestor-copper---acid-damage"
+    "url": "/api/2014/features/dragon-ancestor-copper---acid-damage",
+    "icon": "skl-blue-19"
   },
   {
     "index": "dragon-ancestor-gold---fire-damage",
@@ -8999,7 +9300,8 @@
       ],
       "damage_type": "fire"
     },
-    "url": "/api/2014/features/dragon-ancestor-gold---fire-damage"
+    "url": "/api/2014/features/dragon-ancestor-gold---fire-damage",
+    "icon": "skl-blue-19"
   },
   {
     "index": "dragon-ancestor-green---poison-damage",
@@ -9035,7 +9337,8 @@
       ],
       "damage_type": "poison"
     },
-    "url": "/api/2014/features/dragon-ancestor-green---poison-damage"
+    "url": "/api/2014/features/dragon-ancestor-green---poison-damage",
+    "icon": "skl-blue-19"
   },
   {
     "index": "dragon-ancestor-red---fire-damage",
@@ -9071,7 +9374,8 @@
       ],
       "damage_type": "fire"
     },
-    "url": "/api/2014/features/dragon-ancestor-red---fire-damage"
+    "url": "/api/2014/features/dragon-ancestor-red---fire-damage",
+    "icon": "skl-blue-19"
   },
   {
     "index": "dragon-ancestor-silver---cold-damage",
@@ -9107,7 +9411,8 @@
       ],
       "damage_type": "cold"
     },
-    "url": "/api/2014/features/dragon-ancestor-silver---cold-damage"
+    "url": "/api/2014/features/dragon-ancestor-silver---cold-damage",
+    "icon": "skl-blue-19"
   },
   {
     "index": "dragon-ancestor-white---cold-damage",
@@ -9143,7 +9448,8 @@
       ],
       "damage_type": "cold"
     },
-    "url": "/api/2014/features/dragon-ancestor-white---cold-damage"
+    "url": "/api/2014/features/dragon-ancestor-white---cold-damage",
+    "icon": "skl-blue-19"
   },
   {
     "index": "draconic-resilience",
@@ -9181,7 +9487,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/draconic-resilience"
+    "url": "/api/2014/features/draconic-resilience",
+    "icon": "03-64"
   },
   {
     "index": "font-of-magic",
@@ -9305,7 +9612,8 @@
         }
       }
     },
-    "url": "/api/2014/features/font-of-magic"
+    "url": "/api/2014/features/font-of-magic",
+    "icon": "skl-red-26"
   },
   {
     "index": "flexible-casting-creating-spell-slots",
@@ -9337,7 +9645,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/flexible-casting-creating-spell-slots"
+    "url": "/api/2014/features/flexible-casting-creating-spell-slots",
+    "icon": "09-103"
   },
   {
     "index": "flexible-casting-converting-spell-slot",
@@ -9366,7 +9675,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/flexible-casting-converting-spell-slot"
+    "url": "/api/2014/features/flexible-casting-converting-spell-slot",
+    "icon": "09-104"
   },
   {
     "index": "metamagic-1",
@@ -9457,7 +9767,8 @@
         }
       }
     },
-    "url": "/api/2014/features/metamagic-1"
+    "url": "/api/2014/features/metamagic-1",
+    "icon": "01-56"
   },
   {
     "index": "metamagic-careful-spell",
@@ -9493,7 +9804,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/metamagic-careful-spell"
+    "url": "/api/2014/features/metamagic-careful-spell",
+    "icon": "06-82"
   },
   {
     "index": "metamagic-distant-spell",
@@ -9535,7 +9847,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/metamagic-distant-spell"
+    "url": "/api/2014/features/metamagic-distant-spell",
+    "icon": "06-12"
   },
   {
     "index": "metamagic-empowered-spell",
@@ -9571,7 +9884,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/metamagic-empowered-spell"
+    "url": "/api/2014/features/metamagic-empowered-spell",
+    "icon": "06-18"
   },
   {
     "index": "metamagic-extended-spell",
@@ -9606,7 +9920,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/metamagic-extended-spell"
+    "url": "/api/2014/features/metamagic-extended-spell",
+    "icon": "03-98"
   },
   {
     "index": "metamagic-heightened-spell",
@@ -9641,7 +9956,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/metamagic-heightened-spell"
+    "url": "/api/2014/features/metamagic-heightened-spell",
+    "icon": "09-10"
   },
   {
     "index": "metamagic-quickened-spell",
@@ -9676,7 +9992,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/metamagic-quickened-spell"
+    "url": "/api/2014/features/metamagic-quickened-spell",
+    "icon": "06-16"
   },
   {
     "index": "metamagic-subtle-spell",
@@ -9711,7 +10028,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/metamagic-subtle-spell"
+    "url": "/api/2014/features/metamagic-subtle-spell",
+    "icon": "01-49"
   },
   {
     "index": "metamagic-twinned-spell",
@@ -9742,7 +10060,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/metamagic-twinned-spell"
+    "url": "/api/2014/features/metamagic-twinned-spell",
+    "icon": "06a-005"
   },
   {
     "index": "sorcerer-ability-score-improvement-1",
@@ -9760,7 +10079,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/sorcerer-ability-score-improvement-1"
+    "url": "/api/2014/features/sorcerer-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "sorcerous-origin-improvement-1",
@@ -9776,7 +10096,8 @@
       "Choose a sorcerous origin, which describes the source of your innate magical power, such as Draconic Bloodline.",
       "Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level."
     ],
-    "url": "/api/2014/features/sorcerous-origin-improvement-1"
+    "url": "/api/2014/features/sorcerous-origin-improvement-1",
+    "icon": "06-72"
   },
   {
     "index": "elemental-affinity",
@@ -9823,7 +10144,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/elemental-affinity"
+    "url": "/api/2014/features/elemental-affinity",
+    "icon": "06-115"
   },
   {
     "index": "sorcerer-ability-score-improvement-2",
@@ -9841,7 +10163,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/sorcerer-ability-score-improvement-2"
+    "url": "/api/2014/features/sorcerer-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "metamagic-2",
@@ -9932,7 +10255,8 @@
         }
       }
     },
-    "url": "/api/2014/features/metamagic-2"
+    "url": "/api/2014/features/metamagic-2",
+    "icon": "01-56"
   },
   {
     "index": "sorcerer-ability-score-improvement-3",
@@ -9950,7 +10274,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/sorcerer-ability-score-improvement-3"
+    "url": "/api/2014/features/sorcerer-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "sorcerous-origin-improvement-2",
@@ -9966,7 +10291,8 @@
       "Choose a sorcerous origin, which describes the source of your innate magical power, such as Draconic Bloodline.",
       "Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level."
     ],
-    "url": "/api/2014/features/sorcerous-origin-improvement-2"
+    "url": "/api/2014/features/sorcerous-origin-improvement-2",
+    "icon": "06-72"
   },
   {
     "index": "dragon-wings",
@@ -9999,7 +10325,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/dragon-wings"
+    "url": "/api/2014/features/dragon-wings",
+    "icon": "skl-blue-02"
   },
   {
     "index": "sorcerer-ability-score-improvement-4",
@@ -10017,7 +10344,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/sorcerer-ability-score-improvement-4"
+    "url": "/api/2014/features/sorcerer-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "metamagic-3",
@@ -10108,7 +10436,8 @@
         }
       }
     },
-    "url": "/api/2014/features/metamagic-3"
+    "url": "/api/2014/features/metamagic-3",
+    "icon": "01-56"
   },
   {
     "index": "sorcerous-origin-improvement-3",
@@ -10124,7 +10453,8 @@
       "Choose a sorcerous origin, which describes the source of your innate magical power, such as Draconic Bloodline.",
       "Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level."
     ],
-    "url": "/api/2014/features/sorcerous-origin-improvement-3"
+    "url": "/api/2014/features/sorcerous-origin-improvement-3",
+    "icon": "06-72"
   },
   {
     "index": "draconic-presence",
@@ -10200,7 +10530,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/draconic-presence"
+    "url": "/api/2014/features/draconic-presence",
+    "icon": "06-01"
   },
   {
     "index": "sorcerer-ability-score-improvement-5",
@@ -10218,7 +10549,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/sorcerer-ability-score-improvement-5"
+    "url": "/api/2014/features/sorcerer-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "sorcerous-restoration",
@@ -10246,7 +10578,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/sorcerous-restoration"
+    "url": "/api/2014/features/sorcerous-restoration",
+    "icon": "09a-004"
   },
   {
     "index": "otherworldly-patron",
@@ -10261,7 +10594,8 @@
     "desc": [
       "At 1st level, you have struck a bargain with an otherworldly being of your choice, such as the Fiend. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level."
     ],
-    "url": "/api/2014/features/otherworldly-patron"
+    "url": "/api/2014/features/otherworldly-patron",
+    "icon": "01-92"
   },
   {
     "index": "dark-ones-blessing",
@@ -10294,7 +10628,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/dark-ones-blessing"
+    "url": "/api/2014/features/dark-ones-blessing",
+    "icon": "01-69"
   },
   {
     "index": "pact-magic",
@@ -10310,7 +10645,8 @@
       "Your arcane research and the magic bestowed on you by your patron have given you facility with spells."
     ],
     "reference": "/api/2014/classes/warlock/spellcasting",
-    "url": "/api/2014/features/pact-magic"
+    "url": "/api/2014/features/pact-magic",
+    "icon": "skl-violet-06"
   },
   {
     "index": "eldritch-invocations",
@@ -10491,7 +10827,8 @@
         }
       ]
     },
-    "url": "/api/2014/features/eldritch-invocations"
+    "url": "/api/2014/features/eldritch-invocations",
+    "icon": "skl-violet-13"
   },
   {
     "index": "eldritch-invocation-agonizing-blast",
@@ -10529,7 +10866,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-agonizing-blast"
+    "url": "/api/2014/features/eldritch-invocation-agonizing-blast",
+    "icon": "06-36"
   },
   {
     "index": "eldritch-invocation-armor-of-shadows",
@@ -10563,7 +10901,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-armor-of-shadows"
+    "url": "/api/2014/features/eldritch-invocation-armor-of-shadows",
+    "icon": "01-89"
   },
   {
     "index": "eldritch-invocation-beast-speech",
@@ -10593,7 +10932,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-beast-speech"
+    "url": "/api/2014/features/eldritch-invocation-beast-speech",
+    "icon": "04-83"
   },
   {
     "index": "eldritch-invocation-beguiling-influence",
@@ -10625,7 +10965,8 @@
         }
       ]
     },
-    "url": "/api/2014/features/eldritch-invocation-beguiling-influence"
+    "url": "/api/2014/features/eldritch-invocation-beguiling-influence",
+    "icon": "07-78"
   },
   {
     "index": "eldritch-invocation-book-of-ancient-secrets",
@@ -10651,7 +10992,8 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
-    "url": "/api/2014/features/eldritch-invocation-book-of-ancient-secrets"
+    "url": "/api/2014/features/eldritch-invocation-book-of-ancient-secrets",
+    "icon": "03-05"
   },
   {
     "index": "eldritch-invocation-devils-sight",
@@ -10671,7 +11013,8 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
-    "url": "/api/2014/features/eldritch-invocation-devils-sight"
+    "url": "/api/2014/features/eldritch-invocation-devils-sight",
+    "icon": "09-55"
   },
   {
     "index": "eldritch-invocation-eldritch-sight",
@@ -10701,7 +11044,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-eldritch-sight"
+    "url": "/api/2014/features/eldritch-invocation-eldritch-sight",
+    "icon": "skl-violet-03"
   },
   {
     "index": "eldritch-invocation-eldritch-spear",
@@ -10737,7 +11081,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-eldritch-spear"
+    "url": "/api/2014/features/eldritch-invocation-eldritch-spear",
+    "icon": "01-45"
   },
   {
     "index": "eldritch-invocation-eyes-of-the-rune-keeper",
@@ -10755,7 +11100,8 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
-    "url": "/api/2014/features/eldritch-invocation-eyes-of-the-rune-keeper"
+    "url": "/api/2014/features/eldritch-invocation-eyes-of-the-rune-keeper",
+    "icon": "loot-runestone_02"
   },
   {
     "index": "eldritch-invocation-fiendish-vigor",
@@ -10790,7 +11136,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-fiendish-vigor"
+    "url": "/api/2014/features/eldritch-invocation-fiendish-vigor",
+    "icon": "06-42"
   },
   {
     "index": "eldritch-invocation-gaze-of-two-minds",
@@ -10815,7 +11162,8 @@
         "action_cost": "action"
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-gaze-of-two-minds"
+    "url": "/api/2014/features/eldritch-invocation-gaze-of-two-minds",
+    "icon": "skl-violet-10"
   },
   {
     "index": "eldritch-invocation-mask-of-many-faces",
@@ -10845,7 +11193,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-mask-of-many-faces"
+    "url": "/api/2014/features/eldritch-invocation-mask-of-many-faces",
+    "icon": "09-37"
   },
   {
     "index": "eldritch-invocation-misty-visions",
@@ -10878,7 +11227,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-misty-visions"
+    "url": "/api/2014/features/eldritch-invocation-misty-visions",
+    "icon": "09-62"
   },
   {
     "index": "eldritch-invocation-repelling-blast",
@@ -10915,7 +11265,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-repelling-blast"
+    "url": "/api/2014/features/eldritch-invocation-repelling-blast",
+    "icon": "06-46"
   },
   {
     "index": "eldritch-invocation-thief-of-five-fates",
@@ -10951,7 +11302,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-thief-of-five-fates"
+    "url": "/api/2014/features/eldritch-invocation-thief-of-five-fates",
+    "icon": "skl-violet-26"
   },
   {
     "index": "eldritch-invocation-voice-of-the-chain-master",
@@ -10977,7 +11329,8 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
-    "url": "/api/2014/features/eldritch-invocation-voice-of-the-chain-master"
+    "url": "/api/2014/features/eldritch-invocation-voice-of-the-chain-master",
+    "icon": "skl-violet-11"
   },
   {
     "index": "eldritch-invocation-mire-the-mind",
@@ -11018,7 +11371,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-mire-the-mind"
+    "url": "/api/2014/features/eldritch-invocation-mire-the-mind",
+    "icon": "loot-snail_01"
   },
   {
     "index": "eldritch-invocation-one-with-shadows",
@@ -11056,7 +11410,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-one-with-shadows"
+    "url": "/api/2014/features/eldritch-invocation-one-with-shadows",
+    "icon": "06-41"
   },
   {
     "index": "eldritch-invocation-sign-of-ill-omen",
@@ -11097,7 +11452,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-sign-of-ill-omen"
+    "url": "/api/2014/features/eldritch-invocation-sign-of-ill-omen",
+    "icon": "07-48"
   },
   {
     "index": "eldritch-invocation-thirsting-blade",
@@ -11138,7 +11494,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-thirsting-blade"
+    "url": "/api/2014/features/eldritch-invocation-thirsting-blade",
+    "icon": "09-67"
   },
   {
     "index": "otherworldly-patron-improvement-1",
@@ -11153,7 +11510,8 @@
     "desc": [
       "At 1st level, you have struck a bargain with an otherworldly being of your choice, such as the Fiend. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level."
     ],
-    "url": "/api/2014/features/otherworldly-patron-improvement-1"
+    "url": "/api/2014/features/otherworldly-patron-improvement-1",
+    "icon": "01-92"
   },
   {
     "index": "eldritch-invocation-bewitching-whispers",
@@ -11194,7 +11552,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-bewitching-whispers"
+    "url": "/api/2014/features/eldritch-invocation-bewitching-whispers",
+    "icon": "skl-violet-04"
   },
   {
     "index": "eldritch-invocation-dreadful-word",
@@ -11235,7 +11594,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-dreadful-word"
+    "url": "/api/2014/features/eldritch-invocation-dreadful-word",
+    "icon": "07-09"
   },
   {
     "index": "eldritch-invocation-sculptor-of-flesh",
@@ -11276,7 +11636,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-sculptor-of-flesh"
+    "url": "/api/2014/features/eldritch-invocation-sculptor-of-flesh",
+    "icon": "07-17"
   },
   {
     "index": "eldritch-invocation-ascendant-step",
@@ -11315,7 +11676,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-ascendant-step"
+    "url": "/api/2014/features/eldritch-invocation-ascendant-step",
+    "icon": "07-32"
   },
   {
     "index": "eldritch-invocation-minions-of-chaos",
@@ -11356,7 +11718,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-minions-of-chaos"
+    "url": "/api/2014/features/eldritch-invocation-minions-of-chaos",
+    "icon": "07-86"
   },
   {
     "index": "eldritch-invocation-otherworldly-leap",
@@ -11395,7 +11758,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-otherworldly-leap"
+    "url": "/api/2014/features/eldritch-invocation-otherworldly-leap",
+    "icon": "03-66"
   },
   {
     "index": "eldritch-invocation-whispers-of-the-grave",
@@ -11430,7 +11794,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-whispers-of-the-grave"
+    "url": "/api/2014/features/eldritch-invocation-whispers-of-the-grave",
+    "icon": "07-07"
   },
   {
     "index": "otherworldly-patron-improvement-2",
@@ -11445,7 +11810,8 @@
     "desc": [
       "At 1st level, you have struck a bargain with an otherworldly being of your choice, such as the Fiend. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level."
     ],
-    "url": "/api/2014/features/otherworldly-patron-improvement-2"
+    "url": "/api/2014/features/otherworldly-patron-improvement-2",
+    "icon": "01-92"
   },
   {
     "index": "eldritch-invocation-lifedrinker",
@@ -11489,7 +11855,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-lifedrinker"
+    "url": "/api/2014/features/eldritch-invocation-lifedrinker",
+    "icon": "03-91"
   },
   {
     "index": "otherworldly-patron-improvement-3",
@@ -11504,7 +11871,8 @@
     "desc": [
       "At 1st level, you have struck a bargain with an otherworldly being of your choice, such as the Fiend. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level."
     ],
-    "url": "/api/2014/features/otherworldly-patron-improvement-3"
+    "url": "/api/2014/features/otherworldly-patron-improvement-3",
+    "icon": "01-92"
   },
   {
     "index": "eldritch-invocation-chains-of-carceri",
@@ -11533,7 +11901,8 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
-    "url": "/api/2014/features/eldritch-invocation-chains-of-carceri"
+    "url": "/api/2014/features/eldritch-invocation-chains-of-carceri",
+    "icon": "skl-red-08"
   },
   {
     "index": "eldritch-invocation-master-of-myriad-forms",
@@ -11568,7 +11937,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-master-of-myriad-forms"
+    "url": "/api/2014/features/eldritch-invocation-master-of-myriad-forms",
+    "icon": "04-30"
   },
   {
     "index": "eldritch-invocation-visions-of-distant-realms",
@@ -11603,7 +11973,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/eldritch-invocation-visions-of-distant-realms"
+    "url": "/api/2014/features/eldritch-invocation-visions-of-distant-realms",
+    "icon": "06a-001"
   },
   {
     "index": "eldritch-invocation-witch-sight",
@@ -11628,7 +11999,8 @@
       "name": "Eldritch Invocations",
       "url": "/api/2014/features/eldritch-invocations"
     },
-    "url": "/api/2014/features/eldritch-invocation-witch-sight"
+    "url": "/api/2014/features/eldritch-invocation-witch-sight",
+    "icon": "loot-eye_01"
   },
   {
     "index": "pact-boon",
@@ -11678,7 +12050,8 @@
         }
       }
     },
-    "url": "/api/2014/features/pact-boon"
+    "url": "/api/2014/features/pact-boon",
+    "icon": "01-51"
   },
   {
     "index": "pact-of-the-chain",
@@ -11701,7 +12074,8 @@
       "name": "Pact Boon",
       "url": "/api/2014/features/pact-boon"
     },
-    "url": "/api/2014/features/pact-of-the-chain"
+    "url": "/api/2014/features/pact-of-the-chain",
+    "icon": "07-02"
   },
   {
     "index": "pact-of-the-blade",
@@ -11729,7 +12103,8 @@
         "action_cost": "action"
       }
     },
-    "url": "/api/2014/features/pact-of-the-blade"
+    "url": "/api/2014/features/pact-of-the-blade",
+    "icon": "06a-010"
   },
   {
     "index": "pact-of-the-tome",
@@ -11751,7 +12126,8 @@
       "name": "Pact Boon",
       "url": "/api/2014/features/pact-boon"
     },
-    "url": "/api/2014/features/pact-of-the-tome"
+    "url": "/api/2014/features/pact-of-the-tome",
+    "icon": "loot-book_01"
   },
   {
     "index": "warlock-ability-score-improvement-1",
@@ -11769,7 +12145,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/warlock-ability-score-improvement-1"
+    "url": "/api/2014/features/warlock-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "dark-ones-own-luck",
@@ -11813,7 +12190,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/dark-ones-own-luck"
+    "url": "/api/2014/features/dark-ones-own-luck",
+    "icon": "03-72"
   },
   {
     "index": "warlock-ability-score-improvement-2",
@@ -11831,7 +12209,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/warlock-ability-score-improvement-2"
+    "url": "/api/2014/features/warlock-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "fiendish-resilience",
@@ -11851,7 +12230,8 @@
     "desc": [
       "Starting at 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance."
     ],
-    "url": "/api/2014/features/fiendish-resilience"
+    "url": "/api/2014/features/fiendish-resilience",
+    "icon": "03-20"
   },
   {
     "index": "mystic-arcanum-6th-level",
@@ -11877,7 +12257,8 @@
         }
       }
     },
-    "url": "/api/2014/features/mystic-arcanum-6th-level"
+    "url": "/api/2014/features/mystic-arcanum-6th-level",
+    "icon": "01-63"
   },
   {
     "index": "warlock-ability-score-improvement-3",
@@ -11895,7 +12276,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/warlock-ability-score-improvement-3"
+    "url": "/api/2014/features/warlock-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "mystic-arcanum-7th-level",
@@ -11921,7 +12303,8 @@
         }
       }
     },
-    "url": "/api/2014/features/mystic-arcanum-7th-level"
+    "url": "/api/2014/features/mystic-arcanum-7th-level",
+    "icon": "01-63"
   },
   {
     "index": "hurl-through-hell",
@@ -11961,7 +12344,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/hurl-through-hell"
+    "url": "/api/2014/features/hurl-through-hell",
+    "icon": "06-81"
   },
   {
     "index": "mystic-arcanum-8th-level",
@@ -11987,7 +12371,8 @@
         }
       }
     },
-    "url": "/api/2014/features/mystic-arcanum-8th-level"
+    "url": "/api/2014/features/mystic-arcanum-8th-level",
+    "icon": "01-63"
   },
   {
     "index": "warlock-ability-score-improvement-4",
@@ -12005,7 +12390,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/warlock-ability-score-improvement-4"
+    "url": "/api/2014/features/warlock-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "mystic-arcanum-9th-level",
@@ -12031,7 +12417,8 @@
         }
       }
     },
-    "url": "/api/2014/features/mystic-arcanum-9th-level"
+    "url": "/api/2014/features/mystic-arcanum-9th-level",
+    "icon": "01-63"
   },
   {
     "index": "warlock-ability-score-improvement-5",
@@ -12049,7 +12436,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/warlock-ability-score-improvement-5"
+    "url": "/api/2014/features/warlock-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "eldritch-master",
@@ -12065,7 +12453,8 @@
       "At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature.",
       "Once you regain spell slots with this feature, you must finish a long rest before you can do so again."
     ],
-    "url": "/api/2014/features/eldritch-master"
+    "url": "/api/2014/features/eldritch-master",
+    "icon": "skl-violet-18"
   },
   {
     "index": "spellcasting-wizard",
@@ -12081,7 +12470,8 @@
       "As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power."
     ],
     "reference": "/api/2014/classes/wizard/spellcasting",
-    "url": "/api/2014/features/spellcasting-wizard"
+    "url": "/api/2014/features/spellcasting-wizard",
+    "icon": "03-01"
   },
   {
     "index": "arcane-recovery",
@@ -12165,7 +12555,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/arcane-recovery"
+    "url": "/api/2014/features/arcane-recovery",
+    "icon": "skl-red-27"
   },
   {
     "index": "arcane-tradition",
@@ -12181,7 +12572,8 @@
       "When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.",
       "Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
     ],
-    "url": "/api/2014/features/arcane-tradition"
+    "url": "/api/2014/features/arcane-tradition",
+    "icon": "09a-007"
   },
   {
     "index": "evocation-savant",
@@ -12201,7 +12593,8 @@
     "desc": [
       "Beginning when you select this school at 2nd level, the gold and time you must spend to copy an evocation spell into your spellbook is halved."
     ],
-    "url": "/api/2014/features/evocation-savant"
+    "url": "/api/2014/features/evocation-savant",
+    "icon": "09-51"
   },
   {
     "index": "sculpt-spells",
@@ -12235,7 +12628,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/sculpt-spells"
+    "url": "/api/2014/features/sculpt-spells",
+    "icon": "09a-005"
   },
   {
     "index": "wizard-ability-score-improvement-1",
@@ -12253,7 +12647,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/wizard-ability-score-improvement-1"
+    "url": "/api/2014/features/wizard-ability-score-improvement-1",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "arcane-tradition-improvement-1",
@@ -12269,7 +12664,8 @@
       "When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.",
       "Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
     ],
-    "url": "/api/2014/features/arcane-tradition-improvement-1"
+    "url": "/api/2014/features/arcane-tradition-improvement-1",
+    "icon": "09a-007"
   },
   {
     "index": "potent-cantrip",
@@ -12301,7 +12697,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/potent-cantrip"
+    "url": "/api/2014/features/potent-cantrip",
+    "icon": "01-07"
   },
   {
     "index": "wizard-ability-score-improvement-2",
@@ -12319,7 +12716,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/wizard-ability-score-improvement-2"
+    "url": "/api/2014/features/wizard-ability-score-improvement-2",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "arcane-tradition-improvement-2",
@@ -12335,7 +12733,8 @@
       "When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.",
       "Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
     ],
-    "url": "/api/2014/features/arcane-tradition-improvement-2"
+    "url": "/api/2014/features/arcane-tradition-improvement-2",
+    "icon": "09a-007"
   },
   {
     "index": "empowered-evocation",
@@ -12368,7 +12767,8 @@
         ]
       }
     },
-    "url": "/api/2014/features/empowered-evocation"
+    "url": "/api/2014/features/empowered-evocation",
+    "icon": "06-116"
   },
   {
     "index": "wizard-ability-score-improvement-3",
@@ -12386,7 +12786,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/wizard-ability-score-improvement-3"
+    "url": "/api/2014/features/wizard-ability-score-improvement-3",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "arcane-tradition-improvement-3",
@@ -12402,7 +12803,8 @@
       "When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.",
       "Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level."
     ],
-    "url": "/api/2014/features/arcane-tradition-improvement-3"
+    "url": "/api/2014/features/arcane-tradition-improvement-3",
+    "icon": "09a-007"
   },
   {
     "index": "overchannel",
@@ -12423,7 +12825,8 @@
       "Starting at 14th level, you can increase the power of your simpler spells. When you cast a wizard spell of 1st through 5th level that deals damage, you can deal maximum damage with that spell.",
       "The first time you do so, you suffer no adverse effect. If you use this feature again before you finish a long rest, you take 2d12 necrotic damage for each level of the spell, immediately after you cast it. Each time you use this feature again before finishing a long rest, the necrotic damage per spell level increases by 1d12. This damage ignores resistance and immunity."
     ],
-    "url": "/api/2014/features/overchannel"
+    "url": "/api/2014/features/overchannel",
+    "icon": "06-88"
   },
   {
     "index": "wizard-ability-score-improvement-4",
@@ -12441,7 +12844,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/wizard-ability-score-improvement-4"
+    "url": "/api/2014/features/wizard-ability-score-improvement-4",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "spell-mastery",
@@ -12457,7 +12861,8 @@
       "At 18th level, you have achieved such mastery over certain spells that you can cast them at will. Choose a 1st-level wizard spell and a 2nd-level wizard spell that are in your spellbook. You can cast those spells at their lowest level without expending a spell slot when you have them prepared. If you want to cast either spell at a higher level, you must expend a spell slot as normal.",
       "By spending 8 hours in study, you can exchange one or both of the spells you chose for different spells of the same levels."
     ],
-    "url": "/api/2014/features/spell-mastery"
+    "url": "/api/2014/features/spell-mastery",
+    "icon": "sgi-22"
   },
   {
     "index": "wizard-ability-score-improvement-5",
@@ -12475,7 +12880,8 @@
     "feature_specific": {
       "grants_asi": true
     },
-    "url": "/api/2014/features/wizard-ability-score-improvement-5"
+    "url": "/api/2014/features/wizard-ability-score-improvement-5",
+    "icon": "skl-yellow-15"
   },
   {
     "index": "signature-spell",
@@ -12500,6 +12906,7 @@
         }
       }
     },
-    "url": "/api/2014/features/signature-spell"
+    "url": "/api/2014/features/signature-spell",
+    "icon": "skl-red-28"
   }
 ]

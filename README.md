@@ -25,6 +25,8 @@ src/
   tests/translationTestUtils.ts      Shared translation test suite
 docs/
   game-engine-changes.md             What this fork changes relative to upstream, and why
+  monster-environments.md            The environment_tags list of the monsters
+  icon-keys.md                       The icon keys of the spells, class features and classes
   rule-reference.md                  The markdown of the rules text, and the order, summary, keywords and related links
   i18n-overlay-migration.md          What the move to text-only translation overlays (#31) changed
   upstream-changelog.md              Upstream's release history, kept for reference and no longer generated

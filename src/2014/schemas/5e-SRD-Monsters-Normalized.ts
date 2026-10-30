@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { EnvironmentTagSchema } from '../../schemas/common';
 import { DamageRuleSchema, MonsterAbilityEffectFields } from '../../schemas/monster-effects';
 
 /**
@@ -334,6 +335,8 @@ export const NormalizedMonsterSchema = z.strictObject({
   legendary_actions: z.array(LegendaryActionSchema).optional(),
   reactions: z.array(ReactionSchema).optional(),
   environments: z.string().optional(),
+  // The habitats of `environments` as a list of known terms, in the same order. Never translated.
+  environment_tags: z.array(EnvironmentTagSchema).min(1).optional(),
   bonus_actions: z.array(z.string()).optional(),
   forms: z.array(IndexSchema).optional(),
   image: z.string().optional(),
