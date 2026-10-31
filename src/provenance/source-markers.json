@@ -123,6 +123,22 @@
         "vulnerabilities[].types": {
           "source": "dd",
           "note": "The rules of the damage list with the same name after 'damage_', read from its text by normalize-monsters.ts (docs/monster-effects.md)."
+        },
+        "actions[].damage[].condition.duration.ends_when": {
+          "source": "dd",
+          "note": "Restoring effect or disease cure named by the monster text, merged in from monster-engine-annotations.json."
+        },
+        "legendary_actions[].condition.duration.ends_when": {
+          "source": "dd",
+          "note": "Restoring effect or disease cure named by the monster text, merged in from monster-engine-annotations.json."
+        },
+        "actions[].damage[].condition.on_failed_repeat_save.duration.ends_when": {
+          "source": "dd",
+          "note": "Restoring effect or disease cure named by the monster text, merged in from monster-engine-annotations.json."
+        },
+        "special_abilities[].condition.on_failed_repeat_save.duration.ends_when": {
+          "source": "dd",
+          "note": "Restoring effect or disease cure named by the monster text, merged in from monster-engine-annotations.json."
         }
       }
     },

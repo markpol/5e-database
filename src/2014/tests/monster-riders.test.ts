@@ -156,6 +156,36 @@ describe('monster damage entries', () => {
   });
 });
 
+describe('restoring-effect condition endings', () => {
+  it('structures the end condition stated by each affected monster', () => {
+    const expected = {
+      basilisk: 'greater restoration or other magic',
+      'death-dog': 'disease cured',
+      erinyes: 'lesser restoration or similar magic',
+      gorgon: 'greater restoration or other magic',
+      medusa: 'greater restoration or other magic',
+      otyugh: 'disease cured',
+      solar: 'lesser restoration or similar magic',
+    };
+    const found = normalized.flatMap((monster) =>
+      (['actions', 'special_abilities', 'legendary_actions', 'reactions'] as const).flatMap((section) =>
+        ((monster[section] ?? []) as Part[]).flatMap((part) => {
+          const conditions: Entry[] = [
+            ...(part.condition ? [part.condition] : []),
+            ...(part.damage ?? []).flatMap((damage) => damage.condition ? [damage.condition] : []),
+            ...(part.damage ?? []).flatMap((damage) => damage.condition?.on_failed_repeat_save ? [damage.condition.on_failed_repeat_save] : []),
+          ];
+          if (part.condition?.on_failed_repeat_save) conditions.push(part.condition.on_failed_repeat_save);
+          return conditions.flatMap((condition) => condition.duration?.unit === 'until restored'
+            ? [{ key: monster.index, ends_when: condition.duration.ends_when }]
+            : []);
+        }),
+      ),
+    );
+    expect(Object.fromEntries(found.map(({ key, ends_when }) => [key, ends_when]))).toEqual(expected);
+  });
+});
+
 describe('monster rider annotations', () => {
   const saveOf = (value: Entry) => `DC ${value.dc_value}`;
 
@@ -262,12 +292,13 @@ describe('monster rider annotations', () => {
     for (const [monster, name] of [['gorgon', 'Petrifying Breath']] as const) {
       expect(rider(monster, name)[0].condition.on_failed_repeat_save).toEqual({
         condition_type: 'petrified',
-        duration: { length: 1, unit: 'until restored' },
+        duration: { length: 1, unit: 'until restored', ends_when: 'greater restoration or other magic' },
       });
     }
     expect(find(normalized, 'basilisk', 'special_abilities', 'Petrifying Gaze').condition?.on_failed_repeat_save?.duration).toEqual({
       length: 1,
       unit: 'until restored',
+      ends_when: 'greater restoration or other magic',
     });
   });
 
@@ -395,9 +426,9 @@ describe('monster conditions applied only in prose', () => {
     ['bearded-devil', 'Beard', 12, 'poisoned', { length: 10, unit: 'round', interrupt: 'saving throw success' }],
     ['bone-devil', 'Sting', 14, 'poisoned', { length: 10, unit: 'round', interrupt: 'saving throw success' }],
     ['couatl', 'Bite', 13, 'poisoned', { length: 24, unit: 'hour' }],
-    ['death-dog', 'Bite', 12, 'poisoned', { length: 1, unit: 'until restored' }],
-    ['erinyes', 'Longbow', 14, 'poisoned', { length: 1, unit: 'until restored' }],
-    ['otyugh', 'Bite', 15, 'poisoned', { length: 1, unit: 'until restored' }],
+    ['death-dog', 'Bite', 12, 'poisoned', { length: 1, unit: 'until restored', ends_when: 'disease cured' }],
+    ['erinyes', 'Longbow', 14, 'poisoned', { length: 1, unit: 'until restored', ends_when: 'lesser restoration or similar magic' }],
+    ['otyugh', 'Bite', 15, 'poisoned', { length: 1, unit: 'until restored', ends_when: 'disease cured' }],
     ['sprite', 'Shortbow', 10, 'poisoned', { length: 10, unit: 'round' }],
     ['ghast', 'Claws', 10, 'paralyzed', { length: 10, unit: 'round', interrupt: 'saving throw success' }],
     ['lich', 'Paralyzing Touch', 18, 'paralyzed', { length: 10, unit: 'round', interrupt: 'saving throw success' }],
@@ -435,7 +466,10 @@ describe('monster conditions applied only in prose', () => {
       condition: { condition_type: 'frightened', duration: { length: 10, unit: 'round', interrupt: 'saving throw success' } },
     });
     const legendary = (index: string, name: string) => normalized.find((m) => m.index === index)?.legendary_actions?.find((a: Part) => a.name === name) as Part;
-    expect(legendary('solar', 'Blinding Gaze (Costs 3 Actions)').condition).toEqual({ condition_type: 'blinded', duration: { length: 1, unit: 'until restored' } });
+    expect(legendary('solar', 'Blinding Gaze (Costs 3 Actions)').condition).toEqual({
+      condition_type: 'blinded',
+      duration: { length: 1, unit: 'until restored', ends_when: 'lesser restoration or similar magic' },
+    });
     expect(legendary('mummy-lord', 'Blinding Dust').condition).toEqual({ condition_type: 'blinded', duration: { length: 1, unit: 'round' } });
     expect(legendary('mummy-lord', 'Blasphemous Word (Costs 2 Actions)').condition).toEqual({ condition_type: 'stunned', duration: { length: 1, unit: 'round' } });
     expect(find(normalized, 'androsphinx', 'actions', 'Roar').attacks?.[2]).toMatchObject({

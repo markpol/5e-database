@@ -53,6 +53,7 @@ const ActionUsageSchema = z.strictObject({
 const ConditionDurationSchema = z.strictObject({
   length: z.number(),
   unit: z.string(),
+  ends_when: z.enum(['disease cured', 'lesser restoration or similar magic', 'greater restoration or other magic']).optional(),
   interrupt: z.string().optional(),
   interrupt_modifier: z.string().optional(),
 });

@@ -179,9 +179,10 @@ reference is the plain `index` string (the file is normalized), and every durati
 - `dc` is `{ dc_type, dc_value, success_type }`: the ability (`str`, `dex`, `con`, `int`, `wis`, `cha`), the DC, and
   what a successful save does (`none`: no effect, `half`: half damage, `other`).
 - `condition` is `{ condition_type, duration, on_failed_repeat_save? }`. `condition_type` is the `index` of an entry in
-  the conditions. `duration` is `{ length, unit, interrupt? }`: `unit` is `round`, `hour`, `day`, `until escape`,
+  the conditions. `duration` is `{ length, unit, ends_when?, interrupt? }`: `unit` is `round`, `hour`, `day`, `until escape`,
   `until saving throw success` (no fixed length; the target repeats the save at the end of each of its turns) or
-  `until restored` (the condition lasts until it is ended by magic such as greater restoration), and `interrupt`, when
+  `until restored` (retained for compatibility), with optional `ends_when` naming the stated end condition: `disease cured`,
+  `lesser restoration or similar magic`, or `greater restoration or other magic`. `interrupt`, when
   present, names what ends the condition early, for example `saving throw success` (the target repeats the save at the
   end of each of its turns). A condition that lasts for a minute is `length: 10, unit: "round"`.
 - The condition of an entry applies only when the target fails the entry's `dc`. A rider carries its own `dc`; a
@@ -194,7 +195,9 @@ for effects with two stages (petrification). The first stage (`condition_type`, 
 of the target's next turn, when the target repeats the same save: a success ends the condition, a failure replaces it
 with the condition named by `on_failed_repeat_save`. The first stage has `duration.interrupt` of
 `saving throw success` and a `length` of 1 round. The second stage's duration is `{ length: 24, unit: "hour" }`, or
-`{ length: 1, unit: "until restored" }` where the text says the creature stays petrified until freed by magic.
+`{ length: 1, unit: "until restored", ends_when: "greater restoration or other magic" }` where the text says the
+creature stays petrified until freed by magic. The poison conditions on the death dog and otyugh end when their
+disease is cured; the erinyes poison and solar blindness end on lesser restoration or similar magic.
 
 **`pull_distance_ft`.** An optional number on an action: the distance in feet the action pulls each target straight
 toward the monster. It is the distance the action text states ("up to 25 ft."), as a maximum.

@@ -435,6 +435,14 @@
                                 "unit": {
                                   "type": "string"
                                 },
+                                "ends_when": {
+                                  "type": "string",
+                                  "enum": [
+                                    "disease cured",
+                                    "lesser restoration or similar magic",
+                                    "greater restoration or other magic"
+                                  ]
+                                },
                                 "interrupt": {
                                   "type": "string"
                                 },
@@ -495,6 +503,14 @@
                             },
                             "unit": {
                               "type": "string"
+                            },
+                            "ends_when": {
+                              "type": "string",
+                              "enum": [
+                                "disease cured",
+                                "lesser restoration or similar magic",
+                                "greater restoration or other magic"
+                              ]
                             },
                             "interrupt": {
                               "type": "string"
@@ -566,6 +582,14 @@
                                 },
                                 "unit": {
                                   "type": "string"
+                                },
+                                "ends_when": {
+                                  "type": "string",
+                                  "enum": [
+                                    "disease cured",
+                                    "lesser restoration or similar magic",
+                                    "greater restoration or other magic"
+                                  ]
                                 },
                                 "interrupt": {
                                   "type": "string"
@@ -680,6 +704,14 @@
                             },
                             "unit": {
                               "type": "string"
+                            },
+                            "ends_when": {
+                              "type": "string",
+                              "enum": [
+                                "disease cured",
+                                "lesser restoration or similar magic",
+                                "greater restoration or other magic"
+                              ]
                             },
                             "interrupt": {
                               "type": "string"
@@ -1088,6 +1120,14 @@
                   "unit": {
                     "type": "string"
                   },
+                  "ends_when": {
+                    "type": "string",
+                    "enum": [
+                      "disease cured",
+                      "lesser restoration or similar magic",
+                      "greater restoration or other magic"
+                    ]
+                  },
                   "interrupt": {
                     "type": "string"
                   },
@@ -1412,6 +1452,14 @@
                                       "unit": {
                                         "type": "string"
                                       },
+                                      "ends_when": {
+                                        "type": "string",
+                                        "enum": [
+                                          "disease cured",
+                                          "lesser restoration or similar magic",
+                                          "greater restoration or other magic"
+                                        ]
+                                      },
                                       "interrupt": {
                                         "type": "string"
                                       },
@@ -1472,6 +1520,14 @@
                                   },
                                   "unit": {
                                     "type": "string"
+                                  },
+                                  "ends_when": {
+                                    "type": "string",
+                                    "enum": [
+                                      "disease cured",
+                                      "lesser restoration or similar magic",
+                                      "greater restoration or other magic"
+                                    ]
                                   },
                                   "interrupt": {
                                     "type": "string"
@@ -1543,6 +1599,14 @@
                                       },
                                       "unit": {
                                         "type": "string"
+                                      },
+                                      "ends_when": {
+                                        "type": "string",
+                                        "enum": [
+                                          "disease cured",
+                                          "lesser restoration or similar magic",
+                                          "greater restoration or other magic"
+                                        ]
                                       },
                                       "interrupt": {
                                         "type": "string"
@@ -1657,6 +1721,14 @@
                                   },
                                   "unit": {
                                     "type": "string"
+                                  },
+                                  "ends_when": {
+                                    "type": "string",
+                                    "enum": [
+                                      "disease cured",
+                                      "lesser restoration or similar magic",
+                                      "greater restoration or other magic"
+                                    ]
                                   },
                                   "interrupt": {
                                     "type": "string"
@@ -1818,6 +1890,14 @@
                                     "unit": {
                                       "type": "string"
                                     },
+                                    "ends_when": {
+                                      "type": "string",
+                                      "enum": [
+                                        "disease cured",
+                                        "lesser restoration or similar magic",
+                                        "greater restoration or other magic"
+                                      ]
+                                    },
                                     "interrupt": {
                                       "type": "string"
                                     },
@@ -1878,6 +1958,14 @@
                                 },
                                 "unit": {
                                   "type": "string"
+                                },
+                                "ends_when": {
+                                  "type": "string",
+                                  "enum": [
+                                    "disease cured",
+                                    "lesser restoration or similar magic",
+                                    "greater restoration or other magic"
+                                  ]
                                 },
                                 "interrupt": {
                                   "type": "string"
@@ -1949,6 +2037,14 @@
                                     },
                                     "unit": {
                                       "type": "string"
+                                    },
+                                    "ends_when": {
+                                      "type": "string",
+                                      "enum": [
+                                        "disease cured",
+                                        "lesser restoration or similar magic",
+                                        "greater restoration or other magic"
+                                      ]
                                     },
                                     "interrupt": {
                                       "type": "string"
@@ -2063,6 +2159,14 @@
                                 },
                                 "unit": {
                                   "type": "string"
+                                },
+                                "ends_when": {
+                                  "type": "string",
+                                  "enum": [
+                                    "disease cured",
+                                    "lesser restoration or similar magic",
+                                    "greater restoration or other magic"
+                                  ]
                                 },
                                 "interrupt": {
                                   "type": "string"
@@ -2240,6 +2344,14 @@
                                 "unit": {
                                   "type": "string"
                                 },
+                                "ends_when": {
+                                  "type": "string",
+                                  "enum": [
+                                    "disease cured",
+                                    "lesser restoration or similar magic",
+                                    "greater restoration or other magic"
+                                  ]
+                                },
                                 "interrupt": {
                                   "type": "string"
                                 },
@@ -2300,6 +2412,14 @@
                             },
                             "unit": {
                               "type": "string"
+                            },
+                            "ends_when": {
+                              "type": "string",
+                              "enum": [
+                                "disease cured",
+                                "lesser restoration or similar magic",
+                                "greater restoration or other magic"
+                              ]
                             },
                             "interrupt": {
                               "type": "string"
@@ -2371,6 +2491,14 @@
                                 },
                                 "unit": {
                                   "type": "string"
+                                },
+                                "ends_when": {
+                                  "type": "string",
+                                  "enum": [
+                                    "disease cured",
+                                    "lesser restoration or similar magic",
+                                    "greater restoration or other magic"
+                                  ]
                                 },
                                 "interrupt": {
                                   "type": "string"
@@ -2485,6 +2613,14 @@
                             },
                             "unit": {
                               "type": "string"
+                            },
+                            "ends_when": {
+                              "type": "string",
+                              "enum": [
+                                "disease cured",
+                                "lesser restoration or similar magic",
+                                "greater restoration or other magic"
+                              ]
                             },
                             "interrupt": {
                               "type": "string"
