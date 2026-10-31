@@ -113,6 +113,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -128,6 +129,7 @@ export type NormalizedMonster = {
                 duration: {
                     length: number;
                     unit: string;
+                    ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
@@ -136,6 +138,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -149,6 +152,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -165,6 +169,7 @@ export type NormalizedMonster = {
                 duration: {
                     length: number;
                     unit: string;
+                    ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
@@ -173,6 +178,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -200,6 +206,7 @@ export type NormalizedMonster = {
             duration: {
                 length: number;
                 unit: string;
+                ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                 interrupt?: string | undefined;
                 interrupt_modifier?: string | undefined;
             };
@@ -208,6 +215,7 @@ export type NormalizedMonster = {
                 duration: {
                     length: number;
                     unit: string;
+                    ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
@@ -370,6 +378,7 @@ export type NormalizedMonster = {
                 duration: {
                     length: number;
                     unit: string;
+                    ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
@@ -378,6 +387,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -393,6 +403,7 @@ export type NormalizedMonster = {
                         duration: {
                             length: number;
                             unit: string;
+                            ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                             interrupt?: string | undefined;
                             interrupt_modifier?: string | undefined;
                         };
@@ -408,6 +419,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -416,6 +428,7 @@ export type NormalizedMonster = {
                         duration: {
                             length: number;
                             unit: string;
+                            ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                             interrupt?: string | undefined;
                             interrupt_modifier?: string | undefined;
                         };
@@ -429,6 +442,7 @@ export type NormalizedMonster = {
                         duration: {
                             length: number;
                             unit: string;
+                            ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                             interrupt?: string | undefined;
                             interrupt_modifier?: string | undefined;
                         };
@@ -445,6 +459,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -453,6 +468,7 @@ export type NormalizedMonster = {
                         duration: {
                             length: number;
                             unit: string;
+                            ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                             interrupt?: string | undefined;
                             interrupt_modifier?: string | undefined;
                         };
@@ -493,6 +509,7 @@ export type NormalizedMonster = {
                                 duration: {
                                     length: number;
                                     unit: string;
+                                    ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                                     interrupt?: string | undefined;
                                     interrupt_modifier?: string | undefined;
                                 };
@@ -508,6 +525,7 @@ export type NormalizedMonster = {
                             duration: {
                                 length: number;
                                 unit: string;
+                                ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                                 interrupt?: string | undefined;
                                 interrupt_modifier?: string | undefined;
                             };
@@ -516,6 +534,7 @@ export type NormalizedMonster = {
                                 duration: {
                                     length: number;
                                     unit: string;
+                                    ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                                     interrupt?: string | undefined;
                                     interrupt_modifier?: string | undefined;
                                 };
@@ -529,6 +548,7 @@ export type NormalizedMonster = {
                                 duration: {
                                     length: number;
                                     unit: string;
+                                    ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                                     interrupt?: string | undefined;
                                     interrupt_modifier?: string | undefined;
                                 };
@@ -545,6 +565,7 @@ export type NormalizedMonster = {
                             duration: {
                                 length: number;
                                 unit: string;
+                                ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                                 interrupt?: string | undefined;
                                 interrupt_modifier?: string | undefined;
                             };
@@ -553,6 +574,7 @@ export type NormalizedMonster = {
                                 duration: {
                                     length: number;
                                     unit: string;
+                                    ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                                     interrupt?: string | undefined;
                                     interrupt_modifier?: string | undefined;
                                 };
@@ -575,6 +597,7 @@ export type NormalizedMonster = {
                         duration: {
                             length: number;
                             unit: string;
+                            ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                             interrupt?: string | undefined;
                             interrupt_modifier?: string | undefined;
                         };
@@ -583,6 +606,7 @@ export type NormalizedMonster = {
                             duration: {
                                 length: number;
                                 unit: string;
+                                ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                                 interrupt?: string | undefined;
                                 interrupt_modifier?: string | undefined;
                             };
@@ -618,6 +642,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -633,6 +658,7 @@ export type NormalizedMonster = {
                 duration: {
                     length: number;
                     unit: string;
+                    ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
@@ -641,6 +667,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -654,6 +681,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -670,6 +698,7 @@ export type NormalizedMonster = {
                 duration: {
                     length: number;
                     unit: string;
+                    ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
@@ -678,6 +707,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -751,6 +781,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -766,6 +797,7 @@ export type NormalizedMonster = {
                 duration: {
                     length: number;
                     unit: string;
+                    ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
@@ -774,6 +806,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -787,6 +820,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -803,6 +837,7 @@ export type NormalizedMonster = {
                 duration: {
                     length: number;
                     unit: string;
+                    ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
@@ -811,6 +846,7 @@ export type NormalizedMonster = {
                     duration: {
                         length: number;
                         unit: string;
+                        ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                         interrupt?: string | undefined;
                         interrupt_modifier?: string | undefined;
                     };
@@ -838,6 +874,7 @@ export type NormalizedMonster = {
             duration: {
                 length: number;
                 unit: string;
+                ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                 interrupt?: string | undefined;
                 interrupt_modifier?: string | undefined;
             };
@@ -846,6 +883,7 @@ export type NormalizedMonster = {
                 duration: {
                     length: number;
                     unit: string;
+                    ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };
@@ -894,6 +932,7 @@ export type NormalizedMonster = {
             duration: {
                 length: number;
                 unit: string;
+                ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                 interrupt?: string | undefined;
                 interrupt_modifier?: string | undefined;
             };
@@ -902,6 +941,7 @@ export type NormalizedMonster = {
                 duration: {
                     length: number;
                     unit: string;
+                    ends_when?: "disease cured" | "lesser restoration or similar magic" | "greater restoration or other magic" | undefined;
                     interrupt?: string | undefined;
                     interrupt_modifier?: string | undefined;
                 };

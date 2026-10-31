@@ -7989,7 +7989,8 @@
             "condition_type": "petrified",
             "duration": {
               "length": 1,
-              "unit": "until restored"
+              "unit": "until restored",
+              "ends_when": "greater restoration or other magic"
             }
           }
         }
@@ -12642,7 +12643,8 @@
               "condition_type": "poisoned",
               "duration": {
                 "length": 1,
-                "unit": "until restored"
+                "unit": "until restored",
+                "ends_when": "disease cured"
               }
             }
           }
@@ -15890,7 +15892,8 @@
               "condition_type": "poisoned",
               "duration": {
                 "length": 1,
-                "unit": "until restored"
+                "unit": "until restored",
+                "ends_when": "lesser restoration or similar magic"
               }
             }
           }
@@ -21447,7 +21450,8 @@
                 "condition_type": "petrified",
                 "duration": {
                   "length": 1,
-                  "unit": "until restored"
+                  "unit": "until restored",
+                  "ends_when": "greater restoration or other magic"
                 }
               }
             }
@@ -27948,7 +27952,8 @@
             "condition_type": "petrified",
             "duration": {
               "length": 1,
-              "unit": "until restored"
+              "unit": "until restored",
+              "ends_when": "greater restoration or other magic"
             }
           }
         }
@@ -30636,7 +30641,8 @@
               "condition_type": "poisoned",
               "duration": {
                 "length": 1,
-                "unit": "until restored"
+                "unit": "until restored",
+                "ends_when": "disease cured"
               }
             }
           }
@@ -35815,7 +35821,8 @@
           "condition_type": "blinded",
           "duration": {
             "length": 1,
-            "unit": "until restored"
+            "unit": "until restored",
+            "ends_when": "lesser restoration or similar magic"
           }
         }
       }
