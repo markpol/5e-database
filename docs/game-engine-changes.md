@@ -170,11 +170,11 @@ reference is the plain `index` string (the file is normalized), and every durati
 
 **`damage[]` entries.** `damage` on an action or special ability is a list. An entry is one of:
 
-| Shape   | Fields                                                                                | Meaning                                                                                                                                |
-| ------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Damage  | `damage_type`, `damage_dice`, optional `dc`, optional `condition`, optional `grapple` | Damage dealt on a hit (or on a failed save, with `dc`)                                                                                 |
+| Shape   | Fields                                                                                | Meaning                                                                                                                                 |
+| ------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Damage  | `damage_type`, `damage_dice`, optional `dc`, optional `condition`, optional `grapple` | Damage dealt on a hit (or on a failed save, with `dc`)                                                                                  |
 | Rider   | `dc` (optional), `condition`                                                          | A saving throw and the condition a failed save applies, with no damage of its own. May stand alone on an ability with no damage entries |
-| Grapple | `grapple`                                                                             | `escape_dc_value` (number, the DC of the escape check), optional `additional_condition` (a condition applied until the target escapes) |
+| Grapple | `grapple`                                                                             | `escape_dc_value` (number, the DC of the escape check), optional `additional_condition` (a condition applied until the target escapes)  |
 
 - `dc` is `{ dc_type, dc_value, success_type }`: the ability (`str`, `dex`, `con`, `int`, `wis`, `cha`), the DC, and
   what a successful save does (`none`: no effect, `half`: half damage, `other`).
