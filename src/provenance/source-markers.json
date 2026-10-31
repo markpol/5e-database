@@ -96,6 +96,14 @@
           "source": "dd",
           "note": "Merged in from monster-engine-annotations.json."
         },
+        "special_abilities[].damage[].condition": {
+          "source": "dd",
+          "note": "Saving throw condition rider, merged in from monster-engine-annotations.json."
+        },
+        "special_abilities[].damage[].dc": {
+          "source": "dd",
+          "note": "Saving throw DC for a condition rider, merged in from monster-engine-annotations.json."
+        },
         "special_abilities[].damage[].grapple": {
           "source": "dd",
           "note": "Grapple escape DC, merged in from monster-engine-annotations.json."

@@ -168,13 +168,13 @@ and merged in by `normalize-monsters.ts`; the English file is unchanged by them.
 the fields written to the annotations file are marked `dd` in `src/provenance/source-markers.json`. Every
 reference is the plain `index` string (the file is normalized), and every duration length is a number.
 
-**`damage[]` entries.** `damage` on an action is a list. An entry is one of:
+**`damage[]` entries.** `damage` on an action or special ability is a list. An entry is one of:
 
-| Shape   | Fields                                                                                | Meaning                                                                                                                                |
-| ------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Damage  | `damage_type`, `damage_dice`, optional `dc`, optional `condition`, optional `grapple` | Damage dealt on a hit (or on a failed save, with `dc`)                                                                                 |
-| Rider   | `dc` (optional), `condition`                                                          | A saving throw and the condition a failed save applies, with no damage of its own. Follows the damage entry of the same attack         |
-| Grapple | `grapple`                                                                             | `escape_dc_value` (number, the DC of the escape check), optional `additional_condition` (a condition applied until the target escapes) |
+| Shape   | Fields                                                                                | Meaning                                                                                                                                 |
+| ------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Damage  | `damage_type`, `damage_dice`, optional `dc`, optional `condition`, optional `grapple` | Damage dealt on a hit (or on a failed save, with `dc`)                                                                                  |
+| Rider   | `dc` (optional), `condition`                                                          | A saving throw and the condition a failed save applies, with no damage of its own. May stand alone on an ability with no damage entries |
+| Grapple | `grapple`                                                                             | `escape_dc_value` (number, the DC of the escape check), optional `additional_condition` (a condition applied until the target escapes)  |
 
 - `dc` is `{ dc_type, dc_value, success_type }`: the ability (`str`, `dex`, `con`, `int`, `wis`, `cha`), the DC, and
   what a successful save does (`none`: no effect, `half`: half damage, `other`).
@@ -215,7 +215,9 @@ Breath Weapons. `append_damage` is a list of `damage[]` entries added after the 
 entry when `damage` (a position) is given. An entry whose target does not exist makes the generator fail.
 
 **What the annotations add.** Riders: the gladiator's Shield Bash (prone, DC 15 Strength), the deep gnome's Poisoned
-Dart (poisoned, DC 12 Constitution), the cockatrice's Bite (petrification, DC 11 Constitution). Conditions on saves the
+Dart (poisoned, DC 12 Constitution), the cockatrice's Bite (petrification, DC 11 Constitution), the basilisk's
+Petrifying Gaze (restrained and then petrified, DC 12 Constitution) and the dust mephit's Death Burst (blinded, DC 10
+Constitution). Conditions on saves the
 data already had: the dust mephit's Blinding Breath and Death Burst (blinded), the gibbering mouther's Blinding Spittle
 (blinded), the gorgon's Petrifying Breath and the basilisk's Petrifying Gaze (petrification), the otyugh's Tentacle
 Slam (stunned). Grapples: the ettercap's and giant spider's Web (escape DC 11 and 12), the otyugh's Tentacle (13) and

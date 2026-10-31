@@ -244,6 +244,7 @@ describe('monster rider annotations', () => {
     }
     expect(staged.map(({ monster, name }) => `${monster} ${name}`).sort()).toEqual([
       'basilisk Petrifying Gaze',
+      'basilisk Petrifying Gaze',
       'cockatrice Bite',
       'gorgon Petrifying Breath',
       'medusa Petrifying Gaze',
@@ -283,7 +284,14 @@ describe('monster rider annotations', () => {
     });
     const blinded = { condition_type: 'blinded', duration: { length: 10, unit: 'round', interrupt: 'saving throw success' } };
     expect(rider('dust-mephit', 'Blinding Breath')[0].condition).toEqual(blinded);
-    expect(find(normalized, 'dust-mephit', 'special_abilities', 'Death Burst').condition).toEqual(blinded);
+    const deathBurst = find(normalized, 'dust-mephit', 'special_abilities', 'Death Burst');
+    expect(deathBurst.condition).toEqual(blinded);
+    expect(deathBurst.damage).toEqual([
+      {
+        dc: { dc_type: 'con', dc_value: 10, success_type: 'none' },
+        condition: blinded,
+      },
+    ]);
     expect(rider('cockatrice', 'Bite')[1].condition).toEqual({
       condition_type: 'restrained',
       duration: { length: 1, unit: 'round', interrupt: 'saving throw success' },
@@ -517,6 +525,22 @@ describe('monster conditions applied only in prose', () => {
   it('stages the medusa petrification like the basilisk', () => {
     const gaze = (index: string) => find(normalized, index, 'special_abilities', 'Petrifying Gaze').condition;
     expect(gaze('medusa')).toEqual(gaze('basilisk'));
+  });
+
+  it('puts the basilisk gaze saving throw and condition in a damage rider entry', () => {
+    expect(find(normalized, 'basilisk', 'special_abilities', 'Petrifying Gaze').damage).toEqual([
+      {
+        dc: { dc_type: 'con', dc_value: 12, success_type: 'none' },
+        condition: {
+          condition_type: 'restrained',
+          duration: { length: 1, unit: 'round', interrupt: 'saving throw success' },
+          on_failed_repeat_save: {
+            condition_type: 'petrified',
+            duration: { length: 1, unit: 'until restored' },
+          },
+        },
+      },
+    ]);
   });
 
   it.each([

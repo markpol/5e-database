@@ -587,6 +587,30 @@
     "monster": "basilisk",
     "section": "special_abilities",
     "name": "Petrifying Gaze",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "con",
+          "dc_value": 12,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "restrained",
+          "duration": {
+            "length": 1,
+            "unit": "round",
+            "interrupt": "saving throw success"
+          },
+          "on_failed_repeat_save": {
+            "condition_type": "petrified",
+            "duration": {
+              "length": 1,
+              "unit": "until restored"
+            }
+          }
+        }
+      }
+    ],
     "set": {
       "condition": {
         "condition_type": "restrained",
@@ -677,6 +701,23 @@
     "monster": "dust-mephit",
     "section": "special_abilities",
     "name": "Death Burst",
+    "append_damage": [
+      {
+        "dc": {
+          "dc_type": "con",
+          "dc_value": 10,
+          "success_type": "none"
+        },
+        "condition": {
+          "condition_type": "blinded",
+          "duration": {
+            "length": 10,
+            "unit": "round",
+            "interrupt": "saving throw success"
+          }
+        }
+      }
+    ],
     "set": {
       "condition": {
         "condition_type": "blinded",
