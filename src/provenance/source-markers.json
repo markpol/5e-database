@@ -128,18 +128,6 @@
           "source": "dd",
           "note": "Restoring effect or disease cure named by the monster text, merged in from monster-engine-annotations.json."
         },
-        "actions[].condition.duration.ends_when": {
-          "source": "dd",
-          "note": "Restoring effect or disease cure named by the monster text, merged in from monster-engine-annotations.json."
-        },
-        "special_abilities[].condition.duration.ends_when": {
-          "source": "dd",
-          "note": "Restoring effect or disease cure named by the monster text, merged in from monster-engine-annotations.json."
-        },
-        "special_abilities[].damage[].condition.duration.ends_when": {
-          "source": "dd",
-          "note": "Restoring effect or disease cure named by the monster text, merged in from monster-engine-annotations.json."
-        },
         "legendary_actions[].condition.duration.ends_when": {
           "source": "dd",
           "note": "Restoring effect or disease cure named by the monster text, merged in from monster-engine-annotations.json."
